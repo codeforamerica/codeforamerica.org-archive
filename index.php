@@ -30,7 +30,7 @@
 
 <div class="section divide">
     <div class="half">
-        <?php if ($config['ISSUES_URL'] != null) { ?> Bugs and implementation issues can be reported on <a href="<?php echo $config['ISSUES_URL']; ?>">GitHub</a>.<?php } ?></p>
+        <p><?php if ($config['ISSUES_URL'] != null) { ?> Bugs and implementation issues can be reported on <a href="<?php echo $config['ISSUES_URL']; ?>">GitHub</a>.<?php } ?></p>
     </div>
     <div class="half">
         <p class="crate-icon tel">You can always give us a call on <strong><a href="tel:+448458386163">+44 (0)845 8386163</a></strong></p>
