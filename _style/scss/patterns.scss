@@ -16,10 +16,14 @@
     }
 
 .primer .code {
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     float: left;
     width: 75%;
     margin: 0.5em 0 0.5em 0;
+    font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+    font-size: 13px;
+    line-height: 1.2em;
+    padding: 0.5em;
     }
 
 .primer .caption {
@@ -111,12 +115,20 @@
 .button:hover,
 .button:focus {
     background-color: #4DB3E7;
-}
+    }
 
 .button:active {
     box-shadow: 0 0 0 $color-dark-blue;
     margin-top: 4px;
     margin-left: 4px;
+    }
+
+.button-prominent:link,
+.button-prominent:visited,
+.button-prominent:hover,
+.button-prominent:focus,
+.button-prominent:active {
+    background-color: $color-corporate-red;
 }
 
 
@@ -128,11 +140,16 @@
     padding: 1em 2em;
     font-size: 1.2em;
     position: relative;
+    }
+
+@media (min-width: 40em) {
+.highlight-with-avatar {
+    padding-left: 250px;
+    }
 }
 
-.highlight-quote .avatar {
-    position: absolute;
-    left: 60px;
+
+.highlight-avatar {
     background-color: white;
     padding: 10px;
     border-radius: 10em;
@@ -142,8 +159,12 @@
     margin-right: 1.5em;
     border-style: inset;
     top: 2em;
-}
+    margin-bottom: 1em;
+    }
 
-.highlight-quote {
-    padding-left: 250px;
+@media (min-width: 40em) {
+.highlight-avatar {
+    position: absolute;
+    left: 60px;
+}
 }
