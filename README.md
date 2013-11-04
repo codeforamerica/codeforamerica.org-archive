@@ -1,4 +1,4 @@
-codeforamerica
-==============
+Patterns for codeforamerica.org
+===============================
 
-Patterns for Code For America
+Contains in-progress site patterns for codeforamerica.org.

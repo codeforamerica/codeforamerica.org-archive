@@ -1,0 +1,388 @@
+/* =============================================================
+   Reset
+============================================================= */
+* {
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+    border:0;
+    margin:0;
+    padding:0;
+}
+body {
+    color:#666;
+    font:16px/24px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #f0f0ec;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,#f0f0ec), color-stop(80%,#fff)) repeat-y fixed 0 0;
+    background: -webkit-linear-gradient(top, #f0f0ec 20%,#fff 80%) repeat-y fixed 0 0;
+    background: -moz-linear-gradient(top, #f0f0ec 20%, #fff 80%) repeat-y fixed 0 0;
+    background: -ms-linear-gradient(top, #f0f0ec 20%,#fff 80%) repeat-y fixed 0 0;
+    background: -o-linear-gradient(top, #f0f0ec 20%,#fff 80%) repeat-y fixed 0 0;
+    background: linear-gradient(to bottom, #f0f0ec 20%,#fff 80%) repeat-y fixed 0 0;
+    -webkit-font-smoothing:antialiased;
+}
+
+p,
+ul,
+ol,
+dl {
+    line-height:20px;
+    margin:8px 0;
+}
+
+a,
+a:link,
+a:visited {
+    color:#17B;
+    font-weight:bold;
+    text-decoration:none;
+}
+a:hover,
+a:focus,
+a:active {
+    color:#39e;
+    text-decoration:underline;
+}
+a[href^="tel:"] {
+    color:#666;
+    }
+    a[href^="tel:"]:hover {
+        text-decoration:none;
+        cursor:default;
+    }
+*:link, *:visited, *:hover, *:active, *:focus {
+    -webkit-transition:color .25s linear, background-color .25s linear, opacity .25s linear;
+    transition:color .25s linear, background-color .25s linear, opacity .25s linear;
+}
+
+code {
+    color:#069;
+    font:12px/16px Menlo,Monaco,'Courier New',Courier,monospace;
+    }
+    code.codex {
+        background-color:#FCFCFC;
+        display:block;
+        white-space:pre;
+        font-size:12px;
+        line-height:20px;
+        margin:16px 0 24px 0;
+        padding:8px 16px;
+    }
+
+
+/* =============================================================
+   Left Rail
+============================================================= */
+.rail-container {
+    padding:24px;
+    width:144px;
+    float:left;
+    overflow:hidden;
+}
+.rail {
+    position:fixed;
+}
+
+/* Project name */
+.project-name {
+    width:144px;
+}
+.project-name h1 {
+    color:#888;
+    font-size:11px;
+    font-weight:normal;
+    letter-spacing:1px;
+    line-height:16px;
+    text-transform:uppercase;
+    text-shadow:0 1px 0 #FFF;
+}
+.project-name .crate-h2 {
+    color:#70930f;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:-1px;
+    line-height:24px;
+    text-shadow:0 1px 0 #FFF;
+    text-rendering:optimizeLegibility;
+    margin-bottom:48px;
+}
+.project-name a:hover,
+.project-name a:focus,
+.project-name a:active {
+    text-decoration:none;
+}
+
+/* Project navigation */
+.project-nav {
+    font-size:12px;
+    line-height:16px;
+}
+.project-nav li {
+    list-style:none;
+    margin-left:-8px;
+    margin-right:-24px;
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.25);
+    -moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.25);
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.project-nav li:last-child {
+    border-bottom:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+}
+.project-nav li a {
+    color:#444;
+    font-weight:bold;
+    text-shadow:0 1px 0 #FFF;
+    text-decoration:none;
+    border-bottom:1px solid rgba(204, 204, 204, 0.25);
+    padding:8px 16px 7px 8px;
+    display:block;
+}
+.project-nav li a[href*="."] {
+    text-transform:lowercase;
+}
+.project-nav li:last-child a {
+    border-bottom:0 none;
+    padding-bottom:8px;
+}
+.project-nav li.selected {
+    -webkit-box-shadow:0 1px 0 rgba(221, 221, 221, 0.25);
+    -moz-box-shadow:0 1px 0 rgba(221, 221, 221, 0.25);
+    box-shadow:0 1px 0 rgba(221, 221, 221, 0.25);
+}
+.project-nav li.selected a {
+    margin-right:-1px;
+    margin-left:-4px;
+    border-left:4px solid #90b32f;
+    border-bottom:1px solid #DCE0D9;
+    padding-bottom:7px;
+    background:#FFF;
+}
+.project-nav li.selected a:hover {
+    color:#444;
+}
+
+/* Project meta */
+.project-meta {
+    color:#666;
+    font-size:11px;
+    line-height:16px;
+    text-shadow:0 1px 0 #FFF;
+    margin-top:4em;
+}
+.project-meta dt {
+    font-weight:bold;
+    margin:8px 0 0 0;
+}
+
+/* Hallmark */
+a.hallmark {
+    text-indent:-999em;
+    background:url(/_crate/i/hallmark.png) no-repeat 0 0;
+    width:88px;
+    height:72px;
+    position:absolute;
+    position:fixed;
+    bottom:24px;
+    left:24px;
+    display:block;
+    opacity:0.85;
+}
+a.hallmark:hover {
+    opacity:1;
+}
+
+
+/* =============================================================
+   Page
+============================================================= */
+.page {
+    background-color:#FFF;
+    padding:0 32px 32px 32px;
+    position:relative;
+    overflow:hidden;
+}
+.crate-h1 {
+    color:#fff;
+    font-size:32px;
+    font-weight:500;
+    line-height:1;
+    background-color:#7f837a;
+    margin:0 -32px 40px -32px;
+    padding:56px 32px 15px 32px;
+}
+.page .crate-h2 {
+    color:#792c5c;
+    font-size:20px;
+    line-height:24px;
+    font-weight:bold;
+    border-bottom:1px solid #f0f0ec;
+    margin:32px 0 8px 0;
+    padding-bottom:7px;
+}
+.page .crate-h3 {
+    font-size:14px;
+    font-weight:bold;
+    line-height:20px;
+    margin:8px 0;
+}
+.page li {
+    margin:0 0 0 20px;
+    list-style-type:square;
+}
+
+
+/* =============================================================
+   Layouts
+============================================================= */
+.section {
+    margin-bottom:32px;
+    overflow:hidden;
+    }
+    .section.divide {
+        border-top:1px solid #DCE0D9;
+        padding-top:7px;
+    }
+.section .half {
+    padding-right:3%;
+    width:47%;
+    float:left;
+    clear:left;
+    }
+    .section .half:nth-child(2n) {
+        width:50%;
+        padding-right:0;
+        clear:none;
+    }
+.section .third {
+    padding-right:3%;
+    width:30.333%;
+    float:left;
+    }
+    .section .two-thirds {
+        padding-right:3%;
+        width:63.666%;
+        float:left;
+    }
+    .section .third:nth-child(3n) {
+        padding-right:0;
+        width:33.333%;
+    }
+
+
+/* =============================================================
+   Helper styles
+============================================================= */
+
+/* Meta */
+.meta {
+    color:#888;
+    font-size:11px;
+    line-height:16px;
+    }
+    .meta strong {
+        font-weight:bold;
+    }
+
+/* vCard */
+.vcard {
+    margin-bottom:16px;
+}
+.vcard p,
+.vcard .crate-h3 {
+    margin:0;
+}
+.vcard a.email {
+    color:#888;
+    font-size:12px;
+    font-weight:normal;
+    line-height:16px;
+}
+.vcard img.photo {
+    float:left;
+    margin-right:8px;
+}
+
+/* Icons */
+.crate-icon {
+    background:url("/_crate/i/icon-sprite.png") no-repeat 0 0;
+    padding-left:32px;
+    min-height:32px;
+}
+a.crate-icon {
+    background-position:0 4px;
+}
+a.crate-icon[href$=".txt"] {
+    background-position:0 -60px;
+}
+a.crate-icon[href$=".doc"],
+a.crate-icon[href$=".docx"],
+a.crate-icon[href$=".pages"] {
+    background-position:0 -124px;
+}
+a.crate-icon[href$=".xls"],
+a.crate-icon[href$=".xlsx"],
+a.crate-icon[href$=".numbers"] {
+    background-position:0 -188px;
+}
+a.crate-icon[href$=".ppt"],
+a.crate-icon[href$=".pptx"],
+a.crate-icon[href$=".key"] {
+    background-position:0 -252px;
+}
+a.crate-icon[href$=".png"],
+a.crate-icon[href$=".jpg"] {
+    background-position:0 -316px;
+}
+a.crate-icon[href$=".graffle"] {
+    background-position:0 -380px;
+}
+a.crate-icon[href$=".oo3"] {
+    background-position:0 -444px;
+}
+a.crate-icon[href$=".pdf"] {
+    background-position:0 -508px;
+}
+a.crate-icon[href$=".html"],
+a.crate-icon[href$=".php"] {
+    background-position:0 -572px;
+}
+.icon.tel {
+    background-position:0 -700px;
+    padding-left:40px;
+}
+.icon.basecamp {
+    background-position:0 -764px;
+    padding-left:40px;
+}
+
+/* File List */
+ul.files li {
+    list-style:none;
+    margin-bottom:0.5714em; /* 8px */
+}
+ul.files a.crate-icon {
+    font-weight:bold;
+    display:inline-block;
+}
+ul.files a.file span.meta {
+    color:#888;
+    font-weight:normal;
+    display:block;
+}
+ul.files a.file:hover {
+    text-decoration:none;
+}
+
+/* Page List */
+ul.pages li {
+    margin:0 0 4px 0;
+    list-style:none;
+}
+ul.pages li a {
+    font-weight:bold;
+    line-height:16px;
+    background:url("/_crate/i/icon-sprite.png") no-repeat 0 -640px;
+    padding-left:18px;
+}

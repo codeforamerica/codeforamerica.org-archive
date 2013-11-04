@@ -1,0 +1,52 @@
+/* @group Primer */
+
+.pattern {
+    clear: both;
+    float: left;
+    margin: 0.5em 0;
+    width: 100%;
+}
+
+.primer {
+    background-color: $color-light-grey;
+    padding: 0.2em 1% 0.3em;
+    float: left;
+    margin-bottom: 1em;
+    width: 98%;
+    }
+
+.primer .code {
+    border: 1px solid #333;
+    float: left;
+    width: 75%;
+    margin: 0.5em 0 0.5em 0;
+    }
+
+.primer .caption {
+    float: right;
+    width: 23%;
+    margin: 0.5em 0;
+    }
+
+.primer .name:hover {
+    cursor: pointer;
+    }
+
+.preview {
+    clear: both;
+    }
+
+/* @end Primer */
+
+/* @group list-swatches */
+
+.swatch {
+    border: 5px solid #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    display: block;
+    height: 60px;
+    width: 60px;
+    }
+
+/* @end list-swatches */
+
