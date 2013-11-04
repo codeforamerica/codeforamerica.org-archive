@@ -41,7 +41,6 @@ a:hover,
 a:focus,
 a:active {
     color:#39e;
-    text-decoration:underline;
 }
 a[href^="tel:"] {
     color:#666;
@@ -50,10 +49,7 @@ a[href^="tel:"] {
         text-decoration:none;
         cursor:default;
     }
-*:link, *:visited, *:hover, *:active, *:focus {
-    -webkit-transition:color .25s linear, background-color .25s linear, opacity .25s linear;
-    transition:color .25s linear, background-color .25s linear, opacity .25s linear;
-}
+
 
 code {
     color:#069;
@@ -226,10 +222,6 @@ a.hallmark:hover {
     font-weight:bold;
     line-height:20px;
     margin:8px 0;
-}
-.page li {
-    margin:0 0 0 20px;
-    list-style-type:square;
 }
 
 

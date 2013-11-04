@@ -8,29 +8,24 @@
 <h2 class="crate-h2">Styleguide</h2>
 
 
-    <select onchange="document.location='#'+this.options[this.selectedIndex].value" class="select-pattern input pull-right">
-            
-            <?php
-            
-            $files = array();
-            $handle=opendir('../_patterns');
-            $pattern = str_replace('.html', '', $file);
-            sort($files);
-            
-            while (false !== ($file = readdir($handle))):
-                if(stristr($file,'.html')):
-                    $files[] = $file;
-                endif;
-            endwhile;
-    
-            foreach ($files as $file):
-                //if ($file != 'head.html' && $file != 'foot.html' && $file != 'site-footer.html' && $file != 'site-header.html'): // exclude these files
-                    echo '<option>'.str_replace('.html', '', $file).'</option>';
-                // endif;
-            endforeach;
-           
-          ?>
-          
+    <select onchange="document.location='#'+this.options[this.selectedIndex].value" class="nav-section-select">
+        <option selected="selected" disabled="">Skip to…</option>
+        <?php
+        $files = array();
+        $handle=opendir('../_patterns');
+        $pattern = str_replace('.html', '', $file);
+        sort($files);
+        while (false !== ($file = readdir($handle))):
+            if(stristr($file,'.html')):
+                $files[] = $file;
+            endif;
+        endwhile;
+        foreach ($files as $file):
+            //if ($file != 'head.html' && $file != 'foot.html' && $file != 'site-footer.html' && $file != 'site-header.html'): // exclude these files
+                echo '<option>'.str_replace('.html', '', $file).'</option>';
+            // endif;
+        endforeach;
+      ?>
     </select>
     
 

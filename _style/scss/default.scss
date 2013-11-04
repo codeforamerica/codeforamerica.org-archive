@@ -26,6 +26,31 @@ dl {
     margin: 1em 0;
     }
 
+ol {
+    margin: 0.5em 0 0.5em 1.4em;
+    }
+
+ul {
+    margin: 0.5em 0 0.5em 1.25em;
+    }
+
+ol li {
+    list-style-type: decimal;
+    }
+
+ul li {
+    list-style-type: square;
+    }
+
 strong {
     font-weight: bold;
     }
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    color: $color-corporate-blue;
+    text-decoration: none;
+}
