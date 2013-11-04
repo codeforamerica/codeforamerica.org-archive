@@ -63,8 +63,29 @@
 
 .swatch {
     float: left;
+    width: 100%;
+    }
+
+@media (min-width: 30em) {
+.swatch {
+    float: left;
+    width: 50%;
+    }
+}
+
+@media (min-width: 40em) {
+.swatch {
+    float: left;
+    width: 33%;
+    }
+}
+
+@media (min-width: 60em) {
+.swatch {
+    float: left;
     width: 25%;
     }
+}
 
 .swatch-preview {
     border: 5px solid #fff;
@@ -73,11 +94,12 @@
     float: left;
     height: 60px;
     width: 60px;
+    margin: 0 0.8em 0.8em 0;
     }
 
 .swatch-details {
     float: left;
-    margin: 0 1em 0 0.8em;
+    margin: 0 1em 0 0;
     font-size: 0.8em;
     }
 
