@@ -34,7 +34,6 @@ a,
 a:link,
 a:visited {
     color:#17B;
-    font-weight:bold;
     text-decoration:none;
 }
 a:hover,
@@ -71,12 +70,21 @@ code {
 ============================================================= */
 .rail-container {
     padding:24px;
-    width:144px;
-    float:left;
     overflow:hidden;
 }
+
+@media (min-width: 60em) {
+    .rail-container {
+        width:13%;
+        float:left;
+    }
+}
+
+@media (min-width: 60em) {
 .rail {
     position:fixed;
+    width: 17.5%;
+}
 }
 
 /* Project name */
@@ -154,6 +162,7 @@ code {
     border-bottom:1px solid #DCE0D9;
     padding-bottom:7px;
     background:#FFF;
+    width: 100%;
 }
 .project-nav li.selected a:hover {
     color:#444;
@@ -173,6 +182,8 @@ code {
 }
 
 /* Hallmark */
+
+
 a.hallmark {
     text-indent:-999em;
     background:url(/_crate/i/hallmark.png) no-repeat 0 0;
@@ -182,9 +193,16 @@ a.hallmark {
     position:fixed;
     bottom:24px;
     left:24px;
-    display:block;
+    display:none;
     opacity:0.85;
 }
+
+@media (min-width: 60em) {
+    a.hallmark {
+        display: block;
+    }
+}
+
 a.hallmark:hover {
     opacity:1;
 }
@@ -194,11 +212,20 @@ a.hallmark:hover {
    Page
 ============================================================= */
 .page {
-    background-color:#FFF;
-    padding:0 32px 32px 32px;
-    position:relative;
-    overflow:hidden;
+    background-color: #FFF;
+    padding: 0 32px 32px 32px;
+    position: relative;
+    clear: both;
 }
+@media (min-width: 60em) {
+.page {
+    overflow: visible;
+    width: 75%;
+    float: right;
+    clear: none;
+}
+}
+
 .crate-h1 {
     color:#fff;
     font-size:32px;
@@ -278,20 +305,20 @@ a.hallmark:hover {
     }
 
 /* vCard */
-.vcard {
+.crate.vcard {
     margin-bottom:16px;
 }
-.vcard p,
-.vcard .crate-h3 {
+.crate.vcard p,
+.crate.vcard .crate-h3 {
     margin:0;
 }
-.vcard a.email {
+.crate.vcard a.email {
     color:#888;
     font-size:12px;
     font-weight:normal;
     line-height:16px;
 }
-.vcard img.photo {
+.crate.vcard img.photo {
     float:left;
     margin-right:8px;
 }

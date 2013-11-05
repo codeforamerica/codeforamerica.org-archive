@@ -1,5 +1,20 @@
+@mixin background-color($color, $opacity: 0.3) {
+    background: $color; /* fallback */
+    background: rgba($color, $opacity);
+    }
+
+@mixin color($color, $opacity: 0.3) {
+    color: $color; /* fallback */
+    color: rgba($color, $opacity);
+    }
+
+@mixin border-color($color, $opacity: 0.3) {
+    border-color: $color; /* fallback */
+    border-color: rgba($color, $opacity);
+    }
+
 /* Primary Colors */
-$color-corporate-red: #CF1B41;
+$color-corporate-red: #CF1B41;    
 $color-corporate-blue: #399FD3;
 $color-corporate-gray: #6D6E71;
 $color-corporate-black: #000;
@@ -15,3 +30,4 @@ $color-purple: #69579C;
 $color-teal: #00A175;
 $color-medium-blue: #4298BB;
 $color-yellow: #FEDD44;
+
