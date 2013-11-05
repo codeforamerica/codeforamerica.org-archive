@@ -332,3 +332,26 @@
 .blurb em {
     @include color($color-corporate-red, 1);
 }
+
+.icon {
+    background-repeat: no-repeat;
+}
+
+.cfa-tag {
+    background-image: url('/images/tag-black.png');
+    text-indent: -99999px;
+    display: block;
+    background-size: 90px;
+}
+
+.cfa-tag-red {
+    background-image: url('/images/tag-red.png');
+}
+
+.cfa-tag-blue {
+    background-image: url('/images/tag-blue.png');
+}
+
+.cfa-tag-grey {
+    background-image: url('/images/tag-grey.png');
+}
