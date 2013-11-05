@@ -52,11 +52,92 @@ a:visited,
 a:hover,
 a:focus,
 a:active {
-    color: $color-corporate-blue;
+    @include color($color-corporate-blue, 1);
     text-decoration: none;
-}
+    }
+
+a:hover,
+a:focus,
+a:active {
+    @include color($color-corporate-blue, 0.7);
+    }
+
+button,
+input[type="button"],
+input[type="submit"],
+.button:link,
+.button:visited,
+.button:hover,
+.button:focus,
+.button:active {
+    display: inline-block;
+    padding: 0.5em 1em;
+    @include background-color($color-corporate-blue, 1);
+    color: white;
+    border-radius: 0.2em;
+    box-shadow: 4px 4px 0 $color-dark-blue;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    border: none;
+    margin: 0 1em 1em 0;
+    font-weight: bold;
+    }
+
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.button:hover,
+.button:focus {
+    @include background-color($color-corporate-blue, 0.8);
+    cursor: pointer;
+    }
+
+.button:active {
+    box-shadow: 0 0 0 $color-dark-blue;
+    margin-top: 4px;
+    margin-left: 4px;
+    }
 
 code,
 .code {
     font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+    }
+
+textarea,
+input {
+    border-width: 1px;
+    border-style: solid;
+    @include border-color($color-medium-grey, 0.5);
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    }
+
+input {
+    margin: 0 0.5em 0 0;
+    padding: 0.48em 0.8em;
+    }
+
+label {
+    margin-right: 0.5em;
+    text-transform: uppercase;
+    @include color($color-medium-grey, 0.8);
+    }
+
+textarea:focus,
+input:focus {
+    @include border-color($color-dark-blue, 1);
+    outline: 0;
+    }
+
+abbr[title="required"],
+abbr[title="Required"] {
+    @include color($color-corporate-red, 0.8);
+    }
+
+textarea {
+    max-width: 98%;
+    padding: 0.5em 1%;
     }
