@@ -205,6 +205,7 @@
     color: white;
     padding: 1em 2em;
     font-size: 1.2em;
+    font-weight: bold;
     position: relative;
     border-radius: 0.5em;
     }
@@ -233,12 +234,14 @@
     border-style: inset;
     top: 2em;
     margin-bottom: 1em;
+    margin-top: 1em;
     }
 
 @media (min-width: 60em) {
 .highlight-avatar {
     position: absolute;
     left: -60px;
+    margin-top: 0;
     }
 }
 
@@ -283,3 +286,49 @@
     }
 
 /* @end profile: medium */
+
+.stat {
+    position: relative;
+    padding-bottom: 2em;
+    width: 7em;
+    text-align: center;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.stat-heading {
+    border-bottom: 1px solid;
+    @include border-color($color-medium-grey, 0.3);
+    @include color($color-medium-grey, 0.7);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    font-size: 0.9em;
+}
+
+.stat-figure {
+    font-size: 3em;
+    @include color($color-corporate-black, 1);
+    font-family: georgia;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.blurb {
+    text-transform: uppercase;
+    @include color($color-dark-grey, 1);
+    border-bottom: 1px solid #333;
+    @include border-color($color-light-grey, 1);
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.blurb em {
+    @include color($color-corporate-red, 1);
+}

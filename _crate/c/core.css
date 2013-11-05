@@ -216,6 +216,7 @@ a.hallmark:hover {
     padding: 0 32px 32px 32px;
     position: relative;
     clear: both;
+    overflow: hidden;
 }
 @media (min-width: 60em) {
 .page {
