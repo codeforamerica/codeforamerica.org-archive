@@ -1,3 +1,4 @@
+<?php echo $_SERVER['DOCUMENT_ROOT']; ?>
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php');
 
