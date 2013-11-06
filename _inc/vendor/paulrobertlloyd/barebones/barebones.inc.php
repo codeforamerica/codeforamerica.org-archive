@@ -1,5 +1,5 @@
 <?php 
-echo 'wtf?';
+
 // Config options
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
 $styleguidePath = '/';
