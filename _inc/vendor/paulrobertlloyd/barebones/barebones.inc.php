@@ -139,7 +139,7 @@ function displayOptions($dir) {
 function displayList($dir) {
     global $patternsPath;
     global $styleguidePath;
-
+echo 'wtf?';
     $ffs = scandir($dir);
 
     foreach($ffs as $ff) {
