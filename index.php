@@ -33,7 +33,7 @@
         <img src="images/logo-coloured.png" />
     </a>
     <ol class="xx-nav" role="navigation">
-        <?php /* displayList($patternsPath); */ ?>
+        <?php displayList($patternsPath); ?>
     </ol>
     <a class="xx-hallmark" href="http://clearleft.com/" title="Crafted by Clearleft in Brighton">Crafted by Clearleft in Brighton, UK</a>
  </div>
