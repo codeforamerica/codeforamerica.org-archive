@@ -1,4 +1,4 @@
-<?
+<?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php');
 
     // Build out URI to reload from form dropdown
@@ -24,9 +24,9 @@
 
 <body class="xx">
 
-<? if(isset($_GET["url"])) : ?>
-<?  include($patternsPath.$_GET["url"]) ?>
-<? else : ?>
+<?php if(isset($_GET["url"])) : ?>
+<?php  include($patternsPath.$_GET["url"]) ?>
+<?php else : ?>
 
 <div class="xx-sidebar">
     <a class="xx-cfa-logo" href="/">
@@ -46,7 +46,7 @@
     <form action="" method="post" id="pattern">
         <select name="section" id="pattern-select" class="nav-section-select">
             <option value="">Jump to&#8230;</option>
-            <? displayOptions($patternsPath); ?>
+            <?php displayOptions($patternsPath); ?>
         </select>
         <input type="hidden" name="uri" value="<?= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>">
         <button type="submit" id="pattern-submit">Go</button>
@@ -192,9 +192,9 @@
             </li>
         </ul>
         
-        <? displayPatterns($patternsPath); ?>
+        <?php displayPatterns($patternsPath); ?>
     </main><!--@main-->
-    <? endif ?>
+    <?php endif; ?>
 
 </div>
 </body>

@@ -1,21 +1,45 @@
 @font-face {
     font-family: 'Open Sans Regular';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+    src: url('../fonts/opensans/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/opensans/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Open Sans Extra Bold';
+    src: url('../fonts/opensans/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans/opensans-extrabold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
 
 $font-regular: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial"!important;
 
+$font-bold: "Open Sans Bold", "Helvetica", "Arial"!important;
+
+$font-extrabold: "Open Sans Extra Bold", "Helvetica", "Arial"!important;
+
 body {
     font-family: $font-regular;
     }
 
 h1 {
-    font-family: $font-regular;
+    font-family: $font-bold;
     font-weight: bold;
     }
 
