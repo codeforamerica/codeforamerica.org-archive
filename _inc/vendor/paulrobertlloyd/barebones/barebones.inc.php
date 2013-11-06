@@ -137,7 +137,7 @@ function displayOptions($dir) {
 
 
 function displayList($dir) {
-echo 'wtf?';
+
     global $patternsPath;
     global $styleguidePath;
 
