@@ -1,3 +1,0 @@
-* Allow directory navigation to be sortable
-* Allow configuration of project contacts
-* Integrate code highlighter 

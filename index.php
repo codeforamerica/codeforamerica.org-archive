@@ -1,42 +1,217 @@
-<?php
-    $crate_dir = str_replace($_SERVER['SCRIPT_NAME'], '/', $_SERVER['SCRIPT_FILENAME']) . "_crate/";
-    require($crate_dir . "core.php");
-    include($crate_dir . "inc/header.php");
-?>
-<h1 class="crate-h1"><?php echo $config['PROJECT_NAME']; ?></h1>
-<h2 class="crate-h2">Project Contacts</h2>
-<div class="section">
-    <div class="half crate vcard">
-        <img class="photo" src="_crate/inc/avatar-jeremy-keith.jpg" alt="" width="64" height="64"/>
-        <h3 class="crate-h3"><a class="fn url" href="http://clearleft.com/is/jeremy-keith/">Jeremy Keith</a> &#8212; <span class="role">Front-end Development</span></h3>
-        <p><a class="email" href="mailto:jeremy@clearleft.com">jeremy@clearleft.com</a></p>
-    </div>
-    <div class="half crate vcard">
-        <img class="photo" src="_crate/inc/avatar-jon-aizlewood.jpg" alt="" width="64" height="64"/>
-        <h3 class="crate-h3"><a class="fn url" href="http://clearleft.com/is/jeremy-keith/">Jon Aizlewood</a> &#8212; <span class="role">Design</span></h3>
-        <p><a class="email" href="mailto:jon@clearleft.com">jon@clearleft.com</a></p>
-    </div>
-    <div class="half crate vcard">
-        <img class="photo" src="_crate/inc/avatar-anna-debenham.jpg" alt="" width="64" height="64"/>
-        <h3 class="crate-h3"><a class="fn url" href="http://clearleft.com/is/jeremy-keith/">Anna Debenham</a> &#8212; <span class="role">Front-end Development</span></h3>
-        <p><a class="email" href="mailto:anna@clearleft.com">anna@clearleft.com</a></p>
-    </div>
-    <div class="half crate vcard">
-        <img class="photo" src="_crate/inc/avatar-jessica-jebari.jpg" alt="" width="64" height="64"/>
-        <h3 class="crate-h3"><a class="fn url" href="http://clearleft.com/is/jessica-jebari/">Jessica Jebari</a> &#8212; <span class="role">Project Manager</span></h3>
-        <p><a class="email" href="mailto:jessica@clearleft.com">jessica@clearleft.com</a></p>
-    </div>
-</div>
+<?
+    include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php');
 
-<div class="section divide">
-    <div class="half">
-        <p><?php if ($config['ISSUES_URL'] != null) { ?> Bugs and implementation issues can be reported on <a href="<?php echo $config['ISSUES_URL']; ?>">GitHub</a>.<?php } ?></p>
-    </div>
-    <div class="half">
-        <p class="crate-icon tel">You can always give us a call on <strong><a href="tel:+448458386163">+44 (0)845 8386163</a></strong></p>
-    </div>
-</div>
-
-<?php
-    include($crate_dir . 'inc/footer.php');
+    // Build out URI to reload from form dropdown
+    $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+    
+    if (isset($_POST['uri']) && isset($_POST['section'])) {
+        $pageURL .= $_POST[uri].$_POST[section];
+        header("Location: $pageURL");
+    }
 ?>
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <title>Code for America Website Style Guide</title>
+    <link rel="stylesheet" href="style/css/main.css">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+<body class="xx">
+
+<? if(isset($_GET["url"])) : ?>
+<?  include($patternsPath.$_GET["url"]) ?>
+<? else : ?>
+
+<div class="xx-sidebar">
+    <a class="xx-cfa-logo" href="/">
+        <img src="images/logo-coloured.png" />
+    </a>
+    <ol class="xx-nav" role="navigation">
+        <? displayList($patternsPath); ?>
+    </ol>
+    <a class="xx-hallmark" href="http://clearleft.com/" title="Crafted by Clearleft in Brighton">Crafted by Clearleft in Brighton, UK</a>
+ </div>
+
+
+<div class="xx-container">
+    
+    <h1>Website Style Guide</h1>
+
+    <form action="" method="post" id="pattern">
+        <select name="section" id="pattern-select" class="nav-section-select">
+            <option value="">Jump to&#8230;</option>
+            <? displayOptions($patternsPath); ?>
+        </select>
+        <input type="hidden" name="uri" value="<?= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>">
+        <button type="submit" id="pattern-submit">Go</button>
+    </form>
+
+    <main role="main">
+        
+        <h2>Primary Colors</h2>
+        
+        <p>For a background color: @include background-color($color-corporate-red, 0.1);</p>
+        
+        <p>For a foreground color: @include color($color-corporate-red, 0.1);</p>
+        
+        <ul class="list-no-bullets">
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #cf1b41;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Corporate Red</strong></li>
+                    <li>rgb(204,39,62)</li>
+                    <li>#cf1b41</li>
+                    <li>$color-corporate-red</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #399fd3;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Corporate Blue</strong></li>
+                    <li>rgb(63,158,216)</li>
+                    <li>#399fd3</li>
+                    <li>$color-corporate-blue</li>
+                </ul>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #6D6E71;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Corporate Grey</strong></li>
+                    <li>rgb(109, 110, 113)</li>
+                    <li>#6D6E71</li>
+                    <li>$color-corporate-grey</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #000;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Corporate Black</strong></li>
+                    <li>rgb(0, 0, 0)</li>
+                    <li>#000000</li>
+                    <li>$color-corporate-black</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Secondary Colors</h2>
+        
+        <ul class="list-no-bullets">
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #2f3d4a;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Dark Blue</strong></li>
+                    <li>rgb(47, 61, 74)</li>
+                    <li>#2f3d4a</li>
+                    <li>$color-dark-blue</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #7ab5d6;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Light Blue</strong></li>
+                    <li>rgb(122,181,214)</li>
+                    <li>#7ab5d6</li>
+                    <li>$color-light-blue</li>
+                </ul>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #444444;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Dark Grey</strong></li>
+                    <li>rgb(68, 68, 68)</li>
+                    <li>#444444</li>
+                    <li>$color-dark-grey</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #999595;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Medium Grey</strong></li>
+                    <li>rgb(153, 149, 149)</li>
+                    <li>#999595</li>
+                    <li>$color-medium-grey</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #e5e5e5;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Light Grey</strong></li>
+                    <li>rgb(229, 229, 229)</li>
+                    <li>#e5e5e5</li>
+                    <li>$color-light-grey</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #e87d2b;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Orange</strong></li>
+                    <li>rgb(232, 125, 43)</li>
+                    <li>#e87d2b</li>
+                    <li>$color-orange</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #69579C;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Purple</strong></li>
+                    <li>rgb(105, 87, 156)</li>
+                    <li>#69579C</li>
+                    <li>$color-purple</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #00a175;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Teal</strong></li>
+                    <li>rgb(0, 161, 117)</li>
+                    <li>#00a175</li>
+                    <li>$color-teal</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #4298bb;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Medium Blue</strong></li>
+                    <li>rgb(66, 152, 187)</li>
+                    <li>#4298bb</li>
+                    <li>$color-medium-blue</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #fedd44;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>Yellow</strong></li>
+                    <li>rgb(254, 221, 68)</li>
+                    <li>#fedd44</li>
+                    <li>$color-yellow</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <? displayPatterns($patternsPath); ?>
+    </main><!--@main-->
+    <? endif ?>
+
+</div>
+</body>
+<script>
+    (function (document, undefined) {
+        // Add js class to body
+        document.getElementsByTagName('body')[0].className += ' js';
+
+        // Pattern selector
+        document.getElementById('pattern-submit').style.display = 'none';
+        document.getElementById('pattern-select').onchange = function() {
+            //document.location=this.options[this.selectedIndex].value;
+            var val = this.value;
+            if (val !== "") {
+                window.location = val;
+            }
+        }
+    })(document);
+</script>
+</html>

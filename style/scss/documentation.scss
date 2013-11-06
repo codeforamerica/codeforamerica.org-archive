@@ -1,0 +1,216 @@
+.xx {
+    padding: 0;
+    margin: 0;
+    }
+    
+.xx-sidebar {
+    @include background-color($color-light-grey, 0.5);
+    padding: 2em 0;
+    width:  100%;
+    }
+    
+@media (min-width: 40em) {
+.xx-sidebar {
+    
+    float: left;
+    width: 20%;
+    padding: 2em 0;
+    
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+    
+    }
+}
+
+.xx-sidebar .xx-nav {
+    padding: 0;
+    margin: 5em 0 1em;
+    display: none;
+    }
+
+@media (min-width: 40em) {
+    .xx-sidebar .xx-nav {
+    display: block;
+    }
+}
+
+.xx-sidebar .xx-nav li {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    }
+
+.xx-sidebar .xx-nav li a {
+    padding: 0.8em 5% 0.8em 15%;
+    display: block;
+    }
+
+.xx-sidebar .xx-nav li a:hover {
+    background-color: #fff;
+    color: #000;
+    }
+
+.xx-container {
+    width: 100%;
+    padding: 0 2%;
+    }
+
+@media (min-width: 40em) {
+.xx-container {
+    float: right;
+    width: 76%;
+    padding: 0 2%;
+    }
+}
+
+.xx-cfa-logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    background-color: #f1f1f1;
+    }
+
+@media (min-width: 40em) {
+    .xx-cfa-logo {
+    position: fixed;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    left: 0;
+    top: 0;
+    width: 20%;
+    margin: 0 auto 1em;
+    }
+}
+
+.xx-cfa-logo img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    }
+
+
+
+.xx-hallmark {
+    left: 0;
+    position: fixed;
+    font-size: 0.65em;
+    bottom: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+    padding: 1em 3%;
+    width: 14%;
+    display: none;
+    }
+
+@media (min-width: 40em) {
+    
+    .xx-hallmark {
+    display: block
+    }
+}
+
+.xx-hallmark:link,
+.xx-hallmark:visited,
+.xx-hallmark:hover,
+.xx-hallmark:focus,
+.xx-hallmark:active {
+    
+    @include color($color-dark-grey, 0.7);
+    
+    }
+
+.xx-hallmark:hover,
+.xx-hallmark:focus,
+.xx-hallmark:active {
+    @include color($color-dark-grey, 1);
+    }
+
+.xx-section {
+    clear: both;
+    padding-top: 1em;
+    }
+
+
+
+
+.pattern {
+    clear: both;
+    float: left;
+    margin: 0.5em 0 3em;
+    width: 100%;
+    }
+
+.pattern-details {
+    @include background-color($color-light-grey, 0.7);
+    padding: 0.2em 1% 0.3em;
+    margin-bottom: 1em;
+    width: 98%;
+    border-radius: 0.2em;
+    overflow: hidden;
+    display: block;
+    }
+
+.pattern-details:hover {
+    cursor: pointer;
+    }
+    
+.pattern .pattern-code {
+    border: 1px solid #ccc;
+    float: left;
+    width: 67.5%;
+    margin: 0.5em 0 0.5em 0;
+    font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+    font-size: 13px;
+    line-height: 1.2em;
+    padding: 0.5em;
+    }
+
+.pattern-usage {
+    float: right;
+    width: 30%;
+    margin: 0.5em 0;
+    font-size: 0.85em;
+    white-space: pre-line;
+    line-height: 1.4em;
+    }
+
+
+.pattern {
+    clear: both;
+    }
+
+.pattern-link {
+    float: right;
+    padding: 0 0 0 0.5em;
+    }
+
+
+
+
+.nav-section-select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background-color: $color-corporate-black;
+    color: white;
+    opacity: 0.5;
+    border-radius: 0;
+    display: inline-block;
+    padding: 0.8em 0.5em 0.5em 0.5em;
+    position: fixed;
+    right: 2%;
+    top: 0em;
+    width: 150px;
+    z-index: 100;
+    margin: 0;
+    border: none;
+    font-size: 0.85em;
+    transition: 0.2s;
+    border-radius: 0 0 0.3em 0.3em; 
+    }
+
+.nav-section-select:hover {
+    cursor: pointer;
+    padding-top: 1.2em;
+    }
