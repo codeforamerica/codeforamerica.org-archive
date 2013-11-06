@@ -138,6 +138,19 @@
 
 /* @end list-no-bullets */
 
+
+.list-form {
+    margin-left: 0;
+    float: left;
+    width: 100%;
+    }
+
+.list-form .form-field {
+    list-style-type: none;
+    margin-bottom: 1em;
+    }
+
+
 .list-inline {
     margin-left: 0;
     }
@@ -155,6 +168,10 @@
 .list-inline li a {
     padding: 0 0.5em 0 0;
     }
+
+.list-gappy li {
+    margin-bottom: 1em;
+}
 
 /* @group buttons */
 
@@ -338,20 +355,27 @@
 }
 
 .cfa-tag {
-    background-image: url('/images/tag-black.png');
+    background-image: url('/_images/tag-black.png');
     text-indent: -99999px;
     display: block;
     background-size: 90px;
 }
 
 .cfa-tag-red {
-    background-image: url('/images/tag-red.png');
+    background-image: url('/_images/tag-red.png');
 }
 
 .cfa-tag-blue {
-    background-image: url('/images/tag-blue.png');
+    background-image: url('/_images/tag-blue.png');
 }
 
 .cfa-tag-grey {
-    background-image: url('/images/tag-grey.png');
+    background-image: url('/_images/tag-grey.png');
+}
+
+.spotlight {
+    @include background-color($color-light-grey, 0.5);
+    float: left;
+    width: 96%;
+    padding: 1em 2%;
 }
