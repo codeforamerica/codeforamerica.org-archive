@@ -159,10 +159,6 @@ function displayList($dir) {
                     echo "    <li><a href=\"#".$fName."\">".$fName."</a></li>\n";
                 }
             }
-
-            //if(is_dir($dir.'/'.$ff)) {
-                //displayList($dir.'/'.$ff);
-            //}
             
             if(is_dir($dir.'/'.$ff)) { // If main section
                 if ($fName == 'elements' || $fName == 'partials') {
