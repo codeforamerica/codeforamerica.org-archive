@@ -48,7 +48,7 @@
             <option value="">Jump to&#8230;</option>
             <?php displayOptions($patternsPath); ?>
         </select>
-        <input type="hidden" name="uri" value="<?= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" name="uri" value="<?php echo $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>">
         <button type="submit" id="pattern-submit">Go</button>
     </form>
 
