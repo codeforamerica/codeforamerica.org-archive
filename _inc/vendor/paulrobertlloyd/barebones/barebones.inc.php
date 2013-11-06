@@ -1,5 +1,5 @@
 <?php
-print_r($_SERVER);
+
 // Config options
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
 $styleguidePath = '/';
