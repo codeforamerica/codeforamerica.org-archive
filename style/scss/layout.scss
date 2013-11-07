@@ -1,0 +1,111 @@
+/*!
+ * Gridpak Beta CSS
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+/* Reusable column setup */
+.layout-col {
+    border: 0px solid rgba(0,0,0,0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    }
+
+    /* 1. 9 Column Grid 0px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1: 9.33333333333%
+    Span 2: 20.6666666667%
+    Span 3: 32.0%
+    Span 4: 43.3333333333%
+    Span 5: 54.6666666667%
+    Span 6: 66.0%
+    Span 7: 77.3333333333%
+    Span 8: 88.6666666667%
+    Span 9: 100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width:  0px) {
+        
+    .layout-col {
+        margin-left: 2%;
+    	/*padding: 0 1.5%;*/
+        }
+    
+    .layout-row .layout-col:first-child {
+        margin-left: 0;
+        }
+    
+    .layout-colspan-1 {
+        width: 9.33333333333%;
+        }
+    
+    .layout-colspan-2 {
+        width: 20.6666666667%;
+        }
+    
+    .layout-colspan-3 {
+        width: 32.0%;
+        }
+    
+    .layout-colspan-4 {
+        width: 43.3333333333%;
+        }
+    
+    .layout-colspan-5 {
+        width: 54.6666666667%;
+        }
+    
+    .layout-colspan-6 {
+        width: 66.0%;
+        }
+    
+    .layout-colspan-7 {
+        width: 77.3333333333%;
+        }
+    
+    .layout-colspan-8 {
+        width: 88.6666666667%;
+        }
+    
+    .layout-colspan-9 {
+        margin-left: 0;
+        width: 100%;
+        }
+    
+    }
+
+
+.layout-grid .layout-colspan-3:first-of-type,
+.layout-grid .layout-colspan-3:nth-of-type(3n+4) {
+    margin-left: 0;
+    clear: both;
+    }
+
+
+[class^="layout-list-col"] {
+    margin: 0;
+    padding: 0;
+    }
+
+.layout-list-col-2 {
+    -webkit-columns: 2;
+    }
+
+.layout-list-col-3 {
+    -webkit-columns: 3;
+    }
+
+.layout-list-col-4 {
+    -webkit-columns: 4;
+    }
+
+.layout-list-col-5 {
+    -webkit-columns: 5;
+    }
