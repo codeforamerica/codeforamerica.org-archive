@@ -378,7 +378,6 @@ input.button-unstyled,
     float: left;
     width: 32%;
     margin-right: 2%;
-    
 }
 
 .list-seals li:nth-child(3n+3) {
@@ -392,4 +391,25 @@ input.button-unstyled,
 .list-seals .seal {
     padding-left: 2%;
     padding-right: 2%;
+}
+
+[class^="layout-list-col"] {
+    margin: 0;
+    padding: 0;
+}
+
+.layout-list-col-2 {
+    -webkit-columns: 2;
+}
+
+.layout-list-col-3 {
+    -webkit-columns: 3;
+}
+
+.layout-list-col-4 {
+    -webkit-columns: 4;
+}
+
+.layout-list-col-5 {
+    -webkit-columns: 5;
 }
