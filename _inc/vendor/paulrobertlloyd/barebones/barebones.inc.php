@@ -3,7 +3,7 @@
 // Config options
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
 $styleguidePath = '/';
-$patternsPath = $rootPath.'patterns/';
+$patternsPath = $rootPath.'/patterns/';
 $cssPath = $rootPath.'style/';
 
 
