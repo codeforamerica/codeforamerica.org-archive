@@ -1,5 +1,5 @@
 <?php
-    include_once($_SERVER['DOCUMENT_ROOT'].'/_inc/functions.php');
+    include_once('_inc/functions.php');
 
     // Build out URI to reload from form dropdown
     $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";

@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 // Config options
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
 $styleguidePath = '/';
-$patternsPath = $rootPath.'/patterns/';
+$patternsPath = $rootPath.'patterns/';
 $cssPath = $rootPath.'style/';
 
 
@@ -137,6 +137,7 @@ function displayOptions($dir) {
 
 
 function displayList($dir) {
+
     global $patternsPath;
     global $styleguidePath;
 
