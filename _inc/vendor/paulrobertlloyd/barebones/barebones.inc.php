@@ -2,6 +2,11 @@
 
 // Config options
 $rootPath = $_SERVER['DOCUMENT_ROOT'];
+// Forgive this horrible hack: the Clearleft server seems to be reporting inaccurately.
+if ($rootPath == '/home/clearleft/') {
+    $rootPath.= 'subdomains/codeforamerica/';
+}
+
 $styleguidePath = '/';
 $patternsPath = $rootPath.'/patterns/';
 $cssPath = $rootPath.'style/';
