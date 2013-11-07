@@ -108,31 +108,53 @@ input[type="submit"],
     @include background-color($color-corporate-blue, 1);
     color: white;
     border-radius: 0.2em;
-    box-shadow: 4px 4px 0 $color-dark-blue;
     text-decoration: none;
     text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
     border: none;
     margin: 0 1em 1em 0;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.4em;
+    font-family: $font-regular;
     }
 
 button:hover,
 button:focus,
+.button:hover,
+.button:focus,
 input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
-input[type="submit"]:focus,
-.button:hover,
-.button:focus {
+input[type="submit"]:focus
+ {
     @include background-color($color-corporate-blue, 0.8);
     cursor: pointer;
     }
 
-.button:active {
-    box-shadow: 0 0 0 $color-dark-blue;
-    margin-top: 4px;
-    margin-left: 4px;
+button:active,
+.button:active,
+input[type="submit"]:active {
+    @include background-color($color-corporate-blue, 1);
     }
+
+
+input[disabled],
+input[disabled]:hover,
+input[disabled]:focus,
+input[disabled]:active,
+button[disabled],
+button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:active,
+.button.button-disabled,
+.button.button-disabled:hover,
+.button.button-disabled:focus,
+.button.button-disabled:active {
+    @include background-color($color-medium-grey, 0.8);
+    cursor: not-allowed;
+    }
+
+
 
 code,
 .code {
@@ -151,6 +173,8 @@ input {
 input {
     margin: 0 0.5em 0 0;
     padding: 0.48em 0.8em;
+    font-size: 1em;
+    line-height: 1.4em;
     }
 
 label {
@@ -168,6 +192,7 @@ input:focus {
 abbr[title="required"],
 abbr[title="Required"] {
     @include color($color-corporate-red, 0.8);
+    border-bottom: none;
     }
 
 textarea {
@@ -177,4 +202,8 @@ textarea {
 
 video {
     max-width: 100%;
+    }
+
+fieldset {
+    border: none;
     }

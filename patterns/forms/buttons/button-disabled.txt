@@ -1,0 +1,1 @@
+For form buttons, use the attribute "disabled". For links styled as buttons, use both the classes "button" and "button-disabled".

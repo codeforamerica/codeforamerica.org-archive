@@ -118,9 +118,8 @@
 
 /* @group buttons */
 
-
-
-
+.button-prominent,
+input.button-prominent,
 .button-prominent:link,
 .button-prominent:visited,
 .button-prominent:hover,
@@ -129,22 +128,25 @@
     @include background-color($color-corporate-red, 1);
     }
 
+input.button-prominent:hover,
+input.button-prominent:focus,
 .button-prominent:hover,
 .button-prominent:focus {
     @include background-color($color-corporate-red, 0.8);
     }
 
-
-
+.button-unstyled,
+input.button-unstyled,
 .button-unstyled:link,
 .button-unstyled:visited,
 .button-unstyled:hover,
 .button-unstyled:focus,
 .button-unstyled:active {
     background-color: transparent;
-    box-shadow: none;
     text-shadow: none;
     @include color($color-corporate-black, 0.6);
+    padding-left: 0.25em;
+    padding-right: 0.25em;
 }
 
 .button-unstyled:hover,
@@ -321,4 +323,73 @@
     float: left;
     width: 96%;
     padding: 1em 2%;
+}
+
+
+.seal {
+    text-align: center;
+    border: 1px solid;
+    @include border-color($color-light-grey, 1);
+    border-radius: 0.4em;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1.25em;
+}
+
+.seal:link,
+.seal:visited,
+.seal:hover,
+.seal:focus,
+.seal:active {
+    @include color($color-corporate-red, 1);
+    }
+
+.seal:hover,
+.seal:focus,
+.seal:active {
+    @include color($color-corporate-black, 1);
+    }
+
+.seal-label {
+    clear: both;
+    display: block;
+    
+}
+
+.seal-label:after {
+    content: " ›";
+    font-size: 1.25em;
+    vertical-align: bottom;
+}
+
+.seal-image {
+    width: 100px;
+    margin: 0 auto 0.5em;
+    display: block;
+}
+
+.list-seals {
+    margin: 0;
+    padding: 0;
+}
+
+.list-seals li {
+    list-style-type: none;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    
+}
+
+.list-seals li:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.list-seals li:nth-child(3n+4) {
+    clear: both;
+}
+
+.list-seals .seal {
+    padding-left: 2%;
+    padding-right: 2%;
 }
