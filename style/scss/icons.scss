@@ -1,0 +1,18 @@
+.icon {
+    background-repeat: no-repeat;
+    }
+
+.icon-red,
+.icon-red:link,
+.icon-red:visited,
+.icon-red:hover,
+.icon-red:focus,
+.icon-red:active {
+    @include color($color-corporate-red, 1);
+    font-family: $font-bold;
+    text-transform: uppercase;
+    }
+
+[class*="icon-social"] {
+    padding-left: 40px;
+    }

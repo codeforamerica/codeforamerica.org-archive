@@ -25,7 +25,7 @@
 
 .xx-sidebar .xx-nav {
     padding: 0;
-    margin: 5em 0 1em;
+    margin: 5em 0 5em;
     display: none;
     }
 
@@ -132,7 +132,53 @@
     }
 
 
+.swatch {
+    float: left;
+    width: 100%;
+    margin-bottom: 1em;
+    }
 
+@media (min-width: 40em) {
+.swatch {
+    width: 33%;
+    }
+}
+
+@media (min-width: 50em) {
+.swatch {
+    width: 25%;
+    }
+}
+
+@media (min-width: 60em) {
+.swatch {
+    width: 20%;
+    
+    }
+}
+
+.swatch-preview {
+    border: 5px solid #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    display: block;
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin: 0 0.8em 0.8em 0;
+    }
+
+.swatch-details {
+    float: left;
+    margin: 0 1em 0 0;
+    font-size: 0.8em;
+    clear: both;
+    }
+
+@media (min-width: 70em) {
+.swatch-details  {
+    clear: none;
+    }
+}
 
 .pattern {
     clear: both;
