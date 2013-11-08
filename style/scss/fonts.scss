@@ -28,11 +28,33 @@
     font-style: normal;
     }
 
-$font-regular: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial"!important;
+@font-face {
+    font-family: 'Sentinel Book';
+    src: url('../fonts/sentinel/sentinel-book.eot');
+    src: url('../fonts/sentinel/sentinel-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sentinel/sentinel-book.woff') format('woff'),
+         url('../fonts/sentinel/sentinel-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
-$font-bold: "Open Sans Bold", "Helvetica", "Arial"!important;
+@font-face {
+    font-family: 'Sentinel Bold';
+    src: url('../fonts/sentinel/sentinel-bold.eot');
+    src: url('../fonts/sentinel/sentinel-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sentinel/sentinel-bold.woff') format('woff'),
+         url('../fonts/sentinel/sentinel-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
-$font-extrabold: "Open Sans Extra Bold", "Helvetica", "Arial"!important;
+$font-regular: "Sentinel Book", "Georgia", Times, sans-serif;
+
+$font-sans-regular: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+
+$font-bold: "Open Sans Bold", "Helvetica", "Arial";
+
+$font-extrabold: "Open Sans Extra Bold", "Helvetica", "Arial";
 
 body {
     font-family: $font-regular;
