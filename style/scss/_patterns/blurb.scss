@@ -1,0 +1,12 @@
+.blurb {
+    text-transform: uppercase;
+    @include color($color-dark-grey, 1);
+    border-bottom: 1px solid #333;
+    @include border-color($color-light-grey, 1);
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+    }
+
+.blurb em {
+    @include color($color-corporate-red, 1);
+    }

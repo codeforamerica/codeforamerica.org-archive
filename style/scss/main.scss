@@ -1,6 +1,23 @@
+/* Default styles */
 @import 'fonts';
 @import 'colors';
 @import 'default';
 @import 'layout';
-@import 'patterns';
+@import 'icons';
+
+
+/* Patterns */
+@import '_patterns/blurb';
+@import '_patterns/button';
+@import '_patterns/flags';
+@import '_patterns/highlight';
+@import '_patterns/lists';
+@import '_patterns/profile';
+@import '_patterns/seal';
+@import '_patterns/spotlight';
+@import '_patterns/stat';
+@import '_patterns/teaser';
+
+
+/* Website documentation styles */
 @import 'documentation';

@@ -1,0 +1,6 @@
+.spotlight {
+    @include background-color($color-light-grey, 0.5);
+    float: left;
+    width: 96%;
+    padding: 1em 2%;
+    }

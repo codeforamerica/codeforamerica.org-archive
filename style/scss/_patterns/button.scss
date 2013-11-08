@@ -1,0 +1,36 @@
+.button-prominent,
+input.button-prominent,
+.button-prominent:link,
+.button-prominent:visited,
+.button-prominent:hover,
+.button-prominent:focus,
+.button-prominent:active {
+    @include background-color($color-corporate-red, 1);
+    }
+
+input.button-prominent:hover,
+input.button-prominent:focus,
+.button-prominent:hover,
+.button-prominent:focus {
+    @include background-color($color-corporate-red, 0.8);
+    }
+
+.button-unstyled,
+input.button-unstyled,
+.button-unstyled:link,
+.button-unstyled:visited,
+.button-unstyled:hover,
+.button-unstyled:focus,
+.button-unstyled:active {
+    @include color($color-corporate-black, 0.6);
+    background-color: transparent;
+    text-shadow: none;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    }
+
+.button-unstyled:hover,
+.button-unstyled:focus,
+.button-unstyled:active {
+    @include color($color-corporate-black, 1);
+    }

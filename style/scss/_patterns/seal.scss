@@ -1,0 +1,40 @@
+.seal {
+    text-align: center;
+    border: 1px solid;
+    @include border-color($color-light-grey, 1);
+    border-radius: 0.4em;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1.25em;
+    }
+
+.seal:link,
+.seal:visited,
+.seal:hover,
+.seal:focus,
+.seal:active {
+    @include color($color-corporate-red, 1);
+    }
+
+.seal:hover,
+.seal:focus,
+.seal:active {
+    @include color($color-corporate-black, 1);
+    }
+
+.seal .seal-label {
+    clear: both;
+    display: block;
+    }
+
+.seal .seal-label:after {
+    content: " ›";
+    font-size: 1.25em;
+    vertical-align: bottom;
+    }
+
+.seal .seal-image {
+    width: 100px;
+    margin: 0 auto 0.5em;
+    display: block;
+    }
