@@ -1,0 +1,7 @@
+.heading-badge {
+    border-bottom: 1px solid;
+    @include border-color($color-light-grey, 0.8);
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    margin-bottom: 1.5em;
+    }

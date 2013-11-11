@@ -191,7 +191,7 @@ select {
   line-height: 1.4em;
   margin: 0 0.5em 0 0;
   padding: 0.54em 0.5em;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 label {
@@ -227,6 +227,13 @@ textarea {
   margin: 0;
 }
 
+textarea[disabled] {
+  cursor: not-allowed;
+  /* fallback */
+  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.5);
+}
+
 video {
   max-width: 100%;
 }
@@ -242,6 +249,9 @@ select {
 
 select[disabled] {
   cursor: not-allowed;
+  /* fallback */
+  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.5);
 }
 
 mark {
@@ -5614,6 +5624,7 @@ input.button-unstyled,
   text-indent: -99999px;
   display: block;
   background-size: 90px;
+  width: 100px;
 }
 
 .cfa-tag-red {
@@ -5626,6 +5637,16 @@ input.button-unstyled,
 
 .cfa-tag-grey {
   background-image: url("/images/tag-grey.png");
+}
+
+.heading-badge {
+  border-bottom: 1px solid;
+  /* fallback */
+  border-color: #e5e5e5;
+  border-color: rgba(229, 229, 229, 0.8);
+  padding-bottom: 0.5em;
+  padding-left: 3em;
+  margin-bottom: 1.5em;
 }
 
 /* @group highlight */
@@ -5665,7 +5686,7 @@ input.button-unstyled,
 @media (min-width: 60em) {
   .highlight-avatar {
     position: absolute;
-    left: 0;
+    left: 2em;
     margin-top: 0;
   }
 }
@@ -5880,6 +5901,7 @@ input.button-unstyled,
   border-color: #e5e5e5;
   border-radius: 0.4em;
   display: block;
+  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
   padding: 1em;
   margin-bottom: 1.25em;
 }
