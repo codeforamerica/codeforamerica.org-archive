@@ -2,13 +2,12 @@
 @import 'fonts';
 @import 'colors';
 @import 'default';
-@import 'layout';
 @import 'icons';
 
 
 /* Patterns */
-@import '_patterns/blurb';
 @import '_patterns/button';
+@import '_patterns/blurb';
 @import '_patterns/flags';
 @import '_patterns/highlight';
 @import '_patterns/lists';
@@ -18,6 +17,10 @@
 @import '_patterns/stat';
 @import '_patterns/teaser';
 
+
+/* Page level */
+@import 'sections';
+@import 'layout';
 
 /* Website documentation styles */
 @import 'documentation';

@@ -38,7 +38,7 @@ h1 {
 
 h2 {
     font-size: 1.8em;
-    margin: 2em 0 0.8em;
+    margin: 0 0 0.8em;
     font-family: $font-bold;
     }
 
@@ -95,62 +95,7 @@ a:active {
     @include color($color-corporate-blue, 0.7);
     }
 
-button,
-input[type="button"],
-input[type="submit"],
-.button:link,
-.button:visited,
-.button:hover,
-.button:focus,
-.button:active {
-    display: inline-block;
-    padding: 0.5em 1em;
-    @include background-color($color-corporate-blue, 1);
-    color: white;
-    border-radius: 0.2em;
-    text-decoration: none;
-    border: none;
-    margin: 0 1em 1em 0;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.4em;
-    font-family: $font-regular;
-    }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-    @include background-color($color-corporate-blue, 0.8);
-    cursor: pointer;
-    }
-
-button:active,
-.button:active,
-input[type="submit"]:active {
-    @include background-color($color-corporate-blue, 1);
-    }
-
-
-input[disabled],
-input[disabled]:hover,
-input[disabled]:focus,
-input[disabled]:active,
-button[disabled],
-button[disabled]:hover,
-button[disabled]:focus,
-button[disabled]:active,
-.button.button-disabled,
-.button.button-disabled:hover,
-.button.button-disabled:focus,
-.button.button-disabled:active {
-    @include background-color($color-medium-grey, 0.8);
-    cursor: not-allowed;
-    }
 
 input[type="text"][disabled] {
     @include background-color($color-light-grey, 0.5);
@@ -162,25 +107,30 @@ code,
     }
 
 textarea,
-input {
+input,
+select {
     border-width: 1px;
     border-style: solid;
     @include border-color($color-medium-grey, 0.5);
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     margin-bottom: 1em;
     }
 
-input {
-    margin: 0 0.5em 0 0;
-    padding: 0.48em 0.8em;
+input,
+select {
     font-size: 1em;
     line-height: 1.4em;
+    margin: 0 0.5em 0 0;
+    padding: 0.54em 0.5em;
+    vertical-align: middle;
     }
 
 label {
+    display: block;
     margin-right: 0.5em;
     text-transform: uppercase;
     @include color($color-medium-grey, 0.8);
+    vertical-align: middle;
     }
 
 textarea:focus,
@@ -197,7 +147,9 @@ abbr[title="Required"] {
 
 textarea {
     max-width: 98%;
-    padding: 0.5em 1%;
+    padding: 1em 1%;
+    font-size: 1em;
+    margin: 0;
     }
 
 video {
@@ -221,7 +173,7 @@ mark {
     @include background-color($color-yellow, 1);
     padding: 0 0.1em;
     border-radius: 0.1em;
-}
+    }
 
 kbd {
     @include background-color($color-light-grey, 0.8);
@@ -229,10 +181,15 @@ kbd {
     border-radius: 0.3em;
     }
 
+pre {
+    white-space: pre-wrap;
+    }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-bottom: 2em;
+	font-family: $font-sans-regular;
     }
 caption {
 	caption-side: bottom;
@@ -276,10 +233,35 @@ tfoot tr:last-child th {
     }
 
 .hidden {
-    display: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
     }
 
 .caption {
     font-size: 0.8em;
     @include color($color-medium-grey, 1);
+    vertical-align: middle;
+    }
+
+blockquote {
+    margin: 0;
+    }
+
+form {
+    font-family: $font-sans-regular;
+    }
+
+label {
+    margin-bottom: 0.3em;
+    }
+
+select {
+    -webkit-appearance: none;
+    min-width: 150px;
     }

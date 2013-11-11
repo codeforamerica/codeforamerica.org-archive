@@ -12,13 +12,48 @@
 .list-form {
     margin-left: 0;
     float: left;
+    padding-left: 0;
+    width: 100%;
     }
 
-.list-form .form-field {
+.list-form li {
     list-style-type: none;
     margin-bottom: 1em;
     }
 
+.list-form .form-field input,
+.list-form .form-field textarea,
+.list-form .form-field select {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    }
+
+.list-form .form-field select {
+    width: 100%;
+    margin: 0;
+    }
+
+.list-form .form-field textarea {
+    min-height: 100px;
+    }
+
+.list-form .form-field-group {
+    width: 100%;
+    float: left;
+    }
+
+.list-form .form-field-group input,
+.list-form .form-field-group select {
+    width: auto;
+    padding-left: 0.85em;
+    padding-right: 0.85em;
+    }
+
+.list-form .form-field-group .form-field {
+    float: left;
+    margin-right: 1em;
+    }
 
 .list-inline {
     margin-left: 0;
@@ -55,5 +90,6 @@
 .list-social-horizontal li {
     display: inline;
     font-size: 0.85em;
+    margin-right: 0.8em;
     }
 

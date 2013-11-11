@@ -1,15 +1,18 @@
-@mixin background-color($color, $opacity: 0.3) {
-    background: $color; /* fallback */
+@mixin background-color($color, $opacity: 1) {
+    /* fallback */
+    background: $color;
     background: rgba($color, $opacity);
     }
 
-@mixin color($color, $opacity: 0.3) {
-    color: $color; /* fallback */
+@mixin color($color, $opacity: 1) {
+    /* fallback */
+    color: $color;
     color: rgba($color, $opacity);
     }
 
-@mixin border-color($color, $opacity: 0.3) {
-    border-color: $color; /* fallback */
+@mixin border-color($color, $opacity: 1) {
+    /* fallback */
+    border-color: $color;
     border-color: rgba($color, $opacity);
     }
 

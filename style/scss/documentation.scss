@@ -27,6 +27,7 @@
     padding: 0;
     margin: 5em 0 5em;
     display: none;
+    font-family: $font-sans-regular;
     }
 
 @media (min-width: 40em) {
@@ -52,7 +53,7 @@
     }
 
 .xx-container {
-    width: 100%;
+    width: 96%;
     padding: 0 2%;
     }
 
@@ -134,8 +135,8 @@
 
 .swatch {
     float: left;
-    width: 100%;
     margin-bottom: 1em;
+    width: 100%;
     }
 
 @media (min-width: 40em) {
@@ -172,6 +173,7 @@
     margin: 0 1em 0 0;
     font-size: 0.8em;
     clear: both;
+    font-family: $font-sans-regular;
     }
 
 @media (min-width: 70em) {
@@ -185,6 +187,10 @@
     float: left;
     margin: 0.5em 0 3em;
     width: 100%;
+    }
+
+.pattern-name {
+    font-family: $font-sans-regular;
     }
 
 .pattern-details {

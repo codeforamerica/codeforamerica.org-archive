@@ -4,7 +4,17 @@
     width: 140px;
     }
 
-
+.profile-note .list-social,
+.profile-note .list-social a,
+.profile-note .list-social a:link,
+.profile-note .list-social a:visited,
+.profile-note .list-social a:hover,
+.profile-note .list-social a:focus,
+.profile-note .list-social a:active {
+    @include color($color-corporate-red, 1);
+    font-family: $font-bold;
+    text-transform: uppercase;
+}
 
 .profile-small {
     border: 1px solid;
@@ -50,8 +60,6 @@
 .profile-small .list-social li {
     list-style-type: none;
     }
-
-
 
 
 .profile-medium {
