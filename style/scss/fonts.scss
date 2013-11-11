@@ -48,11 +48,23 @@
     font-style: normal;
     }
 
+@font-face {
+    font-family: 'Sentinel Light';
+    src: url('../fonts/sentinel/sentinel-light.eot');
+    src: url('../fonts/sentinel/sentinel-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sentinel/sentinel-light.woff') format('woff'),
+         url('../fonts/sentinel/sentinel-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 $font-regular: "Sentinel Book", "Georgia", Times, sans-serif;
 
 $font-sans-regular: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
 
 $font-bold: "Open Sans Bold", "Helvetica", "Arial";
+
+$font-serif-light: "Sentinel Light", "Georgia", Times, sans-serif;
 
 $font-extrabold: "Open Sans Extra Bold", "Helvetica", "Arial";
 
