@@ -1,0 +1,7 @@
+.nav-breadcrumbs ul {
+    @extend .list-inline;
+    }
+
+.nav-breadcrumbs ul li {
+    border-right: none;
+    }

@@ -96,6 +96,7 @@ h4,
 h5,
 h6 {
   font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-weight: normal;
 }
 
 h1 {
@@ -5736,9 +5737,37 @@ input.button-unstyled,
   /* fallback */
   background: #399fd3;
   background: #399fd3;
-  min-height: 300px;
   clear: both;
-  margin-bottom: 2em;
+}
+
+.hero-header {
+  padding-top: 6em;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.hero-header .nav-breadcrumbs {
+  float: left;
+}
+
+.hero-header .nav-breadcrumbs a:link,
+.hero-header .nav-breadcrumbs a:visited,
+.hero-header .nav-breadcrumbs a:hover,
+.hero-header .nav-breadcrumbs a:focus,
+.hero-header .nav-breadcrumbs a:active {
+  color: white;
+}
+
+.hero-header .page-title {
+  float: left;
+  clear: left;
+  color: white;
+  margin: 0;
+}
+
+.hero-header .button-cta {
+  float: right;
 }
 
 /* @group highlight */
@@ -5840,22 +5869,22 @@ input.button-unstyled,
   margin-right: 1em;
 }
 
-.list-inline {
+.list-inline, .nav-breadcrumbs ul {
   margin-left: 0;
   padding-left: 0;
 }
 
-.list-inline li {
+.list-inline li, .nav-breadcrumbs ul li {
   display: inline;
   border-right: 2px solid #999595;
   margin: 0 0.15em 0 0;
 }
 
-.list-inline li:last-child {
+.list-inline li:last-child, .nav-breadcrumbs ul li:last-child {
   border-right: none;
 }
 
-.list-inline li a {
+.list-inline li a, .nav-breadcrumbs ul li a {
   padding: 0 0.5em 0 0;
 }
 
@@ -5878,14 +5907,15 @@ input.button-unstyled,
   margin-right: 0.8em;
 }
 
+.nav-breadcrumbs ul li {
+  border-right: none;
+}
+
 .nav-global-primary {
   float: right;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.nav-global-primary ul {
-  font-size: 1.2em;
+  margin-top: 0.5em;
 }
 
 .nav-global-primary li {
@@ -5914,6 +5944,33 @@ input.button-unstyled,
   /* fallback */
   color: #cf1b41;
   color: #cf1b41;
+}
+
+.nav-page {
+  /* fallback */
+  background: #2f3d4a;
+  background: #2f3d4a;
+  margin-bottom: 2em;
+}
+
+.nav-page ul {
+  display: table;
+}
+
+.nav-page ul li {
+  border-right: none;
+  display: table-cell;
+  margin: 0 1em;
+}
+
+.nav-page a:link,
+.nav-page a:visited,
+.nav-page a:hover,
+.nav-page a:focus,
+.nav-page a:active {
+  color: white;
+  padding: 1em;
+  display: block;
 }
 
 .profile-photo {

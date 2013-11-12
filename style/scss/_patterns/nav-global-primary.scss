@@ -2,11 +2,11 @@
     float: right;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 0.5em
     }
 
 .nav-global-primary ul {
     @extend .list-no-bullets;
-    font-size: 1.2em;
     
     }
 

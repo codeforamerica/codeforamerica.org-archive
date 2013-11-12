@@ -1,6 +1,34 @@
 .hero {
     @include background-color($color-corporate-blue, 1);
-    min-height: 300px;
     clear: both;
-    margin-bottom: 2em;
+    }
+
+.hero-header {
+    padding-top: 6em;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 2em;
+    }
+
+.hero-header .nav-breadcrumbs {
+    float: left;
+    }
+
+.hero-header .nav-breadcrumbs a:link,
+.hero-header .nav-breadcrumbs a:visited,
+.hero-header .nav-breadcrumbs a:hover,
+.hero-header .nav-breadcrumbs a:focus,
+.hero-header .nav-breadcrumbs a:active {
+    color: white;
+    }
+
+.hero-header .page-title {
+    float: left;
+    clear: left;
+    color: white;
+    margin: 0;
+    }
+
+.hero-header .button-cta {
+    float: right;
     }
