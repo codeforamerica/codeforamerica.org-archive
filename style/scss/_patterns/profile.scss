@@ -18,7 +18,7 @@
 
 .profile-small {
     border: 1px solid;
-    @include border-color($color-medium-grey, 0.5);
+    @include border-color($color-medium-gray, 0.5);
     margin: 60px 0 2em 0;
     padding: 50px 0 0 0;
     position: relative;
@@ -52,7 +52,7 @@
     }
 
 .profile-small .list-social {
-    @include background-color($color-light-grey, 0.8);
+    @include background-color($color-light-gray, 0.8);
     margin: 0;
     padding: 0.8em 0;
     }

@@ -9,20 +9,21 @@
 	font-style: normal;
 }
 
+[class*="icon"] {
+    background-repeat: no-repeat;
+    }
+
 [class*="icon-"] {
-	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
-	font-weight: normal;
 	font-variant: normal;
-	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon {
-    background-repeat: no-repeat;
+.icon-large {
+    font-size: 1.5em;
     }
 
 .icon-red,
@@ -32,8 +33,24 @@
 .icon-red:focus,
 .icon-red:active {
     @include color($color-corporate-red, 1);
-    font-family: $font-bold;
-    text-transform: uppercase;
+    }
+
+.icon-blue,
+.icon-blue:link,
+.icon-blue:visited,
+.icon-blue:hover,
+.icon-blue:focus,
+.icon-blue:active {
+    @include color($color-corporate-blue, 1);
+    }
+
+.icon-grey,
+.icon-grey:link,
+.icon-grey:visited,
+.icon-grey:hover,
+.icon-grey:focus,
+.icon-grey:active {
+    @include color($color-corporate-gray, 1);
     }
 
 [class*="icon-"]:before {
@@ -51,11 +68,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-
-
-
-
 
 
 .icon-home:before {

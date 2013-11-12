@@ -20,7 +20,7 @@ details {
 
 abbr {
     border-bottom: 1px dotted;
-    @include border-color($color-medium-grey, 1);
+    @include border-color($color-medium-gray, 1);
     }
 
 abbr:hover {
@@ -30,26 +30,32 @@ abbr:hover {
 img {
     max-width: 100%;
     }
-    
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-serif-bold;
+}
+
 h1 {
     font-size: 2em;
-    font-family: $font-bold;
+    
     }
 
 h2 {
     font-size: 1.8em;
     margin: 0 0 0.8em;
-    font-family: $font-bold;
     }
 
 h3 {
     font-size: 1.6em;
-    font-family: $font-bold;
     }
 
 h4 {
     font-size: 1.4em;
-    font-family: $font-bold;
     }
 
 p,
@@ -98,7 +104,7 @@ a:active {
 
 
 input[type="text"][disabled] {
-    @include background-color($color-light-grey, 0.5);
+    @include background-color($color-light-gray, 0.5);
 }
 
 code,
@@ -106,74 +112,6 @@ code,
     font-family: Menlo,Monaco,'Courier New',Courier,monospace;
     }
 
-textarea,
-input,
-select {
-    border-width: 1px;
-    border-style: solid;
-    @include border-color($color-medium-grey, 0.5);
-    border-radius: 0.2em;
-    margin-bottom: 1em;
-    }
-
-input,
-select {
-    font-size: 1em;
-    line-height: 1.4em;
-    margin: 0 0.5em 0 0;
-    padding: 0.54em 0.5em;
-    vertical-align: top;
-    }
-
-label {
-    display: block;
-    margin-right: 0.5em;
-    text-transform: uppercase;
-    @include color($color-medium-grey, 0.8);
-    vertical-align: middle;
-    }
-
-textarea:focus,
-input:focus {
-    @include border-color($color-dark-blue, 1);
-    outline: 0;
-    }
-
-abbr[title="required"],
-abbr[title="Required"] {
-    @include color($color-corporate-red, 0.8);
-    border-bottom: none;
-    }
-
-textarea {
-    max-width: 98%;
-    padding: 1em 1%;
-    font-size: 1em;
-    margin: 0;
-    }
-
-textarea[disabled] {
-    cursor: not-allowed;
-    @include background-color($color-light-grey, 0.5);
-    }
-
-video {
-    max-width: 100%;
-    }
-
-fieldset {
-    border: none;
-    }
-
-select {
-    font-size: 1em;
-    line-height: 1.4em;
-    }
-
-select[disabled] {
-    cursor: not-allowed;
-    @include background-color($color-light-grey, 0.5);
-    }
 
 mark {
     @include background-color($color-yellow, 1);
@@ -182,7 +120,7 @@ mark {
     }
 
 kbd {
-    @include background-color($color-light-grey, 0.8);
+    @include background-color($color-light-gray, 0.8);
     padding: 0.5em 0.5em 0.4em;
     border-radius: 0.3em;
     }
@@ -251,7 +189,7 @@ tfoot tr:last-child th {
 
 .caption {
     font-size: 0.8em;
-    @include color($color-medium-grey, 1);
+    @include color($color-medium-gray, 1);
     vertical-align: middle;
     }
 

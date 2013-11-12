@@ -1,0 +1,6 @@
+.hero {
+    @include background-color($color-corporate-blue, 1);
+    min-height: 300px;
+    clear: both;
+    margin-bottom: 2em;
+    }

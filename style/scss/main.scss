@@ -3,21 +3,26 @@
 @import 'colors';
 @import 'default';
 @import 'icons';
-
+@import 'forms';
 
 /* Patterns */
 @import '_patterns/button';
 @import '_patterns/blurb';
 @import '_patterns/flags';
-@import '_patterns/heading-badge';
+@import '_patterns/badge-headings';
+@import '_patterns/badge-icons';
+@import '_patterns/hero';
 @import '_patterns/highlight';
 @import '_patterns/lists';
+@import '_patterns/nav-global-primary';
 @import '_patterns/profile';
 @import '_patterns/seal';
 @import '_patterns/spotlight';
 @import '_patterns/stat';
 @import '_patterns/teaser';
 
+
+@import '_patterns/global-header';
 
 /* Page level */
 @import 'sections';

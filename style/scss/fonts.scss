@@ -64,16 +64,12 @@ $font-sans-regular: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial"
 
 $font-bold: "Open Sans Bold", "Helvetica", "Arial";
 
+$font-serif-bold: "Sentinel Bold", "Georgia", Times, sans-serif;
+
 $font-serif-light: "Sentinel Light", "Georgia", Times, sans-serif;
 
 $font-extrabold: "Open Sans Extra Bold", "Helvetica", "Arial";
 
 body {
-    font-family: $font-regular;
+    font-family: $font-sans-regular;
     }
-
-h1 {
-    font-family: $font-bold;
-    font-weight: bold;
-    }
-

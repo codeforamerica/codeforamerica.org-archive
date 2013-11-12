@@ -59,6 +59,46 @@ function inc($type,$name) {
 }
 
 
+
+function displayPatchwork($dir) {
+    global $patternsPath;
+    global $styleguidePath;
+
+    $ffs = scandir($dir);
+
+    foreach($ffs as $ff) {
+        if($ff != '.' && $ff != '..') {
+            $fName = basename($ff,'.html');
+            $fPlain = ucwords(str_replace('-', '. ', $fName));
+            $pathToFile = str_replace($patternsPath, '', $dir);
+            
+            if(is_dir($dir.'/'.$ff)) { // If main section
+                if ($fName == 'elements' || $fName == 'partials') {
+                    echo "<section class=\"xx-section\" id=\"".$fName."\">\n";
+                    echo "    <h1>".$fPlain."</h1>\n";
+                } else {
+                    echo "<section class=\"xx-section\" id=\"".$fName."\">\n";
+                    echo "    <h1 class=\"section-title\">".$fPlain."</h1>\n";
+                }
+            } else { // If sub section
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $fName != '_header') { // Skip non-HTML files
+                    echo "<div class=\"pattern\" id=\"".$fName."\">\n";
+                    echo "\n";
+                    include $dir.'/'.$ff;
+                    echo "\n";
+                    echo "</div>\n\n";
+                }
+            }
+            
+            if(is_dir($dir.'/'.$ff)) { // If main section
+                displayPatchwork($dir.'/'.$ff);
+                echo "</section>\n\n";
+            }
+        }
+    }
+}
+
+
 function displayPatterns($dir) {
     global $patternsPath;
     global $styleguidePath;
@@ -101,6 +141,7 @@ function displayPatterns($dir) {
         }
     }
 }
+
 
 
 function displayOptions($dir) {

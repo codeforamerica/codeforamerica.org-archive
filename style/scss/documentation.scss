@@ -4,7 +4,7 @@
     }
     
 .xx-sidebar {
-    @include background-color($color-light-grey, 0.5);
+    @include background-color($color-light-gray, 0.5);
     padding: 2em 0;
     width:  100%;
     }
@@ -117,14 +117,14 @@
 .xx-hallmark:focus,
 .xx-hallmark:active {
     
-    @include color($color-dark-grey, 0.7);
+    @include color($color-dark-gray, 0.7);
     
     }
 
 .xx-hallmark:hover,
 .xx-hallmark:focus,
 .xx-hallmark:active {
-    @include color($color-dark-grey, 1);
+    @include color($color-dark-gray, 1);
     }
 
 .xx-section {
@@ -194,7 +194,7 @@
     }
 
 .pattern-details {
-    @include background-color($color-light-grey, 0.7);
+    @include background-color($color-light-gray, 0.7);
     padding: 0.2em 1% 0.3em;
     margin-bottom: 1em;
     width: 98%;

@@ -13,7 +13,7 @@ input[type="submit"],
     border-radius: 0.2em;
     text-decoration: none;
     border: none;
-    margin: 0 0 0.25em 0;
+    margin: 0;
     font-size: 0.85em;
     font-weight: normal;
     line-height: 1.4em;
@@ -53,7 +53,7 @@ button[disabled]:active,
 .button.button-disabled:hover,
 .button.button-disabled:focus,
 .button.button-disabled:active {
-    @include background-color($color-medium-grey, 0.8);
+    @include background-color($color-medium-gray, 0.8);
     cursor: not-allowed;
     }
 

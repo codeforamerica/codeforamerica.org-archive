@@ -1,0 +1,22 @@
+[class*="pop"] {
+    @include background-color($color-corporate-blue, 1);
+    display: inline-block;
+    border-radius: 5em;
+    background-position: 50% 50%;
+    position: relative;
+    left: 0.65em;
+    padding: 0.65em 0.45em 0.75em 0.75em;
+    text-align: center;
+    top: 0.65em;
+    font-size: 1.5em;
+    color: #fff;
+    vertical-align: middle;
+    }
+
+.pop-bright {
+    @include background-color($color-corporate-red, 1);
+    }
+
+.pop-neutral {
+    @include background-color($color-corporate-gray, 1);
+    }

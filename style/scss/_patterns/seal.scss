@@ -1,7 +1,7 @@
 .seal {
     text-align: center;
     border: 1px solid;
-    @include border-color($color-light-grey, 1);
+    @include border-color($color-light-gray, 1);
     border-radius: 0.4em;
     display: block;
     font-family: $font-sans-regular;

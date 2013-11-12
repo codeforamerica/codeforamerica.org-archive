@@ -15,6 +15,8 @@
     <meta charset="utf-8">
     <title>Code for America Website Style Guide</title>
     <link rel="stylesheet" href="style/css/main.css">
+    <link href="style/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -81,10 +83,10 @@
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #6D6E71;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Corporate Grey</strong></li>
+                    <li><strong>Corporate gray</strong></li>
                     <li>rgb(109, 110, 113)</li>
                     <li>#6D6E71</li>
-                    <li>$color-corporate-grey</li>
+                    <li>$color-corporate-gray</li>
                 </ul>
             </li>
             <li class="swatch">
@@ -121,28 +123,28 @@
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #444444;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Dark Grey</strong></li>
+                    <li><strong>Dark gray</strong></li>
                     <li>rgb(68, 68, 68)</li>
                     <li>#444444</li>
-                    <li>$color-dark-grey</li>
+                    <li>$color-dark-gray</li>
                 </ul>
             </li>
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #999595;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Medium Grey</strong></li>
+                    <li><strong>Medium gray</strong></li>
                     <li>rgb(153, 149, 149)</li>
                     <li>#999595</li>
-                    <li>$color-medium-grey</li>
+                    <li>$color-medium-gray</li>
                 </ul>
             </li>
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #e5e5e5;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Light Grey</strong></li>
+                    <li><strong>Light gray</strong></li>
                     <li>rgb(229, 229, 229)</li>
                     <li>#e5e5e5</li>
-                    <li>$color-light-grey</li>
+                    <li>$color-light-gray</li>
                 </ul>
             </li>
             <li class="swatch">
@@ -197,7 +199,9 @@
     <?php endif; ?>
 
 </div>
+    <script src="script/prism.js"></script>
 </body>
+
 <script>
     (function (document, undefined) {
         // Add js class to body

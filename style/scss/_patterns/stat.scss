@@ -9,8 +9,8 @@
 
 .stat .stat-heading {
     border-bottom: 1px solid;
-    @include border-color($color-medium-grey, 0.3);
-    @include color($color-medium-grey, 0.7);
+    @include border-color($color-medium-gray, 0.3);
+    @include color($color-medium-gray, 0.7);
     text-transform: uppercase;
     display: block;
     margin-bottom: 0.5em;

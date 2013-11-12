@@ -1,0 +1,35 @@
+.nav-global-primary {
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+.nav-global-primary ul {
+    @extend .list-no-bullets;
+    font-size: 1.2em;
+    
+    }
+
+.nav-global-primary li {
+    border: none;
+    display: inline-block;
+    }
+
+.nav-global-primary li a {
+    padding: 0.5em 1em;
+    }
+
+.nav-global-primary li:last-child a {
+    padding-right: 0;
+    }
+
+.nav-global-primary li a:link,
+.nav-global-primary li a:visited {
+    @include color($color-corporate-black, 1);
+    }
+
+.nav-global-primary li a:hover,
+.nav-global-primary li a:focus,
+.nav-global-primary li a:active {
+    @include color($color-corporate-red, 1);
+    }
