@@ -13,6 +13,12 @@
     @extend .layout-colspan-2;
     }
 
+.post .post-body {
+    clear: both;
+    width: 100%;
+    float: left;
+    }
+
 .post .post-content p:first-child:first-letter {
     float: left; 
     font-size: 3em; 

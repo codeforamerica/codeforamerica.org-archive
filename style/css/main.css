@@ -6305,6 +6305,12 @@ input.button-unstyled,
   float: left;
 }
 
+.post .post-body {
+  clear: both;
+  width: 100%;
+  float: left;
+}
+
 .post .post-content p:first-child:first-letter {
   float: left;
   font-size: 3em;
@@ -6335,6 +6341,31 @@ input.button-unstyled,
     margin: 0;
   }
 }
+.global-footer {
+  clear: both;
+}
+
+.global-foot {
+  /* fallback */
+  background: black;
+  background: black;
+  clear: both;
+  color: white;
+  padding: 1em 0;
+  font-size: 1em;
+  min-height: 45px;
+}
+
+.global-foot-logo {
+  width: 100px;
+  position: absolute;
+  margin: 0.3em 1em 0.3em 0;
+}
+
+.global-foot small {
+  margin: 0 0 0 120px;
+}
+
 /* Page level */
 .section-blue {
   /* fallback */
