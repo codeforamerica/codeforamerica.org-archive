@@ -6299,6 +6299,19 @@ input.button-unstyled,
   vertical-align: top;
 }
 
+.post .post-content {
+  padding-left: 0;
+  margin-left: 11%;
+  float: left;
+}
+
+.post .post-content p:first-child:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1em;
+  padding: 0 0.15em 0.15em 0;
+}
+
 .global-header {
   text-align: center;
   padding: 1.5em 0;
@@ -6330,7 +6343,7 @@ input.button-unstyled,
 }
 
 /* Gridpak Beta CSS - http://gridpak.com/, Created by @erskinedesign */
-.layout-col {
+.layout-col, .post .post-author {
   border: 0px solid rgba(0, 0, 0, 0);
   float: left;
   -webkit-box-sizing: border-box;
@@ -6342,7 +6355,7 @@ input.button-unstyled,
 }
 
 @media (min-width: 30em) {
-  .layout-col {
+  .layout-col, .post .post-author {
     list-style-type: none;
     margin-left: 2%;
     /*padding: 0 1.5%;*/
@@ -6361,7 +6374,7 @@ input.button-unstyled,
     padding: 0;
   }
 }
-.layout-row .layout-col:first-child {
+.layout-row .layout-col:first-child, .layout-row .post .post-author:first-child, .post .layout-row .post-author:first-child {
   margin-left: 0;
 }
 
@@ -6369,7 +6382,7 @@ input.button-unstyled,
   width: 9.33333333333%;
 }
 
-.layout-colspan-2 {
+.layout-colspan-2, .post .post-author {
   width: 20.6666666667%;
 }
 
@@ -6396,7 +6409,7 @@ input.button-unstyled,
   }
 }
 @media (min-width: 30em) {
-  .layout-colspan-6 {
+  .layout-colspan-6, .post .post-content {
     width: 66.0%;
   }
 }

@@ -36,8 +36,6 @@
     <?php include("patterns/_header.html") ?>
     
     <div class="layout-container">
-    
-    <h1>Website Style Guide</h1>
 
     <form action="" method="post" id="pattern">
         <select name="section" id="pattern-select" class="nav-section-select">
