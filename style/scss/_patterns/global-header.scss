@@ -1,10 +1,25 @@
 .global-header {
+    text-align: center;
     padding: 1.5em 0;
     float: left;
     width: 100%;
     }
 
+@media (min-width: 40em) {
+.global-header {
+    text-align: left;
+    }
+}
+
 .global-header-logo {
+    margin: 0 auto;
     width: 8em;
-    float: left;
+    }
+
+    @media (min-width: 40em) {
+    .global-header-logo {
+        
+        float: left;
+        margin: 0;
+        }
     }

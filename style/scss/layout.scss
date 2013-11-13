@@ -21,11 +21,19 @@
 
 }
 
-
-
 .layout-container {
+    width: 96%;
+    padding: 0 2%;
     max-width: 60em;
     margin: 0 auto;
+    }
+
+
+@media (min-width: 60em) {
+    .layout-container {
+    width: 100%;
+    padding: 0;
+    }
     }
 
 

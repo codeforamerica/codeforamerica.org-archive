@@ -3,8 +3,9 @@
     clear: both;
     }
 
-.hero-header {
+.hero .hero-header {
     padding-top: 6em;
+    padding-bottom: 1em;
     overflow: hidden;
     width: 100%;
     padding-bottom: 2em;
@@ -12,6 +13,7 @@
 
 .hero-header .nav-breadcrumbs {
     float: left;
+    color: white;
     }
 
 .hero-header .nav-breadcrumbs a:link,
@@ -22,13 +24,21 @@
     color: white;
     }
 
+.hero-header .nav-breadcrumbs li:first-child {
+    background-image: url('../icons/flag-white.png');
+    }
+
 .hero-header .page-title {
     float: left;
     clear: left;
     color: white;
     margin: 0;
+    font-family: $font-sans-bold;
+    font-size: 3em;
+    text-transform: uppercase;
     }
 
 .hero-header .button-cta {
     float: right;
+    margin-top: 0.8em;
     }

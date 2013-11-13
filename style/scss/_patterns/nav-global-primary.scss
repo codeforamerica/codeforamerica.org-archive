@@ -1,18 +1,32 @@
 .nav-global-primary {
-    float: right;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 0.5em
+    margin-top: 1em;
+    width: 100%;
+    }
+
+@media (min-width: 40em) {
+.nav-global-primary {
+    width: auto;
+    float: right;
+    margin-top: 0.5em;
+    }
     }
 
 .nav-global-primary ul {
     @extend .list-no-bullets;
-    
+    display: table;
     }
 
 .nav-global-primary li {
     border: none;
-    display: inline-block;
+    display: table-cell;
+    }
+
+@media (min-width: 40em) {
+    .nav-global-primary li {
+        display: inline-block;
+        }
     }
 
 .nav-global-primary li a {
