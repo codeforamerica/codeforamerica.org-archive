@@ -16,15 +16,20 @@
 <body class="xx">
     
     
-    <?php include("../patterns/_header.html") ?>
+    <?php include("../patterns/global/header.html") ?>
     
     <div class="layout-container">
     
         <main role="main">
             
+            <?php include("../patterns/nav/nav-breadcrumb.html") ?>
+            
             <article class="post">
                 
-                <h1 class="heading post-title">Why I'm mentoring for America: Zachary Townsend</h1>
+                <header class="post-header">
+                    <h1 class="post-title">Why I'm mentoring for America: Zachary Townsend</h1>
+                    <time class="post-date" datetime="2013-11-13 09:00-05:00">November 1st, 2013</time>
+                </header>
                 
                 <div class="post-body">
                 
@@ -32,7 +37,7 @@
                         
                         <p>This post is part of an ongoing series by Code for America mentors. Zachary is a 2013 mentor at Code for America for the startups program.</p> 
                     
-                        <p>I work with governments because, when operated well, they can improve the lives of so many people. I work with civic startups at the CfA Accelerator because, when operated well, they can improve the efficiency of so many governments. Every positive change I made working in government in Newark, N.J. might effect tens of thousands of families and every civic startup I mentor might affect hundreds of governments.</p>
+                        <p>I work with governments because, when operated well, they can improve the lives of so many people. I work with civic startups at the <a href="#"><abbr title="Code for America">CfA</abbr> Accelerator</a> because, when operated well, they can improve the efficiency of so many governments. Every positive change I made working in government in Newark, N.J. might effect tens of thousands of families and every civic startup I mentor might affect hundreds of governments.</p>
                         
                         <p>But let me take a step back: I started to care so much about government and their inner workings because local government changed the course of my life.</p>
                         
@@ -44,7 +49,9 @@
                         
                         <p>Good city services are about basic fairness. As I wrote elsewhere:</p>
                         
-                        <p>Overall the quality of service provision in government offices remains low. The offices which provide services use outdated and ill-designed technology tools to facilitate rarely-updated business process. Services must be requested in person, lines can be long, multiple offices need to be visited, and forms that aren’t filled out to exacting detail must be redone, creating an array of bureaucratic barriers. In essence, city services are a regressive tax on people’s time.</p>
+                        <blockquote>
+                            <p>Overall the quality of service provision in government offices remains low. The offices which provide services use outdated and ill-designed technology tools to facilitate rarely-updated business process. Services must be requested in person, lines can be long, multiple offices need to be visited, and forms that aren’t filled out to exacting detail must be redone, creating an array of bureaucratic barriers. In essence, city services are a regressive tax on people’s time.</p>
+                        </blockquote>
                         
                         <p>Startups are the most powerful possibility I can find for helping to improve those services. A lack of procurement options is at the heart of the bad technology and the inefficient business processes of many cities.</p>
                         
@@ -53,6 +60,7 @@
                     </div>
                     
                     <div class="post-author">
+                        <p>Written by:</p>
                         <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments. As a private consultant, I used my love of data and passion for technology to work with New York City Administration for Children’s Services to improve services for children just like me, and many that were in much worse circumstances. From there, I worked in the Newark, N.J. Mayor’s Office to leverage technology to improve city life and services.</p>
                     </div>  
                 
@@ -66,7 +74,7 @@
         
     </div>
     
-    <?php include("../patterns/_footer.html") ?>  
+    <?php include("../patterns/global/footer.html") ?>  
     
 </body>
 

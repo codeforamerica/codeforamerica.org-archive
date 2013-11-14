@@ -32,7 +32,7 @@
 
 <div class="xx-sidebar">
     <a class="xx-cfa-logo" href="/">
-        <img src="images/logo-coloured.png" />
+        <img src="/images/logo.png" />
     </a>
     <ol class="xx-nav" role="navigation">
         <?php displayList($patternsPath); ?>
@@ -190,6 +190,15 @@
                     <li>rgb(254, 221, 68)</li>
                     <li>#fedd44</li>
                     <li>$color-yellow</li>
+                </ul>
+            </li>
+            <li class="swatch">
+                <span class="swatch-preview" style="background-color: #fff;"></span>
+                <ul class="list-no-bullets swatch-details">
+                    <li><strong>White</strong></li>
+                    <li>rgb(255, 255, 255)</li>
+                    <li>#ffffff</li>
+                    <li>$color-white</li>
                 </ul>
             </li>
         </ul>

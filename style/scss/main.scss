@@ -1,32 +1,39 @@
 /* Default styles */
-@import 'fonts';
-@import 'colors';
-@import 'default';
+@import 'variables/typography';
+@import 'variables/color-scheme';
 @import 'icons';
-@import 'forms';
+
+/* Elements */
+@import 'elements/text';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/forms';
+@import 'elements/navigation';
 
 /* Patterns */
-@import '_patterns/button';
-@import '_patterns/blurb';
-@import '_patterns/flags';
-@import '_patterns/badge-headings';
-@import '_patterns/badge-icons';
-@import '_patterns/hero';
-@import '_patterns/highlight';
-@import '_patterns/lists';
-@import '_patterns/nav-breadcrumbs';
-@import '_patterns/nav-global-primary';
-@import '_patterns/nav-page';
-@import '_patterns/profile';
-@import '_patterns/seal';
-@import '_patterns/spotlight';
-@import '_patterns/stat';
-@import '_patterns/teaser';
-@import '_patterns/post';
+@import 'patterns/button';
+@import 'patterns/blurb';
+@import 'patterns/flags';
+@import 'patterns/badge-headings';
+@import 'patterns/badge-icons';
+@import 'patterns/hero';
+@import 'patterns/highlight';
+@import 'patterns/lists';
+@import 'patterns/nav-breadcrumbs';
+@import 'patterns/nav-global-primary';
+@import 'patterns/nav-page';
+@import 'patterns/profile';
+@import 'patterns/seal';
+@import 'patterns/spotlight';
+@import 'patterns/stat';
+@import 'patterns/teaser';
+@import 'patterns/post';
 
 
-@import '_patterns/global-header';
-@import '_patterns/global-footer';
+@import 'patterns/global/header';
+@import 'patterns/global/footer';
 
 /* Page level */
 @import 'sections';

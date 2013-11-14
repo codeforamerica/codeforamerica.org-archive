@@ -7,6 +7,9 @@
 
 .list-no-bullets li {
     list-style-type: none;
+    background-image: none;
+    padding-left: 0;
+    line-height: 1.5em;
     }
 
 .list-form {
@@ -19,6 +22,8 @@
 .list-form li {
     list-style-type: none;
     margin-bottom: 1em;
+    background-image: none;
+    padding-left: 0;
     }
 
 .list-form .form-field input,

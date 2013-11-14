@@ -8,20 +8,17 @@
     padding: 2em 0;
     width:  100%;
     }
-    
-@media (min-width: 40em) {
-.xx-sidebar {
-    
-    float: left;
-    width: 20%;
-    padding: 2em 0;
-    
-    position: fixed;
-    height: 100%;
-    overflow: scroll;
-    
+        
+    @media (min-width: 40em) {
+    .xx-sidebar {
+        float: left;
+        width: 20%;
+        padding: 2em 0;
+        position: fixed;
+        height: 100%;
+        overflow: scroll;   
+        }
     }
-}
 
 .xx-sidebar .xx-nav {
     padding: 0;
@@ -29,12 +26,12 @@
     display: none;
     font-family: $font-sans-regular;
     }
-
-@media (min-width: 40em) {
-    .xx-sidebar .xx-nav {
-    display: block;
+    
+    @media (min-width: 40em) {
+        .xx-sidebar .xx-nav {
+        display: block;
+        }
     }
-}
 
 .xx-sidebar .xx-nav li {
     list-style-type: none;
@@ -47,23 +44,26 @@
     display: block;
     }
 
-.xx-sidebar .xx-nav li a:hover {
+.xx-sidebar .xx-nav li a:hover,
+.xx-sidebar .xx-nav li a:focus,
+.xx-sidebar .xx-nav li a:active {
     background-color: #fff;
     color: #000;
+    border: none;
     }
 
 .xx-container {
     width: 96%;
     padding: 0 2%;
     }
-
-@media (min-width: 40em) {
-.xx-container {
-    float: right;
-    width: 76%;
-    padding: 0 2%;
+    
+    @media (min-width: 40em) {
+    .xx-container {
+        float: right;
+        width: 76%;
+        padding: 0 2%;
+        }
     }
-}
 
 .xx-cfa-logo {
     display: block;
@@ -72,25 +72,29 @@
     background-color: #f1f1f1;
     }
 
-@media (min-width: 40em) {
-    .xx-cfa-logo {
-    position: fixed;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    left: 0;
-    top: 0;
-    width: 20%;
-    margin: 0 auto 1em;
+    @media (min-width: 40em) {
+        .xx-cfa-logo {
+        position: fixed;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        left: 0;
+        top: 0;
+        width: 20%;
+        margin: 0 auto 1em;
+        }
     }
-}
+
+.xx-cfa-logo:hover,
+.xx-cfa-logo:focus,
+.xx-cfa-logo:active {
+    border-bottom: none;
+    }
 
 .xx-cfa-logo img {
     width: 70%;
     margin: 0 auto;
     display: block;
     }
-
-
 
 .xx-hallmark {
     left: 0;
@@ -104,21 +108,18 @@
     display: none;
     }
 
-@media (min-width: 40em) {
-    
-    .xx-hallmark {
-    display: block
+    @media (min-width: 40em) {     
+        .xx-hallmark {
+        display: block
+        }
     }
-}
 
 .xx-hallmark:link,
 .xx-hallmark:visited,
 .xx-hallmark:hover,
 .xx-hallmark:focus,
 .xx-hallmark:active {
-    
     @include color($color-dark-gray, 0.7);
-    
     }
 
 .xx-hallmark:hover,
@@ -132,31 +133,30 @@
     padding-top: 1em;
     }
 
-
 .swatch {
     float: left;
     margin-bottom: 1em;
     width: 100%;
     }
-
-@media (min-width: 40em) {
-.swatch {
-    width: 33%;
-    }
-}
-
-@media (min-width: 50em) {
-.swatch {
-    width: 25%;
-    }
-}
-
-@media (min-width: 60em) {
-.swatch {
-    width: 20%;
     
+    @media (min-width: 40em) {
+    .swatch {
+        width: 33%;
+        }
     }
-}
+    
+    @media (min-width: 50em) {
+    .swatch {
+        width: 25%;
+        }
+    }
+    
+    @media (min-width: 60em) {
+    .swatch {
+        width: 20%;
+        
+        }
+    }
 
 .swatch-preview {
     border: 5px solid #fff;
@@ -175,12 +175,12 @@
     clear: both;
     font-family: $font-sans-regular;
     }
-
-@media (min-width: 70em) {
-.swatch-details  {
-    clear: none;
+    
+    @media (min-width: 70em) {
+    .swatch-details  {
+        clear: none;
+        }
     }
-}
 
 .pattern {
     clear: both;
@@ -227,7 +227,6 @@
     line-height: 1.4em;
     }
 
-
 .pattern {
     clear: both;
     }
@@ -237,13 +236,16 @@
     padding: 0 0 0 0.5em;
     }
 
-
-
+.pattern-link:hover,
+.pattern-link:focus,
+.pattern-link:active {
+    border-bottom: none;
+    }
 
 .nav-section-select {
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: $color-corporate-black;
     color: white;
     opacity: 0.5;
