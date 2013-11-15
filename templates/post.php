@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-gb">
-<head>
-    <meta charset="utf-8">
-    <title>Code for America Website Style Guide</title>
-    <link rel="stylesheet" href="../style/css/main.css">
-    <link href="../style/css/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-
-<body class="xx">
-    
+<?php include("../patterns/global/head.html") ?>
     
     <?php include("../patterns/global/header.html") ?>
     
@@ -61,7 +45,15 @@
                     
                     <div class="post-author">
                         <p>Written by:</p>
-                        <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments. As a private consultant, I used my love of data and passion for technology to work with New York City Administration for Children’s Services to improve services for children just like me, and many that were in much worse circumstances. From there, I worked in the Newark, N.J. Mayor’s Office to leverage technology to improve city life and services.</p>
+                        <div class="h-card">
+                            <h3 class="p-name profile-name">Zachary Townsend</h3>
+                            <img class="u-photo profile-photo" src="/placeholder/avatar-tiffani-bell.png" />
+                        </div>
+                        
+                        <div class="p-note profile-note">
+                            <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments. As a private consultant, I used my love of data and passion for technology to work with New York City Administration for Children’s Services to improve services for children just like me, and many that were in much worse circumstances. From there, I worked in the Newark, N.J. Mayor’s Office to leverage technology to improve city life and services.</p>
+                            <p><a class="link-more" href="#">More</a></p>
+                        </div>
                     </div>  
                 
                 </div>  
@@ -76,6 +68,4 @@
     
     <?php include("../patterns/global/footer.html") ?>  
     
-</body>
-
-</html>
+<?php include("../patterns/global/foot.html") ?> 

@@ -5196,6 +5196,8 @@
 body {
   font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 article,
@@ -6363,8 +6365,27 @@ input.button-unstyled,
 
 .post .post-content {
   padding-left: 0;
-  margin-left: 11%;
+  margin-left: 0;
+  float: right;
+}
+
+.post .post-author {
+  margin-left: 10%;
+  /* fallback */
+  color: #999595;
+  color: #999595;
+  font-size: 0.85em;
+}
+
+.post .post-author .profile-photo {
+  width: 50px;
+  height: 50px;
   float: left;
+  margin: 0 1em 0 0;
+}
+
+.post .post-header {
+  padding-left: 2%;
 }
 
 .post .post-date {
