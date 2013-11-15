@@ -1,12 +1,12 @@
-<?php include("../patterns/global/head.html") ?>
+<?php include("../blocks/global/head.html") ?>
     
-    <?php include("../patterns/global/header.html") ?>
+    <?php include("../blocks/global/header.html") ?>
     
     <div class="layout-container">
     
         <main role="main">
             
-            <?php include("../patterns/nav/nav-breadcrumb.html") ?>
+            <?php include("../blocks/nav/nav-breadcrumb.html") ?>
             
             <article class="post">
                 
@@ -62,10 +62,8 @@
             
         </main><!--@main-->
         
-          
-        
     </div>
     
-    <?php include("../patterns/global/footer.html") ?>  
+    <?php include("../blocks/global/footer.html") ?>  
     
-<?php include("../patterns/global/foot.html") ?> 
+<?php include("../blocks/global/foot.html") ?> 

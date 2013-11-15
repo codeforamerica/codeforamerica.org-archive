@@ -1,16 +1,16 @@
-/* Default styles */
-@import 'variables/typography';
-@import 'variables/color-scheme';
-@import 'icons';
+/* Base styles */
+@import 'base/typography';
+@import 'base/color-scheme';
+@import 'base/icons';
 
 /* Elements */
 @import 'elements/text';
 @import 'elements/headings';
 @import 'elements/links';
 @import 'elements/lists';
+@import 'elements/media';
 @import 'elements/tables';
 @import 'elements/forms';
-@import 'elements/navigation';
 
 /* Patterns */
 @import 'patterns/button';
@@ -21,6 +21,7 @@
 @import 'patterns/hero';
 @import 'patterns/highlight';
 @import 'patterns/lists';
+@import 'patterns/nav';
 @import 'patterns/nav-breadcrumbs';
 @import 'patterns/nav-global-primary';
 @import 'patterns/nav-page';
@@ -31,13 +32,11 @@
 @import 'patterns/teaser';
 @import 'patterns/post';
 
+/* Global */
+@import 'global/header';
+@import 'global/footer';
+@import 'global/sections';
+@import 'global/layout';
 
-@import 'patterns/global/header';
-@import 'patterns/global/footer';
-
-/* Page level */
-@import 'sections';
-@import 'layout';
-
-/* Website documentation styles */
-@import 'documentation';
+/* Templates */
+@import 'templates/documentation';
