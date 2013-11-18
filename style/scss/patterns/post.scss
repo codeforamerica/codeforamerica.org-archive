@@ -2,30 +2,22 @@
     }
 
 .post .post-content {
-    @extend .layout-colspan-6;
-    padding-left: 0;
-    margin-left: 0;
-    float: right;
+    margin-bottom: 2.5em;
     }
-
-.post .post-author {
-    @extend .layout-col;
-    @extend .layout-colspan-2;
-    margin-left: 10%;
-    @include color($color-medium-gray, 1);
-    font-size: 0.85em;
+    
+    @media (min-width: 60em) {
+        .post .post-content {
+            width: 72%;
+            padding-left: 0;
+            margin-left: 0;
+            float: right;
+            }
     }
-
-.post .post-author .profile-photo {
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin: 0 1em 0 0;
-    }
-
+    
 .post .post-header {
     @extend .heading;
     padding-left: 2%;
+    margin: 0 0 2em;
     }
 
 .post .post-date {
@@ -38,12 +30,23 @@
 
 .post .post-body {
     clear: both;
-    width: 100%;
+    width: 98%;
     float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    }
+    
+    @media (min-width: 60em) {
+        .post .post-body {
+            width: 100%;
+            float: left;
+            margin: 0;
+            }
     }
 
 .post .post-content > p:first-child {
     min-height: 3em;
+    margin-top: 0;
     }
 
 .post .post-content > p:first-child:first-letter {
@@ -61,3 +64,40 @@
     margin: 0 0 0 -16.7%;
     }
 }
+
+.post-author {
+    @include color($color-medium-gray, 1);
+    font-size: 0.85em;
+    width: 100%;
+    margin: 0 0 2em 0;
+    }
+    
+    @media (min-width: 60em) {
+        .post-author {
+        width:  22%;
+        float: left;
+        margin: 0 2%;
+        }
+    }
+    
+.post-author .profile-name {
+    margin: 0 0 0.3em 0;
+    @include color($color-corporate-red, 1);
+    font-size: 1.5em;
+    }
+
+.post-author .profile-photo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0.5em 0.8em 0 0;
+    }
+
+.post-author .profile-note {
+    
+    }
+
+.post-author .profile-note p {
+    margin-top: 0;
+    line-height: 1.7em;
+    }

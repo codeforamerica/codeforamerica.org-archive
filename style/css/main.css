@@ -5319,6 +5319,11 @@ blockquote p {
   padding: 1.3em 0 0.5em 0;
 }
 
+.heading-mini {
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .page-title {
   font-size: 90px;
   line-height: 72px;
@@ -5777,11 +5782,10 @@ input.button-unstyled,
 }
 
 .hero .hero-header {
-  padding-top: 6em;
+  padding-top: 2em;
   padding-bottom: 1em;
   overflow: hidden;
   width: 100%;
-  padding-bottom: 2em;
 }
 
 .hero-header .nav-breadcrumbs {
@@ -5870,7 +5874,7 @@ input.button-unstyled,
   }
 }
 /* @end highlight with avatar */
-.list-no-bullets, .nav-global-primary ul, .global-footer .nav-footer ul,
+.list-no-bullets, .nav-global-secondary ul, .global-footer .nav-footer ul,
 .global-footer .nav-footer ul ul {
   margin-left: 0;
   float: left;
@@ -5878,7 +5882,7 @@ input.button-unstyled,
   padding: 0;
 }
 
-.list-no-bullets li, .nav-global-primary ul li, .global-footer .nav-footer ul li {
+.list-no-bullets li, .nav-global-secondary ul li, .global-footer .nav-footer ul li {
   list-style-type: none;
   background-image: none;
   padding-left: 0;
@@ -6058,7 +6062,7 @@ nav ul li {
   width: 50px;
 }
 
-.nav-global-primary {
+.nav-global-secondary {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 1em;
@@ -6066,47 +6070,53 @@ nav ul li {
 }
 
 @media (min-width: 40em) {
-  .nav-global-primary {
+  .nav-global-secondary {
     width: auto;
     float: right;
     margin-top: 0.5em;
   }
 }
-.nav-global-primary ul {
+.nav-global-secondary ul {
   display: table;
 }
 
-.nav-global-primary li {
+.nav-global-secondary li {
   border: none;
   display: table-cell;
+  vertical-align: top;
+  font-family: "Open Sans Bold", "Helvetica", "Arial";
 }
 
 @media (min-width: 40em) {
-  .nav-global-primary li {
+  .nav-global-secondary li {
     display: inline-block;
   }
 }
-.nav-global-primary li a {
-  padding: 0.5em 1em;
-}
-
-.nav-global-primary li:last-child a {
-  padding-right: 0;
-}
-
-.nav-global-primary li a:link,
-.nav-global-primary li a:visited {
+.nav-global-secondary li a {
+  padding: 0.3em 1em;
+  display: block;
   /* fallback */
   color: black;
   color: black;
+  margin: 0 1em;
 }
 
-.nav-global-primary li a:hover,
-.nav-global-primary li a:focus,
-.nav-global-primary li a:active {
+.nav-global-secondary li a:hover,
+.nav-global-secondary li a:focus,
+.nav-global-secondary li a:active {
   /* fallback */
   color: #cf1b41;
   color: #cf1b41;
+}
+
+.nav-global-secondary li .button {
+  font-size: 1em;
+  padding: 0.3em 0.55em;
+  margin: 0 1em;
+}
+
+.nav-global-secondary li:last-child a {
+  margin-right: 0;
 }
 
 .nav-page {
@@ -6373,28 +6383,20 @@ nav ul li {
 }
 
 .post .post-content {
-  padding-left: 0;
-  margin-left: 0;
-  float: right;
+  margin-bottom: 2.5em;
 }
 
-.post .post-author {
-  margin-left: 10%;
-  /* fallback */
-  color: #999595;
-  color: #999595;
-  font-size: 0.85em;
+@media (min-width: 60em) {
+  .post .post-content {
+    width: 72%;
+    padding-left: 0;
+    margin-left: 0;
+    float: right;
+  }
 }
-
-.post .post-author .profile-photo {
-  width: 50px;
-  height: 50px;
-  float: left;
-  margin: 0 1em 0 0;
-}
-
 .post .post-header {
   padding-left: 2%;
+  margin: 0 0 2em;
 }
 
 .post .post-date {
@@ -6409,12 +6411,22 @@ nav ul li {
 
 .post .post-body {
   clear: both;
-  width: 100%;
+  width: 98%;
   float: left;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
+@media (min-width: 60em) {
+  .post .post-body {
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+}
 .post .post-content > p:first-child {
   min-height: 3em;
+  margin-top: 0;
 }
 
 .post .post-content > p:first-child:first-letter {
@@ -6431,12 +6443,54 @@ nav ul li {
     margin: 0 0 0 -16.7%;
   }
 }
+.post-author {
+  /* fallback */
+  color: #999595;
+  color: #999595;
+  font-size: 0.85em;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+@media (min-width: 60em) {
+  .post-author {
+    width: 22%;
+    float: left;
+    margin: 0 2%;
+  }
+}
+.post-author .profile-name {
+  margin: 0 0 0.3em 0;
+  /* fallback */
+  color: #cf1b41;
+  color: #cf1b41;
+  font-size: 1.5em;
+}
+
+.post-author .profile-photo {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 0.5em 0.8em 0 0;
+}
+
+.post-author .profile-note p {
+  margin-top: 0;
+  line-height: 1.7em;
+}
+
 /* Global */
 .global-header {
   text-align: center;
   padding: 1.5em 0;
   float: left;
   width: 100%;
+  border-bottom: 1px solid;
+  /* fallback */
+  border-color: #e5e5e5;
+  border-color: rgba(229, 229, 229, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+  margin: 0 0 2em 0;
 }
 
 @media (min-width: 40em) {
@@ -6547,7 +6601,7 @@ nav ul li {
 }
 
 /* Gridpak Beta CSS - http://gridpak.com/, Created by @erskinedesign */
-.layout-col, .post .post-author {
+.layout-col {
   border: 0px solid rgba(0, 0, 0, 0);
   float: left;
   -webkit-box-sizing: border-box;
@@ -6559,7 +6613,7 @@ nav ul li {
 }
 
 @media (min-width: 30em) {
-  .layout-col, .post .post-author {
+  .layout-col {
     list-style-type: none;
     margin-left: 2%;
     /*padding: 0 1.5%;*/
@@ -6580,7 +6634,7 @@ nav ul li {
     padding: 0;
   }
 }
-.layout-row .layout-col:first-child, .layout-row .post .post-author:first-child, .post .layout-row .post-author:first-child {
+.layout-row .layout-col:first-child {
   margin-left: 0;
 }
 
@@ -6588,7 +6642,7 @@ nav ul li {
   width: 9.33333333333%;
 }
 
-.layout-colspan-2, .post .post-author {
+.layout-colspan-2 {
   width: 20.6666666667%;
 }
 
@@ -6615,7 +6669,7 @@ nav ul li {
   }
 }
 @media (min-width: 30em) {
-  .layout-colspan-6, .post .post-content {
+  .layout-colspan-6 {
     width: 66.0%;
   }
 }

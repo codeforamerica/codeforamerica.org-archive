@@ -3,6 +3,10 @@
     padding: 1.5em 0;
     float: left;
     width: 100%;
+    border-bottom: 1px solid;
+    @include border-color($color-light-gray, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+    margin: 0 0 2em 0;
     }
 
 @media (min-width: 40em) {

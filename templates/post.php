@@ -6,7 +6,12 @@
     
         <main role="main">
             
-            <?php include("../blocks/nav/nav-breadcrumb.html") ?>
+            <nav class="nav-breadcrumbs">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
             
             <article class="post">
                 
@@ -18,8 +23,6 @@
                 <div class="post-body">
                 
                     <div class="post-content">
-                        
-                        <p>This post is part of an ongoing series by Code for America mentors. Zachary is a 2013 mentor at Code for America for the startups program.</p> 
                     
                         <p>I work with governments because, when operated well, they can improve the lives of so many people. I work with civic startups at the <a href="#"><abbr title="Code for America">CfA</abbr> Accelerator</a> because, when operated well, they can improve the efficiency of so many governments. Every positive change I made working in government in Newark, N.J. might effect tens of thousands of families and every civic startup I mentor might affect hundreds of governments.</p>
                         
@@ -44,7 +47,7 @@
                     </div>
                     
                     <div class="post-author">
-                        <p>Written by:</p>
+                        <p class="heading-mini">Written by:</p>
                         <div class="h-card">
                             <h3 class="p-name profile-name">Zachary Townsend</h3>
                             <img class="u-photo profile-photo" src="/placeholder/avatar-tiffani-bell.png" />

@@ -1,0 +1,55 @@
+.nav-global-secondary {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+    width: 100%;
+    }
+
+@media (min-width: 40em) {
+.nav-global-secondary {
+    width: auto;
+    float: right;
+    margin-top: 0.5em;
+    }
+    }
+
+.nav-global-secondary ul {
+    @extend .list-no-bullets;
+    display: table;
+    }
+
+.nav-global-secondary li {
+    border: none;
+    display: table-cell;
+    vertical-align: top;
+    font-family: $font-sans-bold;
+    }
+
+@media (min-width: 40em) {
+    .nav-global-secondary li {
+        display: inline-block;
+        }
+    }
+
+.nav-global-secondary li a {
+    padding: 0.3em 1em;
+    display: block;
+    @include color($color-corporate-black, 1);
+    margin: 0 1em;
+    }
+
+.nav-global-secondary li a:hover,
+.nav-global-secondary li a:focus,
+.nav-global-secondary li a:active {
+    @include color($color-corporate-red, 1);
+    }
+
+.nav-global-secondary li .button {
+    font-size: 1em;
+    padding: 0.3em 0.55em;
+    margin: 0 1em;
+    }
+
+.nav-global-secondary li:last-child a {
+    margin-right: 0;
+    }
