@@ -24,12 +24,18 @@
 }
 
 .layout-container {
-    width: 96%;
-    padding: 0 2%;
+    width: 92%;
+    padding: 0 4%;
     max-width: 60em;
     margin: 0 auto;
     }
 
+@media (min-width: 40em) {
+    .layout-container {
+    width: 96%;
+    padding: 0 2%;
+    }
+}
 
 @media (min-width: 60em) {
     .layout-container {

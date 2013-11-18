@@ -9,7 +9,7 @@
             <nav class="nav-breadcrumbs">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li>Blog</li>
                 </ul>
             </nav>
             
@@ -47,7 +47,7 @@
                     </div>
                     
                     <div class="post-author">
-                        <p class="heading-mini">Written by:</p>
+                        <h2 class="heading-mini">Written by:</h2>
                         <div class="h-card">
                             <h3 class="p-name profile-name">Zachary Townsend</h3>
                             <img class="u-photo profile-photo" src="/placeholder/avatar-tiffani-bell.png" />
@@ -57,6 +57,17 @@
                             <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments. As a private consultant, I used my love of data and passion for technology to work with New York City Administration for Children’s Services to improve services for children just like me, and many that were in much worse circumstances. From there, I worked in the Newark, N.J. Mayor’s Office to leverage technology to improve city life and services.</p>
                             <p><a class="link-more" href="#">More</a></p>
                         </div>
+                        
+                        <div class="post-categories">
+                            <h2 class="heading-mini">Filed under</h2>
+                            <ul>
+                                <li><a href="#">Accelerator</a></li>
+                                <li><a href="#">Commentary</a></li>
+                                <li><a href="#">Guest Post</a></li>
+                                <li><a href="#">Mentor</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>  
                 
                 </div>  

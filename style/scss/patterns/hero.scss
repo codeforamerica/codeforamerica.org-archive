@@ -1,7 +1,14 @@
 .hero {
+    display: none
+    }
+
+@media (min-width: 40em) {
+.hero {
+    display: block;
     @include background-color($color-corporate-blue, 1);
     clear: both;
     }
+}
 
 .hero .hero-header {
     padding-top: 2em;

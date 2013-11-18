@@ -14,12 +14,10 @@
 
 .nav-breadcrumbs li:after {
     content: "⟶ ";
-    font-size: 0.8em;
-    vertical-align: middle;
+    font-size: 1em;
     }
 
 .nav-breadcrumbs li:last-child {
-    vertical-align: sub;
     padding: 0.5em;
     }
 
@@ -50,7 +48,6 @@
     padding: 0.5em;
     display: inline-block;
     @include color($color-corporate-gray, 1);
-    vertical-align: sub;
     }
 
 .nav-breadcrumbs a:hover,

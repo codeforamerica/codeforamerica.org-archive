@@ -1,12 +1,12 @@
 .nav-global-secondary {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 1em;
-    width: 100%;
+    display: none;
     }
+
+
 
 @media (min-width: 40em) {
 .nav-global-secondary {
+    display: block;
     width: auto;
     float: right;
     margin-top: 0.5em;
