@@ -34,16 +34,27 @@
     <a class="xx-cfa-logo" href="/">
         <img src="/images/logo.png" />
     </a>
-    <ol class="xx-nav" role="navigation">
-        <?php displayList($patternsPath); ?>
-    </ol>
+    
+    <div class="xx-nav">
+        <h2 class="heading-mini">Styleguide</h2>
+        <ol role="navigation">
+            <li class="xx-link-special"><a href="/patchwork.php">View as patchwork</a></li>
+            <?php displayList($patternsPath); ?>
+        </ol>
+        <h2 class="heading-mini">Templates</h2>
+        <ol role="navigation">
+            <li><a href="/templates/post.php">Post</a></li>
+        </ol>
+    </div>
+    
+    
     <a class="xx-hallmark" href="http://clearleft.com/" title="Crafted by Clearleft in Brighton">Crafted by Clearleft in Brighton, UK</a>
  </div>
 
 
 <div class="xx-container">
     
-    <h1>Website Style Guide</h1>
+    <h1 class="xx-title">Website Style Guide</h1>
 
     <form action="" method="post" id="pattern">
         <select name="section" id="pattern-select" class="nav-section-select">

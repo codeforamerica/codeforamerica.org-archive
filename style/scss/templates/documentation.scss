@@ -22,7 +22,7 @@
 
 .xx-sidebar .xx-nav {
     padding: 0;
-    margin: 5em 0 5em;
+    margin: 6em 0 6em;
     display: none;
     font-family: $font-sans-regular;
     }
@@ -39,9 +39,15 @@
     width: 100%;
     }
 
+.xx-sidebar .xx-nav .heading-mini,
 .xx-sidebar .xx-nav li a {
     padding: 0.8em 5% 0.8em 15%;
     display: block;
+    }
+
+.xx-sidebar .xx-nav .heading-mini {
+    border-top: 1px solid #ddd;
+    margin-top: 1.5em;
     }
 
 .xx-sidebar .xx-nav li a:hover,
@@ -54,15 +60,21 @@
 
 .xx-container {
     width: 96%;
-    padding: 0 2%;
+    padding: 1em 2%;
     }
     
     @media (min-width: 40em) {
     .xx-container {
         float: right;
         width: 76%;
-        padding: 0 2%;
         }
+    }
+
+.xx-title {
+    margin-bottom: 1em;
+    font-family: $font-sans-bold;
+    text-transform: uppercase;
+    font-size: 3em;
     }
 
 .xx-cfa-logo {
@@ -131,6 +143,15 @@
 .xx-section {
     clear: both;
     padding-top: 1em;
+    }
+
+.xx-nav ol {
+    margin: 0;
+    padding: 0;
+    }
+
+.xx-link-special {
+    
     }
 
 .swatch {

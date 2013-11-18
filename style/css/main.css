@@ -6612,7 +6612,7 @@ nav ul li {
 }
 
 .global-header .skip-to-nav a:after {
-  content: " ☰";
+  content: " ≡";
   font-size: 1.35em;
   vertical-align: text-bottom;
 }
@@ -6869,7 +6869,7 @@ nav ul li {
 }
 .xx-sidebar .xx-nav {
   padding: 0;
-  margin: 5em 0 5em;
+  margin: 6em 0 6em;
   display: none;
   font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
 }
@@ -6885,9 +6885,15 @@ nav ul li {
   width: 100%;
 }
 
+.xx-sidebar .xx-nav .heading-mini,
 .xx-sidebar .xx-nav li a {
   padding: 0.8em 5% 0.8em 15%;
   display: block;
+}
+
+.xx-sidebar .xx-nav .heading-mini {
+  border-top: 1px solid #ddd;
+  margin-top: 1.5em;
 }
 
 .xx-sidebar .xx-nav li a:hover,
@@ -6900,16 +6906,22 @@ nav ul li {
 
 .xx-container {
   width: 96%;
-  padding: 0 2%;
+  padding: 1em 2%;
 }
 
 @media (min-width: 40em) {
   .xx-container {
     float: right;
     width: 76%;
-    padding: 0 2%;
   }
 }
+.xx-title {
+  margin-bottom: 1em;
+  font-family: "Open Sans Bold", "Helvetica", "Arial";
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
 .xx-cfa-logo {
   display: block;
   margin: 0 auto;
@@ -6978,6 +6990,11 @@ nav ul li {
 .xx-section {
   clear: both;
   padding-top: 1em;
+}
+
+.xx-nav ol {
+  margin: 0;
+  padding: 0;
 }
 
 .swatch {
