@@ -25,3 +25,38 @@
         margin: 0;
         }
     }
+
+.global-header .skip-to-nav {
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    @include color($color-corporate-black, 1);
+    font-family: $font-sans-bold;
+    font-size: 1.2em;
+    margin: 0;
+    }
+    
+    @media (min-width: 40em) {
+    .global-header .skip-to-nav {
+        display: none;
+        }
+    }
+
+.global-header .skip-to-nav a {
+    @include color($color-corporate-black, 1);
+    border-bottom: none;
+    padding: 1em 0;
+    display: block;
+    }
+
+.global-header .skip-to-nav a:hover,
+.global-header .skip-to-nav a:focus,
+.global-header .skip-to-nav a:active {
+    @include color($color-corporate-red, 1);
+    }
+
+.global-header .skip-to-nav a:after {
+    content: (" ☰");
+    font-size: 1.35em;
+    vertical-align: text-bottom;
+    }

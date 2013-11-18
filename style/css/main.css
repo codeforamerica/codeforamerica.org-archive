@@ -6577,6 +6577,46 @@ nav ul li {
     margin: 0;
   }
 }
+.global-header .skip-to-nav {
+  display: block;
+  float: right;
+  text-transform: uppercase;
+  /* fallback */
+  color: black;
+  color: black;
+  font-family: "Open Sans Bold", "Helvetica", "Arial";
+  font-size: 1.2em;
+  margin: 0;
+}
+
+@media (min-width: 40em) {
+  .global-header .skip-to-nav {
+    display: none;
+  }
+}
+.global-header .skip-to-nav a {
+  /* fallback */
+  color: black;
+  color: black;
+  border-bottom: none;
+  padding: 1em 0;
+  display: block;
+}
+
+.global-header .skip-to-nav a:hover,
+.global-header .skip-to-nav a:focus,
+.global-header .skip-to-nav a:active {
+  /* fallback */
+  color: #cf1b41;
+  color: #cf1b41;
+}
+
+.global-header .skip-to-nav a:after {
+  content: " ☰";
+  font-size: 1.35em;
+  vertical-align: text-bottom;
+}
+
 .global-footer {
   clear: both;
   /* fallback */
