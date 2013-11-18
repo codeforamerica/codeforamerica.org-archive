@@ -1,5 +1,62 @@
 .global-footer {
     clear: both;
+    @include background-color($color-corporate-gray, 1);
+    border-top: 10px solid;
+    @include border-color($color-corporate-blue, 1);
+    @include color($color-white, 1);
+    float: left;
+    width: 100%;
+    padding: 1.5em 0;
+    }
+
+.global-footer a:link,
+.global-footer a:visited,
+.global-footer a:hover,
+.global-footer a:focus,
+.global-footer a:active {
+    @include color($color-white, 1);
+    }
+
+.global-footer .nav-footer {
+
+    }
+
+.global-footer .nav-footer ul,
+.global-footer .nav-footer ul ul {
+    @extend .list-no-bullets;
+    margin: 0;
+    }
+
+.global-footer .nav-footer > ul {
+    display: flex;
+    padding: 0 2%;
+    width: 96%;
+    }
+
+
+
+.global-footer .nav-footer .nav-tier1 {
+    margin-left: 2%;
+    flex: 1;
+    }
+
+.global-footer .nav-footer .nav-tier2 {
+    @include color($color-light-gray, 1);
+    }
+
+.global-footer .nav-footer .nav-tier2 li {
+    margin-bottom: 0.5em;
+    }
+
+.global-footer .nav-footer .nav-tier1:first-child {
+    margin-left: 0;
+    }
+
+.global-footer .nav-footer .nav-heading {
+    display: block;
+    font-size: 1.3em;
+    font-family: $font-sans-bold;
+    margin-bottom: 0.5em;
     }
 
 .global-foot {
@@ -20,3 +77,4 @@
 .global-foot small {
     margin: 0 0 0 120px;
     }
+    

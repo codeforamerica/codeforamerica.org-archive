@@ -5870,14 +5870,15 @@ input.button-unstyled,
   }
 }
 /* @end highlight with avatar */
-.list-no-bullets, .nav-global-primary ul {
+.list-no-bullets, .nav-global-primary ul, .global-footer .nav-footer ul,
+.global-footer .nav-footer ul ul {
   margin-left: 0;
   float: left;
   width: 100%;
   padding: 0;
 }
 
-.list-no-bullets li, .nav-global-primary ul li {
+.list-no-bullets li, .nav-global-primary ul li, .global-footer .nav-footer ul li {
   list-style-type: none;
   background-image: none;
   padding-left: 0;
@@ -5957,6 +5958,11 @@ input.button-unstyled,
 
 .list-horizontal li {
   float: left;
+}
+
+.list-social li {
+  background-image: none;
+  padding: 0;
 }
 
 .list-social-horizontal {
@@ -6267,6 +6273,9 @@ nav ul li {
   /* fallback */
   color: black;
   color: black;
+  /* fallback */
+  border-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .seal .seal-label {
@@ -6448,6 +6457,66 @@ nav ul li {
 }
 .global-footer {
   clear: both;
+  /* fallback */
+  background: #6d6e71;
+  background: #6d6e71;
+  border-top: 10px solid;
+  /* fallback */
+  border-color: #399fd3;
+  border-color: #399fd3;
+  /* fallback */
+  color: white;
+  color: white;
+  float: left;
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+.global-footer a:link,
+.global-footer a:visited,
+.global-footer a:hover,
+.global-footer a:focus,
+.global-footer a:active {
+  /* fallback */
+  color: white;
+  color: white;
+}
+
+.global-footer .nav-footer ul,
+.global-footer .nav-footer ul ul {
+  margin: 0;
+}
+
+.global-footer .nav-footer > ul {
+  display: flex;
+  padding: 0 2%;
+  width: 96%;
+}
+
+.global-footer .nav-footer .nav-tier1 {
+  margin-left: 2%;
+  flex: 1;
+}
+
+.global-footer .nav-footer .nav-tier2 {
+  /* fallback */
+  color: #e5e5e5;
+  color: #e5e5e5;
+}
+
+.global-footer .nav-footer .nav-tier2 li {
+  margin-bottom: 0.5em;
+}
+
+.global-footer .nav-footer .nav-tier1:first-child {
+  margin-left: 0;
+}
+
+.global-footer .nav-footer .nav-heading {
+  display: block;
+  font-size: 1.3em;
+  font-family: "Open Sans Bold", "Helvetica", "Arial";
+  margin-bottom: 0.5em;
 }
 
 .global-foot {
@@ -6494,6 +6563,8 @@ nav ul li {
     list-style-type: none;
     margin-left: 2%;
     /*padding: 0 1.5%;*/
+    background-image: none;
+    padding-left: 0;
   }
 }
 .layout-container {
@@ -6566,6 +6637,7 @@ nav ul li {
 .layout-grid {
   margin: 0;
   padding: 0;
+  background-image: none;
 }
 
 @media (min-width: 30em) and (max-width: 50em) {
