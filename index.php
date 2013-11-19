@@ -43,6 +43,8 @@
         </ol>
         <h2 class="heading-mini">Templates</h2>
         <ol role="navigation">
+            <li><a href="/templates/city-boston.php">City (Boston)</a></li>
+            <li><a href="/templates/fellows.php">Fellows</a></li>
             <li><a href="/templates/post.php">Post</a></li>
         </ol>
     </div>
