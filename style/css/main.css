@@ -5736,6 +5736,7 @@ input.button-unstyled,
 .badge-heading {
   min-height: 3.5em;
   padding: 1.3em 0 0.5em 4.5em;
+  clear: both;
 }
 
 .badge-heading i {
@@ -6425,6 +6426,9 @@ nav ul li {
 
 .teaser {
   margin-bottom: 1.8em;
+  /* fallback */
+  background: white;
+  background: white;
 }
 
 .teaser a:link,
@@ -6702,10 +6706,22 @@ nav ul li {
   margin: 0 0 0 120px;
 }
 
+[class*="section-"] {
+  float: left;
+  width: 100%;
+  margin: 3em 0 0 0;
+}
+
 .section-blue {
   /* fallback */
   background: #2f3d4a;
   background: #2f3d4a;
+}
+
+.section-gray {
+  /* fallback */
+  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.5);
 }
 
 /* Gridpak Beta CSS - http://gridpak.com/, Created by @erskinedesign */

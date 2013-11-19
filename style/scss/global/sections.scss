@@ -1,3 +1,13 @@
+[class*="section-"] {
+    float: left;
+    width: 100%;
+    margin: 3em 0 0 0;
+    }
+
 .section-blue {
     @include background-color($color-dark-blue, 1);
+    }
+
+.section-gray {
+    @include background-color($color-light-gray, 0.5);
     }

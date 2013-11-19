@@ -1,5 +1,12 @@
 <?php include("../blocks/global/head.html") ?>
     
+    <div class="hero">
+        <header class="layout-container hero-header">
+            <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
+            <h1 class="page-title">Blogging [for America]</h1>
+        </header>
+    </div>
+    
     <?php include("../blocks/global/header.html") ?>
     
     <div class="layout-container">
@@ -16,7 +23,7 @@
             <article class="post">
                 
                 <header class="post-header">
-                    <h1 class="post-title">Why I'm mentoring for America: Zachary Townsend</h1>
+                    <h2 class="post-title">Why I'm mentoring for America: Zachary Townsend</h2>
                     <time class="post-date" datetime="2013-11-13 09:00-05:00">November 1st, 2013</time>
                 </header>
                 

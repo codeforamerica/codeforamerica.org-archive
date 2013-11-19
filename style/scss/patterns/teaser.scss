@@ -1,5 +1,6 @@
 .teaser {
     margin-bottom: 1.8em;
+    @include background-color($color-white, 1);
     }
 
 .teaser a:link,
