@@ -67,8 +67,9 @@
 
 .list-inline li {
     display: inline;
-    border-right: 2px solid $color-medium-gray;
     margin: 0 0.15em 0 0;
+    background-image: none;
+    padding: 0;
     }
 
 .list-inline li:last-child {
@@ -102,4 +103,31 @@
     font-size: 0.85em;
     margin-right: 0.8em;
     }
+@media (min-width: 60em) {
+.list-buttons {
+    display: flex;
+    }
 
+.list-buttons li {
+    flex: 1;
+    margin: 0 0.4em;
+    text-align: center;
+    }
+
+
+
+.list-buttons .button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+.list-buttons li:first-child {
+    margin-left: 0;
+    }
+    
+.list-buttons li:last-child {
+    margin-right: 0;
+    }
+
+}

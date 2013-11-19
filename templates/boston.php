@@ -30,11 +30,29 @@
                     <h2>The Brigade</h2>
                 </header>
                 
-                <p>Boston has been a techie city for a very long time. The city established the nation’s first Mayor’s Office of New Urban Mechanics (MONUM) and the department’s co-chairs were named Governing Magazine’s Public Officials of the Year. With forward-thinking leaders at the helm, Boston is paving the way for civic innovation. The city has an active Code for America Brigade — a group of local volunteers who meet regularly to attend events, collaborate on new projects and stand up existing apps. For details visit Code for Boston.</p>
+                <div class="layout-row">
                 
-                <a href="#" class="button button-prominent">Visit code for Boston</a>
+                    <div class="layout-col layout-colspan-5">
+                    
+                    <p>Boston has been a techie city for a very long time. The city established the nation’s first Mayor’s Office of New Urban Mechanics (MONUM) and the department’s co-chairs were named Governing Magazine’s Public Officials of the Year. With forward-thinking leaders at the helm, Boston is paving the way for civic innovation. The city has an active Code for America Brigade — a group of local volunteers who meet regularly to attend events, collaborate on new projects and stand up existing apps. For details visit Code for Boston.</p>
+                    
+                    </div>
                 
-                <a href="#" class="button">Visit Open Data portal</a>
+                    <div class="layout-col layout-colspan-4">
+                    
+                        <img class="teaser-image" src="/placeholder/big-data.jpg">
+                        
+                        <ul class="list-gappy list-inline list-buttons">
+                        
+                            <li><a href="#" class="button button-prominent">Visit code for Boston</a></li>
+                        
+                            <li><a href="#" class="button">Visit Open Data portal</a></li>
+                        
+                        </ul>
+                    
+                    </div>
+                
+                </div>
                 
             </section>
             
@@ -45,7 +63,7 @@
                         <blockquote>
                             <p>Finding little wins that you can discover along the way, moments when people can come together and solve some small issue — that’s critical to the experience of innovation.</p>
                         </blockquote>
-                        <p class="attribute">Nigel Jacob, Co-Director Boston’s Office of New Urban Mechanics</p>
+                        <p class="attribute">Nigel Jacob, Co-Director <a href="#">Boston’s Office of New Urban Mechanics</a></p>
                     </div>
                 </div>
             </section>
@@ -55,7 +73,7 @@
             <section class="layout-container">
             
                 <header class="badge-heading">
-                    <i class="pop icon-rocket"></i>
+                    <i class="pop pop-red icon-rocket"></i>
                     <h2>The 2012 Fellowship in Boston</h2>
                 </header>
                 
@@ -66,57 +84,57 @@
                 <p>The DiscoverBPS app has been heralded by the Washington Post as a true feat. Fellows built the still popular application in only 2 months with the bulk of the work falling on the shoulders of developer Joel Mahoney. The app has since been taken over by the City of Boston’s IT department.</p>
                 
                 <p>Some of the other apps built that year include a developer collaboration platform, tool that turns spreadsheets into APIs, mobile app that locates wifi points and a tool that looks a bit like Foursquare for snow-covered fire hydrants called Adopt-a-hydrant.  While “Adopt-a” may seem specific to Boston, it’s since been redeployed to storm drains in Seattle and tsunami sirens in Honolulu.</p>
-                
-                <a href="#" class="button button-prominent">Visit code for Boston</a>
-                
-                <a href="#" class="button">Visit Open Data portal</a>
+            
+            </section>
+            
+            <section class="layout-container">
                     
                 
                 <header class="badge-heading">
-                    <i class="pop icon-rocket"></i>
+                    <i class="pop pop-dark-blue icon-rocket"></i>
                     <h2>2012 Apps</h2>
                 </header>
                 
                 <ul class="list-no-bullets layout-grid">
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-atlanta.png" alt="seal of Atlanta" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">Discover BPS</strong>
                         </a>
                     </li>
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-denver.png" alt="seal of Denver" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">Adopt-a-Hydrant</strong>
                         </a>
                     </li>
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-chatanooga.png" alt="seal of Chatanooga" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">ClassTalk</strong>
                         </a>
                     </li>
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-atlanta.png" alt="seal of Atlanta" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">Where's my Schoolbus?</strong>
                         </a>
                     </li>
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-denver.png" alt="seal of Denver" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">TechnoFinder</strong>
                         </a>
                     </li>
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-chatanooga.png" alt="seal of Chatanooga" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">Data Works</strong>
                         </a>
                     </li>
                     <li class="layout-col layout-colspan-3">
                         <a href="#" class="seal">
-                            <img class="seal-image" src="placeholder/seal-chatanooga.png" alt="seal of Chatanooga" />
+                            <img class="seal-image" src="http://placehold.it/160x50" />
                             <strong class="seal-label">Data Finder</strong>
                         </a>
                     </li>
@@ -124,8 +142,8 @@
                 
                 <p class="heading-mini">This program made possible by these community partners</p>
                 
-                <ul>
-                    <li><a href="#">Microsoft</a></li>
+                <ul class="list-inline">
+                    <li><a href="#"><img src="/placeholder/logo-microsoft.png"/></a></li>
                 </ul>
             
             </section>
@@ -135,7 +153,7 @@
                 <section class="layout-container">
             
                     <header class="badge-heading">
-                        <i class="pop icon-rocket"></i>
+                        <i class="pop pop-orange icon-rocket"></i>
                         <h2>Articles &amp; video</h2>
                     </header>
                     

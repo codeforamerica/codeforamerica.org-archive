@@ -1,7 +1,5 @@
-[class*="section-"] {
-    float: left;
-    width: 100%;
-    margin: 3em 0 0 0;
+section.layout-container {
+    margin: 3em auto;
     }
 
 .section-blue {
@@ -10,4 +8,9 @@
 
 .section-gray {
     @include background-color($color-light-gray, 0.5);
+    }
+
+[class*="section-"] {
+    overflow: hidden; /* Need a better solution than this */
+    clear: both;
     }

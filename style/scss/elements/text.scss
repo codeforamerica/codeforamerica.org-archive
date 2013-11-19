@@ -109,6 +109,11 @@ blockquote p {
     padding: 1.3em 0 0.5em 0;
     }
 
+
+[class*="section-"] .heading {
+    border-bottom: none;
+    }
+
 .heading-mini {
     text-transform: uppercase;
     margin: 0;

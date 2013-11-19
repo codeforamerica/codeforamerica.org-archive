@@ -13,10 +13,18 @@
     vertical-align: middle;
     }
 
-.pop-bright {
+.pop-red {
     @include background-color($color-corporate-red, 1);
+    }
+
+.pop-dark-blue {
+    @include background-color($color-dark-blue, 1);
     }
 
 .pop-neutral {
     @include background-color($color-corporate-gray, 1);
+    }
+
+.pop-orange {
+    @include background-color($color-orange, 1);
     }

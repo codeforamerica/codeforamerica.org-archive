@@ -33,7 +33,7 @@
 
 .masthead .masthead-header {
     padding-top: 5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 1em;
     overflow: hidden;
     width: auto;
     display: table;
@@ -49,6 +49,7 @@
 .masthead-header .nav-breadcrumbs {
     float: left;
     @include color($color-white, 0.7);
+    
     }
 
 .masthead-header .nav-breadcrumbs a:link,
@@ -78,6 +79,7 @@
     font-size: 6em;
     text-transform: uppercase;
     text-align: center;
+    line-height: 0.8em;
     }
 
 .masthead-header .button-cta {

@@ -8,6 +8,37 @@
     font-family: $font-serif-light;
     }
 
+
+.highlight blockquote {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    @include color($color-white, 1);
+    font-family: $font-serif-light;
+    margin: 0;
+    }
+
+.highlight blockquote p:first-child {
+    margin-top: 0;
+    }
+
+.highlight blockquote:before {
+    @include color($color-white, 0.5);
+    content: "“";
+    font-size: 4em;
+    line-height: 0em;
+    display: block;
+    margin-top: 0.4em;
+    margin-left: -0.05em;
+    
+    }
+
+.highlight .attribute {
+    text-transform: uppercase;
+    font-family: $font-sans-regular;
+    font-size: 0.7em;
+    }
+
 /* @end highlight */
 
 /* @group highlight with avatar */
@@ -43,5 +74,6 @@
         margin-top: 0;
         }
     }
+
 
 /* @end highlight with avatar */

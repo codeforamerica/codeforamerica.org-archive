@@ -9,6 +9,9 @@
     -moz-background-clip: padding-box !important;
     -webkit-background-clip: padding-box !important;
     background-clip: padding-box !important;
+    width: 100%;
+    background-image: none;
+    padding-left: 0;
     }
 
 @media (min-width: 30em) {
@@ -17,8 +20,7 @@
     list-style-type: none;
     margin-left: 2%;
 	/*padding: 0 1.5%;*/
-	background-image: none;
-	padding-left: 0;
+	
     }
 
 }

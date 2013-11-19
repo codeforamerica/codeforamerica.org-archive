@@ -1,9 +1,18 @@
 .badge-heading {
     @extend .heading;
+    margin: 1em -4%;
+    padding-right: 4%;
+    padding-left: 4%;
+    }
+
+@media (min-width: 40em) {
+.badge-heading {
     min-height: 3.5em;
     padding: 1.3em 0 0.5em 4.5em;
     clear: both;
+    margin: 1em 0 1em 0;
     }
+}
 
 .badge-heading i {
     position: absolute;
@@ -14,3 +23,13 @@
 .badge-heading i:before {
     color: #fff;
     }
+
+.badge-heading .pop {
+    display: none;
+    }
+
+@media (min-width: 40em) {
+.badge-heading .pop {
+    display: block;
+    }
+}

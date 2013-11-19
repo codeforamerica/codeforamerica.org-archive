@@ -5319,6 +5319,10 @@ blockquote p {
   padding: 1.3em 0 0.5em 0;
 }
 
+[class*="section-"] .heading, [class*="section-"] .badge-heading, [class*="section-"] .post .post-header, .post [class*="section-"] .post-header {
+  border-bottom: none;
+}
+
 .heading-mini {
   text-transform: uppercase;
   margin: 0;
@@ -5600,7 +5604,7 @@ input[type="submit"],
   border-radius: 0.2em;
   text-decoration: none;
   border: none;
-  margin: 0;
+  margin: 0 0 0.5em 0;
   font-size: 0.85em;
   font-weight: normal;
   line-height: 1.4em;
@@ -5734,11 +5738,19 @@ input.button-unstyled,
 }
 
 .badge-heading {
-  min-height: 3.5em;
-  padding: 1.3em 0 0.5em 4.5em;
-  clear: both;
+  margin: 1em -4%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
+@media (min-width: 40em) {
+  .badge-heading {
+    min-height: 3.5em;
+    padding: 1.3em 0 0.5em 4.5em;
+    clear: both;
+    margin: 1em 0 1em 0;
+  }
+}
 .badge-heading i {
   position: absolute;
   left: 0;
@@ -5749,6 +5761,15 @@ input.button-unstyled,
   color: #fff;
 }
 
+.badge-heading .pop {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .badge-heading .pop {
+    display: block;
+  }
+}
 [class*="pop"] {
   /* fallback */
   background: #399fd3;
@@ -5766,16 +5787,28 @@ input.button-unstyled,
   vertical-align: middle;
 }
 
-.pop-bright {
+.pop-red {
   /* fallback */
   background: #cf1b41;
   background: #cf1b41;
+}
+
+.pop-dark-blue {
+  /* fallback */
+  background: #2f3d4a;
+  background: #2f3d4a;
 }
 
 .pop-neutral {
   /* fallback */
   background: #6d6e71;
   background: #6d6e71;
+}
+
+.pop-orange {
+  /* fallback */
+  background: #e87d2b;
+  background: #e87d2b;
 }
 
 .masthead {
@@ -5813,7 +5846,7 @@ input.button-unstyled,
 }
 .masthead .masthead-header {
   padding-top: 5em;
-  padding-bottom: 2.5em;
+  padding-bottom: 1em;
   overflow: hidden;
   width: auto;
   display: table;
@@ -5863,6 +5896,7 @@ input.button-unstyled,
   font-size: 6em;
   text-transform: uppercase;
   text-align: center;
+  line-height: 0.8em;
 }
 
 .masthead-header .button-cta {
@@ -5877,6 +5911,39 @@ input.button-unstyled,
   font-size: 1.5em;
   position: relative;
   font-family: "Sentinel Light", "Georgia", Times, sans-serif;
+}
+
+.highlight blockquote {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  /* fallback */
+  color: white;
+  color: white;
+  font-family: "Sentinel Light", "Georgia", Times, sans-serif;
+  margin: 0;
+}
+
+.highlight blockquote p:first-child {
+  margin-top: 0;
+}
+
+.highlight blockquote:before {
+  /* fallback */
+  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  content: "“";
+  font-size: 4em;
+  line-height: 0em;
+  display: block;
+  margin-top: 0.4em;
+  margin-left: -0.05em;
+}
+
+.highlight .attribute {
+  text-transform: uppercase;
+  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-size: 0.7em;
 }
 
 /* @end highlight */
@@ -5982,8 +6049,9 @@ input.button-unstyled,
 
 .list-inline li, .nav-breadcrumbs ul li {
   display: inline;
-  border-right: 2px solid #999595;
   margin: 0 0.15em 0 0;
+  background-image: none;
+  padding: 0;
 }
 
 .list-inline li:last-child, .nav-breadcrumbs ul li:last-child {
@@ -6018,6 +6086,31 @@ input.button-unstyled,
   margin-right: 0.8em;
 }
 
+@media (min-width: 60em) {
+  .list-buttons {
+    display: flex;
+  }
+
+  .list-buttons li {
+    flex: 1;
+    margin: 0 0.4em;
+    text-align: center;
+  }
+
+  .list-buttons .button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .list-buttons li:first-child {
+    margin-left: 0;
+  }
+
+  .list-buttons li:last-child {
+    margin-right: 0;
+  }
+}
 nav a:hover,
 nav a:focus,
 nav a:active {
@@ -6354,26 +6447,36 @@ nav ul li {
 }
 
 .seal {
-  text-align: center;
-  border: 1px solid;
-  /* fallback */
-  border-color: #e5e5e5;
-  border-color: #e5e5e5;
-  border-radius: 0.4em;
+  margin: 0 0 1.25em;
   display: block;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
-  padding: 1em;
-  margin-bottom: 1.25em;
+  font-family: "Sentinel Book", "Georgia", Times, sans-serif;
+  font-size: 1.2em;
 }
 
+@media (min-width: 40em) {
+  .seal {
+    text-align: center;
+    border: 1px solid;
+    /* fallback */
+    border-color: #e5e5e5;
+    border-color: #e5e5e5;
+    border-radius: 0.4em;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1.25em;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    clear: none;
+  }
+}
 .seal:link,
 .seal:visited,
 .seal:hover,
 .seal:focus,
 .seal:active {
   /* fallback */
-  color: #cf1b41;
-  color: #cf1b41;
+  color: #399fd3;
+  color: #399fd3;
+  border-bottom: none;
 }
 
 .seal:hover,
@@ -6392,18 +6495,22 @@ nav ul li {
   display: block;
 }
 
-.seal .seal-label:after {
-  content: " ›";
-  font-size: 1.25em;
-  vertical-align: bottom;
-}
-
+/*.seal .seal-label:after {
+    content: " ›";
+    font-size: 1.25em;
+    vertical-align: bottom;
+    }*/
 .seal .seal-image {
-  width: 100px;
-  margin: 0 auto 0.5em;
-  display: block;
+  display: none;
 }
 
+@media (min-width: 40em) {
+  .seal .seal-image {
+    width: 100px;
+    margin: 0 auto 0.5em;
+    display: block;
+  }
+}
 .search-global input {
   text-transform: uppercase;
 }
@@ -6734,10 +6841,8 @@ nav ul li {
   margin: 0 0 0 120px;
 }
 
-[class*="section-"] {
-  float: left;
-  width: 100%;
-  margin: 3em 0 0 0;
+section.layout-container {
+  margin: 3em auto;
 }
 
 .section-blue {
@@ -6752,6 +6857,12 @@ nav ul li {
   background: rgba(229, 229, 229, 0.5);
 }
 
+[class*="section-"] {
+  overflow: hidden;
+  /* Need a better solution than this */
+  clear: both;
+}
+
 /* Gridpak Beta CSS - http://gridpak.com/, Created by @erskinedesign */
 .layout-col {
   border: 0px solid rgba(0, 0, 0, 0);
@@ -6762,6 +6873,9 @@ nav ul li {
   -moz-background-clip: padding-box !important;
   -webkit-background-clip: padding-box !important;
   background-clip: padding-box !important;
+  width: 100%;
+  background-image: none;
+  padding-left: 0;
 }
 
 @media (min-width: 30em) {
@@ -6769,8 +6883,6 @@ nav ul li {
     list-style-type: none;
     margin-left: 2%;
     /*padding: 0 1.5%;*/
-    background-image: none;
-    padding-left: 0;
   }
 }
 .layout-container {
