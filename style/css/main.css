@@ -52,8 +52,8 @@
 /* Secondary Colors */
 @font-face {
   font-family: 'icomoon';
-  src: url("/style/icons/icomoon.eot");
-  src: url("/style/icons/icomoon.eot?#iefix") format("embedded-opentype"), url("/style/icons/icomoon.ttf") format("truetype"), url("/style/icons/icomoon.woff") format("woff"), url("/style/icons/icomoon.svg#icomoon") format("svg");
+  src: url("../icons/icomoon.eot");
+  src: url("../icons/icomoon.eot?#iefix") format("embedded-opentype"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -6150,7 +6150,7 @@ nav ul li {
 }
 
 .nav-breadcrumbs li:first-child {
-  background-image: url("/style/icons/flag-blue.png");
+  background-image: url("../icons/flag-blue.png");
   display: inline-block;
   background-size: 55px;
   background-repeat: no-repeat;
