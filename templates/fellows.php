@@ -1,7 +1,7 @@
 <?php include("../blocks/global/head.html") ?>
     
-    <div class="hero">
-        <header class="layout-container hero-header">
+    <div class="masthead">
+        <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
             <h1 class="page-title">2013 Fellows</h1>
         </header>

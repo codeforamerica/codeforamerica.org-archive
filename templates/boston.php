@@ -1,7 +1,10 @@
 <?php include("../blocks/global/head.html") ?>
     
-    <div class="hero">
-        <header class="layout-container hero-header">
+    <div class="masthead masthead-l">
+        <div class="masthead-hero">
+            <img src="/placeholder/masthead-1.jpg" class="masthead-image"/>
+        </div>
+        <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
             <h1 class="page-title">Boston</h1>
         </header>
