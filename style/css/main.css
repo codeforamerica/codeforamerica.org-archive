@@ -5194,7 +5194,7 @@
 
 /* Elements */
 body {
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -5326,7 +5326,7 @@ blockquote p {
 .heading-mini {
   text-transform: uppercase;
   margin: 0;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 1em;
   line-height: 1.8em;
 }
@@ -5334,7 +5334,7 @@ blockquote p {
 .page-title {
   font-size: 90px;
   line-height: 72px;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   text-transform: uppercase;
 }
 
@@ -5376,7 +5376,7 @@ h6,
 .h5,
 .h6 {
   font-size: 22px;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
   text-transform: uppercase;
 }
 
@@ -5492,7 +5492,7 @@ select {
   border-color: rgba(153, 149, 149, 0.5);
   border-radius: 0.2em;
   margin-bottom: 1em;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 input,
@@ -5608,7 +5608,7 @@ input[type="submit"],
   font-size: 0.85em;
   font-weight: normal;
   line-height: 1.4em;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
   width: auto;
   vertical-align: middle;
 }
@@ -5892,7 +5892,7 @@ input.button-unstyled,
   clear: left;
   color: white;
   margin: 0;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   font-size: 6em;
   text-transform: uppercase;
   text-align: center;
@@ -5942,7 +5942,7 @@ input.button-unstyled,
 
 .highlight .attribute {
   text-transform: uppercase;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 0.7em;
 }
 
@@ -6276,7 +6276,7 @@ nav ul li {
   border: none;
   display: table-cell;
   vertical-align: top;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
 }
 
 @media (min-width: 40em) {
@@ -6355,7 +6355,7 @@ nav ul li {
   /* fallback */
   color: #cf1b41;
   color: #cf1b41;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   text-transform: uppercase;
 }
 
@@ -6395,7 +6395,7 @@ nav ul li {
   /* fallback */
   color: #cf1b41;
   color: #cf1b41;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   text-transform: uppercase;
 }
 
@@ -6723,7 +6723,7 @@ nav ul li {
   /* fallback */
   color: black;
   color: black;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   font-size: 1.2em;
   margin: 0;
 }
@@ -6816,7 +6816,7 @@ nav ul li {
 .global-footer .nav-footer .nav-heading {
   display: block;
   font-size: 1.3em;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   margin-bottom: 0.5em;
 }
 
@@ -7027,7 +7027,7 @@ section.layout-container {
   padding: 0;
   margin: 6em 0 6em;
   display: none;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 @media (min-width: 40em) {
@@ -7073,7 +7073,7 @@ section.layout-container {
 }
 .xx-title {
   margin-bottom: 1em;
-  font-family: "Gotham A", "Gotham B", "Gotham Book HTF", "Gotham Book", "Gotham SSm A", "Open Sans Bold", "Helvetica", "Arial";
+  font-family: "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
   text-transform: uppercase;
   font-size: 3em;
 }
@@ -7189,7 +7189,7 @@ section.layout-container {
   margin: 0 1em 0 0;
   font-size: 0.8em;
   clear: both;
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 @media (min-width: 70em) {
@@ -7205,7 +7205,7 @@ section.layout-container {
 }
 
 .pattern-name {
-  font-family: "Gotham Book HTF", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 .pattern-details {
