@@ -109,6 +109,43 @@
     background-image: none;
     }
 
+@media (min-width: 60em) {
+
+.layout-gutter {
+    padding-left: 12%;
+    }
+
+.layout-gutters {
+    padding-left: 12%;
+    padding-right: 12%;
+    }
+
+.layout-break-left {
+    max-width: 127%;
+    float: right;
+    margin-bottom: 1em;
+    }
+
+.layout-break-left + * {
+    clear: both;
+    }
+    
+
+}
+
+@media (min-width: 40em) {
+
+.layout-2col {
+    float: left;
+    width: 48.5%;
+    }
+
+.layout-2col + .layout-2col {
+    float: right;
+    }
+
+}
+
 
 @media (max-width: 50em) {
 

@@ -25,52 +25,94 @@
                     </ul>
                 </nav>
             
-                <header class="badge-heading">
-                    <i class="pop icon-rocket"></i>
-                    <h2>The Brigade</h2>
-                </header>
+                <h2>Citizens have the power to help their cities</h2>
                 
-                <div class="layout-row">
+                <h3>We're collaborating with</h3>
+                <ul>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">Philadelphia</a></li>
+                    <li><a href="#">Boston</a></li>
+                    <li><a href="#">Seattle</a></li>
+                    <li><a href="#">San Francisco</a></li>
+                    <li><a href="#">DC</a></li>
+                    <li><a href="#">Oakland</a></li>
+                    <li><a href="#">Chicago</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">Tampa</a></li>
+                    <li><a href="#">Tulsa</a></li>
+                    <li><a href="#">Chattanooga</a></li>
+                    <li><a href="#">Austin</a></li>
+                    <li><a href="#">Colorado</a></li>
+                    <li><a href="#">lexington</a></li>
+                    <li><a href="#">salt lake</a></li>
+                    <li><a href="#">san diego</a></li>
+                    <li><a href="#">cincinnati</a></li>
+                    <li><a href="#">whitewater</a></li>
+                    <li><a href="#">raleigh</a></li>
+                    <li><a href="#">orlando</a></li>
+                    <li><a href="#">maine</a></li>
+                    <li><a href="#">kansas city</a></li>
+                    <li><a href="#">las vegas</a></li>
+                    <li><a href="#">durham</a></li>
+                    <li><a href="#">hawaii - detroit</a></li>
+                </ul>
                 
-                    <div class="layout-col layout-colspan-5">
-                    
-                    <p>Boston has been a techie city for a very long time. The city established the nation’s first Mayor’s Office of New Urban Mechanics (MONUM) and the department’s co-chairs were named Governing Magazine’s Public Officials of the Year. With forward-thinking leaders at the helm, Boston is paving the way for civic innovation. The city has an active Code for America Brigade — a group of local volunteers who meet regularly to attend events, collaborate on new projects and stand up existing apps. For details visit Code for Boston.</p>
-                    
-                    </div>
-                
-                    <div class="layout-col layout-colspan-4">
-                    
-                        <img class="teaser-image" src="/placeholder/big-data.jpg">
-                        
-                        <ul class="list-gappy list-inline list-buttons">
-                        
-                            <li><a href="#" class="button button-prominent">Visit code for Boston</a></li>
-                        
-                            <li><a href="#" class="button">Visit Open Data portal</a></li>
-                        
-                        </ul>
-                    
-                    </div>
-                
-                </div>
-                
-            </section>
+                <a href="#">See all cities</a>
             
-            <section class="section-blue">
+            </section>
+                        
+            <section class="section-red">
+            
                 <div class="layout-container">
-                    <div class="highlight highlight-with-avatar">
-                        <img class="highlight-avatar" src="/placeholder/sf-seal.png"/>
-                        <blockquote>
-                            <p>Finding little wins that you can discover along the way, moments when people can come together and solve some small issue — that’s critical to the experience of innovation.</p>
-                        </blockquote>
-                        <p class="attribute">Nigel Jacob, Co-Director <a href="#">Boston’s Office of New Urban Mechanics</a></p>
+            
+                    
+                    <div class="layout-col layout-colspan-3">
+                        <h2>Why I Code for America</h2>
+                        <div class="h-card profile-small">
+                            <h3 class="p-name profile-name">Richa Agarwal</h3>
+                            <p>2012 Fellow</p>
+                            
+                            <p>Co-creator of Recordtrac</p>
+                            
+                            <a href="#">Meet more civic hackers</a>
+                            
+                        </div>
                     </div>
+                    
+                    <div class="layout-col layout-colspan-6">
+                        <h2>What's happening?</h2>
+                        
+                        <ul>
+                            <li>Nov 19: Bike Hack NYU Rudin 
+                            <a href="#">More events</a>
+                            </li>
+                            <li>Hack request: Add SMS to Ohana API 
+                            <a href="#">More hack requests</a>
+                            </li>
+                            <li>Feb 22-24: Code Across America 
+                            <a href="#">More national projects</a>
+                            </li>
+                            <li>Video: Civic Engagement & Design 
+                            <a href="#">More CFA videos</a>
+                            </li>
+                            <li>Publish and Curate Open Data
+                            <a href="#">More organizing</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                
                 </div>
+                
+                      
+            
+            
             </section>
             
             
             
-            <section class="layout-container">
+            <!--<section class="layout-container">
             
                 <header class="badge-heading">
                     <i class="pop pop-red icon-rocket"></i>
@@ -195,7 +237,7 @@
                 
                 </section>
                 
-            </div>
+            </div>-->
             
         </main><!--@main-->
     

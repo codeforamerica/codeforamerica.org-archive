@@ -5746,7 +5746,7 @@ input.button-unstyled,
 @media (min-width: 40em) {
   .badge-heading {
     min-height: 3.5em;
-    padding: 1.3em 0 0.5em 4.5em;
+    padding: 1.3em 0 0.5em 5.2em;
     clear: both;
     margin: 1em 0 1em 0;
   }
@@ -5816,6 +5816,10 @@ input.button-unstyled,
   position: relative;
   overflow: hidden;
   text-align: center;
+  z-index: -2;
+  /* fallback */
+  background: #494c49;
+  background: #494c49;
 }
 
 @media (min-width: 40em) {
@@ -5830,9 +5834,6 @@ input.button-unstyled,
   width: 100%;
   text-align: center;
   z-index: -1;
-  /* fallback */
-  background: #494c49;
-  background: #494c49;
 }
 
 .masthead-image {
@@ -6520,8 +6521,8 @@ nav ul li {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
   float: left;
-  width: 96%;
-  padding: 1em 2%;
+  width: auto;
+  padding: 2em 1.5em;
 }
 
 .stat {
@@ -6858,6 +6859,12 @@ section.layout-container {
   background: #2f3d4a;
 }
 
+.section-red {
+  /* fallback */
+  background: #cf1b41;
+  background: #cf1b41;
+}
+
 .section-gray {
   /* fallback */
   background: #e5e5e5;
@@ -6868,125 +6875,6 @@ section.layout-container {
   overflow: hidden;
   /* Need a better solution than this */
   clear: both;
-}
-
-/* Gridpak Beta CSS - http://gridpak.com/, Created by @erskinedesign */
-.layout-col {
-  border: 0px solid rgba(0, 0, 0, 0);
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-background-clip: padding-box !important;
-  -webkit-background-clip: padding-box !important;
-  background-clip: padding-box !important;
-  width: 100%;
-  background-image: none;
-  padding-left: 0;
-  list-style-type: none;
-  margin-left: 2%;
-  /*padding: 0 1.5%;*/
-}
-
-@media (min-width: 40em) {
-  .layout-container {
-    width: 96%;
-    padding: 0 2%;
-  }
-}
-@media (min-width: 60em) {
-  .layout-container {
-    width: 100%;
-    padding: 0;
-  }
-}
-.layout-row .layout-col:first-child {
-  margin-left: 0;
-}
-
-.layout-colspan-1 {
-  width: 9.33333333333%;
-}
-
-.layout-colspan-2 {
-  width: 20.6666666667%;
-}
-
-.layout-colspan-3 {
-  width: 49.0%;
-  /* 2 col */
-}
-
-@media (min-width: 50em) {
-  .layout-colspan-3 {
-    width: 32.0%;
-    /* 3 col */
-  }
-}
-.layout-colspan-4 {
-  width: 43.3333333333%;
-}
-
-.layout-colspan-5 {
-  width: 54.6666666667%;
-}
-
-.layout-colspan-6 {
-  width: 66.0%;
-}
-
-.layout-colspan-7 {
-  width: 77.3333333333%;
-}
-
-.layout-colspan-8 {
-  width: 88.6666666667%;
-}
-
-.layout-colspan-9 {
-  margin-left: 0;
-  width: 100%;
-}
-
-.layout-grid {
-  margin: 0;
-  padding: 0;
-  background-image: none;
-}
-
-@media (max-width: 50em) {
-  .layout-grid .layout-colspan-3:first-of-type,
-  .layout-grid .layout-colspan-3:nth-of-type(2n+3) {
-    margin-left: 0;
-    clear: both;
-  }
-}
-@media (min-width: 50em) {
-  .layout-grid .layout-colspan-3:first-of-type,
-  .layout-grid .layout-colspan-3:nth-of-type(3n+4) {
-    margin-left: 0;
-    clear: both;
-  }
-}
-[class^="layout-list-col"] {
-  margin: 0;
-  padding: 0;
-}
-
-.layout-list-col-2 {
-  -webkit-columns: 2;
-}
-
-.layout-list-col-3 {
-  -webkit-columns: 3;
-}
-
-.layout-list-col-4 {
-  -webkit-columns: 4;
-}
-
-.layout-list-col-5 {
-  -webkit-columns: 5;
 }
 
 /* Templates */

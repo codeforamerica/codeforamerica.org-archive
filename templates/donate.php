@@ -13,6 +13,8 @@
     
         <main role="main">
             
+            
+            
             <nav class="nav-breadcrumbs">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -22,13 +24,19 @@
                 </ul>
             </nav>
             
+            
+            
             <h2>Invest in the future of Government</h2>
+            
+            <div class="layout-gutter">
+                
+                <div class="layout-2col">
                 
                 <p>Hundreds of individuals have joined together to invest their time, energy, ideas, and money in our fellows and in our mission. Together we are building a movement that changes the way our cities function -- a movement that helps cities to keep pace with their community and interact with residents using new tools and technologies.</p>
                 
                 <p>Code for America is generously supported by leaders in philanthropy and technology. Their support makes our work possible. It allows for us to connect city governments with web and design talent.</p>
                 
-                <img src="http://placehold.it/520x342"/>
+                <img class="layout-break-left" src="http://placehold.it/520x342"/>
                 
                 <p>Please join us. Invest in Code of America and help code the next chapter in American history.</p>
                 
@@ -36,7 +44,15 @@
                 
                 <p>Donations to Code for America, a 501(c)(3) nonprofit and nonpartisan organization, are tax deductible.</p>
                 
+                </div>
+                
+                <div class="layout-2col">
+                
                 <?php include("../blocks/patterns/form-donate.html") ?>
+                
+                </div>
+            
+            </div>
             
         </main><!--@main-->
         

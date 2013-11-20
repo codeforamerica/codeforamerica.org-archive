@@ -27,7 +27,7 @@
                 <h2>Become a fellow</h2>
             </header>
             
-            <div class="layout-container">
+            <div class="layout-gutters">
                 
                 <p>I work with governments because, when operated well, they can improve the lives of so many people. I work with civic startups at the <a href="#"><abbr title="Code for America">CfA</abbr> Accelerator</a> because, when operated well, they can improve the efficiency of so many governments. Every positive change I made working in government in Newark, N.J. might effect tens of thousands of families and every civic startup I mentor might affect hundreds of governments.</p>
                 
@@ -42,7 +42,8 @@
                 <a href="#" class="button">See the selection process</a>
                 
                 <a href="#" class="button">More about training</a>
-                
+            
+            </div>
                 
                 <h2>Meet the 2013 fellows</h2>
                 
@@ -52,7 +53,7 @@
                 
                 <?php include("../blocks/patterns/profile-small.html") ?>
                 
-            </div>
+            
             
         </main><!--@main-->
         

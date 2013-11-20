@@ -2,11 +2,11 @@
     
     <div class="masthead masthead-l">
         <div class="masthead-hero">
-            <img src="/placeholder/masthead-1.jpg" class="masthead-image"/>
+            
         </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
-            <h1 class="page-title">Citizens</h1>
+            <h1 class="page-title">Governments</h1>
         </header>
     </div>
     
@@ -16,184 +16,82 @@
         
             <section class="layout-container">
                 
-                <nav class="nav-breadcrumbs">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">All cities</a></li>
-                        <li><a href="#">Upcoming</a></li>
-                        <li>2013 Fellows</li>
-                    </ul>
-                </nav>
-            
-                <header class="badge-heading">
-                    <i class="pop icon-rocket"></i>
-                    <h2>The Brigade</h2>
-                </header>
-                
-                <div class="layout-row">
-                
-                    <div class="layout-col layout-colspan-5">
+                <div class="">
                     
-                    <p>Boston has been a techie city for a very long time. The city established the nation’s first Mayor’s Office of New Urban Mechanics (MONUM) and the department’s co-chairs were named Governing Magazine’s Public Officials of the Year. With forward-thinking leaders at the helm, Boston is paving the way for civic innovation. The city has an active Code for America Brigade — a group of local volunteers who meet regularly to attend events, collaborate on new projects and stand up existing apps. For details visit Code for Boston.</p>
-                    
-                    </div>
-                
-                    <div class="layout-col layout-colspan-4">
-                    
-                        <img class="teaser-image" src="/placeholder/big-data.jpg">
-                        
-                        <ul class="list-gappy list-inline list-buttons">
-                        
-                            <li><a href="#" class="button button-prominent">Visit code for Boston</a></li>
-                        
-                            <li><a href="#" class="button">Visit Open Data portal</a></li>
-                        
-                        </ul>
-                    
-                    </div>
-                
+                    <p>Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service. 
+                    </p>
+                                
                 </div>
                 
             </section>
             
-            <section class="section-blue">
+            <section class="section-red">
                 <div class="layout-container">
-                    <div class="highlight highlight-with-avatar">
-                        <img class="highlight-avatar" src="/placeholder/sf-seal.png"/>
-                        <blockquote>
-                            <p>Finding little wins that you can discover along the way, moments when people can come together and solve some small issue — that’s critical to the experience of innovation.</p>
-                        </blockquote>
-                        <p class="attribute">Nigel Jacob, Co-Director <a href="#">Boston’s Office of New Urban Mechanics</a></p>
+                
+                    <p>Over 200 local officials, startups and NGOs discuss data standards, current events and civic tech on a focused, moderated email list.</p>
+                    
+                    <p>Titles of some active members include:</p>
+                    <ul>
+                        <li>Chief Innovation Officer, City of KC, Missouri</li>
+                    	<li>Deputy Chief of Staff, City of Houston</li>
+                    	<li>Director of Research and Technology, Urban Strategies Council</li>
+                    </ul>
+                    
+                    <h3>Ready to Level Up?</h3>
+                    
+                    <p>Code for America's Peer Network helps you innovate by providing targeted training, hands-on support and early access to new technology. Recent trainings include user interface engineering and broadband Policy</p>
+                    
+                    <a href="#" class="button button-prominent">Request an invite</a>
+                    
+                    <div class="">
+                        
+                        <h2>Join the conversation</h2>
+                        
+                        <a href="#" class="button">Request an invite</a>
+                        
                     </div>
+                    
+                    
                 </div>
             </section>
             
             
             
-            <section class="layout-container">
             
-                <header class="badge-heading">
-                    <i class="pop pop-red icon-rocket"></i>
-                    <h2>The 2012 Fellowship in Boston</h2>
-                </header>
-                
-                <p>In 2011, The City of Boston applied for the fellowship program with Microsoft as their community partners. Given a strong Office of New Urban Mechanics, the 2011 fellows Joel Mahoney, Karla Macedo and Talin Salway knew they were dealing with powerful allies. That being said, when the city requested “backpack apps” (an education API and developer platform) — they received so much more.</p>
-                
-                <p>Apps created during that fellowship year help teachers send students text reminders, help parents track the school bus in realtime and help students and parents assess their school eligibility.</p>
-                
-                <p>The DiscoverBPS app has been heralded by the Washington Post as a true feat. Fellows built the still popular application in only 2 months with the bulk of the work falling on the shoulders of developer Joel Mahoney. The app has since been taken over by the City of Boston’s IT department.</p>
-                
-                <p>Some of the other apps built that year include a developer collaboration platform, tool that turns spreadsheets into APIs, mobile app that locates wifi points and a tool that looks a bit like Foursquare for snow-covered fire hydrants called Adopt-a-hydrant.  While “Adopt-a” may seem specific to Boston, it’s since been redeployed to storm drains in Seattle and tsunami sirens in Honolulu.</p>
+            <section class="section-gray">
             
+                <div class="layout-container">
+                
+                <h2>Build capacity in your community</h2>
+                
+                <a href="#" class="button">Brigades</a>
+                <a href="#" class="button">Events</a>
+                
+                <p>Volunteer researchers, designers, developers and city officials are building better civic technology and deploying apps in more than 40 cities. See who’s hacking near you or check out an event in your city.</p>
+                
+                
+                <h2>Bring top coders, designers and researchers to your city</h2>
+                
+                <a href="#" class="button">Current Cities</a>
+                <a href="#" class="button">The apps</a>
+                
+                <p>Code for America’s Fellowship is a one-year program where cutting-edge developers, designers and researchers are embedded in US cities to solve civic problems using technology. Cities who’ve worked with us have built apps that support citizen engagement, criminal justice and public health.</p>
+                
+                <p>Contact luke@codeforamerica.org to find out more or visit our FAQ.</p>
+                
+                
+                <h2>Join our data standards collaborations</h2>
+                
+                <a href="#" class="button">HouseFacts</a>
+                <a href="#" class="button">LIVES</a>
+                
+                <p>Releasing data in standard format makes it easy for developers to create useful applications for citizens. Together with city officials, we’re developing standards that anyone can adopt for critical categories of data like restaurant and house inspections.</p>
+                
+                </div>
+                            
             </section>
             
-            <section class="layout-container">
-                    
-                
-                <header class="badge-heading">
-                    <i class="pop pop-dark-blue icon-rocket"></i>
-                    <h2>2012 Apps</h2>
-                </header>
-                
-                <ul class="list-no-bullets layout-grid">
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">Discover BPS</strong>
-                        </a>
-                    </li>
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">Adopt-a-Hydrant</strong>
-                        </a>
-                    </li>
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">ClassTalk</strong>
-                        </a>
-                    </li>
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">Where's my Schoolbus?</strong>
-                        </a>
-                    </li>
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">TechnoFinder</strong>
-                        </a>
-                    </li>
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">Data Works</strong>
-                        </a>
-                    </li>
-                    <li class="layout-col layout-colspan-3">
-                        <a href="#" class="seal">
-                            <img class="seal-image" src="http://placehold.it/160x50" />
-                            <strong class="seal-label">Data Finder</strong>
-                        </a>
-                    </li>
-                </ul>
-                
-                <p class="heading-mini">This program made possible by these community partners</p>
-                
-                <ul class="list-inline">
-                    <li><a href="#"><img src="/placeholder/logo-microsoft.png"/></a></li>
-                </ul>
             
-            </section>
-            
-            <div class="section-gray">
-            
-                <section class="layout-container">
-            
-                    <header class="badge-heading">
-                        <i class="pop pop-orange icon-rocket"></i>
-                        <h2>Articles &amp; video</h2>
-                    </header>
-                    
-                    <ul class="layout-grid">
-                        <li class="layout-col layout-colspan-3">
-                            <article class="teaser">
-                                <img class="teaser-image" src="/placeholder/big-data.jpg" />
-                                <div class="teaser-description">
-                                    <a href="#"><h4 class="teaser-title">Technology team is developing smart solutions to everyday city problems</h4></a>
-                                    <div class="teaser-body">
-                                        <p>On a Friday in the middle of February, Michael Hughes, director of the Boston Public Schools Transportation Department, met with seven visiting fellows from Code for America, a new nonprofit organization that matches teams [&hellip;] <a href="#">Read more</a></p>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="layout-col layout-colspan-3">
-                            <article class="teaser">
-                                <img class="teaser-image" src="/placeholder/big-data.jpg" />
-                                <div class="teaser-description">
-                                    <a href="#"><h4 class="teaser-title">Technology team is developing smart solutions to everyday city problems</h4></a>
-                                    <div class="teaser-body">
-                                        <p>On a Friday in the middle of February, Michael Hughes, director of the Boston Public Schools Transportation Department, met with seven visiting fellows from Code for America, a new nonprofit organization that matches teams [&hellip;] <a href="#">Read more</a></p>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="layout-col layout-colspan-3">
-                            <article class="teaser">
-                                <img class="teaser-image" src="/placeholder/big-data.jpg" />
-                                <div class="teaser-description">
-                                    <a href="#"><h4 class="teaser-title">Technology team is developing smart solutions to everyday city problems</h4></a>
-                                    <div class="teaser-body">
-                                        <p>On a Friday in the middle of February, Michael Hughes, director of the Boston Public Schools Transportation Department, met with seven visiting fellows from Code for America, a new nonprofit organization that matches teams [&hellip;] <a href="#">Read more</a></p>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
-                
-                </section>
                 
             </div>
             

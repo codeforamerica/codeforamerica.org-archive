@@ -46,6 +46,9 @@
             <li><a href="/templates/city-boston.php">City (Boston)</a></li>
             <li><a href="/templates/fellows.php">Fellows</a></li>
             <li><a href="/templates/post.php">Post</a></li>
+            <li><a href="/templates/governments.php">Governments</a></li>
+            <li><a href="/templates/donate.php">Donate</a></li>
+            <li><a href="/templates/citizens.php">Citizens</a></li>
         </ol>
     </div>
     

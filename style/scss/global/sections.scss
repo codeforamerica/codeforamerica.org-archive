@@ -13,6 +13,10 @@ section.layout-container {
     @include background-color($color-dark-blue, 1);
     }
 
+.section-red {
+    @include background-color($color-corporate-red, 1);
+    }
+
 .section-gray {
     @include background-color($color-light-gray, 0.5);
     }
