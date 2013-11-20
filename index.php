@@ -72,7 +72,7 @@
 
     <main role="main">
         
-        <h2>Primary Colors</h2>
+        <h2 class="xx-section-title">Primary Colors</h2>
         
         <p>For a background color: @include background-color($color-corporate-red, 0.1);</p>
         
@@ -116,7 +116,7 @@
             </li>
         </ul>
         
-        <h2>Secondary Colors</h2>
+        <h2 class="xx-section-title">Secondary Colors</h2>
         
         <ul class="list-no-bullets">
             <li class="swatch">

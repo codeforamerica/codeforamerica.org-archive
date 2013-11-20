@@ -55,7 +55,7 @@
 .global-footer .nav-footer .nav-heading {
     display: block;
     font-size: 1.3em;
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     margin-bottom: 0.5em;
     }
 

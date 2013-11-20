@@ -12,7 +12,7 @@
 .profile-note .list-social a:focus,
 .profile-note .list-social a:active {
     @include color($color-corporate-red, 1);
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     text-transform: uppercase;
 }
 
@@ -47,7 +47,7 @@
 
 .profile-small .link-more {
     @include color($color-corporate-red, 1);
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     text-transform: uppercase;
     }
 

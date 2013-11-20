@@ -22,7 +22,7 @@
     border: none;
     display: table-cell;
     vertical-align: top;
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     }
 
 @media (min-width: 40em) {

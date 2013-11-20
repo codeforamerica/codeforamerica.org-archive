@@ -75,10 +75,10 @@ function displayPatchwork($dir) {
             if(is_dir($dir.'/'.$ff)) { // If main section
                 if ($fName == 'elements' || $fName == 'partials') {
                     echo "<section class=\"xx-section\" id=\"".$fName."\">\n";
-                    echo "    <h1>".$fPlain."</h1>\n";
+                    echo "    <h2 class=\"xx-section-title\">".$fPlain."</h2>\n";
                 } else {
                     echo "<section class=\"xx-section\" id=\"".$fName."\">\n";
-                    echo "    <h1 class=\"section-title\">".$fPlain."</h1>\n";
+                    echo "    <h3 class=\"xx-section-title\">".$fPlain."</h3>\n";
                 }
             } else { // If sub section
                 if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $fName != '_header') { // Skip non-HTML files
@@ -114,10 +114,10 @@ function displayPatterns($dir) {
             if(is_dir($dir.'/'.$ff)) { // If main section
                 if ($fName == 'elements' || $fName == 'partials') {
                     echo "<section class=\"xx-section\" id=\"".$fName."\">\n";
-                    echo "    <h1>".$fPlain."</h1>\n";
+                    echo "    <h2 class=\"xx-section-title\">".$fPlain."</h2>\n";
                 } else {
                     echo "<section class=\"xx-section\" id=\"".$fName."\">\n";
-                    echo "    <h1 class=\"section-title\">".$fPlain."</h1>\n";
+                    echo "    <h3 class=\"xx-section-title\">".$fPlain."</h3>\n";
                 }
             } else { // If sub section
                 if(pathinfo($ff,PATHINFO_EXTENSION) == 'html') { // Skip non-HTML files

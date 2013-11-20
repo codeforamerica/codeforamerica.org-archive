@@ -125,6 +125,6 @@ blockquote p {
 .page-title {
     font-size: 90px;
     line-height: 72px;
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     text-transform: uppercase;
     }

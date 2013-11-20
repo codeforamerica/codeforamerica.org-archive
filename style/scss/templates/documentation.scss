@@ -72,7 +72,7 @@
 
 .xx-title {
     margin-bottom: 1em;
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     text-transform: uppercase;
     font-size: 3em;
     }
@@ -143,6 +143,11 @@
 .xx-section {
     clear: both;
     padding-top: 1em;
+    }
+
+.xx-section-title {
+    @include font-sans-bold;
+    margin: 1em 0 0.5em;
     }
 
 .xx-nav ol {

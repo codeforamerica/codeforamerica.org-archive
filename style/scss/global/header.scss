@@ -31,7 +31,7 @@
     float: right;
     text-transform: uppercase;
     @include color($color-corporate-black, 1);
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     font-size: 1.2em;
     margin: 0;
     }
