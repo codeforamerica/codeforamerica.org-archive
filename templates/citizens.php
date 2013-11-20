@@ -13,139 +13,185 @@
     
         <main role="main">
         
-            <section class="layout-container">
-                
-                <nav class="nav-breadcrumbs">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">All cities</a></li>
-                        <li><a href="#">Upcoming</a></li>
-                        <li>2013 Fellows</li>
-                    </ul>
-                </nav>
+            <section>
             
-                <h2>Citizens have the power to help their cities</h2>
+                <div class="layout-container layout-centered">
                 
-                <h3>We're collaborating with</h3>
-                <ul>
-                    <li><a href="#">New York</a></li>
-                    <li><a href="#">Philadelphia</a></li>
-                    <li><a href="#">Boston</a></li>
-                    <li><a href="#">Seattle</a></li>
-                    <li><a href="#">San Francisco</a></li>
-                    <li><a href="#">DC</a></li>
-                    <li><a href="#">Oakland</a></li>
-                    <li><a href="#">Chicago</a></li>
-                    <li><a href="#">International</a></li>
-                    <li><a href="#">Tampa</a></li>
-                    <li><a href="#">Tulsa</a></li>
-                    <li><a href="#">Chattanooga</a></li>
-                    <li><a href="#">Austin</a></li>
-                    <li><a href="#">Colorado</a></li>
-                    <li><a href="#">lexington</a></li>
-                    <li><a href="#">salt lake</a></li>
-                    <li><a href="#">san diego</a></li>
-                    <li><a href="#">cincinnati</a></li>
-                    <li><a href="#">whitewater</a></li>
-                    <li><a href="#">raleigh</a></li>
-                    <li><a href="#">orlando</a></li>
-                    <li><a href="#">maine</a></li>
-                    <li><a href="#">kansas city</a></li>
-                    <li><a href="#">las vegas</a></li>
-                    <li><a href="#">durham</a></li>
-                    <li><a href="#">hawaii - detroit</a></li>
-                </ul>
+                    <h2>Citizens have the power to help their cities</h2>
+                    
+                    <h3>We're collaborating with</h3>
+                    
+                    <ul class="list-inline list-credits">
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Philadelphia</a></li>
+                        <li><a href="#">Boston</a></li>
+                        <li><a href="#">Seattle</a></li>
+                        <li><a href="#">San Francisco</a></li>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">Oakland</a></li>
+                        <li><a href="#">Chicago</a></li>
+                        <li><a href="#">International</a></li>
+                        <li><a href="#">Tampa</a></li>
+                        <li><a href="#">Tulsa</a></li>
+                        <li><a href="#">Chattanooga</a></li>
+                        <li><a href="#">Austin</a></li>
+                        <li><a href="#">Colorado</a></li>
+                        <li><a href="#">Lexington</a></li>
+                        <li><a href="#">Salt Lake</a></li>
+                        <li><a href="#">San Diego</a></li>
+                        <li><a href="#">Cincinnati</a></li>
+                        <li><a href="#">Whitewater</a></li>
+                        <li><a href="#">Raleigh</a></li>
+                        <li><a href="#">Orlando</a></li>
+                        <li><a href="#">Maine</a></li>
+                        <li><a href="#">Kansas City</a></li>
+                        <li><a href="#">Las Vegas</a></li>
+                        <li><a href="#">Durham</a></li>
+                        <li><a href="#">Hawaii</a></li>
+                        <li><a href="#">Detroit</a></li>
+                    </ul>
+                    
+                    <a href="#">See all cities</a>
                 
-                <a href="#">See all cities</a>
+                </div>
             
             </section>
                         
-            <section class="section-red">
+            <section class="slab-red">
             
                 <div class="layout-container">
             
+                    <div class="layout-2col layout-break-up">
                     
-                    <h2>Why I Code for America</h2>
-                    <div class="h-card profile-small">
-                        <h3 class="p-name profile-name">Richa Agarwal</h3>
-                        <p>2012 Fellow</p>
+                        <div class="postcard slab-medium-red">
+                    
+                            <h3>Why I Code for America</h3>
+                            <div class="h-card">
+                                <h3 class="p-name profile-name">Richa Agarwal</h3>
+                                <img class="u-photo profile-photo" src="/placeholder/avatar-tiffani-bell.png" />
+                                <p>2012 Fellow</p>
+                                <p>Co-creator of Recordtrac</p>
+                                <a href="#" class="button button-prominent">Meet more civic hackers</a>
+                            </div>
                         
-                        <p>Co-creator of Recordtrac</p>
-                        
-                        <a href="#">Meet more civic hackers</a>
-                        
+                        </div>
+                    
                     </div>
-                
-                    <h2>What's happening?</h2>
                     
-                    <ul>
-                        <li>Nov 19: Bike Hack NYU Rudin 
-                        <a href="#">More events</a>
-                        </li>
-                        <li>Hack request: Add SMS to Ohana API 
-                        <a href="#">More hack requests</a>
-                        </li>
-                        <li>Feb 22-24: Code Across America 
-                        <a href="#">More national projects</a>
-                        </li>
-                        <li>Video: Civic Engagement & Design 
-                        <a href="#">More CFA videos</a>
-                        </li>
-                        <li>Publish and Curate Open Data
-                        <a href="#">More organizing</a>
-                        </li>
-                    </ul>
+                    <div class="layout-2col">
+                        
+                        <div class="layout-gutter">
+                        
+                        <h3>What's happening?</h3>
+                        
+                        <ul class="list-no-bullets">
+                            <li>Nov 19: Bike Hack NYU Rudin 
+                            <a href="#">More events</a>
+                            </li>
+                            <li>Hack request: Add SMS to Ohana API 
+                            <a href="#">More hack requests</a>
+                            </li>
+                            <li>Feb 22-24: Code Across America 
+                            <a href="#">More national projects</a>
+                            </li>
+                            <li>Video: Civic Engagement & Design 
+                            <a href="#">More CFA videos</a>
+                            </li>
+                            <li>Publish and Curate Open Data
+                            <a href="#">More organizing</a>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                    
+                    </div>
                     
                 </div>
                     
             
             </section>
             
-            <section class="layout-container">
+            <section>
             
-                <h3>For Software developers</h3>
+                <div class="layout-container-l">
+                    
+                    <div class="layout-3col">
                 
-                <ul>
-                    <li>Get in our code and hack.</li>
-                    <li>Deploy and build apps in your city. Join a local CfA Brigade.</li>
-                    <li>Guide and advise fellows and civic startups.  Become a Mentor</li>
-                    <li>Learn about open data and the civic tech ecosystem.</li>
-                </ul>
+                        <h3>For Software developers</h3>
+                        
+                        <ul class="list-ruled">
+                            <li>Get in <a href="#">our code</a> and hack.</li>
+                            <li>Deploy and build apps in your city. Join a local <a href="#">CfA Brigade</a>.</li>
+                            <li>Guide and advise fellows and civic startups. <a href="#">Become a Mentor</a>.</li>
+                            <li>Learn about <a href="#">open data and the civic tech ecosystem</a>.</li>
+                        </ul>
+                    
+                    </div>
+                    
+                    <div class="layout-3col">
+                    
+                        <h3>For Designers</h3>
+                        
+                        <ul class="list-ruled">
+                            <li>Design great citizen experiences, join a local <a href="#">CfA Brigade</a>.</li>
+                            <li><a href="#">Mentor UX and graphic designers</a> in our <a href="#">fellowship</a> and <a href="#">accelerator</a> programs.</li>
+                            <li>Learn how to redesign government. Watch Mike Bracken’s <a href="#">CfA Summit presentation</a> or this <a href="#">redesigning government panel</a>.</li>
+                        </ul>
+                    
+                    </div>
+                    
+                    <div class="layout-3col">
+                    
+                        <h3>For Organizers</h3>
+                        
+                        <ul class="list-ruled">
+                            <li>Release more open data.</li>
+                            <li>Organize a <a href="#">civic write-a-thon</a>.</li>
+                            <li>Test the latest <a href="#">civic tech applications</a>.</li>
+                            <li>Persuade your local government to enlist the <a href="#">fellows</a>.</li>
+                            <li>Learn about <a href="#">government transparency and open data practices</a>.</li>
+                        </ul>
+                    
+                    </div>
                 
-                <h3>For Designers</h3>
-                
-                <ul>
-                    <li>Get in our code and hack.</li>
-                    <li>Deploy and build apps in your city. Join a local CfA Brigade.</li>
-                    <li>Guide and advise fellows and civic startups.  Become a Mentor</li>
-                    <li>Learn about open data and the civic tech ecosystem.</li>
-                </ul>
-                
-                <h3>For Organizers</h3>
-                
-                <ul>
-                    <li>Get in our code and hack.</li>
-                    <li>Deploy and build apps in your city. Join a local CfA Brigade.</li>
-                    <li>Guide and advise fellows and civic startups.  Become a Mentor</li>
-                    <li>Learn about open data and the civic tech ecosystem.</li>
-                </ul>
+                </div>
             
             </section>
+                        
+            <section class="slab-gray">
             
-            <section class="layout-container">
+                <div class="layout-container">
                 
-                <h2>Fellowship: Ready to spend a year in civic service</h2>
-                
-                <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship will open in March 2014.</p>
-                
-                <a href="#">Find out more</a>
-                
-                <h2>Fellowship: Ready to spend a year in civic service</h2>
-                
-                <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship will open in March 2014.</p>
-                
-                <a href="#">Find out more</a>
-                
+                    <div class="wodge wodge-l">
+                    
+                        <h3 class="wodge-header">Fellowship: Ready to spend a year in civic service</h3>
+                        
+                        <img src="http://placehold.it/195x130" class="wodge-image" />
+                        
+                        <div class="wodge-text">
+                            <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship will open in March 2014.</p>
+                        </div>
+                        
+                        <a href="#" class="button wodge-button">Find out more</a>
+                    
+                    </div>
+                    
+                    <div class="wodge wodge-l">
+                    
+                        <h3 class="wodge-header">Fellowship: Ready to spend a year in civic service</h3>
+                        
+                        <img src="http://placehold.it/195x130" class="wodge-image" />
+                        
+                        <div class="wodge-text">
+                            <p>Code for America’s Accelerator is an annual 4-month program bringing funding, support, and mentorship to early-stage technology businesses that serve local governments.</p>
+                        </div>
+                        
+                         <a href="#" class="button wodge-button">Find out more</a>
+                     
+                     </div>
+                    
+                </div>
+            
             </section>
             
             
@@ -227,7 +273,7 @@
             
             </section>
             
-            <div class="section-gray">
+            <div class="slab-gray">
             
                 <section class="layout-container">
             

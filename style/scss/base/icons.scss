@@ -32,7 +32,7 @@
 .icon-red:hover,
 .icon-red:focus,
 .icon-red:active {
-    @include color($color-corporate-red, 1);
+    @include color($color-red, 1);
     }
 
 .icon-blue,
@@ -41,7 +41,7 @@
 .icon-blue:hover,
 .icon-blue:focus,
 .icon-blue:active {
-    @include color($color-corporate-blue, 1);
+    @include color($color-blue, 1);
     }
 
 .icon-grey,
@@ -50,7 +50,7 @@
 .icon-grey:hover,
 .icon-grey:focus,
 .icon-grey:active {
-    @include color($color-corporate-gray, 1);
+    @include color($color-gray, 1);
     }
 
 [class*="icon-"]:before {

@@ -56,7 +56,7 @@
     border-radius: 5em;
     border-width: 8px;
     border-style: solid;
-    @include border-color($color-corporate-red, 1);
+    @include border-color($color-red, 1);
     width: 100px;
     float: left;
     margin-right: 1.5em;

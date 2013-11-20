@@ -74,9 +74,9 @@
         
         <h2 class="xx-section-title">Primary Colors</h2>
         
-        <p>For a background color: @include background-color($color-corporate-red, 0.1);</p>
+        <p>For a background color: @include background-color($color-red, 0.1);</p>
         
-        <p>For a foreground color: @include color($color-corporate-red, 0.1);</p>
+        <p>For a foreground color: @include color($color-red, 0.1);</p>
         
         <ul class="list-no-bullets">
             <li class="swatch">
@@ -85,7 +85,7 @@
                     <li><strong>Corporate Red</strong></li>
                     <li>rgb(204,39,62)</li>
                     <li>#cf1b41</li>
-                    <li>$color-corporate-red</li>
+                    <li>$color-red</li>
                 </ul>
             </li>
             <li class="swatch">
@@ -94,7 +94,7 @@
                     <li><strong>Corporate Blue</strong></li>
                     <li>rgb(63,158,216)</li>
                     <li>#399fd3</li>
-                    <li>$color-corporate-blue</li>
+                    <li>$color-blue</li>
                 </ul>
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #6D6E71;"></span>
@@ -102,7 +102,7 @@
                     <li><strong>Corporate gray</strong></li>
                     <li>rgb(109, 110, 113)</li>
                     <li>#6D6E71</li>
-                    <li>$color-corporate-gray</li>
+                    <li>$color-gray</li>
                 </ul>
             </li>
             <li class="swatch">
@@ -111,7 +111,7 @@
                     <li><strong>Corporate Black</strong></li>
                     <li>rgb(0, 0, 0)</li>
                     <li>#000000</li>
-                    <li>$color-corporate-black</li>
+                    <li>$color-black</li>
                 </ul>
             </li>
         </ul>

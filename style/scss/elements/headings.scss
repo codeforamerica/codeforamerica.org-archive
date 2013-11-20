@@ -6,6 +6,7 @@ h5,
 h6 {
     font-family: $font-serif-bold;
     font-weight: normal;
+    margin: 0 0 0.5em 0;
 }
 
 h1,
@@ -13,7 +14,6 @@ h1,
 h2,
 .h2 {
     font-size: 40px;
-    margin: 0;
     line-height: 44px;
     font-family: $font-serif-bold;
     text-transform: none;

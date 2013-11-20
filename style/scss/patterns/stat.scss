@@ -20,7 +20,7 @@
 
 .stat .stat-figure {
     font-size: 3em;
-    @include color($color-corporate-black, 1);
+    @include color($color-black, 1);
     font-family: georgia;
     font-weight: bold;
     text-align: center;

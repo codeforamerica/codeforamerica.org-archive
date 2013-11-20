@@ -25,7 +25,7 @@
                 
             </section>
             
-            <section class="section-red">
+            <section class="slab-red">
                 <div class="layout-container">
                 
                     <p>Over 200 local officials, startups and NGOs discuss data standards, current events and civic tech on a focused, moderated email list.</p>
@@ -58,7 +58,7 @@
             
             
             
-            <section class="section-gray">
+            <section class="slab-gray">
             
                 <div class="layout-container">
                 

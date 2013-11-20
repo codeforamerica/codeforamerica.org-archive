@@ -21,7 +21,8 @@
 
 
 @media (min-width: 40em) {
-    .layout-container {
+    .layout-container,
+    .layout-container-l {
     width: 96%;
     padding: 0 2%;
     }
@@ -33,6 +34,13 @@
     padding: 0;
     }
     }
+
+@media (min-width: 80em) {
+    .layout-container-l {
+    width: 100%;
+    padding: 0;
+    }
+}
 
 
 .layout-row .layout-col:first-child {
@@ -133,6 +141,10 @@
 
 }
 
+.layout-break-up {
+    margin-top: -4em;
+    }
+
 @media (min-width: 40em) {
 
 .layout-2col {
@@ -142,6 +154,20 @@
 
 .layout-2col + .layout-2col {
     float: right;
+    }
+
+}
+
+@media (min-width: 40em) {
+
+.layout-3col {
+    float: left;
+    width: 30%;
+    margin-right: 5%
+    }
+
+.layout-3col + .layout-3col + .layout-3col {
+    margin-right: 0;
     }
 
 }

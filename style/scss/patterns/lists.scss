@@ -131,3 +131,37 @@
     }
 
 }
+
+.list-credits {
+    text-align: center;
+    font-weight: bold;
+    }
+
+.list-credits a {
+    text-align: center;
+    @include color($color-blue, 1);
+    text-transform: uppercase;
+    }
+
+.list-credits li:after {
+    content: ("-");
+    
+    }
+
+.list-credits li:last-child:after {
+    content: none;
+    }
+
+.list-ruled {
+    @extend .list-no-bullets;
+    }
+
+.list-ruled li {
+    border-bottom: 1px solid;
+    @include border-color($color-light-gray, 1);
+    padding: 0.5em 0;
+    }
+
+.list-ruled li:last-child {
+    border-bottom: none;
+    }

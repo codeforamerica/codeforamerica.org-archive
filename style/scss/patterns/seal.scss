@@ -24,14 +24,14 @@
 .seal:hover,
 .seal:focus,
 .seal:active {
-    @include color($color-corporate-blue, 1);
+    @include color($color-blue, 1);
     border-bottom: none;
     }
 
 .seal:hover,
 .seal:focus,
 .seal:active {
-    @include color($color-corporate-black, 1);
+    @include color($color-black, 1);
     @include border-color($color-light-gray, 1);
     }
 

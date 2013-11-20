@@ -1,27 +1,124 @@
-.layout-container {
+.layout-container,
+.layout-container-l {
     width: 92%;
     padding: 0 4%;
     max-width: 60em;
+    margin: 3em auto;
+    clear: both;
+    display: table;
+    }
+
+.layout-container-l {
+    max-width: 80em;
+    }
+
+.layout-tight {
     margin: 0 auto;
     }
 
-section.layout-container {
+.layout-centered {
+    text-align: center;
+    }
+
+section.layout-container,
+section.layout-container-l {
     margin: 3em auto;
     }
 
-.section-blue {
+.slab-blue {
     @include background-color($color-dark-blue, 1);
     }
 
-.section-red {
-    @include background-color($color-corporate-red, 1);
+.slab-red {
+    @include background-color($color-red, 1);
+    @include color($color-white, 1);
     }
 
-.section-gray {
+.slab-medium-red {
+    @include background-color($color-medium-red, 1);
+    @include color($color-white, 1);
+    }
+
+.slab-gray {
     @include background-color($color-light-gray, 0.5);
     }
 
-[class*="section-"] {
-    overflow: hidden; /* Need a better solution than this */
+section,
+[class*="slab-"] {
     clear: both;
+    float: left;
+    width: 100%;
+    }
+
+.postcard {
+    padding: 1em 5%;
+    width: 90%;
+    }
+
+.wodge {
+    position: relative;
+    margin: 3em 0 2em 0;
+    border-bottom: 1px solid;
+    @include border-color($color-dark-gray, 0.3);
+    padding: 0 0 2em 0;
+    }
+
+.wodge:first-child {
+    margin-top: 0;
+    }
+
+
+.wodge:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    }
+
+.wodge-header {
+    
+    }
+
+.wodge-image {
+    border: 3px solid;
+    @include border-color($color-dark-gray, 0.5);
+    border-radius: 0.2em;
+    }
+
+
+
+@media (min-width: 40em) {
+.wodge-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    }
+
+.wodge-header,
+.wodge-text {
+    margin-left: 150px;
+    }
+
+
+
+.wodge-l .wodge-header,
+.wodge-l .wodge-text,
+.wodge-l .wodge-button {
+    margin-left: 225px;
+    }
+
+
+
+}
+
+@media (min-width: 60em) {
+    
+    .wodge-header {
+        margin-right: 6em;
+        }
+    .wodge-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-left: 0;
+        }
+    
     }

@@ -52,7 +52,7 @@ input[type="text"][disabled] {
 
 abbr[title="required"],
 abbr[title="Required"] {
-    @include color($color-corporate-red, 0.8);
+    @include color($color-red, 0.8);
     border-bottom: none;
     }
 

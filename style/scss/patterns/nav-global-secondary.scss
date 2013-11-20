@@ -34,14 +34,14 @@
 .nav-global-secondary li a {
     padding: 0.3em 1em;
     display: block;
-    @include color($color-corporate-black, 1);
+    @include color($color-black, 1);
     margin: 0 1em;
     }
 
 .nav-global-secondary li a:hover,
 .nav-global-secondary li a:focus,
 .nav-global-secondary li a:active {
-    @include color($color-corporate-red, 1);
+    @include color($color-red, 1);
     }
 
 .nav-global-secondary li .button {

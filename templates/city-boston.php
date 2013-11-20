@@ -56,7 +56,7 @@
                 
             </section>
             
-            <section class="section-blue">
+            <section class="slab-blue">
                 <div class="layout-container">
                     <div class="highlight highlight-with-avatar">
                         <img class="highlight-avatar" src="/placeholder/sf-seal.png"/>
@@ -156,7 +156,7 @@
             
             </section>
             
-            <div class="section-gray">
+            <div class="slab-gray">
             
                 <section class="layout-container">
             

@@ -1,5 +1,5 @@
 [class*="pop"] {
-    @include background-color($color-corporate-blue, 1);
+    @include background-color($color-blue, 1);
     display: inline-block;
     border-radius: 5em;
     background-position: 50% 50%;
@@ -14,7 +14,7 @@
     }
 
 .pop-red {
-    @include background-color($color-corporate-red, 1);
+    @include background-color($color-red, 1);
     }
 
 .pop-dark-blue {
@@ -22,7 +22,7 @@
     }
 
 .pop-neutral {
-    @include background-color($color-corporate-gray, 1);
+    @include background-color($color-gray, 1);
     }
 
 .pop-orange {

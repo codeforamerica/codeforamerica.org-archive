@@ -8,7 +8,7 @@
 .teaser a:hover,
 .teaser a:focus,
 .teaser a:active {
-    @include color($color-corporate-red, 1);
+    @include color($color-red, 1);
     margin: 0;
     }
 

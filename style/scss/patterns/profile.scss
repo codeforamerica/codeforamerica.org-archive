@@ -11,7 +11,7 @@
 .profile-note .list-social a:hover,
 .profile-note .list-social a:focus,
 .profile-note .list-social a:active {
-    @include color($color-corporate-red, 1);
+    @include color($color-red, 1);
     @include font-sans-bold;
     text-transform: uppercase;
 }
@@ -46,7 +46,7 @@
     }
 
 .profile-small .link-more {
-    @include color($color-corporate-red, 1);
+    @include color($color-red, 1);
     @include font-sans-bold;
     text-transform: uppercase;
     }

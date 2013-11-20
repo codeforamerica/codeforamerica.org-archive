@@ -1,8 +1,8 @@
 .global-footer {
     clear: both;
-    @include background-color($color-corporate-gray, 1);
+    @include background-color($color-gray, 1);
     border-top: 10px solid;
-    @include border-color($color-corporate-blue, 1);
+    @include border-color($color-blue, 1);
     @include color($color-white, 1);
     float: left;
     width: 100%;
@@ -60,7 +60,7 @@
     }
 
 .global-foot {
-    @include background-color($color-corporate-black, 1);
+    @include background-color($color-black, 1);
     clear: both;
     color: white;
     padding: 1em 0;

@@ -30,7 +30,7 @@
     display: block;
     float: right;
     text-transform: uppercase;
-    @include color($color-corporate-black, 1);
+    @include color($color-black, 1);
     @include font-sans-bold;
     font-size: 1.2em;
     margin: 0;
@@ -43,7 +43,7 @@
     }
 
 .global-header .skip-to-nav a {
-    @include color($color-corporate-black, 1);
+    @include color($color-black, 1);
     border-bottom: none;
     padding: 1em 0;
     display: block;
@@ -52,7 +52,7 @@
 .global-header .skip-to-nav a:hover,
 .global-header .skip-to-nav a:focus,
 .global-header .skip-to-nav a:active {
-    @include color($color-corporate-red, 1);
+    @include color($color-red, 1);
     }
 
 .global-header .skip-to-nav a:after {
