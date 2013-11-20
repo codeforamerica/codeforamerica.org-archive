@@ -5194,7 +5194,7 @@
 
 /* Elements */
 body {
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -5326,7 +5326,7 @@ blockquote p {
 .heading-mini {
   text-transform: uppercase;
   margin: 0;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 1em;
   line-height: 1.8em;
 }
@@ -5376,7 +5376,7 @@ h6,
 .h5,
 .h6 {
   font-size: 22px;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
   text-transform: uppercase;
 }
 
@@ -5492,7 +5492,7 @@ select {
   border-color: rgba(153, 149, 149, 0.5);
   border-radius: 0.2em;
   margin-bottom: 1em;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 input,
@@ -5608,7 +5608,7 @@ input[type="submit"],
   font-size: 0.85em;
   font-weight: normal;
   line-height: 1.4em;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
   width: auto;
   vertical-align: middle;
 }
@@ -5942,7 +5942,7 @@ input.button-unstyled,
 
 .highlight .attribute {
   text-transform: uppercase;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
   font-size: 0.7em;
 }
 
@@ -6841,6 +6841,13 @@ nav ul li {
   margin: 0 0 0 120px;
 }
 
+.layout-container {
+  width: 92%;
+  padding: 0 4%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
 section.layout-container {
   margin: 3em auto;
 }
@@ -6876,20 +6883,9 @@ section.layout-container {
   width: 100%;
   background-image: none;
   padding-left: 0;
-}
-
-@media (min-width: 30em) {
-  .layout-col {
-    list-style-type: none;
-    margin-left: 2%;
-    /*padding: 0 1.5%;*/
-  }
-}
-.layout-container {
-  width: 92%;
-  padding: 0 4%;
-  max-width: 60em;
-  margin: 0 auto;
+  list-style-type: none;
+  margin-left: 2%;
+  /*padding: 0 1.5%;*/
 }
 
 @media (min-width: 40em) {
@@ -6916,43 +6912,37 @@ section.layout-container {
   width: 20.6666666667%;
 }
 
-@media (min-width: 30em) {
-  .layout-colspan-3 {
-    width: 49.0%;
-    /* 2 col */
-  }
+.layout-colspan-3 {
+  width: 49.0%;
+  /* 2 col */
 }
+
 @media (min-width: 50em) {
   .layout-colspan-3 {
     width: 32.0%;
     /* 3 col */
   }
 }
-@media (min-width: 30em) {
-  .layout-colspan-4 {
-    width: 43.3333333333%;
-  }
+.layout-colspan-4 {
+  width: 43.3333333333%;
 }
-@media (min-width: 30em) {
-  .layout-colspan-5 {
-    width: 54.6666666667%;
-  }
+
+.layout-colspan-5 {
+  width: 54.6666666667%;
 }
-@media (min-width: 30em) {
-  .layout-colspan-6 {
-    width: 66.0%;
-  }
+
+.layout-colspan-6 {
+  width: 66.0%;
 }
-@media (min-width: 30em) {
-  .layout-colspan-7 {
-    width: 77.3333333333%;
-  }
+
+.layout-colspan-7 {
+  width: 77.3333333333%;
 }
-@media (min-width: 30em) {
-  .layout-colspan-8 {
-    width: 88.6666666667%;
-  }
+
+.layout-colspan-8 {
+  width: 88.6666666667%;
 }
+
 .layout-colspan-9 {
   margin-left: 0;
   width: 100%;
@@ -6964,7 +6954,7 @@ section.layout-container {
   background-image: none;
 }
 
-@media (min-width: 30em) and (max-width: 50em) {
+@media (max-width: 50em) {
   .layout-grid .layout-colspan-3:first-of-type,
   .layout-grid .layout-colspan-3:nth-of-type(2n+3) {
     margin-left: 0;
@@ -7027,7 +7017,7 @@ section.layout-container {
   padding: 0;
   margin: 6em 0 6em;
   display: none;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 @media (min-width: 40em) {
@@ -7189,7 +7179,7 @@ section.layout-container {
   margin: 0 1em 0 0;
   font-size: 0.8em;
   clear: both;
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 @media (min-width: 70em) {
@@ -7205,7 +7195,7 @@ section.layout-container {
 }
 
 .pattern-name {
-  font-family: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
 }
 
 .pattern-details {

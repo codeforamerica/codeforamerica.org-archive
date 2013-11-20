@@ -60,9 +60,19 @@
 
 $font-serif-regular: "Sentinel Book", "Georgia", Times, sans-serif;
 
-$font-sans-regular: "Gotham A", "Open Sans Regular", "Helvetica", "Arial";
+$font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", "Helvetica", "Arial";
+
+@mixin font-sans-bold {
+    font-family: $font-sans-regular;
+    font-weight: 300;
+    }
 
 $font-sans-bold: "Gotham A", "Gotham B", "Open Sans Bold", "Helvetica", "Arial";
+
+@mixin font-sans-bold {
+    font-family: $font-sans-bold;
+    font-weight: 600;
+    }
 
 $font-serif-bold: "Sentinel Bold", "Georgia", Times, sans-serif;
 
