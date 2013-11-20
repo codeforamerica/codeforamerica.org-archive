@@ -2,7 +2,6 @@
     
     <div class="masthead masthead-l">
         <div class="masthead-hero">
-            <img src="/placeholder/masthead-1.jpg" class="masthead-image"/>
         </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
@@ -66,50 +65,88 @@
                 <div class="layout-container">
             
                     
-                    <div class="layout-col layout-colspan-3">
-                        <h2>Why I Code for America</h2>
-                        <div class="h-card profile-small">
-                            <h3 class="p-name profile-name">Richa Agarwal</h3>
-                            <p>2012 Fellow</p>
-                            
-                            <p>Co-creator of Recordtrac</p>
-                            
-                            <a href="#">Meet more civic hackers</a>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="layout-col layout-colspan-6">
-                        <h2>What's happening?</h2>
+                    <h2>Why I Code for America</h2>
+                    <div class="h-card profile-small">
+                        <h3 class="p-name profile-name">Richa Agarwal</h3>
+                        <p>2012 Fellow</p>
                         
-                        <ul>
-                            <li>Nov 19: Bike Hack NYU Rudin 
-                            <a href="#">More events</a>
-                            </li>
-                            <li>Hack request: Add SMS to Ohana API 
-                            <a href="#">More hack requests</a>
-                            </li>
-                            <li>Feb 22-24: Code Across America 
-                            <a href="#">More national projects</a>
-                            </li>
-                            <li>Video: Civic Engagement & Design 
-                            <a href="#">More CFA videos</a>
-                            </li>
-                            <li>Publish and Curate Open Data
-                            <a href="#">More organizing</a>
-                            </li>
-                        </ul>
+                        <p>Co-creator of Recordtrac</p>
+                        
+                        <a href="#">Meet more civic hackers</a>
                         
                     </div>
-                    
                 
+                    <h2>What's happening?</h2>
+                    
+                    <ul>
+                        <li>Nov 19: Bike Hack NYU Rudin 
+                        <a href="#">More events</a>
+                        </li>
+                        <li>Hack request: Add SMS to Ohana API 
+                        <a href="#">More hack requests</a>
+                        </li>
+                        <li>Feb 22-24: Code Across America 
+                        <a href="#">More national projects</a>
+                        </li>
+                        <li>Video: Civic Engagement & Design 
+                        <a href="#">More CFA videos</a>
+                        </li>
+                        <li>Publish and Curate Open Data
+                        <a href="#">More organizing</a>
+                        </li>
+                    </ul>
+                    
                 </div>
-                
-                      
-            
+                    
             
             </section>
             
+            <section class="layout-container">
+            
+                <h3>For Software developers</h3>
+                
+                <ul>
+                    <li>Get in our code and hack.</li>
+                    <li>Deploy and build apps in your city. Join a local CfA Brigade.</li>
+                    <li>Guide and advise fellows and civic startups.  Become a Mentor</li>
+                    <li>Learn about open data and the civic tech ecosystem.</li>
+                </ul>
+                
+                <h3>For Designers</h3>
+                
+                <ul>
+                    <li>Get in our code and hack.</li>
+                    <li>Deploy and build apps in your city. Join a local CfA Brigade.</li>
+                    <li>Guide and advise fellows and civic startups.  Become a Mentor</li>
+                    <li>Learn about open data and the civic tech ecosystem.</li>
+                </ul>
+                
+                <h3>For Organizers</h3>
+                
+                <ul>
+                    <li>Get in our code and hack.</li>
+                    <li>Deploy and build apps in your city. Join a local CfA Brigade.</li>
+                    <li>Guide and advise fellows and civic startups.  Become a Mentor</li>
+                    <li>Learn about open data and the civic tech ecosystem.</li>
+                </ul>
+            
+            </section>
+            
+            <section class="layout-container">
+                
+                <h2>Fellowship: Ready to spend a year in civic service</h2>
+                
+                <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship will open in March 2014.</p>
+                
+                <a href="#">Find out more</a>
+                
+                <h2>Fellowship: Ready to spend a year in civic service</h2>
+                
+                <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship will open in March 2014.</p>
+                
+                <a href="#">Find out more</a>
+                
+            </section>
             
             
             <!--<section class="layout-container">

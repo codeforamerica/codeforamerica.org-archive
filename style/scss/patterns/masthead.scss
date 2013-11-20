@@ -77,7 +77,7 @@
     clear: left;
     color: white;
     margin: 0;
-    font-family: $font-sans-bold;
+    @include font-sans-bold;
     font-size: 6em;
     text-transform: uppercase;
     text-align: center;
