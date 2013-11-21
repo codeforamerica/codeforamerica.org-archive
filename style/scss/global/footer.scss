@@ -6,7 +6,7 @@
     @include color($color-white, 1);
     float: left;
     width: 100%;
-    padding: 1.5em 0;
+    padding: 2.5em 0 1.5em;
     }
 
 .global-footer a:link,
@@ -18,7 +18,8 @@
     }
 
 .global-footer .nav-footer {
-
+    float: left;
+    width: 100%;
     }
 
 .global-footer .nav-footer ul,
@@ -28,20 +29,96 @@
     }
 
 .global-footer .nav-footer > ul {
-    display: flex;
-    padding: 0 2%;
-    width: 96%;
+    padding: 0;
+    
     }
 
 
 
 .global-footer .nav-footer .nav-tier1 {
-    margin-left: 2%;
-    flex: 1;
+    
+    float: left;
+    margin-bottom: 1.5em;
+    width: 96%;
     }
 
+@media (min-width: 30em) and (max-width: 50em)  {
+.global-footer .nav-footer .nav-tier1 {
+    float: left;
+    margin-bottom: 1.5em;
+    width: 50%;
+    }
+
+.global-footer .nav-footer .nav-tier1:nth-of-type(2n+2) {
+    clear: both;
+    }
+}
+
+.global-footer .nav-footer .nav-tier1:first-child {
+    display: none;
+    }
+
+.global-footer .search-global {
+    margin: 0 0 2em;
+    }
+
+.global-footer .search-global input {
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    @include color($color-white, 1);
+    }
+
+.global-footer .search-global input:focus {
+    @include border-color($color-white, 0.5);
+    }
+
+@media (min-width: 50em) {
+    .global-footer .nav-footer > ul {
+        display: flex;
+        }
+        
+    .global-footer .nav-footer .nav-tier1 {
+        flex: 1;
+        flex-basis: auto;
+        margin-right: 2%;
+        }
+    }
+
+@media (min-width: 60em) {
+.global-footer .search-global {
+    float: right;
+    width: 25%;
+    margin-left: 0;
+    }
+
+.global-footer .nav-footer {
+    float: left;
+    width: 73%;
+    margin-right: 0;
+    }
+
+
+
+.global-footer .nav-footer .nav-tier1:first-child {
+    display: block;
+    }
+}
+
 .global-footer .nav-footer .nav-tier2 {
-    @include color($color-light-gray, 1);
+    font-size: 0.9em
+    }
+
+.global-footer .nav-footer .nav-tier2,
+.global-footer .nav-footer .nav-tier2 a:link,
+.global-footer .nav-footer .nav-tier2 a:visited {
+    @include color($color-light-gray, 0.8);
+    }
+
+.global-footer .nav-footer .nav-tier2 a:hover,
+.global-footer .nav-footer .nav-tier2 a:focus,
+.global-footer .nav-footer .nav-tier2 a:active {
+    @include color($color-white, 1);
     }
 
 .global-footer .nav-footer .nav-tier2 li {
@@ -55,9 +132,10 @@
 .global-footer .nav-footer .nav-heading {
     display: block;
     font-size: 1.3em;
-    @include font-sans-bold;
     margin-bottom: 0.5em;
     }
+
+
 
 .global-foot {
     @include background-color($color-black, 1);
@@ -75,6 +153,8 @@
     }
 
 .global-foot small {
-    margin: 0 0 0 120px;
+    margin: 1.3em 0 1.3em 120px;
+    float: left;
+    @include color($color-white, 0.7);
     }
     
