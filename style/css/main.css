@@ -5323,7 +5323,7 @@ blockquote p {
   border-bottom: none;
 }
 
-.heading-mini, .postcard .profile .profile-role, .postcard .profile .profile-note {
+.heading-mini, .heading-contrast, .list-icons li a, .postcard .profile .profile-role, .postcard .profile .profile-note {
   text-transform: uppercase;
   margin: 0;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -5341,6 +5341,23 @@ blockquote p {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.heading-contrast {
+  /* fallback */
+  color: #494c49;
+  color: rgba(73, 76, 73, 0.6);
+  font-size: 0.8em;
+}
+
+.heading-contrast strong {
+  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-size: 2em;
+  /* fallback */
+  color: black;
+  color: black;
+  text-transform: none;
+  margin: 0 0.2em;
 }
 
 h1,
@@ -5863,10 +5880,6 @@ input.button-unstyled,
   position: relative;
   overflow: hidden;
   text-align: center;
-  z-index: -2;
-  /* fallback */
-  background: #494c49;
-  background: #494c49;
 }
 
 @media (min-width: 40em) {
@@ -6190,6 +6203,16 @@ input.button-unstyled,
 
 .list-ruled li:last-child {
   border-bottom: none;
+}
+
+.list-icons li {
+  margin-bottom: 1em;
+  padding-left: 60px;
+}
+
+.list-icons li a {
+  display: block;
+  clear: both;
 }
 
 nav a:hover,
@@ -6995,11 +7018,17 @@ nav ul li {
 .global-foot-logo {
   width: 100px;
   position: absolute;
-  margin: 0.3em 1em 0.3em 0;
+  margin: 0.3em 1em 0.3em 2%;
+  left: 0;
 }
 
+@media (min-width: 80em) {
+  .global-foot-logo {
+    margin-left: 0;
+  }
+}
 .global-foot small {
-  margin: 1.3em 0 1.3em 120px;
+  margin: 1em 0 1em 120px;
   float: left;
   /* fallback */
   color: white;
@@ -7014,6 +7043,7 @@ nav ul li {
   margin: 3em auto;
   clear: both;
   display: table;
+  position: relative;
 }
 
 .layout-container-l {
@@ -7048,6 +7078,25 @@ section.layout-container-l {
   color: white;
 }
 
+.slab-red a:link,
+.slab-red a:visited,
+.slab-red a:hover,
+.slab-red a:focus,
+.slab-red a:active {
+  /* fallback */
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: none;
+}
+
+.slab-red a:hover,
+.slab-red a:focus,
+.slab-red a:active {
+  /* fallback */
+  color: white;
+  color: white;
+}
+
 .slab-medium-red {
   /* fallback */
   background: #aa1c3a;
@@ -7077,6 +7126,12 @@ section,
   margin-bottom: 1em;
 }
 
+@media (min-width: 30em) {
+  .postcard {
+    width: 90%;
+    margin-left: 0;
+  }
+}
 .postcard .profile {
   position: relative;
   margin-left: 140px;
@@ -7109,25 +7164,43 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.postcard .profile .profile-note a {
-  /* fallback */
-  color: white;
-  color: white;
-}
-
 .postcard .profile .profile-org {
   clear: both;
   display: block;
 }
 
-.postcard .profile .button {
+.postcard .button {
   margin-top: 1.5em;
 }
 
 @media (min-width: 60em) {
-  width: 90%;
-  margin-left: 0;
+  .postcard .button {
+    margin-left: 140px;
+  }
 }
+.postcard a:link,
+.postcard a:visited,
+.postcard a:hover,
+.postcard a:focus,
+.postcard a:active {
+  /* fallback */
+  color: white;
+  color: white;
+  border-bottom: none;
+}
+
+.postcard a:hover,
+.postcard a:focus,
+.postcard a:active {
+  /* fallback */
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.layout-break-up.postcard {
+  width: 90%;
+}
+
 .wodge {
   position: relative;
   margin: 3em 0 2em 0;
@@ -7145,6 +7218,7 @@ section,
 .wodge:last-child {
   border-bottom: none;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .wodge-image {
@@ -7242,13 +7316,13 @@ nav {
   width: 100%;
 }
 
-.xx-sidebar .xx-nav .heading-mini, .xx-sidebar .xx-nav .postcard .profile .profile-role, .postcard .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .postcard .profile .profile-note, .postcard .profile .xx-sidebar .xx-nav .profile-note,
+.xx-sidebar .xx-nav .heading-mini, .xx-sidebar .xx-nav .heading-contrast, .xx-sidebar .xx-nav .list-icons li a, .list-icons li .xx-sidebar .xx-nav a, .xx-sidebar .xx-nav .postcard .profile .profile-role, .postcard .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .postcard .profile .profile-note, .postcard .profile .xx-sidebar .xx-nav .profile-note,
 .xx-sidebar .xx-nav li a {
   padding: 0.8em 5% 0.8em 15%;
   display: block;
 }
 
-.xx-sidebar .xx-nav .heading-mini, .xx-sidebar .xx-nav .postcard .profile .profile-role, .postcard .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .postcard .profile .profile-note, .postcard .profile .xx-sidebar .xx-nav .profile-note {
+.xx-sidebar .xx-nav .heading-mini, .xx-sidebar .xx-nav .heading-contrast, .xx-sidebar .xx-nav .list-icons li a, .list-icons li .xx-sidebar .xx-nav a, .xx-sidebar .xx-nav .postcard .profile .profile-role, .postcard .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .postcard .profile .profile-note, .postcard .profile .xx-sidebar .xx-nav .profile-note {
   border-top: 1px solid #ddd;
   margin-top: 1.5em;
 }

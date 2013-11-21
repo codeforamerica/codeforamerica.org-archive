@@ -3,8 +3,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    z-index: -2;
-    @include background-color($color-dark-gray, 1); 
+    
     }
 
 @media (min-width: 40em) {
@@ -25,6 +24,7 @@
 
 .masthead-image {
     max-width: none;
+    
     }
 
 @media (min-width: 70em) {

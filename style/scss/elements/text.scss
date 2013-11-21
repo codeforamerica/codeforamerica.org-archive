@@ -131,4 +131,19 @@ blockquote p {
     line-height: 72px;
     @include font-sans-bold;
     text-transform: uppercase;
+    
+    }
+
+.heading-contrast {
+    @extend .heading-mini;
+    @include color($color-dark-gray, 0.6);
+    font-size: 0.8em;
+    }
+
+.heading-contrast strong {
+    font-family: $font-serif-bold;
+    font-size: 2em;
+    @include color($color-black, 1);
+    text-transform: none;
+    margin: 0 0.2em;
     }

@@ -75,8 +75,8 @@
                                 <img class="u-photo profile-photo" src="/placeholder/avatar-tiffani-bell.png" />
                                 <p class="p-role profile-role">2012 Fellow</p>
                                 <p class="p-note profile-note">Co-creator of <a class="p-org profile-org" href="#">Recordtrac</a></p>
-                                <a href="#" class="button button-prominent">Meet more civic hackers</a>
                             </div>
+                            <a href="#" class="button button-prominent">Meet more civic hackers</a>
                         
                         </div>
                     
@@ -88,7 +88,7 @@
                         
                         <h3>What's happening?</h3>
                         
-                        <ul class="list-no-bullets">
+                        <ul class="list-no-bullets list-icons">
                             <li>Nov 19: Bike Hack NYU Rudin 
                             <a href="#">More events</a>
                             </li>
@@ -121,7 +121,7 @@
                     
                     <div class="layout-3col">
                 
-                        <h3>For Software developers</h3>
+                        <h3 class="heading-contrast">For <strong>Software developers</strong></h3>
                         
                         <ul class="list-ruled">
                             <li>Get in <a href="#">our code</a> and hack.</li>
@@ -134,7 +134,7 @@
                     
                     <div class="layout-3col">
                     
-                        <h3>For Designers</h3>
+                        <h3 class="heading-contrast">For <strong>Designers</strong></h3>
                         
                         <ul class="list-ruled">
                             <li>Design great citizen experiences, join a local <a href="#">CfA Brigade</a>.</li>
@@ -146,7 +146,7 @@
                     
                     <div class="layout-3col">
                     
-                        <h3>For Organizers</h3>
+                        <h3 class="heading-contrast">For <strong>Organizers</strong></h3>
                         
                         <ul class="list-ruled">
                             <li>Release more open data.</li>

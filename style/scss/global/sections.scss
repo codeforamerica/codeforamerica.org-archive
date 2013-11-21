@@ -6,6 +6,7 @@
     margin: 3em auto;
     clear: both;
     display: table;
+    position: relative;
     }
 
 .layout-container-l {
@@ -33,6 +34,21 @@ section.layout-container-l {
     @include background-color($color-red, 1);
     @include color($color-white, 1);
     }
+    
+    .slab-red a:link,
+    .slab-red a:visited,
+    .slab-red a:hover,
+    .slab-red a:focus,
+    .slab-red a:active {
+        @include color($color-white, 0.7);
+        border-bottom: none;
+        }
+    
+    .slab-red a:hover,
+    .slab-red a:focus,
+    .slab-red a:active {
+        @include color($color-white, 1);
+        }
 
 .slab-medium-red {
     @include background-color($color-medium-red, 1);
@@ -55,6 +71,13 @@ section,
     width: 100%;
     margin-left: -5%;
     margin-bottom: 1em;
+    }
+
+@media (min-width: 30em) {
+    .postcard {
+    width: 90%;
+    margin-left: 0;
+    }
     }
 
 .postcard .profile {
@@ -88,22 +111,42 @@ section,
     @include color($color-white, 0.7);
     }
 
-.postcard .profile .profile-note a {
-    @include color($color-white, 1);
-    }
+
 
 .postcard .profile .profile-org {
     clear: both;
     display: block;
     }
 
-.postcard .profile .button {
+.postcard .button {
     margin-top: 1.5em;
     }
 
 @media (min-width: 60em) {
+.postcard .button {
+    margin-left: 140px;
+    }
+    }
+
+
+.postcard a:link,
+.postcard a:visited,
+.postcard a:hover,
+.postcard a:focus,
+.postcard a:active {
+    @include color($color-white, 1);
+    border-bottom: none;
+    }
+
+.postcard a:hover,
+.postcard a:focus,
+.postcard a:active {
+    @include color($color-white, 0.7);
+    }
+
+
+.layout-break-up.postcard {
     width: 90%;
-    margin-left: 0;
     }
 
 .wodge {
@@ -122,6 +165,7 @@ section,
 .wodge:last-child {
     border-bottom: none;
     margin-bottom: 0;
+    padding-bottom: 0
     }
 
 .wodge-header {
