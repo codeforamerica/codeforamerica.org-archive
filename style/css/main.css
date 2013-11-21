@@ -7115,8 +7115,8 @@ section.layout-container-l {
 section,
 [class*="slab-"] {
   clear: both;
-  float: left;
   width: 100%;
+  float: left;
 }
 
 .postcard {

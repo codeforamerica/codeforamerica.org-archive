@@ -13,14 +13,18 @@
     <?php include("../blocks/global/header.html") ?>
     
         <main role="main">
-        
-            <section class="layout-container">
-                
-                <div class="">
+            
+            <section>
+            
+                <div class="layout-container">
                     
-                    <p>Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service. 
-                    </p>
-                                
+                    <div class="">
+                        
+                        <p>Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service. 
+                        </p>
+                                    
+                    </div>
+                
                 </div>
                 
             </section>
