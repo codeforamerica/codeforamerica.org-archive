@@ -2,6 +2,7 @@
     
     <div class="masthead masthead-l">
         <div class="masthead-hero">
+            <img src="/placeholder/masthead-2.jpg" class="masthead-image"/>
         </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
@@ -17,7 +18,7 @@
             
                 <div class="layout-container layout-centered">
                 
-                    <h2>Citizens have the power to help their cities</h2>
+                    <h2 class="isolate">Citizens have the power to help their cities.</h2>
                     
                     <h3>We're collaborating with</h3>
                     
@@ -51,7 +52,7 @@
                         <li><a href="#">Detroit</a></li>
                     </ul>
                     
-                    <a href="#">See all cities</a>
+                    <p class="isolate heading-mini"><strong><a href="#">See all cities</a></strong></p>
                 
                 </div>
             
@@ -66,11 +67,11 @@
                         <div class="postcard slab-medium-red">
                     
                             <h3>Why I Code for America</h3>
-                            <div class="h-card">
-                                <h3 class="p-name profile-name">Richa Agarwal</h3>
+                            <div class="h-card profile">
+                                <h4 class="p-name profile-name">Richa Agarwal</h4>
                                 <img class="u-photo profile-photo" src="/placeholder/avatar-tiffani-bell.png" />
-                                <p>2012 Fellow</p>
-                                <p>Co-creator of Recordtrac</p>
+                                <p class="p-role profile-role">2012 Fellow</p>
+                                <p class="p-note profile-note">Co-creator of <a class="p-org profile-org" href="#">Recordtrac</a></p>
                                 <a href="#" class="button button-prominent">Meet more civic hackers</a>
                             </div>
                         

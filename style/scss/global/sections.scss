@@ -51,8 +51,59 @@ section,
     }
 
 .postcard {
-    padding: 1em 5%;
+    padding: 2.5em 5% 1.5em;
+    width: 100%;
+    margin-left: -5%;
+    margin-bottom: 1em;
+    }
+
+.postcard .profile {
+    position: relative;
+    margin-left: 140px;
+    min-height: 140px;
+    margin-top: 2em;
+    
+    }
+
+.postcard .profile .profile-name {
+    margin-bottom: 0;
+    }
+
+.postcard .profile .profile-role {
+    @extend .heading-mini;
+    @include color($color-white, 0.7);
+    margin-bottom: 1em;
+    }
+
+.postcard .profile .profile-photo {
+    position: absolute;
+    top: 0;
+    left: -140px;
+    width: 120px;
+    height: 120px;
+    }
+    
+.postcard .profile .profile-note {
+    @extend .heading-mini;
+    @include color($color-white, 0.7);
+    }
+
+.postcard .profile .profile-note a {
+    @include color($color-white, 1);
+    }
+
+.postcard .profile .profile-org {
+    clear: both;
+    display: block;
+    }
+
+.postcard .profile .button {
+    margin-top: 1.5em;
+    }
+
+@media (min-width: 60em) {
     width: 90%;
+    margin-left: 0;
     }
 
 .wodge {

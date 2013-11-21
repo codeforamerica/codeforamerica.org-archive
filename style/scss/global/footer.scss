@@ -1,6 +1,6 @@
 .global-footer {
     clear: both;
-    @include background-color($color-gray, 1);
+    @include background-color($color-dark-gray, 1);
     border-top: 10px solid;
     @include border-color($color-blue, 1);
     @include color($color-white, 1);

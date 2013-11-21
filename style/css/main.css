@@ -5323,12 +5323,16 @@ blockquote p {
   border-bottom: none;
 }
 
-.heading-mini {
+.heading-mini, .postcard .profile .profile-role, .postcard .profile .profile-note {
   text-transform: uppercase;
   margin: 0;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 1em;
   line-height: 1.8em;
+}
+
+.isolate {
+  margin-bottom: 1.5em;
 }
 
 .page-title {
@@ -6779,7 +6783,7 @@ nav ul li {
   border-color: #e5e5e5;
   border-color: rgba(229, 229, 229, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
-  margin: 0 0 2em 0;
+  margin: 0;
 }
 
 .global-header-logo {
@@ -6837,8 +6841,8 @@ nav ul li {
 .global-footer {
   clear: both;
   /* fallback */
-  background: #6d6e71;
-  background: #6d6e71;
+  background: #494c49;
+  background: #494c49;
   border-top: 10px solid;
   /* fallback */
   border-color: #399fd3;
@@ -6985,10 +6989,63 @@ section,
 }
 
 .postcard {
-  padding: 1em 5%;
-  width: 90%;
+  padding: 2.5em 5% 1.5em;
+  width: 100%;
+  margin-left: -5%;
+  margin-bottom: 1em;
 }
 
+.postcard .profile {
+  position: relative;
+  margin-left: 140px;
+  min-height: 140px;
+  margin-top: 2em;
+}
+
+.postcard .profile .profile-name {
+  margin-bottom: 0;
+}
+
+.postcard .profile .profile-role {
+  /* fallback */
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1em;
+}
+
+.postcard .profile .profile-photo {
+  position: absolute;
+  top: 0;
+  left: -140px;
+  width: 120px;
+  height: 120px;
+}
+
+.postcard .profile .profile-note {
+  /* fallback */
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.postcard .profile .profile-note a {
+  /* fallback */
+  color: white;
+  color: white;
+}
+
+.postcard .profile .profile-org {
+  clear: both;
+  display: block;
+}
+
+.postcard .profile .button {
+  margin-top: 1.5em;
+}
+
+@media (min-width: 60em) {
+  width: 90%;
+  margin-left: 0;
+}
 .wodge {
   position: relative;
   margin: 3em 0 2em 0;
@@ -7088,13 +7145,13 @@ section,
   width: 100%;
 }
 
-.xx-sidebar .xx-nav .heading-mini,
+.xx-sidebar .xx-nav .heading-mini, .xx-sidebar .xx-nav .postcard .profile .profile-role, .postcard .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .postcard .profile .profile-note, .postcard .profile .xx-sidebar .xx-nav .profile-note,
 .xx-sidebar .xx-nav li a {
   padding: 0.8em 5% 0.8em 15%;
   display: block;
 }
 
-.xx-sidebar .xx-nav .heading-mini {
+.xx-sidebar .xx-nav .heading-mini, .xx-sidebar .xx-nav .postcard .profile .profile-role, .postcard .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .postcard .profile .profile-note, .postcard .profile .xx-sidebar .xx-nav .profile-note {
   border-top: 1px solid #ddd;
   margin-top: 1.5em;
 }
