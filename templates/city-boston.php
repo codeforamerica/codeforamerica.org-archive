@@ -155,7 +155,7 @@
                     
                     </div>
                     
-                    <p class="heading-mini">This program made possible by these community partners</p>
+                    <p class="heading-contrast isolate">This program made possible by these community partners</p>
                     
                     <ul class="list-inline">
                         <li><a href="#"><img src="/placeholder/logo-microsoft.png"/></a></li>
