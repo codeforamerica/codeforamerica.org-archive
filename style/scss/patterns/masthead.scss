@@ -45,7 +45,7 @@
 
 
 .masthead-l .masthead-header {
-    padding-top: 17em;
+    padding-top: 13em;
     }
 
 .masthead-header .nav-breadcrumbs {
@@ -68,7 +68,12 @@
     @include color($color-white, 0.7);
     }
 
-.masthead-header .nav-breadcrumbs li:first-child {
+.masthead-header .nav-breadcrumbs li {
+    background-image: url('/style/images/arrow-breadcrumb-white.png');
+    }
+
+
+.masthead-header .nav-breadcrumbs li:first-child a {
     background-image: url('../icons/flag-white.png');
     }
 

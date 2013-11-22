@@ -154,6 +154,7 @@
 
 .list-ruled {
     @extend .list-no-bullets;
+    margin-bottom: 1em;
     }
 
 .list-ruled li {

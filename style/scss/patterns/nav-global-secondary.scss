@@ -16,6 +16,7 @@
 .nav-global-secondary ul {
     @extend .list-no-bullets;
     display: table;
+    margin: 0;
     }
 
 .nav-global-secondary li {

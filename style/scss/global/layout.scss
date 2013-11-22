@@ -23,8 +23,8 @@
 @media (min-width: 40em) {
     .layout-container,
     .layout-container-l {
-    width: 96%;
-    padding: 0 2%;
+    width: 92%;
+    padding: 0 4%;
     }
 }
 
@@ -60,52 +60,16 @@
         
     
 
-    
-    .layout-colspan-3 {
-        width: 49.0%; /* 2 col */
-        }
-    
-
     @media (min-width: 50em) {
     
     .layout-colspan-3 {
         width: 32.0%; /* 3 col */
+        float: left;
+        clear: none;
         }
     
     }
     
-    
-    .layout-colspan-4 {
-        width: 43.3333333333%;
-        }
-    
-    
-    .layout-colspan-5 {
-        width: 54.6666666667%;
-        }
-    
-    
-    .layout-colspan-6 {
-        width: 66.0%;
-        }
-    
-    
-    
-    .layout-colspan-7 {
-        width: 77.3333333333%;
-        }
-    
-    
-    
-    .layout-colspan-8 {
-        width: 88.6666666667%;
-        }
-    
-
-.layout-colspan-9 {
-    margin-left: 0;
-    width: 100%;
-    }
 
 
 
@@ -115,6 +79,7 @@
     margin: 0;
     padding: 0;
     background-image: none;
+    width: 100%;
     }
 
 @media (min-width: 60em) {
@@ -173,15 +138,7 @@
 }
 
 
-@media (max-width: 50em) {
 
-.layout-grid .layout-colspan-3:first-of-type,
-.layout-grid .layout-colspan-3:nth-of-type(2n+3) {
-    margin-left: 0;
-    clear: both;
-    }
-
-}
 
 
 @media (min-width: 50em) {
@@ -193,6 +150,19 @@
     }
 
 }
+
+/*@media (max-width: 50em) {
+
+.layout-grid .layout-colspan-3:first-of-type,
+.layout-grid .layout-colspan-3:nth-of-type(2n+3) {
+    margin-left: 0;
+    clear: both;
+    }
+
+}*/
+
+
+
 
 
 

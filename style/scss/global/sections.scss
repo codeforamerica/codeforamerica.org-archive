@@ -180,6 +180,7 @@ section,
     border: 3px solid;
     @include border-color($color-dark-gray, 0.5);
     border-radius: 0.2em;
+    margin-bottom: 1em;
     }
 
 
@@ -192,11 +193,14 @@ section,
     }
 
 .wodge-header,
-.wodge-text {
+.wodge-text,
+.wodge-s .wodge-button {
     margin-left: 150px;
     }
 
-
+.wodge-text {
+    clear: both;
+    }
 
 .wodge-l .wodge-header,
 .wodge-l .wodge-text,
@@ -204,20 +208,36 @@ section,
     margin-left: 225px;
     }
 
-
-
 }
+
+
 
 @media (min-width: 60em) {
     
     .wodge-header {
         margin-right: 6em;
         }
-    .wodge-button {
+    .wodge-l .wodge-button {
         position: absolute;
         right: 0;
         top: 0;
         margin-left: 0;
+        }
+    
+    .wodge-s .wodge-button {
+        float: right;
+        margin-left: 0;
+        }
+    
+    .wodge-s .wodge-button .button {
+        min-width: 7em;
+        margin-left: 0.35em;
+        }
+    
+    .wodge-s .wodge-header {
+        float: left;
+        margin-right: 0;
+        width: 50%;
         }
     
     }

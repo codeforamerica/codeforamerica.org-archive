@@ -1,6 +1,9 @@
 <?php include("../blocks/global/head.html") ?>
     
-    <div class="masthead">
+    <div class="masthead masthead-l">
+        <div class="masthead-hero">
+            <img src="/placeholder/masthead-2.jpg" class="masthead-image"/>
+        </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
             <h1 class="page-title">2013 Fellows</h1>
@@ -27,7 +30,8 @@
                 <h2>Become a fellow</h2>
             </header>
             
-            <div class="layout-gutters">
+            <section>
+            <div class="layout-gutters isolate">
                 
                 <p>I work with governments because, when operated well, they can improve the lives of so many people. I work with civic startups at the <a href="#"><abbr title="Code for America">CfA</abbr> Accelerator</a> because, when operated well, they can improve the efficiency of so many governments. Every positive change I made working in government in Newark, N.J. might effect tens of thousands of families and every civic startup I mentor might affect hundreds of governments.</p>
                 
@@ -37,23 +41,31 @@
                 
                 <p>It became clear that my mother was an alcoholic. My stepfather filed for divorce, and my parents (guided by child welfare) agreed that I would live with my dad. For years I did not understand what had happened, but in time I came to appreciate who the social workers were and the profound effect that a working and compassionate government can have on peoples lives. Or, in my case, just one life. Their careful and kind work made it so I could eventually go on to lead the life I’ve had.</p>
                 
-                <a href="#" class="button">See the timeline</a>
-                
-                <a href="#" class="button">See the selection process</a>
-                
-                <a href="#" class="button">More about training</a>
+                <ul class="list-inline list-no-bullets layout-centered"> 
+                    <li><a href="#" class="button">See the timeline</a></li>
+                    <li><a href="#" class="button">See the selection process</a></li>
+                    <li><a href="#" class="button">More about training</a></li>
+                </ul>
             
             </div>
-                
-                <h2>Meet the 2013 fellows</h2>
-                
-                <?php include("../blocks/patterns/profile-small.html") ?>
-                
-                <?php include("../blocks/patterns/profile-small.html") ?>
-                
-                <?php include("../blocks/patterns/profile-small.html") ?>
-                
             
+            </section>
+            
+            <section>
+                
+                <div class="layout-container">
+                
+                <h2 class="layout-centered">Meet the 2013 fellows</h2>
+                
+                <?php include("../blocks/patterns/profile-small.html") ?>
+                
+                <?php include("../blocks/patterns/profile-small.html") ?>
+                
+                <?php include("../blocks/patterns/profile-small.html") ?>
+                
+                </div>
+                
+            </section>
             
         </main><!--@main-->
         
