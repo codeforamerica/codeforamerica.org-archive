@@ -13,8 +13,6 @@
     
         <main role="main">
             
-            
-            
             <nav class="nav-breadcrumbs">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -23,8 +21,6 @@
                     <li>2013 Fellows</li>
                 </ul>
             </nav>
-            
-            
             
             <h2>Invest in the future of Government</h2>
             

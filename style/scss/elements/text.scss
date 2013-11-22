@@ -42,8 +42,6 @@ dl {
     margin: 1em 0;
     }
 
-
-
 strong {
     font-weight: bold;
     }
@@ -70,6 +68,21 @@ pre {
     white-space: pre-wrap;
     }
 
+blockquote {
+    @include color($color-dark-blue, 1);
+    @include background-color($color-light-blue, 0.1);
+    border: 1px solid;
+    @include border-color($color-light-gray, 1);
+    padding: 0.5em 5%;
+    font-family: $font-serif-bold;
+    font-size: 1.05em;
+    line-height: 1.3em;
+    }
+
+blockquote p {
+    line-height: 1.3em;
+    }
+
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -87,66 +100,7 @@ pre {
     vertical-align: middle;
     }
 
-blockquote {
-    @include color($color-dark-blue, 1);
-    @include background-color($color-light-blue, 0.1);
-    border: 1px solid;
-    @include border-color($color-light-gray, 1);
-    padding: 0.5em 5%;
-    font-family: $font-serif-bold;
-    font-size: 1.05em;
-    line-height: 1.3em;
-    }
-
-blockquote p {
-    line-height: 1.3em;
-    }
-
-.heading {
-    border-bottom: 1px solid;
-    @include border-color($color-light-gray, 0.8);
-    margin: 2em 0 2em;
-    position: relative;
-    margin: 1em 0 1em 0;
-    padding: 1.3em 0 0.5em 0;
-    }
 
 
-[class*="slab-"] .heading {
-    border-bottom: none;
-    }
 
-.heading-mini {
-    text-transform: uppercase;
-    margin: 0;
-    font-family: $font-sans-regular;
-    font-size: 1em;
-    line-height: 1.8em;
-    }
 
-.isolate {
-    margin-bottom: 1.5em;
-    clear: both;
-    }
-
-.page-title {
-    font-size: 90px;
-    line-height: 72px;
-    @include font-sans-bold;
-    text-transform: uppercase;
-    
-    }
-
-.heading-contrast {
-    @extend .heading-mini;
-    @include color($color-dark-gray, 0.6);
-    font-size: 0.8em;
-    }
-
-.heading-contrast strong {
-    font-family: $font-serif-bold;
-    font-size: 2em;
-    @include color($color-black, 1);
-    text-transform: none;
-    margin: 0 0.2em;
-    }

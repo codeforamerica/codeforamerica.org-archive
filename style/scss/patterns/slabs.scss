@@ -1,0 +1,61 @@
+section,
+[class*="slab-"] {
+    clear: both;
+    width: 100%;
+    float: left;
+    }
+
+[class*="slab-"] {
+    }
+
+.slab-blue {
+    @include background-color($color-dark-blue, 1);
+    }
+
+.slab-red {
+    @include background-color($color-red, 1);
+    @include color($color-white, 1);
+    }
+    
+    .slab-red a:link,
+    .slab-red a:visited,
+    .slab-red a:hover,
+    .slab-red a:focus,
+    .slab-red a:active {
+        @include color($color-white, 0.7);
+        border-bottom: none;
+        }
+    
+    .slab-red a:hover,
+    .slab-red a:focus,
+    .slab-red a:active {
+        @include color($color-white, 1);
+        }
+    
+    .slab-red label {
+        @include color($color-white, 1);
+        }
+
+.slab-medium-red {
+    @include background-color($color-medium-red, 1);
+    @include color($color-white, 1);
+    }
+    
+    .slab-medium-red a:link,
+    .slab-medium-red a:visited,
+    .slab-medium-red a:hover,
+    .slab-medium-red a:focus,
+    .slab-medium-red a:active {
+        @include color($color-white, 1);
+        border-bottom: none;
+        }
+    
+    .slab-medium-red a:hover,
+    .slab-medium-red a:focus,
+    .slab-medium-red a:active {
+        @include color($color-white, 0.7);
+        }
+
+.slab-gray {
+    @include background-color($color-light-gray, 0.5);
+    }

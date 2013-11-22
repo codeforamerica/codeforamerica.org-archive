@@ -49,7 +49,7 @@ input:invalid {
 
 input[type="text"][disabled] {
     @include background-color($color-light-gray, 0.5);
-}
+    }
 
 abbr[title="required"],
 abbr[title="Required"] {

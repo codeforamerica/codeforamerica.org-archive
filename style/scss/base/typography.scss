@@ -1,33 +1,19 @@
-@font-face {
-    font-family: 'Open Sans Regular';
-    src: url('../fonts/opensans/opensans-regular-webfont.eot');
-    src: url('../fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/opensans/opensans-regular-webfont.woff') format('woff'),
-         url('../fonts/opensans/opensans-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/* Sans serif */
+
+$font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+
+@mixin font-sans-regular {
+    font-family: $font-sans-regular;
+    font-weight: 300;
     }
 
-@font-face {
-    font-family: 'Open Sans Bold';
-    src: url('../fonts/opensans/opensans-bold-webfont.eot');
-    src: url('../fonts/opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/opensans/opensans-bold-webfont.woff') format('woff'),
-         url('../fonts/opensans/opensans-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@mixin font-sans-bold {
+    font-family: $font-sans-regular;
+    font-weight: 600;
     }
 
-@font-face {
-    font-family: 'Open Sans Extra Bold';
-    src: url('../fonts/opensans/opensans-extrabold-webfont.eot');
-    src: url('../fonts/opensans/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/opensans/opensans-extrabold-webfont.woff') format('woff'),
-         url('../fonts/opensans/opensans-extrabold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-
+/* Serif */
+    
 @font-face {
     font-family: 'Sentinel Book';
     src: url('../fonts/sentinel/sentinel-book.eot');
@@ -59,18 +45,6 @@
     }
 
 $font-serif-regular: "Sentinel Book", "Georgia", Times, sans-serif;
-
-$font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-
-@mixin font-sans-regular {
-    font-family: $font-sans-regular;
-    font-weight: 300;
-    }
-
-@mixin font-sans-bold {
-    font-family: $font-sans-regular;
-    font-weight: 600;
-    }
 
 $font-serif-bold: "Sentinel Bold", "Georgia", Times, sans-serif;
 

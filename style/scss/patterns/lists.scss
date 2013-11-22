@@ -147,26 +147,6 @@
 
 }
 
-.list-credits {
-    text-align: center;
-    font-weight: bold;
-    }
-
-.list-credits a {
-    text-align: center;
-    @include color($color-blue, 1);
-    text-transform: uppercase;
-    }
-
-.list-credits li:after {
-    content: ("-");
-    
-    }
-
-.list-credits li:last-child:after {
-    content: none;
-    }
-
 .list-ruled {
     @extend .list-no-bullets;
     margin-bottom: 1em;

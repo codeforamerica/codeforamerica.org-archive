@@ -9,10 +9,10 @@
     
     <?php include("../blocks/global/header.html") ?>
     
-    <div class="layout-container">
-    
-        <main role="main">
-            
+    <main role="main">
+        
+        <div class="layout-container">
+        
             <nav class="nav-breadcrumbs">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -80,10 +80,10 @@
                 </div>  
             
             </article>
-            
-        </main><!--@main-->
         
-    </div>
+        </div>
+                    
+    </main><!--@main-->
     
     <?php include("../blocks/global/footer.html") ?>  
     

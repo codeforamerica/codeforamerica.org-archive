@@ -55,13 +55,13 @@
                 
                 <div class="layout-container">
                 
-                <h2 class="layout-centered">Meet the 2013 fellows</h2>
-                
-                <?php include("../blocks/patterns/profile-small.html") ?>
-                
-                <?php include("../blocks/patterns/profile-small.html") ?>
-                
-                <?php include("../blocks/patterns/profile-small.html") ?>
+                    <h2 class="layout-centered">Meet the 2013 fellows</h2>
+                    
+                    <?php include("../blocks/patterns/profile-small.html") ?>
+                    
+                    <?php include("../blocks/patterns/profile-small.html") ?>
+                    
+                    <?php include("../blocks/patterns/profile-small.html") ?>
                 
                 </div>
                 

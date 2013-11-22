@@ -1,0 +1,47 @@
+.wodge {
+    position: relative;
+    margin: 3em 0 2em 0;
+    border-bottom: 1px solid;
+    @include border-color($color-dark-gray, 0.3);
+    padding: 0 0 2em 0;
+    }
+
+.wodge:first-child {
+    margin-top: 0;
+    }
+
+.wodge:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0
+    }
+
+.wodge-image {
+    border: 3px solid;
+    @include border-color($color-dark-gray, 0.5);
+    border-radius: 0.2em;
+    margin-bottom: 1em;
+    }
+
+    @media (min-width: 40em) {
+        .wodge-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            }
+    
+        .wodge-header,
+        .wodge-text {
+            margin-left: 150px;
+            }
+        
+        .wodge-text {
+            clear: both;
+            }
+        }
+
+@media (min-width: 60em) {
+    .wodge-header {
+        margin-right: 6em;
+        }
+    }
