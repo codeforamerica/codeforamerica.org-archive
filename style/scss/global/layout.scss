@@ -151,6 +151,35 @@
 
 }
 
+
+.layout-chimney-right .layout-chimney {
+    padding: 2em 4%;
+    margin: 1em 0 2em -4%;
+    }
+
+@media (min-width: 50em) {
+    .layout-chimney-right {
+        width: 48%;
+        position: relative;
+        padding-right: 52%;
+        }
+    
+    .layout-chimney-right p:first-child {
+        margin-top: 0;
+        }
+        
+    .layout-chimney-right .layout-chimney {
+        position: absolute;
+        right: 0%;
+        top: 0;
+        width: 42%;
+        margin: -4em 0 0 0;
+        }
+    }
+    
+    
+
+
 /*@media (max-width: 50em) {
 
 .layout-grid .layout-colspan-3:first-of-type,

@@ -49,6 +49,10 @@ section.layout-container-l {
     .slab-red a:active {
         @include color($color-white, 1);
         }
+    
+    .slab-red label {
+        @include color($color-white, 1);
+        }
 
 .slab-medium-red {
     @include background-color($color-medium-red, 1);

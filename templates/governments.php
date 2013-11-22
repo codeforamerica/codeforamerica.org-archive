@@ -20,8 +20,8 @@
                     
                     <div class="layout-centered">
                         
-                        <p class="h3">Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service. 
-                        </p>
+                        <h2 class="h3">Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service. 
+                        </h2>
                                     
                     </div>
                 
@@ -32,36 +32,79 @@
             <section class="slab-red">
                 <div class="layout-container">
                     
-                    <div class="layout-2col">
+                    <div class="layout-chimney-right">
                 
                     <p>Over 200 local officials, startups and NGOs discuss data standards, current events and civic tech on a focused, moderated email list.</p>
                     
-                    <p>Titles of some active members include:</p>
-                    <ul>
+                    <h3 class="h4">Titles of some active members include:</h3>
+                    <ul class="isolate">
                         <li>Chief Innovation Officer, City of KC, Missouri</li>
                     	<li>Deputy Chief of Staff, City of Houston</li>
                     	<li>Director of Research and Technology, Urban Strategies Council</li>
                     </ul>
                     
-                    <h3>Ready to Level Up?</h3>
+                    <div class="slab-medium-red layout-chimney">
+                            
+                        <h3>Join the conversation</h3>
+                        
+                        <form>
+                        <ul class="list-form">
+                            
+                            <li class="form-field">
+                                <label for="invitee-name">Your Name</label>
+                            	<input id="invitee-name" class="input" type="text" />
+                            </li>
+                            
+                            <li class="form-field">
+                                <label for="donor-address-line1">Your preferred title</label>
+                            	<input id="donor-address-line1" class="input" type="text" />
+                            </li>
+                            
+                            <li class="form-field">
+                                <label for="invitee-title">Address Line 2</label>
+                            	<input id="invitee-title" class="input" type="text" />
+                            </li>
+                            
+                            <li class="form-field-group">
+                                <div class="form-field">
+                                    <label for="donor-address-city">City</label>
+                                	<input id="donor-address-city" class="input" type="text" />
+                                </div>
+                                <div class="form-field">
+                                    <label for="donor-address-state">State</label>
+                                	<select id="donor-address-state">
+                                	    <option>USA</option>
+                                	    <option>USA</option>
+                                	    <option>USA</option>
+                                	</select>
+                                </div>
+                            </li>
+                            
+                            <li class="form-field">
+                                <label for="donor-email">Email</label>
+                            	<input id="donor-email" class="input" type="email" />
+                            </li>
+                                                        
+                            <a href="#" class="button">Join now</a>
+                            
+                        </ul>
+                        </form>
+                        
+                            
+                    </div>
+                    
+                    <h3 class="h4">Ready to Level Up?</h3>
                     
                     <p>Code for America's Peer Network helps you innovate by providing targeted training, hands-on support and early access to new technology. Recent trainings include user interface engineering and broadband Policy</p>
                     
-                    <a href="#" class="button button-prominent">Request an invite</a>
-                
-                </div>
-                
-                <div class="layout-2col slab-medium-red">
                     
-                    <div class="postcard layout-break-up">
-                        
-                        <h2>Join the conversation</h2>
-                        
-                        <a href="#" class="button">Request an invite</a>
-                        
+                    <a href="#" class="button button-prominent">Request an invite</a>
+                    
                     </div>
                 
                 </div>
+                
+                
                     
                     
                 </div>

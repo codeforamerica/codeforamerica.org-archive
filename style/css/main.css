@@ -5451,7 +5451,7 @@ ul li {
   background-repeat: no-repeat;
   list-style-type: none;
   background-position: left 0.63em;
-  padding-left: 0.8em;
+  padding-left: 1.3em;
 }
 
 table {
@@ -5538,6 +5538,7 @@ label {
   color: rgba(153, 149, 149, 0.8);
   vertical-align: middle;
   margin-bottom: 0.3em;
+  font-size: 0.8em;
 }
 
 textarea:focus,
@@ -6077,6 +6078,15 @@ input.button-unstyled,
   padding-left: 0;
 }
 
+.list-form .button {
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+.list-form .form-field {
+  margin-bottom: 0.5em;
+}
+
 .list-form .form-field input,
 .list-form .form-field textarea,
 .list-form .form-field select {
@@ -6097,6 +6107,17 @@ input.button-unstyled,
 .list-form .form-field-group {
   width: 100%;
   float: left;
+  margin-bottom: 0.5em;
+}
+
+.list-form .form-field-group .form-field {
+  float: left;
+  margin-right: 0;
+}
+
+.list-form .form-field-group .form-field:last-child {
+  margin-right: 0;
+  float: right;
 }
 
 .list-form .form-field-group input,
@@ -6104,11 +6125,6 @@ input.button-unstyled,
   width: auto;
   padding-left: 0.85em;
   padding-right: 0.85em;
-}
-
-.list-form .form-field-group .form-field {
-  float: left;
-  margin-right: 1em;
 }
 
 .list-inline, .nav-breadcrumbs ul {
@@ -6962,7 +6978,9 @@ nav ul li {
   .global-footer .nav-footer .nav-tier1 {
     flex: 1;
     flex-basis: auto;
-    margin-right: 2%;
+    margin-right: 4%;
+    float: left;
+    width: auto;
   }
 }
 @media (min-width: 60em) {
@@ -7104,6 +7122,12 @@ section.layout-container-l {
 .slab-red a:hover,
 .slab-red a:focus,
 .slab-red a:active {
+  /* fallback */
+  color: white;
+  color: white;
+}
+
+.slab-red label {
   /* fallback */
   color: white;
   color: white;

@@ -26,6 +26,15 @@
     padding-left: 0;
     }
 
+.list-form .button {
+    margin-bottom: 0;
+    margin-top: 1em;
+    }
+
+.list-form .form-field {
+    margin-bottom: 0.5em;
+    }
+
 .list-form .form-field input,
 .list-form .form-field textarea,
 .list-form .form-field select {
@@ -46,6 +55,17 @@
 .list-form .form-field-group {
     width: 100%;
     float: left;
+    margin-bottom: 0.5em;
+    }
+
+.list-form .form-field-group .form-field {
+    float: left;
+    margin-right: 0;
+    }
+
+.list-form .form-field-group .form-field:last-child {
+    margin-right: 0;
+    float: right;
     }
 
 .list-form .form-field-group input,
@@ -53,11 +73,6 @@
     width: auto;
     padding-left: 0.85em;
     padding-right: 0.85em;
-    }
-
-.list-form .form-field-group .form-field {
-    float: left;
-    margin-right: 1em;
     }
 
 .list-inline {
