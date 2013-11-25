@@ -30,8 +30,8 @@
 /* Secondary Colors */
 @font-face {
   font-family: 'icomoon';
-  src: url("../icons/icomoon.eot");
-  src: url("../icons/icomoon.eot?#iefix") format("embedded-opentype"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.svg#icomoon") format("svg");
+  src: url("../images/icomoon.eot");
+  src: url("../images/icomoon.eot?#iefix") format("embedded-opentype"), url("../images/icomoon.ttf") format("truetype"), url("../images/icomoon.woff") format("woff"), url("../images/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5957,7 +5957,7 @@ input.button-unstyled,
 }
 
 .masthead-header .nav-breadcrumbs li:first-child a {
-  background-image: url("../icons/flag-white.png");
+  background-image: url("../images/flag-white.png");
 }
 
 .masthead-header .page-title {
@@ -6336,7 +6336,7 @@ nav ul li {
 }
 
 .nav-breadcrumbs li:first-child a {
-  background-image: url("../icons/flag-blue.png");
+  background-image: url("../images/flag-blue.png");
   display: inline-block;
   background-size: 55px;
   background-repeat: no-repeat;
