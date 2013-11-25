@@ -55,7 +55,7 @@
     line-height: 1em;
     margin: 0;
     padding: 0 0.15em 0 0;
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     
     }
 

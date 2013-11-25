@@ -5,7 +5,7 @@
     }
 
 .heading-contrast strong {
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     font-size: 2em;
     @include color($color-black, 1);
     text-transform: none;

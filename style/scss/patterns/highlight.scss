@@ -5,7 +5,7 @@
     padding: 1em 2%;
     font-size: 1.5em;
     position: relative;
-    font-family: $font-serif-light;
+    @include font-serif-bold;
     }
 
 
@@ -14,7 +14,7 @@
     border: none;
     padding: 0;
     @include color($color-white, 1);
-    font-family: $font-serif-light;
+    @include font-serif-bold;
     margin: 0;
     clear: both;
     }

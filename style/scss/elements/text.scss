@@ -78,7 +78,7 @@ blockquote {
     border: 1px solid;
     @include border-color($color-light-gray, 1);
     padding: 0.5em 5%;
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     font-size: 1.05em;
     line-height: 1.3em;
     }

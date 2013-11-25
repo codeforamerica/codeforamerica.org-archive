@@ -2,30 +2,6 @@
 /* Base styles */
 /* Sans serif */
 /* Serif */
-@font-face {
-  font-family: 'Sentinel Book';
-  src: url("../fonts/sentinel/sentinel-book.eot");
-  src: url("../fonts/sentinel/sentinel-book.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel/sentinel-book.woff") format("woff"), url("../fonts/sentinel/sentinel-book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Sentinel Bold';
-  src: url("../fonts/sentinel/sentinel-bold.eot");
-  src: url("../fonts/sentinel/sentinel-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel/sentinel-bold.woff") format("woff"), url("../fonts/sentinel/sentinel-bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Sentinel Light';
-  src: url("../fonts/sentinel/sentinel-light.eot");
-  src: url("../fonts/sentinel/sentinel-light.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel/sentinel-light.woff") format("woff"), url("../fonts/sentinel/sentinel-light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Primary Colors */
 /* Secondary Colors */
 @font-face {
@@ -5262,7 +5238,9 @@ blockquote {
   border-color: #e5e5e5;
   border-color: #e5e5e5;
   padding: 0.5em 5%;
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1.05em;
   line-height: 1.3em;
 }
@@ -5296,7 +5274,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
@@ -5307,21 +5287,27 @@ h2,
 .h2 {
   font-size: 40px;
   line-height: 44px;
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   text-transform: none;
 }
 
 h3,
 .h3 {
   font-size: 30px;
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   line-height: 1.15em;
 }
 
 h4,
 .h4 {
   font-size: 24px;
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h5,
@@ -6002,7 +5988,9 @@ input.button-unstyled,
 }
 
 .heading-contrast strong {
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 2em;
   /* fallback */
   color: black;
@@ -6032,7 +6020,9 @@ input.button-unstyled,
   padding: 1em 2%;
   font-size: 1.5em;
   position: relative;
-  font-family: "Sentinel Light", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .highlight blockquote {
@@ -6042,7 +6032,9 @@ input.button-unstyled,
   /* fallback */
   color: white;
   color: white;
-  font-family: "Sentinel Light", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   clear: both;
 }
@@ -6437,6 +6429,9 @@ nav ul li {
     margin: 0;
     float: left;
     padding: 0.2em 2% 0.3em;
+    position: fixed;
+    z-index: 2;
+    top: 0;
   }
 }
 .nav-global-primary ul {
@@ -6505,7 +6500,8 @@ nav ul li {
   display: table-cell;
   vertical-align: top;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @media (min-width: 40em) {
@@ -6571,7 +6567,8 @@ nav ul li {
 .page-title {
   line-height: 1.2em;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   width: 100%;
   display: block;
@@ -6636,7 +6633,9 @@ nav ul li {
   line-height: 1em;
   margin: 0;
   padding: 0 0.15em 0 0;
-  font-family: "Sentinel Bold", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @media (min-width: 60em) {
@@ -6712,7 +6711,8 @@ nav ul li {
   color: #cf1b41;
   color: #cf1b41;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -6747,7 +6747,8 @@ nav ul li {
   font-size: 1.2em;
   margin-bottom: 0.8em;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .profile-small .link-more {
@@ -6755,7 +6756,8 @@ nav ul li {
   color: #cf1b41;
   color: #cf1b41;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -6809,7 +6811,7 @@ nav ul li {
 .billboard {
   margin: 0 0 1.25em;
   display: block;
-  font-family: "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-size: 1.2em;
 }
 
@@ -7152,6 +7154,8 @@ section,
   border-color: rgba(229, 229, 229, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
   margin: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 .global-header-logo {
@@ -7173,7 +7177,8 @@ section,
   color: black;
   color: black;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1.2em;
   margin: 0;
 }
@@ -7352,6 +7357,18 @@ section,
   padding: 0 4%;
 }
 
+/* JS dependant */
+@media (min-width: 40em) and (min-height: 30em) {
+  .sticky {
+    position: fixed;
+    margin-top: 2em;
+    top: 0;
+  }
+
+  .sticky + main {
+    margin-top: 6em;
+  }
+}
 /* Templates */
 .xx {
   padding: 0;
@@ -7427,7 +7444,8 @@ section,
 .xx-title {
   margin-bottom: 1em;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   font-size: 3em;
 }
@@ -7504,7 +7522,8 @@ section,
 
 .xx-section-title {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
   margin: 1em 0 0.5em;
 }
 

@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     font-weight: normal;
     margin: 0 0 0.5em 0;
     }
@@ -15,21 +15,21 @@ h2,
 .h2 {
     font-size: 40px;
     line-height: 44px;
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     text-transform: none;
     }
 
 h3,
 .h3 {
     font-size: 30px;
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     line-height: 1.15em;
     }
 
 h4,
 .h4 {
     font-size: 24px;
-    font-family: $font-serif-bold;
+    @include font-serif-bold;
     }
 
 h5,

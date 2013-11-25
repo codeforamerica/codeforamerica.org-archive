@@ -2,50 +2,24 @@
 
 $font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 
+$font-serif-regular: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+
 @mixin font-sans-regular {
     font-family: $font-sans-regular;
-    font-weight: 300;
+    font-weight: 400;
+    font-style: normal;
     }
 
 @mixin font-sans-bold {
     font-family: $font-sans-regular;
-    font-weight: 600;
+    font-weight: 700;
+    font-style: normal;
     }
 
 /* Serif */
-    
-@font-face {
-    font-family: 'Sentinel Book';
-    src: url('../fonts/sentinel/sentinel-book.eot');
-    src: url('../fonts/sentinel/sentinel-book.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sentinel/sentinel-book.woff') format('woff'),
-         url('../fonts/sentinel/sentinel-book.ttf') format('truetype');
-    font-weight: normal;
+
+@mixin font-serif-bold {
+    font-family: $font-serif-regular;
+    font-weight: 700;
     font-style: normal;
     }
-
-@font-face {
-    font-family: 'Sentinel Bold';
-    src: url('../fonts/sentinel/sentinel-bold.eot');
-    src: url('../fonts/sentinel/sentinel-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sentinel/sentinel-bold.woff') format('woff'),
-         url('../fonts/sentinel/sentinel-bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-
-@font-face {
-    font-family: 'Sentinel Light';
-    src: url('../fonts/sentinel/sentinel-light.eot');
-    src: url('../fonts/sentinel/sentinel-light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sentinel/sentinel-light.woff') format('woff'),
-         url('../fonts/sentinel/sentinel-light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-
-$font-serif-regular: "Sentinel Book", "Georgia", Times, sans-serif;
-
-$font-serif-bold: "Sentinel Bold", "Georgia", Times, sans-serif;
-
-$font-serif-light: "Sentinel Light", "Georgia", Times, sans-serif;
