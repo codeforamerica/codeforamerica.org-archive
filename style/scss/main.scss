@@ -51,5 +51,10 @@
 @import 'global/header';
 @import 'global/footer';
 
+.layout-container,
+.layout-container-l {
+    padding: 0 4%;
+    }
+
 /* Templates */
 @import 'templates/documentation';

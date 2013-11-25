@@ -94,10 +94,23 @@
     }
 
 .post-author .profile-note {
-    
     }
 
 .post-author .profile-note p {
     margin-top: 0;
     line-height: 1.7em;
+    }
+
+.post-categories {
+    @extend .list-no-bullets;
+    text-transform: uppercase;
+    margin-top: 0;
+    }
+
+.post-categories a:link,
+.post-categories a:visited,
+.post-categories a:hover,
+.post-categories a:focus,
+.post-categories a:active {
+    @include color($color-blue, 1);
     }

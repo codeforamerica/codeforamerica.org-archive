@@ -34,18 +34,31 @@
     }
 
 .masthead .masthead-header {
-    padding-top: 5em;
-    padding-bottom: 1em;
     overflow: hidden;
     width: auto;
     display: table;
     z-index: 1;
     text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 4%;
     }
-
+    
+@media (min-width: 63em) {
+    .masthead .masthead-header {
+      padding: 0; 
+    }
+    }
 
 .masthead-l .masthead-header {
     padding-top: 13em;
+    padding-bottom: 1em;
+    margin-top: 3em;
+    margin-bottom: 0;
+    }
+
+.masthead-l .page-title {
+    font-size: 90px;
     }
 
 .masthead-header .nav-breadcrumbs {
@@ -77,19 +90,8 @@
     background-image: url('../images/flag-white.png');
     }
 
-.masthead-header .page-title {
-    float: left;
-    clear: left;
-    color: white;
-    margin: 0;
-    @include font-sans-bold;
-    font-size: 6em;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 0.8em;
-    }
-
 .masthead-header .button-cta {
     float: right;
     margin-top: 0.8em;
     }
+

@@ -6,7 +6,7 @@
         </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
-            <h1 class="page-title">Citizens</h1>
+            <h1 class="page-title" >Citizens</h1>
         </header>
     </div>
     
@@ -55,7 +55,7 @@
                     <div class="fade"></div>
                 </nav>
                 
-                <p class="isolate heading-mini"><strong><a href="#">See all cities</a></strong></p>
+                <p class="isolate heading-mini"><a href="#">See all cities</a></p>
             
             </div>
         
@@ -65,7 +65,7 @@
         
             <div class="layout-container">
         
-                <div class="layout-chimney-left">
+                <div class="layout-chimney">
                 
                     <div class="slab-medium-red chimney">
                 

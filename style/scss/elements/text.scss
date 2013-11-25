@@ -21,6 +21,10 @@ details {
     display: block;
     }
 
+main {
+    clear: both;
+    }
+
 abbr {
     border-bottom: 1px dotted;
     @include border-color($color-medium-gray, 1);
@@ -99,8 +103,3 @@ blockquote p {
     @include color($color-medium-gray, 1);
     vertical-align: middle;
     }
-
-
-
-
-

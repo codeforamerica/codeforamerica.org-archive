@@ -2,11 +2,11 @@
     
     <div class="masthead masthead-l">
         <div class="masthead-hero">
-            
+            <img src="/placeholder/masthead-2.jpg" class="masthead-image"/>
         </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
-            <h1 class="page-title">Governments</h1>
+            <h1 class="page-title" >Governments</h1>
         </header>
     </div>
     
@@ -20,8 +20,7 @@
                 
                 <div class="layout-centered">
                     
-                    <h2 class="h3">Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service. 
-                    </h2>
+                    <h2 class="h3">Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service.</h2>
                                 
                 </div>
             
@@ -33,7 +32,7 @@
             
             <div class="layout-container">
                 
-                <div class="layout-chimney-right">
+                <div class="layout-chimney-invert">
             
                     <p>Over 200 local officials, startups and NGOs discuss data standards, current events and civic tech on a focused, moderated email list.</p>
                     

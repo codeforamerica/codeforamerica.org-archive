@@ -6,7 +6,7 @@
         </div>
         <header class="layout-container masthead-header">
             <?php include("../blocks/patterns/nav-breadcrumb.html") ?>
-            <h1 class="page-title">Boston</h1>
+            <h1 class="page-title" >Boston</h1>
         </header>
     </div>
     

@@ -14,6 +14,7 @@
     padding-left: 0;
     list-style-type: none;
     margin-left: 2%;
+    background-image: none;
     }
 
 @media (min-width: 40em) {
@@ -63,6 +64,11 @@
     padding: 0;
     background-image: none;
     width: 100%;
+    }
+
+.layout-grid li {
+    padding: 0;
+    background-image: none;
     }
 
 @media (min-width: 60em) {
@@ -122,21 +128,21 @@
     }
 }
 
-.layout-chimney-right .chimney {
+.layout-chimney-invert .chimney {
     padding: 2em 4%;
     margin: 1em 0 2em -4%;
     }
 
     @media (min-width: 50em) {
-    .layout-chimney-right {
+    .layout-chimney-invert {
         width: 48%;
         position: relative;
         padding-right: 52%;
         }
-    .layout-chimney-right p:first-child {
+    .layout-chimney-invert p:first-child {
         margin-top: 0;
         }
-    .layout-chimney-right .chimney {
+    .layout-chimney-invert .chimney {
         position: absolute;
         right: 0;
         top: 0;
@@ -145,21 +151,21 @@
         }
     }
 
-.layout-chimney-left .chimney {
+.layout-chimney .chimney {
     padding: 2em 4%;
     margin: 1em 0 2em -4%;
     }
 
     @media (min-width: 50em) {
-    .layout-chimney-left {
+    .layout-chimney {
         width: 48%;
         position: relative;
         padding-left: 52%;
         }
-    .layout-chimney-left p:first-child {
+    .layout-chimney p:first-child {
         margin-top: 0;
         }
-    .layout-chimney-left .chimney {
+    .layout-chimney .chimney {
         position: absolute;
         left: 0;
         top: 0;

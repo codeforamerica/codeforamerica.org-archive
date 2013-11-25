@@ -2,7 +2,7 @@
 
 .highlight {
     color: white;
-    padding: 1em 2em;
+    padding: 1em 2%;
     font-size: 1.5em;
     position: relative;
     font-family: $font-serif-light;
@@ -16,6 +16,7 @@
     @include color($color-white, 1);
     font-family: $font-serif-light;
     margin: 0;
+    clear: both;
     }
 
 .highlight blockquote p:first-child {
@@ -43,9 +44,9 @@
 
 /* @group highlight with avatar */
 
-@media (min-width: 60em) {
+@media (min-width: 40em) {
 .highlight-with-avatar {
-    padding-left: 230px;
+    padding-left: 220px;
     }
 }
 
@@ -61,16 +62,16 @@
     float: left;
     margin-right: 1.5em;
     top: 2em;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin-bottom: 2em;
     
     }
 
-    @media (min-width: 60em) {
+    @media (min-width: 40em) {
     .highlight-avatar {
         position: absolute;
         left: 2em;
         margin-top: 0;
+        margin-top: 1em;
         }
     }
 
