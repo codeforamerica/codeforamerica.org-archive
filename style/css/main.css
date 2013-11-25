@@ -5239,8 +5239,9 @@ blockquote {
   border-color: #e5e5e5;
   padding: 0.5em 5%;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
   font-size: 1.05em;
   line-height: 1.3em;
 }
@@ -5275,8 +5276,9 @@ h4,
 h5,
 h6 {
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
@@ -5288,8 +5290,9 @@ h2,
   font-size: 40px;
   line-height: 44px;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
   text-transform: none;
 }
 
@@ -5297,8 +5300,9 @@ h3,
 .h3 {
   font-size: 30px;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
   line-height: 1.15em;
 }
 
@@ -5306,8 +5310,9 @@ h4,
 .h4 {
   font-size: 24px;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
 }
 
 h5,
@@ -5989,8 +5994,9 @@ input.button-unstyled,
 
 .heading-contrast strong {
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
   font-size: 2em;
   /* fallback */
   color: black;
@@ -6021,8 +6027,9 @@ input.button-unstyled,
   font-size: 1.5em;
   position: relative;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
 }
 
 .highlight blockquote {
@@ -6033,8 +6040,9 @@ input.button-unstyled,
   color: white;
   color: white;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
   margin: 0;
   clear: both;
 }
@@ -6048,17 +6056,19 @@ input.button-unstyled,
   color: white;
   color: rgba(255, 255, 255, 0.5);
   content: "“";
-  font-size: 4em;
+  font-size: 3em;
   line-height: 0em;
   display: block;
   margin-top: 0.4em;
   margin-left: -0.05em;
+  margin-bottom: 0.15em;
 }
 
 .highlight .attribute {
   text-transform: uppercase;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 0.7em;
+  font-weight: 400;
 }
 
 /* @end highlight */
@@ -6634,8 +6644,9 @@ nav ul li {
   margin: 0;
   padding: 0 0.15em 0 0;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  letter-spacing: -0.5px;
 }
 
 @media (min-width: 60em) {
@@ -7530,6 +7541,10 @@ section,
 .xx-nav ol {
   margin: 0;
   padding: 0;
+}
+
+.xx .nav-global-primary {
+  position: relative;
 }
 
 .swatch {

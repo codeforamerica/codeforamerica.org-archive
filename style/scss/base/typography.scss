@@ -20,6 +20,7 @@ $font-serif-regular: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Tim
 
 @mixin font-serif-bold {
     font-family: $font-serif-regular;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
+    letter-spacing: -0.5px;
     }

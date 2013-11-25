@@ -26,11 +26,12 @@
 .highlight blockquote:before {
     @include color($color-white, 0.5);
     content: "“";
-    font-size: 4em;
+    font-size: 3em;
     line-height: 0em;
     display: block;
     margin-top: 0.4em;
     margin-left: -0.05em;
+    margin-bottom: 0.15em;
     
     }
 
@@ -38,6 +39,7 @@
     text-transform: uppercase;
     font-family: $font-sans-regular;
     font-size: 0.7em;
+    font-weight: 400;
     }
 
 /* @end highlight */
