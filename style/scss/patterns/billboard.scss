@@ -1,4 +1,4 @@
-.seal {
+.billboard {
     margin: 0 0 1.25em;
     display: block;
     font-family: $font-serif-regular;
@@ -6,7 +6,7 @@
     }
 
 @media (min-width: 40em) {
-    .seal {
+    .billboard {
     text-align: center;
     border: 1px solid;
     @include border-color($color-light-gray, 1);
@@ -19,33 +19,33 @@
     }
     }
 
-.seal:link,
-.seal:visited,
-.seal:hover,
-.seal:focus,
-.seal:active {
+.billboard:link,
+.billboard:visited,
+.billboard:hover,
+.billboard:focus,
+.billboard:active {
     @include color($color-blue, 1);
     border-bottom: none;
     }
 
-.seal:hover,
-.seal:focus,
-.seal:active {
+.billboard:hover,
+.billboard:focus,
+.billboard:active {
     @include color($color-black, 1);
     @include border-color($color-light-gray, 1);
     }
 
-.seal .seal-label {
+.billboard .billboard-label {
     clear: both;
     display: block;
     }
 
-.seal .seal-image {
+.billboard .billboard-image {
     display: none;
     }
 
 @media (min-width: 40em) {
-    .seal .seal-image {
+    .billboard .billboard-image {
         width: 100px;
         margin: 0 auto 0.5em;
         display: block;

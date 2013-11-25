@@ -55,6 +55,11 @@ section,
     .slab-medium-red a:active {
         @include color($color-white, 0.7);
         }
+    
+    .slab-medium-red form input,
+    .slab-medium-red form select {
+        border: none;
+        }
 
 .slab-gray {
     @include background-color($color-light-gray, 0.5);

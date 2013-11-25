@@ -63,7 +63,7 @@
         <section class="slab-blue">
             <div class="layout-container">
                 <div class="highlight highlight-with-avatar">
-                    <img class="highlight-avatar" src="/placeholder/sf-seal.png"/>
+                    <img class="highlight-avatar" src="/placeholder/sf-billboard.png"/>
                     <blockquote>
                         <p>Finding little wins that you can discover along the way, moments when people can come together and solve some small issue — that’s critical to the experience of innovation.</p>
                     </blockquote>
@@ -110,45 +110,45 @@
                 
                     <ul class="list-no-bullets layout-grid">
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">Discover BPS</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">Discover BPS</strong>
                             </a>
                         </li>
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">Adopt-a-Hydrant</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">Adopt-a-Hydrant</strong>
                             </a>
                         </li>
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">ClassTalk</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">ClassTalk</strong>
                             </a>
                         </li>
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">Where's my Schoolbus?</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">Where's my Schoolbus?</strong>
                             </a>
                         </li>
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">TechnoFinder</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">TechnoFinder</strong>
                             </a>
                         </li>
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">Data Works</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">Data Works</strong>
                             </a>
                         </li>
                         <li class="layout-col layout-colspan-3">
-                            <a href="#" class="seal">
-                                <img class="seal-image" src="http://placehold.it/160x50" />
-                                <strong class="seal-label">Data Finder</strong>
+                            <a href="#" class="billboard">
+                                <img class="billboard-image" src="http://placehold.it/160x50" />
+                                <strong class="billboard-label">Data Finder</strong>
                             </a>
                         </li>
                     </ul>
