@@ -8,8 +8,7 @@
     margin: 0;
     background-color: $color-white;
     z-index: 1;
-    transition: 0.5s;
-    transition-property: padding;
+    @include transition(padding, 0.5s);
     }
 
 @media (min-width: 40em) {
@@ -21,7 +20,7 @@
 .global-header-logo {
     margin: 0 auto;
     width: 8em;
-    transition: 0.4s;
+    @include transition(all, 0.4s);
     }
 
     @media (min-width: 40em) {

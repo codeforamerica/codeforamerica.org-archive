@@ -6098,14 +6098,14 @@ input.button-unstyled,
 }
 /* @end highlight with avatar */
 .list-no-bullets, .list-ruled, .nav-footer ul,
-.nav-footer ul ul, .nav-global-secondary ul, .post-categories {
+.nav-footer ul ul, .nav-global-secondary ul, .js-offcanvas .nav-global-primary ul, .post-categories {
   margin-left: 0;
   float: left;
   width: 100%;
   padding: 0;
 }
 
-.list-no-bullets li, .list-ruled li, .nav-footer ul li, .nav-global-secondary ul li, .post-categories li {
+.list-no-bullets li, .list-ruled li, .nav-footer ul li, .nav-global-secondary ul li, .js-offcanvas .nav-global-primary ul li, .post-categories li {
   list-style-type: none;
   background-image: none;
   padding-left: 0;
@@ -6480,30 +6480,30 @@ nav ul li {
   width: 100%;
 }
 
-.nav-global-secondary {
+.nav-global-secondary, .js-offcanvas .nav-global-primary {
   text-transform: uppercase;
 }
 
 @media (min-width: 40em) {
-  .nav-global-secondary {
+  .nav-global-secondary, .js-offcanvas .nav-global-primary {
     width: auto;
     float: right;
     margin-top: 0.5em;
   }
 
-  .nav-global-secondary ul {
+  .nav-global-secondary ul, .js-offcanvas .nav-global-primary ul {
     display: table;
   }
 
-  .nav-global-secondary li {
+  .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
     display: table-cell;
   }
 }
-.nav-global-secondary ul {
+.nav-global-secondary ul, .js-offcanvas .nav-global-primary ul {
   margin: 0;
 }
 
-.nav-global-secondary li {
+.nav-global-secondary li, .js-offcanvas .nav-global-primary li {
   border: none;
   vertical-align: top;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -6512,11 +6512,11 @@ nav ul li {
 }
 
 @media (min-width: 40em) {
-  .nav-global-secondary li {
+  .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
     display: inline-block;
   }
 }
-.nav-global-secondary li a {
+.nav-global-secondary li a, .js-offcanvas .nav-global-primary li a {
   padding: 0.3em 1em;
   display: block;
   /* fallback */
@@ -6525,27 +6525,31 @@ nav ul li {
   margin: 0 1em;
 }
 
-.nav-global-secondary li a:hover,
+.nav-global-secondary li a:hover, .js-offcanvas .nav-global-primary li a:hover,
 .nav-global-secondary li a:focus,
-.nav-global-secondary li a:active {
+.js-offcanvas .nav-global-primary li a:focus,
+.nav-global-secondary li a:active,
+.js-offcanvas .nav-global-primary li a:active {
   /* fallback */
   color: #cf1b41;
   color: #cf1b41;
 }
 
-.nav-global-secondary li .button {
+.nav-global-secondary li .button, .js-offcanvas .nav-global-primary li .button {
   font-size: 1em;
   padding: 0.3em 0.55em;
   margin: 0 1em;
 }
 
-.nav-global-secondary li a.button:hover,
+.nav-global-secondary li a.button:hover, .js-offcanvas .nav-global-primary li a.button:hover,
 .nav-global-secondary li a.button:focus,
-.nav-global-secondary li a.button:active {
+.js-offcanvas .nav-global-primary li a.button:focus,
+.nav-global-secondary li a.button:active,
+.js-offcanvas .nav-global-primary li a.button:active {
   color: white;
 }
 
-.nav-global-secondary li:last-child a {
+.nav-global-secondary li:last-child a, .js-offcanvas .nav-global-primary li:last-child a {
   margin-right: 0;
 }
 
@@ -7170,14 +7174,15 @@ section,
   margin: 0;
   background-color: white;
   z-index: 1;
-  transition: 0.5s;
-  transition-property: padding;
+  -webkit-transition: padding 0.5s ease;
+  transition: padding 0.5s ease;
 }
 
 .global-header-logo {
   margin: 0 auto;
   width: 8em;
-  transition: 0.4s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 @media (min-width: 40em) {
@@ -7353,7 +7358,7 @@ section,
   width: 92%;
   padding: 0 4%;
   max-width: 60em;
-  margin: 3em auto;
+  margin: 1em auto;
   clear: both;
   display: table;
   position: relative;
@@ -7371,7 +7376,9 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  min-height: 100%;
 }
 
 .js-container.slid {
@@ -7384,6 +7391,33 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  display: flex;
+}
+
+.js-offcanvas .nav-global-secondary, .js-offcanvas .nav-global-primary {
+  order: 1;
+}
+
+.js-offcanvas .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
+  clear: both;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+.js-offcanvas .nav-global-secondary li a, .js-offcanvas .nav-global-primary li a {
+  border-bottom: 1px solid #999595;
+  color: white;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.js-offcanvas .nav-global-primary {
+  position: relative;
+  clear: both;
+  order: 2;
+  background-color: #494c49;
 }
 
 @media (min-width: 40em) and (min-height: 30em) {
@@ -7402,7 +7436,7 @@ body {
     width: 90px;
   }
 
-  .sticky .nav-global-secondary {
+  .sticky .nav-global-secondary, .sticky .js-offcanvas .nav-global-primary, .js-offcanvas .sticky .nav-global-primary {
     margin-top: 0.18em;
   }
 }

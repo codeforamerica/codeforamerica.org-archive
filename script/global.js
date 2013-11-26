@@ -26,8 +26,8 @@ If the viewport is small enough, use the off-canvas pattern for navigation.
                 }
             };
         skiplink.addEventListener('click', togglePage, false);
-        newnav.appendChild(primary);
         newnav.appendChild(secondary);
+        newnav.appendChild(primary);
         newnav.className = 'js-offcanvas';
         doc.body.appendChild(newnav);
     } else {
