@@ -6435,10 +6435,10 @@ nav ul li {
     /* fallback */
     color: white;
     color: white;
-    width: 96%;
+    width: 100%;
     margin: 0;
     float: left;
-    padding: 0.2em 2% 0.3em;
+    padding: 0.2em 0 0.3em;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -6490,6 +6490,7 @@ nav ul li {
 
 .nav-global-secondary {
   display: none;
+  text-transform: uppercase;
 }
 
 @media (min-width: 40em) {
@@ -6585,9 +6586,9 @@ nav ul li {
   float: left;
   clear: left;
   color: white;
-  margin: 0;
   font-size: 3.9em;
   text-align: center;
+  margin: -0.22em 0 0 0;
 }
 
 .post .post-content {
@@ -7167,11 +7168,14 @@ section,
   margin: 0;
   background-color: white;
   z-index: 1;
+  transition: 0.5s;
+  transition-property: padding;
 }
 
 .global-header-logo {
   margin: 0 auto;
   width: 8em;
+  transition: 0.4s;
 }
 
 @media (min-width: 40em) {
@@ -7343,10 +7347,14 @@ section,
   min-height: 45px;
 }
 
+.global-foot-content {
+  position: relative;
+}
+
 .global-foot-logo {
   width: 100px;
+  margin: 0.3em 1em 0.3em 0;
   position: absolute;
-  margin: 0.3em 1em 0.3em 2%;
   left: 0;
 }
 
@@ -7372,12 +7380,21 @@ section,
 @media (min-width: 40em) and (min-height: 30em) {
   .sticky {
     position: fixed;
-    margin-top: 2em;
+    margin-top: 2.25em;
     top: 0;
+    padding: 0.5em 0;
   }
 
   .sticky + main {
     margin-top: 6em;
+  }
+
+  .sticky .global-header-logo {
+    width: 90px;
+  }
+
+  .sticky .nav-global-secondary {
+    margin-top: 0.18em;
   }
 }
 /* Templates */

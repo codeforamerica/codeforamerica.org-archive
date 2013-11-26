@@ -7,10 +7,10 @@
     display: block;
     @include background-color($color-black, 1);
     @include color($color-white, 1); 
-    width: 96%;
+    width: 100%;
     margin: 0;
     float: left;
-    padding: 0.2em 2% 0.3em;
+    padding: 0.2em 0 0.3em;
     position: fixed;
     z-index: 2;
     top: 0;

@@ -2,12 +2,21 @@
 
 .sticky {
     position: fixed;
-    margin-top: 2em;
+    margin-top: 2.25em;
     top: 0;
+    padding: 0.5em 0;
     }
     
 .sticky + main {
     margin-top: 6em;
+    }
+
+.sticky .global-header-logo {
+    width: 90px;
+    }
+
+.sticky .nav-global-secondary {
+    margin-top: 0.18em;
     }
 
 }

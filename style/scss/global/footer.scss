@@ -107,10 +107,14 @@
     min-height: 45px;
     }
 
+.global-foot-content {
+    position: relative;
+    }
+
 .global-foot-logo {
     width: 100px;
+    margin: 0.3em 1em 0.3em 0;
     position: absolute;
-    margin: 0.3em 1em 0.3em 2%;
     left: 0;
     }
 

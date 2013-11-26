@@ -17,11 +17,27 @@
     background-image: none;
     }
 
+    
+.layout-container,
+.layout-container-l {
+    width: 92%;
+    padding: 0 4%;
+    max-width: 60em;
+    margin: 3em auto;
+    clear: both;
+    display: table;
+    position: relative;
+    }
+
+.layout-container-l {
+    max-width: 80em;
+    }
+
 @media (min-width: 40em) {
     .layout-container,
     .layout-container-l {
-    width: 92%;
-    padding: 0 4%;
+    width: 96%;
+    padding: 0 2%;
     }
 }
 
@@ -34,7 +50,7 @@
 
 @media (min-width: 80em) {
     .layout-container-l {
-    width: 96%;
+    width: 100%;
     padding: 0;
     }
 }
@@ -173,21 +189,7 @@
         margin: -4em 0 0 0;
         }
     }
-    
-.layout-container,
-.layout-container-l {
-    width: 92%;
-    padding: 0 4%;
-    max-width: 60em;
-    margin: 3em auto;
-    clear: both;
-    display: table;
-    position: relative;
-    }
 
-.layout-container-l {
-    max-width: 80em;
-    }
 
 .layout-tight {
     margin: 0 auto;
