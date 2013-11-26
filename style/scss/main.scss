@@ -50,11 +50,7 @@
 /* Global */
 @import 'global/header';
 @import 'global/footer';
-
-.layout-container,
-.layout-container-l {
-    padding: 0 4%;
-    }
+@import 'global/no-layout';
 
 /* JS dependant */
 @import 'patterns/sticky-nav';
