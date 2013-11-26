@@ -170,6 +170,8 @@
 .layout-chimney .chimney {
     padding: 2em 4%;
     margin: 1em 0 2em -4%;
+    width: 90%;
+    margin-left: 0;
     }
 
     @media (min-width: 50em) {
@@ -189,7 +191,7 @@
         margin: -4em 0 0 0;
         }
     }
-
+    
 
 .layout-tight {
     margin: 0 auto;

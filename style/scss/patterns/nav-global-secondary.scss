@@ -8,17 +8,24 @@
     float: right;
     margin-top: 0.5em;
     }
+    
+    .nav-global-secondary ul {
+        display: table;
+        }
+    
+    .nav-global-secondary li {
+        display: table-cell;
+        }
+    
     }
 
 .nav-global-secondary ul {
     @extend .list-no-bullets;
-    display: table;
     margin: 0;
     }
 
 .nav-global-secondary li {
     border: none;
-    display: table-cell;
     vertical-align: top;
     @include font-sans-bold;
     }

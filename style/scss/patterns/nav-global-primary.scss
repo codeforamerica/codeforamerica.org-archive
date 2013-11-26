@@ -1,18 +1,20 @@
 .nav-global-primary {
-    }
-
-@media (min-width: 40em) {
-.nav-global-primary {
     @include background-color($color-black, 1);
     @include color($color-white, 1); 
     width: 100%;
     margin: 0;
     float: left;
     padding: 0.2em 0 0.3em;
-    position: fixed;
-    z-index: 2;
-    top: 0;
+    
+    
     }
+
+@media (min-width: 40em) {
+.nav-global-primary {
+        position: fixed;
+        z-index: 2;
+        top: 0;    
+        }
 }
 
 .nav-global-primary ul {

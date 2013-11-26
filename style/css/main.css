@@ -5713,12 +5713,6 @@ input.button-unstyled,
   margin-bottom: 1em;
 }
 
-@media (min-width: 30em) {
-  .chimney {
-    width: 90%;
-    margin-left: 0;
-  }
-}
 .chimney .profile {
   position: relative;
   margin-left: 140px;
@@ -6422,18 +6416,21 @@ nav ul li {
   display: none;
 }
 
+.nav-global-primary {
+  /* fallback */
+  background: black;
+  background: black;
+  /* fallback */
+  color: white;
+  color: white;
+  width: 100%;
+  margin: 0;
+  float: left;
+  padding: 0.2em 0 0.3em;
+}
+
 @media (min-width: 40em) {
   .nav-global-primary {
-    /* fallback */
-    background: black;
-    background: black;
-    /* fallback */
-    color: white;
-    color: white;
-    width: 100%;
-    margin: 0;
-    float: left;
-    padding: 0.2em 0 0.3em;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -6493,15 +6490,21 @@ nav ul li {
     float: right;
     margin-top: 0.5em;
   }
+
+  .nav-global-secondary ul {
+    display: table;
+  }
+
+  .nav-global-secondary li {
+    display: table-cell;
+  }
 }
 .nav-global-secondary ul {
-  display: table;
   margin: 0;
 }
 
 .nav-global-secondary li {
   border: none;
-  display: table-cell;
   vertical-align: top;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
