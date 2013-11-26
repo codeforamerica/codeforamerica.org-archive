@@ -44,6 +44,9 @@
     .global-header .skip-to-nav {
         display: none;
         }
+    .global-header .skip-to-nav.persist {
+        display: block;
+        }
     }
 
 .global-header .skip-to-nav a {

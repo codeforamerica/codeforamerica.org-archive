@@ -23,11 +23,9 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    display: flex;
     }
 
 .js-offcanvas .nav-global-secondary {
-    order: 1;
     }
 
 .js-offcanvas .nav-global-secondary li {
@@ -38,7 +36,8 @@ body {
     font-size: 1em;
     }
     
-.js-offcanvas .nav-global-secondary li a {
+.js-offcanvas .nav-global-secondary li a,
+.js-offcanvas .nav-global-secondary li .button {
     border-bottom: 1px solid $color-medium-gray;
     color: $color-white;
     margin: 0;
@@ -48,7 +47,6 @@ body {
 .js-offcanvas .nav-global-primary {
     position: relative;
     clear: both;
-    order: 2;
     @extend .nav-global-secondary;
     background-color: $color-dark-gray;
     }

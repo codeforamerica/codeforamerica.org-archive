@@ -4,7 +4,7 @@
     }
     
 .xx-sidebar {
-    @include background-color($color-light-gray, 0.5);
+    background-color: #f1f1f1;
     padding: 2em 0;
     width:  100%;
     }
@@ -61,6 +61,7 @@
 .xx-container {
     width: 96%;
     padding: 1em 2%;
+    background-color: $color-white;
     }
     
     @media (min-width: 40em) {
