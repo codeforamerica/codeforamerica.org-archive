@@ -1,0 +1,40 @@
+/* line 1, ../../scss/patterns/profile-medium.scss */
+.profile-medium {
+  clear: both;
+  margin-bottom: 2em;
+  min-height: 150px;
+  position: relative;
+}
+
+/* line 8, ../../scss/patterns/profile-medium.scss */
+.profile-medium .profile-photo {
+  margin-top: 0.4em;
+}
+
+@media (min-width: 40em) {
+  /* line 13, ../../scss/patterns/profile-medium.scss */
+  .profile-medium .profile-photo {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+/* line 20, ../../scss/patterns/profile-medium.scss */
+.profile-medium .profile-name {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  padding-top: 1em;
+}
+
+@media (min-width: 40em) {
+  /* line 29, ../../scss/patterns/profile-medium.scss */
+  .profile-medium .profile-name,
+  .profile-medium .profile-note {
+    margin-left: 165px;
+  }
+}
+/* line 34, ../../scss/patterns/profile-medium.scss */
+.profile-medium .profile-name p:first-child {
+  margin-top: 0;
+}

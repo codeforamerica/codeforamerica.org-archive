@@ -1,0 +1,24 @@
+/* line 1, ../../scss/elements/lists.scss */
+ol {
+  margin: 0.5em 0 0.5em 1.4em;
+}
+
+/* line 5, ../../scss/elements/lists.scss */
+ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* line 10, ../../scss/elements/lists.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 14, ../../scss/elements/lists.scss */
+ul li {
+  background-image: url("../images/bullet.gif");
+  background-repeat: no-repeat;
+  list-style-type: none;
+  background-position: left 0.63em;
+  padding-left: 1.3em;
+}

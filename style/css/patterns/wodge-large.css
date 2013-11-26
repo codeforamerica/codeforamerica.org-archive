@@ -1,0 +1,17 @@
+@media (min-width: 40em) {
+  /* line 4, ../../scss/patterns/wodge-large.scss */
+  .wodge-l .wodge-header,
+  .wodge-l .wodge-text,
+  .wodge-l .wodge-button {
+    margin-left: 225px;
+  }
+}
+@media (min-width: 60em) {
+  /* line 10, ../../scss/patterns/wodge-large.scss */
+  .wodge-l .wodge-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-left: 0;
+  }
+}
