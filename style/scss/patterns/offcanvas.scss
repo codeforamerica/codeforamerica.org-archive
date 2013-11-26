@@ -11,6 +11,7 @@ body {
     top: 0;
     @include transition(all);
     min-height: 100%;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.5);
     }
 
 .js-container.slid {
@@ -27,6 +28,7 @@ body {
 
 .js-offcanvas .nav-global-secondary {
     width: 100%;
+    padding: 0;
     }
 
 .js-offcanvas .nav-global-secondary li {
@@ -38,15 +40,24 @@ body {
     }
     
 .js-offcanvas .nav-global-secondary li a,
-.js-offcanvas .nav-global-secondary li .button {
-    border-bottom: 1px solid $color-medium-gray;
+.js-offcanvas .nav-global-secondary li .button:link,
+.js-offcanvas .nav-global-secondary li .button:visited,
+.js-offcanvas .nav-global-secondary li .button:hover,
+.js-offcanvas .nav-global-secondary li .button:focus,
+.js-offcanvas .nav-global-secondary li .button:active {
+    border-bottom: 1px solid;
+    @include border-color($color-white, 0.15);
     color: $color-white;
     margin: 0;
     padding: 0.5em 1em;
+    background-color: transparent;
+    font-weight: normal;
+    display: block;
     }
 
 .js-offcanvas .nav-global-primary {
     position: relative;
+    padding: 0;
     clear: both;
     @extend .nav-global-secondary;
     background-color: $color-dark-gray;

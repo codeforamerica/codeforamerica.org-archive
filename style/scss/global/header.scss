@@ -40,14 +40,15 @@
     margin: 0;
     }
     
-    @media (min-width: 40em) {
-    .global-header .skip-to-nav {
-        display: none;
-        }
-    .global-header .skip-to-nav.persist {
-        display: block;
-        }
+
+.global-header .skip-to-nav {
+    display: none;
     }
+
+.global-header .skip-to-nav.persist {
+    display: block;
+    }
+
 
 .global-header .skip-to-nav a {
     @include color($color-black, 1);

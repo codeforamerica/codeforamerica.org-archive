@@ -46,10 +46,10 @@
 
 
 .nav-global-primary .search-global input {
-    @include background-color($color-black, 1);
-    border: 1px solid;
-    @include border-color($color-light-gray, 0.5);
+    background-color: $color-white;
+    border: none;
     border-radius: 0;
     padding: 0.4em 0.2em 0.15em;
-    width: 100%;
+    width: 96%;
+    margin: 0.5em 0;
     }

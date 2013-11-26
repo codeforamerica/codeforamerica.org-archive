@@ -6,7 +6,7 @@
         return;
     }
 
-    if (doc.documentElement.clientWidth < 480) {
+    if (doc.documentElement.clientWidth < 640) {
 /*
 If the viewport is small enough, use the off-canvas pattern for navigation.
 */

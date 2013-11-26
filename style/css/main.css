@@ -6468,16 +6468,12 @@ nav ul li {
 }
 
 .nav-global-primary .search-global input {
-  /* fallback */
-  background: black;
-  background: black;
-  border: 1px solid;
-  /* fallback */
-  border-color: #e5e5e5;
-  border-color: rgba(229, 229, 229, 0.5);
+  background-color: white;
+  border: none;
   border-radius: 0;
   padding: 0.4em 0.2em 0.15em;
-  width: 100%;
+  width: 96%;
+  margin: 0.5em 0;
 }
 
 .nav-global-secondary, .js-offcanvas .nav-global-primary {
@@ -7205,15 +7201,14 @@ section,
   margin: 0;
 }
 
-@media (min-width: 40em) {
-  .global-header .skip-to-nav {
-    display: none;
-  }
-
-  .global-header .skip-to-nav.persist {
-    display: block;
-  }
+.global-header .skip-to-nav {
+  display: none;
 }
+
+.global-header .skip-to-nav.persist {
+  display: block;
+}
+
 .global-header .skip-to-nav a {
   /* fallback */
   color: black;
@@ -7383,6 +7378,7 @@ body {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   min-height: 100%;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .js-container.slid {
@@ -7399,6 +7395,7 @@ body {
 
 .js-offcanvas .nav-global-secondary, .js-offcanvas .nav-global-primary {
   width: 100%;
+  padding: 0;
 }
 
 .js-offcanvas .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
@@ -7410,16 +7407,31 @@ body {
 }
 
 .js-offcanvas .nav-global-secondary li a, .js-offcanvas .nav-global-primary li a,
-.js-offcanvas .nav-global-secondary li .button,
-.js-offcanvas .nav-global-primary li .button {
-  border-bottom: 1px solid #999595;
+.js-offcanvas .nav-global-secondary li .button:link,
+.js-offcanvas .nav-global-primary li .button:link,
+.js-offcanvas .nav-global-secondary li .button:visited,
+.js-offcanvas .nav-global-primary li .button:visited,
+.js-offcanvas .nav-global-secondary li .button:hover,
+.js-offcanvas .nav-global-primary li .button:hover,
+.js-offcanvas .nav-global-secondary li .button:focus,
+.js-offcanvas .nav-global-primary li .button:focus,
+.js-offcanvas .nav-global-secondary li .button:active,
+.js-offcanvas .nav-global-primary li .button:active {
+  border-bottom: 1px solid;
+  /* fallback */
+  border-color: white;
+  border-color: rgba(255, 255, 255, 0.15);
   color: white;
   margin: 0;
   padding: 0.5em 1em;
+  background-color: transparent;
+  font-weight: normal;
+  display: block;
 }
 
 .js-offcanvas .nav-global-primary {
   position: relative;
+  padding: 0;
   clear: both;
   background-color: #494c49;
   width: 100%;
