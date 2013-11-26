@@ -26,6 +26,7 @@ body {
     }
 
 .js-offcanvas .nav-global-secondary {
+    width: 100%;
     }
 
 .js-offcanvas .nav-global-secondary li {
@@ -49,4 +50,5 @@ body {
     clear: both;
     @extend .nav-global-secondary;
     background-color: $color-dark-gray;
+    width: 100%;
     }

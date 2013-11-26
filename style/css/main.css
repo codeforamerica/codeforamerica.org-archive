@@ -7397,6 +7397,10 @@ body {
   top: 0;
 }
 
+.js-offcanvas .nav-global-secondary, .js-offcanvas .nav-global-primary {
+  width: 100%;
+}
+
 .js-offcanvas .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
   clear: both;
   width: 100%;
@@ -7418,6 +7422,7 @@ body {
   position: relative;
   clear: both;
   background-color: #494c49;
+  width: 100%;
 }
 
 @media (min-width: 40em) and (min-height: 30em) {
