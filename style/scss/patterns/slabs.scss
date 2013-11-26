@@ -11,6 +11,21 @@ section,
 .slab-blue {
     @include background-color($color-dark-blue, 1);
     }
+    
+    .slab-blue a:link,
+    .slab-blue a:visited,
+    .slab-blue a:hover,
+    .slab-blue a:focus,
+    .slab-blue a:active {
+        @include color($color-white, 0.6);
+        }
+    
+    .slab-blue a:hover,
+    .slab-blue a:focus,
+    .slab-blue a:active {
+        border-bottom: 1px solid;
+        @include border-color($color-white, 0.6);
+        }
 
 .slab-red {
     @include background-color($color-red, 1);

@@ -20,7 +20,7 @@
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <link rel="stylesheet" type="text/css" href="css/documentation.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
@@ -121,11 +121,11 @@
         
         <ul class="list-no-bullets">
             <li class="swatch">
-                <span class="swatch-preview" style="background-color: #2f3d4a;"></span>
+                <span class="swatch-preview" style="background-color: #004b6a;"></span>
                 <ul class="list-no-bullets swatch-details">
                     <li><strong>Dark Blue</strong></li>
-                    <li>rgb(47, 61, 74)</li>
-                    <li>#2f3d4a</li>
+                    <li>rgb(0, 75, 106)</li>
+                    <li>#004b6a</li>
                     <li>$color-dark-blue</li>
                 </ul>
             </li>
