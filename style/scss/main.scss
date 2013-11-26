@@ -2,6 +2,7 @@
 @import 'base/typography';
 @import 'base/color-scheme';
 @import 'base/icons';
+@import 'base/transitions';
 
 /* Elements */
 @import 'elements/text';
@@ -53,6 +54,7 @@
 @import 'global/no-layout';
 
 /* JS dependant */
+@import 'patterns/offcanvas';
 @import 'patterns/sticky-nav';
 
 /* Templates */
