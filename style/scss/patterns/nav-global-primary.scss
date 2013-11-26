@@ -1,10 +1,8 @@
 .nav-global-primary {
-    display: none;
     }
 
 @media (min-width: 40em) {
 .nav-global-primary {
-    display: block;
     @include background-color($color-black, 1);
     @include color($color-white, 1); 
     width: 100%;
