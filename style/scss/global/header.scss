@@ -1,5 +1,5 @@
 .global-header {
-    padding: 1.5em 0;
+    padding: 0;
     float: left;
     width: 100%;
     border-bottom: 1px solid;
@@ -18,7 +18,8 @@
 }
 
 .global-header-logo {
-    margin: 0 auto;
+    display: block;
+    margin: 1em auto;
     width: 8em;
     @include transition(all, 0.4s);
     }
@@ -26,6 +27,11 @@
     @media (min-width: 40em) {
     .global-header-logo {
         float: left;
-        margin: 0;
         }
+    }
+
+.global-header-logo:hover,
+.global-header-logo:focus,
+.global-header-logo:active {
+    border: none;
     }

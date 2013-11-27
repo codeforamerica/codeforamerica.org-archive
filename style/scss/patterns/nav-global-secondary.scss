@@ -1,12 +1,12 @@
 .nav-global-secondary {
     text-transform: uppercase;
+    
     }
 
 @media (min-width: 40em) {
 .nav-global-secondary {
     width: auto;
     float: right;
-    margin-top: 0.5em;
     }
     
     .nav-global-secondary ul {
@@ -37,22 +37,24 @@
     }
 
 .nav-global-secondary li a {
-    padding: 0.3em 1em;
+    padding: 2em 1em;
     display: block;
     @include color($color-black, 1);
-    margin: 0 1em;
+    margin: 0 1.5em;
+    @include transition(padding);
     }
 
 .nav-global-secondary li a:hover,
 .nav-global-secondary li a:focus,
 .nav-global-secondary li a:active {
-    @include color($color-red, 1);
+    color: $color-white;
+    background-color: $color-red;
     }
 
 .nav-global-secondary li .button {
     font-size: 1em;
     padding: 0.3em 0.55em;
-    margin: 0 1em;
+    margin: 1.8em 1em;
     }
 
 .nav-global-secondary li a.button:hover,
@@ -63,4 +65,36 @@
 
 .nav-global-secondary li:last-child a {
     margin-right: 0;
+    }
+
+.nav-global-secondary .nav-tier1 {
+    position: relative;
+    }
+
+.nav-global-secondary .nav-tier2 {
+    position: absolute;
+    background-color: $color-red;
+    color: $color-white;
+    z-index: 2;
+    width: 14em;
+    left: 1.5em;
+    padding: 0.5em 0;
+    display: none;
+    transition: width 0.3s ease;
+    }
+
+.nav-global-secondary .nav-tier2 li {
+    width: 100%;
+    }
+
+.nav-global-secondary .nav-tier2 a {
+    margin: 0;
+    padding: 0.5em 1em;
+    color: $color-white;
+    }
+
+.nav-global-secondary .nav-tier2 a:hover,
+.nav-global-secondary .nav-tier2 a:focus,
+.nav-global-secondary .nav-tier2 a:active {
+    background-color: $color-black;
     }
