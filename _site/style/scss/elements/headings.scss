@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font-serif-bold;
+    font-weight: normal;
+    margin: 0 0 0.5em 0;
+    }
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-size: 40px;
+    line-height: 44px;
+    @include font-serif-bold;
+    text-transform: none;
+    }
+
+h3,
+.h3 {
+    font-size: 30px;
+    @include font-serif-bold;
+    line-height: 1.15em;
+    }
+
+h4,
+.h4 {
+    font-size: 24px;
+    @include font-serif-bold;
+    }
+
+h5,
+h6,
+.h5,
+.h6 {
+    font-size: 22px;
+    font-family: $font-sans-regular;
+    text-transform: uppercase;
+    }

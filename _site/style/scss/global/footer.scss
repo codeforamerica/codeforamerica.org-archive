@@ -1,0 +1,99 @@
+.global-footer {
+    clear: both;
+    @include background-color($color-dark-gray, 1);
+    border-top: 10px solid;
+    @include border-color($color-blue, 1);
+    @include color($color-white, 1);
+    float: left;
+    width: 100%;
+    padding: 2.5em 0 1.5em;
+    }
+
+.global-footer a:link,
+.global-footer a:visited,
+.global-footer a:hover,
+.global-footer a:focus,
+.global-footer a:active {
+    @include color($color-white, 1);
+    }
+
+.global-footer .search-global {
+    margin: 0 0 2em;
+    }
+
+.global-footer .search-global input {
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    @include color($color-white, 1);
+    }
+
+.global-footer .search-global input:focus {
+    @include border-color($color-white, 0.5);
+    }
+
+
+
+.global-footer .nav-footer .nav-tier2 {
+    font-size: 0.9em
+    }
+
+.global-footer .nav-footer .nav-tier2,
+.global-footer .nav-footer .nav-tier2 a:link,
+.global-footer .nav-footer .nav-tier2 a:visited {
+    @include color($color-light-gray, 0.8);
+    }
+
+.global-footer .nav-footer .nav-tier2 a:hover,
+.global-footer .nav-footer .nav-tier2 a:focus,
+.global-footer .nav-footer .nav-tier2 a:active {
+    @include color($color-white, 1);
+    }
+
+.global-footer .nav-footer .nav-tier2 li {
+    margin-bottom: 0.5em;
+    }
+
+.global-footer .nav-footer .nav-tier1:first-child {
+    margin-left: 0;
+    }
+
+.global-footer .nav-footer .nav-heading {
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    }
+
+
+
+.global-foot {
+    @include background-color($color-black, 1);
+    clear: both;
+    color: white;
+    padding: 1em 0;
+    font-size: 1em;
+    min-height: 45px;
+    }
+
+.global-foot-content {
+    position: relative;
+    }
+
+.global-foot-logo {
+    width: 100px;
+    margin: 0.3em 1em 0.3em 0;
+    position: absolute;
+    left: 0;
+    }
+
+@media (min-width: 80em) {
+    .global-foot-logo {
+    margin-left: 0;
+    }
+    }
+
+.global-foot small {
+    margin: 1em 0 1em 120px;
+    float: left;
+    @include color($color-white, 0.7);
+    }

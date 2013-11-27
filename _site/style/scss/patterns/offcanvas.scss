@@ -1,0 +1,78 @@
+body {
+    background-color: $color-dark-gray;
+    }
+
+.js-container {
+    background-color: $color-white;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include transition(all);
+    min-height: 100%;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.5);
+    }
+
+.js-container.slid {
+    right: 75%;
+    }
+
+.js-offcanvas {
+    width: 75%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+.js-offcanvas .nav-global-secondary {
+    width: 100%;
+    padding: 0;
+    }
+
+.js-offcanvas .nav-global-secondary li {
+    clear: both;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+    }
+    
+.js-offcanvas .nav-global-secondary li a:link,
+.js-offcanvas .nav-global-secondary li a:visited,
+.js-offcanvas .nav-global-secondary li a:hover,
+.js-offcanvas .nav-global-secondary li a:focus,
+.js-offcanvas .nav-global-secondary li a:active,
+.js-offcanvas .nav-global-secondary li .button:link,
+.js-offcanvas .nav-global-secondary li .button:visited,
+.js-offcanvas .nav-global-secondary li .button:hover,
+.js-offcanvas .nav-global-secondary li .button:focus,
+.js-offcanvas .nav-global-secondary li .button:active {
+    border-bottom: 1px solid;
+    @include border-color($color-white, 0.15);
+    color: $color-white;
+    margin: 0;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    font-weight: normal;
+    display: block;
+    }
+
+.js-offcanvas .nav-global-secondary li a:hover,
+.js-offcanvas .nav-global-secondary li a:focus,
+.js-offcanvas .nav-global-secondary li a:active,
+.js-offcanvas .nav-global-secondary li .button:hover,
+.js-offcanvas .nav-global-secondary li .button:focus,
+.js-offcanvas .nav-global-secondary li .button:active {
+    background-color: $color-red;
+    }
+
+.js-offcanvas .nav-global-primary {
+    position: relative;
+    padding: 0;
+    clear: both;
+    @extend .nav-global-secondary;
+    background-color: $color-dark-gray;
+    width: 100%;
+    }

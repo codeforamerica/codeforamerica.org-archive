@@ -1,0 +1,33 @@
+@media (min-width: 40em) and (min-height: 30em) {
+
+.sticky {
+    position: fixed;
+    margin-top: 2.72em;
+    top: 0;
+    padding: 0;
+    }
+    
+.sticky + main {
+    margin-top: 6em;
+    }
+
+.sticky .global-header-logo {
+    width: 90px;
+    margin: 0.4em 0 0 0;
+    }
+
+.sticky .nav-global-secondary {
+    }
+    
+.sticky .nav-global-secondary li a {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    }
+
+.sticky .nav-global-secondary li .button {
+    padding: 0.3em 0.55em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    }
+
+}

@@ -1,0 +1,13 @@
+{% include head.html %}
+    
+    {% include header.html %}
+    
+    <ul>
+      {% for post in site.posts limit: 5 %}
+        <li><a href="/_site{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    
+    {% include footer.html %}
+    
+{% include foot.html %}

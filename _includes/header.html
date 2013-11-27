@@ -1,0 +1,48 @@
+<div class="masthead masthead-l">
+    <div class="masthead-hero">
+        <img src="/placeholder/masthead-2.jpg" class="masthead-image"/>
+    </div>
+    <header class="layout-container masthead-header">
+        <?php include("/blocks/patterns/nav-breadcrumb.html") ?>
+        <h1 class="page-title" >{% if page.path contains '_posts' %}
+        Blogging [for America]
+        {% else %}
+        {{ page.title }}
+        {% endif %}</h1>
+    </header>
+</div>
+
+<div class="global-header">
+
+    <div class="layout-container-l layout-tight">
+    
+        <a href="/templates/home.php" class="global-header-logo">
+            <img src="/images/logo.png" />
+        </a>
+        
+        <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+        
+        <nav class="nav-global-secondary">
+            <ul>
+                <li class="nav-tier1 nav-has-children">
+                    <a href="/_site/governments.html">Governments</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Current Cities</a></li>
+                        <li><a href="#">Upcoming Cities</a></li>
+                        <li><a href="#">Alumni Cities</a></li>
+                        <li><a href="#">Apps &amp; APIs</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1 nav-has-children"><a href="/_site/citizens.html">Citizens</a></li>
+                <li class="nav-tier1 nav-has-children"><a href="/_site/apps.html">Apps</a></li>
+                <li><a href="/_site/donate.html" class="button">Donate</a></li>
+            </ul>
+        </nav>
+        
+        
+    
+    </div>
+    
+</div>
+
+<main role="main">

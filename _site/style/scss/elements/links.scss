@@ -1,0 +1,22 @@
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    @include color($color-red, 1);
+    text-decoration: none;
+    }
+
+a:hover,
+a:focus,
+a:active {
+    border-bottom: 1px solid;
+    @include border-color($color-red, 0.7);
+    }
+
+main a:hover,
+main a:focus,
+main a:active {
+    border-bottom: 1px solid;
+    @include border-color($color-red, 0.7);
+    }

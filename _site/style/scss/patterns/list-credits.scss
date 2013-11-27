@@ -1,0 +1,36 @@
+.list-credits {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    max-width: 50em;
+    margin: 0 auto;
+    }
+
+.list-credits ul {
+    @extend .list-inline;
+    }
+
+.list-credits a {
+    text-align: center;
+    @include color($color-blue, 1);
+    text-transform: uppercase;
+    }
+
+.list-credits li:after {
+    content: ("-");
+    }
+
+.list-credits li:last-child:after {
+    content: none;
+    }
+
+.list-credits .fade {
+    background-image: url('../images/fade.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 1em;
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    bottom: 0;
+    }

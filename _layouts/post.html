@@ -1,0 +1,68 @@
+{% include head.html %}
+    
+    {% include header.html %}
+    
+    <section>
+    
+        <div class="layout-container">
+        
+            <nav class="nav-breadcrumbs">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+            
+            <article class="post">
+                
+                <header class="post-header">
+                    <h2 class="post-title">{{ page.title }}</h2>
+                    <time class="post-date" datetime="{{ page.date }}">{{ date_to_long_string }}</time>
+                    
+                </header>
+                
+                <div class="post-body">
+                
+                    <div class="post-content">
+                        
+                        {{ content }}
+                    
+                    </div>
+                    
+                    <div class="post-author">
+                        <h2 class="heading-mini">Written by:</h2>
+                        <div class="h-card">
+                            <h3 class="p-name profile-name">Zachary Townsend</h3>
+                            <img class="u-photo profile-photo" src="/placeholder/avatar-zachary-townsend.jpg" />
+                        </div>
+                        
+                        <div class="p-note profile-note">
+                            <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments. As a private consultant, I used my love of data and passion for technology to work with New York City Administration for Children’s Services to improve services for children just like me, and many that were in much worse circumstances. From there, I worked in the Newark, N.J. Mayor’s Office to leverage technology to improve city life and services.</p>
+                            <p><a class="link-more" href="#">More</a></p>
+                        </div>
+                        
+                        <div>
+                            <h2 class="heading-mini">Filed under</h2>
+                            <ul class="post-categories">
+                                {% assign tags_list = page.tags %}
+                                {% for tags in site.tags %}
+                                <li>
+                                    {{ tag | first }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        
+                    </div>  
+                
+                </div>  
+            
+            </article>
+        
+        </div>
+        
+    </section>
+    
+    {% include footer.html %}
+    
+{% include foot.html %}

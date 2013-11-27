@@ -1,0 +1,20 @@
+ol {
+    margin: 0.5em 0 0.5em 1.4em;
+    }
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+    }
+
+ol li {
+    list-style-type: decimal;
+    }
+
+ul li {
+    background-image: url("../images/bullet.gif");
+    background-repeat: no-repeat;
+    list-style-type: none;
+    background-position: left 0.63em;
+    padding-left: 1.3em;
+    }
