@@ -1,0 +1,125 @@
+.masthead {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+    }
+
+@media (min-width: 40em) {
+.masthead {
+    display: block;
+    clear: both;
+    }
+}
+
+.masthead-hero {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+    }
+
+.masthead-image {
+    max-width: none;
+    
+    }
+
+@media (min-width: 70em) {
+    .masthead-image {
+      width: 100%;  
+    }
+    }
+
+.masthead-header {
+    overflow: hidden;
+    width: auto;
+    display: table;
+    z-index: 1;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 4%;
+    }
+
+.masthead-header a:link,
+.masthead-header a:visited,
+.masthead-header a:hover,
+.masthead-header a:focus,
+.masthead-header a:active {
+    color: $color-white;
+    border-bottom: none;
+    margin-bottom: 0;
+    }
+    
+    @media (min-width: 63em) {
+    .masthead .masthead-header {
+        padding: 0; 
+        width: auto;
+        }
+    }
+
+.masthead-s .masthead-header {
+    @include rem(margin, 56px 2% 40px);
+    }
+
+.masthead-s .page-title {
+    @include rem(font-size, 50px);
+    @include rem(line-height, 47px);
+    float: none;
+    margin-top: 0;
+    }
+
+.masthead-s .page-title + * {
+    display: block;
+    @include rem(margin-top, 17px);
+    clear: both;
+    }
+
+
+.masthead-l .masthead-header {
+    padding-top: 13em;
+    padding-bottom: 1em;
+    margin-top: 3em;
+    margin-bottom: 0;
+    }
+
+.masthead-l .page-title {
+    font-size: 90px;
+    }
+
+.masthead-header .nav-breadcrumbs {
+    float: left;
+    @include color($color-white, 0.7);
+    
+    }
+
+.masthead-header .nav-breadcrumbs a:link,
+.masthead-header .nav-breadcrumbs a:visited,
+.masthead-header .nav-breadcrumbs a:hover,
+.masthead-header .nav-breadcrumbs a:focus,
+.masthead-header .nav-breadcrumbs a:active {
+    @include color($color-white, 1);
+    }
+
+.masthead-header .nav-breadcrumbs a:hover,
+.masthead-header .nav-breadcrumbs a:focus,
+.masthead-header .nav-breadcrumbs a:active {
+    @include color($color-white, 0.7);
+    }
+
+.masthead-header .nav-breadcrumbs li {
+    background-image: url('/_styleimages/arrow-breadcrumb-white.png');
+    }
+
+
+.masthead-header .nav-breadcrumbs li:first-child a {
+    background-image: url('../images/flag-white.png');
+    }
+
+.masthead-header .button-cta {
+    float: right;
+    margin-top: 0.8em;
+    }
+

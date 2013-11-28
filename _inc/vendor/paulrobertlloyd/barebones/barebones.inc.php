@@ -9,7 +9,7 @@ if ($rootPath == '/home/clearleft/') {
 
 $styleguidePath = '/';
 $patternsPath = $rootPath.'/blocks/';
-$cssPath = $rootPath.'style/';
+$cssPath = $rootPath.'_style';
 
 
 // Provide a filter for excluding hidden .git or .svn folders from the inc() function

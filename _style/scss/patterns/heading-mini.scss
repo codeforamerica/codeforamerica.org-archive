@@ -1,0 +1,11 @@
+.heading-mini {
+    text-transform: uppercase;
+    margin: 0;
+    @include rem(margin, 0 0 15px 0);
+    font-family: $font-sans-regular;
+    @include rem(font-size, 12px);
+    line-height: 1.8em;
+    color: $color-gray;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    }

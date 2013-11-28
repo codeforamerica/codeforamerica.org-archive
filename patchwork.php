@@ -14,8 +14,8 @@
 <head>
     <meta charset="utf-8">
     <title>Code for America Website Style Guide</title>
-    <link rel="stylesheet" href="style/css/main.css">
-    <link href="style/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="_style/css/main.css">
+    <link href="_style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,7 +53,7 @@
     
     </div>
 
-    <script src="script/prism.js"></script>
+    <script src="_script/prism.js"></script>
     
 </body>
 

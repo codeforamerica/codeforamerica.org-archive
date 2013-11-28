@@ -14,8 +14,8 @@
 <head>
     <meta charset="utf-8">
     <title>Code for America Website Style Guide</title>
-    <link rel="stylesheet" href="style/css/main.css">
-    <link href="style/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="_style/css/main.css">
+    <link href="_style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,7 +32,7 @@
 
 <div class="xx-sidebar">
     <a class="xx-cfa-logo" href="/">
-        <img src="/images/logo.png" />
+        <img src="/_assets/logo.png" />
     </a>
     
     <div class="xx-nav">
@@ -43,7 +43,7 @@
         </ol>
         <h2 class="heading-mini">Templates</h2>
         <ol role="navigation">
-            <li><a href="/_site/city-boston.html">City (Boston)</a></li>
+            <li><a href="/_site/cities/boston">City (Boston)</a></li>
             <li><a href="/_site/fellows.html">Fellows</a></li>
             <li><a href="/_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
             <li><a href="/_site/governments.html">Governments</a></li>
@@ -225,7 +225,7 @@
     <?php endif; ?>
 
 </div>
-    <script src="script/prism.js"></script>
+    <script src="_script/prism.js"></script>
 </body>
 
 <script>

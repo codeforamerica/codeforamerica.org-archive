@@ -1,0 +1,42 @@
+.bricks {
+    @extend .list-no-bullets;
+    width: 100%;
+    margin: 0;
+    }
+    
+.brick {
+    padding: 0;
+    margin-bottom: 1em;
+    }
+
+.brick .brick-link {
+    @include rem(padding-top, 80px);
+    @include rem(padding-bottom, 80px);
+    display: block;
+    }
+
+.brick .brick-link:hover,
+.brick .brick-link:focus,
+.brick .brick-link:active {
+    border-bottom: none;
+    }
+
+.brick-heading {
+    @extend .heading-mini;
+    color: $color-light-gray;
+    @include rem(margin-bottom, 5px);
+    }
+
+.brick-text {
+    @include font-sans-bold;
+    color: $color-white;
+    text-transform: uppercase;
+    @include rem(font-size, 30px);
+    @include rem(line-height, 30px);
+    }
+
+@media (min-width: 40em) {
+    .brick {
+        margin-bottom: 0;
+        }
+    }
