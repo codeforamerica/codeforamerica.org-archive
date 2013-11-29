@@ -2,7 +2,7 @@
 
 .sticky {
     position: fixed;
-    margin-top: 2.72em;
+    @include rem(margin-top, 31px);
     top: 0;
     padding: 0;
     }

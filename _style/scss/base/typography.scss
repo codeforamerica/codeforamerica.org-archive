@@ -1,8 +1,12 @@
 /* Sans serif */
 
-$font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+$font-sans-regular-fallback: "Verdana", "Helvetica", "Arial";
 
-$font-serif-regular: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+$font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", $font-sans-regular-fallback;
+
+$font-serif-regular-fallback: "Georgia", Times, sans-serif;
+
+$font-serif-regular: "Sentinel A", "Sentinel B", "Sentinel Book", $font-serif-regular-fallback;
 
 @mixin font-sans-regular {
     font-family: $font-sans-regular;

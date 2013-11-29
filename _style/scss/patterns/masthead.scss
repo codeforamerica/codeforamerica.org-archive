@@ -61,7 +61,7 @@
     }
 
 .masthead-s .masthead-header {
-    @include rem(margin, 56px 2% 40px);
+    @include rem(margin, 56px auto 40px);
     }
 
 .masthead-s .page-title {

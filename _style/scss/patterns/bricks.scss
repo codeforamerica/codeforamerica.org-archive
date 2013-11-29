@@ -1,7 +1,7 @@
 .bricks {
     @extend .list-no-bullets;
     width: 100%;
-    margin: 0;
+    margin: 0; 
     }
     
 .brick {
@@ -10,8 +10,11 @@
     }
 
 .brick .brick-link {
+    @include rem(min-height, 100px);
     @include rem(padding-top, 80px);
     @include rem(padding-bottom, 80px);
+    padding-left: 4%;
+    padding-right: 4%;
     display: block;
     }
 

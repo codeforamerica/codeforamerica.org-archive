@@ -14,6 +14,10 @@ a:active {
     @include border-color($color-red, 0.7);
     }
 
+main a {
+    font-weight: 600;
+    }
+
 main a:hover,
 main a:focus,
 main a:active {

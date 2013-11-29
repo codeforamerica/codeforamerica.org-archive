@@ -1,6 +1,7 @@
 .teaser {
     margin-bottom: 1.8em;
     @include background-color($color-white, 1);
+    position: relative;
     }
 
 .teaser a:link,
@@ -12,18 +13,105 @@
     margin: 0;
     }
 
-.teaser .teaser-description {
-    padding: 1em;
+.teaser-footer {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: -1px;
+    }
+
+.teaser-header {
+    margin-top: 180px;
+    }
+
+.teaser {
+    @include rem(padding, 15px);
     border: 1px solid;
     @include border-color($color-light-gray, 1);
     border-top: none;
     }
 
 .teaser .teaser-title {
-    margin: 0 0 1em 0;
+    @include rem(margin, 0 0 13px 0);
+    @include rem(font-size, 18px);
+    @include rem(line-height, 18px);
     }
 
-.teaser .teaser-image {
+.teaser .teaser-masthead {
     margin: 0;
     vertical-align: top;
+    height: 162px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-black;
+    display: block;
+    position: relative;
+    border-bottom: none;
+    }
+
+.teaser .teaser-masthead .teaser-type {
+    position: absolute;
+    bottom: 0;
+    background-color: $color-red;
+    z-index: 1;
+    @include rem(font-size, 9px);
+    @include rem(padding, 3px 9px 2px);
+    color: $color-white;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0;
+    font-weight: normal;
+    @include rem(left, 9px);
+    @include rem(line-height, 16px);
+    }
+
+.teaser .teaser-masthead .teaser-type-article {
+    background-color: $color-teal;
+    }
+
+.teaser .teaser-masthead .teaser-type-video {
+    background-color: $color-blue;
+    }
+
+.teaser .teaser-masthead .teaser-type-data {
+    background-color: $color-orange;
+    }
+
+.teaser .teaser-masthead .teaser-image {
+    width: 100%;
+    }
+
+.teaser .teaser-source:link,
+.teaser .teaser-source:visited,
+.teaser .teaser-source:hover,
+.teaser .teaser-source:focus,
+.teaser .teaser-source:active {
+    @include rem(margin, 5px 15px);
+    @include rem(font-size, 11px);
+    font-family: $font-sans-regular;
+    color: $color-black;
+    display: block;
+    text-transform: uppercase;
+    border-bottom: none;
+    }
+
+.teaser .teaser-source:before {
+    font-family: $font-serif-regular-fallback;
+    font-style: italic;
+    content: ("From: ");
+    text-transform: none;
+    font-style: italic;
+    color: $color-gray;
+    font-weight: lighter;
+    }
+
+
+
+.teaser-body,
+.teaser-body p {
+    @include rem(font-size, 13px);
+    @include rem(line-height, 19px);
+    }
+
+.teaser-body p:last-child {
+    margin-bottom: 0;
     }

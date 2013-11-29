@@ -7,6 +7,8 @@ title: Apps &amp; APIs
 
     <div class="layout-container">
         
+        {% include /blocks/patterns/nav-breadcrumb.html %}
+        
         <div class="layout-centered">
             
             <h2 class="h3">Our fellowship, accelerator and incubator apps are the product of hundreds of community interviews. In partnership with our government partners, fellows and startup founders figure out how to best serve citizens.</h2>
@@ -21,12 +23,38 @@ title: Apps &amp; APIs
 
 <section>
 
-    <div class="layout-container">
+    <ul class="nav-tabs">
+        <li class="nav-tab state-active"><a class="nav-tab-link" href="#tab-apps-local-service">Local service apps</a></li>
+        <li class="nav-tab"><a class="nav-tab-link" href="#tab-apps-citizen-engagement">Citizen engagements apps</a></li>
+        <li class="nav-tab"><a class="nav-tab-link" href="#tab-apps-free">Free apps</a></li>
+        <li class="nav-tab"><a class="nav-tab-link" href="#tab-apps-paid">Paid apps</a></li>
+    </ul>
         
-        {% include /blocks/patterns/teasers.html %}
-        
-        <p class="layout-centered"><a href="#" class="button">Load More</a></p>
-    
+    <div class="tab-content">
+        <div class="tab-pane state-active" id="tab-apps-local-service">
+            <div class="layout-container-l">
+                {% include /blocks/patterns/teasers.html %}
+                <p class="layout-centered"><a href="#" class="button">Load More</a></p>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-apps-citizen-engagement">
+            <div class="layout-container-l">
+                {% include /blocks/patterns/teasers.html %}
+                <p class="layout-centered"><a href="#" class="button">Load More</a></p>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-apps-free">
+            <div class="layout-container-l">
+                {% include /blocks/patterns/teasers.html %}
+                <p class="layout-centered"><a href="#" class="button">Load More</a></p>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-apps-paid">
+            <div class="layout-container-l">
+                {% include /blocks/patterns/teasers.html %}
+                <p class="layout-centered"><a href="#" class="button">Load More</a></p>
+            </div>
+        </div>
     </div>
     
 </section>

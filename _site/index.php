@@ -43,13 +43,16 @@
         </ol>
         <h2 class="heading-mini">Templates</h2>
         <ol role="navigation">
-            <li><a href="/_site/cities/boston">City (Boston)</a></li>
-            <li><a href="/_site/fellows.html">Fellows</a></li>
+            <li><a href="/_site/home/">Home</a></li>
+            <li><a href="/_site/apps/">Apps</a></li>
+            <li><a href="/_site/apps/bizfriendly/">Product (Bizfriendly)</a></li>
+            <li><a href="/_site/governments/boston/">City (Boston)</a></li>
+            <li><a href="/_site/fellows/">Fellows</a></li>
             <li><a href="/_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
-            <li><a href="/_site/governments.html">Governments</a></li>
-            <li><a href="/_site/donate.html">Donate (Landing)</a></li>
-            <li><a href="/_site/donate-form.html">Donate</a></li>
-            <li><a href="/_site/citizens.html">Citizens</a></li>
+            <li><a href="/_site/governments/">Governments</a></li>
+            <li><a href="/_site/donate/">Donate (Landing)</a></li>
+            <li><a href="/_site/donate/form/">Donate</a></li>
+            <li><a href="/_site/citizens/">Citizens</a></li>
         </ol>
     </div>
     
