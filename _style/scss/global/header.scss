@@ -7,7 +7,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
     margin: 0;
     background-color: $color-white;
-    z-index: 1;
+    z-index: 2;
     @include transition(padding, 0.5s);
     }
 

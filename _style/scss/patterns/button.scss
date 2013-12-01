@@ -131,3 +131,27 @@ input.button-unstyled,
 .button-unstyled:active {
     @include color($color-black, 1);
     }
+
+.button-subtle,
+input.button-subtle,
+.button-subtle:link,
+.button-subtle:visited,
+.button-subtle:hover,
+.button-subtle:focus,
+.button-subtle:active {
+    color: $color-medium-gray;
+    background-color: transparent;
+    text-shadow: none;
+    border: 1px solid $color-medium-gray;
+    }
+
+input.button-subtle:hover,
+input.button-subtle:focus,
+input.button-subtle:active,
+.button-subtle:hover,
+.button-subtle:focus,
+.button-subtle:active {
+    color: $color-dark-gray;
+    border: 1px solid $color-dark-gray;
+    background-color: transparent;
+    }

@@ -8,7 +8,7 @@ if ($rootPath == '/home/clearleft/') {
 }
 
 $styleguidePath = '/';
-$patternsPath = $rootPath.'/blocks/';
+$patternsPath = $rootPath.'/_includes/blocks/';
 $cssPath = $rootPath.'_style';
 
 

@@ -35,7 +35,7 @@
     
     <?php include("patterns/_header.html") ?>
     
-    <div class="layout-container">
+    <div class="layout-semibreve">
 
     <form action="" method="post" id="pattern">
         <select name="section" id="pattern-select" class="nav-section-select">

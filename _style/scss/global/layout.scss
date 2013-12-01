@@ -1,90 +1,83 @@
-.layout-crotchet {
-    width: 32.0%;
-    float: left;
-    clear: none;
-    margin: 0 2% 0 0;
-    background-image: none;
-    padding: 0;
-    }
-
-.layout-crotchet:nth-child(3n+3) {
-    margin-right: 0;
-    }
-
-.layout-crotchet:nth-child(3n+4) {
-    clear: both;
-    }
+/* Layout ========================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-.layout-col {
-    border: 0px solid rgba(0,0,0,0);
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -moz-background-clip: padding-box !important;
-    -webkit-background-clip: padding-box !important;
-    background-clip: padding-box !important;
-    width: 100%;
-    background-image: none;
-    padding-left: 0;
-    list-style-type: none;
-    margin-left: 2%;
-    background-image: none;
-    }
-
-.layout-container,
-.layout-container-l {
-    width: 96%;
-    padding: 0 2%;
-    max-width: 80em;
-    margin: 3em auto;
-    }
-
-.layout-container {
-    max-width: 60em;
-    }
-
-.layout-row .layout-col:first-child {
-    margin-left: 0;
-    }
-
-.layout-colspan-1 {
-    width: 9.33333333333%;
-    }
-
-.layout-colspan-2 {
-    width: 20.6666666667%;
-    }
+/*  9 column = quaver  */
     
-.layout-colspan-3 {
-    width: 32.0%; /* 3 col */
-    float: left;
-    clear: none;
-    }
+    .layout-quaver {
+        width: 9.33333333333%;
+        float: left;
+        clear: none;
+        margin: 0 2% 0 0;
+        background-image: none;
+        padding: 0;
+        }
+    
+    .layout-quaver:nth-child(9n+9) {
+        margin-right: 0;
+        }
+    
+    .layout-quaver:nth-child(9n+10) {
+        clear: both;
+        }
 
-.layout-grid {
-    margin: 0;
-    padding: 0;
-    background-image: none;
-    width: 100%;
-    clear: both;
-    }
+/*  3 column = crotchet  */
+    
+    .layout-crotchet {
+        width: 32.0%;
+        float: left;
+        clear: none;
+        margin: 0 2% 0 0;
+        background-image: none;
+        padding: 0;
+        }
+    
+    .layout-crotchet:nth-child(3n+3) {
+        margin-right: 0;
+        }
+    
+    .layout-crotchet:nth-child(3n+4) {
+        clear: both;
+        }
 
-.layout-grid li {
-    padding: 0;
-    background-image: none;
-    }
+
+/*  2 column = minim  */
+    
+    .layout-minim {
+        float: left;
+        width: 48.5%;
+        clear: none;
+        margin: 0;
+        background-image: none;
+        padding: 0;
+        }
+    
+    .layout-minim:nth-child(2n+2) {
+        float: right;
+        }
+    
+    .layout-minim:nth-child(2n+3) {
+        clear: both;
+        }
+
+
+/*  1 column = semibreve  */
+    
+    .layout-semibreve,
+    .layout-breve {
+        width: 96%;
+        padding: 0 2%;
+        max-width: 80em;
+        margin: 3em auto;
+        }
+    
+    .layout-semibreve {
+        max-width: 60em;
+        }
+
+
+
+
+
 
 @media (min-width: 60em) {
 
@@ -111,25 +104,6 @@
 
 .layout-break-up {
     margin-top: -4em;
-    }
-
-.layout-2col {
-    float: left;
-    width: 48.5%;
-    }
-    
-.layout-2col + .layout-2col {
-    float: right;
-    }
-    
-.layout-colspan-3 + .layout-colspan-3 + .layout-colspan-3 {
-    margin-right: 0;
-    }
-
-.layout-grid .layout-colspan-3:first-of-type,
-.layout-grid .layout-colspan-3:nth-of-type(3n+4) {
-    margin-left: 0;
-    clear: both;
     }
 
 .layout-chimney-invert .chimney {

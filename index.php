@@ -11,18 +11,26 @@
 ?>
 <!DOCTYPE html>
 <html lang="en-gb">
+
 <head>
     <meta charset="utf-8">
-    <title>Code for America Website Style Guide</title>
-    <link rel="stylesheet" href="_style/css/main.css">
-    <link href="_style/css/prism.css" rel="stylesheet" />
+    <title>Code for America Style Guide</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
+    <link rel="stylesheet" href="/_style/css/main.css">
+    <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="/_style/css/prism.css" rel="stylesheet" />
+    <script src="/_script/fittext.js" type="text/javascript"></script>
+    
+    
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/documentation.css" />
+    <!--[if (lt IE 9)&(!IEMobile)]>
+    <link rel="stylesheet" href="/_style/css/layout.css" media="all">
+    <![endif]-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+</head>
 
 <body class="xx">
 
@@ -31,17 +39,18 @@
 <?php else : ?>
 
 <div class="xx-sidebar">
+    
     <a class="xx-cfa-logo" href="/">
         <img src="/_assets/logo.png" />
     </a>
     
     <div class="xx-nav">
-        <h2 class="heading-mini">Styleguide</h2>
+        <h2 class="text-whisper">Styleguide</h2>
         <ol role="navigation">
             <li class="xx-link-special"><a href="/patchwork.php">View as patchwork</a></li>
             <?php displayList($patternsPath); ?>
         </ol>
-        <h2 class="heading-mini">Templates</h2>
+        <h2 class="text-whisper">Templates</h2>
         <ol role="navigation">
             <li><a href="/_site/home/">Home</a></li>
             <li><a href="/_site/apps/">Apps</a></li>
@@ -56,8 +65,8 @@
         </ol>
     </div>
     
-    
     <a class="xx-hallmark" href="http://clearleft.com/" title="Crafted by Clearleft in Brighton">Crafted by Clearleft in Brighton, UK</a>
+ 
  </div>
 
 
@@ -223,11 +232,78 @@
             </li>
         </ul>
         
+        
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-breve">
+                <p>layout-breve</p>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-semibreve">
+                <p>layout-semibreve</p>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-minim">
+                <p>layout-minim</p>
+            </div>
+            <div class="layout-minim">
+                <p>layout-minim</p>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-crotchet">
+                <p>layout-crotchet</p>
+            </div>
+            <div class="layout-crotchet">
+                <p>layout-crotchet</p>
+            </div>
+            <div class="layout-crotchet">
+                <p>layout-crotchet</p>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+            <div class="layout-quaver">
+                <p>layout-quaver</p>
+            </div>
+        </div>
+        
         <?php displayPatterns($patternsPath); ?>
+        
     </main><!--@main-->
     <?php endif; ?>
 
 </div>
+    
     <script src="_script/prism.js"></script>
 </body>
 

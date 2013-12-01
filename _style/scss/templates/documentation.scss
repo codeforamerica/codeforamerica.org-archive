@@ -43,13 +43,13 @@
     width: 100%;
     }
 
-.xx-sidebar .xx-nav .heading-mini,
+.xx-sidebar .xx-nav .text-whisper,
 .xx-sidebar .xx-nav li a {
     padding: 0.8em 5% 0.8em 15%;
     display: block;
     }
 
-.xx-sidebar .xx-nav .heading-mini {
+.xx-sidebar .xx-nav .text-whisper {
     border-top: 1px solid #ddd;
     margin-top: 1.5em;
     }
@@ -166,6 +166,16 @@
 
 .xx .nav-global-primary {
     position: relative;
+    }
+
+.xx-pattern-layout {
+    margin-bottom: 2.5em;
+    float: left;
+    width: 100%;
+    }
+
+.xx-pattern-layout div {
+    background-color: #ccc;
     }
 
 .swatch {

@@ -1,5 +1,7 @@
 .spotlight {
     @include background-color($color-light-gray, 0.5);
+    border: 1px solid;
+    @include border-color($color-light-gray, 1);
     float: left;
     width: auto;
     padding: 2em 1.5em;

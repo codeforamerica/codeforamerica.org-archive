@@ -25,7 +25,7 @@
     }
 
 .brick-heading {
-    @extend .heading-mini;
+    @extend .text-whisper;
     color: $color-light-gray;
     @include rem(margin-bottom, 5px);
     }

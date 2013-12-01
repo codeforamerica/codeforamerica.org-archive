@@ -19,7 +19,7 @@
     }
 
 .chimney .profile .profile-role {
-    @extend .heading-mini;
+    @extend .text-whisper;
     @include color($color-white, 0.7);
     margin-bottom: 1em;
     }
@@ -33,7 +33,7 @@
     }
     
 .chimney .profile .profile-note {
-    @extend .heading-mini;
+    @extend .text-whisper;
     @include color($color-white, 0.7);
     }
 
