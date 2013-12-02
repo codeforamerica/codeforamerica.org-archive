@@ -39,12 +39,31 @@
         clear: both;
         }
 
+/*  3 column = crotchet  */
+    
+    .layout-crotchet-staccato {
+        width: 27.0%;
+        float: left;
+        clear: none;
+        margin: 0 9.5% 0 0;
+        background-image: none;
+        padding: 0;
+        }
+    
+    .layout-crotchet-staccato:nth-child(3n+3) {
+        margin-right: 0;
+        }
+    
+    .layout-crotchet-staccato:nth-child(3n+4) {
+        clear: both;
+        }
+
 
 /*  2 column = minim  */
     
     .layout-minim {
         float: left;
-        width: 48.5%;
+        width: 49%;
         clear: none;
         margin: 0;
         background-image: none;
@@ -56,6 +75,25 @@
         }
     
     .layout-minim:nth-child(2n+3) {
+        clear: both;
+        }
+        
+/*  2 column = minim  */
+    
+    .layout-minim-staccato {
+        float: left;
+        width: 42%;
+        clear: none;
+        margin: 0;
+        background-image: none;
+        padding: 0;
+        }
+    
+    .layout-minim-staccato:nth-child(2n+2) {
+        float: right;
+        }
+    
+    .layout-minim-staccato:nth-child(2n+3) {
         clear: both;
         }
 
@@ -114,9 +152,9 @@
 @media (min-width: 50em) {
     
     .layout-chimney-invert {
-    width: 48%;
+    width: 42%;
     position: relative;
-    padding-right: 52%;
+    padding-right: 58%;
     }
     
     .layout-chimney-invert p:first-child {
@@ -133,34 +171,46 @@
     
 }
 
-.layout-chimney .chimney {
-    padding: 2em 4%;
-    margin: 1em 0 2em -4%;
-    width: 90%;
-    margin-left: 0;
-    }
+
+
+.layout-chimney {
+	@extend .layout-semibreve;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	}
+
+
+
 
 @media (min-width: 50em) {
-    .layout-chimney {
-    width: 48%;
-    position: relative;
-    padding-left: 52%;
-    }
+	
+	.layout-chimney .layout-minim-staccato {
+		width: 45%;
+		padding-left: 0;
+		padding-right: 0;
+		}
+		
     .layout-chimney p:first-child {
     margin-top: 0;
     }
     .layout-chimney .chimney {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 42%;
-    margin: -4em 0 0 0;
+    width: 33%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: -1em 0 0 4%;
     }
 }
 
-.layout-tight {
-    margin: 0 auto;
+@media (min-width: 63em) {
+    .layout-chimney .chimney {
+    margin: -1em 0 0 0;
     }
+}
+
+
 
 @media (min-width: 50em) {
     .global-footer .nav-footer > ul {
@@ -194,3 +244,7 @@
     display: block;
     }
 }
+
+.layout-tight {
+    margin: 0 auto;
+    }

@@ -172,11 +172,21 @@
     margin-bottom: 2.5em;
     float: left;
     width: 100%;
+    
     }
 
 .xx-pattern-layout div {
     background-color: #ccc;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
     }
+   
+.xx-pattern-layout p {
+	line-height: 1.2em;
+	}
 
 .swatch {
     float: left;

@@ -2,15 +2,25 @@
     text-align: center;
     }
 
-.layout-crotchet {
+.layout-crotchet,
+.layout-crotchet-staccato,
+.layout-minim,
+.layout-minim-staccato {
     width: 100%;
     float: none;
     clear: both;
     }
 
+.layout-chimney .layout-minim-staccato {
+	width: 92%;
+	padding: 1em 4%;
+	max-width: 30em;
+	margin: 0 auto;
+	}
 
-
-
+.layout-chimney .layout-minim-staccato.chimney {
+	max-width: 92%;
+	}
 
 
 

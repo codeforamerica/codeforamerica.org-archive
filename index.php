@@ -256,6 +256,15 @@
         </div>
         
         <div class="xx-pattern-layout">
+            <div class="layout-minim-staccato">
+                <p>layout-minim-staccato</p>
+            </div>
+            <div class="layout-minim-staccato">
+                <p>layout-minim-staccato</p>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
             <div class="layout-crotchet">
                 <p>layout-crotchet</p>
             </div>
@@ -264,6 +273,18 @@
             </div>
             <div class="layout-crotchet">
                 <p>layout-crotchet</p>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-crotchet-staccato">
+                <p>layout-crotchet-staccato</p>
+            </div>
+            <div class="layout-crotchet-staccato">
+                <p>layout-crotchet-staccato</p>
+            </div>
+            <div class="layout-crotchet-staccato">
+                <p>layout-crotchet-staccato</p>
             </div>
         </div>
         

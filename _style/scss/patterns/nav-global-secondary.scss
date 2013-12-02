@@ -46,7 +46,10 @@
 
 .nav-global-secondary li a:hover,
 .nav-global-secondary li a:focus,
-.nav-global-secondary li a:active {
+.nav-global-secondary li a:active,
+.nav-global-secondary li:hover a,
+.nav-global-secondary li:focus a,
+.nav-global-secondary li:active a {
     color: $color-white;
     background-color: $color-red;
     }
@@ -70,6 +73,8 @@
 .nav-global-secondary .nav-tier1 {
     position: relative;
     }
+   
+
 
 .nav-global-secondary .nav-tier2 {
     position: absolute;
@@ -81,7 +86,12 @@
     padding: 0.5em 0;
     display: none;
     transition: width 0.3s ease;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
     }
+   
+.nav-global-secondary .nav-tier1:hover .nav-tier2 {
+	display: block; 
+	}
 
 .nav-global-secondary .nav-tier2 li {
     width: 100%;

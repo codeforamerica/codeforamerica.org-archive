@@ -1,16 +1,25 @@
 .chimney {
-    padding: 2.5em 5% 1.5em;
+    padding: 2.5em 0;
     width: 100%;
-    margin-left: -5%;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     }
 
+.chimney .chimney-body {
+    float: none;
+    position: relative;
+    padding: 0;
+    max-width: 30em;
+    margin: 0 auto;
+    }
 
+@media (min-width: 40em) {
+	@include rem(max-width, 370px);
+	}
 
 .chimney .profile {
     position: relative;
     margin-left: 155px;
-    min-height: 155px;
+    min-height: 130px;
     margin-top: 2em;
     }
 
@@ -38,21 +47,24 @@
     @include color($color-white, 0.7);
     }
 
-
-
 .chimney .profile .profile-org {
     clear: both;
     display: block;
     }
 
 .chimney .button {
-    margin-top: 1.5em;
     margin-left: 0;
+    }
+   
+@media (min-width: 40em) {
+.chimney .button {
+    margin-left: 155px;
+    }
     }
 
 @media (min-width: 60em) {
 .chimney .button {
-    margin-left: 155px;
+    margin-left: 0;
     }
     }
 
