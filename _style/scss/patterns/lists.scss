@@ -161,18 +161,3 @@
 .list-ruled li:last-child {
     border-bottom: none;
     }
-
-.list-icons {
-    
-    }
-
-.list-icons li {
-    margin-bottom: 1em;
-    padding-left: 60px;
-    }
-
-.list-icons li a {
-    display: block;
-    clear: both;
-    @extend .text-whisper;
-    }

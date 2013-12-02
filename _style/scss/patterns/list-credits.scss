@@ -2,9 +2,15 @@
     text-align: center;
     font-weight: bold;
     position: relative;
-    max-width: 50em;
+    @include rem(max-width, 800px);
     margin: 0 auto;
+    @include rem(font-size, 13px);
+    overflow: hidden;
     }
+   
+.js .list-credits.state-closed {
+	@include rem(max-height, 120px);
+	}
 
 .list-credits ul {
     @extend .list-inline;

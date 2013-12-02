@@ -9,8 +9,8 @@
 
 .chimney .profile {
     position: relative;
-    margin-left: 140px;
-    min-height: 140px;
+    margin-left: 155px;
+    min-height: 155px;
     margin-top: 2em;
     }
 
@@ -27,8 +27,9 @@
 .chimney .profile .profile-photo {
     position: absolute;
     top: 0;
-    left: -140px;
+    left: -155px;
     width: 120px;
+    border: 5px solid $color-white;
     height: 120px;
     }
     
@@ -46,11 +47,12 @@
 
 .chimney .button {
     margin-top: 1.5em;
+    margin-left: 0;
     }
 
 @media (min-width: 60em) {
 .chimney .button {
-    margin-left: 140px;
+    margin-left: 155px;
     }
     }
 
