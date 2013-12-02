@@ -12,11 +12,11 @@
         padding: 0;
         }
     
-    .layout-quaver:nth-child(9n+9) {
+    .layout-quaver:nth-of-type(9n+9) {
         margin-right: 0;
         }
     
-    .layout-quaver:nth-child(9n+10) {
+    .layout-quaver:nth-of-type(9n+10) {
         clear: both;
         }
 
@@ -31,11 +31,11 @@
         padding: 0;
         }
     
-    .layout-crotchet:nth-child(3n+3) {
+    .layout-crotchet:nth-of-type(3n+3) {
         margin-right: 0;
         }
     
-    .layout-crotchet:nth-child(3n+4) {
+    .layout-crotchet:nth-of-type(3n+4) {
         clear: both;
         }
 
@@ -50,11 +50,11 @@
         padding: 0;
         }
     
-    .layout-crotchet-staccato:nth-child(3n+3) {
+    .layout-crotchet-staccato:nth-of-type(3n+3) {
         margin-right: 0;
         }
     
-    .layout-crotchet-staccato:nth-child(3n+4) {
+    .layout-crotchet-staccato:nth-of-type(3n+4) {
         clear: both;
         }
 
@@ -70,11 +70,11 @@
         padding: 0;
         }
     
-    .layout-minim:nth-child(2n+2) {
+    .layout-minim:nth-of-type(2n+2) {
         float: right;
         }
     
-    .layout-minim:nth-child(2n+3) {
+    .layout-minim:nth-of-type(2n+3) {
         clear: both;
         }
         
@@ -89,11 +89,11 @@
         padding: 0;
         }
     
-    .layout-minim-staccato:nth-child(2n+2) {
+    .layout-minim-staccato:nth-of-type(2n+2) {
         float: right;
         }
     
-    .layout-minim-staccato:nth-child(2n+3) {
+    .layout-minim-staccato:nth-of-type(2n+3) {
         clear: both;
         }
 

@@ -154,6 +154,7 @@
 .xx-section-title {
     @include font-sans-bold;
     margin: 1em 0 0.5em;
+    clear: both;
     }
 
 .xx-nav ol {
@@ -170,7 +171,7 @@
     }
 
 .xx-pattern-layout {
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
     float: left;
     width: 100%;
     
@@ -180,51 +181,67 @@
     background-color: #ccc;
     text-align: center;
     font-size: 0.8em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    min-height: 80px;
+    }
+   
+.xx-pattern-layout div p {
+	margin-bottom: 0;
+	}
+   
+.xx-pattern-layout div div {
+    background-color: #aaa;
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
     }
    
 .xx-pattern-layout p {
 	line-height: 1.2em;
 	}
 
-.swatch {
+.xx .swatch {
     float: left;
     margin-bottom: 1em;
     width: 100%;
     }
     
     @media (min-width: 40em) {
-    .swatch {
+    .xx .swatch {
         width: 33%;
         }
     }
     
     @media (min-width: 50em) {
-    .swatch {
+    .xx .swatch {
         width: 25%;
         }
     }
     
     @media (min-width: 60em) {
-    .swatch {
+    .xx .swatch {
         width: 20%;
         
         }
     }
 
-.swatch-preview {
-    border: 5px solid #fff;
+.xx .swatch-preview {
     box-shadow: 0 0 1px rgba(0,0,0,0.8);
     display: block;
     float: left;
     height: 60px;
     width: 60px;
     margin: 0 0.8em 0.8em 0;
+    border-radius: 60px;
     }
 
-.swatch-details {
+.xx .swatch-details {
     float: left;
     margin: 0 1em 0 0;
     font-size: 0.8em;
@@ -233,10 +250,15 @@
     }
     
     @media (min-width: 70em) {
-    .swatch-details  {
+    .xx .swatch-details  {
         clear: none;
         }
     }
+
+.xx-slabs section {
+	padding: 0 2%;
+	width: 96%
+	}
 
 .pattern {
     clear: both;

@@ -81,7 +81,7 @@ function displayPatchwork($dir) {
                     echo "    <h3 class=\"xx-section-title\">".$fPlain."</h3>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $fName != '_header') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $fName != 'header') { // Skip non-HTML files
                     echo "<div class=\"pattern\" id=\"".$fName."\">\n";
                     echo "\n";
                     include $dir.'/'.$ff;
@@ -163,7 +163,7 @@ function displayOptions($dir) {
                     echo "    <option value=\"#".$fName."\">".$fPlain."</option>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html') { // Skip non-HTML files
                     echo "    <option value=\"#".$fName."\">&#160;&#160;&#160;&#160;".$fName."</option>\n";
                 }
             }
@@ -202,7 +202,7 @@ function displayList($dir) {
                     echo "<li><a href=\"#".$fName."\">$fPlain</a>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html') { // Skip non-HTML files
                     echo "    <li><a href=\"#".$fName."\">".$fName."</a></li>\n";
                 }
             }

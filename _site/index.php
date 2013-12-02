@@ -85,17 +85,21 @@
 
     <main role="main">
         
-        <h2 class="xx-section-title">Primary Colors</h2>
+        <h2 class="xx-section-title">Colors</h2>
         
-        <p>For a background color: @include background-color($color-red, 0.1);</p>
+        <p>Colours can be applied in the Sass files by calling a variable, such as <code>background-color: $color-red;</code> – this will add the correct hex code.</p>
         
-        <p>For a foreground color: @include color($color-red, 0.1);</p>
+        <p>If you want the colour to have opacity, use this format in the Sass file: <code>background color: @include background-color($color-red, 0.5);</code>, or for a foreground color: <code>@include color($color-red, 0.5);</code></p>
+        
+        <p>The last unit is the strength of the opacity. 1 is opaque, and 0.5 has 50% transparency.</p>
+        
+        <h3>Primary Colors</h3>
         
         <ul class="list-no-bullets">
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #cf1b41;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Corporate Red</strong></li>
+                    <li><strong>CfA Red</strong></li>
                     <li>rgb(204,39,62)</li>
                     <li>#cf1b41</li>
                     <li>$color-red</li>
@@ -104,7 +108,7 @@
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #399fd3;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Corporate Blue</strong></li>
+                    <li><strong>CfA Blue</strong></li>
                     <li>rgb(63,158,216)</li>
                     <li>#399fd3</li>
                     <li>$color-blue</li>
@@ -112,7 +116,7 @@
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #6D6E71;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Corporate gray</strong></li>
+                    <li><strong>CfA Gray</strong></li>
                     <li>rgb(109, 110, 113)</li>
                     <li>#6D6E71</li>
                     <li>$color-gray</li>
@@ -121,7 +125,7 @@
             <li class="swatch">
                 <span class="swatch-preview" style="background-color: #000;"></span>
                 <ul class="list-no-bullets swatch-details">
-                    <li><strong>Corporate Black</strong></li>
+                    <li><strong>CfA Black</strong></li>
                     <li>rgb(0, 0, 0)</li>
                     <li>#000000</li>
                     <li>$color-black</li>
@@ -129,7 +133,7 @@
             </li>
         </ul>
         
-        <h2 class="xx-section-title">Secondary Colors</h2>
+        <h3>Secondary Colors</h3>
         
         <ul class="list-no-bullets">
             <li class="swatch">
@@ -232,12 +236,105 @@
             </li>
         </ul>
         
+        <h2 class="xx-section-title">Layout</h2>
         
+        <p>The classnames used for layout are all prefixed with <code>layout-</code>. They are all derived from musical note values. The site uses a 9-column grid which can be split into a 2, 3 or 9 column layout, and there are slight variations on these layouts.</p>
+        
+        <p>A "stacatto" is <a href="http://en.wikipedia.org/wiki/Staccato">a note of shortened duration,[1][2] separated from the note that may follow by silence</a>. This has been applied to the class when the column is shorter than normal.</p>
+        
+        <p>Layouts can be wrapped inside each other. For example, 2 layout-minims can be within a layout-semibreve to have a 2 column layout which stops growing when it hits a certain size.</p>
         
         <div class="xx-pattern-layout">
             <div class="layout-breve">
                 <p>layout-breve</p>
             </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+            <div class="layout-breve">
+                <p>layout-breve</p>
+                <div class="layout-minim">
+                    <p>layout-minim</p>
+                </div>
+                <div class="layout-minim">
+                    <p>layout-minim</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+        	<div class="layout-breve">
+            	<p>layout-breve</p>
+                <div class="layout-minim-staccato">
+                    <p>layout-minim-staccato</p>
+                </div>
+                <div class="layout-minim-staccato">
+                    <p>layout-minim-staccato</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+        	<div class="layout-breve">
+        	    <p>layout-breve</p>
+	            <div class="layout-crotchet">
+	                <p>layout-crotchet</p>
+	            </div>
+	            <div class="layout-crotchet">
+	                <p>layout-crotchet</p>
+	            </div>
+	            <div class="layout-crotchet">
+	                <p>layout-crotchet</p>
+	            </div>
+	        </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+        	<div class="layout-breve">
+        	    <p>layout-breve</p>
+	            <div class="layout-crotchet-staccato">
+	                <p>layout-crotchet-staccato</p>
+	            </div>
+	            <div class="layout-crotchet-staccato">
+	                <p>layout-crotchet-staccato</p>
+	            </div>
+	            <div class="layout-crotchet-staccato">
+	                <p>layout-crotchet-staccato</p>
+	            </div>
+	        </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+        	<div class="layout-breve">
+        	    <p>layout-breve</p>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	        </div>
         </div>
         
         <div class="xx-pattern-layout">
@@ -247,75 +344,156 @@
         </div>
         
         <div class="xx-pattern-layout">
-            <div class="layout-minim">
-                <p>layout-minim</p>
-            </div>
-            <div class="layout-minim">
-                <p>layout-minim</p>
-            </div>
+            <div class="layout-semibreve">
+                <p>layout-semibreve</p>
+	            <div class="layout-minim">
+	                <p>layout-minim</p>
+	            </div>
+	            <div class="layout-minim">
+	                <p>layout-minim</p>
+	            </div>
+		    </div>
+		</div>
+		
+		<div class="xx-pattern-layout">
+			<div class="layout-semibreve">
+		    	<p>layout-semibreve</p>
+		        <div class="layout-minim-staccato">
+		            <p>layout-minim-staccato</p>
+		        </div>
+		        <div class="layout-minim-staccato">
+		            <p>layout-minim-staccato</p>
+		        </div>
+		    </div>
+		</div>
+		        
+        <div class="xx-pattern-layout">
+        	<div class="layout-semibreve">
+        	    <p>layout-semibreve</p>
+	            <div class="layout-crotchet">
+	                <p>layout-crotchet</p>
+	            </div>
+	            <div class="layout-crotchet">
+	                <p>layout-crotchet</p>
+	            </div>
+	            <div class="layout-crotchet">
+	                <p>layout-crotchet</p>
+	            </div>
+	        </div>
         </div>
         
         <div class="xx-pattern-layout">
-            <div class="layout-minim-staccato">
-                <p>layout-minim-staccato</p>
-            </div>
-            <div class="layout-minim-staccato">
-                <p>layout-minim-staccato</p>
-            </div>
+        	<div class="layout-semibreve">
+        	    <p>layout-semibreve</p>
+	            <div class="layout-crotchet-staccato">
+	                <p>layout-crotchet-staccato</p>
+	            </div>
+	            <div class="layout-crotchet-staccato">
+	                <p>layout-crotchet-staccato</p>
+	            </div>
+	            <div class="layout-crotchet-staccato">
+	                <p>layout-crotchet-staccato</p>
+	            </div>
+	        </div>
         </div>
         
         <div class="xx-pattern-layout">
-            <div class="layout-crotchet">
-                <p>layout-crotchet</p>
-            </div>
-            <div class="layout-crotchet">
-                <p>layout-crotchet</p>
-            </div>
-            <div class="layout-crotchet">
-                <p>layout-crotchet</p>
-            </div>
+        	<div class="layout-semibreve">
+        	    <p>layout-semibreve</p>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	            <div class="layout-quaver">
+	                <p>layout-quaver</p>
+	            </div>
+	        </div>
         </div>
         
-        <div class="xx-pattern-layout">
-            <div class="layout-crotchet-staccato">
-                <p>layout-crotchet-staccato</p>
-            </div>
-            <div class="layout-crotchet-staccato">
-                <p>layout-crotchet-staccato</p>
-            </div>
-            <div class="layout-crotchet-staccato">
-                <p>layout-crotchet-staccato</p>
-            </div>
-        </div>
+        <h2 class="xx-section-title">Slabs</h2>
         
-        <div class="xx-pattern-layout">
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
-            <div class="layout-quaver">
-                <p>layout-quaver</p>
-            </div>
+        <div class="xx-slabs">
+	        
+	        <section class="slab-gray">
+	        	<p><code>slab-gray</code></p>
+	        	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+	        	<ul>
+	        		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	        		<li>Aliquam tincidunt mauris eu risus.</li>
+	        		<li>Vestibulum auctor dapibus neque.</li>
+	        	</li>
+	        </section>
+	        
+	        <section class="slab-dark-gray">
+	        	<p><code>slab-dark-gray</code></p>
+	        	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+	        	<ul>
+	        		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	        		<li>Aliquam tincidunt mauris eu risus.</li>
+	        		<li>Vestibulum auctor dapibus neque.</li>
+	        	</li>
+	        </section>
+	        
+	        <section class="slab-red">
+	        	<p><code>slab-red</code></p>
+	        	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+	        	<ul>
+	        		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	        		<li>Aliquam tincidunt mauris eu risus.</li>
+	        		<li>Vestibulum auctor dapibus neque.</li>
+	        	</li>
+	        </section>
+	        
+	        <section class="slab-medium-red">
+	        	<p><code>slab-medium-red</code></p>
+	        	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+	        	<ul>
+	        		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	        		<li>Aliquam tincidunt mauris eu risus.</li>
+	        		<li>Vestibulum auctor dapibus neque.</li>
+	        	</li>
+	        </section>
+	        
+	        <section class="slab-blue">
+	        	<p><code>slab-blue</code></p>
+	        	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+	        	<ul>
+	        		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	        		<li>Aliquam tincidunt mauris eu risus.</li>
+	        		<li>Vestibulum auctor dapibus neque.</li>
+	        	</li>
+	        </section>
+	        
+	        <section class="slab-dark-blue">
+	        	<p><code>slab-dark-blue</code></p>
+	        	<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+	        	<ul>
+	        		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	        		<li>Aliquam tincidunt mauris eu risus.</li>
+	        		<li>Vestibulum auctor dapibus neque.</li>
+	        	</li>
+	        </section>
+        
         </div>
         
         <?php displayPatterns($patternsPath); ?>
