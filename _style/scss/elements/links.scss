@@ -24,3 +24,7 @@ main a:active {
     border-bottom: 1px solid;
     @include border-color($color-red, 0.7);
     }
+
+a img { // IE adds a border around images if a link
+	border: none;
+	}

@@ -23,25 +23,3 @@
     margin-bottom: 1em;
     }
 
-    @media (min-width: 40em) {
-        .wodge-image {
-            position: absolute;
-            left: 0;
-            top: 0;
-            }
-    
-        .wodge-header,
-        .wodge-text {
-            margin-left: 150px;
-            }
-        
-        .wodge-text {
-            clear: both;
-            }
-        }
-
-@media (min-width: 60em) {
-    .wodge-header {
-        margin-right: 6em;
-        }
-    }

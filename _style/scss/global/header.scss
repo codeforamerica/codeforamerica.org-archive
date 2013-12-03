@@ -11,12 +11,6 @@
     @include transition(padding, 0.5s);
     }
 
-@media (min-width: 40em) {
-.global-header {
-    
-    }
-}
-
 .global-header-logo {
     display: block;
     margin: 1em auto;
@@ -24,12 +18,8 @@
     @include transition(all, 0.4s);
     }
 
-    @media (min-width: 40em) {
-    .global-header-logo {
-        float: left;
-        }
-    }
-
+.global-header-logo:link,
+.global-header-logo:visited,
 .global-header-logo:hover,
 .global-header-logo:focus,
 .global-header-logo:active {

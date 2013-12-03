@@ -1,5 +1,6 @@
 /* Layout ========================================== */
 
+// IE 7 doesn't understand a range of pseudo-classes. By default, there is no margin unless that column is next to another column. Margins are applied to the left. This means the first column doesn't get a margin, so a 3-col layout doesn't break in old versions of IE.
 
 /*  9 column = quaver  */
     
@@ -26,35 +27,37 @@
         width: 32.0%;
         float: left;
         clear: none;
-        margin: 0 2% 0 0;
+        margin: 0;
         background-image: none;
         padding: 0;
         }
     
-    .layout-crotchet:nth-of-type(3n+3) {
-        margin-right: 0;
+    .layout-crotchet + .layout-crotchet {
+        margin-left: 2%;
         }
     
     .layout-crotchet:nth-of-type(3n+4) {
+    	margin-left: 0;
         clear: both;
         }
 
 /*  3 column = crotchet  */
     
     .layout-crotchet-staccato {
-        width: 27.0%;
+        width: 27%;
         float: left;
         clear: none;
-        margin: 0 9.5% 0 0;
+        margin: 0;
         background-image: none;
         padding: 0;
         }
     
-    .layout-crotchet-staccato:nth-of-type(3n+3) {
-        margin-right: 0;
-        }
+    .layout-crotchet-staccato + .layout-crotchet-staccato {
+    	margin-left: 9.5%
+    	}
     
     .layout-crotchet-staccato:nth-of-type(3n+4) {
+        margin-left: 0;
         clear: both;
         }
 
@@ -70,7 +73,7 @@
         padding: 0;
         }
     
-    .layout-minim:nth-of-type(2n+2) {
+    .layout-minim + .layout-minim {
         float: right;
         }
     
@@ -89,7 +92,7 @@
         padding: 0;
         }
     
-    .layout-minim-staccato:nth-of-type(2n+2) {
+    .layout-minim-staccato + .layout-minim-staccato {
         float: right;
         }
     
@@ -109,7 +112,8 @@
         }
     
     .layout-semibreve {
-        max-width: 60em;
+        max-width: 960px;
+        max-width: 60rem;
         }
 
 
@@ -149,7 +153,6 @@
     margin: 1em 0 2em -4%;
     }
 
-@media (min-width: 50em) {
     
     .layout-chimney-invert {
     width: 42%;
@@ -169,7 +172,6 @@
     margin: -4em 0 0 0;
     }
     
-}
 
 
 
@@ -184,7 +186,6 @@
 
 
 
-@media (min-width: 50em) {
 	
 	.layout-chimney .layout-minim-staccato {
 		width: 45%;
@@ -202,7 +203,6 @@
     padding-right: 4%;
     margin: -1em 0 0 4%;
     }
-}
 
 @media (min-width: 63em) {
     .layout-chimney .chimney {
@@ -212,7 +212,7 @@
 
 
 
-@media (min-width: 50em) {
+//@media (min-width: 50em) {
     .global-footer .nav-footer > ul {
     display: flex;
     }
@@ -224,9 +224,9 @@
     float: left;
     width: auto;
     }
-}
+//}
 
-@media (min-width: 60em) {
+//@media (min-width: 60em) {
     .global-footer .search-global {
     float: right;
     width: 25%;
@@ -243,8 +243,83 @@
     .global-footer .nav-footer .nav-tier1:first-child {
     display: block;
     }
-}
+//}
 
 .layout-tight {
     margin: 0 auto;
+    }
+
+
+
+
+
+
+
+.global-header-logo {
+    float: left;
+    }
+
+.nav-global-secondary {
+	float: right;
+	}
+
+.nav-global-secondary li {
+    display: block;
+    float: left;
+    }
+    
+    
+
+@media (max-width: 50em) {
+.nav-footer .nav-tier1 {
+    float: left;
+    margin-bottom: 1.5em;
+    width: 50%;
+    }
+
+.nav-footer .nav-tier1:nth-of-type(2n+2) {
+    clear: both;
+    }
+}
+
+
+
+
+
+.masthead {
+    display: block;
+    clear: both;
+    }
+
+
+
+.wodge-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    }
+
+.wodge-header,
+.wodge-text {
+    margin-left: 150px;
+    }
+
+.wodge-text {
+    clear: both;
+    }
+
+	@media (min-width: 60em) {
+    .wodge-header {
+        margin-right: 6em;
+        }
+    }
+    
+.wodge-s .wodge-button {
+    margin-left: 150px;
+    }
+
+.wodge-l .wodge-header,
+.wodge-l .wodge-text,
+.wodge-l .wodge-button {
+    margin-left: 225px;
     }

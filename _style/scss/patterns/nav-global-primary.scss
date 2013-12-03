@@ -20,11 +20,13 @@
 }
 
 .nav-global-primary ul {
-    text-align: right;
+    width: auto;
+    float: right;
     }
 
 .nav-global-primary li {
-    display: inline-block;
+    display: block;
+    float: left;
     margin: 0 0.5em;
     @include rem(font-size, 12px);
     }
@@ -52,6 +54,6 @@
     border: none;
     border-radius: 0;
     padding: 0.2em 0.2em 0.1em;
-    width: 96%;
+    width: 150px;
     margin: 0.5em 0;
     }

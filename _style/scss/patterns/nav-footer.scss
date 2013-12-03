@@ -19,18 +19,6 @@
     width: 96%;
     }
 
-@media (min-width: 30em) and (max-width: 50em)  {
-.nav-footer .nav-tier1 {
-    float: left;
-    margin-bottom: 1.5em;
-    width: 50%;
-    }
-
-.nav-footer .nav-tier1:nth-of-type(2n+2) {
-    clear: both;
-    }
-}
-
 .nav-footer .nav-tier1:first-child {
     display: none;
     }

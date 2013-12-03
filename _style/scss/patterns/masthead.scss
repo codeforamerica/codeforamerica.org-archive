@@ -6,12 +6,7 @@
     
     }
 
-@media (min-width: 40em) {
-.masthead {
-    display: block;
-    clear: both;
-    }
-}
+
 
 .masthead-hero {
     margin: 0 auto;
@@ -19,18 +14,14 @@
     width: 100%;
     text-align: center;
     z-index: -1;
+    left: 0;
     }
 
 .masthead-image {
     max-width: none;
-    
+    width: 100%;
     }
 
-@media (min-width: 70em) {
-    .masthead-image {
-      width: 100%;  
-    }
-    }
 
 .masthead-header {
     overflow: hidden;
@@ -41,6 +32,7 @@
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 0 4%;
+    clear: both;
     }
 
 .masthead-header a:link,
@@ -61,14 +53,14 @@
     }
 
 .masthead-s .masthead-header {
-    @include rem(margin, 56px auto 40px);
+    @include rem(margin, 0 auto 40px);
     }
 
 .masthead-s .page-title {
     @include rem(font-size, 50px);
     @include rem(line-height, 47px);
     float: none;
-    margin-top: 0;
+    @include rem(margin-top, 56px);
     }
 
 .masthead-s .page-title + * {

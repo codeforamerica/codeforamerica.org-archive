@@ -28,12 +28,7 @@
     border: none;
     vertical-align: top;
     @include font-sans-bold;
-    }
-
-@media (min-width: 40em) {
-    .nav-global-secondary li {
-        display: inline-block;
-        }
+    
     }
 
 .nav-global-secondary li a {
@@ -42,6 +37,7 @@
     @include color($color-black, 1);
     margin: 0 1.5em;
     @include transition(padding);
+    
     }
 
 .nav-global-secondary li a:hover,
@@ -79,9 +75,9 @@
 .nav-global-secondary .nav-tier2 {
     position: absolute;
     background-color: $color-red;
-    color: $color-white;
-    z-index: 2;
+    z-index: 3;
     width: 14em;
+    color: $color-white;
     left: 1.5em;
     padding: 0.5em 0;
     display: none;

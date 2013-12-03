@@ -11,3 +11,7 @@
     text-align: center;
     margin: -0.22em 0 0 0;
     }
+
+.page-title sup {
+	@include rem(font-size, 27px);
+	}
