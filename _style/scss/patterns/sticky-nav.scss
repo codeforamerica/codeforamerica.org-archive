@@ -25,9 +25,8 @@
     }
 
 .sticky .nav-global-secondary li .button {
-    padding: 0.3em 0.55em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    @include rem(padding, 0 12px);
+    @include rem(margin, 5px 0 2px 16px);
     }
 
 }

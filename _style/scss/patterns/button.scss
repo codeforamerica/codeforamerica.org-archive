@@ -6,22 +6,34 @@ input[type="submit"],
 .button:hover,
 .button:focus,
 .button:active {
-    display: inline-block;
-    padding: 0.8em 2em;
+    @include rem(padding, 0 26px);
+    @include rem(margin, 0 8px 8px 0);
+    @include rem(line-height, 40px);
+    @include rem(font-size, 14px);
+    @include rem(min-height, 19px);
     @include background-color($color-blue, 1);
+    display: inline-block;
+    font-weight: normal;
+    font-family: $font-sans-regular;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: none;
     color: white;
     border-radius: 0.2em;
     text-decoration: none;
     border: none;
-    margin: 0 0 0.5em 0;
-    font-size: 0.85em;
-    font-weight: normal;
-    line-height: 1.4em;
-    font-family: $font-sans-regular;
-    width: auto;
-    vertical-align: middle;
-    text-align: center;
+    -moz-box-sizing: content-box;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 40px;
+	width: auto;
+	min-width: auto;
     }
+
+button {
+	overflow: visible;
+	}
 
 button:hover,
 button:focus,
@@ -42,6 +54,15 @@ input[type="submit"]:active {
     }
 
 
+button::-moz-focus-inner,
+.button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
 input[disabled],
 input[disabled]:hover,
 input[disabled]:focus,
@@ -56,6 +77,8 @@ button[disabled]:active,
 .button.button-disabled:active {
     @include background-color($color-medium-gray, 0.8);
     cursor: not-allowed;
+    text-shadow: none;
+    color: #eee;
     }
 
 .button-prominent,

@@ -98,8 +98,3 @@ blockquote p {
     width: 1px;
     }
 
-.caption {
-    font-size: 0.8em;
-    @include color($color-medium-gray, 1);
-    vertical-align: middle;
-    }

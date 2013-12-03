@@ -52,8 +52,8 @@
 
 .nav-global-secondary li .button {
     font-size: 1em;
-    padding: 0.3em 0.55em;
-    margin: 1.8em 1em;
+    @include rem(padding, 0 12px);
+    @include rem(margin, 22px 16px);
     }
 
 .nav-global-secondary li a.button:hover,

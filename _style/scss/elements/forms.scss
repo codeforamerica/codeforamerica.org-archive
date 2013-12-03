@@ -11,12 +11,29 @@ select {
 
 input,
 select {
-    font-size: 1em;
-    line-height: 1.4em;
-    margin: 0 0.5em 0 0;
-    padding: 0.54em 0.5em;
+    @include rem(padding, 0 12px);
+    @include rem(margin, 0 8px 8px 0);
+    @include rem(line-height, 19px);
+    @include rem(font-size, 14px);
+    @include rem(min-height, 40px);
     vertical-align: middle;
+    display: inline-block;
     }
+
+select {
+	background-image: url("../images/arrow-triangle-down.png");
+	background-position: 96% center;
+	background-position: center right 15px;
+	background-repeat: no-repeat;
+	@include rem(padding, 10px 26px);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	text-indent: 0.01px;
+	text-overflow: "";
+	}
 
 label {
     display: block;
@@ -87,4 +104,18 @@ select {
 select[disabled] {
     cursor: not-allowed;
     @include background-color($color-light-gray, 0.5);
+    }
+
+.note {
+    font-size: 0.8em;
+    @include color($color-medium-gray, 1);
+    @include rem(font-size, 13px);
+    vertical-align: text-bottom;
+    display: inline-block;
+    }
+    
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     }
