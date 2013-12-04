@@ -1814,8 +1814,7 @@ nav ul li {
 }
 
 .nav-footer {
-  float: left;
-  width: 100%;
+  clear: both;
 }
 
 .nav-footer ul,
