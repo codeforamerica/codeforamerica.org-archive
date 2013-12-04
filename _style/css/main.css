@@ -1881,8 +1881,8 @@ nav ul li {
 
 .nav-global-primary li a {
   display: block;
-  padding: 0 8px;
-  padding: 0 0.5rem;
+  padding: 4px 8px 5px;
+  padding: 0.25rem 0.5rem 0.3125rem;
   color: white;
   color: white;
 }
@@ -1901,8 +1901,8 @@ nav ul li {
   border-radius: 0;
   padding: 0 0.2em;
   width: 150px;
-  margin: 4px 0 6px 0;
-  margin: 0.25rem 0 0.375rem 0;
+  margin: 2px 0 6px 0;
+  margin: 0.125rem 0 0.375rem 0;
   min-height: 0;
 }
 
@@ -2950,7 +2950,7 @@ section,
   background: black;
   clear: both;
   color: white;
-  padding: 1em 0;
+  padding: 0 0 1em;
   font-size: 1em;
   min-height: 45px;
 }
@@ -2961,7 +2961,7 @@ section,
 
 .global-foot-logo {
   width: 100px;
-  margin: 0.3em 1em 0.3em 0;
+  margin: 1em 1em 0.3em 0;
   position: absolute;
   left: 0;
 }
@@ -3079,7 +3079,7 @@ body {
   height: auto;
   border-bottom: 1px solid;
   border-color: white;
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.05);
   color: white;
   margin: 0;
   padding: 8px 16px;
@@ -3151,8 +3151,8 @@ body {
 .js-offcanvas .nav-tier2 a:hover,
 .js-offcanvas .nav-tier2 a:focus,
 .js-offcanvas .nav-tier2 a:active {
-  padding: 4px 16px;
-  padding: 0.25rem 1rem;
+  padding: 6px 16px;
+  padding: 0.375rem 1rem;
 }
 
 .js-offcanvas .search-global input {

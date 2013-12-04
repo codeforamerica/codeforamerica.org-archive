@@ -38,7 +38,7 @@
 
 .nav-global-primary li a {
     display: block;
-    @include rem(padding, 0 8px);
+    @include rem(padding, 4px 8px 5px);
     @include color($color-white, 1);
     }
 
@@ -56,7 +56,7 @@
     border-radius: 0;
     padding: 0 0.2em;
     width: 150px;
-    @include rem(margin, 4px 0 6px 0);
+    @include rem(margin, 2px 0 6px 0);
     min-height: 0;
     }
     

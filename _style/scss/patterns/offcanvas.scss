@@ -54,7 +54,7 @@ body {
 	@include rem(line-height, 20px);
 	height: auto;
     border-bottom: 1px solid;
-    @include border-color($color-white, 0.15);
+    @include border-color($color-white, 0.05);
     color: $color-white;
     margin: 0;
     @include rem(padding, 8px 16px);
@@ -124,7 +124,7 @@ body {
 .js-offcanvas .nav-tier2 a:hover,
 .js-offcanvas .nav-tier2 a:focus,
 .js-offcanvas .nav-tier2 a:active, {
-	@include rem(padding, 4px 16px);
+	@include rem(padding, 6px 16px);
 	}
 
 .js-offcanvas .search-global input {
