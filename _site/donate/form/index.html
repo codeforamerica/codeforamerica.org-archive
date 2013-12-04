@@ -26,7 +26,16 @@
 
 <nav class="nav-global-primary">
     <ul class="layout-breve layout-tight">
-        <li><a href="/_site/about/">About</a></li>
+        <li class="nav-has-children">
+        	<a href="/_site/about/">About</a>
+        	<ul class="nav-tier2">
+        		<li><a href="#">Team</a></li>
+        		<li><a href="#">Annual Report</a></li>
+        		<li><a href="#">Contact</a></li>
+        		<li><a href="#">Press</a></li>
+        		<li><a href="#">Supporters</a></li>
+        	</ul>
+        </li>
         <li><a href="/_site/blog/">Blog</a></li>
         <li><a href="/_site/library/">Library</a></li>
         <li>
@@ -86,8 +95,18 @@
                         <li><a href="/_site/apps/">Apps &amp; APIs</a></li>
                     </ul>
                 </li>
-                <li class="nav-tier1 nav-has-children"><a href="/_site/citizens/">Citizens</a></li>
-                <li class="nav-tier1 nav-has-children"><a href="/_site/apps/">Apps</a></li>
+                <li class="nav-tier1 nav-has-children">
+                	<a href="/_site/citizens/">Citizens</a>
+                	<ul class="nav-tier2">
+                		<li><a href="#">Requests</a></li>
+                		<li><a href="#">Code we Have</a></li>
+                		<li><a href="#">Events</a></li>
+                		<li><a href="#">Our geeks</a></li>
+                	</ul>
+                </li>
+                <li class="nav-tier1">
+                	<a href="/_site/apps/">Apps</a>
+                </li>
                 <li><a href="/_site/donate/" class="button">Donate</a></li>
             </ul>
         </nav>

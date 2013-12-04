@@ -291,6 +291,9 @@
     clear: both;
     }
 
+.masthead-image {	
+	display: block;
+	}
 
 
 .wodge-image {
@@ -322,4 +325,10 @@
 .wodge-l .wodge-text,
 .wodge-l .wodge-button {
     margin-left: 225px;
+    }
+    
+    
+    
+.global-header-logo {
+    margin: 1em auto;
     }

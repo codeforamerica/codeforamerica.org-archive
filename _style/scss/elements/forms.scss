@@ -51,10 +51,6 @@ input:focus {
     outline: 0;
     }
 
-input:valid {
-    color: green;
-    }
-
 input:valid ~ .input-validation::before {
     content: "✓";
     color: green;

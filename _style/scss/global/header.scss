@@ -13,9 +13,10 @@
 
 .global-header-logo {
     display: block;
-    margin: 1em auto;
+    margin: 0 auto;
     width: 8em;
     @include transition(all, 0.4s);
+    float: left;
     }
 
 .global-header-logo:link,

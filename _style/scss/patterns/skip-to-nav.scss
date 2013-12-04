@@ -21,14 +21,8 @@
 .skip-to-nav a {
     @include color($color-black, 1);
     border-bottom: none;
-    padding: 1em 0;
+    @include rem(padding, 11px 0);
     display: block;
-    }
-
-.skip-to-nav a:hover,
-.skip-to-nav a:focus,
-.skip-to-nav a:active {
-    @include color($color-red, 1);
     }
 
 .skip-to-nav a:after {
@@ -42,9 +36,10 @@
 .slid .skip-to-nav a:hover,
 .slid .skip-to-nav a:focus,
 .slid .skip-to-nav a:active {
-    @include color($color-red, 1);
+    color: $color-black;
     }
 
 .slid .skip-to-nav a:after {
     content: (" ×");
+    color: $color-red;
     }

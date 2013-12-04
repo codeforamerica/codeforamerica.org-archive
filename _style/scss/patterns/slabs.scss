@@ -29,6 +29,7 @@ section,
     
 .slab-dark-blue {
     @include background-color($color-dark-blue, 1);
+    color: $color-white;
     }
 
 .slab-red {

@@ -724,10 +724,6 @@ input:focus {
   outline: 0;
 }
 
-input:valid {
-  color: green;
-}
-
 input:valid ~ .input-validation::before {
   content: "✓";
   color: green;
@@ -1310,6 +1306,7 @@ input.button-subtle:active,
 .masthead-image {
   max-width: none;
   width: 100%;
+  display: none;
 }
 
 .masthead-header {
@@ -1499,14 +1496,14 @@ input.button-subtle:active,
 }
 
 .list-no-bullets, .bricks, .list-ruled, .nav-footer ul,
-.nav-footer ul ul, .nav-global-secondary ul, .js-offcanvas .nav-global-primary ul, .nav-tabs, .post-categories {
+.nav-footer ul ul, .nav-global-secondary ul, .nav-tabs, .post-categories {
   margin-left: 0;
   float: left;
   width: 100%;
   padding: 0;
 }
 
-.list-no-bullets li, .bricks li, .list-ruled li, .nav-footer ul li, .nav-global-secondary ul li, .js-offcanvas .nav-global-primary ul li, .nav-tabs li, .post-categories li {
+.list-no-bullets li, .bricks li, .list-ruled li, .nav-footer ul li, .nav-global-secondary ul li, .nav-tabs li, .post-categories li {
   list-style-type: none;
   background-image: none;
   padding-left: 0;
@@ -1673,8 +1670,8 @@ input.button-subtle:active,
 }
 
 .js .list-credits.state-closed {
-  max-height: 120px;
-  max-height: 7.5rem;
+  height: 120px;
+  height: 7.5rem;
 }
 
 .list-credits a {
@@ -1871,9 +1868,12 @@ nav ul li {
 .nav-global-primary li {
   display: block;
   float: left;
-  margin: 0 0.5em;
+  margin: 6px 10px 2px;
+  margin: 0.375rem 0.625rem 0.125rem;
   font-size: 12px;
   font-size: 0.75rem;
+  line-height: 16px;
+  line-height: 1rem;
 }
 
 .nav-global-primary li:last-child {
@@ -1882,7 +1882,8 @@ nav ul li {
 
 .nav-global-primary li a {
   display: block;
-  padding: 0em 0.5em;
+  padding: 0 8px;
+  padding: 0 0.5rem;
   color: white;
   color: white;
 }
@@ -1901,33 +1902,38 @@ nav ul li {
   border-radius: 0;
   padding: 0 0.2em;
   width: 150px;
-  margin: 0.5em 0;
+  margin: 4px 0 6px 0;
+  margin: 0.25rem 0 0.375rem 0;
   min-height: 0;
 }
 
-.nav-global-secondary, .js-offcanvas .nav-global-primary {
+.nav-global-primary .nav-tier2 {
+  display: none;
+}
+
+.nav-global-secondary {
   text-transform: uppercase;
 }
 
 @media (min-width: 40em) {
-  .nav-global-secondary, .js-offcanvas .nav-global-primary {
+  .nav-global-secondary {
     width: auto;
     float: right;
   }
 
-  .nav-global-secondary ul, .js-offcanvas .nav-global-primary ul {
+  .nav-global-secondary ul {
     display: table;
   }
 
-  .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
+  .nav-global-secondary li {
     display: table-cell;
   }
 }
-.nav-global-secondary ul, .js-offcanvas .nav-global-primary ul {
+.nav-global-secondary ul {
   margin: 0;
 }
 
-.nav-global-secondary li, .js-offcanvas .nav-global-primary li {
+.nav-global-secondary li {
   border: none;
   vertical-align: top;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -1935,7 +1941,7 @@ nav ul li {
   font-style: normal;
 }
 
-.nav-global-secondary li a, .js-offcanvas .nav-global-primary li a {
+.nav-global-secondary li a {
   padding: 2em 1em;
   display: block;
   color: black;
@@ -1945,22 +1951,17 @@ nav ul li {
   transition: padding 0.25s ease;
 }
 
-.nav-global-secondary li a:hover, .js-offcanvas .nav-global-primary li a:hover,
+.nav-global-secondary li a:hover,
 .nav-global-secondary li a:focus,
-.js-offcanvas .nav-global-primary li a:focus,
 .nav-global-secondary li a:active,
-.js-offcanvas .nav-global-primary li a:active,
 .nav-global-secondary li:hover a,
-.js-offcanvas .nav-global-primary li:hover a,
 .nav-global-secondary li:focus a,
-.js-offcanvas .nav-global-primary li:focus a,
-.nav-global-secondary li:active a,
-.js-offcanvas .nav-global-primary li:active a {
+.nav-global-secondary li:active a {
   color: white;
   background-color: #cf1b41;
 }
 
-.nav-global-secondary li .button, .js-offcanvas .nav-global-primary li .button {
+.nav-global-secondary li .button {
   font-size: 1em;
   padding: 0 12px;
   padding: 0 0.75rem;
@@ -1968,23 +1969,21 @@ nav ul li {
   margin: 1.375rem 1rem;
 }
 
-.nav-global-secondary li a.button:hover, .js-offcanvas .nav-global-primary li a.button:hover,
+.nav-global-secondary li a.button:hover,
 .nav-global-secondary li a.button:focus,
-.js-offcanvas .nav-global-primary li a.button:focus,
-.nav-global-secondary li a.button:active,
-.js-offcanvas .nav-global-primary li a.button:active {
+.nav-global-secondary li a.button:active {
   color: white;
 }
 
-.nav-global-secondary li:last-child a, .js-offcanvas .nav-global-primary li:last-child a {
+.nav-global-secondary li:last-child a {
   margin-right: 0;
 }
 
-.nav-global-secondary .nav-tier1, .js-offcanvas .nav-global-primary .nav-tier1 {
+.nav-global-secondary .nav-tier1 {
   position: relative;
 }
 
-.nav-global-secondary .nav-tier2, .js-offcanvas .nav-global-primary .nav-tier2 {
+.nav-global-secondary .nav-tier2 {
   position: absolute;
   background-color: #cf1b41;
   z-index: 3;
@@ -1997,25 +1996,23 @@ nav ul li {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.nav-global-secondary .nav-tier1:hover .nav-tier2, .js-offcanvas .nav-global-primary .nav-tier1:hover .nav-tier2 {
+.nav-global-secondary .nav-tier1:hover .nav-tier2 {
   display: block;
 }
 
-.nav-global-secondary .nav-tier2 li, .js-offcanvas .nav-global-primary .nav-tier2 li {
+.nav-global-secondary .nav-tier2 li {
   width: 100%;
 }
 
-.nav-global-secondary .nav-tier2 a, .js-offcanvas .nav-global-primary .nav-tier2 a {
+.nav-global-secondary .nav-tier2 a {
   margin: 0;
   padding: 0.5em 1em;
   color: white;
 }
 
-.nav-global-secondary .nav-tier2 a:hover, .js-offcanvas .nav-global-primary .nav-tier2 a:hover,
+.nav-global-secondary .nav-tier2 a:hover,
 .nav-global-secondary .nav-tier2 a:focus,
-.js-offcanvas .nav-global-primary .nav-tier2 a:focus,
-.nav-global-secondary .nav-tier2 a:active,
-.js-offcanvas .nav-global-primary .nav-tier2 a:active {
+.nav-global-secondary .nav-tier2 a:active {
   background-color: black;
 }
 
@@ -2445,15 +2442,9 @@ nav ul li {
   color: black;
   color: black;
   border-bottom: none;
-  padding: 1em 0;
+  padding: 11px 0;
+  padding: 0.6875rem 0;
   display: block;
-}
-
-.skip-to-nav a:hover,
-.skip-to-nav a:focus,
-.skip-to-nav a:active {
-  color: #cf1b41;
-  color: #cf1b41;
 }
 
 .skip-to-nav a:after {
@@ -2467,12 +2458,12 @@ nav ul li {
 .slid .skip-to-nav a:hover,
 .slid .skip-to-nav a:focus,
 .slid .skip-to-nav a:active {
-  color: #cf1b41;
-  color: #cf1b41;
+  color: black;
 }
 
 .slid .skip-to-nav a:after {
   content: " ×";
+  color: #cf1b41;
 }
 
 section,
@@ -2507,6 +2498,7 @@ section,
 .slab-dark-blue {
   background: #004b6a;
   background: #004b6a;
+  color: white;
 }
 
 .slab-red {
@@ -2836,10 +2828,11 @@ section,
 
 .global-header-logo {
   display: block;
-  margin: 1em auto;
+  margin: 0 auto;
   width: 8em;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  float: left;
 }
 
 .global-header-logo:link,
@@ -3054,63 +3047,71 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  border-top: 5px solid;
+  border-color: #399fd3;
 }
 
-.js-offcanvas .nav-global-secondary, .js-offcanvas .nav-global-primary {
+.js-offcanvas .nav-global-secondary {
   width: 100%;
   padding: 0;
 }
 
-.js-offcanvas .nav-global-secondary li, .js-offcanvas .nav-global-primary li {
+.js-offcanvas li {
+  font-size: 14px;
+  font-size: 0.875rem;
   clear: both;
   width: 100%;
   margin: 0;
-  text-align: center;
-  font-size: 1em;
+  text-align: left;
 }
 
-.js-offcanvas .nav-global-secondary li a:link, .js-offcanvas .nav-global-primary li a:link,
-.js-offcanvas .nav-global-secondary li a:visited,
-.js-offcanvas .nav-global-primary li a:visited,
-.js-offcanvas .nav-global-secondary li a:hover,
-.js-offcanvas .nav-global-primary li a:hover,
-.js-offcanvas .nav-global-secondary li a:focus,
-.js-offcanvas .nav-global-primary li a:focus,
-.js-offcanvas .nav-global-secondary li a:active,
-.js-offcanvas .nav-global-primary li a:active,
-.js-offcanvas .nav-global-secondary li .button:link,
-.js-offcanvas .nav-global-primary li .button:link,
-.js-offcanvas .nav-global-secondary li .button:visited,
-.js-offcanvas .nav-global-primary li .button:visited,
-.js-offcanvas .nav-global-secondary li .button:hover,
-.js-offcanvas .nav-global-primary li .button:hover,
-.js-offcanvas .nav-global-secondary li .button:focus,
-.js-offcanvas .nav-global-primary li .button:focus,
-.js-offcanvas .nav-global-secondary li .button:active,
-.js-offcanvas .nav-global-primary li .button:active {
+.js-offcanvas li a:link,
+.js-offcanvas li a:visited,
+.js-offcanvas li a:hover,
+.js-offcanvas li a:focus,
+.js-offcanvas li a:active,
+.js-offcanvas li .button:link,
+.js-offcanvas li .button:visited,
+.js-offcanvas li .button:hover,
+.js-offcanvas li .button:focus,
+.js-offcanvas li .button:active {
+  line-height: 20px;
+  line-height: 1.25rem;
+  height: auto;
   border-bottom: 1px solid;
   border-color: white;
   border-color: rgba(255, 255, 255, 0.15);
   color: white;
   margin: 0;
-  padding: 0.5em 1em;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background-color: transparent;
   font-weight: normal;
   display: block;
+  text-align: left;
 }
 
-.js-offcanvas .nav-global-secondary li a:hover, .js-offcanvas .nav-global-primary li a:hover,
-.js-offcanvas .nav-global-secondary li a:focus,
-.js-offcanvas .nav-global-primary li a:focus,
-.js-offcanvas .nav-global-secondary li a:active,
-.js-offcanvas .nav-global-primary li a:active,
-.js-offcanvas .nav-global-secondary li .button:hover,
-.js-offcanvas .nav-global-primary li .button:hover,
-.js-offcanvas .nav-global-secondary li .button:focus,
-.js-offcanvas .nav-global-primary li .button:focus,
-.js-offcanvas .nav-global-secondary li .button:active,
-.js-offcanvas .nav-global-primary li .button:active {
-  background-color: #cf1b41;
+.js-offcanvas li a:hover,
+.js-offcanvas li a:focus,
+.js-offcanvas li a:active,
+.js-offcanvas li .button:hover,
+.js-offcanvas li .button:focus,
+.js-offcanvas li .button:active {
+  background-color: black;
+}
+
+.js-offcanvas li.nav-has-children > a {
+  background-image: url("../images/arrow-chevron-down-gray-dark.png");
+  background-position: right 16px top 13px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.js-offcanvas li.state-open > a {
+  background-image: url("../images/arrow-chevron-up-gray-light.png");
+  background-position: right 16px top 13px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
 }
 
 .js-offcanvas .nav-global-primary {
@@ -3119,6 +3120,51 @@ body {
   clear: both;
   background-color: #494c49;
   width: 100%;
+}
+
+.js-offcanvas .nav-global-primary .nav-tier2 {
+  display: block;
+}
+
+.js-offcanvas .nav-global-primary ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.js-offcanvas .nav-tier2,
+.js-offcanvas .nav-global-primary .nav-tier2,
+.js-offcanvas .nav-global-secondary .nav-tier2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  text-transform: none;
+}
+
+.js-offcanvas .nav-tier2 a:link,
+.js-offcanvas .nav-tier2 a:visited,
+.js-offcanvas .nav-tier2 a:hover,
+.js-offcanvas .nav-tier2 a:focus,
+.js-offcanvas .nav-tier2 a:active {
+  padding: 4px 16px;
+  padding: 0.25rem 1rem;
+}
+
+.js-offcanvas .search-global input {
+  border: 1px solid;
+  border-color: #6d6e71;
+  background-color: transparent;
+  padding: 5px 2% 5px 2px;
+  width: 95%;
+  width: calc(99% - 9px);
+  color: white;
+  margin-left: 7px;
 }
 
 @media (min-width: 40em) and (min-height: 30em) {
@@ -3139,12 +3185,12 @@ body {
     margin: 0.4em 0 0 0;
   }
 
-  .sticky .nav-global-secondary li a, .sticky .js-offcanvas .nav-global-primary li a, .js-offcanvas .sticky .nav-global-primary li a {
+  .sticky .nav-global-secondary li a {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
   }
 
-  .sticky .nav-global-secondary li .button, .sticky .js-offcanvas .nav-global-primary li .button, .js-offcanvas .sticky .nav-global-primary li .button {
+  .sticky .nav-global-secondary li .button {
     padding: 0 12px;
     padding: 0 0.75rem;
     margin: 5px 0 2px 16px;

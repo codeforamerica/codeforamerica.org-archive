@@ -27,8 +27,9 @@
 .nav-global-primary li {
     display: block;
     float: left;
-    margin: 0 0.5em;
+    @include rem(margin, 6px 10px 2px);
     @include rem(font-size, 12px);
+    @include rem(line-height, 16px);
     }
 
 .nav-global-primary li:last-child {
@@ -37,7 +38,7 @@
 
 .nav-global-primary li a {
     display: block;
-    padding: 0em 0.5em;
+    @include rem(padding, 0 8px);
     @include color($color-white, 1);
     }
 
@@ -55,6 +56,10 @@
     border-radius: 0;
     padding: 0 0.2em;
     width: 150px;
-    margin: 0.5em 0;
+    @include rem(margin, 4px 0 6px 0);
     min-height: 0;
     }
+    
+.nav-global-primary .nav-tier2 {
+	display: none;
+	}
