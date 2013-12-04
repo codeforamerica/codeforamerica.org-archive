@@ -23,14 +23,17 @@
     }
 
 .global-footer .search-global input {
-    width: 90%;
     margin: 0;
     background-color: transparent;
     @include color($color-white, 1);
-    @include rem(font-size, 18px);
+    @include rem(font-size, 14px);
     @include rem(padding, 5px 15px);
     color: $color-white;
     text-transform: none;
+    width: 100%;
+    padding: 2px 5px;
+    line-height: inherit;
+    min-height: 33px;
     }
 
 .global-footer .search-global input:focus {

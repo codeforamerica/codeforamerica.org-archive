@@ -2872,17 +2872,20 @@ section,
 }
 
 .global-footer .search-global input {
-  width: 90%;
   margin: 0;
   background-color: transparent;
   color: white;
   color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   padding: 5px 15px;
   padding: 0.3125rem 0.9375rem;
   color: white;
   text-transform: none;
+  width: 100%;
+  padding: 2px 5px;
+  line-height: inherit;
+  min-height: 33px;
 }
 
 .global-footer .search-global input:focus {
