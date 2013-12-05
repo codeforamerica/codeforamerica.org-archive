@@ -526,18 +526,20 @@ h1,
 .h1,
 h2,
 .h2 {
-  font-size: 40px;
   line-height: 44px;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
+  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: none;
 }
 
 h3,
 .h3 {
   font-size: 30px;
+  font-size: 1.875rem;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -548,6 +550,7 @@ h3,
 h4,
 .h4 {
   font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -555,12 +558,32 @@ h4,
 }
 
 h5,
-h6,
-.h5,
-.h6 {
-  font-size: 22px;
+.h5 {
+  font-size: 17px;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   text-transform: uppercase;
+}
+
+h6,
+.h6,
+.text-quiet,
+.text-whisper,
+.heading-contrast,
+.brick-heading,
+.chimney .profile .profile-role,
+.chimney .profile .profile-note,
+.list-icons li a {
+  text-transform: uppercase;
+  margin: 0;
+  margin: 0 0 15px 0;
+  margin: 0 0 0.9375rem 0;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.8em;
+  color: black;
+  font-weight: normal;
+  letter-spacing: 0.8px;
 }
 
 a:link,
@@ -597,13 +620,16 @@ a img {
   border: none;
 }
 
-ol {
-  margin: 0.5em 0 0.5em 1.4em;
+ol,
+ul {
+  margin: 8px 0;
+  margin: 0.5rem 0;
+  padding: 0 0 0 35px;
+  padding: 0 0 0 2.1875rem;
 }
 
 ul {
   padding-left: 0;
-  margin-left: 0;
 }
 
 ol li {
@@ -806,20 +832,6 @@ input[type="search"] {
 }
 
 /* Text Styles */
-.text-quiet, .text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note, .list-icons li a {
-  text-transform: uppercase;
-  margin: 0;
-  margin: 0 0 15px 0;
-  margin: 0 0 0.9375rem 0;
-  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1.8em;
-  color: black;
-  font-weight: normal;
-  letter-spacing: 0.8px;
-}
-
 .text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note, .list-icons li a {
   color: #6d6e71;
 }

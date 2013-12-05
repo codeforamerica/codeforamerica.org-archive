@@ -1,10 +1,11 @@
-ol {
-    margin: 0.5em 0 0.5em 1.4em;
+ol,
+ul {
+    @include rem(margin, 8px 0);
+    @include rem(padding, 0 0 0 35px);
     }
 
 ul {
     padding-left: 0;
-    margin-left: 0;
     }
 
 ol li {

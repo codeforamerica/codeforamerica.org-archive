@@ -13,30 +13,41 @@ h1,
 .h1,
 h2,
 .h2 {
-    font-size: 40px;
     line-height: 44px;
     @include font-serif-bold;
+    @include rem(font-size, 40px);
     text-transform: none;
     }
 
 h3,
 .h3 {
-    font-size: 30px;
+    @include rem(font-size, 30px);
     @include font-serif-bold;
     line-height: 1.15em;
     }
 
 h4,
 .h4 {
-    font-size: 24px;
+    @include rem(font-size, 24px);
     @include font-serif-bold;
     }
 
 h5,
-h6,
-.h5,
-.h6 {
-    font-size: 22px;
+.h5 {
+    font-size: 17px;
     font-family: $font-sans-regular;
     text-transform: uppercase;
+    }
+
+h6,
+.h6 {
+    text-transform: uppercase;
+    margin: 0;
+    @include rem(margin, 0 0 15px 0);
+    font-family: $font-sans-regular;
+    @include rem(font-size, 12px);
+    line-height: 1.8em;
+    color: $color-black;
+    font-weight: normal;
+    letter-spacing: 0.8px;
     }
