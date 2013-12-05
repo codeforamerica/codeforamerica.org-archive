@@ -4,6 +4,10 @@
     width: 140px;
     }
 
+.profile-note .list-social {
+	min-height: 30px;
+	}
+
 .profile-note .list-social,
 .profile-note .list-social a,
 .profile-note .list-social a:link,
@@ -14,4 +18,48 @@
     @include color($color-red, 1);
     @include font-sans-bold;
     text-transform: uppercase;
+    border-bottom: none;
     }
+
+.profile-note .list-social {
+	text-align: center;
+	display: table;
+	width: 100%;
+	}
+
+.profile-note .list-social li {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	background-position: top center;
+	background-size: 22px 22px;
+	}
+
+
+.profile-note .list-social li:after {
+	}
+	
+.profile-note .list-social .social-twitter {
+	background-image: url('../images/twitter2.png');
+	text-indent: -9999px;
+	}
+
+.profile-note .list-social .social-linkedin {
+	background-image: url('../images/linkedin.png');
+	text-indent: -9999px;
+	}
+
+.profile-note .list-social .social-github {
+	background-image: url('../images/github5.png');
+	text-indent: -9999px;
+	}
+
+.profile-note .list-social a {
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	
+	width: 32px;
+	height: 32px;
+	padding: 0 5px;
+	display: block;
+	}

@@ -5,6 +5,7 @@
     <ul>
     {% if num_parts == "0" or num_parts == "-1" %}
         <li><a href="/_site/home">Home</a></li>
+        <li><a href="{{previous}}">{{ page.title }}</a></li>
     {% else %}
         <li><a href="/_site/home">Home</a></li>
         {% for unused in page.content limit:num_parts %}

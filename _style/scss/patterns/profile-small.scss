@@ -37,7 +37,7 @@
 .profile-small .list-social {
     @include background-color($color-light-gray, 0.8);
     margin: 0;
-    padding: 0.8em 0;
+    padding: 0.8em 0 0.2em 0;
     }
 
 .profile-small .list-social li {

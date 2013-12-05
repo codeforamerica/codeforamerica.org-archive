@@ -17,6 +17,10 @@
     margin-right: 0;
     text-transform: capitalize;
     }
+    
+.nav-breadcrumbs ul li:first-child {   
+    padding-left: 4px;
+    }
 
 .nav-breadcrumbs li:last-child {
     padding: 0.5em;
@@ -29,6 +33,7 @@
     background-size: 55px;
     background-repeat: no-repeat;
     background-position: left center;
+    
     }
 
 .nav-breadcrumbs li:first-child:hover,

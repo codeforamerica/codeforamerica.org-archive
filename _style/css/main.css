@@ -1821,6 +1821,10 @@ nav ul li {
   text-transform: capitalize;
 }
 
+.nav-breadcrumbs ul li:first-child {
+  padding-left: 4px;
+}
+
 .nav-breadcrumbs li:last-child {
   padding: 0.5em;
   background-image: none;
@@ -2167,6 +2171,31 @@ nav ul li {
   margin-left: -16px;
 }
 
+.nav-tags li {
+  display: inline-block;
+}
+
+.nav-tags li a {
+  background: #6d6e71;
+  background: rgba(109, 110, 113, 0.4);
+  color: white;
+  display: block;
+  font-weight: normal;
+  padding: 3px 13px;
+  padding: 0.1875rem 0.8125rem;
+  border-radius: 3px;
+  margin: 0 5px 8px 0;
+  margin: 0 0.3125rem 0.5rem 0;
+}
+
+.nav-tags li a:hover,
+.nav-tags li a:focus,
+.nav-tags li a:active,
+.nav-tags .state-active a {
+  background: #399fd3;
+  background: rgba(57, 159, 211, 0.6);
+}
+
 .page-title {
   line-height: 1.2em;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -2307,6 +2336,10 @@ nav ul li {
   width: 140px;
 }
 
+.profile-note .list-social {
+  min-height: 30px;
+}
+
 .profile-note .list-social,
 .profile-note .list-social a,
 .profile-note .list-social a:link,
@@ -2320,6 +2353,45 @@ nav ul li {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+  border-bottom: none;
+}
+
+.profile-note .list-social {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+
+.profile-note .list-social li {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  background-position: top center;
+  background-size: 22px 22px;
+}
+
+.profile-note .list-social .social-twitter {
+  background-image: url("../images/twitter2.png");
+  text-indent: -9999px;
+}
+
+.profile-note .list-social .social-linkedin {
+  background-image: url("../images/linkedin.png");
+  text-indent: -9999px;
+}
+
+.profile-note .list-social .social-github {
+  background-image: url("../images/github5.png");
+  text-indent: -9999px;
+}
+
+.profile-note .list-social a {
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 32px;
+  height: 32px;
+  padding: 0 5px;
+  display: block;
 }
 
 .profile-small {
@@ -2369,7 +2441,7 @@ nav ul li {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.8);
   margin: 0;
-  padding: 0.8em 0;
+  padding: 0.8em 0 0.2em 0;
 }
 
 .profile-small .list-social li {
