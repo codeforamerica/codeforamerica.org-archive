@@ -1,9 +1,18 @@
-<div class="masthead masthead-l">
+<div class="masthead {% if page.path contains '_posts' %}masthead-s{% else %}masthead-l{% endif %}">
     <div class="masthead-hero">
-        <img src="/_media/images/masthead-2.jpg" class="masthead-image"/>
+        <img src="/_media/images/masthead/{% if page.masthead-image %}{{ page.masthead-image }}{% elsif page.path contains '_posts' %}masthead-3.jpg{% else %}masthead-2.jpg{% endif %}" class="masthead-image"/>
     </div>
     <header class="layout-semibreve masthead-header">
+        {% if page.path contains '_posts' %}
+        <nav class="nav-breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        {% else %}
         {% include /blocks/patterns/nav-breadcrumb.html %}
+        {% endif %}
         <h1 class="page-title" >{% if page.path contains '_posts' %}
         Blogging [for America]
         {% else %}

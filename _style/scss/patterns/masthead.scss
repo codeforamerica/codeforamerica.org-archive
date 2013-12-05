@@ -55,14 +55,15 @@
     }
 
 .masthead-s .masthead-header {
-    @include rem(margin, 0 auto 40px);
+    @include rem(margin, 40px auto 20px);
     }
 
 .masthead-s .page-title {
-    @include rem(font-size, 50px);
-    @include rem(line-height, 47px);
+    @include rem(font-size, 70px);
+    @include rem(line-height, 71px);
     float: none;
     @include rem(margin-top, 56px);
+    margin-top: 0;
     }
 
 .masthead-s .page-title + * {
@@ -95,6 +96,8 @@
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
     @include color($color-white, 1);
+    padding-top: 0;
+    padding-bottom: 0;
     }
 
 .masthead-header .nav-breadcrumbs a:hover,

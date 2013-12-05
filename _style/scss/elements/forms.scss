@@ -23,7 +23,7 @@ select {
 select {
 	background-image: url("../images/arrow-triangle-down.png");
 	background-position: 96% center;
-	background-position: center right 15px;
+	background-position: top 12px right 15px;
 	background-repeat: no-repeat;
 	@include rem(padding, 10px 26px);
 	-webkit-appearance: none;
@@ -33,6 +33,10 @@ select {
 	appearance: none;
 	text-indent: 0.01px;
 	text-overflow: "";
+	font-size: 1em;
+	line-height: 1.4em;
+	-webkit-appearance: none;
+	min-width: 150px;
 	}
 
 label {
@@ -90,12 +94,9 @@ fieldset {
     border: none;
     }
 
-select {
-    font-size: 1em;
-    line-height: 1.4em;
-    -webkit-appearance: none;
-    min-width: 150px;
-    }
+select:hover {	
+	cursor: pointer;
+	}
 
 select[disabled] {
     cursor: not-allowed;

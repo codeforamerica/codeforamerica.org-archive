@@ -524,6 +524,7 @@ h2,
   font-style: normal;
   letter-spacing: -0.5px;
   text-transform: none;
+  letter-spacing: -3px;
 }
 
 h3,
@@ -693,7 +694,7 @@ select {
 select {
   background-image: url("../images/arrow-triangle-down.png");
   background-position: 96% center;
-  background-position: center right 15px;
+  background-position: top 12px right 15px;
   background-repeat: no-repeat;
   padding: 10px 26px;
   padding: 0.625rem 1.625rem;
@@ -704,6 +705,10 @@ select {
   appearance: none;
   text-indent: 0.01px;
   text-overflow: "";
+  font-size: 1em;
+  line-height: 1.4em;
+  -webkit-appearance: none;
+  min-width: 150px;
 }
 
 label {
@@ -766,11 +771,8 @@ fieldset {
   border: none;
 }
 
-select {
-  font-size: 1em;
-  line-height: 1.4em;
-  -webkit-appearance: none;
-  min-width: 150px;
+select:hover {
+  cursor: pointer;
 }
 
 select[disabled] {
@@ -1338,18 +1340,19 @@ input.button-subtle:active,
   }
 }
 .masthead-s .masthead-header {
-  margin: 0 auto 40px;
-  margin: 0 auto 2.5rem;
+  margin: 40px auto 20px;
+  margin: 2.5rem auto 1.25rem;
 }
 
 .masthead-s .page-title {
-  font-size: 50px;
-  font-size: 3.125rem;
-  line-height: 47px;
-  line-height: 2.9375rem;
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 71px;
+  line-height: 4.4375rem;
   float: none;
   margin-top: 56px;
   margin-top: 3.5rem;
+  margin-top: 0;
 }
 
 .masthead-s .page-title + * {
@@ -1383,6 +1386,8 @@ input.button-subtle:active,
 .masthead-header .nav-breadcrumbs a:active {
   color: white;
   color: white;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .masthead-header .nav-breadcrumbs a:hover,
