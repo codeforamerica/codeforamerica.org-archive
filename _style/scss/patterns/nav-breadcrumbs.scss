@@ -1,5 +1,6 @@
 .nav-breadcrumbs {
     @include color($color-gray, 0.7);
+    
     }
 
 .nav-breadcrumbs ul {
@@ -45,6 +46,7 @@
     padding: 0.5em 0.5em 0.5em 0.25em;
     display: inline-block;
     @include color($color-gray, 1);
+    z-index: 3;
     }
 
 .nav-breadcrumbs a:hover,

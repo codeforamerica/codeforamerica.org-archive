@@ -35,6 +35,7 @@
     margin-bottom: 1em;
     padding: 0 4%;
     clear: both;
+    position: relative;
     }
 
 .masthead-header a:link,
@@ -64,6 +65,7 @@
     float: none;
     @include rem(margin-top, 56px);
     margin-top: 0;
+    @include rem(margin-top, 25px);
     }
 
 .masthead-s .page-title + * {
@@ -74,9 +76,9 @@
 
 
 .masthead-l .masthead-header {
-    padding-top: 13em;
+    margin-top: 11em;
     padding-bottom: 1em;
-    margin-top: 3em;
+    padding-top: 2em;
     margin-bottom: 0;
     }
 
@@ -87,7 +89,8 @@
 .masthead-header .nav-breadcrumbs {
     float: left;
     @include color($color-white, 0.7);
-    
+    position: absolute;
+    top: 0;
     }
 
 .masthead-header .nav-breadcrumbs a:link,

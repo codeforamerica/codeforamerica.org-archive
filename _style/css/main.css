@@ -86,6 +86,10 @@
   content: "\e601";
 }
 
+.icon-twitter2:before {
+  content: "\e49d";
+}
+
 .icon-feed:before {
   content: "\e602";
 }
@@ -390,6 +394,10 @@
   content: "\e6b3";
 }
 
+.icon-grid:before {
+  content: "\e2a0";
+}
+
 /* Elements */
 body {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -480,7 +488,8 @@ blockquote {
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 1.05em;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.3em;
 }
 
@@ -524,7 +533,6 @@ h2,
   font-style: normal;
   letter-spacing: -0.5px;
   text-transform: none;
-  letter-spacing: -3px;
 }
 
 h3,
@@ -1321,6 +1329,7 @@ input.button-subtle:active,
   margin-bottom: 1em;
   padding: 0 4%;
   clear: both;
+  position: relative;
 }
 
 .masthead-header a:link,
@@ -1353,6 +1362,8 @@ input.button-subtle:active,
   margin-top: 56px;
   margin-top: 3.5rem;
   margin-top: 0;
+  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 
 .masthead-s .page-title + * {
@@ -1363,9 +1374,9 @@ input.button-subtle:active,
 }
 
 .masthead-l .masthead-header {
-  padding-top: 13em;
+  margin-top: 11em;
   padding-bottom: 1em;
-  margin-top: 3em;
+  padding-top: 2em;
   margin-bottom: 0;
 }
 
@@ -1377,6 +1388,8 @@ input.button-subtle:active,
   float: left;
   color: white;
   color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
 }
 
 .masthead-header .nav-breadcrumbs a:link,
@@ -1755,6 +1768,40 @@ nav ul li {
   padding-left: 0;
 }
 
+.nav-articles {
+  background-color: #e5e5e5;
+}
+
+.nav-articles ul {
+  margin: 0 auto;
+  display: table;
+}
+
+.nav-articles li {
+  display: table-cell;
+  margin: 0 2em;
+}
+
+.nav-articles li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #6d6e71;
+}
+
+.nav-articles li [rel="prev"] {
+  background-image: url("../images/arrow-breadcrumb.png");
+  padding-left: 28px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.nav-articles li [rel="next"] {
+  background-image: url("../images/arrow-breadcrumb.png");
+  padding-right: 28px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
 .nav-breadcrumbs {
   color: #6d6e71;
   color: rgba(109, 110, 113, 0.7);
@@ -1803,6 +1850,7 @@ nav ul li {
   display: inline-block;
   color: #6d6e71;
   color: #6d6e71;
+  z-index: 3;
 }
 
 .nav-breadcrumbs a:hover,
@@ -2025,6 +2073,7 @@ nav ul li {
   background: #004b6a;
   margin-bottom: 2em;
   text-align: center;
+  clear: both;
 }
 
 .nav-page ul {
@@ -2133,6 +2182,7 @@ nav ul li {
   font-size: 3.125rem;
   text-align: center;
   margin: -0.22em 0 0 0;
+  letter-spacing: -3px;
 }
 
 .page-title sup {

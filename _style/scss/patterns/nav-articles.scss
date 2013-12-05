@@ -1,0 +1,34 @@
+.nav-articles {
+	@extend .nav-pages;
+	background-color: $color-light-gray;
+	}
+
+.nav-articles ul {
+	margin: 0 auto;
+	display: table;
+	}
+
+.nav-articles li {
+	display: table-cell;
+	margin: 0 2em;
+	}
+
+.nav-articles li a {
+	display: block;
+	padding: 0.5em 1em;
+	color: $color-gray;
+	}
+
+.nav-articles li [rel="prev"] {
+    background-image: url('../images/arrow-breadcrumb.png');
+    padding-left: 28px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    }
+
+.nav-articles li [rel="next"] {
+    background-image: url('../images/arrow-breadcrumb.png');
+    padding-right: 28px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    }

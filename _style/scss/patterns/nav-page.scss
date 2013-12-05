@@ -1,7 +1,8 @@
 .nav-page {
     @include background-color($color-dark-blue, 1);
     margin-bottom: 2em;
-    text-align: center
+    text-align: center;
+    clear: both;
     }
 
 .nav-page ul {

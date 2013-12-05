@@ -1,3 +1,8 @@
+blockquote {
+    font-size: 1.2em;
+    margin: 0;
+    }
+
 /* Layout ========================================== */
 
 // IE 7 doesn't understand a range of pseudo-classes. By default, there is no margin unless that column is next to another column. Margins are applied to the left. This means the first column doesn't get a margin, so a 3-col layout doesn't break in old versions of IE.

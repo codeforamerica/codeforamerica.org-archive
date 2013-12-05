@@ -29,34 +29,45 @@
                     </div>
                     
                     <div class="post-author">
-                        <h2 class="text-whisper">Written by:</h2>
+                        <h2 class="text-whisper layout-tight">Written by</h2>
                         <div class="h-card">
                             <h3 class="p-name profile-name">Zachary Townsend</h3>
                             <img class="u-photo profile-photo" src="/_media/images/avatar-zachary-townsend.jpg" />
                         </div>
                         
                         <div class="p-note profile-note">
-                            <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments. As a private consultant, I used my love of data and passion for technology to work with New York City Administration for Children’s Services to improve services for children just like me, and many that were in much worse circumstances. From there, I worked in the Newark, N.J. Mayor’s Office to leverage technology to improve city life and services.</p>
-                            <p><a class="link-more" href="#">More</a></p>
+                            <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments.</p>
                         </div>
                         
                         <div>
-                            <h2 class="text-whisper">Filed under</h2>
+                            <h2 class="text-quiet layout-tight">Filed under</h2>
                             <ul class="post-categories">
-                                {% assign tags_list = page.tags %}
-                                {% for tags in site.tags %}
-                                <li>
-                                    {{ tag | first }}
-                                </li>
-                                {% endfor %}
+                                <li><a href="#">Accelerator</a></li>
+                                <li><a href="#">Commentary</a></li>
+                                <li><a href="#">Guest Post</a></li>
+                                <li><a href="#">Mentor</a></li>
                             </ul>
                         </div>
                         
-                    </div>  
+                    </div><!-- .post-author -->
                 
-                </div>  
+                </div><!-- .post-body -->
             
-            </article>
+            </article><!-- .post -->
+            
+        </div><!-- .layout-semibreve -->
+            
+    	<nav role="navigation" class="nav-articles">
+    	    <ul class="list">
+    	        <li><a href="#" rel="prev">Previous</a></li>
+    	        <li><a class="icon-grid" href="#">All articles</a></li>
+    	        <li><a href="#" rel="next">Next</a></li>
+    	    </ul>
+    	</nav><!--/.nav-page-->
+    	
+    	<div class="layout-semibreve">
+            
+        	<p>Questions? Comments? <a class="button button-prominent" href="http://twitter.com/codeforamerica">Hit us up at <strong class="icon-twitter2">@codeforamerica</strong></a></p>
         
         </div>
         
