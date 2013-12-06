@@ -57,7 +57,7 @@ body {
     @include border-color($color-white, 0.05);
     color: $color-white;
     margin: 0;
-    @include rem(padding, 8px 16px);
+    @include rem(padding, 10px 16px);
     background-color: transparent;
     font-weight: normal;
     display: block;
@@ -75,16 +75,11 @@ body {
 
 .js-offcanvas li.nav-has-children > a {	
 	background-image: url("../images/arrow-chevron-down-gray-dark.png");
+	background-position: 98% center;
 	background-position: right 16px top 13px;
 	background-repeat: no-repeat;
 	background-size: 12px 12px;
-	}
-
-.js-offcanvas li.state-open > a {	
-	background-image: url("../images/arrow-chevron-up-gray-light.png");
-	background-position: right 16px top 13px;
-	background-repeat: no-repeat;
-	background-size: 12px 12px;
+	text-transform: uppercase;
 	}
 
 .js-offcanvas .nav-global-primary {
@@ -124,14 +119,14 @@ body {
 .js-offcanvas .nav-tier2 a:hover,
 .js-offcanvas .nav-tier2 a:focus,
 .js-offcanvas .nav-tier2 a:active, {
-	@include rem(padding, 6px 16px);
+	@include rem(padding, 10px 16px);
 	}
 
 .js-offcanvas .search-global input {
 	border: 1px solid;
 	border-color: $color-gray;
 	background-color: transparent;
-	padding: 5px 2% 5px 2px;
+	padding: 8px 2% 8px 2px;
 	width: 95%;
 	width: calc(99% - 9px);
 	color: $color-white;

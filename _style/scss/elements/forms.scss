@@ -107,9 +107,12 @@ select[disabled] {
     font-size: 0.8em;
     @include color($color-medium-gray, 1);
     @include rem(font-size, 13px);
-    vertical-align: text-bottom;
     display: inline-block;
     }
+
+input + .note {
+	vertical-align: text-bottom;
+	}
     
 input[type="search"] {
     -webkit-appearance: none;

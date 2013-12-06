@@ -6,6 +6,8 @@
 .nav-articles ul {
 	margin: 0 auto;
 	display: table;
+	padding: 0 1%;
+	@include rem(font-size, 13px);
 	}
 
 .nav-articles li {
@@ -20,15 +22,26 @@
 	}
 
 .nav-articles li [rel="prev"] {
-    background-image: url('../images/arrow-breadcrumb.png');
-    padding-left: 28px;
+    /*background-image: url('../images/arrow-breadcrumb.png');*/
+    padding-left: 0;
     background-position: left center;
     background-repeat: no-repeat;
     }
+ 
+.nav-articles li [rel="prev"]:before {  
+	content: "← ";
+	vertical-align: top;
+	}   
+
 
 .nav-articles li [rel="next"] {
-    background-image: url('../images/arrow-breadcrumb.png');
-    padding-right: 28px;
+    /*background-image: url('../images/arrow-breadcrumb.png');*/
+    padding-right: 0;
     background-position: right center;
     background-repeat: no-repeat;
     }
+
+.nav-articles li [rel="next"]:after {  
+    content: " →";
+    vertical-align: top;
+	}

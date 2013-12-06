@@ -106,3 +106,37 @@ section,
     .slab-dark-gray form select {
         border: none;
         }
+ 
+ .slab-red .button-prominent,
+ .slab-red input.button-prominent,
+ .slab-red .button-prominent:link,
+ .slab-red .button-prominent:visited,
+ .slab-red .button-prominent:hover,
+ .slab-red .button-prominent:focus,
+ .slab-red .button-prominent:active {
+     @include background-color($color-dark-red, 1);
+     }
+ 
+ .slab-red input.button-prominent:hover,
+ .slab-red input.button-prominent:focus,
+ .slab-red .button-prominent:hover,
+ .slab-red .button-prominent:focus {
+     @include background-color($color-medium-red, 0.8);
+     }
+ 
+ .slab-medium-red .button-prominent,
+ .slab-medium-red input.button-prominent,
+ .slab-medium-red .button-prominent:link,
+ .slab-medium-red .button-prominent:visited,
+ .slab-medium-red .button-prominent:hover,
+ .slab-medium-red .button-prominent:focus,
+ .slab-medium-red .button-prominent:active {
+     @include background-color($color-dark-red, 1);
+     }
+ 
+ .slab-medium-red input.button-prominent:hover,
+ .slab-medium-red input.button-prominent:focus,
+ .slab-medium-red .button-prominent:hover,
+ .slab-medium-red .button-prominent:focus {
+     @include background-color($color-black, 0.4);
+     }

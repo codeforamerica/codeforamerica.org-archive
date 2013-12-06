@@ -821,8 +821,11 @@ select[disabled] {
   color: #999595;
   font-size: 13px;
   font-size: 0.8125rem;
-  vertical-align: text-bottom;
   display: inline-block;
+}
+
+input + .note {
+  vertical-align: text-bottom;
 }
 
 input[type="search"] {
@@ -869,14 +872,107 @@ input[type="search"] {
 }
 
 /* Patterns */
+/*  Button: Default --------------------------------------- */
 button,
 input[type="button"],
 input[type="submit"],
+.button,
+input[type="button"][disabled],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="button"][disabled]:active,
+input[type="submit"][disabled],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+input[type="submit"][disabled]:active,
+button[disabled],
+button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:active,
+.button.button-disabled,
+.button.button-disabled:hover,
+.button.button-disabled:focus,
+.button.button-disabled:active,
+.button-prominent,
+input.button-prominent,
+.button-prominent:link,
+.button-prominent:visited,
+.button-prominent:hover,
+.button-prominent:focus,
+.button-prominent:active,
+.button-neutral,
+input.button-neutral,
+.button-neutral:link,
+.button-neutral:visited,
+.button-neutral:hover,
+.button-neutral:focus,
+.button-neutral:active,
+.button-unstyled,
+input.button-unstyled,
+.button-unstyled:link,
+.button-unstyled:visited,
+.button-unstyled:hover,
+.button-unstyled:focus,
+.button-unstyled:active,
+.button-subtle,
+input.button-subtle,
+.button-subtle:link,
+.button-subtle:visited,
+.button-subtle:hover,
+.button-subtle:focus,
+.button-subtle:active,
 .button:link,
+input[type="button"][disabled]:link,
+input[type="submit"][disabled]:link,
+button[disabled]:link,
+.button.button-disabled:link:hover,
+.button.button-disabled:link:focus,
+.button.button-disabled:link:active,
+.button-prominent:link,
+.button-neutral:link,
+.button-unstyled:link,
+.button-subtle:link,
 .button:visited,
+input[type="button"][disabled]:visited,
+input[type="submit"][disabled]:visited,
+button[disabled]:visited,
+.button.button-disabled:visited:hover,
+.button.button-disabled:visited:focus,
+.button.button-disabled:visited:active,
+.button-prominent:visited,
+.button-neutral:visited,
+.button-unstyled:visited,
+.button-subtle:visited,
 .button:hover,
+input[type="button"][disabled]:hover,
+input[type="submit"][disabled]:hover,
+button[disabled]:hover,
+.button.button-disabled:hover:focus,
+.button.button-disabled:hover:active,
+.button-prominent:hover,
+.button-neutral:hover,
+.button-unstyled:hover,
+.button-subtle:hover,
 .button:focus,
-.button:active {
+input[type="button"][disabled]:focus,
+input[type="submit"][disabled]:focus,
+button[disabled]:focus,
+.button.button-disabled:focus:hover,
+.button.button-disabled:focus:active,
+.button-prominent:focus,
+.button-neutral:focus,
+.button-unstyled:focus,
+.button-subtle:focus,
+.button:active,
+input[type="button"][disabled]:active,
+input[type="submit"][disabled]:active,
+button[disabled]:active,
+.button.button-disabled:active:hover,
+.button.button-disabled:active:focus,
+.button-prominent:active,
+.button-neutral:active,
+.button-unstyled:active,
+.button-subtle:active {
   padding: 0 26px;
   padding: 0 1.625rem;
   margin: 0 8px 8px 0;
@@ -889,74 +985,171 @@ input[type="submit"],
   min-height: 1.1875rem;
   background: #399fd3;
   background: #399fd3;
-  display: inline-block;
-  font-weight: normal;
-  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  vertical-align: middle;
-  text-align: center;
-  text-shadow: none;
-  color: white;
-  border-radius: 0.2em;
-  text-decoration: none;
-  border: none;
   -moz-box-sizing: content-box;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   height: 40px;
-  width: auto;
   min-width: auto;
-}
-
-button {
   overflow: visible;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  width: auto;
+  vertical-align: middle;
 }
 
 button:hover,
 button:focus,
 .button:hover,
+input[type="button"][disabled]:hover,
+input[type="submit"][disabled]:hover,
+button[disabled]:hover,
+.button.button-disabled:hover:focus,
+.button.button-disabled:hover:active,
+.button-prominent:hover,
+.button-neutral:hover,
+.button-unstyled:hover,
+.button-subtle:hover,
 .button:focus,
+input[type="button"][disabled]:focus,
+input[type="submit"][disabled]:focus,
+button[disabled]:focus,
+.button.button-disabled:focus:hover,
+.button.button-disabled:focus:active,
+.button-prominent:focus,
+.button-neutral:focus,
+.button-unstyled:focus,
+.button-subtle:focus,
 input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background: #399fd3;
-  background: rgba(57, 159, 211, 0.8);
+  background-color: #7ab5d6;
   cursor: pointer;
 }
 
 button:active,
 .button:active,
+input[type="button"][disabled]:active,
+input[type="submit"][disabled]:active,
+button[disabled]:active,
+.button.button-disabled:active:hover,
+.button.button-disabled:active:focus,
+.button-prominent:active,
+.button-neutral:active,
+.button-unstyled:active,
+.button-subtle:active,
 input[type="submit"]:active {
-  background: #399fd3;
-  background: #399fd3;
+  background-color: #399fd3;
 }
 
 button::-moz-focus-inner,
 .button::-moz-focus-inner,
+input[type="button"][disabled]::-moz-focus-inner,
+input[type="button"][disabled]:hover::-moz-focus-inner,
+input[type="button"][disabled]:focus::-moz-focus-inner,
+input[type="button"][disabled]:active::-moz-focus-inner,
+input[type="submit"][disabled]::-moz-focus-inner,
+input[type="submit"][disabled]:hover::-moz-focus-inner,
+input[type="submit"][disabled]:focus::-moz-focus-inner,
+input[type="submit"][disabled]:active::-moz-focus-inner,
+button[disabled]::-moz-focus-inner,
+button[disabled]:hover::-moz-focus-inner,
+button[disabled]:focus::-moz-focus-inner,
+button[disabled]:active::-moz-focus-inner,
+.button.button-disabled::-moz-focus-inner,
+.button.button-disabled:hover::-moz-focus-inner,
+.button.button-disabled:focus::-moz-focus-inner,
+.button.button-disabled:active::-moz-focus-inner,
+.button-prominent::-moz-focus-inner,
+.button-prominent:link::-moz-focus-inner,
+.button-prominent:visited::-moz-focus-inner,
+.button-prominent:hover::-moz-focus-inner,
+.button-prominent:focus::-moz-focus-inner,
+.button-prominent:active::-moz-focus-inner,
+.button-neutral::-moz-focus-inner,
+.button-neutral:link::-moz-focus-inner,
+.button-neutral:visited::-moz-focus-inner,
+.button-neutral:hover::-moz-focus-inner,
+.button-neutral:focus::-moz-focus-inner,
+.button-neutral:active::-moz-focus-inner,
+.button-unstyled::-moz-focus-inner,
+.button-unstyled:link::-moz-focus-inner,
+.button-unstyled:visited::-moz-focus-inner,
+.button-unstyled:hover::-moz-focus-inner,
+.button-unstyled:focus::-moz-focus-inner,
+.button-unstyled:active::-moz-focus-inner,
+.button-subtle::-moz-focus-inner,
+.button-subtle:link::-moz-focus-inner,
+.button-subtle:visited::-moz-focus-inner,
+.button-subtle:hover::-moz-focus-inner,
+.button-subtle:focus::-moz-focus-inner,
+.button-subtle:active::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-input[disabled],
-input[disabled]:hover,
-input[disabled]:focus,
-input[disabled]:active,
+/*  Button: Disabled --------------------------------------- */
+input[type="button"][disabled],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="button"][disabled]:active,
+input[type="submit"][disabled],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+input[type="submit"][disabled]:active,
 button[disabled],
 button[disabled]:hover,
 button[disabled]:focus,
 button[disabled]:active,
-.button.button-disabled,
-.button.button-disabled:hover,
-.button.button-disabled:focus,
-.button.button-disabled:active {
-  background: #999595;
-  background: rgba(153, 149, 149, 0.8);
+input.button-disabled[type="button"][disabled],
+input.button-disabled[type="submit"][disabled],
+button.button-disabled[disabled],
+.button-disabled.button,
+.button-disabled.button:hover,
+.button-disabled.button:focus,
+.button-disabled.button:active,
+.button-disabled.button-prominent,
+.button-disabled.button-neutral,
+.button-disabled.button-unstyled,
+.button-disabled.button-subtle,
+input.button-disabled[type="button"][disabled]:hover,
+input.button-disabled[type="submit"][disabled]:hover,
+button.button-disabled[disabled]:hover,
+.button-disabled.button:hover,
+.button-disabled.button-prominent:hover,
+.button-disabled.button-neutral:hover,
+.button-disabled.button-unstyled:hover,
+.button-disabled.button-subtle:hover,
+input.button-disabled[type="button"][disabled]:focus,
+input.button-disabled[type="submit"][disabled]:focus,
+button.button-disabled[disabled]:focus,
+.button-disabled.button:focus,
+.button-disabled.button-prominent:focus,
+.button-disabled.button-neutral:focus,
+.button-disabled.button-unstyled:focus,
+.button-disabled.button-subtle:focus,
+input.button-disabled[type="button"][disabled]:active,
+input.button-disabled[type="submit"][disabled]:active,
+button.button-disabled[disabled]:active,
+.button-disabled.button:active,
+.button-disabled.button-prominent:active,
+.button-disabled.button-neutral:active,
+.button-disabled.button-unstyled:active,
+.button-disabled.button-subtle:active {
+  background-color: #e5e5e5;
   cursor: not-allowed;
   text-shadow: none;
-  color: #eee;
+  color: #999595;
 }
 
 .button-prominent,
@@ -978,44 +1171,27 @@ input.button-prominent:focus,
   background: rgba(207, 27, 65, 0.8);
 }
 
-.slab-red .button-prominent,
-.slab-red input.button-prominent,
-.slab-red .button-prominent:link,
-.slab-red .button-prominent:visited,
-.slab-red .button-prominent:hover,
-.slab-red .button-prominent:focus,
-.slab-red .button-prominent:active {
-  background: #82172d;
-  background: #82172d;
+/*  Button: Neutral --------------------------------------- */
+.button-neutral,
+input.button-neutral,
+.button-neutral:link,
+.button-neutral:visited,
+.button-neutral:hover,
+.button-neutral:focus,
+.button-neutral:active {
+  background: #7ab5d6;
+  background: #7ab5d6;
 }
 
-.slab-red input.button-prominent:hover,
-.slab-red input.button-prominent:focus,
-.slab-red .button-prominent:hover,
-.slab-red .button-prominent:focus {
-  background: #aa1c3a;
-  background: rgba(170, 28, 58, 0.8);
+input.button-neutral:hover,
+input.button-neutral:focus,
+.button-neutral:hover,
+.button-neutral:focus {
+  background: #7ab5d6;
+  background: rgba(122, 181, 214, 0.8);
 }
 
-.slab-medium-red .button-prominent,
-.slab-medium-red input.button-prominent,
-.slab-medium-red .button-prominent:link,
-.slab-medium-red .button-prominent:visited,
-.slab-medium-red .button-prominent:hover,
-.slab-medium-red .button-prominent:focus,
-.slab-medium-red .button-prominent:active {
-  background: #82172d;
-  background: #82172d;
-}
-
-.slab-medium-red input.button-prominent:hover,
-.slab-medium-red input.button-prominent:focus,
-.slab-medium-red .button-prominent:hover,
-.slab-medium-red .button-prominent:focus {
-  background: black;
-  background: rgba(0, 0, 0, 0.4);
-}
-
+/*  Button: Unstyled --------------------------------------- */
 .button-unstyled,
 input.button-unstyled,
 .button-unstyled:link,
@@ -1038,6 +1214,7 @@ input.button-unstyled,
   color: black;
 }
 
+/*  Button: Subtle --------------------------------------- */
 .button-subtle,
 input.button-subtle,
 .button-subtle:link,
@@ -1183,17 +1360,32 @@ input.button-subtle:active,
   display: block;
 }
 
-.chimney .button {
+.chimney .button, .chimney input[type="button"][disabled],
+.chimney input[type="submit"][disabled],
+.chimney button[disabled],
+.chimney .button.button-disabled:hover,
+.chimney .button.button-disabled:focus,
+.chimney .button.button-disabled:active, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-unstyled, .chimney .button-subtle {
   margin-left: 0;
 }
 
 @media (min-width: 40em) {
-  .chimney .button {
+  .chimney .button, .chimney input[type="button"][disabled],
+  .chimney input[type="submit"][disabled],
+  .chimney button[disabled],
+  .chimney .button.button-disabled:hover,
+  .chimney .button.button-disabled:focus,
+  .chimney .button.button-disabled:active, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-unstyled, .chimney .button-subtle {
     margin-left: 155px;
   }
 }
 @media (min-width: 60em) {
-  .chimney .button {
+  .chimney .button, .chimney input[type="button"][disabled],
+  .chimney input[type="submit"][disabled],
+  .chimney button[disabled],
+  .chimney .button.button-disabled:hover,
+  .chimney .button.button-disabled:focus,
+  .chimney .button.button-disabled:active, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-unstyled, .chimney .button-subtle {
     margin-left: 0;
   }
 }
@@ -1321,14 +1513,17 @@ input.button-subtle:active,
   position: absolute;
   width: 100%;
   text-align: center;
-  z-index: -1;
+  z-index: 1;
   left: 0;
 }
 
 .masthead-image {
   max-width: none;
   width: 100%;
-  display: none;
+  min-height: 400px;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .masthead-header {
@@ -1363,6 +1558,10 @@ input.button-subtle:active,
 .masthead-s .masthead-header {
   margin: 40px auto 20px;
   margin: 2.5rem auto 1.25rem;
+}
+
+.masthead-s .masthead-image {
+  min-height: 200px;
 }
 
 .masthead-s .page-title {
@@ -1554,7 +1753,12 @@ input.button-subtle:active,
   padding-left: 0;
 }
 
-.list-form .button {
+.list-form .button, .list-form input[type="button"][disabled],
+.list-form input[type="submit"][disabled],
+.list-form button[disabled],
+.list-form .button.button-disabled:hover,
+.list-form .button.button-disabled:focus,
+.list-form .button.button-disabled:active, .list-form .button-prominent, .list-form .button-neutral, .list-form .button-unstyled, .list-form .button-subtle {
   margin-bottom: 0;
   margin-top: 1em;
 }
@@ -1658,7 +1862,12 @@ input.button-subtle:active,
     text-align: center;
   }
 
-  .list-buttons .button {
+  .list-buttons .button, .list-buttons input[type="button"][disabled],
+  .list-buttons input[type="submit"][disabled],
+  .list-buttons button[disabled],
+  .list-buttons .button.button-disabled:hover,
+  .list-buttons .button.button-disabled:focus,
+  .list-buttons .button.button-disabled:active, .list-buttons .button-prominent, .list-buttons .button-neutral, .list-buttons .button-unstyled, .list-buttons .button-subtle {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -1787,6 +1996,9 @@ nav ul li {
 .nav-articles ul {
   margin: 0 auto;
   display: table;
+  padding: 0 1%;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .nav-articles li {
@@ -1801,17 +2013,27 @@ nav ul li {
 }
 
 .nav-articles li [rel="prev"] {
-  background-image: url("../images/arrow-breadcrumb.png");
-  padding-left: 28px;
+  /*background-image: url('../images/arrow-breadcrumb.png');*/
+  padding-left: 0;
   background-position: left center;
   background-repeat: no-repeat;
 }
 
+.nav-articles li [rel="prev"]:before {
+  content: "← ";
+  vertical-align: top;
+}
+
 .nav-articles li [rel="next"] {
-  background-image: url("../images/arrow-breadcrumb.png");
-  padding-right: 28px;
+  /*background-image: url('../images/arrow-breadcrumb.png');*/
+  padding-right: 0;
   background-position: right center;
   background-repeat: no-repeat;
+}
+
+.nav-articles li [rel="next"]:after {
+  content: " →";
+  vertical-align: top;
 }
 
 .nav-breadcrumbs {
@@ -1999,6 +2221,7 @@ nav ul li {
 }
 .nav-global-secondary ul {
   margin: 0;
+  text-align: right;
 }
 
 .nav-global-secondary li {
@@ -2019,17 +2242,21 @@ nav ul li {
   transition: padding 0.25s ease;
 }
 
-.nav-global-secondary li a:hover,
-.nav-global-secondary li a:focus,
-.nav-global-secondary li a:active,
-.nav-global-secondary li:hover a,
-.nav-global-secondary li:focus a,
-.nav-global-secondary li:active a {
-  color: white;
-  background-color: #cf1b41;
+.nav-global-secondary .nav-tier1 a:hover,
+.nav-global-secondary .nav-tier1 a:focus,
+.nav-global-secondary .nav-tier1 a:active,
+.nav-global-secondary .nav-tier1:hover > a,
+.nav-global-secondary .nav-tier1:focus > a,
+.nav-global-secondary .nav-tier1:active > a {
+  color: #cf1b41;
 }
 
-.nav-global-secondary li .button {
+.nav-global-secondary li .button, .nav-global-secondary li input[type="button"][disabled],
+.nav-global-secondary li input[type="submit"][disabled],
+.nav-global-secondary li button[disabled],
+.nav-global-secondary li .button.button-disabled:hover,
+.nav-global-secondary li .button.button-disabled:focus,
+.nav-global-secondary li .button.button-disabled:active, .nav-global-secondary li .button-prominent, .nav-global-secondary li .button-neutral, .nav-global-secondary li .button-unstyled, .nav-global-secondary li .button-subtle {
   font-size: 1em;
   padding: 0 12px;
   padding: 0 0.75rem;
@@ -2037,51 +2264,45 @@ nav ul li {
   margin: 1.375rem 1rem;
 }
 
-.nav-global-secondary li a.button:hover,
-.nav-global-secondary li a.button:focus,
-.nav-global-secondary li a.button:active {
-  color: white;
-}
-
 .nav-global-secondary li:last-child a {
   margin-right: 0;
 }
 
 .nav-global-secondary .nav-tier1 {
-  position: relative;
+  position: inherit;
 }
 
 .nav-global-secondary .nav-tier2 {
-  position: absolute;
-  background-color: #cf1b41;
-  z-index: 3;
-  width: 14em;
-  color: white;
-  left: 1.5em;
-  padding: 0.5em 0;
-  display: none;
-  transition: width 0.3s ease;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.nav-global-secondary .nav-tier1:hover .nav-tier2 {
+  background-color: #e5e5e5;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #c9c9c9;
   display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 96%;
+  padding: 0 2%;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: right;
 }
 
 .nav-global-secondary .nav-tier2 li {
-  width: 100%;
+  float: right;
 }
 
 .nav-global-secondary .nav-tier2 a {
   margin: 0;
-  padding: 0.5em 1em;
-  color: white;
+  padding: 10px 14px;
+  padding: 0.625rem 0.875rem;
+  color: #494c49;
+  font-weight: normal;
+  text-transform: none;
 }
 
-.nav-global-secondary .nav-tier2 a:hover,
-.nav-global-secondary .nav-tier2 a:focus,
-.nav-global-secondary .nav-tier2 a:active {
-  background-color: black;
+.nav-global-secondary .nav-tier2 li:last-of-type a {
+  padding-right: 0;
 }
 
 .nav-page {
@@ -2722,6 +2943,44 @@ section,
   border: none;
 }
 
+.slab-red .button-prominent,
+.slab-red input.button-prominent,
+.slab-red .button-prominent:link,
+.slab-red .button-prominent:visited,
+.slab-red .button-prominent:hover,
+.slab-red .button-prominent:focus,
+.slab-red .button-prominent:active {
+  background: #82172d;
+  background: #82172d;
+}
+
+.slab-red input.button-prominent:hover,
+.slab-red input.button-prominent:focus,
+.slab-red .button-prominent:hover,
+.slab-red .button-prominent:focus {
+  background: #aa1c3a;
+  background: rgba(170, 28, 58, 0.8);
+}
+
+.slab-medium-red .button-prominent,
+.slab-medium-red input.button-prominent,
+.slab-medium-red .button-prominent:link,
+.slab-medium-red .button-prominent:visited,
+.slab-medium-red .button-prominent:hover,
+.slab-medium-red .button-prominent:focus,
+.slab-medium-red .button-prominent:active {
+  background: #82172d;
+  background: #82172d;
+}
+
+.slab-medium-red input.button-prominent:hover,
+.slab-medium-red input.button-prominent:focus,
+.slab-medium-red .button-prominent:hover,
+.slab-medium-red .button-prominent:focus {
+  background: black;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .spotlight {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -2929,7 +3188,9 @@ section,
     margin-left: 0;
   }
 
-  .wodge-s .wodge-button .button {
+  .wodge-s .wodge-button .button, .wodge-s .wodge-button input[type="button"][disabled],
+  .wodge-s .wodge-button input[type="submit"][disabled],
+  .wodge-s .wodge-button button[disabled], .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle {
     min-width: 7em;
     margin-left: 0.35em;
   }
@@ -3212,10 +3473,45 @@ body {
 .js-offcanvas li a:focus,
 .js-offcanvas li a:active,
 .js-offcanvas li .button:link,
+.js-offcanvas li input[type="button"][disabled]:link,
+.js-offcanvas li input[type="submit"][disabled]:link,
+.js-offcanvas li button[disabled]:link,
+.js-offcanvas li .button-prominent:link,
+.js-offcanvas li .button-neutral:link,
+.js-offcanvas li .button-unstyled:link,
+.js-offcanvas li .button-subtle:link,
 .js-offcanvas li .button:visited,
+.js-offcanvas li input[type="button"][disabled]:visited,
+.js-offcanvas li input[type="submit"][disabled]:visited,
+.js-offcanvas li button[disabled]:visited,
+.js-offcanvas li .button-prominent:visited,
+.js-offcanvas li .button-neutral:visited,
+.js-offcanvas li .button-unstyled:visited,
+.js-offcanvas li .button-subtle:visited,
 .js-offcanvas li .button:hover,
+.js-offcanvas li input[type="button"][disabled]:hover,
+.js-offcanvas li input[type="submit"][disabled]:hover,
+.js-offcanvas li button[disabled]:hover,
+.js-offcanvas li .button-prominent:hover,
+.js-offcanvas li .button-neutral:hover,
+.js-offcanvas li .button-unstyled:hover,
+.js-offcanvas li .button-subtle:hover,
 .js-offcanvas li .button:focus,
-.js-offcanvas li .button:active {
+.js-offcanvas li input[type="button"][disabled]:focus,
+.js-offcanvas li input[type="submit"][disabled]:focus,
+.js-offcanvas li button[disabled]:focus,
+.js-offcanvas li .button-prominent:focus,
+.js-offcanvas li .button-neutral:focus,
+.js-offcanvas li .button-unstyled:focus,
+.js-offcanvas li .button-subtle:focus,
+.js-offcanvas li .button:active,
+.js-offcanvas li input[type="button"][disabled]:active,
+.js-offcanvas li input[type="submit"][disabled]:active,
+.js-offcanvas li button[disabled]:active,
+.js-offcanvas li .button-prominent:active,
+.js-offcanvas li .button-neutral:active,
+.js-offcanvas li .button-unstyled:active,
+.js-offcanvas li .button-subtle:active {
   line-height: 20px;
   line-height: 1.25rem;
   height: auto;
@@ -3224,8 +3520,8 @@ body {
   border-color: rgba(255, 255, 255, 0.05);
   color: white;
   margin: 0;
-  padding: 8px 16px;
-  padding: 0.5rem 1rem;
+  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   background-color: transparent;
   font-weight: normal;
   display: block;
@@ -3236,23 +3532,39 @@ body {
 .js-offcanvas li a:focus,
 .js-offcanvas li a:active,
 .js-offcanvas li .button:hover,
+.js-offcanvas li input[type="button"][disabled]:hover,
+.js-offcanvas li input[type="submit"][disabled]:hover,
+.js-offcanvas li button[disabled]:hover,
+.js-offcanvas li .button-prominent:hover,
+.js-offcanvas li .button-neutral:hover,
+.js-offcanvas li .button-unstyled:hover,
+.js-offcanvas li .button-subtle:hover,
 .js-offcanvas li .button:focus,
-.js-offcanvas li .button:active {
+.js-offcanvas li input[type="button"][disabled]:focus,
+.js-offcanvas li input[type="submit"][disabled]:focus,
+.js-offcanvas li button[disabled]:focus,
+.js-offcanvas li .button-prominent:focus,
+.js-offcanvas li .button-neutral:focus,
+.js-offcanvas li .button-unstyled:focus,
+.js-offcanvas li .button-subtle:focus,
+.js-offcanvas li .button:active,
+.js-offcanvas li input[type="button"][disabled]:active,
+.js-offcanvas li input[type="submit"][disabled]:active,
+.js-offcanvas li button[disabled]:active,
+.js-offcanvas li .button-prominent:active,
+.js-offcanvas li .button-neutral:active,
+.js-offcanvas li .button-unstyled:active,
+.js-offcanvas li .button-subtle:active {
   background-color: black;
 }
 
 .js-offcanvas li.nav-has-children > a {
   background-image: url("../images/arrow-chevron-down-gray-dark.png");
+  background-position: 98% center;
   background-position: right 16px top 13px;
   background-repeat: no-repeat;
   background-size: 12px 12px;
-}
-
-.js-offcanvas li.state-open > a {
-  background-image: url("../images/arrow-chevron-up-gray-light.png");
-  background-position: right 16px top 13px;
-  background-repeat: no-repeat;
-  background-size: 12px 12px;
+  text-transform: uppercase;
 }
 
 .js-offcanvas .nav-global-primary {
@@ -3293,15 +3605,15 @@ body {
 .js-offcanvas .nav-tier2 a:hover,
 .js-offcanvas .nav-tier2 a:focus,
 .js-offcanvas .nav-tier2 a:active {
-  padding: 6px 16px;
-  padding: 0.375rem 1rem;
+  padding: 10px 16px;
+  padding: 0.625rem 1rem;
 }
 
 .js-offcanvas .search-global input {
   border: 1px solid;
   border-color: #6d6e71;
   background-color: transparent;
-  padding: 5px 2% 5px 2px;
+  padding: 8px 2% 8px 2px;
   width: 95%;
   width: calc(99% - 9px);
   color: white;
@@ -3331,7 +3643,9 @@ body {
     padding-bottom: 0.8em;
   }
 
-  .sticky .nav-global-secondary li .button {
+  .sticky .nav-global-secondary li .button, .sticky .nav-global-secondary li input[type="button"][disabled],
+  .sticky .nav-global-secondary li input[type="submit"][disabled],
+  .sticky .nav-global-secondary li button[disabled], .sticky .nav-global-secondary li .button-prominent, .sticky .nav-global-secondary li .button-neutral, .sticky .nav-global-secondary li .button-unstyled, .sticky .nav-global-secondary li .button-subtle {
     padding: 0 12px;
     padding: 0 0.75rem;
     margin: 5px 0 2px 16px;

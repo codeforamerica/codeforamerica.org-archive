@@ -1,6 +1,14 @@
 <div class="masthead {% if page.path contains '_posts' %}masthead-s{% else %}masthead-l{% endif %}">
     <div class="masthead-hero">
-        <img src="/_media/images/masthead/{% if page.masthead-image %}{{ page.masthead-image }}{% elsif page.path contains '_posts' %}masthead-3.jpg{% else %}masthead-2.jpg{% endif %}" class="masthead-image"/>
+    	<div class="masthead-image" 
+    		{% if page.masthead-image %}
+    		style="background-image: url('/_media/images/masthead/{{ page.masthead-image }}')" 
+    		{% elsif page.path contains '_posts' %} style="background-image: url('/_media/images/masthead/masthead-3.jpg')"
+    		{% else %} style="background-image: url('/_media/images/masthead/masthead-2.jpg')"
+    		{% endif %}>
+    	
+    	
+    	</div>
     </div>
     <header class="layout-semibreve masthead-header">
         {% if page.path contains '_posts' %}
@@ -35,21 +43,25 @@
             <ul>
                 <li class="nav-tier1 nav-has-children">
                     <a href="/_site/governments/">Governments</a>
+                    {% if page.path contains 'governments' %}
                     <ul class="nav-tier2">
                         <li><a href="/_site/governments/">Current Governments</a></li>
                         <li><a href="/_site/governments/boston/">Upcoming Governments</a></li>
                         <li><a href="/_site/governments/boston/">Alumni Governments</a></li>
                         <li><a href="/_site/apps/">Apps &amp; APIs</a></li>
                     </ul>
+                    {% endif %} 
                 </li>
                 <li class="nav-tier1 nav-has-children">
                 	<a href="/_site/citizens/">Citizens</a>
+                	{% if page.path contains 'citizens' %}
                 	<ul class="nav-tier2">
                 		<li><a href="#">Requests</a></li>
                 		<li><a href="#">Code we Have</a></li>
                 		<li><a href="#">Events</a></li>
                 		<li><a href="#">Our geeks</a></li>
                 	</ul>
+                	{% endif %} 
                 </li>
                 <li class="nav-tier1">
                 	<a href="/_site/apps/">Apps</a>

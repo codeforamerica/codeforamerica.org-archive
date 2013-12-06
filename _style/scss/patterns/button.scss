@@ -1,180 +1,176 @@
-button,
-input[type="button"],
-input[type="submit"],
-.button:link,
-.button:visited,
-.button:hover,
-.button:focus,
-.button:active {
-    @include rem(padding, 0 26px);
-    @include rem(margin, 0 8px 8px 0);
-    @include rem(line-height, 40px);
-    @include rem(font-size, 14px);
-    @include rem(min-height, 19px);
-    @include background-color($color-blue, 1);
-    display: inline-block;
-    font-weight: normal;
-    font-family: $font-sans-regular;
-    vertical-align: middle;
-    text-align: center;
-    text-shadow: none;
-    color: white;
-    border-radius: 0.2em;
-    text-decoration: none;
-    border: none;
-    -moz-box-sizing: content-box;
-    -webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	height: 40px;
-	width: auto;
-	min-width: auto;
-    }
+/*  Button: Default --------------------------------------- */
 
-button {
-	overflow: visible;
-	}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-    @include background-color($color-blue, 0.8);
-    cursor: pointer;
-    }
-
-button:active,
-.button:active,
-input[type="submit"]:active {
-    @include background-color($color-blue, 1);
-    }
-
-
-button::-moz-focus-inner,
-.button::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-
-input[disabled],
-input[disabled]:hover,
-input[disabled]:focus,
-input[disabled]:active,
-button[disabled],
-button[disabled]:hover,
-button[disabled]:focus,
-button[disabled]:active,
-.button.button-disabled,
-.button.button-disabled:hover,
-.button.button-disabled:focus,
-.button.button-disabled:active {
-    @include background-color($color-medium-gray, 0.8);
-    cursor: not-allowed;
-    text-shadow: none;
-    color: #eee;
-    }
-
-.button-prominent,
-input.button-prominent,
-.button-prominent:link,
-.button-prominent:visited,
-.button-prominent:hover,
-.button-prominent:focus,
-.button-prominent:active {
-    @include background-color($color-red, 1);
-    }
-
-input.button-prominent:hover,
-input.button-prominent:focus,
-.button-prominent:hover,
-.button-prominent:focus {
-    @include background-color($color-red, 0.8);
-    }
+	button,
+	input[type="button"],
+	input[type="submit"],
+	.button,
+	.button:link,
+	.button:visited,
+	.button:hover,
+	.button:focus,
+	.button:active {
+	    @include rem(padding, 0 26px);
+	    @include rem(margin, 0 8px 8px 0);
+	    @include rem(line-height, 40px);
+	    @include rem(font-size, 14px);
+	    @include rem(min-height, 19px);
+	    @include background-color($color-blue, 1);
+	    -moz-box-sizing: content-box;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    border: none;
+	    border-radius: 0.2em;
+	    color: $color-white;
+	    display: inline-block;
+	    font-weight: normal;
+	    font-family: $font-sans-regular;
+	    height: 40px;
+	    min-width: auto;
+	    overflow: visible;
+	    text-align: center;
+	    text-decoration: none;
+	    text-shadow: none;
+		width: auto;
+		vertical-align: middle;
+		}
+	
+	button:hover,
+	button:focus,
+	.button:hover,
+	.button:focus,
+	input[type="button"]:hover,
+	input[type="button"]:focus,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus {
+	    background-color: $color-light-blue;
+	    cursor: pointer;
+	    }
+	
+	button:active,
+	.button:active,
+	input[type="submit"]:active {
+	    background-color: $color-blue;
+	    }
+	
+	button::-moz-focus-inner,
+	.button::-moz-focus-inner,
+	input[type="button"]::-moz-focus-inner,
+	input[type="submit"]::-moz-focus-inner {
+	    border: 0;
+	    padding: 0;
+		}
 
 
+/*  Button: Disabled --------------------------------------- */
 
-.slab-red .button-prominent,
-.slab-red input.button-prominent,
-.slab-red .button-prominent:link,
-.slab-red .button-prominent:visited,
-.slab-red .button-prominent:hover,
-.slab-red .button-prominent:focus,
-.slab-red .button-prominent:active {
-    @include background-color($color-dark-red, 1);
-    }
+	input[type="button"][disabled],
+	input[type="button"][disabled]:hover,
+	input[type="button"][disabled]:focus,
+	input[type="button"][disabled]:active,
+	input[type="submit"][disabled],
+	input[type="submit"][disabled]:hover,
+	input[type="submit"][disabled]:focus,
+	input[type="submit"][disabled]:active,
+	button[disabled],
+	button[disabled]:hover,
+	button[disabled]:focus,
+	button[disabled]:active,
+	.button.button-disabled,
+	.button.button-disabled:hover,
+	.button.button-disabled:focus,
+	.button.button-disabled:active {
+		@extend .button;
+	    background-color: $color-light-gray;
+	    cursor: not-allowed;
+	    text-shadow: none;
+	    color: $color-medium-gray;
+	    }
+	
+	.button-prominent,
+	input.button-prominent,
+	.button-prominent:link,
+	.button-prominent:visited,
+	.button-prominent:hover,
+	.button-prominent:focus,
+	.button-prominent:active {
+		@extend .button;
+	    @include background-color($color-red, 1);
+	    }
+	
+	input.button-prominent:hover,
+	input.button-prominent:focus,
+	.button-prominent:hover,
+	.button-prominent:focus {
+	    @include background-color($color-red, 0.8);
+	    }
 
-.slab-red input.button-prominent:hover,
-.slab-red input.button-prominent:focus,
-.slab-red .button-prominent:hover,
-.slab-red .button-prominent:focus {
-    @include background-color($color-medium-red, 0.8);
-    }
+/*  Button: Neutral --------------------------------------- */
 
-.slab-medium-red .button-prominent,
-.slab-medium-red input.button-prominent,
-.slab-medium-red .button-prominent:link,
-.slab-medium-red .button-prominent:visited,
-.slab-medium-red .button-prominent:hover,
-.slab-medium-red .button-prominent:focus,
-.slab-medium-red .button-prominent:active {
-    @include background-color($color-dark-red, 1);
-    }
+	.button-neutral,
+	input.button-neutral,
+	.button-neutral:link,
+	.button-neutral:visited,
+	.button-neutral:hover,
+	.button-neutral:focus,
+	.button-neutral:active {
+		@extend .button;
+	    @include background-color($color-light-blue, 1);
+	    }
+	
+	input.button-neutral:hover,
+	input.button-neutral:focus,
+	.button-neutral:hover,
+	.button-neutral:focus {
+	    @include background-color($color-light-blue, 0.8);
+	    }
 
-.slab-medium-red input.button-prominent:hover,
-.slab-medium-red input.button-prominent:focus,
-.slab-medium-red .button-prominent:hover,
-.slab-medium-red .button-prominent:focus {
-    @include background-color($color-black, 0.4);
-    }
+/*  Button: Unstyled --------------------------------------- */
 
+	.button-unstyled,
+	input.button-unstyled,
+	.button-unstyled:link,
+	.button-unstyled:visited,
+	.button-unstyled:hover,
+	.button-unstyled:focus,
+	.button-unstyled:active {
+		@extend .button;
+	    @include color($color-black, 0.6);
+	    background-color: transparent;
+	    text-shadow: none;
+	    padding-left: 0.25em;
+	    padding-right: 0.25em;
+	    }
+	
+	.button-unstyled:hover,
+	.button-unstyled:focus,
+	.button-unstyled:active {
+	    @include color($color-black, 1);
+	    }
 
-.button-unstyled,
-input.button-unstyled,
-.button-unstyled:link,
-.button-unstyled:visited,
-.button-unstyled:hover,
-.button-unstyled:focus,
-.button-unstyled:active {
-    @include color($color-black, 0.6);
-    background-color: transparent;
-    text-shadow: none;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    }
+/*  Button: Subtle --------------------------------------- */
 
-.button-unstyled:hover,
-.button-unstyled:focus,
-.button-unstyled:active {
-    @include color($color-black, 1);
-    }
-
-.button-subtle,
-input.button-subtle,
-.button-subtle:link,
-.button-subtle:visited,
-.button-subtle:hover,
-.button-subtle:focus,
-.button-subtle:active {
-    color: $color-medium-gray;
-    background-color: transparent;
-    text-shadow: none;
-    border: 1px solid $color-medium-gray;
-    }
-
-input.button-subtle:hover,
-input.button-subtle:focus,
-input.button-subtle:active,
-.button-subtle:hover,
-.button-subtle:focus,
-.button-subtle:active {
-    color: $color-dark-gray;
-    border: 1px solid $color-dark-gray;
-    background-color: transparent;
-    }
+	.button-subtle,
+	input.button-subtle,
+	.button-subtle:link,
+	.button-subtle:visited,
+	.button-subtle:hover,
+	.button-subtle:focus,
+	.button-subtle:active {
+		@extend .button;
+	    color: $color-medium-gray;
+	    background-color: transparent;
+	    text-shadow: none;
+	    border: 1px solid $color-medium-gray;
+	    }
+	
+	input.button-subtle:hover,
+	input.button-subtle:focus,
+	input.button-subtle:active,
+	.button-subtle:hover,
+	.button-subtle:focus,
+	.button-subtle:active {
+	    color: $color-dark-gray;
+	    border: 1px solid $color-dark-gray;
+	    background-color: transparent;
+	    }
