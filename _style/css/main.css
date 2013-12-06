@@ -2301,7 +2301,7 @@ nav ul li {
   text-transform: none;
 }
 
-.nav-global-secondary .nav-tier2 li:last-of-type a {
+.nav-global-secondary .nav-tier2 li:first-of-type a {
   padding-right: 0;
 }
 
@@ -3223,6 +3223,8 @@ section,
   z-index: 2;
   -webkit-transition: padding 0.5s ease;
   transition: padding 0.5s ease;
+  margin-bottom: 41px;
+  margin-bottom: 2.5625rem;
 }
 
 .global-header-logo {
