@@ -1,3 +1,8 @@
+all: _script/global.min.js _style/css/main.css
+
+_script/global.min.js: _script/global.js
+	jsmin < _script/global.js > _script/global.min.js
+
 _style/css/main.css: \
         _style/scss/base/color-scheme.scss _style/scss/base/icons.scss \
         _style/scss/base/transitions.scss _style/scss/base/typography.scss \
