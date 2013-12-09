@@ -158,10 +158,11 @@
 	.button-subtle:focus,
 	.button-subtle:active {
 		@extend .button;
-	    color: $color-medium-gray;
-	    background-color: transparent;
+	    color: $color-gray;
+	    @include background-color($color-light-gray, 0.35);
 	    text-shadow: none;
-	    border: 1px solid $color-medium-gray;
+	    border: 1px solid $color-light-gray;
+	    text-transform: uppercase;
 	    }
 	
 	input.button-subtle:hover,
@@ -170,7 +171,19 @@
 	.button-subtle:hover,
 	.button-subtle:focus,
 	.button-subtle:active {
-	    color: $color-dark-gray;
-	    border: 1px solid $color-dark-gray;
-	    background-color: transparent;
+	    @include background-color($color-light-gray, 0.6);
 	    }
+
+/*  Button: Sizes --------------------------------------- */
+
+.button-crotchet,
+.button-crotchet:link,
+.button-crotchet:visited,
+.button-crotchet:hover,
+.button-crotchet:focus,
+.button-crotchet:active {
+	width: 32.0%;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	}

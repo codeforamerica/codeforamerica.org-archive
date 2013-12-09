@@ -1,6 +1,6 @@
 .nav-breadcrumbs {
     @include color($color-gray, 0.7);
-    
+    margin-bottom: 1em;
     }
 
 .nav-breadcrumbs ul {
@@ -23,7 +23,6 @@
     }
 
 .nav-breadcrumbs li:last-child {
-    padding: 0.5em;
     background-image: none;
     }
 
@@ -52,6 +51,7 @@
     display: inline-block;
     @include color($color-gray, 1);
     z-index: 3;
+    font-weight: normal;
     }
 
 .nav-breadcrumbs a:hover,

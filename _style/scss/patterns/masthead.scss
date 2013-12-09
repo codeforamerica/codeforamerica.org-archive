@@ -3,27 +3,26 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    background-color: #333;
     }
 
-.masthead-hero {
-    margin: 0 auto;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-    left: 0;
-    
-    }
+.masthead:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('/_media/images/masthead/masthead-2.jpg');
+	content: "";
+	max-width: none;
+	width: 100%;
+	min-height: 400px;
+	background-color: red;
+	z-index: 1;
+	}
 
-.masthead-image {
-    max-width: none;
-    width: 100%;
-    min-height: 400px;
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url('/_media/images/masthead/masthead-2.jpg');
-    }
+
 
 
 .masthead-header {
@@ -36,7 +35,7 @@
     margin-bottom: 1em;
     padding: 0 4%;
     clear: both;
-    position: relative;
+    position: inherit;
     }
 
 .masthead-header a:link,

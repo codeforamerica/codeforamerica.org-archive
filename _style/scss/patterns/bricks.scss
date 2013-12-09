@@ -6,25 +6,45 @@
     
 .brick {
     padding: 0;
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
+    -webkit-transform: translateZ(0);
+    position: relative;
     }
 
-.brick:nth-child(1) {
+.brick:before {
+	content:  "";
+	position: absolute;
 	background-image: url('../images/brick-bg1.png');
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: $color-blue;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 0.4s;
+	-webkit-filter: brightness(70%) contrast(130%);
 	}
 
-.brick:nth-child(2) {
+.brick:hover:before,
+.brick:focus:before,
+.brick:active:before {
+	-webkit-filter: brightness(100%) contrast(100%);
+	}
+
+.brick:nth-child(1):before {
+	
+	}
+
+.brick:nth-child(2):before {
 	background-image: url('../images/brick-bg2.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background-color: $color-red;
 	}
 
-.brick:nth-child(3) {
+.brick:nth-child(3):before {
 	background-image: url('../images/brick-bg3.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background-color: $color-dark-blue;
 	}
 
 .brick .brick-link {

@@ -1,3 +1,7 @@
+.teasers {
+	clear: both;
+	}
+
 .teaser {
     margin-bottom: 1.8em;
     @include background-color($color-white, 1);
@@ -118,12 +122,14 @@
     }
 
 .teaser-app .teaser-masthead {
-	display: table-cell;
+	display: table;
 	background-color: white;
+	vertical-align: middle;
 	height: 123px;
-	padding-left: 4%;
-	padding-right: 4%;
 	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
 	}
 
 .teaser-app .teaser-footer {
@@ -139,6 +145,10 @@
 	width: 100%;
 	}
 .teaser-app .teaser-masthead .teaser-image {
-	margin: 0 auto;
-	display: block;
+	margin: 1em auto;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+	max-width: 85%;
 	}
