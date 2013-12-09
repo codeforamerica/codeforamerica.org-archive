@@ -497,6 +497,10 @@ blockquote p {
   line-height: 1.3em;
 }
 
+figure {
+  margin: 0;
+}
+
 .hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -572,7 +576,8 @@ h6,
 .brick-heading,
 .chimney .profile .profile-role,
 .chimney .profile .profile-note,
-.list-icons li a {
+.list-icons li a,
+.stat .stat-heading {
   text-transform: uppercase;
   margin: 0;
   margin: 0 0 15px 0;
@@ -642,6 +647,16 @@ ul li {
   list-style-type: none;
   background-position: left 0.63em;
   padding-left: 1.3em;
+}
+
+audio {
+  margin: 16px 0;
+  margin: 1rem 0;
+}
+
+video {
+  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 table {
@@ -1442,7 +1457,7 @@ input.button-subtle:active,
     min-height: 3.5em;
     padding: 1.3em 0 0.5em 5.2em;
     clear: both;
-    margin: 1em 0 1em 0;
+    margin: 1em 0 2em 0;
     width: auto;
   }
 }
@@ -1450,6 +1465,8 @@ input.button-subtle:active,
   position: absolute;
   left: 0;
   top: 0.5em;
+  min-height: 28px;
+  min-width: 30px;
 }
 
 .badge-heading i:before {
@@ -2988,40 +3005,59 @@ section,
   border-color: #e5e5e5;
   border-color: #e5e5e5;
   float: left;
-  width: auto;
-  padding: 2em 1.5em;
+  width: 92%;
+  padding: 2em 4%;
+  margin: 0 0 8px 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.stats {
+  display: table;
+  padding: 1em 4% 0;
 }
 
 .stat {
+  display: table-column;
   position: relative;
-  padding-bottom: 2em;
-  width: 7em;
-  text-align: center;
+  border-right: 1px solid #e5e5e5;
   float: left;
   margin: 0 1em 1em 0;
+  padding-right: 1em;
+  min-height: 4.5em;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-result {
+  display: table-cell;
+  width: auto;
+  padding: 0 2em 0 0;
 }
 
 .stat .stat-heading {
-  border-bottom: 1px solid;
-  border-color: #999595;
-  border-color: rgba(153, 149, 149, 0.3);
-  color: #999595;
-  color: rgba(153, 149, 149, 0.7);
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.3em;
-  font-size: 0.9em;
+  margin-bottom: 0.2em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .stat .stat-figure {
-  font-size: 3em;
+  font-size: 30px;
+  font-size: 1.875rem;
   color: black;
   color: black;
   font-family: georgia;
   font-weight: bold;
-  text-align: center;
   display: block;
+  margin: 0;
+}
+
+.stat .stat-caption {
+  text-transform: none;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #494c49;
 }
 
 .teaser {
@@ -3213,7 +3249,8 @@ section,
 .global-header {
   padding: 0;
   float: left;
-  width: 100%;
+  width: 96%;
+  padding: 0 2%;
   border-bottom: 1px solid;
   border-color: #e5e5e5;
   border-color: rgba(229, 229, 229, 0.5);
@@ -3420,7 +3457,6 @@ section,
   margin: 1em auto;
   clear: both;
   display: table;
-  position: relative;
 }
 
 /* JS dependant */
@@ -3628,7 +3664,6 @@ body {
     margin-top: 31px;
     margin-top: 1.9375rem;
     top: 0;
-    padding: 0;
   }
 
   .sticky + main {
@@ -3652,6 +3687,10 @@ body {
     padding: 0 0.75rem;
     margin: 5px 0 2px 16px;
     margin: 0.3125rem 0 0.125rem 1rem;
+  }
+
+  .sticky .nav-tier2 {
+    padding: 0 2.1%;
   }
 }
 /* Templates */
@@ -3906,6 +3945,10 @@ body {
 .xx-slabs section {
   padding: 0 2%;
   width: 96%;
+}
+
+.xx-patchwork .pattern {
+  margin: 0;
 }
 
 .pattern {

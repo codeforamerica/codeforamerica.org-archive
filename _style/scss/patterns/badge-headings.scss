@@ -14,7 +14,7 @@
     min-height: 3.5em;
     padding: 1.3em 0 0.5em 5.2em;
     clear: both;
-    margin: 1em 0 1em 0;
+    margin: 1em 0 2em 0;
     width: auto;
     }
 }
@@ -23,6 +23,8 @@
     position: absolute;
     left: 0;
     top: 0.5em;
+    min-height: 28px;
+    min-width: 30px;
     }
 
 .badge-heading i:before {

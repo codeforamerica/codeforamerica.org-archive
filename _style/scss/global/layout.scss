@@ -82,7 +82,7 @@ blockquote {
         float: right;
         }
     
-    .layout-minim:nth-of-type(2n+3) {
+    .layout-minim:nth-child(3n+2) {
         clear: both;
         }
         

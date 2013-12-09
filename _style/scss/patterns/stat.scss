@@ -1,28 +1,45 @@
+.stats {
+	display: table;
+	padding: 1em 4% 0;
+	}
+
 .stat {
+	display: table-column;
     position: relative;
-    padding-bottom: 2em;
-    width: 7em;
-    text-align: center;
+    border-right: 1px solid $color-light-gray;
     float: left;
     margin: 0 1em 1em 0;
+    padding-right: 1em;
+    min-height: 4.5em;
     }
 
+.stat:last-child {
+	border-right: none;
+	}
+
+.stat-result {
+	display: table-cell;
+	width: auto;
+	padding: 0 2em 0 0;
+	}
+
 .stat .stat-heading {
-    border-bottom: 1px solid;
-    @include border-color($color-medium-gray, 0.3);
-    @include color($color-medium-gray, 0.7);
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.3em;
-    font-size: 0.9em;
+    @extend .text-quiet;
+    margin-bottom: 0.2em;
+    @include rem(font-size, 12px);
     }
 
 .stat .stat-figure {
-    font-size: 3em;
+    @include rem(font-size, 30px);
     @include color($color-black, 1);
     font-family: georgia;
     font-weight: bold;
-    text-align: center;
     display: block;
+    margin: 0;
     }
+
+.stat .stat-caption {
+	text-transform: none;
+	@include rem(font-size, 14px);
+	color: $color-dark-gray;
+	}

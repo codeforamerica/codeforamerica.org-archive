@@ -4,7 +4,6 @@
     position: fixed;
     @include rem(margin-top, 31px);
     top: 0;
-    padding: 0;
     }
     
 .sticky + main {
@@ -28,5 +27,9 @@
     @include rem(padding, 0 12px);
     @include rem(margin, 5px 0 2px 16px);
     }
+
+.sticky .nav-tier2 {
+	padding: 0 2.1%; // Compensates for a weird calculation bug
+	}
 
 }

@@ -1,7 +1,8 @@
 .global-header {
     padding: 0;
     float: left;
-    width: 100%;
+    width: 96%;
+    padding: 0 2%;
     border-bottom: 1px solid;
     @include border-color($color-light-gray, 0.5);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
