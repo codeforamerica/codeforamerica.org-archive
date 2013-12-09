@@ -4,7 +4,6 @@
     		{% if page.masthead-image %}
     		style="background-image: url('/_media/images/masthead/{{ page.masthead-image }}')" 
     		{% elsif page.path contains '_posts' %} style="background-image: url('/_media/images/masthead/masthead-3.jpg')"
-    		{% else %} style="background-image: url('/_media/images/masthead/masthead-2.jpg')"
     		{% endif %}>
     	
     	
@@ -40,10 +39,19 @@
         <nav class="nav-global-secondary">
             <ul>
             	<li class="nav-tier1 nav-has-children">
-            		<a href="/_site/about/">Who we are</a>
+            		<a href="/_site/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>
+            		{% if page.path contains 'about' %}
+            		<ul class="nav-tier2">
+            		    <li><a href="/_site/about/">Team</a></li>
+            		    <li><a href="/_site/about/">Annual Report</a></li>
+            		    <li><a href="/_site/about/">Supporters</a></li>
+            		    <li><a href="/_site/about/">Press</a></li>
+            		    <li><a href="/_site/about/">Contact</a></li>
+            		</ul>
+            		{% endif %} 
             	</li>
                 <li class="nav-tier1 nav-has-children">
-                    <a href="/_site/governments/">Governments</a>
+                    <a href="/_site/governments/" {% if page.path contains 'governments' %}class="state-active"{% endif %}>Governments</a>
                     {% if page.path contains 'governments' %}
                     <ul class="nav-tier2">
                         <li><a href="/_site/governments/">Current Governments</a></li>
@@ -54,7 +62,7 @@
                     {% endif %} 
                 </li>
                 <li class="nav-tier1 nav-has-children">
-                	<a href="/_site/citizens/">Citizens</a>
+                	<a href="/_site/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
                 	{% if page.path contains 'citizens' %}
                 	<ul class="nav-tier2">
                 		<li><a href="#">Requests</a></li>
@@ -65,7 +73,7 @@
                 	{% endif %} 
                 </li>
                 <li class="nav-tier1">
-                	<a href="/_site/apps/">Apps</a>
+                	<a href="/_site/apps/" {% if page.path contains 'apps' %}class="state-active"{% endif %}>Apps</a>
                 </li>
                 <li><a href="/_site/donate/" class="button">Donate</a></li>
             </ul>

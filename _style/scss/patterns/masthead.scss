@@ -22,6 +22,7 @@
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-image: url('/_media/images/masthead/masthead-2.jpg');
     }
 
 
@@ -56,7 +57,7 @@
     }
 
 .masthead-s .masthead-header {
-    @include rem(margin, 40px auto 20px);
+    @include rem(margin, 40px auto 40px);
     }
 
 .masthead-s .masthead-image {
@@ -64,17 +65,15 @@
     }
 
 .masthead-s .page-title {
-    @include rem(font-size, 70px);
-    @include rem(line-height, 71px);
+    @include rem(font-size, 57px);
+    @include rem(line-height, 65px);
     float: none;
-    @include rem(margin-top, 56px);
-    margin-top: 0;
     @include rem(margin-top, 25px);
     }
 
 .masthead-s .page-title + * {
     display: block;
-    @include rem(margin-top, 17px);
+    @include rem(margin-top, 20px);
     clear: both;
     }
 

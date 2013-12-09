@@ -9,6 +9,24 @@
     margin-bottom: 1em;
     }
 
+.brick:nth-child(1) {
+	background-image: url('../images/brick-bg1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	}
+
+.brick:nth-child(2) {
+	background-image: url('../images/brick-bg2.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	}
+
+.brick:nth-child(3) {
+	background-image: url('../images/brick-bg3.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	}
+
 .brick .brick-link {
     @include rem(min-height, 100px);
     @include rem(padding-top, 80px);

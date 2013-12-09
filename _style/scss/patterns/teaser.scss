@@ -47,6 +47,7 @@
     display: block;
     position: relative;
     border-bottom: none;
+    vertical-align: middle;
     }
 
 .teaser .teaser-masthead .teaser-type {
@@ -115,3 +116,29 @@
 .teaser-body p:last-child {
     margin-bottom: 0;
     }
+
+.teaser-app .teaser-masthead {
+	display: table-cell;
+	background-color: white;
+	height: 123px;
+	padding-left: 4%;
+	padding-right: 4%;
+	width: 100%;
+	}
+
+.teaser-app .teaser-footer {
+    left: 0;
+    right: 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    @include border-color($color-light-gray, 1);
+    }
+
+.teaser-app .teaser-header {
+	margin-top: 130px;
+	width: 100%;
+	}
+.teaser-app .teaser-masthead .teaser-image {
+	margin: 0 auto;
+	display: block;
+	}

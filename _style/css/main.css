@@ -1280,6 +1280,24 @@ input.button-subtle:active,
   margin-bottom: 1em;
 }
 
+.brick:nth-child(1) {
+  background-image: url("../images/brick-bg1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.brick:nth-child(2) {
+  background-image: url("../images/brick-bg2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.brick:nth-child(3) {
+  background-image: url("../images/brick-bg3.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .brick .brick-link {
   min-height: 100px;
   min-height: 6.25rem;
@@ -1541,6 +1559,7 @@ input.button-subtle:active,
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-image: url("/_media/images/masthead/masthead-2.jpg");
 }
 
 .masthead-header {
@@ -1573,8 +1592,8 @@ input.button-subtle:active,
   }
 }
 .masthead-s .masthead-header {
-  margin: 40px auto 20px;
-  margin: 2.5rem auto 1.25rem;
+  margin: 40px auto 40px;
+  margin: 2.5rem auto 2.5rem;
 }
 
 .masthead-s .masthead-image {
@@ -1582,22 +1601,19 @@ input.button-subtle:active,
 }
 
 .masthead-s .page-title {
-  font-size: 70px;
-  font-size: 4.375rem;
-  line-height: 71px;
-  line-height: 4.4375rem;
+  font-size: 57px;
+  font-size: 3.5625rem;
+  line-height: 65px;
+  line-height: 4.0625rem;
   float: none;
-  margin-top: 56px;
-  margin-top: 3.5rem;
-  margin-top: 0;
   margin-top: 25px;
   margin-top: 1.5625rem;
 }
 
 .masthead-s .page-title + * {
   display: block;
-  margin-top: 17px;
-  margin-top: 1.0625rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
   clear: both;
 }
 
@@ -2287,6 +2303,14 @@ nav ul li {
 
 .nav-global-secondary .nav-tier1 {
   position: inherit;
+}
+
+.nav-global-secondary .nav-tier1 > a.state-active,
+.nav-global-secondary .nav-tier1 > a.state-active:hover,
+.nav-global-secondary .nav-tier1 > a.state-active:focus,
+.nav-global-secondary .nav-tier1 > a.state-active:active {
+  background-color: #cf1b41;
+  color: white;
 }
 
 .nav-global-secondary .nav-tier2 {
@@ -3124,6 +3148,7 @@ section,
   display: block;
   position: relative;
   border-bottom: none;
+  vertical-align: middle;
 }
 
 .teaser .teaser-masthead .teaser-type {
@@ -3199,6 +3224,34 @@ section,
   margin-bottom: 0;
 }
 
+.teaser-app .teaser-masthead {
+  display: table-cell;
+  background-color: white;
+  height: 123px;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 100%;
+}
+
+.teaser-app .teaser-footer {
+  left: 0;
+  right: 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.teaser-app .teaser-header {
+  margin-top: 130px;
+  width: 100%;
+}
+
+.teaser-app .teaser-masthead .teaser-image {
+  margin: 0 auto;
+  display: block;
+}
+
 .wodge {
   position: relative;
   margin: 3em 0 2em 0;
@@ -3226,6 +3279,12 @@ section,
   margin-bottom: 1em;
 }
 
+.wodge .button:last-of-type, .wodge input[type="button"][disabled]:last-of-type,
+.wodge input[type="submit"][disabled]:last-of-type,
+.wodge button[disabled]:last-of-type, .wodge .button-prominent:last-of-type, .wodge .button-neutral:last-of-type, .wodge .button-unstyled:last-of-type, .wodge .button-subtle:last-of-type {
+  margin-right: 0;
+}
+
 @media (min-width: 60em) {
   .wodge-s .wodge-button {
     float: right;
@@ -3242,7 +3301,7 @@ section,
   .wodge-s .wodge-header {
     float: left;
     margin-right: 0;
-    width: 50%;
+    width: 48%;
   }
 }
 @media (min-width: 60em) {

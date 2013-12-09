@@ -63,6 +63,14 @@
 .nav-global-secondary .nav-tier1 {
     position: inherit;
     }
+    
+.nav-global-secondary .nav-tier1 > a.state-active,
+.nav-global-secondary .nav-tier1 > a.state-active:hover,
+.nav-global-secondary .nav-tier1 > a.state-active:focus,
+.nav-global-secondary .nav-tier1 > a.state-active:active {
+	background-color: $color-red;
+	color: $color-white;
+	}
 
 .nav-global-secondary .nav-tier2 {
     background-color: $color-light-gray;
