@@ -1,17 +1,26 @@
 .stats {
-	display: table;
 	padding: 1em 4% 0;
 	}
 
 .stat {
-	display: table-column;
     position: relative;
     border-right: 1px solid $color-light-gray;
     float: left;
     margin: 0 1em 1em 0;
     padding-right: 1em;
     min-height: 4.5em;
+    flex-grow: 1;
     }
+
+@media (min-width: 50em) {
+	.stats {
+		display: flex;
+		}
+	
+	.stat {
+		display: flex-box;
+		}
+	}
 
 .stat:last-child {
 	border-right: none;
