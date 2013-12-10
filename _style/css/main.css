@@ -1301,7 +1301,6 @@ input.button-subtle,
   background: rgba(229, 229, 229, 0.35);
   text-shadow: none;
   border: 1px solid #e5e5e5;
-  text-transform: uppercase;
 }
 
 input.button-subtle:hover,

@@ -342,7 +342,14 @@
         
         <p>The classnames used for layout are all prefixed with <code>layout-</code>. They are all derived from musical note values. The site uses a 9-column grid which can be split into a 2, 3 or 9 column layout, and there are slight variations on these layouts.</p>
         
-        <p>A "stacatto" is <a href="http://en.wikipedia.org/wiki/Staccato">a note of shortened duration,[1][2] separated from the note that may follow by silence</a>. This has been applied to the class when the column is shorter than normal.</p>
+        <p>A "stacatto" is:</p>
+        
+        <blockquote>
+        	A note of shortened duration, separated from the note that may follow by silence.
+        	<a href="http://en.wikipedia.org/wiki/Staccato">(Via Wikipedia)</a>
+        </blockquote>
+        
+        <p>This has been applied to the class when the column is shorter than normal.</p>
         
         <p>Layouts can be wrapped inside each other. For example, 2 layout-minims can be within a layout-semibreve to have a 2 column layout which stops growing when it hits a certain size.</p>
         
@@ -530,6 +537,18 @@
 	                <p>layout-quaver</p>
 	            </div>
 	        </div>
+        </div>
+        
+        <div class="xx-pattern-layout">
+        	<div class="layout-semibreve">
+            	<p>layout-breve</p>
+                <div class="layout-minor">
+                    <p>layout-minim-staccato</p>
+                </div>
+                <div class="layout-major">
+                    <p>layout-minim-staccato</p>
+                </div>
+            </div>
         </div>
         
         <h2 class="xx-section-title">Slabs</h2>
