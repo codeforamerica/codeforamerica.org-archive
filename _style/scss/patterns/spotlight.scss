@@ -3,8 +3,8 @@
     border: 1px solid;
     @include border-color($color-light-gray, 1);
     float: left;
-    width: 91%; // can't be 92% because of border.
-    width: calc(92% - 2px); // can't be 92% because of border.
-    padding: 1em 4%;
+    width: auto;
+    width: calc(100% - 2px - 2em);
+    padding: 1em 1em;
     @include rem(margin, 0 0 8px 0);
     }

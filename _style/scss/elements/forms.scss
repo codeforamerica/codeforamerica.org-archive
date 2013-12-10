@@ -1,10 +1,10 @@
 textarea,
 input,
 select {
+	@include rem(border-radius, 4px);
     border-width: 1px;
     border-style: solid;
-    @include border-color($color-medium-gray, 0.5);
-    border-radius: 0.2em;
+    @include border-color($color-medium-gray, 0.7);
     margin-bottom: 1em;
     font-family: $font-sans-regular;
     }
@@ -12,10 +12,10 @@ select {
 input,
 select {
     @include rem(padding, 0 12px);
-    @include rem(margin, 0 8px 8px 0);
+    @include rem(margin, 0 8px 2px 0);
     @include rem(line-height, 19px);
     @include rem(font-size, 14px);
-    @include rem(min-height, 40px);
+    @include rem(min-height, 39px);
     vertical-align: middle;
     display: inline-block;
     }
@@ -25,7 +25,7 @@ select {
 	background-position: 96% center;
 	background-position: top 12px right 15px;
 	background-repeat: no-repeat;
-	@include rem(padding, 10px 26px);
+	@include rem(padding, 9px 26px);
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -40,12 +40,13 @@ select {
 	}
 
 label {
+	@include rem(line-height, 20px);
     display: block;
     margin-right: 0.5em;
     text-transform: uppercase;
-    @include color($color-medium-gray, 0.8);
+    color: $color-gray;
     vertical-align: middle;
-    margin-bottom: 0.3em;
+    margin-bottom: 0;
     font-size: 0.8em;
     }
 
@@ -55,13 +56,8 @@ input:focus {
     outline: 0;
     }
 
-input:valid ~ .input-validation::before {
-    content: "✓";
-    color: green;
-    }
-
-input:invalid {
-    color: red;
+input.invalid {
+    border: 1px solid $color-red;
     }
 
 input[type="text"][disabled] {
@@ -102,17 +98,6 @@ select[disabled] {
     cursor: not-allowed;
     @include background-color($color-light-gray, 0.5);
     }
-
-.note {
-    font-size: 0.8em;
-    @include color($color-medium-gray, 1);
-    @include rem(font-size, 13px);
-    display: inline-block;
-    }
-
-input + .note {
-	vertical-align: text-bottom;
-	}
     
 input[type="search"] {
     -webkit-appearance: none;

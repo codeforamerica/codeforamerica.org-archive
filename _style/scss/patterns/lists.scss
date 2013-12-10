@@ -60,8 +60,17 @@
 
 .list-form .form-field-group .form-field {
     float: left;
-    margin-right: 0;
+    width: 48%;
     }
+
+.list-form .form-field-group .form-field select {
+	width: 100%;
+	}
+
+.list-form .form-field-group .form-field input {
+	width: auto;
+	width: calc(100% - 1.7em);
+	}
 
 .list-form .form-field-group .form-field:last-child {
     margin-right: 0;

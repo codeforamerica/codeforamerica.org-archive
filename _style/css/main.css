@@ -679,6 +679,11 @@ ul li {
   padding-left: 1.3em;
 }
 
+.list-minim {
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
 audio {
   margin: 16px 0;
   margin: 1rem 0;
@@ -760,11 +765,12 @@ tfoot tr:last-child th {
 textarea,
 input,
 select {
+  border-radius: 4px;
+  border-radius: 0.25rem;
   border-width: 1px;
   border-style: solid;
   border-color: #999595;
-  border-color: rgba(153, 149, 149, 0.5);
-  border-radius: 0.2em;
+  border-color: rgba(153, 149, 149, 0.7);
   margin-bottom: 1em;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
@@ -773,14 +779,14 @@ input,
 select {
   padding: 0 12px;
   padding: 0 0.75rem;
-  margin: 0 8px 8px 0;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 8px 2px 0;
+  margin: 0 0.5rem 0.125rem 0;
   line-height: 19px;
   line-height: 1.1875rem;
   font-size: 14px;
   font-size: 0.875rem;
-  min-height: 40px;
-  min-height: 2.5rem;
+  min-height: 39px;
+  min-height: 2.4375rem;
   vertical-align: middle;
   display: inline-block;
 }
@@ -790,8 +796,8 @@ select {
   background-position: 96% center;
   background-position: top 12px right 15px;
   background-repeat: no-repeat;
-  padding: 10px 26px;
-  padding: 0.625rem 1.625rem;
+  padding: 9px 26px;
+  padding: 0.5625rem 1.625rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -806,13 +812,14 @@ select {
 }
 
 label {
+  line-height: 20px;
+  line-height: 1.25rem;
   display: block;
   margin-right: 0.5em;
   text-transform: uppercase;
-  color: #999595;
-  color: rgba(153, 149, 149, 0.8);
+  color: #6d6e71;
   vertical-align: middle;
-  margin-bottom: 0.3em;
+  margin-bottom: 0;
   font-size: 0.8em;
 }
 
@@ -823,13 +830,8 @@ input:focus {
   outline: 0;
 }
 
-input:valid ~ .input-validation::before {
-  content: "✓";
-  color: green;
-}
-
-input:invalid {
-  color: red;
+input.invalid {
+  border: 1px solid #cf1b41;
 }
 
 input[type="text"][disabled] {
@@ -873,19 +875,6 @@ select[disabled] {
   cursor: not-allowed;
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
-}
-
-.note {
-  font-size: 0.8em;
-  color: #999595;
-  color: #999595;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  display: inline-block;
-}
-
-input + .note {
-  vertical-align: text-bottom;
 }
 
 input[type="search"] {
@@ -1002,6 +991,16 @@ button[disabled]:active,
 .button.button-disabled:hover,
 .button.button-disabled:focus,
 .button.button-disabled:active,
+.button-progress,
+input.button-progress,
+input.button-progress:hover,
+input.button-progress:focus,
+input.button-progress:active,
+.button-progress:link,
+.button-progress:visited,
+.button-progress:hover,
+.button-progress:focus,
+.button-progress:active,
 .button:link,
 .button-prominent:link,
 .button-neutral:link,
@@ -1015,6 +1014,7 @@ button[disabled]:link,
 .button.button-disabled:link:hover,
 .button.button-disabled:link:focus,
 .button.button-disabled:link:active,
+.button-progress:link,
 .button:visited,
 .button-prominent:visited,
 .button-neutral:visited,
@@ -1028,6 +1028,7 @@ button[disabled]:visited,
 .button.button-disabled:visited:hover,
 .button.button-disabled:visited:focus,
 .button.button-disabled:visited:active,
+.button-progress:visited,
 .button:hover,
 .button-prominent:hover,
 .button-neutral:hover,
@@ -1040,6 +1041,7 @@ button[disabled]:hover,
 .button-disabled:hover,
 .button.button-disabled:hover:focus,
 .button.button-disabled:hover:active,
+.button-progress:hover,
 .button:focus,
 .button-prominent:focus,
 .button-neutral:focus,
@@ -1052,6 +1054,7 @@ button[disabled]:focus,
 .button-disabled:focus,
 .button.button-disabled:focus:hover,
 .button.button-disabled:focus:active,
+.button-progress:focus,
 .button:active,
 .button-prominent:active,
 .button-neutral:active,
@@ -1063,24 +1066,26 @@ input[type="submit"][disabled]:active,
 button[disabled]:active,
 .button-disabled:active,
 .button.button-disabled:active:hover,
-.button.button-disabled:active:focus {
+.button.button-disabled:active:focus,
+.button-progress:active {
   padding: 0 26px;
   padding: 0 1.625rem;
-  margin: 0 8px 8px 0;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 8px 4px 0;
+  margin: 0 0.5rem 0.25rem 0;
   line-height: 40px;
   line-height: 2.5rem;
   font-size: 14px;
   font-size: 0.875rem;
   min-height: 19px;
   min-height: 1.1875rem;
+  border-radius: 4px;
+  border-radius: 0.25rem;
   background-color: #399fd3;
   -moz-box-sizing: content-box;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: none;
-  border-radius: 0.2em;
   color: white;
   display: inline-block;
   font-weight: normal;
@@ -1109,6 +1114,7 @@ button[disabled]:hover,
 .button-disabled:hover,
 .button.button-disabled:hover:focus,
 .button.button-disabled:hover:active,
+.button-progress:hover,
 .button:focus,
 .button-prominent:focus,
 .button-neutral:focus,
@@ -1121,6 +1127,7 @@ button[disabled]:focus,
 .button-disabled:focus,
 .button.button-disabled:focus:hover,
 .button.button-disabled:focus:active,
+.button-progress:focus,
 input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
@@ -1142,6 +1149,7 @@ button[disabled]:active,
 .button-disabled:active,
 .button.button-disabled:active:hover,
 .button.button-disabled:active:focus,
+.button-progress:active,
 input[type="submit"]:active {
   background-color: #399fd3;
 }
@@ -1200,12 +1208,19 @@ button[disabled]:active::-moz-focus-inner,
 .button.button-disabled:hover::-moz-focus-inner,
 .button.button-disabled:focus::-moz-focus-inner,
 .button.button-disabled:active::-moz-focus-inner,
+.button-progress::-moz-focus-inner,
+.button-progress:link::-moz-focus-inner,
+.button-progress:visited::-moz-focus-inner,
+.button-progress:hover::-moz-focus-inner,
+.button-progress:focus::-moz-focus-inner,
+.button-progress:active::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
+/*  Button: Prominent --------------------------------------- */
 .button-prominent,
 input.button-prominent,
 .button-prominent:link,
@@ -1223,6 +1238,12 @@ input.button-prominent:focus,
 .button-prominent:focus {
   background: #cf1b41;
   background: rgba(207, 27, 65, 0.8);
+}
+
+.button-prominent:active,
+input.button-prominent:active {
+  background: #cf1b41;
+  background: #cf1b41;
 }
 
 /*  Button: Neutral --------------------------------------- */
@@ -1245,6 +1266,12 @@ input.button-neutral:focus,
   background: rgba(122, 181, 214, 0.8);
 }
 
+.button-neutral:active,
+input.button-neutral:active {
+  background: #7ab5d6;
+  background: #7ab5d6;
+}
+
 /*  Button: Alternative */
 .button-alternative,
 input.button-alternative,
@@ -1263,6 +1290,12 @@ input.button-alternative:focus,
 .button-alternative:focus {
   background: #00a175;
   background: rgba(0, 161, 117, 0.8);
+}
+
+.button-alternative:active,
+input.button-alternative:active {
+  background: #00a175;
+  background: #00a175;
 }
 
 /*  Button: Unstyled --------------------------------------- */
@@ -1288,6 +1321,12 @@ input.button-unstyled,
   color: black;
 }
 
+.button-unstyled:active,
+input.button-unstyled:active {
+  color: black;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /*  Button: Subtle --------------------------------------- */
 .button-subtle,
 input.button-subtle,
@@ -1311,6 +1350,12 @@ input.button-subtle:active,
 .button-subtle:active {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.6);
+}
+
+.button-subtle:active,
+input.button-subtle:active {
+  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.35);
 }
 
 /*  Button: Disabled --------------------------------------- */
@@ -1350,6 +1395,7 @@ button.button-disabled[disabled],
 .button-disabled.button:hover,
 .button-disabled.button:focus,
 .button-disabled.button:active,
+input.button-disabled.button-progress,
 .button.button-disabled:hover,
 input.button-disabled[type="button"][disabled]:hover,
 input.button-disabled[type="submit"][disabled]:hover,
@@ -1374,6 +1420,85 @@ input.button-disabled[type="submit"][disabled]:active,
   color: #999595;
 }
 
+.button-progress,
+input.button-progress,
+input.button-progress:hover,
+input.button-progress:focus,
+input.button-progress:active,
+.button-progress:link,
+.button-progress:visited,
+.button-progress:hover,
+.button-progress:focus,
+.button-progress:active {
+  background-position: right 10px center;
+  padding-right: 50px;
+  background-image: url("../images/loading-circle-blue.gif");
+  background-repeat: no-repeat;
+  cursor: not-allowed;
+}
+
+.button-neutral.button-progress,
+input.button-neutral.button-progress,
+input.button-neutral.button-progress:hover,
+input.button-neutral.button-progress:focus,
+input.button-neutral.button-progress:active,
+.button-neutral.button-progress:link,
+.button-neutral.button-progress:visited,
+.button-neutral.button-progress:hover,
+.button-neutral.button-progress:focus,
+.button-neutral.button-progress:active {
+  background-image: url("../images/loading-circle-blue.gif");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.button-alternative.button-progress,
+input.button-alternative.button-progress,
+input.button-alternative.button-progress:hover,
+input.button-alternative.button-progress:focus,
+input.button-alternative.button-progress:active,
+.button-alternative.button-progress:link,
+.button-alternative.button-progress:visited,
+.button-alternative.button-progress:hover,
+.button-alternative.button-progress:focus,
+.button-alternative.button-progress:active {
+  background-image: url("../images/loading-circle-green.gif");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.button-prominent.button-progress,
+input.button-prominent.button-progress,
+input.button-prominent.button-progress:hover,
+input.button-prominent.button-progress:focus,
+input.button-prominent.button-progress:active,
+.button-prominent.button-progress:link,
+.button-prominent.button-progress:visited,
+.button-prominent.button-progress:hover,
+.button-prominent.button-progress:focus,
+.button-prominent.button-progress:active {
+  background-image: url("../images/loading-circle-red.gif");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.button-subtle.button-progress,
+input.button-subtle.button-progress,
+input.button-subtle.button-progress:hover,
+input.button-subtle.button-progress:focus,
+input.button-subtle.button-progress:active,
+.button-subtle.button-progress:link,
+.button-subtle.button-progress:visited,
+.button-subtle.button-progress:hover,
+.button-subtle.button-progress:focus,
+.button-subtle.button-progress:active {
+  background-image: url("../images/loading-circle.gif");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: #6d6e71;
+  border: 1px solid #e5e5e5;
+}
+
 /*  Button: Sizes --------------------------------------- */
 .button-crotchet,
 .button-crotchet:link,
@@ -1385,6 +1510,37 @@ input.button-disabled[type="submit"][disabled]:active,
   padding: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+.button-l,
+input.button-l,
+.button-l:link,
+.button-l:visited,
+.button-l:hover,
+.button-l:focus,
+.button-l:active {
+  min-height: 50px;
+  min-height: 3.125rem;
+  padding: 0 32px;
+  padding: 0 2rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+}
+
+.button-s,
+input.button-s,
+.button-s:link,
+.button-s:link,
+.button-s:link,
+.button-s:link,
+.button-s:link {
+  padding: 0 16px;
+  padding: 0 1rem;
+  min-height: 10px;
+  min-height: 0.625rem;
+  height: 30px;
+  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .blurb {
@@ -1559,7 +1715,7 @@ input.button-disabled[type="submit"][disabled]:active,
 .chimney .button-disabled,
 .chimney .button.button-disabled:hover,
 .chimney .button.button-disabled:focus,
-.chimney .button.button-disabled:active {
+.chimney .button.button-disabled:active, .chimney .button-progress {
   margin-left: 0;
 }
 
@@ -1570,7 +1726,7 @@ input.button-disabled[type="submit"][disabled]:active,
   .chimney .button-disabled,
   .chimney .button.button-disabled:hover,
   .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active {
+  .chimney .button.button-disabled:active, .chimney .button-progress {
     margin-left: 155px;
   }
 }
@@ -1581,7 +1737,7 @@ input.button-disabled[type="submit"][disabled]:active,
   .chimney .button-disabled,
   .chimney .button.button-disabled:hover,
   .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active {
+  .chimney .button.button-disabled:active, .chimney .button-progress {
     margin-left: 0;
   }
 }
@@ -1952,7 +2108,7 @@ input.button-disabled[type="submit"][disabled]:active,
 .list-form .button-disabled,
 .list-form .button.button-disabled:hover,
 .list-form .button.button-disabled:focus,
-.list-form .button.button-disabled:active {
+.list-form .button.button-disabled:active, .list-form .button-progress {
   margin-bottom: 0;
   margin-top: 1em;
 }
@@ -1986,7 +2142,16 @@ input.button-disabled[type="submit"][disabled]:active,
 
 .list-form .form-field-group .form-field {
   float: left;
-  margin-right: 0;
+  width: 48%;
+}
+
+.list-form .form-field-group .form-field select {
+  width: 100%;
+}
+
+.list-form .form-field-group .form-field input {
+  width: auto;
+  width: calc(100% - 1.7em);
 }
 
 .list-form .form-field-group .form-field:last-child {
@@ -2062,7 +2227,7 @@ input.button-disabled[type="submit"][disabled]:active,
   .list-buttons .button-disabled,
   .list-buttons .button.button-disabled:hover,
   .list-buttons .button.button-disabled:focus,
-  .list-buttons .button.button-disabled:active {
+  .list-buttons .button.button-disabled:active, .list-buttons .button-progress {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -2464,7 +2629,7 @@ nav ul li {
 .nav-global-secondary li .button-disabled,
 .nav-global-secondary li .button.button-disabled:hover,
 .nav-global-secondary li .button.button-disabled:focus,
-.nav-global-secondary li .button.button-disabled:active {
+.nav-global-secondary li .button.button-disabled:active, .nav-global-secondary li .button-progress {
   font-size: 1em;
   padding: 0 12px;
   padding: 0 0.75rem;
@@ -3170,9 +3335,9 @@ section,
   border-color: #e5e5e5;
   border-color: #e5e5e5;
   float: left;
-  width: 91%;
-  width: calc(92% - 2px);
-  padding: 1em 4%;
+  width: auto;
+  width: calc(100% - 2px - 2em);
+  padding: 1em 1em;
   margin: 0 0 8px 0;
   margin: 0 0 0.5rem 0;
 }
@@ -3409,6 +3574,20 @@ section,
   max-width: 85%;
 }
 
+.note {
+  color: #999595;
+  color: #999595;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  display: inline-block;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+.text-invalid {
+  color: #cf1b41;
+}
+
 .wodge {
   position: relative;
   margin: 3em 0 2em 0;
@@ -3439,7 +3618,7 @@ section,
 .wodge .button:last-of-type, .wodge .button-prominent:last-of-type, .wodge .button-neutral:last-of-type, .wodge .button-alternative:last-of-type, .wodge .button-unstyled:last-of-type, .wodge .button-subtle:last-of-type, .wodge input[type="button"][disabled]:last-of-type,
 .wodge input[type="submit"][disabled]:last-of-type,
 .wodge button[disabled]:last-of-type,
-.wodge .button-disabled:last-of-type {
+.wodge .button-disabled:last-of-type, .wodge .button-progress:last-of-type {
   margin-right: 0;
 }
 
@@ -3452,7 +3631,7 @@ section,
   .wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
   .wodge-s .wodge-button input[type="submit"][disabled],
   .wodge-s .wodge-button button[disabled],
-  .wodge-s .wodge-button .button-disabled {
+  .wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
     min-width: 7em;
     margin-left: 0.35em;
   }
@@ -3744,6 +3923,7 @@ body {
 .js-offcanvas li input[type="submit"][disabled]:link,
 .js-offcanvas li button[disabled]:link,
 .js-offcanvas li .button-disabled:link,
+.js-offcanvas li .button-progress:link,
 .js-offcanvas li .button:visited,
 .js-offcanvas li .button-prominent:visited,
 .js-offcanvas li .button-neutral:visited,
@@ -3754,6 +3934,7 @@ body {
 .js-offcanvas li input[type="submit"][disabled]:visited,
 .js-offcanvas li button[disabled]:visited,
 .js-offcanvas li .button-disabled:visited,
+.js-offcanvas li .button-progress:visited,
 .js-offcanvas li .button:hover,
 .js-offcanvas li .button-prominent:hover,
 .js-offcanvas li .button-neutral:hover,
@@ -3764,6 +3945,7 @@ body {
 .js-offcanvas li input[type="submit"][disabled]:hover,
 .js-offcanvas li button[disabled]:hover,
 .js-offcanvas li .button-disabled:hover,
+.js-offcanvas li .button-progress:hover,
 .js-offcanvas li .button:focus,
 .js-offcanvas li .button-prominent:focus,
 .js-offcanvas li .button-neutral:focus,
@@ -3774,6 +3956,7 @@ body {
 .js-offcanvas li input[type="submit"][disabled]:focus,
 .js-offcanvas li button[disabled]:focus,
 .js-offcanvas li .button-disabled:focus,
+.js-offcanvas li .button-progress:focus,
 .js-offcanvas li .button:active,
 .js-offcanvas li .button-prominent:active,
 .js-offcanvas li .button-neutral:active,
@@ -3783,7 +3966,8 @@ body {
 .js-offcanvas li input[type="button"][disabled]:active,
 .js-offcanvas li input[type="submit"][disabled]:active,
 .js-offcanvas li button[disabled]:active,
-.js-offcanvas li .button-disabled:active {
+.js-offcanvas li .button-disabled:active,
+.js-offcanvas li .button-progress:active {
   line-height: 20px;
   line-height: 1.25rem;
   height: auto;
@@ -3813,6 +3997,7 @@ body {
 .js-offcanvas li input[type="submit"][disabled]:hover,
 .js-offcanvas li button[disabled]:hover,
 .js-offcanvas li .button-disabled:hover,
+.js-offcanvas li .button-progress:hover,
 .js-offcanvas li .button:focus,
 .js-offcanvas li .button-prominent:focus,
 .js-offcanvas li .button-neutral:focus,
@@ -3823,6 +4008,7 @@ body {
 .js-offcanvas li input[type="submit"][disabled]:focus,
 .js-offcanvas li button[disabled]:focus,
 .js-offcanvas li .button-disabled:focus,
+.js-offcanvas li .button-progress:focus,
 .js-offcanvas li .button:active,
 .js-offcanvas li .button-prominent:active,
 .js-offcanvas li .button-neutral:active,
@@ -3832,7 +4018,8 @@ body {
 .js-offcanvas li input[type="button"][disabled]:active,
 .js-offcanvas li input[type="submit"][disabled]:active,
 .js-offcanvas li button[disabled]:active,
-.js-offcanvas li .button-disabled:active {
+.js-offcanvas li .button-disabled:active,
+.js-offcanvas li .button-progress:active {
   background-color: black;
 }
 
@@ -3943,7 +4130,7 @@ body {
   .sticky .nav-global-secondary li .button, .sticky .nav-global-secondary li .button-prominent, .sticky .nav-global-secondary li .button-neutral, .sticky .nav-global-secondary li .button-alternative, .sticky .nav-global-secondary li .button-unstyled, .sticky .nav-global-secondary li .button-subtle, .sticky .nav-global-secondary li input[type="button"][disabled],
   .sticky .nav-global-secondary li input[type="submit"][disabled],
   .sticky .nav-global-secondary li button[disabled],
-  .sticky .nav-global-secondary li .button-disabled {
+  .sticky .nav-global-secondary li .button-disabled, .sticky .nav-global-secondary li .button-progress {
     padding: 0 12px;
     padding: 0 0.75rem;
     margin: 5px 0 2px 16px;

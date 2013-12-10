@@ -1,0 +1,11 @@
+.note {
+    @include color($color-medium-gray, 1);
+    @include rem(font-size, 13px);
+    display: inline-block;
+    line-height: 22px;
+    vertical-align: top;
+    }
+
+.text-invalid {
+	color: $color-red;
+	}

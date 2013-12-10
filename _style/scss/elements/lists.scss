@@ -19,3 +19,8 @@ ul li {
     background-position: left 0.63em;
     padding-left: 1.3em;
     }
+
+.list-minim {
+	-webkit-column-count: 2;
+	column-count: 2;
+	}

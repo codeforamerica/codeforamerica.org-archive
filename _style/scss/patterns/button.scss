@@ -10,17 +10,17 @@
 	.button:focus,
 	.button:active {
 	    @include rem(padding, 0 26px);
-	    @include rem(margin, 0 8px 8px 0);
+	    @include rem(margin, 0 8px 4px 0);
 	    @include rem(line-height, 40px);
 	    @include rem(font-size, 14px);
 	    @include rem(min-height, 19px);
+	    @include rem(border-radius, 4px);
 	    background-color: $color-blue;
 	    -moz-box-sizing: content-box;
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
 	    appearance: none;
 	    border: none;
-	    border-radius: 0.2em;
 	    color: $color-white;
 	    display: inline-block;
 	    font-weight: normal;
@@ -62,7 +62,7 @@
 		}
 
 
-
+/*  Button: Prominent --------------------------------------- */
 	
 	.button-prominent,
 	input.button-prominent,
@@ -80,6 +80,11 @@
 	.button-prominent:hover,
 	.button-prominent:focus {
 	    @include background-color($color-red, 0.8);
+	    }
+	
+	.button-prominent:active,
+	input.button-prominent:active {
+	    @include background-color($color-red, 1);
 	    }
 
 /*  Button: Neutral --------------------------------------- */
@@ -101,6 +106,11 @@
 	.button-neutral:focus {
 	    @include background-color($color-light-blue, 0.8);
 	    }
+	
+	.button-neutral:active,
+	input.button-neutral:active {
+	    @include background-color($color-light-blue, 1);
+	    }
 
 /*  Button: Alternative */
 
@@ -120,6 +130,11 @@
 	.button-alternative:hover,
 	.button-alternative:focus {
 	    @include background-color($color-teal, 0.8);
+	    }
+	
+	.button-alternative:active,
+	input.button-alternative:active {
+	    @include background-color($color-teal, 1);
 	    }
 
 /*  Button: Unstyled --------------------------------------- */
@@ -143,6 +158,11 @@
 	.button-unstyled:focus,
 	.button-unstyled:active {
 	    @include color($color-black, 1);
+	    }
+	
+	.button-unstyled:active,
+	input.button-unstyled:active {
+	    @include color($color-black, 0.6);
 	    }
 
 /*  Button: Subtle --------------------------------------- */
@@ -168,6 +188,11 @@
 	.button-subtle:focus,
 	.button-subtle:active {
 	    @include background-color($color-light-gray, 0.6);
+	    }
+	
+	.button-subtle:active,
+	input.button-subtle:active {
+	    @include background-color($color-light-gray, 0.35);
 	    }
 
 /*  Button: Disabled --------------------------------------- */
@@ -200,6 +225,89 @@
 	    text-shadow: none;
 	    color: $color-medium-gray;
 	    }
+	
+	
+	.button-progress,
+	input.button-progress,
+	input.button-progress:hover,
+	input.button-progress:focus,
+	input.button-progress:active,
+	.button-progress:link,
+	.button-progress:visited,
+	.button-progress:hover,
+	.button-progress:focus,
+	.button-progress:active {
+		@extend .button;
+		background-position: right 10px center;
+		padding-right: 50px;
+		background-image: url('../images/loading-circle-blue.gif');
+		background-repeat: no-repeat;
+		cursor: not-allowed;
+		}
+	
+	.button-neutral.button-progress,
+	input.button-neutral.button-progress,
+	input.button-neutral.button-progress:hover,
+	input.button-neutral.button-progress:focus,
+	input.button-neutral.button-progress:active,
+	.button-neutral.button-progress:link,
+	.button-neutral.button-progress:visited,
+	.button-neutral.button-progress:hover,
+	.button-neutral.button-progress:focus,
+	.button-neutral.button-progress:active {
+		background-image: url('../images/loading-circle-blue.gif');
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		}
+	
+	.button-alternative.button-progress,
+	input.button-alternative.button-progress,
+	input.button-alternative.button-progress:hover,
+	input.button-alternative.button-progress:focus,
+	input.button-alternative.button-progress:active,
+	.button-alternative.button-progress:link,
+	.button-alternative.button-progress:visited,
+	.button-alternative.button-progress:hover,
+	.button-alternative.button-progress:focus,
+	.button-alternative.button-progress:active {
+		background-image: url('../images/loading-circle-green.gif');
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		}
+	
+	.button-prominent.button-progress,
+	input.button-prominent.button-progress,
+	input.button-prominent.button-progress:hover,
+	input.button-prominent.button-progress:focus,
+	input.button-prominent.button-progress:active,
+	.button-prominent.button-progress:link,
+	.button-prominent.button-progress:visited,
+	.button-prominent.button-progress:hover,
+	.button-prominent.button-progress:focus,
+	.button-prominent.button-progress:active {
+		background-image: url('../images/loading-circle-red.gif');
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		}
+	
+	.button-subtle.button-progress,
+	input.button-subtle.button-progress,
+	input.button-subtle.button-progress:hover,
+	input.button-subtle.button-progress:focus,
+	input.button-subtle.button-progress:active,
+	.button-subtle.button-progress:link,
+	.button-subtle.button-progress:visited,
+	.button-subtle.button-progress:hover,
+	.button-subtle.button-progress:focus,
+	.button-subtle.button-progress:active {
+		background-image: url('../images/loading-circle.gif');
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		color: $color-gray;
+		border: 1px solid $color-light-gray;
+		}
+		
+	
 
 /*  Button: Sizes --------------------------------------- */
 
@@ -213,4 +321,29 @@
 	padding: 0;
 	margin-left: 0;
 	margin-right: 0;
+	}
+
+.button-l,
+input.button-l,
+.button-l:link,
+.button-l:visited,
+.button-l:hover,
+.button-l:focus,
+.button-l:active {
+	@include rem(min-height, 50px);
+	@include rem(padding, 0 32px);
+	@include rem(line-height, 50px);
+	}
+
+.button-s,
+input.button-s,
+.button-s:link,
+.button-s:link,
+.button-s:link,
+.button-s:link,
+.button-s:link {
+	@include rem(padding, 0 16px);
+	@include rem(min-height, 10px);
+	height: 30px;
+	@include rem(line-height, 30px);
 	}
