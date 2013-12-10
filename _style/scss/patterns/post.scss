@@ -1,18 +1,5 @@
 .post {
     }
-
-.post .post-content {
-    margin-bottom: 2.5em;
-    }
-    
-    @media (min-width: 60em) {
-        .post .post-content {
-            width: 72%;
-            padding-left: 0;
-            margin-left: 0;
-            float: right;
-            }
-    }
     
 .post .post-header {
     @extend .heading;
@@ -64,27 +51,6 @@
     margin: 0 0 0 -16.7%;
     }
 }
-
-.post-author {
-    @include color($color-medium-gray, 1);
-    font-size: 0.85em;
-    width: 100%;
-    margin: 0 0 2em 0;
-    }
-    
-    @media (min-width: 60em) {
-        .post-author {
-        width:  22%;
-        float: left;
-        margin: 0 2%;
-        }
-    }
-    
-.post-author .profile-name {
-    margin: 0 0 0.3em 0;
-    @include color($color-red, 1);
-    font-size: 1.5em;
-    }
 
 .post-author .profile-photo {
     width: 60px;

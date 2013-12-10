@@ -14,7 +14,6 @@
 .brick:before {
 	content:  "";
 	position: absolute;
-	background-image: url('../images/brick-bg1.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: $color-blue;
@@ -34,7 +33,7 @@
 	}
 
 .brick:nth-child(1):before {
-	
+	background-image: url('../images/brick-bg1.png');
 	}
 
 .brick:nth-child(2):before {
@@ -55,6 +54,13 @@
     padding-right: 4%;
     display: block;
     }
+
+	@media (max-width:40em) {
+	.brick .brick-link {
+	    @include rem(padding-top, 15px);
+	    @include rem(padding-bottom, 10px);
+	    }
+	}
 
 .brick .brick-link:hover,
 .brick .brick-link:focus,

@@ -14,7 +14,7 @@
 	    @include rem(line-height, 40px);
 	    @include rem(font-size, 14px);
 	    @include rem(min-height, 19px);
-	    @include background-color($color-blue, 1);
+	    background-color: $color-blue;
 	    -moz-box-sizing: content-box;
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
@@ -62,30 +62,7 @@
 		}
 
 
-/*  Button: Disabled --------------------------------------- */
 
-	input[type="button"][disabled],
-	input[type="button"][disabled]:hover,
-	input[type="button"][disabled]:focus,
-	input[type="button"][disabled]:active,
-	input[type="submit"][disabled],
-	input[type="submit"][disabled]:hover,
-	input[type="submit"][disabled]:focus,
-	input[type="submit"][disabled]:active,
-	button[disabled],
-	button[disabled]:hover,
-	button[disabled]:focus,
-	button[disabled]:active,
-	.button.button-disabled,
-	.button.button-disabled:hover,
-	.button.button-disabled:focus,
-	.button.button-disabled:active {
-		@extend .button;
-	    background-color: $color-light-gray;
-	    cursor: not-allowed;
-	    text-shadow: none;
-	    color: $color-medium-gray;
-	    }
 	
 	.button-prominent,
 	input.button-prominent,
@@ -123,6 +100,26 @@
 	.button-neutral:hover,
 	.button-neutral:focus {
 	    @include background-color($color-light-blue, 0.8);
+	    }
+
+/*  Button: Alternative */
+
+	.button-alternative,
+	input.button-alternative,
+	.button-alternative:link,
+	.button-alternative:visited,
+	.button-alternative:hover,
+	.button-alternative:focus,
+	.button-alternative:active {
+		@extend .button;
+		@include background-color($color-teal, 1);
+		}
+	
+	input.button-alternative:hover,
+	input.button-alternative:focus,
+	.button-alternative:hover,
+	.button-alternative:focus {
+	    @include background-color($color-teal, 0.8);
 	    }
 
 /*  Button: Unstyled --------------------------------------- */
@@ -172,6 +169,37 @@
 	.button-subtle:focus,
 	.button-subtle:active {
 	    @include background-color($color-light-gray, 0.6);
+	    }
+
+/*  Button: Disabled --------------------------------------- */
+
+	input[type="button"][disabled],
+	input[type="button"][disabled]:hover,
+	input[type="button"][disabled]:focus,
+	input[type="button"][disabled]:active,
+	input[type="submit"][disabled],
+	input[type="submit"][disabled]:hover,
+	input[type="submit"][disabled]:focus,
+	input[type="submit"][disabled]:active,
+	button[disabled],
+	button[disabled]:hover,
+	button[disabled]:focus,
+	button[disabled]:active,
+	.button-disabled,
+	.button-disabled:link,
+	.button-disabled:visited,
+	.button-disabled:hover,
+	.button-disabled:focus,
+	.button-disabled:active,
+	.button.button-disabled,
+	.button.button-disabled:hover,
+	.button.button-disabled:focus,
+	.button.button-disabled:active {
+		@extend .button;
+	    background-color: $color-light-gray;
+	    cursor: not-allowed;
+	    text-shadow: none;
+	    color: $color-medium-gray;
 	    }
 
 /*  Button: Sizes --------------------------------------- */

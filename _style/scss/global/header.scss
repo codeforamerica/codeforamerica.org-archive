@@ -10,12 +10,11 @@
     background-color: $color-white;
     z-index: 2;
     @include transition(padding, 0.5s);
-    @include rem(margin-bottom, 41px);
     }
 
 .global-header-logo {
     display: block;
-    margin: 0 auto;
+    margin: 0.5em auto;
     width: 8em;
     @include transition(all, 0.4s);
     float: left;

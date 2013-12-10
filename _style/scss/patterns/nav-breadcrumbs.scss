@@ -1,6 +1,8 @@
 .nav-breadcrumbs {
     @include color($color-gray, 0.7);
+    @include rem(font-size, 12px);
     margin-bottom: 1em;
+    text-rendering: optimizeLegibility;
     }
 
 .nav-breadcrumbs ul {
@@ -8,10 +10,12 @@
     margin: 0;
     }
 
+.nav-breadcrumbs ul li:before {
+	content: "→ ";
+	}
+
 .nav-breadcrumbs ul li {
     border-right: none;
-    background-image: url('../images/arrow-breadcrumb.png');
-    padding-right: 23px;
     background-position: right center;
     background-repeat: no-repeat;
     margin-right: 0;
@@ -26,10 +30,14 @@
     background-image: none;
     }
 
+.nav-breadcrumbs ul li:first-child:before {
+	content: none;
+	}
+
 .nav-breadcrumbs li:first-child a {
     background-image: url('../images/flag-blue.png');
     display: inline-block;
-    background-size: 55px;
+    background-size: 43px;
     background-repeat: no-repeat;
     background-position: left center;
     
@@ -63,5 +71,6 @@
 .nav-breadcrumbs li:first-child a {
     display: inline-block;
     text-indent: -9999px;
-    width: 50px;
+    width: 43px;
+    padding-right: 0;
     }

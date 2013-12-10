@@ -120,6 +120,7 @@ body {
 .js-offcanvas .nav-tier2 a:focus,
 .js-offcanvas .nav-tier2 a:active, {
 	@include rem(padding, 10px 16px);
+	
 	}
 
 .js-offcanvas .search-global input {

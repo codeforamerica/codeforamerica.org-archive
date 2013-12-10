@@ -121,9 +121,27 @@ blockquote {
         max-width: 60rem;
         }
 
+/*  One 2 column + One 5 column = minor and major  */
 
-
-
+	.layout-minor {
+		width: 26%;
+		float: left;
+		}
+		
+		.layout-minor,
+		.layout-minor p,
+		.layout-minor ul,
+		.layout-minor ol {
+			font-size: 13px;
+			line-height: 20px;
+			color: #666;
+			}
+	
+	.layout-major {
+		float: right;
+		width: 70%;
+		clear: none;
+		}
 
 
 @media (min-width: 60em) {
@@ -257,10 +275,17 @@ blockquote {
     }
 
 
+section,
+[class*="slab-"] {
+	padding: 0;
+	width: 100%;
+	}
 
 
 
-
+.global-header {
+	margin-bottom: 41px;
+	}
 
 .global-header-logo {
     float: left;
@@ -291,6 +316,15 @@ blockquote {
 
 
 
+.nav-global-primary ul {
+	width: auto;
+	float: right;
+	}
+
+
+.nav-global-primary li {
+    margin: 6px 10px 2px;
+    }
 
 
 .masthead {

@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    background-color: #333;
+    background-color: $color-dark-gray;
     }
 
 .masthead:before {
@@ -18,12 +18,8 @@
 	max-width: none;
 	width: 100%;
 	min-height: 400px;
-	background-color: red;
 	z-index: 1;
 	}
-
-
-
 
 .masthead-header {
     overflow: hidden;

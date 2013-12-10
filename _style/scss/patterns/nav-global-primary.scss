@@ -20,14 +20,14 @@
 }
 
 .nav-global-primary ul {
-    width: auto;
-    float: right;
+    width: 96%;
+    margin: 0;
     }
 
 .nav-global-primary li {
     display: block;
     float: left;
-    @include rem(margin, 6px 10px 2px);
+    @include rem(margin, 6px 0px 2px);
     @include rem(font-size, 12px);
     @include rem(line-height, 16px);
     }
@@ -47,6 +47,7 @@
 .nav-global-primary li a:active {
     @include background-color($color-red, 1);
     border-radius: 0.2em;
+    border: none;
     }
 
 
