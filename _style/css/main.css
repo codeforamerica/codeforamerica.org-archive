@@ -1897,8 +1897,16 @@ input.button-s,
 .masthead-header a:focus,
 .masthead-header a:active {
   color: white;
+  color: rgba(255, 255, 255, 0.8);
   border-bottom: none;
   margin-bottom: 0;
+  transition: 0.2s;
+}
+
+.masthead-header a:hover,
+.masthead-header a:focus,
+.masthead-header a:active {
+  color: white;
 }
 
 @media (min-width: 63em) {

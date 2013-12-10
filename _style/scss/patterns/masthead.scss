@@ -39,10 +39,17 @@
 .masthead-header a:hover,
 .masthead-header a:focus,
 .masthead-header a:active {
-    color: $color-white;
+	@include color($color-white, 0.8);
     border-bottom: none;
     margin-bottom: 0;
+    transition: 0.2s;
     }
+
+.masthead-header a:hover,
+.masthead-header a:focus,
+.masthead-header a:active {
+	color: $color-white;
+	}
     
     @media (min-width: 63em) {
     .masthead .masthead-header {
