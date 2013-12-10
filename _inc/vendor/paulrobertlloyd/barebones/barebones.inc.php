@@ -81,7 +81,7 @@ function displayPatchwork($dir) {
                     echo "    <h3 class=\"xx-section-title\">".$fPlain."</h3>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $fName != 'header') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $fName != 'header' && $fName != 'head' && $fName != 'foot') { // Skip non-HTML files
                     echo "<div class=\"pattern\" id=\"".$fName."\">\n";
                     echo "\n";
                     include $dir.'/'.$ff;
