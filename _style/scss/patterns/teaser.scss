@@ -2,6 +2,11 @@
 	clear: both;
 	}
 
+.teasers li {
+	background-image: none;
+	padding-left: 0;
+	}
+
 .teaser {
     margin-bottom: 1.8em;
     @include background-color($color-white, 1);

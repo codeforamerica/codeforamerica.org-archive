@@ -3011,10 +3011,8 @@ nav ul li {
 section,
 [class*="slab-"] {
   clear: both;
-  width: 92%;
+  width: 100%;
   float: left;
-  padding-left: 4%;
-  padding-right: 4%;
 }
 
 .slab-blue {
@@ -3173,7 +3171,8 @@ section,
   border-color: #e5e5e5;
   border-color: #e5e5e5;
   float: left;
-  width: 92%;
+  width: 91%;
+  width: calc(92% - 2px);
   padding: 1em 4%;
   margin: 0 0 8px 0;
   margin: 0 0 0.5rem 0;
@@ -3238,6 +3237,11 @@ section,
 
 .teasers {
   clear: both;
+}
+
+.teasers li {
+  background-image: none;
+  padding-left: 0;
 }
 
 .teaser {
@@ -3488,7 +3492,7 @@ section,
 .global-header-logo {
   display: block;
   margin: 0.5em auto;
-  width: 8em;
+  width: 6em;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   float: left;
@@ -3613,7 +3617,7 @@ section,
   background: black;
   clear: both;
   color: white;
-  padding: 0 0 1em;
+  padding: 0 0 1.5em;
   font-size: 1em;
   min-height: 45px;
 }
@@ -3624,7 +3628,7 @@ section,
 
 .global-foot-logo {
   width: 100px;
-  margin: 1em 1em 0.3em 0;
+  margin: 1em 1em 1em 0;
   position: absolute;
   left: 0;
 }
@@ -3854,6 +3858,10 @@ body {
   display: block;
 }
 
+.js-offcanvas .nav-global-secondary .nav-tier2 {
+  border-bottom: none;
+}
+
 .js-offcanvas .nav-global-primary ul {
   padding: 0;
   margin: 0;
@@ -3875,6 +3883,14 @@ body {
   text-transform: none;
 }
 
+.js-offcanvas .nav-tier1 a:link,
+.js-offcanvas .nav-tier1 a:visited,
+.js-offcanvas .nav-tier1 a:hover,
+.js-offcanvas .nav-tier1 a:focus,
+.js-offcanvas .nav-tier1 a:active {
+  color: white;
+}
+
 .js-offcanvas .nav-tier2 a:link,
 .js-offcanvas .nav-tier2 a:visited,
 .js-offcanvas .nav-tier2 a:hover,
@@ -3882,6 +3898,14 @@ body {
 .js-offcanvas .nav-tier2 a:active {
   padding: 10px 16px;
   padding: 0.625rem 1rem;
+  color: white;
+}
+
+.js-offcanvas .nav-tier1 > a.state-active,
+.js-offcanvas .nav-tier1 > a.state-active:hover,
+.js-offcanvas .nav-tier1 > a.state-active:focus,
+.js-offcanvas .nav-tier1 > a.state-active:active {
+  background-color: black;
 }
 
 .js-offcanvas .search-global input {
@@ -4088,8 +4112,14 @@ body {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
-  margin: 1em 0 0.5em;
+  margin: 1em 0 1em;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
   clear: both;
+  display: block;
+  float: left;
+  width: 100%;
 }
 
 .xx-nav ol {

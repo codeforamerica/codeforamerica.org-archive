@@ -94,6 +94,10 @@ body {
 	display: block;
 	}
 
+.js-offcanvas .nav-global-secondary .nav-tier2 {
+	border-bottom: none;
+	}
+
 .js-offcanvas .nav-global-primary ul {
 	padding: 0;
 	margin: 0;
@@ -114,13 +118,28 @@ body {
 	text-transform: none;
 	}
 
+.js-offcanvas .nav-tier1 a:link,
+.js-offcanvas .nav-tier1 a:visited,
+.js-offcanvas .nav-tier1 a:hover,
+.js-offcanvas .nav-tier1 a:focus,
+.js-offcanvas .nav-tier1 a:active {
+	color: $color-white;
+	}
+
 .js-offcanvas .nav-tier2 a:link,
 .js-offcanvas .nav-tier2 a:visited,
 .js-offcanvas .nav-tier2 a:hover,
 .js-offcanvas .nav-tier2 a:focus,
-.js-offcanvas .nav-tier2 a:active, {
+.js-offcanvas .nav-tier2 a:active {
 	@include rem(padding, 10px 16px);
-	
+	color: $color-white;
+	}
+
+.js-offcanvas .nav-tier1 > a.state-active, 
+.js-offcanvas .nav-tier1 > a.state-active:hover,
+.js-offcanvas .nav-tier1 > a.state-active:focus, 
+.js-offcanvas .nav-tier1 > a.state-active:active {
+	background-color: $color-black;
 	}
 
 .js-offcanvas .search-global input {

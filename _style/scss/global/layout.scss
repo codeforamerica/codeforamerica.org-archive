@@ -289,7 +289,10 @@ section,
 
 .global-header-logo {
     float: left;
-    }
+    width: 8em;
+        margin: 1em auto;
+        }
+    
 
 .nav-global-secondary {
 	float: right;
@@ -370,9 +373,6 @@ section,
     
     
     
-.global-header-logo {
-    margin: 1em auto;
-    }
 
 .nav-articles ul {
 	font-size: 1em;

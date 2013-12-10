@@ -2,6 +2,15 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
+    "\/_includes\/blocks\/elements\/media\/audio.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/media\/audio.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_style\/images\/arrow-chevron-down-gray-dark.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -12,15 +21,6 @@
       "outputAbbreviatedPath" : "\/_style\/images\/arrow-chevron-down-gray-dark.png",
       "initialSize" : 295,
       "fileType" : 8192
-    },
-    "\/_includes\/blocks\/elements\/media\/audio.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/media\/audio.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_includes\/blocks\/patterns\/alert-failure.html" : {
       "ignoreWasSetByUser" : 0,
@@ -49,6 +49,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/152x152\/flag-white-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-blue.png",
+      "initialSize" : 53290,
+      "fileType" : 8192
+    },
     "\/_style\/scss\/templates\/documentation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -72,6 +83,17 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/offcanvas.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_style\/favicons\/60x60\/flag-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-black.png",
+      "initialSize" : 50268,
+      "fileType" : 8192
     },
     "\/_includes\/blocks\/patterns\/blurb.html" : {
       "ignoreWasSetByUser" : 0,
@@ -136,17 +158,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_style\/scss\/patterns\/button.scss" : {
+    "\/governments\/boston\/index.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_style\/scss\/patterns\/button.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/_style\/scss\/css\/button.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/governments\/boston\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/_includes\/blocks\/elements\/text\/small.html" : {
       "ignoreWasSetByUser" : 0,
@@ -177,6 +196,17 @@
       "initialSize" : 1003,
       "fileType" : 8192
     },
+    "\/_style\/favicons\/32x32\/flag-white-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-black.png",
+      "initialSize" : 48934,
+      "fileType" : 8192
+    },
     "\/_style\/images\/gov-grey.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -188,14 +218,28 @@
       "initialSize" : 655,
       "fileType" : 8192
     },
-    "\/governments\/boston\/index.html" : {
+    "\/_style\/favicons\/60x60\/flag-blue.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/governments\/boston\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-blue.png",
+      "initialSize" : 55904,
+      "fileType" : 8192
+    },
+    "\/_style\/scss\/patterns\/button.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/scss\/patterns\/button.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/_style\/scss\/css\/button.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/_style\/images\/graph-black.png" : {
       "ignoreWasSetByUser" : 0,
@@ -226,6 +270,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_includes\/blocks\/elements\/text\/mark.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/mark.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_includes\/blocks\/elements\/text\/sub.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -235,12 +288,12 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/elements\/text\/mark.html" : {
+    "\/apps\/promptly\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/mark.html",
+      "inputAbbreviatedPath" : "\/apps\/promptly\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -367,15 +420,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/elements\/text\/figure-img.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/figure-img.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_style\/scss\/patterns\/wodge-large.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -388,6 +432,26 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_includes\/blocks\/elements\/text\/figure-img.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/figure-img.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_style\/favicons\/76x76\/flag-white-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-blue.png",
+      "initialSize" : 56006,
+      "fileType" : 8192
+    },
     "\/_media\/images\/masthead\/masthead-2.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -398,6 +462,39 @@
       "outputAbbreviatedPath" : "\/_media\/images\/masthead\/masthead-2.jpg",
       "initialSize" : 187615,
       "fileType" : 4096
+    },
+    "\/_style\/favicons\/60x60\/flag-white-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-red.png",
+      "initialSize" : 51557,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/120x120\/flag-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-red.png",
+      "initialSize" : 55940,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/120x120\/flag-white-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-black.png",
+      "initialSize" : 52679,
+      "fileType" : 8192
     },
     "\/_includes\/blocks\/patterns\/nav-page.html" : {
       "ignoreWasSetByUser" : 0,
@@ -459,6 +556,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/120x120\/flag-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-blue.png",
+      "initialSize" : 53927,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/patterns\/alert-success.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -480,6 +588,39 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_style\/images\/brick-bg1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/images\/brick-bg1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/images\/brick-bg1.png",
+      "initialSize" : 82081,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/120x120\/flag-white-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-red.png",
+      "initialSize" : 55332,
+      "fileType" : 8192
+    },
+    "\/_style\/images\/brick-bg2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/images\/brick-bg2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/images\/brick-bg2.png",
+      "initialSize" : 88995,
+      "fileType" : 8192
+    },
     "\/_style\/images\/arrow-chevron-up-gray-light.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -489,6 +630,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/_style\/images\/arrow-chevron-up-gray-light.png",
       "initialSize" : 258,
+      "fileType" : 8192
+    },
+    "\/_style\/images\/brick-bg3.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/images\/brick-bg3.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/images\/brick-bg3.png",
+      "initialSize" : 96730,
       "fileType" : 8192
     },
     "\/_style\/scss\/patterns\/stat.scss" : {
@@ -503,12 +655,12 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_includes\/blocks\/elements\/text\/s.html" : {
+    "\/_includes\/blocks\/elements\/lists\/list-unordered.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/s.html",
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-unordered.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -521,15 +673,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/elements\/lists\/list-unordered.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-unordered.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_includes\/blocks\/elements\/forms\/input-text-disabled.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -538,6 +681,26 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/input-text-disabled.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_includes\/blocks\/elements\/text\/s.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/s.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_style\/favicons\/32x32\/flag-white-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-blue.png",
+      "initialSize" : 49677,
+      "fileType" : 8192
     },
     "\/_style\/images\/arrow-breadcrumb.png" : {
       "ignoreWasSetByUser" : 0,
@@ -621,6 +784,15 @@
       "outputAbbreviatedPath" : "\/_style\/css\/main.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_includes\/blocks\/patterns\/teasers-apps.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/teasers-apps.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/_style\/scss\/patterns\/bricks.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -732,6 +904,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/32x32\/flag-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-gray.png",
+      "initialSize" : 50353,
+      "fileType" : 8192
+    },
     "\/home\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -750,15 +933,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/patterns\/profile-small.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/profile-small.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_style\/scss\/patterns\/badge-icons.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -770,6 +944,17 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/badge-icons.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_media\/images\/masthead\/masthead-5.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_media\/images\/masthead\/masthead-5.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/masthead\/masthead-5.jpg",
+      "initialSize" : 160232,
+      "fileType" : 4096
     },
     "\/_includes\/blocks\/elements\/forms\/select.html" : {
       "ignoreWasSetByUser" : 0,
@@ -786,6 +971,15 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/quote.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/blocks\/patterns\/profile-small.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/profile-small.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -836,12 +1030,32 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/16x16\/flag-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-gray.png",
+      "initialSize" : 50347,
+      "fileType" : 8192
+    },
     "\/_includes\/foot.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_includes\/foot.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/blocks\/elements\/forms\/button-style-disabled.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/button-style-disabled.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -856,15 +1070,6 @@
       "initialSize" : 1039,
       "fileType" : 8192
     },
-    "\/_includes\/blocks\/elements\/forms\/button-style-disabled.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/button-style-disabled.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_includes\/blocks\/elements\/forms\/select-multiple-disabled.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -873,6 +1078,28 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/select-multiple-disabled.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/60x60\/flag-white-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-gray.png",
+      "initialSize" : 50611,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/16x16\/flag-white-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-blue.png",
+      "initialSize" : 51497,
+      "fileType" : 8192
     },
     "\/_style\/images\/flag-blue.png" : {
       "ignoreWasSetByUser" : 0,
@@ -914,15 +1141,6 @@
       "initialSize" : 7538,
       "fileType" : 4096
     },
-    "\/_includes\/blocks\/elements\/forms\/select-disabled.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/select-disabled.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_includes\/blocks\/patterns\/chimney.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -942,6 +1160,15 @@
       "outputAbbreviatedPath" : "\/_style\/images\/twitter2.png",
       "initialSize" : 570,
       "fileType" : 8192
+    },
+    "\/_includes\/blocks\/elements\/forms\/select-disabled.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/select-disabled.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/_includes\/blocks\/elements\/forms\/form-input.search.html" : {
       "ignoreWasSetByUser" : 0,
@@ -972,6 +1199,28 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/global\/foot.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/76x76\/flag-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-red.png",
+      "initialSize" : 56260,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/120x120\/flag-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-black.png",
+      "initialSize" : 52818,
+      "fileType" : 8192
     },
     "\/_includes\/blocks\/elements\/headings\/h6.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1074,6 +1323,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/152x152\/flag-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-gray.png",
+      "initialSize" : 54836,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/elements\/forms\/form-options.checkboxes.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1144,17 +1404,6 @@
       "initialSize" : 35720,
       "fileType" : 8192
     },
-    "\/_style\/images\/flag-white.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_style\/images\/flag-white.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_style\/images\/flag-white.png",
-      "initialSize" : 2375,
-      "fileType" : 8192
-    },
     "\/_style\/scss\/patterns\/chimney.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1166,6 +1415,17 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/chimney.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_style\/images\/flag-white.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/images\/flag-white.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/images\/flag-white.png",
+      "initialSize" : 2375,
+      "fileType" : 8192
     },
     "\/_style\/scss\/patterns\/profile-medium.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1187,6 +1447,28 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/form-input.password.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_media\/images\/logo-textmybus.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_media\/images\/logo-textmybus.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/logo-textmybus.jpg",
+      "initialSize" : 10797,
+      "fileType" : 4096
+    },
+    "\/_style\/favicons\/16x16\/flag-white-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-red.png",
+      "initialSize" : 50831,
+      "fileType" : 8192
     },
     "\/_style\/images\/flag-red.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1222,6 +1504,17 @@
       "initialSize" : 658,
       "fileType" : 8192
     },
+    "\/_media\/images\/logo-promptly.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_media\/images\/logo-promptly.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/logo-promptly.jpg",
+      "initialSize" : 30192,
+      "fileType" : 4096
+    },
     "\/_style\/scss\/patterns\/island.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1255,15 +1548,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/elements\/forms\/form-textarea.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/form-textarea.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_includes\/blocks\/elements\/text\/details.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1273,14 +1557,47 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/patterns\/logos.html" : {
+    "\/_includes\/blocks\/elements\/forms\/form-textarea.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/logos.html",
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/form-textarea.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/76x76\/flag-white-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-black.png",
+      "initialSize" : 50677,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/16x16\/flag-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-black.png",
+      "initialSize" : 48875,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/76x76\/flag-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-blue.png",
+      "initialSize" : 52318,
+      "fileType" : 8192
     },
     "\/_style\/scss\/patterns\/profile-small.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1315,15 +1632,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_style\/css\/main.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_style\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/_style\/images\/rocket-white.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1335,15 +1643,6 @@
       "initialSize" : 1345,
       "fileType" : 8192
     },
-    "\/patchwork.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/patchwork.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_style\/images\/arrow-chevron-down-gray-light.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1354,6 +1653,33 @@
       "outputAbbreviatedPath" : "\/_style\/images\/arrow-chevron-down-gray-light.png",
       "initialSize" : 265,
       "fileType" : 8192
+    },
+    "\/_includes\/blocks\/patterns\/logos.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/logos.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/patchwork.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/patchwork.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_style\/css\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/_style\/images\/glasses-white.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1453,6 +1779,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/about\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/about\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_assets\/logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1485,6 +1820,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_style\/favicons\/16x16\/flag-white-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-black.png",
+      "initialSize" : 51274,
+      "fileType" : 8192
+    },
     "\/_media\/images\/masthead\/masthead-3.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1516,17 +1862,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_media\/images\/avatar-tiffani-bell.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_media\/images\/avatar-tiffani-bell.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_media\/images\/avatar-tiffani-bell.png",
-      "initialSize" : 52336,
-      "fileType" : 8192
-    },
     "\/_style\/scss\/patterns\/flags.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1538,6 +1873,17 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/flags.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_style\/favicons\/120x120\/flag-white-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-gray.png",
+      "initialSize" : 53290,
+      "fileType" : 8192
     },
     "\/_includes\/blocks\/elements\/forms\/form-inputs-combined.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1560,6 +1906,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_media\/images\/logo-localdata.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_media\/images\/logo-localdata.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/logo-localdata.jpg",
+      "initialSize" : 23197,
+      "fileType" : 4096
+    },
     "\/_includes\/blocks\/elements\/links\/a-rel-tag.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1568,6 +1925,17 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/links\/a-rel-tag.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/76x76\/flag-white-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-gray.png",
+      "initialSize" : 51396,
+      "fileType" : 8192
     },
     "\/_style\/images\/arrow-chevron-up.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1580,14 +1948,16 @@
       "initialSize" : 286,
       "fileType" : 8192
     },
-    "\/apps\/bizfriendly\/index.html" : {
+    "\/_media\/images\/avatar-tiffani-bell.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/apps\/bizfriendly\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/_media\/images\/avatar-tiffani-bell.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/avatar-tiffani-bell.png",
+      "initialSize" : 52336,
+      "fileType" : 8192
     },
     "\/_layouts\/default.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1648,6 +2018,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_style\/favicons\/152x152\/flag-white-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-black.png",
+      "initialSize" : 52969,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/global\/footer.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1677,6 +2058,17 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/profile.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_style\/favicons\/152x152\/flag-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-blue.png",
+      "initialSize" : 53404,
+      "fileType" : 8192
     },
     "\/_script\/global.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1722,6 +2114,26 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_includes\/blocks\/elements\/forms\/button-style-alternative.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/button-style-alternative.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_style\/favicons\/60x60\/flag-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-gray.png",
+      "initialSize" : 53816,
+      "fileType" : 8192
+    },
     "\/_inc\/functions.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1731,6 +2143,28 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/152x152\/flag-white-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-gray.png",
+      "initialSize" : 53908,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/32x32\/flag-white-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-red.png",
+      "initialSize" : 50670,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/elements\/forms\/fieldset.select-checkboxes.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1739,6 +2173,17 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/fieldset.select-checkboxes.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/32x32\/flag-white-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-white-gray.png",
+      "initialSize" : 51121,
+      "fileType" : 8192
     },
     "\/_style\/scss\/patterns\/insulate.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1783,6 +2228,35 @@
       "initialSize" : 286,
       "fileType" : 8192
     },
+    "\/_includes\/blocks\/global\/head.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/global\/head.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/blocks\/elements\/forms\/input-checkbox.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/input-checkbox.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_style\/favicons\/152x152\/flag-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-black.png",
+      "initialSize" : 52330,
+      "fileType" : 8192
+    },
     "\/_style\/scss\/base\/icons.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1794,24 +2268,6 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/icons.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/_includes\/blocks\/elements\/forms\/input-checkbox.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/input-checkbox.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_includes\/blocks\/global\/head.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/global\/head.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_layouts\/blog.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1902,6 +2358,17 @@
       "initialSize" : 1128,
       "fileType" : 8192
     },
+    "\/_style\/favicons\/152x152\/flag-white-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-white-red.png",
+      "initialSize" : 54321,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/elements\/text\/address.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1911,6 +2378,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/76x76\/flag-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-black.png",
+      "initialSize" : 50467,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/patterns\/nav-vertical.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1919,6 +2397,17 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/nav-vertical.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/16x16\/flag-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-red.png",
+      "initialSize" : 51610,
+      "fileType" : 8192
     },
     "\/_includes\/blocks\/elements\/forms\/select-multiple.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1983,14 +2472,27 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/elements\/forms\/form-input.email.html" : {
+    "\/_style\/favicons\/152x152\/flag-red.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/form-input.email.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/152x152\/flag-red.png",
+      "initialSize" : 55429,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/32x32\/flag-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-blue.png",
+      "initialSize" : 52304,
+      "fileType" : 8192
     },
     "\/donate\/form\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -2019,6 +2521,24 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_includes\/blocks\/elements\/forms\/form-input.email.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/forms\/form-input.email.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/blocks\/elements\/lists\/list-tags.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-tags.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_style\/scss\/patterns\/post.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2030,15 +2550,6 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/post.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/_includes\/blocks\/elements\/lists\/list-tags.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-tags.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/apps\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -2058,6 +2569,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/_style\/images\/gov-white.png",
       "initialSize" : 991,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/16x16\/flag-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-blue.png",
+      "initialSize" : 49890,
       "fileType" : 8192
     },
     "\/_media\/images\/big-data.jpg" : {
@@ -2162,6 +2684,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_style\/favicons\/60x60\/flag-white-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-blue.png",
+      "initialSize" : 50860,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/elements\/forms\/form-signup.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2233,6 +2766,28 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/16x16\/flag-white-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/16x16\/flag-white-gray.png",
+      "initialSize" : 49137,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/120x120\/flag-white-blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-white-blue.png",
+      "initialSize" : 53220,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/elements\/text\/dl-dfn.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2241,6 +2796,17 @@
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/dl-dfn.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_style\/favicons\/32x32\/flag-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-black.png",
+      "initialSize" : 49396,
+      "fileType" : 8192
     },
     "\/_includes\/blocks\/patterns\/badge-icons.html" : {
       "ignoreWasSetByUser" : 0,
@@ -2263,6 +2829,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_includes\/blocks\/elements\/text\/cite.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/cite.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_media\/images\/seal-chatanooga.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2273,15 +2848,6 @@
       "outputAbbreviatedPath" : "\/_media\/images\/seal-chatanooga.png",
       "initialSize" : 57999,
       "fileType" : 8192
-    },
-    "\/_includes\/blocks\/elements\/text\/cite.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/cite.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_includes\/blocks\/patterns\/stat.html" : {
       "ignoreWasSetByUser" : 0,
@@ -2339,6 +2905,24 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_inc\/vendor\/paulrobertlloyd\/barebones\/barebones.inc.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_inc\/vendor\/paulrobertlloyd\/barebones\/barebones.inc.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_style\/scss\/global\/layout.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2351,23 +2935,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_inc\/vendor\/paulrobertlloyd\/barebones\/barebones.inc.php" : {
+    "\/_style\/favicons\/32x32\/flag-red.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_inc\/vendor\/paulrobertlloyd\/barebones\/barebones.inc.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/32x32\/flag-red.png",
+      "initialSize" : 51840,
+      "fileType" : 8192
     },
     "\/_media\/images\/seal-denver.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2378,6 +2955,39 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/_media\/images\/seal-denver.png",
       "initialSize" : 65131,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/60x60\/flag-white-black.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-black.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-white-black.png",
+      "initialSize" : 50221,
+      "fileType" : 8192
+    },
+    "\/_media\/images\/masthead\/masthead-4.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_media\/images\/masthead\/masthead-4.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/masthead\/masthead-4.jpg",
+      "initialSize" : 34504,
+      "fileType" : 4096
+    },
+    "\/_style\/favicons\/60x60\/flag-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/60x60\/flag-red.png",
+      "initialSize" : 53209,
       "fileType" : 8192
     },
     "\/_includes\/blocks\/elements\/headings\/h5.html" : {
@@ -2420,15 +3030,6 @@
       "outputAbbreviatedPath" : "\/script\/global.min.min.js",
       "fileType" : 64
     },
-    "\/_includes\/blocks\/elements\/lists\/list-metadata.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-metadata.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_includes\/blocks\/elements\/text\/ins.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2438,12 +3039,30 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_includes\/blocks\/elements\/lists\/list-metadata.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-metadata.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_includes\/blocks\/elements\/text\/pre-code.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/text\/pre-code.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/blocks\/elements\/lists\/list-stats.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-stats.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -2458,15 +3077,6 @@
       "outputAbbreviatedPath" : "\/_style\/scss\/css\/teaser.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/_includes\/blocks\/elements\/lists\/list-stats.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-stats.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_includes\/blocks\/elements\/forms\/form-input.url.html" : {
       "ignoreWasSetByUser" : 0,
@@ -2498,6 +3108,28 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_style\/favicons\/76x76\/flag-white-red.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-red.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-white-red.png",
+      "initialSize" : 53308,
+      "fileType" : 8192
+    },
+    "\/_media\/images\/logo-civicinsight.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_media\/images\/logo-civicinsight.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_media\/images\/logo-civicinsight.jpg",
+      "initialSize" : 32556,
+      "fileType" : 4096
+    },
     "\/_style\/scss\/elements\/text.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2519,6 +3151,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/_style\/images\/flag-gray.png",
       "initialSize" : 3106,
+      "fileType" : 8192
+    },
+    "\/_style\/favicons\/120x120\/flag-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/120x120\/flag-gray.png",
+      "initialSize" : 55004,
       "fileType" : 8192
     },
     "\/_includes\/blocks\/elements\/text\/hr.html" : {
@@ -2568,6 +3211,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_style\/favicons\/76x76\/flag-gray.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-gray.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_style\/favicons\/76x76\/flag-gray.png",
+      "initialSize" : 53403,
+      "fileType" : 8192
+    },
     "\/_includes\/blocks\/elements\/forms\/textarea.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2577,21 +3231,21 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_includes\/blocks\/elements\/lists\/list-ordered.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-ordered.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_includes\/blocks\/patterns\/badge-headings.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_includes\/blocks\/patterns\/badge-headings.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_includes\/blocks\/elements\/lists\/list-ordered.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/blocks\/elements\/lists\/list-ordered.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },

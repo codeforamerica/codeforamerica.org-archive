@@ -5,7 +5,7 @@ title: Apps &amp; APIs
 
 <section>
 
-    <div class="layout-semibreve">
+    <div class="layout-semibreve layout-tight">
         
         {% include /blocks/patterns/nav-breadcrumb.html %}
         
@@ -19,44 +19,21 @@ title: Apps &amp; APIs
     
     </div>
     
-</section>
-
-<section>
-
     <div class="nav-tabs">
     	<ul class="layout-semibreve layout-tight">
-	        <li class="nav-tab state-active"><a class="nav-tab-link" href="#tab-apps-local-service">Local service apps</a></li>
-	        <li class="nav-tab"><a class="nav-tab-link" href="#tab-apps-citizen-engagement">Citizen engagements apps</a></li>
-	        <li class="nav-tab"><a class="nav-tab-link" href="#tab-apps-free">Free apps</a></li>
-	        <li class="nav-tab"><a class="nav-tab-link" href="#tab-apps-paid">Paid apps</a></li>
+	        <li class="nav-tab state-active"><a class="nav-tab-link" href="#">Local service apps</a></li>
+	        <li class="nav-tab"><a class="nav-tab-link" href="#">Citizen engagements apps</a></li>
+	        <li class="nav-tab"><a class="nav-tab-link" href="#">Free apps</a></li>
+	        <li class="nav-tab"><a class="nav-tab-link" href="#">Paid apps</a></li>
         </ul>
     </div>
     
     <div class="layout-semibreve layout-tight">
     <div class="tab-content">
-        <div class="tab-pane state-active" id="tab-apps-local-service">
-                {% include /blocks/patterns/teasers-apps.html %}
-                {% include /blocks/patterns/teasers-apps.html %}
-                <p class="layout-centered"><a href="#" class="button button-subtle button-crotchet">Load More</a></p>
+        <div class="tab-pane state-active">
+            {% include /blocks/patterns/teasers-apps.html %}
+            <p class="layout-centered isolate"><a href="#" class="button button-subtle button-crotchet">Load More</a></p>
         </div>
-        <!--<div class="tab-pane" id="tab-apps-citizen-engagement">
-            <div class="layout-breve">
-                {% include /blocks/patterns/teasers.html %}
-                <p class="layout-centered"><a href="#" class="button button-subtle">Load More</a></p>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-apps-free">
-            <div class="layout-breve">
-                {% include /blocks/patterns/teasers.html %}
-                <p class="layout-centered"><a href="#" class="button button-subtle">Load More</a></p>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-apps-paid">
-            <div class="layout-breve">
-                {% include /blocks/patterns/teasers.html %}
-                <p class="layout-centered"><a href="#" class="button button-subtle">Load More</a></p>
-            </div>
-        </div>-->
     </div>
     </div>
     
