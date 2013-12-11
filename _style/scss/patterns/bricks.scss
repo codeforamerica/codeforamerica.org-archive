@@ -1,0 +1,89 @@
+.bricks {
+    @extend .list-no-bullets;
+    width: 100%;
+    margin: 0; 
+    }
+    
+.brick {
+    padding: 0;
+    margin: 0 0 1em 0;
+    -webkit-transform: translateZ(0);
+    position: relative;
+    }
+
+.brick:before {
+	content:  "";
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $color-blue;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 0.4s;
+	-webkit-filter: brightness(70%) contrast(130%);
+	}
+
+.brick:hover:before,
+.brick:focus:before,
+.brick:active:before {
+	-webkit-filter: brightness(100%) contrast(100%);
+	}
+
+.brick:nth-child(1):before {
+	background-image: url('../images/brick-bg1.png');
+	}
+
+.brick:nth-child(2):before {
+	background-image: url('../images/brick-bg2.png');
+	background-color: $color-red;
+	}
+
+.brick:nth-child(3):before {
+	background-image: url('../images/brick-bg3.png');
+	background-color: $color-dark-blue;
+	}
+
+.brick .brick-link {
+    @include rem(min-height, 100px);
+    @include rem(padding-top, 80px);
+    @include rem(padding-bottom, 80px);
+    padding-left: 4%;
+    padding-right: 4%;
+    display: block;
+    }
+
+	@media (max-width:40em) {
+	.brick .brick-link {
+	    @include rem(padding-top, 15px);
+	    @include rem(padding-bottom, 10px);
+	    }
+	}
+
+.brick .brick-link:hover,
+.brick .brick-link:focus,
+.brick .brick-link:active {
+    border-bottom: none;
+    }
+
+.brick-heading {
+    @extend .text-whisper;
+    color: $color-light-gray;
+    @include rem(margin-bottom, 5px);
+    }
+
+.brick-text {
+    @include font-sans-bold;
+    color: $color-white;
+    text-transform: uppercase;
+    @include rem(font-size, 30px);
+    @include rem(line-height, 30px);
+    }
+
+@media (min-width: 40em) {
+    .brick {
+        margin-bottom: 0;
+        }
+    }

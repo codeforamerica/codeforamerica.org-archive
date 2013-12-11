@@ -1,0 +1,117 @@
+body {
+    font-family: $font-sans-regular;
+    font-size: $base-font-size;
+    margin: 0;
+    padding: 0;
+    }
+
+@media print {
+	body {
+		@include rem(font-size, 14px);
+		}
+	
+	}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+details { 
+    display: block;
+    }
+
+main {
+    clear: both;
+    }
+
+abbr {
+    border-bottom: 1px dotted;
+    @include border-color($color-medium-gray, 1);
+    }
+
+abbr:hover {
+    cursor: help;
+    }
+
+p,
+ul,
+ol,
+dl {
+    @include rem(line-height, 27px);
+    margin: 1em 0;
+    }
+
+@media print {
+	
+	p,
+	ul,
+	ol,
+	dl {
+		@include rem(line-height, 20px);
+		}
+	
+	}
+
+strong {
+    font-weight: bold;
+    }
+
+code,
+.code {
+    font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+    }
+
+
+mark {
+    @include background-color($color-yellow, 1);
+    padding: 0 0.1em;
+    border-radius: 0.1em;
+    }
+
+kbd {
+    @include background-color($color-light-gray, 0.8);
+    padding: 0.5em 0.5em 0.4em;
+    border-radius: 0.3em;
+    }
+
+pre {
+    white-space: pre-wrap;
+    }
+
+blockquote {
+    @include color($color-dark-blue, 1);
+    @include background-color($color-light-blue, 0.1);
+    border: 1px solid;
+    @include border-color($color-light-gray, 1);
+    padding: 0.5em 5%;
+    @include font-serif-bold;
+    @include rem(font-size, 18px);
+    line-height: 1.3em;
+    }
+
+blockquote p {
+    line-height: 1.3em;
+    }
+
+figure {
+	margin: 0;
+	}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    }

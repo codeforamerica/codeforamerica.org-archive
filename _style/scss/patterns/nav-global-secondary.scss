@@ -1,0 +1,111 @@
+.nav-global-secondary {
+    text-transform: uppercase;
+    
+    }
+
+@media print {
+	.nav-global-secondary {
+		display: none;
+		}
+	}
+
+@media (min-width: 40em) {
+.nav-global-secondary {
+    width: auto;
+    float: right;
+    }
+    
+    .nav-global-secondary ul {
+        display: table;
+        }
+    
+    .nav-global-secondary li {
+        display: table-cell;
+        }
+    
+    }
+
+.nav-global-secondary ul {
+    @extend .list-no-bullets;
+    margin: 0;
+    text-align: right;
+    }
+
+.nav-global-secondary li {
+    border: none;
+    vertical-align: top;
+    @include font-sans-bold;
+    
+    }
+
+.nav-global-secondary li a {
+    padding: 2em 1em;
+    display: block;
+    @include color($color-black, 1);
+    margin: 0 1.5em;
+    @include transition(padding);
+    
+    }
+
+.nav-global-secondary .nav-tier1 a:hover,
+.nav-global-secondary .nav-tier1 a:focus,
+.nav-global-secondary .nav-tier1 a:active,
+.nav-global-secondary .nav-tier1:hover > a,
+.nav-global-secondary .nav-tier1:focus > a,
+.nav-global-secondary .nav-tier1:active > a {
+    color: $color-red;
+    }
+
+.nav-global-secondary li .button {
+    font-size: 1em;
+    @include rem(padding, 0 12px);
+    @include rem(margin, 22px 16px);
+    }
+
+.nav-global-secondary li:last-child a {
+    margin-right: 0;
+    }
+
+.nav-global-secondary .nav-tier1 {
+    position: inherit;
+    }
+    
+.nav-global-secondary .nav-tier1 > a.state-active,
+.nav-global-secondary .nav-tier1 > a.state-active:hover,
+.nav-global-secondary .nav-tier1 > a.state-active:focus,
+.nav-global-secondary .nav-tier1 > a.state-active:active {
+	background-color: $color-red;
+	color: $color-white;
+	}
+
+.nav-global-secondary .nav-tier2 {
+    background-color: $color-light-gray;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1),
+    			0px 1px 1px rgba(0, 0, 0, 0.1);
+    			border-bottom: 1px solid #c9c9c9;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 96%;   
+    padding: 0 2%; 
+    @include rem(font-size, 14px);
+    font-weight: normal;
+    text-align: right;
+    }
+
+.nav-global-secondary .nav-tier2 li {
+	float: right;
+    }
+
+.nav-global-secondary .nav-tier2 a {
+    margin: 0;
+    @include rem(padding, 10px 14px);
+    color: $color-dark-gray;
+    font-weight: normal;
+    text-transform: none;
+    }
+
+.nav-global-secondary .nav-tier2 li:first-of-type a {
+	padding-right: 0;
+	}

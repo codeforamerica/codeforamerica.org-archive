@@ -1,0 +1,45 @@
+.profile-small {
+    border: 1px solid;
+    @include border-color($color-medium-gray, 0.5);
+    margin: 60px 0 2em 0;
+    padding: 80px 0 0 0;
+    position: relative;
+    text-align: center;
+    }
+
+.profile-small .profile-photo {
+    border: 6px solid white;
+    height: 100px;
+    left: 50%;
+    margin-left: -56px; /* Half the width of the image */
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    }
+
+.profile-small .profile-name,
+.profile-small .profile-note p {
+    padding: 0 2%;
+    }
+
+.profile-small .profile-name {
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    @include font-sans-bold;
+    }
+
+.profile-small .link-more {
+    @include color($color-red, 1);
+    @include font-sans-bold;
+    text-transform: uppercase;
+    }
+
+.profile-small .list-social {
+    @include background-color($color-light-gray, 0.8);
+    margin: 0;
+    padding: 0.8em 0 0.2em 0;
+    }
+
+.profile-small .list-social li {
+    list-style-type: none;
+    }

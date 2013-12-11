@@ -1,0 +1,35 @@
+@media (min-width: 40em) and (min-height: 30em) {
+
+.sticky {
+    position: fixed;
+    @include rem(margin-top, 31px);
+    top: 0;
+    }
+    
+.sticky + main {
+    margin-top: 6em;
+    }
+
+.sticky .global-header-logo {
+    width: 90px;
+    margin: 0.4em 0 0 0;
+    }
+
+.sticky .nav-global-secondary {
+    }
+    
+.sticky .nav-global-secondary li a {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    }
+
+.sticky .nav-global-secondary li .button {
+    @include rem(padding, 0 12px);
+    @include rem(margin, 5px 0 2px 16px);
+    }
+
+.sticky .nav-tier2 {
+	padding: 0 2.1%; // Compensates for a weird calculation bug
+	}
+
+}

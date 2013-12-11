@@ -1,0 +1,11 @@
+img {
+    max-width: 100%;
+    }
+
+audio {
+	@include rem(margin, 16px 0);
+	}
+
+video {
+	@include rem(margin, 16px 0);
+	}

@@ -1,0 +1,84 @@
+.chimney {
+    padding: 2.5em 0;
+    width: 100%;
+    margin-bottom: 1.5em;
+    }
+
+.chimney .chimney-body {
+    float: none;
+    position: relative;
+    padding: 0;
+    max-width: 30em;
+    margin: 0 auto;
+    }
+
+@media (min-width: 40em) {
+	@include rem(max-width, 370px);
+	}
+
+.chimney .profile {
+    position: relative;
+    margin-left: 155px;
+    min-height: 130px;
+    margin-top: 2em;
+    }
+
+.chimney .profile .profile-name {
+    margin-bottom: 0;
+    }
+
+.chimney .profile .profile-role {
+    @extend .text-whisper;
+    @include color($color-white, 0.7);
+    margin-bottom: 1em;
+    }
+
+.chimney .profile .profile-photo {
+    position: absolute;
+    top: 0;
+    left: -155px;
+    width: 120px;
+    border: 5px solid $color-white;
+    height: 120px;
+    }
+    
+.chimney .profile .profile-note {
+    @extend .text-whisper;
+    @include color($color-white, 0.7);
+    }
+
+.chimney .profile .profile-org {
+    clear: both;
+    display: block;
+    }
+
+.chimney .button {
+    margin-left: 0;
+    }
+   
+@media (min-width: 40em) {
+.chimney .button {
+    margin-left: 155px;
+    }
+    }
+
+@media (min-width: 60em) {
+.chimney .button {
+    margin-left: 0;
+    }
+    }
+
+.chimney a:link,
+.chimney a:visited,
+.chimney a:hover,
+.chimney a:focus,
+.chimney a:active {
+    @include color($color-white, 1);
+    border-bottom: none;
+    }
+
+.chimney a:hover,
+.chimney a:focus,
+.chimney a:active {
+    @include color($color-white, 0.7);
+    }
