@@ -34,6 +34,17 @@
 		width: auto;
 		vertical-align: middle;
 		}
+		
+		@media print {
+			button,
+			input[type="button"],
+			input[type="submit"],
+			.button,
+			.button:link {
+				background-color: $color-light-gray;
+				color: $color-black;
+			}
+		}
 	
 	button:hover,
 	button:focus,

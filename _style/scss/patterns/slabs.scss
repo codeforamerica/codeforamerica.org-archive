@@ -32,10 +32,24 @@ section,
     color: $color-white;
     }
 
+@media print {
+	.slab-dark-blue {
+		background-color: transparent;
+		color: inherit;
+		}
+	}
+
 .slab-red {
     @include background-color($color-red, 1);
     color: $color-white;
     }
+    
+    @media print {
+    	.slab-red {
+    		background-color: transparent;
+    		color: inherit;
+    		}
+    	}
     
     .slab-red a:link,
     .slab-red a:visited,

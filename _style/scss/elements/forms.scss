@@ -19,6 +19,14 @@ select {
     vertical-align: middle;
     display: inline-block;
     }
+    
+    @media print {
+    input,
+    select,
+    textarea {
+    	border: 1px solid $color-medium-gray;
+    	}
+    }
 
 select {
 	background-image: url("../images/arrow-triangle-down.png");
@@ -49,6 +57,12 @@ label {
     margin-bottom: 0;
     font-size: 0.8em;
     }
+    
+    @media print {
+    	label {
+    		color: $color-dark-gray
+    		}
+    	}
 
 textarea:focus,
 input:focus {

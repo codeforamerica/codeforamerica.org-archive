@@ -1,9 +1,16 @@
 body {
     font-family: $font-sans-regular;
-    font-size: 16px;
+    font-size: $base-font-size;
     margin: 0;
     padding: 0;
     }
+
+@media print {
+	body {
+		@include rem(font-size, 14px);
+		}
+	
+	}
 
 article,
 aside,
@@ -34,17 +41,24 @@ abbr:hover {
     cursor: help;
     }
 
-img {
-    max-width: 100%;
-    }
-
 p,
 ul,
 ol,
 dl {
-    line-height: 27px;
+    @include rem(line-height, 27px);
     margin: 1em 0;
     }
+
+@media print {
+	
+	p,
+	ul,
+	ol,
+	dl {
+		@include rem(line-height, 20px);
+		}
+	
+	}
 
 strong {
     font-weight: bold;

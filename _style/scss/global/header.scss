@@ -19,6 +19,14 @@
     @include transition(all, 0.4s);
     float: left;
     }
+    
+    @media print {
+    	.global-header-logo {
+    		float: none;
+    		margin: 2em auto 1.5em auto;
+    		text-align: center;
+    		}
+    	}
 
 .global-header-logo:link,
 .global-header-logo:visited,

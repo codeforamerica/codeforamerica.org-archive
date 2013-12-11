@@ -10,6 +10,12 @@
     @include rem(padding, 30px 0 20px);
     }
 
+@media print {
+	.global-footer {
+		display: none;
+		}
+	}
+
 .global-footer a:link,
 .global-footer a:visited,
 .global-footer a:hover,
@@ -95,11 +101,17 @@
 .global-foot {
     @include background-color($color-black, 1);
     clear: both;
-    color: white;
+    color: $color-white;
     padding: 0 0 1.5em;
     font-size: 1em;
     min-height: 45px;
     }
+    
+    @media print {
+    	.global-foot {
+    		color: $color-black;
+    		}
+    	}
 
 .global-foot-content {
     position: relative;
@@ -111,6 +123,12 @@
     position: absolute;
     left: 0;
     }
+    
+    @media print {
+    	.global-foot-logo {
+    		display: none;
+    		}
+    	}
 
 @media (min-width: 80em) {
     .global-foot-logo {
@@ -123,3 +141,10 @@
     float: left;
     @include color($color-white, 0.7);
     }
+    
+    @media print {
+    	.global-foot small {
+    		color: $color-black;
+    		margin-left: 0;
+    		}
+    	}

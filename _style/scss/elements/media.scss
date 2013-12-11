@@ -1,3 +1,7 @@
+img {
+    max-width: 100%;
+    }
+
 audio {
 	@include rem(margin, 16px 0);
 	}

@@ -4,6 +4,12 @@
     margin-bottom: 1em;
     text-rendering: optimizeLegibility;
     }
+    
+    @media print {
+    	.nav-breadcrumbs {
+    		display: none;
+    		}
+    	}
 
 .nav-breadcrumbs ul {
     @extend .list-inline;

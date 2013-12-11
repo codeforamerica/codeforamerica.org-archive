@@ -2,6 +2,13 @@
 	@extend .nav-pages;
 	background-color: $color-light-gray;
 	}
+	
+	
+	@media print {
+	.nav-articles {
+		display: none
+		}
+	}
 
 .nav-articles ul {
 	margin: 0 auto;

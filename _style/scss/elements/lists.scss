@@ -20,6 +20,14 @@ ul li {
     padding-left: 1.3em;
     }
 
+	@media print {
+		ul li {
+			background-image: none;
+			list-style-type: square;
+			padding-left: 0;
+			}
+		}
+
 .list-minim {
 	-webkit-column-count: 2;
 	column-count: 2;

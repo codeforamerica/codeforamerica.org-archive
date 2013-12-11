@@ -18,6 +18,15 @@ h2,
     @include rem(font-size, 40px);
     text-transform: none;
     }
+    
+    @media print {
+    	h1,
+    	.h1,
+    	h2,
+    	.h2 {
+    		@include rem(font-size, 30px);
+    		}
+    	}
 
 h3,
 .h3 {
@@ -25,6 +34,13 @@ h3,
     @include font-serif-bold;
     line-height: 1.15em;
     }
+    
+    @media print {
+    	h3,
+    	.h3 {
+    		@include rem(font-size, 25px);
+    		}
+    	}
 
 h4,
 .h4 {

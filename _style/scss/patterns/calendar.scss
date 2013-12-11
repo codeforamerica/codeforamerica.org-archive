@@ -1,0 +1,81 @@
+.calendar {
+	border: 3px solid $color-light-gray;
+	border-radius: 3px;
+	}
+
+.calendar .calendar-header {
+	width: 100%;
+	border: 3px solid $color-light-gray;
+	text-align: center;
+	}
+
+.calendar .calendar-heading {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: $font-sans-regular;
+	}
+
+.calendar {
+	display: table;
+	table-layout: fixed;
+	}
+
+.calendar .calendar-days {
+	display: table-row-group;
+	}
+
+.calendar td,
+.calendar th,
+.calendar tr {
+	text-align: center;
+	padding-right: 0;
+	border-bottom: none;
+	}
+
+.calendar .calendar-week {
+	display: table-row;
+	}
+
+.calendar .calendar-week td {
+	
+	}
+
+.calendar .calendar-days th,
+.calendar .calendar-week td {
+	border-right: 1px solid $color-light-gray;
+	display: table-cell;
+	}
+
+.calendar .calendar-nav {
+	position: relative;
+	}
+
+.calendar .calendar-month-next,
+.calendar .calendar-month-prev {
+	position: absolute;
+	left: 0;
+	text-align: left;
+	
+	padding: 0.3em 0.5em 0.25em;
+	@include rem(padding, 8px 8px 4px);
+	border-bottom: none;
+	}
+
+.calendar .calendar-month-next:link,
+.calendar .calendar-month-next:visited,
+.calendar .calendar-month-next:hover,
+.calendar .calendar-month-next:focus,
+.calendar .calendar-month-next:active,
+.calendar .calendar-month-prev:link,
+.calendar .calendar-month-prev:visited,
+.calendar .calendar-month-prev:hover,
+.calendar .calendar-month-prev:focus,
+.calendar .calendar-month-prev:active {
+	border-bottom: none;
+	}
+
+.calendar .calendar-month-next {
+	right: 0;
+	width: auto;
+	text-align: right;
+	}
