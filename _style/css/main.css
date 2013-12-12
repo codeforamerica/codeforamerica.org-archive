@@ -2699,6 +2699,10 @@ input.button-s,
   width: 100%;
 }
 
+.map-xl {
+  clear: both;
+}
+
 nav a:hover,
 nav a:focus,
 nav a:active {
