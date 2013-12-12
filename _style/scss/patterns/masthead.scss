@@ -61,9 +61,15 @@
 .masthead-s .masthead-header {
     @include rem(margin, 40px auto 40px);
     }
+    
+    @media print {
+	.masthead-s .masthead-header {
+	    @include rem(margin, 10px auto 10px);
+	    }
+	}
 
 .masthead-s .masthead-image {
-    min-height: 200px;
+    min-height: inherit;
     }
 
 .masthead-s .page-title {
@@ -71,6 +77,13 @@
     @include rem(line-height, 65px);
     float: none;
     @include rem(margin-top, 25px);
+    }
+    
+    @media print {
+    .masthead-s .page-title {
+        @include rem(margin-top, 5px);
+        @include rem(font-size, 30px);
+        }
     }
 
 .masthead-s .page-title + * {

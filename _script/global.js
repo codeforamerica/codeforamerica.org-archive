@@ -1,3 +1,5 @@
+/* Add a class of js to html element if js is enabled */
+document.getElementsByTagName('html')[0].className+=' js';
 
 (function (win, doc) {
     'use strict';
@@ -5,7 +7,7 @@
         // doesn't cut the mustard.
         return;
     }
-
+ 
     if (doc.documentElement.clientWidth < 640) {
 /*
 If the viewport is small enough, use the off-canvas pattern for navigation.

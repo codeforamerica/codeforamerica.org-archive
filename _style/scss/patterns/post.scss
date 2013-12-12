@@ -80,3 +80,9 @@
 .post-categories a:active {
     @include color($color-blue, 1);
     }
+
+@media print {
+	.post-categories {
+		display: none;
+		}
+	}

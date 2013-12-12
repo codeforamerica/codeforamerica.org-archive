@@ -50,14 +50,12 @@ dl {
     }
 
 @media print {
-	
 	p,
 	ul,
 	ol,
 	dl {
 		@include rem(line-height, 20px);
 		}
-	
 	}
 
 strong {
@@ -95,6 +93,14 @@ blockquote {
     @include font-serif-bold;
     @include rem(font-size, 18px);
     line-height: 1.3em;
+    }
+    
+    @media print {
+    	blockquote {
+    		@include rem(font-size, 14px);
+    		@include rem(margin, 28px 0);
+    		@include rem(padding, 0 14px);
+    		}
     }
 
 blockquote p {

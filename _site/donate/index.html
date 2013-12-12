@@ -33,9 +33,12 @@
         <li><a href="/_site/blog/">Blog</a></li>
         <li><a href="/_site/library/">Library</a></li>
         <li>
-            <div class="search-global">
-                <input type="search" placeholder="Search" />
-            </div>
+            <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
         </li>
     </ul>
 </nav>
@@ -258,9 +261,12 @@
     
     <div class="layout-breve layout-tight">
     
-        <div class="search-global">
-            <input type="search" placeholder="Search" />
-        </div>
+        <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
     
         <nav class="nav-footer">
             <ul>

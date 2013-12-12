@@ -23,13 +23,17 @@
 	top: 0;
 	z-index: -1;
 	transition: 0.4s;
+	-moz-filter: brightness(70%) contrast(130%);
 	-webkit-filter: brightness(70%) contrast(130%);
+	filter: brightness(70%) contrast(130%);
 	}
 
 .brick:hover:before,
 .brick:focus:before,
 .brick:active:before {
 	-webkit-filter: brightness(100%) contrast(100%);
+	-moz-filter: brightness(100%) contrast(100%);
+	filter: brightness(100%) contrast(100%);
 	}
 
 .brick:nth-child(1):before {

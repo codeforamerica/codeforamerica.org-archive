@@ -39,9 +39,12 @@
         <li><a href="/_site/blog/">Blog</a></li>
         <li><a href="/_site/library/">Library</a></li>
         <li>
-            <div class="search-global">
-                <input type="search" placeholder="Search" />
-            </div>
+            <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
         </li>
     </ul>
 </nav>
@@ -59,7 +62,7 @@
         
         <nav class="nav-breadcrumbs">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="../../../home/">Home</a></li>
                 <li>Blog</li>
             </ul>
         </nav>
@@ -161,7 +164,7 @@
                             <p>I have spent most of my professional life working to understand and improve the efficiencies and effectiveness of governments.</p>
                         </div>
                         
-                        <div>
+                        <div class="post-categories">
                             <h2 class="text-quiet layout-tight">Filed under</h2>
                             <ul class="list-no-bullets link-invert text-whisper">
                                 <li><a href="#">Accelerator</a></li>
@@ -179,17 +182,17 @@
             
         </div><!-- .layout-semibreve -->
             
-    	<nav role="navigation">
-    	    <ul class="list">
-    	        <li><a href="#" rel="prev">Previous</a></li>
-    	        <li><a class="icon-grid" href="#">All articles</a></li>
-    	        <li><a href="#" rel="next">Next</a></li>
-    	    </ul>
-    	</nav><!--/.nav-page-->
+    	<nav class="nav-articles">
+    <ul>
+        <li><a href="#" rel="prev">Previous</a></li>
+        <li><a class="icon-grid" href="#">All articles</a></li>
+        <li><a href="#" rel="next">Next</a></li>
+    </ul>
+</nav><!--/.nav-articles-->
     	
     	<div class="layout-semibreve">
             
-        	<p>Questions? Comments? <a class="button button-prominent" href="http://twitter.com/codeforamerica">Hit us up at <strong class="icon-twitter2">@codeforamerica</strong></a></p>
+        	<p><strong class="h5">Questions? Comments?</strong> <a class="button button-prominent" href="http://twitter.com/codeforamerica">Hit us up at <strong class="icon-twitter2">@codeforamerica</strong></a></p>
         
         </div>
         
@@ -199,9 +202,12 @@
     
     <div class="layout-breve layout-tight">
     
-        <div class="search-global">
-            <input type="search" placeholder="Search" />
-        </div>
+        <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
     
         <nav class="nav-footer">
             <ul>

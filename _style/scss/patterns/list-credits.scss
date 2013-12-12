@@ -5,10 +5,11 @@
     @include rem(max-width, 800px);
     margin: 0 auto;
     @include rem(font-size, 13px);
-    overflow: hidden;
+    
     }
    
 .js .list-credits.state-closed {
+	overflow: hidden;
 	@include rem(height, 120px);
 	}
 
@@ -30,7 +31,7 @@
     content: none;
     }
 
-.list-credits .fade {
+.js .list-credits .fade {
     background-image: url('../images/fade.png');
     background-repeat: repeat-x;
     background-position: bottom;

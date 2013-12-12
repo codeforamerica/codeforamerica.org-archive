@@ -66,6 +66,19 @@
     text-transform: uppercase;
     }
 
+.global-footer .search-global .search-global-submit {
+	@include rem(top, 7px);
+	@include rem(right, 10px);
+	}
+
+.global-footer .search-global-input:focus + .search-global-submit,
+.global-footer .search-global .search-global-submit:focus,
+.global-footer .search-global .search-global-submit:active {	
+	background-image: url('../images/icon-search-white.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+
 .global-footer .nav-footer .nav-tier2 {
     @include rem(font-size, 12px);
     }
