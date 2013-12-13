@@ -485,6 +485,7 @@ kbd {
 
 pre {
   white-space: pre-wrap;
+  max-width: 100%;
 }
 
 blockquote {
