@@ -64,6 +64,8 @@
             <li><a href="/_site/donate/">Donate (Landing)</a></li>
             <li><a href="/_site/donate/form/">Donate</a></li>
             <li><a href="/_site/citizens/">Citizens</a></li>
+            <li><a href="/_site/documentation/">Documentation</a></li>
+            
         </ol>
     </div>
     
