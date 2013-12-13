@@ -398,6 +398,10 @@
   content: "\e2a0";
 }
 
+.icon-tumblr:before {
+  content: "\e611";
+}
+
 /* Elements */
 body {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -1939,15 +1943,15 @@ input.button-s,
 
 .calendar .calendar-month-next,
 .calendar .calendar-month-prev {
-  position: absolute;
-  left: 0;
-  text-align: left;
   font-size: 12px;
   font-size: 0.75rem;
   padding: 0.3em 0.5em 0.25em;
   padding: 8px 8px 4px;
   padding: 0.5rem 0.5rem 0.25rem;
   border-bottom: none;
+  position: absolute;
+  left: 0;
+  width: 100px;
 }
 
 .calendar .calendar-month-next:link,
@@ -1963,10 +1967,21 @@ input.button-s,
   border-bottom: none;
 }
 
-.calendar .calendar-month-next {
+.calendar .calendar-month-prev span,
+.calendar .calendar-month-next span {
+  text-indent: -9999px;
+  display: block;
+}
+
+.calendar .calendar-month-prev {
+  content: "‹ ";
+  font-size: 2em;
   right: 0;
-  width: auto;
-  text-align: right;
+}
+
+.calendar .calendar-month-next {
+  content: " ›";
+  font-size: 2em;
 }
 
 .calendar-summary-events {
@@ -2425,9 +2440,9 @@ input.button-s,
   }
 }
 /* @end highlight with avatar */
-.insulate, .island {
-  margin: 49px auto;
-  margin: 3.0625rem auto;
+.insulate {
+  margin: 15px auto;
+  margin: 0.9375rem auto;
 }
 
 .isolate {
@@ -2695,9 +2710,15 @@ input.button-s,
 }
 
 .island {
+  margin: 15px auto;
+  margin: 0.9375rem auto;
   float: left;
   display: block;
   width: 100%;
+}
+
+.island + .island {
+  margin-top: 0;
 }
 
 .map-xl {

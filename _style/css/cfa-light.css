@@ -1565,9 +1565,9 @@ input.button-s,
   }
 }
 /* @end highlight with avatar */
-.insulate, .island {
-  margin: 49px auto;
-  margin: 3.0625rem auto;
+.insulate {
+  margin: 15px auto;
+  margin: 0.9375rem auto;
 }
 
 .isolate {
@@ -1758,9 +1758,15 @@ input.button-s,
 }
 
 .island {
+  margin: 15px auto;
+  margin: 0.9375rem auto;
   float: left;
   display: block;
   width: 100%;
+}
+
+.island + .island {
+  margin-top: 0;
 }
 
 section,

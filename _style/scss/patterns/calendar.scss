@@ -111,13 +111,13 @@
 
 .calendar .calendar-month-next,
 .calendar .calendar-month-prev {
-	position: absolute;
-	left: 0;
-	text-align: left;
 	@include rem(font-size, 12px);
 	padding: 0.3em 0.5em 0.25em;
 	@include rem(padding, 8px 8px 4px);
 	border-bottom: none;
+	position: absolute;
+	left: 0;
+	width: 100px;
 	}
 
 .calendar .calendar-month-next:link,
@@ -133,11 +133,23 @@
 	border-bottom: none;
 	}
 
-.calendar .calendar-month-next {
-	right: 0;
-	width: auto;
-	text-align: right;
+.calendar .calendar-month-prev span,
+.calendar .calendar-month-next span {
+	text-indent: -9999px;
+	display: block;
 	}
+
+.calendar .calendar-month-prev {
+	content:  "‹ ";
+	font-size: 2em;
+	right: 0;
+	}
+
+.calendar .calendar-month-next {
+	content:  " ›";
+	font-size: 2em;
+	}
+
 
 .calendar-summary-events {
 	text-align: left;
