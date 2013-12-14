@@ -47,6 +47,11 @@ select {
 	min-width: 150px;
 	}
 
+select[disabled],
+select[multiple] {
+	background-image: none;
+	}
+
 label {
 	@include rem(line-height, 20px);
     display: block;

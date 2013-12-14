@@ -539,6 +539,10 @@ figure {
   width: 1px;
 }
 
+kbd {
+  font-family: "Monaco", "Courier", monospace;
+}
+
 h1,
 h2,
 h3,
@@ -881,6 +885,11 @@ select {
   min-width: 150px;
 }
 
+select[disabled],
+select[multiple] {
+  background-image: none;
+}
+
 label {
   line-height: 20px;
   line-height: 1.25rem;
@@ -1004,6 +1013,51 @@ input[type="search"] {
 }
 
 /* Patterns */
+.alert, .alert-failure, .alert-success, .alert-info {
+  padding: 10px;
+  padding: 0.625rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 0 0 16px 0;
+  margin: 0 0 1rem 0;
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  background: #fedd44;
+  background: rgba(254, 221, 68, 0.4);
+  border: 1px solid;
+  border-color: #fedd44;
+  border-color: rgba(254, 221, 68, 0.5);
+  color: #494c49;
+}
+.alert p, .alert-failure p, .alert-success p, .alert-info p {
+  margin: 0;
+}
+.alert p + *, .alert-failure p + *, .alert-success p + *, .alert-info p + * {
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.alert-failure {
+  background: #cf1b41;
+  background: rgba(207, 27, 65, 0.3);
+  border-color: #cf1b41;
+  border-color: rgba(207, 27, 65, 0.1);
+}
+
+.alert-success {
+  background: #3f863f;
+  background: rgba(63, 134, 63, 0.2);
+  border-color: #3f863f;
+  border-color: rgba(63, 134, 63, 0.1);
+}
+
+.alert-info {
+  background: #399fd3;
+  background: rgba(57, 159, 211, 0.2);
+  border-color: #399fd3;
+  border-color: rgba(57, 159, 211, 0.1);
+}
+
 /*  Button: Default --------------------------------------- */
 button,
 input[type="button"],
@@ -4891,7 +4945,19 @@ body {
 .xx .swatch {
   float: left;
   margin-bottom: 1em;
-  width: 100%;
+  width: 96%;
+  margin-right: 2%;
+  background-color: white;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.xx .swatch-details {
+  padding: 0 8px;
+  padding: 0 0.5rem;
 }
 
 @media (min-width: 40em) {
@@ -4910,13 +4976,13 @@ body {
   }
 }
 .xx .swatch-preview {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   float: left;
   height: 60px;
-  width: 60px;
-  margin: 0 0.8em 0.8em 0;
-  border-radius: 60px;
+  width: 100%;
+  margin: 0 0.8em 0.5em 0;
 }
 
 .xx .swatch-details {

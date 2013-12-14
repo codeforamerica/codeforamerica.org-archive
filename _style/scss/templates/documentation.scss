@@ -214,7 +214,16 @@
 .xx .swatch {
     float: left;
     margin-bottom: 1em;
-    width: 100%;
+    width: 96%;
+    margin-right: 2%;
+    background-color: $color-white;
+    @include rem(padding, 10px 0);
+    @include rem(border-radius, 3px);
+    box-shadow: 0 0 1px rgba(0,0,0,0.4);
+    }
+
+.xx .swatch-details {
+    @include rem(padding, 0 8px);
     }
     
     @media (min-width: 40em) {
@@ -237,13 +246,13 @@
     }
 
 .xx .swatch-preview {
-    box-shadow: 0 0 1px rgba(0,0,0,0.8);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     display: block;
     float: left;
     height: 60px;
-    width: 60px;
-    margin: 0 0.8em 0.8em 0;
-    border-radius: 60px;
+    width: 100%;
+    margin: 0 0.8em 0.5em 0;
     }
 
 .xx .swatch-details {
