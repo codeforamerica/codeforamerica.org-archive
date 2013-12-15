@@ -2,7 +2,6 @@
 
 .sticky {
     position: fixed;
-    @include rem(margin-top, 31px);
     top: 0;
     }
     
@@ -11,7 +10,7 @@
     }
 
 .sticky .global-header-logo {
-    width: 90px;
+    width: 80px;
     margin: 0.4em 0 0 0;
     }
 
@@ -19,17 +18,28 @@
     }
     
 .sticky .nav-global-secondary li a {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    @include rem(padding-top, 10px);
+    @include rem(padding-bottom,10px);
     }
 
 .sticky .nav-global-secondary li .button {
     @include rem(padding, 0 12px);
-    @include rem(margin, 5px 0 2px 16px);
+    @include rem(height, 30px);
+    @include rem(line-height, 31px);
+    @include rem(margin, 7px 0 2px 16px);
     }
 
 .sticky .nav-tier2 {
 	padding: 0 2.1%; // Compensates for a weird calculation bug
+	}
+
+.sticky .nav-tier2 a:link,
+.sticky .nav-tier2 a:visited,
+.sticky .nav-tier2 a:hover,
+.sticky .nav-tier2 a:focus,
+.sticky .nav-tier2 a:active {
+	@include rem(padding-top, 7px);
+	@include rem(padding-bottom,6px);
 	}
 
 }

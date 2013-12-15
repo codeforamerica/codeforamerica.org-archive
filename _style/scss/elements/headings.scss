@@ -13,9 +13,9 @@ h1,
 .h1,
 h2,
 .h2 {
-    line-height: 44px;
     @include font-serif-bold;
     @include rem(font-size, 40px);
+    @include rem(line-height, 44px);
     text-transform: none;
     }
     
@@ -25,6 +25,7 @@ h2,
     	h2,
     	.h2 {
     		@include rem(font-size, 30px);
+    		@include rem(line-height, 34px);
     		}
     	}
 

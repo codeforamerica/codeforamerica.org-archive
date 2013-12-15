@@ -13,18 +13,6 @@
 		}
 	}
 
-@media (min-width: 40em) {
-.nav-global-primary {
-        position: fixed;
-        z-index: 2;
-        top: 0;    
-        }
-    
-.nav-global-primary + * {
-    @include rem(margin-top, 30px);
-    }
-}
-
 .nav-global-primary ul {
     width: 96%;
     margin: 0;

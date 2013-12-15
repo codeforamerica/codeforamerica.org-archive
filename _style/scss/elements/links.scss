@@ -25,6 +25,13 @@ main a:active {
     @include border-color($color-red, 0.7);
     }
 
+@media print {
+	main a:link:after,
+	main a:visited:after { 
+		content:" [" attr(href) "] "; 
+		}
+	}
+
 a img { // IE adds a border around images if a link
 	border: none;
 	}

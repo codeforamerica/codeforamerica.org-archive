@@ -13,11 +13,13 @@
 	margin-bottom: 0;
 	text-transform: uppercase;
 	font-family: $font-sans-regular;
+	@include rem(font-size, 25px);
 	}
 
 .calendar {
 	display: table;
 	table-layout: fixed;
+	position: relative;
 	}
 
 .calendar .calendar-days {
@@ -32,12 +34,69 @@
 	border-bottom: none;
 	}
 
+.calendar-day-names th {
+	color: $color-red;
+	font-weight: normal;
+	@include rem(font-size, 18px);
+	}
+
 .calendar .calendar-week {
 	display: table-row;
 	}
 
 .calendar .calendar-week td {
+	position: relative;
+	}
+
+.calendar .calendar-day-weekend,
+.calendar .calendar-week td:last-child,
+.calendar .calendar-week td:first-child {
+	@include background-color($color-light-gray, 0.5);
+	}
+
+.calendar .calendar-week .calendar-has-event {
+	color: $color-blue;
+	font-weight: bold;
 	
+	}
+
+.calendar .calendar-week .calendar-has-event:hover {
+	outline: 2px solid $color-red;
+	cursor: default;
+	}
+
+.calendar .calendar-events {
+	width: 150px;
+	background-color: $color-gray;
+	color: $color-white;
+	@include rem(font-size, 12px);
+	text-align: left;
+	@include rem(padding, 5px);
+	position: absolute;
+	z-index: 1;
+	height: auto;
+	left: 90%;
+	top: 50%;
+	font-weight: normal;
+	border-radius: 0 3px 3px 3px;
+	display: none;
+	}
+
+.calendar tr .calendar-has-event:last-child .calendar-events {
+	right: 90%;
+	left: auto;
+	border-radius: 3px 0 3px 3px;
+	}
+
+.calendar .calendar-has-event:hover .calendar-events {
+	display: block;
+	}
+
+.calendar .calendar-events li {
+	background-image: none;
+	padding: 0;
+	margin: 0;
+	@include rem(line-height, 16px);
 	}
 
 .calendar .calendar-days th,
@@ -52,13 +111,13 @@
 
 .calendar .calendar-month-next,
 .calendar .calendar-month-prev {
-	position: absolute;
-	left: 0;
-	text-align: left;
-	
+	@include rem(font-size, 12px);
 	padding: 0.3em 0.5em 0.25em;
 	@include rem(padding, 8px 8px 4px);
 	border-bottom: none;
+	position: absolute;
+	left: 0;
+	width: 100px;
 	}
 
 .calendar .calendar-month-next:link,
@@ -74,8 +133,40 @@
 	border-bottom: none;
 	}
 
-.calendar .calendar-month-next {
+.calendar .calendar-month-prev span,
+.calendar .calendar-month-next span {
+	text-indent: -9999px;
+	display: block;
+	}
+
+.calendar .calendar-month-prev {
+	content:  "‹ ";
+	font-size: 2em;
 	right: 0;
-	width: auto;
+	}
+
+.calendar .calendar-month-next {
+	content:  " ›";
+	font-size: 2em;
+	}
+
+
+.calendar-summary-events {
+	text-align: left;
+	@include rem(font-size, 14px);
+	@include rem(line-height, 16px);
+	text-transform: none;
+	@include rem(padding, 0 0 0 8px);
+	@include rem(margin, 2px 0 0 0);
+	}
+
+.calendar-summary-events li {
+	background-image: none;
+	padding: 0;
+	}
+
+.calendar-summary th {
+	@include rem(font-size, 16px);
+	@include rem(padding, 10px 0 8px 0);
 	text-align: right;
 	}
