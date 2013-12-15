@@ -1,4 +1,4 @@
-/*  Colors ––––––––––––––––––––––––––––––––––––––––––––––– */
+//  Colors –––––––––––––––––––––––––––––––––––––––––––––––
 
 @mixin color($color, $opacity: 1) {
     color: $color; // fallback
@@ -16,7 +16,7 @@
     }
 
 
-/*  Primary Colors --------------------------------------- */
+//  Primary Colors ---------------------------------------
     
     $color-red: #CF1B41;    
     $color-blue: #399FD3;
@@ -24,7 +24,7 @@
     $color-black: #000;
 
 
-/*  Secondary Colors ------------------------------------- */
+//  Secondary Colors -------------------------------------
     
     $color-dark-red: #82172D;
     $color-medium-red: #AA1C3A;

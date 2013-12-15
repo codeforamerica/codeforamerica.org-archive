@@ -1,12 +1,5 @@
 @charset "UTF-8";
-/* Base styles */
-/* Sans serif */
-/* Serif */
-/* Converts px to rems. Via David Ensinger: http://davidensinger.com/2013/03/using-rems-with-sass/ */
-/*  Colors ––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  Primary Colors --------------------------------------- */
-/*  Secondary Colors ------------------------------------- */
-/* Elements */
+/*  Elements ––––––––––––––––––––––––––––––––––––––––––––– */
 body {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 16px;
@@ -558,7 +551,7 @@ ul ul {
   margin: 0;
 }
 
-/* Text Styles */
+/*  Text ––––––––––––––––––––––––––––––––––––––––––––––––– */
 .text-whisper, .heading-contrast {
   color: #6d6e71;
 }
@@ -603,7 +596,8 @@ ul ul {
   border-bottom: none;
 }
 
-/* Patterns */
+/*  Patterns ––––––––––––––––––––––––––––––––––––––––––––– */
+/*  Pattern: Alert --------------------------------------- */
 .alert, .alert-failure, .alert-success, .alert-info {
   padding: 10px;
   padding: 0.625rem;
@@ -2019,7 +2013,7 @@ section,
   color: #cf1b41;
 }
 
-/* Global */
+/*  Global ––––––––––––––––––––––––––––––––––––––––––––––– */
 .global-footer {
   clear: both;
   background: #494c49;

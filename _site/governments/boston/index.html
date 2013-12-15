@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
     <link rel="stylesheet" href="/_style/css/main.css">
@@ -9,16 +11,27 @@
     <link href="/_style/css/prism.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/_style/favicons/60x60/flag-red.png"/>
-    
-    
+
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-    <link rel="stylesheet" href="/_style/css/layout.css" media="all">
+        <link rel="stylesheet" href="/_style/css/layout.css" media="all">
     <![endif]-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script>
+        
+        // Adds class of js to the html tag if JS is enabled
+        document.getElementsByTagName('html')[0].className += ' js';
+        
+        // Adds class of svg to the html tag if svg is enabled
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+        
+    </script>
     
     
 	    <style type="text/css">
@@ -47,7 +60,7 @@
 </form>
         </li>
     </ul>
-</nav>
+</nav><!-- .nav-global-primary -->
     
     <div class="masthead masthead-l">
     <div class="masthead-hero">
@@ -151,7 +164,6 @@
 </nav>
     
         <header class="badge-heading">
-            <i class="pop icon-rocket"></i>
             <h2>The Brigade</h2>
         </header>
         
@@ -200,7 +212,6 @@
     <div class="layout-semibreve">
     
         <header class="badge-heading">
-            <i class="pop pop-red icon-rocket"></i>
             <h2>The 2012 Fellowship in Boston</h2>
         </header>
         
@@ -225,7 +236,6 @@
     <div class="layout-semibreve">
         
         <header class="badge-heading">
-            <i class="pop pop-dark-blue icon-rocket"></i>
             <h2>2012 Apps</h2>
         </header>
         
@@ -293,7 +303,6 @@
     <div class="layout-semibreve">
 
         <header class="badge-heading">
-            <i class="pop pop-orange icon-rocket"></i>
             <h2>Articles &amp; video</h2>
         </header>
         

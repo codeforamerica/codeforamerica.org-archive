@@ -4711,3 +4711,365 @@ body {
     padding-bottom: 0.375rem;
   }
 }
+.xx {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.xx .js-container {
+  display: none;
+}
+
+.xx-sidebar {
+  background-color: #f1f1f1;
+  padding: 2em 0;
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .xx-sidebar {
+    float: left;
+    width: 20%;
+    padding: 2em 0;
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+  }
+}
+.xx-sidebar .xx-nav {
+  padding: 0;
+  margin: 6em 0 6em;
+  display: none;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+}
+
+@media (min-width: 40em) {
+  .xx-sidebar .xx-nav {
+    display: block;
+  }
+}
+.xx-sidebar .xx-nav li {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+}
+
+.xx-sidebar .xx-nav .text-whisper, .xx-sidebar .xx-nav .heading-contrast, .xx-sidebar .xx-nav .brick-heading, .xx-sidebar .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-sidebar .xx-nav .profile-note, .xx-sidebar .xx-nav .list-icons li a, .list-icons li .xx-sidebar .xx-nav a,
+.xx-sidebar .xx-nav li a {
+  padding: 0.8em 5% 0.8em 15%;
+  display: block;
+}
+
+.xx-sidebar .xx-nav .text-whisper, .xx-sidebar .xx-nav .heading-contrast, .xx-sidebar .xx-nav .brick-heading, .xx-sidebar .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-sidebar .xx-nav .profile-note, .xx-sidebar .xx-nav .list-icons li a, .list-icons li .xx-sidebar .xx-nav a {
+  border-top: 1px solid #ddd;
+  margin-top: 1.5em;
+}
+
+.xx-sidebar .xx-nav li a:hover,
+.xx-sidebar .xx-nav li a:focus,
+.xx-sidebar .xx-nav li a:active {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.xx-container {
+  width: 96%;
+  padding: 1em 2%;
+  background-color: white;
+}
+
+@media (min-width: 40em) {
+  .xx-container {
+    float: right;
+    width: 76%;
+  }
+}
+.xx-title {
+  margin-bottom: 1em;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.xx-cfa-logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 40em) {
+  .xx-cfa-logo {
+    position: fixed;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    left: 0;
+    top: 0;
+    width: 20%;
+    margin: 0 auto 1em;
+  }
+}
+.xx-cfa-logo:hover,
+.xx-cfa-logo:focus,
+.xx-cfa-logo:active {
+  border-bottom: none;
+}
+
+.xx-cfa-logo img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.xx-hallmark {
+  left: 0;
+  position: fixed;
+  font-size: 0.65em;
+  bottom: 0;
+  margin: 0;
+  background-color: #f1f1f1;
+  padding: 1em 3%;
+  width: 14%;
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .xx-hallmark {
+    display: block;
+  }
+}
+.xx-hallmark:link,
+.xx-hallmark:visited,
+.xx-hallmark:hover,
+.xx-hallmark:focus,
+.xx-hallmark:active {
+  color: #494c49;
+  color: rgba(73, 76, 73, 0.7);
+}
+
+.xx-hallmark:hover,
+.xx-hallmark:focus,
+.xx-hallmark:active {
+  color: #494c49;
+  color: #494c49;
+}
+
+.xx-section {
+  clear: both;
+  padding-top: 1em;
+}
+
+.xx-section-title {
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-weight: 700;
+  font-style: normal;
+  margin: 1em 0 1em;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.xx-nav ol {
+  margin: 0;
+  padding: 0;
+}
+
+.xx .nav-global-primary {
+  position: relative;
+}
+
+.xx-pattern-layout {
+  margin-bottom: 1em;
+  float: left;
+  width: 100%;
+}
+
+.xx-pattern-layout div {
+  background-color: #ccc;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  min-height: 80px;
+}
+
+.xx-pattern-layout div p {
+  margin-bottom: 0;
+}
+
+.xx-pattern-layout div div {
+  background-color: #aaa;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+
+.xx-pattern-layout p {
+  line-height: 1.2em;
+}
+
+.xx .swatch {
+  float: left;
+  margin-bottom: 1em;
+  width: 96%;
+  margin-right: 2%;
+  background-color: white;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.xx .swatch-details {
+  padding: 0 8px;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .xx .swatch {
+    width: 33%;
+  }
+}
+@media (min-width: 50em) {
+  .xx .swatch {
+    width: 25%;
+  }
+}
+@media (min-width: 60em) {
+  .xx .swatch {
+    width: 20%;
+  }
+}
+.xx .swatch-preview {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  float: left;
+  height: 60px;
+  width: 100%;
+  margin: 0 0.8em 0.5em 0;
+}
+
+.xx .swatch-details {
+  float: left;
+  margin: 0 1em 0 0;
+  font-size: 0.8em;
+  clear: both;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+}
+
+@media (min-width: 70em) {
+  .xx .swatch-details {
+    clear: none;
+  }
+}
+.xx-slabs section {
+  padding: 0 2%;
+  width: 96%;
+}
+
+.xx-patchwork .pattern {
+  margin: 0;
+}
+
+.pattern {
+  clear: both;
+  float: left;
+  margin: 0.5em 0 3em;
+  width: 100%;
+}
+
+.pattern-name {
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+}
+
+.pattern-details {
+  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.7);
+  padding: 0.2em 1% 0.3em;
+  margin-bottom: 1em;
+  width: 98%;
+  border-radius: 0.2em;
+  overflow: hidden;
+  display: block;
+}
+
+.pattern-details:hover {
+  cursor: pointer;
+}
+
+.pattern .pattern-code {
+  border: 1px solid #ccc;
+  float: left;
+  width: 67.5%;
+  margin: 0.5em 0 0.5em 0;
+  font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+  font-size: 13px;
+  line-height: 1.2em;
+  padding: 0.5em;
+}
+
+.pattern-usage {
+  float: right;
+  width: 30%;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  white-space: pre-line;
+  line-height: 1.4em;
+}
+
+.pattern {
+  clear: both;
+}
+
+.pattern-link {
+  float: right;
+  padding: 0 0 0 0.5em;
+}
+
+.pattern-link:hover,
+.pattern-link:focus,
+.pattern-link:active {
+  border-bottom: none;
+}
+
+.nav-section-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  border-radius: 0;
+  display: inline-block;
+  padding: 0.8em 0.5em 0.5em 0.5em;
+  position: fixed;
+  right: 2%;
+  top: 0em;
+  width: 150px;
+  z-index: 100;
+  margin: 0;
+  border: none;
+  font-size: 0.85em;
+  transition: 0.2s;
+  border-radius: 0 0 0.3em 0.3em;
+}
+
+.nav-section-select:hover {
+  cursor: pointer;
+  padding-top: 1.2em;
+}

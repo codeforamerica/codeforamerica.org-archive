@@ -14,9 +14,10 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Style Guide</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
-    <link rel="stylesheet" href="/_style/css/main.css">
+    <link rel="stylesheet" href="/_style/css/documentation.css">
     <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
     <link href="/_style/css/prism.css" rel="stylesheet" />
     <script src="/_script/fittext.js" type="text/javascript"></script>
@@ -29,7 +30,20 @@
     <link rel="stylesheet" href="/_style/css/layout.css" media="all">
     <![endif]-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <script>
+        
+        // Adds class of js to the html tag if JS is enabled
+        document.getElementsByTagName('html')[0].className += ' js';
+        
+        // Adds class of svg to the html tag if svg is enabled
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+        
+    </script>
+    
 </head>
 
 <body class="xx">

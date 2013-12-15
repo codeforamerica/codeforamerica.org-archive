@@ -1,3 +1,5 @@
+/*  Pattern: Alert --------------------------------------- */
+
 .alert {
     @include rem(padding, 10px);
     @include rem(font-size, 14px); 

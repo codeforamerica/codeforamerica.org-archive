@@ -1,4 +1,8 @@
-/* Sans serif */
+//  Fonts ––––––––––––––––––––––––––––––––––––––––––––––––
+
+$base-font-size: 16px;
+
+// Sans serif --------------------------------------------
 
 $font-sans-regular-fallback: "Verdana", "Helvetica", "Arial";
 
@@ -22,7 +26,7 @@ $font-monospace-regular: "Monaco", "Courier", monospace;
     font-style: normal;
     }
 
-/* Serif */
+// Serif -------------------------------------------------
 
 @mixin font-serif-bold {
     font-family: $font-serif-regular;
@@ -31,9 +35,7 @@ $font-monospace-regular: "Monaco", "Courier", monospace;
     letter-spacing: -0.5px;
     }
 
-/* Converts px to rems. Via David Ensinger: http://davidensinger.com/2013/03/using-rems-with-sass/ */
-
-$base-font-size: 16px;
+// Converts px to rems. Via David Ensinger: http://davidensinger.com/2013/03/using-rems-with-sass/
 
 @mixin rem($property, $values) {
   // Create a couple of empty lists as output buffers.
@@ -69,7 +71,6 @@ $base-font-size: 16px;
       $rem-values: join($rem-values, #{$value}rem);
     }
   }
-
   // output the converted rules
   #{$property}: $px-values;
   #{$property}: $rem-values;
