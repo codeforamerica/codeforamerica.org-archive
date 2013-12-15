@@ -501,7 +501,7 @@ blockquote {
   border-color: #e5e5e5;
   border-color: #e5e5e5;
   padding: 0.5em 5%;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -545,7 +545,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -557,7 +557,7 @@ h1,
 .h1,
 h2,
 .h2 {
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -583,7 +583,7 @@ h3,
 .h3 {
   font-size: 30px;
   font-size: 1.875rem;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -601,7 +601,7 @@ h4,
 .h4 {
   font-size: 24px;
   font-size: 1.5rem;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -978,7 +978,7 @@ input[type="search"] {
 }
 
 .heading-contrast strong {
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -2366,7 +2366,7 @@ input.button-s,
   padding: 1em 2%;
   font-size: 1.5em;
   position: relative;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -2378,7 +2378,7 @@ input.button-s,
   padding: 0;
   color: white;
   color: white;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -3268,7 +3268,7 @@ nav ul li {
   line-height: 1em;
   margin: 0;
   padding: 0 0.15em 0 0;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -3466,7 +3466,7 @@ nav ul li {
 .billboard {
   margin: 0 0 1.25em;
   display: block;
-  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-size: 1.2em;
 }
 
