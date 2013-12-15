@@ -1,4 +1,8 @@
-/* Sans serif */
+//  Fonts ––––––––––––––––––––––––––––––––––––––––––––––––
+
+$base-font-size: 16px;
+
+// Sans serif --------------------------------------------
 
 $font-sans-regular-fallback: "Verdana", "Helvetica", "Arial";
 
@@ -7,6 +11,8 @@ $font-sans-regular: "Gotham A", "Gotham B", "Open Sans Regular", $font-sans-regu
 $font-serif-regular-fallback: "Georgia", Times, sans-serif;
 
 $font-serif-regular: "Sentinel SSm A", "Sentinel SSm B", $font-serif-regular-fallback;
+
+$font-monospace-regular: "Monaco", "Courier", monospace;
 
 @mixin font-sans-regular {
     font-family: $font-sans-regular;
@@ -20,7 +26,7 @@ $font-serif-regular: "Sentinel SSm A", "Sentinel SSm B", $font-serif-regular-fal
     font-style: normal;
     }
 
-/* Serif */
+// Serif -------------------------------------------------
 
 @mixin font-serif-bold {
     font-family: $font-serif-regular;
@@ -29,9 +35,7 @@ $font-serif-regular: "Sentinel SSm A", "Sentinel SSm B", $font-serif-regular-fal
     letter-spacing: -0.5px;
     }
 
-/* Converts px to rems. Via David Ensinger: http://davidensinger.com/2013/03/using-rems-with-sass/ */
-
-$base-font-size: 16px;
+// Converts px to rems. Via David Ensinger: http://davidensinger.com/2013/03/using-rems-with-sass/
 
 @mixin rem($property, $values) {
   // Create a couple of empty lists as output buffers.
@@ -67,7 +71,6 @@ $base-font-size: 16px;
       $rem-values: join($rem-values, #{$value}rem);
     }
   }
-
   // output the converted rules
   #{$property}: $px-values;
   #{$property}: $rem-values;

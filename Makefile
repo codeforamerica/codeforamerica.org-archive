@@ -13,7 +13,7 @@ style/css/main.css: \
         _style/scss/global/header.scss _style/scss/global/layout.scss \
         _style/scss/global/no-layout.scss _style/scss/layout.scss \
         _style/scss/main.scss _style/scss/patterns/badge-headings.scss \
-        _style/scss/patterns/badge-icons.scss _style/scss/patterns/billboard.scss \
+        _style/scss/patterns/billboard.scss _style/scss/documentation.scss \
         _style/scss/patterns/blurb.scss _style/scss/patterns/bricks.scss \
         _style/scss/patterns/button.scss _style/scss/patterns/chimney.scss \
         _style/scss/patterns/flags.scss _style/scss/patterns/heading-contrast.scss \
@@ -34,5 +34,6 @@ style/css/main.css: \
         _style/scss/patterns/stat.scss _style/scss/patterns/sticky-nav.scss \
         _style/scss/patterns/teaser.scss _style/scss/patterns/text-whisper.scss \
         _style/scss/patterns/wodge-large.scss _style/scss/patterns/wodge-small.scss \
-        _style/scss/patterns/wodge.scss _style/scss/templates/documentation.scss
+        _style/scss/patterns/wodge.scss _style/scss/templates/documentation.scss \
+        _style/scss/patterns/alert.scss
 	sass -qf -t expanded -E utf-8 _style/scss/main.scss style/css/main.css

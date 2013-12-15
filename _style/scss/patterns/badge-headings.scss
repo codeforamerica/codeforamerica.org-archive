@@ -1,42 +1,54 @@
+//  Badge Heading ----------------------------------------
+
 .badge-heading {
-    margin: 1em -4%;
-    padding-right: 4%;
-    padding-left: 4%;
+    @include rem(margin, 16px 0);
+    @include rem(margin, 16px 0);
+    @include rem(padding-left, 65px);
+    @include rem(min-height, 80px);
+    @include rem(background-size, 50px);
+    background-image: url('../images/badge-rocket-blue.png');
+    background-position: left top;
+    background-repeat: no-repeat;
     border-bottom: 1px solid;
-    border-color: #e5e5e5;
-    border-color: rgba(229, 229, 229, 0.8);
-    position: relative;
-    width: 98%;
-    }
-
-@media (min-width: 40em) {
-.badge-heading {
-    min-height: 3.5em;
-    padding: 1.3em 0 0.5em 5.2em;
+    border-color: $color-light-gray;
     clear: both;
-    margin: 1em 0 2em 0;
-    width: auto;
+    position: relative;
     }
-}
+    .svg .badge-heading {
+        background-image: url('../images/badge-rocket-blue.svg');
+        }
 
-.badge-heading i {
-    position: absolute;
-    left: 0;
-    top: 0.5em;
-    min-height: 28px;
-    min-width: 30px;
+.badge-heading.badge-gray {
+    background-image: url('../images/badge-rocket-gray.png');
     }
+    .svg .badge-heading.badge-gray {
+        background-image: url('../images/badge-rocket-gray.svg');
+        }
 
-.badge-heading i:before {
-    color: #fff;
+.badge-heading.badge-orange {
+    background-image: url('../images/badge-rocket-orange.png');
     }
+    .svg .badge-heading.badge-orange {
+        background-image: url('../images/badge-rocket-orange.svg');
+        }
 
-.badge-heading .pop {
-    display: none;
+.badge-heading.badge-purple {
+    background-image: url('../images/badge-rocket-purple.png');
     }
+    .svg .badge-heading.badge-purple {
+        background-image: url('../images/badge-rocket-purple.svg');
+        }
 
-@media (min-width: 40em) {
-.badge-heading .pop {
-    display: block;
+.badge-heading.badge-red {
+    background-image: url('../images/badge-rocket-red.png');
     }
-}
+    .svg .badge-heading.badge-red {
+        background-image: url('../images/badge-rocket-red.svg');
+        }
+
+.badge-heading.badge-teal {
+    background-image: url('../images/badge-rocket-teal.png');
+    }
+    .svg .badge-heading.badge-teal {
+        background-image: url('../images/badge-rocket-teal.svg');
+        }

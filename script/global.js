@@ -1,6 +1,3 @@
-/* Add a class of js to html element if js is enabled */
-document.getElementsByTagName('html')[0].className+=' js';
-
 (function (win, doc) {
     'use strict';
     if (!doc.querySelector || !win.addEventListener) {
