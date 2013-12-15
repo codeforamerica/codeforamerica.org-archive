@@ -3498,26 +3498,22 @@ nav ul li {
 }
 
 .billboard {
-  margin: 0 0 1.25em;
+  margin: 0 0 18px;
+  margin: 0 0 1.125rem;
+  padding: 16px;
+  padding: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  border-radius: 0.3125rem;
   display: block;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
-  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  clear: none;
 }
 
-@media (min-width: 40em) {
-  .billboard {
-    text-align: center;
-    border: 1px solid;
-    border-color: #e5e5e5;
-    border-color: #e5e5e5;
-    border-radius: 0.4em;
-    display: block;
-    padding: 1em;
-    margin-bottom: 1.25em;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-    clear: none;
-  }
-}
 .billboard:link,
 .billboard:visited,
 .billboard:hover,
@@ -3525,6 +3521,7 @@ nav ul li {
 .billboard:active {
   color: #399fd3;
   color: #399fd3;
+  border: 1px solid #e5e5e5;
   border-bottom: none;
 }
 
@@ -3533,8 +3530,6 @@ nav ul li {
 .billboard:active {
   color: black;
   color: black;
-  border-color: #e5e5e5;
-  border-color: #e5e5e5;
 }
 
 .billboard .billboard-label {
@@ -3543,16 +3538,11 @@ nav ul li {
 }
 
 .billboard .billboard-image {
-  display: none;
+  margin: 0 auto 8px;
+  margin: 0 auto 0.5rem;
+  display: block;
 }
 
-@media (min-width: 40em) {
-  .billboard .billboard-image {
-    width: 100px;
-    margin: 0 auto 0.5em;
-    display: block;
-  }
-}
 .search-global {
   position: relative;
 }
@@ -4725,6 +4715,7 @@ body {
   background-color: #f1f1f1;
   padding: 2em 0;
   width: 100%;
+  z-index: 3;
 }
 
 @media (min-width: 40em) {
