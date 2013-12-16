@@ -1488,6 +1488,7 @@ input.button-s,
   padding-bottom: 1em;
   padding-top: 2em;
   margin-bottom: 0;
+  width: auto;
 }
 
 .masthead-l .page-title {

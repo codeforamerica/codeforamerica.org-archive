@@ -1,6 +1,5 @@
 .nav-global-secondary {
     text-transform: uppercase;
-    
     }
 
 @media print {
@@ -9,18 +8,18 @@
 		}
 	}
 
-@media (min-width: 40em) {
-.nav-global-secondary {
-    width: auto;
-    float: right;
-    }
+@media (min-width: 40em) and (max-width: 60em) {
     
-    .nav-global-secondary ul {
-        display: table;
+    .nav-global-secondary {
+        width: 100%;
         }
     
-    .nav-global-secondary li {
-        display: table-cell;
+    .nav-global-secondary .nav-tier1 {
+        font-size: 0.8em;
+        }
+    
+    .nav-global-secondary .nav-tier1 a {
+        margin: 0 0.8em;
         }
     
     }
@@ -35,7 +34,12 @@
     border: none;
     vertical-align: top;
     @include font-sans-bold;
+    }
     
+    @media (max-width: 40em) {
+    .nav-global-secondary li {
+        text-align: left;
+        }
     }
 
 .nav-global-secondary li a {
@@ -44,7 +48,14 @@
     @include color($color-black, 1);
     margin: 0 1.5em;
     @include transition(padding);
+    }
     
+    @media (max-width: 40em) {
+    .nav-global-secondary li a {
+        text-align: left;
+        padding: 1em;
+        margin: 0;
+        }
     }
 
 .nav-global-secondary .nav-tier1 a:hover,
@@ -57,9 +68,16 @@
     }
 
 .nav-global-secondary li .button {
-    font-size: 1em;
     @include rem(padding, 0 12px);
-    @include rem(margin, 22px 16px);
+    @include rem(margin, 24px 16px);
+    @include rem(font-size, 16px);
+    }
+    
+    @media (max-width: 60em) {
+    .nav-global-secondary li .button {
+        @include rem(margin-top, 15px);
+        @include rem(font-size, 13px);
+        }
     }
 
 .nav-global-secondary li:last-child a {
@@ -93,9 +111,28 @@
     font-weight: normal;
     text-align: right;
     }
+    
+    @media (max-width: 40em) {
+    .nav-global-secondary .nav-tier2 {
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: none;
+        padding: 0;
+        width: 100%;
+        margin: 0.5em 0 1em 0;
+        }
+    }
 
 .nav-global-secondary .nav-tier2 li {
 	float: right;
+    }
+    
+    @media (max-width: 40em) {
+    .nav-global-secondary .nav-tier2 li {
+        clear: both;
+        float: left;
+        }
     }
 
 .nav-global-secondary .nav-tier2 a {
