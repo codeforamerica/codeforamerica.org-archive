@@ -1,44 +1,52 @@
 .profile-small {
+    @include rem(border-radius, 2px);
+    @include rem(margin, 60px 0 16px 0);
+    @include rem(padding, 60px 0 0 0);
     border: 1px solid;
-    @include border-color($color-medium-gray, 0.5);
-    margin: 60px 0 2em 0;
-    padding: 80px 0 0 0;
+    @include border-color($color-medium-gray, 0.3);
+    background-image: none;
     position: relative;
     text-align: center;
-    background-image: none;
     }
 
 .profile-small .profile-photo {
-    border: 6px solid white;
-    height: 100px;
+    border: 6px solid white; /* Adds a gap round the gray border */
+    height: 80px;
     left: 50%;
-    margin-left: -56px; /* Half the width of the image */
+    margin-left: -46px; /* Half the width of the image and border */
     position: absolute;
-    top: -50px;
-    width: 100px;
+    top: -45px;
+    width: 80px;
+    }
+
+.profile-small .profile-note,
+.profile-small .profile-note p {
+    @include rem(line-height, 21px); 
+    @include rem(font-size, 14px);
     }
 
 .profile-small .profile-name,
 .profile-small .profile-note p {
-    padding: 0 2%;
+    @include rem(padding, 0 8px);
     }
 
 .profile-small .profile-name {
-    font-size: 1.2em;
-    margin-bottom: 0.8em;
+    @include rem(font-size, 22px);
+    @include rem(margin-bottom, 4px);
     @include font-sans-bold;
     }
 
 .profile-small .link-more {
+    @include rem(font-size, 13px);
     @include color($color-red, 1);
     @include font-sans-bold;
     text-transform: uppercase;
     }
 
 .profile-small .list-social {
-    @include background-color($color-light-gray, 0.8);
+    @include background-color($color-light-gray, 0.6);
+    @include rem(padding, 10px 0 3px 0);
     margin: 0;
-    padding: 0.8em 0 0.2em 0;
     }
 
 .profile-small .list-social li {
