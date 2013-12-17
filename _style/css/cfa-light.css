@@ -67,7 +67,9 @@ strong {
 
 code,
 .code {
-  font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+  font-family: 'Courier New',Courier,monospace;
+  background-color: #f5f2f0;
+  padding: 2px 4px;
 }
 
 mark {
@@ -78,6 +80,7 @@ mark {
 }
 
 kbd {
+  font-family: "Monaco", "Courier", monospace;
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.8);
   padding: 0.5em 0.5em 0.4em;
@@ -87,6 +90,11 @@ kbd {
 pre {
   white-space: pre-wrap;
   max-width: 100%;
+}
+
+pre code {
+  background-color: transparent;
+  padding: inherit;
 }
 
 blockquote {
@@ -136,10 +144,6 @@ figure {
   width: 1px;
 }
 
-kbd {
-  font-family: "Monaco", "Courier", monospace;
-}
-
 h1,
 h2,
 h3,
@@ -155,7 +159,25 @@ h6 {
 }
 
 h1,
-.h1,
+.h1 {
+  line-height: 1.2em;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  display: block;
+  clear: left;
+  font-size: 50px;
+  font-size: 3.125rem;
+  letter-spacing: -3px;
+}
+
+h1 sup,
+.h1 sup {
+  font-size: 27px;
+  font-size: 1.6875rem;
+}
+
 h2,
 .h2 {
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
@@ -1404,6 +1426,15 @@ input.button-s,
   width: 100%;
   min-height: 400px;
   z-index: 1;
+}
+
+.masthead h1,
+.masthead .h1 {
+  color: white;
+  text-align: center;
+  margin: -0.22em 0 0 0;
+  float: left;
+  width: 100%;
 }
 
 .masthead-header {

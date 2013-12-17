@@ -64,7 +64,9 @@ strong {
 
 code,
 .code {
-    font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+    font-family: 'Courier New',Courier,monospace;
+    background-color: #f5f2f0;
+    padding: 2px 4px;
     }
 
 
@@ -75,6 +77,7 @@ mark {
     }
 
 kbd {
+    font-family: $font-monospace-regular; 
     @include background-color($color-light-gray, 0.8);
     padding: 0.5em 0.5em 0.4em;
     border-radius: 0.3em;
@@ -83,6 +86,11 @@ kbd {
 pre {
     white-space: pre-wrap;
     max-width: 100%;
+    }
+
+pre code {
+    background-color: transparent;
+    padding: inherit;
     }
 
 blockquote {
@@ -121,8 +129,4 @@ figure {
     padding: 0;
     position: absolute;
     width: 1px;
-    }
-
-    kbd {
-    font-family: $font-monospace-regular;   
     }

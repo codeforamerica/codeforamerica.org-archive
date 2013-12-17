@@ -4,17 +4,17 @@
     width: 140px;
     }
 
-.profile-note .list-social {
+.list-social {
 	min-height: 30px;
 	}
 
-.profile-note .list-social,
-.profile-note .list-social a,
-.profile-note .list-social a:link,
-.profile-note .list-social a:visited,
-.profile-note .list-social a:hover,
-.profile-note .list-social a:focus,
-.profile-note .list-social a:active {
+.list-social,
+.list-social a,
+.list-social a:link,
+.list-social a:visited,
+.list-social a:hover,
+.list-social a:focus,
+.list-social a:active {
     @include color($color-red, 1);
     @include font-sans-bold;
     text-transform: uppercase;
@@ -22,76 +22,76 @@
     padding: 0;
     }
 
-.profile-note .list-social {
+.list-social {
 	text-align: center;
 	display: table;
 	width: 100%;
 	}
 
-.profile-note .list-social li {
+.list-social li {
 	display: inline-block;
 	margin: 0;
 	text-align: center;
-	background-position: top center;
+	background-position: 7px -38px;
 	background-image: url('../images/sprite-20x20-social.png');
 	text-indent: -9999px;
 	}
 	
-.profile-note .list-social .social-twitter {
+.list-social .social-twitter {
 	background-position: -174px -38px;
 	}
-	.profile-note .list-social .social-twitter:hover,
-	.profile-note .list-social .social-twitter:focus,
-	.profile-note .list-social .social-twitter:active {
+	.list-social .social-twitter:hover,
+	.list-social .social-twitter:focus,
+	.list-social .social-twitter:active {
 		background-position: -174px 2px;
 		}
 
-.profile-note .list-social .social-linkedin {
+.list-social .social-linkedin {
 	background-position: -204px -38px;
 	}
-	.profile-note .list-social .social-linkedin:hover,
-	.profile-note .list-social .social-linkedin:focus,
-	.profile-note .list-social .social-linkedin:active {
+	.list-social .social-linkedin:hover,
+	.list-social .social-linkedin:focus,
+	.list-social .social-linkedin:active {
 		background-position: -204px 2px;
 		}
 
-.profile-note .list-social .social-github {
+.list-social .social-github {
 	background-position: -234px -38px;
 	}
-	.profile-note .list-social .social-github:hover,
-	.profile-note .list-social .social-github:focus,
-	.profile-note .list-social .social-github:active {
+	.list-social .social-github:hover,
+	.list-social .social-github:focus,
+	.list-social .social-github:active {
 		background-position: -234px 2px;
 		}
 
-.profile-note .list-social .social-flickr {
+.list-social .social-flickr {
 	background-position: -54px -38px;
 	}
-	.profile-note .list-social .social-flickr:hover,
-	.profile-note .list-social .social-flickr:focus,
-	.profile-note .list-social .social-flickr:active {
+	.list-social .social-flickr:hover,
+	.list-social .social-flickr:focus,
+	.list-social .social-flickr:active {
 		background-position: -54px 2px;
 		}
 
-.profile-note .list-social .social-website {
+.list-social .social-website {
 	background-position: 7px -38px;
 	}
-    .profile-note .list-social .social-website:hover,
-    .profile-note .list-social .social-website:focus,
-    .profile-note .list-social .social-website:active {
+    .list-social .social-website:hover,
+    .list-social .social-website:focus,
+    .list-social .social-website:active {
     	background-position: 7px 2px;
     	}
 
-.profile-note .list-social .social-facebook {
+.list-social .social-facebook {
 	background-position: -264px -38px;
 	}
-	.profile-note .list-social .social-facebook:hover,
-	.profile-note .list-social .social-facebook:focus,
-	.profile-note .list-social .social-facebook:active {
+	.list-social .social-facebook:hover,
+	.list-social .social-facebook:focus,
+	.list-social .social-facebook:active {
 		background-position: -264px 2px;
 		}
 
-.profile-note .list-social a {
+.list-social a {
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 	width: 35px;

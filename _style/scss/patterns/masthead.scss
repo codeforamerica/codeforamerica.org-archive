@@ -21,6 +21,15 @@
 	z-index: 1;
 	}
 
+.masthead h1,
+.masthead .h1 {
+    color: $color-white;
+    text-align: center;
+    margin: -0.22em 0 0 0;
+    float: left;
+    width: 100%;
+    }
+
 .masthead-header {
     overflow: hidden;
     width: auto;

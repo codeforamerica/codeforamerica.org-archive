@@ -462,7 +462,9 @@ strong {
 
 code,
 .code {
-  font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+  font-family: 'Courier New',Courier,monospace;
+  background-color: #f5f2f0;
+  padding: 2px 4px;
 }
 
 mark {
@@ -473,6 +475,7 @@ mark {
 }
 
 kbd {
+  font-family: "Monaco", "Courier", monospace;
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.8);
   padding: 0.5em 0.5em 0.4em;
@@ -482,6 +485,11 @@ kbd {
 pre {
   white-space: pre-wrap;
   max-width: 100%;
+}
+
+pre code {
+  background-color: transparent;
+  padding: inherit;
 }
 
 blockquote {
@@ -531,10 +539,6 @@ figure {
   width: 1px;
 }
 
-kbd {
-  font-family: "Monaco", "Courier", monospace;
-}
-
 h1,
 h2,
 h3,
@@ -550,7 +554,25 @@ h6 {
 }
 
 h1,
-.h1,
+.h1 {
+  line-height: 1.2em;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  display: block;
+  clear: left;
+  font-size: 50px;
+  font-size: 3.125rem;
+  letter-spacing: -3px;
+}
+
+h1 sup,
+.h1 sup {
+  font-size: 27px;
+  font-size: 1.6875rem;
+}
+
 h2,
 .h2 {
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
@@ -2267,6 +2289,15 @@ input.button-s,
   z-index: 1;
 }
 
+.masthead h1,
+.masthead .h1 {
+  color: white;
+  text-align: center;
+  margin: -0.22em 0 0 0;
+  float: left;
+  width: 100%;
+}
+
 .masthead-header {
   overflow: hidden;
   width: auto;
@@ -3284,29 +3315,6 @@ nav ul li {
   background: rgba(57, 159, 211, 0.6);
 }
 
-.page-title {
-  line-height: 1.2em;
-  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  width: 100%;
-  display: block;
-  float: left;
-  clear: left;
-  color: white;
-  font-size: 50px;
-  font-size: 3.125rem;
-  text-align: center;
-  margin: -0.22em 0 0 0;
-  letter-spacing: -3px;
-}
-
-.page-title sup {
-  font-size: 27px;
-  font-size: 1.6875rem;
-}
-
 .post .post-header {
   padding-left: 2%;
   margin: 0 0 2em;
@@ -3395,17 +3403,17 @@ nav ul li {
   width: 140px;
 }
 
-.profile-note .list-social {
+.list-social {
   min-height: 30px;
 }
 
-.profile-note .list-social,
-.profile-note .list-social a,
-.profile-note .list-social a:link,
-.profile-note .list-social a:visited,
-.profile-note .list-social a:hover,
-.profile-note .list-social a:focus,
-.profile-note .list-social a:active {
+.list-social,
+.list-social a,
+.list-social a:link,
+.list-social a:visited,
+.list-social a:hover,
+.list-social a:focus,
+.list-social a:active {
   color: #cf1b41;
   color: #cf1b41;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -3416,82 +3424,82 @@ nav ul li {
   padding: 0;
 }
 
-.profile-note .list-social {
+.list-social {
   text-align: center;
   display: table;
   width: 100%;
 }
 
-.profile-note .list-social li {
+.list-social li {
   display: inline-block;
   margin: 0;
   text-align: center;
-  background-position: top center;
+  background-position: 7px -38px;
   background-image: url("../images/sprite-20x20-social.png");
   text-indent: -9999px;
 }
 
-.profile-note .list-social .social-twitter {
+.list-social .social-twitter {
   background-position: -174px -38px;
 }
 
-.profile-note .list-social .social-twitter:hover,
-.profile-note .list-social .social-twitter:focus,
-.profile-note .list-social .social-twitter:active {
+.list-social .social-twitter:hover,
+.list-social .social-twitter:focus,
+.list-social .social-twitter:active {
   background-position: -174px 2px;
 }
 
-.profile-note .list-social .social-linkedin {
+.list-social .social-linkedin {
   background-position: -204px -38px;
 }
 
-.profile-note .list-social .social-linkedin:hover,
-.profile-note .list-social .social-linkedin:focus,
-.profile-note .list-social .social-linkedin:active {
+.list-social .social-linkedin:hover,
+.list-social .social-linkedin:focus,
+.list-social .social-linkedin:active {
   background-position: -204px 2px;
 }
 
-.profile-note .list-social .social-github {
+.list-social .social-github {
   background-position: -234px -38px;
 }
 
-.profile-note .list-social .social-github:hover,
-.profile-note .list-social .social-github:focus,
-.profile-note .list-social .social-github:active {
+.list-social .social-github:hover,
+.list-social .social-github:focus,
+.list-social .social-github:active {
   background-position: -234px 2px;
 }
 
-.profile-note .list-social .social-flickr {
+.list-social .social-flickr {
   background-position: -54px -38px;
 }
 
-.profile-note .list-social .social-flickr:hover,
-.profile-note .list-social .social-flickr:focus,
-.profile-note .list-social .social-flickr:active {
+.list-social .social-flickr:hover,
+.list-social .social-flickr:focus,
+.list-social .social-flickr:active {
   background-position: -54px 2px;
 }
 
-.profile-note .list-social .social-website {
+.list-social .social-website {
   background-position: 7px -38px;
 }
 
-.profile-note .list-social .social-website:hover,
-.profile-note .list-social .social-website:focus,
-.profile-note .list-social .social-website:active {
+.list-social .social-website:hover,
+.list-social .social-website:focus,
+.list-social .social-website:active {
   background-position: 7px 2px;
 }
 
-.profile-note .list-social .social-facebook {
+.list-social .social-facebook {
   background-position: -264px -38px;
 }
 
-.profile-note .list-social .social-facebook:hover,
-.profile-note .list-social .social-facebook:focus,
-.profile-note .list-social .social-facebook:active {
+.list-social .social-facebook:hover,
+.list-social .social-facebook:focus,
+.list-social .social-facebook:active {
   background-position: -264px 2px;
 }
 
-.profile-note .list-social a {
+.list-social a {
   background-repeat: no-repeat;
   text-indent: -9999px;
   width: 35px;
@@ -4025,6 +4033,9 @@ section,
   font-size: 1.125rem;
   line-height: 18px;
   line-height: 1.125rem;
+  text-transform: none;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  letter-spacing: inherit;
 }
 
 .teaser .teaser-masthead {
