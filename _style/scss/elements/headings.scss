@@ -10,7 +10,21 @@ h6 {
     }
 
 h1,
-.h1,
+.h1 {
+    line-height: 1.2em;
+    @include font-sans-bold;
+    text-transform: uppercase;
+    display: block;
+    clear: left;
+    @include rem(font-size, 50px);
+    letter-spacing: -3px;
+    }
+
+h1 sup,
+.h1 sup {
+	@include rem(font-size, 27px);
+	}
+
 h2,
 .h2 {
     @include font-serif-bold;

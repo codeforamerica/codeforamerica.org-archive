@@ -1,17 +1,17 @@
 //  Colors –––––––––––––––––––––––––––––––––––––––––––––––
 
 @mixin color($color, $opacity: 1) {
-    color: $color; // fallback
+    @if $opacity != 1 { color: $color; } // fallback
     color: rgba($color, $opacity);
     }
 
 @mixin background-color($color, $opacity: 1) {
-    background: $color; // fallback
+    @if $opacity != 1 { background: $color; } // fallback
     background: rgba($color, $opacity);
     }
 
 @mixin border-color($color, $opacity: 1) {
-    border-color: $color; // fallback
+    @if $opacity != 1 { border-color: $color; } // fallback
     border-color: rgba($color, $opacity);
     }
 

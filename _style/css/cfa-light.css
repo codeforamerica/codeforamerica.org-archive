@@ -36,7 +36,6 @@ main {
 abbr {
   border-bottom: 1px dotted;
   border-color: #999595;
-  border-color: #999595;
 }
 
 abbr:hover {
@@ -67,17 +66,19 @@ strong {
 
 code,
 .code {
-  font-family: Menlo,Monaco,'Courier New',Courier,monospace;
+  font-family: 'Courier New',Courier,monospace;
+  background-color: #f5f2f0;
+  padding: 2px 4px;
 }
 
 mark {
-  background: #fedd44;
   background: #fedd44;
   padding: 0 0.1em;
   border-radius: 0.1em;
 }
 
 kbd {
+  font-family: "Monaco", "Courier", monospace;
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.8);
   padding: 0.5em 0.5em 0.4em;
@@ -89,13 +90,16 @@ pre {
   max-width: 100%;
 }
 
+pre code {
+  background-color: transparent;
+  padding: inherit;
+}
+
 blockquote {
-  color: #004b6a;
   color: #004b6a;
   background: #7ab5d6;
   background: rgba(122, 181, 214, 0.1);
   border: 1px solid;
-  border-color: #e5e5e5;
   border-color: #e5e5e5;
   padding: 0.5em 5%;
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
@@ -136,10 +140,6 @@ figure {
   width: 1px;
 }
 
-kbd {
-  font-family: "Monaco", "Courier", monospace;
-}
-
 h1,
 h2,
 h3,
@@ -155,7 +155,25 @@ h6 {
 }
 
 h1,
-.h1,
+.h1 {
+  line-height: 1.2em;
+  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  display: block;
+  clear: left;
+  font-size: 50px;
+  font-size: 3.125rem;
+  letter-spacing: -3px;
+}
+
+h1 sup,
+.h1 sup {
+  font-size: 27px;
+  font-size: 1.6875rem;
+}
+
 h2,
 .h2 {
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
@@ -252,7 +270,6 @@ a:visited,
 a:hover,
 a:focus,
 a:active {
-  color: #cf1b41;
   color: #cf1b41;
   text-decoration: none;
 }
@@ -480,7 +497,6 @@ label {
 textarea:focus,
 input:focus {
   border-color: #004b6a;
-  border-color: #004b6a;
   outline: 0;
 }
 
@@ -559,7 +575,6 @@ ul ul {
 .text-prominent {
   margin: 0 0 0.3em 0;
   color: #cf1b41;
-  color: #cf1b41;
   font-size: 24px;
   font-size: 1.5rem;
 }
@@ -576,7 +591,6 @@ ul ul {
   font-style: normal;
   letter-spacing: -0.5px;
   font-size: 2em;
-  color: black;
   color: black;
   text-transform: none;
   margin: 0 0.2em;
@@ -1033,7 +1047,6 @@ input.button-prominent,
 .button-prominent:focus,
 .button-prominent:active {
   background: #cf1b41;
-  background: #cf1b41;
 }
 
 input.button-prominent:hover,
@@ -1047,7 +1060,6 @@ input.button-prominent:focus,
 .button-prominent:active,
 input.button-prominent:active {
   background: #cf1b41;
-  background: #cf1b41;
 }
 
 /*  Button: Neutral --------------------------------------- */
@@ -1058,7 +1070,6 @@ input.button-neutral,
 .button-neutral:hover,
 .button-neutral:focus,
 .button-neutral:active {
-  background: #7ab5d6;
   background: #7ab5d6;
 }
 
@@ -1073,7 +1084,6 @@ input.button-neutral:focus,
 .button-neutral:active,
 input.button-neutral:active {
   background: #7ab5d6;
-  background: #7ab5d6;
 }
 
 /*  Button: Alternative */
@@ -1084,7 +1094,6 @@ input.button-alternative,
 .button-alternative:hover,
 .button-alternative:focus,
 .button-alternative:active {
-  background: #00a175;
   background: #00a175;
 }
 
@@ -1098,7 +1107,6 @@ input.button-alternative:focus,
 
 .button-alternative:active,
 input.button-alternative:active {
-  background: #00a175;
   background: #00a175;
 }
 
@@ -1121,7 +1129,6 @@ input.button-unstyled,
 .button-unstyled:hover,
 .button-unstyled:focus,
 .button-unstyled:active {
-  color: black;
   color: black;
 }
 
@@ -1350,16 +1357,13 @@ input.button-s,
 .blurb {
   text-transform: uppercase;
   color: #494c49;
-  color: #494c49;
   border-bottom: 1px solid #333;
-  border-color: #e5e5e5;
   border-color: #e5e5e5;
   padding-bottom: 0.5em;
   margin-bottom: 1.5em;
 }
 
 .blurb em {
-  color: #cf1b41;
   color: #cf1b41;
 }
 
@@ -1404,6 +1408,15 @@ input.button-s,
   width: 100%;
   min-height: 400px;
   z-index: 1;
+}
+
+.masthead h1,
+.masthead .h1 {
+  color: white;
+  text-align: center;
+  margin: -0.22em 0 0 0;
+  float: left;
+  width: 100%;
 }
 
 .masthead-header {
@@ -1488,6 +1501,7 @@ input.button-s,
   padding-bottom: 1em;
   padding-top: 2em;
   margin-bottom: 0;
+  width: auto;
 }
 
 .masthead-l .page-title {
@@ -1507,7 +1521,6 @@ input.button-s,
 .masthead-header .nav-breadcrumbs a:hover,
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
-  color: white;
   color: white;
   padding-top: 0;
   padding-bottom: 0;
@@ -1550,8 +1563,7 @@ input.button-s,
   border: none;
   padding: 0;
   color: white;
-  color: white;
-  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -1595,7 +1607,6 @@ input.button-s,
   border-radius: 5em;
   border-width: 8px;
   border-style: solid;
-  border-color: #cf1b41;
   border-color: #cf1b41;
   width: 100px;
   float: left;
@@ -1797,7 +1808,6 @@ input.button-s,
 .list-ruled li {
   border-bottom: 1px solid;
   border-color: #e5e5e5;
-  border-color: #e5e5e5;
   padding: 0.5em 0;
 }
 
@@ -1826,7 +1836,6 @@ section,
 
 .slab-blue {
   background: #399fd3;
-  background: #399fd3;
 }
 
 .slab-blue a:link,
@@ -1848,7 +1857,6 @@ section,
 
 .slab-dark-blue {
   background: #004b6a;
-  background: #004b6a;
   color: white;
 }
 
@@ -1859,7 +1867,6 @@ section,
   }
 }
 .slab-red {
-  background: #cf1b41;
   background: #cf1b41;
   color: white;
 }
@@ -1888,7 +1895,6 @@ section,
 }
 
 .slab-medium-red {
-  background: #aa1c3a;
   background: #aa1c3a;
   color: white;
 }
@@ -1921,7 +1927,6 @@ section,
 
 .slab-dark-gray {
   background: #494c49;
-  background: #494c49;
   color: white;
 }
 
@@ -1930,7 +1935,6 @@ section,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
-  color: white;
   color: white;
   border-bottom: none;
 }
@@ -1955,7 +1959,6 @@ section,
 .slab-red .button-prominent:focus,
 .slab-red .button-prominent:active {
   background: #82172d;
-  background: #82172d;
 }
 
 .slab-red input.button-prominent:hover,
@@ -1974,7 +1977,6 @@ section,
 .slab-medium-red .button-prominent:focus,
 .slab-medium-red .button-prominent:active {
   background: #82172d;
-  background: #82172d;
 }
 
 .slab-medium-red input.button-prominent:hover,
@@ -1990,7 +1992,6 @@ section,
   background: rgba(229, 229, 229, 0.5);
   border: 1px solid;
   border-color: #e5e5e5;
-  border-color: #e5e5e5;
   float: left;
   width: auto;
   width: calc(100% - 2px - 2em);
@@ -2000,7 +2001,6 @@ section,
 }
 
 .note {
-  color: #999595;
   color: #999595;
   font-size: 13px;
   font-size: 0.8125rem;
@@ -2017,11 +2017,8 @@ section,
 .global-footer {
   clear: both;
   background: #494c49;
-  background: #494c49;
   border-top: 10px solid;
   border-color: #399fd3;
-  border-color: #399fd3;
-  color: white;
   color: white;
   float: left;
   width: 100%;
@@ -2041,7 +2038,6 @@ section,
 .global-footer a:focus,
 .global-footer a:active {
   color: white;
-  color: white;
 }
 
 .global-footer .search-global {
@@ -2051,7 +2047,6 @@ section,
 .global-footer .search-global input {
   margin: 0;
   background-color: transparent;
-  color: white;
   color: white;
   font-size: 14px;
   font-size: 0.875rem;
@@ -2121,7 +2116,6 @@ section,
 .global-footer .nav-footer .nav-tier2 a:focus,
 .global-footer .nav-footer .nav-tier2 a:active {
   color: white;
-  color: white;
 }
 
 .global-footer .nav-footer .nav-tier2 li {
@@ -2141,7 +2135,6 @@ section,
 }
 
 .global-foot {
-  background: black;
   background: black;
   clear: both;
   color: white;

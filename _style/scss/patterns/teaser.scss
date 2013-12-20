@@ -44,6 +44,9 @@
     @include rem(margin, 0 0 13px 0);
     @include rem(font-size, 18px);
     @include rem(line-height, 18px);
+    text-transform: none;
+    font-family: $font-serif-regular;
+    letter-spacing: inherit;
     }
 
 .teaser .teaser-masthead {

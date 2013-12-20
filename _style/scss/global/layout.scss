@@ -292,7 +292,11 @@ section,
     width: 8em;
         margin: 1em auto;
         }
-    
+    @media (min-width: 40em) and (max-width: 60em) {
+        .global-header-logo {
+            width: 6em;
+        }
+    }
 
 .nav-global-secondary {
 	float: right;
@@ -382,3 +386,17 @@ section,
 .island {
     margin: 49px auto;
 	}
+
+
+.nav-global-secondary {
+    width: auto;
+    float: right;
+    }
+
+.nav-global-secondary ul {
+    display: table;
+    }
+
+.nav-global-secondary li {
+    display: table-cell;
+    }
