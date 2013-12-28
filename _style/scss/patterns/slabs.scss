@@ -66,6 +66,33 @@ section,
     .slab-red label {
         color: $color-white;
         }
+    
+    .slab-red .list-icons a:link,
+    .slab-red .list-icons a:visited,
+    .slab-red .list-icons a:hover,
+    .slab-red .list-icons a:focus,
+    .slab-red .list-icons a:active {
+        color: $color-white;
+        }
+    
+    
+    
+    .slab-red a.text-whisper:link,
+    .slab-red a.text-whisper:visited,
+    .slab-red a.text-whisper:hover,
+    .slab-red a.text-whisper:focus,
+    .slab-red a.text-whisper:active {
+        border-bottom: none;
+        font-weight: 500;
+        @include color($color-white, 0.7);
+        }
+    
+    .slab-red a.text-whisper:hover,
+    .slab-red a.text-whisper:focus,
+    .slab-red a.text-whisper:active {
+        color: $color-white;
+        }
+    
 
 .slab-medium-red {
     @include background-color($color-medium-red, 1);
