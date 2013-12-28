@@ -4,7 +4,7 @@
 	@include rem(line-height, 16px);
 	position: relative;
 	clear: both;
-	@include font-sans-bold;
+	@include font-sans-regular;
 	}
 
 .list-icons li:before {
@@ -22,5 +22,5 @@
 .list-icons li a {
     display: block;
     clear: both;
-    @extend .text-whisper;
+    font-weight: 700;
     }

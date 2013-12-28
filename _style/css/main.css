@@ -633,7 +633,6 @@ h6,
 .brick-heading,
 .chimney .profile .profile-role,
 .chimney .profile .profile-note,
-.list-icons li a,
 .stat .stat-heading {
   text-transform: uppercase;
   margin: 0;
@@ -973,7 +972,7 @@ input[type="search"] {
 }
 
 /*  Text ––––––––––––––––––––––––––––––––––––––––––––––––– */
-.text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note, .list-icons li a {
+.text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note {
   color: #6d6e71;
 }
 
@@ -2726,7 +2725,7 @@ input.button-s,
   position: relative;
   clear: both;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -2746,6 +2745,7 @@ input.button-s,
 .list-icons li a {
   display: block;
   clear: both;
+  font-weight: 700;
 }
 
 .island {
@@ -3765,6 +3765,67 @@ section,
   color: white;
 }
 
+.slab-red .list-icons a:link,
+.slab-red .list-icons a:visited,
+.slab-red .list-icons a:hover,
+.slab-red .list-icons a:focus,
+.slab-red .list-icons a:active {
+  color: white;
+}
+
+.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link, .slab-red a.brick-heading:link, .slab-red .chimney .profile a.profile-role:link, .chimney .profile .slab-red a.profile-role:link, .slab-red .chimney .profile a.profile-note:link, .chimney .profile .slab-red a.profile-note:link,
+.slab-red a.text-whisper:visited,
+.slab-red a.heading-contrast:visited,
+.slab-red a.brick-heading:visited,
+.slab-red .chimney .profile a.profile-role:visited,
+.chimney .profile .slab-red a.profile-role:visited,
+.slab-red .chimney .profile a.profile-note:visited,
+.chimney .profile .slab-red a.profile-note:visited,
+.slab-red a.text-whisper:hover,
+.slab-red a.heading-contrast:hover,
+.slab-red a.brick-heading:hover,
+.slab-red .chimney .profile a.profile-role:hover,
+.chimney .profile .slab-red a.profile-role:hover,
+.slab-red .chimney .profile a.profile-note:hover,
+.chimney .profile .slab-red a.profile-note:hover,
+.slab-red a.text-whisper:focus,
+.slab-red a.heading-contrast:focus,
+.slab-red a.brick-heading:focus,
+.slab-red .chimney .profile a.profile-role:focus,
+.chimney .profile .slab-red a.profile-role:focus,
+.slab-red .chimney .profile a.profile-note:focus,
+.chimney .profile .slab-red a.profile-note:focus,
+.slab-red a.text-whisper:active,
+.slab-red a.heading-contrast:active,
+.slab-red a.brick-heading:active,
+.slab-red .chimney .profile a.profile-role:active,
+.chimney .profile .slab-red a.profile-role:active,
+.slab-red .chimney .profile a.profile-note:active,
+.chimney .profile .slab-red a.profile-note:active {
+  border-bottom: none;
+  font-weight: 500;
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover, .slab-red a.brick-heading:hover, .slab-red .chimney .profile a.profile-role:hover, .chimney .profile .slab-red a.profile-role:hover, .slab-red .chimney .profile a.profile-note:hover, .chimney .profile .slab-red a.profile-note:hover,
+.slab-red a.text-whisper:focus,
+.slab-red a.heading-contrast:focus,
+.slab-red a.brick-heading:focus,
+.slab-red .chimney .profile a.profile-role:focus,
+.chimney .profile .slab-red a.profile-role:focus,
+.slab-red .chimney .profile a.profile-note:focus,
+.chimney .profile .slab-red a.profile-note:focus,
+.slab-red a.text-whisper:active,
+.slab-red a.heading-contrast:active,
+.slab-red a.brick-heading:active,
+.slab-red .chimney .profile a.profile-role:active,
+.chimney .profile .slab-red a.profile-role:active,
+.slab-red .chimney .profile a.profile-note:active,
+.chimney .profile .slab-red a.profile-note:active {
+  color: white;
+}
+
 .slab-medium-red {
   background: #aa1c3a;
   color: white;
@@ -4141,12 +4202,14 @@ section,
 }
 
 .wodge {
-  position: relative;
-  margin: 3em 0 2em 0;
   border-bottom: 1px solid;
   border-color: #494c49;
   border-color: rgba(73, 76, 73, 0.3);
-  padding: 0 0 2em 0;
+  position: relative;
+  margin: 48px 0 32px 0;
+  margin: 3rem 0 2rem 0;
+  padding: 0 0 32px 0;
+  padding: 0 0 2rem 0;
 }
 
 .wodge:first-child {
@@ -4165,6 +4228,8 @@ section,
   border-color: rgba(73, 76, 73, 0.5);
   border-radius: 0.2em;
   margin-bottom: 1em;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .wodge .button:last-of-type, .wodge .button-prominent:last-of-type, .wodge .button-neutral:last-of-type, .wodge .button-alternative:last-of-type, .wodge .button-unstyled:last-of-type, .wodge .button-subtle:last-of-type, .wodge input[type="button"][disabled]:last-of-type,
@@ -4746,6 +4811,7 @@ body {
 
   .sticky .nav-tier2 {
     padding: 0 2.1%;
+    /* Compensates for a weird calculation bug */
   }
 
   .sticky .nav-tier2 a:link,
