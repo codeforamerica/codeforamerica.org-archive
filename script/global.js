@@ -78,3 +78,38 @@ In the CSS, this class gets position:fixed within a widescreen media query.
         
     }
 }(this, this.document));
+
+
+// Modified from http://stackoverflow.com/questions/3795481/javascript-slidedown-without-jquery
+
+var minheight = 50;
+var maxheight = document.getElementById('fade').offsetHeight + 15;
+var time = 1000;
+var timer = null;
+var toggled = false;
+
+window.onload = function() {
+    
+    var controler = document.getElementById('fade-activate');
+    var slider = document.getElementById('fade-content');
+    slider.style.height = minheight + 'px';
+    controler.onclick = function(e) {  
+        e.preventDefault();
+        clearInterval(timer);
+        var instanceheight = parseInt(slider.style.height);  // Current height
+        var init = (new Date()).getTime(); //start time
+        var height = (toggled = !toggled) ? maxheight: minheight; //if toggled
+
+        var disp = height - parseInt(slider.style.height);
+        timer = setInterval(function() {
+            var instance = (new Date()).getTime() - init; //animating time
+            if(instance <= time ) { //0 -> time seconds
+                var pos = instanceheight + Math.floor(disp * instance / time);
+                slider.style.height =  pos + 'px';
+            }else {
+                slider.style.height = height + 'px'; //safety side ^^
+                clearInterval(timer);
+            }
+        },1);
+    };
+};

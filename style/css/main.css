@@ -633,7 +633,6 @@ h6,
 .brick-heading,
 .chimney .profile .profile-role,
 .chimney .profile .profile-note,
-.list-icons li a,
 .stat .stat-heading {
   text-transform: uppercase;
   margin: 0;
@@ -973,7 +972,7 @@ input[type="search"] {
 }
 
 /*  Text ––––––––––––––––––––––––––––––––––––––––––––––––– */
-.text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note, .list-icons li a {
+.text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note {
   color: #6d6e71;
 }
 
@@ -2160,6 +2159,26 @@ input.button-s,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.js .fade {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.js .fade:before {
+  content: "";
+  background-image: url("../images/fade.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-color: transparent;
+  height: 30px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
 .cfa-tag {
   background-image: url("/images/tag-black.png");
   text-indent: -99999px;
@@ -2388,10 +2407,6 @@ input.button-s,
 .masthead-header .nav-breadcrumbs a:active {
   color: white;
   color: rgba(255, 255, 255, 0.7);
-}
-
-.masthead-header .nav-breadcrumbs li {
-  background-image: url("../images/arrow-breadcrumb-white.png");
 }
 
 .masthead-header .nav-breadcrumbs li:first-child a {
@@ -2684,12 +2699,6 @@ input.button-s,
   font-size: 0.8125rem;
 }
 
-.js .list-credits.state-closed {
-  overflow: hidden;
-  height: 120px;
-  height: 7.5rem;
-}
-
 .list-credits a {
   text-align: center;
   color: #399fd3;
@@ -2704,18 +2713,6 @@ input.button-s,
   content: none;
 }
 
-.js .list-credits .fade {
-  background-image: url("../images/fade.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  padding-bottom: 1em;
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  bottom: 0;
-  left: 0;
-}
-
 .list-icons li {
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -2726,7 +2723,7 @@ input.button-s,
   position: relative;
   clear: both;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -2746,6 +2743,7 @@ input.button-s,
 .list-icons li a {
   display: block;
   clear: both;
+  font-weight: 700;
 }
 
 .island {
