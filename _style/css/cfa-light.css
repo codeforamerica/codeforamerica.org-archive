@@ -1533,10 +1533,6 @@ input.button-s,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.masthead-header .nav-breadcrumbs li {
-  background-image: url("/_styleimages/arrow-breadcrumb-white.png");
-}
-
 .masthead-header .nav-breadcrumbs li:first-child a {
   background-image: url("../images/flag-white.png");
 }
