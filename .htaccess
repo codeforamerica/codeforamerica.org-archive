@@ -1,0 +1,40 @@
+RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/team$2
+RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
+RedirectMatch permanent ^(.*)/projects(/?)$ $1/apps$2
+RedirectMatch permanent ^(.*)/code-for-america-blog(/?)$ $1/blog$2
+RedirectMatch permanent ^(.*)/about/contact(/?)$ $1/contact$2
+RedirectMatch permanent ^(.*)/brigade$ http://brigade.codeforamerica.org
+RedirectMatch permanent ^(.*)/open-impact/$ http://brigade.codeforamerica.org/pages/openimpact
+
+RedirectMatch permanent ^(.*)/fellows/training(/?)$ $1/geeks/fellowship-faq$2
+RedirectMatch permanent ^(.*)/fellows/selection(/?)$ $1/geeks/fellowship-faq$2
+RedirectMatch permanent ^(.*)/fellows/fellow-selection(/?)$ $1/geeks/fellowship-faq$2
+RedirectMatch permanent ^(.*)/fellowship-program-timeline(/?)$ $1/geeks/fellowship-faq$2
+
+RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/international$2
+
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows(/?)$ $1/geeks/fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellows/apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2011-fellows(/?)$ $1/geeks/fellows/2011-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2012-fellows(/?)$ $1/geeks/fellows/2012-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2013-fellows(/?)$ $1/geeks/fellows/2013-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2014-fellows(/?)$ $1/geeks/fellows/2014-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/alumni-fellows(/?)$ $1/geeks/fellows/alumni-fellows$2
+
+RedirectMatch permanent ^(.*)(?<!/startups)/accelerator(/?)$ $1/startups/accelerator$2
+RedirectMatch permanent ^(.*)(?<!/startups)/accelerator-2013(/?)$ $1/startups/accelerator$2
+RedirectMatch permanent ^(.*)(?<!/startups)/incubator-2(/?)$ $1/startups/incubator-2$2
+
+RedirectMatch permanent ^(.*)/cities/apply-now(/?)$ $1/cities/apply$2
+RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/cities/philadelphia$2
+RedirectMatch permanent ^(.*)/cfa-2012(/?)$ $1/cities/alumni$2
+
+RedirectMatch permanent ^(.*)/2013-partners/kansas-city(/?)$ $1/cities/kansascity$2
+RedirectMatch permanent ^(.*)/2013-partners/louisville(/?)$ $1/cities/louisville$2
+RedirectMatch permanent ^(.*)/2013-partners/las-vegas(/?)$ $1/cities/lasvegas$2
+RedirectMatch permanent ^(.*)/2013-partners/new-york-city(/?)$ $1/cities/newyork$2
+RedirectMatch permanent ^(.*)/2013-partners/oakland(/?)$ $1/cities/oakland$2
+RedirectMatch permanent ^(.*)/2013-partners/san-francisco(/?)$ $1/cities/sanfrancisco$2
+RedirectMatch permanent ^(.*)/2013-partners/san-mateo-county(/?)$ $1/cities/sanmateocounty$2
+RedirectMatch permanent ^(.*)/2013-partners/south-bend(/?)$ $1/cities/southbend$2
+RedirectMatch permanent ^(.*)/2013-partners/summit-county(/?)$ $1/cities/summitcounty$2
