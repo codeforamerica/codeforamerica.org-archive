@@ -1,15 +1,14 @@
 <?php
     include_once('_inc/functions.php');
-
     // Build out URI to reload from form dropdown
     $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
-    
     if (isset($_POST['uri']) && isset($_POST['section'])) {
         $pageURL .= $_POST[uri].$_POST[section];
         header("Location: $pageURL");
     }
 ?>
 <!DOCTYPE html>
+
 <html lang="en-gb">
 
 <head>
@@ -21,32 +20,18 @@
     <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
     <link href="/_style/css/prism.css" rel="stylesheet" />
     <script src="/_script/fittext.js" type="text/javascript"></script>
-    
-    
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if (lt IE 9)&(!IEMobile)]>
     <link rel="stylesheet" href="/_style/css/layout.css" media="all">
     <![endif]-->
-
-    
-    <script>
-        
-        // Adds class of js to the html tag if JS is enabled
-        document.getElementsByTagName('html')[0].className += ' js';
-        
-        // Adds class of svg to the html tag if svg is enabled
-        (function flagSVG() {
-            var ns = {'svg': 'http://www.w3.org/2000/svg'};
-            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
-        })();
-        
-    </script>
     
 </head>
 
 <body class="xx">
+
+<div class="xx-js-container">
 
 <?php if(isset($_GET["url"])) : ?>
 <?php  include($patternsPath.$_GET["url"]) ?>
@@ -55,14 +40,17 @@
 <div class="xx-sidebar">
     
     <a class="xx-cfa-logo" href="/">
-        <img src="/_assets/logo.png" />
+        <img src="/_assets/logo-colored.png" />
     </a>
     
-    <div class="xx-nav">
-        <h2 class="text-whisper">Styleguide</h2>
+    
+    <p class="xx-skip-to-nav skip-to-nav"><a href="#global-footer">Menu</a></p>
+    
+    
+    <div class="xx-nav nav-global-secondary">
+        <h2 class="text-whisper">Style Guide</h2>
         <ol role="navigation">
             <li class="xx-link-special"><a href="/patchwork.php">View as patchwork</a></li>
-            <?php displayList($patternsPath); ?>
         </ol>
         <h2 class="text-whisper">Templates</h2>
         <ol role="navigation">
@@ -82,9 +70,6 @@
             
         </ol>
     </div>
-    
-    <a class="xx-hallmark" href="http://clearleft.com/" title="Crafted by Clearleft in Brighton">Crafted by Clearleft in Brighton, UK</a>
- 
  </div>
 
 
@@ -723,14 +708,26 @@
     <?php endif; ?>
 
 </div>
-    
+
+</div><!-- .js-container -->
     <script src="_script/prism.js"></script>
+    
+    
 </body>
 
 <script>
+
+    // Adds class of js to the html tag if JS is enabled
+    document.getElementsByTagName('html')[0].className += ' js';
+    
+    // Adds class of svg to the html tag if svg is enabled
+    (function flagSVG() {
+        var ns = {'svg': 'http://www.w3.org/2000/svg'};
+        if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+    })();
+    
+    
     (function (document, undefined) {
-        // Add js class to body
-        document.getElementsByTagName('body')[0].className += ' js';
 
         // Pattern selector
         document.getElementById('pattern-submit').style.display = 'none';
@@ -742,5 +739,81 @@
             }
         }
     })(document);
+    
+    
+    
+    (function (win, doc) {
+        'use strict';
+        if (!doc.querySelector || !win.addEventListener) {
+            // doesn't cut the mustard.
+            return;
+        }
+     
+    /*
+    If the viewport is small enough, use the off-canvas pattern for navigation.
+    */
+        if (!doc.querySelector('.xx-js-container')
+         || !doc.querySelector('.xx-nav')
+         || !doc.querySelector('.xx-skip-to-nav')
+        ) {
+            return;
+        }
+        var toggleclass = 'slid',
+            reg = new RegExp('(\\s|^)' + toggleclass + '(\\s|$)'),
+            page = doc.querySelector('.xx-js-container'),
+            primary = doc.querySelector('.xx-nav'),
+            skiplink = doc.querySelector('.xx-skip-to-nav'),
+            newnav = doc.createElement('div'),
+            togglePage = function(e) {
+                e.preventDefault();
+                if (!page.className.match(reg)) {
+                    page.className += ' ' + toggleclass;
+                } else {
+                    page.className = page.className.replace(reg, '');
+                }
+            };
+        skiplink.addEventListener('click', togglePage, false);
+        newnav.appendChild(primary);
+        newnav.className = 'xx-js-offcanvas';
+        skiplink.className = skiplink.className + ' persist';
+        doc.body.appendChild(newnav);
+    }(this, this.document));
+
+    
+    
+    // Modified from http://stackoverflow.com/questions/3795481/javascript-slidedown-without-jquery
+    
+    var minheight = 50;
+    var maxheight = document.getElementById('fade').offsetHeight + 15;
+    var time = 1000;
+    var timer = null;
+    var toggled = false;
+    
+    window.onload = function() {
+        
+        var controler = document.getElementById('fade-activate');
+        var slider = document.getElementById('fade-content');
+        slider.style.height = minheight + 'px';
+        controler.onclick = function(e) {  
+            e.preventDefault();
+            clearInterval(timer);
+            var instanceheight = parseInt(slider.style.height);  // Current height
+            var init = (new Date()).getTime(); //start time
+            var height = (toggled = !toggled) ? maxheight: minheight; //if toggled
+    
+            var disp = height - parseInt(slider.style.height);
+            timer = setInterval(function() {
+                var instance = (new Date()).getTime() - init; //animating time
+                if(instance <= time ) { //0 -> time seconds
+                    var pos = instanceheight + Math.floor(disp * instance / time);
+                    slider.style.height =  pos + 'px';
+                }else {
+                    slider.style.height = height + 'px'; //safety side ^^
+                    clearInterval(timer);
+                }
+            },1);
+        };
+    };
+    
 </script>
 </html>
