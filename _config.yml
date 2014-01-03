@@ -1,0 +1,3 @@
+exclude: ['blog']
+include: ['.htaccess']
+keep_files: ['blog']
