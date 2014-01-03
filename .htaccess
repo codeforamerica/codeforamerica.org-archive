@@ -1,3 +1,9 @@
+RewriteEngine On
+RewriteCond %{QUERY_STRING} \b(cfa_project|cfa_app)=([^&]+)
+RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
+
+#
+
 RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/team$2
 RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/projects(/?)$ $1/apps$2
