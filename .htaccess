@@ -15,10 +15,16 @@ RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/internation
 
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows(/?)$ $1/geeks/fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellows/apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/apply(/?)$ $1/geeks/fellows/apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2011-fellows(/?)$ $1/geeks/fellows/2011-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2011-fellows(/?)$ $1/geeks/fellows/2011-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2012-fellows(/?)$ $1/geeks/fellows/2012-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2012-fellows(/?)$ $1/geeks/fellows/2012-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2013-fellows(/?)$ $1/geeks/fellows/2013-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2013-fellows(/?)$ $1/geeks/fellows/2013-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2014-fellows(/?)$ $1/geeks/fellows/2014-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/2014-fellows(/?)$ $1/geeks/fellows/2014-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/fellows/alumni-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/alumni-fellows(/?)$ $1/geeks/fellows/alumni-fellows$2
 
 RedirectMatch permanent ^(.*)(?<!/startups)/accelerator(/?)$ $1/startups/accelerator$2
