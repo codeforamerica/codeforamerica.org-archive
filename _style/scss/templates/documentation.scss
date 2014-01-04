@@ -56,19 +56,15 @@
         
     }
 
-.xx-sidebar .xx-nav .text-whisper {
-    border-top: 1px solid #ddd;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding-top: 0.5em;
+.xx-nav .text-whisper {
+    padding: 1em 1.25em 0;
+    color: #aaa;
+    margin: 0 0 0.3em;
+    clear: both;
     }
 
-.xx-sidebar .xx-nav li a:hover,
-.xx-sidebar .xx-nav li a:focus,
-.xx-sidebar .xx-nav li a:active {
-    background-color: #fff;
-    color: #000;
-    border: none;
+.xx-nav ol {
+    margin-bottom: 1em;
     }
 
 .xx-container {
@@ -239,8 +235,8 @@
 .pattern {
     clear: both;
     float: left;
-    margin: 0;
-    padding-top: 70px;
+    margin: 0 0 3em;
+    padding-top: 1em;
     width: 100%;
     }
 
@@ -250,12 +246,28 @@
 
 .pattern-details {
     @include background-color($color-light-gray, 0.7);
-    padding: 0.2em 1% 0.3em;
+    padding: 0.5em 1%;
     margin-bottom: 1em;
     width: 98%;
     border-radius: 0.2em;
     overflow: hidden;
     display: block;
+    }
+
+.pattern-markup {
+    width: 64%;
+    display: block;
+    font-size: 12px;
+    overflow: scroll;
+    max-height: 200px;
+    padding: 1em 2%;
+    margin: 1em 0;
+    float: left;
+    }
+
+.pattern-markup,
+:not(pre) > code[class*="language-"] {
+    padding: 1em 2% !important;
     }
 
 .pattern-details:hover {
@@ -276,10 +288,11 @@
 .pattern-usage {
     float: right;
     width: 30%;
-    margin: 0.5em 0;
-    font-size: 0.85em;
+    margin: 1.25em 0 0.5em 0;
+    font-size: 13px;
     white-space: pre-line;
     line-height: 1.4em;
+    font-family: $font-sans-regular;
     }
 
 .pattern {
@@ -302,22 +315,21 @@
     -moz-appearance: none;
     appearance: none;
     background-image: none;
-    background-color: transparent;
+    background-color: #eee;
     color: black;
-    opacity: 0.5;
+    opacity: 0.8;
     border-radius: 0;
     display: inline-block;
     padding: 0.4em 0.5em 0.3em 0.5em;
-    position: absolute;
-    left: 150px;
+    position: fixed;
+    right: -2px;
+    bottom: -2px;
     width: auto;
-    top: 0.85em;
     z-index: 100;
     margin: 0;
     border: none;
     font-size: 0.85em;
     transition: 0.2s;
-    border-radius: 0 0 0.3em 0.3em; 
     min-height: 35px;
     }
 
@@ -521,4 +533,8 @@
     position: absolute;
     right: 1em;
     top: 0.25em;
+    }
+
+.xx-patchwork {
+    background-color: white;
     }

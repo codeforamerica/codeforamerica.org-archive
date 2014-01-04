@@ -16,10 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Style Guide</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
+    <link href="_style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="/_style/css/documentation.css">
     <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
-    <link href="/_style/css/prism.css" rel="stylesheet" />
-    <script src="/_script/fittext.js" type="text/javascript"></script>
+    
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -710,10 +710,12 @@
 </div>
 
 </div><!-- .js-container -->
-    <script src="_script/prism.js"></script>
+    
     
     
 </body>
+
+<script src="_script/prism.js"></script>
 
 <script>
 
