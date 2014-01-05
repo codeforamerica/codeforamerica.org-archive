@@ -4833,7 +4833,7 @@ body {
   display: none;
 }
 
-.xx-sidebar {
+.xx-options {
   background-color: #f1f1f1;
   padding: 0.5em 0;
   width: 100%;
@@ -4841,26 +4841,26 @@ body {
   height: 45px;
 }
 
-.xx-sidebar .xx-nav {
+.xx-options .xx-nav {
   padding: 0;
   margin: 0;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 @media (min-width: 40em) {
-  .xx-sidebar .xx-nav {
+  .xx-options .xx-nav {
     margin: 1em 0 6em;
   }
 }
-.xx-sidebar .xx-nav li {
+.xx-options .xx-nav li {
   list-style-type: none;
   margin: 0;
   width: 100%;
   font-size: 1em;
 }
 
-.xx-sidebar .xx-nav .text-whisper, .xx-sidebar .xx-nav .heading-contrast, .xx-sidebar .xx-nav .brick-heading, .xx-sidebar .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-sidebar .xx-nav .profile-note,
-.xx-sidebar .xx-nav li a {
+.xx-options .xx-nav .text-whisper, .xx-options .xx-nav .heading-contrast, .xx-options .xx-nav .brick-heading, .xx-options .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-options .xx-nav .profile-role, .xx-options .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-options .xx-nav .profile-note,
+.xx-options .xx-nav li a {
   padding: 0.8em 1em;
   display: block;
   line-height: 1.4em;
@@ -4868,8 +4868,8 @@ body {
 }
 
 @media (min-width: 40em) {
-  .xx-sidebar .xx-nav .text-whisper, .xx-sidebar .xx-nav .heading-contrast, .xx-sidebar .xx-nav .brick-heading, .xx-sidebar .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-sidebar .xx-nav .profile-role, .xx-sidebar .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-sidebar .xx-nav .profile-note,
-  .xx-sidebar .xx-nav li a {
+  .xx-options .xx-nav .text-whisper, .xx-options .xx-nav .heading-contrast, .xx-options .xx-nav .brick-heading, .xx-options .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-options .xx-nav .profile-role, .xx-options .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-options .xx-nav .profile-note,
+  .xx-options .xx-nav li a {
     padding: 0.2em 5% 0.2em 15%;
     text-align: left;
   }
@@ -5052,8 +5052,10 @@ body {
   clear: both;
   float: left;
   margin: 0 0 3em;
-  padding-top: 1em;
   width: 100%;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  border-radius: 3px;
 }
 
 .pattern-name {
@@ -5061,17 +5063,22 @@ body {
 }
 
 .pattern-details {
-  background: #e5e5e5;
-  background: rgba(229, 229, 229, 0.7);
+  color: #004b6a;
+  background-color: #fbf9f9;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
   padding: 0.5em 1%;
-  margin-bottom: 1em;
   width: 98%;
-  border-radius: 0.2em;
   overflow: hidden;
   display: block;
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+  border-color: rgba(229, 229, 229, 0.5);
+  border-radius: 3px 3px 0 0;
 }
 
 .pattern-markup {
+  border: 1px solid;
+  border-color: #e5e5e5;
   width: 64%;
   display: block;
   font-size: 12px;
@@ -5110,6 +5117,12 @@ body {
   white-space: pre-line;
   line-height: 1.4em;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+}
+
+.pattern-preview {
+  padding: 10px;
+  width: auto;
+  background-color: #fff;
 }
 
 .pattern {

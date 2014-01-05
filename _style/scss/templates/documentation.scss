@@ -8,7 +8,7 @@
     display: none;
     }
     
-.xx-sidebar {
+.xx-options {
     background-color: #f1f1f1;
     padding: 0.5em 0;
     width:  100%;
@@ -16,7 +16,7 @@
     height: 45px;
     }
 
-.xx-sidebar .xx-nav {
+.xx-options .xx-nav {
     padding: 0;
     margin: 0;
     
@@ -24,12 +24,12 @@
     }
     
     @media (min-width: 40em) {
-        .xx-sidebar .xx-nav {
+        .xx-options .xx-nav {
         margin: 1em 0 6em;
         }
     }
 
-.xx-sidebar .xx-nav li {
+.xx-options .xx-nav li {
     list-style-type: none;
     margin: 0;
     width: 100%;
@@ -39,8 +39,8 @@
     @media (min-width: 40em) {
     }
 
-.xx-sidebar .xx-nav .text-whisper,
-.xx-sidebar .xx-nav li a {
+.xx-options .xx-nav .text-whisper,
+.xx-options .xx-nav li a {
     padding: 0.8em 1em;
     display: block;
     line-height: 1.4em;
@@ -48,8 +48,8 @@
     }
     
     @media (min-width: 40em) {
-    .xx-sidebar .xx-nav .text-whisper,
-    .xx-sidebar .xx-nav li a {
+    .xx-options .xx-nav .text-whisper,
+    .xx-options .xx-nav li a {
         padding: 0.2em 5% 0.2em 15%;
         text-align: left;
         }
@@ -236,8 +236,10 @@
     clear: both;
     float: left;
     margin: 0 0 3em;
-    padding-top: 1em;
     width: 100%;
+    border: 1px solid;
+    @include border-color($color-light-gray, 1);
+    border-radius: 3px;
     }
 
 .pattern-name {
@@ -245,16 +247,21 @@
     }
 
 .pattern-details {
-    @include background-color($color-light-gray, 0.7);
+    @include color($color-dark-blue, 1);
+    background-color: #fbf9f9;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
     padding: 0.5em 1%;
-    margin-bottom: 1em;
     width: 98%;
-    border-radius: 0.2em;
     overflow: hidden;
     display: block;
+    border-bottom: 1px solid;
+    @include border-color($color-light-gray, 0.5);
+    border-radius: 3px 3px 0 0;
     }
 
 .pattern-markup {
+    border: 1px solid;
+    @include border-color($color-light-gray, 1);
     width: 64%;
     display: block;
     font-size: 12px;
@@ -293,6 +300,12 @@
     white-space: pre-line;
     line-height: 1.4em;
     font-family: $font-sans-regular;
+    }
+
+.pattern-preview {
+    padding: 10px;
+    width: auto;
+    background-color: #fff;
     }
 
 .pattern {

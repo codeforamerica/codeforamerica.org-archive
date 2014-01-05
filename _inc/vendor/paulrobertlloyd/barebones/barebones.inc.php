@@ -127,9 +127,9 @@ function displayPatterns($dir) {
                     echo "            <code class=\"pattern-markup language-markup\">".htmlspecialchars(@file_get_contents($dir.'/'.$ff))."</code>\n";
                     echo "        <pre class=\"pattern-usage\"><strong>Usage:</strong> ".htmlspecialchars(@file_get_contents($dir.'/'.str_replace('.html','.txt',$ff)))."</pre>\n";
                     echo "    </details>\n";
-                    echo "\n";
+                    echo "    <div class=\"pattern-preview\">\n";
                     include $dir.'/'.$ff;
-                    echo "\n";
+                    echo "    </div>\n";
                     echo "</div>\n\n";
                 }
             }
