@@ -134,6 +134,9 @@ RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/cities/philadelph
 
 RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/current$2
 
+RedirectMatch permanent ^(.*)/intern(/?)$ $1/jobs$2
+RedirectMatch permanent ^(.*)/intern/(hammer___nails|difference|code|policy|tim-screwdriver|design_comms|design|code/\d+)(/?)$ $1/jobs$3
+
 RedirectMatch permanent ^(.*)/issues/openness(/?)$ $1/2011/03/08/openness-in-city-hall$2
 RedirectMatch permanent ^(.*)/2014(/?)$ $1/2013/10/15/2014fellowship_launch$2
 RedirectMatch permanent ^(.*)/2012-fellows/alex(/?)$ $1/2011/07/27/alex-hillman-cfa-is-a-hall-pass-for-bureaucracy$2
