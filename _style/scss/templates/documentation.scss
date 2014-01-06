@@ -13,7 +13,10 @@
     padding: 0.5em 0;
     width:  100%;
     z-index: 3;
+    position: fixed;
+    top: 0;
     height: 45px;
+    border-bottom: 1px solid #ddd;
     }
 
 .xx-options .xx-nav {
@@ -390,6 +393,10 @@
     top: 0;
     border-top: 5px solid;
     border-color: $color-blue;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
     }
         
     @media (min-width: 500px) {
