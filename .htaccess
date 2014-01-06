@@ -65,6 +65,7 @@ RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/fe
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/alumni-fellows(/?)$ $1/geeks/fellows/alumni-fellows$2
 
 
+RedirectMatch permanent ^(.*)(?<!/about)/startups(/?)$ $1/about/startups$2
 RedirectMatch permanent ^(.*)(?<!/startups)/accelerator(/?)$ $1/startups/accelerator$2
 RedirectMatch permanent ^(.*)(?<!/startups)/accelerator-2013(/?)$ $1/startups/accelerator$2
 RedirectMatch permanent ^(.*)(?<!/startups)/accelerator-2(/?)$ $1/startups/accelerator$2
