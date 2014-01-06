@@ -11,6 +11,8 @@ RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 RedirectMatch permanent ^(.*)(?<!/blog)/(\d\d\d\d/\d\d/\d\d/.+)$ $1/blog/$2
 RedirectMatch permanent ^(.*)(?<!/blog)/(category/.+)$ $1/blog/$2
 RedirectMatch permanent ^(.*)(?<!/blog)/(author/.+)$ $1/blog/$2
+RedirectMatch permanent ^(.*)(?<!/blog)/(feed/.+)$ $1/blog/$2
+RedirectMatch permanent ^(.*)(?<!/blog)/(feed/?)$ $1/blog/$2
 
 #
 # General information.
