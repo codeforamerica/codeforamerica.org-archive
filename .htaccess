@@ -76,6 +76,7 @@ RedirectMatch permanent ^(.*)/cities/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/cities/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
+RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
 
 RedirectMatch permanent ^(.*)/cities/2013-apply-now(/?)$ $1/cities/apply$2
 RedirectMatch permanent ^(.*)/cities/apply-now(/?)$ $1/cities/apply$2
@@ -83,6 +84,10 @@ RedirectMatch permanent ^(.*)/city-alumni(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/cfa-2012(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/2012(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/cities/faqs-cities-applying-to-program(/?)$ $1/cities/fellowship-faq$2
+
+RedirectMatch permanent ^(.*)/civic-data-standards(/?)$ $1/cities/data-standards-faq$2
+RedirectMatch permanent ^(.*)/(application-info|application-questions)(/?)$ $1/cities/fellowship-apply$3
+RedirectMatch permanent ^(.*)/cities/call-for-applications(/?)$ $1/cities/fellowship-apply$3
 
 RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/cities/current$2
 RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/current$2
