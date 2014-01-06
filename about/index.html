@@ -17,11 +17,14 @@
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
     <link rel="stylesheet" href="../style/css/layout.css" media="all">
     <![endif]-->
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    
-    
+    <style type="text/css">
+        .masthead:before {
+            background-image: url('../media/images/about/about_header.jpg');
+        }
+    </style>
 </head>
     
 <body>
@@ -39,11 +42,10 @@
         </li>
     </ul>
 </nav>
-    
-    <div class="masthead masthead-l">
+<div class="masthead masthead-l">
     <div class="masthead-hero">
     	<div class="masthead-image" 
-    		>
+    		 style="background-image: url('../media/images/about/about_header.jpg')">
     	
     	
     	</div>
@@ -176,7 +178,7 @@
 			</div><!-- .spotlight .stats -->
 			
 			<p>The Fellowship is Code for America’s best known program and consists of a one year residency placing developers, designers and researchers within local governments. Over the course of the program, fellows and government partners build apps, inspire new thinking amongst public servants and tackle some of our country’s toughest problems.</p>
-			<p><a href="programs/fellowship">Fellowship Details</a></p>
+			<p><a href="../about/fellowship">Fellowship Details</a></p>
 		</div>
 	
 	</div>
@@ -211,13 +213,13 @@
 			</div><!-- .spotlight .stats -->
 			
 			<p>The Brigade network is an ongoing effort to deploy, maintain and sustain civic technology and open data infrastructures. Each Brigade is comprised of local volunteers and government employees who connect for regular hack nights, discussions and app development.</p> 
-			<p><a href="programs/brigade">Brigade Details</a></p>
+			<p><a href="../about/brigade">Brigade Details</a></p>
 		</div>
 		
 		<div class="layout-minim">
 			<figure>
-				<img src="http://placehold.it/630x300">
-				<figcaption><strong>Summer 2013</strong>: LA Times Article for the Fellowship</figcaption>
+				<a href="../about/brigade"><img src="../media/images/about/brigade.jpg"></a>
+				<figcaption>Code for Boston meets regularly for hack nights and special events</figcaption>
 			</figure>
 		</div>
 	
@@ -235,8 +237,8 @@
 		
 		<div class="layout-minim">
 			<figure>
-				<img src="http://placehold.it/630x300">
-				<figcaption><strong>Summer 2013</strong>: LA Times Article for the Fellowship</figcaption>
+				<a href="../about/startups"><img src="../media/images/about/startups.jpg"></a>
+				<figcaption>Civic startup StreetCred presents to 400+ civic tech influencers at Code for America's Summit</figcaption>
 			</figure>
 		</div>
 		
@@ -256,7 +258,7 @@
 			</div><!-- .spotlight .stats -->
 			
 			<p>The Civic Startups program offers entrepreneurs mentorship in navigating the government procurement process and building sustainable businesses. Teams contribute to an emerging civic tech ecosystem where competition breeds innovation, governments get value for dollar, and most importantly, citizen needs are met.</p>
-			<p><a href="programs/civic-startups">Civic Startups Details</a></p>
+			<p><a href="../about/startups">Civic Startups Details</a></p>
 		</div>
 	
 	</div>
@@ -289,13 +291,13 @@
 			</div><!-- .spotlight .stats -->
 			
 			<p>The Peer Network is where government officials and public servants connect to share civic tech resources, best practices and open data policies. Through regular trainings, events and discussions, civic innovators are changing governments from within.</p>
-			<p><a href="programs/peer-network">Peer Network Details</a></p>
+			<p><a href="../about/peernetwork">Peer Network Details</a></p>
 		</div>
 		
 		<div class="layout-minim">
 			<figure>
-				<img src="http://placehold.it/630x300">
-				<figcaption><strong>Summer 2013</strong>: LA Times Article for the Fellowship</figcaption>
+				<a href="https://www.youtube.com/playlist?list=PL65XgbSILalV-wInUiERrhjweMlJkukMd"><img src="../media/images/about/peernetwork.jpg"></a>
+				<figcaption>Code for America's 2013 Summit videos</figcaption>
 			</figure>
 		</div>
 	
@@ -312,8 +314,8 @@
 		
 		<div class="layout-minim">
 			<figure>
-				<img src="http://placehold.it/630x300">
-				<figcaption><strong>Summer 2013</strong>: LA Times Article for the Fellowship</figcaption>
+				<a href="../about/international"><img src="../media/images/about/international.jpg"></a>
+				<figcaption>Code for America is expanding to become an International Movement</figcaption>
 			</figure>
 		</div>
 		
@@ -323,19 +325,18 @@
 				<div class="spotlight">
 					<h4 class="text-quiet">International Programs</h4>
 					<ul class="list-no-bullets link-invert list-minim">
-						<li><a href="#">Mexico</a></li>
-						<li><a href="#">Germany</a></li>
-						<li><a href="#">The Carribean</a></li>
-						<li><a href="#">Japan</a></li>
-						<li><a href="#">Ireland</a></li>
-						<li><a href="#">Poland</a></li>
+						<li><a href="http://www.labplc.mx/">Mexico</a></li>
+						<li><a href="http://okfn.de/">Germany</a></li>
+						<li><a href="http://www.codeforthecaribbean.org/">The Caribbean</a></li>
+						<li><a href="http://code4japan.org/">Japan</a></li>
+						<li><a href="http://www.codeforall.ie/">Ireland</a></li>
+						<li><a href="http://epf.org.pl/kodujdlapolski/">Poland</a></li>
 					</ul>
 				</div><!-- .spotlight -->
 			
 			<p>In 2013, Code for America’s programs expanded to drive change in governments internationally. Lessons from the Fellowship, Brigade and Peer Network are being cascaded to local governments across the globe.</p>
 			<p><a href="programs/code-for-all">Code for All Details</a></p>
-		</div>
-	
+				</div>
 	</div>
 	
 </section>
@@ -344,23 +345,26 @@
     
     <div class="layout-breve layout-tight">
     
-        <div class="search-global">
-            <input type="search" placeholder="Search" />
-        </div>
+        <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
     
         <nav class="nav-footer">
             <ul>
-                <li class="nav-tier1"><a class="nav-heading" href="/_site/about/">About</a>
+                <li class="nav-tier1"><a class="nav-heading" href="../site/about/">About</a>
                     <ul class="nav-tier2">
-                        <li><a href="#">What we do</a></li>
-                        <li><a href="#">Annual report</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Supporters</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Contact</a></li>
+                      <li><a href="../site/programs/">What we do</a></li>
+                      <li><a href="http://annual.codeforamerica.org/">Annual report</a></li>
+                      <li><a href="http://www.codeforamerica.org/press/">Press</a></li>
+                        <li><a href="http://www.codeforamerica.org/supporters/">Supporters</a></li>
+                        <li><a href="http://www.codeforamerica.org/jobs/">Jobs</a></li>
+                        <li><a href="http://www.codeforamerica.org/contact/">Contact</a></li>
                     </ul>
                 </li>
-                <li class="nav-tier1"><a class="nav-heading" href="#">Who we are</a>
+                <li class="nav-tier1"><a class="nav-heading" href="http://www.codeforamerica.org/who-we-are/">Who we are</a>
                     <ul class="nav-tier2">
                         <li><a href="#">Board</a></li>
                         <li><a href="#">Team</a></li>
@@ -371,14 +375,14 @@
                 </li>
                 <li class="nav-tier1"><a class="nav-heading" href="#">Programs</a>
                     <ul class="nav-tier2">
-                        <li><a href="/_site/fellowship/">Fellowship</a></li>
-                        <li><a href="/_site/brigade/">Brigade</a></li>
-                        <li><a href="#">Startup</a></li>
-                        <li><a href="#">International</a></li>
-                        <li><a href="#">Peer Network</a></li>           
+                        <li><a href="../site/fellows/">Fellowship</a></li>
+                        <li><a href="../site/brigade/">Brigade</a></li>
+                      <li><a href="../site/startups/">Startup</a></li>
+                      <li><a href="../site/international">International</a></li>
+                        <li><a href="../site/peernetwork">Peer Network</a></li>           
                     </ul>
                 </li>
-                <li class="nav-tier1"><a class="nav-heading" href="/_site/donate/">Donate</a>
+                <li class="nav-tier1"><a class="nav-heading" href="../site/donate/">Donate</a>
                     <ul class="nav-tier2">
                         <li><a href="#">Financial Contributions</a></li>
                         <li><a href="#">In-Kind Donations</a></li>
@@ -386,11 +390,13 @@
                 </li>
                 <li class="nav-tier1"><a class="nav-heading" href="#">Social</a>
                     <ul class="nav-tier2">
-                        <li><a href="#" class="icon-facebook">Facebook</a></li>
-                        <li><a href="#" class="icon-twitter">Twitter</a></li>
-                        <li><a href="#" class="icon-youtube">YouTube</a></li>
-                        <li><a href="#" class="icon-github2">GitHub</a></li>
-                        <li><a href="#" class="icon-feed">RSS</a></li>
+                        <li><a href="https://www.facebook.com/codeforamerica" class="icon-facebook">Facebook</a></li>
+                        <li><a href="https://twitter.com/codeforamerica" class="icon-twitter">Twitter</a></li>
+                        <li><a href="http://www.youtube.com/user/CodeforAmerica" class="icon-youtube">YouTube</a></li>
+                        <li><a href="https://github.com/codeforamerica" class="icon-github2">GitHub</a></li>
+                        <li><a href="http://codeforamerica.tumblr.com/" class="icon-tumblr">Tumblr</a></li>
+                        <li><a href="http://www.flickr.com/photos/codeforamerica" class="icon-flickr">Flickr</a></li>
+                        <li><a href="http://www.codeforamerica.org/feed/" class="icon-feed">RSS</a></li>
                     </ul>
                 </li>
             </ul>

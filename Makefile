@@ -26,7 +26,7 @@ style/css/main.css: \
         _style/scss/patterns/nav-global-primary.scss _style/scss/patterns/nav-global-secondary.scss \
         _style/scss/patterns/nav-page.scss _style/scss/patterns/nav-tabs.scss \
         _style/scss/patterns/nav-tags.scss _style/scss/patterns/nav.scss \
-        _style/scss/patterns/offcanvas.scss \
+        _style/scss/patterns/offcanvas.scss _style/scss/patterns/fade.scss \
         _style/scss/patterns/post.scss _style/scss/patterns/profile-medium.scss \
         _style/scss/patterns/profile-small.scss _style/scss/patterns/profile.scss \
         _style/scss/patterns/search-global.scss _style/scss/patterns/skip-to-nav.scss \

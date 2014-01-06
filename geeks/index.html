@@ -23,7 +23,7 @@
     
 	    <style type="text/css">
 	    	.masthead:before {
-	    		background-image: url('/_media/images/masthead/masthead-2.jpg');
+	    		background-image: url('../media/images/geeks/geeks_header.jpg');
 	    	}
 	    </style>
     
@@ -53,7 +53,7 @@
     <div class="masthead-hero">
     	<div class="masthead-image" 
     		
-    		style="background-image: url('/_media/images/masthead/masthead-2.jpg')" 
+    		style="background-image: url('/../media/images/geeks/geeks_header.jpg')" 
     		>
     	
     	
@@ -130,8 +130,9 @@
         
         <h4>We're collaborating with</h4>
         
-        <nav class="list-credits">
-            <ul>
+        <div class="fade" id="fade">
+            <nav class="list-credits">
+                <ul id="fade-content">
                 <li><a href="http://www.betanyc.org/">New York</a></li>
                 <li><a href="http://www.codeforphilly.org/">Philadelphia</a></li>
                 <li><a href="http://www.meetup.com/Code-for-Boston/">Boston</a></li>
@@ -166,12 +167,11 @@
                 <li><a href="http://www.hackmichiana.org/">South Bend</a></li>
                 <li><a href="http://www.meetup.com/KCBrigade/">Kansas City</a></li>
                 <li><a href="http://www.codeforamerica.org/international/">International</a></li>
-
-            </ul>
-            <div class="fade"></div>
-        </nav>
+                </ul>
+            </nav>
+        </div>
         
-        <p class="isolate text-whisper"><a href="http://brigade.codeforamerica.org/brigades">See all cities</a></p>
+        <p class="isolate text-whisper"><a href="http://brigade.codeforamerica.org/brigades" id="fade-activate">See all cities</a></p>
     
     </div>
 
@@ -188,7 +188,7 @@
                 <h3>Why I Code for America</h3>
                 <div class="h-card profile">
                     <h4 class="p-name profile-name">Richa Agarwal</h4>
-                    <img class="u-photo profile-photo" src="../media/images/people/2013-fellows/Richa_Agarwal_Headshot-150x150.jpg" />
+                    <img class="u-photo profile-photo" src="../media/images/people/richa-agarwal.jpg" alt="" />
                     <p class="p-role profile-role">2012 Fellow</p>
                     <p class="p-note profile-note">Co-creator of <a class="p-org profile-org" href="http://www.codeforamerica.org/?cfa_app=recordtrac">Recordtrac</a></p>
                 </div>
@@ -203,20 +203,20 @@
 	            <h3 class="h4">What's happening?</h3>
 	            
 	            <ul class="list-no-bullets list-icons">
-	                <li class="icon-calendar">Dec 11: NYC Women's Civic Hack Night
-	                	<a href="http://brigade.codeforamerica.org/pages/events">More events</a>
+	                <li class="icon-calendar"><a href="http://www.meetup.com/Code-for-San-Francisco-Civic-Hack-Night/events/152702942/">Jan 29: SF Weekly Hack Night</a> 
+	                	<a class="text-whisper" href="http://brigade.codeforamerica.org/pages/events">More Meetups</a>
 	                </li>
-	                <li class="icon-github2">Hack request: Add SMS to Ohana API 
-	                	<a href="https://github.com/codeforamerica/hack-requests">More hack requests</a>
+	                <li class="icon-github2"><a href="https://github.com/codeforamerica/hack-requests/blob/master/ohana-text-message-API.md">Hack request: Add SMS to Ohana API</a> 
+	                	<a class="text-whisper" href="https://github.com/codeforamerica/hack-requests">More hack requests</a>
 	                </li>
-	                <li class="icon-lamp">Feb: Coming soon - Code Across America 
-	                	<a href="http://www.hackforchange.org/challenges">More national projects</a>
+	                <li class="icon-lamp"><a href="http://www.codeforamerica.org/codeacross-2014/">Feb 21-23: Code Across America</a> 
+	                	<a class="text-whisper" href="http://www.hackforchange.org/challenges">More national projects</a>
 	                </li>
-	                <li class="icon-youtube">Video: Civic Engagement & Design 
-	                	<a href="http://www.youtube.com/playlist?list=PL65XgbSILalV-wInUiERrhjweMlJkukMd">More CFA videos</a>
+	                <li class="icon-youtube"><a href="http://www.youtube.com/watch?v=hCuNWIDN9zg">Video: Civic Engagement & Design</a> 
+	                	<a class="text-whisper" href="http://youtube.com/codeforamerica">More CFA videos</a>
 	                </li>
-	                <li class="icon-tools">Publish and Curate Open Data
-	                	<a href="http://brigade.codeforamerica.org/pages/tools">More organizing</a>
+	                <li class="icon-tools"><a href="#">Publish and Curate Open Data</a>
+	                	<a class="text-whisper" href="#">More organizing</a>
 	                </li>
 	            </ul>
 	         
@@ -282,14 +282,14 @@
         
             <h3 class="wodge-header">Fellowship: Ready to spend a year in civic service</h3>
             
-            <img src="http://placehold.it/195x130" class="wodge-image" />
+            <a href="http://codeforamerica.org/about/fellowship"><img src="../media/images/geeks/fellows_img.jpg" class="wodge-image" /></a>
             
             <div class="wodge-text">
                 <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship will open in March 2014.</p>
             	<p><a href="../geeks/our-geeks/2014-fellows/index.html">Current fellows</a> & <a href="../geeks/our-geeks/2013-fellows/index.html">alumni fellows</a></p>
             </div>
             
-            <a href="#" class="button wodge-button">Find out more</a>
+            <a href="http://codeforamerica.org/about/fellowship" class="button wodge-button">Find out more</a>
         
         </div>
         
@@ -297,14 +297,14 @@
         
             <h3 class="wodge-header">Civic Startups: Are you a founder? Government needs options.</h3>
             
-            <img src="http://placehold.it/195x130" class="wodge-image" />
+            <a href="http://codeforamerica.org/about/startups"><img src="../media/images/geeks/startups_img.jpg" class="wodge-image" /></a>
             
             <div class="wodge-text">
                 <p>Code for America’s Accelerator is an annual 4-month program bringing funding, support, and mentorship to early-stage technology businesses that serve local governments.</p>
                 <p><a href="http://codeforamerica.org/accelerator/">Accelerator</a> & <a href="http://www.codeforamerica.org/incubator-2/">Incubator</a></p>
             </div>
             
-             <a href="#" class="button wodge-button">The opportunity</a>
+             <a href="http://codeforamerica.org/about/startups" class="button wodge-button">The opportunity</a>
          
          </div>
         
@@ -390,7 +390,7 @@
 
 </div><!-- /.js-container -->
 
-<script src="/_script/global.js"></script>
+<script src="../script/global.js"></script>
 
 </body>
 

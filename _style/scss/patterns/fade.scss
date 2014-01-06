@@ -1,0 +1,19 @@
+.js .fade {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    }
+
+.js .fade:before {
+    content: "";
+    background-image: url('../images/fade.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: transparent;
+    height: 30px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    }

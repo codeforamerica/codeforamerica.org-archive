@@ -1533,10 +1533,6 @@ input.button-s,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.masthead-header .nav-breadcrumbs li {
-  background-image: url("/_styleimages/arrow-breadcrumb-white.png");
-}
-
 .masthead-header .nav-breadcrumbs li:first-child a {
   background-image: url("../images/flag-white.png");
 }
@@ -1891,6 +1887,37 @@ section,
 .slab-red a:focus,
 .slab-red a:active,
 .slab-red label {
+  color: white;
+}
+
+.slab-red .list-icons a:link,
+.slab-red .list-icons a:visited,
+.slab-red .list-icons a:hover,
+.slab-red .list-icons a:focus,
+.slab-red .list-icons a:active {
+  color: white;
+}
+
+.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link,
+.slab-red a.text-whisper:visited,
+.slab-red a.heading-contrast:visited,
+.slab-red a.text-whisper:hover,
+.slab-red a.heading-contrast:hover,
+.slab-red a.text-whisper:focus,
+.slab-red a.heading-contrast:focus,
+.slab-red a.text-whisper:active,
+.slab-red a.heading-contrast:active {
+  border-bottom: none;
+  font-weight: 500;
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover,
+.slab-red a.text-whisper:focus,
+.slab-red a.heading-contrast:focus,
+.slab-red a.text-whisper:active,
+.slab-red a.heading-contrast:active {
   color: white;
 }
 
