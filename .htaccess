@@ -122,12 +122,11 @@ RedirectMatch permanent ^(.*)/2012-city-finalists/macon(/?)$ $1/cities/macon$2
 RedirectMatch permanent ^(.*)/2012-city-finalists/santa-cruz(/?)$ $1/cities/santacruz$2
 
 RedirectMatch permanent ^(.*)(?<!/cities)/austin(/?)$ $1/cities/austin$2
-RedirectMatch permanent ^(.*)(?<!/cities)/boston(/?)$ $1/cities/boston$2
-RedirectMatch permanent ^(.*)(?<!/cities)/chicago(/?)$ $1/cities/chicago$2
 RedirectMatch permanent ^(.*)(?<!/cities)/honolulu(/?)$ $1/cities/honolulu$2
-RedirectMatch permanent ^(.*)(?<!/cities)/philadelphia(/?)$ $1/cities/philadelphia$2
 RedirectMatch permanent ^(.*)(?<!/cities)/seattle(/?)$ $1/cities/seattle$2
-
+RedirectMatch permanent ^(.*)(?<!/cities|/city-alumni)/boston(/?)$ $1/cities/boston$2
+RedirectMatch permanent ^(.*)(?<!/cities|/city-alumni)/chicago(/?)$ $1/cities/chicago$2
+RedirectMatch permanent ^(.*)(?<!/cities|/city-alumni)/philadelphia(/?)$ $1/cities/philadelphia$2
 RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/cities/boston$2
 RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/cities/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/cities/philadelphia$2
