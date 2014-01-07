@@ -45,19 +45,37 @@
   <nav class="nav-global-secondary">
     <ul>
       <li class="nav-tier1 nav-has-children">
-        <a href="/about" {% if page.about_active %}class="state-active"{% endif %}>Who we are</a>   
+        <a href="/about" {% if page.about_active %}class="state-active"{% endif %}>Who we are</a>
+        {% if page.about_active %}
+        <ul class="nav-tier2">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Annual Report</a></li>
+            <li><a href="#">Supporters</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        {% endif %}
       </li>
       <li class="nav-tier1 nav-has-children">
-          <a href="/cities" {% if page.governments_active %}class="state-active"{% endif %}>Governments</a>          
+        <a href="/cities" {% if page.governments_active %}class="state-active"{% endif %}>Governments</a>
+        {% if page.governments_active %}
+        <ul class="nav-tier2">
+          <li><a href="/cities/2013-cities">2013 Governments</a></li>
+          <li><a href="/cities/2014-cities">2014 Governments</a></li>
+          <li><a href="/cities/alumni-cities">Alumni Governments</a></li>
+        </ul>
+        {% endif %}
       </li>
       <li class="nav-tier1 nav-has-children">
         <a href="/geeks" {% if page.citizens_active %}class="state-active"{% endif %}>Citizens</a>  
+        {% if page.citizens_active %}
         <ul class="nav-tier2">
           <li><a href="#">Requests</a></li>
           <li><a href="#">Code we Have</a></li>
           <li><a href="#">Events</a></li>
-          <li><a href="../geeks/our-geeks/index.html">Our geeks</a></li>
+          <li><a href="#">Our geeks</a></li>
         </ul>
+        {% endif %}
       </li>
       <li class="nav-tier1">
         <a href="/apps" {% if page.apps_active %}class="state-active"{% endif %}>Apps</a>
