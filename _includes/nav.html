@@ -45,13 +45,13 @@
   <nav class="nav-global-secondary">
     <ul>
       <li class="nav-tier1 nav-has-children">
-        <a href="/about/" >Who we are</a>   
+        <a href="/about" >Who we are</a>   
       </li>
       <li class="nav-tier1 nav-has-children">
-          <a href="/governments/" >Governments</a>          
+          <a href="/cities" {% if page.governments_active %}class="state-active"{% endif %}>Governments</a>          
       </li>
       <li class="nav-tier1 nav-has-children">
-        <a href="/citizens/" class="state-active">Citizens</a>  
+        <a href="/geeks" {% if page.citizens_active %}class="state-active"{% endif %}>Citizens</a>  
         <ul class="nav-tier2">
           <li><a href="#">Requests</a></li>
           <li><a href="#">Code we Have</a></li>
@@ -60,9 +60,9 @@
         </ul>
       </li>
       <li class="nav-tier1">
-        <a href="/apps/" >Apps</a>
+        <a href="/apps" >Apps</a>
       </li>
-      <li><a href="/donate/" class="button">Donate</a></li>
+      <li><a href="/donate" class="button">Donate</a></li>
     </ul>
   </nav>    
 </div>
