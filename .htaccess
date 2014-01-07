@@ -17,6 +17,7 @@ RedirectMatch permanent ^(.*)(?<!/blog)/(author/.+)$ $1/blog/$2
 #
 RedirectMatch permanent ^(.*)(?<!/about)/team(/?)$ $1/about/team$2
 RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/about/team$2
+RedirectMatch permanent ^(.*)/how-to-help(/?)$ $1/geeks$2
 RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/what-we-do(/?)$ $1/about$2
@@ -50,6 +51,7 @@ RedirectMatch permanent ^(.*)/fellowship-program-timeline(/?)$ $1/geeks/fellowsh
 RedirectMatch permanent ^(.*)/fellows/program-and-timeline(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)/201-program-timeline(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)/fellows/2012-program-and-timeline(/?)$ $1/geeks/fellowship-faq$2
+RedirectMatch permanent ^(.*)/geeks/fellows/job-description(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/job-description(/?)$ $1/geeks/fellows/job-description$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/spread-the-word(/?)$ $1/geeks/fellows/spread-the-word$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/nominate(/?)$ $1/geeks/fellows/nominate$2
