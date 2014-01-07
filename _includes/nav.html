@@ -45,7 +45,7 @@
   <nav class="nav-global-secondary">
     <ul>
       <li class="nav-tier1 nav-has-children">
-        <a href="/about" >Who we are</a>   
+        <a href="/about" {% if page.about_active %}class="state-active"{% endif %}>Who we are</a>   
       </li>
       <li class="nav-tier1 nav-has-children">
           <a href="/cities" {% if page.governments_active %}class="state-active"{% endif %}>Governments</a>          
@@ -60,7 +60,7 @@
         </ul>
       </li>
       <li class="nav-tier1">
-        <a href="/apps" >Apps</a>
+        <a href="/apps" {% if page.apps_active %}class="state-active"{% endif %}>Apps</a>
       </li>
       <li><a href="/donate" class="button">Donate</a></li>
     </ul>
