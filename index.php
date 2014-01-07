@@ -623,7 +623,7 @@
             
             <div class="xx-pattern-layout">
             	<div class="layout-semibreve">
-                	<p>layout-breve</p>
+                	<p>layout-semibreve</p>
                     <div class="layout-minor">
                         <p>layout-minim-staccato</p>
                     </div>

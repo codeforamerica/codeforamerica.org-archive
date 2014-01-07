@@ -27,9 +27,17 @@ section,
         @include border-color($color-white, 0.6);
         }
     
+    .slab-blue .text-whisper {
+        @include color($color-white, 0.7);
+        }
+    
 .slab-dark-blue {
     @include background-color($color-dark-blue, 1);
     color: $color-white;
+    }
+
+.slab-dark-blue .text-whisper {
+    @include color($color-white, 0.7);
     }
 
 @media print {
@@ -75,8 +83,6 @@ section,
         color: $color-white;
         }
     
-    
-    
     .slab-red a.text-whisper:link,
     .slab-red a.text-whisper:visited,
     .slab-red a.text-whisper:hover,
@@ -91,6 +97,10 @@ section,
     .slab-red a.text-whisper:focus,
     .slab-red a.text-whisper:active {
         color: $color-white;
+        }
+    
+    .slab-red .text-whisper {
+        @include color($color-white, 0.7);
         }
     
 
@@ -118,6 +128,10 @@ section,
     .slab-medium-red form select {
         border: none;
         }
+    
+    .slab-medium-red .text-whisper {
+        @include color($color-white, 0.7);
+        }
 
 .slab-gray {
     @include background-color($color-light-gray, 0.5);
@@ -140,6 +154,10 @@ section,
     .slab-dark-gray a:hover,
     .slab-dark-gray a:focus,
     .slab-dark-gray a:active {
+        @include color($color-white, 0.7);
+        }
+    
+    .slab-dark-gray .text-whisper {
         @include color($color-white, 0.7);
         }
     
@@ -180,4 +198,8 @@ section,
  .slab-medium-red .button-prominent:hover,
  .slab-medium-red .button-prominent:focus {
      @include background-color($color-black, 0.4);
+     }
+ 
+ .slab-medium-red .text-whisper {
+     @include color($color-white, 0.7);
      }

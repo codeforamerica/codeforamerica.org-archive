@@ -1851,9 +1851,19 @@ section,
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.slab-blue .text-whisper, .slab-blue .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-dark-blue {
   background: #004b6a;
   color: white;
+}
+
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media print {
@@ -1921,6 +1931,11 @@ section,
   color: white;
 }
 
+.slab-red .text-whisper, .slab-red .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-medium-red {
   background: #aa1c3a;
   color: white;
@@ -1947,6 +1962,11 @@ section,
   border: none;
 }
 
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-gray {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -1969,6 +1989,11 @@ section,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-dark-gray .text-whisper, .slab-dark-gray .heading-contrast {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2012,6 +2037,11 @@ section,
 .slab-medium-red .button-prominent:focus {
   background: black;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .spotlight {

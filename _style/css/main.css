@@ -3724,9 +3724,19 @@ section,
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .brick-heading, .slab-blue .chimney .profile .profile-role, .chimney .profile .slab-blue .profile-role, .slab-blue .chimney .profile .profile-note, .chimney .profile .slab-blue .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-dark-blue {
   background: #004b6a;
   color: white;
+}
+
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .brick-heading, .slab-dark-blue .chimney .profile .profile-role, .chimney .profile .slab-dark-blue .profile-role, .slab-dark-blue .chimney .profile .profile-note, .chimney .profile .slab-dark-blue .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media print {
@@ -3824,6 +3834,11 @@ section,
   color: white;
 }
 
+.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .brick-heading, .slab-red .chimney .profile .profile-role, .chimney .profile .slab-red .profile-role, .slab-red .chimney .profile .profile-note, .chimney .profile .slab-red .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-medium-red {
   background: #aa1c3a;
   color: white;
@@ -3850,6 +3865,11 @@ section,
   border: none;
 }
 
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .brick-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-gray {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -3872,6 +3892,11 @@ section,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-dark-gray .text-whisper, .slab-dark-gray .heading-contrast, .slab-dark-gray .brick-heading, .slab-dark-gray .chimney .profile .profile-role, .chimney .profile .slab-dark-gray .profile-role, .slab-dark-gray .chimney .profile .profile-note, .chimney .profile .slab-dark-gray .profile-note {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -3915,6 +3940,11 @@ section,
 .slab-medium-red .button-prominent:focus {
   background: black;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .brick-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .spotlight {
