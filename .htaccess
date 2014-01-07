@@ -106,7 +106,9 @@ RedirectMatch permanent ^(.*)/2012(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/cities/faqs-cities-applying-to-program(/?)$ $1/cities/fellowship-faq$2
 
 RedirectMatch permanent ^(.*)/civic-data-standards(/?)$ $1/cities/data-standards-faq$2
-RedirectMatch permanent ^(.*)/(application-info|application-questions)(/?)$ $1/cities/fellowship-apply$3
+RedirectMatch permanent ^(.*)/application-info(/?)$ $1/cities/fellowship-apply$2
+RedirectMatch permanent ^(.*)/application-questions(/?)$ $1/cities/fellowship-apply$2
+RedirectMatch permanent ^(.*)/cities/apply-now(/?)$ $1/cities/fellowship-apply$2
 RedirectMatch permanent ^(.*)/cities/call-for-applications(/?)$ $1/cities/fellowship-apply$3
 
 RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/cities/current$2
@@ -157,6 +159,28 @@ RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/cities/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/cities/philadelphia$2
 
 RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/current$2
+
+#
+# People
+#
+RedirectMatch permanent ^(.*)(?<!/people)/alex-pandel(/?)$ $1/people/alex-pandel$2
+RedirectMatch permanent ^(.*)(?<!/people)/alex-yule(/?)$ $1/people/alex-yule$2
+RedirectMatch permanent ^(.*)(?<!/people)/alicia-rouault(/?)$ $1/people/alicia-rouault$2
+RedirectMatch permanent ^(.*)(?<!/people)/aurelio-tinio(/?)$ $1/people/aurelio-tinio$2
+RedirectMatch permanent ^(.*)(?<!/people)/ben-sheldon(/?)$ $1/people/ben-sheldon$2
+RedirectMatch permanent ^(.*)(?<!/people)/elizabeth-hunt(/?)$ $1/people/elizabeth-hunt$2
+RedirectMatch permanent ^(.*)(?<!/people)/emily-wright(/?)$ $1/people/emily-wright$2
+RedirectMatch permanent ^(.*)(?<!/people)/jesse-bounds(/?)$ $1/people/jesse-bounds$2
+RedirectMatch permanent ^(.*)(?<!/people)/jessica-lord(/?)$ $1/people/jessica-lord$2
+RedirectMatch permanent ^(.*)(?<!/people)/jim-craner(/?)$ $1/people/jim-craner$2
+RedirectMatch permanent ^(.*)(?<!/people)/joe-merante(/?)$ $1/people/joe-merante$2
+RedirectMatch permanent ^(.*)(?<!/people)/nick-doiron(/?)$ $1/people/nick-doiron$2
+RedirectMatch permanent ^(.*)(?<!/people)/prashant-singh(/?)$ $1/people/prashant-singh$2
+RedirectMatch permanent ^(.*)(?<!/people)/rob-brackett(/?)$ $1/people/rob-brackett$2
+RedirectMatch permanent ^(.*)(?<!/people)/ruthie-bendor(/?)$ $1/people/ruthie-bendor$2
+RedirectMatch permanent ^(.*)(?<!/people)/serena-wales(/?)$ $1/people/serena-wales$2
+RedirectMatch permanent ^(.*)(?<!/people)/sheba-najmi(/?)$ $1/people/sheba-najmi$2
+RedirectMatch permanent ^(.*)(?<!/people)/zach-williams(/?)$ $1/people/zach-williams$2
 
 #
 # Random crap.
