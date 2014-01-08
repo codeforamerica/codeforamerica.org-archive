@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Code for America</title>
+    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link rel="stylesheet" href="/style/css/main.css">
     <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
@@ -16,13 +16,13 @@
     <![endif]-->
     
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="../style/css/layout.css" media="all">
+        <link rel="stylesheet" href="/style/css/layout.css" media="all">
     <![endif]-->
       
     {% if page.masthead-image %}
       <style type="text/css">
         .masthead:before {
-                background-image: url('/media/images/{{ page.masthead-image }}');
+                background-image: url('{{ page.masthead-image }}');
         }
       </style>
     {% endif %}
@@ -33,14 +33,8 @@
       {% include nav.html %}
       <main role="main">
         {{ content }}
-        <div class="global-foot">
-          <div class="layout-tight layout-breve">
-            <div class="global-foot-content">
-              <img class="global-foot-logo" src="/assets/logo-inversed.png" />
-              <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
-            </div>
-          </div>
-        </div>
+        
+        {% include global-footer.html %}
       </main>
     </div>
     <script src="/script/global.js"></script>

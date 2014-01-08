@@ -1,9 +1,8 @@
 <nav class="nav-global-primary">
   <ul class="layout-breve layout-tight">
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/library/">Library</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/library">Library</a></li>
     <li>
-          <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
       <form class="search-global" id="search-global">
           <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
           <!-- consider applying autofocus="autofocus" to input -->
@@ -11,33 +10,24 @@
       </form>
     </li>
   </ul>
-</nav><!-- .nav-global-primary -->
+</nav>
 
 <div class="masthead masthead-l">
   <div class="masthead-hero">
     <div class="masthead-image" 
       {% if page.masthead-image %}
-      style="background-image: url('/media/images/{{ page.masthead-image }}')" 
+      style="background-image: url('{{ page.masthead-image }}')" 
       {% endif %}>
     </div>
   </div>
-    <header class="layout-semibreve masthead-header">
-      <nav class="nav-breadcrumbs">
-        <ul>
-          <li><a href="/">Home</a></li>
-          {% for nav_hash in page.nav-breadcrumbs %}
-            {% for link in nav_hash %}
-              <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
-              {% endfor %}
-          {% endfor %}
-        </ul>
-      </nav>
-      <h1 class="page-title" >{{ page.title }}</h1>
-    </header>
-  </div>
+  <header class="layout-semibreve masthead-header">
+    {% include nav-breadcrumbs.html %}
+    <h1 class="page-title" >{{ page.title }}</h1>
+  </header>
+</div>
 
 <div class="global-header">  
-  <a href="/home/" class="global-header-logo">
+  <a href="/home" class="global-header-logo">
       <img src="/assets/logo.png" />
   </a>
   <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
@@ -45,14 +35,15 @@
   <nav class="nav-global-secondary">
     <ul>
       <li class="nav-tier1 nav-has-children">
-        <a href="/about" {% if page.nav_tier1_active == "about" %}class="state-active"{% endif %}>Who we are</a>
+        <a href="/about" {% if page.nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
         {% if page.nav_tier1_active == "about" %}
         <ul class="nav-tier2">
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Annual Report</a></li>
-            <li><a href="#">Supporters</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="http://annual.codeforamerica.org">Annual Report</a></li>
+            <li><a href="/press">Press</a></li>
+            <li><a href="/supporters">Supporters</a></li>
+            <li><a href="/about/team">Team</a></li>
         </ul>
         {% endif %}
       </li>
@@ -61,7 +52,6 @@
         {% if page.nav_tier1_active == "governments" %}
         <ul class="nav-tier2">
           <li><a href="/cities/data-standards-faq">Data Standards</a></li>
-          <li><a href="#">Apps & APIs</a></li>
           <li><a href="/cities/alumni">Alumni Partners</a></li>
           <li><a href="/cities/2014-cities">2014 Partners</a></li>
         </ul>
@@ -71,9 +61,9 @@
         <a href="/geeks" {% if page.nav_tier1_active == "citizens" %}class="state-active"{% endif %}>Citizens</a>  
         {% if page.nav_tier1_active == "citizens" %}
         <ul class="nav-tier2">
-          <li><a href="/geeks/requests">Requests</a></li>
+          <li><a href="https://github.com/codeforamerica/hack-requests">Requests</a></li>
           <li><a href="/geeks/events">Events</a></li>
-          <li><a href="/geeks/our-code">Our Code</a></li>
+          <li><a href="https://github.com/codeforamerica">Our Code</a></li>
           <li><a href="/geeks/our-geeks">Our Geeks</a></li>
         </ul>
         {% endif %}
@@ -81,7 +71,7 @@
       <li class="nav-tier1">
         <a href="/apps" {% if page.nav_tier1_active == "apps" %}class="state-active"{% endif %}>Apps</a>
       </li>
-      <li><a href="/donate" class="button">Donate</a></li>
+      <li><a href="/donate" class="button">Support Our Work</a></li>
     </ul>
   </nav>    
 </div>

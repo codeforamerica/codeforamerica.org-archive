@@ -1,0 +1,10 @@
+<nav class="nav-breadcrumbs">
+  <ul>
+    <li><a href="/">Home</a></li>
+    {% for nav_hash in page.nav-breadcrumbs %}
+      {% for link in nav_hash %}
+        <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</nav>
