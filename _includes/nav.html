@@ -1,9 +1,8 @@
 <nav class="nav-global-primary">
   <ul class="layout-breve layout-tight">
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/library/">Library</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/library">Library</a></li>
     <li>
-          <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
       <form class="search-global" id="search-global">
           <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
           <!-- consider applying autofocus="autofocus" to input -->
@@ -11,7 +10,7 @@
       </form>
     </li>
   </ul>
-</nav><!-- .nav-global-primary -->
+</nav>
 
 <div class="masthead masthead-l">
   <div class="masthead-hero">
@@ -21,14 +20,14 @@
       {% endif %}>
     </div>
   </div>
-    <header class="layout-semibreve masthead-header">
-      {% include nav-breadcrumbs.html %}
-      <h1 class="page-title" >{{ page.title }}</h1>
-    </header>
-  </div>
+  <header class="layout-semibreve masthead-header">
+    {% include nav-breadcrumbs.html %}
+    <h1 class="page-title" >{{ page.title }}</h1>
+  </header>
+</div>
 
 <div class="global-header">  
-  <a href="/home/" class="global-header-logo">
+  <a href="/home" class="global-header-logo">
       <img src="/assets/logo.png" />
   </a>
   <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
