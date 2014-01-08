@@ -1,137 +1,16 @@
-<!DOCTYPE html>
-<html lang="en-gb">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Code for America</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
-    <link rel="stylesheet" href="../../style/css/main.css">
-    <link rel="stylesheet" href="../../style/css/layout.css" media="all and (min-width: 40em)">
-    <link href="../../style/css/prism.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="../../style/favicons/60x60/flag-red.png"/>
-
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="../../style/css/layout.css" media="all">
-    <![endif]-->
-    
-        <style type="text/css">
-            .masthead:before {
-        
-                background-image: url('../../media/images/geeks_fellowship_faq/geeksfellowshipfaq_header.jpg');
-            }
-        </style>
-    
-    
-</head>
-    
-<body>
-
-<div class="js-container">
-
-<nav class="nav-global-primary">
-    <ul class="layout-breve layout-tight">
-        <li><a href="../site/blog/">Blog</a></li>
-        <li><a href="../site/library/">Library</a></li>
-        <li>
-            <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
-<form class="search-global" id="search-global">
-    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
-    <!-- consider applying autofocus="autofocus" to input -->
-    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
-</form>
-        </li>
-    </ul>
-</nav><!-- .nav-global-primary -->
-    
-    <div class="masthead masthead-l">
-    <div class="masthead-hero">
-        <div class="masthead-image" 
-            
-            style="background-image: url('../../media/images/geeks_fellowship_faq/geeksfellowshipfaq_header.jpg')" 
-            >
-        
-        </div>
-    </div>
-    <header class="layout-semibreve masthead-header">
-        
-        
-
-
-<nav class="nav-breadcrumbs">
-    <ul>
-    
-        <li><a href="../site/home">Home</a></li>
-         <li><a href="../geeks/">Geeks</a></li>
-        <li><a href="../geeks/fellowship-faq/">Fellowship FAQ</a></li>
-    
-    </ul>
-</nav>
-        
-        <h1 class="page-title" >
-        FAQ & Timeline
-        </h1>
-    </header>
-</div>
-
-<div class="global-header">
-    
-        <a href="/home/" class="global-header-logo">
-            <img src="/assets/logo.png" />
-        </a>
-        
-        <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
-        
-        <nav class="nav-global-secondary">
-            <ul>
-            	<li class="nav-tier1 nav-has-children">
-            		<a href="../site/about/" >Who we are</a>
-            		 
-            	</li>
-                <li class="nav-tier1 nav-has-children">
-                    <a href="../site/governments/" >Governments</a>
-                     
-                </li>
-                <li class="nav-tier1 nav-has-children">
-                	<a href="../site/geeks/" >Citizens</a>
-                	 
-                </li>
-                <li class="nav-tier1">
-                	<a href="../site/apps/" >Apps</a>
-                </li>
-                <li><a href="../site/fellowship-faq/" class="button">Fellowship FAQ</a></li>
-            </ul>
-        </nav>
-        
-        
-    
-    
-</div>
-
-<main role="main">
-    
-    <section>
-
+---
+layout: default
+title: Fellowship FAQ
+nav_tier1_active: "citizens"
+masthead-image: "../../media/images/geeks_fellowship_faq/geeksfellowshipfaq_header.jpg"
+nav-breadcrumbs:
+ - citizens: "/geeks"
+ - Fellowship FAQ: "/geeks/fellowship-faq"
+---
+  
     <div class="layout-semibreve">
     
-        <main role="main">
-            
-            
-
-
-<nav class="nav-breadcrumbs">
-    <ul>
-    
-        <li><a href="../site/home">Home</a></li>
-        <li><a href="../site/">Fellowship FAQ</a></li>
-    
-    </ul>
-</nav>
+            {{ include nav-breadcrumbs.html }}
             
             <header class="badge-heading">
                 <h2>Fellowship FAQ</h2>
@@ -154,7 +33,7 @@
             </div>
             
             </section>
-        <hr />
+
             <section>
             <div class="layout-gutters isolate">
                 
@@ -174,7 +53,6 @@
 <p>You'll be paired with teammates based on complimentary skill sets in mid Dec. This year’s average fellow is 30-years-old with previous experience in design, development, research or project management. Fellows have come from Google, Apple and <a href="http://www.rackspace.com/blog/how-rackspace-supports-code-for-america-fellows/">Rackspace</a> recently started a sabbatical program to support us. You can check out past fellowship bios here: <a href="http://codeforamerica.org/2013-fellows">2013</a>, <a href="http://www.codeforamerica.org/2012-fellows/">2012</a> and <a href="http://www.codeforamerica.org/2011-fellows/">2011</a>.</p>
 </div>
 </section>
-<hr />
 
 <section>
 <div class="layout-gutters isolate">
@@ -189,7 +67,6 @@
 
 </div>
 </section>
-<hr />
 
 <section>
 <div class="layout-gutters isolate">
@@ -206,11 +83,11 @@
 <p>City apps built during the fellowship are released as <a href="http://opensource.org/docs/osd">open source code</a> and can be redeployed by local volunteer <a href="http://brigade.codeforamerica.org">Brigade</a> groups. While it's true that other cities can download and tweak your app code, as a fellow you'll receive attribution and help steer the app's functionality in a way that is customized to meet your host city's unique needs.</p>
 </div>
 </section>
-<hr />
+
 <section>
 <div class="layout-gutters isolate">
 <a name="timing"></a><h3>Timing</h3>
-<div class="cityDates left-col">
+
 <table>
     <thead>
         <tr>
@@ -256,7 +133,6 @@
             <th>Feb</th>
             <td><b>City Residency</b>: Fellows arrive for their residency, meet with their city host, build a network of contacts, and identify where CFA can have the most impact. Fellows interview community and government stakeholders and brainstorm project scope.</td>
         </tr>
-        </tr>
         <tr>
             <th>Mar-Aug</th>
             <td><b>Fellows Return to SF for app development</b>: Teams return to SF for lean app development, resource sharing and collaboration. Ongoing training and guest speaker series continues.</td>
@@ -279,89 +155,5 @@
             </div>
             
             </section>       
-        </main><!--@main-->
         
     </div>
-
-</section>
-    
-    <div class="global-footer" id="global-footer">
-    
-    <div class="layout-breve layout-tight">
-    
-        <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
-<form class="search-global" id="search-global">
-    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
-    <!-- consider applying autofocus="autofocus" to input -->
-    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
-</form>
-    
-        <nav class="nav-footer">
-            <ul>
-                <li class="nav-tier1"><a class="nav-heading" href="../site/about/">About</a>
-                    <ul class="nav-tier2">
-                      <li><a href="../site/programs/">What we do</a></li>
-                      <li><a href="http://annual.codeforamerica.org/">Annual report</a></li>
-                      <li><a href="http://www.codeforamerica.org/press/">Press</a></li>
-                        <li><a href="http://www.codeforamerica.org/supporters/">Supporters</a></li>
-                        <li><a href="http://www.codeforamerica.org/jobs/">Jobs</a></li>
-                        <li><a href="http://www.codeforamerica.org/contact/">Contact</a></li>
-                    </ul>
-                </li>
-                <li class="nav-tier1"><a class="nav-heading" href="http://www.codeforamerica.org/who-we-are/">Who we are</a>
-                    <ul class="nav-tier2">
-                        <li><a href="#">Board</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Staff</a></li>
-                        <li><a href="#">City Partners</a></li>
-                        <li><a href="#">Brigade captains</a></li>
-                    </ul>
-                </li>
-                <li class="nav-tier1"><a class="nav-heading" href="#">Programs</a>
-                    <ul class="nav-tier2">
-                        <li><a href="../site/fellows/">Fellowship</a></li>
-                        <li><a href="../site/brigade/">Brigade</a></li>
-                      <li><a href="../site/startups/">Startup</a></li>
-                      <li><a href="../site/international">International</a></li>
-                        <li><a href="../site/peernetwork">Peer Network</a></li>           
-                    </ul>
-                </li>
-                <li class="nav-tier1"><a class="nav-heading" href="../site/donate/">Donate</a>
-                    <ul class="nav-tier2">
-                        <li><a href="#">Financial Contributions</a></li>
-                        <li><a href="#">In-Kind Donations</a></li>
-                    </ul>
-                </li>
-                <li class="nav-tier1"><a class="nav-heading" href="#">Social</a>
-                    <ul class="nav-tier2">
-                        <li><a href="https://www.facebook.com/codeforamerica" class="icon-facebook">Facebook</a></li>
-                        <li><a href="https://twitter.com/codeforamerica" class="icon-twitter">Twitter</a></li>
-                        <li><a href="http://www.youtube.com/user/CodeforAmerica" class="icon-youtube">YouTube</a></li>
-                        <li><a href="https://github.com/codeforamerica" class="icon-github2">GitHub</a></li>
-                        <li><a href="http://codeforamerica.tumblr.com/" class="icon-tumblr">Tumblr</a></li>
-                        <li><a href="http://www.flickr.com/photos/codeforamerica" class="icon-flickr">Flickr</a></li>
-                        <li><a href="http://www.codeforamerica.org/feed/" class="icon-feed">RSS</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    
-    </div>
-
-</div>
-
-<div class="global-foot">
-    <div class="layout-tight layout-breve">
-        <div class="global-foot-content">
-            <img class="global-foot-logo" src="/../../assets/logo-inversed.png" />
-            <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
-        </div>
-    </div>
-</div>
-    
-</main>
-<script src="../../script/global.js"></script>
-
-</body>
-
-</html>
