@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Code for America</title>
+    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link rel="stylesheet" href="/style/css/main.css">
     <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
