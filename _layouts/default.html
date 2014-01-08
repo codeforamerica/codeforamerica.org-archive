@@ -33,14 +33,8 @@
       {% include nav.html %}
       <main role="main">
         {{ content }}
-        <div class="global-foot">
-          <div class="layout-tight layout-breve">
-            <div class="global-foot-content">
-              <img class="global-foot-logo" src="/assets/logo-inversed.png" />
-              <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
-            </div>
-          </div>
-        </div>
+        
+        {% include global-footer.html %}
       </main>
     </div>
     <script src="/script/global.js"></script>
