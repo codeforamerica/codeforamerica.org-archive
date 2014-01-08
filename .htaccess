@@ -197,3 +197,6 @@ RedirectMatch permanent ^(.*)/ted(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-vide
 RedirectMatch permanent ^(.*)/TED(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-video$2
 RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults$2
 RedirectMatch permanent ^(.*)/pages/tools(/?)$ $1/2013/07/16/tools-of-the-civic-trade$2
+
+# Migurski likes to hotlink this image all over the place.
+RedirectMatch permanent ^(.*)/wp-content/uploads/2011/12/CfA_logo-300x120.png$ $1/media/images/logos/CfA_logo-300x120.png
