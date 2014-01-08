@@ -61,8 +61,9 @@ RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/nominate(/?)$ $1/geeks/fellows/
 #
 # Fellowship lists.
 #
-RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellows/apply$2
-RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/cities)/apply(/?)$ $1/geeks/fellows/apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellowship-apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/cities)/apply(/?)$ $1/geeks/fellowship-apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks$2
 # 2011:
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2011-fellows(/?)$ $1/geeks/our-geeks/2011-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/alumni-fellows|/our-geeks)/2011-fellows(/?)$ $1/geeks/our-geeks/2011-fellows$2
@@ -100,8 +101,9 @@ RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
 #
 # Governments.
 #
-RedirectMatch permanent ^(.*)/cities/2013-apply-now(/?)$ $1/cities/apply$2
-RedirectMatch permanent ^(.*)/cities/apply-now(/?)$ $1/cities/apply$2
+RedirectMatch permanent ^(.*)/cities/apply(/?)$ $1/cities/fellowship-apply$2
+RedirectMatch permanent ^(.*)/cities/2013-apply-now(/?)$ $1/cities/fellowship-apply$2
+RedirectMatch permanent ^(.*)/cities/apply-now(/?)$ $1/cities/fellowship-apply$2
 RedirectMatch permanent ^(.*)/city-alumni(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/cfa-2012(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/2012(/?)$ $1/cities/alumni$2
@@ -110,11 +112,11 @@ RedirectMatch permanent ^(.*)/cities/faqs-cities-applying-to-program(/?)$ $1/cit
 RedirectMatch permanent ^(.*)/civic-data-standards(/?)$ $1/cities/data-standards-faq$2
 RedirectMatch permanent ^(.*)/application-info(/?)$ $1/cities/fellowship-apply$2
 RedirectMatch permanent ^(.*)/application-questions(/?)$ $1/cities/fellowship-apply$2
-RedirectMatch permanent ^(.*)/cities/apply-now(/?)$ $1/cities/fellowship-apply$2
 RedirectMatch permanent ^(.*)/cities/call-for-applications(/?)$ $1/cities/fellowship-apply$3
 
-RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/cities/current$2
-RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/current$2
+RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/cities/alumni$2
+RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/alumni$2
+RedirectMatch permanent ^(.*)/cities/current(/?)$ $1/cities/alumni$2
 
 RedirectMatch permanent ^(.*)/2013-partners/kansas-city(/?)$ $1/cities/kansascity$2
 RedirectMatch permanent ^(.*)/2013-partners/louisville(/?)$ $1/cities/louisville$2
@@ -159,8 +161,6 @@ RedirectMatch permanent ^(.*)(?<!/cities|/city-alumni)/philadelphia(/?)$ $1/citi
 RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/cities/boston$2
 RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/cities/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/cities/philadelphia$2
-
-RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/current$2
 
 #
 # People
