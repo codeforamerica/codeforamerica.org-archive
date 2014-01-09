@@ -3400,6 +3400,12 @@ nav ul li {
   text-indent: -9999px;
 }
 
+.svg .list-social li {
+  background-image: url("../images/sprite-social.svg");
+  background-size: 350px;
+  background-position: 5px -23px;
+}
+
 .list-social .social-twitter {
   background-position: -174px -38px;
 }
@@ -3408,6 +3414,16 @@ nav ul li {
 .list-social .social-twitter:focus,
 .list-social .social-twitter:active {
   background-position: -174px 2px;
+}
+
+.svg .list-social .social-twitter {
+  background-position: -206px -23px;
+}
+
+.svg .list-social .social-twitter:hover,
+.svg .list-social .social-twitter:focus,
+.svg .list-social .social-twitter:active {
+  background-position: -206px 2px;
 }
 
 .list-social .social-linkedin {
@@ -3420,6 +3436,16 @@ nav ul li {
   background-position: -204px 2px;
 }
 
+.svg .list-social .social-linkedin {
+  background-position: -244px -23px;
+}
+
+.svg .list-social .social-linkedin:hover,
+.svg .list-social .social-linkedin:focus,
+.svg .list-social .social-linkedin:active {
+  background-position: -244px 2px;
+}
+
 .list-social .social-github {
   background-position: -234px -38px;
 }
@@ -3428,6 +3454,16 @@ nav ul li {
 .list-social .social-github:focus,
 .list-social .social-github:active {
   background-position: -234px 2px;
+}
+
+.svg .list-social .social-github {
+  background-position: -134px -23px;
+}
+
+.svg .list-social .social-github:hover,
+.svg .list-social .social-github:focus,
+.svg .list-social .social-github:active {
+  background-position: -134px 2px;
 }
 
 .list-social .social-flickr {
@@ -3440,6 +3476,16 @@ nav ul li {
   background-position: -54px 2px;
 }
 
+.svg .list-social .social-flickr {
+  background-position: -65px -23px;
+}
+
+.svg .list-social .social-flickr:hover,
+.svg .list-social .social-flickr:focus,
+.svg .list-social .social-flickr:active {
+  background-position: -65px 2px;
+}
+
 .list-social .social-website {
   background-position: 7px -38px;
 }
@@ -3450,6 +3496,16 @@ nav ul li {
   background-position: 7px 2px;
 }
 
+.svg .list-social .social-website {
+  background-position: 5px -23px;
+}
+
+.svg .list-social .social-website:hover,
+.svg .list-social .social-website:focus,
+.svg .list-social .social-website:active {
+  background-position: 5px 2px;
+}
+
 .list-social .social-facebook {
   background-position: -264px -38px;
 }
@@ -3458,6 +3514,16 @@ nav ul li {
 .list-social .social-facebook:focus,
 .list-social .social-facebook:active {
   background-position: -264px 2px;
+}
+
+.svg .list-social .social-facebook {
+  background-position: -321px -23px;
+}
+
+.svg .list-social .social-facebook:hover,
+.svg .list-social .social-facebook:focus,
+.svg .list-social .social-facebook:active {
+  background-position: -321px 2px;
 }
 
 .list-social a {
