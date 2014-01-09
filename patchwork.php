@@ -17,7 +17,7 @@
     <title>Code for America Website Style Guide</title>
     <link rel="stylesheet" href="/_style/css/documentation.css">
     <link href="_style/css/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

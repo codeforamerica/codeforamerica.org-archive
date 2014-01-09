@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Style Guide</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6304652/777902/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link href="_style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="/_style/css/documentation.css">
     <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
