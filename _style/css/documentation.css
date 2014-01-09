@@ -4069,7 +4069,10 @@ section,
   font-size: 30px;
   font-size: 1.875rem;
   color: black;
-  font-family: georgia;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.5px;
   font-weight: bold;
   display: block;
   margin: 0;
