@@ -231,10 +231,6 @@
 	width: 96%
 	}
 
-.xx-patchwork .pattern {	
-	margin: 0;
-	}
-
 .pattern {
     clear: both;
     float: left;
@@ -244,6 +240,11 @@
     @include border-color($color-light-gray, 1);
     border-radius: 3px;
     }
+
+.xx-patchwork .pattern {	
+	margin: 0;
+	border: none;
+	}
 
 .pattern-name {
     font-family: $font-sans-regular;
@@ -553,8 +554,4 @@
     position: absolute;
     right: 1em;
     top: 0.25em;
-    }
-
-.xx-patchwork {
-    background-color: white;
     }

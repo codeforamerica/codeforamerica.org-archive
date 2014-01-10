@@ -5146,10 +5146,6 @@ body {
   width: 96%;
 }
 
-.xx-patchwork .pattern {
-  margin: 0;
-}
-
 .pattern {
   clear: both;
   float: left;
@@ -5158,6 +5154,11 @@ body {
   border: 1px solid;
   border-color: #e5e5e5;
   border-radius: 3px;
+}
+
+.xx-patchwork .pattern {
+  margin: 0;
+  border: none;
 }
 
 .pattern-name {
@@ -5552,8 +5553,4 @@ body {
   position: absolute;
   right: 1em;
   top: 0.25em;
-}
-
-.xx-patchwork {
-  background-color: white;
 }
