@@ -55,9 +55,9 @@
             <ol role="navigation">
                 <li><a href="/_site/home/">Home</a></li>
                 <li><a href="/_site/apps/">Apps</a></li>
+                <li><a href="/_site/apps/promptly/">App (Promptly)</a></li>
                 <li><a href="/_site/about/">About</a></li>
                 <li><a href="/_site/library/">Library</a></li>
-                <li><a href="/_site/apps/bizfriendly/">Product (Promptly)</a></li>
                 <li><a href="/_site/governments/boston/">City (Boston)</a></li>
                 <li><a href="/_site/fellows/">Fellows</a></li>
                 <li><a href="/_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
@@ -89,105 +89,138 @@
         
         	<h2 class="xx-section-title">Bookmark Icons</h2>
         	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag Red</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-red.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-red.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-red.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-red.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-red.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-red.png" /> 16x16</li>
-    	    	</ul>
-    	    </div>
-        	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag Blue</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-blue.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-blue.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-blue.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-blue.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-blue.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-blue.png" /> 16x16</li>
-    	    	</ul>
-    	    </div>
-        	
-        	<div class="spotlight">
-        		<h3 class="h5">Flag Gray</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-gray.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-gray.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-gray.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-gray.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-gray.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-gray.png" /> 16x16</li>
-    	    	</ul>
-    	    </div>
-        	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag Black</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-black.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-black.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-black.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-black.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-black.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-black.png" /> 16x16</li>
-    	    	</ul>
-    	    </div>
-        	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag White and Blue</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-white-blue.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-white-blue.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-white-blue.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-white-blue.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-white-blue.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-white-blue.png" /> 16x16</li>
-    	    	</ul>
-    	    </div>
-        	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag White and Red</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-white-red.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-white-red.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-white-red.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-white-red.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-white-red.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-white-red.png" /> 16x16</li>
-    	    	</ul>
+	    	<div class="pattern">
+    	    	<div class="pattern-details">
+    	    	    <h3 class="pattern-name">Flag Red</h3>
+    	    	</div>
+    	    	<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-red.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-red.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-red.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-red.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-red.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-red.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
         	</div>
-        	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag White and Gray</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-white-gray.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-white-gray.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-white-gray.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-white-gray.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-white-gray.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-white-gray.png" /> 16x16</li>
-    	    	</ul>
-    	    </div>
-        	
-        	<div class="spotlight">
-    	    	<h3 class="h5">Flag White and Black</h3>
-    	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper">
-    	    		<li><img src="/_style/favicons/152x152/flag-white-black.png" /> 152x152</li>
-    	    		<li><img src="/_style/favicons/120x120/flag-white-black.png" /> 120x120</li>
-    	    		<li><img src="/_style/favicons/76x76/flag-white-black.png" /> 76x76</li>
-    	    		<li><img src="/_style/favicons/60x60/flag-white-black.png" /> 60x60</li>
-    	    		<li><img src="/_style/favicons/32x32/flag-white-black.png" /> 32x32</li>
-    	    		<li><img src="/_style/favicons/16x16/flag-white-black.png" /> 16x16</li>
-    	    	</ul>
+    	    
+	    	
+	    	<div class="pattern">
+	    		<div class="pattern-details">
+	    		    <h3 class="pattern-name">Flag Blue</h3>
+	    		</div>
+	    		<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-blue.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-blue.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-blue.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-blue.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-blue.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-blue.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
         	</div>
-        	
+	    	
+    		<div class="pattern">
+    			<div class="pattern-details">
+    			    <h3 class="pattern-name">Flag Gray</h3>
+    			</div>
+    			<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-gray.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-gray.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-gray.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-gray.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-gray.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-gray.png" /> 16x16</li>
+        	    	</ul>
+	    	    </div>
+	    	</div>
+	    	
+	    	<div class="pattern">
+	    		<div class="pattern-details">
+	    		    <h3 class="pattern-name">Flag Black</h3>
+	    		</div>
+    	    	<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-black.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-black.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-black.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-black.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-black.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-black.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
+        	</div>
+	    	
+	    	<div class="pattern">
+	    		<div class="pattern-details">
+	    		    <h3 class="pattern-name">Flag White and Blue</h3>
+	    		</div>
+	    		<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-white-blue.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-white-blue.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-white-blue.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-white-blue.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-white-blue.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-white-blue.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
+        	</div>
+	    	
+	    	<div class="pattern">
+	    		<div class="pattern-details">
+	    		    <h3 class="pattern-name">Flag White and Red</h3>
+	    		</div>
+	    		<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-white-red.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-white-red.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-white-red.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-white-red.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-white-red.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-white-red.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
+        	</div>
+    	
+	    	<div class="pattern">
+	    		<div class="pattern-details">
+	    		    <h3 class="pattern-name">Flag White and Gray</h3>
+	    		</div>
+	    		<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-white-gray.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-white-gray.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-white-gray.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-white-gray.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-white-gray.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-white-gray.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
+        	</div>
+    	
+	    	<div class="pattern">
+	    		<div class="pattern-details">
+	    		    <h3 class="pattern-name">Flag White and Black</h3>
+	    		</div>
+	    		<div class="pattern-preview">
+        	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
+        	    		<li><img src="/_style/favicons/152x152/flag-white-black.png" /> 152x152</li>
+        	    		<li><img src="/_style/favicons/120x120/flag-white-black.png" /> 120x120</li>
+        	    		<li><img src="/_style/favicons/76x76/flag-white-black.png" /> 76x76</li>
+        	    		<li><img src="/_style/favicons/60x60/flag-white-black.png" /> 60x60</li>
+        	    		<li><img src="/_style/favicons/32x32/flag-white-black.png" /> 32x32</li>
+        	    		<li><img src="/_style/favicons/16x16/flag-white-black.png" /> 16x16</li>
+        	    	</ul>
+        	    </div>
+        	</div>
+    	
         	<h2 class="xx-section-title">Icons</h2>
         	
-        	<ul class="list-no-bullets list-minim">
+        	<ul class="list-no-bullets list-crotchet">
         	    <li class="icon-facebook"> icon-facebook</li>
         	    <li class="icon-twitter"> icon-twitter</li>
         	    <li class="icon-feed"> icon-feed</li>
@@ -270,12 +303,6 @@
         	</ul>
             
             <h2 class="xx-section-title">Colors</h2>
-            
-            <p>Colours can be applied in the Sass files by calling a variable, such as <code>background-color: $color-red;</code> – this will add the correct hex code.</p>
-            
-            <p>If you want the colour to have opacity, use this format in the Sass file: <code>background color: @include background-color($color-red, 0.5);</code>, or for a foreground color: <code>@include color($color-red, 0.5);</code></p>
-            
-            <p>The last unit is the strength of the opacity. 1 is opaque, and 0.5 has 50% transparency.</p>
             
             <h3>Primary Colors</h3>
             

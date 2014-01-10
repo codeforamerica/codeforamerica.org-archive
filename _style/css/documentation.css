@@ -752,6 +752,11 @@ ul li {
   column-count: 2;
 }
 
+.list-crotchet {
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
 img {
   max-width: 100%;
 }
@@ -5118,6 +5123,13 @@ body {
     width: 20%;
   }
 }
+.xx .list-favicons img {
+  display: block;
+  margin-right: 1.5em;
+  margin-bottom: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px;
+}
+
 .xx .swatch-preview {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -5163,6 +5175,9 @@ body {
 
 .pattern-name {
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-size: 16px;
+  text-transform: none;
+  margin: 0;
 }
 
 .pattern-details {
