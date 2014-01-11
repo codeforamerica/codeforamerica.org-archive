@@ -1,6 +1,8 @@
-Patterns for codeforamerica.org
-===============================
+Code For America Dot Org
+========================
 
-Contains in-progress site patterns for codeforamerica.org.
+## Description
 
-Uses Jekyll for templating – converted HTML files are in the _site folder.
+This Master branch is exclusively used for Clearleft's deliverables.
+
+Check out the [static-site branch](https://github.com/codeforamerica/codeforamerica.org/tree/static-site) to find the live website code.
