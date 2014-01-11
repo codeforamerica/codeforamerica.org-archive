@@ -163,11 +163,18 @@ h1,
   text-transform: uppercase;
   display: block;
   clear: left;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: -3px;
 }
 
+@media (min-width: 40em) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
 h1 sup,
 .h1 sup {
   font-size: 27px;
@@ -180,13 +187,20 @@ h2,
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 35px;
+  font-size: 2.1875rem;
   line-height: 44px;
   line-height: 2.75rem;
   text-transform: none;
 }
 
+@media (min-width: 40em) {
+  h2,
+  .h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
 @media print {
   h1,
   .h1,
@@ -200,8 +214,8 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -209,6 +223,13 @@ h3,
   line-height: 1.15em;
 }
 
+@media (min-width: 40em) {
+  h3,
+  .h3 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
 @media print {
   h3,
   .h3 {
@@ -218,14 +239,21 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
 }
 
+@media (min-width: 40em) {
+  h4,
+  .h4 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 h5,
 .h5 {
   font-size: 17px;
