@@ -46,6 +46,17 @@ submitting a bug report or feature request, check to make sure it hasn't
 already been submitted. You can indicate support for an existing issue by
 voting it up. When submitting a bug report, please include a screenshot and any additioanl details that can help us debug, such as your operating system and browser version.
 
+#### Running the Site Locally on Your Computer
+To run the site locally on your own computer (most helpful for previewing your own changes), you will need Jekyll installed ([click here for Jekyll installation instructions](http://jekyllrb.com/docs/installation/).)
+
+Fork and clone the repository, check out the `static-site` branch, and then run the following command in the root directory of the repo:
+
+`jekyll serve`
+
+Your computer should now be serving your local copy of the site at:
+
+[http://0.0.0.0:4000](http://0.0.0.0:4000).
+
 ## Technology Patterns
 Uses Jekyll for templating – converted HTML files are in the _site folder.
 
