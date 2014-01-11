@@ -46,6 +46,18 @@ submitting a bug report or feature request, check to make sure it hasn't
 already been submitted. You can indicate support for an existing issue by
 voting it up. When submitting a bug report, please include a screenshot and any additioanl details that can help us debug, such as your operating system and browser version.
 
+#### Previewing Your Changes Using Jekit
+
+You can use the nifty [Jekit](https://jekit.codeforamerica.org/) app to preview changes you make to this site.
+
+To do this, fork this repo, and commit your changes on a branch to your fork. You can then preview what your changes look like by navigating to:
+
+https://jekit.codeforamerica.org/USERNAME/codeforamerica.org/BRANCHNAME/
+
+For a basic example of its usage, if GitHub user **@lolname** has made changes to the /people/dave-guarino page on their fork (on the `static-site` branch), they can preview their changes using Jekit by going to:
+
+https://jekit.codeforamerica.org/lolname/codeforamerica.org/static-site/people/dave-guarino/
+
 #### Running the Site Locally on Your Computer
 To run the site locally on your own computer (most helpful for previewing your own changes), you will need Jekyll installed ([click here for Jekyll installation instructions](http://jekyllrb.com/docs/installation/).)
 
