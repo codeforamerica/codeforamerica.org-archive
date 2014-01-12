@@ -3235,11 +3235,24 @@ nav ul li {
   font-size: 0.875rem;
 }
 
+@media (max-width: 52em) {
+  .nav-tabs {
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
+  }
+}
 .nav-tab {
   float: left;
   display: inline-block;
 }
 
+@media (max-width: 52em) {
+  .nav-tab {
+    float: none;
+    display: block;
+    clear: both;
+  }
+}
 .nav-tab-link {
   padding: 16px 20px 13px 20px;
   padding: 1rem 1.25rem 0.8125rem 1.25rem;
@@ -3249,6 +3262,12 @@ nav ul li {
   position: relative;
 }
 
+@media (max-width: 52em) {
+  .nav-tab-link {
+    margin: 0;
+    margin: 0;
+  }
+}
 .nav-tab-link:link,
 .nav-tab-link:visited,
 .nav-tab-link:hover,
@@ -3291,6 +3310,11 @@ nav ul li {
   margin-left: -16px;
 }
 
+@media (max-width: 52em) {
+  .state-active .nav-tab-link:after {
+    border: none;
+  }
+}
 .nav-tags li {
   display: inline-block;
 }
