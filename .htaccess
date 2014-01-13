@@ -8,6 +8,9 @@ RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 #
 # Wordpress blog.
 #
+RedirectMatch permanent ^(.*)(?<!/blog)/(wp-admin.+)$ $1/blog/$2
+RedirectMatch permanent ^(.*)(?<!/blog)/(wp-login.+)$ $1/blog/$2
+RedirectMatch permanent ^(.*)(?<!/blog)/(wp-content/.+)$ $1/blog/$2
 RedirectMatch permanent ^(.*)(?<!/blog)/(\d\d\d\d/\d\d/\d\d/.+)$ $1/blog/$2
 RedirectMatch permanent ^(.*)(?<!/blog)/(category/.+)$ $1/blog/$2
 RedirectMatch permanent ^(.*)(?<!/blog)/(author/.+)$ $1/blog/$2
@@ -112,7 +115,7 @@ RedirectMatch permanent ^(.*)/cities/faqs-cities-applying-to-program(/?)$ $1/cit
 RedirectMatch permanent ^(.*)/civic-data-standards(/?)$ $1/cities/data-standards-faq$2
 RedirectMatch permanent ^(.*)/application-info(/?)$ $1/cities/fellowship-apply$2
 RedirectMatch permanent ^(.*)/application-questions(/?)$ $1/cities/fellowship-apply$2
-RedirectMatch permanent ^(.*)/cities/call-for-applications(/?)$ $1/cities/fellowship-apply$3
+RedirectMatch permanent ^(.*)/cities/call-for-applications(/?)$ $1/cities/fellowship-apply$2
 
 RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/cities/alumni$2
 RedirectMatch permanent ^(.*)/city-current(/?)$ $1/cities/alumni$2
@@ -197,6 +200,3 @@ RedirectMatch permanent ^(.*)/ted(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-vide
 RedirectMatch permanent ^(.*)/TED(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-video$2
 RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults$2
 RedirectMatch permanent ^(.*)/pages/tools(/?)$ $1/2013/07/16/tools-of-the-civic-trade$2
-
-# Migurski likes to hotlink this image all over the place.
-RedirectMatch permanent ^(.*)/wp-content/uploads/2011/12/CfA_logo-300x120.png$ $1/media/images/logos/CfA_logo-300x120.png
