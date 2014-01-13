@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jeckyl (0.3.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jeckyl
