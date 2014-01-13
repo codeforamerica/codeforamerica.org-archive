@@ -13,7 +13,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('/_media/images/masthead/masthead-2.jpg');
+	// background-image: url(asset_path('/masthead/masth`ead-2.jpg'));
 	content: "";
 	max-width: none;
 	width: 100%;
@@ -59,10 +59,10 @@
 .masthead-header a:active {
 	color: $color-white;
 	}
-    
+
     @media (min-width: 63em) {
     .masthead .masthead-header {
-        padding: 0; 
+        padding: 0;
         width: auto;
         }
     }
@@ -70,7 +70,7 @@
 .masthead-s .masthead-header {
     @include rem(margin, 40px auto 40px);
     }
-    
+
     @media print {
 	.masthead-s .masthead-header {
 	    @include rem(margin, 10px auto 10px);
@@ -87,7 +87,7 @@
     float: none;
     @include rem(margin-top, 25px);
     }
-    
+
     @media print {
     .masthead-s .page-title {
         @include rem(margin-top, 5px);
@@ -138,7 +138,7 @@
     }
 
 .masthead-header .nav-breadcrumbs li:first-child a {
-    background-image: url('../images/flag-white.png');
+    background-image: url(asset_path('flag-white.png'));
     }
 
 .masthead-header .button-cta {

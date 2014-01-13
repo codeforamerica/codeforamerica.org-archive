@@ -19,7 +19,7 @@ select {
     vertical-align: middle;
     display: inline-block;
     }
-    
+
     @media print {
     input,
     select,
@@ -29,7 +29,7 @@ select {
     }
 
 select {
-	background-image: url("../images/arrow-triangle-down.png");
+	background-image: url(asset_path("arrow-triangle-down.png"));
 	background-position: 96% center;
 	background-position: top 12px right 15px;
 	background-repeat: no-repeat;
@@ -62,7 +62,7 @@ label {
     margin-bottom: 0;
     font-size: 0.8em;
     }
-    
+
     @media print {
     	label {
     		color: $color-dark-gray
@@ -109,7 +109,7 @@ fieldset {
     border: none;
     }
 
-select:hover {	
+select:hover {
 	cursor: pointer;
 	}
 
@@ -117,7 +117,7 @@ select[disabled] {
     cursor: not-allowed;
     @include background-color($color-light-gray, 0.5);
     }
-    
+
 input[type="search"] {
     -webkit-appearance: none;
     -moz-appearance: none;

@@ -6,7 +6,7 @@
 
 .js .fade:before {
     content: "";
-    background-image: url('../images/fade.png');
+    background-image: url(asset_path('fade.png'));
     background-repeat: repeat-x;
     background-position: bottom;
     background-color: transparent;

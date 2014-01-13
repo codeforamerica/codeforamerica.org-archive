@@ -1,9 +1,9 @@
 .bricks {
     @extend .list-no-bullets;
     width: 100%;
-    margin: 0; 
+    margin: 0;
     }
-    
+
 .brick {
     padding: 0;
     margin: 0 0 1em 0;
@@ -38,16 +38,16 @@
 	}
 
 .brick:nth-child(1):before {
-	background-image: url('../images/brick-bg1.png');
+	background-image: url(asset_path('brick-bg1.png'));
 	}
 
 .brick:nth-child(2):before {
-	background-image: url('../images/brick-bg2.png');
+	background-image: url(asset_path('brick-bg2.png'));
 	background-color: $color-red;
 	}
 
 .brick:nth-child(3):before {
-	background-image: url('../images/brick-bg3.png');
+	background-image: url(asset_path('brick-bg3.png'));
 	background-color: $color-dark-blue;
 	}
 

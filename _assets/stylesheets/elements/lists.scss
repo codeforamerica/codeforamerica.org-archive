@@ -13,7 +13,7 @@ ol li {
     }
 
 ul li {
-    background-image: url("../images/bullet.gif");
+    background-image: url(asset_path("bullet.gif"));
     background-repeat: no-repeat;
     list-style-type: none;
     background-position: left 0.63em;

@@ -34,7 +34,7 @@
 		width: auto;
 		vertical-align: middle;
 		}
-		
+
 		@media print {
 			button,
 			input[type="button"],
@@ -45,7 +45,7 @@
 				color: $color-black;
 			}
 		}
-	
+
 	button:hover,
 	button:focus,
 	.button:hover,
@@ -57,13 +57,13 @@
 	    background-color: $color-light-blue;
 	    cursor: pointer;
 	    }
-	
+
 	button:active,
 	.button:active,
 	input[type="submit"]:active {
 	    background-color: $color-blue;
 	    }
-	
+
 	button::-moz-focus-inner,
 	.button::-moz-focus-inner,
 	input[type="button"]::-moz-focus-inner,
@@ -74,7 +74,7 @@
 
 
 /*  Button: Prominent --------------------------------------- */
-	
+
 	.button-prominent,
 	input.button-prominent,
 	.button-prominent:link,
@@ -85,14 +85,14 @@
 		@extend .button;
 	    @include background-color($color-red, 1);
 	    }
-	
+
 	input.button-prominent:hover,
 	input.button-prominent:focus,
 	.button-prominent:hover,
 	.button-prominent:focus {
 	    @include background-color($color-red, 0.8);
 	    }
-	
+
 	.button-prominent:active,
 	input.button-prominent:active {
 	    @include background-color($color-red, 1);
@@ -110,14 +110,14 @@
 		@extend .button;
 	    @include background-color($color-light-blue, 1);
 	    }
-	
+
 	input.button-neutral:hover,
 	input.button-neutral:focus,
 	.button-neutral:hover,
 	.button-neutral:focus {
 	    @include background-color($color-light-blue, 0.8);
 	    }
-	
+
 	.button-neutral:active,
 	input.button-neutral:active {
 	    @include background-color($color-light-blue, 1);
@@ -135,14 +135,14 @@
 		@extend .button;
 		@include background-color($color-teal, 1);
 		}
-	
+
 	input.button-alternative:hover,
 	input.button-alternative:focus,
 	.button-alternative:hover,
 	.button-alternative:focus {
 	    @include background-color($color-teal, 0.8);
 	    }
-	
+
 	.button-alternative:active,
 	input.button-alternative:active {
 	    @include background-color($color-teal, 1);
@@ -164,13 +164,13 @@
 	    padding-left: 0.25em;
 	    padding-right: 0.25em;
 	    }
-	
+
 	.button-unstyled:hover,
 	.button-unstyled:focus,
 	.button-unstyled:active {
 	    @include color($color-black, 1);
 	    }
-	
+
 	.button-unstyled:active,
 	input.button-unstyled:active {
 	    @include color($color-black, 0.6);
@@ -191,7 +191,7 @@
 	    text-shadow: none;
 	    border: 1px solid $color-light-gray;
 	    }
-	
+
 	input.button-subtle:hover,
 	input.button-subtle:focus,
 	input.button-subtle:active,
@@ -200,7 +200,7 @@
 	.button-subtle:active {
 	    @include background-color($color-light-gray, 0.6);
 	    }
-	
+
 	.button-subtle:active,
 	input.button-subtle:active {
 	    @include background-color($color-light-gray, 0.35);
@@ -236,8 +236,8 @@
 	    text-shadow: none;
 	    color: $color-medium-gray;
 	    }
-	
-	
+
+
 	.button-progress,
 	input.button-progress,
 	input.button-progress:hover,
@@ -251,11 +251,11 @@
 		@extend .button;
 		background-position: right 10px center;
 		padding-right: 50px;
-		background-image: url('../images/loading-circle-blue.gif');
+		background-image: url(asset_path('loading-circle-blue.gif'));
 		background-repeat: no-repeat;
 		cursor: not-allowed;
 		}
-	
+
 	.button-neutral.button-progress,
 	input.button-neutral.button-progress,
 	input.button-neutral.button-progress:hover,
@@ -266,11 +266,11 @@
 	.button-neutral.button-progress:hover,
 	.button-neutral.button-progress:focus,
 	.button-neutral.button-progress:active {
-		background-image: url('../images/loading-circle-blue.gif');
+		background-image: url(asset_path('loading-circle-blue.gif'));
 		background-repeat: no-repeat;
 		background-position: right 10px center;
 		}
-	
+
 	.button-alternative.button-progress,
 	input.button-alternative.button-progress,
 	input.button-alternative.button-progress:hover,
@@ -281,11 +281,11 @@
 	.button-alternative.button-progress:hover,
 	.button-alternative.button-progress:focus,
 	.button-alternative.button-progress:active {
-		background-image: url('../images/loading-circle-green.gif');
+		background-image: url(asset_path('loading-circle-green.gif'));
 		background-repeat: no-repeat;
 		background-position: right 10px center;
 		}
-	
+
 	.button-prominent.button-progress,
 	input.button-prominent.button-progress,
 	input.button-prominent.button-progress:hover,
@@ -296,11 +296,11 @@
 	.button-prominent.button-progress:hover,
 	.button-prominent.button-progress:focus,
 	.button-prominent.button-progress:active {
-		background-image: url('../images/loading-circle-red.gif');
+		background-image: url(asset_path('loading-circle-red.gif'));
 		background-repeat: no-repeat;
 		background-position: right 10px center;
 		}
-	
+
 	.button-subtle.button-progress,
 	input.button-subtle.button-progress,
 	input.button-subtle.button-progress:hover,
@@ -311,14 +311,14 @@
 	.button-subtle.button-progress:hover,
 	.button-subtle.button-progress:focus,
 	.button-subtle.button-progress:active {
-		background-image: url('../images/loading-circle.gif');
+		background-image: url(asset_path('loading-circle.gif'));
 		background-repeat: no-repeat;
 		background-position: right 10px center;
 		color: $color-gray;
 		border: 1px solid $color-light-gray;
 		}
-		
-	
+
+
 
 /*  Button: Sizes --------------------------------------- */
 

@@ -4,7 +4,7 @@
     margin-bottom: 1em;
     text-rendering: optimizeLegibility;
     }
-    
+
     @media print {
     	.nav-breadcrumbs {
     		display: none;
@@ -27,8 +27,8 @@
     margin-right: 0;
     text-transform: capitalize;
     }
-    
-.nav-breadcrumbs ul li:first-child {   
+
+.nav-breadcrumbs ul li:first-child {
     padding-left: 4px;
     }
 
@@ -41,12 +41,12 @@
 	}
 
 .nav-breadcrumbs li:first-child a {
-    background-image: url('../images/flag-blue.png');
+    background-image: url(asset_path('flag-blue.png'));
     display: inline-block;
     background-size: 43px;
     background-repeat: no-repeat;
     background-position: left center;
-    
+
     }
 
 .nav-breadcrumbs li:first-child:hover,

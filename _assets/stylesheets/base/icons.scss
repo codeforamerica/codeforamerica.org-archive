@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'ico-moon';
-	src: url('../fonts/ico-moon/ico-moon.eot');
-	src: url('../fonts/ico-moon/ico-moon.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/ico-moon/ico-moon.ttf') format('truetype'),
-		 url('../fonts/ico-moon/ico-moon.woff') format('woff'),
-		 url('../fonts/ico-moon/ico-moon.svg#ico-moon') format('svg');
+	src: url(asset_path('ico-moon/ico-moon.eot'));
+	src: url(asset_path('ico-moon/ico-moon.eot?#iefix')) format('embedded-opentype'),
+		 url(asset_path('ico-moon/ico-moon.ttf')) format('truetype'),
+		 url(asset_path('ico-moon/ico-moon.woff')) format('woff'),
+		 url(asset_path('ico-moon/ico-moon.svg#ico-moon')) format('svg');
 	font-weight: normal;
 	font-style: normal;
     }

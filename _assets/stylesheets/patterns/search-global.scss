@@ -19,8 +19,8 @@
 	border-radius: 0;
 	}
 
-.search-global-input:focus + .search-global-submit {	
-	background-image: url('../images/icon-search-black.png');
+.search-global-input:focus + .search-global-submit {
+	background-image: url(asset_path('icon-search-black.png'));
 	background-position: center center;
 	background-repeat: no-repeat;
 	}

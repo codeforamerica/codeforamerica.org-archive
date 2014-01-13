@@ -32,10 +32,10 @@
 	margin: 0;
 	text-align: center;
 	background-position: 7px -38px;
-	background-image: url('../images/sprite-20x20-social.png');
+	background-image: url(asset_path('sprite-20x20-social.png'));
 	text-indent: -9999px;
 	}
-	
+
 .list-social .social-twitter {
 	background-position: -174px -38px;
 	}

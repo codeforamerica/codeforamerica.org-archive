@@ -40,7 +40,7 @@ body {
     margin: 0;
     text-align: left;
     }
-    
+
 .js-offcanvas li a:link,
 .js-offcanvas li a:visited,
 .js-offcanvas li a:hover,
@@ -73,8 +73,8 @@ body {
     background-color: $color-black;
     }
 
-.js-offcanvas li.nav-has-children > a {	
-	background-image: url("../images/arrow-chevron-down-gray-dark.png");
+.js-offcanvas li.nav-has-children > a {
+	background-image: url(asset_path("arrow-chevron-down-gray-dark.png"));
 	background-position: 98% center;
 	background-position: right 16px top 13px;
 	background-repeat: no-repeat;
@@ -103,7 +103,7 @@ body {
 	margin: 0;
 	width: 100%;
 	}
-    
+
 .js-offcanvas .nav-tier2,
 .js-offcanvas .nav-global-primary .nav-tier2,
 .js-offcanvas .nav-global-secondary .nav-tier2 {
@@ -135,9 +135,9 @@ body {
 	color: $color-white;
 	}
 
-.js-offcanvas .nav-tier1 > a.state-active, 
+.js-offcanvas .nav-tier1 > a.state-active,
 .js-offcanvas .nav-tier1 > a.state-active:hover,
-.js-offcanvas .nav-tier1 > a.state-active:focus, 
+.js-offcanvas .nav-tier1 > a.state-active:focus,
 .js-offcanvas .nav-tier1 > a.state-active:active {
 	background-color: $color-black;
 	}
@@ -160,8 +160,8 @@ body {
 
 .js-offcanvas .search-global-input:focus + .search-global-submit,
 .js-offcanvas .search-global .search-global-submit:focus,
-.js-offcanvas .search-global .search-global-submit:active {	
-	background-image: url('../images/icon-search-white.png');
+.js-offcanvas .search-global .search-global-submit:active {
+	background-image: url(asset_path('icon-search-white.png'));
 	background-position: center center;
 	background-repeat: no-repeat;
 	}

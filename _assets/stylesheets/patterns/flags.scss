@@ -1,5 +1,5 @@
 .cfa-tag {
-    background-image: url('/images/tag-black.png');
+    // background-image: url(asset_path('tag-black.png'));
     text-indent: -99999px;
     display: block;
     background-size: 90px;
@@ -7,13 +7,13 @@
     }
 
 .cfa-tag-red {
-    background-image: url('/images/tag-red.png');
+    // background-image: url(asset_path('tag-red.png'));
     }
 
 .cfa-tag-blue {
-    background-image: url('/images/tag-blue.png');
+    // background-image: url(asset_path('tag-blue.png'));
     }
 
 .cfa-tag-gray {
-    background-image: url('/images/tag-gray.png');
+    // background-image: url(asset_path('tag-gray.png'));
     }

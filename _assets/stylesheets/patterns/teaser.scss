@@ -164,7 +164,7 @@
 
 .teaser-pdf .teaser-masthead {
 	background-color: $color-white;
-	background-image: url('../images/download-pdf.png');
+	background-image: url(asset_path('download-pdf.png'));
 	background-position: center center;
 	background-repeat: no-repeat;
 	}
@@ -175,7 +175,7 @@
 
 .teaser .teaser-action-play {
 	position: absolute;
-	background-image: url('../images/play-video.png');
+	background-image: url(asset_path('play-video.png'));
 	background-position: top left;
 	background-repeat: no-repeat;
 	width: 60px;

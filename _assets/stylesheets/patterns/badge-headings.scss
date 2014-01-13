@@ -6,7 +6,7 @@
     @include rem(padding-left, 65px);
     @include rem(min-height, 80px);
     @include rem(background-size, 50px);
-    background-image: url('../images/badge-rocket-blue.png');
+    background-image: url(asset_path('badge-rocket-blue.png'));
     background-position: left top;
     background-repeat: no-repeat;
     border-bottom: 1px solid;
@@ -15,40 +15,40 @@
     position: relative;
     }
     .svg .badge-heading {
-        background-image: url('../images/badge-rocket-blue.svg');
+        background-image: url(asset_path('badge-rocket-blue.svg'));
         }
 
 .badge-heading.badge-gray {
-    background-image: url('../images/badge-rocket-gray.png');
+    background-image: url(asset_path('badge-rocket-gray.png'));
     }
     .svg .badge-heading.badge-gray {
-        background-image: url('../images/badge-rocket-gray.svg');
+        background-image: url(asset_path('badge-rocket-gray.svg'));
         }
 
 .badge-heading.badge-orange {
-    background-image: url('../images/badge-rocket-orange.png');
+    background-image: url(asset_path('badge-rocket-orange.png'));
     }
     .svg .badge-heading.badge-orange {
-        background-image: url('../images/badge-rocket-orange.svg');
+        background-image: url(asset_path('badge-rocket-orange.svg'));
         }
 
 .badge-heading.badge-purple {
-    background-image: url('../images/badge-rocket-purple.png');
+    background-image: url(asset_path('badge-rocket-purple.png'));
     }
     .svg .badge-heading.badge-purple {
-        background-image: url('../images/badge-rocket-purple.svg');
+        background-image: url(asset_path('badge-rocket-purple.svg'));
         }
 
 .badge-heading.badge-red {
-    background-image: url('../images/badge-rocket-red.png');
+    background-image: url(asset_path('badge-rocket-red.png'));
     }
     .svg .badge-heading.badge-red {
-        background-image: url('../images/badge-rocket-red.svg');
+        background-image: url(asset_path('badge-rocket-red.svg'));
         }
 
 .badge-heading.badge-teal {
-    background-image: url('../images/badge-rocket-teal.png');
+    background-image: url(asset_path('badge-rocket-teal.png'));
     }
     .svg .badge-heading.badge-teal {
-        background-image: url('../images/badge-rocket-teal.svg');
+        background-image: url(asset_path('badge-rocket-teal.svg'));
         }

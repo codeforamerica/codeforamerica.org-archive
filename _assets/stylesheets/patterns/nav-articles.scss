@@ -2,8 +2,8 @@
 	@extend .nav-pages;
 	background-color: $color-light-gray;
 	}
-	
-	
+
+
 	@media print {
 	.nav-articles {
 		display: none
@@ -29,26 +29,26 @@
 	}
 
 .nav-articles li [rel="prev"] {
-    /*background-image: url('../images/arrow-breadcrumb.png');*/
+    /*background-image: url(asset_path('arrow-breadcrumb.png'));*/
     padding-left: 0;
     background-position: left center;
     background-repeat: no-repeat;
     }
- 
-.nav-articles li [rel="prev"]:before {  
+
+.nav-articles li [rel="prev"]:before {
 	content: "← ";
 	vertical-align: top;
-	}   
+	}
 
 
 .nav-articles li [rel="next"] {
-    /*background-image: url('../images/arrow-breadcrumb.png');*/
+    /*background-image: url(asset_path('arrow-breadcrumb.png'));*/
     padding-right: 0;
     background-position: right center;
     background-repeat: no-repeat;
     }
 
-.nav-articles li [rel="next"]:after {  
+.nav-articles li [rel="next"]:after {
     content: " →";
     vertical-align: top;
 	}
