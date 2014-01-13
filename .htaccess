@@ -1,3 +1,37 @@
+# 
+# Below are all URL redirects for Code for America.
+# 
+# For these to work, the document root must have the FollowSymLinks option
+# enabled and the FileInfo configuration override active.
+#   http://httpd.apache.org/docs/2.4/mod/core.html#options
+#   http://httpd.apache.org/docs/2.4/mod/directive-dict.html#Override
+# 
+# Over the years, we've moved a lot of content from place to place. In the
+# past, a Wordpress plugin was used to provide this functionality. With the
+# move to a static site, we've reimplemented most redirects as Apache
+# RedirectMatch directives, found below.
+# 
+# More on RedirectMatch:
+#   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch
+# 
+# Directives are processed in order, and the first match is used. If you have
+# new ones to add, put them at the end of this file to minimize conflicts and
+# problems.
+# 
+# More on processing order:
+#   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#order
+# 
+# Each directive was written and tested outside the document root, so they are
+# prefixed with the '^(.*)' pattern to work even in a local subdirectory.
+# 
+# The Apps section is handled using the Rewrite Engine, instead of Redirect.
+# Apps URLs on the previous site were implemented as query string patterns,
+# and only RewriteCond can find these.
+# 
+# More on Rewrite:
+#   http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html
+# 
+
 #
 # Apps.
 #
