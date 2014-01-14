@@ -522,6 +522,12 @@ figure {
   margin: 0;
 }
 
+figure > a:hover,
+figure > a:focus,
+figure > a:active {
+  border-bottom: none;
+}
+
 figcaption {
   font-size: 14px;
   font-size: 0.875rem;
