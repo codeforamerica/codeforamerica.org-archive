@@ -2285,6 +2285,8 @@ section,
   width: 100%;
   float: none;
   clear: both;
+  background-image: none;
+  padding: 0;
 }
 
 .layout-chimney .layout-minim-staccato {
