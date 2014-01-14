@@ -522,6 +522,15 @@ figure {
   margin: 0;
 }
 
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 5px 0;
+  margin: 0.3125rem 0;
+  line-height: 19px;
+  line-height: 1.1875rem;
+}
+
 .hidden {
   border: 0;
   clip: rect(0 0 0 0);

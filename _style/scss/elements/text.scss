@@ -121,6 +121,12 @@ figure {
 	margin: 0;
 	}
 
+figcaption {
+    @include rem(font-size, 14px);
+    @include rem(margin, 5px 0);
+    @include rem(line-height, 19px);
+    }
+
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);
