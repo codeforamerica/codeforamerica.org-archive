@@ -2104,21 +2104,29 @@ input.button-s,
   margin: 0 auto;
 }
 
-@media (min-width: 40em) {
-  max-width: 370px;
-  max-width: 23.125rem;
-}
 .chimney .profile {
   position: relative;
-  margin-left: 155px;
   min-height: 130px;
-  margin-top: 2em;
+  margin: 28px 0 24px 155px;
+  margin: 1.75rem 0 1.5rem 9.6875rem;
 }
 
+@media (max-width: 60em) and (min-width: 40em) {
+  .chimney .profile {
+    margin-left: 120px;
+    clear: both;
+  }
+}
 .chimney .profile .profile-name {
   margin-bottom: 0;
 }
 
+@media (max-width: 50em) {
+  .chimney .profile .profile-name {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
 .chimney .profile .profile-role {
   color: white;
   color: rgba(255, 255, 255, 0.7);
@@ -2126,14 +2134,28 @@ input.button-s,
 }
 
 .chimney .profile .profile-photo {
-  position: absolute;
-  top: 0;
-  left: -155px;
   width: 120px;
   border: 5px solid white;
   height: 120px;
+  position: absolute;
+  top: 0;
+  left: -155px;
 }
 
+@media (min-width: 40em) and (max-width: 60em) {
+  .chimney .profile .profile-photo {
+    left: -120px;
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 60em) {
+  .chimney .profile .profile-photo {
+    width: 120px;
+    height: 120px;
+    left: -155px;
+  }
+}
 .chimney .profile .profile-note {
   color: white;
   color: rgba(255, 255, 255, 0.7);
@@ -2154,28 +2176,6 @@ input.button-s,
   margin-left: 0;
 }
 
-@media (min-width: 40em) {
-  .chimney .button, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-alternative, .chimney .button-unstyled, .chimney .button-subtle, .chimney input[type="button"][disabled],
-  .chimney input[type="submit"][disabled],
-  .chimney button[disabled],
-  .chimney .button-disabled,
-  .chimney .button.button-disabled:hover,
-  .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active, .chimney .button-progress {
-    margin-left: 155px;
-  }
-}
-@media (min-width: 60em) {
-  .chimney .button, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-alternative, .chimney .button-unstyled, .chimney .button-subtle, .chimney input[type="button"][disabled],
-  .chimney input[type="submit"][disabled],
-  .chimney button[disabled],
-  .chimney .button-disabled,
-  .chimney .button.button-disabled:hover,
-  .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active, .chimney .button-progress {
-    margin-left: 0;
-  }
-}
 .chimney a:link,
 .chimney a:visited,
 .chimney a:hover,
