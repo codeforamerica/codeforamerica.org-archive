@@ -1,6 +1,5 @@
 blockquote {
     font-size: 1.2em;
-    margin: 0;
     }
 
 /* Layout ========================================== */
@@ -387,3 +386,13 @@ section,
 .nav-global-secondary li {
     display: table-cell;
     }
+
+.button-crotchet,
+.button-crotchet:link,
+.button-crotchet:visited,
+.button-crotchet:hover,
+.button-crotchet:focus,
+.button-crotchet:active {
+   width: 32.0%; 
+   padding: 0;
+}

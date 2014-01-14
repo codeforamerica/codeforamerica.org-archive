@@ -101,13 +101,14 @@ blockquote {
   background: rgba(122, 181, 214, 0.1);
   border: 1px solid;
   border-color: #e5e5e5;
+  margin: 0;
   padding: 0.5em 5%;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.3em;
 }
 
@@ -1345,8 +1346,6 @@ input.button-subtle.button-progress:active,
 .button-crotchet:hover,
 .button-crotchet:focus,
 .button-crotchet:active {
-  width: 32.0%;
-  padding: 0;
   margin-left: 0;
   margin-right: 0;
 }
