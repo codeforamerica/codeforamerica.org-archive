@@ -1652,6 +1652,14 @@ input.button-s,
   margin: 0.9375rem auto;
 }
 
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+}
+
 .isolate {
   margin-bottom: 1.5em;
   clear: both;
