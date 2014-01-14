@@ -4364,16 +4364,30 @@ section,
   border-color: #494c49;
   border-color: rgba(73, 76, 73, 0.3);
   position: relative;
-  margin: 48px 0 32px 0;
-  margin: 3rem 0 2rem 0;
-  padding: 0 0 32px 0;
-  padding: 0 0 2rem 0;
+  margin: 24px 0 30px 0;
+  margin: 1.5rem 0 1.875rem 0;
+  padding: 0 0 10px 0;
+  padding: 0 0 0.625rem 0;
 }
 
+@media (min-width: 60em) {
+  .wodge {
+    margin: 48px 0 32px 0;
+    margin: 3rem 0 2rem 0;
+    padding: 0 0 32px 0;
+    padding: 0 0 2rem 0;
+  }
+}
 .wodge:first-child {
-  margin-top: 0;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
+@media (min-width: 40em) {
+  .wodge:first-child {
+    margin-top: 0;
+  }
+}
 .wodge:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -4397,24 +4411,37 @@ section,
   margin-right: 0;
 }
 
-@media (min-width: 60em) {
-  .wodge-s .wodge-button {
-    float: right;
-    margin-left: 0;
-  }
+.wodge-s .wodge-button {
+  clear: both;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
 
-  .wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
-  .wodge-s .wodge-button input[type="submit"][disabled],
-  .wodge-s .wodge-button button[disabled],
-  .wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
-    min-width: 7em;
-    margin-left: 0.35em;
+.wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
+.wodge-s .wodge-button input[type="submit"][disabled],
+.wodge-s .wodge-button button[disabled],
+.wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
+  min-width: 7em;
+}
+
+@media (min-width: 40em) {
+  .wodge-s .wodge-button {
+    clear: none;
+    float: left;
+    margin-left: 150px;
+    margin-top: 0;
   }
 
   .wodge-s .wodge-header {
     float: left;
     margin-right: 0;
     width: 48%;
+  }
+}
+@media (min-width: 60em) {
+  .wodge-s .wodge-button {
+    float: right;
+    margin-left: 0;
   }
 }
 @media (min-width: 60em) {
