@@ -1,5 +1,10 @@
 .stats {
 	padding: 1em 4% 0;
+	width: 92%;
+	width: calc(100% - 8% - 2px); /* 100% - left and right padding - border */
+	max-width: 92%;
+	max-width: calc(100% - 8% - 2px); /* 100% - left and right padding - border */
+	margin-bottom: 16px; 
 	}
 
 .stat {
@@ -12,7 +17,16 @@
     flex-grow: 1;
     }
 
-@media (min-width: 50em) {
+@media (max-width: 40em) {
+    .stat {
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+        min-height: inherit;
+        }
+    }
+
+@media (min-width: 60em) {
 	.stats {
 		display: flex;
 		}
@@ -34,8 +48,9 @@
 
 .stat .stat-heading {
     @extend .text-quiet;
-    margin-bottom: 0.2em;
-    @include rem(font-size, 12px);
+    @include rem(font-size, 11px);
+    @include rem(line-height, 12px);
+    @include rem(margin, 8px 0 3px 0);
     }
 
 .stat .stat-figure {
