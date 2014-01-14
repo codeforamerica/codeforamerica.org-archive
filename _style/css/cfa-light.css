@@ -377,6 +377,10 @@ video {
   margin: 1rem 0;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
