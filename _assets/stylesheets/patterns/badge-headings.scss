@@ -1,0 +1,54 @@
+//  Badge Heading ----------------------------------------
+
+.badge-heading {
+    @include rem(margin, 16px 0);
+    @include rem(margin, 16px 0);
+    @include rem(padding-left, 65px);
+    @include rem(min-height, 80px);
+    @include rem(background-size, 50px);
+    background-image: url(asset_path('badge-rocket-blue.png'));
+    background-position: left top;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid;
+    border-color: $color-light-gray;
+    clear: both;
+    position: relative;
+    }
+    .svg .badge-heading {
+        background-image: url(asset_path('badge-rocket-blue.svg'));
+        }
+
+.badge-heading.badge-gray {
+    background-image: url(asset_path('badge-rocket-gray.png'));
+    }
+    .svg .badge-heading.badge-gray {
+        background-image: url(asset_path('badge-rocket-gray.svg'));
+        }
+
+.badge-heading.badge-orange {
+    background-image: url(asset_path('badge-rocket-orange.png'));
+    }
+    .svg .badge-heading.badge-orange {
+        background-image: url(asset_path('badge-rocket-orange.svg'));
+        }
+
+.badge-heading.badge-purple {
+    background-image: url(asset_path('badge-rocket-purple.png'));
+    }
+    .svg .badge-heading.badge-purple {
+        background-image: url(asset_path('badge-rocket-purple.svg'));
+        }
+
+.badge-heading.badge-red {
+    background-image: url(asset_path('badge-rocket-red.png'));
+    }
+    .svg .badge-heading.badge-red {
+        background-image: url(asset_path('badge-rocket-red.svg'));
+        }
+
+.badge-heading.badge-teal {
+    background-image: url(asset_path('badge-rocket-teal.png'));
+    }
+    .svg .badge-heading.badge-teal {
+        background-image: url(asset_path('badge-rocket-teal.svg'));
+        }

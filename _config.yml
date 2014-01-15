@@ -1,3 +1,14 @@
+gems: ['jekyll-assets']
 exclude: ['blog']
 include: ['.htaccess']
 keep_files: ['blog']
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  sources:
+    - _assets/stylesheets
+    - _assets/javascripts
+    - _assets/fonts
+    - _assets/favicons
+    - _assets/images
