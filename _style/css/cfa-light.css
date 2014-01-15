@@ -1750,11 +1750,12 @@ input.button-s,
   margin-bottom: 0.5em;
 }
 
-.list-form .form-field-group .form-field {
-  float: left;
-  width: 48%;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field {
+    float: left;
+    width: 48%;
+  }
 }
-
 .list-form .form-field-group .form-field select {
   width: 100%;
 }
@@ -1764,11 +1765,12 @@ input.button-s,
   width: calc(100% - 1.7em);
 }
 
-.list-form .form-field-group .form-field:last-child {
-  margin-right: 0;
-  float: right;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field:last-child {
+    margin-right: 0;
+    float: right;
+  }
 }
-
 .list-form .form-field-group input,
 .list-form .form-field-group select {
   width: auto;
@@ -2308,15 +2310,23 @@ section,
   padding: 0;
 }
 
-.layout-chimney .layout-minim-staccato {
+.layout-chimney .layout-minim,
+.layout-chimney-invert .layout-minim,
+.layout-chimney .layout-minim-staccato,
+.layout-chimney-invert .layout-minim-staccato {
   width: 92%;
   padding: 1em 4%;
   max-width: 30em;
   margin: 0 auto;
 }
 
-.layout-chimney .layout-minim-staccato.chimney {
+.layout-chimney .layout-minim.chimney,
+.layout-chimney-invert .layout-minim.chimney,
+.layout-chimney .layout-minim-staccato.chimney,
+.layout-chimney-invert .layout-minim-staccato.chimney {
   max-width: 92%;
+  float: left;
+  margin-bottom: 1em;
 }
 
 .layout-col {

@@ -1,6 +1,8 @@
-.chimney {
-    padding: 2.5em 0;
-    width: 100%;
+.chimney,
+.layout-chimney .chimney,
+.layout-chimney-invert .chimney {
+    padding: 2.5em 4%;
+    width: 92%;
     margin-bottom: 1.5em;
     }
 

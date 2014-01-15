@@ -58,9 +58,11 @@
     margin-bottom: 0.5em;
     }
 
-.list-form .form-field-group .form-field {
-    float: left;
-    width: 48%;
+    @media (min-width: 40em) {
+    .list-form .form-field-group .form-field {
+        float: left;
+        width: 48%;
+        }
     }
 
 .list-form .form-field-group .form-field select {
@@ -72,9 +74,11 @@
 	width: calc(100% - 1.7em);
 	}
 
-.list-form .form-field-group .form-field:last-child {
-    margin-right: 0;
-    float: right;
+    @media (min-width: 40em) {
+    .list-form .form-field-group .form-field:last-child {
+        margin-right: 0;
+        float: right;
+        }
     }
 
 .list-form .form-field-group input,
