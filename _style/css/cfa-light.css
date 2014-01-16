@@ -101,13 +101,14 @@ blockquote {
   background: rgba(122, 181, 214, 0.1);
   border: 1px solid;
   border-color: #e5e5e5;
+  margin: 0;
   padding: 0.5em 5%;
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.3em;
 }
 
@@ -127,6 +128,21 @@ blockquote p {
 
 figure {
   margin: 0;
+}
+
+figure > a:hover,
+figure > a:focus,
+figure > a:active {
+  border-bottom: none;
+}
+
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 5px 0 15px;
+  margin: 0.3125rem 0 0.9375rem;
+  line-height: 19px;
+  line-height: 1.1875rem;
 }
 
 .hidden {
@@ -163,11 +179,18 @@ h1,
   text-transform: uppercase;
   display: block;
   clear: left;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: -3px;
 }
 
+@media (min-width: 40em) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
 h1 sup,
 .h1 sup {
   font-size: 27px;
@@ -180,13 +203,20 @@ h2,
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 35px;
+  font-size: 2.1875rem;
   line-height: 44px;
   line-height: 2.75rem;
   text-transform: none;
 }
 
+@media (min-width: 40em) {
+  h2,
+  .h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
 @media print {
   h1,
   .h1,
@@ -209,6 +239,13 @@ h3,
   line-height: 1.15em;
 }
 
+@media (min-width: 40em) {
+  h3,
+  .h3 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
 @media print {
   h3,
   .h3 {
@@ -226,6 +263,13 @@ h4,
   letter-spacing: -0.5px;
 }
 
+@media (min-width: 40em) {
+  h4,
+  .h4 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 h5,
 .h5 {
   font-size: 17px;
@@ -346,6 +390,10 @@ audio {
 video {
   margin: 16px 0;
   margin: 1rem 0;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 table {
@@ -1317,8 +1365,6 @@ input.button-subtle.button-progress:active,
 .button-crotchet:hover,
 .button-crotchet:focus,
 .button-crotchet:active {
-  width: 32.0%;
-  padding: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1625,6 +1671,14 @@ input.button-s,
   margin: 0.9375rem auto;
 }
 
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+}
+
 .isolate {
   margin-bottom: 1.5em;
   clear: both;
@@ -1696,11 +1750,12 @@ input.button-s,
   margin-bottom: 0.5em;
 }
 
-.list-form .form-field-group .form-field {
-  float: left;
-  width: 48%;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field {
+    float: left;
+    width: 48%;
+  }
 }
-
 .list-form .form-field-group .form-field select {
   width: 100%;
 }
@@ -1710,11 +1765,12 @@ input.button-s,
   width: calc(100% - 1.7em);
 }
 
-.list-form .form-field-group .form-field:last-child {
-  margin-right: 0;
-  float: right;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field:last-child {
+    margin-right: 0;
+    float: right;
+  }
 }
-
 .list-form .form-field-group input,
 .list-form .form-field-group select {
   width: auto;
@@ -1851,9 +1907,19 @@ section,
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.slab-blue .text-whisper, .slab-blue .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-dark-blue {
   background: #004b6a;
   color: white;
+}
+
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media print {
@@ -1921,6 +1987,11 @@ section,
   color: white;
 }
 
+.slab-red .text-whisper, .slab-red .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-medium-red {
   background: #aa1c3a;
   color: white;
@@ -1947,6 +2018,11 @@ section,
   border: none;
 }
 
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-gray {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -1969,6 +2045,11 @@ section,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-dark-gray .text-whisper, .slab-dark-gray .heading-contrast {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2012,6 +2093,11 @@ section,
 .slab-medium-red .button-prominent:focus {
   background: black;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .spotlight {
@@ -2220,17 +2306,27 @@ section,
   width: 100%;
   float: none;
   clear: both;
+  background-image: none;
+  padding: 0;
 }
 
-.layout-chimney .layout-minim-staccato {
+.layout-chimney .layout-minim,
+.layout-chimney-invert .layout-minim,
+.layout-chimney .layout-minim-staccato,
+.layout-chimney-invert .layout-minim-staccato {
   width: 92%;
   padding: 1em 4%;
   max-width: 30em;
   margin: 0 auto;
 }
 
-.layout-chimney .layout-minim-staccato.chimney {
+.layout-chimney .layout-minim.chimney,
+.layout-chimney-invert .layout-minim.chimney,
+.layout-chimney .layout-minim-staccato.chimney,
+.layout-chimney-invert .layout-minim-staccato.chimney {
   max-width: 92%;
+  float: left;
+  margin-bottom: 1em;
 }
 
 .layout-col {

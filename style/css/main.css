@@ -493,13 +493,14 @@ blockquote {
   background: rgba(122, 181, 214, 0.1);
   border: 1px solid;
   border-color: #e5e5e5;
+  margin: 0;
   padding: 0.5em 5%;
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.3em;
 }
 
@@ -519,6 +520,21 @@ blockquote p {
 
 figure {
   margin: 0;
+}
+
+figure > a:hover,
+figure > a:focus,
+figure > a:active {
+  border-bottom: none;
+}
+
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 5px 0 15px;
+  margin: 0.3125rem 0 0.9375rem;
+  line-height: 19px;
+  line-height: 1.1875rem;
 }
 
 .hidden {
@@ -555,11 +571,18 @@ h1,
   text-transform: uppercase;
   display: block;
   clear: left;
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: -3px;
 }
 
+@media (min-width: 40em) {
+  h1,
+  .h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
 h1 sup,
 .h1 sup {
   font-size: 27px;
@@ -572,13 +595,20 @@ h2,
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 35px;
+  font-size: 2.1875rem;
   line-height: 44px;
   line-height: 2.75rem;
   text-transform: none;
 }
 
+@media (min-width: 40em) {
+  h2,
+  .h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
 @media print {
   h1,
   .h1,
@@ -592,8 +622,8 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -601,6 +631,13 @@ h3,
   line-height: 1.15em;
 }
 
+@media (min-width: 40em) {
+  h3,
+  .h3 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
 @media print {
   h3,
   .h3 {
@@ -610,14 +647,21 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
 }
 
+@media (min-width: 40em) {
+  h4,
+  .h4 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 h5,
 .h5 {
   font-size: 17px;
@@ -752,6 +796,11 @@ ul li {
   column-count: 2;
 }
 
+.list-crotchet {
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
 img {
   max-width: 100%;
 }
@@ -764,6 +813,10 @@ audio {
 video {
   margin: 16px 0;
   margin: 1rem 0;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 table {
@@ -1721,8 +1774,6 @@ input.button-subtle.button-progress:active,
 .button-crotchet:hover,
 .button-crotchet:focus,
 .button-crotchet:active {
-  width: 32.0%;
-  padding: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -2057,9 +2108,11 @@ input.button-s,
   text-align: right;
 }
 
-.chimney {
-  padding: 2.5em 0;
-  width: 100%;
+.chimney,
+.layout-chimney .chimney,
+.layout-chimney-invert .chimney {
+  padding: 2.5em 4%;
+  width: 92%;
   margin-bottom: 1.5em;
 }
 
@@ -2071,21 +2124,29 @@ input.button-s,
   margin: 0 auto;
 }
 
-@media (min-width: 40em) {
-  max-width: 370px;
-  max-width: 23.125rem;
-}
 .chimney .profile {
   position: relative;
-  margin-left: 155px;
   min-height: 130px;
-  margin-top: 2em;
+  margin: 28px 0 24px 155px;
+  margin: 1.75rem 0 1.5rem 9.6875rem;
 }
 
+@media (max-width: 60em) and (min-width: 40em) {
+  .chimney .profile {
+    margin-left: 120px;
+    clear: both;
+  }
+}
 .chimney .profile .profile-name {
   margin-bottom: 0;
 }
 
+@media (max-width: 50em) {
+  .chimney .profile .profile-name {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
 .chimney .profile .profile-role {
   color: white;
   color: rgba(255, 255, 255, 0.7);
@@ -2093,14 +2154,28 @@ input.button-s,
 }
 
 .chimney .profile .profile-photo {
-  position: absolute;
-  top: 0;
-  left: -155px;
   width: 120px;
   border: 5px solid white;
   height: 120px;
+  position: absolute;
+  top: 0;
+  left: -155px;
 }
 
+@media (min-width: 40em) and (max-width: 60em) {
+  .chimney .profile .profile-photo {
+    left: -120px;
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 60em) {
+  .chimney .profile .profile-photo {
+    width: 120px;
+    height: 120px;
+    left: -155px;
+  }
+}
 .chimney .profile .profile-note {
   color: white;
   color: rgba(255, 255, 255, 0.7);
@@ -2121,28 +2196,6 @@ input.button-s,
   margin-left: 0;
 }
 
-@media (min-width: 40em) {
-  .chimney .button, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-alternative, .chimney .button-unstyled, .chimney .button-subtle, .chimney input[type="button"][disabled],
-  .chimney input[type="submit"][disabled],
-  .chimney button[disabled],
-  .chimney .button-disabled,
-  .chimney .button.button-disabled:hover,
-  .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active, .chimney .button-progress {
-    margin-left: 155px;
-  }
-}
-@media (min-width: 60em) {
-  .chimney .button, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-alternative, .chimney .button-unstyled, .chimney .button-subtle, .chimney input[type="button"][disabled],
-  .chimney input[type="submit"][disabled],
-  .chimney button[disabled],
-  .chimney .button-disabled,
-  .chimney .button.button-disabled:hover,
-  .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active, .chimney .button-progress {
-    margin-left: 0;
-  }
-}
 .chimney a:link,
 .chimney a:visited,
 .chimney a:hover,
@@ -2200,14 +2253,12 @@ input.button-s,
 }
 
 .badge-heading {
-  margin: 16px 0;
-  margin: 1rem 0;
-  margin: 16px 0;
-  margin: 1rem 0;
+  margin: 16px 0 22px;
+  margin: 1rem 0 1.375rem;
   padding-left: 65px;
   padding-left: 4.0625rem;
-  min-height: 80px;
-  min-height: 5rem;
+  min-height: 65px;
+  min-height: 4.0625rem;
   background-size: 50px;
   background-size: 3.125rem;
   background-image: url("../images/badge-rocket-blue.png");
@@ -2219,6 +2270,12 @@ input.button-s,
   position: relative;
 }
 
+@media (min-width: 40em) {
+  .badge-heading {
+    min-height: 70px;
+    min-height: 4.375rem;
+  }
+}
 .svg .badge-heading {
   background-image: url("../images/badge-rocket-blue.svg");
 }
@@ -2501,6 +2558,14 @@ input.button-s,
   margin: 0.9375rem auto;
 }
 
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+}
+
 .isolate {
   margin-bottom: 1.5em;
   clear: both;
@@ -2573,11 +2638,12 @@ input.button-s,
   margin-bottom: 0.5em;
 }
 
-.list-form .form-field-group .form-field {
-  float: left;
-  width: 48%;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field {
+    float: left;
+    width: 48%;
+  }
 }
-
 .list-form .form-field-group .form-field select {
   width: 100%;
 }
@@ -2587,11 +2653,12 @@ input.button-s,
   width: calc(100% - 1.7em);
 }
 
-.list-form .form-field-group .form-field:last-child {
-  margin-right: 0;
-  float: right;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field:last-child {
+    margin-right: 0;
+    float: right;
+  }
 }
-
 .list-form .form-field-group input,
 .list-form .form-field-group select {
   width: auto;
@@ -3198,11 +3265,24 @@ nav ul li {
   font-size: 0.875rem;
 }
 
+@media (max-width: 52em) {
+  .nav-tabs {
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
+  }
+}
 .nav-tab {
   float: left;
   display: inline-block;
 }
 
+@media (max-width: 52em) {
+  .nav-tab {
+    float: none;
+    display: block;
+    clear: both;
+  }
+}
 .nav-tab-link {
   padding: 16px 20px 13px 20px;
   padding: 1rem 1.25rem 0.8125rem 1.25rem;
@@ -3212,6 +3292,12 @@ nav ul li {
   position: relative;
 }
 
+@media (max-width: 52em) {
+  .nav-tab-link {
+    margin: 0;
+    margin: 0;
+  }
+}
 .nav-tab-link:link,
 .nav-tab-link:visited,
 .nav-tab-link:hover,
@@ -3254,6 +3340,11 @@ nav ul li {
   margin-left: -16px;
 }
 
+@media (max-width: 52em) {
+  .state-active .nav-tab-link:after {
+    border: none;
+  }
+}
 .nav-tags li {
   display: inline-block;
 }
@@ -3325,8 +3416,8 @@ nav ul li {
 }
 
 @media (min-width: 60em) {
-  .post .post-content blockquote {
-    margin: 0 0 0 -16.7%;
+  .post-content blockquote {
+    margin-left: -43%;
   }
 }
 .post-author .profile-photo {
@@ -3399,6 +3490,12 @@ nav ul li {
   text-indent: -9999px;
 }
 
+.svg .list-social li {
+  background-image: url("../images/sprite-social.svg");
+  background-size: 350px;
+  background-position: 5px -23px;
+}
+
 .list-social .social-twitter {
   background-position: -174px -38px;
 }
@@ -3407,6 +3504,16 @@ nav ul li {
 .list-social .social-twitter:focus,
 .list-social .social-twitter:active {
   background-position: -174px 2px;
+}
+
+.svg .list-social .social-twitter {
+  background-position: -206px -23px;
+}
+
+.svg .list-social .social-twitter:hover,
+.svg .list-social .social-twitter:focus,
+.svg .list-social .social-twitter:active {
+  background-position: -206px 2px;
 }
 
 .list-social .social-linkedin {
@@ -3419,6 +3526,16 @@ nav ul li {
   background-position: -204px 2px;
 }
 
+.svg .list-social .social-linkedin {
+  background-position: -244px -23px;
+}
+
+.svg .list-social .social-linkedin:hover,
+.svg .list-social .social-linkedin:focus,
+.svg .list-social .social-linkedin:active {
+  background-position: -244px 2px;
+}
+
 .list-social .social-github {
   background-position: -234px -38px;
 }
@@ -3427,6 +3544,16 @@ nav ul li {
 .list-social .social-github:focus,
 .list-social .social-github:active {
   background-position: -234px 2px;
+}
+
+.svg .list-social .social-github {
+  background-position: -134px -23px;
+}
+
+.svg .list-social .social-github:hover,
+.svg .list-social .social-github:focus,
+.svg .list-social .social-github:active {
+  background-position: -134px 2px;
 }
 
 .list-social .social-flickr {
@@ -3439,6 +3566,16 @@ nav ul li {
   background-position: -54px 2px;
 }
 
+.svg .list-social .social-flickr {
+  background-position: -65px -23px;
+}
+
+.svg .list-social .social-flickr:hover,
+.svg .list-social .social-flickr:focus,
+.svg .list-social .social-flickr:active {
+  background-position: -65px 2px;
+}
+
 .list-social .social-website {
   background-position: 7px -38px;
 }
@@ -3449,6 +3586,16 @@ nav ul li {
   background-position: 7px 2px;
 }
 
+.svg .list-social .social-website {
+  background-position: 5px -23px;
+}
+
+.svg .list-social .social-website:hover,
+.svg .list-social .social-website:focus,
+.svg .list-social .social-website:active {
+  background-position: 5px 2px;
+}
+
 .list-social .social-facebook {
   background-position: -264px -38px;
 }
@@ -3457,6 +3604,16 @@ nav ul li {
 .list-social .social-facebook:focus,
 .list-social .social-facebook:active {
   background-position: -264px 2px;
+}
+
+.svg .list-social .social-facebook {
+  background-position: -321px -23px;
+}
+
+.svg .list-social .social-facebook:hover,
+.svg .list-social .social-facebook:focus,
+.svg .list-social .social-facebook:active {
+  background-position: -321px 2px;
 }
 
 .list-social a {
@@ -3703,9 +3860,19 @@ section,
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .brick-heading, .slab-blue .chimney .profile .profile-role, .chimney .profile .slab-blue .profile-role, .slab-blue .chimney .profile .profile-note, .chimney .profile .slab-blue .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-dark-blue {
   background: #004b6a;
   color: white;
+}
+
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .brick-heading, .slab-dark-blue .chimney .profile .profile-role, .chimney .profile .slab-dark-blue .profile-role, .slab-dark-blue .chimney .profile .profile-note, .chimney .profile .slab-dark-blue .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media print {
@@ -3742,6 +3909,72 @@ section,
   color: white;
 }
 
+.slab-red .list-icons a:link,
+.slab-red .list-icons a:visited,
+.slab-red .list-icons a:hover,
+.slab-red .list-icons a:focus,
+.slab-red .list-icons a:active {
+  color: white;
+}
+
+.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link, .slab-red a.brick-heading:link, .slab-red .chimney .profile a.profile-role:link, .chimney .profile .slab-red a.profile-role:link, .slab-red .chimney .profile a.profile-note:link, .chimney .profile .slab-red a.profile-note:link,
+.slab-red a.text-whisper:visited,
+.slab-red a.heading-contrast:visited,
+.slab-red a.brick-heading:visited,
+.slab-red .chimney .profile a.profile-role:visited,
+.chimney .profile .slab-red a.profile-role:visited,
+.slab-red .chimney .profile a.profile-note:visited,
+.chimney .profile .slab-red a.profile-note:visited,
+.slab-red a.text-whisper:hover,
+.slab-red a.heading-contrast:hover,
+.slab-red a.brick-heading:hover,
+.slab-red .chimney .profile a.profile-role:hover,
+.chimney .profile .slab-red a.profile-role:hover,
+.slab-red .chimney .profile a.profile-note:hover,
+.chimney .profile .slab-red a.profile-note:hover,
+.slab-red a.text-whisper:focus,
+.slab-red a.heading-contrast:focus,
+.slab-red a.brick-heading:focus,
+.slab-red .chimney .profile a.profile-role:focus,
+.chimney .profile .slab-red a.profile-role:focus,
+.slab-red .chimney .profile a.profile-note:focus,
+.chimney .profile .slab-red a.profile-note:focus,
+.slab-red a.text-whisper:active,
+.slab-red a.heading-contrast:active,
+.slab-red a.brick-heading:active,
+.slab-red .chimney .profile a.profile-role:active,
+.chimney .profile .slab-red a.profile-role:active,
+.slab-red .chimney .profile a.profile-note:active,
+.chimney .profile .slab-red a.profile-note:active {
+  border-bottom: none;
+  font-weight: 500;
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover, .slab-red a.brick-heading:hover, .slab-red .chimney .profile a.profile-role:hover, .chimney .profile .slab-red a.profile-role:hover, .slab-red .chimney .profile a.profile-note:hover, .chimney .profile .slab-red a.profile-note:hover,
+.slab-red a.text-whisper:focus,
+.slab-red a.heading-contrast:focus,
+.slab-red a.brick-heading:focus,
+.slab-red .chimney .profile a.profile-role:focus,
+.chimney .profile .slab-red a.profile-role:focus,
+.slab-red .chimney .profile a.profile-note:focus,
+.chimney .profile .slab-red a.profile-note:focus,
+.slab-red a.text-whisper:active,
+.slab-red a.heading-contrast:active,
+.slab-red a.brick-heading:active,
+.slab-red .chimney .profile a.profile-role:active,
+.chimney .profile .slab-red a.profile-role:active,
+.slab-red .chimney .profile a.profile-note:active,
+.chimney .profile .slab-red a.profile-note:active {
+  color: white;
+}
+
+.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .brick-heading, .slab-red .chimney .profile .profile-role, .chimney .profile .slab-red .profile-role, .slab-red .chimney .profile .profile-note, .chimney .profile .slab-red .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-medium-red {
   background: #aa1c3a;
   color: white;
@@ -3768,6 +4001,11 @@ section,
   border: none;
 }
 
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .brick-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .slab-gray {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -3790,6 +4028,11 @@ section,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-dark-gray .text-whisper, .slab-dark-gray .heading-contrast, .slab-dark-gray .brick-heading, .slab-dark-gray .chimney .profile .profile-role, .chimney .profile .slab-dark-gray .profile-role, .slab-dark-gray .chimney .profile .profile-note, .chimney .profile .slab-dark-gray .profile-note {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -3835,6 +4078,11 @@ section,
   background: rgba(0, 0, 0, 0.4);
 }
 
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .brick-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .spotlight {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -3850,6 +4098,13 @@ section,
 
 .stats {
   padding: 1em 4% 0;
+  width: 92%;
+  width: calc(100% - 8% - 2px);
+  /* 100% - left and right padding - border */
+  max-width: 92%;
+  max-width: calc(100% - 8% - 2px);
+  /* 100% - left and right padding - border */
+  margin-bottom: 16px;
 }
 
 .stat {
@@ -3862,7 +4117,15 @@ section,
   flex-grow: 1;
 }
 
-@media (min-width: 50em) {
+@media (max-width: 40em) {
+  .stat {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+    min-height: inherit;
+  }
+}
+@media (min-width: 60em) {
   .stats {
     display: flex;
   }
@@ -3882,16 +4145,22 @@ section,
 }
 
 .stat .stat-heading {
-  margin-bottom: 0.2em;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 12px;
+  line-height: 0.75rem;
+  margin: 8px 0 3px 0;
+  margin: 0.5rem 0 0.1875rem 0;
 }
 
 .stat .stat-figure {
   font-size: 30px;
   font-size: 1.875rem;
   color: black;
-  font-family: georgia;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.5px;
   font-weight: bold;
   display: block;
   margin: 0;
@@ -4123,13 +4392,31 @@ section,
   border-bottom: 1px solid;
   border-color: #494c49;
   border-color: rgba(73, 76, 73, 0.3);
-  padding: 0 0 2em 0;
+  position: relative;
+  margin: 24px 0 30px 0;
+  margin: 1.5rem 0 1.875rem 0;
+  padding: 0 0 10px 0;
+  padding: 0 0 0.625rem 0;
 }
 
+@media (min-width: 60em) {
+  .wodge {
+    margin: 48px 0 32px 0;
+    margin: 3rem 0 2rem 0;
+    padding: 0 0 32px 0;
+    padding: 0 0 2rem 0;
+  }
+}
 .wodge:first-child {
-  margin-top: 0;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
+@media (min-width: 40em) {
+  .wodge:first-child {
+    margin-top: 0;
+  }
+}
 .wodge:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -4151,24 +4438,37 @@ section,
   margin-right: 0;
 }
 
-@media (min-width: 60em) {
-  .wodge-s .wodge-button {
-    float: right;
-    margin-left: 0;
-  }
+.wodge-s .wodge-button {
+  clear: both;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
 
-  .wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
-  .wodge-s .wodge-button input[type="submit"][disabled],
-  .wodge-s .wodge-button button[disabled],
-  .wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
-    min-width: 7em;
-    margin-left: 0.35em;
+.wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
+.wodge-s .wodge-button input[type="submit"][disabled],
+.wodge-s .wodge-button button[disabled],
+.wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
+  min-width: 7em;
+}
+
+@media (min-width: 40em) {
+  .wodge-s .wodge-button {
+    clear: none;
+    float: left;
+    margin-left: 150px;
+    margin-top: 0;
   }
 
   .wodge-s .wodge-header {
     float: left;
     margin-right: 0;
     width: 48%;
+  }
+}
+@media (min-width: 60em) {
+  .wodge-s .wodge-button {
+    float: right;
+    margin-left: 0;
   }
 }
 @media (min-width: 60em) {
@@ -4399,17 +4699,27 @@ section,
   width: 100%;
   float: none;
   clear: both;
+  background-image: none;
+  padding: 0;
 }
 
-.layout-chimney .layout-minim-staccato {
+.layout-chimney .layout-minim,
+.layout-chimney-invert .layout-minim,
+.layout-chimney .layout-minim-staccato,
+.layout-chimney-invert .layout-minim-staccato {
   width: 92%;
   padding: 1em 4%;
   max-width: 30em;
   margin: 0 auto;
 }
 
-.layout-chimney .layout-minim-staccato.chimney {
+.layout-chimney .layout-minim.chimney,
+.layout-chimney-invert .layout-minim.chimney,
+.layout-chimney .layout-minim-staccato.chimney,
+.layout-chimney-invert .layout-minim-staccato.chimney {
   max-width: 92%;
+  float: left;
+  margin-bottom: 1em;
 }
 
 .layout-col {

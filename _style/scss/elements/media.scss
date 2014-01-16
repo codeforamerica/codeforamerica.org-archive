@@ -9,3 +9,7 @@ audio {
 video {
 	@include rem(margin, 16px 0);
 	}
+
+iframe {
+    max-width: 100%;
+    }
