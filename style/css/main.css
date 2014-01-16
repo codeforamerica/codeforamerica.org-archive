@@ -522,6 +522,21 @@ figure {
   margin: 0;
 }
 
+figure > a:hover,
+figure > a:focus,
+figure > a:active {
+  border-bottom: none;
+}
+
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 5px 0 15px;
+  margin: 0.3125rem 0 0.9375rem;
+  line-height: 19px;
+  line-height: 1.1875rem;
+}
+
 .hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -798,6 +813,10 @@ audio {
 video {
   margin: 16px 0;
   margin: 1rem 0;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 table {
@@ -2089,9 +2108,11 @@ input.button-s,
   text-align: right;
 }
 
-.chimney {
-  padding: 2.5em 0;
-  width: 100%;
+.chimney,
+.layout-chimney .chimney,
+.layout-chimney-invert .chimney {
+  padding: 2.5em 4%;
+  width: 92%;
   margin-bottom: 1.5em;
 }
 
@@ -2232,8 +2253,8 @@ input.button-s,
 }
 
 .badge-heading {
-  margin: 16px 0;
-  margin: 1rem 0;
+  margin: 16px 0 22px;
+  margin: 1rem 0 1.375rem;
   padding-left: 65px;
   padding-left: 4.0625rem;
   min-height: 65px;
@@ -2251,8 +2272,8 @@ input.button-s,
 
 @media (min-width: 40em) {
   .badge-heading {
-    min-height: 80px;
-    min-height: 5rem;
+    min-height: 70px;
+    min-height: 4.375rem;
   }
 }
 .svg .badge-heading {
@@ -2617,11 +2638,12 @@ input.button-s,
   margin-bottom: 0.5em;
 }
 
-.list-form .form-field-group .form-field {
-  float: left;
-  width: 48%;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field {
+    float: left;
+    width: 48%;
+  }
 }
-
 .list-form .form-field-group .form-field select {
   width: 100%;
 }
@@ -2631,11 +2653,12 @@ input.button-s,
   width: calc(100% - 1.7em);
 }
 
-.list-form .form-field-group .form-field:last-child {
-  margin-right: 0;
-  float: right;
+@media (min-width: 40em) {
+  .list-form .form-field-group .form-field:last-child {
+    margin-right: 0;
+    float: right;
+  }
 }
-
 .list-form .form-field-group input,
 .list-form .form-field-group select {
   width: auto;
@@ -4075,6 +4098,13 @@ section,
 
 .stats {
   padding: 1em 4% 0;
+  width: 92%;
+  width: calc(100% - 8% - 2px);
+  /* 100% - left and right padding - border */
+  max-width: 92%;
+  max-width: calc(100% - 8% - 2px);
+  /* 100% - left and right padding - border */
+  margin-bottom: 16px;
 }
 
 .stat {
@@ -4087,7 +4117,15 @@ section,
   flex-grow: 1;
 }
 
-@media (min-width: 50em) {
+@media (max-width: 40em) {
+  .stat {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+    min-height: inherit;
+  }
+}
+@media (min-width: 60em) {
   .stats {
     display: flex;
   }
@@ -4107,9 +4145,12 @@ section,
 }
 
 .stat .stat-heading {
-  margin-bottom: 0.2em;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 12px;
+  line-height: 0.75rem;
+  margin: 8px 0 3px 0;
+  margin: 0.5rem 0 0.1875rem 0;
 }
 
 .stat .stat-figure {
@@ -4662,15 +4703,23 @@ section,
   padding: 0;
 }
 
-.layout-chimney .layout-minim-staccato {
+.layout-chimney .layout-minim,
+.layout-chimney-invert .layout-minim,
+.layout-chimney .layout-minim-staccato,
+.layout-chimney-invert .layout-minim-staccato {
   width: 92%;
   padding: 1em 4%;
   max-width: 30em;
   margin: 0 auto;
 }
 
-.layout-chimney .layout-minim-staccato.chimney {
+.layout-chimney .layout-minim.chimney,
+.layout-chimney-invert .layout-minim.chimney,
+.layout-chimney .layout-minim-staccato.chimney,
+.layout-chimney-invert .layout-minim-staccato.chimney {
   max-width: 92%;
+  float: left;
+  margin-bottom: 1em;
 }
 
 .layout-col {

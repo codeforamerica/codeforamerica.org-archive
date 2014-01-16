@@ -79,6 +79,11 @@ blockquote {
         float: right;
         }
     
+    .layout-minim + .layout-minim + .layout-minim {
+        clear: both;
+        float: left;
+        }
+    
     /*.layout-minim:nth-child(3n+2) {
         clear: both;
         }*/
@@ -168,7 +173,8 @@ blockquote {
     margin-top: -4em;
     }
 
-.layout-chimney {
+.layout-chimney,
+.layout-chimney-invert {
 	@extend .layout-semibreve;
 	margin: 0 auto;
 	padding: 0;
@@ -176,11 +182,13 @@ blockquote {
 	position: relative;
 	}
 
-.layout-chimney p:first-child {
+.layout-chimney p:first-child,
+.layout-chimney-invert p:first-child {
     margin-top: 0;
     }
 
-.layout-chimney .chimney {
+.layout-chimney .chimney,
+.layout-chimney-invert .chimney {
     position: absolute;
     width: 33%;
     padding-left: 4%;
@@ -189,32 +197,23 @@ blockquote {
     }
 
     @media (min-width: 63em) {
-        .layout-chimney .chimney {
+        .layout-chimney .chimney,
+        .layout-chimney-invert .chimney {
         margin: -1em 0 0 0;
         }
     }
 
-.layout-chimney-invert {
-    width: 42%;
-    position: relative;
-    padding-right: 58%;
-    }
-
-.layout-chimney-invert p:first-child {
-    margin-top: 0;
-    }
-
 .layout-chimney-invert .chimney {
-    padding: 2em 4%;
-    margin: 1em 0 2em -4%;
-    position: absolute;
     right: 0;
-    top: 0;
-    width: 42%;
     }
-    
+
+.layout-chimney .layout-minim,
+.layout-chimney-invert .layout-minim {
+	width: 42%;
+	}
 	
-.layout-chimney .layout-minim-staccato {
+.layout-chimney .layout-minim-staccato,
+.layout-chimney-invert .layout-minim-staccato {
 	width: 38%;
 	}
 		

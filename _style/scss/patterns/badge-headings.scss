@@ -1,7 +1,7 @@
 //  Badge Heading ----------------------------------------
 
 .badge-heading {
-    @include rem(margin, 16px 0);
+    @include rem(margin, 16px 0 22px);
     @include rem(padding-left, 65px);
     @include rem(min-height, 65px);
     @include rem(background-size, 50px);
@@ -15,7 +15,7 @@
     }
     @media (min-width: 40em) {
         .badge-heading {
-            @include rem(min-height, 80px);
+            @include rem(min-height, 70px);
             }
         }
     .svg .badge-heading {
