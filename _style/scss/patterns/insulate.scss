@@ -1,3 +1,9 @@
 .insulate {
     @include rem(margin, 15px auto);
 	}
+
+.insulate-sides,
+.button-prominent.insulate-sides {
+    @include rem(margin-left, 15px);
+    @include rem(margin-right, 15px);
+	}

@@ -1,6 +1,5 @@
 blockquote {
     font-size: 1.2em;
-    margin: 0;
     }
 
 /* Layout ========================================== */
@@ -33,8 +32,6 @@ blockquote {
         float: left;
         clear: none;
         margin: 0;
-        background-image: none;
-        padding: 0;
         }
     
     .layout-crotchet + .layout-crotchet {
@@ -171,33 +168,6 @@ blockquote {
     margin-top: -4em;
     }
 
-.layout-chimney-invert .chimney {
-    padding: 2em 4%;
-    margin: 1em 0 2em -4%;
-    }
-
-    
-    .layout-chimney-invert {
-    width: 42%;
-    position: relative;
-    padding-right: 58%;
-    }
-    
-    .layout-chimney-invert p:first-child {
-    margin-top: 0;
-    }
-    
-    .layout-chimney-invert .chimney {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 42%;
-    margin: -4em 0 0 0;
-    }
-    
-
-
-
 .layout-chimney {
 	@extend .layout-semibreve;
 	margin: 0 auto;
@@ -206,32 +176,52 @@ blockquote {
 	position: relative;
 	}
 
-
-
-
-	
-	.layout-chimney .layout-minim-staccato {
-		width: 45%;
-		padding-left: 0;
-		padding-right: 0;
-		}
-		
-    .layout-chimney p:first-child {
+.layout-chimney p:first-child {
     margin-top: 0;
     }
-    .layout-chimney .chimney {
+
+.layout-chimney .chimney {
     position: absolute;
     width: 33%;
     padding-left: 4%;
     padding-right: 4%;
-    margin: -1em 0 0 4%;
+    margin: -1em 0 1em 4%;
     }
 
-@media (min-width: 63em) {
-    .layout-chimney .chimney {
-    margin: -1em 0 0 0;
+    @media (min-width: 63em) {
+        .layout-chimney .chimney {
+        margin: -1em 0 0 0;
+        }
     }
-}
+
+.layout-chimney-invert {
+    width: 42%;
+    position: relative;
+    padding-right: 58%;
+    }
+
+.layout-chimney-invert p:first-child {
+    margin-top: 0;
+    }
+
+.layout-chimney-invert .chimney {
+    padding: 2em 4%;
+    margin: 1em 0 2em -4%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42%;
+    }
+    
+	
+.layout-chimney .layout-minim-staccato {
+	width: 38%;
+	}
+		
+
+
+
+
 
 
 
@@ -364,10 +354,6 @@ section,
         margin-right: 6em;
         }
     }
-    
-.wodge-s .wodge-button {
-    margin-left: 0;
-    }
 
 .wodge-l .wodge-header,
 .wodge-l .wodge-text,
@@ -400,3 +386,13 @@ section,
 .nav-global-secondary li {
     display: table-cell;
     }
+
+.button-crotchet,
+.button-crotchet:link,
+.button-crotchet:visited,
+.button-crotchet:hover,
+.button-crotchet:focus,
+.button-crotchet:active {
+   width: 32.0%; 
+   padding: 0;
+}

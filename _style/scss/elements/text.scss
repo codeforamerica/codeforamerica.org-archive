@@ -98,9 +98,10 @@ blockquote {
     @include background-color($color-light-blue, 0.1);
     border: 1px solid;
     @include border-color($color-light-gray, 1);
+    margin: 0;
     padding: 0.5em 5%;
     @include font-serif-bold;
-    @include rem(font-size, 18px);
+    @include rem(font-size, 17px);
     line-height: 1.3em;
     }
     

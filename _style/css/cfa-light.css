@@ -101,13 +101,14 @@ blockquote {
   background: rgba(122, 181, 214, 0.1);
   border: 1px solid;
   border-color: #e5e5e5;
+  margin: 0;
   padding: 0.5em 5%;
   font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.3em;
 }
 
@@ -1345,8 +1346,6 @@ input.button-subtle.button-progress:active,
 .button-crotchet:hover,
 .button-crotchet:focus,
 .button-crotchet:active {
-  width: 32.0%;
-  padding: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1651,6 +1650,14 @@ input.button-s,
 .insulate {
   margin: 15px auto;
   margin: 0.9375rem auto;
+}
+
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .isolate {
@@ -2278,6 +2285,8 @@ section,
   width: 100%;
   float: none;
   clear: both;
+  background-image: none;
+  padding: 0;
 }
 
 .layout-chimney .layout-minim-staccato {

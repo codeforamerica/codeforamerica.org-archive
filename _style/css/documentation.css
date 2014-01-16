@@ -493,13 +493,14 @@ blockquote {
   background: rgba(122, 181, 214, 0.1);
   border: 1px solid;
   border-color: #e5e5e5;
+  margin: 0;
   padding: 0.5em 5%;
   font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.3em;
 }
 
@@ -1754,8 +1755,6 @@ input.button-subtle.button-progress:active,
 .button-crotchet:hover,
 .button-crotchet:focus,
 .button-crotchet:active {
-  width: 32.0%;
-  padding: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -2104,21 +2103,29 @@ input.button-s,
   margin: 0 auto;
 }
 
-@media (min-width: 40em) {
-  max-width: 370px;
-  max-width: 23.125rem;
-}
 .chimney .profile {
   position: relative;
-  margin-left: 155px;
   min-height: 130px;
-  margin-top: 2em;
+  margin: 28px 0 24px 155px;
+  margin: 1.75rem 0 1.5rem 9.6875rem;
 }
 
+@media (max-width: 60em) and (min-width: 40em) {
+  .chimney .profile {
+    margin-left: 120px;
+    clear: both;
+  }
+}
 .chimney .profile .profile-name {
   margin-bottom: 0;
 }
 
+@media (max-width: 50em) {
+  .chimney .profile .profile-name {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
 .chimney .profile .profile-role {
   color: white;
   color: rgba(255, 255, 255, 0.7);
@@ -2126,14 +2133,28 @@ input.button-s,
 }
 
 .chimney .profile .profile-photo {
-  position: absolute;
-  top: 0;
-  left: -155px;
   width: 120px;
   border: 5px solid white;
   height: 120px;
+  position: absolute;
+  top: 0;
+  left: -155px;
 }
 
+@media (min-width: 40em) and (max-width: 60em) {
+  .chimney .profile .profile-photo {
+    left: -120px;
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 60em) {
+  .chimney .profile .profile-photo {
+    width: 120px;
+    height: 120px;
+    left: -155px;
+  }
+}
 .chimney .profile .profile-note {
   color: white;
   color: rgba(255, 255, 255, 0.7);
@@ -2154,28 +2175,6 @@ input.button-s,
   margin-left: 0;
 }
 
-@media (min-width: 40em) {
-  .chimney .button, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-alternative, .chimney .button-unstyled, .chimney .button-subtle, .chimney input[type="button"][disabled],
-  .chimney input[type="submit"][disabled],
-  .chimney button[disabled],
-  .chimney .button-disabled,
-  .chimney .button.button-disabled:hover,
-  .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active, .chimney .button-progress {
-    margin-left: 155px;
-  }
-}
-@media (min-width: 60em) {
-  .chimney .button, .chimney .button-prominent, .chimney .button-neutral, .chimney .button-alternative, .chimney .button-unstyled, .chimney .button-subtle, .chimney input[type="button"][disabled],
-  .chimney input[type="submit"][disabled],
-  .chimney button[disabled],
-  .chimney .button-disabled,
-  .chimney .button.button-disabled:hover,
-  .chimney .button.button-disabled:focus,
-  .chimney .button.button-disabled:active, .chimney .button-progress {
-    margin-left: 0;
-  }
-}
 .chimney a:link,
 .chimney a:visited,
 .chimney a:hover,
@@ -2536,6 +2535,14 @@ input.button-s,
 .insulate {
   margin: 15px auto;
   margin: 0.9375rem auto;
+}
+
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .isolate {
@@ -3386,8 +3393,8 @@ nav ul li {
 }
 
 @media (min-width: 60em) {
-  .post .post-content blockquote {
-    margin: 0 0 0 -16.7%;
+  .post-content blockquote {
+    margin-left: -43%;
   }
 }
 .post-author .profile-photo {
@@ -4343,16 +4350,30 @@ section,
   border-color: #494c49;
   border-color: rgba(73, 76, 73, 0.3);
   position: relative;
-  margin: 48px 0 32px 0;
-  margin: 3rem 0 2rem 0;
-  padding: 0 0 32px 0;
-  padding: 0 0 2rem 0;
+  margin: 24px 0 30px 0;
+  margin: 1.5rem 0 1.875rem 0;
+  padding: 0 0 10px 0;
+  padding: 0 0 0.625rem 0;
 }
 
+@media (min-width: 60em) {
+  .wodge {
+    margin: 48px 0 32px 0;
+    margin: 3rem 0 2rem 0;
+    padding: 0 0 32px 0;
+    padding: 0 0 2rem 0;
+  }
+}
 .wodge:first-child {
-  margin-top: 0;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
+@media (min-width: 40em) {
+  .wodge:first-child {
+    margin-top: 0;
+  }
+}
 .wodge:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -4376,24 +4397,37 @@ section,
   margin-right: 0;
 }
 
-@media (min-width: 60em) {
-  .wodge-s .wodge-button {
-    float: right;
-    margin-left: 0;
-  }
+.wodge-s .wodge-button {
+  clear: both;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
 
-  .wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
-  .wodge-s .wodge-button input[type="submit"][disabled],
-  .wodge-s .wodge-button button[disabled],
-  .wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
-    min-width: 7em;
-    margin-left: 0.35em;
+.wodge-s .wodge-button .button, .wodge-s .wodge-button .button-prominent, .wodge-s .wodge-button .button-neutral, .wodge-s .wodge-button .button-alternative, .wodge-s .wodge-button .button-unstyled, .wodge-s .wodge-button .button-subtle, .wodge-s .wodge-button input[type="button"][disabled],
+.wodge-s .wodge-button input[type="submit"][disabled],
+.wodge-s .wodge-button button[disabled],
+.wodge-s .wodge-button .button-disabled, .wodge-s .wodge-button .button-progress {
+  min-width: 7em;
+}
+
+@media (min-width: 40em) {
+  .wodge-s .wodge-button {
+    clear: none;
+    float: left;
+    margin-left: 150px;
+    margin-top: 0;
   }
 
   .wodge-s .wodge-header {
     float: left;
     margin-right: 0;
     width: 48%;
+  }
+}
+@media (min-width: 60em) {
+  .wodge-s .wodge-button {
+    float: right;
+    margin-left: 0;
   }
 }
 @media (min-width: 60em) {
@@ -4624,6 +4658,8 @@ section,
   width: 100%;
   float: none;
   clear: both;
+  background-image: none;
+  padding: 0;
 }
 
 .layout-chimney .layout-minim-staccato {
