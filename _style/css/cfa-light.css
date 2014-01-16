@@ -1434,14 +1434,16 @@ input.button-s,
 }
 
 .masthead {
-  display: none;
   position: relative;
   overflow: hidden;
   text-align: center;
   background-color: #494c49;
+  color: white;
+  clear: both;
 }
 
 .masthead:before {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -1465,6 +1467,32 @@ input.button-s,
   width: 100%;
 }
 
+.masthead p {
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+}
+
+.masthead-header p a:link,
+.masthead-header p a:visited,
+.masthead-header p a:hover,
+.masthead-header p a:focus,
+.masthead-header p a:active {
+  color: #399fd3;
+  border-bottom: 2px solid #399fd3;
+}
+
+.masthead-header p a:hover,
+.masthead-header p a:focus,
+.masthead-header p a:active {
+  color: #399fd3;
+  color: rgba(57, 159, 211, 0.7);
+  border-color: #399fd3;
+  border-color: rgba(57, 159, 211, 0.7);
+}
+
 .masthead-header {
   overflow: hidden;
   width: auto;
@@ -1484,7 +1512,6 @@ input.button-s,
 .masthead-header a:focus,
 .masthead-header a:active {
   color: white;
-  color: rgba(255, 255, 255, 0.8);
   border-bottom: none;
   margin-bottom: 0;
   transition: 0.2s;
@@ -1494,6 +1521,7 @@ input.button-s,
 .masthead-header a:focus,
 .masthead-header a:active {
   color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 63em) {
@@ -1518,13 +1546,12 @@ input.button-s,
 }
 
 .masthead-s .page-title {
-  font-size: 57px;
-  font-size: 3.5625rem;
-  line-height: 65px;
-  line-height: 4.0625rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  line-height: 2.5rem;
   float: none;
-  margin-top: 25px;
-  margin-top: 1.5625rem;
+  margin-top: 0;
 }
 
 @media print {
@@ -1550,8 +1577,25 @@ input.button-s,
   width: auto;
 }
 
-.masthead-l .page-title {
-  font-size: 90px;
+.masthead-xl:before {
+  background-position: top;
+  min-height: 600px;
+}
+
+.masthead-xl .masthead-header:before {
+  background-image: url("../images/fade-black.png");
+  width: 100%;
+  content: "";
+  height: 300px;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.masthead-xl masthead-header p {
+  margin-bottom: 1.5em;
 }
 
 .masthead-header .nav-breadcrumbs {
@@ -1666,24 +1710,6 @@ input.button-s,
   }
 }
 /* @end highlight with avatar */
-.insulate {
-  margin: 15px auto;
-  margin: 0.9375rem auto;
-}
-
-.insulate-sides,
-.button-prominent.insulate-sides {
-  margin-left: 15px;
-  margin-left: 0.9375rem;
-  margin-right: 15px;
-  margin-right: 0.9375rem;
-}
-
-.isolate {
-  margin-bottom: 1.5em;
-  clear: both;
-}
-
 .list-no-bullets, .list-ruled {
   margin-left: 0;
   float: left;
@@ -1867,18 +1893,6 @@ input.button-s,
   border-bottom: none;
 }
 
-.island {
-  margin: 15px auto;
-  margin: 0.9375rem auto;
-  float: left;
-  display: block;
-  width: 100%;
-}
-
-.island + .island {
-  margin-top: 0;
-}
-
 section,
 [class*="slab-"] {
   clear: both;
@@ -1917,9 +1931,21 @@ section,
   color: white;
 }
 
+.slab-dark-blue a:link,
+.slab-dark-blue a:visited,
+.slab-dark-blue .text-feature {
+  color: white;
+}
+
 .slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast {
   color: white;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-dark-blue a:hover,
+.slab-dark-blue a:focus,
+.slab-dark-blue a:active {
+  border-bottom: 1px solid white;
 }
 
 @media print {
@@ -2028,11 +2054,21 @@ section,
   background: rgba(229, 229, 229, 0.5);
 }
 
-.slab-dark-gray {
-  background: #494c49;
+.slab-black {
+  background-color: black;
   color: white;
 }
 
+.slab-dark-gray {
+  background-color: #494c49;
+  color: white;
+}
+
+.slab-black a:link,
+.slab-black a:visited,
+.slab-black a:hover,
+.slab-black a:focus,
+.slab-black a:active,
 .slab-dark-gray a:link,
 .slab-dark-gray a:visited,
 .slab-dark-gray a:hover,
@@ -2042,6 +2078,9 @@ section,
   border-bottom: none;
 }
 
+.slab-black a:hover,
+.slab-black a:focus,
+.slab-black a:active,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
@@ -2049,11 +2088,15 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-dark-gray .text-whisper, .slab-dark-gray .heading-contrast {
+.slab-black .text-whisper, .slab-black .heading-contrast,
+.slab-dark-gray .text-whisper,
+.slab-dark-gray .heading-contrast {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
+.slab-black form input,
+.slab-black form select,
 .slab-dark-gray form input,
 .slab-dark-gray form select {
   border: none;
@@ -2100,6 +2143,39 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.slab-bg1 {
+  background-image: url("../images/photo-bg1.jpg");
+}
+
+.isolate {
+  margin-bottom: 1.5em;
+  clear: both;
+}
+
+.insulate {
+  margin: 15px auto;
+  margin: 0.9375rem auto;
+}
+
+.insulate + .insulate {
+  margin-top: 0;
+}
+
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+}
+
+.insulate-inner {
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+}
+
 .spotlight {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
@@ -2124,6 +2200,23 @@ section,
 
 .text-invalid {
   color: #cf1b41;
+}
+
+.text-feature {
+  font-size: 50px;
+  font-size: 3.125rem;
+  margin: 0 0 15px 0;
+  margin: 0 0 0.9375rem 0;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  color: #399fd3;
+}
+
+.muted {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 /*  Global ––––––––––––––––––––––––––––––––––––––––––––––– */

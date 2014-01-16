@@ -37,3 +37,13 @@
 .global-header-logo:active {
     border: none;
     }
+
+.global-header-tagline {
+    @extend .text-whisper;
+    @include rem(margin, 28px 30px);
+    float: left;
+    }
+
+.global-header-tagline sup {
+    font-size: 0.5em;
+    }

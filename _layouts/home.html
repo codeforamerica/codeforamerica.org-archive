@@ -1,64 +1,134 @@
 {% include head.html %}
+
+
+<div class="global-header global-header-compact">
+    <a href="/_site/home/" class="global-header-logo">
+        <img src="/_assets/logo.png" />
+    </a>
+    <p class="global-header-tagline"><strong>By the people, for the people,</strong> for the 21<sup>st</sup> century</p>
+</div>
         
-    <div class="layout-centered">
-        
-        <a href="/_site/home/" class="link-unstyled island"><img src="/_assets/logo.png" alt="Code for America" /></a>
-        
-        <div class="masthead masthead-s">
-            <header class="layout-semibreve masthead-header">
-                <h1 class="page-title" >By the people, for the people,<br/> for the 21<sup>st</sup> century</h1>
-                <a class="text-whisper" href="/_site/about/">Learn more about what we do</a>
-            </header>
-        </div>
+<div class="masthead masthead-xl">
+    <header class="layout-semibreve masthead-header">
+        <h1 class="page-title" >In San Francisco</h1>
+        <p>One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
+        <a class="text-whisper" href="/_site/about/">Learn more about what we do</a>
+    </header>
+</div>
     
-    </div>
 
     <main role="main">
     
-        <section>
-            
-            <div class="layout-centered island">
+        <section class="layout-centered insulate-inner">
         
-                <h2 class="text-whisper">Join the movement</h2>
-                
-                <ul class="bricks">
-                    <li class="brick layout-crotchet">
-                        <a class="brick-link" href="/_site/citizens/">
-                            <h3 class="brick-heading">Geeks</h3>
-                            <h4 class="brick-text">Use your skills for good</h4>
-                        </a>
-                    </li>
-                    <li class="brick layout-crotchet">
-                        <a class="brick-link" href="/_site/governments/">
-                            <h3 class="brick-heading">Governments</h3>
-                            <h4 class="brick-text">Solve your city's problems</h4>
-                        </a>
-                    </li>
-                    <li class="brick layout-crotchet">
-                        <a class="brick-link" href="/_site/donate/">
-                            <h3 class="brick-heading">Donors</h3>
-                            <h4 class="brick-text">Help make a difference</h4>
-                        </a>
-                    </li>
-                </ul>
+            <h2 class="text-whisper">Join the movement</h2>
             
-            </div>
+            <ul class="bricks bricks-3">
+                
+                <li class="brick">
+                    <a class="brick-link" href="/_site/donate/">
+                        <h3 class="badge-heading badge-blue">Donors</h3>
+                        <h4 class="brick-text">Help make a difference</h4>
+                    </a>
+                </li>
+                
+                <li class="brick">
+                    <a class="brick-link" href="/_site/governments/">
+                        <h3 class="badge-heading badge-red">Governments</h3>
+                        <h4 class="brick-text">Solve your city's problems</h4>
+                    </a>
+                </li>
+                
+                <li class="brick">
+                    <a class="brick-link" href="/_site/citizens/">
+                        <h3 class="badge-heading badge-dark-blue">Geeks</h3>
+                        <h4 class="brick-text">Use your skills for good</h4>
+                    </a>
+                </li>
+                
+            </ul>
             
         </section>
         
-        <section>
-        
-            <div class="layout-centered">
-        
-                <h2 class="text-whisper">Find your brigade</h2>
+        <section class="slab-black slab-bg1">
             
-                <div class="slab-blue map-xl">
+            <div class="layout-minim layout-solo insulate">
+            
+                <h2 class="h5">Blogging [For America]</h2>
                 
-                    <iframe width='100%' height='800px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/maban.gf675300/mm/index.html?secure=1#4/34.49/-91.05'></iframe>
-                
-                </div>
+                {% include /blocks/patterns/post-preview.html %}
             
             </div>
+                        
+        </section>
+        
+        <section class="layout-centered insulate-inner">
+        
+            <h2 class="text-whisper">Quick Stats</h2>
+            
+            <ul class="bricks bricks-4">
+                
+                <li class="brick badge-heading badge-github">
+                    <h3 class="text-feature">3,372</h3>
+                    <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+                </li>
+                
+                <li class="brick badge-heading badge-github">
+                    <h3 class="text-feature">348</h3>
+                    <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+                </li>
+                
+                <li class="brick badge-heading badge-github">
+                    <h3 class="text-feature">157</h3>
+                    <p class="text-whisper">Total number of <a href="#">members</a> on Github</p>
+                </li>
+                
+                <li class="brick badge-heading">
+                    <h3 class="text-feature">75</h3>
+                    <p class="text-whisper">Total number of <a href="#">apps deployed</a> by brigades</p>
+                </li>
+                
+            </ul>
+            
+        </section>
+        
+        
+        <section class="slab-dark-blue layout-centered insulate-inner">
+        
+            <h2 class="text-whisper">Quick Stats</h2>
+            
+            <ul class="bricks bricks-4">
+                
+                <li class="brick badge-heading badge-github">
+                    <h3 class="text-feature">3,372</h3>
+                    <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+                </li>
+                
+                <li class="brick badge-heading badge-github">
+                    <h3 class="text-feature">348</h3>
+                    <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+                </li>
+                
+                <li class="brick badge-heading badge-github">
+                    <h3 class="text-feature">157</h3>
+                    <p class="text-whisper">Total number of <a href="#">members</a> on Github</p>
+                </li>
+                
+                <li class="brick badge-heading">
+                    <h3 class="text-feature">75</h3>
+                    <p class="text-whisper">Total number of <a href="#">apps deployed</a> by brigades</p>
+                </li>
+                
+            </ul>
+            
+        </section>
+        
+        
+        
+        <section class="slab-gray layout-centered insulate-inner">
+            <h2 class="text-whisper">Code for America is kindly supported by</h2>
+            
+            {% include /blocks/patterns/list-logos-muted.html %}
             
         </section>
     

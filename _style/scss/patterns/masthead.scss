@@ -1,12 +1,14 @@
 .masthead {
-    display: none;
     position: relative;
     overflow: hidden;
     text-align: center;
     background-color: $color-dark-gray;
+    color: $color-white;
+    clear: both;
     }
 
 .masthead:before {
+    display: none;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -30,6 +32,28 @@
     width: 100%;
     }
 
+.masthead p {
+    font-family: $font-serif-regular;
+    @include rem(font-size, 24px);
+    @include rem(line-height, 35px);
+    }
+
+.masthead-header p a:link,
+.masthead-header p a:visited,
+.masthead-header p a:hover,
+.masthead-header p a:focus,
+.masthead-header p a:active {
+    color: $color-blue;
+    border-bottom: 2px solid $color-blue;
+    }
+
+.masthead-header p a:hover,
+.masthead-header p a:focus,
+.masthead-header p a:active {
+    @include color($color-blue, 0.7);
+    @include border-color($color-blue, 0.7);
+    }
+
 .masthead-header {
     overflow: hidden;
     width: auto;
@@ -48,7 +72,7 @@
 .masthead-header a:hover,
 .masthead-header a:focus,
 .masthead-header a:active {
-	@include color($color-white, 0.8);
+	color: $color-white;
     border-bottom: none;
     margin-bottom: 0;
     transition: 0.2s;
@@ -57,7 +81,7 @@
 .masthead-header a:hover,
 .masthead-header a:focus,
 .masthead-header a:active {
-	color: $color-white;
+	@include color($color-white, 0.8);
 	}
     
     @media (min-width: 63em) {
@@ -82,10 +106,10 @@
     }
 
 .masthead-s .page-title {
-    @include rem(font-size, 57px);
-    @include rem(line-height, 65px);
+    @include rem(font-size, 40px);
+    @include rem(line-height, 40px);
     float: none;
-    @include rem(margin-top, 25px);
+    margin-top: 0;
     }
     
     @media print {
@@ -110,8 +134,25 @@
     width: auto;
     }
 
-.masthead-l .page-title {
-    font-size: 90px;
+.masthead-xl:before {
+    background-position: top;
+    min-height: 600px
+    }
+
+.masthead-xl .masthead-header:before {
+    background-image: url("../images/fade-black.png");
+    width: 100%;
+    content: "";
+    height: 300px;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    }
+
+.masthead-xl masthead-header p {
+    margin-bottom: 1.5em;
     }
 
 .masthead-header .nav-breadcrumbs {

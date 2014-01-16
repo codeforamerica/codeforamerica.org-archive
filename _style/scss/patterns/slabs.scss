@@ -36,8 +36,20 @@ section,
     color: $color-white;
     }
 
+.slab-dark-blue a:link,
+.slab-dark-blue a:visited,
+.slab-dark-blue .text-feature {
+    color: $color-white;
+    }
+
 .slab-dark-blue .text-whisper {
     @include color($color-white, 0.7);
+    }
+
+.slab-dark-blue a:hover,
+.slab-dark-blue a:focus,
+.slab-dark-blue a:active {
+    border-bottom: 1px solid $color-white;
     }
 
 @media print {
@@ -137,11 +149,21 @@ section,
     @include background-color($color-light-gray, 0.5);
     }
 
+.slab-black {
+    background-color: $color-black;
+    color: $color-white;
+    }
+
 .slab-dark-gray {
-    @include background-color($color-dark-gray, 1);
+    background-color: $color-dark-gray;
     color: $color-white;
     }
     
+    .slab-black a:link,
+    .slab-black a:visited,
+    .slab-black a:hover,
+    .slab-black a:focus,
+    .slab-black a:active,
     .slab-dark-gray a:link,
     .slab-dark-gray a:visited,
     .slab-dark-gray a:hover,
@@ -151,16 +173,22 @@ section,
         border-bottom: none;
         }
     
+    .slab-black a:hover,
+    .slab-black a:focus,
+    .slab-black a:active,
     .slab-dark-gray a:hover,
     .slab-dark-gray a:focus,
     .slab-dark-gray a:active {
         @include color($color-white, 0.7);
         }
     
+    .slab-black .text-whisper,
     .slab-dark-gray .text-whisper {
         @include color($color-white, 0.7);
         }
     
+    .slab-black form input,
+    .slab-black form select,
     .slab-dark-gray form input,
     .slab-dark-gray form select {
         border: none;
@@ -202,4 +230,8 @@ section,
  
  .slab-medium-red .text-whisper {
      @include color($color-white, 0.7);
+     }
+ 
+ .slab-bg1 {
+     background-image: url('../images/photo-bg1.jpg');
      }

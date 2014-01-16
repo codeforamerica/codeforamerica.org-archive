@@ -7,65 +7,25 @@
 .brick {
     padding: 0;
     margin: 0 0 1em 0;
-    -webkit-transform: translateZ(0);
     position: relative;
-    background-color: $color-blue;
     }
 
-.brick:before {
-	content:  "";
-	position: absolute;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: $color-blue;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	z-index: -1;
-	transition: 0.4s;
-	-moz-filter: brightness(70%) contrast(130%);
-	-webkit-filter: brightness(70%) contrast(130%);
-	filter: brightness(70%) contrast(130%);
-	}
-
-.brick:hover:before,
-.brick:focus:before,
-.brick:active:before {
-	-webkit-filter: brightness(100%) contrast(100%);
-	-moz-filter: brightness(100%) contrast(100%);
-	filter: brightness(100%) contrast(100%);
-	}
-
-.brick:nth-child(1):before {
-	background-image: url('../images/brick-bg1.png');
-	}
-
-.brick:nth-child(2):before {
-	background-image: url('../images/brick-bg2.png');
-	background-color: $color-red;
-	}
-
-.brick:nth-child(3):before {
-	background-image: url('../images/brick-bg3.png');
-	background-color: $color-dark-blue;
-	}
+.brick a:link,
+.brick a:visited,
+.brick a:hover,
+.brick a:focus,
+.brick a:active {
+    color: $color-black;
+    }
 
 .brick .brick-link {
     @include rem(min-height, 100px);
-    @include rem(padding-top, 80px);
-    @include rem(padding-bottom, 80px);
+    @include rem(padding-top, 15px);
+    @include rem(padding-bottom, 10px);
     padding-left: 4%;
     padding-right: 4%;
     display: block;
     }
-
-	@media (max-width:40em) {
-	.brick .brick-link {
-	    @include rem(padding-top, 15px);
-	    @include rem(padding-bottom, 10px);
-	    }
-	}
 
 .brick .brick-link:hover,
 .brick .brick-link:focus,
@@ -81,14 +41,57 @@
 
 .brick-text {
     @include font-sans-bold;
-    color: $color-white;
+    color: $color-black;
     text-transform: uppercase;
-    @include rem(font-size, 30px);
-    @include rem(line-height, 30px);
+    @include rem(font-size, 25px);
+    @include rem(line-height, 25px);
     }
 
 @media (min-width: 40em) {
     .brick {
         margin-bottom: 0;
         }
+    }
+
+.brick.badge-heading {
+    border-bottom: none;
+    background-position: center top;
+    padding-left: 0;
+    padding-top: 65px;
+    text-align: center;
+    }
+
+.brick .badge-heading {
+    border-bottom: none;
+    background-position: center top;
+    padding-left: 0;
+    padding-top: 65px;
+    text-align: center;
+    min-height: 0;
+    @extend .text-whisper;
+    margin-bottom: 0.35em;
+    color: $color-blue;
+    }
+
+.brick .badge-red {
+    color: $color-red;
+    }
+
+.brick .badge-dark-blue {
+    color: $color-dark-blue;
+    }
+
+.bricks-4 .brick {
+    float: left;
+    width: 40%;
+    margin-right: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    clear: none;
+    background-size: 35px;
+    padding-top: 40px;
+    }
+
+.bricks-4 .brick:nth-child(2n+2) {
+    margin-right: 0;
     }

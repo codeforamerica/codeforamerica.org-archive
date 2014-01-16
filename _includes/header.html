@@ -5,8 +5,6 @@
     		style="background-image: url('/_media/images/masthead/{{ page.masthead-image }}')" 
     		{% elsif page.path contains '_posts' %} style="background-image: url('/_media/images/masthead/masthead-3.jpg')"
     		{% endif %}>
-    	
-    	
     	</div>
     </div>
     <header class="layout-semibreve masthead-header">
@@ -30,58 +28,55 @@
 
 <div class="global-header">
     
-        <a href="/_site/home/" class="global-header-logo">
-            <img src="/_assets/logo.png" />
-        </a>
-        
-        <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
-        
-        <nav class="nav-global-secondary">
-            <ul>
-            	<li class="nav-tier1 nav-has-children">
-            		<a href="/_site/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>
-            		{% if page.path contains 'about' %}
-            		<ul class="nav-tier2">
-            		    <li><a href="/_site/about/">Team</a></li>
-            		    <li><a href="/_site/about/">Annual Report</a></li>
-            		    <li><a href="/_site/about/">Supporters</a></li>
-            		    <li><a href="/_site/about/">Press</a></li>
-            		    <li><a href="/_site/about/">Contact</a></li>
-            		</ul>
-            		{% endif %} 
-            	</li>
-                <li class="nav-tier1 nav-has-children">
-                    <a href="/_site/governments/" {% if page.path contains 'governments' %}class="state-active"{% endif %}>Governments</a>
-                    {% if page.path contains 'governments' %}
-                    <ul class="nav-tier2">
-                        <li><a href="/_site/governments/">Current Governments</a></li>
-                        <li><a href="/_site/governments/boston/">Upcoming Governments</a></li>
-                        <li><a href="/_site/governments/boston/">Alumni Governments</a></li>
-                        <li><a href="/_site/apps/">Apps &amp; APIs</a></li>
-                    </ul>
-                    {% endif %} 
-                </li>
-                <li class="nav-tier1 nav-has-children">
-                	<a href="/_site/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
-                	{% if page.path contains 'citizens' %}
-                	<ul class="nav-tier2">
-                		<li><a href="#">Requests</a></li>
-                		<li><a href="#">Code we Have</a></li>
-                		<li><a href="#">Events</a></li>
-                		<li><a href="#">Our geeks</a></li>
-                	</ul>
-                	{% endif %} 
-                </li>
-                <li class="nav-tier1">
-                	<a href="/_site/apps/" {% if page.path contains 'apps' %}class="state-active"{% endif %}>Apps</a>
-                </li>
-                <li><a href="/_site/donate/" class="button">Donate</a></li>
-            </ul>
-        </nav>
-        
-        
+    <a href="/_site/home/" class="global-header-logo">
+        <img src="/_assets/logo.png" />
+    </a>
     
+    <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
     
+    <nav class="nav-global-secondary">
+        <ul>
+        	<li class="nav-tier1 nav-has-children">
+        		<a href="/_site/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>
+        		{% if page.path contains 'about' %}
+        		<ul class="nav-tier2">
+        		    <li><a href="/_site/about/">Team</a></li>
+        		    <li><a href="/_site/about/">Annual Report</a></li>
+        		    <li><a href="/_site/about/">Supporters</a></li>
+        		    <li><a href="/_site/about/">Press</a></li>
+        		    <li><a href="/_site/about/">Contact</a></li>
+        		</ul>
+        		{% endif %} 
+        	</li>
+            <li class="nav-tier1 nav-has-children">
+                <a href="/_site/governments/" {% if page.path contains 'governments' %}class="state-active"{% endif %}>Governments</a>
+                {% if page.path contains 'governments' %}
+                <ul class="nav-tier2">
+                    <li><a href="/_site/governments/">Current Governments</a></li>
+                    <li><a href="/_site/governments/boston/">Upcoming Governments</a></li>
+                    <li><a href="/_site/governments/boston/">Alumni Governments</a></li>
+                    <li><a href="/_site/apps/">Apps &amp; APIs</a></li>
+                </ul>
+                {% endif %} 
+            </li>
+            <li class="nav-tier1 nav-has-children">
+            	<a href="/_site/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
+            	{% if page.path contains 'citizens' %}
+            	<ul class="nav-tier2">
+            		<li><a href="#">Requests</a></li>
+            		<li><a href="#">Code we Have</a></li>
+            		<li><a href="#">Events</a></li>
+            		<li><a href="#">Our geeks</a></li>
+            	</ul>
+            	{% endif %} 
+            </li>
+            <li class="nav-tier1">
+            	<a href="/_site/apps/" {% if page.path contains 'apps' %}class="state-active"{% endif %}>Apps</a>
+            </li>
+            <li><a href="/_site/donate/" class="button">Donate</a></li>
+        </ul>
+    </nav>
+        
 </div>
 
 <main role="main">
