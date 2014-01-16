@@ -10,13 +10,25 @@
     @include rem(margin, 0 0 43px);
     @include rem(font-size, 14px);
     }
+    
+    @media (max-width: 52em) {
+    .nav-tabs {
+        @include rem(padding-bottom, 20px);
+        }
+    }
 
 .nav-tab {
 	float: left;
     display: inline-block;
     }
 
-
+    @media (max-width: 52em) {
+    .nav-tab {
+    	float: none;
+    	display: block;
+        clear: both;
+        }
+    }
 
 
 .nav-tab-link {
@@ -24,7 +36,12 @@
     @include rem(margin, 0 0 0 20px);
     display: block;
     position: relative;
+    }
     
+    @media (max-width: 52em) {
+    .nav-tab-link {
+        @include rem(margin, 0);
+        }
     }
 
 
@@ -70,3 +87,9 @@
 	border-width: 16px;
 	margin-left: -16px;
 }
+
+@media (max-width: 52em) {
+    .state-active .nav-tab-link:after {
+        border: none;
+        }
+    }
