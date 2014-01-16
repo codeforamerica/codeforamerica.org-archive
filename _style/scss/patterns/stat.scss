@@ -41,7 +41,7 @@
 .stat .stat-figure {
     @include rem(font-size, 30px);
     @include color($color-black, 1);
-    font-family: georgia;
+    @include font-serif-bold;
     font-weight: bold;
     display: block;
     margin: 0;
