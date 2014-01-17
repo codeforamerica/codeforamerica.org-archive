@@ -4,6 +4,8 @@ blockquote {
 
 /* Layout ========================================== */
 
+
+
 // IE 7 doesn't understand a range of pseudo-classes. By default, there is no margin unless that column is next to another column. Margins are applied to the left. This means the first column doesn't get a margin, so a 3-col layout doesn't break in old versions of IE.
 
 /*  9 column = quaver  */
@@ -277,10 +279,15 @@ section,
 
 .global-header {
 	margin-bottom: 41px;
+	position: relative;
 	}
 
 .global-header-compact {
     margin-bottom: 0;
+    }
+
+.global-header-tagline {
+    display: block;
     }
 
 .global-header-logo {
@@ -332,13 +339,58 @@ section,
     margin: 6px 10px 2px;
     }
 
+.masthead {
+    background-color: #6D6E71;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 3px;
+    }
+
 .masthead:before {
     display: block;
+    }
+
+.masthead h1,
+.masthead .h1,
+.masthead p {
+    color: white;
+    }
+
+.masthead h1,
+.masthead .h1 {
+    margin: -0.22em 0 0 0;
+    text-align: center;
     }
 
 .masthead-image {	
 	display: block;
 	}
+
+.masthead-header {
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+    float: none;
+    }
+
+.masthead .button-invert,
+.masthead input.button-invert,
+.masthead .button-invert:link,
+.masthead .button-invert:visited,
+.masthead .button-invert:hover,
+.masthead .button-invert:focus,
+.masthead .button-invert:active {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    opacity: 1;
+    }
+
+.masthead input.button-invert:hover,
+.masthead input.button-invert:focus,
+.masthead input.button-invert:active,
+.masthead .button-invert:hover,
+.masthead .button-invert:focus,
+.masthead .button-invert:active {
+    border: 1px solid rgba(255,255,255,0.7);
+    opacity: 1;
+    }
 
 .masthead-s .page-title {
     font-size: 57px;
@@ -352,22 +404,58 @@ section,
     font-size: 90px;
     }
 
-.masthead-xl .page-title {
-    margin-top: 120px;
-    margin-bottom: 15px;
+.masthead-l .masthead-header {
+    margin-top: 11em;
+    padding-top: 2em;
+    }
+
+.masthead-xl:before {
+    background-position: top;
+    min-height: 600px
     }
 
 .masthead-xl .masthead-header {
-    margin: 0 auto;
     padding: 11em 0 3em;
     max-width: inherit;
     width: 100%; 
+    margin: 2em auto 0;
     }
+    
+.masthead-xl .masthead-header:before {
+    background-image: url("../images/fade-black.png");
+    width: 100%;
+    content: "";
+    height: 300px;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    }
+
+.masthead-xl .page-title {
+    margin-top: 95px;
+    margin-bottom: 15px;
+    }
+
 
 .masthead-xl .masthead-header > * {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
+    }
+
+.masthead-header .nav-breadcrumbs,
+.masthead-header .nav-breadcrumbs a:link,
+.masthead-header .nav-breadcrumbs a:visited,
+.masthead-header .nav-breadcrumbs a:hover,
+.masthead-header .nav-breadcrumbs a:focus,
+.masthead-header .nav-breadcrumbs a:active {
+    color: white;
+    }
+
+.masthead-header .nav-breadcrumbs li:first-child a {
+    background-image: url('../images/flag-white.png');
     }
 
 .wodge-image {
@@ -433,6 +521,10 @@ section,
    padding: 0;
 }
 
+.bricks-cta {
+    margin-bottom: 1.5em;
+    }
+
 .bricks-3 .brick {
     width: 32.0%;
     float: left;
@@ -457,6 +549,10 @@ section,
     padding-left: 2%;
     padding-right: 2%;
     }
+    
+.bricks-4 .brick.badge-heading {
+    padding-top: 40px;
+    }
 
 .bricks-4 .brick + .brick {
     margin-left: 2%;
@@ -467,6 +563,30 @@ section,
     clear: both;
     }
 
+.bricks-3 .brick {
+    padding-top: 50px;
+    }
+
+.brick.badge-heading.badge-blue,
+.brick.badge-heading.badge-red,
+.brick.badge-heading.badge-dark-blue {
+    background-color: transparent;
+    }
+
+.brick.badge-blue .brick-text,
+.brick.badge-blue .brick-heading,
+.brick.badge-red .brick-text,
+.brick.badge-red .brick-heading,
+.brick.badge-dark-blue .brick-text,
+.brick.badge-dark-blue .brick-heading {
+    color: black;
+    text-align: center;
+    }
+
 .list-logos li {
     width: 9em;
+    }
+
+.nav-breadcrumbs {
+    display: block;
     }

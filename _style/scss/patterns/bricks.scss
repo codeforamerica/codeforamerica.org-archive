@@ -19,7 +19,6 @@
     }
 
 .brick .brick-link {
-    @include rem(min-height, 100px);
     @include rem(padding-top, 15px);
     @include rem(padding-bottom, 10px);
     padding-left: 4%;
@@ -35,7 +34,6 @@
 
 .brick-heading {
     @extend .text-whisper;
-    color: $color-light-gray;
     @include rem(margin-bottom, 5px);
     }
 
@@ -57,8 +55,9 @@
     border-bottom: none;
     background-position: center top;
     padding-left: 0;
-    padding-top: 65px;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
     }
 
 .brick .badge-heading {
@@ -73,12 +72,45 @@
     color: $color-blue;
     }
 
-.brick .badge-red {
+@media (max-width:40em) {
+    .bricks-cta .brick.badge-heading {
+        background-image: none;
+        }
+    }
+
+.bricks-cta .badge-blue {
+    background-color: $color-blue;
+    }
+
+.bricks-cta .badge-blue .brick-heading {
+    color: $color-blue;
+    }
+
+.bricks-cta .badge-red {
+    background-color: $color-red;
+    }
+
+.bricks-cta .badge-red .brick-heading {
     color: $color-red;
     }
 
-.brick .badge-dark-blue {
+.bricks-cta .badge-dark-blue {
+    background-color: $color-dark-blue;
+    }
+
+.bricks-cta .badge-dark-blue .brick-heading {
     color: $color-dark-blue;
+    }
+
+.bricks-cta .badge-blue .brick-text,
+.bricks-cta .badge-blue .brick-heading,
+.bricks-cta .badge-red .brick-text,
+.bricks-cta .badge-red .brick-heading,
+.bricks-cta .badge-dark-blue .brick-text,
+.bricks-cta .badge-dark-blue .brick-heading {
+    color: $color-white;
+    text-align: left;
+    margin-bottom: 0;
     }
 
 .bricks-4 .brick {

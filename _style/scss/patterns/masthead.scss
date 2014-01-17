@@ -2,9 +2,8 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    background-color: $color-dark-gray;
-    color: $color-white;
     clear: both;
+    margin-top: 60px;
     }
 
 .masthead:before {
@@ -25,9 +24,8 @@
 
 .masthead h1,
 .masthead .h1 {
-    color: $color-white;
-    text-align: center;
-    margin: -0.22em 0 0 0;
+    color: $color-black;
+    margin: 0.2em 0 0 0;
     float: left;
     width: 100%;
     }
@@ -38,51 +36,32 @@
     @include rem(line-height, 35px);
     }
 
+.masthead-header {
+    overflow: hidden;
+    width: auto;
+    display: table;
+    z-index: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 4%;
+    clear: both;
+    position: inherit;
+    float: left;
+    }
+
 .masthead-header p a:link,
 .masthead-header p a:visited,
 .masthead-header p a:hover,
 .masthead-header p a:focus,
 .masthead-header p a:active {
     color: $color-blue;
-    border-bottom: 2px solid $color-blue;
     }
 
 .masthead-header p a:hover,
 .masthead-header p a:focus,
 .masthead-header p a:active {
-    @include color($color-blue, 0.7);
-    @include border-color($color-blue, 0.7);
+    border-bottom: 2px solid $color-blue;
     }
-
-.masthead-header {
-    overflow: hidden;
-    width: auto;
-    display: table;
-    z-index: 1;
-    text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 0 4%;
-    clear: both;
-    position: inherit;
-    }
-
-.masthead-header a:link,
-.masthead-header a:visited,
-.masthead-header a:hover,
-.masthead-header a:focus,
-.masthead-header a:active {
-	color: $color-white;
-    border-bottom: none;
-    margin-bottom: 0;
-    transition: 0.2s;
-    }
-
-.masthead-header a:hover,
-.masthead-header a:focus,
-.masthead-header a:active {
-	@include color($color-white, 0.8);
-	}
     
     @media (min-width: 63em) {
     .masthead .masthead-header {
@@ -127,28 +106,11 @@
 
 
 .masthead-l .masthead-header {
-    margin-top: 11em;
+    margin-top: 5em;
     padding-bottom: 1em;
-    padding-top: 2em;
+    padding-top: 1em;
     margin-bottom: 0;
     width: auto;
-    }
-
-.masthead-xl:before {
-    background-position: top;
-    min-height: 600px
-    }
-
-.masthead-xl .masthead-header:before {
-    background-image: url("../images/fade-black.png");
-    width: 100%;
-    content: "";
-    height: 300px;
-    position: absolute;
-    display: block;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
     }
 
 .masthead-xl masthead-header p {
@@ -157,9 +119,11 @@
 
 .masthead-header .nav-breadcrumbs {
     float: left;
-    @include color($color-white, 0.7);
+    @include color($color-black, 0.7);
     position: absolute;
     top: 0;
+    margin-bottom: 0;
+    display: block;
     }
 
 .masthead-header .nav-breadcrumbs a:link,
@@ -167,7 +131,7 @@
 .masthead-header .nav-breadcrumbs a:hover,
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
-    @include color($color-white, 1);
+    @include color($color-black, 1);
     padding-top: 0;
     padding-bottom: 0;
     }
@@ -179,11 +143,14 @@
     }
 
 .masthead-header .nav-breadcrumbs li:first-child a {
-    background-image: url('../images/flag-white.png');
+    background-image: url('../images/flag-blue.png');
     }
 
 .masthead-header .button-cta {
     float: right;
     margin-top: 0.8em;
     }
+
+
+
 

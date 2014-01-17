@@ -281,7 +281,14 @@ h6,
 .h6,
 .text-quiet,
 .text-whisper,
-.heading-contrast {
+.heading-contrast,
+.button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
   text-transform: uppercase;
   margin: 0;
   margin: 0 0 15px 0;
@@ -616,7 +623,13 @@ ul ul {
 }
 
 /*  Text ––––––––––––––––––––––––––––––––––––––––––––––––– */
-.text-whisper, .heading-contrast {
+.text-whisper, .heading-contrast, .button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
   color: #6d6e71;
 }
 
@@ -1358,6 +1371,32 @@ input.button-subtle.button-progress:active,
   border: 1px solid #e5e5e5;
 }
 
+/*  Button: Invert --------------------------------------- */
+.button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
+  color: black;
+  border: 1px solid black;
+  opacity: 0.5;
+  padding: 16px 24px;
+  transition: 0.2;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+input.button-invert:hover,
+input.button-invert:focus,
+input.button-invert:active,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
+  opacity: 0.8;
+}
+
 /*  Button: Sizes --------------------------------------- */
 .button-crotchet,
 .button-crotchet:link,
@@ -1437,9 +1476,8 @@ input.button-s,
   position: relative;
   overflow: hidden;
   text-align: center;
-  background-color: #494c49;
-  color: white;
   clear: both;
+  margin-top: 60px;
 }
 
 .masthead:before {
@@ -1460,9 +1498,8 @@ input.button-s,
 
 .masthead h1,
 .masthead .h1 {
-  color: white;
-  text-align: center;
-  margin: -0.22em 0 0 0;
+  color: black;
+  margin: 0.2em 0 0 0;
   float: left;
   width: 100%;
 }
@@ -1475,53 +1512,31 @@ input.button-s,
   line-height: 2.1875rem;
 }
 
+.masthead-header {
+  overflow: hidden;
+  width: auto;
+  display: table;
+  z-index: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0 4%;
+  clear: both;
+  position: inherit;
+  float: left;
+}
+
 .masthead-header p a:link,
 .masthead-header p a:visited,
 .masthead-header p a:hover,
 .masthead-header p a:focus,
 .masthead-header p a:active {
   color: #399fd3;
-  border-bottom: 2px solid #399fd3;
 }
 
 .masthead-header p a:hover,
 .masthead-header p a:focus,
 .masthead-header p a:active {
-  color: #399fd3;
-  color: rgba(57, 159, 211, 0.7);
-  border-color: #399fd3;
-  border-color: rgba(57, 159, 211, 0.7);
-}
-
-.masthead-header {
-  overflow: hidden;
-  width: auto;
-  display: table;
-  z-index: 1;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 0 4%;
-  clear: both;
-  position: inherit;
-}
-
-.masthead-header a:link,
-.masthead-header a:visited,
-.masthead-header a:hover,
-.masthead-header a:focus,
-.masthead-header a:active {
-  color: white;
-  border-bottom: none;
-  margin-bottom: 0;
-  transition: 0.2s;
-}
-
-.masthead-header a:hover,
-.masthead-header a:focus,
-.masthead-header a:active {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #399fd3;
 }
 
 @media (min-width: 63em) {
@@ -1570,28 +1585,11 @@ input.button-s,
 }
 
 .masthead-l .masthead-header {
-  margin-top: 11em;
+  margin-top: 5em;
   padding-bottom: 1em;
-  padding-top: 2em;
+  padding-top: 1em;
   margin-bottom: 0;
   width: auto;
-}
-
-.masthead-xl:before {
-  background-position: top;
-  min-height: 600px;
-}
-
-.masthead-xl .masthead-header:before {
-  background-image: url("../images/fade-black.png");
-  width: 100%;
-  content: "";
-  height: 300px;
-  position: absolute;
-  display: block;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
 }
 
 .masthead-xl masthead-header p {
@@ -1600,10 +1598,12 @@ input.button-s,
 
 .masthead-header .nav-breadcrumbs {
   float: left;
-  color: white;
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
+  color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
+  margin-bottom: 0;
+  display: block;
 }
 
 .masthead-header .nav-breadcrumbs a:link,
@@ -1611,7 +1611,7 @@ input.button-s,
 .masthead-header .nav-breadcrumbs a:hover,
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
-  color: white;
+  color: black;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1624,7 +1624,7 @@ input.button-s,
 }
 
 .masthead-header .nav-breadcrumbs li:first-child a {
-  background-image: url("../images/flag-white.png");
+  background-image: url("../images/flag-blue.png");
 }
 
 .masthead-header .button-cta {
@@ -1921,7 +1921,7 @@ section,
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.slab-blue .text-whisper, .slab-blue .heading-contrast {
+.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1937,7 +1937,7 @@ section,
   color: white;
 }
 
-.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast {
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1990,30 +1990,36 @@ section,
   color: white;
 }
 
-.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link,
+.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link, .slab-red a.button-invert:link,
 .slab-red a.text-whisper:visited,
 .slab-red a.heading-contrast:visited,
+.slab-red a.button-invert:visited,
 .slab-red a.text-whisper:hover,
 .slab-red a.heading-contrast:hover,
+.slab-red a.button-invert:hover,
 .slab-red a.text-whisper:focus,
 .slab-red a.heading-contrast:focus,
+.slab-red a.button-invert:focus,
 .slab-red a.text-whisper:active,
-.slab-red a.heading-contrast:active {
+.slab-red a.heading-contrast:active,
+.slab-red a.button-invert:active {
   border-bottom: none;
   font-weight: 500;
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover,
+.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover, .slab-red a.button-invert:hover,
 .slab-red a.text-whisper:focus,
 .slab-red a.heading-contrast:focus,
+.slab-red a.button-invert:focus,
 .slab-red a.text-whisper:active,
-.slab-red a.heading-contrast:active {
+.slab-red a.heading-contrast:active,
+.slab-red a.button-invert:active {
   color: white;
 }
 
-.slab-red .text-whisper, .slab-red .heading-contrast {
+.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2044,7 +2050,7 @@ section,
   border: none;
 }
 
-.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast {
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2088,9 +2094,10 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-black .text-whisper, .slab-black .heading-contrast,
+.slab-black .text-whisper, .slab-black .heading-contrast, .slab-black .button-invert,
 .slab-dark-gray .text-whisper,
-.slab-dark-gray .heading-contrast {
+.slab-dark-gray .heading-contrast,
+.slab-dark-gray .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2138,17 +2145,41 @@ section,
   background: rgba(0, 0, 0, 0.4);
 }
 
-.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast {
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-bg1 {
+[class*="slab-"].slab-bg1 {
+  background-color: transparent;
+  position: relative;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-image: url("../images/fade-black.png");
+}
+
+.slab-bg1:before {
+  background-repeat: no-repeat;
+  background-position: top center;
   background-image: url("../images/photo-bg1.jpg");
+  background-size: cover;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
 }
 
 .isolate {
   margin-bottom: 1.5em;
+  clear: both;
+}
+
+.isolate-invert {
+  margin-top: 1.5em;
   clear: both;
 }
 
@@ -2420,6 +2451,12 @@ section,
   max-width: 92%;
   float: left;
   margin-bottom: 1em;
+}
+
+.layout-solo {
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 92%;
 }
 
 .layout-col {

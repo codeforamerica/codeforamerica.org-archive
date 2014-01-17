@@ -10,6 +10,8 @@
     background-color: $color-white;
     z-index: 2;
     @include transition(padding, 0.5s);
+    position: absolute;
+    top: 0;
     }
 
 .global-header-logo {
@@ -39,6 +41,7 @@
     }
 
 .global-header-tagline {
+    display: none;
     @extend .text-whisper;
     @include rem(margin, 28px 30px);
     float: left;

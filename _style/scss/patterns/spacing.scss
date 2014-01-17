@@ -3,6 +3,11 @@
     clear: both;
     }
 
+.isolate-invert {
+    margin-top: 1.5em;
+    clear: both;
+    }
+
 .insulate {
     @include rem(margin, 15px auto);
 	}
