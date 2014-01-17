@@ -1940,46 +1940,52 @@ input.button-s,
   color: #399fd3;
 }
 
-@media (max-width: 40em) {
-  .bricks-cta .brick.badge-heading {
-    background-image: none;
-  }
-}
-.bricks-cta .badge-blue {
-  background-color: #399fd3;
-}
-
 .bricks-cta .badge-blue .brick-heading {
   color: #399fd3;
-}
-
-.bricks-cta .badge-red {
-  background-color: #cf1b41;
-}
-
-.bricks-cta .badge-red .brick-heading {
-  color: #cf1b41;
-}
-
-.bricks-cta .badge-dark-blue {
-  background-color: #004b6a;
 }
 
 .bricks-cta .badge-dark-blue .brick-heading {
   color: #004b6a;
 }
 
-.bricks-cta .badge-blue .brick-text,
-.bricks-cta .badge-blue .brick-heading,
-.bricks-cta .badge-red .brick-text,
-.bricks-cta .badge-red .brick-heading,
-.bricks-cta .badge-dark-blue .brick-text,
-.bricks-cta .badge-dark-blue .brick-heading {
-  color: white;
-  text-align: left;
-  margin-bottom: 0;
+.bricks-cta .badge-red .brick-heading {
+  color: #cf1b41;
 }
 
+@media (max-width: 40em) {
+  .bricks-cta .brick.badge-heading {
+    background-image: none;
+  }
+
+  .bricks-cta .badge-blue {
+    background-color: #399fd3;
+  }
+
+  .bricks-cta .badge-red {
+    background-color: #cf1b41;
+  }
+
+  .bricks-cta .badge-dark-blue {
+    background-color: #004b6a;
+  }
+
+  .bricks-cta .badge-blue .brick-heading,
+  .bricks-cta .badge-dark-blue .brick-heading,
+  .bricks-cta .badge-red .brick-heading {
+    color: white;
+  }
+
+  .bricks-cta .badge-blue .brick-text,
+  .bricks-cta .badge-blue .brick-heading,
+  .bricks-cta .badge-red .brick-text,
+  .bricks-cta .badge-red .brick-heading,
+  .bricks-cta .badge-dark-blue .brick-text,
+  .bricks-cta .badge-dark-blue .brick-heading {
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
 .bricks-4 .brick {
   float: left;
   width: 40%;
@@ -2486,6 +2492,8 @@ input.button-s,
   font-size: 1.5rem;
   line-height: 35px;
   line-height: 2.1875rem;
+  float: left;
+  clear: both;
 }
 
 .masthead-header {

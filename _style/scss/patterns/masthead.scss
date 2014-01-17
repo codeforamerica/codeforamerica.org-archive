@@ -34,6 +34,8 @@
     font-family: $font-serif-regular;
     @include rem(font-size, 24px);
     @include rem(line-height, 35px);
+    float: left;
+    clear: both;
     }
 
 .masthead-header {

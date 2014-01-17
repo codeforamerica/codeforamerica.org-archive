@@ -286,6 +286,10 @@ section,
     margin-bottom: 0;
     }
 
+.global-header-compact .nav-global-secondary {
+    display: none;
+    }
+
 .global-header-tagline {
     display: block;
     }
@@ -340,9 +344,10 @@ section,
     }
 
 .masthead {
-    background-color: #6D6E71;
+    background-color: #000;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 3px;
+    margin-top: 60px;
     }
 
 .masthead:before {
@@ -353,6 +358,10 @@ section,
 .masthead .h1,
 .masthead p {
     color: white;
+    }
+
+.masthead p {
+    float: none;
     }
 
 .masthead h1,
@@ -574,11 +583,8 @@ section,
     }
 
 .brick.badge-blue .brick-text,
-.brick.badge-blue .brick-heading,
 .brick.badge-red .brick-text,
-.brick.badge-red .brick-heading,
-.brick.badge-dark-blue .brick-text,
-.brick.badge-dark-blue .brick-heading {
+.brick.badge-dark-blue .brick-text {
     color: black;
     text-align: center;
     }

@@ -1510,6 +1510,8 @@ input.button-s,
   font-size: 1.5rem;
   line-height: 35px;
   line-height: 2.1875rem;
+  float: left;
+  clear: both;
 }
 
 .masthead-header {

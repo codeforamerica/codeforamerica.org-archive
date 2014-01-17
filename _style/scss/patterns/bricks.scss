@@ -72,34 +72,43 @@
     color: $color-blue;
     }
 
-@media (max-width:40em) {
-    .bricks-cta .brick.badge-heading {
-        background-image: none;
-        }
-    }
-
-.bricks-cta .badge-blue {
-    background-color: $color-blue;
-    }
-
 .bricks-cta .badge-blue .brick-heading {
     color: $color-blue;
     }
 
-.bricks-cta .badge-red {
-    background-color: $color-red;
+.bricks-cta .badge-dark-blue .brick-heading {
+    color: $color-dark-blue;
     }
 
 .bricks-cta .badge-red .brick-heading {
     color: $color-red;
     }
 
+@media (max-width:40em) {
+    .bricks-cta .brick.badge-heading {
+        background-image: none;
+        }
+    
+
+.bricks-cta .badge-blue {
+    background-color: $color-blue;
+    }
+
+
+.bricks-cta .badge-red {
+    background-color: $color-red;
+    }
+
+
+
 .bricks-cta .badge-dark-blue {
     background-color: $color-dark-blue;
     }
 
-.bricks-cta .badge-dark-blue .brick-heading {
-    color: $color-dark-blue;
+.bricks-cta .badge-blue .brick-heading,
+.bricks-cta .badge-dark-blue .brick-heading,
+.bricks-cta .badge-red .brick-heading {
+    color: white;
     }
 
 .bricks-cta .badge-blue .brick-text,
@@ -112,6 +121,11 @@
     text-align: left;
     margin-bottom: 0;
     }
+
+}
+
+
+
 
 .bricks-4 .brick {
     float: left;
