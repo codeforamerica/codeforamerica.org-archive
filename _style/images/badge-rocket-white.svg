@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled 3</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="badge-rocket-blue" sketch:type="MSLayerGroup">
+            <g id="Page-1">
+                <path d="M1000,500 C1000,223.857611 776.142389,0 500,0 C223.857611,0 0,223.857611 0,500 C0,776.142389 223.857611,1000 500,1000 C776.142389,1000 1000,776.142389 1000,500 Z M446,446 L350,446 L254,574 C254,574 355.708,545.674 415.033,558.958 L254,766 L464.951,601.928 C494.37,669.255 446,766 446,766 L574,670 L574,574 L734,414 L766,254 L606,286 L446,446 Z" id="Oval-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <g id="rocket" transform="translate(254.000000, 254.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

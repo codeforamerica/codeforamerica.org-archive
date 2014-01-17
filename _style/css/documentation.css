@@ -674,9 +674,18 @@ h6,
 .text-quiet,
 .text-whisper,
 .heading-contrast,
+.button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active,
 .brick-heading,
+.brick .badge-heading,
 .chimney .profile .profile-role,
 .chimney .profile .profile-note,
+.global-header-tagline,
 .stat .stat-heading {
   text-transform: uppercase;
   margin: 0;
@@ -1025,7 +1034,13 @@ input[type="search"] {
 }
 
 /*  Text ––––––––––––––––––––––––––––––––––––––––––––––––– */
-.text-whisper, .heading-contrast, .brick-heading, .chimney .profile .profile-role, .chimney .profile .profile-note {
+.text-whisper, .heading-contrast, .button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active, .brick-heading, .brick .badge-heading, .chimney .profile .profile-role, .chimney .profile .profile-note, .global-header-tagline {
   color: #6d6e71;
 }
 
@@ -1767,6 +1782,32 @@ input.button-subtle.button-progress:active,
   border: 1px solid #e5e5e5;
 }
 
+/*  Button: Invert --------------------------------------- */
+.button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
+  color: black;
+  border: 1px solid black;
+  opacity: 0.5;
+  padding: 16px 24px;
+  transition: 0.2;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+input.button-invert:hover,
+input.button-invert:focus,
+input.button-invert:active,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
+  opacity: 0.8;
+}
+
 /*  Button: Sizes --------------------------------------- */
 .button-crotchet,
 .button-crotchet:link,
@@ -1830,70 +1871,27 @@ input.button-s,
 .brick {
   padding: 0;
   margin: 0 0 1em 0;
-  -webkit-transform: translateZ(0);
   position: relative;
-  background-color: #399fd3;
 }
 
-.brick:before {
-  content: "";
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #399fd3;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: 0.4s;
-  -moz-filter: brightness(70%) contrast(130%);
-  -webkit-filter: brightness(70%) contrast(130%);
-  filter: brightness(70%) contrast(130%);
-}
-
-.brick:hover:before,
-.brick:focus:before,
-.brick:active:before {
-  -webkit-filter: brightness(100%) contrast(100%);
-  -moz-filter: brightness(100%) contrast(100%);
-  filter: brightness(100%) contrast(100%);
-}
-
-.brick:nth-child(1):before {
-  background-image: url("../images/brick-bg1.png");
-}
-
-.brick:nth-child(2):before {
-  background-image: url("../images/brick-bg2.png");
-  background-color: #cf1b41;
-}
-
-.brick:nth-child(3):before {
-  background-image: url("../images/brick-bg3.png");
-  background-color: #004b6a;
+.brick a:link,
+.brick a:visited,
+.brick a:hover,
+.brick a:focus,
+.brick a:active {
+  color: black;
 }
 
 .brick .brick-link {
-  min-height: 100px;
-  min-height: 6.25rem;
-  padding-top: 80px;
-  padding-top: 5rem;
-  padding-bottom: 80px;
-  padding-bottom: 5rem;
+  padding-top: 15px;
+  padding-top: 0.9375rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   padding-left: 4%;
   padding-right: 4%;
   display: block;
 }
 
-@media (max-width: 40em) {
-  .brick .brick-link {
-    padding-top: 15px;
-    padding-top: 0.9375rem;
-    padding-bottom: 10px;
-    padding-bottom: 0.625rem;
-  }
-}
 .brick .brick-link:hover,
 .brick .brick-link:focus,
 .brick .brick-link:active {
@@ -1901,7 +1899,6 @@ input.button-s,
 }
 
 .brick-heading {
-  color: #e5e5e5;
   margin-bottom: 5px;
   margin-bottom: 0.3125rem;
 }
@@ -1910,12 +1907,12 @@ input.button-s,
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
-  color: white;
+  color: black;
   text-transform: uppercase;
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 30px;
-  line-height: 1.875rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
 }
 
 @media (min-width: 40em) {
@@ -1923,6 +1920,87 @@ input.button-s,
     margin-bottom: 0;
   }
 }
+.brick.badge-heading {
+  border-bottom: none;
+  background-position: center top;
+  padding-left: 0;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.brick .badge-heading {
+  border-bottom: none;
+  background-position: center top;
+  padding-left: 0;
+  padding-top: 65px;
+  text-align: center;
+  min-height: 0;
+  margin-bottom: 0.35em;
+  color: #399fd3;
+}
+
+.bricks-cta .badge-blue .brick-heading {
+  color: #399fd3;
+}
+
+.bricks-cta .badge-dark-blue .brick-heading {
+  color: #004b6a;
+}
+
+.bricks-cta .badge-red .brick-heading {
+  color: #cf1b41;
+}
+
+@media (max-width: 40em) {
+  .bricks-cta .brick.badge-heading {
+    background-image: none;
+  }
+
+  .bricks-cta .badge-blue {
+    background-color: #399fd3;
+  }
+
+  .bricks-cta .badge-red {
+    background-color: #cf1b41;
+  }
+
+  .bricks-cta .badge-dark-blue {
+    background-color: #004b6a;
+  }
+
+  .bricks-cta .badge-blue .brick-heading,
+  .bricks-cta .badge-dark-blue .brick-heading,
+  .bricks-cta .badge-red .brick-heading {
+    color: white;
+  }
+
+  .bricks-cta .badge-blue .brick-text,
+  .bricks-cta .badge-blue .brick-heading,
+  .bricks-cta .badge-red .brick-text,
+  .bricks-cta .badge-red .brick-heading,
+  .bricks-cta .badge-dark-blue .brick-text,
+  .bricks-cta .badge-dark-blue .brick-heading {
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.bricks-4 .brick {
+  float: left;
+  width: 40%;
+  margin-right: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  clear: none;
+  background-size: 35px;
+  padding-top: 40px;
+}
+
+.bricks-4 .brick:nth-child(2n+2) {
+  margin-right: 0;
+}
+
 .calendar {
   border: 3px solid #e5e5e5;
   border-radius: 3px;
@@ -2255,13 +2333,6 @@ input.button-s,
 .badge-heading {
   margin: 16px 0 22px;
   margin: 1rem 0 1.375rem;
-  padding-left: 65px;
-  padding-left: 4.0625rem;
-  min-height: 65px;
-  min-height: 4.0625rem;
-  background-size: 50px;
-  background-size: 3.125rem;
-  background-image: url("../images/badge-rocket-blue.png");
   background-position: left top;
   background-repeat: no-repeat;
   border-bottom: 1px solid;
@@ -2274,61 +2345,125 @@ input.button-s,
   .badge-heading {
     min-height: 70px;
     min-height: 4.375rem;
+    background-image: url("../images/badge-rocket-black.png");
+    padding-left: 65px;
+    padding-left: 4.0625rem;
+    min-height: 65px;
+    min-height: 4.0625rem;
+    background-size: 50px;
+    background-size: 3.125rem;
+  }
+
+  .svg .badge-heading {
+    background-image: url("../images/badge-rocket-black.svg");
+  }
+
+  .badge-heading.badge-gray {
+    background-image: url("../images/badge-rocket-gray.png");
+  }
+
+  .svg .badge-heading.badge-gray {
+    background-image: url("../images/badge-rocket-gray.svg");
+  }
+
+  .badge-heading.badge-orange {
+    background-image: url("../images/badge-rocket-orange.png");
+  }
+
+  .svg .badge-heading.badge-orange {
+    background-image: url("../images/badge-rocket-orange.svg");
+  }
+
+  .badge-heading.badge-purple {
+    background-image: url("../images/badge-rocket-purple.png");
+  }
+
+  .svg .badge-heading.badge-purple {
+    background-image: url("../images/badge-rocket-purple.svg");
+  }
+
+  .badge-heading.badge-red {
+    background-image: url("../images/badge-rocket-red.png");
+  }
+
+  .svg .badge-heading.badge-red {
+    background-image: url("../images/badge-rocket-red.svg");
+  }
+
+  .badge-heading.badge-teal {
+    background-image: url("../images/badge-rocket-teal.png");
+  }
+
+  .svg .badge-heading.badge-teal {
+    background-image: url("../images/badge-rocket-teal.svg");
+  }
+
+  .badge-heading.badge-dark-blue {
+    background-image: url("../images/badge-rocket-dark-blue.png");
+  }
+
+  .svg .badge-heading.badge-dark-blue {
+    background-image: url("../images/badge-rocket-dark-blue.svg");
+  }
+
+  .badge-heading.badge-blue {
+    background-image: url("../images/badge-rocket-blue.png");
+  }
+
+  .svg .badge-heading.badge-blue {
+    background-image: url("../images/badge-rocket-blue.svg");
+  }
+
+  .badge-heading.badge-github {
+    background-image: url("../images/badge-github-black.png");
+  }
+
+  .svg .badge-heading.badge-github {
+    background-image: url("../images/badge-github-black.svg");
   }
 }
+.badge-heading {
+  background-image: url("../images/badge-rocket-black.png");
+}
+
 .svg .badge-heading {
-  background-image: url("../images/badge-rocket-blue.svg");
+  background-image: url("../images/badge-rocket-black.svg");
 }
 
-.badge-heading.badge-gray {
-  background-image: url("../images/badge-rocket-gray.png");
+.brick.badge-github {
+  background-image: url("../images/badge-github-black.png");
 }
 
-.svg .badge-heading.badge-gray {
-  background-image: url("../images/badge-rocket-gray.svg");
+.svg .brick.badge-github {
+  background-image: url("../images/badge-github-black.svg");
 }
 
-.badge-heading.badge-orange {
-  background-image: url("../images/badge-rocket-orange.png");
+.slab-dark-blue .bricks-4 .badge-heading {
+  background-image: url("../images/badge-rocket-white.png");
 }
 
-.svg .badge-heading.badge-orange {
-  background-image: url("../images/badge-rocket-orange.svg");
+.svg .slab-dark-blue .bricks-4 .badge-heading {
+  background-image: url("../images/badge-rocket-white.svg");
 }
 
-.badge-heading.badge-purple {
-  background-image: url("../images/badge-rocket-purple.png");
+.slab-dark-blue .bricks-4 .badge-github {
+  background-image: url("../images/badge-github-white.png");
 }
 
-.svg .badge-heading.badge-purple {
-  background-image: url("../images/badge-rocket-purple.svg");
-}
-
-.badge-heading.badge-red {
-  background-image: url("../images/badge-rocket-red.png");
-}
-
-.svg .badge-heading.badge-red {
-  background-image: url("../images/badge-rocket-red.svg");
-}
-
-.badge-heading.badge-teal {
-  background-image: url("../images/badge-rocket-teal.png");
-}
-
-.svg .badge-heading.badge-teal {
-  background-image: url("../images/badge-rocket-teal.svg");
+.svg .slab-dark-blue .bricks-4 .badge-github {
+  background-image: url("../images/badge-github-white.svg");
 }
 
 .masthead {
-  display: none;
   position: relative;
   overflow: hidden;
   text-align: center;
-  background-color: #494c49;
+  clear: both;
+  margin-top: 60px;
 }
 
 .masthead:before {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -2345,11 +2480,20 @@ input.button-s,
 
 .masthead h1,
 .masthead .h1 {
-  color: white;
-  text-align: center;
-  margin: -0.22em 0 0 0;
+  color: black;
+  margin: 0.2em 0 0 0;
   float: left;
   width: 100%;
+}
+
+.masthead p {
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  float: left;
+  clear: both;
 }
 
 .masthead-header {
@@ -2357,30 +2501,26 @@ input.button-s,
   width: auto;
   display: table;
   z-index: 1;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 0 4%;
   clear: both;
   position: inherit;
+  float: left;
 }
 
-.masthead-header a:link,
-.masthead-header a:visited,
-.masthead-header a:hover,
-.masthead-header a:focus,
-.masthead-header a:active {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom: none;
-  margin-bottom: 0;
-  transition: 0.2s;
+.masthead-header p a:link,
+.masthead-header p a:visited,
+.masthead-header p a:hover,
+.masthead-header p a:focus,
+.masthead-header p a:active {
+  color: #399fd3;
 }
 
-.masthead-header a:hover,
-.masthead-header a:focus,
-.masthead-header a:active {
-  color: white;
+.masthead-header p a:hover,
+.masthead-header p a:focus,
+.masthead-header p a:active {
+  border-bottom: 2px solid #399fd3;
 }
 
 @media (min-width: 63em) {
@@ -2405,13 +2545,12 @@ input.button-s,
 }
 
 .masthead-s .page-title {
-  font-size: 57px;
-  font-size: 3.5625rem;
-  line-height: 65px;
-  line-height: 4.0625rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 40px;
+  line-height: 2.5rem;
   float: none;
-  margin-top: 25px;
-  margin-top: 1.5625rem;
+  margin-top: 0;
 }
 
 @media print {
@@ -2430,23 +2569,25 @@ input.button-s,
 }
 
 .masthead-l .masthead-header {
-  margin-top: 11em;
+  margin-top: 5em;
   padding-bottom: 1em;
-  padding-top: 2em;
+  padding-top: 1em;
   margin-bottom: 0;
   width: auto;
 }
 
-.masthead-l .page-title {
-  font-size: 90px;
+.masthead-xl masthead-header p {
+  margin-bottom: 1.5em;
 }
 
 .masthead-header .nav-breadcrumbs {
   float: left;
-  color: white;
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
+  color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
+  margin-bottom: 0;
+  display: block;
 }
 
 .masthead-header .nav-breadcrumbs a:link,
@@ -2454,7 +2595,7 @@ input.button-s,
 .masthead-header .nav-breadcrumbs a:hover,
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
-  color: white;
+  color: black;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -2467,7 +2608,7 @@ input.button-s,
 }
 
 .masthead-header .nav-breadcrumbs li:first-child a {
-  background-image: url("../images/flag-white.png");
+  background-image: url("../images/flag-blue.png");
 }
 
 .masthead-header .button-cta {
@@ -2553,24 +2694,6 @@ input.button-s,
   }
 }
 /* @end highlight with avatar */
-.insulate {
-  margin: 15px auto;
-  margin: 0.9375rem auto;
-}
-
-.insulate-sides,
-.button-prominent.insulate-sides {
-  margin-left: 15px;
-  margin-left: 0.9375rem;
-  margin-right: 15px;
-  margin-right: 0.9375rem;
-}
-
-.isolate {
-  margin-bottom: 1.5em;
-  clear: both;
-}
-
 .list-no-bullets, .bricks, .list-ruled, .nav-footer ul,
 .nav-footer ul ul, .nav-global-secondary ul, .nav-tabs, .post-categories {
   margin-left: 0;
@@ -2813,16 +2936,29 @@ input.button-s,
   font-weight: 700;
 }
 
-.island {
-  margin: 15px auto;
-  margin: 0.9375rem auto;
-  float: left;
-  display: block;
-  width: 100%;
+.list-logos a:link,
+.list-logos a:visited,
+.list-logos a:hover,
+.list-logos a:focus,
+.list-logos a:active {
+  border: none;
 }
 
-.island + .island {
-  margin-top: 0;
+.list-logos {
+  margin: 1em 0;
+}
+
+.list-logos li {
+  display: inline-block;
+  padding: 0;
+  background-image: none;
+  margin: 2em 4%;
+  width: 41%;
+  vertical-align: middle;
+}
+
+.list-logos li a {
+  display: inline-block;
 }
 
 .map-xl {
@@ -2899,6 +3035,7 @@ nav ul li {
   font-size: 0.75rem;
   margin-bottom: 1em;
   text-rendering: optimizeLegibility;
+  display: none;
 }
 
 @media print {
@@ -3013,7 +3150,7 @@ nav ul li {
   }
 }
 .nav-global-primary ul {
-  width: 96%;
+  width: 92%;
   margin: 0;
 }
 
@@ -3450,6 +3587,56 @@ nav ul li {
     display: none;
   }
 }
+.post-preview {
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+
+.post-preview .post-link {
+  display: block;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  clear: both;
+}
+
+.post-preview .post-content > p:first-child:first-letter {
+  float: left;
+  font-size: 3.4em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 0.15em 0 0;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.5px;
+}
+
+.post-preview .post-body {
+  clear: both;
+}
+
+.post-preview .post-author {
+  padding-left: 65px;
+  position: relative;
+  min-height: 55px;
+}
+
+.post-preview .profile-photo {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  height: 50px;
+  width: 50px;
+}
+
+.post-preview .profile-name {
+  color: white;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
+}
+
 .profile-photo {
   border-radius: 100px;
   height: 140px;
@@ -3860,7 +4047,7 @@ section,
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .brick-heading, .slab-blue .chimney .profile .profile-role, .chimney .profile .slab-blue .profile-role, .slab-blue .chimney .profile .profile-note, .chimney .profile .slab-blue .profile-note {
+.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .button-invert, .slab-blue .brick-heading, .slab-blue .brick .badge-heading, .brick .slab-blue .badge-heading, .slab-blue .chimney .profile .profile-role, .chimney .profile .slab-blue .profile-role, .slab-blue .chimney .profile .profile-note, .chimney .profile .slab-blue .profile-note, .slab-blue .global-header-tagline {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -3870,9 +4057,21 @@ section,
   color: white;
 }
 
-.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .brick-heading, .slab-dark-blue .chimney .profile .profile-role, .chimney .profile .slab-dark-blue .profile-role, .slab-dark-blue .chimney .profile .profile-note, .chimney .profile .slab-dark-blue .profile-note {
+.slab-dark-blue a:link,
+.slab-dark-blue a:visited,
+.slab-dark-blue .text-feature {
+  color: white;
+}
+
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .button-invert, .slab-dark-blue .brick-heading, .slab-dark-blue .brick .badge-heading, .brick .slab-dark-blue .badge-heading, .slab-dark-blue .chimney .profile .profile-role, .chimney .profile .slab-dark-blue .profile-role, .slab-dark-blue .chimney .profile .profile-note, .chimney .profile .slab-dark-blue .profile-note, .slab-dark-blue .global-header-tagline {
   color: white;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.slab-dark-blue a:hover,
+.slab-dark-blue a:focus,
+.slab-dark-blue a:active {
+  border-bottom: 1px solid white;
 }
 
 @media print {
@@ -3917,60 +4116,84 @@ section,
   color: white;
 }
 
-.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link, .slab-red a.brick-heading:link, .slab-red .chimney .profile a.profile-role:link, .chimney .profile .slab-red a.profile-role:link, .slab-red .chimney .profile a.profile-note:link, .chimney .profile .slab-red a.profile-note:link,
+.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link, .slab-red a.button-invert:link, .slab-red a.brick-heading:link, .slab-red .brick a.badge-heading:link, .brick .slab-red a.badge-heading:link, .slab-red .chimney .profile a.profile-role:link, .chimney .profile .slab-red a.profile-role:link, .slab-red .chimney .profile a.profile-note:link, .chimney .profile .slab-red a.profile-note:link, .slab-red a.global-header-tagline:link,
 .slab-red a.text-whisper:visited,
 .slab-red a.heading-contrast:visited,
+.slab-red a.button-invert:visited,
 .slab-red a.brick-heading:visited,
+.slab-red .brick a.badge-heading:visited,
+.brick .slab-red a.badge-heading:visited,
 .slab-red .chimney .profile a.profile-role:visited,
 .chimney .profile .slab-red a.profile-role:visited,
 .slab-red .chimney .profile a.profile-note:visited,
 .chimney .profile .slab-red a.profile-note:visited,
+.slab-red a.global-header-tagline:visited,
 .slab-red a.text-whisper:hover,
 .slab-red a.heading-contrast:hover,
+.slab-red a.button-invert:hover,
 .slab-red a.brick-heading:hover,
+.slab-red .brick a.badge-heading:hover,
+.brick .slab-red a.badge-heading:hover,
 .slab-red .chimney .profile a.profile-role:hover,
 .chimney .profile .slab-red a.profile-role:hover,
 .slab-red .chimney .profile a.profile-note:hover,
 .chimney .profile .slab-red a.profile-note:hover,
+.slab-red a.global-header-tagline:hover,
 .slab-red a.text-whisper:focus,
 .slab-red a.heading-contrast:focus,
+.slab-red a.button-invert:focus,
 .slab-red a.brick-heading:focus,
+.slab-red .brick a.badge-heading:focus,
+.brick .slab-red a.badge-heading:focus,
 .slab-red .chimney .profile a.profile-role:focus,
 .chimney .profile .slab-red a.profile-role:focus,
 .slab-red .chimney .profile a.profile-note:focus,
 .chimney .profile .slab-red a.profile-note:focus,
+.slab-red a.global-header-tagline:focus,
 .slab-red a.text-whisper:active,
 .slab-red a.heading-contrast:active,
+.slab-red a.button-invert:active,
 .slab-red a.brick-heading:active,
+.slab-red .brick a.badge-heading:active,
+.brick .slab-red a.badge-heading:active,
 .slab-red .chimney .profile a.profile-role:active,
 .chimney .profile .slab-red a.profile-role:active,
 .slab-red .chimney .profile a.profile-note:active,
-.chimney .profile .slab-red a.profile-note:active {
+.chimney .profile .slab-red a.profile-note:active,
+.slab-red a.global-header-tagline:active {
   border-bottom: none;
   font-weight: 500;
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover, .slab-red a.brick-heading:hover, .slab-red .chimney .profile a.profile-role:hover, .chimney .profile .slab-red a.profile-role:hover, .slab-red .chimney .profile a.profile-note:hover, .chimney .profile .slab-red a.profile-note:hover,
+.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover, .slab-red a.button-invert:hover, .slab-red a.brick-heading:hover, .slab-red .brick a.badge-heading:hover, .brick .slab-red a.badge-heading:hover, .slab-red .chimney .profile a.profile-role:hover, .chimney .profile .slab-red a.profile-role:hover, .slab-red .chimney .profile a.profile-note:hover, .chimney .profile .slab-red a.profile-note:hover, .slab-red a.global-header-tagline:hover,
 .slab-red a.text-whisper:focus,
 .slab-red a.heading-contrast:focus,
+.slab-red a.button-invert:focus,
 .slab-red a.brick-heading:focus,
+.slab-red .brick a.badge-heading:focus,
+.brick .slab-red a.badge-heading:focus,
 .slab-red .chimney .profile a.profile-role:focus,
 .chimney .profile .slab-red a.profile-role:focus,
 .slab-red .chimney .profile a.profile-note:focus,
 .chimney .profile .slab-red a.profile-note:focus,
+.slab-red a.global-header-tagline:focus,
 .slab-red a.text-whisper:active,
 .slab-red a.heading-contrast:active,
+.slab-red a.button-invert:active,
 .slab-red a.brick-heading:active,
+.slab-red .brick a.badge-heading:active,
+.brick .slab-red a.badge-heading:active,
 .slab-red .chimney .profile a.profile-role:active,
 .chimney .profile .slab-red a.profile-role:active,
 .slab-red .chimney .profile a.profile-note:active,
-.chimney .profile .slab-red a.profile-note:active {
+.chimney .profile .slab-red a.profile-note:active,
+.slab-red a.global-header-tagline:active {
   color: white;
 }
 
-.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .brick-heading, .slab-red .chimney .profile .profile-role, .chimney .profile .slab-red .profile-role, .slab-red .chimney .profile .profile-note, .chimney .profile .slab-red .profile-note {
+.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .button-invert, .slab-red .brick-heading, .slab-red .brick .badge-heading, .brick .slab-red .badge-heading, .slab-red .chimney .profile .profile-role, .chimney .profile .slab-red .profile-role, .slab-red .chimney .profile .profile-note, .chimney .profile .slab-red .profile-note, .slab-red .global-header-tagline {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -4001,7 +4224,7 @@ section,
   border: none;
 }
 
-.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .brick-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note {
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert, .slab-medium-red .brick-heading, .slab-medium-red .brick .badge-heading, .brick .slab-medium-red .badge-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note, .slab-medium-red .global-header-tagline {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -4011,11 +4234,21 @@ section,
   background: rgba(229, 229, 229, 0.5);
 }
 
-.slab-dark-gray {
-  background: #494c49;
+.slab-black {
+  background-color: black;
   color: white;
 }
 
+.slab-dark-gray {
+  background-color: #494c49;
+  color: white;
+}
+
+.slab-black a:link,
+.slab-black a:visited,
+.slab-black a:hover,
+.slab-black a:focus,
+.slab-black a:active,
 .slab-dark-gray a:link,
 .slab-dark-gray a:visited,
 .slab-dark-gray a:hover,
@@ -4025,6 +4258,9 @@ section,
   border-bottom: none;
 }
 
+.slab-black a:hover,
+.slab-black a:focus,
+.slab-black a:active,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
 .slab-dark-gray a:active {
@@ -4032,11 +4268,24 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-dark-gray .text-whisper, .slab-dark-gray .heading-contrast, .slab-dark-gray .brick-heading, .slab-dark-gray .chimney .profile .profile-role, .chimney .profile .slab-dark-gray .profile-role, .slab-dark-gray .chimney .profile .profile-note, .chimney .profile .slab-dark-gray .profile-note {
+.slab-black .text-whisper, .slab-black .heading-contrast, .slab-black .button-invert, .slab-black .brick-heading, .slab-black .brick .badge-heading, .brick .slab-black .badge-heading, .slab-black .chimney .profile .profile-role, .chimney .profile .slab-black .profile-role, .slab-black .chimney .profile .profile-note, .chimney .profile .slab-black .profile-note, .slab-black .global-header-tagline,
+.slab-dark-gray .text-whisper,
+.slab-dark-gray .heading-contrast,
+.slab-dark-gray .button-invert,
+.slab-dark-gray .brick-heading,
+.slab-dark-gray .brick .badge-heading,
+.brick .slab-dark-gray .badge-heading,
+.slab-dark-gray .chimney .profile .profile-role,
+.chimney .profile .slab-dark-gray .profile-role,
+.slab-dark-gray .chimney .profile .profile-note,
+.chimney .profile .slab-dark-gray .profile-note,
+.slab-dark-gray .global-header-tagline {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
+.slab-black form input,
+.slab-black form select,
 .slab-dark-gray form input,
 .slab-dark-gray form select {
   border: none;
@@ -4078,9 +4327,66 @@ section,
   background: rgba(0, 0, 0, 0.4);
 }
 
-.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .brick-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note {
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert, .slab-medium-red .brick-heading, .slab-medium-red .brick .badge-heading, .brick .slab-medium-red .badge-heading, .slab-medium-red .chimney .profile .profile-role, .chimney .profile .slab-medium-red .profile-role, .slab-medium-red .chimney .profile .profile-note, .chimney .profile .slab-medium-red .profile-note, .slab-medium-red .global-header-tagline {
   color: white;
   color: rgba(255, 255, 255, 0.7);
+}
+
+[class*="slab-"].slab-bg1 {
+  background-color: transparent;
+  position: relative;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-image: url("../images/fade-black.png");
+}
+
+.slab-bg1:before {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../images/photo-bg1.jpg");
+  background-size: cover;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+
+.isolate {
+  margin-bottom: 1.5em;
+  clear: both;
+}
+
+.isolate-invert {
+  margin-top: 1.5em;
+  clear: both;
+}
+
+.insulate {
+  margin: 15px auto;
+  margin: 0.9375rem auto;
+}
+
+.insulate + .insulate {
+  margin-top: 0;
+}
+
+.insulate-sides,
+.button-prominent.insulate-sides {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+}
+
+.insulate-inner {
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 
 .spotlight {
@@ -4386,6 +4692,23 @@ section,
   color: #cf1b41;
 }
 
+.text-feature {
+  font-size: 50px;
+  font-size: 3.125rem;
+  margin: 0 0 15px 0;
+  margin: 0 0 0.9375rem 0;
+  font-family: "Sentinel A", "Sentinel B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  color: #399fd3;
+}
+
+.muted {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
 .wodge {
   border-bottom: 1px solid;
   border-color: #494c49;
@@ -4494,6 +4817,8 @@ section,
   z-index: 2;
   -webkit-transition: padding 0.5s ease;
   transition: padding 0.5s ease;
+  position: absolute;
+  top: 0;
 }
 
 .global-header-logo {
@@ -4518,6 +4843,17 @@ section,
 .global-header-logo:focus,
 .global-header-logo:active {
   border: none;
+}
+
+.global-header-tagline {
+  display: none;
+  margin: 28px 30px;
+  margin: 1.75rem 1.875rem;
+  float: left;
+}
+
+.global-header-tagline sup {
+  font-size: 0.5em;
 }
 
 .global-footer {
@@ -4720,6 +5056,12 @@ section,
   max-width: 92%;
   float: left;
   margin-bottom: 1em;
+}
+
+.layout-solo {
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 92%;
 }
 
 .layout-col {
@@ -5086,7 +5428,7 @@ body {
   font-size: 1em;
 }
 
-.xx-options .xx-nav .text-whisper, .xx-options .xx-nav .heading-contrast, .xx-options .xx-nav .brick-heading, .xx-options .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-options .xx-nav .profile-role, .xx-options .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-options .xx-nav .profile-note,
+.xx-options .xx-nav .text-whisper, .xx-options .xx-nav .heading-contrast, .xx-options .xx-nav .button-invert, .xx-options .xx-nav .brick-heading, .xx-options .xx-nav .brick .badge-heading, .brick .xx-options .xx-nav .badge-heading, .xx-options .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-options .xx-nav .profile-role, .xx-options .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-options .xx-nav .profile-note, .xx-options .xx-nav .global-header-tagline,
 .xx-options .xx-nav li a {
   padding: 0.8em 1em;
   display: block;
@@ -5095,13 +5437,13 @@ body {
 }
 
 @media (min-width: 40em) {
-  .xx-options .xx-nav .text-whisper, .xx-options .xx-nav .heading-contrast, .xx-options .xx-nav .brick-heading, .xx-options .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-options .xx-nav .profile-role, .xx-options .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-options .xx-nav .profile-note,
+  .xx-options .xx-nav .text-whisper, .xx-options .xx-nav .heading-contrast, .xx-options .xx-nav .button-invert, .xx-options .xx-nav .brick-heading, .xx-options .xx-nav .brick .badge-heading, .brick .xx-options .xx-nav .badge-heading, .xx-options .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-options .xx-nav .profile-role, .xx-options .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-options .xx-nav .profile-note, .xx-options .xx-nav .global-header-tagline,
   .xx-options .xx-nav li a {
     padding: 0.2em 5% 0.2em 15%;
     text-align: left;
   }
 }
-.xx-nav .text-whisper, .xx-nav .heading-contrast, .xx-nav .brick-heading, .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-nav .profile-role, .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-nav .profile-note {
+.xx-nav .text-whisper, .xx-nav .heading-contrast, .xx-nav .button-invert, .xx-nav .brick-heading, .xx-nav .brick .badge-heading, .brick .xx-nav .badge-heading, .xx-nav .chimney .profile .profile-role, .chimney .profile .xx-nav .profile-role, .xx-nav .chimney .profile .profile-note, .chimney .profile .xx-nav .profile-note, .xx-nav .global-header-tagline {
   padding: 1em 1.25em 0;
   color: #aaa;
   margin: 0 0 0.3em;

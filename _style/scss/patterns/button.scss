@@ -317,8 +317,36 @@
 		color: $color-gray;
 		border: 1px solid $color-light-gray;
 		}
-		
-	
+
+/*  Button: Invert --------------------------------------- */
+
+
+.button-invert,
+input.button-invert,
+.button-invert:link,
+.button-invert:visited,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
+    color: black;
+    border: 1px solid black;
+    opacity: 0.5;
+    @extend .text-whisper;
+    padding: 16px 24px;
+    transition: 0.2;
+    display: inline-block;
+    margin-top: 1em;
+    }
+
+input.button-invert:hover,
+input.button-invert:focus,
+input.button-invert:active,
+.button-invert:hover,
+.button-invert:focus,
+.button-invert:active {
+    opacity: 0.8;
+    }
+
 
 /*  Button: Sizes --------------------------------------- */
 

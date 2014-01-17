@@ -3,6 +3,7 @@
     @include rem(font-size, 12px);
     margin-bottom: 1em;
     text-rendering: optimizeLegibility;
+    display: none;
     }
     
     @media print {
