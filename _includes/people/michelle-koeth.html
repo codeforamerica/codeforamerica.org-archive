@@ -51,4 +51,26 @@
                 </ul>     
             </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Michelle Koeth</h3>
+    <img alt="michelle-koeth" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/michelle-koeth.jpg" /> 
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://brigade.codeforamerica.org/brigades/48">Northern Virginia Brigade</a>
+        </p>
+        <p>
+            Michelle is a lawyer by day, and a civic hacker by night, as a Code for America Brigade co-captain, and core-developer on several open source web applications for local government. In 2011, Michelle was an inaugural Code for America fellow where she worked on the Civic Commons Legal and Procurement Issues guide, a guide for local government procurement staff to procuring open source software and potential legal issues therefrom. Prior to Code for America, Michelle worked as a patent attorney for a private law firm, and as a web application developer and server administrator for a global health corporation.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/michelle-koeth">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="www.linkedin.com/in/mkoeth/">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/michellekoeth">@michellekoeth</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endif %}

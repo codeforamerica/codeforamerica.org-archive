@@ -33,4 +33,25 @@
 
 </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Ernest Hsiung</h3>
+    <img alt="ernest-hsiung" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/ernest-hsiung.jpg" /> 
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://codeformiami.org/">Miami, FL Brigade</a>
+        </p>
+        <p>
+            Ernie Hsiung is a co-captain of Code for Miami, a volunteer local civic hacking brigade that has launched community projects such as Miami Wiki and the Florida Legislature Tracker. He also organizes the Front-End Developers of Miami MeetUp group. Currently a Software Engineer for RackSpace, he has worked as a Front-End Engineer at Yahoo! and a Developer Evangelist at Ning.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/ernest-hsiung">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-website"><a href="http://erniehsiung.com">Website</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endif %}

@@ -35,4 +35,26 @@
 
 </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Jase Wilson</h3>
+    <img alt="jase-wilson" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jase-wilson.jpg" /> 
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://www.meetup.com/KCBrigade/">Kansas City, MO Brigade</a>
+        </p>
+        <p>
+            Jase Wilson is a civic geek and planner at heart based in downtown Kansas City, Missouri. In 2004 he founded Luminopolis, a boutique civic software firm that specializes in helping communities make the most of web-based technologies. In 2012 he founded Neighbor.ly, the civic fundraising platform that helps people, companies and institutions invest in the places and civic projects they care about. His interests lie at the intersection of cities, technology, and new models of collective funding.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/jase-wilson">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://linkedin.com/in/luminopolis">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/luminopolis">@luminopolis</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endif %}

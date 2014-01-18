@@ -37,4 +37,27 @@
 
 </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Colin Copeland</h3>
+    <img class="u-photo profile-photo" src="http://placekitten.com/g/150/150" /> 
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://codefordurham.com/">Durham, NC Brigade</a>
+        </p>
+        <p>
+            Colin is a web developer who likes to hack on data. He co-owns Caktus Group, a 17 member custom web app development firm out of North Carolina specializing in Django-powered websites. At Caktus, he gets to work with a great team on projects for a variety of clients, including UNICEF, UNC, and the University of Chicago. After being introduced to open data, he attended a few Open Data Days and eventually met Andy, his Brigade co-captain, and started Code for Durham.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/colin-copeland">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/colincopeland">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/copelco">@copelco</a></li>
+            <li class="social-github"><a href="https://github.com/copelco">GitHub</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endif %}

@@ -34,4 +34,28 @@
 
 </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Hans Thompson</h3>
+    <img class="u-photo profile-photo" src="http://placekitten.com/g/150/150" /> 
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://www.meetup.com/cfabrigade/Anchorage-AK/">Anchorage, AK Brigade</a>
+        </p>
+        <p>
+            I’ve grown up in west Anchorage and still think Alaska is the best place to live after traveling around the US and nearly every state.
+        </p>
+        <p>
+            I’ve been playing recently with crime map data, the annual finance reporting for municipalities, and the financial records of political campaigning. After the beginning of the recession, I needed to find a way to apply myself to understand the institutional misunderstandings that led to a bruising of the economy. Using R for analytics is one way for me to answer the questions that I’ve had.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/hans-thompson">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/profile/view?id=18149616">LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endif %}
