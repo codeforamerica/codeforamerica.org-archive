@@ -35,4 +35,22 @@
 
 </div>
 
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+                                    <h3 class="p-name profile-name">Luke Norris</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/luke-norris.jpg">
+
+                                    <div class="p-note profile-note">
+                                        <p>Director of Business Development</p>
+
+                                        <p>Luke Norris (Director of Business Development) has 12 years of experience in executing growth strategies for start-ups, nonprofits and Fortune 500 companies through leading direct sales and innovation teams, as well as structuring strategic partnerships. Luke is a Denver native who lives...</p>
+
+                                        <p><a class="link-more" href="{{ include.base }}/people/luke-norris">More</a></p>
+
+                                        <ul class="list-social list-social-horizontal">
+                                            <li class="social-linkedin"><a href="http://www.linkedin.com/in/lukednorris">LinkedIn</a></li>
+                                            <li class="social-twitter"><a href="http://twitter.com/norrisluke">Twitter</a></li>
+                                        </ul>
+                                    </div>
+
 {% endif %}

@@ -35,4 +35,19 @@
 
 </div>
 
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+                                    <h3 class="p-name profile-name">John Lilly</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/john-lilly.jpg">
+
+                                    <div class="p-note profile-note">
+                                        <p>John Lilly is a partner at Greylock Partners with a focus on consumer Internet and enterprise software. Prior to Greylock, John was CEO of Mozilla, the organization behind Firefox, an open source Web browser used by more than 400 million people. John also co-founded Reactivity, an enterprise security…</p>
+
+                                        <p><a class="link-more" href="{{ include.base }}/people/john-lilly">More</a></p>
+
+                                        <ul class="list-social list-social-horizontal">
+                                            <li class="social-linkedin"><a href="http://www.linkedin.com/in/johnlilly">LinkedIn</a></li>
+                                        </ul>
+                                    </div>
+
 {% endif %}

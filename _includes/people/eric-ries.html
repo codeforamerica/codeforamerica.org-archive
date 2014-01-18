@@ -34,4 +34,19 @@
 
 </div>
 
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+                                    <h3 class="p-name profile-name">Eric Ries</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/eric-ries.png">
+
+                                    <div class="p-note profile-note">
+                                        <p>Eric Ries is an entrepreneur and author of the New York Times bestseller, The Lean Startup: How Today’s Entrepreneurs Use Continuous Innovation to Create Radically Successful Business, published by Crown Business. He serves on the advisory board of a number of technology startups, and has consulted…</p>
+
+                                        <p><a class="link-more" href="{{ include.base }}/people/eric-ries">More</a></p>
+
+                                        <ul class="list-social list-social-horizontal">
+                                            <li class="social-linkedin"><a href="http://www.linkedin.com/in/eries">LinkedIn</a></li>
+                                        </ul>
+                                    </div>
+
 {% endif %}
