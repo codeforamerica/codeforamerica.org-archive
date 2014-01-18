@@ -1,0 +1,37 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Seth Vincent</h2>
+	</div>
+
+	<div class="layout-minor">
+		
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="http://codeforseattle.org/">Seattle, UT Brigade</a></li>
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains">Brigade Captains</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/seth-vincent.jpg" />
+	</div>
+
+	<div class="layout-major">
+	    	
+	    <p class="p-note">Seth Vincent writes code, stories, and music. He's an independent programmer, designer and writer, and is a co-organizer of seattle.io (http://seattle.io) and Code for Seattle (http://codeforseattle.org). Seth writes things like Learn.js (http://learnjs.io), a book about javascript, and builds things like crtrdg.js (http://crtrdg.github.io), a toolkit for 2d games at Super Big Tree (http://superbigtree.com).</p>
+	    
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="http://twitter.com/sethdvincent">@sethdvincent</a></td></tr>
+
+	    	</table>
+	    </div>	    
+	</div>
+
+</div>
+
+{% endif %}
