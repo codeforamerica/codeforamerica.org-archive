@@ -98,19 +98,24 @@
 
 .nav-global-secondary .nav-tier2 {
     background-color: $color-white;
-    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1),
-    			0px 1px 1px rgba(0, 0, 0, 0.1);
+    
 		border-bottom: 1px solid #ddd;
 		border-top: 1px solid #ddd;
     display: block;
     position: absolute;
-    left: 0;
     right: 0;
-    width: 96%;   
+    //width: 96%;   
     padding: 0 2%; 
     @include rem(font-size, 14px);
     font-weight: normal;
     text-align: right;
+    width: auto;
+    float: right;
+    right: 0;
+    left: auto;
+    padding-left: 9999px;
+    overflow: hidden;
+    margin-left: -9999px;
     }
     
     @media (max-width: 40em) {
@@ -122,11 +127,12 @@
         padding: 0;
         width: 100%;
         margin: 0.5em 0 1em 0;
+        
         }
     }
 
 .nav-global-secondary .nav-tier2 li {
-	float: right;
+	float: left;
     }
     
     @media (max-width: 40em) {
@@ -144,6 +150,6 @@
     text-transform: none;
     }
 
-.nav-global-secondary .nav-tier2 li:first-of-type a {
+.nav-global-secondary .nav-tier2 li:last-of-type a {
 	padding-right: 0;
 	}

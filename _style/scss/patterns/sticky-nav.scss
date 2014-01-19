@@ -1,6 +1,7 @@
 @media (min-width: 40em) and (min-height: 30em) {
 
-.sticky {
+.sticky,
+.sticky.global-header {
     position: fixed;
     top: 0;
     }
@@ -28,10 +29,6 @@
     @include rem(line-height, 31px);
     @include rem(margin, 7px 0 2px 16px);
     }
-
-.sticky .nav-tier2 {
-	padding: 0 2.1%; /* Compensates for a weird calculation bug */
-	}
 
 .sticky .nav-tier2 a:link,
 .sticky .nav-tier2 a:visited,

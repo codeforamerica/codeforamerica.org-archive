@@ -3317,19 +3317,23 @@ nav ul li {
 
 .nav-global-secondary .nav-tier2 {
   background-color: white;
-  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   display: block;
   position: absolute;
-  left: 0;
   right: 0;
-  width: 96%;
   padding: 0 2%;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: normal;
   text-align: right;
+  width: auto;
+  float: right;
+  right: 0;
+  left: auto;
+  padding-left: 9999px;
+  overflow: hidden;
+  margin-left: -9999px;
 }
 
 @media (max-width: 40em) {
@@ -3344,7 +3348,7 @@ nav ul li {
   }
 }
 .nav-global-secondary .nav-tier2 li {
-  float: right;
+  float: left;
 }
 
 @media (max-width: 40em) {
@@ -3362,7 +3366,7 @@ nav ul li {
   text-transform: none;
 }
 
-.nav-global-secondary .nav-tier2 li:first-of-type a {
+.nav-global-secondary .nav-tier2 li:last-of-type a {
   padding-right: 0;
 }
 
@@ -5368,7 +5372,8 @@ body {
 }
 
 @media (min-width: 40em) and (min-height: 30em) {
-  .sticky {
+  .sticky,
+  .sticky.global-header {
     position: fixed;
     top: 0;
   }
@@ -5401,11 +5406,6 @@ body {
     line-height: 1.9375rem;
     margin: 7px 0 2px 16px;
     margin: 0.4375rem 0 0.125rem 1rem;
-  }
-
-  .sticky .nav-tier2 {
-    padding: 0 2.1%;
-    /* Compensates for a weird calculation bug */
   }
 
   .sticky .nav-tier2 a:link,
