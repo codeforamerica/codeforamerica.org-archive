@@ -2481,9 +2481,10 @@ input.button-s,
 .masthead h1,
 .masthead .h1 {
   color: black;
-  margin: 0.2em 0 0 0;
+  margin: 0;
   float: left;
   width: 100%;
+  text-align: left;
 }
 
 .masthead p {
@@ -2569,11 +2570,17 @@ input.button-s,
 }
 
 .masthead-l .masthead-header {
-  margin-top: 5em;
+  margin-top: 0;
   padding-bottom: 1em;
   padding-top: 1em;
   margin-bottom: 0;
   width: auto;
+}
+
+.masthead-xl .masthead-header {
+  width: auto;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .masthead-xl masthead-header p {
@@ -2584,7 +2591,6 @@ input.button-s,
   float: left;
   color: black;
   color: rgba(0, 0, 0, 0.7);
-  position: absolute;
   top: 0;
   margin-bottom: 0;
   display: block;
@@ -5276,6 +5282,7 @@ body {
   clear: both;
   background-color: #494c49;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .js-offcanvas .nav-global-primary .nav-tier2 {
@@ -5284,6 +5291,8 @@ body {
 
 .js-offcanvas .nav-global-secondary .nav-tier2 {
   border-bottom: none;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
 }
 
 .js-offcanvas .nav-global-primary ul {

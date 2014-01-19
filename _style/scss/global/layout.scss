@@ -378,6 +378,7 @@ section,
 .masthead-header {
     text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
     float: none;
+    text-align: center;
     }
 
 .masthead .button-invert,
@@ -425,9 +426,9 @@ section,
     }
 
 .masthead-xl .masthead-header {
-    padding: 11em 0 3em;
+    padding-top: 11em;
+    padding-bottom: 1.25em;
     max-width: inherit;
-    width: 100%; 
     margin: 2em auto 0;
     }
     
@@ -453,6 +454,10 @@ section,
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
+    }
+
+.masthead-header .nav-breadcrumbs {
+    position: absolute;
     }
 
 .masthead-header .nav-breadcrumbs,
