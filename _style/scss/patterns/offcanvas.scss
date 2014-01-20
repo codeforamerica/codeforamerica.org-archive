@@ -154,17 +154,23 @@ body {
 	width: calc(99% - 9px);
 	color: $color-white;
 	margin-left: 7px;
+	margin-top: 0.25em;
 	}
 
+.js-offcanvas .search-global input:focus {
+    background-color: $color-white;
+    color: $color-black;
+    }
+
 .js-offcanvas .search-global .search-global-submit {
-	@include rem(top, 10px);
-	@include rem(right, 10px);
+	@include rem(top, 13px);
+	@include rem(right, 35px);
 	}
 
 .js-offcanvas .search-global-input:focus + .search-global-submit,
 .js-offcanvas .search-global .search-global-submit:focus,
 .js-offcanvas .search-global .search-global-submit:active {	
-	background-image: url('../images/icon-search-white.png');
+	background-image: url('../images/icon-search-black.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	}
