@@ -35,4 +35,24 @@
 
 </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">John Whitlock</h3>
+    
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/john-whitlock.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            John Whitlock is a software developer who has worked at several startups.  He got into civic technology in 2011, championing a 2-year project to get Tulsa's bus schedule into Google Maps.  He lives in Tulsa with his wife (a research librarian) and two kids.  
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/john-whitlock">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/johnwhitlock">LinkedIn</a></li>
+            <li class="social-twitter"><a href=" http://twitter.com/jwhitlock">@jwhitlock</a></li>
+        </ul>
+    </div>
+</div>
 {% endif %}
