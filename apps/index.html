@@ -240,29 +240,7 @@ nav-breadcrumbs:
 	    </article>
 	</li>
 	<li class="layout-crotchet">
-	    <article class="teaser teaser-app">
-	        <header class="teaser-header">
-	            <a href="learnsprout">
-	                <h1 class="teaser-title">LearnSprout</h1>
-	            </a>
-	        </header>
-	        <div class="teaser-body">
-	            <p>LearnSprout is a universal API for K-12 education that acts as a conduit between live student engagement and performance data and education technology providers.</p>
-	            
-	            <h2 class="text-whisper">Environment</h2>
-	            <p></p>
-	            
-	            <h2 class="text-whisper">Redeploy</h2>
-	            <p></p>
-	            
-	            <p><a href="learnsprout">Learn more about this app</a></p>
-	        </div>
-	        <footer class="teaser-footer">
-	            <a href="learnsprout" class="teaser-masthead">
-	                <img class="teaser-image" src="../media/images/apps/learnsprout.jpg" />
-	            </a>
-	        </footer>
-	    </article>
+        {% include apps/learnsprout.html context="all-apps" base=".." %}
 	</li>
 	<li class="layout-crotchet">
         {% include apps/localdata.html context="all-apps" base=".." %}

@@ -1,0 +1,75 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>LearnSprout</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/learnsprout.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>LearnSprout is a universal API for K-12 education that acts as a conduit between live student engagement and performance data and education technology providers.</p>
+	    
+	    <p class="text-whisper"><a href="http://www.learnsprout.com/">http://www<wbr>.learnsprout<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Founded by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/franklyn-chien">Franklyn Chien</a></li>
+	    	<li><a href="{{ include.base }}/people/anthony-wu">Anthony Wu</a></li>
+	    	<li><a href="{{ include.base }}/people/Joe Woo">Joe Woo</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Part of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/civic-startups">2012 Accelerator</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>LearnSprout is a universal API for K-12 education that acts as a conduit between live student engagement and performance data and education technology providers.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://www.learnsprout.com/">http://www<wbr>.learnsprout<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/LearnSprout/learnsprout.github.com">https://github<wbr>.com/<wbr>LearnSprout/<wbr>learnsprout<wbr>.github<wbr>.com</a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+	    <p>LearnSprout brings interoperability and accessibility to school data. We build tools to access the valuable data (e.g. roster info, grades, attendance) currently silo-ed away in legacy student information systems used across US K12. We’re creating a web API service that allows developers to build classroom apps that leverage this data, without the expensive enterprise-like vendor integration process. Lack of easy access to school data stifles innovation in the education space and creates unnecessary cost, time, and risk for both schools and app makers. We want to change this.</p>
+        <p>Get the API.</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/learnsprout">
+                <h1 class="teaser-title">LearnSprout</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>LearnSprout is a universal API for K-12 education that acts as a conduit between live student engagement and performance data and education technology providers.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/learnsprout">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/learnsprout" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/learnsprout.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
