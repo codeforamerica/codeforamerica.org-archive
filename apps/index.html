@@ -331,29 +331,7 @@ nav-breadcrumbs:
 	    </article>
 	</li>
 	<li class="layout-crotchet">
-	    <article class="teaser teaser-app">
-	        <header class="teaser-header">
-	            <a href="localdata">
-	                <h1 class="teaser-title">LocalData</h1>
-	            </a>
-	        </header>
-	        <div class="teaser-body">
-	            <p>Localdata is a digital toolkit that allows organizers and canvassers to collect and manage place-based data</p>
-	            
-	            <h2 class="text-whisper">Environment</h2>
-	            <p></p>
-	            
-	            <h2 class="text-whisper">Redeploy</h2>
-	            <p></p>
-	            
-	            <p><a href="localdata">Learn more about this app</a></p>
-	        </div>
-	        <footer class="teaser-footer">
-	            <a href="localdata" class="teaser-masthead">
-	                <img class="teaser-image" src="../media/images/apps/localdata.jpg" />
-	            </a>
-	        </footer>
-	    </article>
+        {% include apps/localdata.html context="all-apps" base=".." %}
 	</li>
 	<li class="layout-crotchet">
 	    <article class="teaser teaser-app">
