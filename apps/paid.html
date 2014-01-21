@@ -256,29 +256,7 @@ nav-breadcrumbs:
 	    </article>
 	</li>
 	<li class="layout-crotchet">
-	    <article class="teaser teaser-app">
-	        <header class="teaser-header">
-	            <a href="smartprocure">
-	                <h1 class="teaser-title">SmartProcure</h1>
-	            </a>
-	        </header>
-	        <div class="teaser-body">
-	            <p>SmartProcure is an online information service that provides access to local, state, and federal government procurement data.</p>
-	            
-	            <h2 class="text-whisper">Environment</h2>
-	            <p></p>
-	            
-	            <h2 class="text-whisper">Redeploy</h2>
-	            <p></p>
-	            
-	            <p><a href="smartprocure">Learn more about this app</a></p>
-	        </div>
-	        <footer class="teaser-footer">
-	            <a href="smartprocure" class="teaser-masthead">
-	                <img class="teaser-image" src="../media/images/apps/smartprocure.jpg" />
-	            </a>
-	        </footer>
-	    </article>
+        {% include apps/smartprocure.html context="paid-apps" base=".." %}
 	</li>
 	<li class="layout-crotchet">
 	    {% include apps/streetcred.html context="paid-apps" base=".." %}
