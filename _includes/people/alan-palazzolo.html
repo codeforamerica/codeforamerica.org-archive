@@ -38,4 +38,26 @@
 
 </div>
 
+{% elsif include.context == '2011-fellows' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">___ ___</h3>
+    
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/___-___.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            Short bio text.
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/___-___">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/alanpalazzolo/">LinkedIn</a></li>
+            <li class="social-github"><a href="http://github.com/zzolo">GitHub</a></li>
+            <li class="social-twitter"><a href="http://twitter.com/zzolo">@zzolo</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endif %}
