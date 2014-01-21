@@ -408,29 +408,7 @@ nav-breadcrumbs:
 	    </article>
 	</li>
 	<li class="layout-crotchet">
-	    <article class="teaser teaser-app">
-	        <header class="teaser-header">
-	            <a href="revelstone">
-	                <h1 class="teaser-title">Revelstone</h1>
-	            </a>
-	        </header>
-	        <div class="teaser-body">
-	            <p>Revelstone develops custom simple network management protocol solutions for a wide range of platforms as well as ensuring the health of network equipment.</p>
-	            
-	            <h2 class="text-whisper">Environment</h2>
-	            <p></p>
-	            
-	            <h2 class="text-whisper">Redeploy</h2>
-	            <p></p>
-	            
-	            <p><a href="revelstone">Learn more about this app</a></p>
-	        </div>
-	        <footer class="teaser-footer">
-	            <a href="revelstone" class="teaser-masthead">
-	                <img class="teaser-image" src="../media/images/apps/revelstone.jpg" />
-	            </a>
-	        </footer>
-	    </article>
+        {% include apps/revelstone.html context="all-apps" base=".." %}
 	</li>
 	<li class="layout-crotchet">
         {% include apps/smartprocure.html context="all-apps" base=".." %}
