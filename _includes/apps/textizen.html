@@ -1,0 +1,80 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Textizen</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/textizen.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Textizen is a civic dialogue platform that allows residents to connect with a powerful mix of offline outreach and online engagement.</p>
+	    
+	    <p class="text-whisper"><a href="https://www.textizen.com/">https://www<wbr>.textizen<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/alex-yule">Alex Yule</a></li>
+	    	<li><a href="{{ include.base }}/people/elizabeth-hunt">Elizabeth Hunt</a></li>
+	    	<li><a href="{{ include.base }}/people/michelle-lee">Michelle Lee</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/philadelphia">City of Philadelphia</a></li>
+	    </ul>
+	    
+	     <h4 class="text-whisper layout-tight">Part of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/civic-startups">2013 Incubator</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Textizen is a civic dialogue platform that allows residents to connect with a powerful mix of offline outreach and online engagement.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="https://www.textizen.com/">https://www<wbr>.textizen<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href="http://vimeo.com/43448446">http://vimeo<wbr>.com/<wbr>43448446</a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/textizen">https://github<wbr>.com/<wbr>codeforamerica/<wbr>textizen</a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+	    <p>What if you didn’t have to trek a town hall or city council meeting be heard? could open its ears nearly the entire city? textizen asks questions on posters in public places, then collects citizen feedback via text message. anyone with minute and an opinion can reply. textizen’s cloud-based platform allows officials community groups create surveys track as it comes in. not only garner more representative from larger cross-section of their communities, but for data-driven decisions empowered residents.</p>
+        <p>get code</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'citizen-engagement-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/textizen">
+                <h1 class="teaser-title">Textizen</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Textizen is a civic dialogue platform that allows residents to connect with a powerful mix of offline outreach and online engagement.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/textizen">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/textizen" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/textizen.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
