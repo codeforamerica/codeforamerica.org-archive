@@ -1,0 +1,76 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Adopt-a-Hydrant</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/adopt-a-hydrant.png" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Adopt-a-hydrant allows citizens to claim responsiblity for shoveling out fire hydrants after heavy snowfall.</p>
+	    
+	    <p class="text-whisper"><a href="http://adoptahydrant.org">http://adoptahydrant<wbr>.org</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/joel-mahoney">Joel Mahoney</a></li>
+	    	<li><a href="{{ include.base }}/people/karla-macedo">Karla Macedo</a></li>
+	    	<li><a href="{{ include.base }}/people/talin-salway">Talin Salway</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/boston">City of Boston</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Adopt-a-hydrant allows citizens to claim responsiblity for shoveling out fire hydrants after heavy snowfall.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://adoptahydrant.org">http://adoptahydrant<wbr>.org</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/adopt-a-hydrant">https://github<wbr>.com/<wbr>codeforamerica/<wbr>adopt-a-hydrant</a></td></tr>
+	    		<tr><th>Environment</th><td>Ruby on Rails with Postgres database</td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p>In the midst of winter snowstorms, buried hydrants cause dangerous delays for fire fighters. But having City of Boston employees check and clear thousands of hydrants would be a timely, costly and burdensome process.</p>
+        <p>Adopt-a-Hydrant lets governments look to community members for help. This map-based web app allows individuals, small businesses and community organizations to volunteer in shoveling out specific hydrants.</p>
+        <p>To check out the app visit&nbsp;adoptahydrant.org</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'citizen-engagement-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/adopt-a-hydrant">
+                <h1 class="teaser-title">Adopt-a-Hydrant</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Adopt-a-hydrant allows citizens to claim responsiblity for shoveling out fire hydrants after heavy snowfall.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p>Ruby on Rails with Postgres database</p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/adopt-a-hydrant">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/adopt-a-hydrant" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/adopt-a-hydrant.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
