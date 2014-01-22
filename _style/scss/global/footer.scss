@@ -69,6 +69,7 @@
 .global-footer .search-global .search-global-submit {
 	@include rem(top, 7px);
 	@include rem(right, 10px);
+	right: 25px;
 	}
 
 .global-footer .search-global-input:focus + .search-global-submit,

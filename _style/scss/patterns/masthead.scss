@@ -25,9 +25,10 @@
 .masthead h1,
 .masthead .h1 {
     color: $color-black;
-    margin: 0.2em 0 0 0;
+    margin: 0;
     float: left;
     width: 100%;
+    text-align: left;
     }
 
 .masthead p {
@@ -108,11 +109,17 @@
 
 
 .masthead-l .masthead-header {
-    margin-top: 5em;
+    margin-top: 0;
     padding-bottom: 1em;
     padding-top: 1em;
     margin-bottom: 0;
     width: auto;
+    }
+
+.masthead-xl .masthead-header {
+    width: auto;
+    padding-left: 4%;
+    padding-right: 4%;
     }
 
 .masthead-xl masthead-header p {
@@ -122,7 +129,6 @@
 .masthead-header .nav-breadcrumbs {
     float: left;
     @include color($color-black, 0.7);
-    position: absolute;
     top: 0;
     margin-bottom: 0;
     display: block;

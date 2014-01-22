@@ -118,6 +118,7 @@ blockquote {
         padding: 0 2%;
         max-width: 80em;
         margin: 3em auto;
+        float: none;
         }
     
     .layout-semibreve {
@@ -226,46 +227,36 @@ blockquote {
 	}
 		
 
-
-
-
-
-
-
-//@media (min-width: 50em) {
-    .global-footer .nav-footer > ul {
+.global-footer .nav-footer > ul {
     display: flex;
     }
     
-    .global-footer .nav-footer .nav-tier1 {
+.global-footer .nav-footer .nav-tier1 {
     flex: 1;
     flex-basis: auto;
     margin-right: 4%;
     float: left;
     width: 15%;
     }
-//}
-
-//@media (min-width: 60em) {
-    .global-footer .search-global {
-    width: 35%;
+    
+.global-footer .search-global {
+    width: 254px;
     margin-left: 0;
     }
     
-    .global-footer .search-global input {
+.global-footer .search-global input {
     	width: 254px;
     	}
 
-    .global-footer .nav-footer {
+.global-footer .nav-footer {
     float: left;
     width: 100%;
     margin-right: 0;
     }
 
-    .global-footer .nav-footer .nav-tier1:first-child {
+.global-footer .nav-footer .nav-tier1:first-child {
     display: block;
     }
-//}
 
 .layout-tight {
     margin: 0 auto;
@@ -379,6 +370,7 @@ section,
 .masthead-header {
     text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
     float: none;
+    text-align: center;
     }
 
 .masthead .button-invert,
@@ -426,9 +418,9 @@ section,
     }
 
 .masthead-xl .masthead-header {
-    padding: 11em 0 3em;
+    padding-top: 11em;
+    padding-bottom: 1.25em;
     max-width: inherit;
-    width: 100%; 
     margin: 2em auto 0;
     }
     
@@ -454,6 +446,10 @@ section,
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
+    }
+
+.masthead-header .nav-breadcrumbs {
+    position: absolute;
     }
 
 .masthead-header .nav-breadcrumbs,

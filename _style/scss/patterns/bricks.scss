@@ -125,7 +125,7 @@
 }
 
 
-
+ 
 
 .bricks-4 .brick {
     float: left;
@@ -141,3 +141,10 @@
 .bricks-4 .brick:nth-child(2n+2) {
     margin-right: 0;
     }
+
+.bricks-4 .badge-heading {
+    background-image: url('../images/badge-rocket-black.png');
+    }
+    .svg .bricks-4 .badge-heading {
+        background-image: url('../images/badge-rocket-black.svg');
+        }
