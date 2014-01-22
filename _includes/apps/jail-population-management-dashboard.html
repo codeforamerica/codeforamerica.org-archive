@@ -1,0 +1,85 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Jail Population Management Dashboard</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/jail-population-management-dashboard.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Jail Population Management Dashboard helps judges and other stakeholders understand the conditions in the metro jail and use this data to visualize how their decisions affect program, facility and inmate outcomes.</p>
+	    
+	    <p class="text-whisper"><a href=""></a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/laura-meixell">Laura Meixell</a></li>
+	    	<li><a href="{{ include.base }}/people/marcin-wichary">Marcin Wichary</a></li>
+	    	<li><a href="{{ include.base }}/people/shaunak-kashyap">Shaunak Kashyap</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/louisville">City of Louisville and Jefferson County Criminal Justice Commission</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Jail Population Management Dashboard helps judges and other stakeholders understand the conditions in the metro jail and use this data to visualize how their decisions affect program, facility and inmate outcomes.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href=""></a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href=""></a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p>In early 2013, the Director of Louisville Metro Corrections was tasked with sending a weekly email to a small group of judges and other officials, detailing capacity in the central jail facility, as well as incarceration alternatives. The text-based report was hand­-compiled by corrections staff in the hopes that the report would inform sentencing, increase reliance on alternative sentencing programs and reduce overcrowding in jails.</p>
+        <p>Building on this idea, the Louisville fellowship team built a modern dashboard. As an upgrade to the weekly email, the new site automatically updates, is accessible on any device (including smartphones and tablets), integrates data from various sources and is extensible for future deployment.</p>
+        <p>Some of the information it communicates includes:</p>
+        <ul>
+        <li>capacity in the central jail;</li>
+        <li>incarceration alternatives;</li>
+        <li>corrections population demographics;</li>
+        <li>bond/bail statistics and bond decision outcomes; and,</li>
+        <li>length of stay details.</li>
+        </ul>
+        <p>The system provides historical information going back decades, as well as near real-time data about the current jail population. It also allows judges and officials to see trends and the broad picture while simultaneously being able to drill down to the names and information of individual inmates.</p>
+        <p>This project launched in late November 2013 and has already been featured in Governing Magazine.</p>
+
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/jail-population-management-dashboard">
+                <h1 class="teaser-title">Jail Population Management Dashboard</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Jail Population Management Dashboard helps judges and other stakeholders understand the conditions in the metro jail and use this data to visualize how their decisions affect program, facility and inmate outcomes.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/jail-population-management-dashboard">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/jail-population-management-dashboard" class="teaser-masthead">
+                <img class="teaser-image" src="Waiting on Marcin" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
