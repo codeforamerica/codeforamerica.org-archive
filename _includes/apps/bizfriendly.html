@@ -1,0 +1,82 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>BizFriendly</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/bizfriendly.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>BizFriendly increases digital literacy by teaching business owners how to use the web through step-by-step lessons, progress tracking and dynamic feedback.</p>
+	    
+	    <p class="text-whisper"><a href="{{ include.base }}/http://bizfriend.ly/">http://bizfriend<wbr>.ly/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/andrew-hyder">Andrew Hyder</a></li>
+	    	<li><a href="{{ include.base }}/people/ariel-kennan">Ariel Kennan</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/kansascity/index.html">Kansas City KS & Kansas City MO</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>BizFriendly increases digital literacy by teaching business owners how to use the web through step-by-step lessons, progress tracking and dynamic feedback.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://bizfriend.ly/">http://bizfriend<wbr>.ly/</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href=""></a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p>BizFriend.ly helps business owners learn new web skills and engage with their customers</p>
+        <p>Led by the KC Kansas and KC Missouri Mayor’s Offices and built by 2013 Code for America's fellows Andrew Hyder and Ariel Kennan, BizFriend.ly improves the basic web skills of citizens (primarily business owners) in the hopes of creating a healthier community and a more prepared workforce.</p>
+        <p>The app increases digital literacy by teaching business owners how to use the web through step-by-step lessons, progress tracking and dynamic feedback. An integrated lesson builder also makes it easy to keep content fresh and teach others. Business owners can also connect to others and see how they compare.</p>
+        <p>Users include small business owners who:</p>
+        <ul>
+        <li>don’t have time to find and discover new tech;</li>
+        <li>find traditional tech training too difficult or time consuming; and,</li>
+        <li>want to find tools other businesses use &amp; compare them.</li>
+        </ul>
+        <p>Presented to the cities of Kansas City, Kansas and Kansas City, Missouri as a minimum viable product in April 2013 and as an alpha in August 2013, the app continues to add new users and lessons. For more on the project, check it out at BizFriend.ly.</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'local-service-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/bizfriendly">
+                <h1 class="teaser-title">BizFriendly</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>BizFriendly increases digital literacy by teaching business owners how to use the web through step-by-step lessons, progress tracking and dynamic feedback.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/bizfriendly">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/bizfriendly" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/bizfriendly.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
