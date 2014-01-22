@@ -1,0 +1,76 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>To the Trails</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/to-the-trails.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>To The Trails is a responsive web application that helps citizens find information on any trail regardless of jurisdiction or the device they use.</p>
+	    
+	    <p class="text-whisper"><a href="http://www.tothetrails.com/">http://www<wbr>.tothetrails<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/dan-avery">Dan Avery</a></li>
+	    	<li><a href="{{ include.base }}/people/katie-lewis">Katie Lewis</a></li>
+	    	<li><a href="{{ include.base }}/people/alan-williams">Alan Williams</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/summit-county">Summit County, Ohio</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>To The Trails is a responsive web application that helps citizens find information on any trail regardless of jurisdiction or the device they use.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://www.tothetrails.com/">http://www<wbr>.tothetrails<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href=""></a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+	    <p>To The Trails is a responsive web application that helps citizens find information on any trail regardless of jurisdiction or the device they use. Built for Summit County Ohio by 2013 Code for America fellows Katie Lewis, Dan Avery and Alan Williams, the app is proof of what can be accomplished when easy-to-use data standards are developed and adopted across government jurisdictions and agencies.</p>
+        <p>Supported by the Knight Foundation and led by city contact Patrick Bravo (Deputy Director, Community and Economic Development), fellows worked with core partners at the Ohio and Erie Canalway Coalition, Metro Parks Serving Summit County, and Cuyahoga Valley National Park to transform and improve existing datasets. The standardization of these datasets means that future trail-related contributions from nearby municipalities and park agencies can automatically feed into the To The Trails app. What’s more, this standardized data can also be used by new third party developers to build additional apps.</p>
+        <p>To check out To The Trails visit tothetrails.com.</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'local-service-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/to-the-trails">
+                <h1 class="teaser-title">To the Trails</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>To The Trails is a responsive web application that helps citizens find information on any trail regardless of jurisdiction or the device they use.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/to-the-trails">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/to-the-trails" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/to-the-trails.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
