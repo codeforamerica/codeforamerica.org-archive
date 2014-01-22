@@ -4936,6 +4936,7 @@ section,
   top: 0.4375rem;
   right: 10px;
   right: 0.625rem;
+  right: 25px;
 }
 
 .global-footer .search-global-input:focus + .search-global-submit,

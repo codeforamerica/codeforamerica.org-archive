@@ -227,44 +227,36 @@ blockquote {
 	}
 		
 
-
-
-
-
-//@media (min-width: 50em) {
-    .global-footer .nav-footer > ul {
+.global-footer .nav-footer > ul {
     display: flex;
     }
     
-    .global-footer .nav-footer .nav-tier1 {
+.global-footer .nav-footer .nav-tier1 {
     flex: 1;
     flex-basis: auto;
     margin-right: 4%;
     float: left;
     width: 15%;
     }
-//}
-
-//@media (min-width: 60em) {
-    .global-footer .search-global {
-    width: 35%;
+    
+.global-footer .search-global {
+    width: 254px;
     margin-left: 0;
     }
     
-    .global-footer .search-global input {
+.global-footer .search-global input {
     	width: 254px;
     	}
 
-    .global-footer .nav-footer {
+.global-footer .nav-footer {
     float: left;
     width: 100%;
     margin-right: 0;
     }
 
-    .global-footer .nav-footer .nav-tier1:first-child {
+.global-footer .nav-footer .nav-tier1:first-child {
     display: block;
     }
-//}
 
 .layout-tight {
     margin: 0 auto;
