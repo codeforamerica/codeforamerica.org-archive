@@ -524,7 +524,10 @@ figure {
 
 figure > a:hover,
 figure > a:focus,
-figure > a:active {
+figure > a:active,
+main figure > a:hover,
+main figure > a:focus,
+main figure > a:active {
   border-bottom: none;
 }
 
@@ -3663,6 +3666,7 @@ nav ul li {
   background-position: 7px -38px;
   background-image: url("../images/sprite-20x20-social.png");
   text-indent: -9999px;
+  vertical-align: text-bottom;
 }
 
 .svg .list-social li {
