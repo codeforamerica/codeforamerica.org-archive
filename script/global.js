@@ -52,7 +52,7 @@ document.getElementsByTagName('html')[0].className += ' js';
         var toggleclass = 'sticky',
             reg = new RegExp('(\\s|^)' + toggleclass + '(\\s|$)'),
             header = doc.querySelector('.global-header'),
-            triggerpoint = doc.querySelector('.masthead-l').offsetHeight - doc.querySelector('.nav-global-primary').offsetHeight,
+            triggerpoint = doc.querySelector('.global-header').getBoundingClientRect().top - document.body.getBoundingClientRect().top,
             scrollDistance = null,
             checkToggle = function () {
                 scrollDistance = (win.pageYOffset !== undefined) ? win.pageYOffset : doc.body.scrollTop;
