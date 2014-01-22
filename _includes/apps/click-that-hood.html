@@ -1,0 +1,72 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Click That Hood</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/click-that-hood.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Click That ‘Hood challenges players to quickly identify various neighborhoods of a city. The game began with a clickable map of just one city, but now includes a growing list of 86 different locations across 11 countries, through an open source community.</p>
+	    
+	    <p class="text-whisper"><a href="http://click-that-hood.com/">http://click-that-hood<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by [HUMANS]</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="#">[HUMAN]</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="#">[HUMAN]</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Click That ‘Hood challenges players to quickly identify various neighborhoods of a city. The game began with a clickable map of just one city, but now includes a growing list of 86 different locations across 11 countries, through an open source community.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://click-that-hood.com/">http://click-that-hood<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/click_that_hood">https://github<wbr>.com/<wbr>codeforamerica/<wbr>click_that_hood</a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+	    <p>Click that Hood is a game based on open data, built by Code for America’s 2013 Louisville fellowship team. You pick a city, then get a challenge to identify the polygon of a named neighborhood. The "easy" version offers only a limited number of options; the "hard" has you selecting from all neighborhoods. i tried chicago (where went to school) and didn't do too badly. best thing about this game? there's blank tile add your own city.</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'citizen-engagement-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/click-that-hood">
+                <h1 class="teaser-title">Click That Hood</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Click That ‘Hood challenges players to quickly identify various neighborhoods of a city. The game began with a clickable map of just one city, but now includes a growing list of 86 different locations across 11 countries, through an open source community.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/click-that-hood">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/click-that-hood" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/click-that-hood.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
