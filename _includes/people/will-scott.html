@@ -34,4 +34,23 @@
 
 </div>
 
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Will Scott</h3>
+    
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/will-scott.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            I'm currently a graduate student at the University of Washington, focusing on understanding and removing Internet limitations. My current research is on network structure, measuring online censorship, and extending the browser's client-server model. I've worked at Google on gmail, taught computer science in Pyongyang, and studied in Beijing.
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/will-scott">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-twitter"><a href=" http://twitter.com/willscott">@willscott</a></li>
+        </ul>
+    </div>
+</div>
 {% endif %}
