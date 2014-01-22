@@ -36,4 +36,25 @@
 
 </div>
 
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Kaleb Clark</h3>
+    
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/kaleb-clark.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            I have been working professionally in the Information Technology community for over 15 years primarily as Unix / Linux administrator and Network Engineer. Working with and deploying open source software in corporate, and government IT shops since 1998...
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/kaleb-clark">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/profile/view?id=218467012">LinkedIn</a></li>
+            <li class="social-github"><a href="https://github.com/xxx">GitHub</a></li>
+            <li class="social-twitter"><a href=" http://twitter.com/_abraxxus">@_abraxxus</a></li>
+        </ul>
+    </div>
+</div>
 {% endif %}
