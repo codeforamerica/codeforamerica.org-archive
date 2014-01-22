@@ -2697,7 +2697,7 @@ input.button-s,
 
 .list-form li {
   list-style-type: none;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   background-image: none;
   padding-left: 0;
 }
@@ -2723,6 +2723,11 @@ input.button-s,
   width: 96%;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.list-form .form-field input[type="radio"],
+.list-form .form-field input[type="checkbox"] {
+  width: auto;
 }
 
 .list-form .form-field select {
