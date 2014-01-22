@@ -7,9 +7,9 @@
     		{% endif %}>
     	</div>
     </div>
-    <header class="layout-semibreve masthead-header">
+    <header class="layout-semibreve masthead-header" role="banner">
         {% if page.path contains '_posts' %}
-        <nav class="nav-breadcrumbs">
+        <nav class="nav-breadcrumbs" role="navigation">
             <ul>
                 <li><a href="../../../home/">Home</a></li>
                 <li>Blog</li>
@@ -34,7 +34,7 @@
     
     <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
     
-    <nav class="nav-global-secondary">
+    <nav class="nav-global-secondary" role="navigation">
         <ul>
         	<li class="nav-tier1 nav-has-children">
         		<a href="/_site/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>

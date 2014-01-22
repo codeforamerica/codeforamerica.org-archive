@@ -1,15 +1,14 @@
 {% include head.html %}
 
-<div class="global-header global-header-compact">
+<div class="global-header global-header-compact" role="banner">
     <a href="/_site/home/" class="global-header-logo">
         <img src="/_assets/logo.png" />
     </a>
     <p class="global-header-tagline"><strong>By the people, for the people,</strong> for the 21<sup>st</sup> century</p>
     
-    
     <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
     
-    <nav class="nav-global-secondary">
+    <nav class="nav-global-secondary" role="navigation">
         <ul>
         	<li class="nav-tier1 nav-has-children">
         		<a href="/_site/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>

@@ -1,7 +1,7 @@
 {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
 {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 {% assign previous="" %}
-<nav class="nav-breadcrumbs">
+<nav class="nav-breadcrumbs" role="navigation">
     <ul>
     {% if num_parts == "0" or num_parts == "-1" %}
         <li><a href="/_site/home">Home</a></li>
