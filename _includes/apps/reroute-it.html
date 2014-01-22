@@ -1,0 +1,75 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Reroute.it</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/reroute-it.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Reroute.it calculates the costs and environmental impacts of our transportation choices via a simple mobile app.</p>
+	    
+	    <p class="text-whisper"><a href="http://reroute.it/">http://reroute<wbr>.it/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/aaron-ogle">Aaron Ogle</a></li>
+	    	<li><a href="{{ include.base }}/talin-salway">Talin Salway</a></li>
+	    	<li><a href="{{ include.base }}/peter-fecteau">Peter Fecteau</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="#">[HUMAN]</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Reroute.it calculates the costs and environmental impacts of our transportation choices via a simple mobile app.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://reroute.it/">http://reroute<wbr>.it/</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/transpochoices">https://github<wbr>.com/<wbr>codeforamerica/<wbr>transpochoices</a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+	    <p>Understanding the impacts of our transportation choices is difficult. We can grasp the cost of a ride on public transit because we pay for individual trips, but we don’t have a directly comparable sense of cost every time we drive off in a vehicle we already own. We also know that it is better for the environment and healthier to walk than it is to drive, but calculating all of these factors is very difficult. Reroute.it makes it easy. Calculating and understanding many of the impacts of our transportation choices is now as simple as getting driving directions on your mobile phone.</p>
+        <p>Check the app at Reroute.it</p>
+	    
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/reroute-it">
+                <h1 class="teaser-title">Reroute.it</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Reroute.it calculates the costs and environmental impacts of our transportation choices via a simple mobile app.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/reroute-it">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/reroute-it" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/reroute-it.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
