@@ -1,0 +1,78 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>CityVoice</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/cityvoice.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.</p>
+	    
+	    <p class="text-whisper"><a href="http://www.cityvoiceapp.com/">http://www<wbr>.cityvoiceapp<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/reed-duecy-gibbs">Reed Duecy Gibbs</a></li>
+	    	<li><a href="{{ include.base }}/people/dave-guarino">Dave Guarino</a></li>
+	    	<li><a href="{{ include.base }}/people/tamara-manik-perlman">Tamara Manik Perlman</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/south-bend">City of South Bend</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://www.cityvoiceapp.com/">http://www<wbr>.cityvoiceapp<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href=""></a></td></tr>
+	    		<tr><th>Codebase</th><td><a href=""></a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="#" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p>City Voice was created to make giving community feedback quick, easy and accessible as well as turn that feedback into actionable information. This means using technologies that all residents are comfortable with - telephones - and distilling and directing feedback to appropriate decision makers. CityVoice was built by the City of South Bend and Code for America 2013 fellows Tamara Manik-Perlman, Dave Guarino and Reed Duecy-Gibbs.</p>
+        <p>The app initially solicits residents through traditional media such as signs and flyers, ensuring local residents are targeted. Residents then call in and are prompted to respond to structured polls as well as leave voice feedback explaining their opinions. All of this feedback is then collected and presented on a public website.</p>
+        <p>Municipalities can use the data and information collected to got broad overviews of community sentiment on issues as well as drill down to the details of a specific location. In South Bend, CityVoice is being used for a&nbsp;Vacant and Abandoned Properties Initiative&nbsp;and&nbsp;is helping the City prioritize what actions to pursue for over 1000 vacant and abandoned properties.</p>
+        <p>See CityVoice at work, visit&nbsp;southbendvoices.com</p>
+        <p>See its impact in South Bend:&nbsp;South Bend Tribune,&nbsp;WSBT 22,&nbsp;Fox 28</p>
+
+	</div>
+
+{% elsif include.context == 'all-apps' or include.context == 'citizen-engagement-apps' or include.context == 'free-apps' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/cityvoice">
+                <h1 class="teaser-title">CityVoice</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/cityvoice">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/cityvoice" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/cityvoice.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
