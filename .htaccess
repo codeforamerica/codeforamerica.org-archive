@@ -100,7 +100,9 @@ RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/nominate(/?)$ $1/geeks/fellows/
 #
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellowship-apply$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/cities)/apply(/?)$ $1/geeks/fellowship-apply$2
-RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks$2
+RedirectMatch permanent ^(.*)/geeks/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
+RedirectMatch permanent ^(.*)(?<!/geeks/our-geeks)/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
 # 2011:
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2011-fellows(/?)$ $1/geeks/our-geeks/2011-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/alumni-fellows|/our-geeks)/2011-fellows(/?)$ $1/geeks/our-geeks/2011-fellows$2
@@ -115,8 +117,6 @@ RedirectMatch permanent ^(.*)/fellows/alumni-fellows/2013-fellows(/?)$ $1/geeks/
 # 2014:
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/2014-fellows(/?)$ $1/geeks/our-geeks/2014-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/our-geeks)/2014-fellows(/?)$ $1/geeks/our-geeks/2014-fellows$2
-RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/fellows/alumni-fellows$2
-RedirectMatch permanent ^(.*)(?<!/geeks/fellows)/alumni-fellows(/?)$ $1/geeks/fellows/alumni-fellows$2
 
 #
 # Startup Program
