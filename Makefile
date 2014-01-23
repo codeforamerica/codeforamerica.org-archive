@@ -1,7 +1,4 @@
-all: script/global.min.js style/css/main.css
-
-script/global.min.js: script/global.js
-	jsmin < script/global.js > script/global.min.js
+all: style/css/main.css
 
 style/css/main.css: \
         _style/scss/base/color-scheme.scss _style/scss/base/icons.scss \
