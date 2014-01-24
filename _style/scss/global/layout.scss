@@ -436,6 +436,18 @@ section,
     left: 0;
     }
 
+.masthead-hero:before {
+    background-image: url("../images/fade-black.png");
+    width: 100%;
+    content: "";
+    height: 300px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    }
+
 .masthead-xl .page-title {
     margin-top: 95px;
     margin-bottom: 15px;
