@@ -75,6 +75,12 @@
 .bricks-cta .badge-blue .brick-heading {
     color: $color-blue;
     }
+    
+    .bricks-cta .badge-heading:before,
+    .bricks-cta .badge-heading:after {
+        left: 50%;
+        margin-left: -25px;
+        }
 
 .bricks-cta .badge-dark-blue .brick-heading {
     color: $color-dark-blue;
@@ -89,17 +95,14 @@
         background-image: none;
         }
     
-
 .bricks-cta .badge-blue {
     background-color: $color-blue;
     }
 
-
 .bricks-cta .badge-red {
     background-color: $color-red;
+    background-image: url('../images/badge-rocket-red.png');
     }
-
-
 
 .bricks-cta .badge-dark-blue {
     background-color: $color-dark-blue;
@@ -124,9 +127,6 @@
 
 }
 
-
- 
-
 .bricks-4 .brick {
     float: left;
     width: 40%;
@@ -147,4 +147,33 @@
     }
     .svg .bricks-4 .badge-heading {
         background-image: url('../images/badge-rocket-black.svg');
+        }
+
+.bricks-4 .badge-heading:before {
+    background-color: transparent;
+    }
+.bricks-4 .badge-heading:after,
+.svg .bricks-4 .badge-heading:after {
+    background-image: none;
+    }
+
+.brick.badge-github {
+    background-image: url('../images/badge-github-black.png');
+    }
+    .svg .brick.badge-github {
+        background-image: url('../images/badge-github-black.svg');
+        }
+
+.slab-dark-blue .bricks-4 .badge-heading {
+    background-image: url('../images/badge-rocket-white.png');
+    }
+    .svg .slab-dark-blue .bricks-4 .badge-heading {
+        background-image: url('../images/badge-rocket-white.svg');
+        }
+
+.slab-dark-blue .bricks-4 .badge-github {
+    background-image: url('../images/badge-github-white.png');
+    }
+    .svg .slab-dark-blue .bricks-4 .badge-github {
+        background-image: url('../images/badge-github-white.svg');
         }

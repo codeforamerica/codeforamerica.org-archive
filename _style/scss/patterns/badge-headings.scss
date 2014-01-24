@@ -2,102 +2,118 @@
 
 .badge-heading {
     @include rem(margin, 16px 0 22px);
-    background-position: left top;
-    background-repeat: no-repeat;
     border-bottom: 1px solid;
     border-color: $color-light-gray;
     clear: both;
     position: relative;
     }
-    
+
     @media (min-width: 40em) {
+        
         .badge-heading {
-            @include rem(min-height, 70px);
-            background-image: url('../images/badge-rocket-black.png');
             @include rem(padding-left, 65px);
             @include rem(min-height, 65px);
-            @include rem(background-size, 50px);
+            background-position: left top;
+            background-repeat: no-repeat;
             }
-            .svg .badge-heading {
-                background-image: url('../images/badge-rocket-black.svg');
-                }
-                
-        .badge-heading.badge-gray {
-            background-image: url('../images/badge-rocket-gray.png');
-            }
-            .svg .badge-heading.badge-gray {
-                background-image: url('../images/badge-rocket-gray.svg');
-                }
-        
-        .badge-heading.badge-orange {
-            background-image: url('../images/badge-rocket-orange.png');
-            }
-            .svg .badge-heading.badge-orange {
-                background-image: url('../images/badge-rocket-orange.svg');
-                }
-        
-        .badge-heading.badge-purple {
-            background-image: url('../images/badge-rocket-purple.png');
-            }
-            .svg .badge-heading.badge-purple {
-                background-image: url('../images/badge-rocket-purple.svg');
-                }
-        
-        .badge-heading.badge-red {
-            background-image: url('../images/badge-rocket-red.png');
-            }
-            .svg .badge-heading.badge-red {
-                background-image: url('../images/badge-rocket-red.svg');
-                }
-        
-        .badge-heading.badge-teal {
-            background-image: url('../images/badge-rocket-teal.png');
-            }
-            .svg .badge-heading.badge-teal {
-                background-image: url('../images/badge-rocket-teal.svg');
-                }
-        
-        .badge-heading.badge-dark-blue {
-            background-image: url('../images/badge-rocket-dark-blue.png');
-            }
-            .svg .badge-heading.badge-dark-blue {
-                background-image: url('../images/badge-rocket-dark-blue.svg');
-                }
-        
-        .badge-heading.badge-blue {
-            background-image: url('../images/badge-rocket-blue.png');
-            }
-            .svg .badge-heading.badge-blue {
-                background-image: url('../images/badge-rocket-blue.svg');
-                }
-        
-        .badge-heading.badge-github {
-            background-image: url('../images/badge-github-black.png');
-            }
-            .svg .badge-heading.badge-github {
-                background-image: url('../images/badge-github-black.svg');
-                }
-        }
 
-
-
-.brick.badge-github {
-    background-image: url('../images/badge-github-black.png');
-    }
-    .svg .brick.badge-github {
-        background-image: url('../images/badge-github-black.svg');
-        }
-
-.slab-dark-blue .bricks-4 .badge-heading {
-    background-image: url('../images/badge-rocket-white.png');
-    }
-    .svg .slab-dark-blue .bricks-4 .badge-heading {
-        background-image: url('../images/badge-rocket-white.svg');
-        }
-
-.slab-dark-blue .bricks-4 .badge-github {
-    background-image: url('../images/badge-github-white.png');
-    }
-    .svg .slab-dark-blue .bricks-4 .badge-github {
-        background-image: url('../images/badge-github-white.svg');
+        .badge-heading:before,
+        .badge-heading:after {
+            background-repeat: no-repeat;
+            content: "";
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            }
+        
+        .badge-heading:before {
+            background-color: $color-black;
+            border-radius: 100px;
+            background-size: 50px;
+            }
+        
+        
+        /* Badge colors */
+        
+        .badge-white:before {
+            background-color: $color-white;
+            }
+        
+        .badge-blue:before {
+            background-color: $color-blue;
+            }
+        
+        .badge-gray:before {
+            background-color: $color-gray;
+            }
+        
+        .badge-orange:before {
+            background-color: $color-orange;
+            }
+        
+        .badge-purple:before {
+            background-color: $color-purple;
+            }
+        
+        .badge-red:before {
+            background-color: $color-red;
+            }
+        
+        .badge-teal:before {
+            background-color: $color-teal;
+            }
+        
+        .badge-dark-blue:before {
+            background-color: $color-dark-blue;
+            }
+            
+            
+        /* Badge images */
+        
+        .badge-heading:after {
+            background-image: url("../images/badge-rocket.png");
+            z-index: 1;
+            background-position: 9px 12px;
+            }
+            .svg .badge-heading:after {
+                background-image: url("../images/badge-rocket.svg");
+                }
+        
+        .badge-github:after {
+            background-image: url("../images/badge-github.png");
+            z-index: 1;
+            background-position: 12px 11px;
+            }
+            .svg .badge-github:after {
+                background-image: url("../images/badge-github.svg");
+                }
+        
+        .badge-glasses:after {
+            background-image: url("../images/badge-glasses.png");
+            z-index: 1;
+            background-position: 7px 18px;
+            }
+            .svg .badge-glasses:after {
+                background-image: url("../images/badge-glasses.svg");
+                }
+        
+        .badge-gov:after {
+            background-image: url("../images/badge-gov.png");
+            z-index: 1;
+            background-position: 12px 6px;
+            }
+            .svg .badge-gov:after {
+                background-image: url("../images/badge-gov.svg");
+                }
+        
+        .badge-graph:after {
+            background-image: url("../images/badge-graph.png");
+            z-index: 1;
+            background-position: 11px 10px;
+            }
+            .svg .badge-graph:after {
+                background-image: url("../images/badge-graph.svg");
+                }
         }

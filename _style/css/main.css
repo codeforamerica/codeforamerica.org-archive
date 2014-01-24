@@ -1947,6 +1947,12 @@ input.button-s,
   color: #399fd3;
 }
 
+.bricks-cta .badge-heading:before,
+.bricks-cta .badge-heading:after {
+  left: 50%;
+  margin-left: -25px;
+}
+
 .bricks-cta .badge-dark-blue .brick-heading {
   color: #004b6a;
 }
@@ -1966,6 +1972,7 @@ input.button-s,
 
   .bricks-cta .badge-red {
     background-color: #cf1b41;
+    background-image: url("../images/badge-rocket-red.png");
   }
 
   .bricks-cta .badge-dark-blue {
@@ -2010,6 +2017,39 @@ input.button-s,
 
 .svg .bricks-4 .badge-heading {
   background-image: url("../images/badge-rocket-black.svg");
+}
+
+.bricks-4 .badge-heading:before {
+  background-color: transparent;
+}
+
+.bricks-4 .badge-heading:after,
+.svg .bricks-4 .badge-heading:after {
+  background-image: none;
+}
+
+.brick.badge-github {
+  background-image: url("../images/badge-github-black.png");
+}
+
+.svg .brick.badge-github {
+  background-image: url("../images/badge-github-black.svg");
+}
+
+.slab-dark-blue .bricks-4 .badge-heading {
+  background-image: url("../images/badge-rocket-white.png");
+}
+
+.svg .slab-dark-blue .bricks-4 .badge-heading {
+  background-image: url("../images/badge-rocket-white.svg");
+}
+
+.slab-dark-blue .bricks-4 .badge-github {
+  background-image: url("../images/badge-github-white.png");
+}
+
+.svg .slab-dark-blue .bricks-4 .badge-github {
+  background-image: url("../images/badge-github-white.svg");
 }
 
 /*  Pattern: Calendar ------------------------------------ */
@@ -2297,8 +2337,6 @@ input.button-s,
 .badge-heading {
   margin: 16px 0 22px;
   margin: 1rem 0 1.375rem;
-  background-position: left top;
-  background-repeat: no-repeat;
   border-bottom: 1px solid;
   border-color: #e5e5e5;
   clear: both;
@@ -2307,109 +2345,115 @@ input.button-s,
 
 @media (min-width: 40em) {
   .badge-heading {
-    min-height: 70px;
-    min-height: 4.375rem;
-    background-image: url("../images/badge-rocket-black.png");
     padding-left: 65px;
     padding-left: 4.0625rem;
     min-height: 65px;
     min-height: 4.0625rem;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  .badge-heading:before,
+  .badge-heading:after {
+    background-repeat: no-repeat;
+    content: "";
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .badge-heading:before {
+    background-color: black;
+    border-radius: 100px;
     background-size: 50px;
-    background-size: 3.125rem;
   }
 
-  .svg .badge-heading {
-    background-image: url("../images/badge-rocket-black.svg");
+  /* Badge colors */
+  .badge-white:before {
+    background-color: white;
   }
 
-  .badge-heading.badge-gray {
-    background-image: url("../images/badge-rocket-gray.png");
+  .badge-blue:before {
+    background-color: #399fd3;
   }
 
-  .svg .badge-heading.badge-gray {
-    background-image: url("../images/badge-rocket-gray.svg");
+  .badge-gray:before {
+    background-color: #6d6e71;
   }
 
-  .badge-heading.badge-orange {
-    background-image: url("../images/badge-rocket-orange.png");
+  .badge-orange:before {
+    background-color: #e87d2b;
   }
 
-  .svg .badge-heading.badge-orange {
-    background-image: url("../images/badge-rocket-orange.svg");
+  .badge-purple:before {
+    background-color: #69579c;
   }
 
-  .badge-heading.badge-purple {
-    background-image: url("../images/badge-rocket-purple.png");
+  .badge-red:before {
+    background-color: #cf1b41;
   }
 
-  .svg .badge-heading.badge-purple {
-    background-image: url("../images/badge-rocket-purple.svg");
+  .badge-teal:before {
+    background-color: #00a175;
   }
 
-  .badge-heading.badge-red {
-    background-image: url("../images/badge-rocket-red.png");
+  .badge-dark-blue:before {
+    background-color: #004b6a;
   }
 
-  .svg .badge-heading.badge-red {
-    background-image: url("../images/badge-rocket-red.svg");
+  /* Badge images */
+  .badge-heading:after {
+    background-image: url("../images/badge-rocket.png");
+    z-index: 1;
+    background-position: 9px 12px;
   }
 
-  .badge-heading.badge-teal {
-    background-image: url("../images/badge-rocket-teal.png");
+  .svg .badge-heading:after {
+    background-image: url("../images/badge-rocket.svg");
   }
 
-  .svg .badge-heading.badge-teal {
-    background-image: url("../images/badge-rocket-teal.svg");
+  .badge-github:after {
+    background-image: url("../images/badge-github.png");
+    z-index: 1;
+    background-position: 12px 11px;
   }
 
-  .badge-heading.badge-dark-blue {
-    background-image: url("../images/badge-rocket-dark-blue.png");
+  .svg .badge-github:after {
+    background-image: url("../images/badge-github.svg");
   }
 
-  .svg .badge-heading.badge-dark-blue {
-    background-image: url("../images/badge-rocket-dark-blue.svg");
+  .badge-glasses:after {
+    background-image: url("../images/badge-glasses.png");
+    z-index: 1;
+    background-position: 7px 18px;
   }
 
-  .badge-heading.badge-blue {
-    background-image: url("../images/badge-rocket-blue.png");
+  .svg .badge-glasses:after {
+    background-image: url("../images/badge-glasses.svg");
   }
 
-  .svg .badge-heading.badge-blue {
-    background-image: url("../images/badge-rocket-blue.svg");
+  .badge-gov:after {
+    background-image: url("../images/badge-gov.png");
+    z-index: 1;
+    background-position: 12px 6px;
   }
 
-  .badge-heading.badge-github {
-    background-image: url("../images/badge-github-black.png");
+  .svg .badge-gov:after {
+    background-image: url("../images/badge-gov.svg");
   }
 
-  .svg .badge-heading.badge-github {
-    background-image: url("../images/badge-github-black.svg");
+  .badge-graph:after {
+    background-image: url("../images/badge-graph.png");
+    z-index: 1;
+    background-position: 11px 10px;
+  }
+
+  .svg .badge-graph:after {
+    background-image: url("../images/badge-graph.svg");
   }
 }
-.brick.badge-github {
-  background-image: url("../images/badge-github-black.png");
-}
-
-.svg .brick.badge-github {
-  background-image: url("../images/badge-github-black.svg");
-}
-
-.slab-dark-blue .bricks-4 .badge-heading {
-  background-image: url("../images/badge-rocket-white.png");
-}
-
-.svg .slab-dark-blue .bricks-4 .badge-heading {
-  background-image: url("../images/badge-rocket-white.svg");
-}
-
-.slab-dark-blue .bricks-4 .badge-github {
-  background-image: url("../images/badge-github-white.png");
-}
-
-.svg .slab-dark-blue .bricks-4 .badge-github {
-  background-image: url("../images/badge-github-white.svg");
-}
-
 .masthead {
   position: relative;
   overflow: hidden;
