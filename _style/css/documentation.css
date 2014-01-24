@@ -2322,16 +2322,26 @@ input.button-s,
 
 .js .fade:before {
   content: "";
-  background-image: url("../images/fade.png");
+  background-image: url("../images/fade-l.png");
   background-repeat: repeat-x;
   background-position: bottom;
   background-color: transparent;
-  height: 30px;
+  height: 100px;
   width: 100%;
   display: block;
   position: absolute;
   bottom: 0;
   z-index: 1;
+}
+
+.js .fade-toggle:before {
+  background-image: url("../images/fade.png");
+  height: 30px;
+}
+
+.js .fade-activate {
+  display: table;
+  margin: 0 auto;
 }
 
 .badge-heading {
