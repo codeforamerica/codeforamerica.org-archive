@@ -34,24 +34,20 @@
 
 </div>
 
-{% elsif include.context == 'about-team' %}
+{% elsif include.context == 'brigade-captains' %}
 
 <div class="h-card profile-small">
     <h3 class="p-name profile-name">Seth Vincent</h3>
-    
-    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/seth-vincent.jpg">
-
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/seth-vincent.jpg" alt="seth-vincent" />
     <div class="p-note profile-note">
-        <p>
-            Seth Vincent writes code, stories, and music. He's an independent programmer, designer and writer, and is a co-organizer of seattle.io (http://seattle.io) and Code for Seattle (http://codeforseattle.org). Seth writes things like Learn.js (http://learnjs.io), a book about javascript, and builds things like crtrdg.js...
-        </p>
-
+        <p><a href="http://codeforseattle.org/">Seattle, UT Brigade</a></p>
+        <p>Seth Vincent writes code, stories, and music. He's an independent programmer, designer and writer, and is a co-organizer of <a href="http://seattle.io">seattle.io</a> and <a href="http://codeforseattle.org">Code for Seattle</a>. Seth writes things like <a href="http://learnjs.io">Learn.js</a>, a book about javascript, and builds things like <a href="http://crtrdg.github.io">crtrdg.js</a>, a toolkit for 2d games at <a href="http://superbigtree.com">Super Big Tree</a>.</p>
         <p><a class="link-more" href="{{ include.base }}/people/seth-vincent">More</a></p>
-
         <ul class="list-social list-social-horizontal">
-            <li class="social-twitter"><a href="http://twitter.com/sethdvincent">@sethdvincent</a></li>
-        </ul>
-    </div>
-</div>
+            <li class="social-website"><a href="http://sethvincent.com">Website</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/sethdvincent">@sethdvincent</a></li>
+        </ul>     
+    </div><!-- .note -->
+</div><!-- .vcard -->
 
 {% endif %}

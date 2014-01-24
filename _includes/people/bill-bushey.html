@@ -15,7 +15,7 @@
 
 	    </ul>
 
-		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/bill-bushey.jpg" />
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.jpg" />
 	</div>
 
 	<div class="layout-major">
@@ -34,23 +34,21 @@
 
 </div>
 
-{% elsif include.context == 'about-team' %}
+{% elsif include.context == 'brigade-captains' %}
 
 <div class="h-card profile-small">
     <h3 class="p-name profile-name">Bill Bushey</h3>
     
-    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/bill-bushey.jpg">
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.jpg">
 
     <div class="p-note profile-note">
-        <p>
-            Bill is a civic nerd – a software developer who works where technology meets society. Bill currently develops software, provides technology guidance, and plans technology initiatives as the Technology Coordinator for E-Democracy.org. Bill is also a co-organizer of Open Twin Cities
-        </p>
-
+        <p><a href="http://opentwincities.org/">Twin Cities, MN Brigade</a></p>
+        <p>Bill is a civic nerd – a software developer who works where technology meets society. Bill currently develops software, provides technology guidance, and plans technology initiatives as the Technology Coordinator for E-Democracy.org. Bill is also a co-organizer of Open Twin Cities…
         <p><a class="link-more" href="{{ include.base }}/people/bill-bushey">More</a></p>
-
         <ul class="list-social list-social-horizontal">
-            <li class="social-twitter"><a href="http://twitter.com/wbushey">@wbushey</a></li>
-        </ul>
+            <li class="social-website"><a href="http://www.wbushey.com">Website</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/wbushey">@wbushey</a></li>
+        </ul>     
     </div>
 </div>
 {% endif %}

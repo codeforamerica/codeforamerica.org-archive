@@ -15,7 +15,7 @@
 
 	    </ul>
 
-		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/jason-home.jpg" />
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.jpg" />
 	</div>
 
 	<div class="layout-major">
@@ -32,5 +32,19 @@
 	</div>
 
 </div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Jason Home</h3>
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.jpg" />
+    <div class="p-note profile-note">
+        <p><a href="http://www.meetup.com/Triangle-Code-for-America/">Raleigh, NC Brigade</a></p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/jason-home">More</a></p>
+        <ul class="list-social list-social-horizontal">
+        </ul>     
+    </div><!-- .note -->
+</div><!-- .vcard -->
 
 {% endif %}
