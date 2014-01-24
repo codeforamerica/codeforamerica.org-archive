@@ -1,0 +1,59 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Frances Berriman</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Senior Design &amp; Front-end Engineer</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/frances-berriman.jpg" />
+	</div>
+
+	<div class="layout-major">
+	    	
+	    <p class="p-note">Frances Berriman is a British developer who relocated from London to San Francisco in the summer of 2013, joining Code for America in January 2014.  She previously worked as the front-end lead for <a href="http://www.gov.uk">GOV.UK</a>, the UK <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a>'s <a href="http://digital.cabinetoffice.gov.uk/2013/03/28/designs-of-the-year/">award-winning</a> flagship project that formed a key part of the digital strategy overhaul of services for citizens in the UK.  She brings her expertise in this field to the tech team and as an advisor to the various CfA program participants.</p>
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="http://twitter.com/phae">@phae</a></td></tr>
+	    		<tr><th>Github</th><td><a href="http://github.com/phae">http://phae<wbr>.com/<wbr>pui</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/fberriman">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>fberriman</a></td></tr>
+	    		<tr><th>Blog Posts</th><td><a href="http://www.codeforamerica.org/author/erica-kwan/">http://www<wbr>.codeforamerica<wbr>.org/<wbr>author/<wbr>erica-kwan/</a></td></tr>
+
+	    	</table>
+	    </div>	    
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+                                    <h3 class="p-name profile-name">Erica Kwan</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/frances-berriman.jpg">
+
+                                    <div class="p-note profile-note">
+                                        <p>Senior Design &amp; Front-end Engineer</p>
+
+                                        <p>rances Berriman is a British developer who relocated from London to San Francisco in the summer of 2013, joining Code for America in January 2014.  She previously worked as the front-end lead for <a href="http://www.gov.uk">GOV.UK</a></p>
+
+                                        <p><a class="link-more" href="{{ include.base }}/people/erica-kwan">More</a></p>
+
+                                        <ul class="list-social list-social-horizontal">
+                                            <li class="social-linkedin"><a href="http://www.linkedin.com/in/ericakwan">LinkedIn</a></li>
+
+                                            <li class="social-github"><a href="https://github.com/pui">GitHub</a></li>
+                                            
+                                            <li class="social-twitter"><a href="http://twitter.com/pui_ling">Twitter</a></li>
+                                        </ul>
+                                    </div>
+
+{% endif %}
