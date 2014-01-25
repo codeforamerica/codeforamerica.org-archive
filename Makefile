@@ -13,9 +13,8 @@ style/css/main.css: \
         _style/scss/patterns/billboard.scss _style/scss/documentation.scss \
         _style/scss/patterns/blurb.scss _style/scss/patterns/bricks.scss \
         _style/scss/patterns/button.scss _style/scss/patterns/chimney.scss \
-        _style/scss/patterns/flags.scss _style/scss/patterns/heading-contrast.scss \
         _style/scss/patterns/heading.scss _style/scss/patterns/highlight.scss \
-        _style/scss/patterns/list-credits.scss \
+        _style/scss/patterns/list-credits.scss _style/scss/patterns/heading-contrast.scss \
         _style/scss/patterns/list-icon.scss _style/scss/patterns/lists.scss \
         _style/scss/patterns/masthead.scss _style/scss/patterns/nav-articles.scss \
         _style/scss/patterns/nav-breadcrumbs.scss _style/scss/patterns/nav-footer.scss \

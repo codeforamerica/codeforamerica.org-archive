@@ -1455,26 +1455,6 @@ input.button-s,
   color: #cf1b41;
 }
 
-.cfa-tag {
-  background-image: url("/images/tag-black.png");
-  text-indent: -99999px;
-  display: block;
-  background-size: 90px;
-  width: 100px;
-}
-
-.cfa-tag-red {
-  background-image: url("/images/tag-red.png");
-}
-
-.cfa-tag-blue {
-  background-image: url("/images/tag-blue.png");
-}
-
-.cfa-tag-gray {
-  background-image: url("/images/tag-gray.png");
-}
-
 .masthead {
   position: relative;
   overflow: hidden;
@@ -1623,6 +1603,7 @@ input.button-s,
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
   color: black;
+  color: rgba(0, 0, 0, 0.8);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1630,8 +1611,7 @@ input.button-s,
 .masthead-header .nav-breadcrumbs a:hover,
 .masthead-header .nav-breadcrumbs a:focus,
 .masthead-header .nav-breadcrumbs a:active {
-  color: white;
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 
 .masthead-header .nav-breadcrumbs li:first-child a {

@@ -1,0 +1,1 @@
+The chimney pattern splits content into 2 columns, with one of the columns more prominent than the other. To flip the order of the columns, use the chimney-invert pattern.
