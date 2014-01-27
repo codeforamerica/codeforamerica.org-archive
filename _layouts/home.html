@@ -1,0 +1,89 @@
+{% comment %}
+
+This is the default Jekyll layout for Code for America's website.
+Use it by specifying "layout: default" in your Jekyll front-matter:
+
+    http://jekyllrb.com/docs/frontmatter/
+
+Special page variables you can define in your front matter:
+
+title            - Page title and content of H1 tag in page header.
+title-h1         - Alternate page title for use in header H1 tag only.
+nav_tier1_active - name of navigation section to show, see _includes/nav.html.
+nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
+masthead-class   - optionally "masthead-s" for a shorter masthead image.
+masthead-image   - path to image for use in masthead.
+
+Sample front matter from one page:
+
+---
+layout: default
+title: Ezra Spier
+title-h1: People
+nav_tier1_active: "citizens"
+masthead-class: masthead-s
+masthead-image: "../../media/images/masthead/masthead-5.jpg"
+nav-breadcrumbs:
+ - Citizens: "/geeks"
+---
+
+{% endcomment %}
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    <link rel="stylesheet" href="/style/css/main.css">
+    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="/style/css/prism.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="/style/css/layout.css" media="all">
+    <![endif]-->
+    
+    
+	    <style type="text/css">
+	    	.masthead:before {
+	    		background-image: url('/media/images/masthead/masthead-6.jpg');
+	    	}
+	    </style>
+    
+    
+</head>
+    
+<body>
+
+<div class="js-container">
+
+{% include nav.html %}
+        
+<div class="masthead masthead-xl">
+    <header class="layout-semibreve masthead-header">
+        <h1 class="page-title" >In San Francisco</h1>
+        <p>One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
+        <a class="text-whisper button-invert" href="/_site/about/">Learn more about what we do</a>
+    </header>
+</div>
+    
+<main role="main">
+    {{ content }}
+    
+    {% include global-footer.html %}
+</main>
+
+</div><!-- /.js-container -->
+
+<script src="/script/global.js"></script>
+
+</body>
+
+</html>
