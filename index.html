@@ -1,102 +1,330 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
-	<META CHARSET="utf-8" />
-	<TITLE>Code for America</TITLE>
-</HEAD>
-<BODY BACKGROUND="media/images/raindrop-background.jpg">
-    <BIG>
+<html lang="en-gb">
 
-    <H1>
-        <IMG WIDTH=38 HEIGHT=38 SRC="media/images/under-construction.gif">
-        Code for America
-        <IMG WIDTH=38 HEIGHT=38 SRC="media/images/under-construction.gif">
-    </H1>
-    
-    <P>
-        Code for America is redoing our website.
-    </P>
-    
-    <P>
-        For the past few months, we’ve worked with Colorado branding firm
-        <a href="http://dojo4.com">Dojo4</a>, Brighton web design firm
-        <a href="http://clearleft.com">Clearleft</a>, and our own internal
-        communications and technology teams on a new visual design
-        and front-end for the Code for America website. Today, we’re making
-        the first of this work public and asking for input from the CfA
-        community to ensure that the information presented on the site is
-        accurate and up-to-date.
-    </P>
-    
-    <P>
-        <A HREF="#the-site">See The Site</A>
-        | <A HREF="#who-works">Who’s Working On It</A>
-        | <A HREF="#help-fix">Help Us Fix Things</A>
-    </P>
-    
-    <P>
-        A possible look for our new home page, as of Thursday, January 16:
-    </P>
-    
-    <TABLE BORDER=5 CELLPADDING=10>
-    <TR><TD>
-        <A HREF="media/images/homepage-sketch-2014-01-16.jpg"><IMG SRC="media/images/homepage-sketch-2014-01-16.jpg" WIDTH=596></A>
-    </TD></TD>
-    </TABLE>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    <link rel="stylesheet" href="/style/css/main.css">
+    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="/style/css/prism.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
 
-    <H2><A NAME="the-site"></A>See The Site</H2>
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     
-    <UL>
-        <LI><A HREF="about">About</A>: information on staff and programs</LI>
-        <LI><A HREF="cities">Governments</A>: current and past partners</LI>
-        <LI><A HREF="geeks">Citizens</A>: brigades, fellowship, and other geeks</LI>
-        <LI><A HREF="apps">Apps</A>: accelerator, incubator, and fellowship apps</LI>
-        <LI><A HREF="donate">Support Our Work</A>: how to donate</LI>
-        <LI><A HREF="blog">Blog</A>: words</LI>
-        <LI><A HREF="library">Library</A>: under construction back-catalog of videos, etc.</LI>
-    </UL>
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="/style/css/layout.css" media="all">
+    <![endif]-->
     
-    <H2><A NAME="who-works"></A>Who’s Working On It</H2>
     
-    <P>
-        <LI><A HREF="http://alpha.codeforamerica.org/people/michal-migurski">Michal Migurski</A>: code, hosting, copy/paste</LI>
-        <LI><A HREF="http://alpha.codeforamerica.org/people/cyd-harrell">Cyd Harrell</A>: information architecture, design</LI>
-        <LI><A HREF="http://alpha.codeforamerica.org/people/dana-oshiro">Dana Oshiro</A>: content, copy/paste</LI>
-        <LI><A HREF="http://alpha.codeforamerica.org/people/andrew-hyder">Andrew Hyder</A>: feedback</LI>
-    </P>
+	    <style type="text/css">
+	    	.masthead:before {
+	    		background-image: url('/media/images/masthead/masthead-6.jpg');
+	    	}
+	    </style>
     
-    <H2><A NAME="help-fix"></A>Help Us Fix Things</H2>
     
-    <P>
-        The new website is hosted statically, and you can help us fix out-of-date
-        information by using a <b>pull request to the Github repository</b>,
-        <a href="https://github.com/codeforamerica/codeforamerica.org/tree/static-site#readme">codeforamerica/codeforamerica.org</a>.
-        The only code skill required is HTML markup.
-    </P>
+</head>
     
-    <P>
-        For members of the community including fellows, brigade captains,
-        and staff, <b>find yourself and your friends</b> in the
-        <a href="http://alpha.codeforamerica.org/people/">big list of people</a>
-        or one of the
-        <a href="http://alpha.codeforamerica.org/geeks/our-geeks/">lists of civic hackers</a>
-        and let us know if your bio is correct and photo current.
-    </P>
+<body>
+
+<div class="js-container">
+
+<nav class="nav-global-primary" role="navigation">
+    <ul class="layout-breve layout-tight">
+        <li><a href="/_site/blog/">Blog</a></li>
+        <li><a href="/_site/library/">Library</a></li>
+        <li>
+            <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global" role="search">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
+        </li>
+    </ul>
+</nav><!-- .nav-global-primary -->
+
+<div class="global-header global-header-compact" role="banner">
+    <a href="/_site/home/" class="global-header-logo">
+        <img src="/assets/logo.png" />
+    </a>
+    <p class="global-header-tagline"><strong>By the people, for the people,</strong> for the 21<sup>st</sup> century</p>
     
-    <P>
-        If you <b>built an app or project</b> as part of the fellowship
-        or accelerator programs, find it on the
-        <a href="http://alpha.codeforamerica.org/apps">apps page</a>
-        and verify that we’ve got it described accurately.
-    </P>
+    <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
     
-    <P>
-        Finally, check <b>government information for brigades and fellowships </b>on the
-        <a href="http://alpha.codeforamerica.org/cities/2014-cities">2014 government partners</a>
-        and <a href="http://alpha.codeforamerica.org/cities/alumni">alumni government partners</a>
-        pages and fill in any blanks you might find.
-    </P>
+    <nav class="nav-global-secondary" role="navigation">
+        <ul>
+        	<li class="nav-tier1 nav-has-children">
+        		<a href="/_site/about/" >Who we are</a>
+        		 
+        	</li>
+            <li class="nav-tier1 nav-has-children">
+                <a href="/_site/governments/" >Governments</a>
+                 
+            </li>
+            <li class="nav-tier1 nav-has-children">
+            	<a href="/_site/citizens/" >Citizens</a>
+            	 
+            </li>
+            <li class="nav-tier1">
+            	<a href="/_site/apps/" >Apps</a>
+            </li>
+            <li><a href="/_site/donate/" class="button">Donate</a></li>
+        </ul>
+    </nav>
     
-    </BIG>
-</BODY>
-</HTML>
+    
+</div>
+        
+<div class="masthead masthead-xl">
+    <header class="layout-semibreve masthead-header">
+        <h1 class="page-title" >In San Francisco</h1>
+        <p>One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
+        <a class="text-whisper button-invert" href="/_site/about/">Learn more about what we do</a>
+    </header>
+</div>
+    
+
+    <main role="main">
+    
+        <section class="layout-centered isolate-invert">
+        
+            <h2 class="text-whisper">Join the movement</h2>
+            
+            <ul class="bricks bricks-cta bricks-3">
+    
+    <li class="brick badge-heading badge-blue">
+        <a class="brick-link" href="/_site/donate/">
+            <h3 class="brick-heading">Donors</h3>
+            <h4 class="brick-text">Help make a difference</h4>
+        </a>
+    </li>
+    
+    <li class="brick badge-heading badge-red">
+        <a class="brick-link" href="/_site/governments/">
+            <h3 class="brick-heading">Governments</h3>
+            <h4 class="brick-text">Solve your city's problems</h4>
+        </a>
+    </li>
+    
+    <li class="brick badge-heading badge-dark-blue">
+        <a class="brick-link" href="/_site/citizens/">
+            <h3 class="brick-heading">Geeks</h3>
+            <h4 class="brick-text">Use your skills for good</h4>
+        </a>
+    </li>
+    
+</ul>
+            
+        </section>
+        
+        <section class="slab-black slab-bg1">
+            
+            <div class="layout-minim layout-solo insulate">
+            
+                <h2 class="h5">Blogging [For America]</h2>
+                
+                <article class="post-preview">
+    
+    <header class="post-header isolate">
+        <time class="post-date insulate text-whisper" datetime="">November 1st 2013</time>
+        <h2 class="post-title"><a href="#">People, not data</a></h2>
+    </header>
+    
+    <div class="post-author">
+        <h2 class="text-whisper layout-tight">Written by</h2>
+        <div class="h-card">
+            <h3 class="p-name profile-name text-prominent">Zachary Townsend</h3>
+            <img class="u-photo profile-photo" src="/media/images/avatar-zachary-townsend.jpg" />
+        </div>
+    </div><!-- .post-author -->
+    
+    <div class="post-body">
+    
+        <div class="post-content">
+            <p>This is San Francisco’s main Food Stamps office. People call it twelve-thirty-five, as in 1235 Mission Street. The first time I went was on Thursday, February 7, 2013</p>
+        </div>
+    </div><!-- .post-body -->
+    
+    <a class="post-link" href="/_site/about/">Read this post</a>
+
+</article><!-- .post -->
+            
+            </div>
+                        
+        </section>
+        
+        <section class="layout-centered insulate-inner">
+        
+            <h2 class="text-whisper">Quick Stats</h2>
+            
+            <ul class="bricks bricks-4">
+    
+    <li class="brick badge-heading badge-github">
+        <h3 class="text-feature">3,372</h3>
+        <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+    </li>
+    
+    <li class="brick badge-heading badge-github">
+        <h3 class="text-feature">348</h3>
+        <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+    </li>
+    
+    <li class="brick badge-heading badge-github">
+        <h3 class="text-feature">157</h3>
+        <p class="text-whisper">Total number of <a href="#">members</a> on Github</p>
+    </li>
+    
+    <li class="brick badge-heading">
+        <h3 class="text-feature">75</h3>
+        <p class="text-whisper">Total number of <a href="#">apps deployed</a> by brigades</p>
+    </li>
+    
+</ul>
+            
+        </section>
+        
+        
+        <!-- If no blog post section -->
+        
+        <section class="slab-dark-blue layout-centered insulate-inner">
+        
+            <h2 class="text-whisper">Quick Stats</h2>
+            
+            <ul class="bricks bricks-4">
+    
+    <li class="brick badge-heading badge-github">
+        <h3 class="text-feature">3,372</h3>
+        <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+    </li>
+    
+    <li class="brick badge-heading badge-github">
+        <h3 class="text-feature">348</h3>
+        <p class="text-whisper">Civic Code Commits in <a href="#">December</a></p>
+    </li>
+    
+    <li class="brick badge-heading badge-github">
+        <h3 class="text-feature">157</h3>
+        <p class="text-whisper">Total number of <a href="#">members</a> on Github</p>
+    </li>
+    
+    <li class="brick badge-heading">
+        <h3 class="text-feature">75</h3>
+        <p class="text-whisper">Total number of <a href="#">apps deployed</a> by brigades</p>
+    </li>
+    
+</ul>
+            
+        </section>
+        
+        <!-- /if -->
+        
+        
+        <section class="slab-gray layout-centered insulate-inner">
+            <h2 class="text-whisper">Code for America is kindly supported by</h2>
+            
+            <ul class="list-logos muted">
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+    <li><a href="#"><img src="/media/images/logo-microsoft.png"/></a></li>
+</ul>
+            
+        </section>
+    
+    </main>
+        
+    
+    
+    <div class="global-footer" id="global-footer">
+    
+    <div class="layout-breve layout-tight">
+    
+        <!-- This form is in 2 different places on the main site template, so make sure IDs are unique each time it is used -->
+<form class="search-global" id="search-global" role="search">
+    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="search-global" />
+    <!-- consider applying autofocus="autofocus" to input -->
+    <button class="search-global-submit" id="search-global-submit" value="Search" type="submit" name="search-global">Search</button>
+</form>
+    
+        <nav class="nav-footer" role="navigation">
+            <ul>
+                <li class="nav-tier1"><a class="nav-heading" href="/_site/about/">About</a>
+                    <ul class="nav-tier2">
+                      <li><a href="/_site/programs/">What we do</a></li>
+                      <li><a href="http://annual.codeforamerica.org/">Annual report</a></li>
+                      <li><a href="http://www.codeforamerica.org/press/">Press</a></li>
+                        <li><a href="http://www.codeforamerica.org/supporters/">Supporters</a></li>
+                        <li><a href="http://www.codeforamerica.org/jobs/">Jobs</a></li>
+                        <li><a href="http://www.codeforamerica.org/contact/">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="http://www.codeforamerica.org/who-we-are/">Who we are</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Board</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">City Partners</a></li>
+                        <li><a href="#">Brigade captains</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Programs</a>
+                    <ul class="nav-tier2">
+                        <li><a href="/_site/fellows/">Fellowship</a></li>
+                        <li><a href="/_site/brigade/">Brigade</a></li>
+                      <li><a href="/_site/startups/">Startup</a></li>
+                      <li><a href="/_site/international">International</a></li>
+                        <li><a href="/_site/peernetwork">Peer Network</a></li>           
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="/_site/donate/">Donate</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Financial Contributions</a></li>
+                        <li><a href="#">In-Kind Donations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Social</a>
+                    <ul class="nav-tier2">
+                        <li><a href="https://www.facebook.com/codeforamerica" class="icon-facebook">Facebook</a></li>
+                        <li><a href="https://twitter.com/codeforamerica" class="icon-twitter">Twitter</a></li>
+                        <li><a href="http://www.youtube.com/user/CodeforAmerica" class="icon-youtube">YouTube</a></li>
+                        <li><a href="https://github.com/codeforamerica" class="icon-github2">GitHub</a></li>
+                        <li><a href="http://codeforamerica.tumblr.com/" class="icon-tumblr">Tumblr</a></li>
+                        <li><a href="http://www.flickr.com/photos/codeforamerica" class="icon-flickr">Flickr</a></li>
+                        <li><a href="http://www.codeforamerica.org/feed/" class="icon-feed">RSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+
+</div>
+
+<div class="global-foot" role="contentinfo">
+    <div class="layout-tight layout-breve">
+        <div class="global-foot-content">
+            <img class="global-foot-logo" src="/assets/logo-inversed.png" />
+            <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
+        </div>
+    </div>
+</div>
+    
+</main>
+
+</div><!-- /.js-container -->
+
+<script src="/_script/global.js"></script>
+
+</body>
+
+</html>
