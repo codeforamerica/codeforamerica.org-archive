@@ -15,10 +15,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Website Style Guide</title>
-    <link rel="stylesheet" href="/_style/css/documentation.css">
-    <link href="_style/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/css/documentation.css">
+    <link href="style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
-    <link rel="stylesheet" href="/_style/css/layout.css" media="all and (min-width: 40em)">
+    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -103,7 +103,7 @@
     
     </div>
 
-    <script src="_script/prism.js"></script>
+    <script src="script/prism.js"></script>
     
 </body>
 
