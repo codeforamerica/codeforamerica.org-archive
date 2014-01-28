@@ -9,7 +9,7 @@ on_stories(
     {
         "head_html": "In San Francisco",
         "content_html": "one third of HSA clients are unneccessarily cut from food benefits. Four fellows built Promptly offering SMS notifications to keep families fed.",
-        "image_src": "http://farm6.staticflickr.com/5471/10877055376_8ba8f78eef_o.png",
+        "image_src": "http://farm6.staticflickr.com/5471/10877055376_6edafc2786_b.jpg",
         "link_href": "cities/sanfrancisco"
     },
     {
@@ -21,7 +21,7 @@ on_stories(
     {
         "head_html": "In Honolulu",
         "content_html": "in 2012, more than 100 citizens and city officials re-wrote the city website in a day. It happened again in Oakland in 2013.",
-        "image_src": "http://farm9.staticflickr.com/8281/7673631824_b1a5b52fa8_k.jpg",
+        "image_src": "http://farm9.staticflickr.com/8281/7673631824_b7f0473715_b.jpg",
         "link_href": "cities/honolulu"
     }
 ]
