@@ -43,14 +43,17 @@ if(typeof document.createStyleSheet === 'undefined')
     })();
 }
 
+/*
+ * Stories.js calls on_stories().
+ */
 function on_stories(stories)
 {
     var story = stories[Math.floor(Math.random() * stories.length)];
 
-    document.getElementById('story-title').innerHTML = story.head;
-    document.getElementById('story-content').innerHTML = story.content;
-    document.getElementById('story-link').href = story.link;
+    document.getElementById('story-title').innerHTML = story.head_html;
+    document.getElementById('story-content').innerHTML = story.content_html;
+    document.getElementById('story-link').href = story.link_href;
 
     var s = document.createStyleSheet();
-    s.addRule('.masthead:before', "background-image: url('"+story.image+"')");
+    s.addRule('.masthead:before', "background-image: url('"+story.image_src+"') !important");
 }
