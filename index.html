@@ -22,7 +22,7 @@
 
 	<style type="text/css">
 		.masthead:before {
-			background-image: url('media/images/masthead/communication.jpeg');
+			background-image: url('media/images/masthead/masthead-1.jpg');
 		}
 	</style>
 </head>
@@ -74,13 +74,69 @@
   </nav>    
 </div>
         
-<div class="masthead masthead-xl">
+<div id="story-masthead" class="masthead masthead-xl">
   <header class="layout-semibreve masthead-header">
-    <h1 class="page-title" >In San Francisco</h1>
-    <p>One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
-    <a class="text-whisper button-invert" href="about">Learn more about what we do</a>
+    <h1 id="story-title" class="page-title" >In San Francisco</h1>
+    <p id="story-content">One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
+    <a id="story-link" class="text-whisper button-invert" href="about">Learn more about what we do</a>
   </header>
 </div>
+
+<script type="text/javascript">
+
+    //
+    // http://stackoverflow.com/questions/524696/how-to-create-a-style-tag-with-javascript/524798#524798
+    //
+    if(typeof document.createStyleSheet === 'undefined')
+    {
+        document.createStyleSheet = (function() {
+            function createStyleSheet(href) {
+                if(typeof href !== 'undefined') {
+                    var element = document.createElement('link');
+                    element.type = 'text/css';
+                    element.rel = 'stylesheet';
+                    element.href = href;
+                }
+                else {
+                    var element = document.createElement('style');
+                    element.type = 'text/css';
+                }
+
+                document.getElementsByTagName('head')[0].appendChild(element);
+                var sheet = document.styleSheets[document.styleSheets.length - 1];
+
+                if(typeof sheet.addRule === 'undefined')
+                    sheet.addRule = addRule;
+
+                if(typeof sheet.removeRule === 'undefined')
+                    sheet.removeRule = sheet.deleteRule;
+
+                return sheet;
+            }
+
+            function addRule(selectorText, cssText, index) {
+                if(typeof index === 'undefined')
+                    index = this.cssRules.length;
+
+                this.insertRule(selectorText + ' {' + cssText + '}', index);
+            }
+
+            return createStyleSheet;
+        })();
+    }
+    
+    var t = document.getElementById('story-title'),
+        c = document.getElementById('story-content'),
+        m = document.getElementById('story-masthead'),
+        l = document.getElementById('story-link'),
+        s = document.createStyleSheet();
+    
+    t.innerHTML = 'In Oakland';
+    c.innerHTML = 'the OpenOakland group built a participatory budgeting website that attracted XXXXX citizen comments in the 2013 budget process.';
+    s.addRule('.masthead:before', "background-image: url('"+'http://farm9.staticflickr.com/8281/7673631824_b1a5b52fa8_k.jpg'+"')");
+    l.href = 'cities/oakland';
+
+</script>
     
 <main role="main">
 
