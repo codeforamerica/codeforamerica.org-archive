@@ -2597,6 +2597,10 @@ input.button-s,
   margin-bottom: 1.5em;
 }
 
+.masthead-header .page-title a {
+  color: white;
+}
+
 .masthead-header .nav-breadcrumbs {
   float: left;
   color: black;
