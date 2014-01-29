@@ -7,12 +7,12 @@ on_stories(
     },
     {
         "head_html": "<a href='cities/sanfrancisco'>In San Francisco</a>",
-        "content_html": "one third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href='apps/promptly'>Promptly</a> offering SMS notifications to keep families fed.",
+        "content_html": "one third of food stamp clients are unneccessarily cut from benefits. Four fellows built <a href='apps/promptly'>Promptly</a> offering SMS notifications to keep families fed.",
         "image_src": "http://farm6.staticflickr.com/5471/10877055376_6edafc2786_b.jpg"
     },
     {
         "head_html": "<a href='cities/oakland'>In Oakland</a>",
-        "content_html": "the OpenOakland group built a participatory budgeting website that attracted XXXXX citizen comments in the 2013 budget process.",
+        "content_html": "the OpenOakland group built a participatory budgeting app so citizens could influence the 2013 budget process.",
         "image_src": "http://www.nooga.com/assets/8690aaea938051ee58b8679a4e08330f44163.jpg"
     },
     {
