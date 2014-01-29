@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Fellowship Apply — Code for America</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
-    <link rel="stylesheet" href="/style/css/main.css">
-    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
-    <link href="/style/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/css/main.css">
+    <link rel="stylesheet" href="../style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="../style/css/prism.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../style/favicons/60x60/flag-red.png"/>
 
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="/style/css/layout.css" media="all">
+        <link rel="stylesheet" href="../style/css/layout.css" media="all">
     <![endif]-->
       
     
@@ -26,7 +26,7 @@
         .masthead:before {
                 background-image: url('../../media/images/cities_fellowship_faq/citiesfaqheader.jpg');
         }
-      </style>
+      <../style>
     
   </head>
       
@@ -167,6 +167,25 @@ nav-breadcrumbs:
                             <label for="donor-last-name">Last Name</label>
                             <input id="donor-last-name" class="input" type="text" />
                         </li>
+                       <li class="form-field">
+                            <label for="title">Your Title & Organization</label>
+                            <input id="title" class="input" type="text" />
+                        </li>
+                        <li class="form-field">
+                            <label for="govt">Which Government are You Applying on Behalf of?</label>
+                            <input id="govt" class="input" type="text" />
+                        </li>
+                        <li class="form-field">
+                            <label for="govt-employee">Are you an Employee of that Government? </label>
+                            <input id="govt-employee" ul class="list-form">
+                            <li><label for="checkbox10"><input id="checkbox10" name="checkbox" type="checkbox" checked/> Choice A</label></li>
+                            <li><label for="checkbox10"><input id="checkbox10" name="checkbox" type="checkbox" checked/> Choice A</label></li>
+                        </ul>
+                        </li>
+            <li>
+                <label for="checkbox20"><input id="checkbox20" name="checkbox" type="checkbox"/> Choice B</label>
+                        </li>
+                        
                         
                         <li class="form-field">
                             <label for="donor-address-line1">Address Line 1</label>
