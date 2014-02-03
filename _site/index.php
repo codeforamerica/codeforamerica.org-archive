@@ -449,28 +449,23 @@
             
             <h2 class="xx-section-title">Layout</h2>
             
-            <p>The classnames used for layout are all prefixed with <code>layout-</code>. They are all derived from musical note values. The site uses a 9-column grid which can be split into a 2, 3 or 9 column layout, and there are slight variations on these layouts.</p>
+            <p>The classnames used for layout are all prefixed with <code>layout-</code>. They are all derived from musical note values. This naming convention has been used because it avoids referencing the number of columns in the grid (which often only makes sense at "desktop" view).</p>
             
-            <p>A "stacatto" is:</p>
+            <p>The site uses a 9-column grid which can be split into a 2, 3 or 9 column layout, and there are slight variations on these layouts.</p>
             
-            <blockquote>
-            	A note of shortened duration, separated from the note that may follow by silence.
-            	<a href="http://en.wikipedia.org/wiki/Staccato">(Via Wikipedia)</a>
-            </blockquote>
+            <p>The widest container is <code>layout-breve</code></p>
             
-            <p>This has been applied to the class when the column is shorter than normal.</p>
+            <div class="xx-pattern-layout">
+                <div class="layout-breve">
+                    <p>layout-breve</p>
+                </div>
+            </div>
             
             <p>Layouts can be wrapped inside each other. For example, 2 layout-minims can be within a layout-semibreve to have a 2 column layout which stops growing when it hits a certain size.</p>
             
             <div class="xx-pattern-layout">
                 <div class="layout-breve">
                     <p>layout-breve</p>
-                </div>
-            </div>
-            
-            <div class="xx-pattern-layout">
-                <div class="layout-breve">
-                    <p>layout-breve</p>
                     <div class="layout-minim">
                         <p>layout-minim</p>
                     </div>
@@ -482,79 +477,54 @@
             
             <div class="xx-pattern-layout">
             	<div class="layout-breve">
-                	<p>layout-breve</p>
-                    <div class="layout-minim-staccato">
-                        <p>layout-minim-staccato</p>
+            	    <p>layout-breve</p>
+    	            <div class="layout-crotchet">
+    	                <p>layout-crotchet</p>
+    	            </div>
+    	            <div class="layout-crotchet">
+    	                <p>layout-crotchet</p>
+    	            </div>
+    	            <div class="layout-crotchet">
+    	                <p>layout-crotchet</p>
+    	            </div>
+    	        </div>
+            </div>
+            
+            <div class="xx-pattern-layout">
+            	<div class="layout-breve">
+            	    <p>layout-breve</p>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
                     </div>
-                    <div class="layout-minim-staccato">
-                        <p>layout-minim-staccato</p>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
+                    </div>
+                    <div class="layout-quaver">
+                        <p>layout-quaver</p>
                     </div>
                 </div>
             </div>
             
-            <div class="xx-pattern-layout">
-            	<div class="layout-breve">
-            	    <p>layout-breve</p>
-    	            <div class="layout-crotchet">
-    	                <p>layout-crotchet</p>
-    	            </div>
-    	            <div class="layout-crotchet">
-    	                <p>layout-crotchet</p>
-    	            </div>
-    	            <div class="layout-crotchet">
-    	                <p>layout-crotchet</p>
-    	            </div>
-    	        </div>
-            </div>
-            
-            <div class="xx-pattern-layout">
-            	<div class="layout-breve">
-            	    <p>layout-breve</p>
-    	            <div class="layout-crotchet-staccato">
-    	                <p>layout-crotchet-staccato</p>
-    	            </div>
-    	            <div class="layout-crotchet-staccato">
-    	                <p>layout-crotchet-staccato</p>
-    	            </div>
-    	            <div class="layout-crotchet-staccato">
-    	                <p>layout-crotchet-staccato</p>
-    	            </div>
-    	        </div>
-            </div>
-            
-            <div class="xx-pattern-layout">
-            	<div class="layout-breve">
-            	    <p>layout-breve</p>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	        </div>
-            </div>
-            
+            <p><code>layout-semibreve</code> containers are shorter than <code>layout-breve</code>. They have a max-width applied.</p>
+                        
             <div class="xx-pattern-layout">
                 <div class="layout-semibreve">
                     <p>layout-semibreve</p>
@@ -570,18 +540,6 @@
     	            <div class="layout-minim">
     	                <p>layout-minim</p>
     	            </div>
-    		    </div>
-    		</div>
-    		
-    		<div class="xx-pattern-layout">
-    			<div class="layout-semibreve">
-    		    	<p>layout-semibreve</p>
-    		        <div class="layout-minim-staccato">
-    		            <p>layout-minim-staccato</p>
-    		        </div>
-    		        <div class="layout-minim-staccato">
-    		            <p>layout-minim-staccato</p>
-    		        </div>
     		    </div>
     		</div>
     		        
@@ -603,64 +561,112 @@
             <div class="xx-pattern-layout">
             	<div class="layout-semibreve">
             	    <p>layout-semibreve</p>
-    	            <div class="layout-crotchet-staccato">
-    	                <p>layout-crotchet-staccato</p>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
     	            </div>
-    	            <div class="layout-crotchet-staccato">
-    	                <p>layout-crotchet-staccato</p>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
     	            </div>
-    	            <div class="layout-crotchet-staccato">
-    	                <p>layout-crotchet-staccato</p>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
+    	            </div>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
+    	            </div>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
+    	            </div>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
+    	            </div>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
+    	            </div>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
+    	            </div>
+    	            <div class="layout-quaver">
+    	                <p>layout-quaver</p>
     	            </div>
     	        </div>
             </div>
             
-            <div class="xx-pattern-layout">
-            	<div class="layout-semibreve">
-            	    <p>layout-semibreve</p>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	            <div class="layout-quaver">
-    	                <p>layout-quaver</p>
-    	            </div>
-    	        </div>
-            </div>
+            <p>For unequal column widths, use <code>layout-minor</code> and <code>layout-major</code>.</p>
             
             <div class="xx-pattern-layout">
             	<div class="layout-semibreve">
                 	<p>layout-semibreve</p>
                     <div class="layout-minor">
-                        <p>layout-minim-staccato</p>
+                        <p>layout-minor</p>
                     </div>
                     <div class="layout-major">
+                        <p>layout-major</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p>A "stacatto" is <a href="http://en.wikipedia.org/wiki/Staccato">A note of shortened duration, separated from the note that may follow by silence</a>. This has been applied to the class when the column is shorter than normal.</p>
+            
+            <div class="xx-pattern-layout">
+            	<div class="layout-breve">
+                	<p>layout-breve</p>
+                    <div class="layout-minim-staccato">
+                        <p>layout-minim-staccato</p>
+                    </div>
+                    <div class="layout-minim-staccato">
                         <p>layout-minim-staccato</p>
                     </div>
                 </div>
             </div>
             
+            <div class="xx-pattern-layout">
+            	<div class="layout-semibreve">
+                	<p>layout-semibreve</p>
+                    <div class="layout-minim-staccato">
+                        <p>layout-minim-staccato</p>
+                    </div>
+                    <div class="layout-minim-staccato">
+                        <p>layout-minim-staccato</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="xx-pattern-layout">
+            	<div class="layout-breve">
+            	    <p>layout-breve</p>
+                    <div class="layout-crotchet-staccato">
+                        <p>layout-crotchet-staccato</p>
+                    </div>
+                    <div class="layout-crotchet-staccato">
+                        <p>layout-crotchet-staccato</p>
+                    </div>
+                    <div class="layout-crotchet-staccato">
+                        <p>layout-crotchet-staccato</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="xx-pattern-layout">
+            	<div class="layout-semibreve">
+            	    <p>layout-semibreve</p>
+                    <div class="layout-crotchet-staccato">
+                        <p>layout-crotchet-staccato</p>
+                    </div>
+                    <div class="layout-crotchet-staccato">
+                        <p>layout-crotchet-staccato</p>
+                    </div>
+                    <div class="layout-crotchet-staccato">
+                        <p>layout-crotchet-staccato</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
             <h2 class="xx-section-title">Slabs</h2>
+            
+            <p>For background colours, use a class of <code>slab-colourname</code>.</p>
             
             <div class="xx-slabs">
     	        

@@ -5625,7 +5625,7 @@ body {
 .xx-pattern-layout div {
   background-color: #ccc;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
@@ -5634,6 +5634,7 @@ body {
 
 .xx-pattern-layout div p {
   margin-bottom: 0;
+  font-size: 0.8em;
 }
 
 .xx-pattern-layout div div {
