@@ -3,6 +3,7 @@ body {
     font-size: $base-font-size;
     margin: 0;
     padding: 0;
+    word-break: break-word; /* Prevents very long strings of text from overflowing their container */
     }
 
 @media print {
