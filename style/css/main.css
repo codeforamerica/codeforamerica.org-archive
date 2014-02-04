@@ -2427,7 +2427,7 @@ input.button-s,
   .badge-brigade:after {
     background-image: url("../images/badge-brigade.png");
     z-index: 1;
-    background-position: 10px 5px;
+    background-position: 8px 5px;
   }
 
   .svg .badge-brigade:after {
@@ -2447,7 +2447,7 @@ input.button-s,
   .badge-startups:after {
     background-image: url("../images/badge-startups.png");
     z-index: 1;
-    background-position: 13px 2px;
+    background-position: 14px 3px;
   }
 
   .svg .badge-startups:after {
@@ -2457,7 +2457,7 @@ input.button-s,
   .badge-fellowship:after {
     background-image: url("../images/badge-fellowship.png");
     z-index: 1;
-    background-position: 12px 4px;
+    background-position: 15px 5px;
   }
 
   .svg .badge-fellowship:after {
