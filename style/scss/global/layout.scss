@@ -2,6 +2,24 @@ blockquote {
     font-size: 1.2em;
     }
 
+/* Make masthead page titles white in widescreen mode */
+
+.masthead-header .page-title a:link,
+.masthead-header .page-title a:visited,
+.masthead-header .page-title a:hover,
+.masthead-header .page-title a:focus,
+.masthead-header .page-title a:active {
+    color: white;
+    text-decoration: none;
+    }
+
+.masthead-header .page-title a:hover,
+.masthead-header .page-title a:focus,
+.masthead-header .page-title a:active {
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, .7);
+    }
+
 /* Layout ========================================== */
 
 

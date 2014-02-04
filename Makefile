@@ -1,4 +1,4 @@
-all: script/global.min.js style/css/main.css
+all: script/global.min.js style/css/main.css style/css/layout.css
 
 script/global.min.js: script/global.js
 	jsmin < script/global.js > script/global.min.js
@@ -38,3 +38,9 @@ style/css/main.css: \
         style/scss/patterns/wodge-large.scss style/scss/patterns/wodge-small.scss \
         style/scss/patterns/wodge.scss style/scss/templates/documentation.scss
 	sass -qf -t expanded -E utf-8 style/scss/main.scss style/css/main.css
+
+style/css/layout.css: \
+        style/scss/global/layout.scss \
+        style/scss/layout.scss \
+        style/scss/layout.scss
+	sass -qf -t expanded -E utf-8 style/scss/layout.scss style/css/layout.css
