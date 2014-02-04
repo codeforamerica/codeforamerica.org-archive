@@ -2,7 +2,7 @@ blockquote {
   font-size: 1.2em;
 }
 
-/* Make masthead page titles while in wide-layout mode */
+/* Make masthead page titles white in widescreen mode */
 .masthead-header .page-title a:link,
 .masthead-header .page-title a:visited,
 .masthead-header .page-title a:hover,
