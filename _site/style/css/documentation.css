@@ -5508,7 +5508,12 @@ body {
 .xx-options .xx-nav {
   padding: 0;
   margin: 0;
+  display: none;
   font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+}
+
+.js .xx-options .xx-nav {
+  display: block;
 }
 
 @media (min-width: 40em) {
@@ -6127,4 +6132,8 @@ body {
   position: absolute;
   right: 1em;
   top: 0.25em;
+}
+
+.xx .global-header {
+  position: relative;
 }

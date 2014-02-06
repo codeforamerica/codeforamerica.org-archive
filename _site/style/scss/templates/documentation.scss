@@ -22,8 +22,12 @@
 .xx-options .xx-nav {
     padding: 0;
     margin: 0;
-    
+    display: none;
     font-family: $font-sans-regular;
+    }
+
+.js .xx-options .xx-nav {
+    display: block;
     }
     
     @media (min-width: 40em) {
@@ -566,4 +570,8 @@
     position: absolute;
     right: 1em;
     top: 0.25em;
+    }
+
+.xx .global-header {
+    position: relative;
     }
