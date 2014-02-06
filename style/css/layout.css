@@ -212,6 +212,7 @@ blockquote {
 }
 .layout-chimney-invert .chimney {
   right: 0;
+  margin-left: 0;
 }
 
 .layout-chimney .layout-minim,
