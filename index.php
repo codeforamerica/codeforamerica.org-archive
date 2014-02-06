@@ -220,6 +220,8 @@
     	
         	<h2 class="xx-section-title">Icons</h2>
         	
+        	<p>Icons are from <a href="http://icomoon.io/">icomoon</a>.</p>
+        	
         	<ul class="list-no-bullets list-crotchet">
         	    <li class="icon-facebook"> icon-facebook</li>
         	    <li class="icon-twitter"> icon-twitter</li>
@@ -453,7 +455,7 @@
             
             <p>The site uses a 9-column grid which can be split into a 2, 3 or 9 column layout, and there are slight variations on these layouts.</p>
             
-            <p>The widest container is <code>layout-breve</code></p>
+            <p>The widest container is <code>layout-breve</code>.</p>
             
             <div class="xx-pattern-layout">
                 <div class="layout-breve">
@@ -523,7 +525,7 @@
                 </div>
             </div>
             
-            <p><code>layout-semibreve</code> containers are shorter than <code>layout-breve</code>. They have a max-width applied.</p>
+            <p><code>layout-semibreve</code> containers have an earlier max-width applied than <code>layout-breve</code>. This will appear to be the same width as layout-breve unless you're viewing the site on a wide screen.</p>
                         
             <div class="xx-pattern-layout">
                 <div class="layout-semibreve">
