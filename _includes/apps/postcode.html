@@ -1,0 +1,68 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Postcode</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/postcode.png" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Postcode is a mission driven company that provides technology applications and services to local governments.</p>
+	    
+	    <p class="text-whisper"><a href="http://postcode.io/ ">http://postcode.io</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Founded by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="../../people/andy-hull">Andy Hull</a></li>
+	    	<li><a href="../../people/cj-bryan">CJ Bryan</a></li>
+	    	<li><a href="../../people/cris-cristina">Cris Cristina</a></li>
+	    	<li><a href="../../people/richa-agarwal">Richa Agarwal</a></li>
+	    	<li><a href="../../people/reed-duecy-gibbs">Reed Duecy-Gibbs</a></li>
+	    	<li><a href="../../people/tamara-manik-perlman">Tamara Manik-Perlman</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Part of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/civic-startups">2014 Incubator</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Postcode is a mission driven company that provides technology applications and services to local governments.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://postcode.io/ ">http://postcode.io</a></td></tr>
+	    	</table>
+	    	<a href="https://codeforamerica.wufoo.com/forms/app-inquiry-form/" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p><a href="http://www.postcode.io/">PostCode</a> is a mission driven company that provides technology applications and services to local governments. The group focuses on open source technology and user centered design with the goal to help the public sector operate more efficiently while engaging citizens more effectively. PostCode offers a suite of products including: <a href="http://records.oaklandnet.com/landing">RecordTrac</a>, a public records request and management system; <a href="http://www.promptly.io/">Promptly</a> a text message reminder app for government services; and <a href="http://www.cityvoiceapp.com/">CityVoice</a> a place based call-in system for collecting community feedback. The company's consulting capabilities include full service research, design, development, implementation, training, and maintenance for technology solutions.</p>
+        <p>To check out the startup visit <a href="http://postcode.io">postcode.io</a></p>
+	    
+	</div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/captricity">
+                <h1 class="teaser-title">Postcode</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Postcode is a mission driven company that provides technology applications and services to local governments.</p>
+            
+            <p><a href="{{ include.base }}/apps/postcode">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/postcode" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/postcode.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
