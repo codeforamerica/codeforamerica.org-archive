@@ -1,6 +1,6 @@
 language: ruby
 before_install:
-- travis_retry gem install jekyll
+- travis_retry gem install jekyll --no-ri --no-rdoc
 script: jekyll build
 branches:
   only:

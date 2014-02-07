@@ -1,6 +1,8 @@
 Code For America Dot Org
 ========================
 
+[![Build Status](https://travis-ci.org/codeforamerica/codeforamerica.org.png?branch=static-site)](https://travis-ci.org/codeforamerica/codeforamerica.org)
+
 ## Description
 
 This Master branch is exclusively used for Clearleft's deliverables.
