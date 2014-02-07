@@ -1,5 +1,22 @@
 #!/usr/bin/env python
+''' Build this site based on recent successful Travis CI build.
 
+With Travis (https://travis-ci.org) configured on a Jekyll repository, use
+this script within a scheduled cron job to automatically build the most-recently
+passed commit.
+
+Requires a writeable checkout directory.
+
+Sample usage in a shell script:
+
+    #!/bin/bash -e
+    source /etc/profile.d/rvm.sh
+
+    git --work-tree /home/u/cfa --git-dir /home/u/cfa/.git pull -q
+    curl -s https://api.travis-ci.org/repos/codeforamerica/codeforamerica.org/builds \
+       | LC_ALL="en_US.UTF-8" /path/to/build-it.py /home/u/cfa /var/www/cfa
+
+'''
 from subprocess import check_call, check_output, PIPE
 from os import chdir
 from sys import argv, stdin
