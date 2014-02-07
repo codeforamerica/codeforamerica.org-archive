@@ -7,6 +7,10 @@ passed commit.
 
 Requires a writeable checkout directory.
 
+Usage:
+
+    build-it.py <checkout dir> <build dir>
+
 Sample usage in a shell script:
 
     #!/bin/bash -e
@@ -36,23 +40,30 @@ def jekyll_build(dir):
 
 if __name__ == '__main__':
 
-    builds = load(stdin)
-    build = [b for b in builds if b['result'] == 0][0]
-
-    print '-->', 'Build %(number)s - %(finished_at)s' % build
-
-    commit = build['commit']
     checkout_dir, build_dir = argv[1:]
-
-    try:
-        chdir(checkout_dir)
-        branch = current_branch()
-
-        checkout_ref(commit)
-        jekyll_build(build_dir)
     
-    except Exception, e:
-        print 'ERR', e
+    chdir(checkout_dir)
 
-    finally:
-        checkout_ref(branch)
+    for build in load(stdin):
+        if build['result'] > 0:
+            print '-->', 'Skipping %(number)s - returned %(result)s' % build
+            continue
+        
+        if missing_ref(build['commit']):
+            print '-->', 'Skipping %(number)s - missing %(commit)s' % build
+            continue
+
+        print '-->', 'Build %(number)s - %(finished_at)s' % build
+
+        try:
+            branch = current_branch()
+            checkout_ref(build['commit'])
+            jekyll_build(build_dir)
+    
+        except Exception, e:
+            print 'ERR', e
+
+        finally:
+            checkout_ref(branch)
+        
+        break
