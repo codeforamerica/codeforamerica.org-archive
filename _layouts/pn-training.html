@@ -62,7 +62,13 @@ nav-breadcrumbs:
     <div class="js-container">
       {% include nav.html %}
       <main role="main">
-        {{ content }}
+        <div class="layout layout-semibreve">
+          <div class="heading">
+            <h2>{{ page.title }}</h2>
+          </div>
+
+          {{ content }}
+        </div>
         
         {% include global-footer.html %}
       </main>
