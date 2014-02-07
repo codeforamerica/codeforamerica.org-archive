@@ -21,10 +21,13 @@ Sample usage in a shell script:
        | LC_ALL="en_US.UTF-8" /path/to/build-it.py /home/u/cfa /var/www/cfa
 
 '''
-from subprocess import check_call, check_output, PIPE
+from subprocess import call, check_call, check_output, PIPE
 from os import chdir
 from sys import argv, stdin
 from json import load
+
+def missing_ref(ref):
+    return call(('git', 'cat-file', 'commit', ref), stdout=PIPE) != 0
 
 def current_branch():
     ref = check_output('git symbolic-ref HEAD'.split())
