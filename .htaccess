@@ -40,6 +40,26 @@ RewriteCond %{QUERY_STRING} \b(cfa_project|cfa_app)=([^&]+)
 RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 
 #
+# Peer Network training broadcasts.
+#
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/02-18-2014/?$ $1/peer-network-training/02-18-2014
+
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/brigade12-12-2013/?$ $1/peer-network-training/brigade12-12-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/meettheauthors/?$ $1/peer-network-training/meettheauthors
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/09-24-2013/?$ $1/peer-network-training/09-24-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/08-22-2013/?$ $1/peer-network-training/08-22-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/08-07-2013/?$ $1/peer-network-training/08-07-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/ask-a-fellow-2013/?$ $1/peer-network-training/ask-a-fellow-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-18-2013/?$ $1/peer-network-training/07-18-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-11-2013/?$ $1/peer-network-training/07-11-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-11-2013-jared/?$ $1/peer-network-training/07-11-2013-jared
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/06-27-2013/?$ $1/peer-network-training/06-27-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-30-2013/?$ $1/peer-network-training/05-30-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-24-2013/?$ $1/peer-network-training/05-24-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-14-2013/?$ $1/peer-network-training/05-14-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-13-201/?$ $1/peer-network-training/05-13-201
+
+#
 # Wordpress blog.
 #
 RedirectMatch permanent ^(.*)(?<!/blog)/(wp-admin.+)$ $1/blog/$2
