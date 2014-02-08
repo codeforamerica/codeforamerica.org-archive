@@ -1,1 +1,0 @@
-For displaying a list of logos horizontally

@@ -1,1 +1,0 @@
-Adding the class of "muted" makes the images black-and-white.

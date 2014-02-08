@@ -1,1 +1,0 @@
-Creates a show/hide toggle for very long lists

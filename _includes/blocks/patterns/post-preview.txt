@@ -1,1 +1,0 @@
-Shows a teaser of a blog post with an abstract/excerpt and author information.
