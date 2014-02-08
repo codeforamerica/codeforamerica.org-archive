@@ -70,11 +70,11 @@ if __name__ == '__main__':
 
     for build in load(stdin):
         if build['result'] != 0:
-            print '-->', 'Skipping %(number)s - returned %(result)s' % build
+            print '   ', 'Skipping %(number)s - returned %(result)s' % build
             continue
         
         if missing_ref(build['commit']):
-            print '-->', 'Skipping %(number)s - missing %(commit)s' % build
+            print '   ', 'Skipping %(number)s - missing %(commit)s' % build
             continue
 
         with locked_file(lock_path) as lock_file:
@@ -82,24 +82,24 @@ if __name__ == '__main__':
             previous_commit = lock_file.read().strip()
             
             if previous_commit == build['commit']:
-                print '-->', 'Skipping %(number)s - already have %(commit)s' % build
+                print '   ', 'Skipping %(number)s - already have %(commit)s' % build
+                continue
         
-            else:
-                print '-->', 'Build %(number)s - %(finished_at)s' % build
+            print '-->', 'Build %(number)s - %(finished_at)s' % build
 
-                try:
-                    branch = current_branch()
-                    checkout_ref(build['commit'])
-                    jekyll_build(build_dir)
+            try:
+                branch = current_branch()
+                checkout_ref(build['commit'])
+                jekyll_build(build_dir)
 
-                    lock_file.seek(0)
-                    lock_file.truncate()
-                    lock_file.write(build['commit'])
-    
-                except Exception, e:
-                    print 'ERR', e
+                lock_file.seek(0)
+                lock_file.truncate()
+                lock_file.write(build['commit'])
 
-                finally:
-                    checkout_ref(branch)
+            except Exception, e:
+                print 'ERR', e
+
+            finally:
+                checkout_ref(branch)
     
         break
