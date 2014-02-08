@@ -5,7 +5,7 @@ With Travis (https://travis-ci.org) configured on a Jekyll repository, use
 this script within a scheduled cron job to automatically build the most-recently
 passed commit.
 
-Requires a writeable checkout directory.
+Requires a writeable checkout directory and lock file.
 
 Usage:
 
@@ -24,6 +24,7 @@ Sample usage in a shell script:
 from contextlib import contextmanager
 from subprocess import call, check_call, check_output, PIPE
 from fcntl import flock, LOCK_EX, LOCK_UN
+from datetime import datetime
 from os import chdir
 from sys import argv, stdin
 from json import load
@@ -62,6 +63,8 @@ def jekyll_build(dir):
 if __name__ == '__main__':
 
     checkout_dir, build_dir, lock_path = argv[1:]
+    
+    print '==>', datetime.now(), build_dir, '=', checkout_dir, '+', lock_path
     
     chdir(checkout_dir)
 
