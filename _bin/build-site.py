@@ -18,7 +18,7 @@ Sample usage in a shell script:
 
     git --work-tree /home/u/cfa --git-dir /home/u/cfa/.git pull -q
     curl -s https://api.travis-ci.org/repos/codeforamerica/codeforamerica.org/builds \
-       | LC_ALL="en_US.UTF-8" /path/to/build-it.py /home/u/cfa /var/www/cfa
+       | LC_ALL="en_US.UTF-8" /path/to/build-it.py /home/u/cfa /var/www/cfa /home/u/cfa.lock
 
 '''
 from contextlib import contextmanager
