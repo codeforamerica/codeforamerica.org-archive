@@ -1,7 +1,7 @@
 {% comment %}
 
-This is the default Jekyll layout for Code for America's website.
-Use it by specifying "layout: default" in your Jekyll front-matter:
+This is the Peer Network Training Jekyll layout for Code for America's website.
+Use it by specifying "layout: pn-training" in your Jekyll front-matter:
 
     http://jekyllrb.com/docs/frontmatter/
 
@@ -9,20 +9,14 @@ Special page variables you can define in your front matter:
 
 title            - Page title and content of H1 tag in page header.
 title-h1         - Alternate page title for use in header H1 tag only.
-nav_tier1_active - name of navigation section to show, see _includes/nav.html.
 nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
-masthead-class   - optionally "masthead-s" for a shorter masthead image.
-masthead-image   - path to image for use in masthead.
 
 Sample front matter from one page:
 
 ---
-layout: default
-title: Ezra Spier
-title-h1: People
-nav_tier1_active: "citizens"
-masthead-class: masthead-s
-masthead-image: "../../media/images/masthead/masthead-5.jpg"
+layout: pn-training
+title: "Building a Gov Data Skunkworks (Live)"
+title-h1: CfA Live
 nav-breadcrumbs:
  - Citizens: "/geeks"
 ---
@@ -49,26 +43,35 @@ nav-breadcrumbs:
         <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all">
     <![endif]-->
       
-    {% if page.masthead-image %}
-      <style type="text/css">
-        .masthead:before {
-                background-image: url('{{ page.masthead-image }}');
-        }
-      </style>
-    {% endif %}
+    <style type="text/css">
+      .masthead:before
+      {
+         background-image: url('/media/images/about_peernetwork/peernetwork_header.jpg');
+      }
+
+      #pn-training-content>h2,
+      #pn-training-content>h3,
+      #pn-training-content>h4
+      {
+         padding-top: 1em;
+         clear: both;
+      }
+    </style>
   </head>
       
   <body>
     <div class="js-container">
-      {% include nav.html %}
+      {% include nav.html masthead-class="masthead-s" masthead-image="/media/images/about_peernetwork/peernetwork_header.jpg" %}
       <main role="main">
-        <div class="layout layout-semibreve">
-          <div class="heading">
+        <section>
+        <div class="layout layout-semibreve" id="pn-training-content">
+          <header class="badge-heading badge-peernetwork badge-blue">
             <h2>{{ page.title }}</h2>
-          </div>
+          </header>
 
           {{ content }}
         </div>
+        </section>
         
         {% include global-footer.html %}
       </main>

@@ -2,9 +2,6 @@
 layout: pn-training
 title: "Building a Gov Data Skunkworks (Live)"
 title-h1: CfA Live
-nav_tier1_active: "governments"
-masthead-class: masthead-s
-masthead-image: "../../media/images/about_peernetwork/peernetwork_header.jpg"
 ---
 
 This event will be livestreamed at 10 am PT on February 18, 2014. If you haven't
