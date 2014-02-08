@@ -31,8 +31,6 @@ from json import load
 @contextmanager
 def locked_file(path):
     ''' Create a file, lock it, then unlock it. Use as a context manager.
-    
-        Yields nothing.
     '''
     #debug('Locking ' + path)
     
@@ -40,7 +38,7 @@ def locked_file(path):
         file = open(path, 'a')
         flock(file, LOCK_EX)
         
-        yield
+        yield file
 
     finally:
         #debug('Unlocking ' + path)
