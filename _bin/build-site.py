@@ -9,7 +9,7 @@ Requires a writeable checkout directory.
 
 Usage:
 
-    build-it.py <checkout dir> <build dir>
+    build-it.py <checkout dir> <build dir> <lock file>
 
 Sample usage in a shell script:
 
@@ -21,10 +21,30 @@ Sample usage in a shell script:
        | LC_ALL="en_US.UTF-8" /path/to/build-it.py /home/u/cfa /var/www/cfa
 
 '''
+from contextlib import contextmanager
 from subprocess import call, check_call, check_output, PIPE
+from fcntl import flock, LOCK_EX, LOCK_UN
 from os import chdir
 from sys import argv, stdin
 from json import load
+
+@contextmanager
+def locked_file(path):
+    ''' Create a file, lock it, then unlock it. Use as a context manager.
+    
+        Yields nothing.
+    '''
+    debug('Locking ' + path)
+    
+    try:
+        file = open(path, 'a')
+        flock(file, LOCK_EX)
+        
+        yield
+
+    finally:
+        debug('Unlocking ' + path)
+        flock(file, LOCK_UN)
 
 def missing_ref(ref):
     return call(('git', 'cat-file', 'commit', ref), stdout=PIPE) != 0
@@ -43,7 +63,7 @@ def jekyll_build(dir):
 
 if __name__ == '__main__':
 
-    checkout_dir, build_dir = argv[1:]
+    checkout_dir, build_dir, lock_path = argv[1:]
     
     chdir(checkout_dir)
 
@@ -56,17 +76,25 @@ if __name__ == '__main__':
             print '-->', 'Skipping %(number)s - missing %(commit)s' % build
             continue
 
-        print '-->', 'Build %(number)s - %(finished_at)s' % build
-
-        try:
-            branch = current_branch()
-            checkout_ref(build['commit'])
-            jekyll_build(build_dir)
-    
-        except Exception, e:
-            print 'ERR', e
-
-        finally:
-            checkout_ref(branch)
+        with locked_file(lock_path) as lock_file:
+            lock_file.seek(0)
+            print '???', repr(lock_file.read())
         
+            print '-->', 'Build %(number)s - %(finished_at)s' % build
+
+            try:
+                branch = current_branch()
+                checkout_ref(build['commit'])
+                jekyll_build(build_dir)
+
+                lock_file.seek(0)
+                lock_file.truncate()
+                lock_file.write(build['commit'])
+    
+            except Exception, e:
+                print 'ERR', e
+
+            finally:
+                checkout_ref(branch)
+    
         break
