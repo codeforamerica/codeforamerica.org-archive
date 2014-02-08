@@ -254,3 +254,9 @@ RedirectMatch permanent ^(.*)/ted(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-vide
 RedirectMatch permanent ^(.*)/TED(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-video$2
 RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults$2
 RedirectMatch permanent ^(.*)/pages/tools(/?)$ $1/2013/07/16/tools-of-the-civic-trade$2
+
+#
+# Set of possible Jekyll file extensions, from
+# https://github.com/jekyll/jekyll/blob/dd3018ce/lib/jekyll/configuration.rb#L39
+#
+DirectoryIndex index.html index.md index.mkd index.mkdn index.markdown index.textile
