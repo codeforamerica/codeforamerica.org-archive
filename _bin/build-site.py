@@ -34,7 +34,7 @@ def locked_file(path):
     
         Yields nothing.
     '''
-    debug('Locking ' + path)
+    #debug('Locking ' + path)
     
     try:
         file = open(path, 'a')
@@ -43,7 +43,7 @@ def locked_file(path):
         yield
 
     finally:
-        debug('Unlocking ' + path)
+        #debug('Unlocking ' + path)
         flock(file, LOCK_UN)
 
 def missing_ref(ref):
