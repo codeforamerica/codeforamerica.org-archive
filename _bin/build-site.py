@@ -76,23 +76,27 @@ if __name__ == '__main__':
 
         with locked_file(lock_path) as lock_file:
             lock_file.seek(0)
-            print '???', repr(lock_file.read())
+            previous_commit = lock_file.read().strip()
+            
+            if previous_commit == build['commit']:
+                print '-->', 'Skipping %(number)s - already have %(commit)s' % build
         
-            print '-->', 'Build %(number)s - %(finished_at)s' % build
+            else:
+                print '-->', 'Build %(number)s - %(finished_at)s' % build
 
-            try:
-                branch = current_branch()
-                checkout_ref(build['commit'])
-                jekyll_build(build_dir)
+                try:
+                    branch = current_branch()
+                    checkout_ref(build['commit'])
+                    jekyll_build(build_dir)
 
-                lock_file.seek(0)
-                lock_file.truncate()
-                lock_file.write(build['commit'])
+                    lock_file.seek(0)
+                    lock_file.truncate()
+                    lock_file.write(build['commit'])
     
-            except Exception, e:
-                print 'ERR', e
+                except Exception, e:
+                    print 'ERR', e
 
-            finally:
-                checkout_ref(branch)
+                finally:
+                    checkout_ref(branch)
     
         break
