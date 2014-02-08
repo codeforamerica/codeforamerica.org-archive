@@ -82,8 +82,8 @@ if __name__ == '__main__':
             previous_commit = lock_file.read().strip()
             
             if previous_commit == build['commit']:
-                print '   ', 'Skipping %(number)s - already have %(commit)s' % build
-                continue
+                print '   ', 'Stopping at %(number)s - already have %(commit)s' % build
+                break
         
             print '-->', 'Build %(number)s - %(finished_at)s' % build
 
