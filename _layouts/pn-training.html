@@ -1,0 +1,81 @@
+{% comment %}
+
+This is the Peer Network Training Jekyll layout for Code for America's website.
+Use it by specifying "layout: pn-training" in your Jekyll front-matter:
+
+    http://jekyllrb.com/docs/frontmatter/
+
+Special page variables you can define in your front matter:
+
+title            - Page title and content of H1 tag in page header.
+title-h1         - Alternate page title for use in header H1 tag only.
+nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
+
+Sample front matter from one page:
+
+---
+layout: pn-training
+title: "Building a Gov Data Skunkworks (Live)"
+title-h1: CfA Live
+nav-breadcrumbs:
+ - Citizens: "/geeks"
+---
+
+{% endcomment %}
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/main.css">
+    <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="http://style.codeforamerica.org/0/style/css/prism.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://style.codeforamerica.org/0/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="http://style.codeforamerica.org/0/style/favicons/60x60/flag-red.png"/>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all">
+    <![endif]-->
+      
+    <style type="text/css">
+      .masthead:before
+      {
+         background-image: url('/media/images/about_peernetwork/peernetwork_header.jpg');
+      }
+
+      #pn-training-content>h2,
+      #pn-training-content>h3,
+      #pn-training-content>h4
+      {
+         padding-top: 1em;
+         clear: both;
+      }
+    </style>
+  </head>
+      
+  <body>
+    <div class="js-container">
+      {% include nav.html masthead-class="masthead-s" masthead-image="/media/images/about_peernetwork/peernetwork_header.jpg" %}
+      <main role="main">
+        <section>
+        <div class="layout layout-semibreve" id="pn-training-content">
+          <header class="badge-heading badge-peernetwork badge-blue">
+            <h2>{{ page.title }}</h2>
+          </header>
+
+          {{ content }}
+        </div>
+        </section>
+        
+        {% include global-footer.html %}
+      </main>
+    </div>
+    <script src="/script/global.js"></script>
+  </body>
+</html>

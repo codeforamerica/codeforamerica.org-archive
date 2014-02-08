@@ -1,3 +1,27 @@
+{% if page.nav_tier1_active %}
+    {% assign nav_tier1_active = page.nav_tier1_active %}
+{% elsif include.nav_tier1_active %}
+    {% assign nav_tier1_active = include.nav_tier1_active %}
+{% else %}
+    {% assign nav_tier1_active = false %}
+{% endif %}
+
+{% if page.masthead-class %}
+    {% assign masthead-class = page.masthead-class %}
+{% elsif include.masthead-class %}
+    {% assign masthead-class = include.masthead-class %}
+{% else %}
+    {% assign masthead-class = "masthead-l" %}
+{% endif %}
+
+{% if page.masthead-image %}
+    {% assign masthead-image = page.masthead-image %}
+{% elsif include.masthead-image %}
+    {% assign masthead-image = include.masthead-image %}
+{% else %}
+    {% assign masthead-image = false %}
+{% endif %}
+
 <nav class="nav-global-primary">
   <ul class="layout-breve layout-tight">
     <li><a href="/blog">Blog</a></li>
@@ -12,11 +36,11 @@
   </ul>
 </nav>
 
-<div class="masthead {% if page.masthead-class %}{{ page.masthead-class }}{% else %}masthead-l{% endif %}">
+<div class="masthead {{ masthead-class }}">
   <div class="masthead-hero">
     <div class="masthead-image" 
-      {% if page.masthead-image %}
-      style="background-image: url('{{ page.masthead-image }}')" 
+      {% if masthead-image %}
+      style="background-image: url('{{ masthead-image }}')" 
       {% endif %}>
     </div>
   </div>
@@ -35,8 +59,8 @@
   <nav class="nav-global-secondary">
     <ul>
       <li class="nav-tier1 nav-has-children">
-        <a href="/about" {% if page.nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
-        {% if page.nav_tier1_active == "about" %}
+        <a href="/about" {% if nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
+        {% if nav_tier1_active == "about" %}
         <ul class="nav-tier2">
             <li><a href="/about/team">Team</a></li>
             <li><a href="/about/funders">Funders</a></li>
@@ -48,8 +72,8 @@
         {% endif %}
       </li>
       <li class="nav-tier1 nav-has-children">
-        <a href="/cities" {% if page.nav_tier1_active == "governments" %}class="state-active"{% endif %}>Governments</a>
-        {% if page.nav_tier1_active == "governments" %}
+        <a href="/cities" {% if nav_tier1_active == "governments" %}class="state-active"{% endif %}>Governments</a>
+        {% if nav_tier1_active == "governments" %}
         <ul class="nav-tier2">
           <li><a href="/cities/2014-cities">2014 Partners</a></li>
           <li><a href="/cities/alumni">Alumni Partners</a></li>
@@ -59,8 +83,8 @@
         {% endif %}
       </li>
       <li class="nav-tier1 nav-has-children">
-        <a href="/geeks" {% if page.nav_tier1_active == "citizens" %}class="state-active"{% endif %}>Citizens</a>  
-        {% if page.nav_tier1_active == "citizens" %}
+        <a href="/geeks" {% if nav_tier1_active == "citizens" %}class="state-active"{% endif %}>Citizens</a>  
+        {% if nav_tier1_active == "citizens" %}
         <ul class="nav-tier2">
           <li><a href="/geeks/our-geeks">Our Geeks</a></li>
           <li><a href="https://github.com/codeforamerica">Our Code</a></li>
@@ -71,7 +95,7 @@
         {% endif %}
       </li>
       <li class="nav-tier1">
-        <a href="/apps" {% if page.nav_tier1_active == "apps" %}class="state-active"{% endif %}>Apps</a>
+        <a href="/apps" {% if nav_tier1_active == "apps" %}class="state-active"{% endif %}>Apps</a>
       </li>
       <li><a href="/donate" class="button">Donate</a></li>
     </ul>
