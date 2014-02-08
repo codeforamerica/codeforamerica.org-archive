@@ -35,7 +35,7 @@ def locked_file(path):
     #debug('Locking ' + path)
     
     try:
-        file = open(path, 'a')
+        file = open(path, 'a+')
         flock(file, LOCK_EX)
         
         yield file
