@@ -5,13 +5,16 @@ With Travis (https://travis-ci.org) configured on a Jekyll repository, use
 this script within a scheduled cron job to automatically build the most-recently
 passed commit.
 
-Requires a writeable checkout directory and lock file.
+Requires a build directory, writeable checkout directory and lock file.
+Expects piped JSON input from Travis CI, with a list of recent builds:
 
-Usage:
+    https://api.travis-ci.org/docs/#/repos/:owner_name/:name/builds
 
-    build-it.py <checkout dir> <build dir> <lock file>
+Sample usage:
 
-Sample usage in a shell script:
+    <travis JSON> | build-it.py <checkout dir> <build dir> <lock file>
+
+Typical usage in a shell script:
 
     #!/bin/bash -e
     source /etc/profile.d/rvm.sh
@@ -20,6 +23,9 @@ Sample usage in a shell script:
     curl -s https://api.travis-ci.org/repos/codeforamerica/codeforamerica.org/builds \
        | LC_ALL="en_US.UTF-8" /path/to/build-it.py /home/u/cfa /var/www/cfa /home/u/cfa.lock
 
+The environment variable LC_ALL above is used to handle this Jekyll bug:
+
+    https://github.com/jekyll/jekyll/issues/960#issuecomment-31343130
 '''
 from contextlib import contextmanager
 from subprocess import call, check_call, check_output, PIPE
@@ -33,8 +39,6 @@ from json import load
 def locked_file(path):
     ''' Create a file, lock it, then unlock it. Use as a context manager.
     '''
-    #debug('Locking ' + path)
-    
     try:
         file = open(path, 'a+')
         flock(file, LOCK_EX)
@@ -42,7 +46,6 @@ def locked_file(path):
         yield file
 
     finally:
-        #debug('Unlocking ' + path)
         flock(file, LOCK_UN)
 
 def missing_ref(ref):
