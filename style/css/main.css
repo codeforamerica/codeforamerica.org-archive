@@ -4893,7 +4893,7 @@ section,
   }
 }
 /*  Global ––––––––––––––––––––––––––––––––––––––––––––––– */
-.global-header {
+.global-header, .global-header-compact {
   padding: 0;
   float: left;
   width: 96%;
@@ -5439,7 +5439,8 @@ body {
 
 @media (min-width: 40em) and (min-height: 30em) {
   .sticky,
-  .sticky.global-header {
+  .sticky.global-header,
+  .sticky.global-header-compact {
     position: fixed;
     top: 0;
   }

@@ -50,3 +50,7 @@
 .global-header-tagline sup {
     font-size: 0.5em;
     }
+
+.global-header-compact {
+    @extend .global-header;
+    }
