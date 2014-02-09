@@ -46,13 +46,13 @@ document.getElementsByTagName('html')[0].className += ' js';
         doc.body.appendChild(newnav);
     } else {
         // Add or remove a class on the navigation depending on how far the user has scrolled down. In the CSS, this class gets position:fixed within a widescreen media query.
-        if (!doc.querySelector('.global-header') || !doc.querySelector('.masthead-l') || !doc.querySelector('.nav-global-primary')) {
+        if (!doc.querySelector('.global-header') || !doc.querySelector('.masthead') || !doc.querySelector('.nav-global-primary')) {
             return;
         }
         var toggleclass = 'sticky',
             reg = new RegExp('(\\s|^)' + toggleclass + '(\\s|$)'),
             header = doc.querySelector('.global-header'),
-            triggerpoint = doc.querySelector('.masthead-l').offsetHeight - doc.querySelector('.nav-global-primary').offsetHeight,
+            triggerpoint = doc.querySelector('.masthead').offsetHeight - doc.querySelector('.nav-global-primary').offsetHeight,
             scrollDistance = null,
             checkToggle = function () {
                 scrollDistance = (win.pageYOffset !== undefined) ? win.pageYOffset : doc.body.scrollTop;
