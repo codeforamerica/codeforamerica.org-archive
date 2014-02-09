@@ -51,6 +51,10 @@ def locked_file(path):
 def missing_ref(ref):
     return call(('git', 'cat-file', 'commit', ref), stdout=PIPE) != 0
 
+def read_commit(file):
+    file.seek(0)
+    return file.read().strip()
+
 def current_branch():
     ref = check_output('git symbolic-ref HEAD'.split())
     return ref.strip().split('/')[-1]
@@ -62,6 +66,11 @@ def checkout_ref(ref):
 def jekyll_build(dir):
     print '    jekyll build to', dir
     check_call(('jekyll', 'build', '-d', dir), stdout=PIPE)
+
+def write_commit(file, commit):
+    file.seek(0)
+    file.truncate()
+    file.write(commit)
 
 if __name__ == '__main__':
 
@@ -81,8 +90,7 @@ if __name__ == '__main__':
             continue
 
         with locked_file(lock_path) as lock_file:
-            lock_file.seek(0)
-            previous_commit = lock_file.read().strip()
+            previous_commit = read_commit(lock_file)
             
             if previous_commit == build['commit']:
                 print '   ', 'Stopping at %(number)s - already have %(commit)s' % build
@@ -94,10 +102,8 @@ if __name__ == '__main__':
                 branch = current_branch()
                 checkout_ref(build['commit'])
                 jekyll_build(build_dir)
-
-                lock_file.seek(0)
-                lock_file.truncate()
-                lock_file.write(build['commit'])
+                
+                write_commit(lock_file, build['commit'])
 
             except Exception, e:
                 print 'ERR', e
