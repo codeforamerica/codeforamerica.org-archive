@@ -77,6 +77,7 @@ RedirectMatch permanent ^(.*)(?<!/blog)/(feed/?)$ $1/blog/$2
 #
 RedirectMatch permanent ^(.*)(?<!/about)/team(/?)$ $1/about/team$2
 RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/about/team$2
+RedirectMatch permanent ^(.*)/donors(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/how-to-help(/?)$ $1/geeks$2
 RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
