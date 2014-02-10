@@ -160,7 +160,6 @@ RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/cities/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)(?</apply)(/?)$ $1/geeks/fellowship-apply$2
 
 #
 # Governments.
