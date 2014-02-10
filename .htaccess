@@ -80,6 +80,7 @@ RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/about/team$2
 RedirectMatch permanent ^(.*)/donors(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/how-to-help(/?)$ $1/geeks$2
 RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
+RedirectMatch permanent ^(.*)/support-2(/?)$ $1/donors/inkind$2
 RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/what-we-do(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/projects(/?)$ $1/apps$2
