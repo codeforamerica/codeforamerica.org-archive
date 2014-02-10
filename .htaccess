@@ -47,7 +47,7 @@ RedirectMatch permanent ^(.*)(?<!/peer-network-training)/02-18-2014/?$ $1/peer-n
 
 RedirectMatch permanent ^(.*)(?<!/peer-network-training)/brigade12-12-2013/?$ $1/peer-network-training/brigade12-12-2013
 RedirectMatch permanent ^(.*)(?<!/peer-network-training)/meettheauthors/?$ $1/peer-network-training/meettheauthors
-RedirectMatch permanent ^(.*)(?<!/peer-network-training)/09-24-2013/?$ $1/peer-network-training/09-24-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/09-24-2013/?$ $1/peer-network-training/09-24-2013
 RedirectMatch permanent ^(.*)(?<!/peer-network-training)/08-22-2013/?$ $1/peer-network-training/08-22-2013
 RedirectMatch permanent ^(.*)(?<!/peer-network-training)/08-07-2013/?$ $1/peer-network-training/08-07-2013
 RedirectMatch permanent ^(.*)(?<!/peer-network-training)/ask-a-fellow-2013/?$ $1/peer-network-training/ask-a-fellow-2013
