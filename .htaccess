@@ -160,6 +160,7 @@ RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/cities/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
+RedirectMatch permanent ^(.*)(?</apply)(/?)$ $1/geeks/fellowship-apply$2
 
 #
 # Governments.
@@ -252,7 +253,6 @@ RedirectMatch permanent ^(.*)(?<!/people)/zach-williams(/?)$ $1/people/zach-will
 #
 RedirectMatch permanent ^(.*)/intern(/?)$ $1/jobs$2
 RedirectMatch permanent ^(.*)/intern/(hammer___nails|difference|code|policy|tim-screwdriver|design_comms|design|code/\d+)(/?)$ $1/jobs$3
-RedirectMatch permanent ^(.*)(?<!/apply)(/?)$ $1/geeks/fellowship-apply$2
 RedirectMatch permanent ^(.*)/issues/openness(/?)$ $1/2011/03/08/openness-in-city-hall$2
 RedirectMatch permanent ^(.*)/2014(/?)$ $1/2013/10/15/2014fellowship_launch$2
 RedirectMatch permanent ^(.*)/2012-fellows/alex(/?)$ $1/2011/07/27/alex-hillman-cfa-is-a-hall-pass-for-bureaucracy$2
