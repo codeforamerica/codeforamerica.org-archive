@@ -31,15 +31,17 @@
 <body class="xx">
 
 <div class="xx-js-container">
-    
-    <?php if(isset($_GET["url"])) : ?>
 
+    <?php if(isset($_GET["url"])) : ?>
+    
     <?php
         $cleaned = str_replace('../', '', $_GET["url"]);
         $cleaned = str_replace(';', '', $cleaned);
         
         include($patternsPath.$cleaned);
     ?>
+    
+    <?php else : ?>
 
     <div class="xx-options">
     
