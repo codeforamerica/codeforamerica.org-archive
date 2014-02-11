@@ -673,7 +673,7 @@
             
             <h2 class="xx-section-title">Slabs</h2>
             
-            <p>For background colours, use a class of <code>slab-colourname</code>.</p>
+            <p>For background colors, use a class of <code>slab-colorname</code>.</p>
             
             <div class="xx-slabs">
     	        
