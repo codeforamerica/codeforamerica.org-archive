@@ -119,9 +119,9 @@ blockquote {
 .layout-chimney-invert,
 .layout-breve {
   width: 96%;
-  padding: 0 2%;
+  padding: 3em 2%;
   max-width: 80em;
-  margin: 3em auto;
+  margin: 0 auto;
   float: none;
 }
 
@@ -258,6 +258,7 @@ blockquote {
 
 .layout-tight {
   margin: 0 auto;
+  padding: 0;
 }
 
 section,
@@ -316,6 +317,8 @@ section,
 .nav-global-primary ul {
   width: auto;
   float: right;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .nav-global-primary li {
