@@ -80,6 +80,7 @@ RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/about/team$2
 RedirectMatch permanent ^(.*)/donors(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/how-to-help(/?)$ $1/geeks$2
 RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
+RedirectMatch permanent ^(.*)/get-involved(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/about/funders(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/support-2(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
@@ -100,7 +101,6 @@ RedirectMatch permanent ^(.*)/code-across-america(/?)$ $1/code-across-america-20
 RedirectMatch permanent ^(.*)/brigade/?$ http://brigade.codeforamerica.org
 RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
 RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
-RedirectMatch permanent ^(.*)/events/?$ http://www.eventbrite.com/o/code-for-america-summit-1270043505
 RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome
 RedirectMatch permanent ^(.*)/accelerator-2012/$ http://civicaccelerator.us
 
