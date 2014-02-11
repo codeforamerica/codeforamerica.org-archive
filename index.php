@@ -32,12 +32,6 @@
 
 <div class="xx-js-container">
 
-<?php if(isset($_GET["url"])) : ?>
-    
-    <?php include($patternsPath.$_GET["url"]) ?>
-    
-    <?php else : ?>
-
     <div class="xx-options">
     
         <a class="xx-cfa-logo" href="/"><img src="/_assets/logo-colored.png" /></a>
@@ -737,8 +731,6 @@
             <?php displayPatterns($patternsPath); ?>
             
         </main><!--@main-->
-    
-    <?php endif; ?>
     
     </div><!-- .xx-container -->
 
