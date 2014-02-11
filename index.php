@@ -4,6 +4,8 @@
     $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
     if (isset($_POST['uri']) && isset($_POST['section'])) {
         $pageURL .= $_POST[uri].$_POST[section];
+        $pageURL = htmlspecialchars( filter_var( $pageURL, FILTER_SANITIZE_URL ) );
+        
         header("Location: $pageURL");
     }
 ?>
@@ -32,14 +34,9 @@
 
 <div class="xx-js-container">
 
-    <?php if(isset($_GET["url"])) : ?>
-    
-    <?php
-        $cleaned = str_replace('../', '', $_GET["url"]);
-        $cleaned = str_replace(';', '', $cleaned);
+    <?php if(isset($_GET["url"]) && sanipath( $patternsPath . $_GET["url"] ) ): ?>
         
-        include($patternsPath.$cleaned);
-    ?>
+        <?php include_pattern( sanipath( $patternsPath . $_GET["url"] ), "Pattern not found." ); ?>
     
     <?php else : ?>
 
