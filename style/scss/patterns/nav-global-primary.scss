@@ -1,10 +1,10 @@
 .nav-global-primary {
     @include background-color($color-black, 1);
     @include color($color-white, 1); 
-    width: 100%;
+    width: 96%;
     margin: 0;
     float: left;
-    padding: 0;
+    padding: 0 2%;
     }
 
 @media print {

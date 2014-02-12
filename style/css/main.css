@@ -3558,10 +3558,10 @@ nav ul li {
 .nav-global-primary {
   background: black;
   color: white;
-  width: 100%;
+  width: 96%;
   margin: 0;
   float: left;
-  padding: 0;
+  padding: 0 2%;
 }
 
 @media print {
@@ -5130,6 +5130,10 @@ section,
 
 .global-header-tagline sup {
   font-size: 0.5em;
+}
+
+.global-header-compact {
+  position: relative;
 }
 
 .global-footer {
