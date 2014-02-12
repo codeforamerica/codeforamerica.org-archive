@@ -121,6 +121,7 @@ RedirectMatch permanent ^(.*)/geeks/fellows/job-description(/?)$ $1/geeks/fellow
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/job-description(/?)$ $1/geeks/fellows/job-description$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/spread-the-word(/?)$ $1/geeks/fellows/spread-the-word$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/nominate(/?)$ $1/geeks/fellows/nominate$2
+RedirectMatch permanent ^(.*)/cities/expectations-of-our-city-partners/(/?)$ $1/cities/fellowship-faq$2
 
 #
 # Fellowship lists.
