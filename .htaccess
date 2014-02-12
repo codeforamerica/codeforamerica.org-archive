@@ -115,6 +115,7 @@ RedirectMatch permanent ^(.*)/fellows/fellow-selection(/?)$ $1/geeks/fellowship-
 RedirectMatch permanent ^(.*)/fellowship-program-timeline(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)/fellows/program-and-timeline(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)/201-program-timeline(/?)$ $1/geeks/fellowship-faq$2
+RedirectMatch permanent ^(.*)/fellowship-program-timeline(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)/fellows/2012-program-and-timeline(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)/geeks/fellows/job-description(/?)$ $1/geeks/fellowship-faq$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/job-description(/?)$ $1/geeks/fellows/job-description$2
