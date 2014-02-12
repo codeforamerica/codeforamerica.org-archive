@@ -102,7 +102,7 @@ RedirectMatch permanent ^(.*)/brigade/?$ http://brigade.codeforamerica.org
 RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
 RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
 RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome
-RedirectMatch permanent ^(.*)/accelerator-2012/$ http://civicaccelerator.us
+RedirectMatch permanent ^(.*)/2011-annual-report/$ http://www.slideshare.net/codeforamerica/2011-code-for-america-annual-report
 
 #
 # Fellowship Program.
