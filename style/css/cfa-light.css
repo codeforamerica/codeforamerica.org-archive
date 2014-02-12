@@ -1823,6 +1823,16 @@ input.button-s,
   padding: 0 0.5em 0 0;
 }
 
+.list-inline .button, .list-inline .button-prominent, .list-inline .button-neutral, .list-inline .button-alternative, .list-inline .button-unstyled, .list-inline .button-subtle, .list-inline input[type="button"][disabled],
+.list-inline input[type="submit"][disabled],
+.list-inline button[disabled],
+.list-inline .button-disabled,
+.list-inline .button.button-disabled:hover,
+.list-inline .button.button-disabled:focus,
+.list-inline .button.button-disabled:active, .list-inline .button-progress {
+  display: block;
+}
+
 .list-gappy li {
   margin-bottom: 1em;
 }
