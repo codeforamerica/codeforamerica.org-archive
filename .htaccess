@@ -264,6 +264,7 @@ RedirectMatch permanent ^(.*)/TED(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-vide
 RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults$2
 RedirectMatch permanent ^(.*)/pages/tools(/?)$ $1/2013/07/16/tools-of-the-civic-trade$2
 RedirectMatch permanent ^(.*)/apps/blightstatus(/?)$ $1/apps/civicinsight$2
+RedirectMatch permanent ^(.*)/demo(/?)$ $1/2012/06/13/demo/$2
 
 #
 # Set of possible Jekyll file extensions, from
