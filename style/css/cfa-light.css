@@ -433,6 +433,7 @@ td, th {
   padding: 0.375em 2em 0.375em 0;
   /* 6px 32px 6px 0 */
   vertical-align: top;
+  min-width: 50px;
 }
 
 th {
