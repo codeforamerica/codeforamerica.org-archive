@@ -92,6 +92,7 @@ RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/internation
 RedirectMatch permanent ^(.*)/dc(/?)$ $1/cc$2
 RedirectMatch permanent ^(.*)/rss(/?)$ $1/feeds$2
 RedirectMatch permanent ^(.*)/speaker-request-form(/?)$ $1/contact$2
+RedirectMatch permanent ^(.*)/inkind(/?)$ $1/donate$2
 
 RedirectMatch permanent ^(.*)/code-across-america(/?)$ $1/code-across-america-2012$2
 
