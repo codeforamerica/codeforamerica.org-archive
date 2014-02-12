@@ -216,6 +216,8 @@ RedirectMatch permanent ^(.*)/2012-city-finalists/chicago(/?)$ $1/cities/chicago
 RedirectMatch permanent ^(.*)/2012-city-finalists/detroit(/?)$ $1/cities/detroit$2
 RedirectMatch permanent ^(.*)/2012-city-finalists/macon(/?)$ $1/cities/macon$2
 RedirectMatch permanent ^(.*)/2012-city-finalists/santa-cruz(/?)$ $1/cities/santacruz$2
+RedirectMatch permanent ^(.*)/2012-city-finalists/new-orleans(/?)$ $1/cities/neworleans$2
+
 
 RedirectMatch permanent ^(.*)(?<!/cities)/austin(/?)$ $1/cities/austin$2
 RedirectMatch permanent ^(.*)(?<!/cities)/honolulu(/?)$ $1/cities/honolulu$2
@@ -261,6 +263,7 @@ RedirectMatch permanent ^(.*)/ted(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-vide
 RedirectMatch permanent ^(.*)/TED(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-video$2
 RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults$2
 RedirectMatch permanent ^(.*)/pages/tools(/?)$ $1/2013/07/16/tools-of-the-civic-trade$2
+RedirectMatch permanent ^(.*)/apps/blightstatus(/?)$ $1/apps/civicinsight$2
 
 #
 # Set of possible Jekyll file extensions, from
