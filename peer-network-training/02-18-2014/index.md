@@ -48,7 +48,7 @@ and countries.
 
 **Other Peer Network Resources include:**
 
- * **Alistair Croll**, Author, Lean Analytics — [lean approaches in government](https://vimeo.com/64600982)
+ * **Mike Migurski**, Author, Lean Analytics — [lean approaches in government](https://vimeo.com/64600982)
  * **Mark Headd**, Chief Data Officer, City of Philadelphia — [tech procurement](/blog/07-02-2013)
  * **Susan Crawford**, Author, Captive Audience — [municipal broadband](/blog/05-13-201/)
  * **Ben Balter**, Government Evangelist, GitHub — [government using open source](/blog/07-18-2013/)
