@@ -279,4 +279,4 @@ RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
 #
 DirectoryIndex index.html index.md index.mkd index.mkdn index.markdown index.textile
 
-ErrorDocument 404 /404/index.html
+ErrorDocument 404 /404.html

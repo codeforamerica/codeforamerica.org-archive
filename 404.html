@@ -15,8 +15,9 @@ nav-breadcrumbs:
             <p>Apologies, but the page you requested could not be found. Perhaps searching will help. Or napping.</p>
             <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
                 <p class="field">
-                    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-                    <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+                    <input type="hidden" name="as_sitesearch" value="www.codeforamerica.org" />
+                    <input type="search" name="q" role="search" autocomplete="off" placeholder="Search" /><!--
+                 --><input type="submit" value="Go" />
                 </p>
             </form>
         </div>
