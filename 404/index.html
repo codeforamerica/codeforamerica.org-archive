@@ -6,31 +6,22 @@ nav-breadcrumbs:
  - Page Not Found: "/404"
 ---
 
-    <section>
-
+<section>
     <div class="layout-semibreve">
-    
         {{ include nav-breadcrumbs.html }}
-        
         <div class="layout-centered">
-            
             <h4>Life, Liberty and the Pursuit...</h4>
-            
             <img src="/media/images/pandas.png">
-            
-                <p>Apologies, but the page you requested could not be found. Perhaps searching will help. Or napping.</p>
+            <p>Apologies, but the page you requested could not be found. Perhaps searching will help. Or napping.</p>
+            <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
                 <p class="field">
-    <input type="search" placeholder="Search" role="search" /><input type="submit" value="Go" />
-</p>
-
-                
+                    <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+                    <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+                </p>
+            </form>
         </div>
-        
-     <div class="layout-semibreve">
-     
-     <p class="isolate text-whisper">Image Credit: <a href="http://www.mischiefchampion.com/style/p/2010/Aug/life_questions">Mischief Champion</a></p>
-     
-     </div>
-    
-                   
+        <div class="layout-semibreve">
+            <p class="isolate text-whisper">Image Credit: <a href="http://www.mischiefchampion.com/style/p/2010/Aug/life_questions">Mischief Champion</a></p>
+        </div>
+    </div>
 </section>

@@ -278,3 +278,5 @@ RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
 # https://github.com/jekyll/jekyll/blob/dd3018ce/lib/jekyll/configuration.rb#L39
 #
 DirectoryIndex index.html index.md index.mkd index.mkdn index.markdown index.textile
+
+ErrorDocument 404 /404/index.html
