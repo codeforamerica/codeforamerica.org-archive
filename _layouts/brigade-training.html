@@ -1,7 +1,7 @@
 {% comment %}
 
-This is the Peer Network Training Jekyll layout for Code for America's website.
-Use it by specifying "layout: pn-training" in your Jekyll front-matter:
+This is the Brigade Training Jekyll layout for Code for America's website.
+Use it by specifying "layout: brigade-training" in your Jekyll front-matter:
 
     http://jekyllrb.com/docs/frontmatter/
 
@@ -14,11 +14,11 @@ nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
 Sample front matter from one page:
 
 ---
-layout: pn-training
+layout: brigade-training
 title: "Building a Gov Data Skunkworks (Live)"
 title-h1: CfA Live
 nav-breadcrumbs:
- - Citizens: "/cities"
+ - Citizens: "/geeks"
 ---
 
 {% endcomment %}
@@ -49,9 +49,9 @@ nav-breadcrumbs:
          background-image: url('/media/images/about_peernetwork/peernetwork_header.jpg');
       }
 
-      #pn-training-content>h2,
-      #pn-training-content>h3,
-      #pn-training-content>h4
+      #brigade-training-content>h2,
+      #brigade-training-content>h3,
+      #brigade-training-content>h4
       {
          padding-top: 1em;
          clear: both;
@@ -64,7 +64,7 @@ nav-breadcrumbs:
       {% include nav.html masthead-class="masthead-s" masthead-image="/media/images/about_peernetwork/peernetwork_header.jpg" %}
       <main role="main">
         <section>
-        <div class="layout layout-semibreve" id="pn-training-content">
+        <div class="layout layout-semibreve" id="brigade-training-content">
           <header class="badge-heading badge-peernetwork badge-blue">
             <h2>{{ page.title }}</h2>
           </header>
