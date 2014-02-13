@@ -25,6 +25,17 @@
 		.masthead:before {
 			background-image: url('media/images/masthead/masthead-1.jpg');
 		}
+    @media (min-width: 40em) {
+      .feature-action{
+        margin-top:27px;
+      }
+      .feature-action a{
+        float:right;
+      }
+    }
+    .feature-action{
+      display:none;
+    }
 	</style>
 </head>
     
@@ -54,7 +65,7 @@
     
   </p>
 
-  <p style="margin-top:27px"><a class="button-prominent" href="/valentine" style="float:right">❤ Send a Geeky Valentine</a></p>
+  <p class="feature-action"><a class="button-prominent" href="/valentine">❤ Send a Geeky Valentine</a></p>
   <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
 
   <nav class="nav-global-secondary">
