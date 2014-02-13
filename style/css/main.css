@@ -3780,6 +3780,10 @@ nav ul li {
   text-transform: none;
 }
 
+.nav-global-secondary .nav-tier2 .state-active a {
+  font-weight: bold;
+}
+
 .nav-global-secondary .nav-tier2 li:last-of-type a {
   padding-right: 0;
 }
