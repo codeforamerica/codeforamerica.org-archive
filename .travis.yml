@@ -4,6 +4,6 @@ before_install:
 script: jekyll build
 branches:
   only:
-    - static-site
+    - master
 notifications:
     webhooks: http://cfa-project-monitor.herokuapp.com/projects/325e607a-561b-4e33-9fe0-b2f38d6b384b/status
