@@ -65,6 +65,10 @@ Fork and clone the repository, check out the `static-site` branch, and then run 
 
 `jekyll serve`
 
+or
+
+`jekyll serve --watch` which will watch for changes to files.
+
 Your computer should now be serving your local copy of the site at:
 
 [http://0.0.0.0:4000](http://0.0.0.0:4000).
