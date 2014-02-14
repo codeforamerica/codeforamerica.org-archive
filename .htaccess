@@ -62,7 +62,25 @@ RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-02-2013/?$ $1/peer-n
 #
 # Events and Brigade training broadcasts.
 #
-RedirectMatch permanent ^(.*)(?<!/brigade-training|/blog)/brigade12-12-2013/?$ $1/brigade-training/brigade12-12-2013
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade12-12-2013/?$ $1/brigade-training/brigade12-12-2013
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/09-19-2013?$/?$1 $1/brigade-training/09-19-2013
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-09-2014/?$ $1/brigade-training/brigade01-09-2014	
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-14-2014/?$ $1/brigade-training/brigade01-14-2014
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-16-2014/?$ $1/brigade-training/brigade01-16-2014
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-23-2014/?$ $1/brigade-training/brigade01-23-2014	
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-06-2014/?$ $1/brigade-training/brigade02-06-2014
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-11-2014/?$ $1/brigade-training/brigade02-11-2014
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-12-2014/?$ $1/brigade-training/brigade02-12-2014
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-13-2014/?$ $1/brigade-training/brigade02-13-2014
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-13-2014-2/?$ $1/brigade-training/brigade02-13-2014-2
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade06-27-2013/?$ $1/brigade-training/brigade06-27-2013
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade12-10-2013/?$ $1/brigade-training/brigade12-10-2013
+RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade06-27-2013/?$ $1/brigade-training/brigade06-27-2013
+
+
+
+
+
 
 
 
