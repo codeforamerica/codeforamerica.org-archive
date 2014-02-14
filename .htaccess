@@ -62,7 +62,7 @@ RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-02-2013/?$ $1/peer-n
 #
 # Events and Brigade training broadcasts.
 #
-RedirectMatch permanent ^(.*)(?<!/brigade|/blog)/brigade12-12-2013/?$ $1/brigade-training/brigade12-12-2013
+RedirectMatch permanent ^(.*)(?<!/brigade-training|/blog)/brigade12-12-2013/?$ $1/brigade-training/brigade12-12-2013
 
 
 
