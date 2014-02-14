@@ -280,9 +280,9 @@ RedirectMatch permanent ^(.*)/demo(/?)$ $1/2012/06/13/demo/$2
 RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
 
 #
-# Set of possible Jekyll file extensions, from
+# Set of possible Jekyll file extensions + PHP, from
 # https://github.com/jekyll/jekyll/blob/dd3018ce/lib/jekyll/configuration.rb#L39
 #
-DirectoryIndex index.html index.md index.mkd index.mkdn index.markdown index.textile
+DirectoryIndex index.html index.md index.mkd index.mkdn index.markdown index.textile index.php
 
 ErrorDocument 404 /404.html
