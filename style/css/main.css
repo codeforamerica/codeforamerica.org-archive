@@ -3207,6 +3207,7 @@ input.button-s,
 
 .list-logos li a {
   display: inline-block;
+  width: 100%;
 }
 
 .list-social {
