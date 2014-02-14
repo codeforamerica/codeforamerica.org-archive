@@ -45,21 +45,25 @@ RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 RedirectMatch permanent ^(.*)(?<!/events)/codeacross-2014/?$ $1/events/codeacross-2014
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/02-18-2014/?$ $1/peer-network-training/02-18-2014
 
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/meettheauthors/?$ $1/peer-network-training/meettheauthors
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/09-24-2013/?$ $1/peer-network-training/09-24-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/08-22-2013/?$ $1/peer-network-training/08-22-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/08-07-2013/?$ $1/peer-network-training/08-07-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/ask-a-fellow-2013/?$ $1/peer-network-training/ask-a-fellow-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-18-2013/?$ $1/peer-network-training/07-18-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-11-2013/?$ $1/peer-network-training/07-11-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/07-11-2013-jared/?$ $1/peer-network-training/07-11-2013-jared
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/06-27-2013/?$ $1/peer-network-training/06-27-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-30-2013/?$ $1/peer-network-training/05-30-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-24-2013/?$ $1/peer-network-training/05-24-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-14-2013/?$ $1/peer-network-training/05-14-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training)/05-13-201/?$ $1/peer-network-training/05-13-201
 
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/brigade12-12-2013/?$ $1/peer-network-training/brigade12-12-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/meettheauthors/?$ $1/peer-network-training/meettheauthors
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/09-24-2013/?$ $1/peer-network-training/09-24-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/08-22-2013/?$ $1/peer-network-training/08-22-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/08-07-2013/?$ $1/peer-network-training/08-07-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/ask-a-fellow-2013/?$ $1/peer-network-training/ask-a-fellow-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/07-18-2013/?$ $1/peer-network-training/07-18-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/07-11-2013/?$ $1/peer-network-training/07-11-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/07-11-2013-jared/?$ $1/peer-network-training/07-11-2013-jared
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/06-27-2013/?$ $1/peer-network-training/06-27-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/05-30-2013/?$ $1/peer-network-training/05-30-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/05-24-2013/?$ $1/peer-network-training/05-24-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/05-14-2013/?$ $1/peer-network-training/05-14-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)/05-13-201/?$ $1/peer-network-training/05-13-201
+#
+# Events and Brigade training broadcasts.
+#
+RedirectMatch permanent ^(.*)(?<!/brigade|/blog)/brigade12-12-2013/?$ $1/brigade-training/brigade12-12-2013
+
 
 #
 # Wordpress blog.
