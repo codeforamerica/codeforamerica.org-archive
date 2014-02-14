@@ -650,6 +650,8 @@ input.button-invert,
   color: #494c49;
   color: rgba(73, 76, 73, 0.6);
   font-size: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .heading-contrast strong {
@@ -1889,7 +1891,7 @@ input.button-s,
   }
 }
 .list-ruled {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .list-ruled li {
