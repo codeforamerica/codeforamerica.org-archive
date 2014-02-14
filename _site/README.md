@@ -3,6 +3,11 @@ Code For America Dot Org
 
 ## Description
 
-This Master branch is exclusively used for Clearleft's deliverables.
+This Pattern Portfolio branch is exclusively used for Clearleft's deliverables.
 
-Check out the [static-site branch](https://github.com/codeforamerica/codeforamerica.org/tree/static-site) to find the live website code.
+Check out the [master branch](https://github.com/codeforamerica/codeforamerica.org) to find the live website code.
+
+More about Pattern libraries:
+
+* http://clearleft.com/thinks/patternsharing/
+* http://alistapart.com/blog/post/getting-started-with-pattern-libraries
