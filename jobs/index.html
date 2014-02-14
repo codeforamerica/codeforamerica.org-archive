@@ -6,45 +6,42 @@ masthead-image: "../media/images/about/team/team_header.jpg"
 nav-breadcrumbs:
  - Jobs: "/jobs"
 ---
+    <section>
+        <div class="layout-semibreve">
+            {{ include nav-breadcrumbs.html }}
 
-        <section>
-            <div class="layout-semibreve">
-                
-                {{ include nav-breadcrumbs.html }}
+            <header class="badge-heading badge-brigade badge-blue">
+                <h2>Jobs</h2>
+            </header>
 
-                <header class="badge-heading badge-brigade badge-blue">
-                    <h2>Jobs</h2>
-                </header>
+            <section>
+                <div class="layout-gutters isolate">
+                    <p>Code for America is a start-up non-profit. Our mission is to help transform local government by connecting government innovators, tech-savvy volunteers and civic startups. We're passionate, agile, and growing. See below for current opportunities, or <a href="mailto:info@codeforamerica.org">contact us</a>.</p>
 
-                <section>
-                    <div class="layout-gutters isolate">                        
-                        <p>Code for America is a start-up non-profit. Our mission is to help transform local government by connecting government innovators, tech-savvy volunteers and civic startups. We're passionate, agile, and growing. See below for current opportunities, or <a href="mailto:info@codeforamerica.org">contact us</a>.
+                    <p>Code for America is committed to creating a <a href="/jobs/diversity/">diverse environment.</a></p>
 
-                        <ul class="list-inline list-no-bullets layout-centered">
+                    <ul class="list-inline list-no-bullets layout-centered">
+                        <li><a href="/jobs/diversity/"></a><a href="/jobs/diversity/"></a><a href="../about" class="button">Programs</a></li>
 
-                            <li><a href="../about" class="button">Programs</a></li>
-                            
-                            <li><a href="../about/team" class="button">Team</a></li>
+                        <li><a href="../about/team" class="button">Team</a></li>
 
-                            <li><a href="../blog" class="button">Blog</a></li>
-                        </ul>
-                    </div>
-                </section>
+                        <li><a href="../blog" class="button">Blog</a></li>
+                    </ul>
+                </div>
+            </section>
 
-                <section>
-                    <div class="layout-breve">
-                        <h2 class="layout-centered h3 isolate" id="board">Open Positions</h2>
+            <section>
+                <div class="layout-breve">
+                    <h2 class="layout-centered h3 isolate" id="board">Open Positions</h2><iframe id="resumator-job-frame" src="http://codeforamerica.theresumator.com/apply/jobs/" frameborder="0" scrolling="no" width="100%" height="240"></iframe><script type="text/javascript">
+// <![CDATA[
+                    function resizeResumatorIframe(height,nojump){if(nojump== 0){window.scrollTo(0,0);}document.getElementById("resumator-job-frame").height = parseInt(height)+20;}
+                    // ]]>
+                    </script>
+                </div>
+            </section>
 
-                        <iframe id="resumator-job-frame" name="resumator-job-frame" src="http://codeforamerica.theresumator.com/apply/jobs/" frameborder="0" scrolling="no" width="100%" height="240"></iframe><script type="text/javascript">// <![CDATA[
- function resizeResumatorIframe(height,nojump){if(nojump== 0){window.scrollTo(0,0);}document.getElementById("resumator-job-frame").height = parseInt(height)+20;}
-// ]]></script>
-</section>
-                <section>
-                    <p>Code for America is committed to creating a <a href="/jobs/diversity/">diverse environment.</p>
-                </section>
-                <!--@main-->
-            </div>
-        </section>
-
-            </div>
-        </section>
+            <section>
+                <p></p>
+            </section><!--@main-->
+        </div>
+    </section>
