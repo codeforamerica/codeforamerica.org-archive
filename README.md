@@ -5,8 +5,6 @@ Code For America Dot Org
 
 ## Description
 
-This Master branch is exclusively used for Clearleft's deliverables.
-
 For the past few months, we’ve worked with Colorado branding firm [Dojo4](http://dojo4.com/), Brighton web design firm [Clearleft](http://clearleft.com/), and our own internal communications and technology teams on a new visual design and front-end for the Code for America website. Today, we’re making the first of this work public and asking for input from the CfA community to ensure that the information presented on the site is accurate and up-to-date.
 
 ## Who’s Working On It
