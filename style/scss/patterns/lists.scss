@@ -113,9 +113,13 @@
     padding: 0 0.5em 0 0;
     }
 
-.list-inline .button {
-    display: block;
-    }
+@media (max-width: 30em) {
+
+    .list-inline .button {
+        display: block;
+        }
+
+}
 
 .list-gappy li {
     margin-bottom: 1em;
