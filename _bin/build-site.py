@@ -81,8 +81,12 @@ if __name__ == '__main__':
     chdir(checkout_dir)
 
     for build in load(stdin):
-        if build['result'] != 0:
+        if build['result'] is None:
             print '   ', 'Skipping %(number)s - returned %(result)s' % build
+            continue
+        
+        if build['result'] != 0:
+            print '   ', 'Skipping %(number)s - errored %(result)s' % build
             continue
         
         if missing_ref(build['commit']):
