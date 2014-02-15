@@ -599,7 +599,3 @@ section,
 .nav-breadcrumbs {
   display: block;
 }
-
-.list-inline .button {
-  display: inline-block;
-}
