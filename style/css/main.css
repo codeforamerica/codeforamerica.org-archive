@@ -3027,6 +3027,10 @@ input.button-s,
   display: inline-block;
 }
 
+.list-logos li a img {
+  width: 100%;
+}
+
 .list-social {
   min-height: 30px;
   text-align: center;
