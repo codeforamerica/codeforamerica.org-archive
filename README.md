@@ -81,6 +81,11 @@ Your computer should now be serving your local copy of the site at:
 
 [http://0.0.0.0:4000](http://0.0.0.0:4000).
 
+### Editing stylesheets
+
+All CSS and stylesheets are run from the `pattern-portfolio` branch,
+and served lived from http://style.codeforamerica.org.
+
 Technology Patterns
 --------
 
