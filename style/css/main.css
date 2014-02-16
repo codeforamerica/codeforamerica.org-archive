@@ -4523,24 +4523,25 @@ section,
   margin: 0 1em 1em 0;
   padding-right: 1em;
   min-height: 4.5em;
-  flex-grow: 1;
 }
 
-@media (max-width: 40em) {
+@media (max-width: 65em) {
   .stat {
     border-right: none;
     margin-right: 0;
     padding-right: 0;
     min-height: inherit;
+    width: 100%;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 65em) {
   .stats {
     display: flex;
   }
 
   .stat {
     display: flex-box;
+    flex-grow: 1;
   }
 }
 .stat:last-child {
@@ -4580,6 +4581,7 @@ section,
   font-size: 14px;
   font-size: 0.875rem;
   color: #494c49;
+  white-space: nowrap;
 }
 
 .teasers {
