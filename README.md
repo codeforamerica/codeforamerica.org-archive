@@ -1,7 +1,7 @@
 Code For America Dot Org
 ========================
 
-[![Build Status](https://travis-ci.org/codeforamerica/codeforamerica.org.png?branch=static-site)](https://travis-ci.org/codeforamerica/codeforamerica.org)
+[![Build Status](https://travis-ci.org/codeforamerica/codeforamerica.org.png?branch=master)](https://travis-ci.org/codeforamerica/codeforamerica.org)
 
 ## Description
 
@@ -26,7 +26,7 @@ We need your help to keep our content accurate and up to date. The easiest way f
 #### <a name="pulls"></a>Submitting a Pull Request
 An easy way to submit a pull request for just simple text changes is to:
 
-1. Find the page you'd like to edit on the [static-site branch](https://github.com/codeforamerica/codeforamerica.org/tree/static-site). 
+1. Find the page you'd like to edit on the [master branch](https://github.com/codeforamerica/codeforamerica.org/). 
 2. Use Github's built in editor to make your changes.
 3. Down below the editor window, include a brief one sentence description of what you changed. Something like "Updated Andrew Hyder's bio". 
 4. Click the green Propose File Change button.  
@@ -54,14 +54,14 @@ To do this, fork this repo, and commit your changes on a branch to your fork. Yo
 
 https://jekit.codeforamerica.org/USERNAME/codeforamerica.org/BRANCHNAME/
 
-For a basic example of its usage, if GitHub user **@lolname** has made changes to the /people/dave-guarino page on their fork (on the `static-site` branch), they can preview their changes using Jekit by going to:
+For a basic example of its usage, if GitHub user **@lolname** has made changes to the /people/dave-guarino page on their fork (on the `master` branch), they can preview their changes using Jekit by going to:
 
-https://jekit.codeforamerica.org/lolname/codeforamerica.org/static-site/people/dave-guarino/
+https://jekit.codeforamerica.org/lolname/codeforamerica.org/master/people/dave-guarino/
 
 #### Running the Site Locally on Your Computer
 To run the site locally on your own computer (most helpful for previewing your own changes), you will need Jekyll installed ([click here for Jekyll installation instructions](http://jekyllrb.com/docs/installation/).)
 
-Fork and clone the repository, check out the `static-site` branch, and then run the following command in the root directory of the repo:
+Fork and clone the repository, then run the following command in the root directory of the repo:
 
 `jekyll serve`
 
