@@ -291,6 +291,7 @@ RedirectMatch permanent ^(.*)/apps/blightstatus(/?)$ $1/apps/civicinsight$2
 RedirectMatch permanent ^(.*)/demo(/?)$ $1/2012/06/13/demo/$2
 RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
 RedirectMatch permanent ^(.*)/codeacross(/?)$ $1/events/codeacross-2014/$2
+RedirectMatch permanent ^(.*)/code-across-america-2012(/?)$ $1/events/codeacross-2012/$2
 
 #
 # Set of possible Jekyll file extensions + PHP, from
