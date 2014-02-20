@@ -60,9 +60,10 @@
             <li><a href="/apps/paid.html#nav-tabs">Paid Apps</a></li>
           </ul>
         </li>
-        <li class="nav-tier1"><a class="nav-heading" href="/donate">Donate</a>
+        <li class="nav-tier1"><a class="nav-heading" href="/support-us">Donate</a>
           <ul class="nav-tier2">
-            <li><a href="/donate/form">Financial Contributions</a></li>
+            <li><a href="/supporters">Supporters</a></li>
+            <li><a href="/donate">Donate Now</a></li>
           </ul>
         </li>
         <li class="nav-tier1"><a class="nav-heading">Social</a>
