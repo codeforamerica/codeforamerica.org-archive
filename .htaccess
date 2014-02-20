@@ -110,7 +110,7 @@ RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/internation
 RedirectMatch permanent ^(.*)/dc(/?)$ $1/cc$2
 RedirectMatch permanent ^(.*)/rss(/?)$ $1/feeds$2
 RedirectMatch permanent ^(.*)/speaker-request-form(/?)$ $1/contact$2
-RedirectMatch permanent ^(.*)/inkind(/?)$ $1/donate$2
+RedirectMatch permanent ^(.*)/inkind(/?)$ $1/support-us$2
 RedirectMatch permanent ^(.*)/salon(/?)$ $1/events$2
 RedirectMatch permanent ^(.*)/cities/citizen-action-center(/?)$ $1/geeks$2
 RedirectMatch permanent ^(.*)/intern(/?)$ $1/jobs$2
@@ -120,6 +120,7 @@ RedirectMatch permanent ^(.*)/code-across-america(/?)$ $1/code-across-america-20
 #
 # External redirects.
 #
+RedirectMatch permanent ^(.*)/donate/?$ https://secure.codeforamerica.org/page/contribute/default
 RedirectMatch permanent ^(.*)/brigade/?$ http://brigade.codeforamerica.org
 RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
 RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
@@ -291,6 +292,7 @@ RedirectMatch permanent ^(.*)/apps/blightstatus(/?)$ $1/apps/civicinsight$2
 RedirectMatch permanent ^(.*)/demo(/?)$ $1/2012/06/13/demo/$2
 RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
 RedirectMatch permanent ^(.*)/codeacross(/?)$ $1/events/codeacross-2014/$2
+RedirectMatch permanent ^(.*)/code-across-america-2012(/?)$ $1/events/codeacross-2012/$2
 
 #
 # Set of possible Jekyll file extensions + PHP, from

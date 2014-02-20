@@ -44,7 +44,11 @@
     <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/andrew-hyder.jpg" /> 
     <div class="p-note profile-note">
         <p>
-            <a href="{{ include.base }}/cities/kansascity">Developer Relations Engineer</a>
+            {% if include.context == '2013-fellows' %}
+                <a href="{{ include.base }}/cities/kansascity">Kansas City Team</a>
+            {% else %}
+                Developer Relations Engineer
+            {% endif %}
         </p>
         <p>
             Andrew Hyder is a civic hacker who enjoys making apps and maps. He is the developer relations engineer at Code for America where he travels the world helping volunteers build useful technology for their cities. As a 2013 CfA Fellow in Kansas City…
