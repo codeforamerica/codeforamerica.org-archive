@@ -94,4 +94,4 @@ Uses Jekyll for templating – converted HTML files are in the _site folder.
 <a name="copyright"></a>Copyright
 --------
 
-Copyright (c) 2013-2014 Code for America. See [LICENSE](https://github.com/codeforamerica/codeforamerica.org/blob/master/LICENSE) for details.
+Copyright (c) 2009-2014 Code for America. See [LICENSE](https://github.com/codeforamerica/codeforamerica.org/blob/master/LICENSE) for details.
