@@ -74,7 +74,7 @@ def write_commit(file, commit):
 
 if __name__ == '__main__':
 
-    checkout_dir, build_dir, lock_path = argv[1:4]
+    checkout_dir, build_dir, lock_path, state_file = argv[1:5]
     
     print '==>', datetime.now(), build_dir, '=', checkout_dir, '+', lock_path
     
@@ -85,14 +85,17 @@ if __name__ == '__main__':
             print '   ', 'Skipping %(number)s - returned %(result)s' % build
             continue
         
-        if build['result'] != 0:
-            print '   ', 'Skipping %(number)s - errored %(result)s' % build
-            continue
-        
         if missing_ref(build['commit']):
             print '   ', 'Skipping %(number)s - missing %(commit)s' % build
             continue
 
+        if build['result'] != 0:
+            with open(state_file, 'w') as state:
+                print >> state, 'Failed Travis build %(number)s' % build
+    
+            print '   ', 'Skipping %(number)s - errored %(result)s' % build
+            continue
+        
         with locked_file(lock_path) as lock_file:
             previous_commit = read_commit(lock_file)
             
@@ -110,9 +113,17 @@ if __name__ == '__main__':
                 write_commit(lock_file, build['commit'])
 
             except Exception, e:
+                with open(state_file, 'w') as state:
+                    print >> state, 'Failed to build %(commit)s,' % build,
+                    print >> state, e
+    
                 print 'ERR', e
-
+            
+            else:
+                with open(state_file, 'w') as state:
+                    print >> state, 'OK'
+    
             finally:
                 checkout_ref(branch)
-    
+
         break
