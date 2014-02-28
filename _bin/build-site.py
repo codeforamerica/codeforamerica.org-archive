@@ -74,7 +74,7 @@ def write_commit(file, commit):
 
 if __name__ == '__main__':
 
-    checkout_dir, build_dir, lock_path = argv[1:]
+    checkout_dir, build_dir, lock_path = argv[1:4]
     
     print '==>', datetime.now(), build_dir, '=', checkout_dir, '+', lock_path
     
