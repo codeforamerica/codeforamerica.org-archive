@@ -397,10 +397,10 @@
                 <li class="swatch">
                     <span class="swatch-preview" style="background-color: #444444;"></span>
                     <ul class="list-no-bullets swatch-details">
-                        <li><strong>Dark gray</strong></li
+                        <li><strong>Dark Gray</strong></li
                         <li>PMS 446U</li>
                         <li>C43 M37 Y36 K1</li>
-                        <li>R153 G149 B149</li>
+                        <li>R68 G68 B68</li>
                         <li>#444444</li>
                         <li>$color-dark-gray</li>
                     </ul>
