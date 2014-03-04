@@ -473,6 +473,7 @@
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>White</strong></li>
                         <li>R255 G255 B255)</li>
+                        <li>C0 M0 Y0 K0</li>
                         <li>#ffffff</li>
                         <li>$color-white</li>
                     </ul>
