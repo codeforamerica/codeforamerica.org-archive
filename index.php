@@ -51,6 +51,8 @@
             <h2 class="text-whisper">Style Guide</h2>
             <ol role="navigation">
                 <li class="xx-link-special"><a href="/patchwork.php">View as patchwork</a></li>
+                <li><a href="/_site/messaging/">Messaging</a></li>
+
             </ol>
             
             <h2 class="text-whisper">Templates</h2>
@@ -68,6 +70,7 @@
                 <li><a href="/_site/donate/form/">Donate</a></li>
                 <li><a href="/_site/citizens/">Citizens</a></li>
                 <li><a href="/_site/documentation/">Documentation</a></li>
+
             </ol>
             
         </div>
