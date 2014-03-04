@@ -42,26 +42,21 @@
 	<div class="layout-semibreve">
 	
 		<header class="heading">
-	    	<h1>Code for America Documentation Style Guide</h1>
+	    	<h1>Code for America Messaging</h1>
 	    </header>
 	    
 	    <div class="layout-minor">
     
-    		<a class="button" href="#">See on Github</a>
-    		<a class="button-alternative" href="#">Do something else</a>
+    		<a class="button" href="https://github.com/codeforamerica/codeforamerica.org/blob/pattern-portfolio/messaging/index.html">See on Github</a>
 	    	
-	        <nav role="navigation" class="toc" id="toc">
+	        <nav role="navigation" class="comms" id="comms">
 	        	
-	        	<h2>Table of Contents</h2>
+	        	<h2>Communications Resources</h2>
 	        
 		        <ul class="sectlevel1">
-		            <li><a href="#content-p">Paragraphs</a></li>
-		            <li><a href="#content-ul">Unordered List</a></li>
-		            <li><a href="#content-ol">Ordered List</a></li>
-		            <li><a href="#content-code">Code</a></li>
-		            <li><a href="#content-table">Table</a></li>
-		            <li><a href="#content-image">Image</a></li>
-		            <li><a href="#content-image">Image with caption</a></li>
+		        	<li><a href="http://codeforamerica.org/about">About the Organization</a></li>
+		            <li><a href="http://codeforamerica.org/communications">Communications</a></li>
+		            <li><a href="http://codeforamerica.org/logos">Logos</a></li>
 		        </ul>
 		        
 		    </nav>
@@ -71,143 +66,41 @@
 	    <main id="content" class="layout-major">
 	
 		    <section id="content-p">
-		        <h2>Text</h2>
-		        <p>This document demonstrates how different pieces of content will look when applied to your own documentation.</p>
+		        <h2></h2>
+		        <p>Consistency in communication is key in helping citizens and governments build trust amongst each other. The following offers info about the mood and style of Code for America's communications material. </p>
 		    </section>
 		
 		    <section id="content-ul">
-		        <h2>Unordered list</h2>
+		        <h2>Verbiage Style</h2>
 	            <ul>
-	                <li><a href="public-features.html">Public Features</a></li>
-	                <li><a href="public-table.html">Public Table</a></li>
+	            <li>Humanistic: We care about improving the human experience. Where possible we opt to speak in human terms rather than technical ones.</li>
+	            <li>Impactful: We use powerful and easy-to-understand words. </li>
+	            <li>Confident: We're positive but not boastful. </li>
+	            <li>Clean and crisp: We aim for simple but effective communication.</li>
+	            <li>Conversational: We're talking with people, not at them. We avoid jargon and buzzwords.</li>
+	            <li>Humorous: In the words of Stephen Colbert, "We're not just brainiacs on the nerd patrol". We try to make work civic hacking fun through humor. </li>
+	            <li>Respectful and professional: We respect the diverse experiences, skill-sets and POVs of the community and welcome respectful debate. </ul>
 	            </ul>
 		    </section>
 		    
-		    <section id="content-ol">
-		        <h2>Ordered list</h2>
-	            <ol>
-	                <li><a href="features.html">Features</a></li>
-	                <li><a href="table.html">Table</a></li>
-	                <li><a href="admin.html">Admin</a></li>
-	            </ol>
+		    <section id="content-ul">
+		        <h2>Consistency</h2>
+		        <p>Code for America generally uses <a href="https://owl.english.purdue.edu/owl/resource/735/02/">America Press Style (APStyle)</a>. One exception is that we believe adamantly in the <a href="http://en.wikipedia.org/wiki/Serial_comma">serial or Oxford comma</a>.  Beyond that, below are a few CfA-specific things to keep in mind:</p>
+	            <ul>
+	            <li>The “f” in Code for America is always lowercase. The abbreviation Code for America should read “CfA.” The single exception is when CODE FOR AMERICA is in a heading or title and the entire name is capitalized to keep style with the rest of the document.</li>
+	            <li>“Datasets” is one word.</li>
+	            <li>“Open source” is two words, “opensourcing” is one word.</li>
+	            <li>URLs do not include “www.”</li>
+	            <li>Only capitalize the word “brigade” when it refers to the Code for America Brigade program or the name of your brigade. When referring to a local brigade or collection of brigades, use lower case. <em>Example: There is a brigade where I live. It’s called the Code for San Francisco Brigade.</em></li>
+	            </ul>
 		    </section>
 		    
-		    <section id="content-code">
-		    	<h2>Code</h2>
-<pre><code class="language-javascript">
-var defaults = module.exports.defaults = function(obj) {
-  each(Array.prototype.slice.call(arguments, 1), function(source) {
-    if (source) {
-      for (var prop in source) {
-        if (obj[prop] === void 0) obj[prop] = source[prop];
-      }
-    }
-  });
-  return obj;
-};
-</pre></code>
-		    </section>
-		    
-		    <section id="content-image">
-		        <h2>Image</h2>
-		        <img src="http://placehold.it/672x250">
-		    </section>
-		    
-		    <section id="content-image-caption">
-		    	<h2>Image with caption</h2>
-		        <figure>
-		        	<img src="http://placehold.it/672x250">
-		        	<figcaption>This is a caption</figcaption>
-		        </figure>
-		    </section>
-		    
-		    <section id="content-alert">
-    		    <div class="alert">
-    		        <p>This is a general notification.</p>
-    		    </div><!-- .alert -->
-		    </section>
-		    
-		    <section id="content-alert-failure">
-		        <div class="alert-failure">
-		            <p>This is a notification of a failed action or event.</p>
-		        </div><!-- .alert-failure -->
-		    </section>
-		    
-		    <section id="content-alert-success">
-		        <div class="alert-failure">
-		            <p>This is a notification of a successful action or event.</p>
-		        </div><!-- .alert-success -->
-		    </section>
-		    
-		    <section id="content-alert-info">
-		        <div class="alert-info">
-		            <p>This is a notification with some information.</p>
-		        </div><!-- .alert-info -->
-		    </section>
-		    
-		    <section id="content-table">
-		    	<h2>Table</h2>
-		    	<table>
-		    	    <thead>
-		    	        <tr>
-		    	            <th colspan="2">Programs</th>
-		    	        </tr>
-		    	    </thead>
-		    	    <tbody>
-		    	        <tr>
-		    	            <th>Fellowship</th>
-		    	            <td>$2,733,782</td>
-		    	        </tr>
-		    	        <tr>
-		    	            <th>Brigade</th>
-		    	            <td>$286,257</td>
-		    	        </tr>
-		    	        <tr>
-		    	            <th>Accelerator</th>
-		    	            <td>$280,896</td>
-		    	        </tr>
-		    	        <tr>
-		    	            <th>Civic Commons &amp; Peer Network</th>
-		    	            <td>$324,140</td>
-		    	        </tr>
-		    	    </tbody>
-		    	</table>
-		    	
-		    	<table>
-		    	    <tbody>
-		    	        <tr>
-		    	            <th>Total Programs</th>
-		    	            <td>$3,625,075</td>
-		    	        </tr>
-		    	        <tr>
-		    	            <th>Administration</th>
-		    	            <td>$226,648</td>
-		    	        </tr>
-		    	        <tr>
-		    	            <th>Fundraising</th>
-		    	            <td>$153,504</td>
-		    	        </tr>
-		    	    </tbody>
-		    	    <tfoot>
-		    	        <tr>
-		    	            <th>Total Expenses</th>
-		    	            <td>$4,005,227</td>
-		    	        </tr>
-		    	    </tfoot>
-		    	</table>
-		    
-		    </section>
-		    			
-		</main>
-	
-	</div>
-	
-	<a href="#toc" class="skip-to-nav">Table of Contents</a>
+	<a href="#comms" class="skip-to-nav">Communications Resources</a>
 	
 	<footer class="global-footer">
 	    <div class="layout-semibreve layout-tight">
-	    	<p>Last updated …</p>
-	    	<p>For help contact …</p>
+	    	<p>Last updated on March 4, 2014</p>
+	    	<p>For help <a href="https://github.com/codeforamerica/codeforamerica.org/issues/new">file a Github issue</a></p>
 	    </div>
 	</footer>
     
