@@ -315,7 +315,9 @@
                     <span class="swatch-preview" style="background-color: #cf1b41;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Red</strong></li>
-                        <li>rgb(204,39,62)</li>
+                        <li>PMS 193U</li>
+                        <li>C13 M94 Y69 K4</li>
+                        <li>R204 G39 B62</li>
                         <li>#cf1b41</li>
                         <li>$color-red</li>
                     </ul>
@@ -324,7 +326,9 @@
                     <span class="swatch-preview" style="background-color: #399fd3;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Blue</strong></li>
-                        <li>rgb(63,158,216)</li>
+                        <li>PMS 2915M or 292C or 299U</li>
+                        <li>C70 M24 Y0 K0</li>
+                        <li>R63 G158 B216</li>
                         <li>#399fd3</li>
                         <li>$color-blue</li>
                     </ul>
@@ -332,7 +336,9 @@
                     <span class="swatch-preview" style="background-color: #6D6E71;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Gray</strong></li>
-                        <li>rgb(109, 110, 113)</li>
+                        <li>PMS Cool Gray 10</li>
+                        <li>C58 M49 Y46 K15</li>
+                        <li>R109 G110 B113</li>
                         <li>#6D6E71</li>
                         <li>$color-gray</li>
                     </ul>
@@ -341,7 +347,9 @@
                     <span class="swatch-preview" style="background-color: #000;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Black</strong></li>
-                        <li>rgb(0, 0, 0)</li>
+                        <li>PMS Black U</li>
+                        <li>C0 M0 Y0 K100</li>
+                        <li>R0 G0 B0</li>
                         <li>#000000</li>
                         <li>$color-black</li>
                     </ul>
@@ -354,8 +362,10 @@
                 <li class="swatch">
                     <span class="swatch-preview" style="background-color: #004b6a;"></span>
                     <ul class="list-no-bullets swatch-details">
-                        <li><strong>Dark Blue</strong></li>
-                        <li>rgb(0, 75, 106)</li>
+                        <li><strong>Dark Blue</strong></li
+                        <li>PMS 302U</li>
+                        <li>C81 M66 Y51 K43</li>
+                        <li>R47 G61 B74</li>
                         <li>#004b6a</li>
                         <li>$color-dark-blue</li>
                     </ul>
@@ -364,15 +374,19 @@
                     <span class="swatch-preview" style="background-color: #7ab5d6;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Light Blue</strong></li>
-                        <li>rgb(122,181,214)</li>
+                        <li>PMS 297U</li>
+                        <li>C50 M15 Y7 K0</li>
+                        <li>R122 G181 B214</li>
                         <li>#7ab5d6</li>
                         <li>$color-light-blue</li>
                     </ul>
                 <li class="swatch">
                     <span class="swatch-preview" style="background-color: #444444;"></span>
                     <ul class="list-no-bullets swatch-details">
-                        <li><strong>Dark gray</strong></li>
-                        <li>rgb(68, 68, 68)</li>
+                        <li><strong>Dark gray</strong></li
+                        <li>PMS 446U</li>
+                        <li>C43 M37 Y36 K1</li>
+                        <li>R153 G149 B149</li>
                         <li>#444444</li>
                         <li>$color-dark-gray</li>
                     </ul>
@@ -381,7 +395,9 @@
                     <span class="swatch-preview" style="background-color: #999595;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Medium gray</strong></li>
-                        <li>rgb(153, 149, 149)</li>
+                        <li>PMS Cool Gray 6</li>
+                        <li>C43 M37 Y36 K1</li>
+                        <li>R153 G149 B149</li>
                         <li>#999595</li>
                         <li>$color-medium-gray</li>
                     </ul>
@@ -390,7 +406,9 @@
                     <span class="swatch-preview" style="background-color: #e5e5e5;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Light gray</strong></li>
-                        <li>rgb(229, 229, 229)</li>
+                        <li>PMS Cool Gray 1</li>
+                        <li>C9 M6 Y7 K0</li>
+                        <li>R229 G229 B229</li>
                         <li>#e5e5e5</li>
                         <li>$color-light-gray</li>
                     </ul>
@@ -399,7 +417,9 @@
                     <span class="swatch-preview" style="background-color: #e87d2b;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Orange</strong></li>
-                        <li>rgb(232, 125, 43)</li>
+                        <li>PMS 165U</li>
+                        <li>C6 M62 Y96 K0</li>
+                        <li>R232 G125 B43</li>
                         <li>#e87d2b</li>
                         <li>$color-orange</li>
                     </ul>
@@ -408,7 +428,9 @@
                     <span class="swatch-preview" style="background-color: #69579C;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Purple</strong></li>
-                        <li>rgb(105, 87, 156)</li>
+                        <li>PMS 2597U</li>
+                        <li>C69 M75 Y7 K0</li>
+                        <li>R105 G87 B156</li>
                         <li>#69579C</li>
                         <li>$color-purple</li>
                     </ul>
@@ -417,7 +439,9 @@
                     <span class="swatch-preview" style="background-color: #00a175;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Teal</strong></li>
-                        <li>rgb(0, 161, 117)</li>
+                        <li>PMS 3275U</li>
+                        <li>C73 M18 Y68 K3</li>
+                        <li>R0 G161 B117</li>
                         <li>#00a175</li>
                         <li>$color-teal</li>
                     </ul>
@@ -426,7 +450,9 @@
                     <span class="swatch-preview" style="background-color: #4298bb;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Medium Blue</strong></li>
-                        <li>rgb(66, 152, 187)</li>
+                        <li>PMS 314U</li>
+                        <li>C72 M27 Y16 K0</li>
+                        <li>R66 G152 B187</li>
                         <li>#4298bb</li>
                         <li>$color-medium-blue</li>
                     </ul>
@@ -435,7 +461,9 @@
                     <span class="swatch-preview" style="background-color: #fedd44;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Yellow</strong></li>
-                        <li>rgb(254, 221, 68)</li>
+                        <li>PMS 109U</li>
+                        <li>C2 M10 Y80 K0</li>
+                        <li>R254 G221 B68</li>
                         <li>#fedd44</li>
                         <li>$color-yellow</li>
                     </ul>
@@ -444,7 +472,7 @@
                     <span class="swatch-preview" style="background-color: #fff;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>White</strong></li>
-                        <li>rgb(255, 255, 255)</li>
+                        <li>R255 G255 B255)</li>
                         <li>#ffffff</li>
                         <li>$color-white</li>
                     </ul>
