@@ -11,6 +11,11 @@ nav-breadcrumbs:
             {{ include nav-breadcrumbs.html }}
 
                 <h2>Development Intern</h2>
+                  <p>
+                  The mission of Code for America is to help governments work better for everyone with the people <br> 
+                  and the power of the web. Through our Fellowship, Accelerator, Brigade, and Peer Network we are<br> 
+                  building a network of cities, citizens, community groups, and startups, all equally committed to<br>
+                  reimagining government for the 21st century.<br>
 
             
         </div>
