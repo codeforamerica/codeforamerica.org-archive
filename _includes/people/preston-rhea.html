@@ -1,0 +1,64 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Preston Rhea</h2>
+	</div>
+
+	<div class="layout-minor">
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/preston-rhea.jpg" />
+	</div>
+
+	<div class="layout-major">
+	    <p class="p-note">
+	        Preston joined Code for America in March of 2014. Preston moved to San Francisco from Washington, DC and a Field Analyst role at the Open Technology Institute at the New America Foundation, where he worked with marginalized communities in Detroit, Brooklyn, and DC to train people to build and manage their own community wireless networks. Prior to his time in DC, Preston spent a year at an Internet startup in Beijing, and worked for five years with the global student-run organization AIESEC. He graduated from Georgia Tech with a degree in electrical engineering and enjoys playing music whenever and wherever possible.
+        </p>
+
+	    <p>
+	        <!--<a href="http://www.codeforamerica.org/2013/05/15/___-___-why-im-coding-for-america/">Why does ___ ___ code for America?</a>
+        --></p>
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<!--<tr><th>Website</th><td><a href="http://example.com">http://example<wbr>.com</a></td></tr>-->
+	    		<tr><th>Twitter</th><td><a href="http://twitter.com/prestonrhea">@prestonrhea</a></td></tr>
+	    		<tr><th>Github</th><td><a href="http://github.com/prestonrhea">http://github<wbr>.com/<wbr>prestonrhea</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/prestonrhea">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>prestonrhea</a></td></tr>
+	    	</table>
+	    </div>	    
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Preston Rhea</h3>
+    
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/preston-rhea.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            Preston joined Code for America in March of 2014.
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/preston-rhea">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+         <!--   <li class="social-website"><a href="http://example.com/">Website</a></li>-->
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/prestonrhea">LinkedIn</a></li>
+            <li class="social-github"><a href="https://github.com/prestonrhea">GitHub</a></li>
+            <li class="social-twitter"><a href="http://twitter.com/prestonrhea">@prestonrhea</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
