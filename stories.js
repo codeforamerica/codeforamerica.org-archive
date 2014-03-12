@@ -8,7 +8,7 @@ on_stories(
     },
     {
         "head_html": "<a href='cities/sanfrancisco'>In San Francisco</a>",
-        "content_html": "one third of food stamp clients are unneccessarily cut from benefits. Four fellows built <a href='apps/promptly'>Promptly</a> offering SMS notifications to keep families fed.",
+        "content_html": "one third of food stamp clients are unnecessarily cut from benefits. Four fellows built <a href='apps/promptly'>Promptly</a> offering SMS notifications to keep families fed.",
         "image source": "http://www.flickr.com/photos/codeforamerica/10877055376/",
         "image_src": "media/images/homepage-stories/sanfrancisco-promptly.jpg"
     },
