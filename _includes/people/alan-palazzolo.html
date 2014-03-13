@@ -46,11 +46,18 @@
     <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.png">
 
     <div class="p-note profile-note">
+        {% if include.context == '2011-fellows' %}
+            <p>
+                <a href="{{ include.base }}/cities/seattle/">Seattle Team</a>
+            </p>
+        {% endif %}
         <p>
             Alan Palazzolo is an interactive developer at MinnPost focused on open source software and data visualization. Before joining MinnPost, he was an inaugural Code for America fellow in 2011. He has also worked in the nonprofit and NGO sectors, both at home and abroad for more than 7 years.
         </p>
 
-        <p><a href="http://opentwincities.org/">Twin Cities, MN Brigade</a></p>
+        {% if include.context == 'brigade-captains' %}
+            <p><a href="http://opentwincities.org/">Twin Cities, MN Brigade</a></p>
+        {% endif %}
 
         <p><a class="link-more" href="{{ include.base }}/people/alan-palazzolo/">More</a></p>
 
