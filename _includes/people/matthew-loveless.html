@@ -1,0 +1,58 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Matthew Loveless</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Data & Analytics Manager</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/Placeholder.jpeg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	    UNDER CONSTRUCTION
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/pub/matthew-loveless/8a/204/252">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>matthewloveless</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Matthew Loveless</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/matthew-loveless.jpeg">
+
+    <div class="p-note profile-note">
+        <p>Data & Analytics Manager</p>
+
+        <p>UNDER CONSTRUCTION</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/matthew-loveless/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/pub/matthew-loveless/8a/204/252">LinkedIn</a></li>
+           
+         
+        </ul>
+    </div>
+</div>
+
+{% endif %}
