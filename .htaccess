@@ -45,6 +45,8 @@ RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 RedirectMatch permanent ^(.*)(?<!/events)/codeacross-2014/?$ $1/events/codeacross-2014
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/02-18-2014/?$ $1/peer-network-training/02-18-2014
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/01-15-2014/?$ $1/peer-network-training/01-15-2014
+RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/03-20-2014/?$ $1/peer-network-training/03-20-2014
+
 
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/meettheauthors/?$ $1/peer-network-training/meettheauthors
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/09-24-2013/?$ $1/peer-network-training/09-24-2013
