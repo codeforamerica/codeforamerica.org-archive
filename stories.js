@@ -29,6 +29,12 @@ on_stories(
         "content_html": "a conspiracy of ravens spread word to all seven kingdoms that open data is coming.",
         "image source": "",
         "image_src": "media/images/homepage-stories/winterfell-raven.jpg"
+  },
+  {
+        "head_html": "<a href='cities/cabotcove'>In Cabot Cove</a>",
+        "content_html": "Fellows hone in on murder hot-spot",
+        "image source": "http://i.huffpost.com/gen/1650981/thumbs/o-CRIME-SCENE-facebook.jpg",
+        "image_src": "media/images/homepage-stories/cabotcove-tape.jpg"
     }
 ]
 );
