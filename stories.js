@@ -10,7 +10,7 @@ on_stories(
         "head_html": "<a href='cities/nightvale'>In Night Vale</a>",
         "content_html": "luddite mayor treats Fellows mercifully.",
         "image source": "http://collider.com/wp-content/uploads/welcome-to-night-vale.jpg",
-        "image_src": "media/images/homepage-stories/nightvale-eye.jpg"
+        "image_src": "media/images/homepage-stories/nightvale-eye.png"
     },
     {
         "head_html": "<a href='cities/springfield'>In Springfield</a>",
