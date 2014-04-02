@@ -1,3 +1,3 @@
-exclude: ['blog', 'library']
+exclude: ['blog', 'library', 'api']
 include: ['.htaccess']
-keep_files: ['blog', 'library', 'brigade']
+keep_files: ['blog', 'library', 'brigade', 'api']
