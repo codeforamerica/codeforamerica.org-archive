@@ -62,6 +62,7 @@ RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-24-201
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-14-2013/?$ $1/peer-network-training/05-14-2013
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-13-201/?$ $1/peer-network-training/05-13-201
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/07-02-2013/?$ $1/peer-network-training/07-02-2013
+RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/04-08-2014/?$ $1/peer-network-training/04-08-2014
 
 #
 # Events and Brigade training broadcasts.
