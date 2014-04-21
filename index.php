@@ -19,13 +19,13 @@
     <title>Code for America Style Guide</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link href="style/css/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/style/css/documentation.css">
-    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
+    <link rel="stylesheet" href="style/css/documentation.css">
+    <link rel="stylesheet" href="style/css/layout.css" media="all and (min-width: 40em)">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if (lt IE 9)&(!IEMobile)]>
-    <link rel="stylesheet" href="/style/css/layout.css" media="all">
+    <link rel="stylesheet" href="style/css/layout.css" media="all">
     <![endif]-->
     
 </head>
@@ -42,7 +42,7 @@
 
     <div class="xx-options">
     
-        <a class="xx-cfa-logo" href="/"><img src="/_assets/logo-colored.png" /></a>
+        <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
         
         <p class="xx-skip-to-nav skip-to-nav"><a href="#global-footer">Menu</a></p>
         
@@ -50,26 +50,26 @@
             
             <h2 class="text-whisper">Style Guide</h2>
             <ol role="navigation">
-                <li class="xx-link-special"><a href="/patchwork.php">View as patchwork</a></li>
-                <li><a href="/_site/messaging/">Messaging</a></li>
+                <li class="xx-link-special"><a href="patchwork.php">View as patchwork</a></li>
+                <li><a href="_site/messaging/">Messaging</a></li>
 
             </ol>
             
             <h2 class="text-whisper">Templates</h2>
             <ol role="navigation">
-                <li><a href="/_site/home/">Home</a></li>
-                <li><a href="/_site/apps/">Apps</a></li>
-                <li><a href="/_site/apps/promptly/">App (Promptly)</a></li>
-                <li><a href="/_site/about/">About</a></li>
-                <li><a href="/_site/library/">Library</a></li>
-                <li><a href="/_site/governments/boston/">City (Boston)</a></li>
-                <li><a href="/_site/fellows/">Fellows</a></li>
-                <li><a href="/_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
-                <li><a href="/_site/governments/">Governments</a></li>
-                <li><a href="/_site/donate/">Donate (Landing)</a></li>
-                <li><a href="/_site/donate/form/">Donate</a></li>
-                <li><a href="/_site/citizens/">Citizens</a></li>
-                <li><a href="/_site/documentation/">Documentation</a></li>
+                <li><a href="_site/home/">Home</a></li>
+                <li><a href="_site/apps/">Apps</a></li>
+                <li><a href="_site/apps/promptly/">App (Promptly)</a></li>
+                <li><a href="_site/about/">About</a></li>
+                <li><a href="_site/library/">Library</a></li>
+                <li><a href="_site/governments/boston/">City (Boston)</a></li>
+                <li><a href="_site/fellows/">Fellows</a></li>
+                <li><a href="_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
+                <li><a href="_site/governments/">Governments</a></li>
+                <li><a href="_site/donate/">Donate (Landing)</a></li>
+                <li><a href="_site/donate/form/">Donate</a></li>
+                <li><a href="_site/citizens/">Citizens</a></li>
+                <li><a href="_site/documentation/">Documentation</a></li>
 
             </ol>
             
@@ -114,12 +114,12 @@
     	    	</div>
     	    	<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-red.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-red.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-red.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-red.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-red.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-red.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-red.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-red.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-red.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-red.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-red.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-red.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -131,12 +131,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-blue.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-blue.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-blue.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-blue.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-blue.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-blue.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-blue.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-blue.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-blue.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-blue.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-blue.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-blue.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -147,12 +147,12 @@
     			</div>
     			<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-gray.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-gray.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-gray.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-gray.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-gray.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-gray.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-gray.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-gray.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-gray.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-gray.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-gray.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-gray.png" /> 16x16</li>
         	    	</ul>
 	    	    </div>
 	    	</div>
@@ -163,12 +163,12 @@
 	    		</div>
     	    	<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-black.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-black.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-black.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-black.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-black.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-black.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-black.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-black.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-black.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-black.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-black.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-black.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -179,12 +179,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-blue.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-blue.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-blue.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-blue.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-blue.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-blue.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-blue.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-blue.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-blue.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-blue.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-blue.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-blue.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -195,12 +195,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-red.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-red.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-red.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-red.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-red.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-red.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-red.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-red.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-red.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-red.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-red.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-red.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -211,12 +211,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-gray.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-gray.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-gray.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-gray.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-gray.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-gray.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-gray.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-gray.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-gray.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-gray.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-gray.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-gray.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -227,12 +227,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-black.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-black.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-black.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-black.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-black.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-black.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-black.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-black.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-black.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-black.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-black.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-black.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
