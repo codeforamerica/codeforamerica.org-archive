@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
-    <link rel="stylesheet" href="/style/css/main.css">
-    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="/style/favicons/60x60/flag-red.png"/>
+    <link rel="stylesheet" href="{{page.base-url}}/style/css/main.css">
+    <link rel="stylesheet" href="{{page.base-url}}/style/css/layout.css" media="all and (min-width: 40em)">
+    <link rel="shortcut icon" type="image/x-icon" href="{{page.base-url}}/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="{{page.base-url}}/style/favicons/60x60/flag-red.png"/>
 
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="/style/css/layout.css" media="all">
+        <link rel="stylesheet" href="{{page.base-url}}/style/css/layout.css" media="all">
     <![endif]-->
     
     {% if page.path contains '_posts' %}
@@ -28,7 +28,7 @@
 	    {% elsif page.masthead-image %}
 	    <style type="text/css">
 	    	.masthead:before {
-	    		background-image: url('/_media/images/masthead/{{ page.masthead-image }}');
+	    		background-image: url('{{page.base-url}}/../_media/images/masthead/{{ page.masthead-image }}');
 	    	}
 	    </style>
     {% endif %}
@@ -41,8 +41,8 @@
 
 <nav class="nav-global-primary" role="navigation">
     <ul class="layout-breve layout-tight">
-        <li><a href="/_site/blog/">Blog</a></li>
-        <li><a href="/_site/library/">Library</a></li>
+        <li><a href="{{page.base-url}}/blog/">Blog</a></li>
+        <li><a href="{{page.base-url}}/library/">Library</a></li>
         <li>
             {% include /blocks/patterns/search-global.html %}
         </li>
