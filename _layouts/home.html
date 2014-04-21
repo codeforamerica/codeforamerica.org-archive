@@ -1,8 +1,8 @@
 {% include head.html %}
 
 <div class="global-header-compact" role="banner">
-    <a href="/_site/home/" class="global-header-logo">
-        <img src="/_assets/logo.png" />
+    <a href="{{page.base-url}}/home/" class="global-header-logo">
+        <img src="{{page.base-url}}/../_assets/logo.png" />
     </a>
     <p class="global-header-tagline"><strong>By the people, for the people,</strong> for the 21<sup>st</sup> century</p>
     
@@ -11,30 +11,30 @@
     <nav class="nav-global-secondary" role="navigation">
         <ul>
         	<li class="nav-tier1 nav-has-children">
-        		<a href="/_site/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>
+        		<a href="{{page.base-url}}/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>
         		{% if page.path contains 'about' %}
         		<ul class="nav-tier2">
-        		    <li><a href="/_site/about/">Team</a></li>
-        		    <li><a href="/_site/about/">Annual Report</a></li>
-        		    <li><a href="/_site/about/">Supporters</a></li>
-        		    <li><a href="/_site/about/">Press</a></li>
-        		    <li><a href="/_site/about/">Contact</a></li>
+        		    <li><a href="{{page.base-url}}/about/">Team</a></li>
+        		    <li><a href="{{page.base-url}}/about/">Annual Report</a></li>
+        		    <li><a href="{{page.base-url}}/about/">Supporters</a></li>
+        		    <li><a href="{{page.base-url}}/about/">Press</a></li>
+        		    <li><a href="{{page.base-url}}/about/">Contact</a></li>
         		</ul>
         		{% endif %} 
         	</li>
             <li class="nav-tier1 nav-has-children">
-                <a href="/_site/governments/" {% if page.path contains 'governments' %}class="state-active"{% endif %}>Governments</a>
+                <a href="{{page.base-url}}/governments/" {% if page.path contains 'governments' %}class="state-active"{% endif %}>Governments</a>
                 {% if page.path contains 'governments' %}
                 <ul class="nav-tier2">
-                    <li><a href="/_site/governments/">Current Governments</a></li>
-                    <li><a href="/_site/governments/boston/">Upcoming Governments</a></li>
-                    <li><a href="/_site/governments/boston/">Alumni Governments</a></li>
-                    <li><a href="/_site/apps/">Apps &amp; APIs</a></li>
+                    <li><a href="{{page.base-url}}/governments/">Current Governments</a></li>
+                    <li><a href="{{page.base-url}}/governments/boston/">Upcoming Governments</a></li>
+                    <li><a href="{{page.base-url}}/governments/boston/">Alumni Governments</a></li>
+                    <li><a href="{{page.base-url}}/apps/">Apps &amp; APIs</a></li>
                 </ul>
                 {% endif %} 
             </li>
             <li class="nav-tier1 nav-has-children">
-            	<a href="/_site/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
+            	<a href="{{page.base-url}}/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
             	{% if page.path contains 'citizens' %}
             	<ul class="nav-tier2">
             		<li><a href="#">Requests</a></li>
@@ -45,9 +45,9 @@
             	{% endif %} 
             </li>
             <li class="nav-tier1">
-            	<a href="/_site/apps/" {% if page.path contains 'apps' %}class="state-active"{% endif %}>Apps</a>
+            	<a href="{{page.base-url}}/apps/" {% if page.path contains 'apps' %}class="state-active"{% endif %}>Apps</a>
             </li>
-            <li><a href="/_site/donate/" class="button">Donate</a></li>
+            <li><a href="{{page.base-url}}/donate/" class="button">Donate</a></li>
         </ul>
     </nav>
     
@@ -58,7 +58,7 @@
     <header class="layout-semibreve masthead-header">
         <h1 class="page-title" >In San Francisco</h1>
         <p>One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
-        <a class="text-whisper button-invert" href="/_site/about/">Learn more about what we do</a>
+        <a class="text-whisper button-invert" href="{{page.base-url}}/about/">Learn more about what we do</a>
     </header>
 </div>
     
