@@ -19,13 +19,13 @@
     <title>Code for America Style Guide</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
     <link href="style/css/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/style/css/documentation.css">
-    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
+    <link rel="stylesheet" href="style/css/documentation.css">
+    <link rel="stylesheet" href="style/css/layout.css" media="all and (min-width: 40em)">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if (lt IE 9)&(!IEMobile)]>
-    <link rel="stylesheet" href="/style/css/layout.css" media="all">
+    <link rel="stylesheet" href="style/css/layout.css" media="all">
     <![endif]-->
     
 </head>
@@ -42,7 +42,7 @@
 
     <div class="xx-options">
     
-        <a class="xx-cfa-logo" href="/"><img src="/_assets/logo-colored.png" /></a>
+        <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
         
         <p class="xx-skip-to-nav skip-to-nav"><a href="#global-footer">Menu</a></p>
         
@@ -50,24 +50,27 @@
             
             <h2 class="text-whisper">Style Guide</h2>
             <ol role="navigation">
-                <li class="xx-link-special"><a href="/patchwork.php">View as patchwork</a></li>
+                <li class="xx-link-special"><a href="patchwork.php">View as patchwork</a></li>
+                <li><a href="_site/messaging/">Messaging</a></li>
+
             </ol>
             
             <h2 class="text-whisper">Templates</h2>
             <ol role="navigation">
-                <li><a href="/_site/home/">Home</a></li>
-                <li><a href="/_site/apps/">Apps</a></li>
-                <li><a href="/_site/apps/promptly/">App (Promptly)</a></li>
-                <li><a href="/_site/about/">About</a></li>
-                <li><a href="/_site/library/">Library</a></li>
-                <li><a href="/_site/governments/boston/">City (Boston)</a></li>
-                <li><a href="/_site/fellows/">Fellows</a></li>
-                <li><a href="/_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
-                <li><a href="/_site/governments/">Governments</a></li>
-                <li><a href="/_site/donate/">Donate (Landing)</a></li>
-                <li><a href="/_site/donate/form/">Donate</a></li>
-                <li><a href="/_site/citizens/">Citizens</a></li>
-                <li><a href="/_site/documentation/">Documentation</a></li>
+                <li><a href="_site/home/">Home</a></li>
+                <li><a href="_site/apps/">Apps</a></li>
+                <li><a href="_site/apps/promptly/">App (Promptly)</a></li>
+                <li><a href="_site/about/">About</a></li>
+                <li><a href="_site/library/">Library</a></li>
+                <li><a href="_site/governments/boston/">City (Boston)</a></li>
+                <li><a href="_site/fellows/">Fellows</a></li>
+                <li><a href="_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
+                <li><a href="_site/governments/">Governments</a></li>
+                <li><a href="_site/donate/">Donate (Landing)</a></li>
+                <li><a href="_site/donate/form/">Donate</a></li>
+                <li><a href="_site/citizens/">Citizens</a></li>
+                <li><a href="_site/documentation/">Documentation</a></li>
+
             </ol>
             
         </div>
@@ -88,6 +91,20 @@
         </form>
     
         <main role="main">
+        <div>
+        	<h2 class="xx-section-title">Using the Guide</h2>
+        	<p>Code for America aims to improve the relationships between citizens and government. The following logos, materials, and character of the Code for America brand were created to express the following:</p>
+        	<p>
+        	<ul>
+        	<li>Openness: That the organization is approachable, easy to understand, easy to get involved with, and welcoming to both scrutiny and participation.</li>
+        	<li>Currency + Progress: We’ve attempted to showcase the latest events and stories in civic tech, while also using current conventions in web design and technology-based approaches. We also strive to show a thread of progress over time.</li>
+        	<li>Optimism: We wanted to emphasize the fact that Code for America believes in the future of our communities and local governments. The idea to portray is: "We can make this better together."</li>
+        	</ul
+        	</p>
+        	<p>This guide is intended to help anyone involved with communications for Code for America and its affiliate programs. If you have questions, <a href="https://github.com/codeforamerica/codeforamerica.org/issues/new">submit an issue in our github repo</a>.</p>
+        	</div>
+        	</div>
+
         
         	<h2 class="xx-section-title">Bookmark Icons</h2>
         	
@@ -97,12 +114,12 @@
     	    	</div>
     	    	<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-red.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-red.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-red.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-red.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-red.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-red.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-red.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-red.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-red.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-red.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-red.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-red.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -114,12 +131,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-blue.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-blue.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-blue.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-blue.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-blue.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-blue.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-blue.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-blue.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-blue.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-blue.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-blue.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-blue.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -130,12 +147,12 @@
     			</div>
     			<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-gray.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-gray.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-gray.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-gray.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-gray.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-gray.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-gray.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-gray.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-gray.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-gray.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-gray.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-gray.png" /> 16x16</li>
         	    	</ul>
 	    	    </div>
 	    	</div>
@@ -146,12 +163,12 @@
 	    		</div>
     	    	<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-black.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-black.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-black.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-black.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-black.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-black.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-black.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-black.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-black.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-black.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-black.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-black.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -162,12 +179,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-blue.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-blue.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-blue.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-blue.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-blue.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-blue.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-blue.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-blue.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-blue.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-blue.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-blue.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-blue.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -178,12 +195,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-red.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-red.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-red.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-red.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-red.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-red.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-red.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-red.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-red.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-red.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-red.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-red.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -194,12 +211,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-gray.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-gray.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-gray.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-gray.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-gray.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-gray.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-gray.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-gray.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-gray.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-gray.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-gray.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-gray.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -210,12 +227,12 @@
 	    		</div>
 	    		<div class="pattern-preview">
         	    	<ul class="list-no-bullets list-horizontal list-inline text-whisper list-favicons">
-        	    		<li><img src="/style/favicons/152x152/flag-white-black.png" /> 152x152</li>
-        	    		<li><img src="/style/favicons/120x120/flag-white-black.png" /> 120x120</li>
-        	    		<li><img src="/style/favicons/76x76/flag-white-black.png" /> 76x76</li>
-        	    		<li><img src="/style/favicons/60x60/flag-white-black.png" /> 60x60</li>
-        	    		<li><img src="/style/favicons/32x32/flag-white-black.png" /> 32x32</li>
-        	    		<li><img src="/style/favicons/16x16/flag-white-black.png" /> 16x16</li>
+        	    		<li><img src="style/favicons/152x152/flag-white-black.png" /> 152x152</li>
+        	    		<li><img src="style/favicons/120x120/flag-white-black.png" /> 120x120</li>
+        	    		<li><img src="style/favicons/76x76/flag-white-black.png" /> 76x76</li>
+        	    		<li><img src="style/favicons/60x60/flag-white-black.png" /> 60x60</li>
+        	    		<li><img src="style/favicons/32x32/flag-white-black.png" /> 32x32</li>
+        	    		<li><img src="style/favicons/16x16/flag-white-black.png" /> 16x16</li>
         	    	</ul>
         	    </div>
         	</div>
@@ -315,7 +332,9 @@
                     <span class="swatch-preview" style="background-color: #cf1b41;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Red</strong></li>
-                        <li>rgb(204,39,62)</li>
+                        <li>PMS 193U</li>
+                        <li>C13 M94 Y69 K4</li>
+                        <li>R204 G39 B62</li>
                         <li>#cf1b41</li>
                         <li>$color-red</li>
                     </ul>
@@ -324,7 +343,9 @@
                     <span class="swatch-preview" style="background-color: #399fd3;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Blue</strong></li>
-                        <li>rgb(63,158,216)</li>
+                        <li>PMS 2915M or 292C or 299U</li>
+                        <li>C70 M24 Y0 K0</li>
+                        <li>R63 G158 B216</li>
                         <li>#399fd3</li>
                         <li>$color-blue</li>
                     </ul>
@@ -332,7 +353,9 @@
                     <span class="swatch-preview" style="background-color: #6D6E71;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Gray</strong></li>
-                        <li>rgb(109, 110, 113)</li>
+                        <li>PMS Cool Gray 10</li>
+                        <li>C58 M49 Y46 K15</li>
+                        <li>R109 G110 B113</li>
                         <li>#6D6E71</li>
                         <li>$color-gray</li>
                     </ul>
@@ -341,7 +364,9 @@
                     <span class="swatch-preview" style="background-color: #000;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>CfA Black</strong></li>
-                        <li>rgb(0, 0, 0)</li>
+                        <li>PMS Black U</li>
+                        <li>C0 M0 Y0 K100</li>
+                        <li>R0 G0 B0</li>
                         <li>#000000</li>
                         <li>$color-black</li>
                     </ul>
@@ -354,8 +379,10 @@
                 <li class="swatch">
                     <span class="swatch-preview" style="background-color: #004b6a;"></span>
                     <ul class="list-no-bullets swatch-details">
-                        <li><strong>Dark Blue</strong></li>
-                        <li>rgb(0, 75, 106)</li>
+                        <li><strong>Dark Blue</strong></li
+                        <li>PMS 302U</li>
+                        <li>C81 M66 Y51 K43</li>
+                        <li>R47 G61 B74</li>
                         <li>#004b6a</li>
                         <li>$color-dark-blue</li>
                     </ul>
@@ -364,15 +391,19 @@
                     <span class="swatch-preview" style="background-color: #7ab5d6;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Light Blue</strong></li>
-                        <li>rgb(122,181,214)</li>
+                        <li>PMS 297U</li>
+                        <li>C50 M15 Y7 K0</li>
+                        <li>R122 G181 B214</li>
                         <li>#7ab5d6</li>
                         <li>$color-light-blue</li>
                     </ul>
                 <li class="swatch">
                     <span class="swatch-preview" style="background-color: #444444;"></span>
                     <ul class="list-no-bullets swatch-details">
-                        <li><strong>Dark gray</strong></li>
-                        <li>rgb(68, 68, 68)</li>
+                        <li><strong>Dark Gray</strong></li
+                        <li>PMS 446U</li>
+                        <li>C43 M37 Y36 K1</li>
+                        <li>R68 G68 B68</li>
                         <li>#444444</li>
                         <li>$color-dark-gray</li>
                     </ul>
@@ -381,7 +412,9 @@
                     <span class="swatch-preview" style="background-color: #999595;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Medium gray</strong></li>
-                        <li>rgb(153, 149, 149)</li>
+                        <li>PMS Cool Gray 6</li>
+                        <li>C43 M37 Y36 K1</li>
+                        <li>R153 G149 B149</li>
                         <li>#999595</li>
                         <li>$color-medium-gray</li>
                     </ul>
@@ -390,7 +423,9 @@
                     <span class="swatch-preview" style="background-color: #e5e5e5;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Light gray</strong></li>
-                        <li>rgb(229, 229, 229)</li>
+                        <li>PMS Cool Gray 1</li>
+                        <li>C9 M6 Y7 K0</li>
+                        <li>R229 G229 B229</li>
                         <li>#e5e5e5</li>
                         <li>$color-light-gray</li>
                     </ul>
@@ -399,7 +434,9 @@
                     <span class="swatch-preview" style="background-color: #e87d2b;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Orange</strong></li>
-                        <li>rgb(232, 125, 43)</li>
+                        <li>PMS 165U</li>
+                        <li>C6 M62 Y96 K0</li>
+                        <li>R232 G125 B43</li>
                         <li>#e87d2b</li>
                         <li>$color-orange</li>
                     </ul>
@@ -408,7 +445,9 @@
                     <span class="swatch-preview" style="background-color: #69579C;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Purple</strong></li>
-                        <li>rgb(105, 87, 156)</li>
+                        <li>PMS 2597U</li>
+                        <li>C69 M75 Y7 K0</li>
+                        <li>R105 G87 B156</li>
                         <li>#69579C</li>
                         <li>$color-purple</li>
                     </ul>
@@ -417,7 +456,9 @@
                     <span class="swatch-preview" style="background-color: #00a175;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Teal</strong></li>
-                        <li>rgb(0, 161, 117)</li>
+                        <li>PMS 3275U</li>
+                        <li>C73 M18 Y68 K3</li>
+                        <li>R0 G161 B117</li>
                         <li>#00a175</li>
                         <li>$color-teal</li>
                     </ul>
@@ -426,7 +467,9 @@
                     <span class="swatch-preview" style="background-color: #4298bb;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Medium Blue</strong></li>
-                        <li>rgb(66, 152, 187)</li>
+                        <li>PMS 314U</li>
+                        <li>C72 M27 Y16 K0</li>
+                        <li>R66 G152 B187</li>
                         <li>#4298bb</li>
                         <li>$color-medium-blue</li>
                     </ul>
@@ -435,7 +478,9 @@
                     <span class="swatch-preview" style="background-color: #fedd44;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>Yellow</strong></li>
-                        <li>rgb(254, 221, 68)</li>
+                        <li>PMS 109U</li>
+                        <li>C2 M10 Y80 K0</li>
+                        <li>R254 G221 B68</li>
                         <li>#fedd44</li>
                         <li>$color-yellow</li>
                     </ul>
@@ -444,7 +489,8 @@
                     <span class="swatch-preview" style="background-color: #fff;"></span>
                     <ul class="list-no-bullets swatch-details">
                         <li><strong>White</strong></li>
-                        <li>rgb(255, 255, 255)</li>
+                        <li>R255 G255 B255)</li>
+                        <li>C0 M0 Y0 K0</li>
                         <li>#ffffff</li>
                         <li>$color-white</li>
                     </ul>

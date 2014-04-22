@@ -17,10 +17,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Website Style Guide</title>
-    <link rel="stylesheet" href="/style/css/documentation.css">
+    <link rel="stylesheet" href="style/css/documentation.css">
     <link href="style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
-    <link rel="stylesheet" href="/style/css/layout.css" media="all and (min-width: 40em)">
+    <link rel="stylesheet" href="style/css/layout.css" media="all and (min-width: 40em)">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -50,7 +50,7 @@
     
     <div class="xx-options">
     
-        <a class="xx-cfa-logo" href="/"><img src="/_assets/logo-colored.png" /></a>
+        <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
         
         <p class="xx-skip-to-nav skip-to-nav"><a href="#global-footer">Menu</a></p>
         
@@ -58,24 +58,24 @@
             
             <h2 class="text-whisper">Style Guide</h2>
             <ol role="navigation">
-                <li class="xx-link-special"><a href="/">View as Style Guide</a></li>
+                <li class="xx-link-special"><a href="">View as Style Guide</a></li>
             </ol>
             
             <h2 class="text-whisper">Templates</h2>
             <ol role="navigation">
-                <li><a href="/_site/home/">Home</a></li>
-                <li><a href="/_site/apps/">Apps</a></li>
-                <li><a href="/_site/apps/promptly/">App (Promptly)</a></li>
-                <li><a href="/_site/about/">About</a></li>
-                <li><a href="/_site/library/">Library</a></li>
-                <li><a href="/_site/governments/boston/">City (Boston)</a></li>
-                <li><a href="/_site/fellows/">Fellows</a></li>
-                <li><a href="/_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
-                <li><a href="/_site/governments/">Governments</a></li>
-                <li><a href="/_site/donate/">Donate (Landing)</a></li>
-                <li><a href="/_site/donate/form/">Donate</a></li>
-                <li><a href="/_site/citizens/">Citizens</a></li>
-                <li><a href="/_site/documentation/">Documentation</a></li>
+                <li><a href="_site/home/">Home</a></li>
+                <li><a href="_site/apps/">Apps</a></li>
+                <li><a href="_site/apps/promptly/">App (Promptly)</a></li>
+                <li><a href="_site/about/">About</a></li>
+                <li><a href="_site/library/">Library</a></li>
+                <li><a href="_site/governments/boston/">City (Boston)</a></li>
+                <li><a href="_site/fellows/">Fellows</a></li>
+                <li><a href="_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
+                <li><a href="_site/governments/">Governments</a></li>
+                <li><a href="_site/donate/">Donate (Landing)</a></li>
+                <li><a href="_site/donate/form/">Donate</a></li>
+                <li><a href="_site/citizens/">Citizens</a></li>
+                <li><a href="_site/documentation/">Documentation</a></li>
             </ol>
             
         </div>
