@@ -1,33 +1,294 @@
----
-layout: default
-title: Code for America 2014 Summit
-title-h1: 2014 Summit
-nav-breadcrumbs:
- - 2014 summit: "/summit"
----
-  
-<div class="layout-semibreve">
+<!DOCTYPE html>
+<html lang="en-us">
 
-    {% include nav-breadcrumbs.html %}
-        
-    <header>
-        <h2>Code for America 2014 Summit</h2>
-    </header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/main.css">
+    <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="http://style.codeforamerica.org/0/style/css/prism.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all">
+    <![endif]-->
+    <style type="text/css">
+        .masthead:before {
+            background-image: url('masthead.jpg');
+        }
+    .feature-action{
+      display:none;
+    }
+    @media (min-width: 40em) {
+      .feature-action{
+        margin-top:27px;
+        display: block;
+      }
+      .feature-action a{
+        float:right;
+      }
+    }
+    .intro{
+        margin-bottom:-4em;
+    }
+
+    </style>
+</head>
+
+<body>
+<div class="js-container">
+
+<nav class="nav-global-primary">
+  <ul class="layout-breve layout-tight">
+    <li><a href="/">Code for America</a></li>
+    <li>
+      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+          <!-- consider applying autofocus="autofocus" to input -->
+          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+      </form>
+    </li>
+  </ul>
+</nav>
+
+<!--div class="global-header-compact" role="banner">
+  <a href="" class="global-header-logo">
+      <img src="/assets/logo.png" />
+  </a>
+
+  <p class="global-header-tagline">Bringing together <strong>local governments</strong> and <strong>technologists</strong> <br />to make <strong>better cities for everyone</strong>
+
+  </p>
+
+  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+
+  <nav class="nav-global-secondary">
+    <ul>
+      
+      <li><a href="http://old.cfasummit.org" class="button">Past events</a></li>
+    </ul>
+  </nav>
+</div-->
+
+<div class="masthead masthead-l">
+  <header class="layout-semibreve masthead-header">
+    <h1 id="story-title" class="page-title">The Summit</h1>
+    <p id="story-content">The annual gathering of civic technology leaders</p>
+  </header>
+</div>
+
+<div class="global-header">  
+  <a href="/" class="global-header-logo">
+      <img src="/assets/logo.png">
+  </a>
+  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+
+  <nav class="nav-global-secondary">
+    <ul>
+      <li><a href="http://old.cfasummit.org/about/" class="button">Past events</a></li>
+    </ul>
+  </nav>    
+</div>
+<main role="main">
+    <section class="layout-semibreve layout-centered intro">
     
-    <section class="isolate">
+        <h2 class="h3">Save the date: September 23 &ndash; 25, 2014</h2>
+        <p>The Yerba Buena Center
+            <br />San Francisco, CA</p>
+
+    </section>
+    <section class="layout-semibreve">
+        <p>The Summit is an annual gathering of civic technology leaders — ranging from Mayors to entrepreneurs, from community organizers to CTOs — who hold a shared belief that together we can create a government by the people, for the people works for us all in the 21st century.</p>
         
-        <p>An annual gathering of civic technology leaders.</p>
-       
-        <p>
-            <em>Save the date:</em>
-            <br>September 23-25, 2014
-            <br>San Francisco
-     
-        </p>
-        <p>
-        What started as a way to bring together our distributed and ever-expanding network has grown into a powerful annual event. Forward-thinking technologists, government officials, and community advocates convene at the Summit to exchange ideas, explore solutions, and identify best practices to improve the way government works.
-        </p>
+        <p>What started as a way to bring together our distributed and ever-expanding network has grown into the annual event where forward-thinking technologists, government officials, and community advocates convene to exchange ideas, explore new ways to solve problems, and identify best practices for improving the way government works. More than 80 cities were represented at last year’s event.</p>
+        
+        <p>This year's event will bring together even more cities and civic-minded citizens for two half days of main-stage content, breakout session, and working groups.</p>
+
+        <section class="layout-semibreve layout-centered">
     
+            <h2 class="h3">Stay tuned for more information on registration.</h2>
+
+        </section>
     </section>
 
+        <section class="slab-dark-blue">
+            <div class="layout-semibreve">
+                <h2 class="h3" style="text-transform:uppercase;text-align:center">Who participates?</h2>
+                <div class="layout-crotchet-staccato">
+                  <h3><strong>Government</strong></h3>
+                  <p> The Summit is one of the few opportunities for civic leaders from all levels of government, from cities and counties big and small, to come together and discuss their vision, opportunities, and challenges.</p>
+                </div>
+
+                <div class="layout-crotchet-staccato">
+                  <h3><strong>Technologists</strong></h3>
+                  <p>Developers, designers, researchers, product managers, data enthusiasts, and technologists of all varieties join the Summit to share stories, ideas and code. These active citizens are turning passion into action and impact.</p>
+                </div>
+
+                <div class="layout-crotchet-staccato">
+                  <h3><strong>Network</strong></h3>
+                  <p>Transformation doesn’t happen without engagement in a larger ecosystem. The startups, entrepreneurs, foundations, civic hackers, and tech companies who sustain our communities also participate in the dialogue.</p>
+                </div>
+          </div>
+        </section>
+
+    <section class="layout-semibreve">
+        <div class="layout-crotchet">
+            <article class="teaser">
+            <header class="teaser-header">
+            <a href="https://www.youtube.com/watch?v=KLXZ4nGJkYc&index=44&list=PL65XgbSILalV-wInUiERrhjweMlJkukMd">
+            <h1 class="teaser-title">HHS Impact Spotlight</h1>
+            </a>
+            </header>
+            <div class="teaser-body">
+                Moncef Belyamani and Beverly Johnson talk about San Mateo Health
+                and Human Services.
+            </div>
+            <footer class="teaser-footer">
+            <a href="https://www.youtube.com/watch?v=KLXZ4nGJkYc&index=44&list=PL65XgbSILalV-wInUiERrhjweMlJkukMd" class="teaser-masthead">
+            <img class="teaser-image" src="http://img.youtube.com/vi/KLXZ4nGJkYc/0.jpg" style="top: -34px; position: relative">
+            <span class="teaser-type teaser-type-article">Video, 2013</span>
+            </a>
+            </footer>
+            </article>
+        </div>
+        <div class="layout-crotchet">
+            <article class="teaser">
+            <header class="teaser-header">
+            <a href="http://www.youtube.com/watch?v=3bK9B8_0FDQ">
+            <h1 class="teaser-title">Mike Bracken’s Keynote</h1>
+            </a>
+            </header>
+            <div class="teaser-body">
+                Mike Bracken speaks about Redesigning Government and the
+                UK Government Digital Service.
+            </div>
+            <footer class="teaser-footer">
+            <a href="http://www.youtube.com/watch?v=3bK9B8_0FDQ" class="teaser-masthead">
+            <img class="teaser-image" src="http://img.youtube.com/vi/3bK9B8_0FDQ/0.jpg" style="top: -34px; position: relative">
+            <span class="teaser-type teaser-type-article">Video, 2013</span>
+            </a>
+            </footer>
+            </article>
+        </div>
+        <div class="layout-crotchet">
+            <article class="teaser">
+            <header class="teaser-header">
+            <a href="https://www.youtube.com/watch?v=RLCZV9CR4dQ&index=40&list=PL65XgbSILalV-wInUiERrhjweMlJkukMd">
+            <h1 class="teaser-title">Louisville Jail Dashboard</h1>
+            </a>
+            </header>
+            <div class="teaser-body">
+                Marcin Wichary and Beth Niblock demonstrate the 2013 Louisville
+                Jail Population Dashboard.
+            </div>
+            <footer class="teaser-footer">
+            <a href="http://www.youtube.com/watch?v=RLCZV9CR4dQ" class="teaser-masthead">
+            <img class="teaser-image" src="http://img.youtube.com/vi/RLCZV9CR4dQ/0.jpg" style="top: -34px; position: relative">
+            <span class="teaser-type teaser-type-article">Video, 2013</span>
+            </a>
+            </footer>
+            </article>
+        </div>
+        <p style="text-transform:uppercase;text-align:center"><a href="#">More videos</a></p>
+    </section>
+
+    <section class="slab-red">
+  <div class="layout-chimney">
+    <div class="layout-minim-staccato slab-medium-red chimney">
+      <div class="chimney-body">
+        <h3>Be where civic innovators gather.</h3>
+        <p>
+        Interested in having your company sponsor the Summit?
+        <a href="http://codeforamerica.org/media/docs/2014summitoverview.pdf" target="_blank">Download an overview to learn more.</a>
+        </p>
+        <a href="mailto:sponsorships@codeforamerica.org" class="button button-prominent">Contact Our Sponsorships Team</a>
+      </div>
+    </div>
+
+    <div class="layout-minim-staccato">
+      <h3 class="h4">
+        “The Summit was breathtakingly ambitious in the scope of the
+        hoped-for transformation of government — yet surprisingly accessible for a non-technical person.”
+      </h3>
+        <p><i>Susan Clark, Institute for Local Government</i></p>
+    </div>
+  </div>
+</section>
+
+    <section class="layout-semibreve">
+        <h2 class="h3">Previous Summit Sponsors</h2>
+        <p><img src="2013-summit-sponsors.png" width="100%"></p>
+    </section>
+</main>
+
+
+<!-- THE FOOOTER -->
+
+<div class="global-footer" id="global-footer">
+    &nbsp;
+    <!--div class="layout-breve layout-tight">
+    
+        <div class="search-global">
+            <input type="search" placeholder="Search" />
+        </div>
+    
+        <nav class="nav-footer" role="navigation">
+            <ul>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Home</a></li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">About</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Donors</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Fellows</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Timeline</a></li>
+                        <li><a href="#">Process</a></li>
+                        <li><a href="#">Apply</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Cities</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Kansas City, MO</a></li>
+                        <li><a href="#">Kansas City, KS</a></li>
+                        <li><a href="#">Las Vegas, NV</a></li>
+                        <li><a href="#">Louisville, KY</a></li>
+                        <li><a href="#">New York City, NY</a></li>
+                        <li><a href="#">Oakland, CA</a></li>
+                        <li><a href="#">San Francisco, CA</a></li>
+                        <li><a href="#">San Mateo County, CA</a></li>
+                        <li><a href="#">South Bend, IN</a></li>
+                        <li><a href="#">Summit County, OH</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Donate</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Financial Contributions</a></li>
+                        <li><a href="#">In-Kind Donations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Social</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+    </div-->
 </div>
+
+
+<!-- min-width for first th element in order to keep field names on one line -->
