@@ -1,33 +1,963 @@
----
-layout: default
-title: Code for America 2014 Summit
-title-h1: 2014 Summit
-nav-breadcrumbs:
- - 2014 summit: "/summit"
----
-  
-<div class="layout-semibreve">
+<!DOCTYPE html>
+<html lang="en-us">
 
-    {% include nav-breadcrumbs.html %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/main.css">
+    <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="http://style.codeforamerica.org/0/style/css/prism.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all">
+    <![endif]-->
+    <style type="text/css">
+        .masthead:before {
+            background-image: url('../../media/images/trails/trail-masthead.jpg');
+        }
+    .feature-action{
+      display:none;
+    }
+    @media (min-width: 40em) {
+      .feature-action{
+        margin-top:27px;
+        display: block;
+      }
+      .feature-action a{
+        float:right;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+<div class="js-container">
+
+<nav class="nav-global-primary">
+  <ul class="layout-breve layout-tight">
+    <li><a href="blog/">Blog</a></li>
+    <li><a href="library/">Library</a></li>
+    <li>
+      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+          <!-- consider applying autofocus="autofocus" to input -->
+          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+      </form>
+    </li>
+  </ul>
+</nav>
+
+<div class="global-header-compact" role="banner">
+  <a href="" class="global-header-logo">
+      <img src="/assets/logo.png" />
+  </a>
+
+  <p class="global-header-tagline">Bringing together <strong>local governments</strong> and <strong>technologists</strong> <br />to make <strong>better cities for everyone</strong>
+
+  </p>
+
+  <!--<p class="feature-action"><a class="button-prominent" href="/valentine/">❤ Send a Geeky Valentine</a></p>-->
+  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+
+  <nav class="nav-global-secondary">
+    <ul>
+      
+      <li><a href="http://old.cfasummit.org" class="button">Past events</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="masthead masthead-xl">
+  <header class="layout-semibreve masthead-header">
+    <h1 id="story-title" class="page-title">Summit</h1>
+    <p id="story-content">Headline stuff text thing</p>
+  </header>
+</div>
+
+<div class="global-header">  
+  <a href="/" class="global-header-logo">
+      <img src="/assets/logo.png">
+  </a>
+  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+
+  <nav class="nav-global-secondary">
+    <ul>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/about">About</a>
         
-    <header>
-        <h2>Code for America 2014 Summit</h2>
-    </header>
-    
-    <section class="isolate">
+      </li>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/cities" class="state-active">Governments</a>
         
-        <p>An annual gathering of civic technology leaders.</p>
-       
-        <p>
-            <em>Save the date:</em>
-            <br>September 23-25, 2014
-            <br>San Francisco
-     
-        </p>
-        <p>
-        What started as a way to bring together our distributed and ever-expanding network has grown into a powerful annual event. Forward-thinking technologists, government officials, and community advocates convene at the Summit to exchange ideas, explore solutions, and identify best practices to improve the way government works.
-        </p>
-    
+        <ul class="nav-tier2">
+          <li><a href="/cities/2014-cities">2014 Partners</a></li>
+          <li><a href="/cities/alumni">Alumni Partners</a></li>
+          <li><a href="/about/peernetwork">Peer Network</a></li>
+          <li><a href="/cities/data-standards-faq">Data Specifications</a></li>
+        </ul>
+        
+      </li>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/geeks">Citizens</a>  
+        
+      </li>
+      <li class="nav-tier1">
+        <a href="/apps">Apps</a>
+      </li>
+      <li><a href="/support-us" class="button">Donate</a></li>
+    </ul>
+  </nav>    
+</div>
+<main role="main">
+
+
+
+
+<!-- QUOTE FROM VALIDATOR -->
+
+<!-- <section class="slab-blue">
+    <div class="layout-semibreve">
+        <div class="highlight highlight-with-avatar">
+            <img class="highlight-avatar" src="../../media/images/people/sally-jewel.png"/>
+            <blockquote>
+                <p>For the health of our economy and our public lands, it’s critical that we work now to establish meaningful and deep connections between young people – from every background and every community – and the great outdoors. Open trail data is a key step toward that ambitious goal.</p>
+            </blockquote>
+            <p class="attribute">Sally Jewel, Secretary of <a href="#">The U.S. Department of the Interior</a></p>
+        </div>
+    </div>
+</section> -->
+
+
+<!--  WHO IS IN ON THIS -->
+
+<div class="layout-semibreve">
+    <article class="post-preview">
+        
+        <header class="post-header isolate">
+            <time class="post-date insulate text-whisper" datetime="{{ page.date }}">April 15, 2014</time>
+            <h2 class="post-title">Public Data for Public Lands</h2>
+        </header>
+        
+        <div class="post-author">
+            <h2 class="text-whisper layout-tight">Written by</h2>
+            <div class="h-card">
+                <h3 class="p-name profile-name text-prominent" style="color: black;">Alan Williams, PLATS Facilitator</h3>
+                <img class="u-photo profile-photo" src="../../media/images/people/alan-williams.jpg" />
+            </div>
+        </div><!-- .post-author -->
+        
+        <div class="post-body">
+        
+            <div class="post-content">
+                <p>Americans have inherited a vast, spectacular landscape. Through the tireless efforts of citizens and governments throughout the 20th century, today we share access to over 785 million acres of public land. It's an incredible bounty we are charged with protecting for future generations.</p>
+
+                <p>Conservationists used any instrument available to protect the lands they cared for. As a result, thousands of organizations serve as the stewards of our land, ranging from Federal agencies, state subdivisions, and cities; to special districts, trusts, and non-profits.</p>
+
+                <p>Today, Code for America is pleased to embark on data collaboration with stewards across the country. We are developing a common format for public data about public lands--creating a commons for the 21st century, one that recognizes the digital is equal to the physical.</p>
+
+                <p>The "Public Land and Trail Specification" aims to empower stewards to share data between one another and the visiting public. By publishing data in a standard set of tables and attributes, park agencies and allies can gain access to an evolving ecosystem of web tools, mobile apps, and data management platforms.</p>
+
+                <p>Over the next month, Code for America is facilitating a public Request for Comment period. We are soliciting insights and constructive critique from domain experts and software developers alike. The comment period will culminate in an official version 1.0 of the specification.</p>
+
+                <p>Public data about public lands has the potential to improve coordination among stewards. Used wisely, public data can improve citizen's ability to safetly visit and experience our nation's parks and trails. In turn, increased visitation has the potential to advance economic development and public health goals. Perhaps most importantly, increased visitation builds a constiuency for the conservation ethic.</p>
+
+                <p>Code for America is here to <a href="http://www.codeforamerica.org/blog/2014/03/27/here-are-our-values/">help governments be effective.</a> If you are interested in publishing data compliant with PLATS, please get in touch. If you aren't sure whether PLATS is right for you, we are here to answer your questions. If you are a technologist looking to build products and services using PLATS data, we'd love to talk. To engage critically with the specification, and the considerations that inform its current iteration, please sign-up below and review the technical documentation.</p>
+            </div>
+        </div><!-- .post-body -->
+        
+<!--         <a class="post-link" href="/_site/about/">Read this post</a> -->
+
+    </article><!-- .post -->
+
+    <ul class="list-inline list-no-bullets layout-centered"> 
+        <li><a href="#specification" class="button">See the Spec</a></li>
+        <li><a href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit" class="button">Review Technical Documentation</a></li>
+<!--         <li><a href="" class="button">Download Sample Data</a></li> -->
+        <li><a href="mailto:jack@codeforamerica.org" class="button">Share Your Data</a></li>
+    </ul>
+</div>
+
+<section class="slab-red">
+    <div class="layout-chimney-invert">
+        <div class="layout-minim">
+            <!-- Not sure why this is an h3 element with a class "h4", but I am leaving it as I found it. -->
+            <h3 class="h4">The Request for Comment Period is Now Open</h3>
+
+            <ul class="calendar-summary-events">
+                <li><strong>Tuesday, April 15th: </strong>Request for Comment Period Opens</li>
+                <li><strong>Friday, April 25th, 10am Pacific: </strong>Conference Call #1</li>
+                <li><strong>Friday, May 9th, 10am Pacific: </strong>Conference Call #2</li>
+                <li><strong>Friday, May 17th: </strong>Request for Comment Period Closes</li>
+            </ul>
+        </div>
+
+        <div class="layout-minim slab-medium-red chimney">
+            <h3>Sign up to Comment on the Working Draft</h3>
+            <form class="sign-up" action="https://codeforamerica.wufoo.com/forms/z1jk38le1dysfvv/#public" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="">
+                <ul class="list-form">
+                  <li id="foli15" class="notranslate form-field">
+                    <label class="desc" id="title15" for="Field15">
+                    Name
+                    </label>
+                    <div>
+                      <input id="Field15" name="Field15" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup=""/>
+                    </div>
+                  </li>
+                  <li id="foli17" class="notranslate form-field">
+                    <label class="desc" id="title17" for="Field17">
+                    Your Preferred Title
+                    </label>
+                    <div>
+                      <input id="Field17" name="Field17" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup=""/>
+                    </div>
+                  </li>
+                  <li id="foli21" class="notranslate form-field">
+                    <label class="desc" id="title21" for="Field21">
+                    City
+                    </label>
+                    <div>
+                      <input id="Field21" name="Field21" type="text" class="field text medium" value="" maxlength="255" tabindex="4" onkeyup=""/>
+                    </div>
+                  </li>
+                  <li id="foli24" class="notranslate form-field">
+                    <label class="desc" id="title24" for="Field24">
+                      State
+                    </label>
+                    <div>
+                      <input id="Field24" name="Field24" type="text" class="field text medium" value="" maxlength="255" tabindex="5" onkeyup=""/>
+                    </div>
+                  </li>
+                  <li id="foli26" class="notranslate form-field">
+                    <label class="desc" id="title26" for="Field26">
+                      Email
+                    </label>
+                    <div>
+                      <input id="Field26" name="Field26" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="6" /> 
+                    </div>
+                  </li>
+                    <button class="button">Join the Conversation</button>
+                    <input id="idstamp" type="hidden" name="idstamp" value="KHrPZnNTvj9RHvqFq8Hfbyb7+Em3WAjEj5ECsWJAgKQ=">
+                </ul>
+            </form>
+          </div>
+        </div>
     </section>
 
+<!-- APP TEASERS -->
+
+  <div class="layout-semibreve">
+      <div class="heading">
+          <h2>Advisors</h2>
+      </div>
+      <ul class="layout-grid">
+          <!-- Not sure if there is an Offset class for layouts, so including an empty layout-crochet -->
+          <li class="layout-crotchet">
+              <div class="h-card profile-small">
+                  <h3 class="p-name profile-name">Breece Robertson</h3>
+                  <img class="u-photo profile-photo" src="../../media/images/trails/breece-robertson.jpg" />
+                  <div class="p-note profile-note">
+                      <p>Breece Robertson is the National Geographic Information Systems (GIS) director for The Trust for Public Land. Robertson joined The Trust for Public Land in 2001 to create a comprehensive, coordinated GIS program. Today she provides leadership for the organization’s Conservation Vision and GIS service—the leading provider of “Land for People” science in the country—managing a cutting-edge team of GIS staff and consultants nationwide.</p>
+                      <p><a href="http://www.tpl.org/breece-robertson">More</a></p>
+                  </div><!-- .note -->
+              </div><!-- .vcard -->
+          </li>
+          <li class="layout-crotchet">
+              <div class="h-card profile-small">
+                  <h3 class="p-name profile-name">Larry Orman</h3>
+                  <img class="u-photo profile-photo" src="../../media/images/trails/larry-orman.jpg" />
+                  <div class="p-note profile-note">
+                      <p>Larry created GreenInfo Network in 1996 because he was passionate about the importance of compelling visual images for advocacy, policy and public education.  As GreenInfo's Executive Director, Larry develops projects and partnerships, and loves explaining to people the cool things that the amazing GreenInfo staff can do for them.  He also works directly on planning, analysis and communication projects for clients, helping them use the power of computer mapping and information visualization to make a stronger impact on the world.</p>
+                      <p><a href="http://www.greeninfo.org/about/staff/larry-orman">More</a></p>
+                  </div><!-- .note -->
+              </div><!-- .vcard -->
+          </li>
+          <li class="layout-crotchet">
+              <div class="h-card profile-small">
+                  <h3 class="p-name profile-name">Dan Rademacher</h3>
+                  <img class="u-photo profile-photo" src="../../media/images/trails/dan-rademacher.jpg" />
+                  <div class="p-note profile-note">
+                      <p>Dan Rademacher joined <a href="http://stamen.com">Stamen</a> as project manager in summer 2013. He lives by checklists and calendars, even on weekends. He’s a cofounder of Nerds for Nature, where he leads the grassroots bioblitz program. For a decade, he was the make-it-happen guy at <a href="http://baynature.org/#">Bay Nature Institute</a>. Before that, he did a stint as a custom cabinetmaker and narrowly escaped getting a PhD in literary criticism from UC Berkeley. He has been known to leave his laptop and actually hike outdoors.</p>
+                      <p><a href="http://stamen.com/studio/dan">More</a></p>
+                  </div><!-- .note -->
+              </div><!-- .vcard -->
+          </li>
+      </ul>
+  </div>
+
+  <div class="layout-semibreve">
+      <div class="heading">
+          <h2>Ecosystem</h2>
+      </div>
+      <h4>Contributors</h4>
+  </br>
+      <nav class="list-credits" role="navigation">
+          <ul>
+              <li><a href="http://www.summitmetroparks.org/Home.aspx">Metro Parks, Serving Summit County</a></li>
+              <li><a href="http://www.clevelandmetroparks.com/Main/Home.aspx">Cleveland Metroparks</a></li>
+              <li><a href="http://www.nps.gov/cuva/index.htm">Cuyahoga Valley National Park</a></li>
+              <li><a href="https://co.summitoh.net/">County of Summit</a></li>
+              <li><a href="http://www.mytwinsburg.com/">City of Twinsburg</a></li>
+              <li><a href="http://www.starkparks.com/">Stark County Park District</a></li>
+          </ul>
+      </nav>
+  </br>
+
+    <h4>Apps and Outcomes</h4>
+  </br>
+      <ul class="teasers">
+          <li class="layout-crotchet">
+              <article class="teaser teaser-app">
+                  <header class="teaser-header">
+                      <a href="/apps/to-the-trails/">
+                          <h1 class="teaser-title">To The Trails</h1>
+                      </a>
+                  </header>
+                  <div class="teaser-body">
+                      <p>To The Trails is a responsive web application that helps citizens find official information on any trail from multiple jurisdictions, on any device they use.</p>
+
+                      <p><a href="/apps/to-the-trails/">Learn more about this app</a></p>
+                  </div>
+                  <footer class="teaser-footer">
+                      <a href="promptly/" class="teaser-masthead">
+                          <img class="teaser-image" src="../../media/images/apps/to-the-trails.jpg" />
+                      </a>
+                  </footer>
+              </article>
+          </li>
+          <li class="layout-crotchet">
+              <article class="teaser teaser-app">
+                  <header class="teaser-header">
+                      <a href="http://www.transitandtrails.org/">
+                          <h1 class="teaser-title">Transit & Trails</h1>
+                      </a>
+                  </header>
+                  <div class="teaser-body">
+                      <p>Transit and Trails connects you to parks and open spaces by helping you Find, Plan and Share your outdoor adventures. You can locate trailheads near you (or any location) and we help you get there on public transportation or get the directions you need to walk, bike, or drive there.</p>
+
+                      <p><a href="http://www.transitandtrails.org/">Learn more about this app</a></p>
+                  </div>
+                  <footer class="teaser-footer">
+                      <a href="http://www.transitandtrails.org/" class="teaser-masthead">
+                          <img class="teaser-image" src="../../media/images/trails/transit-and-trails.jpg" />
+                      </a>
+                  </footer>
+              </article>
+          </li>
+          <li class="layout-crotchet">
+              <article class="teaser teaser-app">
+                  <header class="teaser-header">
+                      <a href="http://www.outerspatial.com/">
+                          <h1 class="teaser-title">Outer Spatial</h1>
+                      </a>
+                  </header>
+                  <div class="teaser-body">
+                      <p>OuterSpatial is the platform to manage your outdoor data, improve your websites and even build your own amazing outdoor applications.</p>
+
+                      <p><a href="http://www.outerspatial.com/">Learn more about this platform</a></p>
+                  </div>
+                  <footer class="teaser-footer">
+                      <a href="http://www.outerspatial.com/" class="teaser-masthead">
+                          <img class="teaser-image" src="../../media/images/trails/outer-spatial.jpg" />
+                      </a>
+                  </footer>
+              </article>
+          </li>
+      </ul>
+  </div>
+
+<!-- Eventually, we will want to list a number of partners. This is where, for example, the Trust for Public Land and other domain experts could be listed, alongside technology partners like ESRI.  -->
+<!-- <div class="layout-semibreve">
+    <h4>Partners</h4>
+    <ul class="list-logos muted">
+        <li><a href="#"><img src="../../media/images/logo-microsoft.png"/></a></li>
+        <li><a href="#"><img src="../../media/images/logo-microsoft.png"/></a></li>
+    </ul>
+</div> -->
+
+
+<div class="layout-semibreve">
+    <div class="heading">
+        <h2 id="specification">The Specification (Alpha)</h2>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">trailsegments.geojson</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Min-width to get field names on one line. -->
+                <th style="min-width:125px">Geometry</th>
+                <td style="min-width:125px">Linestring or MultiLineString</td>
+                <td>Yes</td>
+                <td>The geometry object which describes the trail segment, per the data type as defined in the <a href="http://geojson.org/geojson-spec.html">geoJSON specification.</a></td>
+                <td><i>n/a</i></td>
+            </tr>
+            <tr>
+                <th>internalId</th>
+                <td>integer</td>
+                <td>Yes</td>
+                <td>A unique identifier assigned by the data producer. The “Named Trails” described in namedTrails.geojson are constructed with arrays of trail segments, identified via this field.</td>
+                <td><i>n/a</i></td>
+            </tr>
+            <tr>
+                <th>stewardId</th>
+                <td>integer</td>
+                <td>yes</td>
+                <td>id of agency or organization responsible for trail maintenance, regulation, and safety.</td>
+                <td><i>n/a</i></td>
+            </tr>
+            <tr>
+                <th>name</th>
+                <td>string</td>
+                <td>no</td>
+                <td>Some segments have proper names of their own. This allows data providers to name segments, which are in turn accepted in OpenStreetMap</td>
+                <td><i>n/a</i></td>
+            </tr>
+            <tr>
+                <th>highway</th>
+                <td>string</td>
+                <td>yes</td>
+                <td>An OSM-compliant attribute that determine whether a path is treated as a “trail”.</td>
+                <td>"path"</td>
+            </tr>
+            <tr>
+                <th>motorVehicles</th>
+                <td>string</td>
+                <td>no</td>
+                <td>A judgement as to the appropriate use of OHV, ATVs, and snowmobiles on this trail segment.</td>
+                <td>"yes", "no", "permissive", "designated"</td>
+            </tr>
+            <tr>
+                <th>foot</th>
+                <td>string</td>
+                <td>no</td>
+                <td>Indicates whether walking and hiking is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
+                <td>"yes", "no", "permissive", "designated"</td>
+            </tr>
+            <tr>
+                <th>bicycle</th>
+                <td>string</td>
+                <td>no</td>
+                <td>Indicates whether general bicycling is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
+                <td>"yes", "no", "permissive", "designated"</td>
+            </tr>
+            <tr>
+                <th>horse</th>
+                <td>string</td>
+                <td>no</td>
+                <td>Indicates whether horseback riding or equestrian travel is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
+                <td>"yes", "no", "permissive", "designated"</td>
+            </tr>
+            <tr>
+                <th>ski</th>
+                <td>string</td>
+                <td>no</td>
+                <td>Indicates whether over-land or cross-country skiing is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
+                <td>"yes", "no", "permissive", "designated"</td>
+            </tr>
+            <tr>
+                <th>wheelchair</th>
+                <td>string</td>
+                <td>no</td>
+                <td>Indicates whether this trail segment is considered wheelchair accessible. This field is derived from OpenStreetMap conventions. Other attributes that describe accessibility can be included in the 'osmTags" field.</td>
+                <td>"yes", "no", "permissive", "designated"</td>
+            </tr>
+            <tr>
+                <th>osmTags</th>
+                <td>array of strings</td>
+                <td>no</td>
+                <td>This field is designed to incorporate a fungible number of key-value pairs that describe segments within OpenStreetMap. Anticipated use of this field includes the incorporation of keys such as "width", "surface" and "mtnbike".</td>
+                <td><i>n/a</i></td>
+            </tr>
+        </tbody>
+    </table>
+    <pre style="max-width: 1160px" class="language-javascript">
+        <code>
+        {
+          "features": [
+            {
+              "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                  [
+                    [
+                      -81.3986609010412,
+                      41.3067320548566
+                    ],
+                    [
+                      -81.3987877452747,
+                      41.3067730383564
+                    ],
+                  ],
+                  [
+                    [
+                      -81.3994766512574,
+                      41.3090831352151
+                    ],
+                    [
+                      -81.3996247786554,
+                      41.3093354395257
+                    ],
+                  ]
+                ]
+              },
+              "type": "Feature",
+              "properties": {
+                "horse": null,
+                "bicycle": "yes",
+                "osmTags": [],
+                "wheelchair": null,
+                "motorVehicles": null,
+                "foot": "yes",
+                "ski": "no",
+                "id": 2846,
+                "stewardId": 1
+              }
+            },
+        </code>
+    </pre>
+    </br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">namedtrails.csv</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Min-width to get field names on one line. -->
+                <th style="min-width:125px">name</th>
+                <td style="min-width:125px">string</td>
+                <td>Yes</td>
+                <td>The proper name of the trail, as advertised to visitors and public communications.</td>
+            </tr>
+            <tr>
+                <th>segmentIds</th>
+                <td>array of strings</td>
+                <td>Yes</td>
+                <td>An array of IDs, which allows applications to construct "Named Trails" from a collection of one or more trail segment geometries.</td>
+            </tr>
+            <tr>
+                <th>id</th>
+                <td>integer</td>
+                <td>Yes</td>
+                <td>A unique identifier assigned by the data producer.</td>
+            </tr>
+            <tr>
+                <th>descriptn</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>This is the primary field for narrative descriptions of a Named Trail, and the experience or features a visitor might expect to encounter.</td>
+            </tr>
+            <tr>
+                <th>dsgnations</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>This field allows for data contributors to indicate whether a given trail has been bestowed with particular nationl, state or local designations or distinctions.</td>
+            </tr>
+            <tr>
+                <th>partOf</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail.</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre style="max-width: 1160px"  class="language-javascript">
+      <code>
+        <table>
+          <tbody>
+            <tr>
+              <td title="Field #1">name</td>
+              <td title="Field #2">descriptn</td>
+              <td title="Field #3">segmentIds</td>
+              <td title="Field #4">dsgnations</td>
+              <td title="Field #5">partOf</td>
+              <td title="Field #6">id</td>
+            </tr>
+          <tbody>
+            <tr>
+              <td>Adam Run Trail</td>
+              <td>One of tde park district&#39;s most demanding hikes; forms a sort of figure eight with Spring Hollow Trail. Travels through ravines and over streams.</td>
+              <td>2869</td>
+              <td></td>
+              <td></td>
+              <td align="right">391</td>
+            </tr>
+            <tr>
+              <td>Akron Northside Connector to the Towpath Trail</td>
+              <td> </td>
+              <td>3272</td>
+              <td></td>
+              <td></td>
+              <td align="right">921</td>
+            </tr>
+            <tr>
+              <td>Boston Run Trail</td>
+              <td>This unpaved loop trail is mostly wooded, featuring stands of grey-barked beech trees and a ravine of hemlocks. It twice crosses the tributary of the Cuyahoga River for which the trail is named. The length and moderate hills make this a good choice for intermediate-level cross-country skiers and runners. Watch for birds that prefer mature forests. </td>
+              <td>3131,3129,3128,3130</td>
+              <td></td>
+              <td></td>
+              <td align="right">833</td>
+            </tr>
+          </tbody>
+        </table>
+      </code>
+    </pre>
+    </br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">trailheads.geojson</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Min-width to get field names on one line. -->
+                <th style="min-width:125px">geometry</th>
+                <td style="min-width:125px">string</td>
+                <td>Yes</td>
+                <td>The point geometry object which describes the trail segment, per the data type as defined in the geoJSON specification.</td>
+            </tr>
+            <tr>
+                <th>name</th>
+                <td>array of strings</td>
+                <td>Yes</td>
+                <td>The public name of the trailhead, as advertised to visitors.</td>
+            </tr>
+            <tr>
+                <th>trailIds</th>
+                <td>integer</td>
+                <td>Yes</td>
+                <td>A collection of IDs for Named Trails (match to "id" in namedtrails.json), each representing a trail that can be accessed via this trailhead.</td>
+            </tr>
+            <tr>
+                <th>stewardIds</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>A collection of IDs for Stewards (match to "id" stewards.json), representing each agency or organization responsive to visitor concerns or inquiries about this trailhead.</td>
+            </tr>
+            <tr>
+                <th>parkName</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>A collection of park names that visitors should associate with each trailhead. These park names currently exist independently from other aspects of the specification.</td>
+            </tr>
+            <tr>
+                <th>address</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>The street address, if one exists, that is associated with this trialhead.</td>
+            </tr>
+            <tr>
+                <th>parking</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>An indication as to whether visitors can expect to find automobile park at or immediately adjacent to this trailhead.</td>
+            </tr>
+            <tr>
+                <th>drinkwater</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>An indication as to whether visitors can expect to find drinking water available at or immediately adjacent to this trailhead.</td>
+            </tr>
+            <tr>
+                <th>restrooms</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>An indication as to whether visitors can expect to find restrooms at or immediately adjacent to this trailhead.</td>
+            </tr>
+            <tr>
+                <th>kiosk</th>
+                <td>array of string</td>
+                <td>No</td>
+                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail.</td>
+            </tr>
+            <tr>
+                <th>osmTags</th>
+                <td>array of strings</td>
+                <td>no</td>
+                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties.</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre style="max-width: 1160px" class="language-javascript">
+        <code>
+        {
+          "features": [
+            {
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -81.5159895393422,
+                  41.0897054407411
+                ]
+              },
+              "type": "Feature",
+              "properties": {
+                "parkName": "CVNP",
+                "name": "Akron Northside Station",
+                "trailIds": [
+                  921,
+                  877
+                ],
+                "address": "Howard Street",
+                "kiosk": "y",
+                "drinkwater": "n",
+                "restrooms": "y",
+                "parking": "y",
+                "osmTags": "[],
+                "id": 936,
+                "stewardId": [
+                  1
+                ]
+              }
+            },
+          }
+        </code>
+    </pre>
+    </br>
+    </br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">stewards.csv</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Min-width to get field names on one line. -->
+                <th style="min-width:125px">name</th>
+                <td style="min-width:125px">string</td>
+                <td>Yes</td>
+                <td>Name of agency or organization responsible for trail maintenance, regulation, and safety.</td>
+            </tr>
+            <tr>
+                <th>id</th>
+                <td>integer</td>
+                <td>Yes</td>
+                <td>A unique ID for this land steward organization.</td>
+            </tr>
+            <tr>
+                <th>url</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>HTTP link to information about the steward organization.</td>
+            </tr>
+            <tr>
+                <th>phone</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>Phone number that can be provided to the visiting public, so they may solicit assistance and report problems.</td>
+            </tr>
+            <tr>
+                <th>address</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>A description of the trailhead’s location. Mailing addresses are preferred.</td>
+            </tr>
+            <tr>
+                <th>publisher</th>
+                <td>boolean</td>
+                <td>Yes</td>
+                <td>Is this steward the publisher and point of contact of this data?</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre style="max-width: 1160px" class="language-javascript">
+      <code>
+        <table>
+          <tbody>
+            <tr>
+              <td title="Field #1">name</td>
+              <td title="Field #2">url</td>
+              <td title="Field #3">phone</td>
+              <td title="Field #4">address</td>
+              <td title="Field #5">publisher</td>
+              <td title="Field #6">id</td>
+            </tr>
+            <tr>
+              <td>Metro Parks, Serving Summit County</td>
+              <td>http://www.summitmetroparks.org/</td>
+              <td>330-867-5511</td>
+              <td> </td>
+              <td>no</td>
+              <td align="right">1</td>
+            </tr>
+            <tr>
+              <td>Cleveland Metroparks</td>
+              <td>http://clevelandmetroparks.com</td>
+              <td>216-635-3200</td>
+              <td> </td>
+              <td>no</td>
+              <td align="right">3</td>
+            </tr>
+            <tr>
+              <td>Cuyahoga Valley National Park</td>
+              <td>http://www.nps.gov/cuva/</td>
+              <td>330-657-2752</td>
+              <td> </td>
+              <td>yes</td>
+              <td align="right">4</td>
+            </tr>
+          </tbody>
+        </table>
+      </code>
+    </pre>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">areas.geojson</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Min-width to get field names on one line. -->
+                <th style="min-width:125px">geometry</th>
+                <td style="min-width:125px">polygon or multipolygon</td>
+                <td>Yes</td>
+                <td>The geometry of the area.</td>
+            </tr>
+            <tr>
+                <th>name</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>The official or publicly-advertised name of the land area.</td>
+            </tr>
+            <tr>
+                <th>id</th>
+                <td>integer</td>
+                <td>Yes</td>
+                <td>A unique ID for this land area, which can be referenced.</td>
+            </tr>
+            <tr>
+                <th>stewardId</th>
+                <td>string</td>
+                <td>Yes</td>
+                <td>This unique ID associates each land area with the primary steward responsible for visitors within its boundaries.</td>
+            </tr>
+            <tr>
+                <th>url</th>
+                <td>string</td>
+                <td>No</td>
+                <td>HTTP link to information specifically about this land area.</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre style="max-width: 1160px" class="language-javascript">
+        <code>
+        {
+          "features": [
+            {
+              "geometry": {
+                "type": "polygon",
+                "coordinates": [
+                  [
+                    [
+                      -81.3986609010412,
+                      41.3067320548566
+                    ],
+                    [
+                      -81.3987877452747,
+                      41.3067730383564
+                    ],
+                  ],
+                  [
+                    [
+                      -81.3994766512574,
+                      41.3090831352151
+                    ],
+                    [
+                      -81.3996247786554,
+                      41.3093354395257
+                    ],
+                  ]
+                ]
+              },
+              "type": "Feature",
+              "properties": {
+                "name": "Lakeside Park",
+                "id": 2333,
+                "stewardId": 1,
+                "url": nulll
+              }
+            }
+          ]
+        }
+        </code>
+    </pre>
 </div>
+<!-- THE FOOOTER -->
+
+<div class="global-footer" id="global-footer">
+    
+    <div class="layout-breve layout-tight">
+    
+        <div class="search-global">
+            <input type="search" placeholder="Search" />
+        </div>
+    
+        <nav class="nav-footer" role="navigation">
+            <ul>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Home</a></li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">About</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Donors</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Fellows</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Timeline</a></li>
+                        <li><a href="#">Process</a></li>
+                        <li><a href="#">Apply</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Cities</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Kansas City, MO</a></li>
+                        <li><a href="#">Kansas City, KS</a></li>
+                        <li><a href="#">Las Vegas, NV</a></li>
+                        <li><a href="#">Louisville, KY</a></li>
+                        <li><a href="#">New York City, NY</a></li>
+                        <li><a href="#">Oakland, CA</a></li>
+                        <li><a href="#">San Francisco, CA</a></li>
+                        <li><a href="#">San Mateo County, CA</a></li>
+                        <li><a href="#">South Bend, IN</a></li>
+                        <li><a href="#">Summit County, OH</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Donate</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Financial Contributions</a></li>
+                        <li><a href="#">In-Kind Donations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-tier1"><a class="nav-heading" href="#">Social</a>
+                    <ul class="nav-tier2">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+</div>
+
+
+<!-- min-width for first th element in order to keep field names on one line -->
