@@ -1,0 +1,93 @@
+blockquote {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2,
+.h2 {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h3,
+.h3 {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h4,
+.h4 {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.heading-contrast strong {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.masthead p {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+}
+
+/* @group highlight */
+.highlight {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.highlight blockquote {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.post .post-content > p:first-child:first-letter {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.post-preview .post-content > p:first-child:first-letter {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.billboard {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+}
+
+.stat .stat-figure {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.teaser .teaser-title {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+}
+
+.text-feature {
+  font-family: "adelle", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
