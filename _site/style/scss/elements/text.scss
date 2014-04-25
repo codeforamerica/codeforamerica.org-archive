@@ -116,6 +116,7 @@ blockquote {
     }
 
 blockquote p {
+    font-size: 1em;
     line-height: 1.3em;
     }
 
@@ -133,7 +134,7 @@ main figure > a:active {
     }
 
 figcaption {
-    @include rem(font-size, 14px);
+    @include rem(font-size, 15px);
     @include rem(margin, 5px 0 15px);
     @include rem(line-height, 19px);
     }

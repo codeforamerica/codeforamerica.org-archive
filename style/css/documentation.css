@@ -519,6 +519,7 @@ blockquote {
   }
 }
 blockquote p {
+  font-size: 1em;
   line-height: 1.3em;
 }
 
@@ -536,8 +537,8 @@ main figure > a:active {
 }
 
 figcaption {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   margin: 5px 0 15px;
   margin: 0.3125rem 0 0.9375rem;
   line-height: 19px;
@@ -4719,8 +4720,8 @@ section,
 
 .teaser-body,
 .teaser-body p {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 19px;
   line-height: 1.1875rem;
 }
