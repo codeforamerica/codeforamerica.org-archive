@@ -46,6 +46,7 @@ p,
 ul,
 ol,
 dl {
+    @include rem(font-size, 17px);
     @include rem(line-height, 27px);
     margin: 1em 0;
     }
@@ -132,7 +133,7 @@ main figure > a:active {
     }
 
 figcaption {
-    @include rem(font-size, 14px);
+    @include rem(font-size, 15px);
     @include rem(margin, 5px 0 15px);
     @include rem(line-height, 19px);
     }

@@ -48,6 +48,8 @@ p,
 ul,
 ol,
 dl {
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 27px;
   line-height: 1.6875rem;
   margin: 1em 0;
