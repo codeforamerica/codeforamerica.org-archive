@@ -2525,7 +2525,7 @@ input.button-s,
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/_media/images/masthead/masthead-2.jpg");
+  background-image: url("../images/masthead-2.jpg");
   content: "";
   max-width: none;
   width: 100%;
@@ -3802,11 +3802,13 @@ nav ul li {
   letter-spacing: -0.5px;
 }
 
+/*
 @media (min-width: 60em) {
-  .post-content blockquote {
-    margin-left: -43%;
-  }
+    .post-content blockquote {
+        margin-left: -43%;
+    }
 }
+*/
 .post-author .profile-photo {
   width: 60px;
   height: 60px;
