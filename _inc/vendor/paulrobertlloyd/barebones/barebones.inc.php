@@ -120,7 +120,7 @@ function displayPatterns($dir) {
                     echo "    <h3 class=\"xx-section-title\">".$fPlain."</h3>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html' && $ff != 'head.html') { // Skip non-HTML files
                     echo "<div class=\"pattern\" id=\"".$fName."\">\n";
                     echo "    <details class=\"pattern-details\">\n";
                     echo "    <summary class=\"pattern-name\">".$fName." <a class=\"pattern-link\" rel=\"bookmark\" href=\"".$styleguidePath."?url=".$pathToFile."/".$ff."\" title=\"View just this pattern\">#</a></summary>\n";
@@ -163,7 +163,7 @@ function displayOptions($dir) {
                     echo "    <option value=\"#".$fName."\">".$fPlain."</option>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html' && $ff != 'head.html') { // Skip non-HTML files
                     echo "    <option value=\"#".$fName."\">&#160;&#160;&#160;&#160;".$fName."</option>\n";
                 }
             }
@@ -202,7 +202,7 @@ function displayList($dir) {
                     echo "<li><a href=\"#".$fName."\">$fPlain</a>\n";
                 }
             } else { // If sub section
-                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html') { // Skip non-HTML files
+                if(pathinfo($ff,PATHINFO_EXTENSION) == 'html' && $ff != 'foot.html' && $ff != 'head.html') { // Skip non-HTML files
                     echo "    <li><a href=\"#".$fName."\">".$fName."</a></li>\n";
                 }
             }
