@@ -1,4 +1,4 @@
-all: style/css/main.css style/css/layout.css style/css/cfa-light.css
+all: style/css/main.css style/css/layout.css style/css/cfa-light.css style/css/documentation.css
 
 style/css/main.css: \
         style/scss/base/color-scheme.scss style/scss/base/icons.scss \
@@ -35,6 +35,15 @@ style/css/main.css: \
         style/scss/patterns/wodge-large.scss style/scss/patterns/wodge-small.scss \
         style/scss/patterns/wodge.scss style/scss/templates/documentation.scss
 	sass -qf -t expanded -E utf-8 style/scss/main.scss style/css/main.css
+
+#
+# style/scss/templates/documentation.scss actually depends on all of main.scss,
+# but we can use main.css as a pre-requisite here to lazily imply all that.
+#
+style/css/documentation.css: \
+        style/scss/templates/documentation.scss \
+        style/css/main.css
+	sass -qf -t expanded -E utf-8 style/scss/documentation.scss style/css/documentation.css
 
 style/css/layout.css: \
         style/scss/global/layout.scss \
