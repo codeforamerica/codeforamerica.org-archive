@@ -1,4 +1,4 @@
-all: style/css/main.css style/css/layout.css
+all: style/css/main.css style/css/layout.css style/css/cfa-light.css
 
 style/css/main.css: \
         style/scss/base/color-scheme.scss style/scss/base/icons.scss \
@@ -41,3 +41,19 @@ style/css/layout.css: \
         style/scss/layout.scss \
         style/scss/layout.scss
 	sass -qf -t expanded -E utf-8 style/scss/layout.scss style/css/layout.css
+
+style/css/cfa-light.css: \
+        style/scss/base/typography.scss style/scss/base/color-scheme.scss \
+        style/scss/elements/text.scss style/scss/elements/headings.scss \
+        style/scss/elements/links.scss style/scss/elements/media.scss \
+        style/scss/elements/tables.scss style/scss/elements/forms.scss \
+        style/scss/patterns/text-whisper.scss style/scss/patterns/heading-contrast.scss \
+        style/scss/patterns/heading.scss style/scss/patterns/alert.scss \
+        style/scss/patterns/button.scss style/scss/patterns/blurb.scss \
+        style/scss/patterns/masthead.scss style/scss/patterns/highlight.scss \
+        style/scss/patterns/lists.scss style/scss/patterns/slabs.scss \
+        style/scss/patterns/spacing.scss style/scss/patterns/spotlight.scss \
+        style/scss/patterns/text-styles.scss style/scss/global/footer.scss \
+        style/scss/global/no-layout.scss \
+        style/scss/cfa-light.scss
+	sass -qf -t expanded -E utf-8 style/scss/cfa-light.scss style/css/cfa-light.css
