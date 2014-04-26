@@ -393,7 +393,7 @@
 
 /*  Elements ––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -499,7 +499,7 @@ blockquote {
   border-color: #e5e5e5;
   margin: 0;
   padding: 0.5em 5%;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -562,7 +562,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -573,7 +573,7 @@ h6 {
 h1,
 .h1 {
   line-height: 1.2em;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -599,7 +599,7 @@ h1 sup,
 
 h2,
 .h2 {
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -632,7 +632,7 @@ h3,
 .h3 {
   font-size: 25px;
   font-size: 1.5625rem;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -657,7 +657,7 @@ h4,
 .h4 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -673,7 +673,7 @@ h4,
 h5,
 .h5 {
   font-size: 17px;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   text-transform: uppercase;
 }
 
@@ -699,7 +699,7 @@ input.button-invert,
   margin: 0;
   margin: 0 0 15px 0;
   margin: 0 0 0.9375rem 0;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.8em;
@@ -915,7 +915,7 @@ select {
   border-color: #999595;
   border-color: rgba(153, 149, 149, 0.7);
   margin-bottom: 1em;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 input,
@@ -1069,7 +1069,7 @@ input.button-invert,
 }
 
 .heading-contrast strong {
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -1300,7 +1300,7 @@ button[disabled]:active,
   color: white;
   display: inline-block;
   font-weight: normal;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   height: 40px;
   min-width: auto;
   overflow: visible;
@@ -1915,7 +1915,7 @@ input.button-s,
 }
 
 .brick-text {
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   color: black;
@@ -2076,7 +2076,7 @@ input.button-s,
 .calendar .calendar-heading {
   margin-bottom: 0;
   text-transform: uppercase;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 25px;
   font-size: 1.5625rem;
 }
@@ -2546,7 +2546,7 @@ input.button-s,
 }
 
 .masthead p {
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 35px;
@@ -2686,7 +2686,7 @@ input.button-s,
   padding: 1em 2%;
   font-size: 1.5em;
   position: relative;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -2697,7 +2697,7 @@ input.button-s,
   border: none;
   padding: 0;
   color: white;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -2723,7 +2723,7 @@ input.button-s,
 
 .highlight .attribute {
   text-transform: uppercase;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 0.7em;
   font-weight: 400;
 }
@@ -2981,7 +2981,7 @@ input.button-s,
   line-height: 1rem;
   position: relative;
   clear: both;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 400;
   font-style: normal;
 }
@@ -3040,7 +3040,7 @@ input.button-s,
   display: table;
   width: 100%;
   color: #cf1b41;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -3056,7 +3056,7 @@ input.button-s,
 .list-social a:focus,
 .list-social a:active {
   color: #cf1b41;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -3474,7 +3474,7 @@ nav ul li {
 .nav-global-secondary li {
   border: none;
   vertical-align: top;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
 }
@@ -3799,7 +3799,7 @@ nav ul li {
   line-height: 1em;
   margin: 0;
   padding: 0 0.15em 0 0;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -3860,7 +3860,7 @@ nav ul li {
   line-height: 1em;
   margin: 0;
   padding: 0 0.15em 0 0;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -3944,7 +3944,7 @@ nav ul li {
   font-size: 1.375rem;
   margin-bottom: 4px;
   margin-bottom: 0.25rem;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
 }
@@ -3953,7 +3953,7 @@ nav ul li {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #cf1b41;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -4016,7 +4016,7 @@ nav ul li {
   border-radius: 5px;
   border-radius: 0.3125rem;
   display: block;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   text-align: center;
   display: block;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
@@ -4085,7 +4085,7 @@ nav ul li {
   float: right;
   text-transform: uppercase;
   color: black;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   font-size: 1.2em;
@@ -4572,7 +4572,7 @@ section,
   font-size: 30px;
   font-size: 1.875rem;
   color: black;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -4640,7 +4640,7 @@ section,
   line-height: 18px;
   line-height: 1.125rem;
   text-transform: none;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   letter-spacing: inherit;
 }
 
@@ -4701,7 +4701,7 @@ section,
   margin: 0.3125rem 0.9375rem;
   font-size: 11px;
   font-size: 0.6875rem;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   color: black;
   display: block;
   text-transform: uppercase;
@@ -4807,7 +4807,7 @@ section,
   font-size: 3.125rem;
   margin: 0 0 15px 0;
   margin: 0 0 0.9375rem 0;
-  font-family: "Belizio", "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-family: "Belizio", "Georgia", Times, sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
@@ -5535,7 +5535,7 @@ body {
   padding: 0;
   margin: 0;
   display: none;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 .js .xx-options .xx-nav {
@@ -5589,7 +5589,7 @@ body {
 
 .xx-title {
   margin-bottom: 1em;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -5621,7 +5621,7 @@ body {
 }
 
 .xx-section-title {
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   margin: 1em 0 1em;
@@ -5734,7 +5734,7 @@ body {
   margin: 0 1em 0 0;
   font-size: 0.8em;
   clear: both;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 @media (min-width: 70em) {
@@ -5764,7 +5764,7 @@ body {
 }
 
 .pattern-name {
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-size: 16px;
   text-transform: none;
   margin: 0;
@@ -5824,7 +5824,7 @@ body {
   font-size: 13px;
   white-space: pre-line;
   line-height: 1.4em;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Interstate", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 .pattern-preview {
