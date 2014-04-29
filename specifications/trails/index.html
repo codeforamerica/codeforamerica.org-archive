@@ -88,7 +88,7 @@
 <div class="masthead masthead-xl">
   <header class="layout-semibreve masthead-header">
     <h1 id="story-title" class="page-title">Public Land and Trail Specification</a></h1>
-    <p id="story-content">Parks and trails are a cornerstone of public health and quality of life. Now public lands anywhere can be more easily accessed with this open data format.</p>
+    <p id="story-content">Parks and trails are a cornerstone of public health and quality of life. This open data format helps citizens get outdoors to enjoy them.</p>
     <a href="#specification" class="text-whisper button">Read the Specification</a>
   </header>
 </div>
@@ -154,7 +154,7 @@
         
         <header class="post-header isolate">
             <time class="post-date insulate text-whisper" datetime="{{ page.date }}">April 15, 2014</time>
-            <h2 class="post-title">Public Data for Public Lands</h2>
+            <h2 class="post-title">Open Data for Public Lands</h2>
         </header>
         
         <div class="post-author">
@@ -170,9 +170,11 @@
             <div class="post-content">
                 <p>Americans have inherited a vast and spectacular landscape. Through the efforts of citizens and governments throughout the 20th century, today Americans are the equal-owners of some 785 million acres of public land.</p>
 
-                <p>Today, Code for America is expanding this collaboration to include stewards across the country. The "Public Land and Trail Specification" aims to empower stewards to easily share open data between one another and the visiting public. After all, Northeast Ohio isn't the only region where information about public lands is fragmented. Thousands of the stewards care for our land, ranging from Federal agencies, state subdivisions, and cities to special districts, trusts, and non-profits.</p>
+                <p>Working with a group of Code for America fellows, a coalition of parks in Northeast Ohio has developed an open data format for visitor information about trails and the public lands they traverse. With <b>PLATS</b>, the Coalition can speak with one voice to their 8 million annual visitors. PLATS data is designed to help them share their data with one another as well, offering a web and developer friendly format for use in apps like <a href="http://codeforamerica.org/apps/to-the-trails">To The Trails</a> and <a href="http://www.transitandtrails.org/">Transit & Trails</a>, and platforms like <a href="http://www.outerspatial.com/">Outer Spatial</a> and <a href="http://cartodb.com/">CartoDB</a>.</p>
 
-                <a href="http://www.codeforamerica.org/blog/2014/04/23/open-data-for-our-public-lands/">Read this post</a>
+                <p>Today, Code for America is expanding this collaboration to include stewards anywhere. Literally thousands of the organizations care for our land, ranging from Federal agencies, state subdivisions, and cities to special districts, trusts, and non-profits. The "Public Land and Trail Specification" aims to empower them all to easily share open data between one another and the visiting public.</p>
+
+                <a href="http://www.codeforamerica.org/blog/2014/04/23/open-data-for-our-public-lands/">Read the full post</a>
             </div>
         </div><!-- .post-body -->
         
@@ -195,8 +197,8 @@
             <h3 class="h4">The Request for Comment Period is Now Open</h3>
 
             <ul class="calendar-summary-events">
-                <li><strong>Tuesday, April 15th: </strong>Request for Comment Period Opens</li>
-                <li><strong>Friday, April 25th, 10am Pacific: </strong>Conference Call #1</li>
+                <li><strong><strike>Tuesday, April 15th: </strong>Request for Comment Period Opens</strike></li>
+                <li><strong><strike>Friday, April 25th, 10am Pacific: </strong>Conference Call #1</strike> Get in touch to read the minutes!</li>
                 <li><strong>Friday, May 9th, 10am Pacific: </strong>Conference Call #2</li>
                 <li><strong>Friday, May 17th: </strong>Request for Comment Period Closes</li>
                 <li><strong>Tuesday, June 10th: </strong>Webinar: How to Adopt PLATS in your Region</li>
@@ -304,7 +306,7 @@
                   <h3 class="p-name profile-name">Nate Goldman</h3>
                   <img class="u-photo profile-photo" src="../../media/images/trails/nate-goldman.jpg"/>
                   <div class="p-note profile-note">
-                      <p>Nate Goldman is a designer and developer at the <a href="http://pdx.esri.com/">Esri Portland R&D Center</a>. Esri PDX is a small research and development center located in Portland, OR. Our work focuses on building ArcGIS for Developers, creating tools to help developers use ArcGIS software and bring maps to mobile phones.</p>
+                      <p>Nate Goldman is a designer and developer at the <a href="http://pdx.esri.com/">Esri Portland R&D Center</a>. Esri PDX is a small research and development center located in Portland, OR. Their work focuses on building ArcGIS for Developers, creating tools to help developers use ArcGIS software and bring maps to mobile phones.</p>
                       <p><a href="http://pdx.esri.com/team/">More</a></p>
                   </div><!-- .note -->
               </div><!-- .vcard -->
@@ -353,6 +355,8 @@
               <li><a href="http://www.summitmetroparks.org/Home.aspx">Metro Parks, Serving Summit County</a></li>
               <li><a href="http://www.clevelandmetroparks.com/Main/Home.aspx">Cleveland Metroparks</a></li>
               <li><a href="http://www.nps.gov/cuva/index.htm">Cuyahoga Valley National Park</a></li>
+              <li><a href="https://www.conservancyforcvnp.org/">The Conservancy for CVNP</a></li>
+              <li><a href="http://www.ohioanderiecanalway.com/">The Ohio & Erie Canalway Coalition</a></li>
               <li><a href="https://co.summitoh.net/">County of Summit</a></li>
               <li><a href="http://www.mytwinsburg.com/">City of Twinsburg</a></li>
               <li><a href="http://www.starkparks.com/">Stark County Park District</a></li>
@@ -436,6 +440,7 @@
 <div class="layout-semibreve">
     <div class="heading">
         <h2 id="specification">The Specification (Alpha)</h2>
+        <h5><a href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit">Review the detailed technical documentation</a></h5>
     </div>
     <table>
         <thead>
@@ -838,7 +843,7 @@
                 <th>publisher</th>
                 <td>string</td>
                 <td>Yes</td>
-                <td>Is this steward the publisher and point of contact of this data?</td>
+                <td>Boolean-encoded string identifying whether the steward is the publisher of the data.</td>
             </tr>
         </tbody>
     </table>
