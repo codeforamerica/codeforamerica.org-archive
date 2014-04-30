@@ -143,51 +143,47 @@
 				            </tr>
 				        </tbody>
 				    </table>
-				    <pre class="language-javascript">
-				        <code class="language-javascript">
-				        {
-				          "type": "FeatureCollection",
-				          "features": [
-				            {
-				              "type": "Feature",
-				              "properties": {
-				                "id": "01",
-				                "stewardId": "1",
-				                "name": "",
-				                "vehicles": "no",
-				                "foot": "yes",
-				                "bicycle": "no",
-				                "horse": "no",
-				                "ski": "no",
-				                "wheelchair": "no",
-				                "osmTags": "surface=gravel; width=5"
-				              },
-				              "geometry": {
-				                "type": "LineString",
-				                "coordinates": [
-				                  [
-				                    -105.26275634765625,
-				                    43.24320200099953
-				                  ],
-				                  [
-				                    -105.71319580078125,
-				                    43.42100882994726
-				                  ],
-				                  [
-				                    -105.71319580078125,
-				                    43.44100882994726
-				                  ],
-				                  [
-				                    -105.68319580078125,
-				                    43.44100882994726
-				                  ]
-				                ]
-				              }
-				            },
-				          ]
-				        }
-				        </code>
-				    </pre>
+				    <pre class="language-json"><code class="language-json">{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "01",
+        "stewardId": "1",
+        "name": "",
+        "vehicles": "no",
+        "foot": "yes",
+        "bicycle": "no",
+        "horse": "no",
+        "ski": "no",
+        "wheelchair": "no",
+        "osmTags": "surface=gravel; width=5"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -105.26275634765625,
+            43.24320200099953
+          ],
+          [
+            -105.71319580078125,
+            43.42100882994726
+          ],
+          [
+            -105.71319580078125,
+            43.44100882994726
+          ],
+          [
+            -105.68319580078125,
+            43.44100882994726
+          ]
+        ]
+      }
+    },
+  ]
+}</code></pre>
 			    </section>
 			    <section id="namedtrails">
 			        <h2>namedtrails.csv</h2>
@@ -365,59 +361,55 @@
 				            </tr>
 				        </tbody>
 				    </table>
-				    <pre class="language-javascript">
-				        <code class="language-javascript">
-				        {
-				          "type": "FeatureCollection",
-				          "features": [
-				            {
-				              "type": "Feature",
-				              "properties": {
-				                "name": "Soutwest Trailhead",
-				                "trailIds": "1; 2"
-				                "stewardId": "2",
-				                "areaId": "2",
-				                "address": "",
-				                "parking": "yes",
-				                "drinkwater": "yes",
-				                "restrooms": "yes",
-				                "kiosk": "no",
-				                "osmTags":"natural=stone; natural=tree"
-				              },
-				              "geometry": {
-				                "type": "Point",
-				                "coordinates": [
-				                  -105.91644287109374,
-				                  43.35364335728179
-				                ]
-				              }
-				            },
-				            {
-				              "type": "Feature",
-				              "properties": {
-				                "name": "West Side Trailhead",
-				                "trailIds": "2"
-				                "stewardId": "2",
-				                "areaId": "2",
-				                "address": "",
-				                "parking": "yes",
-				                "drinkwater": "yes",
-				                "restrooms": "yes",
-				                "kiosk": "no",
-				                "osmTags":"natural=stone; natural=tree"
-				              },
-				              "geometry": {
-				                "type": "Point",
-				                "coordinates": [
-				                  -105.91506958007812,
-				                  43.47036259175014
-				                ]
-				              }
-				            },
-				          ]
-				        }
-				        </code>
-				    </pre>
+				    <pre class="language-json"><code class="language-json">{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Soutwest Trailhead",
+        "trailIds": "1; 2"
+        "stewardId": "2",
+        "areaId": "2",
+        "address": "",
+        "parking": "yes",
+        "drinkwater": "yes",
+        "restrooms": "yes",
+        "kiosk": "no",
+        "osmTags":"natural=stone; natural=tree"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.91644287109374,
+          43.35364335728179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Side Trailhead",
+        "trailIds": "2"
+        "stewardId": "2",
+        "areaId": "2",
+        "address": "",
+        "parking": "yes",
+        "drinkwater": "yes",
+        "restrooms": "yes",
+        "kiosk": "no",
+        "osmTags":"natural=stone; natural=tree"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.91506958007812,
+          43.47036259175014
+        ]
+      }
+    },
+  ]
+}</code></pre>
 			    </section>
 			    <section id="stewards">
 			    	<h2>stewards.csv</h2>
@@ -564,49 +556,45 @@
 				            </tr>
 				        </tbody>
 				    </table>
-				    <pre class="language-javascript">
-				        <code class="language-javascript">
-				        {
-				          "type": "FeatureCollection",
-				          "features": 
-				          [
-				            {
-				              "type": "Feature",
-				              "properties": {
-				                "name": "Local Park",
-				                "id": "1",
-				                "stewardId": "1",
-				                "url": "",
-				                "osmTags": "landuse=forest; boundary=administrative"
-				              },
-				              "geometry": {
-				                "type": "Polygon",
-				                "coordinates": [
-				                  [
-				                    [
-				                      -104.90432739257812,
-				                      43.21518500735673
-				                    ],
-				                    [
-				                      -105.39871215820312,
-				                      43.41103348412606
-				                    ],
-				                    [
-				                      -105.26275634765625,
-				                      43.24020079624684
-				                    ],
-				                    [
-				                      -104.90432739257812,
-				                      43.21518500735673
-				                    ]
-				                  ]
-				                ]
-				              }
-				            }
-				          ]
-				        }
-				      </code>
-				    </pre>
+				    <pre class="language-json"><code class="language-json">{
+  "type": "FeatureCollection",
+  "features": 
+  [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Local Park",
+        "id": "1",
+        "stewardId": "1",
+        "url": "",
+        "osmTags": "landuse=forest; boundary=administrative"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.90432739257812,
+              43.21518500735673
+            ],
+            [
+              -105.39871215820312,
+              43.41103348412606
+            ],
+            [
+              -105.26275634765625,
+              43.24020079624684
+            ],
+            [
+              -104.90432739257812,
+              43.21518500735673
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}</code></pre>
 				</section>
 			</main>
 		</div>
