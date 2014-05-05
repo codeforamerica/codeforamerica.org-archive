@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/main.css">
+    <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="http://style.codeforamerica.org/1/style/css/prism.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/layout.css" media="all">
+    <![endif]-->
+    <style type="text/css">
+        .masthead:before {
+            background-image: url('../../media/images/trails/trail-masthead.jpg');
+        }
+    .feature-action{
+      display:none;
+    }
+    @media (min-width: 40em) {
+      .feature-action{
+        margin-top:27px;
+        display: block;
+      }
+      .feature-action a{
+        float:right;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+  <div class="js-container">
+    <nav class="nav-global-primary">
+      <ul class="layout-breve layout-tight">
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="library/">Library</a></li>
+        <li>
+          <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+              <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+              <!-- consider applying autofocus="autofocus" to input -->
+              <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <div class="global-header-compact" role="banner">
+      <a href="" class="global-header-logo">
+          <img src="/assets/logo.png" />
+      </a>
+      <p class="global-header-tagline">Bringing together <strong>local governments</strong> and <strong>technologists</strong> <br />to make <strong>better cities for everyone</strong></p>
+      <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+
+    <nav class="nav-global-secondary">
+      <ul>
+        <li class="nav-tier1 nav-has-children">
+          <a href="about/">About</a>
+        </li>
+        <li class="nav-tier1 nav-has-children">
+          <a href="cities/">Governments</a>
+        </li>
+        <li class="nav-tier1 nav-has-children">
+          <a href="geeks/">Citizens</a>
+        </li>
+        <li class="nav-tier1">
+          <a href="apps/">Apps</a>
+        </li>
+        <li><a href="support-us/" class="button">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="masthead masthead-xl">
+    <header class="layout-semibreve masthead-header">
+      <h1 id="story-title" class="page-title">Public Land and Trail Specification</a></h1>
+      <p id="story-content">Parks and trails are a cornerstone of public health and quality of life. This open data format helps citizens get outdoors to enjoy them.</p>
+      <a href="spec.html" class="text-whisper button">Read the Specification</a>
+    </header>
+  </div>
+
+  <div class="global-header">
+    <a href="/" class="global-header-logo">
+        <img src="/assets/logo.png">
+    </a>
+    <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+    <nav class="nav-global-secondary">
+      <ul>
+        <li class="nav-tier1 nav-has-children">
+          <a href="/about">About</a>
+        </li>
+        <li class="nav-tier1 nav-has-children">
+          <a href="/cities" class="state-active">Governments</a>
+          <ul class="nav-tier2">
+            <li><a href="/cities/2014-cities">2014 Partners</a></li>
+            <li><a href="/cities/alumni">Alumni Partners</a></li>
+            <li><a href="/about/peernetwork">Peer Network</a></li>
+            <li><a href="/cities/data-standards-faq">Data Specifications</a></li>
+          </ul>
+        </li>
+        <li class="nav-tier1 nav-has-children">
+          <a href="/geeks">Citizens</a>
+        </li>
+        <li class="nav-tier1">
+          <a href="/apps">Apps</a>
+        </li>
+        <li><a href="/support-us" class="button">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main role="main">
+    <div class="layout-semibreve">
+        <article class="post-preview">
+            <header class="post-header isolate">
+                <time class="post-date insulate text-whisper" datetime="{{ page.date }}">April 15, 2014</time>
+                <h2 class="post-title">Open Data for Public Lands</h2>
+            </header>
+            <div class="post-author">
+                <h2 class="text-whisper layout-tight">Written by</h2>
+                <div class="h-card">
+                    <h3 class="p-name profile-name text-prominent" style="color: black;">Alan Williams, PLATS Facilitator</h3>
+                    <img class="u-photo profile-photo" src="../../media/images/people/alan-williams.jpg" />
+                </div>
+            </div>
+            <div class="post-body">
+              <div class="post-content">
+                  <p>Americans have inherited a vast and spectacular landscape. Through the efforts of citizens and governments throughout the 20th century, today Americans are the equal-owners of some 785 million acres of public land.</p>
+
+                  <p>Working with a group of Code for America fellows, a coalition of parks in Northeast Ohio has developed an open data format for visitor information about trails and the public lands they traverse. With <b>PLATS</b>, the Coalition can speak with one voice to their 8 million annual visitors. PLATS data is designed to help them share their data with one another as well, offering a web and developer friendly format for use in apps like <a href="http://codeforamerica.org/apps/to-the-trails">To The Trails</a> and <a href="http://www.transitandtrails.org/">Transit & Trails</a>, and platforms like <a href="http://www.outerspatial.com/">Outer Spatial</a> and <a href="http://cartodb.com/">CartoDB</a>.</p>
+
+                  <p>Today, Code for America is expanding this collaboration to include stewards anywhere. Literally thousands of the organizations care for our land, ranging from Federal agencies, state subdivisions, and cities to special districts, trusts, and non-profits. The "Public Land and Trail Specification" aims to empower them all to easily share open data between one another and the visiting public.</p>
+
+                  <a href="http://www.codeforamerica.org/blog/2014/04/23/open-data-for-our-public-lands/">Read the full post</a>
+              </div>
+          </div>
+      </article>
+      <ul class="list-inline list-no-bullets layout-centered"> 
+          <li><a href="/specifications/trails/spec.html" class="button">See the Spec</a></li>
+          <li><a href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit" class="button">Review Technical Documentation</a></li>
+  <!--         <li><a href="" class="button">Download Sample Data</a></li> -->
+          <li><a href="mailto:jack@codeforamerica.org" class="button">Share Your Data</a></li>
+      </ul>
+    </div>
+    <section class="slab-red">
+      <div class="layout-chimney-invert">
+        <div class="layout-minim">
+          <!-- Not sure why this is an h3 element with a class "h4", but I am leaving it as I found it. -->
+          <h3 class="h4">The Request for Comment Period is Now Open</h3>
+          <ul class="calendar-summary-events">
+              <li><strong><strike>Tuesday, April 15th: </strong>Request for Comment Period Opens</strike></li>
+              <li><strong><strike>Friday, April 25th, 10am Pacific: </strong>Conference Call #1</strike> Get in touch to read the minutes!</li>
+              <li><strong>Friday, May 9th, 10am Pacific: </strong>Conference Call #2</li>
+              <li><strong>Friday, May 17th: </strong>Request for Comment Period Closes</li>
+              <li><strong>Tuesday, June 10th: </strong>Webinar: How to Adopt PLATS in your Region</li>
+          </ul>
+        </div>
+        <div class="layout-minim slab-medium-red chimney">
+          <h3>Sign up to Comment on the Working Draft</h3>
+          <form class="sign-up" action="https://codeforamerica.wufoo.com/forms/z1jk38le1dysfvv/#public" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="">
+            <ul class="list-form">
+              <li id="foli15" class="notranslate form-field">
+                <label class="desc" id="title15" for="Field15">
+                Name
+                </label>
+                <div>
+                  <input id="Field15" name="Field15" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup=""/>
+                </div>
+              </li>
+              <li id="foli17" class="notranslate form-field">
+                <label class="desc" id="title17" for="Field17">
+                Your Preferred Title
+                </label>
+                <div>
+                  <input id="Field17" name="Field17" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup=""/>
+                </div>
+              </li>
+              <li id="foli21" class="notranslate form-field">
+                <label class="desc" id="title21" for="Field21">
+                City
+                </label>
+                <div>
+                  <input id="Field21" name="Field21" type="text" class="field text medium" value="" maxlength="255" tabindex="4" onkeyup=""/>
+                </div>
+              </li>
+              <li id="foli24" class="notranslate form-field">
+                <label class="desc" id="title24" for="Field24">
+                  State
+                </label>
+                <div>
+                  <input id="Field24" name="Field24" type="text" class="field text medium" value="" maxlength="255" tabindex="5" onkeyup=""/>
+                </div>
+              </li>
+              <li id="foli26" class="notranslate form-field">
+                <label class="desc" id="title26" for="Field26">
+                  Email
+                </label>
+                <div>
+                  <input id="Field26" name="Field26" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="6" /> 
+                </div>
+              </li>
+              <li id="foli28" class="notranslate">
+                <fieldset>
+                  <legend id="title28" class="desc">How can we help? Let us know how you would like to get involved.</legend>
+                  <div>
+                    <span>
+                      <input style="width:10%;display:inline-block;vertical-align:none;padding-top:5px;"id="Field28" name="Field28" type="checkbox" class="field checkbox" value="I own the data, and I want to to open it." tabindex="7" />
+                      <label style="width:80%;display:inline-block;margin:5px 0;"  class="choice" for="Field28">I own the data and want to open it.</label>
+                    </span>
+                  <br>
+                    <span>
+                      <input style="width:10%;display:inline-block;vertical-align:none;padding-top:5px;" id="Field29" name="Field29" type="checkbox" class="field checkbox" value="I don&#039;t own the data, but I want tools to advocate for PLATS in my region" tabindex="8" />
+                      <label style="width:80%;display:inline-block;margin:5px 0;" class="choice" for="Field29">I don't own the data, but I want tools to advocate for PLATS in my region</label>
+                    </span>
+                  <br>
+                    <span>
+                      <input style="width:10%;display:inline-block;vertical-align:none;padding-top:5px;" id="Field30" name="Field30" type="checkbox" class="field checkbox" value="I want to participate in the Request for Comment period" tabindex="9" />
+                      <label style="width:80%;display:inline-block;margin:5px 0;" class="choice" for="Field30">I want to participate in the Request for Comment period</label>
+                    </span>
+                  <br>
+                    <span>
+                      <input style="width:10%;display:inline-block;vertical-align:none;padding-top:5px;" id="Field31" name="Field31" type="checkbox" class="field checkbox" value="Join webinar on how to implement PLATS" tabindex="10" />
+                      <label style="width:80%;display:inline-block;margin:5px 0;" class="choice" for="Field31">Join webinar on how to implement PLATS</label>
+                    </span>
+                  </div>
+                </fieldset>
+              </li>
+                <button class="button">Join the Conversation</button>
+                <input id="idstamp" type="hidden" name="idstamp" value="KHrPZnNTvj9RHvqFq8Hfbyb7+Em3WAjEj5ECsWJAgKQ=">
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="layout-semibreve">
+      <div class="heading">
+          <h2>Advisors</h2>
+      </div>
+      <ul class="layout-grid">
+        <!-- Not sure if there is an Offset class for layouts, so including an empty layout-crochet -->
+        <li class="layout-crotchet">
+            <div class="h-card profile-small">
+                <h3 class="p-name profile-name">Breece Robertson</h3>
+                <img class="u-photo profile-photo" src="../../media/images/trails/breece-robertson.jpg" />
+                <div class="p-note profile-note">
+                    <p>Breece Robertson is the National Geographic Information Systems (GIS) director for The <a href="http://www.tpl.org/">Trust for Public Land</a>. Robertson joined The Trust for Public Land in 2001 to create a comprehensive, coordinated GIS program. Today she provides leadership for the organization’s Conservation Vision and GIS service—the leading provider of “Land for People” science in the country—managing a cutting-edge team of GIS staff and consultants nationwide.</p>
+                    <p><a href="http://www.tpl.org/breece-robertson">More</a></p>
+                </div><!-- .note -->
+            </div><!-- .vcard -->
+        </li>
+        <li class="layout-crotchet">
+            <div class="h-card profile-small">
+                <h3 class="p-name profile-name">Nate Goldman</h3>
+                <img class="u-photo profile-photo" src="../../media/images/trails/nate-goldman.jpg"/>
+                <div class="p-note profile-note">
+                    <p>Nate Goldman is a designer and developer at the <a href="http://pdx.esri.com/">Esri Portland R&D Center</a>. Esri PDX is a small research and development center located in Portland, OR. Their work focuses on building ArcGIS for Developers, creating tools to help developers use ArcGIS software and bring maps to mobile phones.</p>
+                    <p><a href="http://pdx.esri.com/team/">More</a></p>
+                </div><!-- .note -->
+            </div><!-- .vcard -->
+        </li>
+        <li class="layout-crotchet">
+            <div class="h-card profile-small">
+                <h3 class="p-name profile-name">Larry Orman</h3>
+                <img class="u-photo profile-photo" src="../../media/images/trails/larry-orman.jpg" />
+                <div class="p-note profile-note">
+                    <p>Larry created <a href="http://www.greeninfo.org/">GreenInfo Network</a> in 1996 because he was passionate about the importance of compelling visual images for advocacy, policy and public education.  As GreenInfo's Executive Director, Larry develops projects and partnerships, and loves explaining to people the cool things that the amazing GreenInfo staff can do for them.  He also works directly on planning, analysis and communication projects for clients, helping them use the power of computer mapping and information visualization to make a stronger impact on the world.</p>
+                    <p><a href="http://www.greeninfo.org/about/staff/larry-orman">More</a></p>
+                </div><!-- .note -->
+            </div><!-- .vcard -->
+        </li>
+        <li class="layout-crotchet">
+            <div class="h-card profile-small">
+                <h3 class="p-name profile-name">Dan Rademacher</h3>
+                <img class="u-photo profile-photo" src="../../media/images/trails/dan-rademacher.jpg" />
+                <div class="p-note profile-note">
+                    <p>Dan Rademacher joined <a href="http://stamen.com">Stamen</a> as project manager in summer 2013. He lives by checklists and calendars, even on weekends. He’s a cofounder of Nerds for Nature, where he leads the grassroots bioblitz program. For a decade, he was the make-it-happen guy at <a href="http://baynature.org/#">Bay Nature Institute</a>. Before that, he did a stint as a custom cabinetmaker and narrowly escaped getting a PhD in literary criticism from UC Berkeley. He has been known to leave his laptop and actually hike outdoors.</p>
+                    <p><a href="http://stamen.com/studio/dan">More</a></p>
+                </div><!-- .note -->
+            </div><!-- .vcard -->
+        </li>
+        <li class="layout-crotchet">
+            <div class="h-card profile-small">
+                <h3 class="p-name profile-name">Ryan Branciforte</h3>
+                <img class="u-photo profile-photo" src="../../media/images/trails/ryan-branciforte.jpg" />
+                <div class="p-note profile-note">
+                      <p>Ryan has always had a passion for using technology to do good conservation work and get people outside. After starting his career with the National Park Service, he was fortunate to spend years at GreenInfo Network learning why good data is so important! Until late 2013, he lead programs at the <a href="http://openspacecouncil.org/">Bay Area Open Space Council</a> where in 2008 he cofounded <a href="http://www.transitandtrails.org/">Transit & Trails</a>. Most recently, Ryan cofounded <a href="http://www.trailheadlabs.com/">Trailhead Labs</a> where an amazing team is focused on building innovative technologies that connect people with the outdoors.</p>
+                    <p><a href="http://www.trailheadlabs.com/">More</a></p>
+                </div><!-- .note -->
+            </div><!-- .vcard -->
+        </li>
+      </ul>
+    </div>
+    <div class="layout-semibreve">
+      <div class="heading">
+          <h2>Ecosystem</h2>
+      </div>
+      <h4>Contributors</h4>
+      <br>
+      <nav class="list-credits" role="navigation">
+          <ul>
+              <li><a href="http://www.summitmetroparks.org/Home.aspx">Metro Parks, Serving Summit County</a></li>
+              <li><a href="http://www.clevelandmetroparks.com/Main/Home.aspx">Cleveland Metroparks</a></li>
+              <li><a href="http://www.nps.gov/cuva/index.htm">Cuyahoga Valley National Park</a></li>
+              <li><a href="https://www.conservancyforcvnp.org/">The Conservancy for CVNP</a></li>
+              <li><a href="http://www.ohioanderiecanalway.com/">The Ohio & Erie Canalway Coalition</a></li>
+              <li><a href="https://co.summitoh.net/">County of Summit</a></li>
+              <li><a href="http://www.mytwinsburg.com/">City of Twinsburg</a></li>
+              <li><a href="http://www.starkparks.com/">Stark County Park District</a></li>
+          </ul>
+      </nav>
+      <br>
+      <h4>Apps and Outcomes</h4>
+      <br>
+      <ul class="teasers">
+        <li class="layout-crotchet">
+          <article class="teaser teaser-app">
+            <header class="teaser-header">
+              <a href="/apps/to-the-trails/">
+                <h1 class="teaser-title">To The Trails</h1>
+              </a>
+            </header>
+            <div class="teaser-body">
+              <p>To The Trails is a responsive web application that helps citizens find official information on any trail from multiple jurisdictions, on any device they use.</p>
+              <p><a href="/apps/to-the-trails/">Learn more about this app</a></p>
+            </div>
+            <footer class="teaser-footer">
+              <a href="promptly/" class="teaser-masthead">
+                <img class="teaser-image" src="../../media/images/apps/to-the-trails.jpg" />
+              </a>
+            </footer>
+          </article>
+        </li>
+        <li class="layout-crotchet">
+          <article class="teaser teaser-app">
+            <header class="teaser-header">
+              <a href="http://www.transitandtrails.org/">
+                <h1 class="teaser-title">Transit & Trails</h1>
+              </a>
+            </header>
+            <div class="teaser-body">
+              <p>Transit and Trails connects you to parks and open spaces by helping you Find, Plan and Share your outdoor adventures. You can locate trailheads near you (or any location) and we help you get there on public transportation or get the directions you need to walk, bike, or drive there.</p>
+              <p><a href="http://www.transitandtrails.org/">Learn more about this app</a></p>
+            </div>
+            <footer class="teaser-footer">
+              <a href="http://www.transitandtrails.org/" class="teaser-masthead">
+                <img class="teaser-image" src="../../media/images/trails/transit-and-trails.jpg" />
+              </a>
+            </footer>
+          </article>
+        </li>
+        <li class="layout-crotchet">
+          <article class="teaser teaser-app">
+            <header class="teaser-header">
+              <a href="http://www.outerspatial.com/">
+                <h1 class="teaser-title">Outer Spatial</h1>
+              </a>
+            </header>
+            <div class="teaser-body">
+              <p>OuterSpatial is the platform to manage your outdoor data, improve your websites and even build your own amazing outdoor applications.</p>
+              <p><a href="http://www.outerspatial.com/">Learn more about this platform</a></p>
+            </div>
+            <footer class="teaser-footer">
+              <a href="http://www.outerspatial.com/" class="teaser-masthead">
+                  <img class="teaser-image" src="../../media/images/trails/outer-spatial.jpg" />
+              </a>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="global-footer" id="global-footer">
+      <div class="layout-breve layout-tight">
+        <div class="search-global">
+          <input type="search" placeholder="Search" />
+        </div>
+        <nav class="nav-footer" role="navigation">
+          <ul>
+            <li class="nav-tier1"><a class="nav-heading" href="#">Home</a></li>
+            <li class="nav-tier1"><a class="nav-heading" href="#">About</a>
+              <ul class="nav-tier2">
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Donors</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </li>
+            <li class="nav-tier1"><a class="nav-heading" href="#">Fellows</a>
+              <ul class="nav-tier2">
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Apply</a></li>
+              </ul>
+            </li>
+            <li class="nav-tier1"><a class="nav-heading" href="#">Cities</a>
+              <ul class="nav-tier2">
+                <li><a href="#">Kansas City, MO</a></li>
+                <li><a href="#">Kansas City, KS</a></li>
+                <li><a href="#">Las Vegas, NV</a></li>
+                <li><a href="#">Louisville, KY</a></li>
+                <li><a href="#">New York City, NY</a></li>
+                <li><a href="#">Oakland, CA</a></li>
+                <li><a href="#">San Francisco, CA</a></li>
+                <li><a href="#">San Mateo County, CA</a></li>
+                <li><a href="#">South Bend, IN</a></li>
+                <li><a href="#">Summit County, OH</a></li>
+              </ul>
+            </li>
+            <li class="nav-tier1"><a class="nav-heading" href="#">Donate</a>
+              <ul class="nav-tier2">
+                <li><a href="#">Financial Contributions</a></li>
+                <li><a href="#">In-Kind Donations</a></li>
+              </ul>
+            </li>
+            <li class="nav-tier1"><a class="nav-heading" href="#">Social</a>
+              <ul class="nav-tier2">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">RSS</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- THE FOOOTER -->
+
+
+
+<!-- min-width for first th element in order to keep field names on one line -->
