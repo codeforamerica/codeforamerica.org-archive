@@ -12,45 +12,73 @@ nav-breadcrumbs:
     <h2 class="isolate">Citizens have the power to help their cities.</h2>
     <h4>Join us in</h4>
 
-        <nav class="list-credits">
-          <ul id="fade-content">
-            <li><a href="http://www.betanyc.org/">New York</a></li>
-            <li><a href="http://www.codeforphilly.org/">Philadelphia</a></li>
-            <li><a href="http://www.meetup.com/Code-for-Boston/">Boston</a></li>
-            <li><a href="http://codeforseattle.org/">Seattle</a></li>
-            <li><a href="http://www.meetup.com/Code-for-San-Francisco-Civic-Hack-Night/">San Francisco</a></li>
-            <li><a href="http://codefordc.org/">DC</a></li>
-            <li><a href="http://openoakland.org/">Oakland</a></li>
-            <li><a href="http://opengovhacknight.org/">Chicago</a></li>
-            <li><a href="https://www.facebook.com/CodeForDetroit">Detroit</a></li>
-            <li><a href="http://www.open-austin.org/">Austin</a></li>
-            <li><a href="http://codeforsandiego.org/">San Diego</a></li>
-            <li><a href="http://www.meetup.com/cfabrigade/Lexington-KY/">Lexington</a></li>
-            <li><a href="http://www.meetup.com/Colorado-Code-for-Communities/">Denver</a></li>
-            <li><a href="https://www.facebook.com/code4maine">Maine</a></li>
-            <li><a href="http://www.meetup.com/Arlington-Code-Shop/">Arlington</a></li>
-            <li><a href="http://www.opentwincities.org/">Twin Cities</a></li>
-            <li><a href="http://www.codeforsacramento.org/">Sacramento</a></li>
-            <li><a href="http://codeforhouston.com/">Houston</a></li>
-            <li><a href="http://codeforhamptonroads.org/">Hampton Roads</a></li>
-            <li><a href="https://plus.google.com/communities/116866725555175272325">Honolulu</a></li>
-            <li><a href="http://friendlycode.org/">Grand Rapids</a></li>
-            <li><a href="http://www.meetup.com/Code-for-Asheville/">Asheville</a></li>
-            <li><a href="http://www.meetup.com/Triangle-Code-for-America/">Durham</a></li>
-            <li><a href="http://www.meetup.com/Triangle-Code-for-America/">Cary</a></li>
-            <li><a href="http://codeforbtv.org/">Burlington</a></li>
-            <li><a href="http://opensaltlake.org/">Salt Lake City</a></li>
-            <li><a href="http://codefortulsa.org/">Tulsa</a></li>
-            <li><a href="http://www.meetup.com/cfabrigade/Anchorage-AK/">Anchorage</a></li>
-            <li><a href="http://codeformiami.org/">Miami</a></li>
-            <li><a href="https://plus.google.com/u/0/communities/102062378630945793665?cfem=1/">Raleigh</a></li>
-            <li><a href="http://www.codeforamerica.org/cities/lasvegas/">Las Vegas</a></li>
-            <li><a href="http://www.hackmichiana.org/">South Bend</a></li>
-            <li><a href="http://www.meetup.com/KCBrigade/">Kansas City</a></li>
-          </ul>
-        </nav>
+        <div id="fade" class="fade fade-toggle">
+          <nav class="list-credits">
+            <ul id="fade-content" class="fade-content">
+              <script>
+              request = new XMLHttpRequest();
+              request.open('GET', 'http://codeforamerica.org/api/organizations.geojson', true);
 
-    <p class="isolate text-whisper"><a href="http://brigade.codeforamerica.org/brigades">See all cities</a></p>
+              request.onload = function() {
+                if (request.status >= 200 && request.status < 400){
+                  // Success!
+                  data = JSON.parse(request.responseText);
+                  var brigades = data.features;
+                  var brigadesList = document.getElementById("fade-content");
+                  brigadesList.innerHTML = "";
+                  for (var i = 0; i < brigades.length; i++) {
+                    brigadesList.innerHTML += "<li><a href="+brigades[i].properties.website+">"+brigades[i].properties.name+"</a></li>";
+                  }
+                } else {
+                  // We reached our target server, but it returned an error
+
+                }
+              };
+
+              request.onerror = function() {
+                // There was a connection error of some sort
+              };
+
+              request.send();
+              </script>
+              <li><a href="http://www.betanyc.org/">New York</a></li>
+              <li><a href="http://www.codeforphilly.org/">Philadelphia</a></li>
+              <li><a href="http://www.meetup.com/Code-for-Boston/">Boston</a></li>
+              <li><a href="http://codeforseattle.org/">Seattle</a></li>
+              <li><a href="http://www.meetup.com/Code-for-San-Francisco-Civic-Hack-Night/">San Francisco</a></li>
+              <li><a href="http://codefordc.org/">DC</a></li>
+              <li><a href="http://openoakland.org/">Oakland</a></li>
+              <li><a href="http://opengovhacknight.org/">Chicago</a></li>
+              <li><a href="https://www.facebook.com/CodeForDetroit">Detroit</a></li>
+              <li><a href="http://www.open-austin.org/">Austin</a></li>
+              <li><a href="http://codeforsandiego.org/">San Diego</a></li>
+              <li><a href="http://www.meetup.com/cfabrigade/Lexington-KY/">Lexington</a></li>
+              <li><a href="http://www.meetup.com/Colorado-Code-for-Communities/">Denver</a></li>
+              <li><a href="https://www.facebook.com/code4maine">Maine</a></li>
+              <li><a href="http://www.meetup.com/Arlington-Code-Shop/">Arlington</a></li>
+              <li><a href="http://www.opentwincities.org/">Twin Cities</a></li>
+              <li><a href="http://www.codeforsacramento.org/">Sacramento</a></li>
+              <li><a href="http://codeforhouston.com/">Houston</a></li>
+              <li><a href="http://codeforhamptonroads.org/">Hampton Roads</a></li>
+              <li><a href="https://plus.google.com/communities/116866725555175272325">Honolulu</a></li>
+              <li><a href="http://friendlycode.org/">Grand Rapids</a></li>
+              <li><a href="http://www.meetup.com/Code-for-Asheville/">Asheville</a></li>
+              <li><a href="http://www.meetup.com/Triangle-Code-for-America/">Durham</a></li>
+              <li><a href="http://www.meetup.com/Triangle-Code-for-America/">Cary</a></li>
+              <li><a href="http://codeforbtv.org/">Burlington</a></li>
+              <li><a href="http://opensaltlake.org/">Salt Lake City</a></li>
+              <li><a href="http://codefortulsa.org/">Tulsa</a></li>
+              <li><a href="http://www.meetup.com/cfabrigade/Anchorage-AK/">Anchorage</a></li>
+              <li><a href="http://codeformiami.org/">Miami</a></li>
+              <li><a href="https://plus.google.com/u/0/communities/102062378630945793665?cfem=1/">Raleigh</a></li>
+              <li><a href="http://www.codeforamerica.org/cities/lasvegas/">Las Vegas</a></li>
+              <li><a href="http://www.hackmichiana.org/">South Bend</a></li>
+              <li><a href="http://www.meetup.com/KCBrigade/">Kansas City</a></li>
+            </ul>
+          </nav>
+        </div>
+
+    <p class="isolate text-whisper"><a href="#" id="fade-activate" class="fade-activate">See all cities</a></p>
 
     <p class="isolate text-whisper">If you are not based in the US, visit our <a href="../about/international">International Page</a> for program details.</p>
 
