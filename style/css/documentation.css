@@ -2964,7 +2964,7 @@ input.button-s,
 }
 
 .list-credits li:after {
-  content: "–";
+  content: "– ";
 }
 
 .list-credits li:last-child:after {
