@@ -1250,9 +1250,9 @@ input[type="button"][disabled]:hover,
 input[type="submit"][disabled]:hover,
 button[disabled]:hover,
 .button-disabled:hover,
-.button.button-disabled:hover:focus,
-.button.button-disabled:hover:active,
+.button.button-disabled:hover,
 .button-progress:hover,
+input.button-progress:hover,
 .button:focus,
 .button-prominent:focus,
 .button-neutral:focus,
@@ -1263,9 +1263,9 @@ input[type="button"][disabled]:focus,
 input[type="submit"][disabled]:focus,
 button[disabled]:focus,
 .button-disabled:focus,
-.button.button-disabled:focus:hover,
-.button.button-disabled:focus:active,
+.button.button-disabled:focus,
 .button-progress:focus,
+input.button-progress:focus,
 .button:active,
 .button-prominent:active,
 .button-neutral:active,
@@ -1276,9 +1276,9 @@ input[type="button"][disabled]:active,
 input[type="submit"][disabled]:active,
 button[disabled]:active,
 .button-disabled:active,
-.button.button-disabled:active:hover,
-.button.button-disabled:active:focus,
-.button-progress:active {
+.button.button-disabled:active,
+.button-progress:active,
+input.button-progress:active {
   padding: 0 26px;
   padding: 0 1.625rem;
   margin: 0 8px 4px 0;
@@ -1413,9 +1413,9 @@ input[type="button"][disabled]:hover,
 input[type="submit"][disabled]:hover,
 button[disabled]:hover,
 .button-disabled:hover,
-.button.button-disabled:hover:focus,
-.button.button-disabled:hover:active,
+.button.button-disabled:hover,
 .button-progress:hover,
+input.button-progress:hover,
 .button:focus,
 .button-prominent:focus,
 .button-neutral:focus,
@@ -1426,9 +1426,9 @@ input[type="button"][disabled]:focus,
 input[type="submit"][disabled]:focus,
 button[disabled]:focus,
 .button-disabled:focus,
-.button.button-disabled:focus:hover,
-.button.button-disabled:focus:active,
+.button.button-disabled:focus,
 .button-progress:focus,
+input.button-progress:focus,
 input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
@@ -1448,9 +1448,9 @@ input[type="button"][disabled]:active,
 input[type="submit"][disabled]:active,
 button[disabled]:active,
 .button-disabled:active,
-.button.button-disabled:active:hover,
-.button.button-disabled:active:focus,
+.button.button-disabled:active,
 .button-progress:active,
+input.button-progress:active,
 input[type="submit"]:active {
   background-color: #399fd3;
 }
@@ -1690,24 +1690,24 @@ button.button-disabled[disabled],
 .button-disabled.button:focus,
 .button-disabled.button:active,
 input.button-disabled.button-progress,
-.button.button-disabled:hover,
 input.button-disabled[type="button"][disabled]:hover,
 input.button-disabled[type="submit"][disabled]:hover,
+button.button-disabled[disabled]:hover,
 .button-disabled:hover,
-.button-disabled.button:hover:focus,
-.button-disabled.button:hover:active,
-.button.button-disabled:focus,
+.button-disabled.button:hover,
+input.button-disabled.button-progress:hover,
 input.button-disabled[type="button"][disabled]:focus,
 input.button-disabled[type="submit"][disabled]:focus,
+button.button-disabled[disabled]:focus,
 .button-disabled:focus,
-.button-disabled.button:focus:hover,
-.button-disabled.button:focus:active,
-.button.button-disabled:active,
+.button-disabled.button:focus,
+input.button-disabled.button-progress:focus,
 input.button-disabled[type="button"][disabled]:active,
 input.button-disabled[type="submit"][disabled]:active,
+button.button-disabled[disabled]:active,
 .button-disabled:active,
-.button-disabled.button:active:hover,
-.button-disabled.button:active:focus {
+.button-disabled.button:active,
+input.button-disabled.button-progress:active {
   background-color: #e5e5e5;
   cursor: not-allowed;
   text-shadow: none;
@@ -2961,11 +2961,10 @@ input.button-s,
 .list-credits a {
   text-align: center;
   color: #399fd3;
-  text-transform: uppercase;
 }
 
 .list-credits li:after {
-  content: "-";
+  content: "–";
 }
 
 .list-credits li:last-child:after {
@@ -4224,7 +4223,8 @@ section,
   color: white;
 }
 
-.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link, .slab-red a.button-invert:link, .slab-red a.brick-heading:link, .slab-red .brick a.badge-heading:link, .brick .slab-red a.badge-heading:link, .slab-red .chimney .profile a.profile-role:link, .chimney .profile .slab-red a.profile-role:link, .slab-red .chimney .profile a.profile-note:link, .chimney .profile .slab-red a.profile-note:link, .slab-red a.global-header-tagline:link,
+.slab-red a.text-whisper:link, .slab-red a.heading-contrast:link,
+.slab-red a.button-invert:link, .slab-red a.brick-heading:link, .slab-red .brick a.badge-heading:link, .brick .slab-red a.badge-heading:link, .slab-red .chimney .profile a.profile-role:link, .chimney .profile .slab-red a.profile-role:link, .slab-red .chimney .profile a.profile-note:link, .chimney .profile .slab-red a.profile-note:link, .slab-red a.global-header-tagline:link,
 .slab-red a.text-whisper:visited,
 .slab-red a.heading-contrast:visited,
 .slab-red a.button-invert:visited,
@@ -4275,7 +4275,8 @@ section,
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover, .slab-red a.button-invert:hover, .slab-red a.brick-heading:hover, .slab-red .brick a.badge-heading:hover, .brick .slab-red a.badge-heading:hover, .slab-red .chimney .profile a.profile-role:hover, .chimney .profile .slab-red a.profile-role:hover, .slab-red .chimney .profile a.profile-note:hover, .chimney .profile .slab-red a.profile-note:hover, .slab-red a.global-header-tagline:hover,
+.slab-red a.text-whisper:hover, .slab-red a.heading-contrast:hover,
+.slab-red a.button-invert:hover, .slab-red a.brick-heading:hover, .slab-red .brick a.badge-heading:hover, .brick .slab-red a.badge-heading:hover, .slab-red .chimney .profile a.profile-role:hover, .chimney .profile .slab-red a.profile-role:hover, .slab-red .chimney .profile a.profile-note:hover, .chimney .profile .slab-red a.profile-note:hover, .slab-red a.global-header-tagline:hover,
 .slab-red a.text-whisper:focus,
 .slab-red a.heading-contrast:focus,
 .slab-red a.button-invert:focus,
