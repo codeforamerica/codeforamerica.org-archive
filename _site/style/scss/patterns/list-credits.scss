@@ -14,11 +14,11 @@
 .list-credits a {
     text-align: center;
     @include color($color-blue, 1);
-    text-transform: uppercase;
+    // text-transform: uppercase;
     }
 
 .list-credits li:after {
-    content: ("-");
+    content: ("– ");
     }
 
 .list-credits li:last-child:after {
