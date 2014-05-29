@@ -1,0 +1,64 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Michael Santus</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Office Manager</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/michael-santus.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	    Michael is the go-to and behind-the-scenes guy that works to make everything happen in the office. On any given day you will find him running around the office making sure everything is running smoothly.
+	    
+	    Michael Santus joined Code for America in December 2011. Originally from Philadelphia, PA he wanted to escape the harsh weather and tame the Wild West. In February 1995 he shipped his car and bought a one-way ticket to Los Angeles.  He began his diverse service-oriented career almost immediately and spent several years learning and managing the back-of-the-house for the Pasadena Holiday Inn, managed the customer service department for a financial planning practice within Lincoln Financial Group and most recently was the Operations Manager for the largest classic, exotic and antique consignment car dealer in the USA where he managed the operations of its four Bay Area dealerships. 
+
+As his motto, have luggage will travel, alludes to he travels as much as possible.  Not much grass grows under his feet. When he’s not taking care of the folks at Code for America he runs three of his own side businesses - managing several vacation rental properties, performing auto appraisals on classic, exotic and high-end vehicle as well as professional automotive and real estate photography. 
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/paboynca">@paboynca</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/michaelsantus">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>michaelsantus</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Michael Santus</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/michael-santus.jpg">
+
+    <div class="p-note profile-note">
+        <p>Office Manager</p>
+
+        <p>Michael Santus joined Code for America in December 2011. Originally from Philadelphia, PA he wanted to escape the harsh weather and tame the Wild West. In February 1995 he shipped his car and bought a one-way ticket to Los Angeles.  He began his diverse service-oriented career almost...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/michael-santus/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/michaelsantus">LinkedIn</a></li>
+            <li class="social-github"><a href="https://github.com/msantus">GitHub</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/paboynca">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
