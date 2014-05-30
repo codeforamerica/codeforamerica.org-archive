@@ -26,7 +26,7 @@
 	<body style="background:none">
 		<div class="layout-semibreve">
 			<header class="heading">
-				<h1>Public Land and Trail Specification</h1>
+				<h1>Open Trail System Specification</h1>
 			</header>
 		    <div class="layout-minor">
 				<a class="button" href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit">Read Working Draft</a>
@@ -72,7 +72,7 @@
 				                <td><i>n/a</i></td>
 				            </tr>
 				            <tr>
-				                <th>stewardId</th>
+				                <th>steward_id</th>
 				                <td>string</td>
 				                <td>yes</td>
 				                <td>id of agency or organization responsible for trail maintenance, regulation, and safety.</td>
@@ -86,14 +86,7 @@
 				                <td><i>n/a</i></td>
 				            </tr>
 				            <tr>
-				                <th>highway</th>
-				                <td>string</td>
-				                <td>yes</td>
-				                <td>An OSM-compliant attribute that determine whether a path is treated as a “trail”.</td>
-				                <td>"path"</td>
-				            </tr>
-				            <tr>
-				                <th>vehicles</th>
+				                <th>motor_vehicles</th>
 				                <td>string</td>
 				                <td></td>
 				                <td>A judgement as to the appropriate use of OHV, ATVs, and snowmobiles on this trail segment.</td>
@@ -135,10 +128,10 @@
 				                <td>"yes", "no", "permissive", "designated"</td>
 				            </tr>
 				            <tr>
-				                <th>osmTags</th>
+				                <th>osm_tags</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe segments within OpenStreetMap. Anticipated use of this field includes the incorporation of keys such as "width", "surface" and "mtnbike".</td>
+				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe segments within OpenStreetMap. Anticipated use of this field includes the incorporation of sets of keys to describe common trail taxonomies and attributes. See the working draft for more information.</td>
 				                <td><i>n/a</i></td>
 				            </tr>
 				        </tbody>
@@ -152,7 +145,7 @@
 				              "type": "Feature",
 				              "properties": {
 				                "id": "01",
-				                "stewardId": "1",
+				                "steward_id": "1",
 				                "name": "",
 				                "vehicles": "no",
 				                "foot": "yes",
@@ -160,7 +153,7 @@
 				                "horse": "no",
 				                "ski": "no",
 				                "wheelchair": "no",
-				                "osmTags": "surface=gravel; width=5"
+				                "osm_tags": "surface=gravel; width=5"
 				              },
 				              "geometry": {
 				                "type": "LineString",
@@ -210,7 +203,7 @@
 				                <td>The proper name of the trail, as advertised to visitors and public communications.</td>
 				            </tr>
 				            <tr>
-				                <th>segmentIds</th>
+				                <th>segment_ids</th>
 				                <td>string-encoded array</td>
 				                <td>yes</td>
 				                <td>An array of IDs, which allows applications to construct "Named Trails" from a collection of one or more trail segment geometries.</td>
@@ -222,22 +215,16 @@
 				                <td>A unique identifier assigned by the data producer.</td>
 				            </tr>
 				            <tr>
-				                <th>descriptn</th>
+				                <th>description</th>
 				                <td>string</td>
 				                <td>yes</td>
 				                <td>This is the primary field for narrative descriptions of a Named Trail, and the experience or features a visitor might expect to encounter.</td>
 				            </tr>
 				            <tr>
-				                <th>dsgnations</th>
+				                <th>part_of</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field allows for data contributors to indicate whether a given trail has been bestowed with particular nationl, state or local designations or distinctions.</td>
-				            </tr>
-				            <tr>
-				                <th>partOf</th>
-				                <td>string-encoded array</td>
-				                <td></td>
-				                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail.</td>
+				                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail. See the working draft for more information about encoding.</td>
 				            </tr>
 				        </tbody>
 				    </table>
@@ -247,34 +234,30 @@
 				          <tbody>
 				            <tr>
 				              <td title="Field #1">name</td>
-				              <td title="Field #2">descriptn</td>
-				              <td title="Field #3">segmentIds</td>
-				              <td title="Field #4">dsgnations</td>
-				              <td title="Field #5">partOf</td>
+				              <td title="Field #2">description</td>
+				              <td title="Field #3">segment_ids</td>
+				              <td title="Field #5">part_of</td>
 				              <td title="Field #6">id</td>
 				            </tr>
 				          <tbody>
 				            <tr>
 				              <td>Oak Trail</td>
 				              <td>One of tde park district&#39;s most demanding hikes; forms a sort of figure eight with Spring Hollow Trail. Travels through ravines and over streams.</td>
-				              <td>01; 02</td>
-				              <td></td>
+				              <td>01;02</td>
 				              <td></td>
 				              <td align="right">11</td>
 				            </tr>
 				            <tr>
 				              <td>Elm Trail</td>
 				              <td> </td>
-				              <td>011; 09; 08</td>
-				              <td></td>
+				              <td>011;09;08</td>
 				              <td></td>
 				              <td align="right">92</td>
 				            </tr>
 				            <tr>
-				              <td>Magnolia Trail Trail</td>
+				              <td>Magnolia Trail</td>
 				              <td>This unpaved loop trail is mostly wooded, featuring stands of grey-barked beech trees and a ravine of hemlocks. It twice crosses the tributary of the Cuyahoga River for which the trail is named. The length and moderate hills make this a good choice for intermediate-level cross-country skiers and runners. Watch for birds that prefer mature forests. </td>
-				              <td>08; 07; 04; 05</td>
-				              <td></td>
+				              <td>08;07;04;05</td>
 				              <td></td>
 				              <td align="right">833</td>
 				            </tr>
@@ -310,22 +293,16 @@
 				                <td>The public name of the trailhead, as advertised to visitors.</td>
 				            </tr>
 				            <tr>
-				                <th>trailIds</th>
+				                <th>trail_ids</th>
 				                <td>string</td>
 				                <td>yes</td>
 				                <td>A collection of IDs for Named Trails (match to "id" in namedtrails.json), each representing a trail that can be accessed via this trailhead.</td>
 				            </tr>
 				            <tr>
-				                <th>stewardIds</th>
+				                <th>steward_ids</th>
 				                <td>string-encoded array</td>
 				                <td>yes</td>
 				                <td>A collection of IDs for Stewards (match to "id" stewards.json), representing each agency or organization responsive to visitor concerns or inquiries about this trailhead.</td>
-				            </tr>
-				            <tr>
-				                <th>parkName</th>
-				                <td>string</td>
-				                <td></td>
-				                <td>A collection of park names that visitors should associate with each trailhead. These park names currently exist independently from other aspects of the specification.</td>
 				            </tr>
 				            <tr>
 				                <th>address</th>
@@ -358,10 +335,10 @@
 				                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail.</td>
 				            </tr>
 				            <tr>
-				                <th>osmTags</th>
+				                <th>osm_tags</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties.</td>
+				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties. See the working draft for more information about use of this field</td>
 				            </tr>
 				        </tbody>
 				    </table>
@@ -374,15 +351,14 @@
 				              "type": "Feature",
 				              "properties": {
 				                "name": "Soutwest Trailhead",
-				                "trailIds": "1; 2"
-				                "stewardId": "2",
-				                "areaId": "2",
+				                "trail_ids": "1; 2"
+				                "steward_id": "2",
 				                "address": "",
 				                "parking": "yes",
 				                "drinkwater": "yes",
 				                "restrooms": "yes",
 				                "kiosk": "no",
-				                "osmTags":"natural=stone; natural=tree"
+				                "osm_tags":"natural=stone; natural=tree"
 				              },
 				              "geometry": {
 				                "type": "Point",
@@ -396,9 +372,8 @@
 				              "type": "Feature",
 				              "properties": {
 				                "name": "West Side Trailhead",
-				                "trailIds": "2"
-				                "stewardId": "2",
-				                "areaId": "2",
+				                "trail_ids": "2"
+				                "steward_id": "2",
 				                "address": "",
 				                "parking": "yes",
 				                "drinkwater": "yes",
@@ -488,7 +463,7 @@
 				              <td>http://localparks.gov</td>
 				              <td>555-555-555</td>
 				              <td>123 Main St</td>
-				              <td>no</td>
+				              <td></td>
 				              <td align="right">1</td>
 				            </tr>
 				            <tr>
@@ -496,7 +471,7 @@
 				              <td>http://stateparks.gov</td>
 				              <td>555-555-555</td>
 				              <td>213 Main St</td>
-				              <td>no</td>
+				              <td></td>
 				              <td align="right">2</td>
 				            </tr>
 				            <tr>
@@ -545,7 +520,7 @@
 				                <td>A unique ID for this land area, which can be referenced.</td>
 				            </tr>
 				            <tr>
-				                <th>stewardId</th>
+				                <th>steward_id</th>
 				                <td>string</td>
 				                <td>yes</td>
 				                <td>This unique ID associates each land area with the primary steward responsible for visitors within its boundaries.</td>
@@ -557,10 +532,10 @@
 				                <td>HTTP link to information specifically about this land area.</td>
 				            </tr>
 				            <tr>
-				                <th>osmTags</th>
+				                <th>osm_tags</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties.</td>
+				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties. See the working draft for more information on use of this field.</td>
 				            </tr>
 				        </tbody>
 				    </table>
@@ -575,9 +550,9 @@
 				              "properties": {
 				                "name": "Local Park",
 				                "id": "1",
-				                "stewardId": "1",
+				                "steward_id": "1",
 				                "url": "",
-				                "osmTags": "landuse=forest; boundary=administrative"
+				                "osm_tags": "landuse=forest; boundary=administrative"
 				              },
 				              "geometry": {
 				                "type": "Polygon",
