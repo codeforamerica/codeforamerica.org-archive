@@ -34,8 +34,8 @@
 		        <nav role="navigation" class="toc" id="toc" style="margin-top:1em">
 		        	<h3>Table of Contents</h3>
 			        <ul class="sectlevel1">
-			            <li><a href="#trailsegments">trailsegments.geojson</a></li>
-			            <li><a href="#namedtrails">namedtrails.csv</a></li>
+			            <li><a href="#trailsegments">trail_segments.geojson</a></li>
+			            <li><a href="#namedtrails">named_trails.csv</a></li>
 			            <li><a href="#trailheads">trailheads.geojson</a></li>
 			            <li><a href="#stewards">stewards.csv</a></li>
 			            <li><a href="#areas">areas.geojson</a></li>
@@ -44,7 +44,7 @@
 			</div>
 		    <main id="content" class="layout-major">
 			    <section id="trailsegments">
-			        <h2>trailsegments.geojson</h2>
+			        <h2>trail_segments.geojson</h2>
 					<table>
 						<thead>
 				            <tr>
@@ -68,7 +68,7 @@
 				                <th>id</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>A unique identifier assigned by the data producer. The “Named Trails” described in namedTrails.geojson are constructed with arrays of trail segments, identified via this field.</td>
+				                <td>A unique identifier assigned by the data producer. The “Named Trails” described in named_trails.csv are constructed with arrays of trail segments, identified via this field.</td>
 				                <td><i>n/a</i></td>
 				            </tr>
 				            <tr>
@@ -183,7 +183,7 @@
 				    </pre>
 			    </section>
 			    <section id="namedtrails">
-			        <h2>namedtrails.csv</h2>
+			        <h2>named_trails.csv</h2>
 					<table>
 						<thead>
 				            <tr>
@@ -296,7 +296,7 @@
 				                <th>trail_ids</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>A collection of IDs for Named Trails (match to "id" in namedtrails.json), each representing a trail that can be accessed via this trailhead.</td>
+				                <td>A collection of IDs for Named Trails (match to "id" in named_trails.csv), each representing a trail that can be accessed via this trailhead.</td>
 				            </tr>
 				            <tr>
 				                <th>steward_ids</th>
