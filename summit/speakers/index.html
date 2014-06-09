@@ -239,7 +239,7 @@
     <script>
         $( ".profile-note p").append("<a href='' class'show-text'>Show more</a>");
         $( ".show-text" ).click(function() {
-            $( this.parent() +".extra-text" ).toggleClass( "visible" );
+            $( this.parent() ).toggleClass( "visible" );
             return false;
         });
        
