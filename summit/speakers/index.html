@@ -241,11 +241,11 @@
         $( ".show-text" ).click(function(e) {
             e.preventDefault();
             $( this ).parent().toggleClass( "visible" );
-            if(this.html() == "Show less"){
-                this.html("Show more");
+            if(this.text() == "Show less"){
+                this.text("Show more");
             }
             else{
-                this.html("Show less");
+                this.text("Show less");
             }
             return false;
         });
