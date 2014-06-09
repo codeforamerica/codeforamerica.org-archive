@@ -105,9 +105,9 @@
         <li class="nav-tier1 nav-has-children">
             <a href="/summit/schedule">Schedule</a>
         </li>
-        <!--li class="nav-tier1 nav-has-children">
-            <a href="/summit/speakers">Speakers</a>
-        </li-->
+        <li class="nav-tier1 nav-has-children">
+            <a href="/summit/speakers" class="state-active">Speakers</a>
+        </li>
         <li class="nav-tier1 nav-has-children">
             <a href="/summit/venue">Venue</a>
         </li>
@@ -241,12 +241,6 @@
         $( ".show-text" ).click(function(e) {
             e.preventDefault();
             $( this ).parent().toggleClass( "visible" );
-            if(this.text() == "Show less"){
-                this.text("Show more");
-            }
-            else{
-                this.text("Show less");
-            }
             return false;
         });
        
