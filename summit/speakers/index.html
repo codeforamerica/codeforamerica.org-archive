@@ -164,7 +164,7 @@
             <h3 class="p-name profile-name">Sascha Haselmayer</h3>
             <img class="u-photo profile-photo" src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/06/Sascha-Haselmayer-square2.jpg">
             <div class="p-note profile-note">
-                <p>Sascha trained as an architect and urbanist at the Architectural Association in London and in 2011 co-founded Citymart.com, a company helping 82 global cities to transform their communities by strengthening their innovation capacity and sharing inspiring solutions and methods.Prior to founding Citymart<span class="extra-text">, Sascha co-founded Living Labs Global in 2003, a non-profit organization promoting service innovation in cities and Interlace-Invent in 2001, a company advising on science &amp; technology, socio-economic and development strategies in cities such as Barcelona, Shanghai, the Government of Thailand. Sascha has lectured widely and co-authored two books on service innovation in cities, markets and new approaches to public procurement.</span></p>
+                <p>Sascha trained as an architect and urbanist at the Architectural Association in London and in 2011 co-founded Citymart.com, a company helping 82 global cities to transform their communities by strengthening their innovation capacity and sharing inspiring solutions and methods. Prior to founding Citymart<span class="extra-text">, Sascha co-founded Living Labs Global in 2003, a non-profit organization promoting service innovation in cities and Interlace-Invent in 2001, a company advising on science &amp; technology, socio-economic and development strategies in cities such as Barcelona, Shanghai, the Government of Thailand. Sascha has lectured widely and co-authored two books on service innovation in cities, markets and new approaches to public procurement.</span></p>
                 <ul class="list-social list-social-horizontal">
                     <li class="social-linkedin"><a href="http://es.linkedin.com/in/saschahaselmayer">LinkedIn</a></li>
                     <li class="social-twitter"><a href="https://twitter.com/LLGACities">@LLGACities</a></li>
@@ -237,10 +237,9 @@
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>
-        console.log('chip clip')
-        $( ".extra-text").append("<a href='' class'show-text'>Show more</a>");
+        $( ".profile-note p").append("<a href='' class'show-text'>Show more</a>");
         $( ".show-text" ).click(function() {
-            $( this.parent() ).toggleClass( "visible" );
+            $( this.parent() +".extra-text" ).toggleClass( "visible" );
             return false;
         });
        
