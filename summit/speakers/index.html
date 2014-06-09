@@ -240,8 +240,7 @@
         $( ".profile-note p").append("<a href='' class='show-text'>Show more</a>");
         $( ".show-text" ).click(function() {
             event.preventDefault();
-            console.log(this.parent())
-            $( this.parent() ).toggleClass( "visible" );
+            $( this ).parent.toggleClass( "visible" );
             return false;
         });
        
