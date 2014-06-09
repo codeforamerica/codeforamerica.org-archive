@@ -241,6 +241,12 @@
         $( ".show-text" ).click(function(e) {
             e.preventDefault();
             $( this ).parent().toggleClass( "visible" );
+            if(this.html() == "Show less"){
+                this.html("Show more");
+            }
+            else{
+                this.html("Show less");
+            }
             return false;
         });
        
