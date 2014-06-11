@@ -94,8 +94,15 @@
         </ul>
         {% endif %}
       </li>
-      <li class="nav-tier1">
-        <a href="/apps" {% if nav_tier1_active == "apps" %}class="state-active"{% endif %}>Apps</a>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/our-work" {% if nav_tier1_active == "our-work" %}class="state-active"{% endif %}>Our Work</a>
+        {% if nav_tier1_active == "our-work" %}
+        <ul class="nav-tier2">
+          <li><a href="/apps">Applications</a></li>
+          <li><a href="/our-work/initiatives">Initiatives</a></li>
+          <li><a href="/our-work/data-formats">Data Formats</a></li>
+        </ul>
+        {% endif %}
       </li>
       <li><a href="/support-us" class="button">Donate</a></li>
     </ul>
