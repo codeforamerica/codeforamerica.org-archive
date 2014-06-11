@@ -56,7 +56,6 @@
                 <li><a href="http://old.cfasummit.org/about/">Past events</a></li>
             </ul>
             {% endif %}
-       
         </li>
         <li class="nav-tier1 nav-has-children">
             <a href="/summit/schedule" {% if include.nav_tier1_active == "schedule" %}class="state-active"{% endif %}>Schedule</a>
@@ -66,6 +65,13 @@
         </li>
         <li class="nav-tier1 nav-has-children">
             <a href="/summit/sponsors" {% if include.nav_tier1_active == "sponsors" %}class="state-active"{% endif %}>Sponsors</a>
+        
+            {% if include.nav_tier1_active == "sponsors" %}
+            <ul class="nav-tier2">
+                <li><a href="/media/docs/2014summitoverview.pdf">Prospectus</a></li>
+                <li><a href="https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform?usp=send_form">Civic Startups</a></li>
+            </ul>
+            {% endif %}
         </li>
         <li>
             <a href="https://www.eventbrite.com/e/code-for-america-summit-registration-11424407711" target="_blank" class="button button-alternative">Register</a>
