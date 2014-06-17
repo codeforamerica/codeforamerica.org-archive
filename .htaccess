@@ -43,7 +43,7 @@ RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 # Big global redirects:
 # In June 2014, renamed all of /cities to /governments.
 #
-RedirectMatch permanent ^(.*)/cities(/.*)?$ $1/governments$2
+RedirectMatch permanent ^(.*)(?<!/media/images)/cities(/.*)?$ $1/governments$2
 
 #
 # Events and Peer Network training broadcasts.
