@@ -1,0 +1,40 @@
+{% if include.context == 'project-complete' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Nashville, Boston, Raleigh, and Palo Alto: Multi-City Innovation Campaign</h2>
+	</div>
+
+	<div class="layout-minor">
+
+	    <!--h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/2011-fellows/">2011 Fellows</a></li>
+
+	    </ul-->
+
+		<img class="profile-photo u-photo" src="http://placehold.it/195x130" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">The MultiCity Innovation Campaign (MCIC) is a coordinated effort by four cities (Boston, Nashville, Raleigh, and Palo Alto) to encourage the development of sustainable tech products to address civic needs. The MCIC launched an online nationwide contest to solicit proof-of-concept mobile and software applications in response to three tracks: Development, Analytics, and Visualization; where the winning prototypes can potentially receive $5,000 in seed investment from each interested partner city, for a total of $20,000.</p>
+
+	   
+	</div>
+
+</div>
+
+{% elsif include.context == 'project-abstract' %}
+<!-- this is the short snippet -->
+<div class="wodge wodge-l">
+			<h3 class="wodge-header">Nashville, Boston, Raleigh, and Palo Alto: Multi-City Innovation Campaign</h3>
+			<img src="http://placehold.it/195x130" class="wodge-image">
+				<div class="wodge-text">
+					<p>The MultiCity Innovation Campaign (MCIC) is a coordinated effort by four cities (Boston, Nashville, Raleigh, and Palo Alto) to encourage the development of sustainable tech products to address civic needs. The MCIC launched an online nationwide contest to solicit proof-of-concept mobile and software applications in response to three tracks: Development, Analytics, and Visualization; where the winning prototypes can potentially receive $5,000 in seed investment from each interested partner city, for a total of $20,000.</p>
+				</div>
+			<a href="/projects/nashville-boston-raleigh-palo-alto-multi-city-innovation-campaign" class="button wodge-button">Read more</a>
+		</div>
+
+{% endif %}
