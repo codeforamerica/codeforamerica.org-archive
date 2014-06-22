@@ -269,6 +269,7 @@ RedirectMatch permanent ^(.*)(?<!/governments|/city-alumni)/philadelphia(/?)$ $1
 RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/governments/boston$2
 RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/governments/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/governments/philadelphia$2
+RedirectMatch permanent ^(.*)/procurement(/?)$ $1/governments/capabilities/procurement$2
 #
 # People
 #
