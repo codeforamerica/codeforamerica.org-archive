@@ -72,7 +72,7 @@ RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/04-08-201
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-08-14/?$ $1/peer-network-training/05-08-14
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-28-14/?$ $1/peer-network-training/05-28-2014
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/06-03-14/?$ $1/peer-network-training/06-03-2014
-
+RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/06-03-14/?$ $1/peer-network-training/06-03-2014
 #
 # Events and Brigade training broadcasts.
 #
@@ -269,7 +269,7 @@ RedirectMatch permanent ^(.*)(?<!/governments|/city-alumni)/philadelphia(/?)$ $1
 RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/governments/boston$2
 RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/governments/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/governments/philadelphia$2
-
+RedirectMatch permanent ^(.*)/governments/capabilities/procurement(/?)$ $1/procurement$2
 #
 # People
 #
