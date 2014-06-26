@@ -1,0 +1,119 @@
+@import "colors";
+
+.financials {
+  .graph {
+    background: $green;
+  }
+  .graph1 {
+    background: lighten( $green, 7% );
+  }
+  .graph2 {
+    background: lighten( $green, 14% );
+  }
+  .graph3 {
+    background: lighten( $green, 28% );
+  }
+  .graph4 {
+    background: lighten( $green, 35% ); 
+  }
+  .graph5 {
+    background: lighten( $green, 42% );
+  }
+  .graph6 {
+    background: lighten( $green, 56% );
+  }
+  .graph7 {
+    background: lighten( $green, 63% );
+  }
+}
+
+.financials h3 {
+  margin-top: 90px;
+}
+
+.financials h4 {
+  margin-top: 0px;
+}
+
+.financials h5 {
+  font-style: normal;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 30px;
+}
+
+.financials p {
+  font-size: 17px;
+  line-height: 5px;
+  margin: 10px 0;
+}
+
+.financials .programs {
+  margin-bottom: 5px;
+}
+
+.financials .programs p {
+  margin-left: 25px;
+}
+
+.icon-question-sign.icon-white {
+  position: absolute;
+  margin: -5px 0px 0px 2px;
+}
+
+.financials .rightcol h5,
+.financials .rightcol h4,
+.financials .rightcol p {
+  text-align: right;
+}
+
+.financials br {
+  line-height: 30px;
+}
+
+.expenses a:hover,
+.revenues a:hover {
+  border-bottom: none;
+}
+
+.expenses .popover-content,
+.revenues .popover-content {
+  font-size: 14px;
+}
+
+.revenues .popover-content {
+  line-height: 22px;
+}
+
+.expensesdata, 
+.revenuedata {
+  cursor: pointer;
+}
+
+.expensesdata.active,
+.revenuedata.active,
+.financialsgroup.active {
+  color: #fedd44;
+}
+
+.financialsgroup {
+  cursor: pointer;
+}
+
+.graphsection {
+  height: 60px;
+  float: right;
+  cursor: pointer;
+}
+
+.graphsection.active {
+  background-color: #fedd44 !important;
+}
+
+.expenses.bargraph,
+.revenues.bargraph {
+  margin-top: 30px;
+  max-width: 960px;
+}

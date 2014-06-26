@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=800, initial-scale=0.25, maximum-scale=1">
+  <title>{{ page.title }}</title>
+   
+    <!-- Homepage CSS -->
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,600,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+    <link href="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection, print" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
+
+
+     {{ page.script }}
+  </head>
+  <body>
+
+
+  {{ content }}
+  
+  <!-- Google Analytics -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20825280-17', 'codeforamerica.org');
+  ga('send', 'pageview');
+</script>
+  <!-- Google Analytics end -->
+
+  </body>
+</html>

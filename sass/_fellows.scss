@@ -1,0 +1,256 @@
+/*****************************************************************************/
+/*
+/* All styling related to the fellowship section including images
+/*
+/*****************************************************************************/
+
+.fellowship{ 
+  color:#333;
+  position:relative; height:100%; width:100%; 
+}
+
+.fellowship .fellow{ 
+  position:fixed;
+  bottom:50px;
+  right:-800px;
+  height:200px;
+  width:799px;
+  -webkit-transition: 0.6s ease-in-out right;
+     -moz-transition: 0.6s ease-in-out right;
+       -o-transition: 0.6s ease-in-out right;
+          transition: 0.6s ease-in-out right;
+
+}
+
+.fellowship .fellow.appear{ 
+  right:100px;
+
+  -webkit-transition: 0.6s ease-in-out right;
+     -moz-transition: 0.6s ease-in-out right;
+       -o-transition: 0.6s ease-in-out right;
+          transition: 0.6s ease-in-out right;
+}
+
+.fellowship .yeartitle{ 
+  z-index:0;
+  position:relative;
+  top:20px;
+  left:50px;
+}
+
+.fellowship .yeartitle h1 {
+  font-size: 100px;
+  color: #333;
+  margin: 80px 0px 0px; 
+}
+
+.fellowship h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.fellowship h4 {
+  background-color: #C82A45;
+  color: #fff;
+  text-shadow: none;
+  padding: 10px 20px;
+}
+
+.fellowship h5 {
+  color: #C82A45;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+.fellowship .innercard {
+  padding: 20px;
+}
+
+.fellowship li {
+  text-shadow: none;
+}
+
+.people ul,
+.fellowship ul {
+  font-weight: 300;
+  text-align: left;
+}
+.morefellowspop {
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+.alan_100_2199, .andrew_100_2043, .andy_100_2099, .ans_100_2060, .arial_100, .cj_100_2076, .cris_100_2138, .dan_100_2191, .dave_100_2164, .doneliza_100_2205, .ezra_100_2056, .jake_100_2213, .katie_100_2207, .laura_100_2170, .lindsay_100, .lou_100_2106, .marc_100_2158, .marcin_100_2149, .moncef_100_2087, .rebecca_100_2090, .reed_100_2124, .richa_100_2211, .ryan_100_2067, .shaunak_100_2120, .sheila_100_0925, .sophia_100, .tamara_100_2107{
+  background: url('../img/fellowsSprite.png') no-repeat;
+
+}
+
+.alan_100_2199{
+  background-position: 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+.andrew_100_2043{
+  background-position: -3px -109px ;
+  width: 100px;
+  height: 100px;
+}
+
+.andy_100_2099{
+  background-position: -6px -215px ;
+  width: 100px;
+  height: 100px;
+}
+
+.ans_100_2060{
+  background-position: -9px -434px ;
+  width: 100px;
+  height: 100px;
+}
+
+.arial_100{
+  background-position: -199px -452px ;
+  width: 100px;
+  height: 100px;
+}
+
+.cj_100_2076{
+  background-position: -9px -324px ;
+  width: 100px;
+  height: 100px;
+}
+
+.cris_100_2138{
+  background-position: -199px -348px ;
+  width: 100px;
+  height: 100px;
+}
+
+.dan_100_2191{
+  background-position: -308px -348px ;
+  width: 100px;
+  height: 100px;
+}
+
+.dave_100_2164{
+  background-position: -420px -344px ;
+  width: 100px;
+  height: 100px;
+}
+
+.doneliza_100_2205{
+  background-position: -541px -345px ;
+  width: 100px;
+  height: 100px;
+}
+
+.ezra_100_2056{
+  background-position: -666px -339px ;
+  width: 100px;
+  height: 100px;
+}
+
+.jake_100_2213{
+  background-position: -209px -236px ;
+  width: 100px;
+  height: 100px;
+}
+
+.katie_100_2207{
+  background-position: -328px -236px ;
+  width: 100px;
+  height: 100px;
+}
+
+.laura_100_2170{
+  background-position: -438px -235px ;
+  width: 100px;
+  height: 100px;
+}
+
+.lindsay_100{
+  background-position: -546px -232px ;
+  width: 100px;
+  height: 100px;
+}
+
+.lou_100_2106{
+  background-position: -656px -232px ;
+  width: 100px;
+  height: 100px;
+}
+
+.marc_100_2158{
+  background-position: -213px -125px ;
+  width: 100px;
+  height: 100px;
+}
+
+.marcin_100_2149{
+  background-position: -322px -124px ;
+  width: 100px;
+  height: 100px;
+}
+
+.moncef_100_2087{
+  background-position: -436px -121px ;
+  width: 100px;
+  height: 100px;
+}
+
+.rebecca_100_2090{
+  background-position: -545px -121px ;
+  width: 100px;
+  height: 100px;
+}
+
+.reed_100_2124{
+  background-position: -656px -122px ;
+  width: 100px;
+  height: 100px;
+}
+
+.richa_100_2211{
+  background-position: -654px -4px ;
+  width: 100px;
+  height: 100px;
+}
+
+.ryan_100_2067{
+  background-position: -543px -4px ;
+  width: 100px;
+  height: 100px;
+}
+
+.shaunak_100_2120{
+  background-position: -433px -2px ;
+  width: 100px;
+  height: 100px;
+}
+
+.sheila_100_0925{
+  background-position: -323px -4px ;
+  width: 100px;
+  height: 100px;
+}
+
+.sophia_100{
+  background-position: -216px -2px ;
+  width: 100px;
+  height: 100px;
+}
+
+.tamara_100_2107{
+  background-position: -109px -1px ;
+  width: 100px;
+  height: 100px;
+}
+
+

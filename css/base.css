@@ -1,0 +1,3515 @@
+/*****************************************************************************/
+/*
+/* Logos
+/*
+/*****************************************************************************/
+/* line 7, ../sass/_application-logos.scss */
+.appspop {
+  background-image: url("../img/apps_logos.png");
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+/* line 16, ../sass/_application-logos.scss */
+a.appspop:hover {
+  border: none;
+}
+
+/* line 47, ../sass/_application-logos.scss */
+.srtracker,
+.fm,
+.labs,
+.adopta,
+.blight,
+.blockee,
+.hnlanswers,
+.localdata,
+.neighborhow,
+.opencounter,
+.openstatus,
+.preparedly,
+.routeview,
+.opendata,
+.socialcity,
+.pennywork,
+.straymapper,
+.supermayor,
+.textmybus,
+.textizen,
+.dailybrief,
+.nolaready,
+.atxfloods,
+.bike,
+.deepdish,
+.publicart,
+.scmap,
+.maconmap {
+  background-image: url("../img/apps_logos.png");
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+/* line 56, ../sass/_application-logos.scss */
+.srtracker {
+  background-position: 0 0;
+}
+
+/* line 60, ../sass/_application-logos.scss */
+.fm {
+  background-position: 0 -100px;
+}
+
+/* line 64, ../sass/_application-logos.scss */
+.labs {
+  background-position: 0 -200px;
+}
+
+/* line 68, ../sass/_application-logos.scss */
+.adopta {
+  background-position: 0 -300px;
+}
+
+/* line 72, ../sass/_application-logos.scss */
+.blight {
+  background-position: 0 -400px;
+}
+
+/* line 76, ../sass/_application-logos.scss */
+.blockee {
+  background-position: 0 -500px;
+}
+
+/* line 80, ../sass/_application-logos.scss */
+.hnlanswers {
+  background-position: 0 -600px;
+}
+
+/* line 84, ../sass/_application-logos.scss */
+.localdata {
+  background-position: 0 -700px;
+}
+
+/* line 88, ../sass/_application-logos.scss */
+.neighborhow {
+  background-position: 0 -800px;
+}
+
+/* line 92, ../sass/_application-logos.scss */
+.opencounter {
+  background-position: 0 -900px;
+}
+
+/* line 96, ../sass/_application-logos.scss */
+.openstatus {
+  background-position: 0 -1000px;
+}
+
+/* line 100, ../sass/_application-logos.scss */
+.preparedly {
+  background-position: 0 -1100px;
+}
+
+/* line 104, ../sass/_application-logos.scss */
+.routeview {
+  background-position: 0 -1200px;
+}
+
+/* line 108, ../sass/_application-logos.scss */
+.opendata {
+  background-position: 0 -1300px;
+}
+
+/* line 112, ../sass/_application-logos.scss */
+.socialcity {
+  background-position: 0 -1400px;
+}
+
+/* line 116, ../sass/_application-logos.scss */
+.pennywork {
+  background-position: 0 -1500px;
+}
+
+/* line 120, ../sass/_application-logos.scss */
+.straymapper {
+  background-position: 0 -1600px;
+}
+
+/* line 124, ../sass/_application-logos.scss */
+.supermayor {
+  background-position: 0 -1700px;
+}
+
+/* line 128, ../sass/_application-logos.scss */
+.textmybus {
+  background-position: 0 -1800px;
+}
+
+/* line 132, ../sass/_application-logos.scss */
+.textizen {
+  background-position: 0 -1900px;
+}
+
+/* line 136, ../sass/_application-logos.scss */
+.dailybrief {
+  background-position: 0 -2000px;
+}
+
+/* line 140, ../sass/_application-logos.scss */
+.nolaready {
+  background-position: 0 -2100px;
+}
+
+/* line 144, ../sass/_application-logos.scss */
+.atxfloods {
+  background-position: 0 -2200px;
+}
+
+/* line 148, ../sass/_application-logos.scss */
+.bike {
+  background-position: 0 -2300px;
+}
+
+/* line 152, ../sass/_application-logos.scss */
+.deepdish {
+  background-position: 0 -2400px;
+}
+
+/* line 156, ../sass/_application-logos.scss */
+.publicart {
+  background-position: 0 -2500px;
+}
+
+/* line 160, ../sass/_application-logos.scss */
+.scmap {
+  background-position: 0 -2600px;
+}
+
+/* line 164, ../sass/_application-logos.scss */
+.maconmap {
+  background-position: 0 -2700px;
+}
+
+/* line 361, ../sass/_application-logos.scss */
+.adoptadrain, .adoptatwincities, .alexandriaplays, .archivesocial_sq, .bizfriendly_logo, .cityvoice_logo, .civicinsight, .clickthathood, .councilmatic, .dataquestionnaire, .development_fast_pass, .discoverbpsnew, .early_oakland, .fishstocking, .fllegtracker, .flu_shot_finder, .foodtruckslv, .hampton_roads, .honlulubudget, .lakecraft, .littlelibrariesmadison, .localwiki, .lookatasheville, .mappinggentrification, .nwdata, .oakland_answers, .omgtransit, .openbudgetoak, .opencounter, .oppcaster, .pantry_pickup2, .promptly, .recordtrac, .smartprocure_sq, .smcconnect, .streetcred_logo, .streetcredsq, .streetmix, .textizensmall, .textmybus, .tothetrails_logo, .vermontlibrary, .whatsmydistrict, .wheresmyschoolbus, .ohana_api, .ckan, .faf, .jailpop, .nycccs, .streettrees {
+  background: url("../img/apps/appssprites.png") no-repeat;
+}
+
+/* line 365, ../sass/_application-logos.scss */
+.adoptadrain {
+  background-position: 0 0;
+  width: 100px;
+  height: 101px;
+}
+
+/* line 371, ../sass/_application-logos.scss */
+.adoptatwincities {
+  background-position: -109px -1px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 377, ../sass/_application-logos.scss */
+.alexandriaplays {
+  background-position: -353px 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 383, ../sass/_application-logos.scss */
+.archivesocial_sq {
+  background-position: -113px -424px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 389, ../sass/_application-logos.scss */
+.bizfriendly_logo {
+  background-position: -439px -535px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 395, ../sass/_application-logos.scss */
+.cityvoice_logo {
+  background-position: -220px -531px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 401, ../sass/_application-logos.scss */
+.civicinsight {
+  background-position: -326px -538px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 407, ../sass/_application-logos.scss */
+.clickthathood {
+  background-position: -111px -532px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 413, ../sass/_application-logos.scss */
+.councilmatic {
+  background-position: -333px -425px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 419, ../sass/_application-logos.scss */
+.dataquestionnaire {
+  background-position: -2px -530px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 425, ../sass/_application-logos.scss */
+.development_fast_pass {
+  background-position: -552px -429px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 431, ../sass/_application-logos.scss */
+.discoverbpsnew {
+  background-position: -662px -422px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 437, ../sass/_application-logos.scss */
+.early_oakland {
+  background-position: -778px -417px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 443, ../sass/_application-logos.scss */
+.fishstocking {
+  background-position: -442px -427px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 449, ../sass/_application-logos.scss */
+.fllegtracker {
+  background-position: -767px -314px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 455, ../sass/_application-logos.scss */
+.flu_shot_finder {
+  background-position: -445px -322px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 461, ../sass/_application-logos.scss */
+.foodtruckslv {
+  background-position: -418px -215px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 467, ../sass/_application-logos.scss */
+.hampton_roads {
+  background-position: -333px -317px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 473, ../sass/_application-logos.scss */
+.honlulubudget {
+  background-position: -554px -322px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 479, ../sass/_application-logos.scss */
+.lakecraft {
+  background-position: -662px -319px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 485, ../sass/_application-logos.scss */
+.littlelibrariesmadison {
+  background-position: -110px -311px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 491, ../sass/_application-logos.scss */
+.localwiki {
+  background-position: -942px -210px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 497, ../sass/_application-logos.scss */
+.lookatasheville {
+  background-position: -832px -208px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 503, ../sass/_application-logos.scss */
+.mappinggentrification {
+  background-position: -660px -214px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 509, ../sass/_application-logos.scss */
+.nwdata {
+  background-position: -527px -213px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 515, ../sass/_application-logos.scss */
+.oakland_answers {
+  background-position: -310px -207px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 521, ../sass/_application-logos.scss */
+.omgtransit {
+  background-position: -102px -204px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 527, ../sass/_application-logos.scss */
+.openbudgetoak {
+  background-position: 0 -204px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 533, ../sass/_application-logos.scss */
+.opencounter {
+  background-position: -899px -424px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 539, ../sass/_application-logos.scss */
+.oppcaster {
+  background-position: -874px -102px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 545, ../sass/_application-logos.scss */
+.pantry_pickup2 {
+  background-position: -748px -103px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 551, ../sass/_application-logos.scss */
+.promptly {
+  background-position: -637px -107px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 557, ../sass/_application-logos.scss */
+.recordtrac {
+  background-position: -527px -109px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 563, ../sass/_application-logos.scss */
+.smartprocure_sq {
+  background-position: -425px -106px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 569, ../sass/_application-logos.scss */
+.smcconnect {
+  background-position: -322px -106px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 575, ../sass/_application-logos.scss */
+.streetcred_logo {
+  background-position: -218px -106px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 581, ../sass/_application-logos.scss */
+.streetcredsq {
+  background-position: -107px -100px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 587, ../sass/_application-logos.scss */
+.streetmix {
+  background-position: 0 -102px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 593, ../sass/_application-logos.scss */
+.textizensmall {
+  background-position: -902px 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 599, ../sass/_application-logos.scss */
+.textmybus {
+  background-position: -792px 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 605, ../sass/_application-logos.scss */
+.tothetrails_logo {
+  background-position: -680px -2px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 611, ../sass/_application-logos.scss */
+.vermontlibrary {
+  background-position: -578px -3px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 617, ../sass/_application-logos.scss */
+.whatsmydistrict {
+  background-position: -470px -4px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 623, ../sass/_application-logos.scss */
+.wheresmyschoolbus {
+  background-position: -229px -2px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 629, ../sass/_application-logos.scss */
+.ohana_api {
+  background-position: -206px -207px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 635, ../sass/_application-logos.scss */
+.ckan {
+  background-position: -2px -426px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 641, ../sass/_application-logos.scss */
+.faf {
+  background-position: -872px -317px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 647, ../sass/_application-logos.scss */
+.jailpop {
+  background-position: -222px -422px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 653, ../sass/_application-logos.scss */
+.localdatalogo {
+  background-image: url("../img/apps/localdatalogo.png");
+}
+
+/* line 657, ../sass/_application-logos.scss */
+.nycccs {
+  background-position: -223px -315px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 663, ../sass/_application-logos.scss */
+.streettrees {
+  background-position: -552px -538px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 1, ../sass/_backgrounds.scss */
+.pagebg {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -10;
+  display: none;
+}
+
+/* line 10, ../sass/_backgrounds.scss */
+.pagebg.quote {
+  z-index: -5;
+}
+
+/* line 16, ../sass/_backgrounds.scss */
+#onreport-home .pagebg {
+  background: url("../img/jamrock-hope-lg.jpg") no-repeat;
+  background-color: #4298bb;
+  background-size: cover;
+  background-position: right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+}
+
+/* line 26, ../sass/_backgrounds.scss */
+#onreport-intro-letter .pagebg {
+  background: url("../img/jamrock-working-lg.jpg") no-repeat;
+  background-color: #4298bb;
+  background-size: cover;
+  background-position: right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+}
+
+/* line 33, ../sass/_backgrounds.scss */
+#onreport-intro-values .pagebg {
+  background: url("../img/jamrock-chill-lg.jpg") no-repeat;
+  background-color: #4298bb;
+  background-size: cover;
+  background-position: right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+}
+
+/* line 40, ../sass/_backgrounds.scss */
+#onreport-intro-began .pagebg {
+  background: url("../img/.jpg") no-repeat;
+  background-color: #4298bb;
+  background-size: cover;
+  background-position: right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+}
+
+/* line 47, ../sass/_backgrounds.scss */
+.pagebg img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* carousel overrides
+/*
+/*****************************************************************************/
+/* line 7, ../sass/_carousel.scss */
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1;
+  padding-right: 10px;
+}
+
+/* line 15, ../sass/_carousel.scss */
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 21, ../sass/_carousel.scss */
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+
+/* line 31, ../sass/_carousel.scss */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  line-height: 1;
+}
+
+/* line 38, ../sass/_carousel.scss */
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+/* line 42, ../sass/_carousel.scss */
+.carousel-inner > .active {
+  left: 0;
+}
+
+/* line 47, ../sass/_carousel.scss */
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 53, ../sass/_carousel.scss */
+.carousel-inner > .next {
+  left: 100%;
+}
+
+/* line 57, ../sass/_carousel.scss */
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+/* line 62, ../sass/_carousel.scss */
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+/* line 66, ../sass/_carousel.scss */
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+/* line 70, ../sass/_carousel.scss */
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+/* line 75, ../sass/_carousel.scss */
+.apps .carousel-control,
+.carousel-control {
+  /*  position: absolute;
+    top: 50%;
+    left: 10px;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: none;*/
+}
+
+/* line 83, ../sass/_carousel.scss */
+.carousel-control {
+  top: 50%;
+}
+
+/* line 87, ../sass/_carousel.scss */
+.carousel-control.right {
+  right: 20px;
+}
+
+/* line 91, ../sass/_carousel.scss */
+.apps .carousel-control.right {
+  left: auto;
+}
+
+/* line 96, ../sass/_carousel.scss */
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-bottom: 3px solid #ffffff;
+}
+
+/* line 104, ../sass/_carousel.scss */
+.carousel-indicators {
+  bottom: -26px;
+  top: inherit;
+}
+
+/* line 109, ../sass/_carousel.scss */
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/*****************************************************************************/
+/*
+/* City seals and styling
+/*
+/*****************************************************************************/
+/* line 7, ../sass/_cities.scss */
+.cityseal {
+  background-image: url("../img/city_seals.png");
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+/* line 16, ../sass/_cities.scss */
+.sf {
+  background-position: 0 0;
+}
+
+/* line 20, ../sass/_cities.scss */
+.lv {
+  background-position: 0 -100px;
+}
+
+/* line 24, ../sass/_cities.scss */
+.ok {
+  background-position: 0 -200px;
+}
+
+/* line 28, ../sass/_cities.scss */
+.sc {
+  background-position: 0 -300px;
+}
+
+/* line 32, ../sass/_cities.scss */
+.lo {
+  background-position: 0 -400px;
+}
+
+/* line 36, ../sass/_cities.scss */
+.nyc {
+  background-position: 0 -500px;
+}
+
+/* line 40, ../sass/_cities.scss */
+.sb {
+  background-position: 0 -600px;
+}
+
+/* line 44, ../sass/_cities.scss */
+.smc {
+  background-position: 0 -700px;
+}
+
+/* line 48, ../sass/_cities.scss */
+.kcks {
+  background-position: 0 -800px;
+}
+
+/* line 52, ../sass/_cities.scss */
+.kcmo {
+  background-position: 0 -900px;
+}
+
+/*****************************************************************************/
+/*
+/* All styling related to the fellowship section including images
+/*
+/*****************************************************************************/
+/* line 7, ../sass/_fellows.scss */
+.fellowship {
+  color: #333;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 12, ../sass/_fellows.scss */
+.fellowship .fellow {
+  position: fixed;
+  bottom: 50px;
+  right: -800px;
+  height: 200px;
+  width: 799px;
+  -webkit-transition: 0.6s ease-in-out right;
+  -moz-transition: 0.6s ease-in-out right;
+  -o-transition: 0.6s ease-in-out right;
+  transition: 0.6s ease-in-out right;
+}
+
+/* line 25, ../sass/_fellows.scss */
+.fellowship .fellow.appear {
+  right: 100px;
+  -webkit-transition: 0.6s ease-in-out right;
+  -moz-transition: 0.6s ease-in-out right;
+  -o-transition: 0.6s ease-in-out right;
+  transition: 0.6s ease-in-out right;
+}
+
+/* line 34, ../sass/_fellows.scss */
+.fellowship .yeartitle {
+  z-index: 0;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+/* line 41, ../sass/_fellows.scss */
+.fellowship .yeartitle h1 {
+  font-size: 100px;
+  color: #333;
+  margin: 80px 0px 0px;
+}
+
+/* line 47, ../sass/_fellows.scss */
+.fellowship h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+/* line 52, ../sass/_fellows.scss */
+.fellowship h4 {
+  background-color: #C82A45;
+  color: #fff;
+  text-shadow: none;
+  padding: 10px 20px;
+}
+
+/* line 59, ../sass/_fellows.scss */
+.fellowship h5 {
+  color: #C82A45;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+/* line 68, ../sass/_fellows.scss */
+.fellowship .innercard {
+  padding: 20px;
+}
+
+/* line 72, ../sass/_fellows.scss */
+.fellowship li {
+  text-shadow: none;
+}
+
+/* line 77, ../sass/_fellows.scss */
+.people ul,
+.fellowship ul {
+  font-weight: 300;
+  text-align: left;
+}
+
+/* line 81, ../sass/_fellows.scss */
+.morefellowspop {
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+/* line 89, ../sass/_fellows.scss */
+.alan_100_2199, .andrew_100_2043, .andy_100_2099, .ans_100_2060, .arial_100, .cj_100_2076, .cris_100_2138, .dan_100_2191, .dave_100_2164, .doneliza_100_2205, .ezra_100_2056, .jake_100_2213, .katie_100_2207, .laura_100_2170, .lindsay_100, .lou_100_2106, .marc_100_2158, .marcin_100_2149, .moncef_100_2087, .rebecca_100_2090, .reed_100_2124, .richa_100_2211, .ryan_100_2067, .shaunak_100_2120, .sheila_100_0925, .sophia_100, .tamara_100_2107 {
+  background: url("../img/fellowsSprite.png") no-repeat;
+}
+
+/* line 94, ../sass/_fellows.scss */
+.alan_100_2199 {
+  background-position: 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 100, ../sass/_fellows.scss */
+.andrew_100_2043 {
+  background-position: -3px -109px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 106, ../sass/_fellows.scss */
+.andy_100_2099 {
+  background-position: -6px -215px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 112, ../sass/_fellows.scss */
+.ans_100_2060 {
+  background-position: -9px -434px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 118, ../sass/_fellows.scss */
+.arial_100 {
+  background-position: -199px -452px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 124, ../sass/_fellows.scss */
+.cj_100_2076 {
+  background-position: -9px -324px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 130, ../sass/_fellows.scss */
+.cris_100_2138 {
+  background-position: -199px -348px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 136, ../sass/_fellows.scss */
+.dan_100_2191 {
+  background-position: -308px -348px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 142, ../sass/_fellows.scss */
+.dave_100_2164 {
+  background-position: -420px -344px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 148, ../sass/_fellows.scss */
+.doneliza_100_2205 {
+  background-position: -541px -345px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 154, ../sass/_fellows.scss */
+.ezra_100_2056 {
+  background-position: -666px -339px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 160, ../sass/_fellows.scss */
+.jake_100_2213 {
+  background-position: -209px -236px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 166, ../sass/_fellows.scss */
+.katie_100_2207 {
+  background-position: -328px -236px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 172, ../sass/_fellows.scss */
+.laura_100_2170 {
+  background-position: -438px -235px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 178, ../sass/_fellows.scss */
+.lindsay_100 {
+  background-position: -546px -232px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 184, ../sass/_fellows.scss */
+.lou_100_2106 {
+  background-position: -656px -232px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 190, ../sass/_fellows.scss */
+.marc_100_2158 {
+  background-position: -213px -125px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 196, ../sass/_fellows.scss */
+.marcin_100_2149 {
+  background-position: -322px -124px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 202, ../sass/_fellows.scss */
+.moncef_100_2087 {
+  background-position: -436px -121px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 208, ../sass/_fellows.scss */
+.rebecca_100_2090 {
+  background-position: -545px -121px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 214, ../sass/_fellows.scss */
+.reed_100_2124 {
+  background-position: -656px -122px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 220, ../sass/_fellows.scss */
+.richa_100_2211 {
+  background-position: -654px -4px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 226, ../sass/_fellows.scss */
+.ryan_100_2067 {
+  background-position: -543px -4px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 232, ../sass/_fellows.scss */
+.shaunak_100_2120 {
+  background-position: -433px -2px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 238, ../sass/_fellows.scss */
+.sheila_100_0925 {
+  background-position: -323px -4px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 244, ../sass/_fellows.scss */
+.sophia_100 {
+  background-position: -216px -2px;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 250, ../sass/_fellows.scss */
+.tamara_100_2107 {
+  background-position: -109px -1px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Global Reset */
+/* line 3, ../sass/_global-reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/_global-reset.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../sass/_global-reset.scss */
+body {
+  background: #fff;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  webkit-font-smoothing: subpixel-antialiased;
+  text-align: left;
+  font-weight: 600;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* line 22, ../sass/_global-reset.scss */
+h1 {
+  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  margin: .25em .25em 1em 0em;
+}
+
+/* line 27, ../sass/_global-reset.scss */
+p {
+  margin: 1em 0;
+  line-height: 23px;
+}
+
+/* line 32, ../sass/_global-reset.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* line 39, ../sass/_global-reset.scss */
+a:hover {
+  color: #fff;
+  border-bottom: #fff solid 1px;
+  text-decoration: none;
+}
+
+/* line 45, ../sass/_global-reset.scss */
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/* line 50, ../sass/_global-reset.scss */
+.page {
+  clear: both;
+}
+
+/* line 53, ../sass/_global-reset.scss */
+.clear {
+  clear: both;
+}
+
+/* line 57, ../sass/_global-reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 61, ../sass/_global-reset.scss */
+.row-fluid {
+  max-width: 960px;
+}
+
+@media screen and (max-width: 1300px) {
+  /* line 2, ../sass/_media.scss */
+  .stats h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 9, ../sass/_media.scss */
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 16, ../sass/_media.scss */
+  .navbar .container {
+    margin-left: 30px;
+  }
+
+  /* line 20, ../sass/_media.scss */
+  h4 {
+    font-size: 20px;
+  }
+
+  /* line 24, ../sass/_media.scss */
+  .page.quote {
+    padding-bottom: 300px;
+  }
+
+  /* line 28, ../sass/_media.scss */
+  .page.story {
+    padding-left: 250px;
+  }
+
+  /* line 32, ../sass/_media.scss */
+  .page.quote h1, .page.story h1 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  /* line 37, ../sass/_media.scss */
+  .cfa p {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  /* line 42, ../sass/_media.scss */
+  .cfa a {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  /* line 47, ../sass/_media.scss */
+  .sidebar {
+    top: 40px;
+  }
+
+  /* line 51, ../sass/_media.scss */
+  .sidebartitle {
+    top: 0px;
+  }
+
+  /* line 55, ../sass/_media.scss */
+  .fellowship .yeartitle {
+    left: 30px;
+  }
+
+  /* line 60, ../sass/_media.scss */
+  .sidebartitle h1,
+  .fellowship .yeartitle h1 {
+    font-size: 60px;
+  }
+
+  /* line 64, ../sass/_media.scss */
+  .sidebartitle h1 {
+    margin-left: 30px;
+  }
+
+  /* line 69, ../sass/_media.scss */
+  .sidebartitle h2,
+  .fellowship .yeartitle h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  /* line 75, ../sass/_media.scss */
+  .sidebartitle.appear h2 {
+    left: 30px;
+  }
+
+  /* line 79, ../sass/_media.scss */
+  iframe {
+    width: 100%;
+  }
+
+  /* line 84, ../sass/_media.scss */
+  .bios h5,
+  .network .bios h5 {
+    font-size: 17px;
+  }
+
+  /* line 88, ../sass/_media.scss */
+  #loading img {
+    width: 300px;
+    margin-top: 100px;
+  }
+
+  /* line 93, ../sass/_media.scss */
+  #loading h1 {
+    font-size: 130px;
+    margin: 50px auto 60px;
+  }
+
+  /* line 98, ../sass/_media.scss */
+  #loading p {
+    font-size: 38px;
+  }
+
+  /* line 102, ../sass/_media.scss */
+  .companies {
+    height: 369px;
+  }
+
+  /* line 106, ../sass/_media.scss */
+  .companies .companyblurb {
+    padding: 20px 60px 0 30px;
+  }
+
+  /* line 110, ../sass/_media.scss */
+  .carousel-control.right,
+  .carousel-control.left {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  /* line 117, ../sass/_media.scss */
+  .getinvolved form {
+    width: 311px;
+  }
+
+  /* line 121, ../sass/_media.scss */
+  .stats h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* line 126, ../sass/_media.scss */
+  .page.story .stats h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 979px) {
+  /* line 132, ../sass/_media.scss */
+  .financials p {
+    line-height: 22px;
+    margin: 5px 0;
+  }
+
+  /* line 137, ../sass/_media.scss */
+  .financials .programs p {
+    line-height: 5px;
+  }
+
+  /* line 141, ../sass/_media.scss */
+  .financials br {
+    line-height: 54px;
+  }
+
+  /* line 146, ../sass/_media.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: fixed;
+  }
+}
+@media screen and (max-width: 880px) {
+  /* line 153, ../sass/_media.scss */
+  .getinvolved form {
+    width: 200px;
+    padding: 24px 39px 24px 20px;
+  }
+
+  /* line 158, ../sass/_media.scss */
+  .btn {
+    margin: 6px 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 167, ../sass/_media.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* line 178, ../sass/_media.scss */
+  .page.story {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  /* line 173, ../sass/_media.scss */
+  .sidebar {
+    display: none;
+  }
+}
+
+/* style guide lists this as #999595 */
+/*****************************************************************************/
+/*
+/* Map styling
+/*
+/*****************************************************************************/
+/* line 10, ../sass/_map.scss */
+#mapInset {
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+  right: 0;
+  border: 3px solid #fff;
+  height: 200px;
+  width: 20%;
+}
+
+/* line 20, ../sass/_map.scss */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 24, ../sass/_map.scss */
+#mapcontainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 28, ../sass/_map.scss */
+#map.apply {
+  position: fixed !important;
+}
+
+/* line 32, ../sass/_map.scss */
+#marker {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  pointer-events: all;
+}
+
+/* line 43, ../sass/_map.scss */
+#markerInset {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  pointer-events: all;
+}
+
+/* line 53, ../sass/_map.scss */
+#markerHighlight {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  pointer-events: all;
+}
+
+/* line 63, ../sass/_map.scss */
+#summit .dropdown-menu {
+  float: right;
+  position: relative;
+  top: -15px;
+  margin-right: 60px;
+}
+
+/* line 70, ../sass/_map.scss */
+.citycardscontainer {
+  display: none;
+}
+
+/* line 74, ../sass/_map.scss */
+.citycard .tagline {
+  text-shadow: none;
+}
+
+/* line 78, ../sass/_map.scss */
+.citycard .tagline p {
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+/* line 83, ../sass/_map.scss */
+.citycard a {
+  color: #000;
+}
+
+/* line 87, ../sass/_map.scss */
+.citycard .partnersection {
+  width: 190px;
+}
+
+/* line 91, ../sass/_map.scss */
+.citycard ul {
+  margin-left: 0px;
+}
+
+/* line 95, ../sass/_map.scss */
+.citycard hr {
+  border: solid 1px #C82A45;
+  margin: 10px 0;
+}
+
+/* line 100, ../sass/_map.scss */
+.citycard[data-year="2011"] h4 {
+  background: #FED100;
+}
+
+/* line 104, ../sass/_map.scss */
+.citycard[data-year="2011"] hr {
+  border: solid 1px #FED100;
+}
+
+/* line 108, ../sass/_map.scss */
+.citycard[data-year="2011"] h5 {
+  color: #FED100;
+}
+
+/* line 112, ../sass/_map.scss */
+.citycard .name {
+  clear: both;
+  padding-top: 10px;
+  text-shadow: none;
+}
+
+/* line 118, ../sass/_map.scss */
+.downarrow {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0;
+}
+
+/* line 125, ../sass/_map.scss */
+.downarrow svg {
+  color: #fff;
+  fill: #fff;
+  height: 100px;
+  width: 50px;
+}
+
+/* line 132, ../sass/_map.scss */
+.map {
+  color: #333;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* line 135, ../sass/_map.scss */
+.map .mapStories {
+  z-index: 0;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 145, ../sass/_map.scss */
+.mapDropdown {
+  margin-top: 60px;
+}
+/* line 147, ../sass/_map.scss */
+.mapDropdown a {
+  background: #FCFCFC;
+  color: #4D4D4D;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  margin-bottom: 17px;
+}
+/* line 155, ../sass/_map.scss */
+.mapDropdown a:hover {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 5px #cccccc;
+  -moz-box-shadow: 0px 0px 10px 5px #cccccc;
+  box-shadow: 0px 0px 10px 5px #cccccc;
+  color: #000;
+}
+/* line 162, ../sass/_map.scss */
+.mapDropdown .gray.open a {
+  color: #6d6e71;
+}
+/* line 165, ../sass/_map.scss */
+.mapDropdown .gray.open p.dropdown-menu {
+  color: #6d6e71;
+}
+/* line 169, ../sass/_map.scss */
+.mapDropdown .open a {
+  background: #fff;
+  color: #e87d2b;
+  border: solid 1px #fff;
+  outline: none;
+}
+/* line 176, ../sass/_map.scss */
+.mapDropdown p.dropdown-menu {
+  color: #e87d2b;
+  width: 425px;
+  font-size: 14px;
+  font-weight: 500px;
+  text-shadow: none;
+  border: none;
+  padding: 20px;
+  border-radius: 0px;
+  margin: 10px 5px;
+}
+/* line 187, ../sass/_map.scss */
+.mapDropdown.gray a {
+  color: #6d6e71;
+}
+
+/* line 191, ../sass/_map.scss */
+#2011 {
+  background: pink;
+}
+
+/* line 196, ../sass/_map.scss */
+.mapStories .year {
+  font-size: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* line 202, ../sass/_map.scss */
+.marker-popup {
+  max-width: 600px;
+  width: 600px;
+  padding: 0px;
+}
+
+/* line 208, ../sass/_map.scss */
+.marker-popup h4 {
+  margin: 0px;
+}
+
+/* line 212, ../sass/_map.scss */
+.marker-popup .close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0.8;
+  color: #fff;
+}
+
+/* line 220, ../sass/_map.scss */
+.marker-popup .prev {
+  position: absolute;
+  top: 100px;
+  left: -24px;
+  opacity: 0.8;
+  color: #fff;
+  height: 20px;
+  background: #333;
+  width: 10px;
+  padding: 20px 5px;
+  cursor: pointer;
+}
+
+/* line 233, ../sass/_map.scss */
+.marker-popup .next {
+  position: absolute;
+  top: 100px;
+  right: -24px;
+  opacity: 0.8;
+  color: #fff;
+  height: 20px;
+  background: #333;
+  width: 10px;
+  padding: 20px 5px;
+  cursor: pointer;
+}
+
+/* line 245, ../sass/_map.scss */
+.marker-popup .next:hover {
+  opacity: 1.0;
+}
+
+/* line 249, ../sass/_map.scss */
+.marker-popup .prev:hover {
+  opacity: 1.0;
+}
+
+/* line 253, ../sass/_map.scss */
+.fellowshipyearfixed {
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  background: #fff;
+  display: inherit;
+}
+
+/* line 261, ../sass/_map.scss */
+.storyContainer {
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  z-index: 99;
+  background: #e87d2b;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 271, ../sass/_map.scss */
+.storyContainer p {
+  font-size: 13px;
+  color: #000;
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-width: 138px;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+/* line 283, ../sass/_map.scss */
+.yearText {
+  background: #fff;
+  font-size: 16px;
+}
+
+/* line 289, ../sass/_map.scss */
+.zoomer {
+  top: 210px;
+  left: 50px;
+}
+
+/* line 294, ../sass/_map.scss */
+.zoomin {
+  left: 50px;
+}
+
+/* line 298, ../sass/_map.scss */
+.zoomout {
+  top: 239px;
+}
+
+/*******************************************/
+/* Press */
+/************************/
+/* line 7, ../sass/_press.scss */
+.press {
+  text-align: left;
+}
+
+/* line 19, ../sass/_press.scss */
+.press .atlanticcities,
+.press .latimes,
+.press .usatoday,
+.press .pbs,
+.press .time,
+.press .cnet,
+.press .details,
+.press .globaljournal,
+.press .fastco {
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+/* line 30, ../sass/_press.scss */
+.press .pbs:hover,
+.press .time:hover,
+.press .details:hover,
+.press .globaljournal:hover,
+.press .fastco:hover {
+  background-position: 0 -40px;
+}
+
+/* line 38, ../sass/_press.scss */
+.press .atlanticcities:hover,
+.press .usatoday:hover,
+.press .pbs:hover,
+.press .cnet:hover {
+  background-position: 0 -60px;
+}
+
+/* .7895 */
+/* line 44, ../sass/_press.scss */
+.press .atlanticcities {
+  background-image: url("../img/atlanticcities.png");
+  background-size: 145px;
+  width: 145px;
+  height: 60px;
+}
+
+/* line 51, ../sass/_press.scss */
+.press .latimes {
+  background-image: url("../img/losangelestimes.png");
+  background-size: 340px;
+  width: 340px;
+}
+
+/* line 57, ../sass/_press.scss */
+.press .usatoday {
+  background-image: url("../img/usatoday.png");
+  background-size: 129px;
+  width: 129px;
+  height: 60px;
+}
+
+/* line 64, ../sass/_press.scss */
+.press .pbs {
+  background-image: url("../img/pbs.png");
+  background-size: 156px;
+  width: 156px;
+  height: 60px;
+}
+
+/* line 71, ../sass/_press.scss */
+.press .time {
+  background-image: url("../img/time.png");
+  background-size: 146px;
+  width: 146px;
+}
+
+/* line 77, ../sass/_press.scss */
+.press .cnet {
+  background-image: url("../img/cnet.png");
+  background-size: 81px;
+  width: 81px;
+  height: 60px;
+}
+
+/* line 84, ../sass/_press.scss */
+.press .details {
+  background-image: url("../img/details.png");
+  background-size: 177px;
+  width: 177px;
+}
+
+/* line 90, ../sass/_press.scss */
+.press .globaljournal {
+  background-image: url("../img/globaljournal.png");
+  background-size: 178px;
+  width: 178px;
+}
+
+/* line 96, ../sass/_press.scss */
+.press .fastco {
+  background-image: url("../img/fastco.png");
+  background-size: 281px;
+  width: 281px;
+}
+
+/* line 102, ../sass/_press.scss */
+.press .latimes:hover {
+  background-position: 0 -40px;
+}
+
+/* line 107, ../sass/_press.scss */
+.press .msnbc:hover {
+  background-position: 0 -50px;
+}
+
+/* line 111, ../sass/_press.scss */
+.press .details:hover {
+  background-position: 0 -40px;
+}
+
+/* line 115, ../sass/_press.scss */
+.press .globaljournal:hover {
+  background-position: 0 -45px;
+}
+
+/* line 119, ../sass/_press.scss */
+.getinvolved .press div {
+  margin-right: 20px;
+  float: left;
+}
+
+/* line 124, ../sass/_press.scss */
+.press div {
+  margin: 20px 0;
+}
+
+/* line 128, ../sass/_press.scss */
+.press .keynotes {
+  margin-top: 50px;
+}
+
+/*****************************************************************************/
+/*
+/* Startup Logos
+/*
+/*****************************************************************************/
+/* line 9, ../sass/_startup-logos.scss */
+.startupspop {
+  background: none;
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+/* line 18, ../sass/_startup-logos.scss */
+a.startupspop:hover {
+  border: none;
+}
+
+/* line 23, ../sass/_startup-logos.scss */
+.startupspop.startup_CI {
+  background-image: url("../img/apps/inverse_civicinsight.png");
+}
+
+/* line 27, ../sass/_startup-logos.scss */
+.startupspop.startup_LD {
+  background-image: url("../img/apps/inverse_localdata.png");
+}
+
+/* line 31, ../sass/_startup-logos.scss */
+.startupspop.startup_TZ {
+  background-image: url("../img/apps/inverse_textizen.png");
+}
+
+/* line 35, ../sass/_startup-logos.scss */
+.startupspop.startup_AS {
+  background-image: url("../img/apps/inverse_archivesocial.png");
+}
+
+/* line 39, ../sass/_startup-logos.scss */
+.startupspop.startup_FAF {
+  background-image: url("../img/apps/inverse_FAF.png");
+}
+
+/* line 43, ../sass/_startup-logos.scss */
+.startupspop.startup_OC {
+  background-image: url("../img/apps/inverse_opencounter.png");
+}
+
+/* line 47, ../sass/_startup-logos.scss */
+.startupspop.startup_SP {
+  background-image: url("../img/apps/inverse_smartprocure.png");
+}
+
+/* line 51, ../sass/_startup-logos.scss */
+.startupspop.startup_SC {
+  background-image: url("../img/apps/inverse_streetcred.png");
+}
+
+/* style guide lists this as #999595 */
+/*****************************************************************************/
+/*
+/* Specific typography changes for sections
+/*
+/*****************************************************************************/
+/* line 9, ../sass/_typography.scss */
+.attribution {
+  bottom: 0;
+  padding: 20px 20px 0px 0px;
+  position: absolute;
+  right: 0;
+}
+/* line 15, ../sass/_typography.scss */
+.attribution p {
+  color: #fff;
+  border: none;
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: right;
+}
+/* line 28, ../sass/_typography.scss */
+.attribution img {
+  padding-bottom: 30px;
+  border: none;
+}
+/* line 34, ../sass/_typography.scss */
+.attribution a:hover {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 39, ../sass/_typography.scss */
+.attribution a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* style guide lists this as #999595 */
+/* line 3, ../sass/_getinvolved.scss */
+.getinvolved {
+  background: rgba(255, 255, 255, 0.95);
+  background: #fff;
+  color: #000;
+  padding: 70px 80px;
+  text-shadow: none;
+  font-family: 'Arvo', 'Georgia', serif;
+  margin: 200px 180px 100px;
+}
+
+/* line 13, ../sass/_getinvolved.scss */
+.getinvolved.joinus {
+  padding: 30px 0px 45px;
+}
+
+/* line 17, ../sass/_getinvolved.scss */
+.getinvolved p:first-child:first-letter {
+  float: left;
+  font-size: 48px;
+  line-height: 50px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+/* line 25, ../sass/_getinvolved.scss */
+.getinvolved h1 {
+  color: #000 !important;
+  font-size: 100px !important;
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+
+/* line 32, ../sass/_getinvolved.scss */
+.getinvolved h4 {
+  text-transform: none;
+  margin-top: 19px;
+  font-size: 22px;
+}
+
+/* line 38, ../sass/_getinvolved.scss */
+.getinvolved h5 {
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 13px;
+  text-align: center;
+}
+
+/* line 45, ../sass/_getinvolved.scss */
+.getinvolved p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+/* line 50, ../sass/_getinvolved.scss */
+.getinvolved img {
+  width: 40%;
+  margin-top: 15px;
+}
+
+/* line 55, ../sass/_getinvolved.scss */
+.getinvolved a {
+  color: #000;
+}
+
+/* line 60, ../sass/_getinvolved.scss */
+.getinvolved a:hover,
+.companies a:hover {
+  color: #C82A45;
+  border-bottom: #C82A45 solid 1px;
+}
+
+/* line 65, ../sass/_getinvolved.scss */
+.getinvolved span {
+  font-weight: 700;
+}
+
+/* line 69, ../sass/_getinvolved.scss */
+.getinvolved li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* line 75, ../sass/_getinvolved.scss */
+.getinvolved form {
+  background: rgba(214, 214, 214, 0.7);
+  padding: 25px 30px;
+  width: 50%;
+  margin: 25px auto 10px auto;
+  text-align: center;
+}
+
+/* line 83, ../sass/_getinvolved.scss */
+.getinvolved label {
+  color: #000;
+  margin-right: 10px;
+}
+
+/*****************************************************************************/
+/*
+/* Sidebar and social buttons
+/*
+/*****************************************************************************/
+/* line 9, ../sass/_sidebar.scss */
+.sidebar {
+  width: 400px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -7;
+}
+@media screen and (max-width: 480px) {
+  /* line 9, ../sass/_sidebar.scss */
+  .sidebar {
+    display: none;
+  }
+}
+
+/* line 21, ../sass/_sidebar.scss */
+.sidebartitle {
+  width: 400px;
+  left: 0px;
+  position: absolute;
+  top: 80px;
+}
+/* line 27, ../sass/_sidebar.scss */
+.sidebartitle img {
+  padding: 14px 0px 0px 5px;
+}
+
+/* line 32, ../sass/_sidebar.scss */
+.sidebartitle h1 {
+  font-size: 90px;
+  color: #fff;
+  margin: 30px 0px 0px 50px;
+  text-align: left;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 40, ../sass/_sidebar.scss */
+.mapsidebar h1 {
+  font-size: 100px;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+/* line 46, ../sass/_sidebar.scss */
+.sidebartitle h2 {
+  font-size: 33px;
+  position: relative;
+  left: -400px;
+  line-height: 35px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+/* line 57, ../sass/_sidebar.scss */
+.sidebartitle.appear h2 {
+  left: 50px;
+  transition: left 1s;
+  -webkit-transition: left 1s;
+}
+
+/* line 63, ../sass/_sidebar.scss */
+.sidebartitle h2 img {
+  width: 100px;
+}
+
+/* line 67, ../sass/_sidebar.scss */
+iframe {
+  width: 100%;
+  min-height: 200px;
+}
+
+/* line 72, ../sass/_sidebar.scss */
+iframe.twitter-share-button {
+  min-height: 20px;
+}
+
+/* style guide lists this as #999595 */
+/* line 4, ../sass/_finance.scss */
+.financials .graph {
+  background: #00a175;
+}
+/* line 7, ../sass/_finance.scss */
+.financials .graph1 {
+  background: #00c58f;
+}
+/* line 10, ../sass/_finance.scss */
+.financials .graph2 {
+  background: #00e8a9;
+}
+/* line 13, ../sass/_finance.scss */
+.financials .graph3 {
+  background: #31ffc7;
+}
+/* line 16, ../sass/_finance.scss */
+.financials .graph4 {
+  background: #55ffd0;
+}
+/* line 19, ../sass/_finance.scss */
+.financials .graph5 {
+  background: #78ffda;
+}
+/* line 22, ../sass/_finance.scss */
+.financials .graph6 {
+  background: #c0ffee;
+}
+/* line 25, ../sass/_finance.scss */
+.financials .graph7 {
+  background: #e3fff7;
+}
+
+/* line 30, ../sass/_finance.scss */
+.financials h3 {
+  margin-top: 90px;
+}
+
+/* line 34, ../sass/_finance.scss */
+.financials h4 {
+  margin-top: 0px;
+}
+
+/* line 38, ../sass/_finance.scss */
+.financials h5 {
+  font-style: normal;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 30px;
+}
+
+/* line 47, ../sass/_finance.scss */
+.financials p {
+  font-size: 17px;
+  line-height: 5px;
+  margin: 10px 0;
+}
+
+/* line 53, ../sass/_finance.scss */
+.financials .programs {
+  margin-bottom: 5px;
+}
+
+/* line 57, ../sass/_finance.scss */
+.financials .programs p {
+  margin-left: 25px;
+}
+
+/* line 61, ../sass/_finance.scss */
+.icon-question-sign.icon-white {
+  position: absolute;
+  margin: -5px 0px 0px 2px;
+}
+
+/* line 68, ../sass/_finance.scss */
+.financials .rightcol h5,
+.financials .rightcol h4,
+.financials .rightcol p {
+  text-align: right;
+}
+
+/* line 72, ../sass/_finance.scss */
+.financials br {
+  line-height: 30px;
+}
+
+/* line 77, ../sass/_finance.scss */
+.expenses a:hover,
+.revenues a:hover {
+  border-bottom: none;
+}
+
+/* line 82, ../sass/_finance.scss */
+.expenses .popover-content,
+.revenues .popover-content {
+  font-size: 14px;
+}
+
+/* line 86, ../sass/_finance.scss */
+.revenues .popover-content {
+  line-height: 22px;
+}
+
+/* line 91, ../sass/_finance.scss */
+.expensesdata,
+.revenuedata {
+  cursor: pointer;
+}
+
+/* line 97, ../sass/_finance.scss */
+.expensesdata.active,
+.revenuedata.active,
+.financialsgroup.active {
+  color: #fedd44;
+}
+
+/* line 101, ../sass/_finance.scss */
+.financialsgroup {
+  cursor: pointer;
+}
+
+/* line 105, ../sass/_finance.scss */
+.graphsection {
+  height: 60px;
+  float: right;
+  cursor: pointer;
+}
+
+/* line 111, ../sass/_finance.scss */
+.graphsection.active {
+  background-color: #fedd44 !important;
+}
+
+/* line 116, ../sass/_finance.scss */
+.expenses.bargraph,
+.revenues.bargraph {
+  margin-top: 30px;
+  max-width: 960px;
+}
+
+/*****************************************************************************/
+/*
+/* Code for All ON Report Updates
+/*
+/*****************************************************************************/
+/* line 38, ../sass/base.scss */
+.red {
+  color: #cf1b41;
+}
+
+/* line 39, ../sass/base.scss */
+.bg-red {
+  background: #cf1b41;
+}
+
+/* line 40, ../sass/base.scss */
+.blue {
+  color: #399fd3;
+}
+
+/* line 41, ../sass/base.scss */
+.bg-blue {
+  background: #399fd3;
+}
+
+/* line 42, ../sass/base.scss */
+.black {
+  color: black;
+}
+
+/* line 43, ../sass/base.scss */
+.bg-black {
+  background: black;
+}
+
+/* line 44, ../sass/base.scss */
+.gray {
+  color: #6d6e71;
+}
+
+/* line 45, ../sass/base.scss */
+.bg-gray {
+  background: #6d6e71;
+}
+
+/* line 46, ../sass/base.scss */
+.white {
+  color: white;
+}
+
+/* line 47, ../sass/base.scss */
+.bg-white {
+  background: white;
+}
+
+/* line 50, ../sass/base.scss */
+.dk-blue {
+  color: #2f3d4a;
+}
+
+/* line 51, ../sass/base.scss */
+.bg-dk-blue {
+  background: #2f3d4a;
+}
+
+/* line 52, ../sass/base.scss */
+.med-blue {
+  color: #4298bb;
+}
+
+/* line 53, ../sass/base.scss */
+.bg-med-blue {
+  background: #4298bb;
+}
+
+/* line 54, ../sass/base.scss */
+.lt-blue {
+  color: #7ab5d6;
+}
+
+/* line 55, ../sass/base.scss */
+.bg-lt-blue {
+  background: #7ab5d6;
+}
+
+/* line 56, ../sass/base.scss */
+.dk-gray {
+  color: #333333;
+}
+
+/* line 57, ../sass/base.scss */
+.bg-dk-gray {
+  background: #333333;
+}
+
+/* line 58, ../sass/base.scss */
+.med-gray {
+  color: #999595;
+}
+
+/* line 59, ../sass/base.scss */
+.bg-med-gray {
+  background: #999595;
+}
+
+/* line 60, ../sass/base.scss */
+.lt-gray {
+  color: #e5e5e5;
+}
+
+/* line 61, ../sass/base.scss */
+.bg-lt-gray {
+  background: #e5e5e5;
+}
+
+/* line 69, ../sass/base.scss */
+.onreport .navbar {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+/* line 73, ../sass/base.scss */
+p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+/* line 77, ../sass/base.scss */
+.intro {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+/* line 81, ../sass/base.scss */
+.strong {
+  font-weight: bold;
+}
+
+/* line 84, ../sass/base.scss */
+.quote-caption, .intro-letter-well, .main-well {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  display: block;
+  padding: 0 4em 2em;
+}
+
+/* line 89, ../sass/base.scss */
+.quote-caption {
+  max-width: 48em;
+}
+
+/* line 92, ../sass/base.scss */
+.intro-letter-well, .main-well {
+  max-width: 60em;
+}
+
+/* line 95, ../sass/base.scss */
+.intropage p {
+  font-size: 1.75em;
+  line-height: 1.75em;
+}
+
+/*****************************************************************************/
+/*
+/* 2013 Updates
+/*
+/*****************************************************************************/
+/* line 109, ../sass/base.scss */
+.appsIntro {
+  padding-bottom: 50px;
+}
+
+/* line 113, ../sass/base.scss */
+.community .bios {
+  margin: 20px 0px 65px 0px;
+}
+
+/* line 117, ../sass/base.scss */
+.page.homeQuote {
+  padding-top: 50px !important;
+}
+
+/* line 121, ../sass/base.scss */
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 127, ../sass/base.scss */
+.logo img {
+  max-width: 85px;
+}
+
+/* line 131, ../sass/base.scss */
+.nav-tabs {
+  border: none;
+  margin: 45px 0px 0px;
+}
+
+/* line 136, ../sass/base.scss */
+.nav-tabs li {
+  border: none;
+  margin-bottom: -2px;
+}
+
+/* line 141, ../sass/base.scss */
+.nav-tabs li a {
+  font-size: 24px;
+  font-weight: bold;
+  background: #F7F7F7;
+  color: #6D6E71;
+  border-radius: 0px;
+}
+
+/* line 148, ../sass/base.scss */
+.nav-tabs li a:hover {
+  background: #fff;
+  color: #4D4D4D;
+  border: none;
+}
+
+/* line 154, ../sass/base.scss */
+.nav-tabs li.active a {
+  background: #fff;
+  color: #e87d2b;
+  border: none;
+}
+
+/* line 160, ../sass/base.scss */
+.nav-tabs li.active a:hover {
+  background: #fff;
+  color: #e87d2b;
+  border: none;
+}
+
+/* line 166, ../sass/base.scss */
+.networkTitle {
+  padding-top: 10px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 172, ../sass/base.scss */
+.panel-collapse {
+  color: #e87d2b;
+  background: #fff;
+  padding: 0px 5px;
+}
+
+/* line 178, ../sass/base.scss */
+.panel-body {
+  padding: 0px 10px 10px;
+  text-shadow: none;
+}
+
+/* line 184, ../sass/base.scss */
+.stats2013 {
+  border-left: 2px solid white;
+  padding: 5px 0px 10px 20px;
+  margin-left: 15px;
+}
+
+/* line 190, ../sass/base.scss */
+.stats2013 p {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0px;
+}
+
+/* line 196, ../sass/base.scss */
+.stats2013 h3 {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin: 0px 0px 7px 0px;
+  line-height: 30px;
+}
+
+/* line 207, ../sass/base.scss */
+.stories h1 {
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* line 212, ../sass/base.scss */
+.stories h2 {
+  margin-top: 0px;
+}
+
+/* line 216, ../sass/base.scss */
+.stories p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: right;
+}
+
+@media screen and (max-width: 1080px) {
+  /* line 222, ../sass/base.scss */
+  .summary h3 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 222, ../sass/base.scss */
+  .summary h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+/* line 234, ../sass/base.scss */
+.superHeadline {
+  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  font-size: 80px;
+  color: #fff;
+  margin: 30px 0px 0px 00px;
+  text-align: left;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  padding: 0px 0px 75px 0px;
+}
+
+/* line 245, ../sass/base.scss */
+.network .people ul {
+  margin: 0px 0px 8px 0px;
+}
+
+/* line 249, ../sass/base.scss */
+.tab-pane div {
+  background: #fff;
+  color: #e87d2b !important;
+  padding: 15px 20px;
+  text-shadow: none;
+}
+
+/* line 256, ../sass/base.scss */
+.title {
+  min-height: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 262, ../sass/base.scss */
+.title h1,
+.title p {
+  text-align: center;
+  color: #fff;
+  text-shadow: none;
+}
+@media screen and (max-width: 480px) {
+  /* line 262, ../sass/base.scss */
+  .title h1,
+  .title p {
+    font-size: 30%;
+    text-align: left;
+  }
+}
+
+/* line 272, ../sass/base.scss */
+.title h1 {
+  font-size: 115px;
+  margin: 90px auto 117px;
+  font-weight: 600;
+}
+
+/* line 278, ../sass/base.scss */
+.page.quote .title {
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 480px) {
+  /* line 278, ../sass/base.scss */
+  .page.quote .title {
+    padding-bottom: 0px;
+  }
+}
+
+/* line 285, ../sass/base.scss */
+.page.quote .title h1 {
+  line-height: 10px;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  font-size: 115px;
+  margin: 90px auto 117px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  /* line 285, ../sass/base.scss */
+  .page.quote .title h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 285, ../sass/base.scss */
+  .page.quote .title h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 285, ../sass/base.scss */
+  .page.quote .title h1 {
+    text-align: left;
+    font-size: 30px;
+    text-align: left;
+    margin-left: -100px;
+  }
+}
+
+/* line 305, ../sass/base.scss */
+.title p {
+  text-transform: uppercase;
+  font-size: 63px;
+  font-weight: 300;
+}
+
+/* line 311, ../sass/base.scss */
+.featuredapps p {
+  margin: 0px;
+}
+
+/* line 318, ../sass/base.scss */
+.morefellows,
+.themes,
+.community,
+.network {
+  margin: 50px 0px 100px;
+}
+
+/* line 322, ../sass/base.scss */
+.margin400 {
+  margin-bottom: 400px;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+/* line 337, ../sass/base.scss */
+.navbar .container {
+  margin-left: 50px;
+}
+
+/* line 341, ../sass/base.scss */
+.navbar .brand {
+  max-width: 60px;
+}
+
+/* line 345, ../sass/base.scss */
+.navbar a:hover {
+  border-bottom: none;
+}
+
+/* line 351, ../sass/base.scss */
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #ffffff;
+  background-color: #1b1b1b;
+  border-color: #1b1b1b;
+}
+
+/* line 357, ../sass/base.scss */
+#loading {
+  background: #399fd3;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10000;
+}
+
+/* line 367, ../sass/base.scss */
+#loading img {
+  display: block;
+  margin: 100px auto 0px;
+}
+
+/* line 373, ../sass/base.scss */
+#loading h1,
+#loading p {
+  text-align: center;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 379, ../sass/base.scss */
+#loading h1 {
+  font-size: 220px;
+  margin: 90px auto 117px;
+  font-weight: 600;
+}
+
+/* line 385, ../sass/base.scss */
+#loading p {
+  text-transform: uppercase;
+  font-size: 63px;
+  font-weight: 300;
+}
+
+/* line 391, ../sass/base.scss */
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+/* line 396, ../sass/base.scss */
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/* line 402, ../sass/base.scss */
+h2 {
+  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  text-align: left;
+  font-size: 30px;
+  margin-top: 80px;
+  line-height: 40px;
+}
+
+/* line 410, ../sass/base.scss */
+h3 {
+  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+/* line 418, ../sass/base.scss */
+h3 span {
+  font-size: 24px;
+}
+
+/* line 422, ../sass/base.scss */
+h4 {
+  clear: both;
+  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* line 432, ../sass/base.scss */
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+/* line 440, ../sass/base.scss */
+h6 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* line 447, ../sass/base.scss */
+p {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* line 453, ../sass/base.scss */
+input[type="text"] {
+  border-radius: 0px;
+}
+
+/* line 457, ../sass/base.scss */
+.btn {
+  border-radius: 0px;
+  background: #C82A45;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Arvo', 'Georgia', serif;
+  margin-left: 5px;
+}
+
+/* line 467, ../sass/base.scss */
+.btn:hover {
+  background: #b1263d;
+  color: #fff;
+  text-shadow: none;
+}
+
+/****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+/* line 480, ../sass/base.scss */
+.line {
+  border: white solid 1px;
+  width: 85%;
+  margin: 10px 0px 10px 0px;
+}
+
+/* line 486, ../sass/base.scss */
+.clear {
+  clear: both;
+}
+
+/* line 491, ../sass/base.scss */
+.page.quote,
+.page.story {
+  overflow-x: hidden;
+  position: relative;
+  padding: 250px 80px 200px 130px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+
+/* line 500, ../sass/base.scss */
+.page.story {
+  /*padding: 80px 80px 100px;*/
+}
+
+/* line 504, ../sass/base.scss */
+.page.story.nosidebar {
+  padding: 0px;
+}
+
+/* line 510, ../sass/base.scss */
+.page.quote h1,
+.page.story h1 {
+  color: #fff;
+  font-size: 56px;
+  letter-spacing: 1px;
+  list-style: none;
+  line-height: 75px;
+  padding-top: 40px;
+}
+
+/* line 519, ../sass/base.scss */
+.page.quote h1 {
+  margin-bottom: 0px;
+}
+
+/* line 523, ../sass/base.scss */
+.page.story {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 400px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+                               /* Firefox 
+-webkit-box-sizing:border-box; /* Safari */
+}
+
+/* line 535, ../sass/base.scss */
+.cityLeaders iframe {
+  display: block;
+  margin-top: 50px;
+  min-height: 300px;
+}
+
+/* line 541, ../sass/base.scss */
+.quote .bigtext h1 {
+  font-size: 73px;
+  text-transform: uppercase;
+}
+
+/* line 546, ../sass/base.scss */
+.themes .span10 {
+  margin-left: 10px;
+}
+
+/* line 550, ../sass/base.scss */
+.themes .headline {
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+/* line 555, ../sass/base.scss */
+.bioleft {
+  padding-right: 15px;
+}
+
+/* line 559, ../sass/base.scss */
+.bioleft p {
+  text-align: right;
+}
+
+/* line 564, ../sass/base.scss */
+.bioright,
+.apps .bioright {
+  padding-left: 15px;
+}
+
+/* line 568, ../sass/base.scss */
+.bios {
+  margin: 35px auto;
+  float: left;
+}
+
+/* line 574, ../sass/base.scss */
+.bios h3,
+.network .bios p {
+  margin-top: -6px;
+}
+
+/* line 578, ../sass/base.scss */
+.bios h5 {
+  margin-bottom: 15px;
+}
+
+/* line 582, ../sass/base.scss */
+.bios p {
+  margin-top: 0px;
+}
+
+/* line 586, ../sass/base.scss */
+.bios.right .span6 {
+  padding-left: 20px;
+}
+
+/* line 590, ../sass/base.scss */
+.bios.right .span6.bioleft {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+/* line 595, ../sass/base.scss */
+.bios .url {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* line 602, ../sass/base.scss */
+.moreapps,
+.captains {
+  clear: both;
+  float: left;
+}
+
+/* line 607, ../sass/base.scss */
+.moreapps h3 {
+  margin-top: 1    0px;
+}
+
+/* line 611, ../sass/base.scss */
+.moreapps img {
+  margin-top: 30px;
+}
+
+/* line 616, ../sass/base.scss */
+.market img {
+  margin: 0px 0px;
+  display: block;
+}
+
+/* line 621, ../sass/base.scss */
+.thanks h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px auto 30px;
+}
+
+/* line 627, ../sass/base.scss */
+.thanks img {
+  max-height: 60px;
+  max-width: 242px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 634, ../sass/base.scss */
+.cfa {
+  /*margin-bottom: 200px;*/
+}
+
+/* line 638, ../sass/base.scss */
+.cfa h1 {
+  text-align: right;
+}
+
+/* line 642, ../sass/base.scss */
+.cfa p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* line 647, ../sass/base.scss */
+.cfa a {
+  font-weight: 300;
+}
+
+/* line 651, ../sass/base.scss */
+.people ul {
+  float: left;
+  line-height: 26px;
+  margin: 0px 50px 50px 0px;
+}
+
+/* line 659, ../sass/base.scss */
+.people .google,
+.people .knight,
+.people .on {
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+/* line 664, ../sass/base.scss */
+.people .google {
+  background-image: url("../img/google.png");
+  background-size: 105px;
+  width: 105px;
+}
+
+/* line 670, ../sass/base.scss */
+.people .knight {
+  background-image: url("../img/knight.png");
+  background-size: 185px;
+  width: 185px;
+}
+
+/* line 676, ../sass/base.scss */
+.people .on {
+  background-image: url("../img/on.png");
+  background-size: 135px;
+  width: 135px;
+}
+
+/*
+Temporary css for image placeholders
+*/
+/* line 686, ../sass/base.scss */
+.ecosystem h1 {
+  margin-top: 70px;
+}
+
+/* line 690, ../sass/base.scss */
+.ecosystem h2 {
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 35px;
+  margin-top: 58px;
+}
+
+/* line 697, ../sass/base.scss */
+.apps h3 {
+  margin-bottom: 10px;
+}
+
+/* line 701, ../sass/base.scss */
+.companies {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000;
+  text-shadow: none;
+  float: left;
+  margin-top: 20px;
+  height: 345px;
+}
+
+/* line 710, ../sass/base.scss */
+.companies img {
+  width: 82%;
+  padding: 40px 0px 0px 5em;
+}
+
+/* line 715, ../sass/base.scss */
+.companies .companyblurb {
+  float: left;
+  padding: 40px 60px 0 0;
+  text-align: left;
+}
+
+/* line 721, ../sass/base.scss */
+.companies .companyblurb img {
+  width: 40%;
+  padding-top: 0px;
+}
+
+/* line 726, ../sass/base.scss */
+.companies h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 732, ../sass/base.scss */
+.companies p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 737, ../sass/base.scss */
+.companies a {
+  color: #000;
+}
+
+/* line 741, ../sass/base.scss */
+.companies .contact {
+  font-size: 16px;
+}
+
+/* line 745, ../sass/base.scss */
+.tagline {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* line 750, ../sass/base.scss */
+img.progicons {
+  width: 100%;
+  margin-top: -7px;
+}
+
+/* line 755, ../sass/base.scss */
+.market img.progicons {
+  margin: 0;
+}
+
+/* line 759, ../sass/base.scss */
+.community img {
+  margin: 0;
+  display: block;
+}
+
+/* line 764, ../sass/base.scss */
+.community p {
+  margin: 0px;
+}
+
+/* line 769, ../sass/base.scss */
+.community .people ul {
+  margin: 0px 0px 8px 0px;
+}
+
+/* line 777, ../sass/base.scss */
+.captains a:hover,
+.fellowcard a:hover,
+.moreapps a:hover,
+.morefellows a:hover {
+  border-bottom: none;
+}
+
+/* line 781, ../sass/base.scss */
+.popover {
+  border-radius: 0px;
+}
+
+/* line 785, ../sass/base.scss */
+.popover-content {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* line 789, ../sass/base.scss */
+.popovertopshim {
+  margin-top: 50px;
+}
+
+/* line 794, ../sass/base.scss */
+.popover-title,
+.popover-content {
+  font-weight: 300;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 801, ../sass/base.scss */
+.popover-title,
+.popover-title {
+  font-weight: 700;
+  background: none;
+  border: none;
+  letter-spacing: 1px;
+  padding-bottom: 0px;
+}
+
+/* line 810, ../sass/base.scss */
+.captains .popover-content,
+.morefellows .popover-content {
+  font-weight: 300;
+  padding-top: 0px;
+}
+
+/* line 836, ../sass/base.scss */
+.jeff,
+.andrew,
+.bret,
+.burt,
+.chip,
+.chris,
+.chriswhit,
+.dave,
+.emma,
+.harlan,
+.jason,
+.jeff,
+.jon,
+.kevin,
+.michelle,
+.scott,
+.steve,
+.eddiet,
+.noel,
+.jasonl,
+.chase,
+.mevans {
+  background-image: url("../img/brigade_captains.jpg");
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+/* line 845, ../sass/base.scss */
+.andrew {
+  background-position: 0 0px;
+}
+
+/* line 849, ../sass/base.scss */
+.bret {
+  background-position: 0 -100px;
+}
+
+/* line 853, ../sass/base.scss */
+.burt {
+  background-position: 0 -200px;
+}
+
+/* line 857, ../sass/base.scss */
+.chip {
+  background-position: 0 -300px;
+}
+
+/* line 861, ../sass/base.scss */
+.chris {
+  background-position: 0 -400px;
+}
+
+/* line 865, ../sass/base.scss */
+.chriswhit {
+  background-position: 0 -500px;
+}
+
+/* line 869, ../sass/base.scss */
+.dave {
+  background-position: 0 -600px;
+}
+
+/* line 873, ../sass/base.scss */
+.emma {
+  background-position: 0 -700px;
+}
+
+/* line 877, ../sass/base.scss */
+.harlan {
+  background-position: 0 -800px;
+}
+
+/* line 881, ../sass/base.scss */
+.jason {
+  background-position: 0 -900px;
+}
+
+/* line 885, ../sass/base.scss */
+.jeff {
+  background-position: 0 -1000px;
+}
+
+/* line 889, ../sass/base.scss */
+.jon {
+  background-position: 0 -1100px;
+}
+
+/* line 893, ../sass/base.scss */
+.kevin {
+  background-position: 0 -1200px;
+}
+
+/* line 897, ../sass/base.scss */
+.michelle {
+  background-position: 0 -1300px;
+}
+
+/* line 901, ../sass/base.scss */
+.scott {
+  background-position: 0 -1400px;
+}
+
+/* line 905, ../sass/base.scss */
+.steve {
+  background-position: 0 -1500px;
+}
+
+/* line 909, ../sass/base.scss */
+.eddiet {
+  background-position: 0 -1600px;
+}
+
+/* line 913, ../sass/base.scss */
+.noel {
+  background-position: 0 -1700px;
+}
+
+/* line 917, ../sass/base.scss */
+.jasonl {
+  background-position: 0 -1800px;
+}
+
+/* line 921, ../sass/base.scss */
+.chase {
+  background-position: 0 -1900px;
+}
+
+/* line 925, ../sass/base.scss */
+.mevans {
+  background-position: 0 -2000px;
+}
+
+/* line 929, ../sass/base.scss */
+.market h4 {
+  margin-top: 40px;
+}
+
+/* line 933, ../sass/base.scss */
+.market .stats {
+  margin-bottom: 10px;
+}
+
+/* line 937, ../sass/base.scss */
+.market .bios {
+  margin-top: 30px;
+}
+
+/* line 941, ../sass/base.scss */
+.market .bios.right.bioquote {
+  margin-top: 0px;
+}
+
+/* line 948, ../sass/base.scss */
+.morefellows .bios p,
+.community .bios p,
+.market .bios p,
+.network .bios p {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 959, ../sass/base.scss */
+.morefellows .bios h3,
+.community .bios h3,
+.market .bios h3,
+.network .bios h3 {
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  text-align: left;
+}
+
+/* line 968, ../sass/base.scss */
+.morefellows .bios h5,
+.community .bios h5,
+.market .bios h5,
+.network .bios h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-size: 16px;
+  line-height: 15px;
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+}
+
+/* line 977, ../sass/base.scss */
+.market .stats h4 {
+  margin-top: 20px;
+}
+
+/* line 981, ../sass/base.scss */
+.market h4.process {
+  margin-top: 50px;
+}
+
+/* line 985, ../sass/base.scss */
+.sharebutton {
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+  z-index: 100;
+  height: 70px;
+}
+
+/* line 993, ../sass/base.scss */
+.sharebutton iframe {
+  min-height: auto;
+}

@@ -1,0 +1,58 @@
+/*****************************************************************************/
+/*
+/* Startup Logos
+/*
+/*****************************************************************************/
+
+
+
+.startupspop {
+  background: none;
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+ a.startupspop {
+  &:hover {
+    border: none;
+  }
+ }
+
+.startupspop.startup_CI {
+  background-image: url('../img/apps/inverse_civicinsight.png');
+}
+
+.startupspop.startup_LD {
+  background-image: url('../img/apps/inverse_localdata.png');
+}
+
+.startupspop.startup_TZ {
+  background-image: url('../img/apps/inverse_textizen.png');
+}
+
+.startupspop.startup_AS {
+  background-image: url('../img/apps/inverse_archivesocial.png');
+}
+
+.startupspop.startup_FAF {
+  background-image: url('../img/apps/inverse_FAF.png');
+}
+
+.startupspop.startup_OC {
+  background-image: url('../img/apps/inverse_opencounter.png');
+}
+
+.startupspop.startup_SP {
+  background-image: url('../img/apps/inverse_smartprocure.png');
+}
+
+.startupspop.startup_SC  {
+  background-image: url('../img/apps/inverse_streetcred.png');
+}
+
+
+
+
+

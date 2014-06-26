@@ -1,0 +1,130 @@
+/*******************************************/
+
+/* Press */
+
+/************************/
+
+.press {
+  text-align: left;
+}
+
+.press .atlanticcities,
+.press .latimes,
+.press .usatoday,
+.press .pbs,
+.press .time,
+.press .cnet,
+.press .details,
+.press .globaljournal,
+.press .fastco {
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+
+
+.press .pbs:hover,
+.press .time:hover,
+.press .details:hover,
+.press .globaljournal:hover,
+.press .fastco:hover  {
+  background-position: 0 -40px;
+}
+
+.press .atlanticcities:hover,
+.press .usatoday:hover,
+.press .pbs:hover,
+.press .cnet:hover
+  {
+  background-position: 0 -60px;
+}
+
+/* .7895 */
+
+.press .atlanticcities{
+  background-image:url('../img/atlanticcities.png');
+  background-size: 145px;
+  width: 145px;
+  height: 60px;
+}
+
+.press .latimes {
+  background-image:url('../img/losangelestimes.png');
+  background-size: 340px;
+  width: 340px;
+}
+
+.press .usatoday {
+  background-image:url('../img/usatoday.png');
+  background-size: 129px;
+  width: 129px;
+  height: 60px;
+}
+
+.press .pbs {
+  background-image:url('../img/pbs.png');
+  background-size: 156px;
+  width: 156px;
+  height: 60px;
+}
+
+.press .time {
+  background-image:url('../img/time.png');
+  background-size: 146px;
+  width: 146px;
+}
+
+.press .cnet {
+  background-image:url('../img/cnet.png');
+  background-size: 81px;
+  width: 81px;
+  height: 60px;
+}
+
+.press .details {
+  background-image:url('../img/details.png');
+  background-size: 177px;
+  width: 177px;
+}
+
+.press .globaljournal {
+  background-image:url('../img/globaljournal.png');
+  background-size: 178px;
+  width: 178px;
+}
+
+.press .fastco {
+  background-image:url('../img/fastco.png');
+  background-size: 281px;
+  width: 281px;
+}
+
+.press .latimes:hover {
+  background-position: 0 -40px;
+}
+
+
+.press .msnbc:hover {
+  background-position: 0 -50px;
+}
+
+.press .details:hover {
+  background-position: 0 -40px;
+}
+
+.press .globaljournal:hover {
+  background-position: 0 -45px;
+}
+
+.getinvolved .press div  {
+  margin-right: 20px;
+  float: left;
+}
+
+.press div {
+  margin: 20px 0;
+}
+
+.press .keynotes {
+  margin-top: 50px;
+}

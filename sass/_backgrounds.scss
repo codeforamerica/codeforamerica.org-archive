@@ -1,0 +1,50 @@
+.pagebg{ 
+  position:fixed;
+  top:0px; 
+  bottom:0px;
+  left:0px;
+  right:0px;
+  z-index:-10;
+  display:none;
+}
+.pagebg.quote{ 
+  z-index:-5;
+}
+.pagebg.appear{ 
+
+}
+#onreport-home .pagebg {
+  background: url("../img/jamrock-hope-lg.jpg") no-repeat;
+  background-color: #4298bb; // replace with variable
+  background-size:cover;
+  background-position:right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+  // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  //   background: #468;
+  // }
+}
+#onreport-intro-letter .pagebg {
+  background: url("../img/jamrock-working-lg.jpg") no-repeat;
+  background-color: #4298bb; // replace with variable
+  background-size:cover;
+  background-position:right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+#onreport-intro-values .pagebg {
+  background: url("../img/jamrock-chill-lg.jpg") no-repeat;
+  background-color: #4298bb; // replace with variable
+  background-size:cover;
+  background-position:right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+#onreport-intro-began .pagebg {
+  background: url("../img/.jpg") no-repeat;
+  background-color: #4298bb; // replace with variable
+  background-size:cover;
+  background-position:right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+.pagebg img{ 
+  min-width:100%;
+  min-height:100%;
+}

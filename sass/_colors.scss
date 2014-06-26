@@ -1,0 +1,37 @@
+// Primary colors
+$red: #cf1b41;
+$blue: #399fd3;
+$black: #000;
+$gray: #6D6E71;
+$white: #fff;
+
+// Secondary colors
+$dk-blue: #2f3d4a;
+$med-blue: #4298bb;
+$lt-blue: #7ab5d6;
+$dk-gray: #333; /* style guide lists this as #999595 */
+$med-gray: #999595;
+$lt-gray: #e5e5e5;
+
+$orange: #e87d2b;
+$purple: #69579c;
+$green: #00a175;
+$yellow: #fedd44;
+
+// Pre-existing
+$graph: $green;
+
+// Variables
+$alert-yellow:      $yellow;
+$alert-red:         $red;
+$alert-green:       $green;
+$alert-blue:        $med-blue;
+$text-color:        $dk-gray;
+
+$link-color:        $purple;
+$link-hover:        darken($link-color, 8%);
+$link-nav: 			$white;
+$link-nav-hover: 	darken($yellow, 2%);
+$link-active:		$yellow;
+
+$nav-bg-color: 		$purple;

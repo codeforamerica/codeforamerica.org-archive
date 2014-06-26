@@ -1,0 +1,300 @@
+@import "colors";
+@import "compass/css3";
+
+/*****************************************************************************/
+/*
+/* Map styling
+/*
+/*****************************************************************************/
+
+#mapInset {
+  position: absolute; 
+  bottom: 0;
+  margin: 20px;
+  right: 0;
+  border: 3px solid #fff;
+  height: 200px;
+  width: 20%;
+}
+
+#map{
+  position:absolute; top:0; bottom:0; width:100%; 
+}
+
+#mapcontainer{
+  position:absolute; top:0; bottom:0; width:100%; 
+}
+
+#map.apply{ 
+  position:fixed !important;
+}
+
+#marker {
+  position:absolute;
+  margin-top:-25px;
+  margin-left:-25px;
+  width:50px;
+  height:50px;
+  display:none;
+  pointer-events:all;
+  
+}
+
+#markerInset {
+  position:absolute;
+  margin-top:-25px;
+  margin-left:-25px;
+  width:50px;
+  height:50px;
+  display:none;
+  pointer-events:all;
+}
+
+#markerHighlight {
+  position:absolute;
+  margin-top:-25px;
+  margin-left:-25px;
+  width:50px;
+  height:50px;
+  display:none;
+  pointer-events:all;
+}
+
+#summit .dropdown-menu{
+  float: right;
+  position: relative;
+  top: -15px;
+  margin-right: 60px;
+}
+
+.citycardscontainer{ 
+  display:none;
+}
+
+.citycard .tagline {
+  text-shadow: none;
+}
+
+.citycard .tagline p {
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.citycard a {  
+  color: #000;
+}
+
+.citycard .partnersection {
+  width: 190px;
+}
+
+.citycard ul {
+  margin-left: 0px;
+}
+
+.citycard hr {
+  border: solid 1px #C82A45;
+  margin: 10px 0;
+}
+
+.citycard[data-year="2011"] h4 { 
+ background: #FED100;
+}
+
+.citycard[data-year="2011"] hr {
+  border: solid 1px #FED100;
+}
+
+.citycard[data-year="2011"] h5 { 
+ color: #FED100;
+}
+
+.citycard .name {
+  clear: both;
+  padding-top: 10px;
+  text-shadow: none;
+}
+
+.downarrow{ 
+  position:absolute;
+  bottom:30px;
+  right:40px;
+  opacity:0;
+}
+
+.downarrow svg{ 
+  color:#fff;
+  fill:#fff;
+  height:100px;
+  width:50px;
+}
+
+.map {
+  color: #333;
+  position:relative; height:100%; width:100%; 
+  .mapStories{ 
+    z-index: 0;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+
+
+.mapDropdown {
+ margin-top: 60px;
+ a {
+   background: #FCFCFC;
+   color: #4D4D4D;
+   border: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+   padding: 8px;
+   margin-bottom: 17px;
+   &:hover {
+      background: #fff;
+      @include  box-shadow(0px 0px 10px 5px #ccc);
+      color: #000;
+   }
+ }
+.gray.open {
+  a{
+     color: $gray;
+   }
+   p.dropdown-menu {
+      color: $gray;
+   }
+}
+ .open a{
+   background: #fff;
+   color: $orange;
+   border: solid 1px #fff;
+   outline: none;
+ }
+
+  p.dropdown-menu {
+    color: $orange;
+    width: 425px;
+    font-size: 14px;
+    font-weight: 500px;
+    text-shadow: none;
+    border: none;
+    padding: 20px;
+    border-radius: 0px;
+    margin: 10px 5px;
+  }
+  &.gray a{
+    color: $gray;
+  }
+}
+#2011 {
+  background: pink;
+}
+
+
+.mapStories .year {
+  font-size: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.marker-popup{ 
+  max-width:600px;
+  width:600px;
+  padding:0px;
+}
+
+.marker-popup  h4{ 
+  margin:0px;
+}
+
+.marker-popup  .close{ 
+  position:absolute;
+  top:8px;
+  right:8px;
+  opacity:0.8;
+  color:#fff;
+}
+
+.marker-popup  .prev{ 
+  position:absolute;
+  top:100px;
+  left:-24px;
+  opacity:0.8;
+  color:#fff;
+  height:20px;
+  background:#333;
+  width:10px;
+  padding:20px 5px;
+  cursor:pointer;
+}
+
+.marker-popup  .next{
+  position:absolute;
+  top:100px;
+  right:-24px;
+  opacity:0.8;
+  color:#fff;
+  height:20px;
+  background:#333;
+  width:10px;
+  padding:20px 5px;
+  cursor:pointer;
+} 
+.marker-popup  .next:hover{
+  opacity:1.0;
+}
+
+.marker-popup  .prev:hover{
+  opacity:1.0;
+}
+
+.fellowshipyearfixed{ 
+  position:fixed;
+  top:0px;
+  left:50px;
+  background:#fff;
+  display:inherit;
+}
+
+.storyContainer {
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  z-index: 99;
+  background: $orange;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.storyContainer p {
+  font-size: 13px;
+  color: #000;
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-width: 138px;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.yearText {
+  background: #fff;
+  font-size: 16px;
+
+}
+
+.zoomer{ 
+  top:210px;
+  left:50px;
+}
+
+.zoomin{ 
+  left:50px;
+}
+
+.zoomout{ 
+  top:239px;
+}

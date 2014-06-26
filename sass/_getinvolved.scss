@@ -1,0 +1,86 @@
+@import "colors";
+
+.getinvolved {
+  background: rgba(255, 255, 255, 0.95);
+  background: #fff;
+  color: #000;
+  padding: 70px 80px;
+  text-shadow: none;
+  font-family: 'Arvo', 'Georgia', serif;
+  margin: 200px 180px 100px;
+}
+
+.getinvolved.joinus {
+    padding: 30px 0px 45px;
+}
+
+.getinvolved p:first-child:first-letter { 
+  float: left; 
+  font-size: 48px;
+  line-height: 50px;
+  padding-right: 8px; 
+  padding-left: 3px; 
+}
+
+.getinvolved h1 {
+  color: #000 !important;
+  font-size: 100px !important;
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+
+.getinvolved h4 {
+  text-transform: none;
+  margin-top: 19px;
+  font-size: 22px;
+}
+
+.getinvolved h5 {
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 13px;
+  text-align: center;
+}
+
+.getinvolved p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.getinvolved img {
+  width: 40%;
+  margin-top: 15px;
+}
+
+.getinvolved a {
+  color: #000;
+}
+
+.getinvolved a:hover,
+.companies a:hover {
+  color: #C82A45;
+  border-bottom: #C82A45 solid 1px;
+}
+
+.getinvolved span {
+  font-weight: 700;
+}
+
+.getinvolved li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.getinvolved form {
+  background: rgba(214,214,214, .7);
+  padding: 25px 30px;
+  width: 50%;
+  margin: 25px auto 10px auto;
+  text-align: center;
+}
+
+.getinvolved label {
+  color: #000;
+  margin-right: 10px;
+}

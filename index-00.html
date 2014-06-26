@@ -1,0 +1,95 @@
+---
+layout: default
+title: Code for America 2013 Annual Report
+---
+
+<div id="loading">
+  <img src="img/CfA_logo_white.png" />
+  <h1>2013</h1> 
+  <p>Annual Report</p>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#"><img class="cfalogo" src="img/cfa_logo.png" alt="Code for America logo" /></a>
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <div class="nav-collapse collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+        <ul class="nav">
+          <li class="navstories"><a href="#">Highlights</a></li>
+          <li class="navapps"><a href="#">Tech</a></li>
+          <li class="navnetwork"><a href="#">Network</a></li>
+          <li class="naveducate"><a href="#">Collaboration</a></li>
+          <li class="navpeople"><a href="#">Who We Are</a></li>
+          <li class="navjoinus"><a href="#">Join Us</a></li>
+          <li class="navpress"><a href="#">Press</a></li>
+          <li class="navfinancials"><a href="#">Financials</a></li>
+        </ul> <!-- nav -->
+      </div> <!-- collapse -->
+    </div> <!-- container -->
+  </div> <!-- navbar-inner -->
+</div> <!-- navbar -->
+
+
+
+
+
+{% for p in site.posts %}
+
+{% if p.url != "/index.html" %}
+<div class="pagebg {{ p.pagetype }} {{ p.image }}" style="background-color:#{{ p.bgcolor }};" >
+</div>
+{% endif %}
+{% endfor %}  
+
+
+<div id="page">
+  <div class="sidebar">
+
+    {% for p in site.posts %}
+
+    <div class="sidebartitle" >
+      <h1>2013</h1>
+      {% if p.title != "stats" %}
+      <h2>{{ p.title }} <br/>
+      {% if p.icon %}
+        <img src="img/{{p.icon}}.png"/>
+      {% endif %}
+      </h2>
+
+      {% endif %}
+    </div>
+
+    {% endfor %}
+    
+  </div>
+  
+  {% for p in site.posts %}
+
+  {% if p.url != "/index.html" %}
+  <a name="{{ p.section }}"></a>
+  <div class="page {{ p.pagetype }}" style="background-color:#{{ p.bgslide }};padding-top:{{ p.extrapadding }}" data-section="nav{{ p.section }}">
+    {{ p.content | markdownify }}
+    <div class="clear"></div>  
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</div>
+
+<div class="sharebutton">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://2013.codeforamerica.org">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <div></div>
+  <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2F2013.codeforamerica.org&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+
+

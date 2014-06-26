@@ -1,0 +1,181 @@
+@media screen and(max-width: 1300px) {
+  .stats h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .navbar .container {
+    margin-left: 30px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+
+  .page.quote {
+    padding-bottom: 300px;
+  }
+
+  .page.story {
+    padding-left: 250px;
+  }
+
+  .page.quote h1, .page.story h1 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .cfa p {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .cfa a {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .sidebar{ 
+    top:40px;
+  }
+
+  .sidebartitle{ 
+    top:0px;
+  }
+
+  .fellowship .yeartitle {
+    left: 30px;
+  }
+
+  .sidebartitle h1,
+  .fellowship .yeartitle h1 { 
+    font-size: 60px;
+  } 
+
+  .sidebartitle h1 {
+    margin-left: 30px;
+  }
+
+  .sidebartitle h2,
+  .fellowship .yeartitle h2 { 
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  .sidebartitle.appear h2{ 
+    left: 30px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .bios h5,
+  .network .bios h5 {
+    font-size: 17px;
+  }
+
+#loading img {
+    width: 300px;
+    margin-top: 100px;
+  }
+
+  #loading h1 {
+    font-size: 130px;
+    margin: 50px auto 60px;
+  }
+
+  #loading p { 
+    font-size: 38px;
+  }
+
+  .companies {
+    height: 369px;
+  }
+
+  .companies .companyblurb {
+    padding: 20px 60px 0 30px;
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 1070px) {
+  .getinvolved form {
+    width: 311px;
+  }
+
+  .stats h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .page.story .stats h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .financials p {
+    line-height: 22px;
+    margin: 5px 0;
+  }
+
+  .financials .programs p {
+    line-height: 5px;
+  }
+
+  .financials br {
+    line-height: 54px;
+  }
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+  position: fixed;
+}
+
+}
+
+@media screen and (max-width: 880px) {
+  .getinvolved form {
+    width: 200px;
+    padding: 24px 39px 24px 20px;
+  }
+
+  .btn {
+    margin: 6px 0 0;
+  }
+
+}
+
+ @media screen and (max-width: 767px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+  .sidebar{ 
+    @media screen and (max-width: 480px) {
+      display:none;
+    }
+  }
+  .page.story{ 
+    padding-left:20px
+  }
+}

@@ -1,0 +1,54 @@
+/*****************************************************************************/
+/*
+/* City seals and styling
+/*
+/*****************************************************************************/
+
+.cityseal {
+  background-image: url('../img/city_seals.png');
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+.sf {
+  background-position: 0 0;
+}
+
+.lv {
+  background-position: 0 -100px;
+}
+
+.ok {
+  background-position: 0 -200px;
+}
+
+.sc {
+  background-position: 0 -300px;
+}
+
+.lo {
+  background-position: 0 -400px;
+}
+
+.nyc {
+  background-position: 0 -500px;
+}
+
+.sb {
+  background-position: 0 -600px;
+}
+
+.smc {
+  background-position: 0 -700px;
+}
+
+.kcks {
+  background-position: 0 -800px;
+}
+
+.kcmo{
+  background-position: 0 -900px;
+}
