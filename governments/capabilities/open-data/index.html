@@ -468,13 +468,9 @@ There are pre-deployed instances of CKAN that are available to use free of charg
 	            <p>An open source budget visualization. It allows visitors to browse budgets, by expenditures and appropriations over time, and dive in to breakdowns of every fund, department or agency.</p>
 	            <p><a href="http://datamade.us/civic-apps/look-at-cook/">Learn more about this app</a></p>
 	</div>
-	<div class="layout-crotchet">
-	            <a href="http://www.codeforamerica.org/apps/adopt-a-hydrant/">
-	                <h5 class="teaser-title">Adopt-a-Hydrant</h5>
-	            </a>
-	            <p>Adopt-a-Hydrant lets governments look to community members for help. This map-based web app allows individuals, small businesses and community organizations to volunteer in shoveling out specific hydrants.</p>
-	            <p><a href="http://www.codeforamerica.org/apps/adopt-a-hydrant/">Learn more about this app</a></p>
-	        </div>
+	<ul><li class="layout-crotchet">
+	            {% include apps/adopt-a-hydrant.html context="apps-list" base=".." %}
+	        </li></ul>
 	<div class="layout-crotchet">
 	            <a href="http://www.codeforamerica.org/apps/click-that-hood/">
 	                <h5 class="teaser-title">Click that 'Hood</h5>
