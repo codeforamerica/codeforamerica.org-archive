@@ -4,20 +4,20 @@
   bottom:0px;
   left:0px;
   right:0px;
-  z-index:-10;
+//  z-index:-10;
   display:none;
 }
 .pagebg.quote{ 
-  z-index:-5;
+//  z-index:-5;
 }
 .pagebg.appear{ 
 
 }
 #onreport-home .pagebg {
   background: url("../img/jamrock-hope-lg.jpg") no-repeat;
-  background-color: #4298bb; // replace with variable
+  background-color: #4298bb; 
   background-size:cover;
-  background-position:right;
+  background-position: center -120px;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
   // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   //   background: #468;
@@ -25,23 +25,51 @@
 }
 #onreport-intro-letter .pagebg {
   background: url("../img/jamrock-working-lg.jpg") no-repeat;
-  background-color: #4298bb; // replace with variable
+  background-color: #4298bb; 
   background-size:cover;
   background-position:right;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
 }
 #onreport-intro-values .pagebg {
   background: url("../img/jamrock-chill-lg.jpg") no-repeat;
-  background-color: #4298bb; // replace with variable
+  background-color: #4298bb; 
   background-size:cover;
   background-position:right;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
 }
 #onreport-intro-began .pagebg {
-  background: url("../img/.jpg") no-repeat;
-  background-color: #4298bb; // replace with variable
+  background: url("../img/international_header.jpg") no-repeat;
+  background-color: #4298bb; 
   background-size:cover;
-  background-position:right;
+  background-position:center;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+#onreport-partners-cftc .pagebg {
+  background: url("../img/cftc-bg-image-lg.jpg") no-repeat;
+  background-color: #4298bb; 
+  background-size:cover;
+  background-position:left;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+#onreport-partners-cfmc .pagebg {
+  background: url("../img/cfmc-bg-image-lg.jpg") no-repeat;
+  background-color: #4298bb; 
+  background-size:cover;
+  background-position:left;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+#onreport-partners-cfg .pagebg {
+  background: url("../img/cfg-bg-image-lg.jpg") no-repeat;
+  background-color: #4298bb; 
+  background-size:cover;
+  background-position:0 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
+}
+#onreport-next .pagebg {
+  background: url("../img/next-bg-image-lg.jpg") no-repeat;
+  background-color: #4298bb; 
+  background-size:cover;
+  background-position:50%;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";  
 }
 .pagebg img{ 

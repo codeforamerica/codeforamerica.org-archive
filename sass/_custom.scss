@@ -1,0 +1,156 @@
+//
+// "custom" partial
+//
+// To make it easier to use all variables and mixins in any Sass file in this
+// theme, the base.scss file has a @import "custom" declaration. And this base.scss
+// file is in charge of importing all the other partials needed for the theme.
+//
+// This custom partial is organized in this way:
+// - First we set any shared Sass variables.
+// - Next we import Compass plug-ins (Sass mixin libraries).
+//
+
+//
+// Legacy IE support
+//
+// These variables are used by many mixins to add additional CSS to support
+// specific versions of IE or specific vendor prefixes.
+//
+// To turn on support for IE6 or IE7, set those variables to true.
+//
+// Compass uses the ie8 support variable for a couple edge cases. 
+// We include it for completeness sake. See the documentation at 
+// http://compass-style.org/reference/compass/support/
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-ie8: true;
+
+//-------------
+// Typography
+//-------------
+//
+// Font faces, stacks and sizes.
+//
+
+// Compass' vertical_rhythm extension is a powerful tool to set up a vertical
+// rhythm for your entire page. You can see some of its mixins and functions in
+// use in the normalize.scss file.
+// @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
+
+$base-font-size:   16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+
+$h1-font-size: 2.5 * $base-font-size;
+$h2-font-size: 2 * $base-font-size;
+$h3-font-size: 1.5 * $base-font-size;
+$h4-font-size: 1.25 * $base-font-size;
+$h5-font-size: 1 * $base-font-size;
+$h6-font-size: 0.8 * $base-font-size;
+
+$h1-line-height: 1.25 * $h1-font-size;
+$h2-line-height: 1.25 * $h2-font-size;
+$h3-line-height: 1.25 * $h3-font-size;
+$h4-line-height: 1.25 * $h4-font-size;
+
+$intro-font-size: 1.325 * $base-font-size;
+$intro-line-height: 36px;
+
+// The following font family declarations are based on the Microsoft core web
+// fonts which are common fonts available on most computer systems. The DejaVu
+// and Nimbus Sans fonts are commonly available on Linux systems where the MS
+// fonts are less common. Tahoma and Helvetica are also widely available.
+//
+// A user's web browser will look at the comma-separated list and will
+// attempt to use each font in turn until it finds one that is available
+// on the user's computer. The final "generic" font (sans-serif, serif or
+// monospace) hints at what type of font to use if the web browser doesn't
+// find any of the fonts in the list.
+
+// First, let's create some font stacks.
+$times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+$times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+$georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+$verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
+$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+// default font
+$interstate: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+
+// default header font
+$freight-text: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
+
+// alt sans-serif fonts
+$gotham: "Gotham A", "Gotham B", "Verdana", "Helvetica", "Arial", sans-serif;
+$open-sans: "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+
+// alt serif fonts
+$sentinel: "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
+
+
+
+// font weights and styles
+$light: 300;
+$italic: italic;
+$normal: normal;
+$book: 500;
+$semi-bold: 600;
+$bold: 700;
+
+// For an explanation of why "sans-serif" is at the end of this list, see
+// http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
+$courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $interstate; // The font family set on the html element.
+$font-body:        $interstate;
+$font-monospace:   $courier;
+
+$base-header-font: $freight-text;
+
+//-------------
+// Colors, etc.
+//-------------
+
+// Primary colors
+$red: #cf1b41;
+$blue: #399fd3;
+$black: #000;
+$gray: #6D6E71;
+$white: #fff;
+
+// Secondary colors
+$dk-blue: #2f3d4a;
+$med-blue: #4298bb;
+$lt-blue: #7ab5d6;
+$dk-gray: #333; /* style guide lists this as #999595 */
+$med-gray: #999595;
+$lt-gray: #e5e5e5;
+
+$orange: #e87d2b;
+$purple: #69579c;
+$green: #00a175;
+$yellow: #fedd44;
+
+// Pre-existing
+$graph: $green;
+
+// Variables
+$alert-yellow:      $yellow;
+$alert-red:         $red;
+$alert-green:       $green;
+$alert-blue:        $med-blue;
+$text-color:        $lt-gray;
+$header-color:		$lt-blue;
+
+$link-color:        $purple;
+$link-hover:        darken($link-color, 8%);
+$link-nav: 			$white;
+$link-nav-hover: 	darken($yellow, 2%);
+$link-active:		$yellow;
+
+$nav-bg-color: 		$purple;
+
+

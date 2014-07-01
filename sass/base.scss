@@ -9,11 +9,13 @@
 @import "map";
 @import "press";
 @import "startup-logos";
-@import "colors";
+@import "colors"; // moved to _custom.scss
 @import "typography";
 @import "getinvolved";
 @import "sidebar";
 @import "finance";
+
+@import "custom";
 
 
 //
@@ -27,76 +29,6 @@
 @import "compass/css3/images"; // Includes support for background gradient.
 @import "compass/css3/opacity";
 @import "compass/utilities/sprites";
-
-/*****************************************************************************/
-/*
-/* Code for All ON Report Updates
-/*
-/*****************************************************************************/
-
-// Corporate colors
-.red {color: $red;}
-.bg-red {background: $red;}
-.blue {color: $blue;}
-.bg-blue {background: $blue;}
-.black {color: $black;}
-.bg-black {background: $black;}
-.gray {color: $gray;}
-.bg-gray {background: $gray;}
-.white {color: $white;}
-.bg-white {background: $white;}
-
-// Secondary colors (use sparingly)
-.dk-blue {color: $dk-blue;}
-.bg-dk-blue {background: $dk-blue;}
-.med-blue {color: $med-blue;}
-.bg-med-blue {background: $med-blue;}
-.lt-blue {color: $lt-blue;}
-.bg-lt-blue {background: $lt-blue;}
-.dk-gray {color: $dk-gray;}
-.bg-dk-gray {background: $dk-gray;}
-.med-gray {color: $med-gray;}
-.bg-med-gray {background: $med-gray;}
-.lt-gray {color: $lt-gray;}
-.bg-lt-gray {background: $lt-gray;}
-
-// .orange {color: $orange;}
-// .purple {color: $purple;}
-// .green {color: $green;}
-// .yellow {color: $yellow;}
-
-.onreport {
-  .navbar {
-      @include opacity(0.9);
-  }
-}
-p {
-  font-size: 1.25em;
-  line-height: 1.5em;
-}
-.intro { // larger intro text for first paragraph
-  font-size: 1.75em;
-  line-height: 1.5em;
-}
-.strong {
-  font-weight: bold;
-}
-.quote-caption, .intro-letter-well, .main-well {
-  @include opacity(0.9);
-  display: block;
-  padding: 0 4em 2em;
-}
-.quote-caption {
-  max-width: 48em;
-}
-.intro-letter-well, .main-well {
-  max-width: 60em;
-}
-.intropage p {
-  font-size: 1.75em;
-  line-height: 1.75em;
-}
-
 
 
 /*****************************************************************************/
@@ -115,7 +47,7 @@ p {
 }
 
 .page.homeQuote{ 
-  padding-top: 50px !important;
+  padding-top: 69px !important;
 }
 
 .logo {
@@ -339,7 +271,9 @@ p {
 }
 
 .navbar .brand {
-  max-width: 60px;
+  margin: 0;
+  max-width: 140px;
+  padding: 0;
 }
 
 .navbar a:hover{
@@ -400,7 +334,6 @@ ul.posts span {
 }
 
 h2 {
-  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
   text-align: left;
   font-size: 30px;
   margin-top: 80px;
@@ -408,7 +341,6 @@ h2 {
 }
 
 h3 {
-  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
   font-size: 40px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -421,7 +353,7 @@ h3 span {
 
 h4 {
   clear: both;
-  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+//  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 25px;
@@ -430,7 +362,6 @@ h4 {
 }
 
 h5 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-style: italic;
   font-weight: 300;
@@ -508,7 +439,7 @@ input[type="text"] {
 
 .page.quote h1,
 .page.story h1 { 
-  color:#fff;
+//  color:#fff;
   font-size: 56px;
   letter-spacing: 1px;
   list-style: none;
@@ -994,10 +925,238 @@ img.progicons {
   min-height:auto;
 }
 
+/*****************************************************************************/
+/*
+/* Code for All ON Report Updates
+/*
+/*****************************************************************************/
+
+/********
+ COLORS
+********/
+
+// Corporate colors
+.red {color: $red;}
+.bg-red {background: $red;}
+.blue {color: $blue;}
+.bg-blue {background: $blue;}
+.black {color: $black;}
+.bg-black {background: $black;}
+.gray {color: $gray;}
+.bg-gray {background: $gray;}
+.white {color: $white;}
+.bg-white {background: $white;}
+
+// Secondary colors (use sparingly)
+.dk-blue {color: $dk-blue;}
+.bg-dk-blue {background: $dk-blue;}
+.med-blue {color: $med-blue;}
+.bg-med-blue {background: $med-blue;}
+.lt-blue {color: $lt-blue;}
+.bg-lt-blue {background: $lt-blue;}
+.dk-gray {color: $dk-gray;}
+.bg-dk-gray {background: $dk-gray;}
+.med-gray {color: $med-gray;}
+.bg-med-gray {background: $med-gray;}
+.lt-gray {color: $lt-gray;}
+.bg-lt-gray {background: $lt-gray;}
+
+// .orange {color: $orange;}
+// .purple {color: $purple;}
+// .green {color: $green;}
+// .yellow {color: $yellow;}
+
+/********
+ TYPOGRAPHY
+********/
+
+html, body, p, li {
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $light;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+  font-family: $base-header-font;
+  font-weight: $book;
+  line-height: $base-line-height;
+}
+h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+}
+h2 {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+}
+h3 {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+}
+h4 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+}
+h5 {font-size: $h5-font-size;}
+h6 {font-size: $h6-font-size;}
+
+.home-header {
+  font-size: $base-font-size;
+}
+
+.intro { // larger intro text for first paragraph
+  font-size: $intro-font-size;
+  line-height: $intro-line-height;
+}
+.strong {
+  font-weight: bold;
+}
+// Styles
+
+body {
+      @media screen and (max-width: 768px) {
+      padding: 0;
+    }    
+}
 
 
+/********
+ STYLES
+********/
+
+.alignright, .navbar .brand.alignright {
+  float: right;
+}
+.alignleft {
+  float: left;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.onreport {
+  .navbar {
+      @include opacity(0.9);
+      .nav {
+        margin: 10px 0;
+      }
+  }
+}
+.quote-caption, .main-well {
+  @include opacity(0.9);
+  display: block;
+  padding: 0 4em 2em;
+}
+.quote-caption {
+  max-width: 48em;
+}
+.main-well {
+}
+// overrides for smaller devices
+.onreport .intropage, 
+.onreport .page.quote, 
+.onreport .homeQuote {
+  @media screen and (max-width: 900px) {
+    padding-top: 0 !important;    
+  }
+  @media screen and (max-width: 768px) {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%
+  }  
+}
+.onreport .page.quote img {
+  min-height: initial;
+  min-width: 100%;
+}
+.onreport { 
+  .project-list {
+     h3 {
+      font-family: $interstate;
+      font-weight: $semi-bold;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+    }
+    p {
+      padding: 10px;
+    }
+  }
+}
 
 
+/********
+ SPECIFIC PAGE STYLES
+********/
 
+/* home page */
+#onreport-home .intropage, #onreport-home .page.quote { 
+  padding: 0;
+    @media screen and (max-width: 480px) {
+      float: left;
+    }  
 
+  h1 { 
+    font-size: 4em;
+    float: right;
+    line-height: 1em;
+    padding: 40px;
+    text-align: right;
+    @media screen and (max-width: 1200px) {
+      font-size: 4em;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 3.5em;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 2.5em;
+      text-align: left;
+    }
+  }
+  p {
+    color: $lt-gray;
+    font-family: $base-font-family;
+    font-size: 1.75em;
+    line-height: 1.5em; 
+    padding: 20px 40px 10px 40px;
+    @media screen and (max-width: 480px) {
+      font-size: 1.5em;
+    }
+  }
+}
+/* intro pages */
+.onreport.intro .main-well {  
+    float: right;
+    max-width: 24em;
+}
+#onreport-intro-letter .main-well {  
+    max-width: 36em;
+}
+
+/* partners pages */
+.onreport.partners .main-well.container, .onreport.the-network .main-well.container {
+  min-width: 80em;
+  blockquote {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+/* what's next page */
+.onreport.next {
+  .main-well {  
+    float: right;
+    max-width: 48em;
+  }
+  h2 {
+    margin-top: 0;
+  }
+}
 

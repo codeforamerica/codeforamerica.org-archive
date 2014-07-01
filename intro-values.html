@@ -7,6 +7,10 @@
    
     <!-- Homepage CSS -->
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
+
+    <!-- grabbing the webfonts from the cfa site-->
+    <link rel="stylesheet" type="text/css" href="http://cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css">
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,600,700' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -22,7 +26,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
   </head>
-  <body class="onreport" id="onreport-intro-values">
+  <body class="onreport intro" id="onreport-intro-values">
 
 <!-- Loading -->
 <!-- <div id="loading">
@@ -31,10 +35,9 @@
  -->
 
 <!-- Navbar --> 
-<div class="navbar navbar-inverse navbar-fixed-bottom">
+<div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="#"><img class="cfalogo img-responsive" src="img/codeforall_compass_white.png" alt="Code for All logo" /></a>
+    <div class="container-fluid">
       <!-- Everything you want hidden at 940px or less, place within here -->
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -51,13 +54,14 @@
           <li><a href="#">The Network</a></li>
           <li><a href="#">What's Next</a></li>
         </ul> <!-- nav -->
+        <a class="brand alignright" href="#"><img class="cfalogo img-responsive" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
       </div> <!-- collapse -->
     </div> <!-- container -->
   </div> <!-- navbar-inner -->
 </div> <!-- navbar -->
 
 <!-- CONTENT -->
-<div class="page homeQuote quote bg-med-blue pagebg" style="width: 1418px; min-height: 479px;" data-section="nav">
+<div class="page homeQuote quote bg-med-blue pagebg">
     <div class="main-well container bg-dk-blue">
       <h1>
         Our Values
