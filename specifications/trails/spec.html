@@ -58,14 +58,6 @@
 				        </thead>
 				        <tbody>
 				            <tr>
-				                <!-- Min-width to get field names on one line. -->
-				                <th style="min-width:125px">Geometry</th>
-				                <td style="min-width:125px">Linestring or MultiLineString</td>
-				                <td>yes</td>
-				                <td>The geometry object which describes the trail segment, per the data type as defined in the <a href="http://geojson.org/geojson-spec.html">geoJSON specification.</a></td>
-				                <td><i>n/a</i></td>
-				            </tr>
-				            <tr>
 				                <th>id</th>
 				                <td>string</td>
 				                <td>yes</td>
@@ -76,54 +68,47 @@
 				                <th>steward_id</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>id of agency or organization responsible for trail maintenance, regulation, and safety.</td>
-				                <td><i>n/a</i></td>
-				            </tr>
-				            <tr>
-				                <th>name</th>
-				                <td>string</td>
-				                <td></td>
-				                <td>Some segments have proper names of their own. This allows data providers to name segments, which are in turn accepted in OpenStreetMap</td>
+				                <td>id of agency or organization responsible for trail maintenance, regulation, and safety. These values are defined in <a href="#stewards">stewards.csv</a></td>
 				                <td><i>n/a</i></td>
 				            </tr>
 				            <tr>
 				                <th>motor_vehicles</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
 				                <td>A judgement as to the appropriate use of OHV, ATVs, and snowmobiles on this trail segment.</td>
-				                <td>"yes", "no", "permissive", "designated"</td>
+				                <td>"yes" or "no"</td>
 				            </tr>
 				            <tr>
 				                <th>foot</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
-				                <td>Indicates whether walking and hiking is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
-				                <td>"yes", "no", "permissive", "designated"</td>
+				                <td>Indicates whether walking and hiking is an appropriate use of this trail segment.</td>
+				                <td>"yes" or "no"</td>
 				            </tr>
 				            <tr>
 				                <th>bicycle</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
-				                <td>Indicates whether general bicycling is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
-				                <td>"yes", "no", "permissive", "designated"</td>
+				                <td>Indicates whether general bicycling is an appropriate use of this trail segment.</td>
+				                <td>"yes" or "no"</td>
 				            </tr>
 				            <tr>
 				                <th>horse</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
-				                <td>Indicates whether horseback riding or equestrian travel is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
-				                <td>"yes", "no", "permissive", "designated"</td>
+				                <td>Indicates whether horseback riding or equestrian travel is an appropriate use of this trail segment.</td>
+				                <td>"yes" or "no"</td>
 				            </tr>
 				            <tr>
 				                <th>ski</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
-				                <td>Indicates whether over-land or cross-country skiing is an appropriate use of this trail segment. This field is derived from OpenStreetMap conventions.</td>
-				                <td>"yes", "no", "permissive", "designated"</td>
+				                <td>Indicates whether over-land or cross-country skiing is an appropriate use of this trail segment.</td>
+				                <td>"yes" or "no"</td>
 				            </tr>
 				            <tr>
 				                <th>wheelchair</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
 				                <td>Indicates whether this trail segment is considered wheelchair accessible. This field is derived from OpenStreetMap conventions. Other attributes that describe accessibility can be included in the 'osmTags" field.</td>
 				                <td>"yes", "no", "permissive", "designated"</td>
@@ -132,11 +117,12 @@
 				                <th>osm_tags</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe segments within OpenStreetMap. Anticipated use of this field includes the incorporation of sets of keys to describe common trail taxonomies and attributes. See the working draft for more information.</td>
+				                <td>This field is designed to incorporate a fungible number of key-value pairs to further describe features. OpenTrails recommends using pre-defined sets of OpenStreetMap tags for this purpose, defined in the <a href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit#bookmark=id.saceiw7dq99"></a>appdenices.</td>
 				                <td><i>n/a</i></td>
 				            </tr>
 				        </tbody>
 				    </table>
+				    <h5>Example</h5>
 				    <pre class="language-json"><code class="language-json">{
   "type": "FeatureCollection",
   "features": [
@@ -146,7 +132,7 @@
         "id": "01",
         "steward_id": "1",
         "name": "",
-        "vehicles": "no",
+        "motor_vehicles": "no",
         "foot": "yes",
         "bicycle": "no",
         "horse": "no",
@@ -198,13 +184,13 @@
 				                <th style="min-width:125px">name</th>
 				                <td style="min-width:125px">string</td>
 				                <td>yes</td>
-				                <td>The proper name of the trail, as advertised to visitors and public communications.</td>
+				                <td>The publicly advertised name of the trail, as shown on materials oriented towards visitors.</td>
 				            </tr>
 				            <tr>
 				                <th>segment_ids</th>
-				                <td>string-encoded array</td>
+				                <td>a string-encoded, semi-colon delimited array of “id” values from <a href="#trailsegments"></a>trail_segments.geojson</a></td>
 				                <td>yes</td>
-				                <td>An array of IDs, which allows applications to construct "Named Trails" from a collection of one or more trail segment geometries.</td>
+				                <td>An array of ids corresponding to those segments from which the Named Trail is composed. This field is required, but may have a null value.</td>
 				            </tr>
 				            <tr>
 				                <th>id</th>
@@ -222,10 +208,17 @@
 				                <th>part_of</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail. See the working draft for more information about encoding.</td>
+				                <td>
+					                <p>This field allows for data contributors to indicate a relationship between Named Trails.</p>
+
+					                <p>The <b>primary</b> anticipated use case is to indicate that a trail serves a leg in a larger trail system or regional trail, which is present in the named_trails.csv file, but which cannot be completely described (because it is beyond the scope of the data producer)--and therefore is included without any segment_ids.</p>
+
+					                <p>Thus, this is an array of named_trail “id” values. This is really for description purposes, rather than display purposes.</p>
+				            	</td>
 				            </tr>
 				        </tbody>
 				    </table>
+				    <h5>Example</h5>
 				    <pre>
 				      <code>
 				        <table>
@@ -279,68 +272,74 @@
 				        </thead>
 				        <tbody>
 				            <tr>
-				                <!-- Min-width to get field names on one line. -->
-				                <th style="min-width:125px">geometry</th>
-				                <td style="min-width:125px">string</td>
-				                <td>yes</td>
-				                <td>The point geometry object which describes the trail segment, per the data type as defined in the geoJSON specification.</td>
-				            </tr>
-				            <tr>
 				                <th>name</th>
 				                <td>string</td>
 				                <td>yes</td>
 				                <td>The public name of the trailhead, as advertised to visitors.</td>
+				                <td></td>
+				            </tr>
+				            <tr>
+				            	<th>id</th>
+				            	<td>string</td>
+				            	<td>yes</td>
+				            	<td>A unique identifier assigned by the data producer.</td>
+				            	<td></td>
 				            </tr>
 				            <tr>
 				                <th>trail_ids</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>A collection of IDs for Named Trails (match to "id" in named_trails.csv), each representing a trail that can be accessed via this trailhead.</td>
+				                <td>A collection of IDs for Named Trails (match to "id" in <a href="#namedtrails">named_trails.csv</a>), each representing a trail that can be accessed via this trailhead.</td>
+				                <td></td>
 				            </tr>
 				            <tr>
 				                <th>steward_ids</th>
 				                <td>string-encoded array</td>
 				                <td>yes</td>
-				                <td>A collection of IDs for Stewards (match to "id" stewards.json), representing each agency or organization responsive to visitor concerns or inquiries about this trailhead.</td>
+				                <td>A collection of IDs for Stewards (match to "id" <a href="#stewards">stewards.csv</a>), representing each agency or organization responsive to visitor concerns or inquiries about this trailhead.</td>
+				                <td></td>
 				            </tr>
 				            <tr>
 				                <th>address</th>
 				                <td>string</td>
 				                <td></td>
 				                <td>The street address, if one exists, that is associated with this trialhead.</td>
+				                <td></td>
 				            </tr>
 				            <tr>
 				                <th>parking</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
 				                <td>An indication as to whether visitors can expect to find automobile park at or immediately adjacent to this trailhead.</td>
+				                <td>"yes" or "no"</td>
 				            </tr>
 				            <tr>
 				                <th>drinkwater</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
 				                <td>An indication as to whether visitors can expect to find drinking water available at or immediately adjacent to this trailhead.</td>
 				            </tr>
 				            <tr>
 				                <th>restrooms</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
 				                <td>An indication as to whether visitors can expect to find restrooms at or immediately adjacent to this trailhead.</td>
 				            </tr>
 				            <tr>
 				                <th>kiosk</th>
-				                <td>string</td>
+				                <td>string-encoded boolean</td>
 				                <td></td>
-				                <td>This field allows for data contributors to indicate a relationship between Named Trails that share constiuent segments. The anticipated use case is to indicate that a trail serves a leg in a larger regional or national trail.</td>
+				                <td>An indication as to whether visitors can expect to find an information kiosk available at or immeidatley adjacent to this trailhead</td>
 				            </tr>
 				            <tr>
 				                <th>osm_tags</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties. See the working draft for more information about use of this field</td>
+				                <td>This field is designed to incorporate a fungible number of key-value pairs to further describe features. OpenTrails recommends using pre-defined sets of OpenStreetMap tags for this purpose, defined in the <a href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit#bookmark=id.saceiw7dq99"></a>appdenices.</td>
 				            </tr>
 				        </tbody>
 				    </table>
+				    <h5>Example</h5>
 				    <pre class="language-json"><code class="language-json">{
   "type": "FeatureCollection",
   "features": [
@@ -348,6 +347,7 @@
       "type": "Feature",
       "properties": {
         "name": "Soutwest Trailhead",
+        "id": "32"
         "trail_ids": "1; 2"
         "steward_id": "2",
         "address": "",
@@ -369,6 +369,7 @@
       "type": "Feature",
       "properties": {
         "name": "West Side Trailhead",
+        "id": "33"
         "trail_ids": "2"
         "steward_id": "2",
         "address": "",
@@ -432,7 +433,7 @@
 				                <th>address</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>A description of the trailhead’s location. Mailing addresses are preferred.</td>
+				                <td>The primary street address at which visitors can find assistance from park staff in person. A mailing address, or some geocodable-address, is preferred.</td>
 				            </tr>
 				            <tr>
 				                <th>publisher</th>
@@ -440,8 +441,15 @@
 				                <td>yes</td>
 				                <td>Boolean-encoded string identifying whether the steward is the publisher of the data.</td>
 				            </tr>
+				            <tr>
+				            	<th>license</th>
+				            	<td>string</td>
+				            	<td>yes</td>
+				            	<td>An HTTP link to information about the license and appropriate use of data associated with this steward.</td>
+				            </tr>
 				        </tbody>
 				    </table>
+				    <h5>Example</h5>
 				    <pre>
 				      <code>
 				        <table>
@@ -452,7 +460,8 @@
 				              <td title="Field #3">phone</td>
 				              <td title="Field #4">address</td>
 				              <td title="Field #5">publisher</td>
-				              <td title="Field #6">id</td>
+				              <td title="Field #6">license</td>
+				              <td title="Field #7">id</td>
 				            </tr>
 				            <tr>
 				              <td>Local Park Agency</td>
@@ -460,6 +469,7 @@
 				              <td>555-555-555</td>
 				              <td>123 Main St</td>
 				              <td></td>
+				              <td>http://localparks.gov/license</td>
 				              <td align="right">1</td>
 				            </tr>
 				            <tr>
@@ -468,6 +478,7 @@
 				              <td>555-555-555</td>
 				              <td>213 Main St</td>
 				              <td></td>
+				              <td>http://stateparks.gov/license</td>
 				              <td align="right">2</td>
 				            </tr>
 				            <tr>
@@ -476,6 +487,7 @@
 				              <td>555-555-555</td>
 				              <td>321 Main St</td>
 				              <td>yes</td>
+				              <td>http://nationalparks.gov/license</td>
 				              <td align="right">3</td>
 				            </tr>
 				          </tbody>
@@ -498,29 +510,22 @@
 				        </thead>
 				        <tbody>
 				            <tr>
-				                <!-- Min-width to get field names on one line. -->
-				                <th style="min-width:125px">geometry</th>
-				                <td style="min-width:125px">polygon or multipolygon</td>
-				                <td>yes</td>
-				                <td>The geometry of the area.</td>
-				            </tr>
-				            <tr>
 				                <th>name</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>The official or publicly-advertised name of the land area.</td>
+				                <td>The publicly-advertised name of the individual park or preserve described, if one exists.</td>
 				            </tr>
 				            <tr>
 				                <th>id</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>A unique ID for this land area, which can be referenced.</td>
+				                <td>A unique ID for this land area, which can be referenced by data consumers.</td>
 				            </tr>
 				            <tr>
 				                <th>steward_id</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>This unique ID associates each land area with the primary steward responsible for visitors within its boundaries.</td>
+				                <td>The id of the primary steward responsible for fielding public inquiries about this area, as defined in <a href="#stewards">stewards.csv</a></td>
 				            </tr>
 				            <tr>
 				                <th>url</th>
@@ -532,10 +537,11 @@
 				                <th>osm_tags</th>
 				                <td>string-encoded array</td>
 				                <td></td>
-				                <td>This field is designed to incorporate a fungible number of key-value pairs that describe the trailhead in OpenStreetMap, such as arbitrary amenties. See the working draft for more information on use of this field.</td>
+				                <td>This field is designed to incorporate a fungible number of key-value pairs to further describe features. OpenTrails recommends using pre-defined sets of OpenStreetMap tags for this purpose, defined in the <a href="https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit#bookmark=id.saceiw7dq99"></a>appdenices.</td>
 				            </tr>
 				        </tbody>
 				    </table>
+				    <h5>Example</h5>
 				    <pre class="language-json"><code class="language-json">{
   "type": "FeatureCollection",
   "features": 
