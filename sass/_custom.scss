@@ -9,7 +9,6 @@
 // - First we set any shared Sass variables.
 // - Next we import Compass plug-ins (Sass mixin libraries).
 //
-
 //
 // Legacy IE support
 //
@@ -77,10 +76,13 @@ $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
 // default font
-$interstate: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+$interstate: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 
 // default header font
-$freight-text: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
+$freight-text: "Freight Text", "Georgia", "Times New Roman", serif;
+
+// nav font
+$interstate-cond: "Interstate Condensed", "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 
 // alt sans-serif fonts
 $gotham: "Gotham A", "Gotham B", "Verdana", "Helvetica", "Arial", sans-serif;
@@ -88,8 +90,6 @@ $open-sans: "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 
 // alt serif fonts
 $sentinel: "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
-
-
 
 // font weights and styles
 $light: 300;
@@ -109,6 +109,107 @@ $font-body:        $interstate;
 $font-monospace:   $courier;
 
 $base-header-font: $freight-text;
+$base-nav-font:	$interstate;
+
+/* FONTS */
+
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-bold {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: bold;
+}
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-bold-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: bold;
+}
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.gotham {
+  font-family: $gotham;
+  font-style: normal;
+  font-weight: $normal;
+}
+.open-sans {
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: $normal;
+}
+.sentinel {
+  font-family: $sentinel;
+  font-style: normal;
+  font-weight: $normal;
+}
 
 //-------------
 // Colors, etc.
@@ -116,10 +217,11 @@ $base-header-font: $freight-text;
 
 // Primary colors
 $red: #cf1b41;
-$blue: #399fd3;
+$blue: #399fd3; /* to match blue on CfA site */
 $black: #000;
 $gray: #6D6E71;
 $white: #fff;
+// logo blue incorrect: #3c9ed8
 
 // Secondary colors
 $dk-blue: #2f3d4a;
@@ -143,14 +245,13 @@ $alert-red:         $red;
 $alert-green:       $green;
 $alert-blue:        $med-blue;
 $text-color:        $lt-gray;
-$header-color:		$lt-blue;
+$header-color:		$blue;
 
-$link-color:        $purple;
-$link-hover:        darken($link-color, 8%);
-$link-nav: 			$white;
-$link-nav-hover: 	darken($yellow, 2%);
-$link-active:		$yellow;
-
-$nav-bg-color: 		$purple;
+// $link-color:        $purple;
+// $link-hover:        darken($link-color, 8%);
+// $link-nav: 			$white;
+// $link-nav-hover: 	darken($yellow, 2%);
+// $link-active:		$yellow;
+// $nav-bg-color: 		$purple;
 
 

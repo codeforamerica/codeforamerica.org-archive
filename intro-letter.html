@@ -5,79 +5,98 @@
   <meta name="viewport" content="width=800, initial-scale=0.25, maximum-scale=1">
   <title>Code for All</title>
    
-    <!-- Homepage CSS -->
+    <!-- CSS/JS -->
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
-
-    <!-- grabbing the webfonts from the cfa site-->
-    <link rel="stylesheet" type="text/css" href="http://cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,600,700' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
     <link href="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection, print" />
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!-- 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    -->
+    <!-- WEBFONTS: need to be updated to use CfA credentials -->
+    <link href="http://cloud.webtype.com/css/7e168175-994d-40a9-881b-320178f0b544.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- calling local instance of bootstrap.min.js -->
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
+
+    <!-- simple page loader -->  
+    <script type="text/javascript" src="js/simple-loader.js"></script>
+
   </head>
-  <body class="onreport intro" id="onreport-intro-letter">
+<body class="onreport intro" id="onreport-intro-letter">
 
 <!-- Loading -->
-<!-- <div id="loading">
+<div id="loading">
   <img src="img/codeforall_compass_white.png" />
 </div>
- -->
 
-<!-- Navbar --> 
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <div class="nav-collapse collapse">
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-        <ul class="nav">
-          <li><a href="#">About/Intro</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Brigade</a></li>
-          <li><a href="#">The Network</a></li>
-          <li><a href="#">What's Next</a></li>
-        </ul> <!-- nav -->
-        <a class="brand alignright" href="#"><img class="cfalogo img-responsive" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
-      </div> <!-- collapse -->
-    </div> <!-- container -->
-  </div> <!-- navbar-inner -->
-</div> <!-- navbar -->
+<div id="page">
+  <!-- Navbar --> 
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav">
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Welcome <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="intro-letter.html">Welcome</a></li>
+                <li><a href="intro-values.html">Our Values</a></li>
+                <li><a href="intro-began.html">How it all began</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Partners <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="partners-cftc.html">Code for the Caribbean</a></li>
+                <li><a href="partners-cfmc.html">Code for Mexico City</a></li>
+                <li><a href="partners-cfg.html">Code for Germany</a></li>
+              </ul>
+            </li>
+            <li><a href="brigade.html">Brigade</a></li>
+            <li><a href="whats-next.html">What's Next</a></li>
+          </ul> <!-- nav -->
+          <div class="alignright">
+            <a href="http://codeforamerica.org/about/international/" title="Code for All"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
+            <a href="http://codeforamerica.org/" title="Code for America"><img class="cfalogo img-responsive brand" src="img/CfA_logo_white.png" alt="Code for America logo" /></a>
+          </div><!--/.brand -->
 
-<!-- CONTENT -->
-<div class="page homeQuote quote bg-med-blue pagebg">
-    <div class="main-well container bg-dk-blue">
-      <h1>
-        Hello (title here)
-      </h1>
-      <p class="intro">As civic technologists we aim to solve problems. Code for All was born from this ethos. We identified a problem in the civic technology community. Having no robust network to share resources and knowledge created redundancies and inefficiencies, making the sustainable growth of the movement difficult and hindering all of our abilities to have the impact we aimed to have where we lived.</p>
-      <p>This past year Code for All was created to take the first steps towards solving this challenge by bringing together global leaders in the civic technology community. As the Code for All community we worked together to nurture change agents from around the world who wanted to leverage civic technology to make their cities better places to live, networked them with each other and created resources to support each other in our efforts. Since it’s inception in 2013, we have grown from four founding partners to include members from all over the world. From Pakistan to Ireland, South Korea to Mexico, and many more, we are collaborating, sharing and, most importantly, doing.</p>
-      <p>We’re using technology to help farmers protect their livelihoods in Jamaica, make residents in Mexico City safer by equipping them to distinguish between safe and illegal taxis, provide families in Germany with easy to understand visualizations of free childcare centers in their area, and countless others. Most importantly, we’ve shared our experiences, and consulted with and learned from each other along the way. This is only the beginning. As we continue to strengthen the network and build out our civic technology infrastructure our programs will be more efficient, we’ll be able to leverage each other’s tools and resources, we can share best practices and lessons learned, and we can create standards that will make it easier to sustain open government policy and programs. We’ll continue to  increase opportunities to see how others around the world are making a difference in their communities, and learn from their models. It will make all of our programs stronger.</p>
-      <p>In just our first year we’ve seen how all of our work can be and is better if we’re connected. And we’re just getting started. Together we are building a global movement with the hope that our efforts will leverage technology to better engage citizens with their governments, improve service delivery and that all of our efforts will be better because we are connected.</p>
-      <p>We hope you’ll join us.</p>
-      <p class="strong">The Code for All Community</p>
+        </div> <!-- collapse -->
+      </div> <!-- container -->
+    </div> <!-- navbar-inner -->
+  </div> <!-- navbar -->
+
+  <!-- CONTENT -->
+  <div class="page homeQuote quote bg-med-blue pagebg">
+      <div class="main-well container bg-dk-blue">
+        <h1>
+          Welcome
+        </h1>
+        <p class="intro">As civic technologists we aim to build solutions. Code for All was born from this ethos. Civic technology is fast becoming a global movement but it is not yet one based on specifically articulated shared values, resources, or knowledge. The lack of that shared intellectual, social and technical infrastructure has made sustainable growth of the movement difficult and has hindered our ability to have the impact we know we can have at scale--building governments for and by the people that work in the twenty-first century.</p>
+        <p>In 2013 Code for All was created to take the first steps towards solving this challenge. Convened by <a href="http://codeforamerica.org/" title="Code for America">Code for America</a>, we started with four founding members--Code for America, <a href="http://www.codeforthecaribbean.org/" title="Code for the Caribbean">Code for the Caribbean</a>, <a href="http://labplc.mx/" title="Codigo DF (Code for Mexico City)">Codigo DF (Code for Mexico City)</a>, and <a href="http://codefor.de/" title="Code for DE Labs (Code for Germany)">Code for DE Labs (Code for Germany)</a>--to learn by doing and together build the foundation for a truly global network. One year later, we have partners working in eleven countries.</p>
+        <p>We’re building technology in collaboration with government to help farmers protect their livelihoods in Jamaica, make taxi rides safer in Mexico City, and make free childcare centers in Germany easier to find. Most importantly, we’ve shared our experiences, and consulted with and learned from each other along the way.</p>
+        <p>This is only the beginning. As we continue to strengthen the network we’ll be better able to leverage each other’s tools and resources, share best practices and lessons learned, and reduce redundancy and replication. Ultimately, we want anyone anywhere in the world who wants to start a civic technology project where they live to be empowered with resources and knowledge and be able to plug into a network of fellow travelers who can provide support along the way.</p>
+        <p>We hope you’ll join us.</p>
+        <p class="strong">The Code for All Community</p>
+    </div>
   </div>
-</div>
 
-
-    <div class="clear"></div>  
-  </div>
+  <div class="clear"></div>  
+</div><!--/#page -->
 
   </body>
 </html>

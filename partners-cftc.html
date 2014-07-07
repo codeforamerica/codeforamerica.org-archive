@@ -5,120 +5,111 @@
   <meta name="viewport" content="width=800, initial-scale=0.25, maximum-scale=1">
   <title>Code for All</title>
    
-    <!-- Homepage CSS -->
+    <!-- CSS/JS -->
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
-
-    <!-- grabbing the webfonts from the cfa site-->
-    <link rel="stylesheet" type="text/css" href="http://cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,600,700' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
     <link href="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection, print" />
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!-- 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    -->
+    <!-- WEBFONTS: need to be updated to use CfA credentials -->
+    <link href="http://cloud.webtype.com/css/7e168175-994d-40a9-881b-320178f0b544.css" rel="stylesheet" type="text/css" />
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- calling local instance of bootstrap.min.js -->
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
+
+    <!-- simple page loader -->  
+    <script type="text/javascript" src="js/simple-loader.js"></script>
+
   </head>
-  <body class="onreport partners" id="onreport-partners-cftc">
+<body class="onreport partners" id="onreport-partners-cftc">
 
 <!-- Loading -->
-<!-- <div id="loading">
+<div id="loading">
   <img src="img/codeforall_compass_white.png" />
 </div>
- -->
 
-<!-- Navbar --> 
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <div class="nav-collapse collapse">
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-        <ul class="nav">
-          <li><a href="#">About/Intro</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Brigade</a></li>
-          <li><a href="#">The Network</a></li>
-          <li><a href="#">What's Next</a></li>
-        </ul> <!-- nav -->
-        <a class="brand alignright" href="#"><img class="cfalogo img-responsive" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
-      </div> <!-- collapse -->
-    </div> <!-- container -->
-  </div> <!-- navbar-inner -->
-</div> <!-- navbar -->
+<div id="page">
+  <!-- Navbar --> 
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav">
+            <li><a href="#">About/Intro</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Brigade</a></li>
+            <li><a href="#">The Network</a></li>
+            <li><a href="#">What's Next</a></li>
+          </ul> <!-- nav -->
+          <div class="alignright">
+            <a href="http://codeforamerica.org/about/international/" title="Code for All"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
+            <a href="http://codeforamerica.org/" title="Code for America"><img class="cfalogo img-responsive brand" src="img/CfA_logo_white.png" alt="Code for America logo" /></a>
+          </div><!--/.brand -->
+        </div> <!-- collapse -->
+      </div> <!-- container -->
+    </div> <!-- navbar-inner -->
+  </div> <!-- navbar -->
 
-<!-- CONTENT -->
-<div class="page homeQuote quote bg-med-gray pagebg">
-    <div class="main-well container bg-dk-gray">
-      <div class="row">
-        <div class="span12">
-          <h1>
-            Code for the Carribean
-          </h1>
-        </div>
-      </div><!--/.row -->
+  <!-- CONTENT -->
+  <div class="page homeQuote quote bg-med-gray pagebg">
+      <div class="main-well container bg-dk-gray">
+        <div class="row">
+          <div class="span12">
+            <h1>
+              Code for the Caribbean
+            </h1>
+          </div>
+        </div><!--/.row -->
 
-      <div class="row">
-        <div class="span4">
-          <p class="intro">
-            <!-- <img src="img/c4c-big-sq-logo.png" alt="Code for the Carribean logo" /> -->
-            “It’s about really understanding the users that you’re trying to reach. It might be farmers in a rural area, someone down the road, or it might be the person who fixes your pothole. It’s trying to understand their experience, and then seeing where is it that you can leverage technology in that space to create positive impact.”</p>
-          <footer><cite>- Matthew McNaughton, Code for the Caribbean</cite></footer>
-          <br /><br />
-          <span class="span3 bg-dk-blue alignright">
-          <blockquote>
-            <p>“This innovation, this association, a partnership, has saved RADA million of dollars. . . we saved money and we gained knowledge.”</p><footer><cite>- Lenworth Fulton, CEO, RADA</cite></footer>
-          </blockquote>
-          <hr />
-          <blockquote>
-            <p>“The idea is for us to work and to work smarter. . . We had a very good working relationship. It was a learning experience from both ends. . . This is going to lead to developing an Ooen Data policy framework . . . The opportunities from this venture are endless!”</p><footer><cite>- Brad Clarke, Information and Communication Technology Manager, RADA</cite></footer>
-          </blockquote> 
-        </span>
-        </div><!--/.span4 -->
-        <div class="span7 offset1">
-          <h2>Helping to Protect Farmer’s Livelihoods in Jamaica</h2>
-        </div>
-        <div class="span6 offset1">
-          <p>
-            <img src="img/cftc-partner-01.jpg" alt="CftC image" />
-            <br /><br />
-            In Jamaica, praedial larceny (the theft of agricultural produce and livestock) costs the Jamaican agriculture industry more than US$5 million each year. Strategic police checkpoints are supposed to help deter against this rampant theft and protect the farmers in their community.  However, police receive inconsistent access to people in the office who can provide the data they need to make judgment calls in the field. They need to know whether the receipt they are given is valid  or fake - the first validating a legitimate sale and the second cluing the officer into the possible existence of theft. This renders them virtually ineffective in distinguishing between those that steal and those that purchase goods legally, dissuading their efforts to deter against praedial larceny.</p>
-            <span class="span3 alignright bg-dk-blue">
-              <blockquote>
-                <p>“I always plant one acre for myself and one acre for the thieves.”</p><footer><cite>- John, farmer in Saint Catherine parish, Jamaica</cite></footer>
-              </blockquote>
-              <hr />
-              <blockquote>
-                <p>“The greatest problem that we have as a farmer is farmers stealing from farmers.”</p> <footer><cite>- Gary, farmer in Saint Thomas parish, Jamaica</cite><footer>
-              </blockquote>
-              <hr />
-              <blockquote>
-                <p>“We spend one billion dollars [a year] importing produce into our country.”</p> <footer><cite>- Hon. Julian Robinson, Minister of State, Jamaican Ministry of Science, Technology, Energy and Mining</cite></footer>
-              </blockquote>
-            </span>
-        
-          <p>Slashroots implemented the Code for the Caribbean fellowship program to solve problems such as this. They recruited, trained and mentored three fellows who partnered with government officials from Jamaica’s Ministry of Agriculture, the Rural Agriculture Development Authority (RADA) to address this problem. First, they integrated all of the farmer registration and invoice information into one database and created an interface that they could build an application on top of: Harvest API.</p>
-          <p>The CftC fellows then developed CLIP, a tool that gives police officers the information they need to differentiate between the legitimate or illegitimate transport of goods in an instant. By using CLIP, a police officer who stops someone at a checkpoint can immediately input the invoice number into their cell phone and receive a text message confirming whether or not the receipt was legitimate. By providing the police with lightweight tools and thereby leveraging technology, they are not only saving the government money but helping to re-establish trust between farmers and the police officers tasked with protecting their livelihoods.</p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUq9kuxrYaM" frameborder="0" allowfullscreen></iframe>
-        </div><!--/.span6 -->
-      </div><!--/.row -->
-  </div><!--/.main-well -->
-<div class="clear"></div>  
-</div><!--/.homeQuote -->
+        <div class="row">
+          <div class="span4">
+            <blockquote class="bg-dk-blue">
+              <p class="intro serif">“I always plant one acre for myself and one acre for the thieves.”</p><footer><cite>- John, farmer in Saint Catherine parish, Jamaica</cite></footer>
+            </blockquote>
+          </div><!--/.span4 -->
+          <div class="span7 offset1">
+            <h2>Helping to Protect Farmer’s Livelihoods in Jamaica</h2>
+          </div><!--/.span7 -->
+          <div class="span6 offset1">
+            <p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUq9kuxrYaM" frameborder="0" allowfullscreen></iframe>
+              <br /><br />
+              Praedial larceny (the theft of agricultural goods and livestock) costs the Jamaican agriculture industry more than <a href="http://www.jamaicaobserver.com/news/House-committee-wants-tougher-praedial-larceny-law_15775003" title="House committee wants tougher praedial larceny law">US$5 million each year</a>. Strategic police checkpoints are supposed to help deter against this rampant theft.  However, out in the field, the police are ill equipped to determine whether someone driving a truck full of produce has purchased it legally. Purchasers are supposed to be issued an official receipt from a ledger book authorized and sent to the farmer by the agriculture ministry. Yet, absent a database to check against, police can’t identify illegitimate sales. This renders them virtually ineffective in distinguishing between those that steal and those that purchase goods legally, dissuading their efforts to deter against praedial larceny.</p>
+              <p>The <a href="http://slashroots.org/" title="slashroots.org">Slashroots Foundation</a> created Code for the Caribbean to build solutions to problems like this. They partnered with the <a href="http://rada.gov.jm/" title="Rural Agriculture Development Authority (RADA)">Rural Agriculture Development Authority (RADA)</a> of Jamaica’s Ministry of Agriculture to explore the problem and design potential solutions and then recruited and trained three technologists for a six-month fellowship program. The fellows engaged in a rigorous research and design process, and built an integrated database of farmer registration and invoice information and an application programming interface (<a href="http://harvestapi.io/" title="Harvest API">Harvest API</a>) on top of which they could build tools to help the government combat praedial larceny.</p>
+              <p>The Code for the Caribbean fellows built a prototype (called CLIP) on top of the API to demonstrate its power. CLIP is an SMS-based tool that allows police officers to text in a receipt number and get back information that will help them validate a receipt in the field. By providing the police with lightweight tools, the fellows are not only saving the industry money but helping to re-establish trust between farmers and the police officers tasked with protecting their livelihoods. </p>
+            </div><!--/.span6 -->
+            <div class="span5 offset3">
+              <blockquote class="bg-dk-blue">
+                <p class="intro">“The idea is for us to work and to work smarter. . . We had a very good working relationship. It was a learning experience from both ends. . . This is going to lead to developing an Ooen Data policy framework . . . The opportunities from this venture are endless!”</p><footer><cite>- Brad Clarke, Information and Communication Technology Manager, RADA</cite></footer>
+              </blockquote> 
+              <br /><br />
+            </div><!--/.span5 -->
+            <div class="span6 offset5">
+              <img src="img/cftc-partner-01.jpg" alt="CftC image" />
+            </div><!--/.span6 -->
+        </div><!--/.row -->
+    </div><!--/.main-well -->
+  <div class="clear"></div>  
+  </div><!--/.homeQuote -->
+</div><!--/#page -->
 
-  </body>
+</body>
 </html>
 
 

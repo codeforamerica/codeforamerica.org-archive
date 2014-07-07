@@ -9,7 +9,7 @@
 @import "map";
 @import "press";
 @import "startup-logos";
-@import "colors"; // moved to _custom.scss
+//* @import "colors"; // moved to _custom.scss */
 @import "typography";
 @import "getinvolved";
 @import "sidebar";
@@ -47,7 +47,7 @@
 }
 
 .page.homeQuote{ 
-  padding-top: 69px !important;
+  padding-top: 50px !important;
 }
 
 .logo {
@@ -271,8 +271,8 @@
 }
 
 .navbar .brand {
-  margin: 0;
-  max-width: 140px;
+  margin: 10px 20px;
+  max-height: 30px;
   padding: 0;
 }
 
@@ -305,21 +305,31 @@
 
 #loading h1,
 #loading p {
-  text-align: center;
   color:#fff;
+  text-align: center;
   text-shadow: none;
 }
 
 #loading h1 {
-  font-size: 220px;
-  margin: 90px auto 117px;
-  font-weight: 600;
+  color: $lt-blue;
+  font-family: $sentinel;
+  font-size: 400px;
+  font-weight: $normal;
+  line-height: 0.5em;
+  margin: 0 auto 60px;
+  padding: 0;
+  text-transform: uppercase;
 }
  
-#loading p{ 
-  text-transform:uppercase;
-  font-size: 63px;
-  font-weight: 300;
+#loading p { 
+  color: $lt-blue;
+  font-family: $interstate;
+  font-size: 160px;
+  font-weight: $normal;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 ul.posts {
@@ -981,7 +991,7 @@ html, body, p, li {
 h1, h2, h3, h4, h5, h6 {
   color: $header-color;
   font-family: $base-header-font;
-  font-weight: $book;
+  font-weight: bold;
   line-height: $base-line-height;
 }
 h1 {
@@ -1003,10 +1013,95 @@ h4 {
 h5 {font-size: $h5-font-size;}
 h6 {font-size: $h6-font-size;}
 
+.sans-serif {font-family: $interstate;}
+.serif {font-family: $freight-text;}
+
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-bold {
+  font-family: "Interstate";
+  font-style: normal;
+  font-weight: bold;
+}
+.interstate-bold-ital {
+  font-family: "Interstate";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
 .home-header {
   font-size: $base-font-size;
 }
-
 .intro { // larger intro text for first paragraph
   font-size: $intro-font-size;
   line-height: $intro-line-height;
@@ -1014,6 +1109,8 @@ h6 {font-size: $h6-font-size;}
 .strong {
   font-weight: bold;
 }
+
+
 // Styles
 
 body {
@@ -1027,6 +1124,16 @@ body {
  STYLES
 ********/
 
+/* Page load */
+  .no-js #loading { // if no js, don't display the loading div
+    display: none;  
+  }
+  .js #loading { 
+    display: block; 
+    position: absolute; 
+    left: 100px; top: 0; 
+  }
+ 
 .alignright, .navbar .brand.alignright {
   float: right;
 }
@@ -1043,10 +1150,22 @@ hr {
 
 .onreport {
   .navbar {
-      @include opacity(0.9);
-      .nav {
-        margin: 10px 0;
-      }
+    @include opacity(0.9);
+    .nav {
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .nav a {
+      font-family: $base-nav-font;
+    }
+    img:hover, img:active, img:focus { // rollover state for logos in nav
+      @include opacity(0.7);
+    } 
+  }
+  .navbar-inverse .nav li.dropdown.open > .dropdown-toggle, 
+  .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, 
+  .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #1b1b1b; // overwrites bootstrap 
   }
 }
 .quote-caption, .main-well {
@@ -1133,16 +1252,13 @@ hr {
   }
 }
 /* intro pages */
-.onreport.intro .main-well {  
+.onreport.intro .main-well, #onreport-intro-letter .main-well, .onreport.the-network .main-well.container {  
     float: right;
-    max-width: 24em;
-}
-#onreport-intro-letter .main-well {  
-    max-width: 36em;
+    max-width: 30em;
 }
 
 /* partners pages */
-.onreport.partners .main-well.container, .onreport.the-network .main-well.container {
+.onreport.partners .main-well.container {
   min-width: 80em;
   blockquote {
     padding: 10px;

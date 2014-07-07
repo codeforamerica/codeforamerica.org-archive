@@ -5,85 +5,86 @@
   <meta name="viewport" content="width=800, initial-scale=0.25, maximum-scale=1">
   <title>Code for All</title>
    
-    <!-- Homepage CSS -->
+    <!-- CSS/JS -->
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
-
-    <!-- grabbing the webfonts from the cfa site-->
-    <link rel="stylesheet" type="text/css" href="http://cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,600,700' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
     <link href="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection, print" />
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!-- 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    -->
+    <!-- WEBFONTS: need to be updated to use CfA credentials -->
+    <link href="http://cloud.webtype.com/css/7e168175-994d-40a9-881b-320178f0b544.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- calling local instance of bootstrap.min.js -->
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
+
+    <!-- simple page loader -->  
+    <script type="text/javascript" src="js/simple-loader.js"></script>
+
   </head>
-  <body class="onreport next" id="onreport-next">
+<body class="onreport next" id="onreport-next">
 
 <!-- Loading -->
-<!-- <div id="loading">
+<div id="loading">
   <img src="img/codeforall_compass_white.png" />
 </div>
- -->
 
-<!-- Navbar --> 
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <div class="nav-collapse collapse">
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-        <ul class="nav">
-          <li><a href="#">About/Intro</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Brigade</a></li>
-          <li><a href="#">The Network</a></li>
-          <li><a href="#">What's Next</a></li>
-        </ul> <!-- nav -->
-        <a class="brand alignright" href="#"><img class="cfalogo img-responsive" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
-      </div> <!-- collapse -->
-    </div> <!-- container -->
-  </div> <!-- navbar-inner -->
-</div> <!-- navbar -->
+<div id="page">
+  <!-- Navbar --> 
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav">
+            <li><a href="#">About/Intro</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Brigade</a></li>
+            <li><a href="#">The Network</a></li>
+            <li><a href="#">What's Next</a></li>
+          </ul> <!-- nav -->
+          <div class="alignright">
+            <a href="http://codeforamerica.org/about/international/" title="Code for All"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
+            <a href="http://codeforamerica.org/" title="Code for America"><img class="cfalogo img-responsive brand" src="img/CfA_logo_white.png" alt="Code for America logo" /></a>
+          </div><!--/.brand -->
+        </div> <!-- collapse -->
+      </div> <!-- container -->
+    </div> <!-- navbar-inner -->
+  </div> <!-- navbar -->
 
-<!-- CONTENT -->
-<div class="page homeQuote quote bg-med-blue pagebg">
-    <div class="main-well container bg-dk-blue">
-      <h1>
-        What's Next
-      </h1>
-      <p class="intro">Now that the foundation has been laid for a strong and growing international network , the Code for All community will continue to share our lessons learned, implement programs in partnership with local governments that use technology to improve our communities and document our learnings. We, as Code for All, will act as a platform for anyone, anywhere to start a civic technology project where they live.</p>
-      <p class="intro">And all of our efforts will continue to be better because we are connected.</p>
-      <hr />
-      <h2>Building the Civic Technology Infrastructure</h2>
-      <p>Code for All is committed to creating a space for resource sharing and application discoverability to operate at scale and better address shared challenges together. This will take the form of a virtual platform where people can connect to tools and resources from wherever they are, enabling the global civic technology community.</p>
-
-      <h2>Relationship Building</h2>
-      <p>Face to face meetings strengthen the community and foster the cross-pollination of ideas across the world. International meetings that bring together our stakeholders will be held periodically to continue to strengthen the network and foster meaningful exchange and shared learnings.</p>
-
-      <h2>Resources</h2>
-      <p>We will continue to document our lessons learned and create actionable resources that are useful to our existing partners and others who are just getting started. Code for America has created a “Fellowship Toolkit” that walks the reader through how we implement our fellowship program and provides useful guidance on thinking through CfA Fellowship Program implementation for one’s local context. Code for the Caribbean has created a useful guide to innovation fellowships. As a community, Code for All members will continue to populate our network platform with lessons learned, toolkits and thoughtful documentation and analysis of our programs.</p>
-  </div>
-</div>
-
-
-    <div class="clear"></div>  
-  </div>
-
-  </body>
+  <!-- CONTENT -->
+  <div class="page homeQuote quote bg-med-blue pagebg">
+      <div class="main-well container bg-dk-blue">
+        <h1>
+          What's Next
+        </h1>
+        <p class="intro">Now that the foundation has been laid for a strong and growing international network , the Code for All community will continue to share our lessons learned, implement programs in partnership with local governments that use technology to improve our communities and document our learnings. We, as Code for All, will act as a platform for anyone, anywhere to start a civic technology project where they live.</p>
+        <p class="intro">And all of our efforts will continue to be better because we are connected.</p>
+        <hr />
+        <h2>Building the Civic Technology Infrastructure</h2>
+        <p>Code for All is committed to creating a space for resource sharing and application discoverability to operate at scale and better address shared challenges together. This will take the form of a virtual platform where people can connect to tools and resources from wherever they are, enabling the global civic technology community.</p>
+        <h2>Relationship Building</h2>
+        <p>Face to face meetings strengthen the community and foster the cross-pollination of ideas across the world. International meetings that bring together our stakeholders will be held periodically to continue to strengthen the network and foster meaningful exchange and shared learnings.</p>
+        <h2>Resources</h2>
+        <p>We will continue to document our lessons learned and create actionable resources that are useful to our existing partners and others who are just getting started. Code for America has created a “Fellowship Toolkit” that walks the reader through how we implement our fellowship program and provides useful guidance on thinking through CfA Fellowship Program implementation for one’s local context. Code for the Caribbean has created a useful guide to innovation fellowships. As a community, Code for All members will continue to populate our network platform with lessons learned, toolkits and thoughtful documentation and analysis of our programs.</p>
+    </div>
+  </div><!--/.page homeQuote -->
+  <div class="clear"></div>  
+</div><!--/#page -->
+</body>
 </html>
 

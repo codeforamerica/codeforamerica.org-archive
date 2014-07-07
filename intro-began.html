@@ -5,77 +5,102 @@
   <meta name="viewport" content="width=800, initial-scale=0.25, maximum-scale=1">
   <title>Code for All</title>
    
-    <!-- Homepage CSS -->
+    <!-- CSS/JS -->
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
-    
-    <!-- grabbing the webfonts from the cfa site-->
-    <link rel="stylesheet" type="text/css" href="http://cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,600,700' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
     <link href="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection, print" />
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <!-- 
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6435252/678502/css/fonts.css" />
+    -->
+    <!-- WEBFONTS: need to be updated to use CfA credentials -->
+    <link href="http://cloud.webtype.com/css/7e168175-994d-40a9-881b-320178f0b544.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- calling local instance of bootstrap.min.js -->
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
+
+    <!-- simple page loader -->  
+    <script type="text/javascript" src="js/simple-loader.js"></script>
+
   </head>
   <body class="onreport intro" id="onreport-intro-began">
 
+
 <!-- Loading -->
-<!-- <div id="loading">
+<div id="loading">
   <img src="img/codeforall_compass_white.png" />
 </div>
- -->
 
-<!-- Navbar --> 
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <div class="nav-collapse collapse">
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-        <ul class="nav">
-          <li><a href="#">About/Intro</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Brigade</a></li>
-          <li><a href="#">The Network</a></li>
-          <li><a href="#">What's Next</a></li>
-        </ul> <!-- nav -->
-        <a class="brand alignright" href="#"><img class="cfalogo img-responsive" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
-      </div> <!-- collapse -->
-    </div> <!-- container -->
-  </div> <!-- navbar-inner -->
-</div> <!-- navbar -->
+<div id="page">
+  <!-- Navbar --> 
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav">
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Welcome <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="intro-letter.html">Welcome</a></li>
+                <li><a href="intro-values.html">Our Values</a></li>
+                <li class="active"><a href="intro-began.html">How it all began</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Partners <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="partners-cftc.html">Code for the Caribbean</a></li>
+                <li><a href="partners-cfmc.html">Code for Mexico City</a></li>
+                <li><a href="partners-cfg.html">Code for Germany</a></li>
+              </ul>
+            </li>
+            <li><a href="brigade.html">Brigade</a></li>
+            <li><a href="whats-next.html">What's Next</a></li>
+          </ul> <!-- nav -->
+          <div class="alignright">
+            <a href="http://codeforamerica.org/about/international/" title="Code for All"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
+            <a href="http://codeforamerica.org/" title="Code for America"><img class="cfalogo img-responsive brand" src="img/CfA_logo_white.png" alt="Code for America logo" /></a>
+          </div><!--/.brand -->
 
-<!-- CONTENT -->
-<div class="page homeQuote quote bg-med-blue pagebg">
-    <div class="main-well container bg-dk-blue">
-      <h1>
-        How it all began
-      </h1>
-      <p class="intro">In February of 2013 Code for America selected three partner organizations that were interested in exploring the possibility of adapting Code for America programs to their own local context in three very different locations (the Caribbean, Mexico City and Germany).</p>
+        </div> <!-- collapse -->
+      </div> <!-- container -->
+    </div> <!-- navbar-inner -->
+  </div> <!-- navbar -->
 
-      <p>Code for America worked closely with these partners (<a href="#" title="#">Laboratorio para la Ciudad</a> (LabPLC), <a href="#" title="#">Mexico City’s office of civic innovation</a>, the <a href="#" title="#">Open Knowledge Foundation’s Germany chapter</a> and <a href="#" title="#">Slashroots</a>, a civic tech non profit based in Jamaica), to develop their <a href="#" title="#">fellowship</a> and <a href="#" title="#">Brigade</a> programs and learn from the process of adapting the CfA model to different countries. Those 3 partners, jointly with CfA, came to make up the founding members of the Code for All community.</p>
+  <!-- CONTENT -->
+  <div class="page homeQuote quote bg-med-blue pagebg">
+      <div class="main-well container bg-dk-blue">
+        <h1>
+          How it all began
+        </h1>
+        <p class="intro">Almost immediately after its founding four years ago, scores of people from dozens of countries began approaching Code for America wanting help adapting our programs to their local context. Still young enough to be unsure how our own programs worked, we hesitated to get involved outside our borders. It quickly became apparent that we not only had a lot to share, but we could learn about how our programs worked by seeing how they got deployed in and adapted to other places.</p>
+        <p>In May 2013, we launched Code for All with three very diverse pilot partners in Mexico City, Germany and the Caribbean. All three take distinct approaches and are working in very different geographies. That diversity allows us to learn as much as we can about the ways civic technology projects function across contexts--from cities to federal ministries, urban to rural, developing to developed.</p>
+        <p>A year later, the founding partners have learned more than we could have imagined about building effective civic technology programs. We’re sharing some of that work here with you in hopes that it makes future projects easier to start and scale, and that all of our work will be better when it is connected.</p>
+        <p><span class="strong">
+          Catherine Bracy</span><br />
+          Director of Community Organizing<br />
+          Code for America
+        </p>
+    </div>
   </div>
-</div>
+  <div class="clear"></div>  
+</div><!--/#page -->
 
-
-    <div class="clear"></div>  
-  </div>
-
-  </body>
+</body>
 </html>
 

@@ -585,10 +585,10 @@ a.appspop:hover {
 
 /* line 33, ../sass/_backgrounds.scss */
 #onreport-intro-values .pagebg {
-  background: url("../img/jamrock-chill-lg.jpg") no-repeat;
+  background: url("../img/values-cfmc-lg.jpg") no-repeat;
   background-color: #4298bb;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
 }
 
@@ -1415,7 +1415,126 @@ li {
   }
 }
 
+/* 
+
+This partial is not getting pulled into base.scss
+So I'm using it for font and color notes. -ew
+
+*/
 /* style guide lists this as #999595 */
+/* FONTS */
+/* line 50, ../sass/_colors.scss */
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 56, ../sass/_colors.scss */
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 62, ../sass/_colors.scss */
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 68, ../sass/_colors.scss */
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 74, ../sass/_colors.scss */
+.interstate-bold {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 80, ../sass/_colors.scss */
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 86, ../sass/_colors.scss */
+.interstate-bold-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 92, ../sass/_colors.scss */
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 98, ../sass/_colors.scss */
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 104, ../sass/_colors.scss */
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 110, ../sass/_colors.scss */
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 116, ../sass/_colors.scss */
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 122, ../sass/_colors.scss */
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 128, ../sass/_colors.scss */
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 134, ../sass/_colors.scss */
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 140, ../sass/_colors.scss */
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
 /*****************************************************************************/
 /*
 /* Map styling
@@ -1967,7 +2086,6 @@ a.startupspop:hover {
   background-image: url("../img/apps/inverse_streetcred.png");
 }
 
-/* style guide lists this as #999595 */
 /*****************************************************************************/
 /*
 /* Specific typography changes for sections
@@ -2010,7 +2128,126 @@ a.startupspop:hover {
   text-decoration: none;
 }
 
+/* 
+
+This partial is not getting pulled into base.scss
+So I'm using it for font and color notes. -ew
+
+*/
 /* style guide lists this as #999595 */
+/* FONTS */
+/* line 50, ../sass/_colors.scss */
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 56, ../sass/_colors.scss */
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 62, ../sass/_colors.scss */
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 68, ../sass/_colors.scss */
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 74, ../sass/_colors.scss */
+.interstate-bold {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 80, ../sass/_colors.scss */
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 86, ../sass/_colors.scss */
+.interstate-bold-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 92, ../sass/_colors.scss */
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 98, ../sass/_colors.scss */
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 104, ../sass/_colors.scss */
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 110, ../sass/_colors.scss */
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 116, ../sass/_colors.scss */
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 122, ../sass/_colors.scss */
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 128, ../sass/_colors.scss */
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 134, ../sass/_colors.scss */
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 140, ../sass/_colors.scss */
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
 /* line 3, ../sass/_getinvolved.scss */
 .getinvolved {
   background: rgba(255, 255, 255, 0.95);
@@ -2194,7 +2431,126 @@ iframe.twitter-share-button {
   min-height: 20px;
 }
 
+/* 
+
+This partial is not getting pulled into base.scss
+So I'm using it for font and color notes. -ew
+
+*/
 /* style guide lists this as #999595 */
+/* FONTS */
+/* line 50, ../sass/_colors.scss */
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 56, ../sass/_colors.scss */
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 62, ../sass/_colors.scss */
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 68, ../sass/_colors.scss */
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 74, ../sass/_colors.scss */
+.interstate-bold {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 80, ../sass/_colors.scss */
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 86, ../sass/_colors.scss */
+.interstate-bold-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 92, ../sass/_colors.scss */
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 98, ../sass/_colors.scss */
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 104, ../sass/_colors.scss */
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 110, ../sass/_colors.scss */
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 116, ../sass/_colors.scss */
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 122, ../sass/_colors.scss */
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 128, ../sass/_colors.scss */
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 134, ../sass/_colors.scss */
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 140, ../sass/_colors.scss */
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
 /* line 4, ../sass/_finance.scss */
 .financials .graph {
   background: #00a175;
@@ -2337,6 +2693,141 @@ iframe.twitter-share-button {
   max-width: 960px;
 }
 
+/* FONTS */
+/* line 116, ../sass/_custom.scss */
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 121, ../sass/_custom.scss */
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 126, ../sass/_custom.scss */
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 131, ../sass/_custom.scss */
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 137, ../sass/_custom.scss */
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 142, ../sass/_custom.scss */
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 147, ../sass/_custom.scss */
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 152, ../sass/_custom.scss */
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 157, ../sass/_custom.scss */
+.interstate-bold {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 162, ../sass/_custom.scss */
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 167, ../sass/_custom.scss */
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 172, ../sass/_custom.scss */
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 177, ../sass/_custom.scss */
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 182, ../sass/_custom.scss */
+.interstate-bold-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 187, ../sass/_custom.scss */
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 192, ../sass/_custom.scss */
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 198, ../sass/_custom.scss */
+.gotham {
+  font-family: "Gotham A", "Gotham B", "Verdana", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 203, ../sass/_custom.scss */
+.open-sans {
+  font-family: "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 208, ../sass/_custom.scss */
+.sentinel {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* to match blue on CfA site */
 /* style guide lists this as #999595 */
 /*****************************************************************************/
 /*
@@ -2355,7 +2846,7 @@ iframe.twitter-share-button {
 
 /* line 49, ../sass/base.scss */
 .page.homeQuote {
-  padding-top: 69px !important;
+  padding-top: 50px !important;
 }
 
 /* line 53, ../sass/base.scss */
@@ -2619,8 +3110,8 @@ iframe.twitter-share-button {
 
 /* line 273, ../sass/base.scss */
 .navbar .brand {
-  margin: 0;
-  max-width: 140px;
+  margin: 10px 20px;
+  max-height: 30px;
   padding: 0;
 }
 
@@ -2658,39 +3149,49 @@ iframe.twitter-share-button {
 /* line 307, ../sass/base.scss */
 #loading h1,
 #loading p {
-  text-align: center;
   color: #fff;
+  text-align: center;
   text-shadow: none;
 }
 
 /* line 313, ../sass/base.scss */
 #loading h1 {
-  font-size: 220px;
-  margin: 90px auto 117px;
-  font-weight: 600;
-}
-
-/* line 319, ../sass/base.scss */
-#loading p {
+  color: #7ab5d6;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
+  font-size: 400px;
+  font-weight: normal;
+  line-height: 0.5em;
+  margin: 0 auto 60px;
+  padding: 0;
   text-transform: uppercase;
-  font-size: 63px;
-  font-weight: 300;
 }
 
-/* line 325, ../sass/base.scss */
+/* line 324, ../sass/base.scss */
+#loading p {
+  color: #7ab5d6;
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+  font-size: 160px;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* line 335, ../sass/base.scss */
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
-/* line 330, ../sass/base.scss */
+/* line 340, ../sass/base.scss */
 ul.posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
 
-/* line 336, ../sass/base.scss */
+/* line 346, ../sass/base.scss */
 h2 {
   text-align: left;
   font-size: 30px;
@@ -2698,7 +3199,7 @@ h2 {
   line-height: 40px;
 }
 
-/* line 343, ../sass/base.scss */
+/* line 353, ../sass/base.scss */
 h3 {
   font-size: 40px;
   letter-spacing: 4px;
@@ -2706,12 +3207,12 @@ h3 {
   margin-top: 0px;
 }
 
-/* line 350, ../sass/base.scss */
+/* line 360, ../sass/base.scss */
 h3 span {
   font-size: 24px;
 }
 
-/* line 354, ../sass/base.scss */
+/* line 364, ../sass/base.scss */
 h4 {
   clear: both;
   font-size: 24px;
@@ -2721,7 +3222,7 @@ h4 {
   text-align: left;
 }
 
-/* line 364, ../sass/base.scss */
+/* line 374, ../sass/base.scss */
 h5 {
   font-size: 24px;
   font-style: italic;
@@ -2729,7 +3230,7 @@ h5 {
   line-height: 30px;
 }
 
-/* line 371, ../sass/base.scss */
+/* line 381, ../sass/base.scss */
 h6 {
   text-align: left;
   font-weight: 300;
@@ -2737,19 +3238,19 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 378, ../sass/base.scss */
+/* line 388, ../sass/base.scss */
 p {
   font-weight: 300;
   font-size: 18px;
   text-align: left;
 }
 
-/* line 384, ../sass/base.scss */
+/* line 394, ../sass/base.scss */
 input[type="text"] {
   border-radius: 0px;
 }
 
-/* line 388, ../sass/base.scss */
+/* line 398, ../sass/base.scss */
 .btn {
   border-radius: 0px;
   background: #C82A45;
@@ -2760,7 +3261,7 @@ input[type="text"] {
   margin-left: 5px;
 }
 
-/* line 398, ../sass/base.scss */
+/* line 408, ../sass/base.scss */
 .btn:hover {
   background: #b1263d;
   color: #fff;
@@ -2772,19 +3273,19 @@ input[type="text"] {
 /* Site
 /*
 /*****************************************************************************/
-/* line 411, ../sass/base.scss */
+/* line 421, ../sass/base.scss */
 .line {
   border: white solid 1px;
   width: 85%;
   margin: 10px 0px 10px 0px;
 }
 
-/* line 417, ../sass/base.scss */
+/* line 427, ../sass/base.scss */
 .clear {
   clear: both;
 }
 
-/* line 422, ../sass/base.scss */
+/* line 432, ../sass/base.scss */
 .page.quote,
 .page.story {
   overflow-x: hidden;
@@ -2797,17 +3298,17 @@ input[type="text"] {
   /* Safari */
 }
 
-/* line 431, ../sass/base.scss */
+/* line 441, ../sass/base.scss */
 .page.story {
   /*padding: 80px 80px 100px;*/
 }
 
-/* line 435, ../sass/base.scss */
+/* line 445, ../sass/base.scss */
 .page.story.nosidebar {
   padding: 0px;
 }
 
-/* line 441, ../sass/base.scss */
+/* line 451, ../sass/base.scss */
 .page.quote h1,
 .page.story h1 {
   font-size: 56px;
@@ -2817,12 +3318,12 @@ input[type="text"] {
   padding-top: 40px;
 }
 
-/* line 450, ../sass/base.scss */
+/* line 460, ../sass/base.scss */
 .page.quote h1 {
   margin-bottom: 0px;
 }
 
-/* line 454, ../sass/base.scss */
+/* line 464, ../sass/base.scss */
 .page.story {
   position: relative;
   width: 100%;
@@ -2835,117 +3336,117 @@ input[type="text"] {
 -webkit-box-sizing:border-box; /* Safari */
 }
 
-/* line 466, ../sass/base.scss */
+/* line 476, ../sass/base.scss */
 .cityLeaders iframe {
   display: block;
   margin-top: 50px;
   min-height: 300px;
 }
 
-/* line 472, ../sass/base.scss */
+/* line 482, ../sass/base.scss */
 .quote .bigtext h1 {
   font-size: 73px;
   text-transform: uppercase;
 }
 
-/* line 477, ../sass/base.scss */
+/* line 487, ../sass/base.scss */
 .themes .span10 {
   margin-left: 10px;
 }
 
-/* line 481, ../sass/base.scss */
+/* line 491, ../sass/base.scss */
 .themes .headline {
   font-size: 50px;
   margin-top: 0px;
 }
 
-/* line 486, ../sass/base.scss */
+/* line 496, ../sass/base.scss */
 .bioleft {
   padding-right: 15px;
 }
 
-/* line 490, ../sass/base.scss */
+/* line 500, ../sass/base.scss */
 .bioleft p {
   text-align: right;
 }
 
-/* line 495, ../sass/base.scss */
+/* line 505, ../sass/base.scss */
 .bioright,
 .apps .bioright {
   padding-left: 15px;
 }
 
-/* line 499, ../sass/base.scss */
+/* line 509, ../sass/base.scss */
 .bios {
   margin: 35px auto;
   float: left;
 }
 
-/* line 505, ../sass/base.scss */
+/* line 515, ../sass/base.scss */
 .bios h3,
 .network .bios p {
   margin-top: -6px;
 }
 
-/* line 509, ../sass/base.scss */
+/* line 519, ../sass/base.scss */
 .bios h5 {
   margin-bottom: 15px;
 }
 
-/* line 513, ../sass/base.scss */
+/* line 523, ../sass/base.scss */
 .bios p {
   margin-top: 0px;
 }
 
-/* line 517, ../sass/base.scss */
+/* line 527, ../sass/base.scss */
 .bios.right .span6 {
   padding-left: 20px;
 }
 
-/* line 521, ../sass/base.scss */
+/* line 531, ../sass/base.scss */
 .bios.right .span6.bioleft {
   padding-left: 0px;
   margin-left: 0px;
 }
 
-/* line 526, ../sass/base.scss */
+/* line 536, ../sass/base.scss */
 .bios .url {
   font-size: 19px;
   font-weight: bold;
   text-align: left;
 }
 
-/* line 533, ../sass/base.scss */
+/* line 543, ../sass/base.scss */
 .moreapps,
 .captains {
   clear: both;
   float: left;
 }
 
-/* line 538, ../sass/base.scss */
+/* line 548, ../sass/base.scss */
 .moreapps h3 {
   margin-top: 1    0px;
 }
 
-/* line 542, ../sass/base.scss */
+/* line 552, ../sass/base.scss */
 .moreapps img {
   margin-top: 30px;
 }
 
-/* line 547, ../sass/base.scss */
+/* line 557, ../sass/base.scss */
 .market img {
   margin: 0px 0px;
   display: block;
 }
 
-/* line 552, ../sass/base.scss */
+/* line 562, ../sass/base.scss */
 .thanks h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 0px auto 30px;
 }
 
-/* line 558, ../sass/base.scss */
+/* line 568, ../sass/base.scss */
 .thanks img {
   max-height: 60px;
   max-width: 242px;
@@ -2953,35 +3454,35 @@ input[type="text"] {
   display: block;
 }
 
-/* line 565, ../sass/base.scss */
+/* line 575, ../sass/base.scss */
 .cfa {
   /*margin-bottom: 200px;*/
 }
 
-/* line 569, ../sass/base.scss */
+/* line 579, ../sass/base.scss */
 .cfa h1 {
   text-align: right;
 }
 
-/* line 573, ../sass/base.scss */
+/* line 583, ../sass/base.scss */
 .cfa p {
   font-size: 18px;
   line-height: 30px;
 }
 
-/* line 578, ../sass/base.scss */
+/* line 588, ../sass/base.scss */
 .cfa a {
   font-weight: 300;
 }
 
-/* line 582, ../sass/base.scss */
+/* line 592, ../sass/base.scss */
 .people ul {
   float: left;
   line-height: 26px;
   margin: 0px 50px 50px 0px;
 }
 
-/* line 590, ../sass/base.scss */
+/* line 600, ../sass/base.scss */
 .people .google,
 .people .knight,
 .people .on {
@@ -2989,21 +3490,21 @@ input[type="text"] {
   height: 40px;
 }
 
-/* line 595, ../sass/base.scss */
+/* line 605, ../sass/base.scss */
 .people .google {
   background-image: url("../img/google.png");
   background-size: 105px;
   width: 105px;
 }
 
-/* line 601, ../sass/base.scss */
+/* line 611, ../sass/base.scss */
 .people .knight {
   background-image: url("../img/knight.png");
   background-size: 185px;
   width: 185px;
 }
 
-/* line 607, ../sass/base.scss */
+/* line 617, ../sass/base.scss */
 .people .on {
   background-image: url("../img/on.png");
   background-size: 135px;
@@ -3013,12 +3514,12 @@ input[type="text"] {
 /*
 Temporary css for image placeholders
 */
-/* line 617, ../sass/base.scss */
+/* line 627, ../sass/base.scss */
 .ecosystem h1 {
   margin-top: 70px;
 }
 
-/* line 621, ../sass/base.scss */
+/* line 631, ../sass/base.scss */
 .ecosystem h2 {
   font-size: 27px;
   font-weight: 300;
@@ -3026,12 +3527,12 @@ Temporary css for image placeholders
   margin-top: 58px;
 }
 
-/* line 628, ../sass/base.scss */
+/* line 638, ../sass/base.scss */
 .apps h3 {
   margin-bottom: 10px;
 }
 
-/* line 632, ../sass/base.scss */
+/* line 642, ../sass/base.scss */
 .companies {
   background-color: rgba(255, 255, 255, 0.75);
   color: #000;
@@ -3041,82 +3542,82 @@ Temporary css for image placeholders
   height: 345px;
 }
 
-/* line 641, ../sass/base.scss */
+/* line 651, ../sass/base.scss */
 .companies img {
   width: 82%;
   padding: 40px 0px 0px 5em;
 }
 
-/* line 646, ../sass/base.scss */
+/* line 656, ../sass/base.scss */
 .companies .companyblurb {
   float: left;
   padding: 40px 60px 0 0;
   text-align: left;
 }
 
-/* line 652, ../sass/base.scss */
+/* line 662, ../sass/base.scss */
 .companies .companyblurb img {
   width: 40%;
   padding-top: 0px;
 }
 
-/* line 657, ../sass/base.scss */
+/* line 667, ../sass/base.scss */
 .companies h5 {
   text-transform: uppercase;
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 663, ../sass/base.scss */
+/* line 673, ../sass/base.scss */
 .companies p {
   font-size: 16px;
   line-height: 22px;
 }
 
-/* line 668, ../sass/base.scss */
+/* line 678, ../sass/base.scss */
 .companies a {
   color: #000;
 }
 
-/* line 672, ../sass/base.scss */
+/* line 682, ../sass/base.scss */
 .companies .contact {
   font-size: 16px;
 }
 
-/* line 676, ../sass/base.scss */
+/* line 686, ../sass/base.scss */
 .tagline {
   font-style: italic;
   font-weight: 700;
 }
 
-/* line 681, ../sass/base.scss */
+/* line 691, ../sass/base.scss */
 img.progicons {
   width: 100%;
   margin-top: -7px;
 }
 
-/* line 686, ../sass/base.scss */
+/* line 696, ../sass/base.scss */
 .market img.progicons {
   margin: 0;
 }
 
-/* line 690, ../sass/base.scss */
+/* line 700, ../sass/base.scss */
 .community img {
   margin: 0;
   display: block;
 }
 
-/* line 695, ../sass/base.scss */
+/* line 705, ../sass/base.scss */
 .community p {
   margin: 0px;
 }
 
-/* line 700, ../sass/base.scss */
+/* line 710, ../sass/base.scss */
 .community .people ul {
   margin: 0px 0px 8px 0px;
 }
 
-/* line 708, ../sass/base.scss */
+/* line 718, ../sass/base.scss */
 .captains a:hover,
 .fellowcard a:hover,
 .moreapps a:hover,
@@ -3124,23 +3625,23 @@ img.progicons {
   border-bottom: none;
 }
 
-/* line 712, ../sass/base.scss */
+/* line 722, ../sass/base.scss */
 .popover {
   border-radius: 0px;
 }
 
-/* line 716, ../sass/base.scss */
+/* line 726, ../sass/base.scss */
 .popover-content {
   margin-top: 0px;
   padding-top: 0px;
 }
 
-/* line 720, ../sass/base.scss */
+/* line 730, ../sass/base.scss */
 .popovertopshim {
   margin-top: 50px;
 }
 
-/* line 725, ../sass/base.scss */
+/* line 735, ../sass/base.scss */
 .popover-title,
 .popover-content {
   font-weight: 300;
@@ -3148,7 +3649,7 @@ img.progicons {
   text-shadow: none;
 }
 
-/* line 732, ../sass/base.scss */
+/* line 742, ../sass/base.scss */
 .popover-title,
 .popover-title {
   font-weight: 700;
@@ -3158,14 +3659,14 @@ img.progicons {
   padding-bottom: 0px;
 }
 
-/* line 741, ../sass/base.scss */
+/* line 751, ../sass/base.scss */
 .captains .popover-content,
 .morefellows .popover-content {
   font-weight: 300;
   padding-top: 0px;
 }
 
-/* line 767, ../sass/base.scss */
+/* line 777, ../sass/base.scss */
 .jeff,
 .andrew,
 .bret,
@@ -3196,132 +3697,132 @@ img.progicons {
   margin: 20px 20px 0 0;
 }
 
-/* line 776, ../sass/base.scss */
+/* line 786, ../sass/base.scss */
 .andrew {
   background-position: 0 0px;
 }
 
-/* line 780, ../sass/base.scss */
+/* line 790, ../sass/base.scss */
 .bret {
   background-position: 0 -100px;
 }
 
-/* line 784, ../sass/base.scss */
+/* line 794, ../sass/base.scss */
 .burt {
   background-position: 0 -200px;
 }
 
-/* line 788, ../sass/base.scss */
+/* line 798, ../sass/base.scss */
 .chip {
   background-position: 0 -300px;
 }
 
-/* line 792, ../sass/base.scss */
+/* line 802, ../sass/base.scss */
 .chris {
   background-position: 0 -400px;
 }
 
-/* line 796, ../sass/base.scss */
+/* line 806, ../sass/base.scss */
 .chriswhit {
   background-position: 0 -500px;
 }
 
-/* line 800, ../sass/base.scss */
+/* line 810, ../sass/base.scss */
 .dave {
   background-position: 0 -600px;
 }
 
-/* line 804, ../sass/base.scss */
+/* line 814, ../sass/base.scss */
 .emma {
   background-position: 0 -700px;
 }
 
-/* line 808, ../sass/base.scss */
+/* line 818, ../sass/base.scss */
 .harlan {
   background-position: 0 -800px;
 }
 
-/* line 812, ../sass/base.scss */
+/* line 822, ../sass/base.scss */
 .jason {
   background-position: 0 -900px;
 }
 
-/* line 816, ../sass/base.scss */
+/* line 826, ../sass/base.scss */
 .jeff {
   background-position: 0 -1000px;
 }
 
-/* line 820, ../sass/base.scss */
+/* line 830, ../sass/base.scss */
 .jon {
   background-position: 0 -1100px;
 }
 
-/* line 824, ../sass/base.scss */
+/* line 834, ../sass/base.scss */
 .kevin {
   background-position: 0 -1200px;
 }
 
-/* line 828, ../sass/base.scss */
+/* line 838, ../sass/base.scss */
 .michelle {
   background-position: 0 -1300px;
 }
 
-/* line 832, ../sass/base.scss */
+/* line 842, ../sass/base.scss */
 .scott {
   background-position: 0 -1400px;
 }
 
-/* line 836, ../sass/base.scss */
+/* line 846, ../sass/base.scss */
 .steve {
   background-position: 0 -1500px;
 }
 
-/* line 840, ../sass/base.scss */
+/* line 850, ../sass/base.scss */
 .eddiet {
   background-position: 0 -1600px;
 }
 
-/* line 844, ../sass/base.scss */
+/* line 854, ../sass/base.scss */
 .noel {
   background-position: 0 -1700px;
 }
 
-/* line 848, ../sass/base.scss */
+/* line 858, ../sass/base.scss */
 .jasonl {
   background-position: 0 -1800px;
 }
 
-/* line 852, ../sass/base.scss */
+/* line 862, ../sass/base.scss */
 .chase {
   background-position: 0 -1900px;
 }
 
-/* line 856, ../sass/base.scss */
+/* line 866, ../sass/base.scss */
 .mevans {
   background-position: 0 -2000px;
 }
 
-/* line 860, ../sass/base.scss */
+/* line 870, ../sass/base.scss */
 .market h4 {
   margin-top: 40px;
 }
 
-/* line 864, ../sass/base.scss */
+/* line 874, ../sass/base.scss */
 .market .stats {
   margin-bottom: 10px;
 }
 
-/* line 868, ../sass/base.scss */
+/* line 878, ../sass/base.scss */
 .market .bios {
   margin-top: 30px;
 }
 
-/* line 872, ../sass/base.scss */
+/* line 882, ../sass/base.scss */
 .market .bios.right.bioquote {
   margin-top: 0px;
 }
 
-/* line 879, ../sass/base.scss */
+/* line 889, ../sass/base.scss */
 .morefellows .bios p,
 .community .bios p,
 .market .bios p,
@@ -3333,7 +3834,7 @@ img.progicons {
   margin-bottom: 10px;
 }
 
-/* line 890, ../sass/base.scss */
+/* line 900, ../sass/base.scss */
 .morefellows .bios h3,
 .community .bios h3,
 .market .bios h3,
@@ -3343,7 +3844,7 @@ img.progicons {
   text-align: left;
 }
 
-/* line 899, ../sass/base.scss */
+/* line 909, ../sass/base.scss */
 .morefellows .bios h5,
 .community .bios h5,
 .market .bios h5,
@@ -3356,17 +3857,17 @@ img.progicons {
   text-align: left;
 }
 
-/* line 908, ../sass/base.scss */
+/* line 918, ../sass/base.scss */
 .market .stats h4 {
   margin-top: 20px;
 }
 
-/* line 912, ../sass/base.scss */
+/* line 922, ../sass/base.scss */
 .market h4.process {
   margin-top: 50px;
 }
 
-/* line 916, ../sass/base.scss */
+/* line 926, ../sass/base.scss */
 .sharebutton {
   position: fixed;
   bottom: 10px;
@@ -3375,7 +3876,7 @@ img.progicons {
   height: 70px;
 }
 
-/* line 924, ../sass/base.scss */
+/* line 934, ../sass/base.scss */
 .sharebutton iframe {
   min-height: auto;
 }
@@ -3388,112 +3889,112 @@ img.progicons {
 /********
  COLORS
 ********/
-/* line 939, ../sass/base.scss */
+/* line 949, ../sass/base.scss */
 .red {
   color: #cf1b41;
 }
 
-/* line 940, ../sass/base.scss */
+/* line 950, ../sass/base.scss */
 .bg-red {
   background: #cf1b41;
 }
 
-/* line 941, ../sass/base.scss */
+/* line 951, ../sass/base.scss */
 .blue {
   color: #399fd3;
 }
 
-/* line 942, ../sass/base.scss */
+/* line 952, ../sass/base.scss */
 .bg-blue {
   background: #399fd3;
 }
 
-/* line 943, ../sass/base.scss */
+/* line 953, ../sass/base.scss */
 .black {
   color: black;
 }
 
-/* line 944, ../sass/base.scss */
+/* line 954, ../sass/base.scss */
 .bg-black {
   background: black;
 }
 
-/* line 945, ../sass/base.scss */
+/* line 955, ../sass/base.scss */
 .gray {
   color: #6d6e71;
 }
 
-/* line 946, ../sass/base.scss */
+/* line 956, ../sass/base.scss */
 .bg-gray {
   background: #6d6e71;
 }
 
-/* line 947, ../sass/base.scss */
+/* line 957, ../sass/base.scss */
 .white {
   color: white;
 }
 
-/* line 948, ../sass/base.scss */
+/* line 958, ../sass/base.scss */
 .bg-white {
   background: white;
 }
 
-/* line 951, ../sass/base.scss */
+/* line 961, ../sass/base.scss */
 .dk-blue {
   color: #2f3d4a;
 }
 
-/* line 952, ../sass/base.scss */
+/* line 962, ../sass/base.scss */
 .bg-dk-blue {
   background: #2f3d4a;
 }
 
-/* line 953, ../sass/base.scss */
+/* line 963, ../sass/base.scss */
 .med-blue {
   color: #4298bb;
 }
 
-/* line 954, ../sass/base.scss */
+/* line 964, ../sass/base.scss */
 .bg-med-blue {
   background: #4298bb;
 }
 
-/* line 955, ../sass/base.scss */
+/* line 965, ../sass/base.scss */
 .lt-blue {
   color: #7ab5d6;
 }
 
-/* line 956, ../sass/base.scss */
+/* line 966, ../sass/base.scss */
 .bg-lt-blue {
   background: #7ab5d6;
 }
 
-/* line 957, ../sass/base.scss */
+/* line 967, ../sass/base.scss */
 .dk-gray {
   color: #333333;
 }
 
-/* line 958, ../sass/base.scss */
+/* line 968, ../sass/base.scss */
 .bg-dk-gray {
   background: #333333;
 }
 
-/* line 959, ../sass/base.scss */
+/* line 969, ../sass/base.scss */
 .med-gray {
   color: #999595;
 }
 
-/* line 960, ../sass/base.scss */
+/* line 970, ../sass/base.scss */
 .bg-med-gray {
   background: #999595;
 }
 
-/* line 961, ../sass/base.scss */
+/* line 971, ../sass/base.scss */
 .lt-gray {
   color: #e5e5e5;
 }
 
-/* line 962, ../sass/base.scss */
+/* line 972, ../sass/base.scss */
 .bg-lt-gray {
   background: #e5e5e5;
 }
@@ -3501,75 +4002,197 @@ img.progicons {
 /********
  TYPOGRAPHY
 ********/
-/* line 973, ../sass/base.scss */
+/* line 983, ../sass/base.scss */
 html, body, p, li {
   color: #e5e5e5;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
 
-/* line 981, ../sass/base.scss */
+/* line 991, ../sass/base.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #7ab5d6;
-  font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", "Times New Roman", serif;
-  font-weight: 500;
+  color: #399fd3;
+  font-family: "Freight Text", "Georgia", "Times New Roman", serif;
+  font-weight: bold;
   line-height: 24px;
 }
 
-/* line 987, ../sass/base.scss */
+/* line 997, ../sass/base.scss */
 h1 {
   font-size: 40px;
   line-height: 50px;
 }
 
-/* line 991, ../sass/base.scss */
+/* line 1001, ../sass/base.scss */
 h2 {
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 995, ../sass/base.scss */
+/* line 1005, ../sass/base.scss */
 h3 {
   font-size: 24px;
   line-height: 30px;
 }
 
-/* line 999, ../sass/base.scss */
+/* line 1009, ../sass/base.scss */
 h4 {
   font-size: 20px;
   line-height: 25px;
 }
 
-/* line 1003, ../sass/base.scss */
+/* line 1013, ../sass/base.scss */
 h5 {
   font-size: 16px;
 }
 
-/* line 1004, ../sass/base.scss */
+/* line 1014, ../sass/base.scss */
 h6 {
   font-size: 12.8px;
 }
 
-/* line 1006, ../sass/base.scss */
+/* line 1016, ../sass/base.scss */
+.sans-serif {
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+}
+
+/* line 1017, ../sass/base.scss */
+.serif {
+  font-family: "Freight Text", "Georgia", "Times New Roman", serif;
+}
+
+/* line 1019, ../sass/base.scss */
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1024, ../sass/base.scss */
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 1029, ../sass/base.scss */
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1034, ../sass/base.scss */
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 1040, ../sass/base.scss */
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1045, ../sass/base.scss */
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 1050, ../sass/base.scss */
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1055, ../sass/base.scss */
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 1060, ../sass/base.scss */
+.interstate-bold {
+  font-family: "Interstate";
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 1065, ../sass/base.scss */
+.interstate-bold-ital {
+  font-family: "Interstate";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 1071, ../sass/base.scss */
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1076, ../sass/base.scss */
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 1081, ../sass/base.scss */
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1086, ../sass/base.scss */
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 1091, ../sass/base.scss */
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 1096, ../sass/base.scss */
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 1102, ../sass/base.scss */
 .home-header {
   font-size: 16px;
 }
 
-/* line 1010, ../sass/base.scss */
+/* line 1105, ../sass/base.scss */
 .intro {
   font-size: 21.2px;
   line-height: 36px;
 }
 
-/* line 1014, ../sass/base.scss */
+/* line 1109, ../sass/base.scss */
 .strong {
   font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 1019, ../sass/base.scss */
+  /* line 1116, ../sass/base.scss */
   body {
     padding: 0;
   }
@@ -3578,17 +4201,31 @@ h6 {
 /********
  STYLES
 ********/
-/* line 1030, ../sass/base.scss */
+/* Page load */
+/* line 1128, ../sass/base.scss */
+.no-js #loading {
+  display: none;
+}
+
+/* line 1131, ../sass/base.scss */
+.js #loading {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+/* line 1137, ../sass/base.scss */
 .alignright, .navbar .brand.alignright {
   float: right;
 }
 
-/* line 1033, ../sass/base.scss */
+/* line 1140, ../sass/base.scss */
 .alignleft {
   float: left;
 }
 
-/* line 1037, ../sass/base.scss */
+/* line 1144, ../sass/base.scss */
 hr {
   border: 0;
   height: 0;
@@ -3596,17 +4233,33 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 1045, ../sass/base.scss */
+/* line 1152, ../sass/base.scss */
 .onreport .navbar {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 1047, ../sass/base.scss */
+/* line 1154, ../sass/base.scss */
 .onreport .navbar .nav {
-  margin: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* line 1158, ../sass/base.scss */
+.onreport .navbar .nav a {
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+}
+/* line 1161, ../sass/base.scss */
+.onreport .navbar img:hover, .onreport .navbar img:active, .onreport .navbar img:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 1167, ../sass/base.scss */
+.onreport .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.onreport .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.onreport .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: #1b1b1b;
 }
 
-/* line 1052, ../sass/base.scss */
+/* line 1171, ../sass/base.scss */
 .quote-caption, .main-well {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
@@ -3614,13 +4267,13 @@ hr {
   padding: 0 4em 2em;
 }
 
-/* line 1057, ../sass/base.scss */
+/* line 1176, ../sass/base.scss */
 .quote-caption {
   max-width: 48em;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 1065, ../sass/base.scss */
+  /* line 1184, ../sass/base.scss */
   .onreport .intropage,
   .onreport .page.quote,
   .onreport .homeQuote {
@@ -3628,7 +4281,7 @@ hr {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 1065, ../sass/base.scss */
+  /* line 1184, ../sass/base.scss */
   .onreport .intropage,
   .onreport .page.quote,
   .onreport .homeQuote {
@@ -3639,21 +4292,21 @@ hr {
   }
 }
 
-/* line 1076, ../sass/base.scss */
+/* line 1195, ../sass/base.scss */
 .onreport .page.quote img {
   min-height: initial;
   min-width: 100%;
 }
 
-/* line 1082, ../sass/base.scss */
+/* line 1201, ../sass/base.scss */
 .onreport .project-list h3 {
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
   font-weight: 600;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
 }
-/* line 1089, ../sass/base.scss */
+/* line 1208, ../sass/base.scss */
 .onreport .project-list p {
   padding: 10px;
 }
@@ -3662,17 +4315,17 @@ hr {
  SPECIFIC PAGE STYLES
 ********/
 /* home page */
-/* line 1101, ../sass/base.scss */
+/* line 1220, ../sass/base.scss */
 #onreport-home .intropage, #onreport-home .page.quote {
   padding: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 1101, ../sass/base.scss */
+  /* line 1220, ../sass/base.scss */
   #onreport-home .intropage, #onreport-home .page.quote {
     float: left;
   }
 }
-/* line 1107, ../sass/base.scss */
+/* line 1226, ../sass/base.scss */
 #onreport-home .intropage h1, #onreport-home .page.quote h1 {
   font-size: 4em;
   float: right;
@@ -3681,69 +4334,64 @@ hr {
   text-align: right;
 }
 @media screen and (max-width: 1200px) {
-  /* line 1107, ../sass/base.scss */
+  /* line 1226, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 4em;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 1107, ../sass/base.scss */
+  /* line 1226, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 3.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1107, ../sass/base.scss */
+  /* line 1226, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 2.5em;
     text-align: left;
   }
 }
-/* line 1124, ../sass/base.scss */
+/* line 1243, ../sass/base.scss */
 #onreport-home .intropage p, #onreport-home .page.quote p {
   color: #e5e5e5;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
   font-size: 1.75em;
   line-height: 1.5em;
   padding: 20px 40px 10px 40px;
 }
 @media screen and (max-width: 480px) {
-  /* line 1124, ../sass/base.scss */
+  /* line 1243, ../sass/base.scss */
   #onreport-home .intropage p, #onreport-home .page.quote p {
     font-size: 1.5em;
   }
 }
 
 /* intro pages */
-/* line 1136, ../sass/base.scss */
-.onreport.intro .main-well {
+/* line 1255, ../sass/base.scss */
+.onreport.intro .main-well, #onreport-intro-letter .main-well, .onreport.the-network .main-well.container {
   float: right;
-  max-width: 24em;
-}
-
-/* line 1140, ../sass/base.scss */
-#onreport-intro-letter .main-well {
-  max-width: 36em;
+  max-width: 30em;
 }
 
 /* partners pages */
-/* line 1145, ../sass/base.scss */
-.onreport.partners .main-well.container, .onreport.the-network .main-well.container {
+/* line 1261, ../sass/base.scss */
+.onreport.partners .main-well.container {
   min-width: 80em;
 }
-/* line 1147, ../sass/base.scss */
-.onreport.partners .main-well.container blockquote, .onreport.the-network .main-well.container blockquote {
+/* line 1263, ../sass/base.scss */
+.onreport.partners .main-well.container blockquote {
   padding: 10px;
   margin: 10px;
 }
 
 /* what's next page */
-/* line 1154, ../sass/base.scss */
+/* line 1270, ../sass/base.scss */
 .onreport.next .main-well {
   float: right;
   max-width: 48em;
 }
-/* line 1158, ../sass/base.scss */
+/* line 1274, ../sass/base.scss */
 .onreport.next h2 {
   margin-top: 0;
 }
