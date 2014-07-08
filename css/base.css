@@ -571,7 +571,7 @@ a.appspop:hover {
   background-color: #4298bb;
   background-size: cover;
   background-position: center -120px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/jamrock-hope-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 26, ../sass/_backgrounds.scss */
@@ -580,7 +580,7 @@ a.appspop:hover {
   background-color: #4298bb;
   background-size: cover;
   background-position: right;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/jamrock-working-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 33, ../sass/_backgrounds.scss */
@@ -589,7 +589,7 @@ a.appspop:hover {
   background-color: #4298bb;
   background-size: cover;
   background-position: center;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/values-cfmc-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 40, ../sass/_backgrounds.scss */
@@ -598,7 +598,7 @@ a.appspop:hover {
   background-color: #4298bb;
   background-size: cover;
   background-position: center;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/international_header.jpg', sizingMethod='scale')";
 }
 
 /* line 47, ../sass/_backgrounds.scss */
@@ -607,7 +607,7 @@ a.appspop:hover {
   background-color: #4298bb;
   background-size: cover;
   background-position: left;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cftc-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 54, ../sass/_backgrounds.scss */
@@ -616,16 +616,16 @@ a.appspop:hover {
   background-color: #4298bb;
   background-size: cover;
   background-position: left;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfmc-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 61, ../sass/_backgrounds.scss */
 #onreport-partners-cfg .pagebg {
-  background: url("../img/cfg-bg-image-lg.jpg") no-repeat;
+  background: url("../img/cfg-bg-image-lg.png") no-repeat;
   background-color: #4298bb;
   background-size: cover;
-  background-position: 0 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  background-position: bottom;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfg-bg-image-lg.png', sizingMethod='scale')";
 }
 
 /* line 68, ../sass/_backgrounds.scss */
@@ -633,8 +633,8 @@ a.appspop:hover {
   background: url("../img/next-bg-image-lg.jpg") no-repeat;
   background-color: #4298bb;
   background-size: cover;
-  background-position: 50%;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/streetmixback.jpg', sizingMethod='scale')";
+  background-position: bottom;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 75, ../sass/_backgrounds.scss */
@@ -4033,166 +4033,173 @@ h2 {
 
 /* line 1005, ../sass/base.scss */
 h3 {
+  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
   font-size: 24px;
+  font-weight: 600;
   line-height: 30px;
 }
 
-/* line 1009, ../sass/base.scss */
+/* line 1011, ../sass/base.scss */
 h4 {
   font-size: 20px;
   line-height: 25px;
 }
 
-/* line 1013, ../sass/base.scss */
+/* line 1015, ../sass/base.scss */
 h5 {
   font-size: 16px;
 }
 
-/* line 1014, ../sass/base.scss */
+/* line 1016, ../sass/base.scss */
 h6 {
   font-size: 12.8px;
 }
 
-/* line 1016, ../sass/base.scss */
+/* line 1018, ../sass/base.scss */
 .sans-serif {
   font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 }
 
-/* line 1017, ../sass/base.scss */
+/* line 1019, ../sass/base.scss */
 .serif {
   font-family: "Freight Text", "Georgia", "Times New Roman", serif;
 }
 
-/* line 1019, ../sass/base.scss */
+/* line 1020, ../sass/base.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 1022, ../sass/base.scss */
 .freight {
   font-family: "Freight Text";
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 1024, ../sass/base.scss */
+/* line 1027, ../sass/base.scss */
 .freight-ital {
   font-family: "Freight Text";
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 1029, ../sass/base.scss */
+/* line 1032, ../sass/base.scss */
 .freight-bold {
   font-family: "Freight Text Semibold";
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 1034, ../sass/base.scss */
+/* line 1037, ../sass/base.scss */
 .freight-bold-ital {
   font-family: "Freight Text Semibold";
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 1040, ../sass/base.scss */
+/* line 1043, ../sass/base.scss */
 .interstate-light {
   font-family: "Interstate Light";
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 1045, ../sass/base.scss */
+/* line 1048, ../sass/base.scss */
 .interstate-light-ital {
   font-family: "Interstate Light";
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 1050, ../sass/base.scss */
+/* line 1053, ../sass/base.scss */
 .interstate {
   font-family: Interstate;
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 1055, ../sass/base.scss */
+/* line 1058, ../sass/base.scss */
 .interstate-ital {
   font-family: Interstate;
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 1060, ../sass/base.scss */
+/* line 1063, ../sass/base.scss */
 .interstate-bold {
   font-family: "Interstate";
   font-style: normal;
   font-weight: bold;
 }
 
-/* line 1065, ../sass/base.scss */
+/* line 1068, ../sass/base.scss */
 .interstate-bold-ital {
   font-family: "Interstate";
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 1071, ../sass/base.scss */
+/* line 1074, ../sass/base.scss */
 .interstate-cond-light {
   font-family: "Interstate Light Condensed";
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 1076, ../sass/base.scss */
+/* line 1079, ../sass/base.scss */
 .interstate-cond-light-ital {
   font-family: "Interstate Light Condensed";
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 1081, ../sass/base.scss */
+/* line 1084, ../sass/base.scss */
 .interstate-cond {
   font-family: "Interstate Condensed";
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 1086, ../sass/base.scss */
+/* line 1089, ../sass/base.scss */
 .interstate-cond-ital {
   font-family: "Interstate Condensed";
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 1091, ../sass/base.scss */
+/* line 1094, ../sass/base.scss */
 .interstate-cond-bold {
   font-family: "Interstate Condensed";
   font-style: normal;
   font-weight: bold;
 }
 
-/* line 1096, ../sass/base.scss */
+/* line 1099, ../sass/base.scss */
 .interstate-cond-bold-ital {
   font-family: "Interstate Condensed";
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 1102, ../sass/base.scss */
+/* line 1105, ../sass/base.scss */
 .home-header {
   font-size: 16px;
 }
 
-/* line 1105, ../sass/base.scss */
+/* line 1108, ../sass/base.scss */
 .intro {
   font-size: 21.2px;
   line-height: 36px;
 }
 
-/* line 1109, ../sass/base.scss */
+/* line 1112, ../sass/base.scss */
 .strong {
   font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 1116, ../sass/base.scss */
+  /* line 1119, ../sass/base.scss */
   body {
     padding: 0;
   }
@@ -4202,12 +4209,12 @@ h6 {
  STYLES
 ********/
 /* Page load */
-/* line 1128, ../sass/base.scss */
+/* line 1131, ../sass/base.scss */
 .no-js #loading {
   display: none;
 }
 
-/* line 1131, ../sass/base.scss */
+/* line 1134, ../sass/base.scss */
 .js #loading {
   display: block;
   position: absolute;
@@ -4215,17 +4222,24 @@ h6 {
   top: 0;
 }
 
-/* line 1137, ../sass/base.scss */
+/* line 1140, ../sass/base.scss */
+a:hover, a:active, a:focus {
+  border: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/* line 1146, ../sass/base.scss */
 .alignright, .navbar .brand.alignright {
   float: right;
 }
 
-/* line 1140, ../sass/base.scss */
+/* line 1149, ../sass/base.scss */
 .alignleft {
   float: left;
 }
 
-/* line 1144, ../sass/base.scss */
+/* line 1153, ../sass/base.scss */
 hr {
   border: 0;
   height: 0;
@@ -4233,33 +4247,55 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 1152, ../sass/base.scss */
+/* line 1161, ../sass/base.scss */
+.onreport a {
+  color: #7ab5d6;
+}
+/* line 1164, ../sass/base.scss */
 .onreport .navbar {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 1154, ../sass/base.scss */
+/* line 1166, ../sass/base.scss */
 .onreport .navbar .nav {
   margin: 0;
+  text-shadow: none;
   text-transform: uppercase;
 }
-/* line 1158, ../sass/base.scss */
+/* line 1171, ../sass/base.scss */
 .onreport .navbar .nav a {
   font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 }
-/* line 1161, ../sass/base.scss */
-.onreport .navbar img:hover, .onreport .navbar img:active, .onreport .navbar img:focus {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
+/* line 1174, ../sass/base.scss */
+.onreport .navbar .nav-home-link a {
+  padding: 0;
+  vertical-align: middle;
 }
-/* line 1167, ../sass/base.scss */
+/* line 1181, ../sass/base.scss */
 .onreport .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .onreport .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .onreport .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #1b1b1b;
 }
 
-/* line 1171, ../sass/base.scss */
+/* line 1185, ../sass/base.scss */
+blockquote {
+  border: none;
+  padding: 20px 40px;
+}
+/* line 1188, ../sass/base.scss */
+blockquote p {
+  font-family: "Freight Text", "Georgia", "Times New Roman", serif;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+/* line 1193, ../sass/base.scss */
+blockquote footer {
+  font-family: "Interstate Condensed", "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+  padding-bottom: 10px;
+}
+
+/* line 1198, ../sass/base.scss */
 .quote-caption, .main-well {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
@@ -4267,13 +4303,18 @@ hr {
   padding: 0 4em 2em;
 }
 
-/* line 1176, ../sass/base.scss */
+/* line 1203, ../sass/base.scss */
 .quote-caption {
   max-width: 48em;
 }
 
+/* line 1206, ../sass/base.scss */
+.quote-big {
+  font-size: 36px;
+}
+
 @media screen and (max-width: 900px) {
-  /* line 1184, ../sass/base.scss */
+  /* line 1214, ../sass/base.scss */
   .onreport .intropage,
   .onreport .page.quote,
   .onreport .homeQuote {
@@ -4281,7 +4322,7 @@ hr {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 1184, ../sass/base.scss */
+  /* line 1214, ../sass/base.scss */
   .onreport .intropage,
   .onreport .page.quote,
   .onreport .homeQuote {
@@ -4292,22 +4333,25 @@ hr {
   }
 }
 
-/* line 1195, ../sass/base.scss */
+/* line 1225, ../sass/base.scss */
 .onreport .page.quote img {
   min-height: initial;
   min-width: 100%;
 }
 
-/* line 1201, ../sass/base.scss */
+/* line 1231, ../sass/base.scss */
 .onreport .project-list h3 {
-  font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
 }
-/* line 1208, ../sass/base.scss */
+/* line 1236, ../sass/base.scss */
 .onreport .project-list p {
+  padding: 10px;
+}
+
+/* line 1241, ../sass/base.scss */
+.logobox {
   padding: 10px;
 }
 
@@ -4315,17 +4359,17 @@ hr {
  SPECIFIC PAGE STYLES
 ********/
 /* home page */
-/* line 1220, ../sass/base.scss */
+/* line 1250, ../sass/base.scss */
 #onreport-home .intropage, #onreport-home .page.quote {
   padding: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 1220, ../sass/base.scss */
+  /* line 1250, ../sass/base.scss */
   #onreport-home .intropage, #onreport-home .page.quote {
     float: left;
   }
 }
-/* line 1226, ../sass/base.scss */
+/* line 1256, ../sass/base.scss */
 #onreport-home .intropage h1, #onreport-home .page.quote h1 {
   font-size: 4em;
   float: right;
@@ -4334,25 +4378,25 @@ hr {
   text-align: right;
 }
 @media screen and (max-width: 1200px) {
-  /* line 1226, ../sass/base.scss */
+  /* line 1256, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 4em;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 1226, ../sass/base.scss */
+  /* line 1256, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 3.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1226, ../sass/base.scss */
+  /* line 1256, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 2.5em;
     text-align: left;
   }
 }
-/* line 1243, ../sass/base.scss */
+/* line 1273, ../sass/base.scss */
 #onreport-home .intropage p, #onreport-home .page.quote p {
   color: #e5e5e5;
   font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
@@ -4361,37 +4405,32 @@ hr {
   padding: 20px 40px 10px 40px;
 }
 @media screen and (max-width: 480px) {
-  /* line 1243, ../sass/base.scss */
+  /* line 1273, ../sass/base.scss */
   #onreport-home .intropage p, #onreport-home .page.quote p {
     font-size: 1.5em;
   }
 }
 
 /* intro pages */
-/* line 1255, ../sass/base.scss */
+/* line 1285, ../sass/base.scss */
 .onreport.intro .main-well, #onreport-intro-letter .main-well, .onreport.the-network .main-well.container {
   float: right;
   max-width: 30em;
 }
 
 /* partners pages */
-/* line 1261, ../sass/base.scss */
+/* line 1291, ../sass/base.scss */
 .onreport.partners .main-well.container {
   min-width: 80em;
 }
-/* line 1263, ../sass/base.scss */
-.onreport.partners .main-well.container blockquote {
-  padding: 10px;
-  margin: 10px;
-}
 
 /* what's next page */
-/* line 1270, ../sass/base.scss */
+/* line 1296, ../sass/base.scss */
 .onreport.next .main-well {
   float: right;
   max-width: 48em;
 }
-/* line 1274, ../sass/base.scss */
+/* line 1300, ../sass/base.scss */
 .onreport.next h2 {
   margin-top: 0;
 }

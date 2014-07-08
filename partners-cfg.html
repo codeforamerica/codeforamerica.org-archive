@@ -50,12 +50,31 @@
         </a>
         <div class="nav-collapse collapse">
           <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
           <ul class="nav">
-            <li><a href="#">About/Intro</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Brigade</a></li>
-            <li><a href="#">The Network</a></li>
-            <li><a href="#">What's Next</a></li>
+            <li class="nav-home-link">
+              <a href="index.html" title="Code for All Report Home">
+                <img class="cfalogo img-responsive brand" src="img/codeforall_compass_white.png" alt="Code for All logo" />
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Welcome <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="intro-letter.html">Welcome</a></li>
+                <li><a href="intro-values.html">Our Values</a></li>
+                <li><a href="intro-began.html">How it all began</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Partners <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="partners-cftc.html">Code for the Caribbean</a></li>
+                <li><a href="partners-cfmc.html">Code for Mexico City</a></li>
+                <li class="active"><a href="partners-cfg.html">Code for Germany</a></li>
+              </ul>
+            </li>
+            <li><a href="brigade.html">Brigade</a></li>
+            <li><a href="whats-next.html">What's Next</a></li>
           </ul> <!-- nav -->
           <div class="alignright">
             <a href="http://codeforamerica.org/about/international/" title="Code for All"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
@@ -80,49 +99,44 @@
 
         <div class="row">
           <div class="span4">
-            <p class="intro">
+            <div class="span3 bg-lt-gray logobox">                      
+              <a href="http://codefor.de/" title="Code for Germany" target="_blank"><img src="img/CFG_logo.svg" alt="Code for Germany logo" /></a>
+            </div>
+            <div class="clearfix"></div>
+            <blockquote>
               <!-- <img src="img/c4c-big-sq-logo.png" alt="Code for the Carribean logo" /> -->
-              “I want to work in public service to make the world a little bit more transparent, to encourage citizens to work together with government, and to get citizens more involved in democratic processes and our daily life.”</p>
-            <footer><cite>- Julia Kloiber, Code for Germany</cite></footer>
+              <p>“I want to work in public service to make the world a little bit more transparent, to encourage citizens to work together with government, and to get citizens more involved in democratic processes and our daily life.”</p>
+              <footer><cite>- Julia Kloiber, Code for Germany</cite></footer>
+            </blockquote>
           </div><!--/.span4 -->
-          <div class="span7 offset1">
+          <div class="span7">
             <h2>Building and Enabling the Civic Technology Community in Germany</h2>
           </div>
-          <div class="span6 offset1">
+          <div class="span6">
             <p>
               <img src="img/cfg-partner-01.jpg" alt="CfG image" />
               <br /><br />
-              In the spirit of furthering transparency and openness, pillars central to the organization’s work, the Open Knowledge Foundation’s Berlin chapter started a “Code for Germany” program. The Code for Germany team began with plans to implement a CfA-inspired fellowship program. The German government’s inflexible procurement policies, however, made it difficult for governments to pay for fellows. Inspired by CfA’s Brigade program (a citizen volunteer program with multiple chapters forming an international network), the German team created a national network of citizen volunteer chapters who work with their local governments to leverage technology to improve the places where they live. By training “Lab Leads” from all over Germany jointly with CfA staff on themes ranging from “How to Collaborate with Government” to “How to Host a Hack Night” the Code for Germany team activated a national network of people committed to community organizing in their cities and to working with their local governments to use technology as the vehicle for positive social change throughout the country.</p> 
-              <p>There are now twelve Open Knowledge “Labs,” local chapters of motivated residents who want to make a difference in their communities, working on projects throughout Germany. The Code for Germany team receives more interest from citizens interested in setting up labs in cities throughout Germany than they can manage.</p>
+              In the spirit of furthering transparency and openness, pillars central to the organization’s work, the Open Knowledge Foundation’s Berlin chapter started a Code for Germany program. The <a href="http://codefor.de/" title="Code for Germany" target="_blank">Code for Germany</a> team began with plans to implement a Code for America-inspired fellowship program but the German government’s inflexible procurement policies made it difficult for cities to pay for fellows.</p>
+              <p>Instead, Code for Germany created a national network of citizen volunteer chapters who work with their local governments to leverage technology to improve the places where they live. All of these chapters are closely associated with Code for America’s <a href="http://codeforamerica.org/brigade/" title="Code for America Brigade">Brigade program</a>. The Code for Germany team trained and activated a national network of people committed to community organizing and to working with their local governments to use technology as the vehicle for positive social change throughout the country.</p>
+              <p>There are now thirteen Open Knowledge “Labs” working on projects throughout Germany and have inspired more demand than they can meet.</p>
+            </div>
+            <div class="span8 offset4">
+              <p class="interstate-bold">Code for Germany’s Open Knowledge Labs work closely with their government partners to:</p>
+              <p>Help the police better allocate resources by <a href="http://opendata-heilbronn.github.io/crimemap/" title="crimemap">mapping incidents of crime in Heilbronn</a>.</p>
+              <a href="http://opendata-heilbronn.github.io/crimemap/" title="crimemap"><img src="img/cfg-crimemap.png" alt="crime map" /></a>
+              <hr />
+              <p>Strengthen the democratic process in Münster by developing a <a href="http://rat.codeformuenster.org/" title="digital interface">digital interface</a> to the city council that provides an overview of current legislation and city council activity.</p>
+              <a href="http://rat.codeformuenster.org/" title="digital interface"><img src="img/cfg-munster.png" alt="digital interface" /></a>
+              <hr />
+              <p>Democratize the way public land is developed in Berlin by creating <a href="http://interaktiv.morgenpost.de/tempelhofer-feld/" title="3d visualizations">3d visualizations</a> that help residents better understand the implications of urban development projects and equip them to influence the process in an informed and effective manner.</p>
+              <a href="http://interaktiv.morgenpost.de/tempelhofer-feld/" title="3d visualizations"><img src="img/cfg-3d.png" alt="3d visualizations" /></a>
+              <hr />
+              <p>Inform residents in Ulm of free childcare options near them using a <a href="http://www.ulmapi.de/kleinerspatz/" title="digital nursery school-finder">digital nursery school-finder</a>.</p>            
+              <a href="http://www.ulmapi.de/kleinerspatz/" title="digital nursery school-finder"><img src="img/cfg-nursery.png" alt="nursery map" /></a>
+              <hr />
             </div><!--/.span6 -->
           </div><!--/.row --> 
-          <div class="project-list row">
-            <div class="span12">
-              <h2>Code for Germany’s OK Labs work closely with their government partners to:</h2>
-              <hr />
-            <div class="row">      
-              <div class="span3 bg-dk-blue">
-                <h3>one</h3> 
-                <p>Help the police better allocate resources by mapping incidences of crime in Heilbronn *photo of crime map*</p>
-                <img src="http://placehold.it/300x200" alt="Application image" />
-              </div>
-              <div class="span3 bg-dk-blue">
-                <h3>two</h3> 
-                <p>Strengthen the democratic process in Münster by developing a digital interface to the city council that provides an overview of current legislation and city council activity *photo of interface*</p>
-                <img src="http://placehold.it/300x200" alt="Application image" />
-              </div>
-              <div class="span3 bg-dk-blue">
-                <h3>three</h3> 
-                <p>Democratizing the way public land is developed in Berlin by creating 3d visualizations that help residents better understand the implications of urban development projects and equip them to influence the process in an informed and effective manner *representation of visualization*</p>
-                <img src="http://placehold.it/300x200" alt="Application image" />
-              </div>
-              <div class="span3 bg-dk-blue">
-                <h3>four</h3> 
-                <p>Inform residents in Ulm of free childcare options near them using a digital nursery school-finder *photo of map of free childcare centers*</p>
-                <img src="http://placehold.it/300x200" alt="Application image" />
-              </div>
-            </div><!--/.span12 -->
-          </div><!--/.row -->
+          
       </div><!--/.main-well -->
   <div class="clear"></div>  
   </div><!--/.homeQuote -->

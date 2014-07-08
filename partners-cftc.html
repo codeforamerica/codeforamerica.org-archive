@@ -51,11 +51,29 @@
         <div class="nav-collapse collapse">
           <!-- .nav, .navbar-search, .navbar-form, etc -->
           <ul class="nav">
-            <li><a href="#">About/Intro</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Brigade</a></li>
-            <li><a href="#">The Network</a></li>
-            <li><a href="#">What's Next</a></li>
+            <li class="nav-home-link">
+              <a href="index.html" title="Code for All Report Home">
+                <img class="cfalogo img-responsive brand" src="img/codeforall_compass_white.png" alt="Code for All logo" />
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Welcome <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="intro-letter.html">Welcome</a></li>
+                <li><a href="intro-values.html">Our Values</a></li>
+                <li><a href="intro-began.html">How it all began</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Partners <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="partners-cftc.html">Code for the Caribbean</a></li>
+                <li><a href="partners-cfmc.html">Code for Mexico City</a></li>
+                <li><a href="partners-cfg.html">Code for Germany</a></li>
+              </ul>
+            </li>
+            <li><a href="brigade.html">Brigade</a></li>
+            <li><a href="whats-next.html">What's Next</a></li>
           </ul> <!-- nav -->
           <div class="alignright">
             <a href="http://codeforamerica.org/about/international/" title="Code for All"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
@@ -79,28 +97,43 @@
 
         <div class="row">
           <div class="span4">
-            <blockquote class="bg-dk-blue">
-              <p class="intro serif">“I always plant one acre for myself and one acre for the thieves.”</p><footer><cite>- John, farmer in Saint Catherine parish, Jamaica</cite></footer>
+            <div class="span3">                      
+              <a href="http://www.codeforthecaribbean.org/" title="Code for the Caribbean" target="_blank"><img src="img/CftC-Logo.png" alt="Code for Caribbean logo" class="bg-dk-gray" /></a>
+            </div>
+            <div class="clearfix"></div>
+            <br /><br />
+            <blockquote>
+              <p class="quote-big">“I always plant one acre for myself and one acre for the thieves.”</p><footer><cite>- John, farmer in Saint Catherine parish, Jamaica</cite></footer>
             </blockquote>
           </div><!--/.span4 -->
-          <div class="span7 offset1">
+          <div class="span7">
             <h2>Helping to Protect Farmer’s Livelihoods in Jamaica</h2>
           </div><!--/.span7 -->
-          <div class="span6 offset1">
+          <div class="span6">
             <p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUq9kuxrYaM" frameborder="0" allowfullscreen></iframe>
               <br /><br />
-              Praedial larceny (the theft of agricultural goods and livestock) costs the Jamaican agriculture industry more than <a href="http://www.jamaicaobserver.com/news/House-committee-wants-tougher-praedial-larceny-law_15775003" title="House committee wants tougher praedial larceny law">US$5 million each year</a>. Strategic police checkpoints are supposed to help deter against this rampant theft.  However, out in the field, the police are ill equipped to determine whether someone driving a truck full of produce has purchased it legally. Purchasers are supposed to be issued an official receipt from a ledger book authorized and sent to the farmer by the agriculture ministry. Yet, absent a database to check against, police can’t identify illegitimate sales. This renders them virtually ineffective in distinguishing between those that steal and those that purchase goods legally, dissuading their efforts to deter against praedial larceny.</p>
-              <p>The <a href="http://slashroots.org/" title="slashroots.org">Slashroots Foundation</a> created Code for the Caribbean to build solutions to problems like this. They partnered with the <a href="http://rada.gov.jm/" title="Rural Agriculture Development Authority (RADA)">Rural Agriculture Development Authority (RADA)</a> of Jamaica’s Ministry of Agriculture to explore the problem and design potential solutions and then recruited and trained three technologists for a six-month fellowship program. The fellows engaged in a rigorous research and design process, and built an integrated database of farmer registration and invoice information and an application programming interface (<a href="http://harvestapi.io/" title="Harvest API">Harvest API</a>) on top of which they could build tools to help the government combat praedial larceny.</p>
-              <p>The Code for the Caribbean fellows built a prototype (called CLIP) on top of the API to demonstrate its power. CLIP is an SMS-based tool that allows police officers to text in a receipt number and get back information that will help them validate a receipt in the field. By providing the police with lightweight tools, the fellows are not only saving the industry money but helping to re-establish trust between farmers and the police officers tasked with protecting their livelihoods. </p>
-            </div><!--/.span6 -->
-            <div class="span5 offset3">
+              Praedial larceny (the theft of agricultural goods and livestock) costs the Jamaican agriculture industry more than <a href="http://www.jamaicaobserver.com/news/House-committee-wants-tougher-praedial-larceny-law_15775003" title="House committee wants tougher praedial larceny law" target="_blank">US$5 million each year</a>. Strategic police checkpoints are supposed to help deter against this rampant theft.  However, out in the field, the police are ill equipped to determine whether someone driving a truck full of produce has purchased it legally. Purchasers are supposed to be issued an official receipt from a ledger book authorized and sent to the farmer by the agriculture ministry. Yet, absent a database to check against, police can’t identify illegitimate sales. This renders them virtually ineffective in distinguishing between those that steal and those that purchase goods legally, dissuading their efforts to deter against praedial larceny.</p>
+             </div>
+             <div class="span8 offset3">
               <blockquote class="bg-dk-blue">
                 <p class="intro">“The idea is for us to work and to work smarter. . . We had a very good working relationship. It was a learning experience from both ends. . . This is going to lead to developing an Ooen Data policy framework . . . The opportunities from this venture are endless!”</p><footer><cite>- Brad Clarke, Information and Communication Technology Manager, RADA</cite></footer>
               </blockquote> 
-              <br /><br />
             </div><!--/.span5 -->
-            <div class="span6 offset5">
+           </div>
+           <div class="row">
+            <div class="span2 offset2">
+              <a href="http://slashroots.org/" title="slashroots.org" target="_blank"><img src="img/Slashroots-Logo.png" alt="Slashroots logo" class="bg-dk-gray" /></a>
+              <hr />
+              <a href="http://harvestapi.io/" title="Harvest API" target="_blank"><img src="img/Harvest-Logo.png" alt="Harvest Logo" /></a>
+              <hr />
+              <img src="img/Clip-Logo.png" alt="Clip logo" class="bg-lt-gray" />
+            </div> 
+            <div class="span6"> 
+              <p>The <a href="http://slashroots.org/" title="slashroots.org" target="_blank">Slashroots Foundation</a> created <a href="http://www.codeforthecaribbean.org/" title="Code for the Caribbean" target="_blank">Code for the Caribbean</a> to build solutions to problems like this. They partnered with the <a href="http://rada.gov.jm/" title="Rural Agriculture Development Authority (RADA)" target="_blank">Rural Agriculture Development Authority (RADA)</a> of Jamaica’s Ministry of Agriculture to explore the problem and design potential solutions and then recruited and trained three technologists for a six-month fellowship program. The fellows engaged in a rigorous research and design process, and built an integrated database of farmer registration and invoice information and an application programming interface (<a href="http://harvestapi.io/" title="Harvest API" target="_blank">Harvest API</a>) on top of which they could build tools to help the government combat praedial larceny.</p>
+              <p>The Code for the Caribbean fellows built a prototype (called CLIP) on top of the API to demonstrate its power. CLIP is an SMS-based tool that allows police officers to text in a receipt number and get back information that will help them validate a receipt in the field. By providing the police with lightweight tools, the fellows are not only saving the industry money but helping to re-establish trust between farmers and the police officers tasked with protecting their livelihoods.</p>
+            </div><!--/.span6 -->
+            <div class="span6 offset4">
               <img src="img/cftc-partner-01.jpg" alt="CftC image" />
             </div><!--/.span6 -->
         </div><!--/.row -->

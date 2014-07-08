@@ -247,11 +247,11 @@ $alert-blue:        $med-blue;
 $text-color:        $lt-gray;
 $header-color:		$blue;
 
-// $link-color:        $purple;
-// $link-hover:        darken($link-color, 8%);
-// $link-nav: 			$white;
-// $link-nav-hover: 	darken($yellow, 2%);
-// $link-active:		$yellow;
-// $nav-bg-color: 		$purple;
+$link-color:        $lt-blue;
+$link-hover:        darken($link-color, 8%);
+$link-nav: 			$white;
+$link-nav-hover: 	darken($white, 2%);
+$link-active:		$med-gray;
+$nav-bg-color: 		#1b1b1b; // bootstrap default
 
 
