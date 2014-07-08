@@ -1109,10 +1109,9 @@ h6 {font-size: $h6-font-size;}
   font-size: $intro-font-size;
   line-height: $intro-line-height;
 }
-.strong {
+strong, .strong {
   font-weight: bold;
 }
-
 
 // Styles
 
@@ -1142,14 +1141,12 @@ a {
     @include opacity(0.7);
   } 
 } 
-
 .alignright, .navbar .brand.alignright {
   float: right;
 }
 .alignleft {
   float: left;
 }
-
 hr {
   border: 0;
   height: 0;
@@ -1241,6 +1238,9 @@ blockquote {
 .logobox {
   padding: 10px;
 }
+.flag {
+  border: 1px $dk-gray solid;
+}
 
 /********
  SPECIFIC PAGE STYLES
@@ -1282,13 +1282,15 @@ blockquote {
   }
 }
 /* intro pages */
-.onreport.intro .main-well, #onreport-intro-letter .main-well, .onreport.the-network .main-well.container {  
+.onreport.intro .main-well, 
+#onreport-intro-letter .main-well {  
     float: right;
     max-width: 30em;
 }
 
 /* partners pages */
-.onreport.partners .main-well.container {
+.onreport.partners .main-well.container,
+.onreport.brigade .main-well.container {
   min-width: 80em;
 }
 /* what's next page */

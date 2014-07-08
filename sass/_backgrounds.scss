@@ -17,7 +17,7 @@
   background: url("../img/jamrock-hope-lg.jpg") no-repeat;
   background-color: #4298bb; 
   background-size:cover;
-  background-position: center -120px;
+  background-position: center -50px;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/jamrock-hope-lg.jpg', sizingMethod='scale')";  
   // @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   //   background: #468;
@@ -27,7 +27,7 @@
   background: url("../img/jamrock-working-lg.jpg") no-repeat;
   background-color: #4298bb; 
   background-size:cover;
-  background-position:right;
+  background-position: right;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/jamrock-working-lg.jpg', sizingMethod='scale')";  
 }
 #onreport-intro-values .pagebg {
@@ -55,22 +55,32 @@
   background: url("../img/cfmc-bg-image-lg.jpg") no-repeat;
   background-color: #4298bb; 
   background-size:cover;
-  background-position:left;
+  background-position:center;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfmc-bg-image-lg.jpg', sizingMethod='scale')";  
 }
 #onreport-partners-cfg .pagebg {
-  background: url("../img/cfg-bg-image-lg.png") no-repeat;
+  background: url("../img/cfg-bg-image-lg-01.png") no-repeat;
   background-color: #4298bb; 
   background-size: cover;
-  background-position:bottom;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfg-bg-image-lg.png', sizingMethod='scale')";  
+  background-position:right bottom;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfg-bg-image-lg-01.png', sizingMethod='scale')";  
+}
+#onreport-brigade .pagebg {
+  background: url("../img/brigade-bg-lg.jpg") no-repeat;
+  background-color: #4298bb; 
+  background-size:cover;
+  background-position: center;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/brigade-bg-lg.jpg', sizingMethod='scale')";  
 }
 #onreport-next .pagebg {
   background: url("../img/next-bg-image-lg.jpg") no-repeat;
   background-color: #4298bb; 
   background-size:cover;
-  background-position: bottom;
+  background-position: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";  
+}
+.pagebg {
+  max-height: 1200px;
 }
 .pagebg img{ 
   min-width:100%;
