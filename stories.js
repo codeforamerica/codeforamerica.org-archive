@@ -1,5 +1,6 @@
 on_stories(
 [
+    /*
     {
         "head_html": "<a href='governments/philadelphia'>In Philadelphia</a>",
         "content_html": "a team of geeks built <a href='apps/textizen'>Textizen</a>, reinventing the town hall by enabling thousands to participate in their government via SMS.",
@@ -23,6 +24,13 @@ on_stories(
         "content_html": "in 2012, more than 100 citizens and city officials re-wrote the city website in a day. It happened again in Oakland in 2013.",
         "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
         "image_src": "media/images/homepage-stories/honolulu-answers.jpg"
+    },
+    */
+    {
+        "head_html": "<a href='apply'>Across the U.S.</a>",
+        "content_html": "102 Fellows have been embedded in 32 local governments to build applications that address issues important to the community. Applications for the 2015 Fellowship close July 15.",
+        "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
+        "image_src": "media/images/geeks/fellowship-apply.jpg"
     }
 ]
 );
