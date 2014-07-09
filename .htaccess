@@ -139,8 +139,8 @@ RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.o
 RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome
 
 # Namecheap does some weird stuff with cfasummit.org redirects.
-RedirectMatch permanent ^(.*)/startupsponsor/summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
-RedirectMatch permanent ^(.*)/(contact|register|schedule|speakers|sponsors|submit|venue)/summit/?$ $1/summit/$2
+RedirectMatch permanent ^(.*)/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
+RedirectMatch permanent ^(.*)/(contact|register|schedule|speakers|sponsors|submit|venue)/+summit/?$ $1/summit/$2/
 
 #
 # Fellowship Program.
