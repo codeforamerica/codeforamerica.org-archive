@@ -3,5 +3,5 @@
       // Adds min display time and animation
 		$("#loading").animate({
           opacity:0,
-     	  }, 1200).hide(1200);
+     	  }, 3600).hide(1200);
     });

@@ -646,11 +646,6 @@ a.appspop:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
-/* line 82, ../sass/_backgrounds.scss */
-.pagebg {
-  max-height: 1200px;
-}
-
 /* line 85, ../sass/_backgrounds.scss */
 .pagebg img {
   min-width: 100%;
@@ -4378,17 +4373,24 @@ blockquote footer {
  SPECIFIC PAGE STYLES
 ********/
 /* home page */
-/* line 1250, ../sass/base.scss */
+@media screen and (min-width: 768px) {
+  /* line 1250, ../sass/base.scss */
+  #onreport-home .intropage.container:first-child {
+    margin-top: 80px;
+  }
+}
+
+/* line 1255, ../sass/base.scss */
 #onreport-home .intropage, #onreport-home .page.quote {
   padding: 0;
 }
-@media screen and (max-width: 480px) {
-  /* line 1250, ../sass/base.scss */
+@media screen and (max-width: 768px) {
+  /* line 1255, ../sass/base.scss */
   #onreport-home .intropage, #onreport-home .page.quote {
     float: left;
   }
 }
-/* line 1256, ../sass/base.scss */
+/* line 1261, ../sass/base.scss */
 #onreport-home .intropage h1, #onreport-home .page.quote h1 {
   font-size: 4em;
   float: right;
@@ -4397,25 +4399,25 @@ blockquote footer {
   text-align: right;
 }
 @media screen and (max-width: 1200px) {
-  /* line 1256, ../sass/base.scss */
+  /* line 1261, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 4em;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 1256, ../sass/base.scss */
+  /* line 1261, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 3.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1256, ../sass/base.scss */
+  /* line 1261, ../sass/base.scss */
   #onreport-home .intropage h1, #onreport-home .page.quote h1 {
     font-size: 2.5em;
     text-align: left;
   }
 }
-/* line 1273, ../sass/base.scss */
+/* line 1278, ../sass/base.scss */
 #onreport-home .intropage p, #onreport-home .page.quote p {
   color: #e5e5e5;
   font-family: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
@@ -4424,14 +4426,14 @@ blockquote footer {
   padding: 20px 40px 10px 40px;
 }
 @media screen and (max-width: 480px) {
-  /* line 1273, ../sass/base.scss */
+  /* line 1278, ../sass/base.scss */
   #onreport-home .intropage p, #onreport-home .page.quote p {
     font-size: 1.5em;
   }
 }
 
 /* intro pages */
-/* line 1286, ../sass/base.scss */
+/* line 1291, ../sass/base.scss */
 .onreport.intro .main-well,
 #onreport-intro-letter .main-well {
   float: right;
@@ -4439,19 +4441,19 @@ blockquote footer {
 }
 
 /* partners pages */
-/* line 1293, ../sass/base.scss */
+/* line 1298, ../sass/base.scss */
 .onreport.partners .main-well.container,
 .onreport.brigade .main-well.container {
   min-width: 80em;
 }
 
 /* what's next page */
-/* line 1298, ../sass/base.scss */
+/* line 1303, ../sass/base.scss */
 .onreport.next .main-well {
   float: right;
   max-width: 48em;
 }
-/* line 1302, ../sass/base.scss */
+/* line 1307, ../sass/base.scss */
 .onreport.next h2 {
   margin-top: 0;
 }
