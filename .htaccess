@@ -138,8 +138,9 @@ RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/p
 RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
 RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome
 
-# This is where cfasummit.org/startupsponsor takes you, from Namecheap redirect:
+# Namecheap does some weird stuff with cfasummit.org redirects.
 RedirectMatch permanent ^(.*)/startupsponsor/summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
+RedirectMatch permanent ^(.*)/(contact|register|schedule|speakers|sponsors|submit|venue)/summit/?$ $1/summit/$2
 
 #
 # Fellowship Program.
