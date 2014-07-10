@@ -1,0 +1,21 @@
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+ 
+     <article class="teaser teaser-app">
+         <header class="teaser-header">
+             <a href="https://www.munirent.co/">
+                 <h1 class="teaser-title">MuniRent</h1>
+             </a>
+         </header>
+         <div class="teaser-body">
+             <p>MuniRent is a platform that makes it very easy for local governments to lease heavy duty equipment to other local governments.</p>
+           
+             <p><a href="https://www.munirent.co/">Learn more about this app</a></p>
+         </div>
+         <footer class="teaser-footer">
+             <a href="https://www.munirent.co/" class="teaser-masthead">
+                 <img class="teaser-image" src="{{ include.base }}/media/images/apps/munirent.png" />
+             </a>
+         </footer>
+     </article>
+ 
+ {% endif %}
