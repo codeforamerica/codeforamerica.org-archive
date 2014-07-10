@@ -1,0 +1,21 @@
+{% if include.context == 'apps-list' or include.context == 'our-startups' %}
+ 
+     <article class="teaser teaser-app">
+         <header class="teaser-header">
+             <a href="http://productbio.com">
+                 <h1 class="teaser-title">ProductBio</h1>
+             </a>
+         </header>
+         <div class="teaser-body">
+             <p>ProductBio reads through all ecolabels, corporate social responsibility reports, SEC filings, and Material Data Safety Sheets to cross-reference highest impact areas of thousands of goods and services based on how it was made.</p>
+           
+             <p><a href="http://productbio.com/">Learn more about this app</a></p>
+         </div>
+         <footer class="teaser-footer">
+             <a href="http://productbio.com" class="teaser-masthead">
+                 <img class="teaser-image" src="{{ include.base }}/media/images/apps/productbio.png" />
+             </a>
+         </footer>
+     </article>
+ 
+ {% endif %}
