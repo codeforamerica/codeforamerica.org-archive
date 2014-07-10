@@ -290,7 +290,7 @@
 }
 
 #loading{ 
-  background:#399fd3;
+  background: $blue;
   position:fixed;
   top:0px;
   left:0px;
@@ -301,7 +301,19 @@
 
 #loading img{
   display:block;
-  margin:100px auto 0px;
+  height: auto;
+  margin:6.25em auto 0px;
+  width: 20em; // small screen size default
+  max-width: 600px;
+  @media screen and (min-width: 480px) {
+    width: 20em; // probably unnecessary but...
+  }
+  @media screen and (min-width: 768px) {
+    width: 30em;
+  }
+ @media screen and (min-width: 1080px) {
+    width: 40em;
+  }
 }
 
 #loading h1,
@@ -314,23 +326,41 @@
 #loading h1 {
   color: $lt-blue;
   font-family: $sentinel;
-  font-size: 400px;
+  font-size: 10em; // small screen size default
   font-weight: $normal;
   line-height: 0.5em;
-  margin: 0 auto 60px;
+  margin: 0 auto 0.175em;
   padding: 0;
   text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    font-size: 10em; // probably unnecessary but...
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 15em;
+  }
+  @media screen and (min-width: 1080px) {
+    font-size: 20em;
+  }
 }
  
 #loading p { 
   color: $lt-blue;
   font-family: $interstate;
-  font-size: 160px;
+  font-size: 4em; // small screen size default
   font-weight: $normal;
-  line-height: 1em;
+  line-height: 0.75em;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    font-size: 4em; // probably unnecessary but...
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 6em;
+  }
+  @media screen and (min-width: 1080px) {
+    font-size: 8em;
+  }
 }
 
 ul.posts {
@@ -1134,7 +1164,7 @@ body {
   .js #loading { 
     display: block; 
     position: absolute; 
-    left: 100px; top: 0; 
+    left: 50%; top: 50%; 
   }
 a {
   &:hover, &:active, &:focus {
@@ -1323,9 +1353,9 @@ blockquote {
 /* partners pages */
 .onreport.partners .main-well,
 .onreport.brigade .main-well {
-//  min-width: 80em;
+//  min-width: 80em; // Removed. This was breaking the layout.
   @media screen and (max-width: 992px) {
-    min-width: 85%;
+    min-width: 85%; // need to check and see if this needs to be removed too
   }
   .casestudy-link {
     @include border-radius (10px);
