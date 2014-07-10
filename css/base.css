@@ -4480,11 +4480,6 @@ blockquote footer {
 }
 
 /* partners pages */
-/* line 1325, ../sass/base.scss */
-.onreport.partners .main-well,
-.onreport.brigade .main-well {
-  min-width: 80em;
-}
 @media screen and (max-width: 992px) {
   /* line 1325, ../sass/base.scss */
   .onreport.partners .main-well,
