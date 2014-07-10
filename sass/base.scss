@@ -282,7 +282,8 @@
 
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
-.navbar-inverse .nav .active > a:focus {
+.navbar-inverse .nav .active > a:focus,
+.navbar-inverse .nav-collapse .nav > li.active > a {
   color: #ffffff;
   background-color: #1b1b1b;
   border-color: #1b1b1b;
@@ -1147,6 +1148,10 @@ a {
 .alignleft {
   float: left;
 }
+.aligncenter {
+  margin: 0 auto;
+  text-align: center;
+}
 hr {
   border: 0;
   height: 0;
@@ -1171,6 +1176,11 @@ hr {
     .nav-home-link a {
       padding: 0;
       vertical-align: middle;
+    }
+    .nav-collapse .nav .nav-home-link a { // forces other nav items to fall below home icon
+      clear: both;
+      height: 40px;
+      width: 100%;
     }
   }
   .navbar-inverse .nav li.dropdown.open > .dropdown-toggle, 
@@ -1235,11 +1245,25 @@ blockquote {
     }
   }
 }
+.logos {
+  max-width: 240px;
+}
 .logobox {
+  max-width: 400px;
   padding: 10px;
 }
 .flag {
   border: 1px $dk-gray solid;
+  display: inline-block;
+  @media screen and (max-width: 768px) {
+    max-width: 100px
+  }  
+}
+
+// overrides bootstrap for collapsed menu icon
+.navbar .btn-navbar .icon-bar {
+  height: 5px;
+  width: 30px;
 }
 
 /********
@@ -1291,21 +1315,39 @@ blockquote {
 #onreport-intro-letter .main-well {  
     float: right;
     max-width: 30em;
+      @media screen and (max-width: 992px) {
+        max-width: 85%;
+      }
 }
 
 /* partners pages */
-.onreport.partners .main-well.container,
-.onreport.brigade .main-well.container {
+.onreport.partners .main-well,
+.onreport.brigade .main-well {
   min-width: 80em;
+  @media screen and (max-width: 992px) {
+    min-width: 85%;
+  }
+  .casestudy-link {
+    @include border-radius (10px);
+    background: $dk-blue;
+    border: 1px solid $gray;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 /* what's next page */
 .onreport.next {
   .main-well {  
     float: right;
     max-width: 48em;
+    @media screen and (max-width: 992px) {
+      max-width: 85%;
+    }
   }
   h2 {
     margin-top: 0;
   }
 }
+
 
