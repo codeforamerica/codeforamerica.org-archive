@@ -1,0 +1,21 @@
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+ 
+     <article class="teaser teaser-app">
+         <header class="teaser-header">
+             <a href="https://www.amigocloud.com/homepage/index.html">
+                 <h1 class="teaser-title">AmigoCloud</h1>
+             </a>
+         </header>
+         <div class="teaser-body">
+             <p>AmigoCloud is a data collection solution that integrates well with traditional Enterprise GIS Systems.</p>
+           
+             <p><a href="https://www.amigocloud.com/homepage/index.html">Learn more about this app</a></p>
+         </div>
+         <footer class="teaser-footer">
+             <a href="https://www.amigocloud.com/homepage/index.html" class="teaser-masthead">
+                 <img class="teaser-image" src="{{ include.base }}/media/images/apps/amigocloud.png" />
+             </a>
+         </footer>
+     </article>
+ 
+ {% endif %}
