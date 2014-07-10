@@ -4507,19 +4507,34 @@ blockquote footer {
   text-transform: uppercase;
 }
 
+/* line 1339, ../sass/base.scss */
+#onreport-partners-cfg .labs-projects .row .span4 {
+  background: #2f3d4a;
+  margin-top: 20px;
+  padding: 5px 20px 20px;
+}
+
+/* line 1344, ../sass/base.scss */
+#onreport-brigade .span4 {
+  background: #2f3d4a;
+  margin-top: 20px;
+  padding: 5px 20px 20px;
+  min-height: 300px;
+}
+
 /* what's next page */
-/* line 1341, ../sass/base.scss */
+/* line 1353, ../sass/base.scss */
 .onreport.next .main-well {
   float: right;
   max-width: 48em;
 }
 @media screen and (max-width: 992px) {
-  /* line 1341, ../sass/base.scss */
+  /* line 1353, ../sass/base.scss */
   .onreport.next .main-well {
     max-width: 85%;
   }
 }
-/* line 1348, ../sass/base.scss */
+/* line 1360, ../sass/base.scss */
 .onreport.next h2 {
   margin-top: 0;
 }

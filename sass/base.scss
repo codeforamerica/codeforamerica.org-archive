@@ -1336,6 +1336,18 @@ blockquote {
     text-transform: uppercase;
   }
 }
+#onreport-partners-cfg .labs-projects .row .span4 {
+  background: $dk-blue;
+  margin-top: 20px;
+  padding: 5px 20px 20px; 
+}
+#onreport-brigade .span4 {
+  background: $dk-blue;
+  margin-top: 20px;
+  padding: 5px 20px 20px; 
+  min-height: 300px;  
+}
+
 /* what's next page */
 .onreport.next {
   .main-well {  
