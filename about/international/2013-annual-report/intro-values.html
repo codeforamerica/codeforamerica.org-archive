@@ -25,20 +25,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js"></script>
+
     <!-- simple page loader -->  
     <script type="text/javascript" src="js/simple-loader.js"></script>
 
   </head>
-<body class="onreport home" id="onreport-home">
-
-<!-- Loading -->
-<div id="loading">
-  <img src="img/codeforall_logo_white-lg.png" class="img-responsive aligncenter" />
-  <h1> 
-    2014
-  </h1>
-  <p>Report</p>
-</div>
+<body class="onreport intro" id="onreport-intro-values">
 
 <div id="page">
   <!-- Navbar --> 
@@ -47,12 +39,12 @@
       <div class="container-fluid">
         <!-- Everything you want hidden at 940px or less, place within here -->
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar bg-dk-gray alignright" data-toggle="collapse" data-target=".nav-collapse">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <div class="nav-collapse collapse" id="navbar" role="navigation">
+        <div class="nav-collapse collapse">
           <!-- .nav, .navbar-search, .navbar-form, etc -->
           <ul class="nav">
             <li class="nav-home-link">
@@ -60,11 +52,11 @@
                 <img class="cfalogo img-responsive brand" src="img/codeforall_compass_white.png" alt="Code for All logo" />
               </a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" a href="#">Introduction <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="intro-letter.html">Opening Letter</a></li>
-                <li><a href="intro-values.html">Our Values</a></li>
+                <li class="active"><a href="intro-values.html">Our Values</a></li>
                 <li><a href="intro-began.html">How it all began</a></li>
               </ul>
             </li>
@@ -83,22 +75,30 @@
             <a href="http://codeforamerica.org/" title="Code for America" target="_blank"><img class="cfalogo img-responsive brand" src="img/CfA_logo_greyscale_sm.png" alt="Code for America logo" /></a>
             <a href="http://codeforamerica.org/about/international/" title="Code for All" target="_blank"><img class="cfalogo img-responsive brand" src="img/codeforall_logo_white.png" alt="Code for All logo" /></a>
           </div><!--/.alignright -->
+
         </div> <!-- collapse -->
-      </div> <!-- container -->
+      </div> <!-- container-fluid -->
     </div> <!-- navbar-inner -->
   </div> <!-- navbar -->
 
   <!-- CONTENT -->
-  <div class="page homeQuote quote bg-med-blue pagebg" style="width: 1418px; min-height: 479px;" data-section="nav">
-    <div class="intropage container quote-caption bg-dk-gray">
-      <h1 class="home-header">
-        All of our work is better if we are connected.
-      </h1>
+  <div class="page homeQuote quote bg-med-blue pagebg">
+      <div class="main-well container bg-dk-blue">
+        <h1>
+          Our Values
+        </h1>
+        <p class="strong intro">We write code.</p>
+        <p>Though the ultimate goal is sustainable institutional change, it starts with building technology. Teams of technologists function like a small start-up within government, quickly delivering tools that solve real problems.</p>
+        <p class="strong intro">We show what’s possible.</p> 
+        <p>Using lean start-up methods and design thinking, Code for All members create interfaces to government that are simple, beautiful, and easy to use, and do this dramatically faster and cheaper than through traditional channels. Showing what’s possible changes the conversation, sets a new bar, and creates political will for innovation in government.</p>
+        <p class="strong intro">We improve government, not politics.</p> 
+        <p>Code for All’s work focuses on opening and innovating the bureaucracy of government: how government delivers services, communicates with citizens, and creates opportunity. We leave the reform of politics to other organizations.</p>
+        <p class="strong intro">We operate in public.</p> 
+        <p>Everything we build is open source. We actively encourage documentation, sharing, and app reuse.</p>
+        <p class="strong intro">We help build an ecosystem.</p> 
+        <p>Whenever possible we reuse existing tools and platforms, encouraging integration and extension.</p>
     </div>
-    <div class="intropage container quote-caption bg-black">
-      <p><a href="http://codeforamerica.org/about/international/" title="Code for All" target="_blank">Code for All</a> is a platform for coordinated action to advance the global civic technology movement. We enable people from all over the world to improve their local governments and communities through technology.</p>
-    </div>
-  </div><!--/.page homeQuote -->
+  </div>
 
   <div class="clear"></div>  
 </div><!--/#page -->

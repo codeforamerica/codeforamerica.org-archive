@@ -1,0 +1,149 @@
+/* 
+
+This partial is not getting pulled into base.scss
+So I'm using it for font and color notes. -ew
+
+*/
+
+// Primary colors
+$red: #cf1b41;
+$blue: #399fd3;
+$black: #000;
+$gray: #6D6E71;
+$white: #fff;
+
+// Secondary colors
+$dk-blue: #2f3d4a;
+$med-blue: #4298bb;
+$lt-blue: #7ab5d6;
+$dk-gray: #333; /* style guide lists this as #999595 */
+$med-gray: #999595;
+$lt-gray: #e5e5e5;
+
+$orange: #e87d2b;
+$purple: #69579c;
+$green: #00a175;
+$yellow: #fedd44;
+
+// Pre-existing
+$graph: $green;
+
+// Variables
+$alert-yellow:      $yellow;
+$alert-red:         $red;
+$alert-green:       $green;
+$alert-blue:        $med-blue;
+$text-color:        $lt-gray;
+$header-color:		$blue;
+
+$link-color:        $purple;
+$link-hover:        darken($link-color, 8%);
+$link-nav: 			$white;
+$link-nav-hover: 	darken($yellow, 2%);
+$link-active:		$yellow;
+
+$nav-bg-color: 		$purple;
+
+
+/* FONTS */
+
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate-bold {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.interstate-bold-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+
+
+

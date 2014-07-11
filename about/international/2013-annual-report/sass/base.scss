@@ -1,0 +1,1395 @@
+@import "compass";
+@import "application-logos";
+@import "backgrounds";
+@import "carousel";
+@import "cities";
+@import "fellows";
+@import "global-reset";
+@import "media";
+@import "map";
+@import "press";
+@import "startup-logos";
+//* @import "colors"; // moved to _custom.scss */
+@import "typography";
+@import "getinvolved";
+@import "sidebar";
+@import "finance";
+
+@import "custom";
+
+
+//
+// Compass Partials
+//
+@import "compass/support";  // Add Compass' IE and vendor prefix support variables.
+@import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
+@import "compass/css3";     // Use one CSS3 mixin instead of multiple vendor prefixes.
+@import "compass/css3/background-size"; // Provides cross-browser access to background-size.
+@import "compass/css3/border-radius"; // Rounded corner vendor-specific syntax.
+@import "compass/css3/images"; // Includes support for background gradient.
+@import "compass/css3/opacity";
+@import "compass/utilities/sprites";
+
+
+/*****************************************************************************/
+/*
+/* 2013 Updates
+/*
+/*****************************************************************************/
+
+
+.appsIntro {
+  padding-bottom: 50px;
+}
+
+.community .bios{
+  margin: 20px 0px 65px 0px;
+}
+
+.page.homeQuote{ 
+  padding-top: 50px !important;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.logo img {
+  max-width: 85px;
+}
+
+.nav-tabs {
+  border: none;
+  margin: 45px 0px 0px;
+}
+
+.nav-tabs li {
+  border: none;
+  margin-bottom: -2px;
+}
+
+.nav-tabs li a {
+  font-size: 24px;
+  font-weight: bold;
+  background: #F7F7F7;
+  color: #6D6E71;
+  border-radius: 0px;
+}
+.nav-tabs li a:hover {
+  background: #fff;
+  color: #4D4D4D;
+  border: none;
+}
+
+.nav-tabs li.active a {
+  background: #fff;
+  color: #e87d2b;
+  border: none;
+}
+
+.nav-tabs li.active a:hover {
+  background: #fff;
+  color: #e87d2b;
+  border: none;
+}
+
+.networkTitle {
+  padding-top: 10px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.panel-collapse {
+  color: #e87d2b;
+  background: #fff;
+  padding: 0px 5px;
+}
+
+.panel-body {
+  padding: 0px 10px 10px;
+  text-shadow: none;
+}
+
+
+.stats2013{
+  border-left: 2px solid white;
+  padding: 5px 0px 10px 20px;
+  margin-left: 15px;
+}
+
+.stats2013 p{
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0px;
+}
+
+.stats2013 h3{
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;  text-transform: uppercase;
+  font-size: 35px;
+  margin: 0px 0px 7px 0px;
+  line-height: 30px;
+}
+
+
+.stories{
+}
+
+.stories h1{
+  text-align: right;
+  margin-right: 10px;
+}
+
+.stories h2{
+  margin-top: 0px;
+}
+
+.stories p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.summary h3 {
+  @media screen and (max-width: 1080px) {
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+    text-align: left;
+  }
+
+}
+
+.superHeadline {
+  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  font-size: 80px;
+  color: #fff;
+  margin: 30px 0px 0px 00px;
+  text-align: left;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+  padding: 0px 0px 75px 0px;
+}
+
+.network .people ul {
+  margin: 0px 0px 8px 0px;
+}
+
+.tab-pane div {
+  background: #fff;
+  color: #e87d2b !important;
+  padding: 15px 20px;
+  text-shadow: none;
+}
+
+.title {
+  min-height: 0px;
+  padding-bottom: 0px;
+}
+
+.title h1,
+.title p {
+  text-align: center;
+  color:#fff;
+  text-shadow: none;
+  @media screen and (max-width: 480px) {
+    font-size: 30%;
+    text-align: left;
+  }
+}
+
+.title h1 {
+  font-size: 115px;
+  margin: 90px auto 117px;
+  font-weight: 600;
+}
+
+.page.quote .title {
+  padding-bottom: 100px;
+  @media screen and (max-width: 480px) {
+    padding-bottom: 0px;
+  }
+}
+
+.page.quote .title h1 {
+  line-height: 10px;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  font-size: 115px;
+  margin: 90px auto 117px;
+  font-weight: 600;
+  @media screen and (max-width: 1200px) {
+    font-size: 80px;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    text-align: left;
+    font-size: 30px;
+    text-align: left;
+    margin-left: -100px;
+  }
+}
+ 
+.title p{ 
+  text-transform:uppercase;
+  font-size: 63px;
+  font-weight: 300;
+}
+
+.featuredapps p{
+  margin: 0px;
+}
+
+.morefellows,
+.themes,
+.community,
+.network{
+  margin: 50px 0px 100px;
+}
+
+.margin400 {
+  margin-bottom: 400px;
+}
+
+// .intropage p {
+//   margin: 15px 0px;
+//   line-height: 13px;
+// }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+.navbar .container {
+  margin-left: 50px;
+}
+
+.navbar .brand {
+  margin: 10px 20px;
+  max-height: 30px;
+  padding: 0;
+}
+
+.navbar a:hover{
+  border-bottom: none;
+}
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus,
+.navbar-inverse .nav-collapse .nav > li.active > a {
+  color: #ffffff;
+  background-color: #1b1b1b;
+  border-color: #1b1b1b;
+}
+
+#loading{ 
+  background: $blue;
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  z-index:10000;
+}
+
+#loading img{
+  display:block;
+  height: auto;
+  margin:6.25em auto 0px;
+  width: 20em; // small screen size default
+  max-width: 600px;
+  @media screen and (min-width: 480px) {
+    width: 20em; // probably unnecessary but...
+  }
+  @media screen and (min-width: 768px) {
+    width: 30em;
+  }
+ @media screen and (min-width: 1080px) {
+    width: 40em;
+  }
+}
+
+#loading h1,
+#loading p {
+  color:#fff;
+  text-align: center;
+  text-shadow: none;
+}
+
+#loading h1 {
+  color: $lt-blue;
+  font-family: $sentinel;
+  font-size: 10em; // small screen size default
+  font-weight: $normal;
+  line-height: 0.5em;
+  margin: 0 auto 0.175em;
+  padding: 0;
+  text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    font-size: 10em; // probably unnecessary but...
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 15em;
+  }
+  @media screen and (min-width: 1080px) {
+    font-size: 20em;
+  }
+}
+ 
+#loading p { 
+  color: $lt-blue;
+  font-family: $interstate;
+  font-size: 4em; // small screen size default
+  font-weight: $normal;
+  line-height: 0.75em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    font-size: 4em; // probably unnecessary but...
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 6em;
+  }
+  @media screen and (min-width: 1080px) {
+    font-size: 8em;
+  }
+}
+
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 80px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+h3 span {
+  font-size: 24px;
+}
+
+h4 {
+  clear: both;
+//  font-family: 'Gotham A', 'Gotham B', 'Open Sans Regular', 'Verdana', 'Helvetica', Arial;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+h5 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+h6 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+}
+
+input[type="text"] {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+  background: #C82A45;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Arvo', 'Georgia', serif;
+  margin-left: 5px;
+}
+
+.btn:hover {
+  background: #b1263d;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+/****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.line {
+  border: white solid 1px;
+  width: 85%;
+  margin: 10px 0px 10px 0px;
+}
+
+.clear{ 
+  clear:both;
+}
+
+.page.quote,
+.page.story{ 
+  overflow-x: hidden;
+  position: relative;
+  padding: 250px 80px 200px 130px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+.page.story{ 
+  /*padding: 80px 80px 100px;*/
+}
+
+.page.story.nosidebar{ 
+  padding:0px;
+}
+
+
+.page.quote h1,
+.page.story h1 { 
+//  color:#fff;
+  font-size: 56px;
+  letter-spacing: 1px;
+  list-style: none;
+  line-height: 75px;
+  padding-top: 40px;
+}
+
+.page.quote h1 {
+  margin-bottom: 0px;
+}
+
+.page.story{ 
+  position:relative;
+  width:100%;
+  height:auto;
+  padding-top:10px;
+  padding-left:400px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box; /* Firefox 
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+
+.cityLeaders iframe {
+  display: block;
+  margin-top: 50px;
+  min-height: 300px;
+}
+
+.quote .bigtext h1 {
+  font-size: 73px;
+  text-transform: uppercase;
+}
+
+.themes .span10 {
+  margin-left: 10px;
+}
+
+.themes .headline {
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+.bioleft {
+  padding-right: 15px;
+}
+
+.bioleft p {
+  text-align: right;
+}
+
+.bioright,
+.apps .bioright {
+  padding-left: 15px;
+}
+
+.bios {
+  margin: 35px auto;
+  float: left;
+}
+
+.bios h3,
+.network .bios p {
+  margin-top: -6px;
+}
+
+.bios h5 {
+  margin-bottom: 15px;
+}
+
+.bios p {
+  margin-top: 0px;
+}
+
+.bios.right .span6 {
+padding-left: 20px;
+}
+
+.bios.right .span6.bioleft {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.bios .url {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.moreapps,
+.captains {
+  clear: both;
+  float: left;
+}
+
+.moreapps h3 {
+  margin-top: 1    0px;
+}
+
+.moreapps img {
+  margin-top: 30px;
+}
+
+
+.market img {
+  margin: 0px 0px;
+  display: block;
+}
+
+.thanks h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px auto 30px;
+}
+
+.thanks img {
+  max-height: 60px;
+  max-width: 242px;
+  margin: 0 auto;
+  display: block;
+}
+
+.cfa {
+  /*margin-bottom: 200px;*/
+}
+
+.cfa h1{
+  text-align: right;
+}
+
+.cfa p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.cfa a {
+  font-weight: 300;
+}
+
+.people ul {
+  float: left;
+  line-height: 26px;
+  margin: 0px 50px 50px 0px;
+}
+
+.people .google,
+.people .knight,
+.people .on {
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.people .google {
+  background-image: url('../img/google.png');
+  background-size: 105px;
+  width: 105px;
+}
+
+.people .knight {
+  background-image: url('../img/knight.png');
+  background-size: 185px;
+  width: 185px;
+}
+
+.people .on {
+  background-image: url('../img/on.png');
+  background-size: 135px;
+  width: 135px;
+}
+
+/*
+Temporary css for image placeholders
+*/
+
+.ecosystem h1 {
+  margin-top: 70px;
+}
+
+.ecosystem h2 {
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 35px;
+  margin-top: 58px;
+}
+
+.apps h3 {
+  margin-bottom: 10px;
+}
+
+.companies {
+  background-color: rgba(255,255,255, .75);
+  color: #000;
+  text-shadow: none;
+  float: left;
+  margin-top: 20px;
+  height: 345px;
+}
+
+.companies img {
+  width: 82%;
+  padding: 40px 0px 0px 5em;
+}
+
+.companies .companyblurb {
+  float:left;
+  padding: 40px 60px 0 0;
+  text-align: left;
+}
+
+.companies .companyblurb img {
+  width: 40%;
+  padding-top: 0px;
+}
+
+.companies h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.companies p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.companies a {
+  color: #000;
+}
+
+.companies .contact {
+  font-size: 16px;
+}
+
+.tagline {
+  font-style: italic;
+  font-weight: 700;
+}
+
+img.progicons {
+  width: 100%;
+  margin-top: -7px;
+}
+
+.market img.progicons {
+  margin: 0;
+}
+
+.community img {
+  margin: 0;
+  display: block;
+}
+
+.community p{
+  margin: 0px;
+}
+
+
+.community .people ul {
+  margin: 0px 0px 8px 0px;
+}
+
+
+.captains a:hover,
+.fellowcard a:hover,
+.moreapps a:hover,
+.morefellows a:hover {
+  border-bottom: none;
+}
+
+.popover {
+  border-radius: 0px;
+}
+
+.popover-content{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.popovertopshim{
+  margin-top: 50px;
+}
+
+.popover-title,
+.popover-content {
+  font-weight: 300;
+  color: #000;
+  text-shadow: none;
+}
+ 
+.popover-title,
+.popover-title {
+  font-weight: 700;
+  background: none;
+  border: none;
+  letter-spacing: 1px;
+  padding-bottom: 0px;
+} 
+
+.captains .popover-content,
+.morefellows .popover-content {
+  font-weight: 300;
+  padding-top: 0px;
+}
+
+.jeff,
+.andrew,
+.bret,
+.burt,
+.chip,
+.chris,
+.chriswhit,
+.dave,
+.emma,
+.harlan,
+.jason,
+.jeff,
+.jon,
+.kevin,
+.michelle,
+.scott,
+.steve,
+.eddiet,
+.noel,
+.jasonl,
+.chase,
+.mevans {
+  background-image: url('../img/brigade_captains.jpg');
+  background-size: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px 0 0;
+}
+
+.andrew {
+  background-position: 0 0px;
+}
+
+.bret {
+  background-position: 0 -100px;
+}
+
+.burt {
+  background-position: 0 -200px;
+}
+
+.chip {
+  background-position: 0 -300px;
+}
+
+.chris {
+  background-position: 0 -400px;
+}
+
+.chriswhit {
+  background-position: 0 -500px;
+}
+
+.dave {
+  background-position: 0 -600px;
+}
+
+.emma {
+  background-position: 0 -700px;
+}
+
+.harlan {
+  background-position: 0 -800px;
+}
+
+.jason {
+  background-position: 0 -900px;
+}
+
+.jeff {
+  background-position: 0 -1000px;
+}
+
+.jon {
+  background-position: 0 -1100px;
+}
+
+.kevin {
+  background-position: 0 -1200px;
+}
+
+.michelle {
+  background-position: 0 -1300px;
+}
+
+.scott {
+  background-position: 0 -1400px;
+}
+
+.steve {
+  background-position: 0 -1500px;
+}
+
+.eddiet {
+  background-position: 0 -1600px;
+}
+
+.noel {
+  background-position: 0 -1700px;
+}
+
+.jasonl {
+  background-position: 0 -1800px;
+}
+
+.chase {
+  background-position: 0 -1900px;
+}
+
+.mevans {
+  background-position: 0 -2000px;
+}
+
+.market h4 {
+  margin-top: 40px;
+}
+
+.market .stats {
+  margin-bottom: 10px;
+}
+
+.market .bios {
+  margin-top: 30px;
+}
+
+.market .bios.right.bioquote {
+  margin-top: 0px;
+}
+
+.morefellows .bios p,
+.community .bios p,
+.market .bios p,
+.network .bios p {
+  font-family: "Sentinel SSm A", "Sentinel SSm B", "Sentinel Book", "Georgia", Times, sans-serif;  
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.morefellows .bios h3,
+.community .bios h3,
+.market .bios h3,
+.network .bios h3 {
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  text-align: left;
+}
+
+.morefellows .bios h5,
+.community .bios h5,
+.market .bios h5,
+.network .bios h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-size: 16px;
+  line-height: 15px;
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+}
+
+.market .stats h4 {
+  margin-top: 20px;
+}
+
+.market h4.process {
+  margin-top: 50px;
+}
+
+.sharebutton{ 
+  position:fixed;
+  bottom:10px;
+  left:30px;
+  z-index:100;
+  height:70px;
+}
+
+.sharebutton iframe{ 
+  min-height:auto;
+}
+
+/*****************************************************************************/
+/*
+/* Code for All ON Report Updates
+/*
+/*****************************************************************************/
+
+/********
+ COLORS
+********/
+
+// Corporate colors
+.red {color: $red;}
+.bg-red {background: $red;}
+.blue {color: $blue;}
+.bg-blue {background: $blue;}
+.black {color: $black;}
+.bg-black {background: $black;}
+.gray {color: $gray;}
+.bg-gray {background: $gray;}
+.white {color: $white;}
+.bg-white {background: $white;}
+
+// Secondary colors (use sparingly)
+.dk-blue {color: $dk-blue;}
+.bg-dk-blue {background: $dk-blue;}
+.med-blue {color: $med-blue;}
+.bg-med-blue {background: $med-blue;}
+.lt-blue {color: $lt-blue;}
+.bg-lt-blue {background: $lt-blue;}
+.dk-gray {color: $dk-gray;}
+.bg-dk-gray {background: $dk-gray;}
+.med-gray {color: $med-gray;}
+.bg-med-gray {background: $med-gray;}
+.lt-gray {color: $lt-gray;}
+.bg-lt-gray {background: $lt-gray;}
+
+// .orange {color: $orange;}
+// .purple {color: $purple;}
+// .green {color: $green;}
+// .yellow {color: $yellow;}
+
+/********
+ TYPOGRAPHY
+********/
+
+html, body, p, li {
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $light;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+  font-family: $base-header-font;
+  font-weight: bold;
+  line-height: $base-line-height;
+}
+h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+}
+h2 {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+}
+h3 {
+  font-family: $interstate;
+  font-size: $h3-font-size;
+  font-weight: $semi-bold;
+  line-height: $h3-line-height;
+}
+h4 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+}
+h5 {font-size: $h5-font-size;}
+h6 {font-size: $h6-font-size;}
+
+.sans-serif {font-family: $interstate;}
+.serif {font-family: $freight-text;}
+.bold {font-weight: $bold;}
+
+.freight {
+  font-family: "Freight Text";
+  font-style: normal;
+  font-weight: normal;
+}
+.freight-ital {
+  font-family: "Freight Text";
+  font-style: italic;
+  font-weight: normal;
+}
+.freight-bold {
+  font-family: "Freight Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+}
+.freight-bold-ital {
+  font-family: "Freight Text Semibold";
+  font-style: italic;
+  font-weight: normal;
+}
+
+.interstate-light {
+  font-family: "Interstate Light";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-light-ital {
+  font-family: "Interstate Light";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate {
+  font-family: Interstate;
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-ital {
+  font-family: Interstate;
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-bold {
+  font-family: "Interstate";
+  font-style: normal;
+  font-weight: bold;
+}
+.interstate-bold-ital {
+  font-family: "Interstate";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.interstate-cond-light {
+  font-family: "Interstate Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-cond-light-ital {
+  font-family: "Interstate Light Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-cond {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: normal;
+}
+.interstate-cond-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: normal;
+}
+.interstate-cond-bold {
+  font-family: "Interstate Condensed";
+  font-style: normal;
+  font-weight: bold;
+}
+.interstate-cond-bold-ital {
+  font-family: "Interstate Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.home-header {
+  font-size: $base-font-size;
+}
+.intro { // larger intro text for first paragraph
+  font-size: $intro-font-size;
+  line-height: $intro-line-height;
+}
+strong, .strong {
+  font-weight: bold;
+}
+
+// Styles
+
+body {
+      @media screen and (max-width: 768px) {
+      padding: 0;
+    }    
+}
+
+
+/********
+ STYLES
+********/
+
+/* Page load */
+  .no-js #loading { // if no js, don't display the loading div
+    display: none;  
+  }
+  .js #loading { 
+    display: block; 
+    position: absolute; 
+    left: 50%; top: 50%; 
+  }
+a {
+  &:hover, &:active, &:focus {
+    border: none;
+    @include opacity(0.7);
+  } 
+} 
+.alignright, .navbar .brand.alignright {
+  float: right;
+}
+.alignleft {
+  float: left;
+}
+.aligncenter {
+  margin: 0 auto;
+  text-align: center;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.onreport {
+  a {
+    color: $link-color;
+  }
+  .navbar {
+    @include opacity(0.9);
+    .nav {
+      margin: 0;
+      text-shadow: none;
+      text-transform: uppercase;
+    }
+    .nav a {
+      font-family: $base-nav-font;
+    }
+    .nav-home-link a {
+      padding: 0;
+      vertical-align: middle;
+    }
+    .nav-collapse .nav .nav-home-link a { // forces other nav items to fall below home icon
+      clear: both;
+      height: 40px;
+      width: 100%;
+    }
+  }
+  .navbar-inverse .nav li.dropdown.open > .dropdown-toggle, 
+  .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, 
+  .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #1b1b1b; // overwrites bootstrap 
+  }
+}
+blockquote { 
+  border: none;
+  padding: 20px 40px;
+  p {
+    font-family: $freight-text;
+    font-size: 24px;
+    padding-bottom: 10px;
+  } 
+  footer {
+    font-family: $interstate-cond;
+    padding-bottom: 10px;
+  }
+}
+.quote-caption, .main-well {
+  @include opacity(0.9);
+  display: block;
+  padding: 0 4em 2em;
+}
+.quote-caption {
+  max-width: 48em;
+}
+.quote-big {
+  font-size: 36px;
+}
+.main-well {
+}
+// overrides for smaller devices
+.onreport .intropage, 
+.onreport .page.quote, 
+.onreport .homeQuote {
+  @media screen and (max-width: 900px) {
+    padding-top: 0 !important;    
+  }
+  @media screen and (max-width: 768px) {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%
+  }  
+}
+.onreport .page.quote img {
+  min-height: initial;
+  min-width: 100%;
+}
+.onreport { 
+  .project-list {
+     h3 {
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+    }
+    p {
+      padding: 10px;
+    }
+  }
+}
+.logos {
+  max-width: 240px;
+}
+.logobox {
+  max-width: 400px;
+  padding: 10px;
+}
+.flag {
+  border: 1px $dk-gray solid;
+  display: inline-block;
+  @media screen and (max-width: 768px) {
+    max-width: 100px
+  }  
+}
+
+// overrides bootstrap for collapsed menu icon
+.navbar .btn-navbar .icon-bar {
+  height: 5px;
+  width: 30px;
+}
+
+/********
+ SPECIFIC PAGE STYLES
+********/
+
+/* home page */
+#onreport-home .intropage.container:first-child {
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+  }  
+}
+#onreport-home .intropage, #onreport-home .page.quote { 
+  padding: 0;
+    @media screen and (max-width: 768px) {
+      float: left;
+    }  
+
+  h1 { 
+    font-size: 4em;
+    float: right;
+    line-height: 1em;
+    padding: 40px;
+    text-align: right;
+    @media screen and (max-width: 1200px) {
+      font-size: 4em;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 3.5em;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 2.5em;
+      text-align: left;
+    }
+  }
+  p {
+    color: $lt-gray;
+    font-family: $base-font-family;
+    font-size: 1.75em;
+    line-height: 1.5em; 
+    padding: 20px 40px 10px 40px;
+    @media screen and (max-width: 480px) {
+      font-size: 1.5em;
+    }
+  }
+}
+/* intro pages */
+.onreport.intro .main-well, 
+#onreport-intro-letter .main-well {  
+    float: right;
+    max-width: 30em;
+      @media screen and (max-width: 992px) {
+        max-width: 85%;
+      }
+}
+
+/* partners pages */
+.onreport.partners .main-well,
+.onreport.brigade .main-well {
+//  min-width: 80em; // Removed. This was breaking the layout.
+  @media screen and (max-width: 992px) {
+    min-width: 85%; // need to check and see if this needs to be removed too
+  }
+  .casestudy-link {
+    @include border-radius (10px);
+    background: $dk-blue;
+    border: 1px solid $gray;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+#onreport-partners-cfg .labs-projects .row .span4 {
+  background: $dk-blue;
+  margin-top: 20px;
+  padding: 5px 20px 20px; 
+}
+#onreport-brigade .span4 {
+  background: $dk-blue;
+  margin-top: 20px;
+  padding: 5px 20px 20px; 
+  min-height: 300px;  
+}
+
+/* what's next page */
+.onreport.next {
+  .main-well {  
+    float: right;
+    max-width: 48em;
+    @media screen and (max-width: 992px) {
+      max-width: 85%;
+    }
+  }
+  h2 {
+    margin-top: 0;
+  }
+}
+
+
