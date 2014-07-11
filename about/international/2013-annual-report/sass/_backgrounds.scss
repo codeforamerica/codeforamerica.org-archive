@@ -51,14 +51,14 @@
   background: url("../img/cfmc-bg-image-lg.jpg") no-repeat;
   background-color: #4298bb; 
   background-size:cover;
-  background-position:center;
+  background-position:left top; 
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfmc-bg-image-lg.jpg', sizingMethod='scale')";  
 }
 #onreport-partners-cfg .pagebg {
-  background: url("../img/cfg-bg-image-lg-01.png") no-repeat;
+  background: url("../img/cfg-bg-image-lg-03.png") no-repeat;
   background-color: #4298bb; 
   background-size: cover;
-  background-position:right bottom;
+  background-position:center bottom;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfg-bg-image-lg-01.png', sizingMethod='scale')";  
 }
 #onreport-brigade .pagebg {
@@ -75,12 +75,16 @@
   background-position: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";  
 }
-.onreport .pagebg {
-   @media screen and (max-width: 480px) {
-     background-image: none !important; // removes background image for small screens
-     background-color: #4298bb;
-   }
-}   
+// (Commented following out after feedback from user who wanted the images on small screens...not sure I agree...)
+// .onreport.intro .pagebg,
+// .onreport.partners .pagebg,
+// .onreport.next .pagebg,
+// .onreport.brigade .pagebg {
+//    @media all and (max-width: 320px) {
+//      background: none !important; // removes background image for (portrait orientation) small screens
+//      background-color: #4298bb;
+//    }
+// }   
 .pagebg img{ 
   min-width:100%;
   min-height:100%;

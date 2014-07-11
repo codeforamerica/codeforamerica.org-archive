@@ -615,16 +615,16 @@ a.appspop:hover {
   background: url("../img/cfmc-bg-image-lg.jpg") no-repeat;
   background-color: #4298bb;
   background-size: cover;
-  background-position: center;
+  background-position: left top;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfmc-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
 /* line 57, ../sass/_backgrounds.scss */
 #onreport-partners-cfg .pagebg {
-  background: url("../img/cfg-bg-image-lg-01.png") no-repeat;
+  background: url("../img/cfg-bg-image-lg-03.png") no-repeat;
   background-color: #4298bb;
   background-size: cover;
-  background-position: right bottom;
+  background-position: center bottom;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cfg-bg-image-lg-01.png', sizingMethod='scale')";
 }
 
@@ -646,15 +646,7 @@ a.appspop:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
-@media screen and (max-width: 480px) {
-  /* line 78, ../sass/_backgrounds.scss */
-  .onreport .pagebg {
-    background-image: none !important;
-    background-color: #4298bb;
-  }
-}
-
-/* line 84, ../sass/_backgrounds.scss */
+/* line 88, ../sass/_backgrounds.scss */
 .pagebg img {
   min-width: 100%;
   min-height: 100%;
