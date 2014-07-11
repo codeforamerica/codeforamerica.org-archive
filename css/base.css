@@ -646,18 +646,7 @@ a.appspop:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";
 }
 
-@media screen and (max-width: 480px) {
-  /* line 81, ../sass/_backgrounds.scss */
-  .onreport.intro .pagebg,
-  .onreport.partners .pagebg,
-  .onreport.next .pagebg,
-  .onreport.brigade .pagebg {
-    background-image: none !important;
-    background-color: #4298bb;
-  }
-}
-
-/* line 87, ../sass/_backgrounds.scss */
+/* line 88, ../sass/_backgrounds.scss */
 .pagebg img {
   min-width: 100%;
   min-height: 100%;

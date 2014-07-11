@@ -75,15 +75,16 @@
   background-position: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/next-bg-image-lg.jpg', sizingMethod='scale')";  
 }
-.onreport.intro .pagebg,
-.onreport.partners .pagebg,
-.onreport.next .pagebg,
-.onreport.brigade .pagebg {
-   @media screen and (max-width: 480px) {
-     background-image: none !important; // removes background image for small screens
-     background-color: #4298bb;
-   }
-}   
+// (Commented following out after feedback from user who wanted the images on small screens...not sure I agree...)
+// .onreport.intro .pagebg,
+// .onreport.partners .pagebg,
+// .onreport.next .pagebg,
+// .onreport.brigade .pagebg {
+//    @media all and (max-width: 320px) {
+//      background: none !important; // removes background image for (portrait orientation) small screens
+//      background-color: #4298bb;
+//    }
+// }   
 .pagebg img{ 
   min-width:100%;
   min-height:100%;
