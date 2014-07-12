@@ -262,7 +262,6 @@ RedirectMatch permanent ^(.*)/2012-city-finalists/macon(/?)$ $1/governments/maco
 RedirectMatch permanent ^(.*)/2012-city-finalists/santa-cruz(/?)$ $1/governments/santacruz$2
 RedirectMatch permanent ^(.*)/2012-city-finalists/new-orleans(/?)$ $1/governments/neworleans$2
 
-
 RedirectMatch permanent ^(.*)(?<!/governments)/austin(/?)$ $1/governments/austin$2
 RedirectMatch permanent ^(.*)(?<!/governments)/honolulu(/?)$ $1/governments/honolulu$2
 RedirectMatch permanent ^(.*)(?<!/governments)/seattle(/?)$ $1/governments/seattle$2
@@ -272,6 +271,8 @@ RedirectMatch permanent ^(.*)(?<!/governments|/city-alumni)/philadelphia(/?)$ $1
 RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/governments/boston$2
 RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/governments/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/governments/philadelphia$2
+RedirectMatch permanent ^(.*)/governments/summit-county(/?)$ $1/governments/summitcounty$2
+
 #
 # People
 #
