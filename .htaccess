@@ -225,7 +225,6 @@ RedirectMatch permanent ^(.*)/governments/call-for-applications(/?)$ $1/governme
 RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/city-current(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/governments/current(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/about/peernetwork(/?)$ $1/peernetwork$2
 
 RedirectMatch permanent ^(.*)/2013-partners/kansas-city(/?)$ $1/governments/kansascity$2
 RedirectMatch permanent ^(.*)/2013-partners/louisville(/?)$ $1/governments/louisville$2
