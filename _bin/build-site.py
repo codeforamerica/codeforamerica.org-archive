@@ -30,6 +30,7 @@ The environment variable LC_ALL above is used to handle this Jekyll bug:
 from contextlib import contextmanager
 from subprocess import call, check_call, check_output, PIPE
 from fcntl import flock, LOCK_EX, LOCK_UN
+from operator import itemgetter
 from datetime import datetime
 from os import chdir
 from sys import argv, stdin
@@ -80,7 +81,9 @@ if __name__ == '__main__':
     
     chdir(checkout_dir)
 
-    for build in load(stdin):
+    builds = sorted(load(stdin), key=itemgetter('finished_at'), reverse=True)
+    
+    for build in builds:
         if build['result'] is None:
             print '   ', 'Skipping %(number)s - returned %(result)s' % build
             continue
