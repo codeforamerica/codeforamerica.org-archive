@@ -202,8 +202,8 @@ RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/governments/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)/apply(/?)$ $1/geeks/fellowship-apply$2
-RedirectMatch permanent ^(.*)/Apply(/?)$ $1/geeks/fellowship-apply$2
+RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 
 #
 # Governments.
