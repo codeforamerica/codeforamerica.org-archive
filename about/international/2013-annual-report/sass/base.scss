@@ -1225,10 +1225,12 @@ blockquote {
   p {
     font-family: $freight-text;
     font-size: 24px;
+    font-weight: normal;
     padding-bottom: 10px;
   } 
   footer {
-    font-family: $interstate-cond;
+    font-family: $interstate;
+    font-weight: normal;
     padding-bottom: 10px;
   }
 }
@@ -1400,7 +1402,7 @@ blockquote {
   }
   .ackn li {
     color: $med-gray;
-    font-family: $interstate-cond;
+    font-family: $interstate;
     font-size: 1.125em;
     line-height: 1.25em;
     padding-bottom: 1em;
