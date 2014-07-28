@@ -30,7 +30,7 @@ style/css/main.css: \
         style/scss/patterns/search-global.scss style/scss/patterns/skip-to-nav.scss \
         style/scss/patterns/slabs.scss style/scss/patterns/spacing.scss \
         style/scss/patterns/spotlight.scss style/scss/patterns/stat.scss \
-        style/scss/patterns/sticky-nav.scss style/scss/patterns/teaser.scss \
+        style/scss/patterns/teaser.scss \
         style/scss/patterns/text-styles.scss style/scss/patterns/text-whisper.scss \
         style/scss/patterns/wodge-large.scss style/scss/patterns/wodge-small.scss \
         style/scss/patterns/wodge.scss style/scss/templates/documentation.scss
