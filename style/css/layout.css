@@ -88,6 +88,12 @@ blockquote {
   float: right;
 }
 
+.layout-minim:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .layout-minim + .layout-minim + .layout-minim {
   clear: both;
   float: left;
