@@ -3930,6 +3930,7 @@ nav ul li {
   line-height: 1.3125rem;
   font-size: 14px;
   font-size: 0.875rem;
+  text-align: left;
 }
 
 .profile-small .profile-name,
