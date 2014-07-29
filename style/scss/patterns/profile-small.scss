@@ -23,6 +23,7 @@
 .profile-small .profile-note p {
     @include rem(line-height, 21px); 
     @include rem(font-size, 14px);
+    text-align: left;
     }
 
 .profile-small .profile-name,
