@@ -10,6 +10,28 @@ document.getElementsByTagName('html')[0].className += ' js';
     }
 })();
 
+
+// Make page title font-size smaller if it doesn't fit the container
+(function (win, doc) {
+    'use strict';
+    if (!win.getComputedStyle || !doc.querySelector) {
+        // doesn't cut the mustard
+        return;
+    }
+    var container = doc.querySelector('.masthead'),
+        pagetitle = container.querySelector('.page-title'),
+        titlewidth = parseInt(win.getComputedStyle(pagetitle).getPropertyValue('width'), 10),
+        containerwidth = parseInt(win.getComputedStyle(container).getPropertyValue('width'), 10);
+    if (containerwidth < titlewidth) {
+       // Make the title width slightly smaller than the container.
+        var compressor = 0.95,
+            multiplier = (containerwidth / titlewidth) * compressor,
+            fontsize = parseFloat(win.getComputedStyle(pagetitle).getPropertyValue('font-size'));
+        pagetitle.style.fontSize = Math.floor(fontsize * multiplier) + 'px';
+    }
+}(this, this.document));
+
+
 // off-canvas pattern for navigation.
 (function (win, doc) {
     'use strict';
