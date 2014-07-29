@@ -3371,6 +3371,7 @@ nav ul li {
 .nav-footer .nav-tier1 {
   float: left;
   margin-bottom: 1.5em;
+  margin-right: 2%;
   width: 96%;
 }
 
@@ -3378,6 +3379,46 @@ nav ul li {
   display: none;
 }
 
+@media (min-width: 20em) {
+  .nav-footer .nav-tier1 {
+    width: 49%;
+    margin-right: 2%;
+  }
+
+  .nav-footer .nav-tier1:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 40em) {
+  .nav-footer .nav-tier1,
+  .nav-footer .nav-tier1:nth-child(2n+1) {
+    width: 30%;
+    margin-right: 2%;
+  }
+
+  .nav-footer .nav-tier1:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 60em) {
+  .nav-footer > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+  }
+
+  .nav-footer .nav-tier1,
+  .nav-footer .nav-tier1:nth-child(2n+1),
+  .nav-footer .nav-tier1:nth-child(3n+3) {
+    flex-grow: 1;
+    width: auto;
+    margin-right: 1.5em;
+  }
+
+  .nav-footer .nav-tier1:nth-child(3) {
+    flex-grow: 1.5;
+  }
+}
 .nav-global-primary {
   background: black;
   color: white;
