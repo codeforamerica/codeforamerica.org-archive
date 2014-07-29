@@ -44,30 +44,6 @@ document.getElementsByTagName('html')[0].className += ' js';
         newnav.className = 'js-offcanvas';
         skiplink.className = skiplink.className + ' persist';
         doc.body.appendChild(newnav);
-    } else {
-        // Add or remove a class on the navigation depending on how far the user has scrolled down. In the CSS, this class gets position:fixed within a widescreen media query.
-        if (!doc.querySelector('.global-header') || !doc.querySelector('.masthead') || !doc.querySelector('.nav-global-primary')) {
-            return;
-        }
-        var toggleclass = 'sticky',
-            reg = new RegExp('(\\s|^)' + toggleclass + '(\\s|$)'),
-            header = doc.querySelector('.global-header'),
-            triggerpoint = doc.querySelector('.masthead').offsetHeight - doc.querySelector('.nav-global-primary').offsetHeight,
-            scrollDistance = null,
-            checkToggle = function () {
-                scrollDistance = (win.pageYOffset !== undefined) ? win.pageYOffset : doc.body.scrollTop;
-                if (scrollDistance > triggerpoint) {
-                    if (!header.className.match(reg)) {
-                        header.className += ' ' + toggleclass;
-                    }
-                } else {
-                    if (header.className.match(reg)) {
-                        header.className = header.className.replace(reg, '');
-                    }
-                }
-            };
-        checkToggle();
-        win.addEventListener('scroll', checkToggle, false);
     }
 }(this, this.document));
 
