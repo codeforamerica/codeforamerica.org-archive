@@ -250,36 +250,32 @@ blockquote {
 .layout-chimney-invert .layout-minim-staccato {
 	width: 38%;
 	}
-		
 
-.global-footer .nav-footer > ul {
-    display: flex;
-    }
-    
-.global-footer .nav-footer .nav-tier1 {
-    flex: 1;
-    flex-basis: auto;
-    margin-right: 4%;
-    float: left;
-    width: 15%;
-    }
-    
 .global-footer .search-global {
     width: 254px;
     margin-left: 0;
     }
     
 .global-footer .search-global input {
-    	width: 254px;
-    	}
-
-.global-footer .nav-footer {
+	width: 254px;
+	}
+    
+.nav-footer {
     float: left;
     width: 100%;
     margin-right: 0;
     }
 
-.global-footer .nav-footer .nav-tier1:first-child {
+.nav-footer > ul {
+    justify-content: space-between;
+    }
+    
+.nav-footer .nav-tier1 {
+    margin-right: 2%;
+    float: left;
+    }
+
+.nav-footer .nav-tier1:first-child {
     display: block;
     }
 
@@ -288,13 +284,10 @@ blockquote {
     padding: 0;
     }
 
-
 section,
 [class*="slab-"] {
 	width: 100%;
 	}
-
-
 
 .global-header {
 	margin-bottom: 41px;
@@ -323,8 +316,6 @@ section,
             width: 6em;
         }
         
-        
-        
     }
 
 .nav-global-secondary {
@@ -335,22 +326,6 @@ section,
     display: block;
     float: left;
     }
-    
-    
-
-@media (max-width: 50em) {
-.nav-footer .nav-tier1 {
-    float: left;
-    margin-bottom: 1.5em;
-    width: 50%;
-    }
-
-.nav-footer .nav-tier1:nth-of-type(2n+2) {
-    clear: both;
-    }
-}
-
-
 
 .nav-global-primary ul {
 	width: auto;
@@ -358,7 +333,6 @@ section,
 	padding-top: 0;
 	padding-bottom: 0;
 	}
-
 
 .nav-global-primary li {
     margin: 6px 10px 2px;
@@ -398,7 +372,7 @@ section,
 .masthead-header {
     text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
     float: none;
-    text-align: center;
+    min-width: 5em;
     }
 
 .masthead .button-invert,
@@ -457,7 +431,6 @@ section,
     width: 100%;
     content: "";
     height: 300px;
-    position: absolute;
     display: block;
     z-index: -1;
     bottom: 0;
@@ -486,10 +459,6 @@ section,
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
-    }
-
-.masthead-header .nav-breadcrumbs {
-    position: absolute;
     }
 
 .masthead-header .nav-breadcrumbs,
@@ -571,9 +540,9 @@ section,
 .button-crotchet:hover,
 .button-crotchet:focus,
 .button-crotchet:active {
-   width: 32.0%; 
-   padding: 0;
-}
+    width: 32.0%; 
+    padding: 0;
+    }
 
 .bricks-cta {
     margin-bottom: 1.5em;
@@ -640,4 +609,5 @@ section,
 
 .nav-breadcrumbs {
     display: block;
+    margin-top: -3em;
     }

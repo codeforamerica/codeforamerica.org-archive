@@ -2571,7 +2571,6 @@ input.button-s,
 .masthead-header {
   overflow: hidden;
   width: auto;
-  display: table;
   z-index: 1;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -3385,6 +3384,7 @@ nav ul li {
 .nav-footer .nav-tier1 {
   float: left;
   margin-bottom: 1.5em;
+  margin-right: 2%;
   width: 96%;
 }
 
@@ -3392,6 +3392,46 @@ nav ul li {
   display: none;
 }
 
+@media (min-width: 20em) {
+  .nav-footer .nav-tier1 {
+    width: 49%;
+    margin-right: 2%;
+  }
+
+  .nav-footer .nav-tier1:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 40em) {
+  .nav-footer .nav-tier1,
+  .nav-footer .nav-tier1:nth-child(2n+1) {
+    width: 30%;
+    margin-right: 2%;
+  }
+
+  .nav-footer .nav-tier1:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 60em) {
+  .nav-footer > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+  }
+
+  .nav-footer .nav-tier1,
+  .nav-footer .nav-tier1:nth-child(2n+1),
+  .nav-footer .nav-tier1:nth-child(3n+3) {
+    flex-grow: 1;
+    width: auto;
+    margin-right: 1.5em;
+  }
+
+  .nav-footer .nav-tier1:nth-child(3) {
+    flex-grow: 1.5;
+  }
+}
 .nav-global-primary {
   background: black;
   color: white;
@@ -5471,54 +5511,4 @@ body {
   background-image: url("../images/icon-search-black.png");
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-@media (min-width: 40em) and (min-height: 30em) {
-  .sticky,
-  .sticky.global-header,
-  .sticky.global-header-compact {
-    position: fixed;
-    top: 0;
-  }
-
-  .sticky + main {
-    margin-top: 6em;
-  }
-
-  .sticky .global-header-logo {
-    width: 80px;
-    margin: 0.4em 0 0 0;
-  }
-
-  .sticky .nav-global-secondary li a {
-    padding-top: 10px;
-    padding-top: 0.625rem;
-    padding-bottom: 10px;
-    padding-bottom: 0.625rem;
-  }
-
-  .sticky .nav-global-secondary li .button, .sticky .nav-global-secondary li .button-prominent, .sticky .nav-global-secondary li .button-neutral, .sticky .nav-global-secondary li .button-alternative, .sticky .nav-global-secondary li .button-unstyled, .sticky .nav-global-secondary li .button-subtle, .sticky .nav-global-secondary li input[type="button"][disabled],
-  .sticky .nav-global-secondary li input[type="submit"][disabled],
-  .sticky .nav-global-secondary li button[disabled],
-  .sticky .nav-global-secondary li .button-disabled, .sticky .nav-global-secondary li .button-progress {
-    padding: 0 12px;
-    padding: 0 0.75rem;
-    height: 30px;
-    height: 1.875rem;
-    line-height: 31px;
-    line-height: 1.9375rem;
-    margin: 7px 0 2px 16px;
-    margin: 0.4375rem 0 0.125rem 1rem;
-  }
-
-  .sticky .nav-tier2 a:link,
-  .sticky .nav-tier2 a:visited,
-  .sticky .nav-tier2 a:hover,
-  .sticky .nav-tier2 a:focus,
-  .sticky .nav-tier2 a:active {
-    padding-top: 7px;
-    padding-top: 0.4375rem;
-    padding-bottom: 6px;
-    padding-bottom: 0.375rem;
-  }
 }

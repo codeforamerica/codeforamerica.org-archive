@@ -10,6 +10,28 @@ document.getElementsByTagName('html')[0].className += ' js';
     }
 })();
 
+
+// Make page title font-size smaller if it doesn't fit the container
+(function (win, doc) {
+    'use strict';
+    if (!win.getComputedStyle || !doc.querySelector) {
+        // doesn't cut the mustard
+        return;
+    }
+    var container = doc.querySelector('.masthead'),
+        pagetitle = container.querySelector('.page-title'),
+        titlewidth = parseInt(win.getComputedStyle(pagetitle).getPropertyValue('width'), 10),
+        containerwidth = parseInt(win.getComputedStyle(container).getPropertyValue('width'), 10);
+    if (containerwidth < titlewidth) {
+       // Make the title width slightly smaller than the container.
+        var compressor = 0.95,
+            multiplier = (containerwidth / titlewidth) * compressor,
+            fontsize = parseFloat(win.getComputedStyle(pagetitle).getPropertyValue('font-size'));
+        pagetitle.style.fontSize = Math.floor(fontsize * multiplier) + 'px';
+    }
+}(this, this.document));
+
+
 // off-canvas pattern for navigation.
 (function (win, doc) {
     'use strict';
@@ -44,30 +66,6 @@ document.getElementsByTagName('html')[0].className += ' js';
         newnav.className = 'js-offcanvas';
         skiplink.className = skiplink.className + ' persist';
         doc.body.appendChild(newnav);
-    } else {
-        // Add or remove a class on the navigation depending on how far the user has scrolled down. In the CSS, this class gets position:fixed within a widescreen media query.
-        if (!doc.querySelector('.global-header') || !doc.querySelector('.masthead') || !doc.querySelector('.nav-global-primary')) {
-            return;
-        }
-        var toggleclass = 'sticky',
-            reg = new RegExp('(\\s|^)' + toggleclass + '(\\s|$)'),
-            header = doc.querySelector('.global-header'),
-            triggerpoint = doc.querySelector('.masthead').offsetHeight - doc.querySelector('.nav-global-primary').offsetHeight,
-            scrollDistance = null,
-            checkToggle = function () {
-                scrollDistance = (win.pageYOffset !== undefined) ? win.pageYOffset : doc.body.scrollTop;
-                if (scrollDistance > triggerpoint) {
-                    if (!header.className.match(reg)) {
-                        header.className += ' ' + toggleclass;
-                    }
-                } else {
-                    if (header.className.match(reg)) {
-                        header.className = header.className.replace(reg, '');
-                    }
-                }
-            };
-        checkToggle();
-        win.addEventListener('scroll', checkToggle, false);
     }
 }(this, this.document));
 
