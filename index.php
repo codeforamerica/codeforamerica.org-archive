@@ -94,16 +94,13 @@
         <div>
         	<h2 class="xx-section-title">Using the Guide</h2>
         	<p>Code for America aims to improve the relationships between citizens and government. The following logos, materials, and character of the Code for America brand were created to express the following:</p>
-        	<p>
         	<ul>
         	<li>Openness: That the organization is approachable, easy to understand, easy to get involved with, and welcoming to both scrutiny and participation.</li>
         	<li>Currency + Progress: We’ve attempted to showcase the latest events and stories in civic tech, while also using current conventions in web design and technology-based approaches. We also strive to show a thread of progress over time.</li>
         	<li>Optimism: We wanted to emphasize the fact that Code for America believes in the future of our communities and local governments. The idea to portray is: "We can make this better together."</li>
-        	</ul
-        	</p>
+        	</ul>
         	<p>This guide is intended to help anyone involved with communications for Code for America and its affiliate programs. If you have questions, <a href="https://github.com/codeforamerica/codeforamerica.org/issues/new">submit an issue in our github repo</a>.</p>
-        	</div>
-        	</div>
+        </div>
 
         
         	<h2 class="xx-section-title">Bookmark Icons</h2>

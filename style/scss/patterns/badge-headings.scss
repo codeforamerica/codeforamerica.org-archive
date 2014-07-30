@@ -1,7 +1,8 @@
 //  Badge Heading ----------------------------------------
 
 .badge-heading {
-    @include rem(margin, 16px 0 22px);
+    @include rem(margin, 0 0 22px);
+    @include rem(padding-top, 32px);
     border-bottom: 1px solid;
     border-color: $color-light-gray;
     clear: both;
@@ -25,7 +26,7 @@
             width: 50px;
             position: absolute;
             left: 0;
-            top: 0;
+            @include rem(top, 29px);
             }
         
         .badge-heading:before {
@@ -153,3 +154,15 @@
                 background-image: url("../images/badge-graph.svg");
                 }
         }
+    
+    
+    /* Backwards compatibility with sections */
+    
+    .layout-breve > .badge-heading:first-child {
+        padding-top: 0;
+    }
+    
+    .layout-breve > .badge-heading:first-child:before,
+    .layout-breve > .badge-heading:first-child:after {
+        top: 0;
+    }
