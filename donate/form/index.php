@@ -1,14 +1,12 @@
----
-layout: default
-title: Donate
-base-url: ../..
----      
+<?php include_once('../../_includes/head.php'); 
+    $pageTitle = 'Donate';
+?>
+
+<?php include_once('../../_includes/header.php'); ?>
 
 <section>
 
     <div class="layout-semibreve">
-    
-        {% include /blocks/patterns/nav-breadcrumb.html %}
         
         <h2>Invest in the future of Government</h2>
         
@@ -32,7 +30,7 @@ base-url: ../..
             
             <div class="layout-minim">
             
-            {% include /blocks/patterns/form-donate.html %}
+            <?php include_once('../../_includes/blocks/patterns/form-donate.html'); ?>
             
             </div>
         
@@ -41,3 +39,7 @@ base-url: ../..
     </div>
 
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

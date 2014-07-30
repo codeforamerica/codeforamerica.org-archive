@@ -1,14 +1,12 @@
----
-layout: default
-title: Apps &amp; APIs
-base-url: ..
----
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Apps &amp; APIs';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
 
 <section>
 
     <div class="layout-semibreve layout-tight">
-        
-        {% include /blocks/patterns/nav-breadcrumb.html %}
         
         <div class="layout-centered">
             
@@ -32,10 +30,14 @@ base-url: ..
     <div class="layout-semibreve layout-tight">
     <div class="tab-content">
         <div class="tab-pane state-active">
-            {% include /blocks/patterns/teasers-apps.html %}
+            <?php include_once('../_includes/blocks/patterns/teasers-apps.html'); ?>
             <p class="layout-centered isolate"><a href="#" class="button button-subtle button-crotchet text-whisper">Load More</a></p>
         </div>
     </div>
     </div>
     
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

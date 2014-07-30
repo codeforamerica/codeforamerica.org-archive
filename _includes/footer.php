@@ -2,13 +2,13 @@
     
     <div class="layout-breve layout-tight">
     
-        {% include /blocks/patterns/search-global.html %}
+        <?php include_once('../_includes/blocks/patterns/search-global.html'); ?>
     
         <nav class="nav-footer" role="navigation">
             <ul>
-                <li class="nav-tier1"><a class="nav-heading" href="{{page.base-url}}/about/">About</a>
+                <li class="nav-tier1"><a class="nav-heading" href="/about/">About</a>
                     <ul class="nav-tier2">
-                      <li><a href="{{page.base-url}}/programs/">What we do</a></li>
+                      <li><a href="/programs/">What we do</a></li>
                       <li><a href="http://annual.codeforamerica.org/">Annual report</a></li>
                       <li><a href="http://www.codeforamerica.org/press/">Press</a></li>
                         <li><a href="http://www.codeforamerica.org/supporters/">Supporters</a></li>
@@ -27,14 +27,14 @@
                 </li>
                 <li class="nav-tier1"><a class="nav-heading" href="#">Programs</a>
                     <ul class="nav-tier2">
-                        <li><a href="{{page.base-url}}/fellows/">Fellowship</a></li>
-                        <li><a href="{{page.base-url}}/brigade/">Brigade</a></li>
-                      <li><a href="{{page.base-url}}/startups/">Startup</a></li>
-                      <li><a href="{{page.base-url}}/international">International</a></li>
-                        <li><a href="{{page.base-url}}/peernetwork">Peer Network</a></li>           
+                        <li><a href="/fellows/">Fellowship</a></li>
+                        <li><a href="/brigade/">Brigade</a></li>
+                      <li><a href="/startups/">Startup</a></li>
+                      <li><a href="/international">International</a></li>
+                        <li><a href="/peernetwork">Peer Network</a></li>           
                     </ul>
                 </li>
-                <li class="nav-tier1"><a class="nav-heading" href="{{page.base-url}}/donate/">Donate</a>
+                <li class="nav-tier1"><a class="nav-heading" href="/donate/">Donate</a>
                     <ul class="nav-tier2">
                         <li><a href="#">Financial Contributions</a></li>
                         <li><a href="#">In-Kind Donations</a></li>
@@ -61,7 +61,7 @@
 <div class="global-foot" role="contentinfo">
     <div class="layout-tight layout-breve">
         <div class="global-foot-content">
-            <img class="global-foot-logo" src="{{page.base-url}}/../_assets/logo-inversed.png" />
+            <img class="global-foot-logo" src="/../_assets/logo-inversed.png" />
             <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
         </div>
     </div>

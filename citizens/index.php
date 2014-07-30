@@ -1,9 +1,9 @@
----
-layout: default
-title: Citizens
-masthead-image: masthead-2.jpg
-base-url: ..
----
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Citizens'; 
+    $mastheadImage = 'masthead-2';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
 
 <section>
 
@@ -11,7 +11,7 @@ base-url: ..
     
         <h2 class="isolate">Citizens have the power to help their cities.</h2>
         
-        {% include /blocks/patterns/list-credits.html %}
+        <?php include_once('../_includes/blocks/patterns/list-credits.html'); ?>
     
     </div>
 
@@ -28,7 +28,7 @@ base-url: ..
                 <h3>Why I Code for America</h3>
                 <div class="h-card profile">
                     <h4 class="p-name profile-name">Richa Agarwal</h4>
-                    <img class="u-photo profile-photo" src="{{page.base-url}}/../_media/images/avatar-tiffani-bell.png" />
+                    <img class="u-photo profile-photo" src="/../_media/images/avatar-tiffani-bell.png" />
                     <p class="p-role profile-role">2012 Fellow</p>
                     <p class="p-note profile-note">Co-creator of <a class="p-org profile-org" href="#">Recordtrac</a></p>
                 </div>
@@ -149,3 +149,7 @@ base-url: ..
     </div>
 
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

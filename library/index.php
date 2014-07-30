@@ -1,14 +1,12 @@
----
-layout: default
-title: Library
-base-url: ..
----
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Fellows';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
         
 <section>
 
     <div class="layout-semibreve">
-    
-    	{% include /blocks/patterns/nav-breadcrumb.html %}
         
         <div class="layout-centered">
             
@@ -23,8 +21,8 @@ base-url: ..
 <section class="slab-gray">
     
 	<div class="layout-semibreve">
-	
-	    {% include /blocks/patterns/nav-tags.html %}
+
+	    <?php include_once('../_includes/blocks/patterns/nav-tags.html'); ?>
 	    
 	</div>
 
@@ -33,11 +31,15 @@ base-url: ..
 <section>
 
     <div class="layout-semibreve">
-        
-        {% include /blocks/patterns/teasers.html %}
+
+        <?php include_once('../_includes/blocks/patterns/teasers.html'); ?>
         
         <p class="layout-centered isolate"><a href="#" class="button button-subtle button-crotchet text-whisper">Load More</a></p>
     
     </div>
     
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

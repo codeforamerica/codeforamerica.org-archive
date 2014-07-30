@@ -1,20 +1,18 @@
----
-layout: default
-title: Apps &amp; APIs
-masthead-image: masthead-5.jpg
-base-url: ../..
----
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Apps &amp; APIs';
+    $mastheadImage = 'masthead-5';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
 
 <div class="layout-semibreve">
-
-	{% include /blocks/patterns/nav-breadcrumb.html %}
 	
 	<div class="heading">
 		<h2>Promptly</h2>
 	</div>
 	
 	<div class="layout-minor">
-		<img class="isolate" src="{{page.base-url}}/../_media/images/logo-promptly.jpg" />
+		<img class="isolate" src="/../_media/images/logo-promptly.jpg" />
 	    <h3 class="text-prominent">Overview</h3>
 	    <p>Text message notification system for benefits recipients, built for San Francisco.</p>
 	    
@@ -69,3 +67,7 @@ base-url: ../..
 	</div>
 
 </div>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

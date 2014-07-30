@@ -1,16 +1,14 @@
----
-layout: default
-title: Donate
-base-url: ..
----    
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Fellows';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
 
 <section>
 
     <div class="layout-semibreve">
     
         <main role="main">
-            
-            {% include /blocks/patterns/nav-breadcrumb.html %}
             
             <header class="badge-heading">
                 <h2>Become a fellow</h2>
@@ -43,7 +41,7 @@ base-url: ..
                 
                     <h2 class="layout-centered h3 isolate">Meet the 2013 fellows</h2>
                     
-                    {% include /blocks/patterns/profile-small.html %}
+                    <?php include_once('../_includes/blocks/patterns/profile-small.html'); ?>
                 
                 </div>
                 
@@ -54,3 +52,7 @@ base-url: ..
     </div>
 
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

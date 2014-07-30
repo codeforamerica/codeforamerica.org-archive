@@ -1,8 +1,11 @@
-{% include head.html %}
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Code for America';
+    $mastheadImage = 'masthead-6.jpg';
+?>
 
 <div class="global-header-compact" role="banner">
-    <a href="{{page.base-url}}/home/" class="global-header-logo">
-        <img src="{{page.base-url}}/../_assets/logo.png" />
+    <a href="/home/" class="global-header-logo">
+        <img src="/../_assets/logo.png" />
     </a>
     <p class="global-header-tagline"><strong>By the people, for the people,</strong> for the 21<sup>st</sup> century</p>
     
@@ -11,43 +14,44 @@
     <nav class="nav-global-secondary" role="navigation">
         <ul>
         	<li class="nav-tier1 nav-has-children">
-        		<a href="{{page.base-url}}/about/" {% if page.path contains 'about' %}class="state-active"{% endif %}>Who we are</a>
-        		{% if page.path contains 'about' %}
+        		<a href="/about/" <?php if(strpos($path,'/about/')){ echo "class=\"state-active\""; }?>>Who we are</a>
+        		<?php if(strpos($path,'/about/')){ ?>
         		<ul class="nav-tier2">
-        		    <li><a href="{{page.base-url}}/about/">Team</a></li>
-        		    <li><a href="{{page.base-url}}/about/">Annual Report</a></li>
-        		    <li><a href="{{page.base-url}}/about/">Supporters</a></li>
-        		    <li><a href="{{page.base-url}}/about/">Press</a></li>
-        		    <li><a href="{{page.base-url}}/about/">Contact</a></li>
+        		    <li><a href="/about/">Team</a></li>
+        		    <li><a href="/about/">Annual Report</a></li>
+        		    <li><a href="/about/">Supporters</a></li>
+        		    <li><a href="/about/">Press</a></li>
+        		    <li><a href="/about/">Contact</a></li>
         		</ul>
-        		{% endif %} 
+        		<?php }?>
         	</li>
+        	
             <li class="nav-tier1 nav-has-children">
-                <a href="{{page.base-url}}/governments/" {% if page.path contains 'governments' %}class="state-active"{% endif %}>Governments</a>
-                {% if page.path contains 'governments' %}
+                <a href="/governments/" <?php if(strpos($path,'/governments/') !== false){ ?>class="state-active"<?php }?>>Governments</a>
+                <?php if(strpos($path,'/governments/')){ ?>
                 <ul class="nav-tier2">
-                    <li><a href="{{page.base-url}}/governments/">Current Governments</a></li>
-                    <li><a href="{{page.base-url}}/governments/boston/">Upcoming Governments</a></li>
-                    <li><a href="{{page.base-url}}/governments/boston/">Alumni Governments</a></li>
-                    <li><a href="{{page.base-url}}/apps/">Apps &amp; APIs</a></li>
+                    <li><a href="/governments/">Current Governments</a></li>
+                    <li><a href="/governments/boston/">Upcoming Governments</a></li>
+                    <li><a href="/governments/boston/">Alumni Governments</a></li>
+                    <li><a href="/apps/">Apps &amp; APIs</a></li>
                 </ul>
-                {% endif %} 
+                <?php }?>
             </li>
             <li class="nav-tier1 nav-has-children">
-            	<a href="{{page.base-url}}/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
-            	{% if page.path contains 'citizens' %}
+            	<a href="/citizens/" {% if page.path contains 'citizens' %}class="state-active"{% endif %}>Citizens</a>
+            	<?php if(strpos($path,'/citizens/')){ ?>
             	<ul class="nav-tier2">
             		<li><a href="#">Requests</a></li>
             		<li><a href="#">Code we Have</a></li>
             		<li><a href="#">Events</a></li>
             		<li><a href="#">Our geeks</a></li>
             	</ul>
-            	{% endif %} 
+            	<?php }?>
             </li>
             <li class="nav-tier1">
-            	<a href="{{page.base-url}}/apps/" {% if page.path contains 'apps' %}class="state-active"{% endif %}>Apps</a>
+            	<a href="/apps/" <?php if(strpos($path,'/apps/')){ ?>class="state-active"<?php }?>>Apps</a>
             </li>
-            <li><a href="{{page.base-url}}/donate/" class="button">Donate</a></li>
+            <li><a href="/donate/" class="button">Donate</a></li>
         </ul>
     </nav>
     
@@ -58,7 +62,7 @@
     <header class="layout-semibreve masthead-header">
         <h1 class="page-title" >In San Francisco</h1>
         <p>One third of HSA clients are unneccessarily cut from food benefits. Four fellows built <a href="#">Promptly</a> offering SMS notifications to keep families fed.</p>
-        <a class="text-whisper button-invert" href="{{page.base-url}}/about/">Learn more about what we do</a>
+        <a class="text-whisper button-invert" href="/about/">Learn more about what we do</a>
     </header>
 </div>
     
@@ -69,7 +73,7 @@
         
             <h2 class="text-whisper">Join the movement</h2>
             
-            {% include /blocks/patterns/bricks-3.html %}
+            <?php include_once('../_includes/blocks/patterns/bricks-3.html'); ?>
             
         </section>
         
@@ -79,7 +83,7 @@
             
                 <h2 class="h5">Blogging [For America]</h2>
                 
-                {% include /blocks/patterns/post-preview.html %}
+                <?php include_once('../_includes/blocks/patterns/post-preview.html'); ?>
             
             </div>
                         
@@ -89,7 +93,7 @@
         
             <h2 class="text-whisper">Quick Stats</h2>
             
-            {% include /blocks/patterns/bricks-4.html %}
+            <?php include_once('../_includes/blocks/patterns/bricks-4.html'); ?>
             
         </section>
         
@@ -100,7 +104,7 @@
         
             <h2 class="text-whisper">Quick Stats</h2>
             
-            {% include /blocks/patterns/bricks-4.html %}
+            <?php include_once('../_includes/blocks/patterns/bricks-4.html'); ?>
             
         </section>
         
@@ -110,14 +114,12 @@
         <section class="slab-gray layout-centered insulate-inner">
             <h2 class="text-whisper">Code for America is kindly supported by</h2>
             
-            {% include /blocks/patterns/list-logos-muted.html %}
+            <?php include_once('../_includes/blocks/patterns/list-logos-muted.html'); ?>
             
         </section>
     
     </main>
-        
-    {{ content }}
-    
-    {% include footer.html %}
-    
-{% include foot.html %}
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

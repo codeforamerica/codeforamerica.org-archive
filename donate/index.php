@@ -1,16 +1,20 @@
----
-layout: default
-title: Governments
-base-url: ..
----
-        
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'Donate';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
+
 <section>
 
     <div class="layout-semibreve">
         
         <div class="layout-centered">
             
-            <h2 class="h3">Across America, government employees are accelerating city innovation by sharing their best ideas, collaborating with local civic hackers, and enlisting elite technologists for a year of service.</h2>
+            <h2 class="h3">We couldn't do it without you</h2>
+            
+            <?php include_once('../_includes/blocks/patterns/list-logos.html'); ?>
+            
+            <p class="isolate text-whisper"><a href="#">More supporters</a></p>
                         
         </div>
     
@@ -24,27 +28,15 @@ base-url: ..
             
         <div class="layout-minim">
     
-            <p>Over 200 local officials, startups and NGOs discuss data standards, current events and civic tech on a focused, moderated email list.</p>
+            <p>Code for America brings local governments and the technology community together to improve the lives of citizens. Our projects encompass critical areas from criminal justice to citizen engagement to public health. Our commitment to you is that 90% of our funding is spent on program operations.</p>
             
-            <h3 class="h4">Titles of some active members include:</h3>
-            
-            <ul class="isolate">
-                <li>Chief Innovation Officer, City of KC, Missouri</li>
-            	<li>Deputy Chief of Staff, City of Houston</li>
-            	<li>Director of Research and Technology, Urban Strategies Council</li>
-            </ul>
-            
-            <h3 class="h4">Ready to Level Up?</h3>
-            
-            <p>Code for America's Peer Network helps you innovate by providing targeted training, hands-on support and early access to new technology. Recent trainings include user interface engineering and broadband Policy</p>
-            
-            <a href="#" class="button button-prominent">Request an invite</a>
-            
+            <p>We invite contributions at any dollar level. If you would like to discuss a major gift, please contact Ashley Meyers.</p>
+        
         </div>
             
         <div class="layout-minim slab-medium-red chimney">
-                    
-            <h3>Join the conversation</h3>
+                
+            <h3>Help us build government for the people, by the people, for the 21st century.</h3>
             
             <form>
             
@@ -56,36 +48,16 @@ base-url: ..
                     </li>
                     
                     <li class="form-field">
-                        <label for="donor-address-line1">Your preferred title</label>
-                    	<input id="donor-address-line1" class="input" type="text" />
-                    </li>
-                    
-                    <li class="form-field">
-                        <label for="invitee-title">Address Line 2</label>
-                    	<input id="invitee-title" class="input" type="text" />
-                    </li>
-                    
-                    <li class="form-field-group">
-                        <div class="form-field">
-                            <label for="donor-address-city">City</label>
-                        	<input id="donor-address-city" class="input" type="text" />
-                        </div>
-                        <div class="form-field">
-                            <label for="donor-address-state">State</label>
-                        	<select id="donor-address-state">
-                        	    <option>USA</option>
-                        	    <option>USA</option>
-                        	    <option>USA</option>
-                        	</select>
-                        </div>
-                    </li>
-                    
-                    <li class="form-field">
-                        <label for="donor-email">Email</label>
+                        <label for="donor-email">Your Email Address</label>
                     	<input id="donor-email" class="input" type="email" />
                     </li>
+                    
+                    <li class="form-field">
+                        <label for="donor-donation-amount">How much would you like to donate?</label>
+                        <input id="donor-donation-amount" class="input" />
+                    </li>
                                                 
-                    <a href="#" class="button">Join now</a>
+                    <a href="/donate/form/" class="button">Donate now</a>
                     
                 </ul>
             
@@ -93,6 +65,30 @@ base-url: ..
             
         </div>
         
+        <div class="layout-minim">
+        
+            <h3 class="h4">Ready to Level Up?</h3>
+            
+            <p>Code for America's Peer Network helps you innovate by providing targeted training, hands-on support and early access to new technology. Recent trainings include user interface engineering and broadband Policy</p>
+            
+            <a href="#" class="button button-prominent">Request an invite</a>
+            
+        </div>
+        
+    </div>
+
+</section>
+
+<section class="slab-dark-gray">
+
+    <div class="layout-semibreve">
+            
+            2013
+            
+            Program expenditures
+            
+            <a href="#">See our 2012 expenditure report</a>
+            
     </div>
 
 </section>
@@ -109,7 +105,7 @@ base-url: ..
             
             <div class="wodge-button">
                 <a href="#" class="button">Brigades</a>
-                <a href="#" class="button button-neutral">Events</a>
+                <a href="#" class="button">Events</a>
             </div>
             
             <div class="wodge-text">
@@ -126,7 +122,7 @@ base-url: ..
             
             <div class="wodge-button">
                 <a href="#" class="button">Current Cities</a>
-                <a href="#" class="button button-neutral">The apps</a>
+                <a href="#" class="button">The apps</a>
             </div>
             
             <div class="wodge-text">
@@ -144,7 +140,7 @@ base-url: ..
             
             <div class="wodge-button">
                 <a href="#" class="button">HouseFacts</a>
-                <a href="#" class="button button-neutral">LIVES</a>
+                <a href="#" class="button">LIVES</a>
             </div>
             
             <div class="wodge-text">
@@ -156,3 +152,7 @@ base-url: ..
     </div>
                 
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>

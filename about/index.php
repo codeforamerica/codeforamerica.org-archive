@@ -1,8 +1,9 @@
----
-layout: default
-title: About
-base-url: ..
----
+<?php include_once('../_includes/head.php'); 
+    $pageTitle = 'About'; 
+    $mastheadImage = 'masthead-6';
+?>
+
+<?php include_once('../_includes/header.php'); ?>
 
 <section class="slab-red">
 	
@@ -191,3 +192,7 @@ base-url: ..
 	</div>
 	
 </section>
+
+<?php include_once('../_includes/footer.php'); ?>
+
+<?php include_once('../_includes/foot.php'); ?>
