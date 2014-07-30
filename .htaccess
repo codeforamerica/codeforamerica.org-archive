@@ -116,7 +116,7 @@ RedirectMatch permanent ^(.*)/about/funders(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/support-2(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/what-we-do(/?)$ $1/about$2
-RedirectMatch permanent ^(.*)/projects(/?)$ $1/apps$2
+RedirectMatch permanent ^(.*)(?<!/brigade)/projects(/?)$ $1/apps$2
 RedirectMatch permanent ^(.*)/code-for-america-blog(/?)$ $1/blog$2
 RedirectMatch permanent ^(.*)/about/contact(/?)$ $1/contact$2
 RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/international$2
