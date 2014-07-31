@@ -37,7 +37,7 @@ nav-breadcrumbs:
         	<li class="icon-calendar"><span id="nextEvent"></span>
         	<a class="text-whisper" href="http://codeforamerica.org/brigade/events">Other Events</a>
         	</li>
-          <li class="icon-github2"><a href="http://codeforamerica.github.io/citizen-onboard/">Citizen Onboarding</a>
+          <li class="icon-github2"><span id="nextIssue"></span>
           	<a class="text-whisper" href="https://github.com/codeforamerica/hack-requests">More hack requests</a>
           </li>
           <li class="icon-lamp"><a href="http://nyctaxi.herokuapp.com/">NYC Taxis: A Day in the Life</a>
@@ -54,7 +54,11 @@ nav-breadcrumbs:
   </div>
   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
   <script>
+
+    getApi("http://codeforamerica.org/api/events/upcoming_events?per_page=1", showEvent);
+
     function getApi(url, callback){
+        // Make a api request and pass the response to the callback
         request = new XMLHttpRequest();
         request.open('GET', url, true);
 
@@ -77,16 +81,29 @@ nav-breadcrumbs:
         request.send();
     }
 
-    function showEvents(data) {
+    function showEvent(data) {
+        // Display the next upcoming event.
         var event = data.objects[0]
+        console.log(event)
         nextEvent = document.getElementById("nextEvent");
         var html = "<a href=" + event.event_url + ">" + event.name + "</a>";
         html += '<span class="text-whisper">' + moment(new Date(event.start_time)).fromNow();
         html += " at " + event.organization.name + '</span>';
         nextEvent.innerHTML = html;
+
+        getApi("http://codeforamerica.org/api/issues/labels/help%20wanted?per_page=1", showIssue);
     }
 
-    getApi("http://codeforamerica.org/api/events/upcoming_events?per_page=1", showEvents);
+    function showIssue(data) {
+        // Display an open issue with the label 'help wanted'
+        var issue = data.objects[0]
+        console.log(issue)
+        nextIssue = document.getElementById("nextIssue");
+        var html = "<a href=" + issue.html_url + ">" + issue.title + "</a>";
+        // html += " at " + event.organization.name + '</span>';
+        nextIssue.innerHTML = html;
+    }
+
 
   </script>
 </section>
