@@ -34,8 +34,8 @@ nav-breadcrumbs:
     <div class="layout-minim-staccato">
       <h3 class="h4">What's happening?</h3>
         <ul class="list-no-bullets list-icons">
-        	<li class="icon-calendar"><a href="http://www.meetup.com/Code-for-Seattle/events/194274912/">Open Street Map 10 Year Anniversary<br/> August 9th</a>
-        	<a class="text-whisper" href="http://codeforamerica.org/events">Other Events</a>
+        	<li class="icon-calendar"><span id="nextEvent"></span>
+        	<a class="text-whisper" href="http://codeforamerica.org/brigade/events">Other Events</a>
         	</li>
           <li class="icon-github2"><a href="http://codeforamerica.github.io/citizen-onboard/">Citizen Onboarding</a>
           	<a class="text-whisper" href="https://github.com/codeforamerica/hack-requests">More hack requests</a>
@@ -52,6 +52,43 @@ nav-breadcrumbs:
         </ul>
     </div>
   </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+  <script>
+    function getApi(url, callback){
+        request = new XMLHttpRequest();
+        request.open('GET', url, true);
+
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400){
+            // Success!
+            data = JSON.parse(request.responseText);
+            callback(data);
+          } else {
+            // We reached our target server, but it returned an error
+            console.log(request.status);
+          }
+        };
+
+        request.onerror = function(e) {
+          // There was a connection error of some sort
+          console.log(request.status);
+        };
+
+        request.send();
+    }
+
+    function showEvents(data) {
+        var event = data.objects[0]
+        nextEvent = document.getElementById("nextEvent");
+        var html = "<a href=" + event.event_url + ">" + event.name + "</a>";
+        html += '<span class="text-whisper">' + moment(new Date(event.start_time)).fromNow();
+        html += " at " + event.organization.name + '</span>';
+        nextEvent.innerHTML = html;
+    }
+
+    getApi("http://codeforamerica.org/api/events/upcoming_events?per_page=1", showEvents);
+
+  </script>
 </section>
 
 <section>
