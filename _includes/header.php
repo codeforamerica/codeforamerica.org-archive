@@ -20,7 +20,7 @@
             <?php } else {?>
                 <?php include_once('../_includes/nav-breadcrumb.html'); ?>
             <?php }?>
-            <h1 class="page-title" >
+            <h1 class="page-title">
                 <?php if (strpos($_SERVER['REQUEST_URI'], 'posts') !== false) { ?>
                     Blogging [for America]
                 <?php } else {?>
@@ -42,7 +42,7 @@
             <ul>
                 <li class="nav-tier1 nav-has-children">
                     <a href="/about/" <?php if (strpos($_SERVER['REQUEST_URI'], 'about') !== false) { echo "class=\"state-active\""; }?>>Who we are</a>
-                    <?php if(strpos($path,'/about/')){ ?>
+                    <?php if (strpos($_SERVER['REQUEST_URI'], 'about') !== false) { ?>
                         <ul class="nav-tier2">
                             <li><a href="/about/">Team</a></li>
                             <li><a href="/about/">Annual Report</a></li>
@@ -52,10 +52,9 @@
                         </ul>
                     <?php }?>
                 </li>
-
                 <li class="nav-tier1 nav-has-children">
-                    <a href="/governments/" <<?php if (strpos($_SERVER['REQUEST_URI'], 'governments') !== false) { echo "class=\"state-active\""; }?>>Governments</a>
-                    <?php if(strpos($path,'/governments/')){ ?>
+                    <a href="/governments/" <?php if (strpos($_SERVER['REQUEST_URI'], 'governments') !== false) { echo "class=\"state-active\""; }?>>Governments</a>
+                    <?php if (strpos($_SERVER['REQUEST_URI'], 'governments') !== false) { ?>
                         <ul class="nav-tier2">
                             <li><a href="/governments/">Current Governments</a></li>
                             <li><a href="/governments/boston/">Upcoming Governments</a></li>
@@ -66,7 +65,7 @@
                 </li>
                 <li class="nav-tier1 nav-has-children">
                     <a href="/citizens/" <?php if (strpos($_SERVER['REQUEST_URI'], 'citizens') !== false) { echo "class=\"state-active\""; }?>>Citizens</a>
-                    <?php if(strpos($path,'/citizens/')){ ?>
+                    <?php if (strpos($_SERVER['REQUEST_URI'], 'citizens') !== false) { ?>
                         <ul class="nav-tier2">
                             <li><a href="#">Requests</a></li>
                             <li><a href="#">Code we Have</a></li>
