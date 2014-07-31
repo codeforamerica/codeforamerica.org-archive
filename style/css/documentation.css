@@ -3045,7 +3045,9 @@ input.button-s,
   width: 100%;
 }
 
-.list-social {
+/* v1 */
+.list-social,
+.profile-grid > li > ul {
   min-height: 30px;
   text-align: center;
   display: table;
@@ -3060,12 +3062,19 @@ input.button-s,
   background-repeat: no-repeat;
 }
 
+/* v1 */
 .list-social a,
 .list-social a:link,
 .list-social a:visited,
 .list-social a:hover,
 .list-social a:focus,
-.list-social a:active {
+.list-social a:active,
+.profile-grid > li > ul li a,
+.profile-grid > li > ul li a:link,
+.profile-grid > li > ul li a:visited,
+.profile-grid > li > ul li a:hover,
+.profile-grid > li > ul li a:focus,
+.profile-grid > li > ul li a:active {
   color: #cf1b41;
   font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
@@ -3080,7 +3089,17 @@ input.button-s,
   display: block;
 }
 
-.list-social li {
+/* v2 */
+.profile-grid > li > ul li {
+  display: inline-block;
+  text-align: center;
+  background-image: none;
+  padding: 0;
+}
+
+/* v1 */
+.list-social li,
+.profile-grid > li > ul li a {
   display: inline-block;
   margin: 0;
   text-align: center;
@@ -3090,129 +3109,209 @@ input.button-s,
   vertical-align: text-bottom;
 }
 
-.svg .list-social li {
+/* v1 */
+.svg .list-social li,
+.svg .profile-grid > li > ul li a {
   background-image: url("../images/sprite-social.svg");
   background-size: 350px;
   background-position: 5px -23px;
 }
 
-.list-social .social-twitter {
-  background-position: -174px -38px;
-}
-
-.list-social .social-twitter:hover,
-.list-social .social-twitter:focus,
-.list-social .social-twitter:active {
-  background-position: -174px 2px;
-}
-
-.svg .list-social .social-twitter {
-  background-position: -206px -23px;
-}
-
-.svg .list-social .social-twitter:hover,
-.svg .list-social .social-twitter:focus,
-.svg .list-social .social-twitter:active {
-  background-position: -206px 2px;
-}
-
-.list-social .social-linkedin {
-  background-position: -204px -38px;
-}
-
-.list-social .social-linkedin:hover,
-.list-social .social-linkedin:focus,
-.list-social .social-linkedin:active {
-  background-position: -204px 2px;
-}
-
-.svg .list-social .social-linkedin {
-  background-position: -244px -23px;
-}
-
-.svg .list-social .social-linkedin:hover,
-.svg .list-social .social-linkedin:focus,
-.svg .list-social .social-linkedin:active {
-  background-position: -244px 2px;
-}
-
-.list-social .social-github {
-  background-position: -234px -38px;
-}
-
-.list-social .social-github:hover,
-.list-social .social-github:focus,
-.list-social .social-github:active {
-  background-position: -234px 2px;
-}
-
-.svg .list-social .social-github {
-  background-position: -134px -23px;
-}
-
-.svg .list-social .social-github:hover,
-.svg .list-social .social-github:focus,
-.svg .list-social .social-github:active {
-  background-position: -134px 2px;
-}
-
-.list-social .social-flickr {
-  background-position: -54px -38px;
-}
-
-.list-social .social-flickr:hover,
-.list-social .social-flickr:focus,
-.list-social .social-flickr:active {
-  background-position: -54px 2px;
-}
-
-.svg .list-social .social-flickr {
-  background-position: -65px -23px;
-}
-
-.svg .list-social .social-flickr:hover,
-.svg .list-social .social-flickr:focus,
-.svg .list-social .social-flickr:active {
-  background-position: -65px 2px;
-}
-
-.list-social .social-website {
+/* Icon: Website */
+/* v1 */
+.list-social .social-website,
+.profile-grid > li > ul a:hover {
   background-position: 7px -38px;
 }
 
+/* v1 */
 .list-social .social-website:hover,
 .list-social .social-website:focus,
-.list-social .social-website:active {
+.list-social .social-website:active,
+.profile-grid > li > ul a:hover,
+.profile-grid > li > ul a:focus,
+.profile-grid > li > ul a:active {
   background-position: 7px 2px;
 }
 
-.svg .list-social .social-website {
+/* v1 */
+.svg .list-social .social-website,
+.svg .profile-grid > li > ul a {
   background-position: 5px -23px;
 }
 
+/* v1 */
 .svg .list-social .social-website:hover,
 .svg .list-social .social-website:focus,
-.svg .list-social .social-website:active {
+.svg .list-social .social-website:active,
+.svg .profile-grid > li > ul a:hover,
+.svg .profile-grid > li > ul a:focus,
+.svg .profile-grid > li > ul a:active {
   background-position: 5px 2px;
 }
 
-.list-social .social-facebook {
+/* Icon: Twitter */
+/* v1 */
+.list-social .social-twitter,
+.profile-grid > li > ul a[href*=twitter] {
+  background-position: -174px -38px;
+}
+
+/* v1 */
+.list-social .social-twitter:hover,
+.list-social .social-twitter:focus,
+.list-social .social-twitter:active,
+.profile-grid > li > ul a[href*=twitter]:hover,
+.profile-grid > li > ul a[href*=twitter]:focus,
+.profile-grid > li > ul a[href*=twitter]:active {
+  background-position: -174px 2px;
+}
+
+/* v1 */
+.svg .list-social .social-twitter,
+.svg .profile-grid > li > ul a[href*=twitter] {
+  background-position: -206px -23px;
+}
+
+/* v1 */
+.svg .list-social .social-twitter:hover,
+.svg .list-social .social-twitter:focus,
+.svg .list-social .social-twitter:active,
+.svg .profile-grid > li > ul a[href*=twitter]:hover,
+.svg .profile-grid > li > ul a[href*=twitter]:focus,
+.svg .profile-grid > li > ul a[href*=twitter]:active {
+  background-position: -206px 2px;
+}
+
+/* Icon: LinkedIn */
+/* v1 */
+.list-social .social-linkedin,
+.profile-grid > li > ul a[href*=linkedin] {
+  background-position: -204px -38px;
+}
+
+/* v1 */
+.list-social .social-linkedin:hover,
+.list-social .social-linkedin:focus,
+.list-social .social-linkedin:active,
+.profile-grid > li > ul a[href*=linkedin]:hover,
+.profile-grid > li > ul a[href*=linkedin]:focus,
+.profile-grid > li > ul a[href*=linkedin]:active {
+  background-position: -204px 2px;
+}
+
+/* v1 */
+.svg .list-social .social-linkedin,
+.svg .profile-grid > li > ul a[href*=linkedin] {
+  background-position: -244px -23px;
+}
+
+/* v1 */
+.svg .list-social .social-linkedin:hover,
+.svg .list-social .social-linkedin:focus,
+.svg .list-social .social-linkedin:active,
+.svg .profile-grid > li > ul a[href*=linkedin]:hover,
+.svg .profile-grid > li > ul a[href*=linkedin]:focus,
+.svg .profile-grid > li > ul a[href*=linkedin]:active {
+  background-position: -244px 2px;
+}
+
+/* Icon: Github */
+/* v1 */
+.list-social .social-github,
+.profile-grid > li > ul a[href*=github] {
+  background-position: -234px -38px;
+}
+
+/* v1 */
+.list-social .social-github:hover,
+.list-social .social-github:focus,
+.list-social .social-github:active,
+.profile-grid > li > ul a[href*=github]:hover,
+.profile-grid > li > ul a[href*=github]:focus,
+.profile-grid > li > ul a[href*=github]:active {
+  background-position: -234px 2px;
+}
+
+/* v1 */
+.svg .list-social .social-github,
+.svg .profile-grid > li > ul a[href*=github] {
+  background-position: -134px -23px;
+}
+
+/* v1 */
+.svg .list-social .social-github:hover,
+.svg .list-social .social-github:focus,
+.svg .list-social .social-github:active,
+.svg .profile-grid > li > ul a[href*=github]:hover,
+.svg .profile-grid > li > ul a[href*=github]:focus,
+.svg .profile-grid > li > ul a[href*=github]:active {
+  background-position: -134px 2px;
+}
+
+/* Icon: Flickr */
+/* v1 */
+.list-social .social-flickr,
+.profile-grid > li > ul a[href*=flickr] {
+  background-position: -54px -38px;
+}
+
+/* v1 */
+.list-social .social-flickr:hover,
+.list-social .social-flickr:focus,
+.list-social .social-flickr:active,
+.profile-grid > li > ul a[href*=flickr]:hover,
+.profile-grid > li > ul a[href*=flickr]:focus,
+.profile-grid > li > ul a[href*=flickr]:active {
+  background-position: -54px 2px;
+}
+
+/* v1 */
+.svg .list-social .social-flickr,
+.svg .profile-grid > li > ul a[href*=flickr] {
+  background-position: -65px -23px;
+}
+
+/* v1 */
+.svg .list-social .social-flickr:hover,
+.svg .list-social .social-flickr:focus,
+.svg .list-social .social-flickr:active,
+.svg .profile-grid > li > ul a[href*=flickr]:hover,
+.svg .profile-grid > li > ul a[href*=flickr]:focus,
+.svg .profile-grid > li > ul a[href*=flickr]:active {
+  background-position: -65px 2px;
+}
+
+/* Icon: Facebook */
+/* v1 */
+.list-social .social-facebook,
+.profile-grid > li > ul a[href*=facebook] {
   background-position: -264px -38px;
 }
 
+/* v1 */
 .list-social .social-facebook:hover,
 .list-social .social-facebook:focus,
-.list-social .social-facebook:active {
+.list-social .social-facebook:active,
+.profile-grid > li > ul a[href*=facebook]:hover,
+.profile-grid > li > ul a[href*=facebook]:focus,
+.profile-grid > li > ul a[href*=facebook]:active {
   background-position: -264px 2px;
 }
 
-.svg .list-social .social-facebook {
+/* v1 */
+.svg .list-social .social-facebook,
+.svg .profile-grid > li > ul a[href*=facebook] {
   background-position: -321px -23px;
 }
 
+/* v1 */
 .svg .list-social .social-facebook:hover,
 .svg .list-social .social-facebook:focus,
-.svg .list-social .social-facebook:active {
+.svg .list-social .social-facebook:active,
+.svg .profile-grid > li > ul a[href*=facebook]:hover,
+.svg .profile-grid > li > ul a[href*=facebook]:focus,
+.svg .profile-grid > li > ul a[href*=facebook]:active {
   background-position: -321px 2px;
 }
 
@@ -3950,7 +4049,46 @@ nav ul li {
   width: 140px;
 }
 
-.profile-small {
+/* Profile */
+/* v2 */
+.profile-grid > li {
+  width: 100%;
+  clear: both;
+  margin: 0;
+}
+
+@media (min-width: 40em) {
+  /* Profile */
+  /* v2 */
+  .profile-grid > li {
+    width: 32.0%;
+    float: left;
+    clear: none;
+    margin: 0;
+  }
+
+  /* v2 */
+  .profile-small > li {
+    margin-top: 48px;
+  }
+
+  /* Profiles next to each other */
+  /* v2 */
+  .profile-grid > li + li {
+    margin-left: 1%;
+    margin-left: calc(2% - 4px);
+  }
+
+  /* The last profile on each row (in a 3 column grid) */
+  /* v2 */
+  .profile-grid > li:nth-of-type(3n+4) {
+    margin-left: 0;
+    clear: both;
+  }
+}
+/* v1 */
+.profile-small,
+.profile-grid > li {
   border-radius: 2px;
   border-radius: 0.125rem;
   margin: 60px 0 16px 0;
@@ -3965,7 +4103,9 @@ nav ul li {
   text-align: center;
 }
 
-.profile-small .profile-photo {
+/* v1 */
+.profile-small .profile-photo,
+.profile-grid > li > img {
   border: 6px solid white;
   /* Adds a gap round the gray border */
   height: 80px;
@@ -3977,21 +4117,33 @@ nav ul li {
   width: 80px;
 }
 
+/* v2 */
+.profile-grid > li > img {
+  border-radius: 100px;
+}
+
+/* v1 */
 .profile-small .profile-note,
-.profile-small .profile-note p {
+.profile-small .profile-note p,
+.profile-grid > li > p {
   line-height: 21px;
   line-height: 1.3125rem;
   font-size: 14px;
   font-size: 0.875rem;
 }
 
+/* v1 */
 .profile-small .profile-name,
-.profile-small .profile-note p {
+.profile-small .profile-note p,
+.profile-grid > li > h3,
+.profile-grid > li > p {
   padding: 0 8px;
   padding: 0 0.5rem;
 }
 
-.profile-small .profile-name {
+/* v1 */
+.profile-small .profile-name,
+.profile-grid > li > h3 {
   font-size: 22px;
   font-size: 1.375rem;
   margin-bottom: 4px;
@@ -4001,17 +4153,41 @@ nav ul li {
   font-style: normal;
 }
 
-.profile-small .link-more {
+/* v1 */
+.profile-small .link-more,
+.profile-grid > li > a {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #cf1b41;
+  line-height: 16px;
+  line-height: 1rem;
   font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
 }
 
-.profile-small .list-social {
+/* v1 */
+.profile-small .link-more:hover,
+.profile-small .link-more:focus,
+.profile-small .link-more:active,
+.profile-grid > li > a:hover,
+.profile-grid > li > a:focus,
+.profile-grid > li > a:active {
+  border-bottom: 1px solid #cf1b41;
+}
+
+/* v2 */
+.profile-grid > li > a {
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
+}
+
+/* v1 */
+.profile-small .list-social,
+.profile-grid > li > ul {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.6);
   padding: 10px 0 3px 0;
@@ -4019,7 +4195,9 @@ nav ul li {
   margin: 0;
 }
 
-.profile-small .list-social li {
+/* v1 */
+.profile-small .list-social li,
+.profile-grid > li > ul > li {
   list-style-type: none;
 }
 
