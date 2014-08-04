@@ -9,6 +9,7 @@
     border: 1px solid;
     @include border-color ($color-yellow, 0.5);
     color: $color-dark-gray;
+    clear: both;
     
     p {
         margin: 0;

@@ -90,7 +90,7 @@ blockquote {
         float: left;
         width: 49%;
         clear: none;
-        margin: 0;
+        margin: 0 0 2em 0;
         background-image: none;
         padding: 0;
         }
@@ -99,10 +99,14 @@ blockquote {
         float: right;
         }
     
+    .layout-minim + .layout-minim + * {
+        clear: both;
+        }
+    
     .layout-minim:after {
         content: "";
-          display: table;
-          clear: both;
+        display: table;
+        clear: both;
     	}
     
     .layout-minim + .layout-minim + .layout-minim {

@@ -699,6 +699,7 @@ input.button-invert,
   border-color: #fedd44;
   border-color: rgba(254, 221, 68, 0.5);
   color: #494c49;
+  clear: both;
 }
 .alert p, .alert-failure p, .alert-success p, .alert-info p {
   margin: 0;
@@ -1640,8 +1641,15 @@ input.button-s,
   font-weight: 600;
   font-style: normal;
   letter-spacing: -0.5px;
+  text-align: center;
 }
 
+@media (min-width: 40em) {
+  .highlight {
+    text-align: left;
+  }
+}
+.highlight > p,
 .highlight blockquote {
   background-color: transparent;
   border: none;
@@ -1653,8 +1661,11 @@ input.button-s,
   letter-spacing: -0.5px;
   margin: 0;
   clear: both;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
+.highlight > p:first-child,
 .highlight blockquote p:first-child {
   margin-top: 0;
 }
@@ -1671,6 +1682,15 @@ input.button-s,
   margin-bottom: 0.15em;
 }
 
+.highlight .highlight-avatar + blockquote {
+  margin-top: 2em;
+}
+
+@media (min-width: 40em) {
+  .highlight .highlight-avatar + blockquote {
+    margin-top: -1.8em;
+  }
+}
 .highlight .attribute {
   text-transform: uppercase;
   font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
@@ -1683,6 +1703,10 @@ input.button-s,
 @media (min-width: 40em) {
   .highlight-with-avatar {
     padding-left: 220px;
+    min-height: 150px;
+    padding-top: 0.1em;
+    margin-top: 1.5em;
+    padding-bottom: 0;
   }
 }
 .highlight-avatar {
@@ -1693,18 +1717,18 @@ input.button-s,
   border-style: solid;
   border-color: #cf1b41;
   width: 100px;
-  float: left;
-  margin-right: 1.5em;
-  top: 2em;
-  margin-bottom: 2em;
+  margin: 0 auto 1em auto;
+  display: block;
 }
 
 @media (min-width: 40em) {
   .highlight-avatar {
     position: absolute;
     left: 2em;
-    margin-top: 0;
-    margin-top: 1em;
+    top: 0;
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 2em;
   }
 }
 /* @end highlight with avatar */
@@ -1903,7 +1927,9 @@ section,
   float: left;
 }
 
-.slab-blue {
+.slab-blue,
+.bg-blue,
+.block-blue {
   background: #399fd3;
 }
 
@@ -1911,59 +1937,107 @@ section,
 .slab-blue a:visited,
 .slab-blue a:hover,
 .slab-blue a:focus,
-.slab-blue a:active {
+.slab-blue a:active,
+.bg-blue a:link,
+.bg-blue a:visited,
+.bg-blue a:hover,
+.bg-blue a:focus,
+.bg-blue a:active,
+.block-blue a:link,
+.block-blue a:visited,
+.block-blue a:hover,
+.block-blue a:focus,
+.block-blue a:active {
   color: white;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .slab-blue a:hover,
 .slab-blue a:focus,
-.slab-blue a:active {
+.slab-blue a:active,
+.bg-blue a:hover,
+.bg-blue a:focus,
+.bg-blue a:active,
+.block-blue a:hover,
+.block-blue a:focus,
+.block-blue a:active {
   border-bottom: 1px solid;
   border-color: white;
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .button-invert {
+.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .button-invert,
+.bg-blue .text-whisper,
+.bg-blue .heading-contrast,
+.bg-blue .button-invert,
+.block-blue .text-whisper,
+.block-blue .heading-contrast,
+.block-blue .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-dark-blue {
+.slab-dark-blue,
+.bg-dark-blue,
+.block-dark-blue {
   background: #004b6a;
   color: white;
 }
 
 .slab-dark-blue a:link,
 .slab-dark-blue a:visited,
-.slab-dark-blue .text-feature {
+.slab-dark-blue .text-feature,
+.bg-dark-blue a:link,
+.bg-dark-blue a:visited,
+.bg-dark-blue .text-feature,
+.block-dark-blue a:link,
+.block-dark-blue a:visited,
+.block-dark-blue .text-feature {
   color: white;
 }
 
-.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .button-invert {
+.slab-dark-blue .text-whisper, .slab-dark-blue .heading-contrast, .slab-dark-blue .button-invert,
+.bg-dark-blue .text-whisper,
+.bg-dark-blue .heading-contrast,
+.bg-dark-blue .button-invert,
+.block-dark-blue .text-whisper,
+.block-dark-blue .heading-contrast,
+.block-dark-blue .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .slab-dark-blue a:hover,
 .slab-dark-blue a:focus,
-.slab-dark-blue a:active {
+.slab-dark-blue a:active,
+.bg-dark-blue a:hover,
+.bg-dark-blue a:focus,
+.bg-dark-blue a:active,
+.block-blue a:hover,
+.block-dark-blue a:focus,
+.block-dark-blue a:active {
   border-bottom: 1px solid white;
 }
 
 @media print {
-  .slab-dark-blue {
+  .slab-dark-blue,
+  .bg-dark-blue,
+  .block-dark-blue {
     background-color: transparent;
     color: inherit;
   }
 }
-.slab-red {
+.slab-red,
+.bg-red,
+.block-red {
   background: #cf1b41;
   color: white;
 }
 
 @media print {
-  .slab-red {
+  .slab-red,
+  .bg-red,
+  .block-red {
     background-color: transparent;
     color: inherit;
   }
@@ -1972,7 +2046,17 @@ section,
 .slab-red a:visited,
 .slab-red a:hover,
 .slab-red a:focus,
-.slab-red a:active {
+.slab-red a:active,
+.bg-red a:link,
+.bg-red a:visited,
+.bg-red a:hover,
+.bg-red a:focus,
+.bg-red a:active,
+.block-red a:link,
+.block-red a:visited,
+.block-red a:hover,
+.block-red a:focus,
+.block-red a:active {
   color: white;
   color: rgba(255, 255, 255, 0.7);
   border-bottom: none;
@@ -1981,7 +2065,15 @@ section,
 .slab-red a:hover,
 .slab-red a:focus,
 .slab-red a:active,
-.slab-red label {
+.slab-red label,
+.bg-red a:hover,
+.bg-red a:focus,
+.bg-red a:active,
+.bg-red label,
+.block-red a:hover,
+.block-red a:focus,
+.block-red a:active,
+.block-red label {
   color: white;
 }
 
@@ -1989,7 +2081,17 @@ section,
 .slab-red .list-icons a:visited,
 .slab-red .list-icons a:hover,
 .slab-red .list-icons a:focus,
-.slab-red .list-icons a:active {
+.slab-red .list-icons a:active,
+.bg-red .list-icons a:link,
+.bg-red .list-icons a:visited,
+.bg-red .list-icons a:hover,
+.bg-red .list-icons a:focus,
+.bg-red .list-icons a:active,
+.block-red .list-icons a:link,
+.block-red .list-icons a:visited,
+.block-red .list-icons a:hover,
+.block-red .list-icons a:focus,
+.block-red .list-icons a:active {
   color: white;
 }
 
@@ -2005,7 +2107,37 @@ section,
 .slab-red a.button-invert:focus,
 .slab-red a.text-whisper:active,
 .slab-red a.heading-contrast:active,
-.slab-red a.button-invert:active {
+.slab-red a.button-invert:active,
+.bg-red a.text-whisper:link,
+.bg-red a.heading-contrast:link,
+.bg-red a.button-invert:link,
+.bg-red a.text-whisper:visited,
+.bg-red a.heading-contrast:visited,
+.bg-red a.button-invert:visited,
+.bg-red a.text-whisper:hover,
+.bg-red a.heading-contrast:hover,
+.bg-red a.button-invert:hover,
+.bg-red a.text-whisper:focus,
+.bg-red a.heading-contrast:focus,
+.bg-red a.button-invert:focus,
+.bg-red a.text-whisper:active,
+.bg-red a.heading-contrast:active,
+.bg-red a.button-invert:active,
+.block-red a.text-whisper:link,
+.block-red a.heading-contrast:link,
+.block-red a.button-invert:link,
+.block-red a.text-whisper:visited,
+.block-red a.heading-contrast:visited,
+.block-red a.button-invert:visited,
+.block-red a.text-whisper:hover,
+.block-red a.heading-contrast:hover,
+.block-red a.button-invert:hover,
+.block-red a.text-whisper:focus,
+.block-red a.heading-contrast:focus,
+.block-red a.button-invert:focus,
+.block-red a.text-whisper:active,
+.block-red a.heading-contrast:active,
+.block-red a.button-invert:active {
   border-bottom: none;
   font-weight: 500;
   color: white;
@@ -2018,16 +2150,42 @@ section,
 .slab-red a.button-invert:focus,
 .slab-red a.text-whisper:active,
 .slab-red a.heading-contrast:active,
-.slab-red a.button-invert:active {
+.slab-red a.button-invert:active,
+.bg-red a.text-whisper:hover,
+.bg-red a.heading-contrast:hover,
+.bg-red a.button-invert:hover,
+.bg-red a.text-whisper:focus,
+.bg-red a.heading-contrast:focus,
+.bg-red a.button-invert:focus,
+.bg-red a.text-whisper:active,
+.bg-red a.heading-contrast:active,
+.bg-red a.button-invert:active,
+.block-red a.text-whisper:hover,
+.block-red a.heading-contrast:hover,
+.block-red a.button-invert:hover,
+.block-red a.text-whisper:focus,
+.block-red a.heading-contrast:focus,
+.block-red a.button-invert:focus,
+.block-red a.text-whisper:active,
+.block-red a.heading-contrast:active,
+.block-red a.button-invert:active {
   color: white;
 }
 
-.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .button-invert {
+.slab-red .text-whisper, .slab-red .heading-contrast, .slab-red .button-invert,
+.bg-red .text-whisper,
+.bg-red .heading-contrast,
+.bg-red .button-invert,
+.block-red .text-whisper,
+.block-red .heading-contrast,
+.block-red .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-medium-red {
+.slab-medium-red,
+.bg-medium-red,
+.block-medium-red {
   background: #aa1c3a;
   color: white;
 }
@@ -2036,39 +2194,71 @@ section,
 .slab-medium-red a:visited,
 .slab-medium-red a:hover,
 .slab-medium-red a:focus,
-.slab-medium-red a:active {
+.slab-medium-red a:active,
+.bg-medium-red a:link,
+.bg-medium-red a:visited,
+.bg-medium-red a:hover,
+.bg-medium-red a:focus,
+.bg-medium-red a:active,
+.block-medium-red a:link,
+.block-medium-red a:visited,
+.block-medium-red a:hover,
+.block-medium-red a:focus,
+.block-medium-red a:active {
   color: white;
   border-bottom: none;
 }
 
 .slab-medium-red a:hover,
 .slab-medium-red a:focus,
-.slab-medium-red a:active {
+.slab-medium-red a:active,
+.bg-medium-red a:hover,
+.bg-medium-red a:focus,
+.bg-medium-red a:active,
+.block-medium-red a:hover,
+.block-medium-red a:focus,
+.block-medium-red a:active {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .slab-medium-red form input,
-.slab-medium-red form select {
+.slab-medium-red form select,
+.bg-medium-red form input,
+.bg-medium-red form select,
+.block-medium-red form input,
+.block-medium-red form select {
   border: none;
 }
 
-.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert {
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert,
+.bg-medium-red .text-whisper,
+.bg-medium-red .heading-contrast,
+.bg-medium-red .button-invert,
+.block-medium-red .text-whisper,
+.block-medium-red .heading-contrast,
+.block-medium-red .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.slab-gray {
+.slab-gray,
+.bg-gray,
+.block-gray {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.5);
 }
 
-.slab-black {
+.slab-black,
+.bg-black,
+.block-black {
   background-color: black;
   color: white;
 }
 
-.slab-dark-gray {
+.slab-dark-gray,
+.bg-dark-gray,
+.block-dark-gray {
   background-color: #494c49;
   color: white;
 }
@@ -2078,11 +2268,31 @@ section,
 .slab-black a:hover,
 .slab-black a:focus,
 .slab-black a:active,
+.bg-black a:link,
+.bg-black a:visited,
+.bg-black a:hover,
+.bg-black a:focus,
+.bg-black a:active,
+.block-black a:link,
+.block-black a:visited,
+.block-black a:hover,
+.block-black a:focus,
+.block-black a:active,
 .slab-dark-gray a:link,
 .slab-dark-gray a:visited,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
-.slab-dark-gray a:active {
+.slab-dark-gray a:active,
+.bg-dark-gray a:link,
+.bg-dark-gray a:visited,
+.bg-dark-gray a:hover,
+.bg-dark-gray a:focus,
+.bg-dark-gray a:active,
+.block-dark-gray a:link,
+.block-dark-gray a:visited,
+.block-dark-gray a:hover,
+.block-dark-gray a:focus,
+.block-dark-gray a:active {
   color: white;
   border-bottom: none;
 }
@@ -2090,25 +2300,57 @@ section,
 .slab-black a:hover,
 .slab-black a:focus,
 .slab-black a:active,
+.bg-black a:hover,
+.bg-black a:focus,
+.bg-black a:active,
+.block-black a:hover,
+.block-black a:focus,
+.block-black a:active,
 .slab-dark-gray a:hover,
 .slab-dark-gray a:focus,
-.slab-dark-gray a:active {
+.slab-dark-gray a:active,
+.bg-dark-gray a:hover,
+.bg-dark-gray a:focus,
+.bg-dark-gray a:active,
+.block-dark-gray a:hover,
+.block-dark-gray a:focus,
+.block-dark-gray a:active {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .slab-black .text-whisper, .slab-black .heading-contrast, .slab-black .button-invert,
+.bg-black .text-whisper,
+.bg-black .heading-contrast,
+.bg-black .button-invert,
+.block-black .text-whisper,
+.block-black .heading-contrast,
+.block-black .button-invert,
 .slab-dark-gray .text-whisper,
 .slab-dark-gray .heading-contrast,
-.slab-dark-gray .button-invert {
+.slab-dark-gray .button-invert,
+.bg-dark-gray .text-whisper,
+.bg-dark-gray .heading-contrast,
+.bg-dark-gray .button-invert,
+.block-dark-gray .text-whisper,
+.block-dark-gray .heading-contrast,
+.block-dark-gray .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .slab-black form input,
 .slab-black form select,
+.bg-black form input,
+.bg-black form select,
+.block-black form input,
+.block-black form select,
 .slab-dark-gray form input,
-.slab-dark-gray form select {
+.slab-dark-gray form select,
+.bg-dark-gray form input,
+.bg-dark-gray form select,
+.block-dark-gray form input,
+.block-dark-gray form select {
   border: none;
 }
 
@@ -2118,14 +2360,36 @@ section,
 .slab-red .button-prominent:visited,
 .slab-red .button-prominent:hover,
 .slab-red .button-prominent:focus,
-.slab-red .button-prominent:active {
+.slab-red .button-prominent:active,
+.bg-red .button-prominent,
+.bg-red input.button-prominent,
+.bg-red .button-prominent:link,
+.bg-red .button-prominent:visited,
+.bg-red .button-prominent:hover,
+.bg-red .button-prominent:focus,
+.bg-red .button-prominent:active,
+.block-red .button-prominent,
+.block-red input.button-prominent,
+.block-red .button-prominent:link,
+.block-red .button-prominent:visited,
+.block-red .button-prominent:hover,
+.block-red .button-prominent:focus,
+.block-red .button-prominent:active {
   background: #82172d;
 }
 
 .slab-red input.button-prominent:hover,
 .slab-red input.button-prominent:focus,
 .slab-red .button-prominent:hover,
-.slab-red .button-prominent:focus {
+.slab-red .button-prominent:focus,
+.bg-red input.button-prominent:hover,
+.bg-red input.button-prominent:focus,
+.bg-red .button-prominent:hover,
+.bg-red .button-prominent:focus,
+.block-red input.button-prominent:hover,
+.block-red input.button-prominent:focus,
+.block-red .button-prominent:hover,
+.block-red .button-prominent:focus {
   background: #aa1c3a;
   background: rgba(170, 28, 58, 0.8);
 }
@@ -2136,19 +2400,47 @@ section,
 .slab-medium-red .button-prominent:visited,
 .slab-medium-red .button-prominent:hover,
 .slab-medium-red .button-prominent:focus,
-.slab-medium-red .button-prominent:active {
+.slab-medium-red .button-prominent:active,
+.bg-medium-red .button-prominent,
+.bg-medium-red input.button-prominent,
+.bg-medium-red .button-prominent:link,
+.bg-medium-red .button-prominent:visited,
+.bg-medium-red .button-prominent:hover,
+.bg-medium-red .button-prominent:focus,
+.bg-medium-red .button-prominent:active,
+.block-medium-red .button-prominent,
+.block-medium-red input.button-prominent,
+.block-medium-red .button-prominent:link,
+.block-medium-red .button-prominent:visited,
+.block-medium-red .button-prominent:hover,
+.block-medium-red .button-prominent:focus,
+.block-medium-red .button-prominent:active {
   background: #82172d;
 }
 
 .slab-medium-red input.button-prominent:hover,
 .slab-medium-red input.button-prominent:focus,
 .slab-medium-red .button-prominent:hover,
-.slab-medium-red .button-prominent:focus {
+.slab-medium-red .button-prominent:focus,
+.bg-medium-red input.button-prominent:hover,
+.bg-medium-red input.button-prominent:focus,
+.bg-medium-red .button-prominent:hover,
+.bg-medium-red .button-prominent:focus,
+.block-medium-red input.button-prominent:hover,
+.block-medium-red input.button-prominent:focus,
+.block-medium-red .button-prominent:hover,
+.block-medium-red .button-prominent:focus {
   background: black;
   background: rgba(0, 0, 0, 0.4);
 }
 
-.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert {
+.slab-medium-red .text-whisper, .slab-medium-red .heading-contrast, .slab-medium-red .button-invert,
+.bg-medium-red .text-whisper,
+.bg-medium-red .heading-contrast,
+.bg-medium-red .button-invert,
+.block-medium-red .text-whisper,
+.block-medium-red .heading-contrast,
+.block-medium-red .button-invert {
   color: white;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2475,7 +2767,6 @@ section,
   max-width: 60em;
   margin: 0 auto;
   clear: both;
-  display: table;
 }
 
 section {

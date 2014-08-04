@@ -1,16 +1,16 @@
-<?php include_once('../_includes/head.php');
+<?php include_once('../../_includes/head.php');
     $pageTitle = 'Boston';
     $mastheadImage = 'masthead-1.jpg';
 ?>
 
-<?php include_once('../_includes/header.php'); ?>
+<?php include_once('../../_includes/header.php'); ?>
 
 <section>
-
+    
     <div class="layout-semibreve">
-
+    
         <header class="badge-heading badge-blue">
-            <h2>The Brigade</h2>
+            <h2>Boston</h2>
         </header>
 
         <div class="layout-gutter">
@@ -23,7 +23,7 @@
 
             <div class="layout-minim">
 
-                <img class="teaser-image" src="/../_media/images/big-data.jpg">
+                <img class="teaser-image" src="/../../_media/images/big-data.jpg" alt="" >
 
                 <ul class="list-gappy list-inline list-buttons">
 
@@ -85,14 +85,14 @@
 
         <div class="layout-gutter">
 
-            <?php include_once('../_includes/blocks/patterns/billboards.html'); ?>
+            <?php include_once('../../_includes/blocks/patterns/billboards.html'); ?>
 
         </div>
 
         <p class="heading-contrast isolate">This program made possible by these community partners</p>
 
         <ul class="list-inline">
-            <li><a href="#"><img src="/../_media/images/bluth-company.png"/></a></li>
+            <li><a href="#"><img src="/../../_media/images/bluth-company.png"/></a></li>
         </ul>
 
 </section>
@@ -105,12 +105,12 @@
             <h2>Articles &amp; video</h2>
         </header>
 
-        <?php include_once('../_includes/blocks/patterns/teasers.html'); ?>
+        <?php include_once('../../_includes/blocks/patterns/teasers.html'); ?>
 
     </div>
 
 </section>
 
-<?php include_once('../_includes/footer.php'); ?>
+<?php include_once('../../_includes/footer.php'); ?>
 
-<?php include_once('../_includes/foot.php'); ?>
+<?php include_once('../../_includes/foot.php'); ?>

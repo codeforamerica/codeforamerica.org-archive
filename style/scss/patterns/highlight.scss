@@ -6,9 +6,16 @@
     font-size: 1.5em;
     position: relative;
     @include font-serif-bold;
+    text-align: center;
     }
 
+@media (min-width: 40em) {
+    .highlight {
+        text-align: left;
+        }
+}
 
+.highlight > p,
 .highlight blockquote {
     background-color: transparent;
     border: none;
@@ -17,8 +24,13 @@
     @include font-serif-bold;
     margin: 0;
     clear: both;
+    font-size: 1.2em;
+    line-height: 1.3em;
     }
 
+
+
+.highlight > p:first-child,
 .highlight blockquote p:first-child {
     margin-top: 0;
     }
@@ -32,8 +44,17 @@
     margin-top: 0.4em;
     margin-left: -0.05em;
     margin-bottom: 0.15em;
-    
     }
+
+.highlight .highlight-avatar + blockquote {
+    margin-top: 2em;
+    }
+
+@media (min-width: 40em) {
+.highlight .highlight-avatar + blockquote {
+    margin-top: -1.8em;
+    }
+}
 
 .highlight .attribute {
     text-transform: uppercase;
@@ -49,6 +70,10 @@
 @media (min-width: 40em) {
 .highlight-with-avatar {
     padding-left: 220px;
+    min-height: 150px;
+    padding-top: 0.1em;
+    margin-top: 1.5em;
+    padding-bottom: 0;
     }
 }
 
@@ -61,21 +86,20 @@
     border-style: solid;
     @include border-color($color-red, 1);
     width: 100px;
-    float: left;
-    margin-right: 1.5em;
-    top: 2em;
-    margin-bottom: 2em;
-    
+    margin: 0 auto 1em auto;
+    display: block;
     }
 
-    @media (min-width: 40em) {
-    .highlight-avatar {
-        position: absolute;
-        left: 2em;
-        margin-top: 0;
-        margin-top: 1em;
-        }
+@media (min-width: 40em) {
+.highlight-avatar {
+    position: absolute;
+    left: 2em;
+    top: 0;
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 2em;
     }
+}
 
 
 /* @end highlight with avatar */
