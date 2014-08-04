@@ -3,22 +3,15 @@ layout: default
 title: Open Referral
 masthead-image: "http://www.codeforamerica.org/blog/wp-content/uploads/2014/08/open-referral_banner.png"
 nav_tier1_active: "our-work"
+nav-breadcrumbs:
+ - Our Work: "/our-work"
+ - Data Formats: "/our-work/data-formats"
 ---
-
-<nav class="nav-breadcrumbs" role="navigation">
-  <ul>
-    <li><a href="/">Home</a></li>
-    
-      
-        <li><a href="/our-work">Our Work</a></li>
-      
-    
-      
-        <li><a href="/our-work/data-formats/">Data Formats</a></li>
-      
-    
-  </ul>
-</nav>
+<section>
+  <div class="layout-semibreve">
+    {{ include nav-breadcrumbs.html }}
+  </div>
+</section>
 
 <section class="layout-semibreve layout-centered">
 
