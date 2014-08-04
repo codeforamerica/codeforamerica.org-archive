@@ -1,6 +1,6 @@
 ol,
 ul {
-    @include rem(margin, 8px 0);
+    @include rem(margin, 8px 0 24px);
     @include rem(padding, 0 0 0 35px);
     }
 
