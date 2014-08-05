@@ -1,0 +1,51 @@
+h2 {
+	@include rem(font-size, 25px);
+	}
+
+h3 {
+	@include rem(font-size, 18px);
+	font-family: $font-sans-regular;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	margin-top: 1.5em;
+	}
+
+ul {
+	@include rem(padding-left, 18px);
+	}
+
+ul li {
+	list-style: square;
+	}
+
+ul ul {
+	padding-left: 1em;
+	margin: 0;
+	}
+
+section {
+	border-bottom: 1px solid $color-light-gray;
+	margin: 0 0 1em 0;
+	}
+
+.skip-to-nav:link,
+.skip-to-nav:visited,
+.skip-to-nav:hover,
+.skip-to-nav:focus,
+.skip-to-nav:active {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 0.5em;
+	background-color: $color-blue;
+	color: $color-white;
+	opacity: 0.6;
+	transition: 0.3s;
+	}
+
+.skip-to-nav:hover,
+.skip-to-nav:focus,
+.skip-to-nav:active {
+	border-bottom: none;
+	opacity: 1;
+	}
