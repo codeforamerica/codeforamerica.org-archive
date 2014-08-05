@@ -1159,6 +1159,174 @@ input[type="search"] {
 
 /* @end */
 
+/* @group Badge */
+
+.badge-heading {
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+  clear: both;
+  position: relative;
+}
+
+@media (min-width: 40em) {
+  .badge-heading {
+    padding-left: 65px;
+    padding-left: 4.0625rem;
+    min-height: 65px;
+    min-height: 4.0625rem;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  .badge-heading:before,
+  .badge-heading:after {
+    background-repeat: no-repeat;
+    content: "";
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    top: 1.8125rem;
+  }
+
+  .badge-heading:before {
+    background-color: black;
+    border-radius: 100px;
+    background-size: 50px;
+  }
+
+  /* Badge colors */
+  .badge-white:before {
+    background-color: white;
+  }
+
+  .badge-blue:before {
+    background-color: #399fd3;
+  }
+
+  .badge-gray:before {
+    background-color: #6d6e71;
+  }
+
+  .badge-orange:before {
+    background-color: #e87d2b;
+  }
+
+  .badge-purple:before {
+    background-color: #69579c;
+  }
+
+  .badge-red:before {
+    background-color: #cf1b41;
+  }
+
+  .badge-teal:before {
+    background-color: #00a175;
+  }
+
+  .badge-dark-blue:before {
+    background-color: #004b6a;
+  }
+
+  /* Badge images */
+  .badge-heading:after {
+    background-image: url("../images/badge-rocket.png");
+    z-index: 1;
+    background-position: 9px 12px;
+  }
+
+  .svg .badge-heading:after {
+    background-image: url("../images/badge-rocket.svg");
+  }
+
+  .badge-brigade:after {
+    background-image: url("../images/badge-brigade.png");
+    z-index: 1;
+    background-position: 8px 5px;
+  }
+
+  .svg .badge-brigade:after {
+    background-image: url("../images/badge-brigade.svg");
+  }
+
+  .badge-peernetwork:after {
+    background-image: url("../images/badge-peernetwork.png");
+    z-index: 1;
+    background-position: 13px 6px;
+  }
+
+  .svg .badge-peernetwork:after {
+    background-image: url("../images/badge-peernetwork.svg");
+  }
+
+  .badge-startups:after {
+    background-image: url("../images/badge-startups.png");
+    z-index: 1;
+    background-position: 14px 3px;
+  }
+
+  .svg .badge-startups:after {
+    background-image: url("../images/badge-startups.svg");
+  }
+
+  .badge-fellowship:after {
+    background-image: url("../images/badge-fellowship.png");
+    z-index: 1;
+    background-position: 15px 5px;
+  }
+
+  .svg .badge-fellowship:after {
+    background-image: url("../images/badge-fellowship.svg");
+  }
+
+  .badge-github:after {
+    background-image: url("../images/badge-github.png");
+    z-index: 1;
+    background-position: 12px 11px;
+  }
+
+  .svg .badge-github:after {
+    background-image: url("../images/badge-github.svg");
+  }
+
+  .badge-glasses:after {
+    background-image: url("../images/badge-glasses.png");
+    z-index: 1;
+    background-position: 7px 18px;
+  }
+
+  .svg .badge-glasses:after {
+    background-image: url("../images/badge-glasses.svg");
+  }
+
+  .badge-gov:after {
+    background-image: url("../images/badge-gov.png");
+    z-index: 1;
+    background-position: 12px 6px;
+  }
+
+  .svg .badge-gov:after {
+    background-image: url("../images/badge-gov.svg");
+  }
+
+  .badge-graph:after {
+    background-image: url("../images/badge-graph.png");
+    z-index: 1;
+    background-position: 11px 10px;
+  }
+
+  .svg .badge-graph:after {
+    background-image: url("../images/badge-graph.svg");
+  }
+}
+
+/* @end */
+
 /* @group Buttons */
 
 /*  Button: Default --------------------------------------- */
@@ -2414,175 +2582,6 @@ input.button-s,
 
 /* @end */
 
-/* @group Badge */
-
-.badge-heading {
-  margin: 0 0 22px;
-  margin: 0 0 1.375rem;
-  padding-top: 32px;
-  padding-top: 2rem;
-  border-bottom: 1px solid;
-  border-color: #e5e5e5;
-  clear: both;
-  position: relative;
-}
-
-@media (min-width: 40em) {
-  .badge-heading {
-    padding-left: 65px;
-    padding-left: 4.0625rem;
-    min-height: 65px;
-    min-height: 4.0625rem;
-    background-position: left top;
-    background-repeat: no-repeat;
-  }
-
-  .badge-heading:before,
-  .badge-heading:after {
-    background-repeat: no-repeat;
-    content: "";
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    left: 0;
-    top: 29px;
-    top: 1.8125rem;
-  }
-
-  .badge-heading:before {
-    background-color: black;
-    border-radius: 100px;
-    background-size: 50px;
-  }
-
-  /* Badge colors */
-  .badge-white:before {
-    background-color: white;
-  }
-
-  .badge-blue:before {
-    background-color: #399fd3;
-  }
-
-  .badge-gray:before {
-    background-color: #6d6e71;
-  }
-
-  .badge-orange:before {
-    background-color: #e87d2b;
-  }
-
-  .badge-purple:before {
-    background-color: #69579c;
-  }
-
-  .badge-red:before {
-    background-color: #cf1b41;
-  }
-
-  .badge-teal:before {
-    background-color: #00a175;
-  }
-
-  .badge-dark-blue:before {
-    background-color: #004b6a;
-  }
-
-  /* Badge images */
-  .badge-heading:after {
-    background-image: url("../images/badge-rocket.png");
-    z-index: 1;
-    background-position: 9px 12px;
-  }
-
-  .svg .badge-heading:after {
-    background-image: url("../images/badge-rocket.svg");
-  }
-
-  .badge-brigade:after {
-    background-image: url("../images/badge-brigade.png");
-    z-index: 1;
-    background-position: 8px 5px;
-  }
-
-  .svg .badge-brigade:after {
-    background-image: url("../images/badge-brigade.svg");
-  }
-
-  .badge-peernetwork:after {
-    background-image: url("../images/badge-peernetwork.png");
-    z-index: 1;
-    background-position: 13px 6px;
-  }
-
-  .svg .badge-peernetwork:after {
-    background-image: url("../images/badge-peernetwork.svg");
-  }
-
-  .badge-startups:after {
-    background-image: url("../images/badge-startups.png");
-    z-index: 1;
-    background-position: 14px 3px;
-  }
-
-  .svg .badge-startups:after {
-    background-image: url("../images/badge-startups.svg");
-  }
-
-  .badge-fellowship:after {
-    background-image: url("../images/badge-fellowship.png");
-    z-index: 1;
-    background-position: 15px 5px;
-  }
-
-  .svg .badge-fellowship:after {
-    background-image: url("../images/badge-fellowship.svg");
-  }
-
-  .badge-github:after {
-    background-image: url("../images/badge-github.png");
-    z-index: 1;
-    background-position: 12px 11px;
-  }
-
-  .svg .badge-github:after {
-    background-image: url("../images/badge-github.svg");
-  }
-
-  .badge-glasses:after {
-    background-image: url("../images/badge-glasses.png");
-    z-index: 1;
-    background-position: 7px 18px;
-  }
-
-  .svg .badge-glasses:after {
-    background-image: url("../images/badge-glasses.svg");
-  }
-
-  .badge-gov:after {
-    background-image: url("../images/badge-gov.png");
-    z-index: 1;
-    background-position: 12px 6px;
-  }
-
-  .svg .badge-gov:after {
-    background-image: url("../images/badge-gov.svg");
-  }
-
-  .badge-graph:after {
-    background-image: url("../images/badge-graph.png");
-    z-index: 1;
-    background-position: 11px 10px;
-  }
-
-  .svg .badge-graph:after {
-    background-image: url("../images/badge-graph.svg");
-  }
-}
-
-/* @end */
-
-
 /* @group Masthead */
 
 .masthead {
@@ -2660,6 +2659,8 @@ input.button-s,
     width: auto;
   }
 }
+
+.masthead-l .masthead-header,
 .masthead-s .masthead-header {
   margin: 40px auto 40px;
   margin: 2.5rem auto 2.5rem;
@@ -2697,14 +2698,6 @@ input.button-s,
   margin-top: 20px;
   margin-top: 1.25rem;
   clear: both;
-}
-
-.masthead-l .masthead-header {
-  margin-top: 0;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  margin-bottom: 0;
-  width: auto;
 }
 
 .masthead-xl .masthead-header {
@@ -4200,7 +4193,7 @@ nav ul li {
 /* @group Profile */
 
 .profile-photo {
-  border-radius: 100px;
+  border-radius: 100%;
   height: 140px;
   width: 140px;
 }

@@ -407,6 +407,7 @@ section,
     opacity: 1;
     }
 
+.masthead-l .page-title,
 .masthead-s .page-title {
     font-size: 57px;
     line-height: 65px;
@@ -415,14 +416,27 @@ section,
     margin-top: 25px;
     }
 
-.masthead-l .page-title {
-    font-size: 90px;
-    }
+@media (min-height: 30em) {
+
 
 .masthead-l .masthead-header {
-    margin-top: 11em;
-    padding-top: 2em;
+  margin-top: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin-bottom: 1em;
+  width: auto;
+  }
+.masthead-l .masthead-header {
+  margin-top: 11em;
+  padding-top: 2em;
+  font-size: 16px;
+  }
+
+.masthead-l .page-title {
+    font-size: 90px;
+    margin-top: 0;
     }
+}
 
 .masthead-xl:before {
     background-position: top;

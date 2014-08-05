@@ -18,7 +18,7 @@
                 </ul>
             </nav>
             <?php } else {?>
-                <?php include_once('../_includes/nav-breadcrumb.html'); ?>
+                <?php include_once('../_includes/blocks/patterns/nav-breadcrumb.html'); ?>
             <?php }?>
             <h1 class="page-title">
                 <?php if (strpos($_SERVER['REQUEST_URI'], 'posts') !== false) { ?>
