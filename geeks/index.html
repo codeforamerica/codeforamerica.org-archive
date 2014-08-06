@@ -105,7 +105,12 @@ nav-breadcrumbs:
         // Display the most recently updated project
         var project = data.objects[0]
         recentProject = document.getElementById("recentProject");
-        var html = "<a href=" + project.link_url + ">" + project.name + "</a>";
+        if (project.link_url) {
+            var html = "<a href=" + project.link_url + ">" + project.name + "</a>";
+        }
+        else {
+            var html = "<a href=" + project.code_url + ">" + project.name + "</a>";
+        }
         recentProject.innerHTML = html;
     }
 
