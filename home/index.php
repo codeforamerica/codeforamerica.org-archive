@@ -93,28 +93,29 @@
         
             <h2 class="text-whisper">Quick Stats</h2>
             
-            <?php include_once('../_includes/blocks/patterns/bricks-4.html'); ?>
+            <?php include('../_includes/blocks/patterns/bricks-4.html'); ?>
             
         </section>
         
         
         <!-- If no blog post section -->
         
-        <section class="slab-dark-blue layout-centered insulate-inner">
+        <!--<section class="slab-dark-blue layout-centered insulate-inner">
         
             <h2 class="text-whisper">Quick Stats</h2>
             
-            <?php include_once('../_includes/blocks/patterns/bricks-4.html'); ?>
+            <?php include('../_includes/blocks/patterns/bricks-4.html'); ?>
             
-        </section>
+        </section>-->
         
         <!-- /if -->
         
         
         <section class="slab-gray layout-centered insulate-inner">
+            
             <h2 class="text-whisper">Code for America is kindly supported by</h2>
             
-            <?php include_once('../_includes/blocks/patterns/list-logos-muted.html'); ?>
+            <?php include_once('../_includes/blocks/patterns/list-logos-hierachy-greyscale.html'); ?>
             
         </section>
     
