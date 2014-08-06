@@ -654,6 +654,26 @@ section,
     text-align: center;
     }
 
-.list-logos li {
+[class*="list-logos"] li {
     width: 9em;
+    margin: 1em 2%;
     }
+
+/* @group List Logos Hierachy */
+
+.list-logos-primary li {
+    width: 9em;
+}
+
+.list-logos-secondary li {
+    width: 6em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.list-logos-tertiary li {
+    width: 4em;
+    margin: 1.5em 1.5%;
+}
+
+/* @end */

@@ -88,33 +88,35 @@ strong {
 
 code,
 .code {
-    font-family: 'Courier New', Courier, monospace;
     background-color: #f5f2f0; /* bespoke color */
+    font-family: 'Courier New', Courier, monospace;
     padding: 2px 4px;
 }
 
 mark {
     background: #fedd44; /* $color-yellow */
-    padding: 0 1px;
     border-radius: 1px;
+    padding: 0 1px;
 }
 
 kbd {
-  font-family: "Monaco", "Courier", monospace;
-  background: #e5e5e5; /* $color-light-gray */
-  background: rgba(229, 229, 229, 0.8);
-  padding: 0.5em 0.5em 0.4em;
-  border-radius: 0.3em;
+    
+    background: #e5e5e5; /* $color-light-gray */
+    background: rgba(229, 229, 229, 0.8); /* $color-light-gray */
+    border-radius: 2px;
+    font-family: "Monaco", "Courier", monospace;
+    font-size: 13px;
+    padding: 6px 11px;
 }
 
 pre {
-  white-space: pre-wrap;
-  max-width: 100%;
+    max-width: 100%;
+    white-space: pre-wrap;
 }
 
 pre code {
-  background-color: transparent;
-  padding: inherit;
+    background-color: transparent;
+    padding: inherit;
 }
 
 blockquote {
@@ -3120,33 +3122,49 @@ input.button-s,
 
 /* @group List Logos */
 
-.list-logos a:link,
-.list-logos a:visited,
-.list-logos a:hover,
-.list-logos a:focus,
-.list-logos a:active {
+[class*="list-logos"] {
+    margin: 0;
+    text-align: center;
+}
+
+[class*="list-logos"] a:link,
+[class*="list-logos"] a:visited,
+[class*="list-logos"] a:hover,
+[class*="list-logos"] a:focus,
+[class*="list-logos"] a:active {
   border: none;
 }
 
-.list-logos {
-  margin: 1em 0;
-}
-
-.list-logos li {
+[class*="list-logos"] li {
   display: inline-block;
   padding: 0;
   background-image: none;
-  margin: 2em 4%;
+  margin: 1em 3.5%;
   width: 41%;
   vertical-align: middle;
 }
 
-.list-logos li a {
+[class*="list-logos"] li a {
   display: inline-block;
 }
 
-.list-logos li a img {
+[class*="list-logos"] li a img {
   width: 100%;
+}
+
+.list-logos-primary li {
+    width: 8em;
+    margin: 0.5em 3.5%;
+}
+
+.list-logos-secondary li {
+    width: 5.5em;
+    margin: 1em 2%;
+}
+
+.list-logos-tertiary li {
+    width: 3.5em;
+    margin: 1em 1.5%;
 }
 
 /* @end */
