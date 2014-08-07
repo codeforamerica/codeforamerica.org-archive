@@ -73,7 +73,6 @@
                 <li><a href="_site/donate/form/">Donate</a></li>
                 <li><a href="_site/citizens/">Citizens</a></li>
                 <li><a href="_site/documentation/">Documentation</a></li>
-
             </ol>
             
         </div>
@@ -94,6 +93,10 @@
         </form>
     
         <main role="main">
+
+        <!--<button onclick="colorSwitcher('#cf1b41')">Red</button>
+        <button onclick="colorSwitcher('#399fd3')">Blue</button>-->
+        
         <div>
         	<h2 class="xx-section-title">Using the Guide</h2>
         	<p>Code for America aims to improve the relationships between citizens and government. The following logos, materials, and character of the Code for America brand were created to express the following:</p>
@@ -728,6 +731,27 @@
     	        		<li>Aliquam tincidunt mauris eu risus.</li>
     	        		<li>Vestibulum auctor dapibus neque.</li>
     	        	</ul>
+    	        	<form class="layout-minim">
+    	        	    <ul class="list-form">
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="email" placeholder="email" />
+    	        	        	<small class="note">Note about this field</small>
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="text" placeholder="first name" />
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<select>
+    	        	        	  <option>1</option>
+    	        	        	  <option>2</option>
+    	        	        	  <option>3</option>
+    	        	        	  <option>4</option>
+    	        	        	  <option>5</option>
+    	        	        	</select>
+    	        	        </li>
+    	        	    </ul>
+    	        	    <button type="submit">Submit button</button>
+    	        	</form>
     	        </section>
     	        
     	        <section class="slab-dark-gray">
@@ -738,6 +762,27 @@
     	        		<li>Aliquam tincidunt mauris eu risus.</li>
     	        		<li>Vestibulum auctor dapibus neque.</li>
     	        	</ul>
+    	        	<form class="layout-minim">
+    	        	    <ul class="list-form">
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="email" placeholder="email" />
+    	        	        	<small class="note">Note about this field</small>
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="text" placeholder="first name" />
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<select>
+    	        	        	  <option>1</option>
+    	        	        	  <option>2</option>
+    	        	        	  <option>3</option>
+    	        	        	  <option>4</option>
+    	        	        	  <option>5</option>
+    	        	        	</select>
+    	        	        </li>
+    	        	    </ul>
+    	        	    <button type="submit">Submit button</button>
+    	        	</form>
     	        </section>
     	        
     	        <section class="slab-red">
@@ -748,6 +793,27 @@
     	        		<li>Aliquam tincidunt mauris eu risus.</li>
     	        		<li>Vestibulum auctor dapibus neque.</li>
     	        	</ul>
+    	        	<form class="layout-minim">
+    	        	    <ul class="list-form">
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="email" placeholder="email" />
+    	        	        	<small class="note">Note about this field</small>
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="text" placeholder="first name" />
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<select>
+    	        	        	  <option>1</option>
+    	        	        	  <option>2</option>
+    	        	        	  <option>3</option>
+    	        	        	  <option>4</option>
+    	        	        	  <option>5</option>
+    	        	        	</select>
+    	        	        </li>
+    	        	    </ul>
+    	        	    <button type="submit">Submit button</button>
+    	        	</form>
     	        </section>
     	        
     	        <section class="slab-medium-red">
@@ -758,6 +824,27 @@
     	        		<li>Aliquam tincidunt mauris eu risus.</li>
     	        		<li>Vestibulum auctor dapibus neque.</li>
     	        	</ul>
+    	        	<form class="layout-minim">
+    	        	    <ul class="list-form">
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="email" placeholder="email" />
+    	        	        	<small class="note">Note about this field</small>
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="text" placeholder="first name" />
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<select>
+    	        	        	  <option>1</option>
+    	        	        	  <option>2</option>
+    	        	        	  <option>3</option>
+    	        	        	  <option>4</option>
+    	        	        	  <option>5</option>
+    	        	        	</select>
+    	        	        </li>
+    	        	    </ul>
+    	        	    <button type="submit">Submit button</button>
+    	        	</form>
     	        </section>
     	        
     	        <section class="slab-blue">
@@ -768,6 +855,27 @@
     	        		<li>Aliquam tincidunt mauris eu risus.</li>
     	        		<li>Vestibulum auctor dapibus neque.</li>
     	        	</ul>
+    	        	<form class="layout-minim">
+    	        	    <ul class="list-form">
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="email" placeholder="email" />
+    	        	        	<small class="note">Note about this field</small>
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="text" placeholder="first name" />
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<select>
+    	        	        	  <option>1</option>
+    	        	        	  <option>2</option>
+    	        	        	  <option>3</option>
+    	        	        	  <option>4</option>
+    	        	        	  <option>5</option>
+    	        	        	</select>
+    	        	        </li>
+    	        	    </ul>
+    	        	    <button type="submit">Submit button</button>
+    	        	</form>
     	        </section>
     	        
     	        <section class="slab-dark-blue">
@@ -778,6 +886,27 @@
     	        		<li>Aliquam tincidunt mauris eu risus.</li>
     	        		<li>Vestibulum auctor dapibus neque.</li>
     	        	</ul>
+    	        	<form class="layout-minim">
+    	        	    <ul class="list-form">
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="email" placeholder="email" />
+    	        	        	<small class="note">Note about this field</small>
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<input id="text" class="input" type="text" placeholder="first name" />
+    	        	        </li>
+    	        	        <li class="form-field">
+    	        	        	<select>
+    	        	        	  <option>1</option>
+    	        	        	  <option>2</option>
+    	        	        	  <option>3</option>
+    	        	        	  <option>4</option>
+    	        	        	  <option>5</option>
+    	        	        	</select>
+    	        	        </li>
+    	        	    </ul>
+    	        	    <button type="submit">Submit button</button>
+    	        	</form>
     	        </section>
             
             </div>
@@ -801,11 +930,18 @@
     // Adds class of js to the html tag if JS is enabled
     document.getElementsByTagName('html')[0].className += ' js';
     
+    (function colorSwitcher(color) {
+        var bgColor = document.querySelectorAll('div.pattern-preview');
+        bgColor.style.backgroundColor = color;
+    });
+    
     // Adds class of svg to the html tag if svg is enabled
     (function flagSVG() {
         var ns = {'svg': 'http://www.w3.org/2000/svg'};
         if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
     })();
+    
+    
     
     (function (document, undefined) {
         // Pattern selector
@@ -818,6 +954,8 @@
             }
         }
     })(document);
+    
+    
 
     
     (function (win, doc) {
@@ -888,6 +1026,7 @@
             },1);
         };
     };
+    
     
 </script>
 
