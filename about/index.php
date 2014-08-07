@@ -177,7 +177,7 @@
 		<h3>Scaling the Model</h3>
 		
 			<div class="spotlight">
-				<h4 class="text-quiet">International Programs</h4>
+				<h4 class="text-whisper">International Programs</h4>
 				<ul class="list-no-bullets link-invert list-minim">
 					<li><a href="#">Mexico</a></li>
 					<li><a href="#">Germany</a></li>
