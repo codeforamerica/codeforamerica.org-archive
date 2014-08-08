@@ -7,50 +7,57 @@
 	</div>
 
 	<div class="layout-minor">
-
+	<p>Health Vertical Lead/p>
 	    <h4 class="text-whisper layout-tight">Member of</h4>
-	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/geeks/our-geeks/2013-fellows/">Staff</a></li>
 
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
 	    </ul>
 
 		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/rebecca-coelius.jpg" />
 	</div>
 
 	<div class="layout-major">
+	    <p class="p-note">
+            Rebecca Coelius is a doctor using her background in clinical medicine, policy-making, and social entrepreneurship to advance the health of individuals and cities through the Code for America Health Practice. Prior to  joining CfA, Rebecca worked for the Health and Human Services Chief Technology Officer as the Medical Officer for Innovation, and ran the Office of the National Coordinator for Health IT's Division of Science and Innovation. She has worked for and advised a variety of digital health start up companies, previously Founded and served as Executive Director of the non profit for social entrepreneurship SpanAfrica, and worked in India and Egypt on on low tech maternal health interventions.  Rebecca received her Medical Degree from the University of California - San Francisco School of Medicine. 
+	    </p>
 
-	    <p class="p-note">Rebecca Coelius is a doctor using her background in clinical medicine, policy-making, and social entrepreneurship to advance the health of individuals and cities through the Code for America Health Practice. Prior to  joining CfA, Rebecca worked for the Health and Human Services Chief Technology Officer as the Medical Officer for Innovation, and ran the Office of the National Coordinator for Health IT's Division of Science and Innovation. She has worked for and advised a variety of digital health start up companies, previously Founded and served as Executive Director of the non profit for social entrepreneurship SpanAfrica, and worked in India and Egypt on on low tech maternal health interventions.  Rebecca received her Medical Degree from the University of California - San Francisco School of Medicine.</p>
+	    <p>
+	        <!--<a href="http://www.codeforamerica.org/2013/05/15/___-___-why-im-coding-for-america/">Why does ___ ___ code for America?</a>
+        --></p>
 
 	    <div class="spotlight">
 	    	<h3 class="text-whisper">Contact</h3>
 	    	<table class="table-unstyled table-minor">
-	    		<tr><th>Twitter</th><td><a href="https://twitter.com/aka_rca">@rebeccacoelius</a></td></tr>
-	    		<tr><th>LinkedIn</th><td><a href="www.linkedin.com/in/rebeccacoelius">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>rebeccacoelius</a></td></tr>
-	    		
+	    		<!--<tr><th>Website</th><td><a href="http://example.com">http://example<wbr>.com</a></td></tr>-->
+	    		<tr><th>Twitter</th><td><a href="http://twitter.com/prestonrhea">@rebeccacoelius</a></td></tr>
+	    		<tr><th>Github</th><td><a href="http://github.com/rebeccacoelius">http://github<wbr>.com/<wbr>rebeccacoelius</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/rebeccacoelius">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>rebeccacoelius</a></td></tr>
 	    	</table>
-	    </div>
+	    </div>	    
 	</div>
 
 </div>
 
+{% elsif include.context == 'about-team' %}
 
 <div class="h-card profile-small">
     <h3 class="p-name profile-name">Rebecca Coelius</h3>
-    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/rebecca-coelius.jpg" />
-    <div class="p-note profile-note">
-        <p>
-            
-        </p>
-        <p>
-            Rebecca Coelius is a doctor using her background in clinical medicine, policy-making, and social entrepreneurship to advance the health of individuals and cities through the Code for America Health Practice…
-        </p>
-        <p>
-            <a class="link-more" href="{{ include.base }}/people/rebecca-coelius/">More</a>
-        </p>
-        <ul class="list-social list-social-horizontal">
-            <li class="social-linkedin"><a href="http://www.linkedin.com/in/rebeccacoelius"></a></li>
-            <li class="social-twitter"><a href="https://twitter.com/aka_rca">@rebeccacoelius</a></li>
+    
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/rebecca-coelius.jpg">
 
+    <div class="p-note profile-note">
+    <p>Health Vertical Lead</p>
+        <p>
+            Rebecca Coelius is a doctor using her background in clinical medicine, policy-making, and social entrepreneurship to advance the health of individuals and cities through the Code for America Health Practice...
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/rebecca-coelius">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+         <!--   <li class="social-website"><a href="http://example.com/">Website</a></li>-->
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/rebeccacoelius">LinkedIn</a></li>
+            <li class="social-twitter"><a href="http://twitter.com/prestonrhea">@rebeccacoelius</a></li>
         </ul>
     </div>
 </div>
