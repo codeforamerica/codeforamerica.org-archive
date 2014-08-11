@@ -1,3 +1,7 @@
+body {
+    background-color: #fff;
+}
+
 h2 {
 	@include rem(font-size, 25px);
 	}

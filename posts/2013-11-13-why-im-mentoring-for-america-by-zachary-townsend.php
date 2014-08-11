@@ -53,7 +53,7 @@
                 </div>
                 
                 <div class="post-categories">
-                    <h2 class="text-quiet layout-tight">Filed under</h2>
+                    <h2 class="text-whisper layout-tight">Filed under</h2>
                     <ul class="list-no-bullets link-invert text-whisper">
                         <li><a href="#">Accelerator</a></li>
                         <li><a href="#">Commentary</a></li>

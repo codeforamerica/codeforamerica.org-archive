@@ -37,6 +37,10 @@ blockquote {
         padding: 0;
         }
     
+    [class*="block-"][class*="layout-quaver"] {
+        width: calc(9.33333333333% - 36px);
+        }
+    
     .layout-quaver:nth-of-type(9n+9) {
         margin-right: 0;
         }
@@ -48,10 +52,14 @@ blockquote {
 /*  3 column = crotchet  */
     
     .layout-crotchet {
-        width: 32.0%;
+        width: 32%;
         float: left;
         clear: none;
         margin: 0;
+        }
+    
+    [class*="block-"][class*="layout-crotchet"] {
+        width: calc(32% - 36px);
         }
     
     .layout-crotchet + .layout-crotchet {
@@ -74,6 +82,10 @@ blockquote {
         padding: 0;
         }
     
+    [class*="block-"][class*="layout-crotchet-staccato"] {
+        width: calc(27% - 36px);
+        }
+    
     .layout-crotchet-staccato + .layout-crotchet-staccato {
     	margin-left: 9.5%
     	}
@@ -93,6 +105,10 @@ blockquote {
         margin: 0 0 2em 0;
         background-image: none;
         padding: 0;
+        }
+    
+    [class*="block-"][class*="layout-minim-staccato"] {
+        width: calc(49% - 36px);
         }
     
     .layout-minim + .layout-minim {
@@ -129,6 +145,10 @@ blockquote {
         padding: 0;
         }
     
+    [class*="block-"][class*="layout-minim-staccato"] {
+        width: calc(42% - 36px);
+        }
+    
     .layout-minim-staccato + .layout-minim-staccato {
         float: right;
         }
@@ -149,6 +169,11 @@ blockquote {
         float: none;
         }
     
+    [class*="block-"][class*="layout-semibreve"],
+    [class*="block-"][class*="layout-breve"] {
+        width: calc(96% - 36px);
+        }
+    
     .layout-semibreve {
         max-width: 960px;
         max-width: 60rem;
@@ -156,25 +181,34 @@ blockquote {
 
 /*  One 2 column + One 5 column = minor and major  */
 
-	.layout-minor {
+	[class*="layout-minor"] {
 		width: 26%;
 		float: left;
 		}
-		
-		.layout-minor,
-		.layout-minor p,
-		.layout-minor ul,
-		.layout-minor ol {
-			font-size: 13px;
-			line-height: 20px;
-			color: #666;
-			}
 	
-	.layout-major {
+	[class*="block-"][class*="layout-minor"] {
+	    width: calc(26% - 36px);
+	    }
+		
+	.layout-minor-invert {
+		float: right;
+		clear: none;
+		}
+	
+	[class*="layout-major"] {
 		float: right;
 		width: 70%;
 		clear: none;
 		}
+	
+	[class*="block-"][class*="layout-major"] {
+	    width: calc(70% - 36px);
+	    }
+	
+	.layout-major-invert {
+	    float: left;
+	    clear: both;
+	    }
 
 .layout-solo {
     margin-left: auto;

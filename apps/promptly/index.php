@@ -1,9 +1,9 @@
-<?php include_once('../_includes/head.php'); 
+<?php include_once('../../_includes/head.php'); 
     $pageTitle = 'Apps &amp; APIs';
     $mastheadImage = 'masthead-5';
 ?>
 
-<?php include_once('../_includes/header.php'); ?>
+<?php include_once('../../_includes/header.php'); ?>
 
 <div class="layout-semibreve">
 	
@@ -35,7 +35,7 @@
 	
 	<div class="layout-major">
 	    	
-	    <p>Promptly text messages San Francisco Human Services Agency clients with important information to keep them enrolled in services.</p>
+	    <p class="note">Promptly text messages San Francisco Human Services Agency clients with important information to keep them enrolled in services.</p>
 	        
 	    <div class="spotlight">
 	    	<h3 class="text-whisper">Summary</h3>
@@ -68,6 +68,6 @@
 
 </div>
 
-<?php include_once('../_includes/footer.php'); ?>
+<?php include_once('../../_includes/footer.php'); ?>
 
-<?php include_once('../_includes/foot.php'); ?>
+<?php include_once('../../_includes/foot.php'); ?>
