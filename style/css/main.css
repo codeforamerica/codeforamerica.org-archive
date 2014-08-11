@@ -598,11 +598,6 @@ input[type="search"] {
 }
 
 [class*="icon-"] {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
     speak: none;
 }
 
@@ -1419,6 +1414,10 @@ input.button-s {
 }
 
 /* Removes the bottom margin from the last element within a block. Prevents double-spacing whitespace at the bottom of a block. */
+[class*="block-"] > *:first-of-type {
+    margin-top: 0;
+}
+
 [class*="block-"] > *:last-of-type {
     margin-bottom: 0;
 }
@@ -3404,6 +3403,12 @@ padding: 0 0.15em 0 0;
 }
 }
 */
+.post-body .post-author {
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 .post-author .profile-photo {
     float: left;
     height: 60px;
@@ -3787,6 +3792,74 @@ section,
     float: left;
     width: 100%;
 }
+
+.slab-teal,
+.bg-teal,
+.block-teal {
+    color: white;
+    background: #00a175; /* $color-teal */
+}
+
+.slab-teal a:link,
+.slab-teal a:visited,
+.slab-teal a:hover,
+.slab-teal a:focus,
+.slab-teal a:active,
+.bg-teal a:link,
+.bg-teal a:visited,
+.bg-teal a:hover,
+.bg-teal a:focus,
+.bg-teal a:active,
+.block-teal a:link,
+.block-teal a:visited,
+.block-teal a:hover,
+.block-teal a:focus,
+.block-teal a:active {
+color: white;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.slab-teal a:hover,
+.slab-teal a:focus,
+.slab-teal a:active,
+.bg-teal a:hover,
+.bg-teal a:focus,
+.bg-teal a:active,
+.block-teal a:hover,
+.block-teal a:focus,
+.block-teal a:active {
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-color: white;
+}
+
+.slab-teal .text-whisper, .slab-teal .heading-contrast, .slab-teal .button-invert, .slab-teal .brick-heading, .slab-teal .brick .badge-heading, .brick .slab-teal .badge-heading, .slab-teal .chimney .profile .profile-role, .chimney .profile .slab-teal .profile-role, .slab-teal .chimney .profile .profile-note, .chimney .profile .slab-teal .profile-note, .slab-teal .global-header-tagline,
+.bg-teal .text-whisper,
+.bg-teal .heading-contrast,
+.bg-teal .button-invert,
+.bg-teal .brick-heading,
+.bg-teal .brick .badge-heading,
+.brick .bg-teal .badge-heading,
+.bg-teal .chimney .profile .profile-role,
+.chimney .profile .bg-teal .profile-role,
+.bg-teal .chimney .profile .profile-note,
+.chimney .profile .bg-teal .profile-note,
+.bg-teal .global-header-tagline,
+.block-teal .text-whisper,
+.block-teal .heading-contrast,
+.block-teal .button-invert,
+.block-teal .brick-heading,
+.block-teal .brick .badge-heading,
+.brick .block-teal .badge-heading,
+.block-teal .chimney .profile .profile-role,
+.chimney .profile .block-teal .profile-role,
+.block-teal .chimney .profile .profile-note,
+.chimney .profile .block-teal .profile-note,
+.block-teal .global-header-tagline {
+color: white;
+color: rgba(255, 255, 255, 0.7);
+}
+
 
 .slab-blue,
 .bg-blue,
