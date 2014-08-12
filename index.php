@@ -94,8 +94,8 @@
     
         <main role="main">
 
-        <!--<button onclick="colorSwitcher('#cf1b41')">Red</button>
-        <button onclick="colorSwitcher('#399fd3')">Blue</button>-->
+        <button onclick="colorSwitcher('#cf1b41')">Red</button>
+        <button onclick="colorSwitcher('#399fd3')">Blue</button>
         
         <div>
         	<h2 class="xx-section-title">Using the Guide</h2>
@@ -991,7 +991,9 @@
     
     (function colorSwitcher(color) {
         var bgColor = document.querySelectorAll('div.pattern-preview');
-        bgColor.style.backgroundColor = color;
+        for (bgColor) {
+            bgColor.style.backgroundColor = color;
+        }
     });
     
     // Adds class of svg to the html tag if svg is enabled
