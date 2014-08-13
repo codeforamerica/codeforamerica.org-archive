@@ -41,30 +41,30 @@
         <nav class="nav-global-secondary" role="navigation">
             <ul>
                 <li class="nav-tier1 nav-has-children">
-                    <a href="/about/" <?php if (strpos($_SERVER['REQUEST_URI'], 'about') !== false) { echo "class=\"state-active\""; }?>>Who we are</a>
+                    <a href="/about/index.php" <?php if (strpos($_SERVER['REQUEST_URI'], 'about') !== false) { echo "class=\"state-active\""; }?>>Who we are</a>
                     <?php if (strpos($_SERVER['REQUEST_URI'], 'about') !== false) { ?>
                         <ul class="nav-tier2">
-                            <li><a href="/about/">Team</a></li>
-                            <li><a href="/about/">Annual Report</a></li>
-                            <li><a href="/about/">Supporters</a></li>
-                            <li><a href="/about/">Press</a></li>
-                            <li><a href="/about/">Contact</a></li>
+                            <li><a href="/about/index.php">Team</a></li>
+                            <li><a href="/about/index.php">Annual Report</a></li>
+                            <li><a href="/about/index.php">Supporters</a></li>
+                            <li><a href="/about/index.php">Press</a></li>
+                            <li><a href="/about/index.php">Contact</a></li>
                         </ul>
                     <?php }?>
                 </li>
                 <li class="nav-tier1 nav-has-children">
-                    <a href="/governments/" <?php if (strpos($_SERVER['REQUEST_URI'], 'governments') !== false) { echo "class=\"state-active\""; }?>>Governments</a>
+                    <a href="/governments/index.php" <?php if (strpos($_SERVER['REQUEST_URI'], 'governments') !== false) { echo "class=\"state-active\""; }?>>Governments</a>
                     <?php if (strpos($_SERVER['REQUEST_URI'], 'governments') !== false) { ?>
                         <ul class="nav-tier2">
-                            <li><a href="/governments/">Current Governments</a></li>
-                            <li><a href="/governments/boston/">Upcoming Governments</a></li>
-                            <li><a href="/governments/boston/">Alumni Governments</a></li>
-                            <li><a href="/apps/">Apps &amp; APIs</a></li>
+                            <li><a href="/governments/index.php">Current Governments</a></li>
+                            <li><a href="/governments/boston/index.php">Upcoming Governments</a></li>
+                            <li><a href="/governments/boston/index.php">Alumni Governments</a></li>
+                            <li><a href="/apps/index.php">Apps &amp; APIs</a></li>
                         </ul>
                     <?php }?>
                 </li>
                 <li class="nav-tier1 nav-has-children">
-                    <a href="/citizens/" <?php if (strpos($_SERVER['REQUEST_URI'], 'citizens') !== false) { echo "class=\"state-active\""; }?>>Citizens</a>
+                    <a href="/citizens/index.php" <?php if (strpos($_SERVER['REQUEST_URI'], 'citizens') !== false) { echo "class=\"state-active\""; }?>>Citizens</a>
                     <?php if (strpos($_SERVER['REQUEST_URI'], 'citizens') !== false) { ?>
                         <ul class="nav-tier2">
                             <li><a href="#">Requests</a></li>
@@ -75,9 +75,9 @@
                     <?php }?>
                 </li>
                 <li class="nav-tier1">
-                    <a href="/apps/" <?php if (strpos($_SERVER['REQUEST_URI'], 'apps') !== false) { echo "class=\"state-active\""; }?>>Apps</a>
+                    <a href="/apps/index.php" <?php if (strpos($_SERVER['REQUEST_URI'], 'apps') !== false) { echo "class=\"state-active\""; }?>>Apps</a>
                 </li>
-                <li><a href="/donate/" class="button">Donate</a></li>
+                <li><a href="/donate/index.php" class="button">Donate</a></li>
             </ul>
         </nav>
 

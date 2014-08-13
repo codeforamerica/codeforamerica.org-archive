@@ -34,7 +34,7 @@ $color-yellow: #fedd44
 body {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 17px;
-    line-height: 25px;
+    line-height: 28px;
     margin: 0;
     padding: 0;
 }
@@ -60,9 +60,9 @@ blockquote {
     background: #f1f7fa; /* bespoke color */
     border: 1px solid #e5e5e5; /* $color-light-gray */
     color: #004b6a; /* $color-dark-blue */
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 17px;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: -0.25px;
     line-height: 26px;
     margin: 0;
@@ -147,10 +147,9 @@ h2, .h2,
 h3, .h3,
 h4, .h4
 h5, .h5 {
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    margin: 0 0 8px 0;
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
+    font-weight: normal;
+    margin: 0 0 14px 0;
 }
 
 h1, .h1 {
@@ -177,12 +176,9 @@ h2, .h2 {
     font-size: 35px;
     line-height: 44px;
     text-transform: none;
+    font-weight: 400;
+    font-size: 35px;
 }
-    @media (min-width: 40em) {
-        h2, .h2 {
-            font-size: 40px;
-        }
-    }
     @media print {
         h1, .h1,
         h2, .h2 {
@@ -192,16 +188,20 @@ h2, .h2 {
     }
 
 h3, .h3 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 35px;
+    font-weight: 400;
 }
 
 h4, .h4 {
     font-size: 25px;
+    font-weight: 400;
 }
 
 h5, .h5 {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-weight: 600;
+    letter-spacing: -0.5px;
     font-size: 17px;
     text-transform: uppercase;
     font-weight: normal;
@@ -234,10 +234,10 @@ h6, .h6,
 
 .heading-contrast strong {
     color: black;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 26px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: -0.5px;
     margin: 0 4px;
     text-transform: none;
@@ -383,6 +383,7 @@ video {
 /* @group Tables */
 
 table {
+    background-color: #fff;
     border-collapse: collapse;
     border-spacing: 0;
     margin-bottom: 32px;
@@ -459,7 +460,7 @@ select {
     border-color: #999595;
     border-color: rgba(153, 149, 149, 0.7);
     border-radius: 4px;
-font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     margin-bottom: 16px;
 }
 
@@ -505,6 +506,11 @@ select[multiple] {
     background-image: none;
 }
 
+select[multiple] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 label {
     color: #6d6e71;
     display: block;
@@ -534,8 +540,7 @@ input.invalid {
 }
 
 input[type="text"][disabled] {
-    background: #e5e5e5;
-    background: rgba(229, 229, 229, 0.5);
+    background: #f1f1f1;
 }
 
 abbr[title="required"],
@@ -739,10 +744,9 @@ margin-right: 0.35em;
 .alert, .alert-failure, .alert-success, .alert-info {
 background: #fedd44; /* $color-yellow */
 background: rgba(254, 221, 68, 0.4);
-border-color: #fedd44;
-border-color: rgba(254, 221, 68, 0.5);
     border-radius: 3px;
-    border: 1px solid;
+    border: 1px solid #fedd44;
+    border: 1px solid rgba(254, 221, 68, 0.5);
     clear: both;
     color: #494c49; /* custom color */
     font-size: 14px;
@@ -1137,7 +1141,9 @@ input.button-progress::-moz-focus-inner {
 .button-prominent,
 .button-prominent:link,
 .button-prominent:visited,
-input.button-prominent {
+.button-prominent:active,
+input.button-prominent,
+input.button-prominent:active {
     background: #cf1b41;
 }
 .button-prominent:hover,
@@ -1147,16 +1153,31 @@ input.button-prominent:focus {
     background: #cf1b41;
     background: rgba(207, 27, 65, 0.8);
 }
-.button-prominent:active,
-input.button-prominent:active {
-    background: #cf1b41;
+
+/*  Button: Prominent --------------------------------------- */
+.button-bold,
+.button-bold:link,
+.button-bold:visited,
+.button-bold:active,
+input.button-bold,
+input.button-bold:active {
+    background: #aa1c3a;
+}
+.button-bold:hover,
+.button-bold:focus,
+input.button-bold:hover,
+input.button-bold:focus {
+    background: #aa1c3a;
+    background: rgba(207, 27, 65, 0.8);
 }
 
 /*  Button: Neutral --------------------------------------- */
 .button-neutral,
 .button-neutral:link,
 .button-neutral:visited,
-input.button-neutral {
+.button-neutral:active,
+input.button-neutral,
+input.button-neutral:active {
     background: #7ab5d6;
 }
 .button-neutral:hover,
@@ -1166,16 +1187,14 @@ input.button-neutral:focus {
 background: #7ab5d6;
 background: rgba(122, 181, 214, 0.8);
 }
-.button-neutral:active,
-input.button-neutral:active {
-    background: #7ab5d6;
-}
 
 /*  Button: Alternative --------------------------------------- */
 .button-alternative,
 .button-alternative:link,
 .button-alternative:visited,
-input.button-alternative {
+.button-alternative:active,
+input.button-alternative,
+input.button-alternative:active {
     background: #00a175;
 }
 .button-alternative:hover,
@@ -1185,16 +1204,14 @@ input.button-alternative:focus {
 background: #00a175;
 background: rgba(0, 161, 117, 0.8);
 }
-.button-alternative:active,
-input.button-alternative:active {
-    background: #00a175;
-}
 
 /*  Button: Unstyled --------------------------------------- */
 .button-unstyled,
 .button-unstyled:link,
 .button-unstyled:visited,
-input.button-unstyled {
+.button-unstyled:active,
+input.button-unstyled,
+input.button-unstyled:active {
     background-color: transparent;
 color: black;
 color: rgba(0, 0, 0, 0.6);
@@ -1208,36 +1225,25 @@ input.button-unstyled:hover,
 input.button-unstyled:focus {
     color: black;
 }
-.button-unstyled:active,
-input.button-unstyled:active {
-color: black;
-color: rgba(0, 0, 0, 0.6);
-}
 
 /*  Button: Subtle --------------------------------------- */
 .button-subtle,
 .button-subtle:link,
 .button-subtle:visited,
-input.button-subtle {
-background: #e5e5e5;
-background: rgba(229, 229, 229, 0.35);
+.button-subtle:active,
+input.button-subtle,
+input.button-subtle:active {
+    background: #f1f1f1;
     border: 1px solid #e5e5e5;
     color: #6d6e71;
     text-shadow: none;
 }
-input.button-subtle:hover,
-input.button-subtle:focus,
-input.button-subtle:active,
+
 .button-subtle:hover,
 .button-subtle:focus,
-.button-subtle:active {
-background: #e5e5e5;
-background: rgba(229, 229, 229, 0.6);
-}
-.button-subtle:active,
-input.button-subtle:active {
-background: #e5e5e5;
-background: rgba(229, 229, 229, 0.35);
+input.button-subtle:hover,
+input.button-subtle:focus {
+    background: #eee;
 }
 
 /*  Button: Disabled --------------------------------------- */
@@ -1304,6 +1310,16 @@ input.button-prominent.button-progress:focus {
     background-position: right 10px center;
     background-repeat: no-repeat;
 }
+.button-bold.button-progress,
+.button-bold.button-progress:hover,
+.button-bold.button-progress:focus,
+input.button-bold.button-progress,
+input.button-bold.button-progress:hover,
+input.button-bold.button-progress:focus {
+    background-image: url("../images/loading-circle-medium-red.gif");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
 .button-subtle.button-progress,
 .button-subtle.button-progress:hover,
 .button-subtle.button-progress:focus,
@@ -1337,7 +1353,7 @@ input[type="submit"].button-invert:focus,
     border: 1px solid #999595; /* color-medium-grey */
     border-radius: 0;
     display: inline-block;
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 12px;
     letter-spacing: 0.8px;
     margin: 0 0 15px 0;
@@ -1470,8 +1486,7 @@ input.button-s {
 }
 
 .brick-text {
-    color: black;
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -1623,7 +1638,7 @@ input.button-s {
 }
 
 .calendar .calendar-heading {
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 25px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -1663,7 +1678,7 @@ input.button-s {
 
 .calendar .calendar-week .calendar-has-event {
     color: #399fd3; /* custom color */
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .calendar .calendar-week .calendar-has-event:hover {
@@ -1776,6 +1791,10 @@ input.button-s {
 /* @end */
 
 /* @group Chimney */
+
+.chimney {
+    z-index: 1;
+}
 
 .chimney,
 .layout-chimney .chimney,
@@ -1923,7 +1942,7 @@ input.button-s {
 .masthead p {
     clear: both;
     float: left;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 24px;
     line-height: 35px;
 }
@@ -1984,6 +2003,10 @@ input.button-s {
     margin-top: 20px;
 }
 
+.masthead-s .masthead-header .nav-breadcrumbs {
+    margin-bottom: 0;
+}
+
 .masthead-xl .masthead-header {
     padding-left: 4%;
     padding-right: 4%;
@@ -2026,9 +2049,9 @@ input.button-s {
 
 .highlight {
     color: white;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     letter-spacing: -0.5px;
     padding: 26px 2%;
     position: relative;
@@ -2047,7 +2070,7 @@ input.button-s {
     border: none;
     clear: both;
     color: white;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 30px;
     line-height: 37px;
     margin: 0;
@@ -2102,10 +2125,8 @@ input.button-s {
 
 .highlight-avatar {
     background-color: white;
-    border-color: #cf1b41;
+    border: 8px solid #cf1b41;
     border-radius: 100px;
-    border-style: solid;
-    border-width: 8px;
     display: block;
     margin: 0 auto 20px auto;
     padding: 10px;
@@ -2116,7 +2137,7 @@ input.button-s {
         .highlight-avatar {
             float: left;
             left: 36px;
-            margin: 0 1.5em 2em 0;
+            margin: 0 40px 30px 0;
             position: absolute;
             top: 0;
         }
@@ -2220,7 +2241,6 @@ input.button-s {
     width: auto;
 }
 
-
 .list-form .form-field-group select {
     width: 100%;
 }
@@ -2234,7 +2254,7 @@ input.button-s {
         .list-form .form-field-group .form-field:last-child {
             float: right;
             margin-right: 0;
-            }
+        }
     }
 
 .list-inline,
@@ -2274,43 +2294,41 @@ input.button-s {
 }
 
 @media (min-width: 60em) {
-.list-buttons {
-    display: flex;
+    .list-buttons {
+        display: flex;
+    }
+    
+    .list-buttons li {
+        flex: 1;
+        margin: 0 6px;
+        text-align: center;
+    }
+    
+    .list-buttons button,
+    .list-buttons [class*="button"],
+    .list-buttons input[type="button"],
+    .list-buttons input[type="submit"] {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    
+    .list-buttons li:first-child {
+        margin-left: 0;
+    }
+    
+    .list-buttons li:last-child {
+        margin-right: 0;
+    }
 }
 
-.list-buttons li {
-    flex: 1;
-margin: 0 0.4em;
-    text-align: center;
-}
-
-.list-buttons .button, .list-buttons .button-prominent, .list-buttons .button-neutral, .list-buttons .button-alternative, .list-buttons .button-unstyled, .list-buttons .button-subtle, .list-buttons input[type="button"][disabled],
-.list-buttons input[type="submit"][disabled],
-.list-buttons button[disabled],
-.list-buttons .button-disabled,
-.list-buttons .button.button-disabled:hover,
-.list-buttons .button.button-disabled:focus,
-.list-buttons .button.button-disabled:active, .list-buttons .button-progress {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-}
-
-.list-buttons li:first-child {
-    margin-left: 0;
-}
-
-.list-buttons li:last-child {
-    margin-right: 0;
-}
-}
 .list-ruled {
-margin-bottom: 2em;
+    margin-bottom: 32px;
 }
 
 .list-ruled li {
     border-bottom: 1px solid #e5e5e5;
-padding: 0.5em 0;
+    padding: 8px 0;
 }
 
 .list-ruled li:last-child {
@@ -2322,7 +2340,6 @@ padding: 0.5em 0;
 /* @group List Credits */
 
 .list-credits {
-    font-size: 14px;
     font-weight: bold;
     margin: 0 auto;
     max-width: 50em;
@@ -2349,7 +2366,6 @@ padding: 0.5em 0;
 
 .list-icons li {
     clear: both;
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     line-height: 20px;
     margin-bottom: 16px;
     padding-left: 60px;
@@ -2383,11 +2399,7 @@ padding: 0.5em 0;
     text-align: center;
 }
 
-[class*="list-logos"] a:link,
-[class*="list-logos"] a:visited,
-[class*="list-logos"] a:hover,
-[class*="list-logos"] a:focus,
-[class*="list-logos"] a:active {
+[class*="list-logos"] a {
     border: none;
 }
 
@@ -2433,7 +2445,6 @@ padding: 0.5em 0;
     background-repeat: no-repeat;
     border-bottom: none;
     color: #cf1b41; /* $color-red */
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     min-height: 30px;
     width: 100%;
 }
@@ -3123,7 +3134,7 @@ margin: 0.5em 0 1em 0;
 }
 
 .nav-global-secondary .nav-tier2 .state-active a {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .nav-global-secondary .nav-tier2 li:last-of-type a {
@@ -3322,7 +3333,7 @@ min-height: 3em;
 
 .post .post-content > p:first-child:first-letter {
     float: left;
-font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
 font-size: 3.4em;
 font-style: normal;
 font-weight: 600;
@@ -3381,13 +3392,13 @@ line-height: 1.7em;
 
 .post-preview .post-link {
     clear: both;
-    display: block;
+    display: inline-block;
     margin-top: 40px;
 }
 
 .post-preview .post-content > p:first-child:first-letter {
     float: left;
-font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
 font-size: 3.4em;
 font-style: normal;
 font-weight: 600;
@@ -3470,6 +3481,7 @@ padding: 0 0.15em 0 0;
 }
 /* v1 */
 .profile-small,
+/* v2 */
 .profile-grid > li {
     background-image: none;
     border-radius: 2px;
@@ -3482,8 +3494,10 @@ padding: 0 0.15em 0 0;
 
 /* v1 */
 .profile-small .profile-photo,
+/* v2 */
 .profile-grid > li > img {
     border: 6px solid white; /* Adds a gap round the gray border */
+    border-radius: 100px;
     height: 80px;
     left: 50%;
     margin-left: -46px; /* Half the width of the image and border */
@@ -3492,14 +3506,10 @@ padding: 0 0.15em 0 0;
     width: 80px;
 }
 
-/* v2 */
-.profile-grid > li > img {
-    border-radius: 100px;
-}
-
 /* v1 */
 .profile-small .profile-note,
 .profile-small .profile-note p,
+/* v2 */
 .profile-grid > li > p {
     font-size: 14px;
     line-height: 21px;
@@ -3508,6 +3518,7 @@ padding: 0 0.15em 0 0;
 /* v1 */
 .profile-small .profile-name,
 .profile-small .profile-note p,
+/* v2 */
 .profile-grid > li > h3,
 .profile-grid > li > p {
     padding: 0 8px;
@@ -3515,8 +3526,8 @@ padding: 0 0.15em 0 0;
 
 /* v1 */
 .profile-small .profile-name,
+/* v2 */
 .profile-grid > li > h3 {
-font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -3525,11 +3536,11 @@ font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana
 
 /* v1 */
 .profile-small .link-more,
+/* v2 */
 .profile-grid > li > a {
     border-bottom: 1px solid transparent;
     color: #cf1b41;
     display: inline-block;
-font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -3541,6 +3552,7 @@ font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana
 .profile-small .link-more:hover,
 .profile-small .link-more:focus,
 .profile-small .link-more:active,
+/* v2 */
 .profile-grid > li > a:hover,
 .profile-grid > li > a:focus,
 .profile-grid > li > a:active {
@@ -3554,6 +3566,7 @@ font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana
 
 /* v1 */
 .profile-small .list-social,
+/* v2 */
 .profile-grid > li > ul {
 background: #e5e5e5;
 background: rgba(229, 229, 229, 0.6);
@@ -3563,6 +3576,7 @@ background: rgba(229, 229, 229, 0.6);
 
 /* v1 */
 .profile-small .list-social li,
+/* v2 */
 .profile-grid > li > ul > li {
     list-style-type: none;
 }
@@ -3587,7 +3601,7 @@ margin-top: 0.4em;
 }
 .profile-medium .profile-name {
 font-size: 1.4em;
-    font-weight: bold;
+    /*font-weight: bold;*/
 margin: 0 0 0.5em;
 padding-top: 1em;
 }
@@ -3607,41 +3621,62 @@ padding-top: 1em;
 /* @group Billboard */
 
 .billboard {
+    background-image: none;
+    padding-left: 0;
+}
+
+/* v1 */ a.billboard,
+/* v2 */ .billboard a {
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
     clear: none;
     display: block;
-font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 18px;
     margin: 0 0 18px;
     padding: 16px;
     text-align: center;
 }
 
-.billboard:link,
-.billboard:visited,
-.billboard:hover,
-.billboard:focus,
-.billboard:active {
+/* v1 */
+a.billboard:link,
+a.billboard:visited,
+a.billboard:hover,
+a.billboard:focus,
+a.billboard:active,
+/* v2 */
+.billboard a {
     border-bottom: none;
     border: 1px solid #e5e5e5;
     color: #399fd3;
 }
 
-.billboard:hover,
-.billboard:focus,
-.billboard:active {
+/* v1 */
+a.billboard:hover,
+a.billboard:focus,
+a.billboard:active,
+/* v2 */
+.billboard a:hover,
+.billboard a:focus,
+.billboard a:active {
     color: black;
 }
 
+/* v1 */
 .billboard .billboard-label {
     clear: both;
     display: block;
 }
 
-.billboard .billboard-image {
-    display: block;
-    margin: 0 auto 8px;
+/* v1 */
+.billboard .billboard-image,
+/* v2 */
+.billboard img {
+    border: none;
+    display: table-cell;
+    margin: 0 auto 16px;
+    max-width: 250px;
 }
 
 /* @end */
@@ -3684,7 +3719,6 @@ font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Time
     color: black;
     display: block;
     float: right;
-font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
 font-size: 1.2em;
 font-style: normal;
 font-weight: 700;
@@ -3734,21 +3768,9 @@ section,
     background: #00a175; /* $color-teal */
 }
 
-.slab-teal a:link,
-.slab-teal a:visited,
-.slab-teal a:hover,
-.slab-teal a:focus,
-.slab-teal a:active,
-.bg-teal a:link,
-.bg-teal a:visited,
-.bg-teal a:hover,
-.bg-teal a:focus,
-.bg-teal a:active,
-.block-teal a:link,
-.block-teal a:visited,
-.block-teal a:hover,
-.block-teal a:focus,
-.block-teal a:active {
+.slab-teal a,
+.bg-teal a,
+.block-teal a {
 color: white;
 color: rgba(255, 255, 255, 0.6);
 }
@@ -3834,7 +3856,17 @@ border-color: rgba(255, 255, 255, 0.6);
 border-color: white;
 }
 
-.slab-blue .text-whisper, .slab-blue .heading-contrast, .slab-blue .button-invert, .slab-blue .brick-heading, .slab-blue .brick .badge-heading, .brick .slab-blue .badge-heading, .slab-blue .chimney .profile .profile-role, .chimney .profile .slab-blue .profile-role, .slab-blue .chimney .profile .profile-note, .chimney .profile .slab-blue .profile-note, .slab-blue .global-header-tagline,
+.slab-blue .text-whisper,
+.slab-blue .heading-contrast,
+.slab-blue .button-invert,
+.slab-blue .brick-heading,
+.slab-blue .brick .badge-heading,
+.brick .slab-blue .badge-heading,
+.slab-blue .chimney .profile .profile-role,
+.chimney .profile .slab-blue .profile-role,
+.slab-blue .chimney .profile .profile-note,
+.chimney .profile .slab-blue .profile-note,
+.slab-blue .global-header-tagline,
 .bg-blue .text-whisper,
 .bg-blue .heading-contrast,
 .bg-blue .button-invert,
@@ -4715,10 +4747,11 @@ padding: 0 2em 0 0;
 .stat .stat-figure {
     color: black;
     display: block;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 30px;
     font-style: normal;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    font-weight: normal;
     letter-spacing: -0.5px;
     margin: 0;
 }
@@ -4775,7 +4808,7 @@ padding: 0 2em 0 0;
 }
 
 .teaser .teaser-title {
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 18px;
     letter-spacing: inherit;
     line-height: 18px;
@@ -4834,7 +4867,6 @@ padding: 0 2em 0 0;
     border-bottom: none;
     color: black;
     display: block;
-font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 11px;
     margin: 5px 15px;
     text-transform: uppercase;
@@ -4843,7 +4875,6 @@ font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana
 .teaser .teaser-source:before {
     color: #6d6e71;
     content: "From: ";
-    font-family: "Georgia", Times, sans-serif;
     font-style: italic;
     font-weight: lighter;
     text-transform: none;
@@ -4872,9 +4903,7 @@ font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana
 
 .teaser-pdf .teaser-footer,
 .teaser-app .teaser-footer {
-    border-bottom: 1px solid;
-    border-color: #e5e5e5;
-    border-top: 1px solid;
+    border-bottom: 1px solid #e5e5e5;
     left: 0;
     right: 0;
 }
@@ -4968,12 +4997,12 @@ padding: 1.3em 0 0.5em 0;
 
 .text-feature {
     color: #399fd3;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 50px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     letter-spacing: -0.5px;
-    margin: 0 0 15px 0;
+    margin: 5px 0 21px 0;
 }
 
 .muted {
@@ -5019,10 +5048,9 @@ border-color: rgba(73, 76, 73, 0.3);
 }
 
 .wodge-image {
-border-color: #494c49;
-border-color: rgba(73, 76, 73, 0.5);
     border-radius: 0.2em;
-    border: 3px solid;
+    border: 3px solid #494c49;
+    border: 3px solid rgba(73, 76, 73, 0.5);
     margin-bottom: 16px;
 }
 
@@ -5097,6 +5125,10 @@ border-color: rgba(229, 229, 229, 0.5);
     z-index: 2;
 }
 
+.global-header.global-header-tight {
+    margin-bottom: 0;
+}
+
 .global-header-logo {
 -webkit-transition: all 0.4s ease;
     display: block;
@@ -5141,8 +5173,7 @@ font-size: 0.5em;
 
 .global-footer {
     background: #494c49;
-    border-color: #399fd3;
-    border-top: 10px solid;
+    border-top: 10px solid #399fd3;
     clear: both;
     color: white;
     float: left;
@@ -5216,7 +5247,7 @@ border-color: rgba(255, 255, 255, 0.5);
 }
 
 .global-footer .nav-footer .nav-tier2 {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .global-footer .nav-footer .nav-tier2,
@@ -5242,6 +5273,7 @@ margin-bottom: 0.5em;
 
 .global-footer .nav-footer .nav-heading {
     display: block;
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -5263,6 +5295,7 @@ padding: 0 0 1.5em;
 
 .global-foot-content {
     position: relative;
+    font-size: 14px;
 }
 
 .global-foot-logo {
