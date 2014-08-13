@@ -32,10 +32,9 @@ $color-yellow: #fedd44
 /* @group Text */
 
 body {
-    /*font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";*/ /* $font-sans-serif: */
-    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 17px;
-    line-height: 25px;
+    line-height: 28px;
     margin: 0;
     padding: 0;
 }
@@ -61,10 +60,9 @@ blockquote {
     background: #f1f7fa; /* bespoke color */
     border: 1px solid #e5e5e5; /* $color-light-gray */
     color: #004b6a; /* $color-dark-blue */
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 17px;
-    /*font-weight: bold;*/
+    font-weight: normal;
     letter-spacing: -0.25px;
     line-height: 26px;
     margin: 0;
@@ -149,12 +147,9 @@ h2, .h2,
 h3, .h3,
 h4, .h4
 h5, .h5 {
-    /*font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif;*/ /* $font-serif */
-    /*font-family: Georgia, Times, "Times New Roman", serif;*/ /* $font-serif: */
-    /*font-weight: bold;*/
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-weight: normal;
-    /*letter-spacing: -0.5px;*/
-    margin: 0 0 8px 0;
+    margin: 0 0 14px 0;
 }
 
 h1, .h1 {
@@ -181,18 +176,9 @@ h2, .h2 {
     font-size: 35px;
     line-height: 44px;
     text-transform: none;
-    
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-    font-weight: 600;
-    letter-spacing: -1px;
+    font-weight: 400;
     font-size: 35px;
 }
-    @media (min-width: 40em) {
-        h2, .h2 {
-            /*font-size: 40px;*/
-            
-        }
-    }
     @media print {
         h1, .h1,
         h2, .h2 {
@@ -202,22 +188,18 @@ h2, .h2 {
     }
 
 h3, .h3 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 35px;
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-    font-weight: 600;
-    letter-spacing: -1px;
+    font-weight: 400;
 }
 
 h4, .h4 {
     font-size: 25px;
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    font-weight: 400;
 }
 
 h5, .h5 {
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-weight: 600;
     letter-spacing: -0.5px;
     font-size: 17px;
@@ -235,7 +217,7 @@ h6, .h6,
 .global-header-tagline,
 .stat .stat-heading {
     color: black;
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 12px;
     letter-spacing: 0.8px;
     line-height: 20px;
@@ -252,11 +234,10 @@ h6, .h6,
 
 .heading-contrast strong {
     color: black;
-    font-family: "Georgia", "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 26px;
     font-style: normal;
-    /*font-weight: bold;*/
+    font-weight: normal;
     letter-spacing: -0.5px;
     margin: 0 4px;
     text-transform: none;
@@ -278,7 +259,7 @@ a:active {
 }
 
 main a {
-    /*font-weight: 600;*/
+    font-weight: 600;
 }
 
 a:hover,
@@ -478,7 +459,7 @@ select {
     border-color: #999595;
     border-color: rgba(153, 149, 149, 0.7);
     border-radius: 4px;
-font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     margin-bottom: 16px;
 }
 
@@ -522,6 +503,11 @@ line-height: 1.4em;
 select[disabled],
 select[multiple] {
     background-image: none;
+}
+
+select[multiple] {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 label {
@@ -758,10 +744,9 @@ margin-right: 0.35em;
 .alert, .alert-failure, .alert-success, .alert-info {
 background: #fedd44; /* $color-yellow */
 background: rgba(254, 221, 68, 0.4);
-border-color: #fedd44;
-border-color: rgba(254, 221, 68, 0.5);
     border-radius: 3px;
-    border: 1px solid;
+    border: 1px solid #fedd44;
+    border: 1px solid rgba(254, 221, 68, 0.5);
     clear: both;
     color: #494c49; /* custom color */
     font-size: 14px;
@@ -1356,7 +1341,7 @@ input[type="submit"].button-invert:focus,
     border: 1px solid #999595; /* color-medium-grey */
     border-radius: 0;
     display: inline-block;
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 12px;
     letter-spacing: 0.8px;
     margin: 0 0 15px 0;
@@ -1490,7 +1475,7 @@ input.button-s {
 
 .brick-text {
     color: black;
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -1642,7 +1627,7 @@ input.button-s {
 }
 
 .calendar .calendar-heading {
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Open Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 25px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -1946,7 +1931,6 @@ input.button-s {
 .masthead p {
     clear: both;
     float: left;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 24px;
     line-height: 35px;
@@ -2008,6 +1992,10 @@ input.button-s {
     margin-top: 20px;
 }
 
+.masthead-s .masthead-header .nav-breadcrumbs {
+    margin-bottom: 0;
+}
+
 .masthead-xl .masthead-header {
     padding-left: 4%;
     padding-right: 4%;
@@ -2050,10 +2038,9 @@ input.button-s {
 
 .highlight {
     color: white;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     letter-spacing: -0.5px;
     padding: 26px 2%;
     position: relative;
@@ -2072,7 +2059,6 @@ input.button-s {
     border: none;
     clear: both;
     color: white;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 30px;
     line-height: 37px;
@@ -2106,7 +2092,7 @@ input.button-s {
     }
 
 .highlight .attribute {
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 19px;
     font-weight: lighter;
     text-transform: uppercase;
@@ -2374,7 +2360,6 @@ padding: 0.5em 0;
 
 .list-icons li {
     clear: both;
-    /*font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";*/ /* $font-sans-serif: */
     line-height: 20px;
     margin-bottom: 16px;
     padding-left: 60px;
@@ -2458,7 +2443,6 @@ padding: 0.5em 0;
     background-repeat: no-repeat;
     border-bottom: none;
     color: #cf1b41; /* $color-red */
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     min-height: 30px;
     width: 100%;
 }
@@ -2939,7 +2923,6 @@ nav ul li {
     margin: 0;
     padding: 0 2%;
     width: 96%;
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 @media print {
@@ -2998,7 +2981,6 @@ nav ul li {
 
 .nav-global-secondary {
     text-transform: uppercase;
-    font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
 }
 
 @media print {
@@ -3028,7 +3010,6 @@ nav ul li {
 
 .nav-global-secondary li {
     font-weight: 700;
-    font-family:  "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
 }
 
 @media (max-width: 40em) {
@@ -3350,7 +3331,6 @@ min-height: 3em;
 
 .post .post-content > p:first-child:first-letter {
     float: left;
-font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
 font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
 font-size: 3.4em;
 font-style: normal;
@@ -3410,13 +3390,12 @@ line-height: 1.7em;
 
 .post-preview .post-link {
     clear: both;
-    display: block;
+    display: inline-block;
     margin-top: 40px;
 }
 
 .post-preview .post-content > p:first-child:first-letter {
     float: left;
-font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
 font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
 font-size: 3.4em;
 font-style: normal;
@@ -3546,7 +3525,6 @@ padding: 0 0.15em 0 0;
 /* v1 */
 .profile-small .profile-name,
 .profile-grid > li > h3 {
-font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -3559,7 +3537,6 @@ font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regul
     border-bottom: 1px solid transparent;
     color: #cf1b41;
     display: inline-block;
-font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -3641,8 +3618,7 @@ padding-top: 1em;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
     clear: none;
     display: block;
-font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
-font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
+    font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 18px;
     margin: 0 0 18px;
     padding: 16px;
@@ -3715,7 +3691,6 @@ font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     color: black;
     display: block;
     float: right;
-font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
 font-size: 1.2em;
 font-style: normal;
 font-weight: 700;
@@ -4746,7 +4721,6 @@ padding: 0 2em 0 0;
 .stat .stat-figure {
     color: black;
     display: block;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 30px;
     font-style: normal;
@@ -4808,7 +4782,6 @@ padding: 0 2em 0 0;
 }
 
 .teaser .teaser-title {
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 18px;
     letter-spacing: inherit;
@@ -4868,7 +4841,6 @@ padding: 0 2em 0 0;
     border-bottom: none;
     color: black;
     display: block;
-font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial"; /* $font-sans-serif: */
     font-size: 11px;
     margin: 5px 15px;
     text-transform: uppercase;
@@ -4877,7 +4849,6 @@ font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regul
 .teaser .teaser-source:before {
     color: #6d6e71;
     content: "From: ";
-    font-family: "Georgia", Times, sans-serif;
     font-style: italic;
     font-weight: lighter;
     text-transform: none;
@@ -4906,9 +4877,7 @@ font-family: "Gill Sans", "Interstate", "Gotham A", "Gotham B", "Open Sans Regul
 
 .teaser-pdf .teaser-footer,
 .teaser-app .teaser-footer {
-    border-bottom: 1px solid;
-    border-color: #e5e5e5;
-    border-top: 1px solid;
+    border-bottom: 1px solid #e5e5e5;
     left: 0;
     right: 0;
 }
@@ -5002,7 +4971,6 @@ padding: 1.3em 0 0.5em 0;
 
 .text-feature {
     color: #399fd3;
-    font-family: "Freight Text", "Sentinel SSm A", "Sentinel SSm B", "Georgia", Times, sans-serif; /* $font-serif */
     font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
     font-size: 50px;
     font-style: normal;
@@ -5054,10 +5022,9 @@ border-color: rgba(73, 76, 73, 0.3);
 }
 
 .wodge-image {
-border-color: #494c49;
-border-color: rgba(73, 76, 73, 0.5);
     border-radius: 0.2em;
-    border: 3px solid;
+    border: 3px solid #494c49;
+    border: 3px solid rgba(73, 76, 73, 0.5);
     margin-bottom: 16px;
 }
 
@@ -5254,9 +5221,7 @@ border-color: rgba(255, 255, 255, 0.5);
 }
 
 .global-footer .nav-footer .nav-tier2 {
-    /*font-size: 12px;*/
-    font-size: 12px;
-    font-family: verdana;
+    font-size: 13px;
 }
 
 .global-footer .nav-footer .nav-tier2,
@@ -5305,7 +5270,6 @@ padding: 0 0 1.5em;
 .global-foot-content {
     position: relative;
     font-size: 14px;
-    font-family: verdana;
 }
 
 .global-foot-logo {
