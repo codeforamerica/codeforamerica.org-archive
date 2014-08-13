@@ -128,6 +128,11 @@
     width: 100%;
     }
 
+.xx-options button {
+    margin-top: 6px;
+    
+}
+
 .xx-nav ol {
     margin: 0;
     padding: 0;
@@ -192,7 +197,7 @@
     border-radius: 3px;
     box-shadow: 0 0 1px rgba(0,0,0,0.4);
     flex: 1;
-    min-width: 180px;
+    min-width: 235px;
     }
 
 .xx .swatch-details {
@@ -306,6 +311,7 @@
 .pattern-markup,
 :not(pre) > code[class*="language-"] {
     padding: 1em 2% !important;
+    line-height: 18px;
     }
 
 .pattern-details:hover {

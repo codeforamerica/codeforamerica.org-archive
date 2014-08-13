@@ -51,7 +51,9 @@ blockquote {
 
 /*  3 column = crotchet  */
     
-    .layout-crotchet {
+    .layout-crotchet,
+    .layout-grid > li,
+    .layout-grid > div {
         width: 32%;
         float: left;
         clear: none;
@@ -62,11 +64,15 @@ blockquote {
         width: calc(32% - 36px);
         }
     
-    .layout-crotchet + .layout-crotchet {
+    .layout-crotchet + .layout-crotchet,
+    .layout-grid li + li,
+    .layout-grid div + div {
         margin-left: 2%;
         }
     
-    .layout-crotchet:nth-of-type(3n+4) {
+    .layout-crotchet:nth-of-type(3n+4),
+    .layout-grid > li:nth-of-type(3n+4),
+    .layout-grid > div:nth-of-type(3n+4) {
     	margin-left: 0;
         clear: both;
         }
