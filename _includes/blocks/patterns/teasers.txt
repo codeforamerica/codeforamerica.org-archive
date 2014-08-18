@@ -1,0 +1,11 @@
+Teasers must conform to this structure:
+
+ul.teasers.layout-grid-crotchet
+  li
+    a
+      h1/h2/h3/h4/h5/h6
+      div
+        img/embed/video/audio
+        span.teaser-type-article
+    span
+    p

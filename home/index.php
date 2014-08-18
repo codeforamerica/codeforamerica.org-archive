@@ -1,6 +1,6 @@
 <?php include_once('../_includes/head.php'); 
     $pageTitle = 'Code for America';
-    $mastheadImage = 'masthead-6.jpg';
+    $mastheadImage = 'masthead-7.jpg';
 ?>
 
 <style>
