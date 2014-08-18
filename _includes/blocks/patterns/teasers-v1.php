@@ -47,9 +47,11 @@
                 <p>On a Friday in the middle of February, Michael Hughes, director of the Boston Public Schools Transportation Department, met with seven visiting fellows from Code for America, a new nonprofit organization that matches teams [&hellip;] <a href="#">Read more</a></p>
             </div>
             <footer class="teaser-footer">
-                <div class="teaser-masthead">
-                    <iframe width="100%" height="162" src="//www.youtube.com/embed/g5P1vJVQc-c?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <a href="#" class="teaser-masthead">
+                    <img class="teaser-image" src="/../_media/images/big-data.jpg" />
+                    <span class="teaser-action-play"></span>
+                    <span class="teaser-type teaser-type-data">Open Data</span>
+                </a>
                 <a href="#" class="teaser-source">The Boston Globe</a>
             </footer>
         </article>

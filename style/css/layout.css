@@ -52,30 +52,44 @@ blockquote {
 /*  3 column = crotchet  */
     
     .layout-crotchet,
-    .layout-grid > li,
-    .layout-grid > div {
+    .layout-grid-crotchet > li,
+    .layout-grid-crotchet > div {
         width: 32%;
         float: left;
         clear: none;
-        margin: 0;
+        padding: 0;
+        }
+    
+    .layout-grid-crotchet .layout-crotchet {
+        width: 100%;
+    }
+    
+    .layout-crotchet + .layout-crotchet,
+    .layout-grid-crotchet > li + li,
+    .layout-grid-crotchet > div + div {
+        margin-left: 2%;
+        }
+    
+    .layout-crotchet:nth-of-type(3n+4),
+    .layout-grid-crotchet > li:nth-of-type(3n+4),
+    .layout-grid-crotchet > div:nth-of-type(3n+4) {
+    	margin-left: 0;
+        clear: both;
         }
     
     [class*="block-"][class*="layout-crotchet"] {
         width: calc(32% - 36px);
         }
     
-    .layout-crotchet + .layout-crotchet,
-    .layout-grid li + li,
-    .layout-grid div + div {
-        margin-left: 2%;
-        }
+    .teasers.layout-grid-crotchet > li,
+    .teasers.layout-grid-crotchet > div {
+        width: calc(30.3% - 6px);
+    }
     
-    .layout-crotchet:nth-of-type(3n+4),
-    .layout-grid > li:nth-of-type(3n+4),
-    .layout-grid > div:nth-of-type(3n+4) {
-    	margin-left: 0;
-        clear: both;
-        }
+    .profiles.layout-grid-crotchet > li,
+    .profiles.layout-grid-crotchet > div {
+        width: calc(32.3% - 6px);
+    }
 
 /*  3 column = crotchet  */
     
@@ -104,7 +118,9 @@ blockquote {
 
 /*  2 column = minim  */
     
-    .layout-minim {
+    .layout-minim,
+    .layout-grid-minim > li,
+    .layout-grid-minim > div {
         float: left;
         width: 49%;
         clear: none;
@@ -117,7 +133,9 @@ blockquote {
         width: calc(49% - 36px);
         }
     
-    .layout-minim + .layout-minim {
+    .layout-minim + .layout-minim,
+    .layout-grid-minim li + li,
+    .layout-grid-minim div + div {
         float: right;
         }
     
@@ -125,15 +143,27 @@ blockquote {
         clear: both;
         }
     
-    .layout-minim:after {
+    .layout-minim:after,
+    .layout-grid-minim li:after,
+    .layout-grid-minim div:after {
         content: "";
         display: table;
         clear: both;
     	}
     
-    .layout-minim + .layout-minim + .layout-minim {
+    .layout-minim + .layout-minim + .layout-minim,
+    .layout-grid-minim li:nth-child(2n+3),
+    .layout-grid-minim div:nth-child(2n+3) {
         clear: both;
         float: left;
+        }
+        
+    .teasers.layout-grid-minim > li,
+    .teasers.layout-grid-minim > div,
+    .profiles.layout-grid-minim > li,
+    .profiles.layout-grid-minim > div {
+        width: 45%;
+        width: calc(47% - 4px);
         }
     
     /*.layout-minim:nth-child(3n+2) {
@@ -585,12 +615,6 @@ section,
 
 .wodge-text {
     clear: both;
-    }
-
-	@media (min-width: 60em) {
-    .wodge-header {
-        margin-right: 6em;
-        }
     }
 
 .wodge-l .wodge-header,

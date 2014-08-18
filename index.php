@@ -456,6 +456,12 @@
                     <p>layout-breve</p>
                 </div>
             </div>
+            
+            <div class="xx-pattern-layout">
+                <div class="layout-semibreve">
+                    <p>layout-semibreve</p>
+                </div>
+            </div>
                     
             <div class="xx-pattern-layout">
                 <div class="layout-minim">
@@ -556,6 +562,12 @@
             
             <div class="layout-semibreve">
                 <p>Layouts can be wrapped inside each other. For example, 2 layout-minims can be within a layout-breve to have a 2 column layout which stops growing when it hits a certain size.</p>
+            </div>
+            
+            <div class="xx-pattern-layout">
+                <div class="layout-breve">
+                    <p>layout-breve</p>
+                </div>
             </div>
             
             <div class="xx-pattern-layout">
@@ -686,6 +698,34 @@
                         <p>layout-quaver</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="layout-semibreve">
+                <p>Applying a class of <code>layout-grid-minim</code> to an unordered list, ordered list or wrapper div will create a grid-style layout. No classes need to be applied to the children.</p>
+            </div>
+            
+            <div class="xx-pattern-layout">
+                <p class="layout-centered">layout-grid-minim</p>
+            	<ul class="layout-grid-minim">
+                    <li>Code for America’s Fellowship is a one-year program where cutting-edge developers, designers and researchers are embedded in US cities to solve civic problems using technology. Cities who’ve worked with us have built apps that support citizen engagement, criminal justice and public health.</li>
+                    <li>Code for America's network pairs government innovators, talented technologists and civic tech startups to solve community problems. Governments partners are deploying powerful apps, co-hosting regular civic hacking events, and connecting with citizens to build better interfaces to government.</li>
+                    <li>Code for America's Peer Network provides targeted training, hands-on support and early access to new technology and cutting-edge data standards. Recent trainings include user interface engineering and broadband policy.</li>
+                    <li>The annual Summit is when the Code for America civic innovation community gathers in person for three days of collaborating, connecting, and learning. It's a roll-up-your-sleeves kind of event that convenes innovators from dozens of local governments, civic-minded technologists, designers, community organizers, and entrepreneurs.</li>
+                    <li>The Code for America Brigade program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. </li>
+                    <li>The CfA Fellowship is a one year residency placing developers, designers, and researchers within local governments. Applications for the 2015 Fellowship are due July 15.</li>
+                </ul>
+            </div>
+            
+            <div class="xx-pattern-layout">
+                <p class="layout-centered">layout-grid-crotchet</p>
+            	<ul class="layout-grid-crotchet">
+                    <li>Code for America’s Fellowship is a one-year program where cutting-edge developers, designers and researchers are embedded in US cities to solve civic problems using technology. Cities who’ve worked with us have built apps that support citizen engagement, criminal justice and public health.</li>
+                    <li>Code for America's network pairs government innovators, talented technologists and civic tech startups to solve community problems. Governments partners are deploying powerful apps, co-hosting regular civic hacking events, and connecting with citizens to build better interfaces to government.</li>
+                    <li>Code for America's Peer Network provides targeted training, hands-on support and early access to new technology and cutting-edge data standards. Recent trainings include user interface engineering and broadband policy.</li>
+                    <li>The annual Summit is when the Code for America civic innovation community gathers in person for three days of collaborating, connecting, and learning. It's a roll-up-your-sleeves kind of event that convenes innovators from dozens of local governments, civic-minded technologists, designers, community organizers, and entrepreneurs.</li>
+                    <li>The Code for America Brigade program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. </li>
+                    <li>The CfA Fellowship is a one year residency placing developers, designers, and researchers within local governments. Applications for the 2015 Fellowship are due July 15.</li>
+                </ul>
             </div>
             
             <div class="layout-semibreve">

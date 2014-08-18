@@ -15,7 +15,6 @@
     z-index: 3;
     position: fixed;
     top: 0;
-    height: 45px;
     border-bottom: 1px solid #ddd;
     }
 
@@ -153,28 +152,38 @@
     
     }
 
-.xx-pattern-layout div {
-    background-color: #ccc;
+.xx-pattern-layout div,
+.xx-pattern-layout li {
+    background-color: #eee;
+    color: #777;
     text-align: center;
-    font-size: 1em;
+    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 80px;
+    outline: 1px dashed #ccc;
+    line-height: 22px;
+    background-image: none;
     }
    
-.xx-pattern-layout div p {
+.xx-pattern-layout div p,
+.xx-pattern-layout li {
 	margin-bottom: 0;
 	font-size: 0.8em;
 	}
+
+.xx-pattern-layout div p {
+	font-family: "Monaco", "Courier" monospace;
+	}
    
 .xx-pattern-layout div div {
-    background-color: #aaa;
+    background-color: #ddd;
     border-bottom: 1px dashed #ccc;
     text-align: center;
     font-size: 1em;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #666;
     }
    
 .xx-pattern-layout p {
