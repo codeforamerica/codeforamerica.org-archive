@@ -90,7 +90,7 @@
 <div class="global-foot" role="contentinfo">
     <div class="layout-tight layout-breve">
         <div class="global-foot-content">
-            <img class="global-foot-logo" src="/../_assets/logo-inversed.png" />
+            <img class="global-foot-logo" src="/../media/images/logo-inversed.png" />
             <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
         </div>
     </div>

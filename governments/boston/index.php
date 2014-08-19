@@ -23,7 +23,7 @@
 
             <div class="layout-minim">
 
-                <img class="teaser-image" src="/../../_media/images/big-data.jpg" alt="" >
+                <img class="teaser-image" src="/../../media/images/big-data.jpg" alt="" >
 
                 <ul class="list-gappy list-inline list-buttons">
 
@@ -46,7 +46,7 @@
     <div class="layout-semibreve">
 
         <div class="highlight highlight-with-avatar">
-            <img class="highlight-avatar" src="/../_media/images/sf-seal.png"/>
+            <img class="highlight-avatar" src="/../media/images/sf-seal.png"/>
             <blockquote>
                 <p>Finding little wins that you can discover along the way, moments when people can come together and solve some small issue — that’s critical to the experience of innovation.</p>
             </blockquote>
@@ -92,7 +92,7 @@
         <p class="heading-contrast isolate">This program made possible by these community partners</p>
 
         <ul class="list-inline">
-            <li><a href="#"><img src="/../../_media/images/bluth-company.png"/></a></li>
+            <li><a href="#"><img src="/../../media/images/bluth-company.png"/></a></li>
         </ul>
 
 </section>

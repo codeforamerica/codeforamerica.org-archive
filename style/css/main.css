@@ -1916,6 +1916,7 @@ input.button-s {
     left: 0;
     max-width: none;
     min-height: 400px;
+    opacity: 0.8;
     position: absolute;
     top: 0;
     width: 100%;

@@ -11,7 +11,7 @@
             </div>
             <footer class="teaser-footer">
                 <a href="#" class="teaser-masthead">
-                    <img class="teaser-image" src="/../_media/images/big-data.jpg" />
+                    <img class="teaser-image" src="/../media/images/big-data.jpg" />
                     <span class="teaser-type teaser-type-article">Article</span>
                 </a>
                 <a href="#" class="teaser-source">The Boston Globe</a>
@@ -48,7 +48,7 @@
             </div>
             <footer class="teaser-footer">
                 <a href="#" class="teaser-masthead">
-                    <img class="teaser-image" src="/../_media/images/big-data.jpg" />
+                    <img class="teaser-image" src="/../media/images/big-data.jpg" />
                     <span class="teaser-action-play"></span>
                     <span class="teaser-type teaser-type-data">Open Data</span>
                 </a>
@@ -68,7 +68,7 @@
             </div>
             <footer class="teaser-footer">
                 <a href="#" class="teaser-masthead">
-                    <img class="teaser-image" src="/../_media/images/big-data.jpg" />
+                    <img class="teaser-image" src="/../media/images/big-data.jpg" />
                     <span class="teaser-type teaser-type-data">Open data</span>
                 </a>
                 <a href="#" class="teaser-source">The Boston Globe</a>

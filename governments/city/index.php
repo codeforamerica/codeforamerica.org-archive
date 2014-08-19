@@ -25,7 +25,7 @@
             <p>Boston has been a techie city for a very long time. The city established the nation’s first Mayor’s Office of New Urban Mechanics (MONUM) and the department’s co-chairs were named Governing Magazine’s Public Officials of the Year. With forward-thinking leaders at the helm, Boston is paving the way for civic innovation. The city has an active Code for America Brigade — a group of local volunteers who meet regularly to attend events, collaborate on new projects and stand up existing apps. For details visit Code for Boston.</p>
         </div>
         <div class="layout-minim">
-            <img class="teaser-image" src="/../../_media/images/big-data.jpg">
+            <img class="teaser-image" src="/../../media/images/big-data.jpg">
             <ul class="list-gappy list-inline list-buttons">
                 <li><a href="#" class="button button-prominent">Visit code for Boston</a></li>
                 <li><a href="#" class="button">Visit Open Data portal</a></li>
@@ -38,7 +38,7 @@
 <div class="slab-blue">
     <div class="layout-semibreve">
         <div class="highlight highlight-with-avatar">
-            <img class="highlight-avatar" src="/../_media/images/sf-seal.png"/>
+            <img class="highlight-avatar" src="/../media/images/sf-seal.png"/>
             <blockquote>
                 <p>This is a great place for a quote about your city and its tech community</p>
             </blockquote>
@@ -49,7 +49,7 @@
 <div class="slab-dark-blue">
     <div class="layout-semibreve">
         <div class="highlight highlight-with-avatar">
-            <img class="highlight-avatar" src="/../_media/images/sf-seal.png"/>
+            <img class="highlight-avatar" src="/../media/images/sf-seal.png"/>
             <p>No quote? Use this pattern to show a cool fact instead</p>
         </div><!-- .highlight -->
     </div><!-- .layout-semibreve -->
@@ -73,7 +73,7 @@
     </div>
     <p class="heading-contrast isolate">This program made possible by these community partners</p>
     <ul class="list-inline">
-        <li><a href="#"><img src="/../../_media/images/bluth-company.png"/></a></li>
+        <li><a href="#"><img src="/../../media/images/bluth-company.png"/></a></li>
     </ul>
 
 </div><!-- .layout-semibreve -->

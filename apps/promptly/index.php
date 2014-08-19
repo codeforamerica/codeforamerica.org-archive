@@ -12,7 +12,7 @@
 	</div>
 	
 	<div class="layout-minor">
-		<img class="isolate" src="/../_media/images/logo-promptly.jpg" />
+		<img class="isolate" src="/../media/images/logo-promptly.jpg" />
 	    <h3 class="text-prominent">Overview</h3>
 	    <p>Text message notification system for benefits recipients, built for San Francisco.</p>
 	    

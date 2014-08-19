@@ -1,5 +1,5 @@
 <?php
-    include_once('_inc/functions.php');
+    include_once('_includes/functions.php');
     // Build out URI to reload from form dropdown
     $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
     if (isset($_POST['uri']) && isset($_POST['section'])) {
@@ -39,7 +39,7 @@
     <?php else : ?>
 
     <div class="xx-options">
-        <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
+        <a class="xx-cfa-logo" href=""><img src="media/images/logo-colored.png" /></a>
         
         <button onclick="colorSwitcher('')" class="button-subtle button-s">White</button>
         <button onclick="colorSwitcher('bg-blue')" class="button-s">Blue</button>
