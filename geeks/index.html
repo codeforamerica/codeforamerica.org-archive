@@ -123,7 +123,63 @@ nav-breadcrumbs:
     }
 
   </script>
-  
+
+</section>
+
+<section>
+  <div class="layout-breve">
+    <div class="badge-heading badge-github badge-blue">
+        <h2>Code for America Right Now!</h2>
+        <p>These are open GitHub Issues from across the civic technology movement.</p>
+    </div>
+    <ul class="list-no-bullets layout-grid">
+      <li class="layout-crotchet">
+          <a href="#" class="billboard issueLink">
+              <strong class="billboard-label title"></strong>
+              <p class="text-whisper projectName"></p>
+              <div class="labels"></div>
+          </a>
+      </li>
+      <li class="layout-crotchet">
+          <a href="#" class="billboard issueLink">
+              <strong class="billboard-label title"></strong>
+              <p class="text-whisper projectName"></p>
+              <div class="labels"></div>
+          </a>
+      </li>
+      <li class="layout-crotchet">
+        <a href="#" class="billboard issueLink">
+            <strong class="billboard-label title"></strong>
+            <p class="text-whisper projectName"></p>
+            <div class="labels"></div>
+        </a>
+    </li>
+    </ul>
+  </div>
+
+  <script>
+  getApi("http://codeforamerica.org/api/issues/labels/help wanted?per_page=3", showIssues);
+
+  function showIssues(data){
+    var issueLinks = document.querySelectorAll(".issueLink");
+    var issueTitles = document.querySelectorAll(".title");
+    var projectNames = document.querySelectorAll(".projectName");
+    var labels = document.querySelectorAll(".labels")
+    Array.prototype.forEach.call(data.objects, function(issue, i){
+      issueLinks[i].setAttribute('href', issue.html_url);
+      issueTitles[i].innerHTML = issue.title;
+      projectNames[i].innerHTML = issue.project.name;
+      if (issue.labels) {
+        var allLabels = "";
+        Array.prototype.forEach.call(issue.labels, function(label, x){
+          allLabels += '<div style="background-color:#'+label.color+';"><p>'+label.name+'</p></div>';
+        });
+        labels[i].innerHTML = allLabels;
+      }
+    });
+  }
+
+  </script>
 </section>
 
 <section>
