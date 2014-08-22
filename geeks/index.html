@@ -11,7 +11,7 @@ nav-breadcrumbs:
   <div class="layout-breve layout-centered">
     <h2>Citizens have the power to help their cities.</h2>
 
-    <p class="layout-semibreve" style="padding-top:0px;">The <a href="http://codeforamerica.org/brigade">Code for America Brigade</a> program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. The <a href="/about/fellowship">CfA Fellowship</a> is a one year residency placing developers, designers, and researchers within local governments. <a href="/apply">Applications</a> for the 2015 Fellowship are due July 15.</p>
+    <p class="layout-semibreve" style="padding-top:0px;">The <a href="http://codeforamerica.org/brigade">Code for America Brigade</a> program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. The <a href="/about/fellowship">CfA Fellowship</a> is a one year residency placing developers, designers, and researchers within local governments.</p>
 
   </div>
 </section>
@@ -37,9 +37,6 @@ nav-breadcrumbs:
         	<li class="icon-calendar"><span id="nextEvent"></span>
         	<a class="text-whisper" href="http://codeforamerica.org/brigade/events">Other Events</a>
         	</li>
-          <li class="icon-github2"><span id="openIssue"></span>
-          	<a class="text-whisper" href="http://civicissues.herokuapp.com">More hack requests</a>
-          </li>
           <li class="icon-lamp"><span id="recentProject"></span>
           	<a class="text-whisper" href="http://codeforamerica.org/brigade/projects">More civic tech projects</a>
           </li>
@@ -55,7 +52,6 @@ nav-breadcrumbs:
   <script>
 
     getApi("http://codeforamerica.org/api/events/upcoming_events?per_page=1", showEvent);
-    getApi("http://codeforamerica.org/api/issues/labels/help%20wanted?per_page=1", showIssue);
     getApi("http://codeforamerica.org/api/projects?per_page=1", showProject);
     getApi("http://codeforamerica.org/api/stories?per_page=1", showStory);
 
@@ -93,25 +89,21 @@ nav-breadcrumbs:
         nextEvent.innerHTML = html;
     }
 
-    function showIssue(data) {
-        // Display an open issue with the label 'help wanted'
-        var issue = data.objects[0]
-        openIssue = document.getElementById("openIssue");
-        var html = "<a href=" + issue.html_url + ">" + issue.title + "</a>";
-        openIssue.innerHTML = html;
-    }
-
     function showProject(data) {
         // Display the most recently updated project
         var project = data.objects[0]
         recentProject = document.getElementById("recentProject");
         if (project.link_url) {
             var html = "<a href=" + project.link_url + ">" + project.name + "</a>";
+            recentProject.innerHTML = html;
         }
-        else {
+        else if (project.code_url) {
             var html = "<a href=" + project.code_url + ">" + project.name + "</a>";
+            recentProject.innerHTML = html;
+        } else {
+          getApi(data.pages.next, showProject);
         }
-        recentProject.innerHTML = html;
+
     }
 
     function showStory(data) {
@@ -130,35 +122,35 @@ nav-breadcrumbs:
   <div class="layout-breve">
     <div class="badge-heading badge-github badge-blue">
         <h2>Code for America Right Now!</h2>
-        <p>These are open GitHub Issues from across the civic technology movement.</p>
+        <p>These are open GitHub Issues from across the civic technology movement. Find more using the <a href="http://civicissues.herokuapp.com/">Civic Tech Issue Finder</a>.</p>
     </div>
     <ul class="list-no-bullets layout-grid">
       <li class="layout-crotchet">
           <a href="#" class="billboard issueLink">
-              <strong class="billboard-label title"></strong>
               <p class="text-whisper projectName"></p>
+              <h3 class="billboard-label title"></h3>
               <div class="labels"></div>
           </a>
       </li>
       <li class="layout-crotchet">
           <a href="#" class="billboard issueLink">
-              <strong class="billboard-label title"></strong>
               <p class="text-whisper projectName"></p>
+              <h3 class="billboard-label title"></h3>
               <div class="labels"></div>
           </a>
       </li>
       <li class="layout-crotchet">
         <a href="#" class="billboard issueLink">
-            <strong class="billboard-label title"></strong>
             <p class="text-whisper projectName"></p>
+            <h3 class="billboard-label title"></h3>
             <div class="labels"></div>
         </a>
-    </li>
+      </li>
     </ul>
   </div>
 
   <script>
-  getApi("http://codeforamerica.org/api/issues/labels/help wanted?per_page=3", showIssues);
+  getApi("http://codeforamerica.org/api/issues/labels/help wanted?per_page=6", showIssues);
 
   function showIssues(data){
     var issueLinks = document.querySelectorAll(".issueLink");
@@ -172,7 +164,11 @@ nav-breadcrumbs:
       if (issue.labels) {
         var allLabels = "";
         Array.prototype.forEach.call(issue.labels, function(label, x){
-          allLabels += '<div style="background-color:#'+label.color+';"><p>'+label.name+'</p></div>';
+          if (label.color > '888888'){
+            allLabels += '<div class="label" style="color:black;background-color:#'+label.color+';">'+label.name+'</div>';
+          } else {
+            allLabels += '<div class="label" style="background-color:#'+label.color+';">'+label.name+'</div>';
+          }
         });
         labels[i].innerHTML = allLabels;
       }
@@ -180,6 +176,18 @@ nav-breadcrumbs:
   }
 
   </script>
+
+  <style>
+  .label {
+    border: 1px solid #000;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    border-radius: .33em;
+    margin: 5px;
+    padding: 0 10px;
+  }
+  </style>
 </section>
 
 <section>
