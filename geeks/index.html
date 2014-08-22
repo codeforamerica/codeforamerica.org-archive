@@ -118,77 +118,38 @@ nav-breadcrumbs:
 
 </section>
 
-<section>
-  <div class="layout-breve">
-    <div class="badge-heading badge-github badge-blue">
-        <h2>Code for America Right Now!</h2>
-        <p>These are open GitHub Issues from across the civic technology movement. Find more using the <a href="http://civicissues.herokuapp.com/">Civic Tech Issue Finder</a>.</p>
-    </div>
-    <ul class="list-no-bullets layout-grid">
-      <li class="layout-crotchet">
-          <a href="#" class="billboard issueLink">
-              <p class="text-whisper projectName"></p>
-              <h3 class="billboard-label title"></h3>
-              <div class="labels"></div>
-          </a>
-      </li>
-      <li class="layout-crotchet">
-          <a href="#" class="billboard issueLink">
-              <p class="text-whisper projectName"></p>
-              <h3 class="billboard-label title"></h3>
-              <div class="labels"></div>
-          </a>
-      </li>
-      <li class="layout-crotchet">
-        <a href="#" class="billboard issueLink">
-            <p class="text-whisper projectName"></p>
-            <h3 class="billboard-label title"></h3>
-            <div class="labels"></div>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <script>
-  getApi("http://codeforamerica.org/api/issues/labels/help wanted?per_page=6", showIssues);
-
-  function showIssues(data){
-    var issueLinks = document.querySelectorAll(".issueLink");
-    var issueTitles = document.querySelectorAll(".title");
-    var projectNames = document.querySelectorAll(".projectName");
-    var labels = document.querySelectorAll(".labels")
-    Array.prototype.forEach.call(data.objects, function(issue, i){
-      issueLinks[i].setAttribute('href', issue.html_url);
-      issueTitles[i].innerHTML = issue.title;
-      projectNames[i].innerHTML = issue.project.name;
-      if (issue.labels) {
-        var allLabels = "";
-        Array.prototype.forEach.call(issue.labels, function(label, x){
-          if (label.color > '888888'){
-            allLabels += '<div class="label" style="color:black;background-color:#'+label.color+';">'+label.name+'</div>';
-          } else {
-            allLabels += '<div class="label" style="background-color:#'+label.color+';">'+label.name+'</div>';
-          }
-        });
-        labels[i].innerHTML = allLabels;
-      }
-    });
-  }
-
-  </script>
-
-  <style>
-  .label {
-    border: 1px solid #000;
-    display: inline-block;
-    color: #fff;
-    text-align: center;
-    border-radius: .33em;
-    margin: 5px;
-    padding: 0 10px;
-  }
-  </style>
-</section>
+        <section>
+          <div class="layout-breve">
+            <div class="badge-heading badge-github badge-blue">
+                <h1>The Civic Tech Issue Finder</h1>
+                <h2>Code for America Right Now!</h2>
+                <p>These are open GitHub Issues labeled with
+                <span class="label" style="background-color:#159818;">help wanted</span>
+                from across the civic technology movement.
+                <a href="/geeks/civicissues/embed">Embed them</a> in your own site!.</p>
+            </div>
+            <style>
+              .label {
+                border: 1px solid #000;
+                display: inline-block;
+                color: #fff;
+                text-align: center;
+                border-radius: .33em;
+                margin: 5px;
+                padding: 0 10px;
+                font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+              }
+            </style>
+            <script>
+              // Resize iframe to fit content
+              function resize() {
+                var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+                document.getElementById("widget").height = newheight + "px";
+              }
+            </script>
+            <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted" width="100%" frameBorder="0" onLoad="resize();"> </iframe>
+          </div>
+        </section>
 
 <section>
   <div class="layout-breve">
