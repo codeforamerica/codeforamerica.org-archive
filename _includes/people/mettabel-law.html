@@ -1,0 +1,60 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Mettabel Law</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Marketing Coordinator</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/mettabel-law.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	    An ardent believer in participatory democracy and civic egnagement, Mettabel joins the Code for America Marketing team with a background in civic tech and law. Previously, Mettabel supported development efforts at MapLight and worked as a legal researcher in local and federal government. A DIY-er and enthusiast of all things nerd, she cut her tech teeth on the Commodore Vic 20. She is a proud Cal Bear with degrees in Rhetoric and Ethnic Studies.
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/stringer__bel">@stringer__bel</a></td></tr>
+	    		<tr><th>About.me</th><td><a href="http://about.me/mettabellaw">about.me/mettabellaw</a></td></tr>
+	    		<tr><th>Github</th><td><a href="https://github.com/mettabel">https://github.com/mettabel</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Mettabel Law</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/mettabel-law.jpg">
+
+    <div class="p-note profile-note">
+        <p>Marketing Coordinator</p>
+
+        <p>An ardent believer in participatory democracy and civic egnagement, Mettabel joins the Code for America Marketing team with a background in civic tech and law. Previously, Mettabel supported development efforts at MapLight and worked as a legal...</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/mettabel-law/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">        
+            <li class="social-twitter"><a href="https://twitter.com/stringer__bel">Twitter</a></li>
+            <li class="social-github"><a href="https://github.com/mettabel">Github</a></li>
+
+        </ul>
+    </div>
+</div>
+
+{% endif %}
