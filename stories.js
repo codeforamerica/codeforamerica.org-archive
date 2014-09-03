@@ -21,11 +21,16 @@ on_stories(
     },
     {
         "head_html": "<a href='/governments/2014-cities/'>Across the U.S.</a>",
-        "content_html": "30 fellows are working with 10 local governments <br>to make government services simple, effective, and easy-to-use.",
+        "content_html": "30 fellows are working with 10 local governments to make government services simple, effective, and easy-to-use.",
         "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
         "image_src": "media/images/geeks/fellowship-apply.jpg",
         "box_link": "/governments/2014-cities/",
         "box_text": "See what they’re doing"
+    },
+    {
+        "head_html": "<a href='/about'>For the past four years</a>",
+        "content_html": "in partnership with governments, communities, and companies, Code for America has experimented with digital approaches to address important community issues.",
+        "image_src": "media/images/homepage-stories/Beta-Tiffani-Fumi-some-guy.jpg"
     }
 
  
