@@ -18,12 +18,6 @@ on_stories(
         "content_html": "the OpenOakland group built a participatory budgeting app so citizens could influence the 2013 budget process.",
         "image source": "http://www.nooga.com/assets/8690aaea938051ee58b8679a4e08330f44163.jpg",
         "image_src": "media/images/homepage-stories/oakland-budget.jpg"
-    },
-    {
-        "head_html": "<a href='governments/honolulu'>In Honolulu</a>",
-        "content_html": "in 2012, more than 100 citizens and city officials re-wrote the city website in a day. It happened again in Oakland in 2013.",
-        "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
-        "image_src": "media/images/homepage-stories/honolulu-answers.jpg"
     }
 
  
