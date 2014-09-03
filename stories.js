@@ -18,6 +18,14 @@ on_stories(
         "content_html": "the OpenOakland group built a participatory budgeting app so citizens could influence the 2013 budget process.",
         "image source": "http://www.nooga.com/assets/8690aaea938051ee58b8679a4e08330f44163.jpg",
         "image_src": "media/images/homepage-stories/oakland-budget.jpg"
+    },
+    {
+        "head_html": "<a href='/governments/2014-cities/'>Across the U.S.</a>",
+        "content_html": "30 fellows are working with 10 local governments <br>to make government services simple, effective, and easy-to-use.",
+        "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
+        "image_src": "media/images/geeks/fellowship-apply.jpg",
+        "box_link": "/governments/2014-cities/",
+        "box_text": "See what they’re doing"
     }
 
  
