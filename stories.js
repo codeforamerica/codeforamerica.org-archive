@@ -18,6 +18,26 @@ on_stories(
         "content_html": "the OpenOakland group built a participatory budgeting app so citizens could influence the 2013 budget process.",
         "image source": "http://www.nooga.com/assets/8690aaea938051ee58b8679a4e08330f44163.jpg",
         "image_src": "media/images/homepage-stories/oakland-budget.jpg"
+    },
+    {
+        "head_html": "<a href='/governments/2014-cities/'>Across the U.S.</a>",
+        "content_html": "30 fellows are working with 10 local governments to make government services simple, effective, and easy-to-use.",
+        "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
+        "image_src": "media/images/geeks/fellowship-apply.jpg",
+        "box_link": "/governments/2014-cities/",
+        "box_text": "See what they’re doing"
+    },
+    {
+        "head_html": "<a href='/about'>For the past four years</a>",
+        "content_html": "in partnership with governments, communities, and companies, Code for America has experimented with digital approaches to address important community issues.",
+        "image_src": "media/images/homepage-stories/Beta-Tiffani-Fumi-some-guy.jpg"
+    },
+    {
+        "head_html": "<a href='/summit'>Every year</a>",
+        "content_html": "the Code for America Summit brings together local governments, civic-minded technologists, designers, community organizers, and entrepreneurs for three days of collaborating, connecting, and learning.",
+        "image_src": "media/images/homepage-stories/Summit-Clay-Shirky.jpg",
+        "box_link": "/summit",
+        "box_text": "Learn about the 2014 Summit"
     }
 
  
