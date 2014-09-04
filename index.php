@@ -41,6 +41,7 @@
     <div class="xx-options">
         <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
         
+        <!--
         <button onclick="colorSwitcher('')" class="button-subtle button-s">White</button>
         <button onclick="colorSwitcher('bg-blue')" class="button-s">Blue</button>
         <button onclick="colorSwitcher('bg-dark-blue')" class="bg-dark-blue button-s">Dark Blue</button>
@@ -48,6 +49,7 @@
         <button onclick="colorSwitcher('bg-medium-red')" class="button-bold button-s">Medium Red</button>
         <button onclick="colorSwitcher('bg-gray')" class="button-subtle button-s">Grey</button>
         <button onclick="colorSwitcher('bg-dark-gray')" class="bg-dark-gray button-s">Dark Grey</button>
+        -->
         
         <p class="xx-skip-to-nav skip-to-nav"><a href="#global-footer">Menu</a></p>
         <div class="xx-nav nav-global-secondary">
