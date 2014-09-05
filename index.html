@@ -23,29 +23,26 @@
     <![endif]-->
 
 	<style type="text/css">
+
 		.masthead:before {
 			background-image: url('media/images/masthead/masthead-1.jpg');
 		}
-    .feature-action{
-      display:none;
-    }
-    @media (min-width: 40em) {
-      .feature-action{
-        margin-top:27px;
-        display: block;
-      }
-      .feature-action a{
-        float:right;
-      }
-    }
-        ul.list-logos{
-	width:900px;
-	margin: 0 auto;
-	padding: 0;
-   }
-    .list-logos li{
-    	width:15%;
-    }
+
+        ul.list-logos
+        {
+            width: 900px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        ul.list-logos li { width: 15% }
+    
+        /* Collapse global header with following masthead */
+        .global-header
+        {
+            margin-bottom: 0 !important;
+            border-bottom: 0 !important;
+        }
 
 	</style>
 </head>
@@ -53,47 +50,7 @@
 <body>
 <div class="js-container">
 
-<nav class="nav-global-primary">
-  <ul class="layout-breve layout-tight">
-    <li><a href="blog/">Blog</a></li>
-    <li><a href="library/">Library</a></li>
-    <li>
-      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
-          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-          <!-- consider applying autofocus="autofocus" to input -->
-          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
-      </form>
-    </li>
-  </ul>
-</nav>
-
-<div class="global-header-compact" role="banner">
-  <a href="" class="global-header-logo">
-      <img src="assets/logo.png" />
-  </a>
-
-  <p class="global-header-tagline">Government can work for the people, by the people,<br/>in the 21st century. Let’s make it work.</p>
-<p class="feature-action"><a class="button-prominent" href="/summit">Register for the 2014 CfA Summit!</a></p>
-  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
-
-  <nav class="nav-global-secondary">
-    <ul>
-      <li class="nav-tier1 nav-has-children">
-        <a href="about/">About</a>
-      </li>
-      <li class="nav-tier1 nav-has-children">
-        <a href="governments/">Governments</a>
-      </li>
-      <li class="nav-tier1 nav-has-children">
-        <a href="geeks/">Citizens</a>
-      </li>
-      <li class="nav-tier1">
-        <a href="our-work/">Our Work</a>
-      </li>
-      <li><a href="support-us/" class="button">Donate</a></li>
-    </ul>
-  </nav>
-</div>
+{% include nav.html masthead="no" %}
 
 <div class="masthead masthead-xl">
   <header class="layout-semibreve masthead-header">
@@ -108,30 +65,41 @@
 
 <main role="main">
 
-<section class="layout-centered isolate-invert">
-
-  <ul class="bricks bricks-cta bricks-3">
-    <li class="brick badge-heading badge-glasses badge-dark-blue">
-      <a class="brick-link" href="geeks/">
-        <h3 class="brick-heading">Citizens</h3>
-        <h4 class="brick-text">Use your skills for good</h4>
-      </a>
-    </li>
-
-    <li class="brick badge-heading badge-gov badge-red">
-      <a class="brick-link" href="governments/">
-        <h3 class="brick-heading">Governments</h3>
-        <h4 class="brick-text">Solve your city's problems</h4>
-      </a>
-    </li>
-
-        <li class="brick badge-heading badge-blue">
-      <a class="brick-link" href="support-us/">
-        <h3 class="brick-heading">Donors</h3>
-        <h4 class="brick-text">Help make a difference</h4>
-      </a>
-    </li>
-  </ul>
+<section class="slab-red">
+    <div class="layout-chimney">
+        <div class="layout-minim-staccato slab-medium-red chimney">
+            <div class="chimney-body">
+                <h3>Why I Code for America</h3>
+                <div class="h-card profile">
+                    <h4 class="p-name profile-name">Richa Agarwal</h4>
+                    <img class="u-photo profile-photo" src="/_media/images/avatar-tiffani-bell.png" />
+                    <p class="p-role profile-role">2012 Fellow</p>
+                    <p class="p-note profile-note">Co-creator of <a class="p-org profile-org" href="#">Recordtrac</a></p>
+                </div>
+                <a href="#" class="button button-prominent">Meet more civic hackers</a>
+            </div>
+        </div>
+        <div class="layout-minim-staccato">
+            <h3 class="h4">What's happening?</h3>
+            <ul class="list-no-bullets list-icons">
+                <li class="icon-calendar">Nov 19: Bike Hack NYU Rudin 
+                    <a href="#">More events</a>
+                </li>
+                <li class="icon-github2">Hack request: Add SMS to Ohana API 
+                    <a href="#">More hack requests</a>
+                </li>
+                <li class="icon-lamp">Feb 22-24: Code Across America 
+                    <a href="#">More national projects</a>
+                </li>
+                <li class="icon-youtube">Video: Civic Engagement & Design 
+                    <a href="#">More CFA videos</a>
+                </li>
+                <li class="icon-tools">Publish and Curate Open Data
+                    <a href="#">More organizing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="slab-black slab-bg1">
@@ -163,33 +131,31 @@
   </div>
 </section>
 
-<section class="layout-centered insulate-inner">
-  <h2 class="text-whisper">Quick Stats</h2>
+<section>
+    <div class="layout-semibreve">
+        <div class="badge-heading badge-github badge-blue">
+            <h2>Code for America Right Now</h2>
+            <p>
+                These are open GitHub Issues labeled with <i>“help wanted”</i> from across the civic technology movement.
+                Find more using the <a href="http://www.codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.
+            </p>
+        </div>
+        <iframe id="widget" src="http://www.codeforamerica.org/geeks/civicissues/widget?labels=help%20wanted&amp;number=3" width="100%" height="400px" frameBorder="0" onLoad="resize();"> </iframe>
+        <script>
+            // Resize iframe to fit content
+            function resize()
+            {
+                var widget_iframe = document.getElementById('widget'),
+                issues_document = widget_iframe.contentWindow.document;
 
-  <ul class="bricks bricks-4">
-
-      <li class="brick badge-heading badge-glasses">
-      <h3 class="text-feature">104</h3>
-      <p class="text-whisper">Total number of <a href="/about/brigade/">contributing volunteers</a> on Github</p>
-      </li>
-
-    <li class="brick badge-heading badge-github">
-      <h3 class="text-feature">1714</h3>
-      <p class="text-whisper">Civic Code Commits in <a href="https://github.com/codeforamerica/">February</a></p>
-    </li>
-
-     <li class="brick badge-heading badge-github">
-      <h3 class="text-feature">3,966</h3>
-      <p class="text-whisper"><a href="https://github.com/codeforamerica/">Forked Projects</a> in Github</p>
-    </li>
-
-    <li class="brick badge-heading">
-      <h3 class="text-feature">353</h3>
-      <p class="text-whisper">Projects <a href="/about/brigade/">deployed by volunteers</a></p>
-    </li>
-  </ul>
+                if(issues_document)
+                {
+                    widget_iframe.height = issues_document.body.scrollHeight + "px";
+                }
+            }
+        </script>
+    </div>
 </section>
-
 
 <section class="slab-gray layout-centered insulate-inner">
     <h2 class="text-whisper">Code for America is kindly supported by</h2>
