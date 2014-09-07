@@ -1,0 +1,168 @@
+---
+title: Balance
+---
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/main.css">
+    <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="http://style.codeforamerica.org/1/style/css/prism.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://style.codeforamerica.org/1/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="http://style.codeforamerica.org/1/style/favicons/60x60/flag-red.png"/>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/layout.css" media="all">
+    <![endif]-->
+      
+    {% if page.masthead-image %}
+      <style type="text/css">
+        .masthead:before {
+                background-image: url('{{ page.masthead-image }}');
+        }
+      </style>
+    {% endif %}
+     <style>
+     .how-to h4{
+      clear:both;
+     }
+     .how-to .desc{
+      float: left;
+      width: 62%;
+     }
+     .how-to .recommendations{
+      float: right;
+      width: 33%;
+      background-color: #00a175;
+      color:#fff;
+      padding: 1em;
+     }
+
+     .global-foot {
+      border-top: 10px solid;
+      border-color: #399fd3;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      max-height: 150px;
+     }
+
+     #container {
+      padding-bottom: 250px;
+     }
+
+     #texter_phone_number {
+      max-width: 350px;
+     }
+
+     .heading {
+      padding-top: 0px;
+     }
+
+     .layout-semibreve {
+      padding: 0px;
+     }
+     </style>
+    <meta name="description" content="Page description. No longer than 155 characters."
+  </head>
+      
+  <body>
+    <div class="js-container">
+      <!-- Start navigation -->
+        {% assign masthead-class = "masthead-l" %}
+
+      <!-- Masthead -->
+      <nav class="nav-global-primary">
+        <ul class="layout-breve layout-tight">
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/library">Library</a></li>
+          <li>
+            <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+                <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+                <!-- consider applying autofocus="autofocus" to input -->
+                <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Search bar -->
+      <div class="masthead {{ masthead-class }}">
+        <div class="masthead-hero">
+          <div class="masthead-image" 
+            {% if masthead-image %}
+            style="background-image: url('{{ masthead-image }}')" 
+            {% endif %}>
+          </div>
+        </div>
+        <header class="layout-semibreve masthead-header">
+          <!-- <h1 class="page-title"></h1> -->
+        </header>
+      </div>
+
+      <main role="main">
+        <div id="container"> 
+          <!-- Content begin -->
+          <div class="layout-semibreve">
+              <div class="heading">
+                <h2>Check your food stamp balance right now</h2>
+              </div>
+            
+            <div id="balance-form">
+              <form accept-charset="UTF-8" action="https://balance-production.herokuapp.com/welcome" method="POST">
+                <ul class="list-form">
+                  <li class="form-field">
+                      <label>Enter your cell phone number</label>
+                      <input id="texter_phone_number" name="texter_phone_number" type="tel" placeholder="555-555-5555">
+
+                      <!-- Staging -->
+                      <!-- <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="+15107718297"> -->
+
+                      <!-- Production -->
+                      <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="+15104661831">
+                  </li>
+                </ul>
+                <input type="submit" value="Text me my balance">
+              </form>
+            </div>
+          </div>
+          <!-- Content end -->
+        </div>
+        
+        <!-- Footer -->
+        <div class="global-foot" role="contentinfo">
+          <div class="layout-tight layout-breve">
+            <div class="global-foot-content">
+              <img class="global-foot-logo" src="/assets/logo-inversed.png" />
+              <small>Code for America Labs, Inc is a non-partisan, non-political 501(c)(3) organization.</small>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+    <script src="/script/global.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20825280-1']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
