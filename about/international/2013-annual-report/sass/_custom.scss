@@ -47,9 +47,9 @@ $h5-font-size: 1 * $base-font-size;
 $h6-font-size: 0.8 * $base-font-size;
 
 $h1-line-height: 1.25 * $h1-font-size;
-$h2-line-height: 1.25 * $h2-font-size;
-$h3-line-height: 1.25 * $h3-font-size;
-$h4-line-height: 1.25 * $h4-font-size;
+$h2-line-height: 1.5 * $h2-font-size;
+$h3-line-height: 1.5 * $h3-font-size;
+$h4-line-height: 1.5 * $h4-font-size;
 
 $intro-font-size: 1.325 * $base-font-size;
 $intro-line-height: 36px;
@@ -76,13 +76,13 @@ $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
 // default font
-$interstate: "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+$interstate: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 
 // default header font
 $freight-text: "Freight Text", "Georgia", "Times New Roman", serif;
 
 // nav font
-$interstate-cond: "Interstate Condensed", "Interstate Light", "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+$interstate-cond: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 
 // alt sans-serif fonts
 $gotham: "Gotham A", "Gotham B", "Verdana", "Helvetica", "Arial", sans-serif;
@@ -116,83 +116,83 @@ $base-nav-font:	$interstate;
 .freight {
   font-family: "Freight Text";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 .freight-ital {
   font-family: "Freight Text";
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
 .freight-bold {
-  font-family: "Freight Text Semibold";
+  font-family: "Freight Text";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
 }
 .freight-bold-ital {
-  font-family: "Freight Text Semibold";
+  font-family: "Freight Text";
   font-style: italic;
-  font-weight: normal;
+  font-weight: 700;
 }
 
-.interstate-light {
-  font-family: "Interstate Light";
+.interstate-light { // Interstate replaces Interstate light
+  font-family: "Interstate";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
-.interstate-light-ital {
+.interstate-light-ital { // Interstate replaces Interstate light
   font-family: "Interstate Light";
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
 .interstate {
-  font-family: Interstate;
+  font-family: "Interstate";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 .interstate-ital {
-  font-family: Interstate;
+  font-family: "Interstate";
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
 .interstate-bold {
-  font-family: Interstate;
+  font-family: "Interstate";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
 }
-.interstate-cond-light {
-  font-family: "Interstate Light Condensed";
+.interstate-cond-light { // Interstate replaces Interstate cond
+  font-family: "Interstate";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
-.interstate-cond-light-ital {
-  font-family: "Interstate Light Condensed";
+.interstate-cond-light-ital { // Interstate replaces Interstate cond
+  font-family: "Interstate";
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
-.interstate-cond {
-  font-family: "Interstate Condensed";
+.interstate-cond { // Interstate replaces Interstate cond
+  font-family: "Interstate";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
-.interstate-cond-ital {
-  font-family: "Interstate Condensed";
+.interstate-cond-ital { // Interstate replaces Interstate cond
+  font-family: "Interstate";
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
 .interstate-bold-ital {
-  font-family: Interstate;
+  font-family: "Interstate";
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
 }
 .interstate-cond-bold {
-  font-family: "Interstate Condensed";
+  font-family: "Interstate";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
 }
 .interstate-cond-bold-ital {
-  font-family: "Interstate Condensed";
+  font-family: "Interstate";
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .gotham {

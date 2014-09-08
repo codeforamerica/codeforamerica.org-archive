@@ -8,59 +8,78 @@ nav-breadcrumbs:
  - Atlanta: "/cities/atlanta"
 ---
   
+ 
     <section> 
         <div class="layout-semibreve">
     
             {% include nav-breadcrumbs.html %}
 
-            <header class="badge-heading badge-brigade badge-blue">
+            <header class="badge-heading badge-blue badge-fellowship">
                 <h2>
-                    Atlanta
+                	Atlanta
                 </h2>
             </header>
+
             <section>
                 <div class="layout-semibreve">
                     <div class="layout-gutters">
-                        <p>In early 2013, the City of Atlanta partnered with Start Up Atlanta to co-host the city’s first <a href="http://govathon.com/">Govathon</a> or city-wide civic tech hackathon. The effort not only sparked innovation and greater citizen collaboration, but it also released some of the city’s most useful <a href="https://atlanta.demo.socrata.com/">datasets</a>. In addition, the City of Atlanta also established <a href="http://www.atlantaga.gov/index.aspx?page=133">Focus on Results (FOR)</a> Atlanta. A performance focused strategy group that uses data to improve and augment strategic and operational goals across city departments.</p>
-                        <p>As the city moves into its 2014 fellowship year, we hope to support Atlanta’s already strong tech community and increase available data sets and community participation.</p>
+                        <p>In early 2013, the City of Atlanta partnered with Start Up Atlanta to co-host the city’s first <a href="http://govathon.com/" target="_blank">Govathon</a> or city-wide civic tech hackathon. The effort not only sparked innovation and greater citizen collaboration, but it also released some of the city’s most useful <a href="https://atlanta.demo.socrata.com/" target="_blank">datasets</a>. In addition, the City of Atlanta also established <a href="http://www.atlantaga.gov/index.aspx?page=133" target="_blank">Focus on Results (FOR)</a> Atlanta, a performance focused strategy group that uses data to improve and augment strategic and operational goals across city departments.</p>
+                        <p>In 2014, the Fellowship team will support Atlanta’s already strong tech community, and increase available data sets and community participation.</p>
                         <p>
-                            <a href="http://brigade.codeforamerica.org/" class="button button-s">Organize a Brigade</a>
-                            <a href="https://atlanta.demo.socrata.com/" class="button button-s">Govathon Open Datasets</a> 
+                        	<a href="#2014" class="button button-s">the 2014 Fellows</a>
+                            <a href="http://www.codeforatlanta.org/" class="button button-s" target="_blank">Code for Atlanta</a>
+                            <a href="https://atlanta.demo.socrata.com/" class="button button-s" target="_blank">Govathon Open Datasets</a> 
                         </p>
+
                     </div>
                 </div>
             </section>
         </div>
     </section>
-            
-    <section class="slab-blue"> 
+
+    <section class="slab-blue">
         <div class="layout-semibreve">
             <div class="highlight highlight-with-avatar">
-                <img class="highlight-avatar" src="../../media/images/governments/atlanta_seal.png" /> 
+                <img class="highlight-avatar" src="../../media/images/governments/atlanta_seal.png" />
                 <blockquote>
                     <p>
                         Code for America offers our city an unparalleled opportunity to encourage collective problem-solving through civic collaboration, while creating a more open and transparent government.
                     </p>
+                  <a id="2014"></a>
                 </blockquote>
-                <p class="attribute">
-                    Mayor Kasim Reed, City of Atlanta
-                </p>
+	                <p class="attribute">
+	                    Mayor Kasim Reed, City of Atlanta
+	                </p>                
             </div>
         </div>
-    </section>
 
-    <section> 
+    </section>
+    
+    <section>
         <div class="layout-semibreve">
+
             <header class="badge-heading badge-red badge-fellowship">
-                <h2>
-                    The 2014 Fellowship in Atlanta
-                </h2>
+                <h2>The 2014 Fellowship in Atlanta</h2>
             </header>
-            <div class="layout-gutters">
+
+                    <div class="layout-gutters">
+                        <p>When the Fellowship team in Atlanta met with Mayor Reed at the beginning of their Fellowship year, he identified three areas where improved technology could help foster better communications between citizens and government: the courts, city infrastructure, and transparency. With these considerations in mind, the ambitious Fellows are building several tools:</p>
+
+                        <p><a href="http://court.atlantaga.gov/" target="_blank" alt="ATL Court">ATLCourt</a>, a new, user-friendly Atlanta municipal court website, allows citizens to look up their court cases, pay citations online, and get reliable answers to frequently asked questions.</p>
+
+                        <p><a href="https://github.com/codeforamerica/courtbot" target="_blank" alt="CourtBot">CourtBot</a>. Instead of traveling to the courthouse and standing in line &mdash; sometimes for hours &mdash; the 200,000 Atlanta residents who receive traffic tickets each year can now text their citation number to get information on how to pay the ticket or get information and reminders about their court dates.</p>
+
+                        <p><a href="https://github.com/codeforamerica/atl-procurement-rss" alt="ATL Procurement" target="_blank">ATL Procurement.</a> Another of the Atlanta team’s project is to raise the quality of vendors who contract with the city by increasing transparency and accessibility in the procurement process. In their research, they found that Atlanta receives responses from the same core group of suppliers, suggesting the need to reach out to a greater, more diverse market. By streamlining the process by which vendors submit their project proposals, as well as opening up data about purchasing and forecast through a widget and API, the Atlanta team hopes to increase competitiveness in the vendor market, thereby raising the quality of government contractors while saving taxpayers money.</p>
+
+                        <div style="text-align:center;"><img src="/media/images/governments/atlanta-atl-court.png" atl="ATL Court website" style="align:center;"/></div>
+
+                    </div>
+
+
+            <div class="layout-semibreve">
+            <h4>Meet the team:</h4>
+            <div>
                 <ul>
-                    <li class="layout-crotchet">
-                        {% include people/andrea-hansen.html context="2014-fellows" base="../.." %}
-                    </li>
                     <li class="layout-crotchet">
                         {% include people/sam-hashemi.html context="2014-fellows" base="../.." %}
                     </li>
@@ -68,25 +87,103 @@ nav-breadcrumbs:
                         {% include people/tiffani-bell.html context="2014-fellows" base="../.." %}
                     </li>
                 </ul>
-                <p><b>City Team Leads</b>: Kristin Wilson, Director of Innovation Delivery; Anne Torres, Deputy Director of Communications; Daphne Rackley, Deputy Chief Information Officer </p>
-                <p><b>Community Partners</b>: Atlanta Committee for Progress</p>
-                <p>Follow the fellows' progress on their blog <a href="http://willcodeforpeaches.tumblr.com/">Will Code for Peaches</a></p>
             </div>
-        </div>
+            </div>
+
+            
+            <div  class="layout-semibreve">
+                <p><strong>Team Leads</strong>: Kristin Wilson, Director of Innovation Delivery; Anne Torres, Deputy Director of Communications; Daphne Rackley, Deputy Chief Information Officer <br/>
+                <strong>Community Partners</strong>: Atlanta Committee for Progress</p>
+
+                <p>Follow the Fellows' progress on their blog <a href="http://willcodeforpeaches.tumblr.com/" target="_blank" alt="Will Code for Peaches blog">Will Code for Peaches</a></p>
+
+
+                <p>Contribute to Atlanta Fellows' work on Github: <a href="https://github.com/codeforamerica/court.atlantaga.gov" target="_blank" alt="ATL Court">ATL Court</a>, <a href="https://github.com/codeforamerica/courtbot" target="_blank" alt="CourtBot">CourtBot</a>, and <a href="https://github.com/codeforamerica/atl-procurement-rss" target="_blank" alt="ATL Procurement">ATL Procurement</a>.</p>
+            </div>
+
+
+       </div>
     </section>
 
-    <section class="slab-gray"> 
+    <section class="slab-gray">
         <div class="layout-semibreve">
-            <header class="badge-heading badge-orange badge-brigade">
-                <h2>
-                    Articles &amp; video
-                </h2>
-            </header>
+            <header class="badge-heading badge-orange badge-fellowship">
+                <h2>Articles &amp; video</h2>
+            </header>   
+
             <ul class="teasers">
-                
+
+             <li class="layout-crotchet"> 
+                <article class="teaser">
+                    <iframe width="300" height="165" src="//www.youtube.com/embed/q1Kwh2K6naI?list=UU6VjQY-gIxXGKmjW0LeMGOw" frameborder="0" allowfullscreen></iframe>
+                    <div class="teaser-description">
+                        <h4 class="teaser-title">
+                            Atlanta, Code for America Fellows - <a href="https://www.youtube.com/watch?v=q1Kwh2K6naI&amp;list=UU6VjQY-gIxXGKmjW0LeMGOw" target="_blank">BETA</a>
+                        </h4>
+                        <div class="teaser-body">
+                            <p>Tiffani Bell and Sam Hashemi talk about their projects in Atlanta, GA. ...
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                </li>
+
                 <li class="layout-crotchet"> 
                 <article class="teaser">
-                    <a href="http://www.atlantadailyworld.com/201310159576/Business/atlanta-named-2014-code-for-america-city"><img class="teaser-image" src="../../media/images/governments/atlanta_pressimage.jpg" alt="" /></a> 
+                    <a href="http://gcn.com/blogs/pulse/2014/05/atlcourt.aspx"><img class="teaser-image" src="../../media/images/press/atlanta-201405-statescoop.png" alt="Statescoop article" /></a> 
+                    <div class="teaser-description">
+                        <h4 class="teaser-title">
+                            Atlanta and Code for America website improves court operations – <a href="http://gcn.com/blogs/pulse/2014/05/atlcourt.aspx">GCN</a>
+                        </h4>
+                        <div class="teaser-body">
+                            <p>
+                                The City of Atlanta announced its selection as a 2014 Code for America City today. The Code for America Fellowship is an 11-month program where developers, designers, researchers, and product managers work alongside with governments to solve community issues with new technology. Atlanta was selected as one of ten cities to participate. The official announcement came earlier today at the Code for America Summit.
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                </li>
+
+
+                <li class="layout-crotchet"> 
+                <article class="teaser">
+                    <a href="http://statescoop.com/atlanta-code-america-team-courtroom-website/"><img class="teaser-image" src="../../media/images/press/atlanta-201405-gcn.png" alt="GCN article" /></a> 
+                    <div class="teaser-description">
+                        <h4 class="teaser-title">
+                            Atlanta, Code for America team on courtroom website – <a href="http://statescoop.com/atlanta-code-america-team-courtroom-website/">StateScoop Wire</a>
+                        </h4>
+                        <div class="teaser-body">
+                            <p>
+                                The City of Atlanta announced its selection as a 2014 Code for America City today. The Code for America Fellowship is an 11-month program where developers, designers, researchers, and product managers work alongside with governments to solve community issues with new technology. Atlanta was selected as one of ten cities to participate. The official announcement came earlier today at the Code for America Summit.
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                </li>
+
+                <li class="layout-crotchet"> 
+                <article class="teaser">
+                    <a href="http://www.causeshift.com/code-for-america-fellow-helping-atlanta/"><img class="teaser-image" src="../../media/images/press/atlanta-201402-causeshift.png" alt="CauseShift article" /></a> 
+                    <div class="teaser-description">
+                        <h4 class="teaser-title">
+                            Code for America Fellows Helping Atlanta – <a href="http://www.causeshift.com/code-for-america-fellow-helping-atlanta/">Causeshift</a>
+                        </h4>
+                        <div class="teaser-body">
+                            <p>
+                                The City of Atlanta announced its selection as a 2014 Code for America City today. The Code for America Fellowship is an 11-month program where developers, designers, researchers, and product managers work alongside with governments to solve community issues with new technology. Atlanta was selected as one of ten cities to participate. The official announcement came earlier today at the Code for America Summit.
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                </li>
+
+
+                <li class="layout-crotchet"> 
+                <article class="teaser">
+                    <a href="http://www.atlantadailyworld.com/201310159576/Business/atlanta-named-2014-code-for-america-city"><img class="teaser-image" src="../../media/images/press/atlanta-201310-atldailyw.png" alt="Atlanta Daily World article" /></a> 
                     <div class="teaser-description">
                         <h4 class="teaser-title">
                             Atlanta Named 2014 Code for America City – <a href="http://www.atlantadailyworld.com/201310159576/Business/atlanta-named-2014-code-for-america-city">Atlanta Daily World</a>
@@ -101,8 +198,7 @@ nav-breadcrumbs:
                 </article>
                 </li>
 
-
             </ul>
+
         </div>
     </section>
-

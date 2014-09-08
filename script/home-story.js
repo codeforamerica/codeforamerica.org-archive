@@ -52,6 +52,12 @@ function on_stories(stories)
 
     document.getElementById('story-title').innerHTML = story.head_html;
     document.getElementById('story-content').innerHTML = story.content_html;
+    
+    if(story.hasOwnProperty('box_text') && story.hasOwnProperty('box_link'))
+    {
+        document.getElementById('box-link').href = story.box_link;
+        document.getElementById('box-link').innerHTML = story.box_text;
+    }
 
     var s = document.createStyleSheet();
     s.addRule('.masthead:before', "background-image: url('"+story.image_src+"') !important");

@@ -38,7 +38,17 @@
         float:right;
       }
     }
+        ul.list-logos{
+	width:900px;
+	margin: 0 auto;
+	padding: 0;
+   }
+    .list-logos li{
+    	width:15%;
+    }
+
 	</style>
+    {% include meta-header.html %}
 </head>
 
 <body>
@@ -63,10 +73,8 @@
       <img src="assets/logo.png" />
   </a>
 
-  <p class="global-header-tagline">Bringing together <strong>local governments</strong> and <strong>technologists</strong> <br />to make <strong>better cities for everyone</strong>
-
-  </p>
-<p class="feature-action"><a class="button-prominent" href="/apply">Apply to be a 2015 Fellow!</a></p>
+  <p class="global-header-tagline">Government can work for the people, by the people,<br/>in the 21st century. Let’s make it work.</p>
+<p class="feature-action"><a class="button-prominent" href="/summit">Register for the 2014 CfA Summit!</a></p>
   <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
 
   <nav class="nav-global-secondary">
@@ -92,7 +100,7 @@
   <header class="layout-semibreve masthead-header">
     <h1 id="story-title" class="page-title"><a href="governments/sanfrancisco/">In San Francisco</a></h1>
     <p id="story-content">One third of HSA clients are unnecessarily cut from food benefits. Four fellows built <a href="/apps/promptly/">Promptly</a> offering SMS notifications to keep families fed.</p>
-    <a class="text-whisper button-invert" href="https://screendoor.dobt.co/code-for-america/2015-fellowship-application">Apply now to become a Fellow</a>
+    <a id="box-link" class="text-whisper button-invert" href="/about">Learn More About What We Do</a>
   </header>
 </div>
 
@@ -156,7 +164,41 @@
   </div>
 </section>
 
-<section class="layout-centered insulate-inner">
+<section>
+  <div class="layout-breve">
+    <div class="badge-heading badge-github badge-blue">
+        <h2>Code for America Right Now</h2>
+        <p>These are open GitHub Issues labeled with
+        <span class="label">help wanted</span>
+        from across the civic technology movement. Find more using the
+        <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+    </div>
+    <style>
+      .label {
+        border: 1px solid #00a175;
+        display: inline-block;
+        background-color:#00a175;
+        color: #fff;
+        text-align: center;
+        border-radius: .33em;
+        margin: 5px;
+        padding: 0 10px;
+        font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+        font-size:0.85em;
+      }
+    </style>
+    <script>
+        // Resize iframe to fit content
+        function resize() {
+          var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+          document.getElementById("widget").height = newheight + "px";
+        }
+    </script>
+    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="320px" frameBorder="0" onLoad="resize();"> </iframe>
+  </div>
+</section>
+
+<!-- <section class="layout-centered insulate-inner">
   <h2 class="text-whisper">Quick Stats</h2>
 
   <ul class="bricks bricks-4">
@@ -181,24 +223,24 @@
       <p class="text-whisper">Projects <a href="/about/brigade/">deployed by volunteers</a></p>
     </li>
   </ul>
-</section>
+</section> -->
 
 
 <section class="slab-gray layout-centered insulate-inner">
     <h2 class="text-whisper">Code for America is kindly supported by</h2>
   <ul class="list-logos muted">
-    <li><a href="http://knightfoundation.org/"><img src="media/images/sponsorlogos/knightlogo.gif"/></a></li>
-    <li><a href="http://www.omidyar.com/"><img src="media/images/sponsorlogos/on.gif"/></a></li>
-    <li><a href="https://www.google.com/"><img src="media/images/sponsorlogos/googlelogo.gif"/></a></li>
-    <li><a href="https://www.bluehost.com"><img src="media/images/sponsorlogos/bluehost.gif"/></a></li>
-    <li><a href="http://www.chcf.org/"><img src="media/images/sponsorlogos/chc.gif"/></a></li>
-    <li><a href="http://irvine.org/"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/06/irvinelogo-2013.png"/></a></li>
-    <li><a href="http://www.ritaallenfoundation.org/"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/07/RAF-LogoColor.gif"/></a></li>
-    <li><a href="http://www.passportcapital.com"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/07/Passport-Logo-7.png"/></a></li>
-    <li><a href="http://www.accela.com/"><img src="media/images/sponsorlogos/accela.gif"/></a></li>
-    <li><a href="http://www.oreilly.com/"><img src="media/images/sponsorlogos/oreilly.gif"/></a></li>
-    <li><a href="http://www.esri.com/"><img src="media/images/sponsorlogos/esri.gif"/></a></li>
-    <li><a href="http://www.gopivotal.com/"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/06/pivotal-logo.png"/></a></li>
+     <li><a href="http://knightfoundation.org/"><img src="media/images/sponsorlogos/knightlogo.gif"/></a></li>
+     <li><a href="http://www.omidyar.com/"><img src="media/images/sponsorlogos/on.gif"/></a></li>
+     <li><a href="https://www.google.com/"><img src="media/images/sponsorlogos/googlelogo.gif"/></a></li>
+     <li><a href="https://www.bluehost.com"><img src="media/images/sponsorlogos/bluehost.gif"/></a></li>
+     <li><a href="http://www.chcf.org/"><img src="media/images/sponsorlogos/chc.gif"/></a></li>
+     <li><a href="http://irvine.org/"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/06/irvinelogo-2013.png"/></a></li>
+     <li><a href="http://www.ritaallenfoundation.org/"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/07/RAF-LogoColor.gif"/></a></li>
+     <li><a href="http://www.passportcapital.com"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/07/Passport-Logo-7.png"/></a></li>
+     <li><a href="http://www.accela.com/"><img src="media/images/sponsorlogos/accela.gif"/></a></li>
+     <li><a href="http://www.oreilly.com/"><img src="media/images/sponsorlogos/oreilly.gif"/></a></li>
+     <li><a href="http://www.esri.com/"><img src="media/images/sponsorlogos/esri.gif"/></a></li>
+     <li><a href="http://www.gopivotal.com/"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2014/06/pivotal-logo.png"/></a></li>
   </ul>
 
 

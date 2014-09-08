@@ -1225,10 +1225,12 @@ blockquote {
   p {
     font-family: $freight-text;
     font-size: 24px;
+    font-weight: normal;
     padding-bottom: 10px;
   } 
   footer {
-    font-family: $interstate-cond;
+    font-family: $interstate;
+    font-weight: normal;
     padding-bottom: 10px;
   }
 }
@@ -1242,6 +1244,8 @@ blockquote {
 }
 .quote-big {
   font-size: 36px;
+  font-weight: normal;
+  line-height: 1.125em;
 }
 .main-well {
 }
@@ -1389,6 +1393,27 @@ blockquote {
   }
   h2 {
     margin-top: 0;
+  }
+  .button {
+    @include border-radius (10px);
+    background-color: $dk-gray;
+    border: 1px solid $gray;
+    padding: 10px 20px;
+  }
+  .ackn li {
+    color: $med-gray;
+    font-family: $interstate;
+    font-size: 1.125em;
+    line-height: 1.25em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+  }
+  .ackn .adv-board {
+    color: $lt-gray;
+    font-family: $freight-text;
+    font-size: 1.25em;
+    font-weight: normal;
+    text-transform: none;
   }
 }
 

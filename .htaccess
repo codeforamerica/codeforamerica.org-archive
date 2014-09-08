@@ -116,7 +116,7 @@ RedirectMatch permanent ^(.*)/about/funders(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/support-2(/?)$ $1/supporters$2
 RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)/what-we-do(/?)$ $1/about$2
-RedirectMatch permanent ^(.*)/projects(/?)$ $1/apps$2
+RedirectMatch permanent ^(.*)(?<!/brigade)/projects(/?)$ $1/apps$2
 RedirectMatch permanent ^(.*)/code-for-america-blog(/?)$ $1/blog$2
 RedirectMatch permanent ^(.*)/about/contact(/?)$ $1/contact$2
 RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/international$2
@@ -167,7 +167,7 @@ RedirectMatch permanent ^(.*)/governments/2015-cities(/?)$ $1/governments/2015-c
 # Fellowship lists.
 #
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellowship-apply$2
-RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/governments)/apply(/?)$ $1/geeks/fellowship-apply$2
+RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/governments)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 RedirectMatch permanent ^(.*)/geeks/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/our-geeks)/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
@@ -202,8 +202,8 @@ RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/governments/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)/apply(/?)$ $1/geeks/fellowship-apply$2
-RedirectMatch permanent ^(.*)/Apply(/?)$ $1/geeks/fellowship-apply$2
+RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 
 #
 # Governments.
@@ -225,7 +225,6 @@ RedirectMatch permanent ^(.*)/governments/call-for-applications(/?)$ $1/governme
 RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/city-current(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/governments/current(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/about/peernetwork(/?)$ $1/peernetwork$2
 
 RedirectMatch permanent ^(.*)/2013-partners/kansas-city(/?)$ $1/governments/kansascity$2
 RedirectMatch permanent ^(.*)/2013-partners/louisville(/?)$ $1/governments/louisville$2
@@ -262,7 +261,6 @@ RedirectMatch permanent ^(.*)/2012-city-finalists/macon(/?)$ $1/governments/maco
 RedirectMatch permanent ^(.*)/2012-city-finalists/santa-cruz(/?)$ $1/governments/santacruz$2
 RedirectMatch permanent ^(.*)/2012-city-finalists/new-orleans(/?)$ $1/governments/neworleans$2
 
-
 RedirectMatch permanent ^(.*)(?<!/governments)/austin(/?)$ $1/governments/austin$2
 RedirectMatch permanent ^(.*)(?<!/governments)/honolulu(/?)$ $1/governments/honolulu$2
 RedirectMatch permanent ^(.*)(?<!/governments)/seattle(/?)$ $1/governments/seattle$2
@@ -272,6 +270,8 @@ RedirectMatch permanent ^(.*)(?<!/governments|/city-alumni)/philadelphia(/?)$ $1
 RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/governments/boston$2
 RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/governments/chicago$2
 RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/governments/philadelphia$2
+RedirectMatch permanent ^(.*)/governments/summit-county(/?)$ $1/governments/summitcounty$2
+
 #
 # People
 #

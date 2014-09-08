@@ -1,0 +1,56 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">John Leonard</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Sr. Manager of Government Programs</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/john-leonard.jpeg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">John leads Code for America’s national network for public sector innovation, managing consulting, training and collaborations that help cities use technology, design and open data to be more effective and responsive. Prior to joining Code for America, John was Senior Vice President at Better World Advertising, where he led development of TV, print and digital media campaigns for government and nonprofit agencies. He previously coordinated citizen engagement for the Seattle Department of Neighborhoods and designed training curricula for the Seattle-King County Department of Public Health. John is the founder and former Executive Director of Gay City, one of the nation’s leading LGBT organizations. He holds a B.A. in Public Affairs from George Washington University and a Master’s in Government from Cornell. He lives in San Francisco and serves on the Board of Directors of the Horizons Foundation.</p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/johnclayleonard">@johnclayleonard</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="www.linkedin.com/pub/john-leonard/5/432/68b">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>john-leonard</a></td></tr>
+	    	
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">John Leonard</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/john-leonard.jpeg">
+
+    <div class="p-note profile-note">
+        <p>Sr. Manager of Government Programs</p>
+
+        <p>John leads Code for America’s national network for public sector innovation, managing consulting, training and collaborations that help cities use technology, design and open data to be more effective and responsive. Prior to joining…</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/john-leonard/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="www.linkedin.com/pub/john-leonard/5/432/68b">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/johnclayleonard">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}

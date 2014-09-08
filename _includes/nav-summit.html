@@ -1,3 +1,11 @@
+{% if page.nav_tier1_active %}
+    {% assign nav_tier1_active = page.nav_tier1_active %}
+{% elsif include.nav_tier1_active %}
+    {% assign nav_tier1_active = include.nav_tier1_active %}
+{% else %}
+    {% assign nav_tier1_active = false %}
+{% endif %}
+
 <nav class="nav-global-primary">
   <ul class="layout-breve layout-tight">
     <li><a href="/">Code for America</a></li>
@@ -47,9 +55,9 @@
   <nav class="nav-global-secondary">
     <ul>
         <li class="nav-tier1 nav-has-children">
-            <a href="/summit" {% if include.nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
+            <a href="/summit" {% if nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
         
-            {% if include.nav_tier1_active == "about" %}
+            {% if nav_tier1_active == "about" %}
             <ul class="nav-tier2">
                 <li><a href="/summit/venue">Venue</a></li>
                 <li><a href="/summit/contact">Contact</a></li>
@@ -58,26 +66,25 @@
             {% endif %}
         </li>
         <li class="nav-tier1 nav-has-children">
-            <a href="/summit/schedule" {% if include.nav_tier1_active == "schedule" %}class="state-active"{% endif %}>Schedule</a>
+            <a href="/summit/schedule" {% if nav_tier1_active == "schedule" %}class="state-active"{% endif %}>Schedule</a>
         </li>
         <li class="nav-tier1 nav-has-children">
-            <a href="/summit/speakers" {% if include.nav_tier1_active == "speakers" %}class="state-active"{% endif %}>Speakers</a>
+            <a href="/summit/venue" {% if nav_tier1_active == "venue" %}class="state-active"{% endif %}>Venue</a>
         </li>
         <li class="nav-tier1 nav-has-children">
-            <a href="/summit/sponsors" {% if include.nav_tier1_active == "sponsors" %}class="state-active"{% endif %}>Sponsors</a>
+            <a href="/summit/speakers" {% if nav_tier1_active == "speakers" %}class="state-active"{% endif %}>Speakers</a>
+        </li>
+        <li class="nav-tier1 nav-has-children">
+            <a href="/summit/sponsors" {% if nav_tier1_active == "sponsors" %}class="state-active"{% endif %}>Sponsors</a>
         
-            {% if include.nav_tier1_active == "sponsors" %}
+            {% if nav_tier1_active == "sponsors" %}
             <ul class="nav-tier2">
                 <li><a href="/media/docs/2014summitoverview.pdf">Prospectus</a></li>
-                <li><a href="https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform?usp=send_form">Civic Startups</a></li>
             </ul>
             {% endif %}
         </li>
         <li>
             <a href="https://www.eventbrite.com/e/code-for-america-summit-registration-11424407711" target="_blank" class="button button-alternative">Register</a>
-        </li>
-        <li>
-            <a href="https://codeforamerica.wufoo.com/forms/2014-cfa-summit-propose-a-session/" target="_blank" class="button">Propose a Session</a>
         </li>
     </ul>
   </nav>    

@@ -11,7 +11,7 @@ nav-breadcrumbs:
   <div class="layout-breve layout-centered">
     <h2>Citizens have the power to help their cities.</h2>
 
-    <p class="layout-semibreve" style="padding-top:0px;">The <a href="http://codeforamerica.org/brigade">Code for America Brigade</a> program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. The <a href="/about/fellowship">CfA Fellowship</a> is a one year residency placing developers, designers, and researchers within local governments. <a href="/apply">Applications</a> for the 2015 Fellowship are due July 15.</p>
+    <p class="layout-semibreve" style="padding-top:0px;">The <a href="http://codeforamerica.org/brigade">Code for America Brigade</a> program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. The <a href="/about/fellowship">CfA Fellowship</a> is a one year residency placing developers, designers, and researchers within local governments.</p>
 
   </div>
 </section>
@@ -20,12 +20,14 @@ nav-breadcrumbs:
   <div class="layout-chimney">
     <div class="layout-minim-staccato slab-medium-red chimney">
       <div class="chimney-body">
-        <h3>Why I Code for America</h3>
+        <h3>Civic Hacker of the Week</h3>
         <div class="h-card profile">
-            <h4 class="p-name profile-name">Ariel Kennan</h4>
-            <img class="u-photo profile-photo" src="../media/images/people/ariel-kennan.jpg" alt="" />
-            <p class="p-role profile-role">2012 Fellow</p>
-            <p class="p-note profile-note">Co-creator of <a class="p-org profile-org" href="http://www.codeforamerica.org/blog/?cfa_app=bizfriendly">BizFriend.ly</a></p>
+            <h4 class="p-name profile-name">Giselle Sperber</h4>
+            <img class="u-photo profile-photo" src="../media/images/people/giselle-sperber.jpg" alt="" />
+            <p class="p-role profile-role">2014 Fellow</p>
+            <p class="p-role profile-role">Team Chattanooga</p>
+            <p class="p-role profile-role">Designer, Foodie, and Photographer Extraordinaire</p>
+            <p class="p-note profile-note">Famous on Twitter at <a class="p-org profile-org" href="http://www.twitter.com/_giselles">@_giselles</a></p>
         </div>
         <a href="our-geeks" class="button button-prominent">Meet more civic hackers</a>
       </div>
@@ -34,25 +36,121 @@ nav-breadcrumbs:
     <div class="layout-minim-staccato">
       <h3 class="h4">What's happening?</h3>
         <ul class="list-no-bullets list-icons">
-        	<li class="icon-calendar"><a href="http://www.codeforamerica.org/apply">2015 Fellowship applications due<br/> July 15</a>
-        	<a class="text-whisper" href="http://codeforamerica.org/events">Other Events</a>
+        	<li class="icon-calendar"><span id="nextEvent"></span>
+        	<a class="text-whisper" href="http://codeforamerica.org/brigade/events">Other Events</a>
         	</li>
-          <li class="icon-github2"><a href="http://codeforamerica.github.io/citizen-onboard/">Citizen Onboarding</a>
-          	<a class="text-whisper" href="https://github.com/codeforamerica/hack-requests">More hack requests</a>
+          <li class="icon-lamp"><span id="recentProject"></span>
+          	<a class="text-whisper" href="http://codeforamerica.org/brigade/projects">More civic tech projects</a>
           </li>
-          <li class="icon-lamp"><a href="http://us-city.census.okfn.org/">US City Open Data Census</a>
-          	<a class="text-whisper" href="http://www.hackforchange.org/challenges">More national projects</a>
-          </li>
-          <li class="icon-youtube"><a href="https://www.youtube.com/watch?v=H_on0kXZ07M">Video: Civic Hacking 101</a>
-          	<a class="text-whisper" href="http://youtube.com/codeforamerica">More CFA videos</a>
-          </li>
-          <li class="icon-tools"><a href="http://hackforchange.org/challenges/digital-front-doordigital-divide-challenge/">Digital Divide Research Challenge</a>
-          	<a class="text-whisper" href="http://brigade.codeforamerica.org/pages/tools">More organizing</a>
+          <li class="icon-bullhorn"><span id="recentStory"></span>
+          	<a class="text-whisper" href="http://codeforamerica.tumblr.com/">More civic tech stories</a>
           </li>
         </ul>
     </div>
   </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+
+  <script>
+
+    getApi("http://codeforamerica.org/api/events/upcoming_events?per_page=1", showEvent);
+    getApi("http://codeforamerica.org/api/projects?per_page=1", showProject);
+    getApi("http://codeforamerica.org/api/stories?per_page=1", showStory);
+
+    function getApi(url, callback){
+        // Make a api request and pass the response to the callback
+        var request = new XMLHttpRequest();
+        request.open('GET', url, true);
+
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400){
+            // Success!
+            data = JSON.parse(request.responseText);
+            callback(data);
+          } else {
+            // We reached our target server, but it returned an error
+            console.log(request.status);
+          }
+        };
+
+        request.onerror = function(e) {
+          // There was a connection error of some sort
+          console.log(request.status);
+        };
+
+        request.send();
+    }
+
+    function showEvent(data) {
+        // Display the next upcoming event.
+        var event = data.objects[0]
+        nextEvent = document.getElementById("nextEvent");
+        var html = "<a href=" + event.event_url + ">" + event.name + "</a>";
+        html += '<span class="text-whisper">' + moment(new Date(event.start_time)).fromNow();
+        html += " at " + event.organization.name + '</span>';
+        nextEvent.innerHTML = html;
+    }
+
+    function showProject(data) {
+        // Display the most recently updated project
+        var project = data.objects[0]
+        recentProject = document.getElementById("recentProject");
+        if (project.link_url) {
+            var html = "<a href=" + project.link_url + ">" + project.name + "</a>";
+            recentProject.innerHTML = html;
+        }
+        else if (project.code_url) {
+            var html = "<a href=" + project.code_url + ">" + project.name + "</a>";
+            recentProject.innerHTML = html;
+        } else {
+          getApi(data.pages.next, showProject);
+        }
+
+    }
+
+    function showStory(data) {
+        // Display the most recently updated project
+        var story = data.objects[0]
+        recentStory = document.getElementById("recentStory");
+        var html = "<a href=" + story.link + ">" + story.title + "</a>";
+        recentStory.innerHTML = html;
+    }
+
+  </script>
+
 </section>
+
+        <section>
+          <div class="layout-breve">
+            <div class="badge-heading badge-github badge-blue">
+                <h2>Code for America Right Now!</h2>
+                <p>These are open GitHub Issues labeled with
+                <span class="label" style="background-color:#159818;">help wanted</span>
+                from across the civic technology movement. Find more using the
+                <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+            </div>
+            <style>
+              .label {
+                border: 1px solid #000;
+                display: inline-block;
+                color: #fff;
+                text-align: center;
+                border-radius: .33em;
+                margin: 5px;
+                padding: 0 10px;
+                font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+              }
+            </style>
+            <script>
+                // Resize iframe to fit content
+                function resize() {
+                  var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+                  document.getElementById("widget").height = newheight + "px";
+                }
+            </script>
+            <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
+          </div>
+        </section>
 
 <section>
   <div class="layout-breve">

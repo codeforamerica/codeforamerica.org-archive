@@ -1,0 +1,58 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Jill Bjers</h2>
+	</div>
+
+	<div class="layout-minor">
+
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="http://codeforamerica.org/governments/charlotte/">Charlotte Brigade</a></li>
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains/">Brigade Captains</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/jill-bjers.png" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">A mother, wife, organizer, writer, advocate, crafty lady, techie and extensive travel junkie. She hails from Salt Lake City, where she completed post graduate degrees in Creative Writing and Literature. She is co-owner of Xorcode and Foodles, as well as Events Director for Geek Girl TechCon. She is very active in Charlotte’s tech and startup community and serves as Code for Charlotte Co-Captain, Meteor Charlotte Co-founder, and Organizer for BarCamp Charlotte, Charlotte Startup Weekend and TEDxCharlotte.  She has served as Director of Human Happiness for The PPL during 2012 DNC, Global Outreach Director for Twelve in Twelve and Organizing Coordinator for 2002 Salt Lake Olympics. She is dedicated to elevating the lives of people around her and brings her enthusiasm as a community organizer to all of her projects.
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/jillzey">@jillzey</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Jill Bjers</h3>
+    <img alt="jill-bjers" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jill-bjers.png" />
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://codeforamerica.org/governments/charlotte/">Charlotte Brigade</a>
+        </p>
+        <p>
+            A mother, wife, organizer, writer, advocate, crafty lady, techie and extensive travel junkie. She hails from Salt Lake City, where she completed post graduate degrees in Creative Writing and Literature. She is co-owner of Xorcode and Foodles, as well as Events Director for Geek Girl TechCon. She is very active in Charlotte’s tech and startup community and serves... 
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/jill-bjers/">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-twitter"><a href="https://twitter.com/jillzey">@jillzey</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}

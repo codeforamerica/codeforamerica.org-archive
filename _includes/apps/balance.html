@@ -1,0 +1,86 @@
+{% if include.context == "app-page" %}
+
+<style>
+.loud {
+  color: #cf1b41;
+  font-weight: bold;
+}
+
+th {
+  min-width: 100px;
+}
+</style>
+
+	<div class="heading">
+		<h2>Balance</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/balance-logo.png" />
+    <h4 class="text-whisper loud layout-tight">Made with love by</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+    	<li><a href="http://www.linkedin.com/in/alanjosephwilliams">Alan Williams</a></li>
+    	<li><a href="http://www.linkedin.com/in/daveguarino">Dave Guarino</a></li>
+    	<li><a href="http://www.linkedin.com/in/jacobsolomon">Jake Solomon</a></li>
+    </ul>
+
+    <h4 class="text-whisper loud layout-tight">In close partnership with</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="https://www.linkedin.com/pub/liliana-sandoval/24/223/250">Liliana Sandoval</a>, SF-Marin    Food Bank</li>
+      <li><a href="https://www.linkedin.com/pub/leo-o-farrell/9/815/804">Leo O'Farrell</a>, SF HSA</li>
+      <li><a href="https://www.linkedin.com/pub/stephanie-nishio/2/93/b28">Stephanie Nishio</a>, CAFB</li>
+    </ul>
+    <p class="layout-tight">
+
+    <h4 class="text-whisper loud layout-tight">For</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li>Food Stamp clients throughout the Country</li>
+    </ul>
+
+	</div>
+	
+	<div class="layout-major">
+	    
+    <img src="{{ include.base }}/media/images/apps/balance-staging.png" />
+	        
+	  <div class="spotlight">
+	    	<h3 class="text-whisper">Info</h3>
+        <table class="table-unstyled table-minor">
+	    		<tr><th>Try it out</th><td>You can try it out right now with this EBT number: <b>5077 1901 9764 6090.</b></td></tr>
+          <tr><th>Location</th><td>Balance works with every EBT card in California. More States are on the way.</td></tr>
+          <tr><th>Language</th><td>Balance only works in English right now. Spanish is next!</td></tr>
+          <tr><th>Cost</th><td>Balance is free for everyone in CA (standard text messaging rates apply)</td></tr>
+          <tr><th>Code</th><td><a href="https://github.com/codeforamerica/balance">https://github<wbr>.com/<wbr>codeforamerica/balance</a></td></tr>
+	    	</table>
+	    	<a href="mailto:jacob@codeforamerica.org?subject=I want Balance right now" class="button-alternative">Get in touch to start using Balance with your community</a><p class="text-whisper layout-tight">
+	    </div>
+	    
+	</div>
+<!-- 
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/textizen">
+                <h1 class="teaser-title">Textizen</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Textizen is a civic dialogue platform that allows residents to connect with a powerful mix of offline outreach and online engagement.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/textizen">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/textizen" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/textizen.jpg" />
+            </a>
+        </footer>
+    </article> -->
+
+{% endif %}
