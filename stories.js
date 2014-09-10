@@ -21,7 +21,7 @@ on_stories(
     },
     {
         "head_html": "<a href='/governments/2014-cities/'>Across the U.S.</a>",
-        "content_html": "30 fellows are working with 10 local governments to make government services simple, effective, and easy-to-use.",
+        "content_html": "29 fellows are working with 10 local governments to make government services simple, effective, and easy-to-use.",
         "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
         "image_src": "media/images/geeks/fellowship-apply.jpg",
         "box_link": "/governments/2014-cities/",
