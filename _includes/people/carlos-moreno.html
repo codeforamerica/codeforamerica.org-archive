@@ -1,0 +1,64 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Carlos-Moreno</h2>
+	</div>
+
+	<div class="layout-minor">
+
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="https://opengovhacknight.eventbrite.com/">Tulsa, OK Brigade</a></li>
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains/">Brigade Captains</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/carlos-moreno.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">Carlos Moreno is a graphic designer, community volunteer, book publisher, entrepreneur, and a magic-bean buyer.  Carlos is the in-house graphic designer at CAP Tulsa (http://www.captulsa.org), a nonprofit that provides early childhood education services and comprehensive enrichment programs for low-income families.  He serves on the board of TulsaNow (http://www.tulsanow.org), a group that advocates for intelligent and efficient land use, planning & zoning, transportation, and economic development policies.  
+
+Carlos was selected by national urban-affairs magazine NextCity (http://nexcity.org) as part of its 2014 Vanguard Class.  He's passionate about revitalizing neighborhoods, improving public policy, and collaborating with local creatives.  He's married to an awesome 2nd-grade teacher, and he & his daughter are learning to play the ukelele.</p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/carlosmoreno">@chimchim237</a></td></tr>
+	    		
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Carlos Moreno</h3>
+    <img alt="chris-whitaker" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/carlos-moreno.jpg" />
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://codefortulsa.org//">Tulsa, OK Brigade</a>
+        </p>
+        <p>
+            Carlos Moreno is a graphic designer, community volunteer, book publisher, entrepreneur, and a magic-bean buyer.  Carlos is the in-house graphic designer at CAP Tulsa (http://www.captulsa.org), a nonprofit that provides early childhood education services and comprehensive enrichment programs for low-income families.  He serves on the board of TulsaNow (http://www.tulsanow.org), a group that advocates for intelligent and efficient land use, planning & zoning, transportation, and economic development policies.  
+
+Carlos was selected by national urban-affairs magazine NextCity (http://nexcity.org) as part of its 2014 Vanguard Class.  He's passionate about revitalizing neighborhoods, improving public policy, and collaborating with local creatives.  He's married to an awesome 2nd-grade teacher, and he & his daughter are learning to play the ukelele.</p>
+
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/carlos-moreno/">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+          
+            <li class="social-twitter"><a href="https://twitter.com/carlosmoreno">@chimchim237</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
