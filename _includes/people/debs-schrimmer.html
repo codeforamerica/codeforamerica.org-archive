@@ -1,0 +1,60 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Debs Schrimmer</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Research & Editorial Coordinator</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/debs-schrimmer.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	    Debs Schrimmer joined Code for America in August 2014. As Research and Editorial Coordinator, Debs helps develop resources for local government staff and community organizers to use modern technology tools to foster collaboration, improve internal government processes and service delivery, and more effectively address community needs. Debs joins Code for America with years of experience in local, regional and federal government. Most recently, Debs worked as a transportation and land use planner for the Sacramento Area Council of Governments (SACOG), a regional planning agency that works with 22 cities and 6 counties in the Sacramento region. At SACOG, her work primarily focused on plug-in electric vehicles, local food systems, and civic innovation. Debs graduated maxima cum laude from UC Davis with a B.S. in Community and Regional Development. 
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/paboynca">@debsarctica</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="www.linkedin.com/pub/deborah-schrimmer/3b/517/7a9">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>deborah-schrimmer</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Debs Schrimmer</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/debs-schrimmer.jpg">
+
+    <div class="p-note profile-note">
+        <p>Research & Editorial Coordinator</p>
+
+        <p>Debs Schrimmer joined Code for America in August 2014. As Research and Editorial Coordinator, Debs helps develop resources for local government staff and community organizers to use modern technology tools to foster collaboration, improve internal government processes...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/debs-schrimmer/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/deborah-schrimmer">LinkedIn</a></li>
+           
+            <li class="social-twitter"><a href="https://twitter.com/debsarctica">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
