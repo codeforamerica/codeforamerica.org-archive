@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Style Guide</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <!--<link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />-->
     <link href="style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/css/main.css">
     <link rel="stylesheet" href="style/css/documentation.css">
@@ -755,6 +755,10 @@
                 <p>For background colors, use a class of <code>slab-colorname</code>.</p>
             </div>
             <div class="xx-slabs">
+                <section class="slab-teal">
+                	<h3 class="text-whisper">slab-teal</h3>
+                	<?php include('_includes/blocks/content.php'); ?>
+                </section>
                 <section class="slab-gray">
                 	<h3 class="text-whisper">slab-gray</h3>
                 	<?php include('_includes/blocks/content.php'); ?>
