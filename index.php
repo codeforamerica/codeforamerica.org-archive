@@ -1,5 +1,5 @@
 <?php
-    include_once('_inc/functions.php');
+    include_once('_includes/functions.php');
     // Build out URI to reload from form dropdown
     $pageURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
     if (isset($_POST['uri']) && isset($_POST['section'])) {
@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America Style Guide</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <!--<link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />-->
     <link href="style/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/css/main.css">
     <link rel="stylesheet" href="style/css/documentation.css">
@@ -39,7 +39,7 @@
     <?php else : ?>
 
     <div class="xx-options">
-        <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
+        <a class="xx-cfa-logo" href=""><img src="media/images/logo-colored.png" /></a>
         
         <!--
         <button onclick="colorSwitcher('')" class="button-subtle button-s">White</button>
@@ -757,6 +757,10 @@
                 <p>For background colors, use a class of <code>slab-colorname</code>.</p>
             </div>
             <div class="xx-slabs">
+                <section class="slab-teal">
+                	<h3 class="text-whisper">slab-teal</h3>
+                	<?php include('_includes/blocks/content.php'); ?>
+                </section>
                 <section class="slab-gray">
                 	<h3 class="text-whisper">slab-gray</h3>
                 	<?php include('_includes/blocks/content.php'); ?>

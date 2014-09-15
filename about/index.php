@@ -1,6 +1,6 @@
 <?php include_once('../_includes/head.php'); 
     $pageTitle = 'About'; 
-    $mastheadImage = 'masthead-6';
+    $mastheadImage = 'masthead-6.jpg';
 ?>
 
 <?php include_once('../_includes/header.php'); ?>

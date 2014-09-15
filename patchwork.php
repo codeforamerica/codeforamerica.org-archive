@@ -50,7 +50,7 @@
     
     <div class="xx-options">
     
-        <a class="xx-cfa-logo" href=""><img src="_assets/logo-colored.png" /></a>
+        <a class="xx-cfa-logo" href=""><img src="media/images/logo-colored.png" /></a>
         
         <p class="xx-skip-to-nav skip-to-nav"><a href="#global-footer">Menu</a></p>
         

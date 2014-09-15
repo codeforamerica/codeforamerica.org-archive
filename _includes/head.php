@@ -19,32 +19,18 @@
     <link rel="stylesheet" href="/style/css/layout.css" media="all">
     <![endif]-->
 
-    <?php if(strpos($path,'/posts/')){ ?>
-        <style type="text/css">
-        .masthead:before {
-            background-image: url('/../_media/images/masthead/masthead-3.jpg');
-        }
-        </style>
-    <?php } elseif(isset($mastheadImage)) { ?>
-        <style type="text/css">
-        .masthead:before {
-            background-image: url('/../_media/images/masthead/<?php echo $mastheadImage ?>');
-        }
-        </style>
-    <?php }?>
+</head>
 
-        </head>
+<body>
 
-        <body>
+    <div class="js-container">
 
-            <div class="js-container">
-
-                <nav class="nav-global-primary" role="navigation">
-                    <ul class="layout-breve layout-tight">
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/library/">Library</a></li>
-                        <li>
-                            <?php include_once('../_includes/blocks/patterns/search-global.html'); ?>
-                        </li>
-                    </ul>
-                </nav><!-- .nav-global-primary -->
+        <nav class="nav-global-primary" role="navigation">
+            <ul class="layout-breve layout-tight">
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/library/">Library</a></li>
+                <li>
+                    <?php include_once('../_includes/blocks/patterns/search-global.html'); ?>
+                </li>
+            </ul>
+        </nav><!-- .nav-global-primary -->

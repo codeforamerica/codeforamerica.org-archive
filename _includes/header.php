@@ -3,9 +3,9 @@
     <div class="masthead-hero">
         <div class="masthead-image"
         <?php if(isset($mastheadImage)) { ?>
-            style="background-image: url('/_media/images/masthead/<?php echo $mastheadImage ?>')"
+            style="background-image: url('/media/images/masthead/<?php echo $mastheadImage ?>')"
             <?php } elseif(strpos($path,'/posts/')){ ?>
-                style="background-image: url('/_media/images/masthead/masthead-3.jpg')"
+                style="background-image: url('/media/images/masthead/masthead-3.jpg')"
                 <?php }?>>
             </div>
         </div>
@@ -28,12 +28,26 @@
                 <?php }?>
             </h1>
         </header>
-    </div><!-- .masthead-hero -->
+    </div><!-- .masthead-hero -->   
+    
+    <?php if(strpos($path,'/posts/')){ ?>
+        <style type="text/css">
+        .masthead:before {
+            background-image: url('/../media/images/masthead/masthead-3.jpg');
+        }
+        </style>
+    <?php } elseif(isset($mastheadImage)) { ?>
+        <style type="text/css">
+        .masthead:before {
+            background-image: url('/../media/images/masthead/<?php echo $mastheadImage ?>');
+        }
+        </style>
+    <?php }?>
 
     <div class="global-header">
 
         <a href="/home/" class="global-header-logo">
-            <img src="/../_assets/logo.png" />
+            <img src="/../media/images/logo.png" />
         </a>
 
         <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>

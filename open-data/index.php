@@ -733,7 +733,7 @@
                 </div>
                 <footer class="teaser-footer">
                     <a href="/library/item/e79acf1d684afe9d" class="teaser-masthead">
-                        <img class="teaser-image" src="/library/assets/generic-document.png" style="top: 0px; position: relative">
+                        <img class="teaser-image" src="/library/media/images/generic-document.png" style="top: 0px; position: relative">
                         <span class="teaser-type teaser-type-article">Text, 2013</span>
                     </a>
                     <a href="/library/category/Defaulting+to+Open" class="teaser-source">Defaulting to Open</a>

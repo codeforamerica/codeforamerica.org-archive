@@ -45,7 +45,7 @@
                 <h2 class="text-whisper layout-tight">Written by</h2>
                 <div class="h-card">
                     <h3 class="p-name profile-name text-prominent">Zachary Townsend</h3>
-                    <img class="u-photo profile-photo" src="/../_media/images/avatar-zachary-townsend.jpg" />
+                    <img class="u-photo profile-photo" src="/../media/images/avatar-zachary-townsend.jpg" />
                 </div>
                 
                 <div class="p-note profile-note">
