@@ -6,6 +6,6 @@ nav-breadcrumbs:
  - Citizens: "/geeks"
 ---
 
-<iframe width="940" height="450" src="//http://www.youtube.com/watch?v=tSX7Fe5Bj4g" frameborder="0" allowfullscreen></iframe>
+<iframe width="940" height="450" src="//www.youtube.com/embed/tSX7Fe5Bj4g" frameborder="0" allowfullscreen></iframe>
 
 This broadcast will start at 16:30 PM Pacific/19:30 Eastern. Please refresh this page at that time. The Q&amp;A doc for this conversation is <a href="https://docs.google.com/a/codeforamerica.org/document/d/1IQrrBtHyeUYjrcmY9aS0hwpVyyumhquNlJMkMH03qhM/edit#heading=h.7u7v8po8ryok">here</a>.
