@@ -35,7 +35,7 @@ on_stories(
     {
         "head_html": "<a href='/summit'>Every year</a>",
         "content_html": "the Code for America Summit brings together local governments, civic-minded technologists, designers, community organizers, and entrepreneurs for three days of collaborating, connecting, and learning.",
-        "image_src": "media/images/homepage-stories/Summit-Clay-Shirky.jpg",
+        "image_src": "media/images/homepage-stories/Summit-Cyd-Harrell.jpg",
         "box_link": "/summit",
         "box_text": "Learn about the 2014 Summit"
     }
