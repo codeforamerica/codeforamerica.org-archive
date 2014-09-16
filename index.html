@@ -8,44 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Code for America</title>
     <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
-    <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/main.css">
-    <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/layout.css" media="all and (min-width: 40em)">
-    <link href="http://style.codeforamerica.org/1/style/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://origin.style.codeforamerica.org/2014-08/style/css/main.css">
+    <link rel="stylesheet" href="http://origin.style.codeforamerica.org/2014-08/style/css/layout.css" media="all and (min-width: 40em)">
+    <link href="http://origin.style.codeforamerica.org/2014-08/style/css/prism.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="http://style.codeforamerica.org/1/style/favicons/60x60/flag-red.png"/>
+    <link rel="apple-touch-icon-precomposed" href="http://origin.style.codeforamerica.org/2014-08/style/favicons/60x60/flag-red.png"/>
 
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="http://style.codeforamerica.org/1/style/css/layout.css" media="all">
+        <link rel="stylesheet" href="http://origin.style.codeforamerica.org/2014-08/style/css/layout.css" media="all">
     <![endif]-->
 
 	<style type="text/css">
+
 		.masthead:before {
 			background-image: url('media/images/masthead/masthead-1.jpg');
 		}
-    .feature-action{
-      display:none;
-    }
-    @media (min-width: 40em) {
-      .feature-action{
-        margin-top:27px;
-        display: block;
-      }
-      .feature-action a{
-        float:right;
-      }
-    }
-        ul.list-logos{
-	width:900px;
-	margin: 0 auto;
-	padding: 0;
-   }
-    .list-logos li{
-    	width:15%;
-    }
+
+        ul.list-logos
+        {
+            width: 900px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        ul.list-logos li { width: 15% }
+    
+        /* Collapse global header with following masthead */
+        .global-header
+        {
+            margin-bottom: 0 !important;
+            border-bottom: 0 !important;
+        }
 
 	</style>
     {% include meta-header.html %}
@@ -54,47 +51,7 @@
 <body>
 <div class="js-container">
 
-<nav class="nav-global-primary">
-  <ul class="layout-breve layout-tight">
-    <li><a href="blog/">Blog</a></li>
-    <li><a href="library/">Library</a></li>
-    <li>
-      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
-          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-          <!-- consider applying autofocus="autofocus" to input -->
-          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
-      </form>
-    </li>
-  </ul>
-</nav>
-
-<div class="global-header-compact" role="banner">
-  <a href="" class="global-header-logo">
-      <img src="assets/logo.png" />
-  </a>
-
-  <p class="global-header-tagline">Government can work for the people, by the people,<br/>in the 21st century. Let’s make it work.</p>
-<p class="feature-action"><a class="button-prominent" href="/summit">Register for the 2014 CfA Summit!</a></p>
-  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
-
-  <nav class="nav-global-secondary">
-    <ul>
-      <li class="nav-tier1 nav-has-children">
-        <a href="about/">About</a>
-      </li>
-      <li class="nav-tier1 nav-has-children">
-        <a href="governments/">Governments</a>
-      </li>
-      <li class="nav-tier1 nav-has-children">
-        <a href="geeks/">Citizens</a>
-      </li>
-      <li class="nav-tier1">
-        <a href="our-work/">Our Work</a>
-      </li>
-      <li><a href="support-us/" class="button">Donate</a></li>
-    </ul>
-  </nav>
-</div>
+{% include nav.html masthead="no" %}
 
 <div class="masthead masthead-xl">
   <header class="layout-semibreve masthead-header">
@@ -109,30 +66,42 @@
 
 <main role="main">
 
-<section class="layout-centered isolate-invert">
-
-  <ul class="bricks bricks-cta bricks-3">
-    <li class="brick badge-heading badge-glasses badge-dark-blue">
-      <a class="brick-link" href="geeks/">
-        <h3 class="brick-heading">Citizens</h3>
-        <h4 class="brick-text">Use your skills for good</h4>
-      </a>
-    </li>
-
-    <li class="brick badge-heading badge-gov badge-red">
-      <a class="brick-link" href="governments/">
-        <h3 class="brick-heading">Governments</h3>
-        <h4 class="brick-text">Solve your city's problems</h4>
-      </a>
-    </li>
-
-        <li class="brick badge-heading badge-blue">
-      <a class="brick-link" href="support-us/">
-        <h3 class="brick-heading">Donors</h3>
-        <h4 class="brick-text">Help make a difference</h4>
-      </a>
-    </li>
-  </ul>
+<section class="slab-red">
+    <div class="layout-chimney">
+        <div class="layout-minim-staccato slab-medium-red chimney">
+            <div class="chimney-body">
+                <h3>Who We Are</h3>
+                <p>Code for America believes government can work for the people, by the people in the 21st century.</p>
+                <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</p>
+                <p><a href="about">Learn more about us.</a></p>
+            </div>
+        </div>
+        <div class="layout-minim-staccato">
+            <h3 class="h4">What's happening?</h3>
+            <ul class="list-no-bullets list-icons">
+                <li class="icon-calendar">Sep 23: Code for America Summit
+                    <a href="summit">The Fourth Annual Summit in San Francisco</a>
+                </li>
+                <li class="icon-youtube">Video: BETA Fellows Mid-year updates 
+                    <a href="http://www.youtube.com/watch?v=1qxysVR3GTs&list=UU6VjQY-gIxXGKmjW0LeMGOw">Watch Nicole Neditch’s introduction</a>
+                </li>
+                <li class="icon-lamp">Let's Improve Procurement
+                    <a href="governments/capabilities/procurement">Learn what you can do</a>
+                </li>
+                <li class="icon-calendar">Hack nights every Monday-Thursday
+                    <a href="events">Find a hack night</a>
+                </li>
+                <!--
+                <li class="icon-github2">Hack request: Add SMS to Ohana API 
+                    <a href="#">More hack requests</a>
+                </li>
+                <li class="icon-tools">Publish and Curate Open Data
+                    <a href="#">More organizing</a>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="slab-black slab-bg1">
@@ -141,90 +110,54 @@
 
     <article class="post-preview">
       <header class="post-header isolate">
-        <time class="post-date insulate text-whisper" datetime="">July 10, 2014</time>
-        <h2 class="post-title"><a href="http://www.codeforamerica.org/blog/2014/07/10/announcing-the-2014-code-for-america-accelerator-class/">Announcing the 2014 Code for America Accelerator Class</a></h2>
+        <time class="post-date insulate text-whisper" datetime="">September 10, 2014</time>
+        <h2 class="post-title"><a href="http://www.codeforamerica.org/blog/2014/09/10/jonathon-ende-coding-for-america/">I Didn’t Always Code for America</a></h2>
       </header>
 
       <div class="post-author">
         <h2 class="text-whisper layout-tight">Written by</h2>
         <div class="h-card">
-            <h3 class="p-name profile-name text-prominent">Dharmishta Rood</h3>
-            <img class="u-photo profile-photo" src="media/images/people/dharmishta-rood.jpg" />
+            <h3 class="p-name profile-name text-prominent">Jonathon Ende</h3>
+            <img class="u-photo profile-photo" src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=160" alt="" />
         </div>
 
         <div class="post-body">
         <div class="post-content">
-          <p>We're excited to announce the 2014 Code for America Accelerator class. It was a tough selection process--with some great applicants from more than 100 companies. Ultimately, we decided on five key companies.</p>
+          <p>I didn’t always code for America. In fact, I am not sure I even knew it was an option. Like many start ups, I started SeamlessDocs by accident. I had a 65 person outsource paralegal processing center and was infuriated dealing with the inefficiencies of paper.</p>
         </div>
         </div>
 
-        <a class="post-link" href="http://www.codeforamerica.org/blog/2014/07/10/announcing-the-2014-code-for-america-accelerator-class/">Read this post</a>
+        <a class="post-link" href="http://www.codeforamerica.org/blog/2014/09/10/jonathon-ende-coding-for-america/">Read this post</a>
       </div>
     </article>
   </div>
 </section>
 
 <section>
-  <div class="layout-breve">
-    <div class="badge-heading badge-github badge-blue">
-        <h2>Code for America Right Now</h2>
-        <p>These are open GitHub Issues labeled with
-        <span class="label">help wanted</span>
-        from across the civic technology movement. Find more using the
-        <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+    <div class="layout-semibreve">
+        <div class="badge-heading badge-github badge-blue">
+            <h2>Code for America Right Now</h2>
+            <p>
+                These are open GitHub Issues labeled with <i>“help wanted”</i> from across the civic technology movement.
+                Find more using the <a href="http://www.codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.
+            </p>
+        </div>
+        <iframe id="widget" src="http://www.codeforamerica.org/geeks/civicissues/widget?labels=help%20wanted&amp;number=3" width="100%" height="400px" frameBorder="0" onLoad="resize();"> </iframe>
+        <script>
+            // Resize iframe to fit content
+            function resize()
+            {
+                var widget_iframe = document.getElementById('widget'),
+                issues_document = widget_iframe.contentWindow.document;
+
+                if(issues_document)
+                {
+                    widget_iframe.height = issues_document.body.scrollHeight + "px";
+                }
+            }
+        </script>
     </div>
-    <style>
-      .label {
-        border: 1px solid #00a175;
-        display: inline-block;
-        background-color:#00a175;
-        color: #fff;
-        text-align: center;
-        border-radius: .33em;
-        margin: 5px;
-        padding: 0 10px;
-        font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
-        font-size:0.85em;
-      }
-    </style>
-    <script>
-        // Resize iframe to fit content
-        function resize() {
-          var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
-          document.getElementById("widget").height = newheight + "px";
-        }
-    </script>
-    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="320px" frameBorder="0" onLoad="resize();"> </iframe>
-  </div>
 </section>
-
-<!-- <section class="layout-centered insulate-inner">
-  <h2 class="text-whisper">Quick Stats</h2>
-
-  <ul class="bricks bricks-4">
-
-      <li class="brick badge-heading badge-glasses">
-      <h3 class="text-feature">104</h3>
-      <p class="text-whisper">Total number of <a href="/about/brigade/">contributing volunteers</a> on Github</p>
-      </li>
-
-    <li class="brick badge-heading badge-github">
-      <h3 class="text-feature">1714</h3>
-      <p class="text-whisper">Civic Code Commits in <a href="https://github.com/codeforamerica/">February</a></p>
-    </li>
-
-     <li class="brick badge-heading badge-github">
-      <h3 class="text-feature">3,966</h3>
-      <p class="text-whisper"><a href="https://github.com/codeforamerica/">Forked Projects</a> in Github</p>
-    </li>
-
-    <li class="brick badge-heading">
-      <h3 class="text-feature">353</h3>
-      <p class="text-whisper">Projects <a href="/about/brigade/">deployed by volunteers</a></p>
-    </li>
-  </ul>
-</section> -->
-
 
 <section class="slab-gray layout-centered insulate-inner">
     <h2 class="text-whisper">Code for America is kindly supported by</h2>
