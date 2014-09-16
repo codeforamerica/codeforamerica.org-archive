@@ -4845,14 +4845,20 @@ color: rgba(255, 255, 255, 0.7);
 color: white;
 }
 
+.slab-red a:link,
+.slab-red a:visited,
 .slab-red a:hover,
 .slab-red a:focus,
 .slab-red a:active,
 .slab-red label,
+.bg-red a:link,
+.bg-red a:visited,
 .bg-red a:hover,
 .bg-red a:focus,
 .bg-red a:active,
 .bg-red label,
+.block-red a:link,
+.block-red a:visited,
 .block-red a:hover,
 .block-red a:focus,
 .block-red a:active,
