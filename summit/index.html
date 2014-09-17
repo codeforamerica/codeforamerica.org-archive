@@ -9,10 +9,12 @@ layout: summit-2014
             padding-top: 1px;
         }
         
-        table#center {
-            width:98%; 
-            margin-left:1%; 
-            margin-right:1%;
+        table.center {
+            margin: 0;
+            padding: 0;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
         }
         
         td.alignright {
@@ -36,7 +38,7 @@ layout: summit-2014
         <p >The annual Summit is when the Code for America civic innovation community gathers in person for three days of collaborating, connecting, and learning.</p>
         <h2>Live stream the #CfASummit!</h2>
     </section>
-        <table id="center">
+        <table class="center">
           <tr>
             <td class="alignright"><iframe src="//www.ustream.tv/embed/18924188?wmode=direct&autoplay=1&showtitle=false" style="border: 0 none transparent;" frameborder="no" width="720" height="437"></iframe>
             </td>
@@ -52,21 +54,6 @@ layout: summit-2014
             </td>    
           </tr>
         </table>
-
-    <script>
-var headertext = [];
-var headers = document.querySelectorAll("#center th"),
-tablerows = document.querySelectorAll("#center th"),
-tablebody = document.querySelector("#center tbody");
-for(var i = 0; i < headers.length; i++) {
-var current = headers[i];
-headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
-}
-for (var i = 0, row; row = tablebody.rows[i]; i++) {
-for (var j = 0, col; col = row.cells[j]; j++) {
-col.setAttribute("data-th", headertext[j]);
-} }
-</script>
 
     <section class="layout-semibreve"> 
         <p><em><small>This year's event takes place during Rosh Hashanah. We recognize and apologize for the conflict this causes for members of our community. We will be offering live-streaming of the keynotes and main-stage content, as well as posting videos of streamed content shortly after the event.</small></em></p>
