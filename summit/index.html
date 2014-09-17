@@ -9,16 +9,20 @@ layout: summit-2014
             padding-top: 1px;
         }
         
-        table.center {
-            margin: 0;
-            padding: 0;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+        div.video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 35px;
+            height: 0;
+            overflow: hidden;
         }
         
-        td.alignright {
-            text-align: right;
+        .video-container iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         
         div.center {
@@ -38,23 +42,19 @@ layout: summit-2014
         <p >The annual Summit is when the Code for America civic innovation community gathers in person for three days of collaborating, connecting, and learning.</p>
         <h2>Live stream the #CfASummit!</h2>
     </section>
-        <table class="center">
-          <tr>
-            <td class="alignright"><iframe src="//www.ustream.tv/embed/18924188?wmode=direct&autoplay=1&showtitle=false" style="border: 0 none transparent;" frameborder="no" width="720" height="437"></iframe>
-            </td>
-            <td><a class="twitter-timeline" href="https://twitter.com/hashtag/CfASummit" data-widget-id="512088339223023617">#CfASummit Tweets</a>
+        
+        <div class="video-container">
+          <iframe src="//www.ustream.tv/embed/18924188?wmode=direct&autoplay=1&showtitle=false" style="border: 0 none transparent;" width="720" height="437" allowfullscreen="" frameborder="0"></iframe>
+        </div>
+        
+        <div><a class="twitter-timeline" href="https://twitter.com/hashtag/CfASummit" data-widget-id="512088339223023617">#CfASummit Tweets</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <div class="center"><p style="font-size:1.25em; text-align:center;">Tune in to the Summit beginning Tuesday, September 25 at 2:30 p.m. PDT with Jennifer Pahlka's opening keynote address. Don't forget to connect with attendees, speakers, and the civic & gov tech community on Twitter using the <strong>#CfASummit</strong> hashtag!<br/><br/>
+        </div>
+        
+        <div class="center"><p style="font-size:1.25em; text-align:center;">Tune in to the Summit beginning Tuesday, September 25 at 2:30 p.m. PDT with Jennifer Pahlka's opening keynote address. Don't forget to connect with attendees, speakers, and the civic & gov tech community on Twitter using the <strong>#CfASummit</strong> hashtag!<br/><br/>
               Have feedback on the live stream or just want to say hi? <a href="https://docs.google.com/a/codeforamerica.org/forms/d/1hKq5kYRzs5o9iKDn8z6yK5R4TODUFjk5-E7d7yNry_A/viewform" target="_blank">We want to hear from you!</a> 
-              </div>
-            </td>    
-          </tr>
-        </table>
-
+        </div>
+        
     <section class="layout-semibreve"> 
         <p><em><small>This year's event takes place during Rosh Hashanah. We recognize and apologize for the conflict this causes for members of our community. We will be offering live-streaming of the keynotes and main-stage content, as well as posting videos of streamed content shortly after the event.</small></em></p>
     </section>
