@@ -1,0 +1,6 @@
+For alerts with multiple paragraphs, apply the alert class to a wrapper div.
+
+<div class="alert">
+    <p>A paragraph</p>
+    <p>Another paragraph</p>
+</div>

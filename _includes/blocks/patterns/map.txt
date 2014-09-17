@@ -1,0 +1,15 @@
+An image is used here because the interactive version has reached its API limit.
+
+Maps use the Mapbox service. To create a map, log into Mapbox and use the following settings:
+
+Settings
+* Streets: Disabled
+* Buildings: Disabled
+* Areas: Disabled
+* Water: #3e9bd0
+* Land: #d5d5d5
+
+Replace the image with the embed code, which should look something like this (MAPID being your map ID):
+
+<iframe width='100%' height='800px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/MAPID/mm/index.html?secure=1#4/34.49/-91.05'></iframe>
+

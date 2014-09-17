@@ -1,0 +1,3 @@
+For the profile to be styled correctly, the structure of the HTML must be a heading followed by an image, then a paragraph (can be more than one), a more link (optional), and an unordered list with links.
+
+The links will be style automatically with the correct icon depending on the url. For any that aren't pre-defined, the default globe icon will be used.
