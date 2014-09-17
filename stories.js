@@ -29,7 +29,7 @@ on_stories(
     },
     {
         "head_html": "<a href='/about'>For the past four years</a>",
-        "content_html": "in partnership with governments, communities, and companies, Code for America has experimented with digital approaches to address important community issues.",
+        "content_html": "in partnership with governments, communities, and companies, Code for America has built technology to address important community issues.",
         "image_src": "media/images/homepage-stories/Beta-Tiffani-Fumi-some-guy.jpg"
     },
     {
