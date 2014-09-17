@@ -3770,7 +3770,7 @@ padding: 1em 1em;
 width: calc(100% - 2px - 2em);
 }
 
-    .spotlight table { background-color: none }
+    .spotlight table { background-color: transparent }
 
 /* @end Spotlight */
 
