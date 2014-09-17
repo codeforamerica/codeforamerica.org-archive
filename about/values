@@ -1,0 +1,26 @@
+---
+layout: default
+title: Our Values
+masthead-image: "../../media/images/cities_fellowship_faq/citiesfaqheader.jpg"
+nav_tier1_active: "about"
+nav-breadcrumbs:
+ - About: "/about"
+ - Values: "/about/values"
+---
+
+ <section>
+<div class="layout-semibreve">
+    
+            {% include nav-breadcrumbs.html %}
+            
+            <header class="badge-heading badge-gov badge-blue">
+                <h2>Our Values</h2>
+            </header>
+            <p>Code for America believes that a healthy democracy is one in which government continuously strives to better serve the needs of the community, and the community enthusiastically and proactively collaborates with government to improve their city.</p>
+<p>Fundamental to this collaboration is a strong bond of trust between government and the community that emerges when values of transparency, inclusion and empathy are woven into fabric of every interaction.</p>
+
+<p>This starts in our neighborhoods, our city halls, our community centers. It’s at the local level that government most directly touches our everyday lives — where these values are most tangible.</p>
+
+<p>Over the last four years, we’ve seen how modern technology tools and approaches that reflect these values build trust and help cities better address the challenges they face.</p>
+
+<p>We embrace these values every day as we work towards a government for the people, by the people, in the 21st century.</p> 
