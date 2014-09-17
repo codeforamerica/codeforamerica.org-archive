@@ -2993,7 +2993,7 @@ nav ul li {
     }
 }
 
-@media (min-width: 40em) and (max-width: 60em) {
+@media (min-width: 40em) and (max-width: 1160px) {
     .nav-global-secondary {
         width: 100%;
     }
