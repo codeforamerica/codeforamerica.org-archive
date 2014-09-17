@@ -104,13 +104,24 @@
       <li class="nav-tier1 nav-has-children">
         <a href="/companies" {% if nav_tier1_active == "companies" %}class="state-active"{% endif %}>Companies</a>
         {% if nav_tier1_active == "about" %}
+         <ul class="nav-tier2">
+          <li><a href="/geeks/our-geeks">Our Geeks</a></li>
+          <li><a href="https://github.com/codeforamerica">Our Code</a></li>
+          <li><a href="/geeks/our-startups">Our Startups</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/geeks/civicissues">Civic Tech Issue Finder</a></li>
+        </ul>
+    
+      <--!  
         <ul class="nav-tier2">
             <li><a href="/companies/companies">Our Companies</a></li>
             <li><a href="/companies/accelorator-faq">Accelorator FAQ</a></li>
             <li><a href="/companies/accelorator-apply">Accelorator Apply</a></li>
             <li><a href="/companies/incubator-faq">Incubator FAQ</a></li>
             <li><a href="/companies/newsletter">Newsletter</a></li>
-        </ul>
+        </ul> -->
+        
+        
         {% endif %}
       </li>
       <li class="nav-tier1 nav-has-children">
