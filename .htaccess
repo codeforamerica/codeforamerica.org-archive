@@ -197,6 +197,7 @@ RedirectMatch permanent ^(.*)/((?<!startups/)accelerator|accelerator-2013|accele
 RedirectMatch permanent ^(.*)/((?<!startups/)incubator|incubator-2|startups/incubator-2)(/?)$ $1/geeks/incubator-faq$3
 RedirectMatch permanent ^(.*)/geeks/our-startups(/?)$ $1/companies/our-companies$2
 RedirectMatch permanent ^(.*)/geeks/accelerator-faq(/?)$ $1/companies/accelerator-faq$2
+RedirectMatch permanent ^(.*)/geeks/accelerator-apply(/?)$ $1/companies/accelerator-apply$2
 RedirectMatch permanent ^(.*)/geeks/incubator-faq(/?)$ $1/companies/incubator-faq$2
 
 #
