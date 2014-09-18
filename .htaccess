@@ -196,6 +196,7 @@ RedirectMatch permanent ^(.*)(?<!/about)/startups(/?)$ $1/about/startups$2
 RedirectMatch permanent ^(.*)/((?<!startups/)accelerator|accelerator-2013|accelerator-2|startups/accelerator)(/?)$ $1/geeks/accelerator-faq$3
 RedirectMatch permanent ^(.*)/((?<!startups/)incubator|incubator-2|startups/incubator-2)(/?)$ $1/geeks/incubator-faq$3
 RedirectMatch permanent ^(.*)/geeks/our-startups(/?)$ $1/companies/our-companies$2
+RedirectMatch permanent ^(.*)/geeks/accelerator-faq(/?)$ $1/companies/accelerator-faq$2
 
 #
 # More Fellowship Program
