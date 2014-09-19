@@ -3039,6 +3039,10 @@ nav ul li {
         .global-header .nav-global-secondary li a.button {
             margin: 24px 14px;
         }
+
+        .global-header .nav-global-secondary ul.nav-tier2 li a {
+            padding: 10px 14px;
+        }
     }
     
     @media (max-width: 40em) {
