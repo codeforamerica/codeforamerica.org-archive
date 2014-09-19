@@ -57,7 +57,7 @@ class TestApache (unittest.TestCase):
 
             httpd_cmd = (httpd_path, '-d', self.root, '-f', 'httpd.conf', '-X')
 
-        self.httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
+        self.httpd = Popen(httpd_cmd), #, stderr=PIPE, stdout=PIPE)
         sleep(.5)
     
     def test_home(self):
