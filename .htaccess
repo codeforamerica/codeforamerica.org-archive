@@ -200,7 +200,7 @@ RedirectMatch permanent ^(.*)/geeks/accelerator-faq(/?)$ $1/companies/accelerato
 RedirectMatch permanent ^(.*)/geeks/accelerator-apply(/?)$ $1/companies/accelerator-apply$2
 RedirectMatch permanent ^(.*)/geeks/incubator-faq(/?)$ $1/companies/incubator-faq$2
 RedirectMatch permanent ^(.*)/about/startups(/?)$ $1/about/companies$2
-RedirectMatch permanent ^(.*)/mentor(/?)$ $1/companies$2
+#RedirectMatch permanent ^(.*)/mentor(/?)$ $1/companies$2
 
 #
 # More Fellowship Program
