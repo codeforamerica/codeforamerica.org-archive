@@ -1,5 +1,6 @@
+#!/usr/bin/env python
 from tempfile import mkdtemp
-from os.path import join, abspath, dirname
+from os.path import join, abspath, dirname, exists
 from urlparse import urljoin, urlparse
 from httplib import HTTPConnection
 from subprocess import Popen, PIPE
@@ -34,12 +35,18 @@ class TestApache (unittest.TestCase):
         self.root = mkdtemp()
         self.port = 8888
         
-        with open(join(self.root, 'httpd.conf'), 'w') as file:
+        for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
+            if not exists(join(mod_path, 'mod_dir.so')):
+                continue
+        
             doc_root = dirname(abspath(__file__))
-            mod_path = '/usr/lib/apache2/modules'
-            mod_path = '/usr/libexec/apache2'
             vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path, Port=self.port)
-            file.write(config.format(**vars))
+
+            with open(join(self.root, 'httpd.conf'), 'w') as file:
+                file.write(config.format(**vars))
+        
+        if not exists(join(self.root, 'httpd.conf')):
+            raise RuntimeError('Did not make httpd.conf')
         
         mkdir(join(self.root, 'logs'))
 
