@@ -4,6 +4,7 @@ from os.path import join, abspath, dirname, exists
 from urlparse import urljoin, urlparse
 from httplib import HTTPConnection
 from subprocess import Popen, PIPE
+from random import randrange
 from shutil import rmtree
 from time import sleep
 from os import mkdir
@@ -16,7 +17,7 @@ LoadModule rewrite_module {ModulesPath}/mod_rewrite.so
 LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 
-Listen {Port}
+Listen 0.0.0.0:{Port}
 PidFile logs/httpd.pid
 LockFile logs/accept.lock
 DocumentRoot "{DocumentRoot}"
@@ -33,13 +34,13 @@ class TestApache (unittest.TestCase):
     
     def setUp(self):
         self.root = mkdtemp()
-        self.port = 8888
+        self.port = randrange(0x1000, 0x10000)
         
         for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
             if not exists(join(mod_path, 'mod_dir.so')):
                 continue
         
-            doc_root = dirname(abspath(__file__))
+            doc_root = join(dirname(abspath(__file__)), '_site')
             vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path, Port=self.port)
 
             with open(join(self.root, 'httpd.conf'), 'w') as file:
@@ -60,7 +61,7 @@ class TestApache (unittest.TestCase):
         sleep(.5)
     
     def test_home(self):
-        conn = HTTPConnection('127.0.0.1', self.port)
+        conn = HTTPConnection('0.0.0.0', self.port)
         conn.request('GET', '/')
         resp = conn.getresponse()
         
@@ -72,7 +73,7 @@ class TestApache (unittest.TestCase):
                  ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects')]
         
         for (start_path, end_path) in pairs:
-            url = urljoin('http://127.0.0.1:{0}/'.format(self.port), start_path)
+            url = urljoin('http://0.0.0.0:{0}/'.format(self.port), start_path)
         
             while True:
                 _, url_host, url_path, _, _, _ = urlparse(url)
