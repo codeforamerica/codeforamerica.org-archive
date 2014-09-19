@@ -1,7 +1,8 @@
 language: ruby
 before_install:
 - travis_retry gem install jekyll --no-ri --no-rdoc
-script: jekyll build
+- sudo apt-get install -y apache2
+script: ./.run-tests.sh
 branches:
   only:
     - master
