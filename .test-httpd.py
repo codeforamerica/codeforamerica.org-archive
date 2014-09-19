@@ -88,8 +88,8 @@ class TestApache (unittest.TestCase):
     def test_redirects(self):
         ''' Check a selection of HTTP redirect pairs.
         '''
-        pairs = [('/accelerator', '/geeks/accelerator-faq/'),
-                 ('/incubator', '/geeks/incubator-faq/'),
+        pairs = [('/accelerator', '/companies/accelerator-faq/'),
+                 ('/incubator', '/companies/incubator-faq/'),
                  ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects')]
         
         for (start_path, end_path) in pairs:
@@ -107,7 +107,7 @@ class TestApache (unittest.TestCase):
 
                 url = urljoin(url, resp.getheader('location'))
 
-            assert end_path == url_path
+            assert end_path == url_path, '{0} instead of {1} from {2}'.format(url_path, end_path, start_path)
     
 if __name__ == '__main__':
     unittest.main()
