@@ -12,7 +12,7 @@ from os import mkdir
 import unittest
 
 config = '''
-LoadModule log_config_module {ModulesPath}/mod_log_config.so
+{MLCP}LoadModule log_config_module {ModulesPath}/mod_log_config.so
 LoadModule rewrite_module {ModulesPath}/mod_rewrite.so
 LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
@@ -39,9 +39,11 @@ class TestApache (unittest.TestCase):
         for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
             if not exists(join(mod_path, 'mod_dir.so')):
                 continue
+            
+            log_config_prefix = '' if exists(join(mod_path, 'mod_log_config.so')) else '#'
         
             doc_root = join(dirname(abspath(__file__)), '_site')
-            vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path, Port=self.port)
+            vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path, Port=self.port, MLCP=log_config_prefix)
 
             with open(join(self.root, 'httpd.conf'), 'w') as file:
                 file.write(config.format(**vars))
@@ -57,7 +59,7 @@ class TestApache (unittest.TestCase):
 
             httpd_cmd = (httpd_path, '-d', self.root, '-f', 'httpd.conf', '-X')
 
-        self.httpd = Popen(httpd_cmd), #, stderr=PIPE, stdout=PIPE)
+        self.httpd = Popen(httpd_cmd) #, stderr=PIPE, stdout=PIPE)
         sleep(.5)
     
     def test_home(self):
