@@ -7,7 +7,6 @@ from subprocess import Popen, PIPE
 from random import randrange
 from shutil import rmtree
 from time import sleep
-from os import mkdir
 
 import unittest
 
@@ -18,8 +17,8 @@ LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 
 Listen 0.0.0.0:{Port}
-PidFile logs/httpd.pid
-LockFile logs/accept.lock
+PidFile httpd.pid
+LockFile accept.lock
 DocumentRoot "{DocumentRoot}"
 CustomLog "|tee /dev/stderr" "%h %l %u %t \\"%r\\" %>s %b"
 ErrorLog "|tee /dev/stderr"
@@ -59,8 +58,6 @@ class TestApache (unittest.TestCase):
         if not exists(join(self.root, 'httpd.conf')):
             raise RuntimeError('Did not make httpd.conf')
         
-        mkdir(join(self.root, 'logs'))
-        
         #
         # Look for Apache executable and start it up.
         #
@@ -80,6 +77,8 @@ class TestApache (unittest.TestCase):
         rmtree(self.root)
 
     def test_home(self):
+        ''' Test a basic 200 OK response from the home page.
+        '''
         conn = HTTPConnection('0.0.0.0', self.port)
         conn.request('GET', '/')
         resp = conn.getresponse()
@@ -87,12 +86,14 @@ class TestApache (unittest.TestCase):
         assert resp.status == 200
     
     def test_redirects(self):
+        ''' Check a selection of HTTP redirect pairs.
+        '''
         pairs = [('/accelerator', '/geeks/accelerator-faq/'),
                  ('/incubator', '/geeks/incubator-faq/'),
                  ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects')]
         
         for (start_path, end_path) in pairs:
-            url = urljoin('http://0.0.0.0:{0}/'.format(self.port), start_path)
+            url = 'http://0.0.0.0:{0}{1}'.format(self.port, start_path)
         
             while True:
                 _, url_host, url_path, _, _, _ = urlparse(url)
@@ -101,11 +102,10 @@ class TestApache (unittest.TestCase):
                 resp = conn.getresponse()
                 conn.close()
         
-                if resp.status in range(300, 399):
-                    url = urljoin(url, resp.getheader('location'))
-                    continue
+                if resp.status not in range(300, 399):
+                    break
 
-                break
+                url = urljoin(url, resp.getheader('location'))
 
             assert end_path == url_path
     
