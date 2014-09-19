@@ -49,9 +49,14 @@ class TestApache (unittest.TestCase):
             raise RuntimeError('Did not make httpd.conf')
         
         mkdir(join(self.root, 'logs'))
+        
+        for httpd_path in ('/usr/sbin/httpd', '/usr/sbin/apache2'):
+            if not exists(httpd_path):
+                continue
 
-        httpd = ('httpd', '-d', self.root, '-f', 'httpd.conf', '-X')
-        self.httpd = Popen(httpd, stderr=PIPE, stdout=PIPE)
+            httpd_cmd = (httpd_path, '-d', self.root, '-f', 'httpd.conf', '-X')
+
+        self.httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
         sleep(.5)
     
     def test_home(self):
