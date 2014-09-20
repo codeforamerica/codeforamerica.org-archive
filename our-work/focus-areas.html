@@ -40,20 +40,9 @@ nav-breadcrumbs:
 <div class="layout-breve">
 <ul class="layout-grid">
 
-    <li class="layout-crotchet">
-        <div class="h-card profile-small">
-            <h3 class="p-name profile-name">Promptly</h3>
-            <img class="u-photo profile-photo" src="/../media/images/avatar-cyd-harrell.jpg" />
-            <div class="p-note profile-note">
-                <p>Promptly text messages San Francisco Human Services Agency clients with important information to keep them enrolled in services. First used to keep people enrolled in CalFresh, the app is also a flexible tool to help schedule, monitor, and send text message notifications for any reason.</p>
-                <p><a class="link-more" href="http://www.codeforamerica.org/apps/promptly/">Learn More</a></p>
-                <ul class="list-social list-social-horizontal">
-                    <li class="social-website"><a href="http://promptly.io">Website</a></li>
-                    <li class="social-github"><a href="https://github.com/codeforamerica/promptly">GitHub</a></li>
-                </ul>    
-            </div><!-- .note -->
-        </div><!-- .vcard -->
-    </li>
+   <li class="layout-crotchet">
+{% include apps/promptly.html context="apps-list" base=".." %}
+</li>
     
     <li class="layout-crotchet">
         <div class="h-card profile-small">
