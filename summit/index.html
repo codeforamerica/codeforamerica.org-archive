@@ -1,7 +1,6 @@
 ---
 title: "The CfA Summit"
 layout: summit-2014
-nav_tier1_active: about
 ---
     <style type="text/css">
         /* Temporary fix for teasers from Anna */
@@ -9,19 +8,88 @@ nav_tier1_active: about
             position: relative;
             padding-top: 1px;
         }
+        
+        #left {
+         width:60%;
+         float:left;
+         padding-right:2.5%;
+        }
+        
+        #middle {
+         width:5%;
+         float:left;
+         padding-left:2.5%;
+         padding-right: 2.5%;
+        }
+
+        #right {
+         width:35%;
+         float:right;
+         padding-left:2.5%;
+        }
+        
+        @media only screen
+        and (max-width:720px) {
+        
+           #right, #middle, #left {
+             float:none;
+             padding-left:0;
+             padding-right:0;
+             padding-top:1em;
+             width:100%;
+           }
+        }
+        
+        div.video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 35px;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        div.center {
+            display: block;
+            margin-left: auto; 
+            margin-right: auto;
+            text-align: center;
+        }
+        
     </style>
 
-    <section class="layout-semibreve layout-centered intro">
-        <h3>Join Us: The Fourth Annual Code for America Summit</h3>
-        <h5>September 23 &ndash; 25, 2014  |  Yerba Buena Center for the Arts |  San Francisco, CA</h5>
- 
+    <section class="layout-breve layout-centered intro">
+    <h2>Live stream the #CfASummit, starting Sept. 23, 2:30 p.m. PDT</h2>
+      <div id="left">
+        <div class="video-container">
+          <iframe src="//www.ustream.tv/embed/18924188?wmode=direct&autoplay=1&showtitle=false" style="border: 0 none transparent;" width="720" height="437" allowfullscreen="" frameborder="0"></iframe>
+        </div>
+      </div>
+      
+      <div id="middle">&nbsp;</div>
+      
+      <div id="right"><a class="twitter-timeline" href="https://twitter.com/hashtag/CfASummit" data-widget-id="512088339223023617">#CfASummit Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+        
     </section>
-    <section class="layout-semibreve">        
-        <p style="font-size:1.25em;">The annual Summit is when the Code for America civic innovation community gathers in person for three days of collaborating, connecting, and learning.</p>
-        <p style="font-size:1.25em;">It's a roll-up-your-sleeves kind of event that convenes innovators from dozens of local governments and mixes it up with civic-minded technologists, designers, community organizers, and entrepreneurs.</p>
-        <p style="font-size:1.25em;">Register today to participate &mdash; and join the movement for government that works in the 21st century.</p>
-        <p style="text-align:center;"><a href="https://www.eventbrite.com/e/code-for-america-summit-registration-11424407711" class="button button-prominent">REGISTER NOW</a></p>
-        <p><em><small>This year's event takes place during Rosh Hashanah. We recognize and apologize for the conflict this causes for members of our community. We will be offering live-streaming of the keynotes and main-stage content, as well as posting videos of streamed content shortly after the event.</small></em></p>
+    
+    <section class="layout-semibreve layout-centered intro">
+      <p style="font-size:1.25em; text-align:center;">Tune in to the Summit beginning Tuesday, September 25 at 2:30 p.m. PDT with Jennifer Pahlka's opening keynote address. Don't forget to connect with attendees, speakers, and the civic & gov tech community on Twitter using the <strong>#CfASummit</strong> hashtag!<br/><br/>
+
+      Have feedback on the live stream or just want to say hi?</p>
+      
+      <div style="margin:auto"><iframe height="400" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://codeforamerica.wufoo.com/embed/z5k0g2t1j9b1ht/"><a href="https://codeforamerica.wufoo.com/forms/z5k0g2t1j9b1ht/">Fill out my Wufoo form!</a></iframe></div>
+    </section>  
+    <section class="layout-semibreve">  
+      <em>This year's event takes place during Rosh Hashanah. We recognize and apologize for the conflict this causes for members of our community. We will be offering live-streaming of the keynotes and main-stage content, as well as posting videos of streamed content shortly after the event.</em>
     </section>
 
 <section class="slab-gray">
@@ -56,11 +124,8 @@ nav_tier1_active: about
     <div class="layout-minim-staccato slab-medium-red chimney">
       <div class="chimney-body">
         <h3>Be where civic innovators gather.</h3>
-        <p>
-        Interested in having your company sponsor the Summit?
-        <a href="http://codeforamerica.org/media/docs/2014summitoverview.pdf" target="_blank">Download an overview to learn more.</a>
+        <p>The Code for America Summit is a roll-up-your-sleeves kind of event that convenes innovators from dozens of local governments and mixes it up with civic-minded technologists, designers, community organizers, and entrepreneurs.
         </p>
-        <a href="mailto:sponsorships@codeforamerica.org" class="button button-prominent">Contact Our Sponsorships Team</a>
       </div>
     </div>
 
