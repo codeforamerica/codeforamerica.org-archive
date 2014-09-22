@@ -4090,7 +4090,10 @@ li.teaser a:active,
     width: auto;
     position: relative;
 }
-
+.no-logo .teaser-header {
+    margin-top: 0;
+}
+   
 .teaser-pdf .teaser-masthead,
 .teasers li > a[href$=".pdf"] > div {
     background-color: white;
