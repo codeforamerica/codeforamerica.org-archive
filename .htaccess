@@ -321,6 +321,7 @@ RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
 RedirectMatch permanent ^(.*)/codeacross(/?)$ $1/events/codeacross-2014/$2
 RedirectMatch permanent ^(.*)/code-across-america-2012(/?)$ $1/events/codeacross-2012/$2
 RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
+RedirectMatch permanent ^(.*)/focus(/?)$ $1/our-work/focus-areas$2
 
 #
 # Set of possible Jekyll file extensions + PHP, from

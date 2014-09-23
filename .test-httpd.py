@@ -90,7 +90,8 @@ class TestApache (unittest.TestCase):
         '''
         pairs = [('/accelerator', '/companies/accelerator-faq/'),
                  ('/incubator', '/companies/incubator-faq/'),
-                 ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects')]
+                 ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects'),
+                 ('/focus', '/our-work/focus-areas/')]
         
         for (start_path, end_path) in pairs:
             url = 'http://0.0.0.0:{0}{1}'.format(self.port, start_path)
