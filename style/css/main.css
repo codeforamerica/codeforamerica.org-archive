@@ -3678,6 +3678,8 @@ a.billboard:active,
 .billboard .billboard-label {
     clear: both;
     display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* v1 */
