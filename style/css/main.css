@@ -3340,9 +3340,10 @@ width: 98%;
 min-height: 3em;
 }
 
+/*
 .post .post-content > p:first-child:first-letter {
     float: left;
-font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
+font-family: Georgia, Times, "Times New Roman", serif; *//* $font-serif: *//*
 font-size: 3.4em;
 font-style: normal;
 font-weight: 600;
@@ -3350,6 +3351,7 @@ line-height: 1em;
     margin: 0;
 padding: 0 0.15em 0 0;
 }
+*/
 
 /*
 @media (min-width: 60em) {
@@ -3404,9 +3406,10 @@ line-height: 1.7em;
     margin-top: 40px;
 }
 
+/*
 .post-preview .post-content > p:first-child:first-letter {
     float: left;
-font-family: Georgia, Times, "Times New Roman", serif; /* $font-serif: */
+font-family: Georgia, Times, "Times New Roman", serif; *//* $font-serif: *//*
 font-size: 3.4em;
 font-style: normal;
 font-weight: 600;
@@ -3415,6 +3418,7 @@ line-height: 1em;
     margin: 0;
 padding: 0 0.15em 0 0;
 }
+*/
 
 .post-preview .post-body {
     clear: both;
