@@ -1,0 +1,59 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Zoe Blumenfeld</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Marketing Manager</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/zoe-blumenfeld.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	    Michael is the go-to and behind-the-scenes guy that works to make everything happen in the ofA passionate advocate for storytelling and social change, Zoe most recently served as Communications Manager at Global Fund for Women, one of the largest publicly supported grantmaking organizations focused exclusively on women's rights. During her time at Global Fund, Zoe managed campaigns that successfully grew their audience and deepened engagement with supporters from around the world. She established Global Fund's rapid response advocacy program and co-led the online fundraising team. Prior to that, Zoe was with the National Writing Project, highlighting the innovative work of dedicated teachers. Zoe learned about the impact of a strong brand while serving as marketing coordinator for Visa’s Olympic sponsorship program. Her love of writing was nurtured at the Santa Cruz Sentinel where she worked as journalist. Zoe’s writing has appeared in The Nation, Huffington Post, Reuters, Foreign Policy in Focus, among others. Zoe grew up in the Bay Area and is a graduate of the University of California, Santa Cruz. 
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/zoeblumenfeld">@zoeblumenfeld</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="www.linkedin.com/pub/zoe-blumenfeld/2b/b80/86b">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>zoeblumenfeld</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Zoe Blumenfeld</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/zoe-blumenfeld.jpg">
+
+    <div class="p-note profile-note">
+        <p>Marketing Manager</p>
+
+        <p>A passionate advocate for storytelling and social change, Zoe most recently served as Communications Manager at Global Fund for Women, one of the largest publicly supported grantmaking organizations focused exclusively on women's rights...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/zoe-blumenfeld/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="www.linkedin.com/pub/zoe-blumenfeld/2b/b80/86b">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/zoeblumenfeld">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
