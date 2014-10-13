@@ -1,86 +1,84 @@
 {% if include.context == "app-page" %}
 
-<style>
-.loud {
-  color: #cf1b41;
-  font-weight: bold;
-}
+  <div class="heading">
+    <h2>Balance (Beta)</h2>
+  </div>
+  
+  <div class="layout-minor">
+    <img class="isolate" src="{{ include.base }}/media/images/apps/balance.png" />
+      <p>Balance lets you check your EBT balance with a text message.</p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/dave-guarino">Dave Guarino</a></li>
+        <li><a href="{{ include.base }}/people/alan-williams">Alan Williams</a></li>
+        <li><a href="{{ include.base }}/people/jacob-solomon">Jake Solomon</a></li>
+      </ul>
 
-th {
-  min-width: 100px;
-}
-</style>
-
-	<div class="heading">
-		<h2>Balance</h2>
-	</div>
-	
-	<div class="layout-minor">
-		<img class="isolate" src="{{ include.base }}/media/images/apps/balance-logo.png" />
-    <h4 class="text-whisper loud layout-tight">Made with love by</h4>
+    <h4 class="text-whisper loud layout-tight">Partners</h4>
     <ul class="list-no-bullets text-whisper link-invert">
-    	<li><a href="http://www.linkedin.com/in/alanjosephwilliams">Alan Williams</a></li>
-    	<li><a href="http://www.linkedin.com/in/daveguarino">Dave Guarino</a></li>
-    	<li><a href="http://www.linkedin.com/in/jacobsolomon">Jake Solomon</a></li>
-    </ul>
-
-    <h4 class="text-whisper loud layout-tight">In close partnership with</h4>
-    <ul class="list-no-bullets text-whisper link-invert">
-      <li><a href="https://www.linkedin.com/pub/liliana-sandoval/24/223/250">Liliana Sandoval</a>, SF-Marin    Food Bank</li>
+      <li><a href="https://www.linkedin.com/pub/liliana-sandoval/24/223/250">Liliana Sandoval</a> & the SF-Marin Food Bank</li>
       <li><a href="https://www.linkedin.com/pub/leo-o-farrell/9/815/804">Leo O'Farrell</a>, SF HSA</li>
       <li><a href="https://www.linkedin.com/pub/stephanie-nishio/2/93/b28">Stephanie Nishio</a>, CAFB</li>
     </ul>
     <p class="layout-tight">
 
-    <h4 class="text-whisper loud layout-tight">For</h4>
-    <ul class="list-no-bullets text-whisper link-invert">
-      <li>Food Stamp clients throughout the Country</li>
-    </ul>
+	</div>
+  <div class="layout-major">
+      <p><b>Balance lets anyone check their EBT balance with a text message.</b> We built Balance because nearly <a href="http://www.fns.usda.gov/sites/default/files/pd/SNAPsummary.pdf">50 million</a> Americans are receiving SNAP (Food Stamps) and we wanted to give them an easier way to check their balance. 
 
-	</div>
-	
-	<div class="layout-major">
-	    
-    <img src="{{ include.base }}/media/images/apps/balance-staging.png" />
-	        
-	  <div class="spotlight">
-	    	<h3 class="text-whisper">Info</h3>
-        <table class="table-unstyled table-minor">
-	    		<tr><th>Try it out</th><td>You can try it out right now with this EBT number: <b>5077 1901 9764 6090.</b></td></tr>
-          <tr><th>Location</th><td>Balance works with every EBT card in California. More States are on the way.</td></tr>
-          <tr><th>Language</th><td>Balance only works in English right now. Spanish is next!</td></tr>
-          <tr><th>Cost</th><td>Balance is free for everyone in CA (standard text messaging rates apply)</td></tr>
-          <tr><th>Code</th><td><a href="https://github.com/codeforamerica/balance">https://github<wbr>.com/<wbr>codeforamerica/balance</a></td></tr>
-	    	</table>
-	    	<a href="mailto:jacob@codeforamerica.org?subject=I want Balance right now" class="button-alternative">Get in touch to start using Balance with your community</a><p class="text-whisper layout-tight">
-	    </div>
-	    
-	</div>
-<!-- 
+      <p><h3 class="text-prominent">FAQ</h3></p>
+      <p><b>Where does it work?</b>
+      <br>So far Balance works in:
+      <ul>
+        <li>California</li> 
+        <li>Texas</li> 
+        <li>Pennsylvania</li> 
+        <li>Missouri</li> 
+      </ul>
+      If you know how a bit about programming in Ruby, you can help us by <a href="https://github.com/codeforamerica/balance/blob/master/HOW_TO_ADD_A_STATE.md">adding a state yourself</a>.
+      </p>
+
+      <p><b>What languages?</b>
+      <br>So far Balance works in English and Spanish. If you feel inspired, please help us add by <a href="https://github.com/codeforamerica/balance/issues/145">translating Balance into another language</a>.</p>
+
+      <p><b>Can I try it?</b>
+      <br>Yup! Jext this EBT number: <b>5077 1901 9764 6090.</b>
+      <br>To this phone number: <b>(415) 798-2736</b>
+
+      <p><b>How did it start?</b>
+      <br>It started as an idea to help social service clients in San Francisco. Check out the <a href="https://github.com/codeforamerica/project-ideas/issues/34">project ideas repository on GitHub</a> to see the beginning conversation.</p>
+
+      <p><b>What does Beta mean?</b>
+      <br>Beta means it works most of the time (but not always) and we don't have a plan for long-term sustainability. Please <a href="mailto:jacob@codeforamerica.org?subject=Balance">get in touch</a> if you want to help find one!</p>
+
+      <p><b>How does it work?</b>
+      <br>Balance uses existing phone interfaces to access balance information. When a user texts their EBT number, Balance initiates a phone call to the appropriate service center on their behalf, navigates through the phone tree, transcribes the response, and texts it back to the user. See the <a href="https://github.com/codeforamerica/balance/">source code</a> for the nitty gritty.
+
+      <p><b>How much does it cost?</b>
+      <br>Balance is free for the user besides standard text message rates. On the other side of things, it costs about 5c per balance query, though <a href="http://www.twilio.com">Twilio</a> is generously covering these costs for now. Thanks!</p>
+
+      <p><b>Still have questions?</b>
+      <br><a href="mailto:jacob@codeforamerica.org?subject=Clean" class="button-alternative">Get in touch!</a>
+      
+  </div>
+
 {% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
 
     <article class="teaser teaser-app">
         <header class="teaser-header">
-            <a href="{{ include.base }}/apps/textizen">
-                <h1 class="teaser-title">Textizen</h1>
+            <a href="{{ include.base }}/apps/clean">
+                <h1 class="teaser-title">Clean</h1>
             </a>
         </header>
         <div class="teaser-body">
-            <p>Textizen is a civic dialogue platform that allows residents to connect with a powerful mix of offline outreach and online engagement.</p>
-            
-            <h2 class="text-whisper">Environment</h2>
-            <p></p>
-            
-            <h2 class="text-whisper">Redeploy</h2>
-            <p></p>
-            
-            <p><a href="{{ include.base }}/apps/textizen">Learn more about this app</a></p>
+            <p>Balance lets anyone check their EBT balance with a text message.</p>
         </div>
         <footer class="teaser-footer">
-            <a href="{{ include.base }}/apps/textizen" class="teaser-masthead">
-                <img class="teaser-image" src="{{ include.base }}/media/images/apps/textizen.jpg" />
+            <a href="{{ include.base }}/apps/clean" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/clean.png" />
             </a>
         </footer>
-    </article> -->
+    </article>
 
 {% endif %}
