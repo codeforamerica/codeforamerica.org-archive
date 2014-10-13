@@ -1,0 +1,58 @@
+{% if include.context == "app-page" %}
+
+  <div class="heading">
+    <h2>EBT Near Me (Alpha)</h2>
+  </div>
+  
+  <div class="layout-minor">
+    <img class="isolate" src="{{ include.base }}/media/images/apps/ebtnearme.png" />
+      <p>
+      <a href="http://ebtnearme.org">EBT Near Me</a> shows the nearest places you can use an EBT card nationwide.
+      </p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/rhys-fureigh/">Rhys Fureigh</a></li>
+        <li><a href="{{ include.base }}/people/alan-williams">Alan Williams</a></li>
+      </ul>
+  
+  </div>
+  
+  <div class="layout-major">
+      <p><a href="http://ebtnearme.org">EBT Near Me</a> shows the nearest places you can use an EBT card nationwide. We built it because the <a href="http://www.fns.usda.gov/snap/retailerlocator">current</a> <a href="https://www.ebt.ca.gov/caebtclient/usebenefit.jsp">tools</a> leave something to be desired and <a href="http://www.twitter.com/allafarce">@allafarce</a> inspired us with <a href="http://bartmenow.com">BART me now</a>.
+
+      <br><br><p><h3 class="text-prominent">FAQ</h3></p>
+      <p><b>How did it start?</b>
+      <br>It started when one of our teammates enrolled in CalFresh (Food Stamps) and found it tricky to figure out where he could use them. Check out the <a href="https://github.com/codeforamerica/project-ideas/issues/33">project ideas repository on GitHub</a> to see the beginning conversation.</p>
+
+      <p><b>What does Alpha mean?</b>
+      <br>Alpha means you shouldn't count on it working tomorrow. This is an experiment for now. Once it's stable enough to use we'll upgrade move it to Beta.</p>
+
+      <p><b>How does it work?</b>
+      <br>We download data from <a href="http://www.fns.usda.gov/snap/retailerlocator">FNS</a> and put on a map with <a href="http://cartodb.com/">CartoDB</a>. See <a href="https://github.com/fureigh/ebt-near-me/">the source code</a> for details.
+      <br></p>
+
+      <p><b>Still have questions?</b>
+      <br><a href="mailto:jacob@codeforamerica.org?subject=Clean" class="button-alternative">Get in touch!</a>
+      
+  </div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/ebtnearme">
+                <h1 class="teaser-title">Clean</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p><a href="http://ebtnearme.org">EBT Near Me</a> shows the nearest places you can use an EBT card nationwide.</p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/ebtnearme" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/ebtnearme.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
