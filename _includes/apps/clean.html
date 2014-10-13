@@ -1,0 +1,79 @@
+{% if include.context == "app-page" %}
+
+  <div class="heading">
+    <h2>Clean (Alpha)</h2>
+  </div>
+  
+  <div class="layout-minor">
+    <img class="isolate" src="{{ include.base }}/media/images/apps/clean.png" />
+      <p>
+      Clean is a minimalist online application for CalFresh (Food Stamps) in San Francisco.
+      </p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/dave-guarino">Dave Guarino</a></li>
+        <li><a href="{{ include.base }}/people/alan-williams">Alan Williams</a></li>
+        <li><a href="{{ include.base }}/people/jacob-solomon">Jake Solomon</a></li>
+      </ul>
+      
+      <h4 class="text-whisper layout-tight">In partnership with</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="http://www.sfhsa.org/">San Francisco HSA</a></li>
+        <li><a href="http://www.sfmfoodbank.org/">SF-Marin Food Bank</a></li>
+      </ul>
+  
+  </div>
+  
+  <div class="layout-major">
+      <p><b><a href="https://github.com/codeforamerica/calfresh-and-so-clean">Clean</a> is a minimalist online application for CalFresh (Food Stamps).</b> We built Clean because <a href="http://www.cafoodbanks.org/alliance-transform-calfresh">millions of Californians</a> are eligible for CalFresh but not enrolled. One reason is that the current online applications are pretty long and confusing. <a href="http://citizenonboard.com/snap/ca">Here's</a> how one of them works today. Right now we're piloting it in San Francisco. If it works, we'll expand throughout CA.</p>
+
+      <div class="spotlight">
+        <table class="table-unstyled table-minor">
+          <tr><th>Live</th><td><a href="http://cleanassist.org/">cleanassist.org</a></td></tr>
+          <tr><th>Demo</th><td><a href="http://clean-demo.herokuapp.com">clean-demo.herokuapp.com</a></td></tr>
+          <tr><th>Code</th><td><a href="http://github.com/codeforamerica/calfresh-and-so-clean">github.com/codeforamerica/calfresh-and-so-clean</a></td></tr>
+        </table>
+        <a href="mailto:jacob@codeforamerica.org?subject=Clean" class="button-alternative">Get in touch to contribute!</a>
+      </div>
+
+      <p><h3 class="text-prominent">FAQ</h3></p>
+      <p><b>How did it start?</b>
+      <br>It started as an idea to help social service clients in San Francisco. Check out the <a href="https://github.com/codeforamerica/project-ideas/issues/6">project ideas repository on GitHub</a> to see the beginning conversation.</p>
+
+      <p><b>What does Alpha mean?</b>
+      <br>Alpha means you shouldn't count on it working tomorrow. This is an experiment for now. Once it's stable enough to use we'll upgrade move it to Beta.</p>
+
+      <p><b>How does it work?</b>
+      <br>Clean asks you for the minimal amount of information necessary to process a CalFresh application, prints this information to <a href="http://www.cdss.ca.gov/cdssweb/entres/forms/English/CF285.pdf">California's official CalFresh application form</a>, and emails the application to HSA in a password-protected file.</p>
+
+      <p><b>How much does it cost?</b>
+      <br>Right now it's free for everyone. If we expand to other counties we'll probably have to charge money.</p>
+
+      <p><b>Can I try it?</b>
+      <br>Yup! Here's the demo site: <a href="clean-demo.herokuapp.com">clean-demo.herokuapp.com</a>.
+
+      <p><b>Still have questions?</b>
+      <br><a href="mailto:jacob@codeforamerica.org?subject=Clean" class="button-alternative">Get in touch!</a>
+      
+  </div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/clean">
+                <h1 class="teaser-title">Connect</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Clean is a dead simple online application for CalFresh (Food Stamps) in San Francisco.</p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/clean" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/clean.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
