@@ -1,0 +1,71 @@
+{% if include.context == "app-page" %}
+
+  <div class="heading">
+    <h2>Connect (Alpha)</h2>
+  </div>
+  
+  <div class="layout-minor">
+    <img class="isolate" src="{{ include.base }}/media/images/apps/connect.png" />
+      <p>
+      Connect waits on hold so you don't have to.
+      </p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/dave-guarino">Dave Guarino</a></li>
+        <li><a href="{{ include.base }}/people/alan-williams">Alan Williams</a></li>
+        <li><a href="{{ include.base }}/people/jacob-solomon">Jake Solomon</a></li>
+      </ul>
+      
+      <h4 class="text-whisper layout-tight">In partnership with</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="http://www.sfhsa.org/">San Francisco HSA</a></li>
+        <li><a href="http://www.sfmfoodbank.org/">SF-Marin Food Bank</a></li>
+      </ul>
+      
+  </div>
+  
+  <div class="layout-major">
+      <p><b><a href="https://github.com/codeforamerica/connect">Connect</a> waits on hold so you don't have to.</b> We're working on Connect because waiting on hold sucks and low-income families spend a disproportionate amount of time on hold (we think..). In particular, we're working with the San Francisco Human Services Agency to reduce the amount of time CalFresh clients and their advocates have to wait on hold when calling the Agency.
+      </p>
+
+      <p>Want to contribute to the project or use Connect for your organization? Well...
+        <br><a href="mailto:jacob@codeforamerica.org?subject=Connect" class="button-alternative">Get in touch!</a></p>
+
+      <br><h3 class="text-prominent">FAQ</h3>
+      <p><b>How did it start?</b>
+      <br>It started as an idea to help social service clients in San Francisco. Check out the <a href="https://github.com/codeforamerica/project-ideas/issues/38">project ideas repository on GitHub</a> to see the beginning conversation.</p>
+
+      <p><b>What does Alpha mean?</b>
+      <br>Alpha means you shouldn't count on it working tomorrow. This is an experiment for now. Once it's stable enough to use we'll upgrade move it to Beta.</p>
+
+      <p><b>How does it work?</b>
+      <br>Connect uses <a href="http://twilio.com">Twilio</a> to initiate a phone call and do the waiting part on the user's behalf. When someone answers the phone, Connect calls you back.</p>
+
+      <p><b>How much does it cost?</b>
+      <br>It's free for the user, but Twilio isn't free, so somebody has to pay. In general, it costs 2c/min of hold time + 4c/min of talk time once the call connects.</p>
+
+      <p><b>Can I try it?</b>
+      <br>We don't have a demo right now. But <a href="mailto:jacob@codeforamerica.org?subject=Connect">get in touch</a> if you're eager and we can figure something out.</p>
+      
+  </div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/connect">
+                <h1 class="teaser-title">Connect</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Connect waits on hold so you don't have to.</p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/connect" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/connect.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
