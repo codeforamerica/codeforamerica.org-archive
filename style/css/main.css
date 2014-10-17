@@ -476,6 +476,10 @@ select {
     vertical-align: middle;
 }
 
+input:hover {
+    cursor: pointer;
+}
+
 @media print {
     input,
     select,
