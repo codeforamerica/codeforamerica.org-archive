@@ -4052,7 +4052,7 @@ li.teaser a:active,
 
 .teaser-app .teaser-masthead {
     background-color: white;
-    display: table;
+    display: inline-block;
     float: none;
     height: 123px;
     margin: 0 auto;
@@ -4067,6 +4067,7 @@ li.teaser a:active,
     border-bottom: 1px solid #e5e5e5;
     left: 0;
     right: 0;
+    top: 0;
 }
 
 .teaser-app .teaser-header {
