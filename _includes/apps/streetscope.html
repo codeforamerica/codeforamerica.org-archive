@@ -1,0 +1,77 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Streetscope</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/streetscope.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Streetscope is a geocoding application designed to help cities connect their databases together using their existing parcel data file.</p>
+	    
+	    <p class="text-whisper"><a href="http://www.streetscope.net/">http://www<wbr>.streetscope<wbr>.net/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/erik-schwartz">Erik Schwartz</a></li>
+	    	<li><a href="{{ include.base }}/people/livien-yin">Livien Yin</a></li>
+	    	<li><a href="{{ include.base }}/people/lyzi-diamond">Lyzi Diamond</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/lexington">Lexington, KY</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Streetscope is a geocoding application designed to help cities connect their databases together using their existing parcel data file.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://www.streetscope.net/">http://www<wbr>.streetscope<wbr>.net/</a></td></tr>
+	    		<tr><th>Video</th><td><a href="https://www.youtube.com/watch?v=Jh-cpTGCuTQ">http://www<wbr>.youtube<wbr>.com/<wbr>watch?<wbr>v=Jh-cpTGCuTQ</a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/lexington-geocoder-flask">https://github<wbr>.com/<wbr>codeforamerica/<wbr>lexington-geocoder-flask</a></td></tr>
+	    		<tr><th>Environment</th><td>Flask (Python) + Elasticsearch and PostgreSQL (for logging geocoder QA).</td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="https://codeforamerica.wufoo.com/forms/app-inquiry-form/" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+
+      <p>Streetscope is a service to allow people, but especially computer programs, to submit an address like '123 Main St.' and find its lat/lon coordinates and canonical parcel_id in the Lexington, KY Property Value Administrator's set of addresses.</p>
+      <p><strong>Why are we doing this?</strong> City agencies in Lexington sometimes disagree on the correct way to reference a single address or taxlot. (And sometimes someone entering data just makes a typo. Oops!) That makes it really hard to get a complete picture of a single property.</p>
+      <p>Streetscope allows different databases to know they're talking about the same address, even if it's not spelled exactly the same. It returns a geographic location and a parcel ID for matching addresses across databases to enable connections between these datasets and get a true picture of the city.</p>
+      <p>To see Streetscope in action, check out <a href="http://streetscope.net">streetscope.net</a>.</p>
+	    
+	</div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/streetscope">
+                <h1 class="teaser-title">Streetscope</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Streetscope is a geocoding application designed to help cities connect their databases together using their existing parcel data file.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p>Flask (Python) with Elasticsearch and PostgreSQL (for logging geocoder QA)</p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p></p>
+            
+            <p><a href="{{ include.base }}/apps/streetscope">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/streetscope" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/streetscope.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
