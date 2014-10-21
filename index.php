@@ -53,24 +53,24 @@
         <div class="xx-nav nav-global-secondary">
             <h2 class="text-whisper">Style Guide</h2>
             <ol role="navigation">
-                <li class="xx-link-special"><a href="patchwork.php">View as patchwork</a></li>
+                <?php /* <li class="xx-link-special"><a href="patchwork.php">View as patchwork</a></li> */ ?>
                 <li><a href="/messaging/">Messaging</a></li>
             </ol>
             <h2 class="text-whisper">Templates</h2>
             <ol role="navigation">
-                <li><a href="_site/home/">Home</a></li>
-                <li><a href="_site/apps/">Apps</a></li>
-                <li><a href="_site/apps/promptly/">App (Promptly)</a></li>
-                <li><a href="_site/about/">About</a></li>
-                <li><a href="_site/library/">Library</a></li>
-                <li><a href="_site/governments/boston/">City (Boston)</a></li>
-                <li><a href="_site/fellows/">Fellows</a></li>
-                <li><a href="_site/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
-                <li><a href="_site/governments/">Governments</a></li>
-                <li><a href="_site/donate/">Donate (Landing)</a></li>
-                <li><a href="_site/donate/form/">Donate</a></li>
-                <li><a href="_site/citizens/">Citizens</a></li>
-                <li><a href="_site/documentation/">Documentation</a></li>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/apps/">Apps</a></li>
+                <li><a href="/apps/promptly/">App (Promptly)</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/library/">Library</a></li>
+                <li><a href="/governments/boston/">City (Boston)</a></li>
+                <li><a href="/fellows/">Fellows</a></li>
+                <li><a href="/2013/11/13/why-im-mentoring-for-america-by-zachary-townsend.html">Post</a></li>
+                <li><a href="/governments/">Governments</a></li>
+                <li><a href="/donate/">Donate (Landing)</a></li>
+                <li><a href="/donate/form/">Donate</a></li>
+                <li><a href="/citizens/">Citizens</a></li>
+                <li><a href="/documentation/">Documentation</a></li>
             </ol>
         </div>
     </div>
