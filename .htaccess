@@ -322,6 +322,7 @@ RedirectMatch permanent ^(.*)/codeacross(/?)$ $1/events/codeacross-2014/$2
 RedirectMatch permanent ^(.*)/code-across-america-2012(/?)$ $1/events/codeacross-2012/$2
 RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
 RedirectMatch permanent ^(.*)/focus(/?)$ $1/our-work/focus-areas$2
+RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 
 #
 # Set of possible Jekyll file extensions + PHP, from
