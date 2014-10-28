@@ -91,7 +91,11 @@ class TestApache (unittest.TestCase):
         pairs = [('/accelerator', '/companies/accelerator-faq/'),
                  ('/incubator', '/companies/incubator-faq/'),
                  ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects'),
-                 ('/focus', '/our-work/focus-areas/')]
+                 ('/focus', '/our-work/focus-areas/'),
+                 ('/governments/capabilities', '/governments/principles/'),
+                 ('/governments/capabilities/index.html', '/governments/principles/index.html'),
+                 ('/governments/capabilities/open-data', '/governments/principles/open-data/'),
+                 ]
         
         for (start_path, end_path) in pairs:
             url = 'http://0.0.0.0:{0}{1}'.format(self.port, start_path)
