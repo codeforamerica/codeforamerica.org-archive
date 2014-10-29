@@ -133,7 +133,7 @@ RedirectMatch permanent ^(.*)/code-across-america(/?)$ $1/code-across-america-20
 #
 # External redirects.
 #
-RedirectMatch permanent ^(.*)/donate/?$ https://secure.codeforamerica.org/page/contribute/default
+RedirectMatch permanent ^(.*)/donate/?$ https://secure.codeforamerica.org/page/contribute/default?match_campaign_id=website-button
 RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
 RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
 RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome

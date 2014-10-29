@@ -95,6 +95,7 @@ class TestApache (unittest.TestCase):
                  ('/governments/capabilities', '/governments/principles/'),
                  ('/governments/capabilities/index.html', '/governments/principles/index.html'),
                  ('/governments/capabilities/open-data', '/governments/principles/open-data/'),
+                 ('/donate', '/governments/principles/open-data/'),
                  ]
         
         for (start_path, end_path) in pairs:
