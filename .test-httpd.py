@@ -95,7 +95,9 @@ class TestApache (unittest.TestCase):
                  ('/governments/capabilities', '/governments/principles/'),
                  ('/governments/capabilities/index.html', '/governments/principles/index.html'),
                  ('/governments/capabilities/open-data', '/governments/principles/open-data/'),
-                 ('/donate', '/governments/principles/open-data/'),
+                 
+                 # This actually goes to BSD, but we check for it anyway.
+                 ('/donate', '/page/contribute/default'),
                  ]
         
         for (start_path, end_path) in pairs:
@@ -112,6 +114,11 @@ class TestApache (unittest.TestCase):
                     break
 
                 url = urljoin(url, resp.getheader('location'))
+                _, new_host, url_path, _, _, _ = urlparse(url)
+                
+                # Stop if we go off-site
+                if new_host != url_host:
+                    break
 
             assert end_path == url_path, '{0} instead of {1} from {2}'.format(url_path, end_path, start_path)
     
