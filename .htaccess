@@ -224,7 +224,7 @@ RedirectMatch permanent ^(.*)/city-alumni(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/cfa-2012(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/2012(/?)$ $1/governments/alumni$2
 RedirectMatch permanent ^(.*)/governments/faqs-cities-applying-to-program(/?)$ $1/governments/fellowship-faq$2
-RedirectMatch permanent ^(.*)(?<!/governments/capabilities)/procurement(/?)$ $1/governments/capabilities/procurement$2
+RedirectMatch permanent ^(.*)(?<!/governments/capabilities|/governments/principles)/procurement(/?)$ $1/governments/principles/procurement$2
 RedirectMatch permanent ^(.*)/governments/capabilities(/.+)?$ $1/governments/principles$2
 
 RedirectMatch permanent ^(.*)/civic-data-standards(/?)$ $1/governments/data-standards-faq$2

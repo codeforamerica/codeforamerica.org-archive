@@ -95,6 +95,8 @@ class TestApache (unittest.TestCase):
                  ('/governments/capabilities', '/governments/principles/'),
                  ('/governments/capabilities/index.html', '/governments/principles/index.html'),
                  ('/governments/capabilities/open-data', '/governments/principles/open-data/'),
+                 ('/procurement', '/governments/principles/procurement/'),
+                 ('/governments/capabilities/procurement', '/governments/principles/procurement/'),
                  
                  # This actually goes to BSD, but we check for it anyway.
                  ('/donate', '/page/contribute/default'),
