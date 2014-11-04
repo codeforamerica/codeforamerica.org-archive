@@ -1,0 +1,81 @@
+{% if include.context == "app-page" %}
+
+  <div class="heading">
+    <h2>City Analytics Dashboard (Beta)</h2>
+  </div>
+  
+  <div class="layout-minor">
+      <p>The City Analytics Dashboard lets you display the live traffic on your website easily from your Google Analytics account.</p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/frances-berriman">Frances Berriman</a></li>
+        <li><a href="{{ include.base }}/people/mike-migurski">Mike Migurski</a></li>
+      </ul>
+
+   
+    <p class="layout-tight">
+
+	</div>
+  <div class="layout-major">
+      <!--p><b>Balance lets anyone check their EBT balance with a text message.</b> We built Balance because nearly <a href="http://www.fns.usda.gov/sites/default/files/pd/SNAPsummary.pdf">50 million</a> Americans are receiving SNAP (Food Stamps) and we wanted to give them an easier way to check their balance. 
+
+      <p><h3 class="text-prominent">FAQ</h3></p>
+      <p><b>Where does it work?</b>
+      <br>So far Balance works in:
+      <ul>
+        <li>California</li> 
+        <li>Texas</li> 
+        <li>Pennsylvania</li> 
+        <li>Missouri</li> 
+        <li>Alaska</li>
+        <li>North Carolina</li>
+        <li>Oklahoma</li>
+        <li>Virginia</li>
+      </ul>
+      If you know how a bit about programming in Ruby, you can help us by <a href="https://github.com/codeforamerica/balance/blob/master/HOW_TO_ADD_A_STATE.md">adding a state yourself</a>.
+      </p>
+
+      <p><b>What languages?</b>
+      <br>So far Balance works in English and Spanish. If you feel inspired, please help us add by <a href="https://github.com/codeforamerica/balance/issues/145">translating Balance into another language</a>.</p>
+
+      <p><b>Can I try it?</b>
+      <br>Yup! Text this EBT number: <b>5077 1901 9764 6090.</b>
+      <br>To this phone number: <b>(415) 798-2736</b>
+
+      <p><b>How did it start?</b>
+      <br>It started as an idea to help social service clients in San Francisco. Check out the <a href="https://github.com/codeforamerica/project-ideas/issues/34">project ideas repository on GitHub</a> to see the beginning conversation.</p>
+
+      <p><b>What does Beta mean?</b>
+      <br>Beta means it works most of the time (but not always) and we don't have a plan for long-term sustainability. Please <a href="mailto:jacob@codeforamerica.org?subject=Balance">get in touch</a> if you want to help find one!</p>
+
+      <p><b>How does it work?</b>
+      <br>Balance uses existing phone interfaces to access balance information. When a user texts their EBT number, Balance initiates a phone call to the appropriate service center on their behalf, navigates through the phone tree, transcribes the response, and texts it back to the user. See the <a href="https://github.com/codeforamerica/balance/">source code</a> for the nitty gritty.
+
+      <p><b>How much does it cost?</b>
+      <br>Balance is free for the user besides standard text message rates. On the other side of things, it costs about 5c per balance query, though <a href="http://www.twilio.com">Twilio</a> is generously covering these costs for now. Thanks!</p>
+
+      <p><b>Still have questions?</b>
+      <br><a href="mailto:jacob@codeforamerica.org?subject=Clean" class="button-alternative">Get in touch!</a-->
+      
+  </div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/clean">
+                <h1 class="teaser-title">City Analytics Dashboard</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Display the live traffic on your website</p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/clean" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/clean.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
