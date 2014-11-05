@@ -98,8 +98,8 @@ class TestApache (unittest.TestCase):
                  ('/procurement', '/governments/principles/procurement/'),
                  ('/governments/capabilities/procurement', '/governments/principles/procurement/'),
                  
-                 # This actually goes to BSD, but we check for it anyway.
-                 ('/donate', '/page/contribute/default'),
+                 # # This actually goes to BSD, but we check for it anyway.
+                 # ('/donate', '/page/contribute/default'),
                  ]
         
         for (start_path, end_path) in pairs:
