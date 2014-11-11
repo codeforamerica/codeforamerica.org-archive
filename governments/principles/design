@@ -22,10 +22,10 @@ nav-breadcrumbs:
           
           <p>As governments begin to enact Code for America’s Principles for 21st Century Government, this standard presents a way to evaluate a government’s ability to design and deliver public services that meet people’s needs. This Design Standard is a checklist, not a tactical manual. To learn how to implement these practices, check out Code for America’s Design Toolkit (link forthcoming).  
           
-<h2>The Standard
+<h2>The Standard</h2>
 	
-<h3 id="needs">1. Understand people’s needs</h2> 
-<p>The needs of people, not of the policy or the government process, should inform service design decisions. </p>
+<h3 id="needs">1. Understand people’s needs</h3> 
+<p>Service design must come from a place of empathy. Above all, the needs of people, not of the policy or the government process, should inform service design decisions. </p>
 
 <h6>Checklist:</h6> 
 <ul>
@@ -74,6 +74,7 @@ Conduct user research with those delivering the service as well as those using i
 <li>Metrics are in place to indicate how well the service is working for its users.</li>
 <li>The digital service measures customer satisfaction.</li>
 <li>A  target completion rate for users has been established, and the service is modified to help the service reach this target.</li>
+</ul>
 
 <h3>6. Establish a service governance plan that incorporates user feedback</h3>
 <p>After a service is live, the work is not done. A digital service must continuously be improved in response to user needs and react to new demands as they emerge. Plan for ongoing user research and usability testing to continuously test assumptions and something something sustainability.</p>
@@ -82,6 +83,7 @@ Conduct user research with those delivering the service as well as those using i
 <ul>
 <li>During each stage of usability testing, gaps are identified in addressing user needs and then refined through additional development.</li>
 <li>Determine who will be responsible for on-going maintenance of your service.</li>
+</ul>
 
 </div>
 </section>
