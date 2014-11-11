@@ -55,5 +55,36 @@ Conduct user research with those delivering the service as well as those using i
 <li>A plan is in place for providing assistance to a user, should they need it (i.e. page of instructions, FAQ, support hotline, etc.).</li> 
 </ul>
 
+<h3>Build small things quickly</h3>
+<p>Digital services must be built using agile development and user-centered design. They must be frequently tested with real users in as realistic of environments as possible.  Working this way gets software into real users' hands quickly, allowing for more time to see what features need to be added, removed or fixed. Testing in real  environments provide context for measuring the service’s overall experience. Working iteratively - making lots of small changes, often - also reduces risk. It makes big failures unlikely, and helps turn small failures into lessons that can be learned by everyone. </p>
+
+<h4>Checklist:</h4>
+<ul>
+<li>Projects begin with a prototype that is intended to be thrown away after testing.</li>
+<li>Requirements are expressed in terms of user needs.</li>
+<li>Refinements are based on feedback from real users and incorporated into future releases.</li>
+<li>Releases are frequent, and small. Failures are corrected by quick fixes rather than rollbacks.</li>
+</ul>
+
+<h3>Establish performance benchmarks</h3>
+<p>Measuring your service's performance will highlight how to better meet your users' needs. Your metrics must measure the success of your service, and should be based on an understanding of user and stakeholder needs. These metrics should be simple, easy to collect and, ultimately, help tell a story about how to improve your service and know it is meeting user needs. You should use analytic tools to measure what is happening, but also conduct qualitative interviews to understand why users behave a certain way when using a service. </p>
+
+<h4>Checklist:</h4>
+<ul>
+<li>Metrics are in place to indicate how well the service is working for its users.</li>
+<li>The digital service measures customer satisfaction.</li>
+<li>A  target completion rate for users has been established, and the service is modified to help the service reach this target.</li>
+
+<h3>Establish a service governance plan that incorporates user feedback</h3>
+<p>After a service is live, the work is not done. A digital service must continuously be improved in response to user needs and react to new demands as they emerge. Plan for ongoing user research and usability testing to continuously test assumptions and something something sustainability.</p>
+
+<h4>Checklist:</h4>
+<ul>
+<li>During each stage of usability testing, gaps are identified in addressing user needs and then refined through additional development.</li>
+<li>Determine who will be responsible for on-going maintenance of your service.</li>
+
+
+
+
 
 
