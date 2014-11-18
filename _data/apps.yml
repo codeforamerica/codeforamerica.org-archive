@@ -1,0 +1,108 @@
+- id: adopt-a-hydrant
+  is_active: true
+
+- id: archivesocial
+  is_active: true
+
+- id: aunt-bertha
+  is_active: true
+
+- id: bizfriendly
+  is_active: true
+
+- id: captricity
+  is_active: true
+
+- id: city-analytics-dashboard
+  is_active: true
+
+- id: cityvoice
+  is_active: true
+
+- id: civicinsight
+  is_active: true
+
+- id: click-that-hood
+  is_active: true
+
+- id: development-fastpass
+  is_active: true
+
+- id: discover-bps
+  is_active: true
+
+- id: family-assessment-form
+  is_active: true
+
+- id: honolulu-answers
+  is_active: true
+
+- id: jail-population-management-dashboard
+  is_active: true
+
+- id: learnsprout
+  is_active: true
+
+- id: localdata
+  is_active: true
+
+- id: measured-voice
+  is_active: true
+
+- id: mindmixer
+  is_active: true
+
+- id: ohana-api
+  is_active: true
+
+- id: opencounter
+  is_active: true
+
+- id: prepared-ly
+  is_active: true
+
+- id: promptly
+  is_active: true
+
+- id: public-art-finder
+  is_active: true
+
+- id: recordtrac
+  is_active: true
+
+- id: recovers-org
+  is_active: true
+
+- id: reroute-it
+  is_active: true
+
+- id: revelstone
+  is_active: true
+
+- id: smartprocure
+  is_active: true
+
+- id: streetcred
+  is_active: true
+
+- id: streetmix
+  is_active: true
+
+- id: streetscope
+  is_active: true
+
+- id: textizen
+  is_active: true
+
+- id: text-my-bus
+  is_active: true
+
+- id: the-daily-brief
+  is_active: true
+
+- id: to-the-trails
+  is_active: true
+
+- id: wheres-my-school-bus
+  is_active: true
+
