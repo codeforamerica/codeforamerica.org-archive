@@ -1,0 +1,62 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Sophia Dengo</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>2015 Fellow</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/sophia-dengo.jpg"
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	  Sophia is a web developer and designer based in San Francisco, California. After spending a few years creating interactive interfaces for CNN.com in Atlanta, she relocated to the West Coast for new challenges and adventures. Sophia has a background in multimedia journalism and museum studies, but when she's not working you can find her at her jeweler's bench or the nearest yarn shop.
+
+
+
+
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/phiden">@phiden</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/pub/sophia-dengo/a/8a9/54">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>sophiadengo</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Sophia Dengo</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/sophia-dengo.jpg">
+
+    <div class="p-note profile-note">
+        <p>2015 Fellow</p>
+
+        <p>  Sophia is a web developer and designer based in San Francisco, California. After spending a few years creating interactive interfaces for CNN.com in Atlanta...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/sophia-dengo/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="https://www.linkedin.com/pub/sophia-dengo/a/8a9/54">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/phiden">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
