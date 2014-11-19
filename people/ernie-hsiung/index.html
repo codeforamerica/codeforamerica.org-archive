@@ -1,0 +1,62 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Ernie Hsiung</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>2015 Fellow</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/ernie-hsiung.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	   Ernie is a front-end developer and a community organizer with an interest in both actual and virtual communities. Born and raised in the Bay Area and living in Miami, he most recently served as a software developer at Rackspace and was co-captain of Code for Miami, a local Code for America civic hacking brigade. He holds a BS in Computer Science Engineering from UC Davis.
+
+
+
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/ernieatlyd">@ErnieAtLYD</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/erniehsiung">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>erniehsiung</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Ernie Hsiung</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/shelly-ni.jpg">
+
+    <div class="p-note profile-note">
+        <p>2015 Fellow</p>
+
+        <p> Ernie is a front-end developer and a community organizer with an interest in both actual and virtual communities. Born and raised in the Bay Area and living in Miami...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/ernie-hsiung/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="https://www.linkedin.com/in/erniehsiung">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/ernieatlyd">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}

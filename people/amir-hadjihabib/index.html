@@ -1,0 +1,64 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Amir Hadjihabib</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>2015 Fellow</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/amir-hadjihabib.jpg"
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	 Amir is a San Francisco based Product Designer and avid photographer. At Zendesk, he was part of the team that created the acclaimed Link-SF app, a tool for connecting the underserved community with life-saving resources. He is a professor of User Experience at the Academy of Art University. Amir seeks inspiration from the outdoors and can often be found feeding his voracious cookie habit.
+
+
+
+
+
+
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/poormini">@poormini</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/hadjihabib">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>hadjihabib</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Amir Hadjihabib</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/amir-hadjihabib.jpg">
+
+    <div class="p-note profile-note">
+        <p>2015 Fellow</p>
+
+        <p> Amir is a San Francisco based Product Designer and avid photographer. At Zendesk, he was part of the team that created the acclaimed Link-SF app...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/amir-hadjihabib/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="https://www.linkedin.com/in/hadjihabib">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/poormini">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}

@@ -1,0 +1,64 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Ben Golder</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>2015 Fellow</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/ben-golder.jpg"
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	  Ben designs information, maps, and civic technology. He studied urban planning at MIT and architecture at UC Berkeley and has instructed designers for six years in courses at UC Berkeley, California College of the Arts, and Architectural Association Visiting Schools. Before college, he worked in plumbing, carpentry, and community organizing.
+
+
+
+
+
+
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/bgolder">@bgolder</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/benjamingolder">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>benjamingolder</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Ben Golder</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/ben-golder.jpg">
+
+    <div class="p-note profile-note">
+        <p>2015 Fellow</p>
+
+        <p> Ben designs information, maps, and civic technology. He studied urban planning at MIT and architecture at UC Berkeley and has instructed designers...
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/ben-golder/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="https://www.linkedin.com/in/benjamingolder">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/bgolder">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
