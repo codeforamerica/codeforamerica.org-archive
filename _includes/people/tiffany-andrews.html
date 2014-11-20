@@ -1,0 +1,59 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Tiffany Andrews</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>2015 Fellow</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/2015-fellows/">2015 Fellow</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/tiffany-andrews.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	   Tiffany has 10 years of experience in politics and government administration and is a budding junior front-end developer. She's a member of Leadership Council for Girls in Tech LA, Women 2.0 LA and City Director of Women Who Code LA.
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/TiffiAndrews">@TiffiAndrews</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/pub/tiffany-andrews/9/a14/446 ">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>tiffanyandrews</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == '2015-fellows' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Tiffany Andrews</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/tiffany-andrews.jpg">
+
+    <div class="p-note profile-note">
+        <p>2015 Fellow</p>
+
+        <p> Tiffany has 10 years of experience in politics and government administration and is a budding junior front-end developer....
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/tiffany-andrews/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="https://www.linkedin.com/pub/tiffany-andrews/9/a14/446">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/TiffiAndrews">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
