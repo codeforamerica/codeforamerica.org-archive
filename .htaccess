@@ -164,7 +164,6 @@ RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/spread-the-word(/?)$ $1/geeks/f
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/nominate(/?)$ $1/geeks/fellows/nominate$2
 RedirectMatch permanent ^(.*)/governments/expectations-of-our-city-partners(/?)$ $1/governments/fellowship-faq$2
 RedirectMatch permanent ^(.*)/2012-city-videos(/?)$ $1/communications/testimonial$2
-RedirectMatch permanent ^(.*)/governments/2015-cities(/?)$ $1/governments/2015-cities-april-fools$2
 
 #
 # Fellowship lists.
