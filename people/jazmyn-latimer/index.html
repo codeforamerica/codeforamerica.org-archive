@@ -1,65 +1,12 @@
-{% if include.context == 'people-page' %}
-
-<div class="layout-semibreve h-card">
-
-	<div class="heading">
-		<h2 class="p-name">Jazmyn Latimer</h2>
-	</div>
-
-	<div class="layout-minor">
-		<p>2015 Fellow</p>
-	    <h4 class="text-whisper layout-tight">Member of</h4>
-	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
-
-	    </ul>
-
-		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/jazmyn-latimer.jpg"
-
-	<div class="layout-major">
-
-	    <p class="p-note">
-	Jazmyn, a researcher and user experience designer, is interested in combining social science to solve problems and enhance lives through technology. She was a Behavior Analyst for children with Autism and adults with Alzheimer’s for 3 years and then co-founded ESP Collective, a research and design organization in Fresno,CA. Prior to CfA she was leading User Experience for over 100 different universities around the U.S.
-
-
-
-
-
-
-
-	    </p>
-
-
-	    <div class="spotlight">
-	    	<h3 class="text-whisper">Contact</h3>
-	    	<table class="table-unstyled table-minor">
-	    		<tr><th>Twitter</th><td><a href="https://twitter.com/jazmynlatimer">@JazmynLatimer</a></td></tr>
-	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/jazmynlatimer">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>jazmynlatimer</a></td></tr>
-
-	    	</table>
-	    </div>
-	</div>
-
-</div>
-
-{% elsif include.context == 'about-team' %}
-
-<div class="h-card profile-small">
-    <h3 class="p-name profile-name">Jazmyn Latimer</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jazmyn-latimer.jpg">
-
-    <div class="p-note profile-note">
-        <p>2015 Fellow</p>
-
-        <p>Jazmyn, a researcher and user experience designer, is interested in combining social science to solve problems and enhance lives through technology...
-</p>
-
-        <p><a class="link-more" href="{{ include.base }}/people/jazmyn-latimer/">More</a></p>
-
-        <ul class="list-social list-social-horizontal">
-            <li class="social-linkedin"><a href="https://www.linkedin.com/in/jazmynlatimer">LinkedIn</a></li>
-            <li class="social-twitter"><a href="https://twitter.com/jazmynlatimer">Twitter</a></li>
-        </ul>
-    </div>
-</div>
-
-{% endif %}
+---
+layout: default
+title: Jazmyn Latimer
+title-h1: People
+nav_tier1_active: "citizens"
+masthead-class: masthead-s
+masthead-image: "../../media/images/masthead/masthead-5.jpg"
+nav-breadcrumbs:
+ - Citizens: "/geeks"
+---
+  
+{% include people/jazmyn-latimer.html context="people-page" base="../.." %}

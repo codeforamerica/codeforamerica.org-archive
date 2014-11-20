@@ -1,64 +1,12 @@
-{% if include.context == 'people-page' %}
-
-<div class="layout-semibreve h-card">
-
-	<div class="heading">
-		<h2 class="p-name">Alex Soble</h2>
-	</div>
-
-	<div class="layout-minor">
-		<p>2015 Fellow</p>
-	    <h4 class="text-whisper layout-tight">Member of</h4>
-	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
-
-	    </ul>
-
-		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/alex-soble.jpg"
-
-	<div class="layout-major">
-
-	    <p class="p-note">
-	 Alex is a starter and a coder. He loves technology that contributes to the public good and has built web products for both government and startups. Alex led digital projects at Chicago Public Schools, where he helped save time and money with open-source tools. He is a major fan of bikeshare systems and likes studying foreign languages.
-
-
-
-
-
-
-	    </p>
-
-
-	    <div class="spotlight">
-	    	<h3 class="text-whisper">Contact</h3>
-	    	<table class="table-unstyled table-minor">
-	    		<tr><th>Twitter</th><td><a href="https://twitter.com/alexsoble">@alexsoble</a></td></tr>
-	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/pub/alexander-soble/16/1a0/9b2">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>alexander-soble</a></td></tr>
-
-	    	</table>
-	    </div>
-	</div>
-
-</div>
-
-{% elsif include.context == 'about-team' %}
-
-<div class="h-card profile-small">
-    <h3 class="p-name profile-name">Alex Soble</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/alex-soble.jpg">
-
-    <div class="p-note profile-note">
-        <p>2015 Fellow</p>
-
-        <p> Alex is a starter and a coder. He loves technology that contributes to the public good and has built web products for both government and startups...
-</p>
-
-        <p><a class="link-more" href="{{ include.base }}/people/alex-soble/">More</a></p>
-
-        <ul class="list-social list-social-horizontal">
-            <li class="social-linkedin"><a href="https://www.linkedin.com/pub/alexander-soble/16/1a0/9b2">LinkedIn</a></li>
-            <li class="social-twitter"><a href="https://twitter.com/alexsoble">Twitter</a></li>
-        </ul>
-    </div>
-</div>
-
-{% endif %}
+---
+layout: default
+title: Alex Soble
+title-h1: People
+nav_tier1_active: "citizens"
+masthead-class: masthead-s
+masthead-image: "../../media/images/masthead/masthead-5.jpg"
+nav-breadcrumbs:
+ - Citizens: "/geeks"
+---
+  
+{% include people/alex-soble.html context="people-page" base="../.." %}

@@ -1,64 +1,12 @@
-{% if include.context == 'people-page' %}
-
-<div class="layout-semibreve h-card">
-
-	<div class="heading">
-		<h2 class="p-name">Mari Muraki </h2>
-	</div>
-
-	<div class="layout-minor">
-		<p>2015 Fellow</p>
-	    <h4 class="text-whisper layout-tight">Member of</h4>
-	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/about/team/#FELLO">2015 Fellow</a></li>
-
-	    </ul>
-
-		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/mari-muraki.jpg"
-
-	<div class="layout-major">
-
-	    <p class="p-note">
-	 Mari is a data lover and researcher hailing from New Jersey and moving west over the years: studying mathematics and statistics at the University of Chicago and then pursuing economics of education research at Stanford University. When not munging, visualizing and modeling data for social good, she enjoys traveling, cycling (most recently through Italy, Slovenia, and Croatia), and snapping photos along the way.
-
-
-
-
-
-	    </p>
-
-
-	    <div class="spotlight">
-	    	<h3 class="text-whisper">Contact</h3>
-	    	<table class="table-unstyled table-minor">
-	    		<tr><th>Twitter</th><td><a href="https://twitter.com/codemestat">@codemestat
-</a></td></tr>
-	    		<tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/marimuraki">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>marimuraki</a></td></tr>
-
-	    	</table>
-	    </div>
-	</div>
-
-</div>
-
-{% elsif include.context == 'about-team' %}
-
-<div class="h-card profile-small">
-    <h3 class="p-name profile-name">Mari Muraki</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/mari-muraki.jpg">
-
-    <div class="p-note profile-note">
-        <p>2015 Fellow</p>
-
-        <p> Mari is a data lover and researcher hailing from New Jersey and moving west over the years: studying mathematics and statistics at the University of Chicago...
-</p>
-
-        <p><a class="link-more" href="{{ include.base }}/people/mari-muraki/">More</a></p>
-
-        <ul class="list-social list-social-horizontal">
-            <li class="social-linkedin"><a href="https://www.linkedin.com/in/marimuraki">LinkedIn</a></li>
-            <li class="social-twitter"><a href="https://twitter.com/codemestat">Twitter</a></li>
-        </ul>
-    </div>
-</div>
-
-{% endif %}
+---
+layout: default
+title: Mari Muraki
+title-h1: People
+nav_tier1_active: "citizens"
+masthead-class: masthead-s
+masthead-image: "../../media/images/masthead/masthead-5.jpg"
+nav-breadcrumbs:
+ - Citizens: "/geeks"
+---
+  
+{% include people/mari-muraki.html context="people-page" base="../.." %}
