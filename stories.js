@@ -1,6 +1,5 @@
 on_stories(
 [
-    
     {
         "head_html": "<a href='governments/philadelphia'>In Philadelphia</a>",
         "content_html": "a team of geeks built <a href='apps/textizen'>Textizen</a>, reinventing the town hall by enabling thousands to participate in their government via SMS.",
@@ -20,26 +19,16 @@ on_stories(
         "image_src": "media/images/homepage-stories/oakland-budget.jpg"
     },
     {
-        "head_html": "<a href='/governments/2014-cities/'>Across the U.S.</a>",
-        "content_html": "29 fellows are working with 10 local governments to make government services simple, effective, and easy-to-use.",
-        "image source": "http://www.flickr.com/photos/bytemarks/7673631824/",
-        "image_src": "media/images/geeks/fellowship-apply.jpg",
-        "box_link": "/governments/2014-cities/",
-        "box_text": "See what they’re doing"
-    },
-    {
         "head_html": "<a href='/about'>For the past four years</a>",
         "content_html": "in partnership with governments, communities, and companies, Code for America has built technology to address important community issues.",
         "image_src": "media/images/homepage-stories/Beta-Tiffani-Fumi-some-guy.jpg"
     },
     {
-        "head_html": "<a href='/summit'>Every year</a>",
-        "content_html": "the Code for America Summit brings together local governments, civic-minded technologists, designers, community organizers, and entrepreneurs for three days of collaborating, connecting, and learning.",
-        "image_src": "media/images/homepage-stories/Summit-Cyd-Harrell.jpg",
-        "box_link": "/summit",
-        "box_text": "Learn about the 2014 Summit"
+        "head_html": "<a href='http://www.codeforamerica.org/blog/2014/11/20/announcing-the-2015-fellows'>Announcing the 2015 Fellows</a>",
+        "content_html": "Meet the 24 fellows who are taking leave from jobs at tech companies, their own businesses, and government, to use their skills for good during a year of public service.",
+        "image_src": "media/images/homepage-stories/point-bonita.png",
+        "box_link": "http://www.codeforamerica.org/blog/2014/11/20/announcing-the-2015-fellows",
+        "box_text": "Read the announcement"
     }
-
- 
 ]
 );
