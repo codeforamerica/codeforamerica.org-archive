@@ -1,0 +1,61 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Jennifer Childs</h2>
+	</div>
+
+	<div class="layout-minor">
+		<p>Senior Manager, Corporate Partnerships</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/jennifer-childs.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+	    Jennifer joined Code for America as Senior Manager of Corporate Partnerships in November 2014. Jennifer most recently served as Associate Director of Corporate & Foundation Relations at the University of California, San Francisco, managing major gifts and sponsorships from corporate partners. Prior to UCSF, Jennifer developed and managed the west coast corporate portfolio for the Tuck School of Business at Dartmouth. This position was a natural extension of Jennifer’s work following her role as Program Manager of Tuck’s Center for Digital Strategies where she significantly expanded partnerships with both alumni and corporations operating in Tech-Media-Telco  & managed the center’s programs serving CIOs and CISOs of global 500 companies.   Jennifer’s interest in technology began at the University of Texas, Austin where she explored the intersection of culture and technology as a student in the Accelerated Communication Technology Lab (ACTLab).  Jennifer holds a BS in Communications and her MA work focused on technology, engagement, identity and policy.   
+
+Jennifer is originally from Houston, TX.  She teaches Forrest Yoga and has an awesome border collie named Kai.   You can find us making the rounds at farmers markets across San Francisco. 
+	    </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/paboynca">@ChildsJenniferE</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/pub/jennifer-childs/6/280/b3b">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>jennifer-childs</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Jennifer Childs</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jennifer-childs.jpg">
+
+    <div class="p-note profile-note">
+        <p>Senior Manager, Corporate Partnerships</p>
+
+        <p>Jennifer joined Code for America as Senior Manager of Corporate Partnerships in November 2014. Jennifer most recently served as Associate Director of Corporate & Foundation Relations at the University of California, San Francisco, managing major gifts and sponsorships from corporate partners. Prior to UCSF,
+</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/jennifer-childs/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="www.linkedin.com/pub/jennifer-childs/6/280/b3b">LinkedIn</a></li>
+           <li class="social-twitter"><a href="https://twitter.com/ChildsJenniferE">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
