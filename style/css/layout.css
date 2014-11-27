@@ -484,8 +484,8 @@ section,
 .masthead-l .page-title,
 .masthead-s .page-title {
     font-size: 57px;
-    line-height: 65px;
-    line-height: 4.0625rem;
+    line-height: 80px;
+    line-height: 5rem;
     margin-top: 1.5625rem;
     margin-top: 25px;
     }
