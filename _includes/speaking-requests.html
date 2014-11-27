@@ -1,8 +1,35 @@
-<!-- Centralized Speaking Request microscript -->
-<!-- When calling the include, use ga-tracking-lable="Label in here" for request speaker -->
+{% comment %}
+
+This centralizes speaker request text and layouts in one file to make it easier to change and update content and create analytics for tracking.
+
+When calling this include, you can specify a Google Analytics tracking label to aid in tracking the Speaker Request goal later.
+
+For example:
+  {% include speaking-requests.html ga-tracking-code="Clicked from marketing page" %}
+
+You can also pull in a larger, styled layout, which is useful for staff/fellows/etc. listing pages.
+
+For example:
+  {% include speaking-requests.html slab-layout="true" %}
+
+{% endcomment %}
+
+
+
+{% if include.slab-layout %}
+  <section class="slab-gray">
+    <div class="layout-semibreve">
+        <h3>Speaking requests</h3>
+{% endif %}
+
 
 <p>Some of Code for America's speakers include Founder and ED <a href="http://codeforamerica.org/people/jennifer-pahlka/" target="_blank">Jennifer Pahlka</a>, CTO <a href="http://codeforamerica.org/people/michal-migurski/" target="_blank">Michal Migurski</a>, Communities Program Director <a href="http://codeforamerica.org/people/catherine-bracy/" target="_blank">Catherine Bracy</a>, and UX Evangelist <a href="http://codeforamerica.org/people/cyd-harrell/" target="_blank">Cyd Harrell</a>.</p>
 
 <p>We're also happy to contact <a href="../geeks/our-geeks/2014-fellows/" target="_blank">Fellows</a>, <a href="http://www.codeforamerica.org/2013/09/17/brigade-captains/" target="_blank">Brigade Captains</a> and the <a href="http://0.0.0.0:4000/about/board/#board" target="_blank">Board</a>.</p>
 
 <a href="https://codeforamerica.wufoo.com/forms/code-for-america-speakers-request" onClick="_gaq.push(['_trackEvent', 'Forms', 'Request speaker', '{{ include.ga-tracking-label }}']);" class="button button-prominent">Request a Speaker</a>
+
+{% if include.slab-layout %}
+    </div>
+  </section>
+{% endif %}
