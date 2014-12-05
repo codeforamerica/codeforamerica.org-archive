@@ -6,34 +6,35 @@
   
   <div class="layout-minor">
     <img class="isolate" src="{{ include.base }}/media/images/apps/ebtnearme.png" />
-      <p>
-      <a href="http://ebtnearme.org">EBT Near Me</a> shows the nearest places you can use an EBT card nationwide.
-      </p>
+      <p><a href="http://ebtnearme.org">EBTNearMe</a> is the easiest way to find stores and surcharge-free ATMs where you can use your EBT card in California.</p>
       
       <h4 class="text-whisper layout-tight">Created by</h4>
       <ul class="list-no-bullets text-whisper link-invert">
         <li><a href="{{ include.base }}/people/rhys-fureigh/">Rhys Fureigh</a></li>
         <li><a href="{{ include.base }}/people/alan-williams">Alan Williams</a></li>
+        <li><a href="{{ include.base }}/people/jacob-solomon">Jacob Solomon</a></li>
       </ul>
   
   </div>
   
   <div class="layout-major">
-      <p><a href="http://ebtnearme.org">EBT Near Me</a> shows the nearest places you can use an EBT card nationwide. We built it because the <a href="http://www.fns.usda.gov/snap/retailerlocator">current</a> <a href="https://www.ebt.ca.gov/caebtclient/usebenefit.jsp">tools</a> leave something to be desired and <a href="http://www.twitter.com/allafarce">@allafarce</a> inspired us with <a href="http://bartmenow.com">BART me now</a>.
+      <p><a href="http://ebtnearme.org">EBTNearMe</a> is the easiest way to find stores and surcharge-free ATMs where you can use your EBT card in California. We built it because California welfare recipients <a href="http://calreinvest.org/system/resources/W1siZiIsIjIwMTQvMDMvMjQvMjBfMjRfMzdfMTYyXzE5X01pbGxpb25fQVRNX0ZlZV9DUkNfUmVwb3J0Xy5wZGYiXV0/19%20Million%20ATM%20Fee%20(CRC%20Report).pdf">pay nearly $20 million</a> per year in ATM surcharge fees partially because there <a href="http://www.ebtproject.ca.gov/Library/Cash_Access.pdf">isn't an easy way to find the free ones</a>.
+
+      <p>It's an <a href="https://github.com/lippytak/ebt-near-me/">open source project</a> built with <a href="http://www.fns.usda.gov/snap/retailerlocator">public retailer data from the USDA</a> and ATM data graciously shared by the <a href="http://www.osi.ca.gov/">CA Office of Systems Integration</a>.
 
       <br><br><p><h3 class="text-prominent">FAQ</h3></p>
-      <p><b>How did it start?</b>
-      <br>It started when one of our teammates enrolled in CalFresh (Food Stamps) and found it tricky to figure out where he could use them. Check out the <a href="https://github.com/codeforamerica/project-ideas/issues/33">project ideas repository on GitHub</a> to see the beginning conversation.</p>
-
-      <p><b>What does Alpha mean?</b>
-      <br>Alpha means you shouldn't count on it working tomorrow. This is an experiment for now. Once it's stable enough to use we'll upgrade move it to Beta.</p>
-
-      <p><b>How does it work?</b>
-      <br>We download data from <a href="http://www.fns.usda.gov/snap/retailerlocator">FNS</a> and put on a map with <a href="http://cartodb.com/">CartoDB</a>. See <a href="https://github.com/fureigh/ebt-near-me/">the source code</a> for details.
+      <p><b>How do people do it now?</b>
+      <br>Currently EBT users can use the <a href="http://www.fns.usda.gov/snap/retailerlocator">FNS retail locator</a> or the <a href="https://www.ebt.ca.gov/caebtclient/usebenefit.jsp">CA EBT website</a> to find stores that accept EBT cards. The San Francisco Human Services Agency created <a href="http://www.sfhsa.org/ebt-sf.htm">this surcharge-free ATM locator</a> but the rest of California relies on this <a href="http://www.ebtproject.ca.gov/Library/Cash_Access.pdf">PDF document</a>. 
       <br></p>
 
+      <p><b>Why California?</b>
+      <br>Because we're based in San Francisco and we know people in California. That's it. Please get in touch with <a href="mailto:health-lab@codeforamerica.org?subject=EBTNearMe">health-lab@codeforamerica.org</a> if you think EBTNearMe would be a useful tool in your community and want to work together to make it happen.</p>
+
+      <p><b>What does Alpha mean?</b>
+      <br>Alpha means we are still validating the feasibility and value of the project so things will change. Please don't count on this working the same way tomorrow. Once it's stable enough to use we'll upgrade it to Beta.</p>
+
       <p><b>Still have questions?</b>
-      <br><a href="mailto:jacob@codeforamerica.org?subject=Clean" class="button-alternative">Get in touch!</a>
+      <br><a href="mailto:health-lab@codeforamerica.org?subject=EBTNearMe" class="button-alternative">Get in touch!</a>
       
   </div>
 
