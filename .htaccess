@@ -204,8 +204,7 @@ RedirectMatch permanent ^(.*)/about/startups(/?)$ $1/about/companies$2
 #
 # More Fellowship Program
 #
-RedirectMatch permanent ^(.*)(?<!/governments|/geeks|/about)/fellowship(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)/governments/fellowship(/?)$ $1/about/fellowship$2
+RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellowship(/?)$ $1/governments/fellowship$2
 RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/governments/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
@@ -213,9 +212,12 @@ RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 
+#
 # Another round of Fellowship Program reorganization
+#
 RedirectMatch permanent ^(.*)/about/fellowship(/?)$ $1/governments/fellowship$2
-
+RedirectMatch permanent ^(.*)/governments/fellowship-apply(/?)$ $1/governments/fellowship/apply$2
+RedirectMatch permanent ^(.*)/governments/fellowship-faq(/?)$ $1/about/fellowship/faq$2
 
 #
 # Governments.
