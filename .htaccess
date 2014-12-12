@@ -213,6 +213,10 @@ RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 
+# Another round of Fellowship Program reorganization
+RedirectMatch permanent ^(.*)/about/fellowship(/?)$ $1/governments/fellowship$2
+
+
 #
 # Governments.
 #
