@@ -22,45 +22,47 @@ nav_tier1_active: "governments"
   
   <!-- Form content -->
   <div class="layout-major-invert">
-    <form>
+    <form accept-charset="UTF-8" action="https://formkeep.com/f/d116a6148517" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+
       <ul class="list-form">
         
         <li class="form-field-group">
           <div class="form-field">
             <label for="firstname">First name <abbr title="Required">*</abbr></label>
-            <input id="firstname" class="input" type="text" placeholder="First name" />
+            <input id="firstname" name="firstname" class="input" type="text" placeholder="First name" />
           </div>
 
           <div class="form-field">
             <label for="lastname">Last name <abbr title="Required">*</abbr></label>
-            <input id="lastname" class="input" type="text" placeholder="Last name" />
+            <input id="lastname" name="lastname" class="input" type="text" placeholder="Last name" />
           </div>
         </li>
 
         <li class="form-field">
           <label for="location">Where do you work?</label>
-          <input id="location" class="input" type="text" placeholder="i.e. City of San Francisco, CA" />
+          <input id="location" name="location" class="input" type="text" placeholder="i.e. City of San Francisco, CA" />
         </li>
 
         <li class="form-field">
           <label for="jobtitle">What is your job title?</label>
-          <input id="jobtitle" class="input" type="text" placeholder="i.e. Chief Technology Officer" />
+          <input id="jobtitle" name="jobtitle" class="input" type="text" placeholder="i.e. Chief Technology Officer" />
         </li>
 
         <li class="form-field-group">
           <div class="form-field">
             <label for="email">What email can we reach you at?</label>
-            <input id="email" class="input" type="email" placeholder="email@domain.com" />
+            <input id="email" name="email" class="input" type="email" placeholder="email@domain.com" />
           </div>
 
           <div class="form-field">
             <label for="phone">What phone number can we reach you at?</label>
-            <input id="phone" class="input" type="number" placeholder="email@domain.com" />
+            <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555" />
           </div>
         </li>
 
         <li class="form-field">
-          <label for="checkbox11"><input id="checkbox11" name="checkbox" type="checkbox"> Sign me up for the Code for America newsletter</label>
+          <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox"> Sign me up for the Code for America newsletter</label>
         </li>
 
         <input type="submit" value="Submit">
