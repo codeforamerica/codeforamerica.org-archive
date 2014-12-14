@@ -34,7 +34,7 @@ on_stories(
         "head_html": "<a href='/governments/fellowship'>Enlist the Fellows</a>",
         "content_html": "Want to bring the fellows to work in your government? Learn about how to partner with us in 2016.",
         "image_src": "media/images/about_fellowship/longbeach.jpg",
-        "box_link": "/governments/fellowship",
+        "box_link": "http://www.codeforamerica.org/governments/fellowship",
         "box_text": "Tell me more"
     }
 ]
