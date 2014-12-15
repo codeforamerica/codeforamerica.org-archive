@@ -22,7 +22,7 @@ nav_tier1_active: "governments"
   
   <!-- Form content -->
   <div class="layout-major-invert">
-    <form accept-charset="UTF-8" action="https://formkeep.com/f/d116a6148517" method="POST">
+    <form name="interestForm" accept-charset="UTF-8" action="https://formkeep.com/f/d116a6148517" onsubmit="return validate()" method="POST" >
       <input type="hidden" name="utf8" value="✓">
 
       <ul class="list-form">
@@ -80,3 +80,57 @@ nav_tier1_active: "governments"
 </section>
 
 <section class="layout-semibreve"></section>
+
+<script type="text/javascript">
+  function validate() {
+
+    var valid = true;
+    var invalidMessage = "Please check your answers:\n"
+
+    // Check that the name fields are filled in
+    if(     document.forms["interestForm"]["firstname"].value == "" || 
+            document.forms["interestForm"]["firstname"].value == null ||
+            document.forms["interestForm"]["lastname"].value == "" ||
+            document.forms["interestForm"]["lastname"].value == null
+      ){
+
+      invalidMessage+= "- Fill in your full name\n";
+      var valid = false;
+    }
+
+    // Check the job description fields are filled in
+    if(     document.forms["interestForm"]["jobtitle"].value == "" ||
+            document.forms["interestForm"]["jobtitle"].value == null ||
+            document.forms["interestForm"]["location"].value == "" ||
+            document.forms["interestForm"]["location"].value == null
+      ){
+
+      invalidMessage+= "- Fill in your job description and title\n";
+      var valid = false;
+    }
+
+    // Check that email is filled in, check that email is valid
+    var formEmail = document.forms["interestForm"]["email"].value;
+    if  (    document.forms["interestForm"]["email"].value == "" ||
+             document.forms["interestForm"]["email"].value == null ||
+             !validateEmail(formEmail)
+        ){
+    
+      invalidMessage+= "- Fill in your email in the right format (i.e. name@domain.com)\n";
+      var valid = false;
+    }
+
+    if (!valid) alert(invalidMessage);
+    return valid;
+
+  } // end function validate
+
+  function validateEmail(formEmail) {
+    var emailTest = /\S+@\S+\.\S+/;
+
+    var emailCorrect = false;
+    var emailCorrect = emailTest.test(formEmail);
+    return emailCorrect;
+
+  } // end function validateEmail
+</script>
