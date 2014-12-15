@@ -31,11 +31,11 @@ on_stories(
     //     "box_text": "Read the announcement"
     // },
     {
-        "head_html": "<a href='governments/fellowship'>Enlist the Fellows</a>",
-        "content_html": "Want to bring the fellows to work in your government? Learn about how to partner with us in 2016.",
+        "head_html": "<a href='governments/fellowship'>Bring the Fellows to you</a>",
+        "content_html": "Bring a team of technologists to your local government for a year.",
         "image_src": "media/images/about_fellowship/longbeach.jpg",
         "box_link": "governments/fellowship",
-        "box_text": "Tell me more"
+        "box_text": "Learn more"
     }
 ]
 );
