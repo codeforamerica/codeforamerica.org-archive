@@ -91,10 +91,8 @@ nav_tier1_active: "governments"
     var invalidMessage = "<h4><strong>There was a problem with your answers</strong></h4><p>\n"
 
     // Check that the name fields are filled in
-    if(     document.forms["interestForm"]["firstname"].value == "" || 
-            document.forms["interestForm"]["firstname"].value == null ||
-            document.forms["interestForm"]["lastname"].value == "" ||
-            document.forms["interestForm"]["lastname"].value == null
+    if(     isEmpty(document.forms["interestForm"]["firstname"].value) ||
+            isEmpty(document.forms["interestForm"]["lastname"].value)
       ){
 
       invalidMessage+= "&bull; Fill in your full name<br />\n";
@@ -102,10 +100,8 @@ nav_tier1_active: "governments"
     }
 
     // Check the job description fields are filled in
-    if(     document.forms["interestForm"]["jobtitle"].value == "" ||
-            document.forms["interestForm"]["jobtitle"].value == null ||
-            document.forms["interestForm"]["location"].value == "" ||
-            document.forms["interestForm"]["location"].value == null
+    if(     isEmpty(document.forms["interestForm"]["jobtitle"].value) ||
+            isEmpty(document.forms["interestForm"]["location"].value)
       ){
 
       invalidMessage+= "&bull; Fill in your job description and title<br />\n";
@@ -114,8 +110,7 @@ nav_tier1_active: "governments"
 
     // Check that email is filled in, check that email is valid
     var formEmail = document.forms["interestForm"]["email"].value;
-    if  (    document.forms["interestForm"]["email"].value == "" ||
-             document.forms["interestForm"]["email"].value == null ||
+    if  (    isEmpty(formEmail) ||
              !validateEmail(formEmail)
         ){
     
@@ -148,4 +143,8 @@ nav_tier1_active: "governments"
     return emailCorrect;
 
   } // end function validateEmail
+
+  function isEmpty(value) {
+    return value == "" || value == null;
+  } // end function isEmpty
 </script>
