@@ -88,14 +88,14 @@ nav_tier1_active: "governments"
   function validate() {
 
     var valid = true;
-    var invalidMessage = "<h4><strong>There was a problem with your answers</strong></h4><p>\n"
+    var invalidMessage = []
 
     // Check that the name fields are filled in
     if(     isEmpty(document.forms["interestForm"]["firstname"].value) ||
             isEmpty(document.forms["interestForm"]["lastname"].value)
       ){
 
-      invalidMessage+= "&bull; Fill in your full name<br />\n";
+      invalidMessage.push("&bull; Fill in your full name");
       var valid = false;
     }
 
@@ -104,7 +104,7 @@ nav_tier1_active: "governments"
             isEmpty(document.forms["interestForm"]["location"].value)
       ){
 
-      invalidMessage+= "&bull; Fill in your job description and title<br />\n";
+      invalidMessage.push("&bull; Fill in your job description and title");
       var valid = false;
     }
 
@@ -114,15 +114,21 @@ nav_tier1_active: "governments"
              !validateEmail(formEmail)
         ){
     
-      invalidMessage+= "&bull; Fill in your email in the right format (i.e. name@domain.com)<br />\n";
+      invalidMessage.push("&bull; Fill in your email in the right format (i.e. name@domain.com)");
       var valid = false;
     }
 
     if (!valid) {
 
-      // Finish off html, put it in our tag
-      invalidMessage+= "</p>\n";
-      document.getElementById("formError").innerHTML = invalidMessage;
+      // Build our message
+      var openMessage = "<h4><strong>There was a problem with your answers</strong></h4><p>\n";
+      var closeMessage = "</p>\n";
+
+      // Join together our errors
+      fullMessage = invalidMessage.join("<br />\n");
+
+      // Push to the error div
+      document.getElementById("formError").innerHTML = openMessage + fullMessage + closeMessage;
 
       // Make hidden error message div visible
       document.getElementById("formError").style.display = "inherit";
