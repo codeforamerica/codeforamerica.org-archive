@@ -145,13 +145,15 @@ nav-breadcrumbs:
                             <li class="layout-crotchet">
                                 {% include people/jennifer-childs.html context="about-team" base="../.." %}
                                 </li>
+                                <li class="layout-crotchet">
+                                {% include people/marc-brent.html context="about-team" base="../.." %}
+                            </li>
 
                         </ul>
                     </div>
                 </section>
-
-                <section>
-                    <p>To request a Code for America team member to speak at your event, <a href="https://codeforamerica.wufoo.com/forms/code-for-america-speakers-request/">fill out this form</a>.</p>
-                </section><!--@main-->
             </div>
+
+            {% include speaking-requests.html ga-tracking-label="Clicked from team page" slab-layout="true" %}
+            <!--@main-->
         </section>
