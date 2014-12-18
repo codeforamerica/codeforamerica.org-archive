@@ -79,6 +79,82 @@ nav-breadcrumbs:
     }
     
     /* New Speaker specific CSS */
+    
+    .global-header {
+      /* The header is flush with the content below it */
+      margin-bottom: 0;
+    }
+
+
+    .masthead:before {
+      background-image: url('/media/images/speakers/jake-summit.jpg');
+      background-size: cover;
+      min-height: 710px;
+      opacity: 0.5;
+    }
+    .masthead {
+      min-height: 710px;
+    }
+    .masthead-l .masthead-header {
+      margin-top: 0;
+    }
+    .masthead-l .page-title {
+      font-size: 57px;
+      line-height: 65px;
+      line-height: 4.0625rem;
+      margin-top: 0;
+    }
+
+    /* Featured speaker content module */
+    .ontop {
+      position: relative;
+      z-index: 1;
+    }
+    .featured-speaker {
+      position: absolute;
+      text-align: left;
+      left: 30px;
+      bottom: 30px;
+      width: 60%;
+    }
+
+    /* Styling the overline */
+    p.featured-kicker {
+      font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+      font-weight: 200;
+    }
+    
+    /* Styling the description */
+    .featured-speaker p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .featured-speaker p.featured-description {
+      padding-right: 100px;
+    }
+    span.featured-title {
+      color: #fedd44;
+    }
+
+    /* Styling the name */
+    p.featured-name {
+      /*font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";*/
+      letter-spacing: -3px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 85px;
+      line-height: 85px;
+
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p.featured-name a {
+      color: white;
+    }
+    p.featured-name a:hover {
+      padding-bottom: 0;
+      border-bottom: 2px solid white;
+    }
 
   </style>
 
