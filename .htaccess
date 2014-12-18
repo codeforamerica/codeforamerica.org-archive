@@ -169,7 +169,7 @@ RedirectMatch permanent ^(.*)/2012-city-videos(/?)$ $1/communications/testimonia
 # Fellowship lists.
 #
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/apply(/?)$ $1/geeks/fellowship-apply$2
-RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/governments)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+#RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/governments)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 RedirectMatch permanent ^(.*)/geeks/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks)/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
 RedirectMatch permanent ^(.*)(?<!/geeks/our-geeks)/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
@@ -204,14 +204,20 @@ RedirectMatch permanent ^(.*)/about/startups(/?)$ $1/about/companies$2
 #
 # More Fellowship Program
 #
-RedirectMatch permanent ^(.*)(?<!/governments|/geeks|/about)/fellowship(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)/governments/fellowship(/?)$ $1/about/fellowship$2
+#RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellowship(/?)$ $1/governments/fellowship$2
 RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/governments/city-impact(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)(?<!/geeks|/about)/fellows(/?)$ $1/about/fellowship$2
 RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
-RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+#RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+#RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+
+#
+# Another round of Fellowship Program reorganization
+#
+#RedirectMatch permanent ^(.*)/about/fellowship(/?)$ $1/governments/fellowship$2
+#RedirectMatch permanent ^(.*)/governments/fellowship-apply(/?)$ $1/governments/fellowship/apply$2
+#RedirectMatch permanent ^(.*)/governments/fellowship-faq(/?)$ $1/governments/fellowship/faq$2
 
 #
 # Governments.
