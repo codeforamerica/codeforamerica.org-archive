@@ -31,58 +31,63 @@ nav-breadcrumbs:
 
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
-    <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
-    <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
-    <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
+  <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+  <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
+  <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
+  <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
 
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all">
-    <![endif]-->
-      
-    {% if page.masthead-image %}
-      <style type="text/css">
-        .masthead:before {
-                background-image: url('{{ page.masthead-image }}');
-        }
-      </style>
-    {% endif %}
-     <style>
-     .how-to h4{
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+    <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all">
+  <![endif]-->
+
+  {% if page.masthead-image %}
+    <style type="text/css">
+      .masthead:before {
+        background-image: url('{{ page.masthead-image }}');
+      }
+    </style>
+  {% endif %}
+
+  <style>
+    .how-to h4{
       clear:both;
-     }
-     .how-to .desc{
+    }
+    .how-to .desc{
       float: left;
       width: 62%;
-     }
-     .how-to .recommendations{
+    }
+    .how-to .recommendations{
       float: right;
       width: 33%;
       background-color: #00a175;
       color:#fff;
       padding: 1em;
-     }
-     .no-logo .teaser-header{
+    }
+    .no-logo .teaser-header{
       margin-top:0;
       text-align:center;
-     }
-     </style>
-    {% include meta-header.html %}
-  </head>
+    }
+    
+    /* New Speaker specific CSS */
+
+  </style>
+
+  {% include meta-header.html %}
+</head>
       
   <body>
     <div class="js-container">
-      {% include nav.html %}
+      {% include nav-speakers.html %}
       <main role="main">
         {{ content }}
         
