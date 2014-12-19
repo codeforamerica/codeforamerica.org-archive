@@ -42,6 +42,9 @@ nav-breadcrumbs:
   <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
 
+  <!-- Custom stylesheet for speaker microsite -->
+  <link rel="stylesheet" href="/stylesheets/speakers.css">
+
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -57,105 +60,7 @@ nav-breadcrumbs:
       }
     </style>
   {% endif %}
-
-  <style>
-    .how-to h4{
-      clear:both;
-    }
-    .how-to .desc{
-      float: left;
-      width: 62%;
-    }
-    .how-to .recommendations{
-      float: right;
-      width: 33%;
-      background-color: #00a175;
-      color:#fff;
-      padding: 1em;
-    }
-    .no-logo .teaser-header{
-      margin-top:0;
-      text-align:center;
-    }
-    
-    /* New Speaker specific CSS */
-    
-    .global-header {
-      /* The header is flush with the content below it */
-      margin-bottom: 0;
-    }
-
-
-    .masthead:before {
-      background-image: url('/media/images/speakers/jake-gif.gif');
-      background-size: cover;
-      min-height: 710px;
-      opacity: 0.5;
-    }
-    .masthead {
-      min-height: 710px;
-      background-color: #004b6a;
-    }
-    .masthead-l .masthead-header {
-      margin-top: 0;
-    }
-    .masthead-l .page-title {
-      font-size: 57px;
-      line-height: 65px;
-      line-height: 4.0625rem;
-      margin-top: 0;
-    }
-
-    /* Featured speaker content module */
-    .ontop {
-      position: relative;
-      z-index: 1;
-    }
-    .featured-speaker {
-      position: absolute;
-      text-align: left;
-      left: 30px;
-      bottom: 30px;
-      width: 60%;
-    }
-    
-    /* Styling the description */
-    .featured-speaker p {
-      font-size: 18px;
-      line-height: 30px;
-    }
-    .featured-speaker p.featured-description {
-      padding-right: 100px;
-    }
-    span.featured-title a {
-      color: #fedd44;
-    }
-    span.featured-title a:hover {
-      border-color: #fedd44;
-    }
-
-    /* Styling the name */
-    p.featured-name {
-      font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-      letter-spacing: -3px;
-      font-weight: 200;
-      text-transform: none;
-      font-size: 85px;
-      line-height: 85px;
-
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    p.featured-name a {
-      color: white;
-    }
-    p.featured-name a:hover {
-      padding-bottom: 0;
-      border-bottom: 2px solid white;
-    }
-
-  </style>
-
+  
   {% include meta-header.html %}
 </head>
       

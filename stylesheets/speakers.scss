@@ -1,0 +1,167 @@
+---
+---
+
+//
+// SPEAKERS SCSS
+// 
+// These custom styles are for the /speakers/ microsite.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: speakers-landing
+//
+
+// ###### SPEAKER-LANDING ######
+
+// ## Styles for the nav and masthead ##
+
+// Make header flush with content below
+.global-header {
+  margin-bottom: 0;
+}
+
+// Style the masthead
+$masthead-desktop-depth: 710px; // Minimum depth of masthead on desktop
+.masthead:before {
+  // Custom background image in the masthead
+  // background-image: url('../media/images/speakers/jake-gif-smaller.gif');
+  background-size: cover;
+  min-height: $masthead-desktop-depth;
+  opacity: 0.5;
+}
+.masthead {
+  // Deeper masthead
+  min-height: $masthead-desktop-depth;
+  // Blue color the masthead image fades into
+  background-color: #004b6a;
+}
+.masthead-l .masthead-header {
+  // Make the header tight to the top
+  margin-top: 0;
+}
+.masthead-l .page-title {
+  // Restyle the page header text
+  font-size: 57px;
+  line-height: 65px;
+  line-height: 4.0625rem;
+  margin-top: 0;
+}
+
+// Create a custom content module for the masthead
+.on-top {
+  // Position content above image/overlays
+  position: relative;
+  z-index: 3;
+}
+
+.featured-speaker {
+  // Absolutely position featured speaker module in masthead
+  position: absolute;
+  text-align: left;
+  left: 30px;
+  bottom: 30px;
+  width: 60%;
+}
+
+// Text styles for the description
+.featured-speaker {
+  
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .featured-name {
+    // Style the name
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    letter-spacing: -3px;
+    font-weight: 200;
+    text-transform: none;
+    font-size: 85px;
+    line-height: 85px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .featured-description span a {
+    // Color and hover line color for title in the description
+    color: #fedd44;
+    &:hover {
+      border-color: #fedd44;
+    }
+  } // end span.featured-title a
+
+}
+
+span.featured-title a {
+  color: #fedd44;
+}
+span.featured-title a:hover {
+  border-color: #fedd44;
+}
+
+
+p.featured-name a {
+  color: white;
+}
+p.featured-name a:hover {
+  padding-bottom: 0;
+  border-bottom: 2px solid white;
+}
+
+/* Style header over topics */
+h5 {
+  margin-top: 0;
+}
+
+/* Style speaker boxes */
+
+.speaker-box {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+.speaker-content {
+  padding: 25px;  
+}
+
+/* Style speaker box text */
+p.speaker-name {
+  font-size: 42px;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Styling topic bugs */
+a.topic {
+  border: 2px solid #4298bb;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 14px;
+  color: #4298bb;
+
+  margin-bottom: 4px;
+}
+a.topic:hover {
+  border: 2px solid #4298bb;
+  border-bottom: 2px solid;
+  border-bottom-color: #4298bb;
+  opacity: 0.5;
+}
+
+/* Style the play symbol */
+
+div.play-symbol {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.play-symbol img {
+  cursor: pointer;
+}
+.play-symbol img:hover {
+  opacity: 0.5;
+}
