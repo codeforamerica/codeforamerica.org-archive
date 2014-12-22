@@ -134,14 +134,16 @@
     <h1 class="page-title">{% if page.title-h1 %}{{ page.title-h1 }}{% else %}{{ page.title }}{% endif %}</h1>
   </header>
 
-  <div class="on-top play-symbol">
+  {% if page.speaker-landing %}
+<!--   <div class="on-top play-symbol">
     <img src="/media/images/speakers/playbutton-white.png" alt="Video play icon">
-  </div>
+  </div> -->
 
   <div class="on-top featured-speaker">
     <p class="featured-name"><a href="#">Jacob Solomon</a></p>
     <p class="featured-description"><span class="featured-title"><a href="#">"The Big Thing About Small Things"</a></span> &raquo; Jacob Solomon talks about opportunities to build on the relationships and foundational work established during the Code for America Fellowship to further impact on important problems like food security.</p>
   </div>
+  {% endif %}
 
 </div>
 {% endif %}
