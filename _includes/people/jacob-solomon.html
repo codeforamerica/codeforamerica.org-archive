@@ -57,8 +57,24 @@
     </div>
 </div>
 
-{% elsif include.context == 'speaker-landing' %}
+{% elsif include.context == 'speaker-card' %}
 
-  <p>Jacob is a policy analyst and project manager from Oakland. As a 2013 Fellow, he worked in San Francisco on improving public health outcomes.</p>
+<div class="speaker-box">
+  <img src="/media/images/speakers/jacob-solomon.jpg" alt="">
+
+  <div class="speaker-content">
+
+    <p class="speaker-name">Jacob Solomon</p>
+    <p class="speaker-title">Health Team, Code for America</p>
+
+    <p><strong>Speaks about:</strong></p>
+    <p><a href="#" class="topic topic-health">Health and Human Safety</a></p>
+
+    <p><strong>Biography:</strong></p>
+    <p>Jacob is a policy analyst and project manager from Oakland. As a 2013 Fellow, he worked in San Francisco on improving public health outcomes.</p>
+
+    <a href="/speakers/jacob-solomon/" class="button-s">Learn more</a>
+  </div>
+</div>
 
 {% endif %}
