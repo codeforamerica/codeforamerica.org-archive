@@ -1,0 +1,285 @@
+---
+layout: speakers
+title: Request a Speaker
+masthead-image: "../../../../media/images/speakers/microphone.jpg"
+masthead-class: masthead-s
+---
+<style>
+  .list-form li.form-field {
+    margin-bottom: 20px;
+  }
+  .list-form .form-field-group li.form-field {
+    margin-bottom: 10px;
+  }
+  fieldset {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-top: 10px
+  }
+
+  #speakerName {
+    border-bottom: 1px solid black;
+    padding-bottom: 0;
+
+    font-style: italic;
+  }
+</style>
+
+
+<section class="layout-breve">
+
+  <div class="layout-gutter"><!-- .layout-gutter Adds a little padding to the left of the questions -->
+
+    <h2>Request <span id="speakerName">Cyd Harrell</span> to speak at your event</h2>
+    <p>Please answer the questions below as completely as you can so we can evaluate your request. Required fields are marked <abbr title="Required">*</abbr></p>
+    <br />
+
+    <div id="formError" class="alert-failure" style="display:none;">
+    </div>
+
+    <!-- Form content -->
+    <div class="layout-major-invert">
+      <form name="interestForm" accept-charset="UTF-8" action="https://formkeep.com/f/d116a6148517" onsubmit="return validate()" method="POST" >
+        <input type="hidden" name="utf8" value="✓">
+
+        <ul class="list-form">
+          
+          <li class="form-field-group">
+             <fieldset>
+              <legend><strong>Your name</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="firstname">First name <abbr title="Required">*</abbr></label>
+              <input id="firstname" name="firstname" class="input" type="text" placeholder="First name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="lastname">Last name <abbr title="Required">*</abbr></label>
+              <input id="lastname" name="lastname" class="input" type="text" placeholder="Last name" required>
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Your contact information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="email">What email can we reach you at? <abbr title="Required">*</abbr></label>
+              <input id="email" name="email" class="input" type="email" placeholder="email@domain.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">What phone number can we reach you at?</label>
+              <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555">
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Event information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="eventName">Event name <abbr title="Required">*</abbr></label>
+              <input id="eventName" name="eventName" class="input" type="text" placeholder="i.e. Amazing Conference 1970" required>
+            </div>
+
+            <div class="form-field">
+              <label for="eventWebsite">Event website link (if available)</label>
+              <input id="eventWebsite" name="eventWebsite" class="input" type="text" placeholder="i.e. amazingconference.org">
+            </div>            
+          </li>
+
+          <li class="form-field-group">
+            <div class="form-field">
+              <label for="eventLocation">Event location <abbr title="Required">*</abbr></label>
+              <input id="eventLocation" name="eventLocation" class="input" type="text" placeholder="i.e. San Francisco, CA" required>
+              <small class="note">Code for America is based in headquartered in SF with the bulk of staff coming from the Bay Area.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="eventFormat">Event Format <abbr title="Required">*</abbr></label>
+              <select id="eventFormat">
+                  <option>Keynote</option>
+                  <option>Fireside chat</option>
+                  <option>Panel</option>
+                  <option>Online</option>
+                  <option>Other</option>
+              </select>
+            </div><!-- end .form-field -->
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Date and time information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="eventStartDate">Event start date <abbr title="Required">*</abbr></label>
+              <input id="eventStartDate" name="eventStartDate" class="input" type="date" placeholder="mm/dd/yyyy" required>
+              <small class="note">Please let us know about the dates for the entire event.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="eventEndDate">Event end date (if multiple days)</label>
+              <input id="eventEndDate" name="eventEndDate" class="input" type="date" placeholder="mm/dd/yyyy">
+              <small class="note">If the event is only one day, ignore this.</small>
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <div class="form-field">
+              <label for="speakerDate">Speaking date <abbr title="Required">*</abbr></label>
+              <input id="speakerDate" name="eventDate" class="input" type="date" placeholder="mm/dd/yyyy" required>
+              <small class="note">Pick the specific day our speaker will be on stage.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="speakerTime">Speaking time <abbr title="Required">*</abbr></label>
+              <input id="speakerTime" name="speakerTime" class="input" type="time" placeholder="09:00 AM" required>
+              <small class="note">Pick a time for the speaking engagement.</small>
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Audience information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="audienceSize">Number of attendees <abbr title="Required">*</abbr></label>
+              <input id="audienceSize" name="audienceSize" class="input" type="text" placeholder="i.e. 2,000" required>
+            </div>
+
+            <div class="form-field">
+              <label for="audienceType">Primary audience <abbr title="Required">*</abbr></label>
+              <select id="audienceType">
+                  <option>Government Officials/Staff</option>
+                  <option>Techies and Civic Hackers: Coders, Designers, Researchers, etc.</option>
+                  <option>Civic Startups and Investors</option>
+                  <option>Other</option>
+              </select>
+            </div><!-- end .form-field -->
+          </li>
+
+          <li class="form-field">
+            <fieldset>
+              <legend><strong><br />Engagement information</strong></legend>
+            </fieldset>
+
+            <fieldset class="select field">
+              <label for="stipendOffered">Do you offer a stipend/honorarium for speaking, travel or lodging? <abbr title="Required">*</abbr></label>
+              <ul class="list-form">
+                <li>
+                  <label for="noStipend"><input id="noStipend" name="radio" type="radio" checked/> No</label>
+                </li>
+                <li>
+                  <label for="yesStipend"><input id="yesStipend" name="radio" type="radio"/> Yes (please specify amount/items covered)</label>
+                </li>
+              </ul>
+
+              <div class="form-field">
+                <label for="stipendOffered">If stipend/honorarium offered, please specify amount/items covered</label>
+                <input id="stipendOffered" name="stipendOffered" class="input disabled" type="text" placeholder="" required>
+              </div>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="speakingDesc">What topic do you want us to cover, and how does it tie into your theme? <abbr title="Required">*</abbr></label>
+              <textarea id="speakingDesc" rows="8" cols="32" required></textarea>
+            </div>
+          </li>
+          
+          <li class="form-field">
+            <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox" checked/> Sign me up for the Code for America newsletter</label>
+          </li>
+
+          <input type="submit" value="Submit">
+
+        </ul><!-- end form -->
+      </form>
+    </div>
+
+    <div id="infoSpeaker" class="layout-minor-invert">
+      {% include people/cyd-harrell.html context="speaker-card" base=".." %}
+    </div>
+    
+  </div><!-- end .layout-gutter -->
+
+</section>
+
+<section class="layout-semibreve"></section>
+
+<script type="text/javascript">
+  function validate() {
+
+    var valid = true;
+    var invalidMessage = []
+
+    // Check that the name fields are filled in
+    if(     isEmpty(document.forms["interestForm"]["firstname"].value) ||
+            isEmpty(document.forms["interestForm"]["lastname"].value)
+      ){
+
+      invalidMessage.push("&bull; Fill in your full name");
+      var valid = false;
+    }
+
+    // Check the job description fields are filled in
+    if(     isEmpty(document.forms["interestForm"]["jobtitle"].value) ||
+            isEmpty(document.forms["interestForm"]["location"].value)
+      ){
+
+      invalidMessage.push("&bull; Fill in your job description and title");
+      var valid = false;
+    }
+
+    // Check that email is filled in, check that email is valid
+    var formEmail = document.forms["interestForm"]["email"].value;
+    if  (    isEmpty(formEmail) ||
+             !validateEmail(formEmail)
+        ){
+    
+      invalidMessage.push("&bull; Fill in your email in the right format (i.e. name@domain.com)");
+      var valid = false;
+    }
+
+    if (!valid) {
+
+      // Build our message
+      var openMessage = "<h4><strong>There was a problem with your answers</strong></h4><p>\n";
+      var closeMessage = "</p>\n";
+
+      // Join together our errors
+      fullMessage = invalidMessage.join("<br />\n");
+
+      // Push to the error div
+      document.getElementById("formError").innerHTML = openMessage + fullMessage + closeMessage;
+
+      // Make hidden error message div visible
+      document.getElementById("formError").style.display = "inherit";
+
+      // Scroll back to the top of the page
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+
+    return valid;
+
+  } // end function validate
+
+  function validateEmail(formEmail) {
+    var emailTest = /\S+@\S+\.\S+/;
+
+    var emailCorrect = false;
+    var emailCorrect = emailTest.test(formEmail);
+    return emailCorrect;
+
+  } // end function validateEmail
+
+  function isEmpty(value) {
+    return value == "" || value == null;
+  } // end function isEmpty
+</script>

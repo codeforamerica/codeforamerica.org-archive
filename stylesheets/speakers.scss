@@ -37,15 +37,24 @@ $masthead-mobile-depth: 300px;
   // Custom background image in the masthead
   // background-image: url('../media/images/speakers/jake-gif-smaller.gif');
   background-size: cover;
-  min-height: $masthead-desktop-depth;
+  // min-height: $masthead-desktop-depth;
   opacity: 0.5;
 }
 .masthead {
   // Deeper masthead
-  min-height: $masthead-desktop-depth;
+  // min-height: $masthead-desktop-depth;
   // Blue color the masthead image fades into
   background-color: #004b6a;
 }
+
+// Big masthead
+.masthead-l {
+  min-height: $masthead-desktop-depth;
+}
+.masthead-l:before {
+  min-height: $masthead-desktop-depth;
+}
+
 .masthead-l .masthead-header {
   // Make the header tight to the top
   margin-top: 0;
@@ -197,15 +206,34 @@ div.play-symbol {
     opacity: 1; 
   }
   .masthead {
-    min-height: $masthead-mobile-depth;
     overflow: visible;
     background-color: transparent;
   }
-  .masthead-header {
+
+  // Big masthead
+  .masthead-l {
+    min-height: $masthead-mobile-depth;
+  }
+  .masthead-l:before {
+    min-height: $masthead-mobile-depth;
+  }
+  .masthead-l .masthead-header {
     text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
   }
-  .masthead h1 {
+  .masthead-l .masthead h1 {
     color: white;
+  }
+
+  // Small masthead
+  .masthead-s:before {
+    position: relative;
+    min-height: 100px;
+  }
+  .masthead-s .masthead-header {
+    text-shadow: none;
+  }
+  .masthead-s .masthead-header h1 {
+    color: $color-medium-red;
   }
 
   .featured-speaker {
