@@ -43,15 +43,15 @@ RewriteRule .* %{REQUEST_URI}apps/%2? [L,R=301]
 # Big global redirects:
 # In June 2014, renamed all of /cities to /governments.
 #
-RedirectMatch permanent ^(.*)(?<!/media/images)/cities(/.*)?$ $1/governments$2
+RedirectMatch permanent ^/cities(/.*)?$ /governments$1
 
 #
 # Events and Peer Network training broadcasts.
 #
-RedirectMatch permanent ^(.*)(?<!/events)/codeacross-2014/?$ $1/events/codeacross-2014
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/02-18-2014/?$ $1/peer-network-training/02-18-2014
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/01-15-2014/?$ $1/peer-network-training/01-15-2014
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/peer-network-training)/03-20-2014/?$ $1/peer-network-training/03-20-2014
+RedirectMatch permanent ^/codeacross-2014/?$ /events/codeacross-2014
+RedirectMatch permanent ^/02-18-2014/?$ /peer-network-training/02-18-2014
+RedirectMatch permanent ^/01-15-2014/?$ /peer-network-training/01-15-2014
+RedirectMatch permanent ^/03-20-2014/?$ /peer-network-training/03-20-2014
 
 
 RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/meettheauthors/?$ $1/peer-network-training/meettheauthors
@@ -76,32 +76,32 @@ RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/06-03-14/
 #
 # Events and Brigade training broadcasts.
 #
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade12-12-2013/?$ $1/brigade-training/brigade12-12-2013
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/09-19-2013?$/?$ $1/brigade-training/09-19-2013
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-09-2014/?$ $1/brigade-training/brigade01-09-2014	
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-14-2014/?$ $1/brigade-training/brigade01-14-2014
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-16-2014/?$ $1/brigade-training/brigade01-16-2014
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade01-23-2014/?$ $1/brigade-training/brigade01-23-2014	
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-06-2014/?$ $1/brigade-training/brigade02-06-2014
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-11-2014/?$ $1/brigade-training/brigade02-11-2014
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-12-2014/?$ $1/brigade-training/brigade02-12-2014
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-13-2014/?$ $1/brigade-training/brigade02-13-2014
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade02-13-2014-2/?$ $1/brigade-training/brigade02-13-2014-2
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade06-27-2013/?$ $1/brigade-training/brigade06-27-2013
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade12-10-2013/?$ $1/brigade-training/brigade12-10-2013
-RedirectMatch permanent ^(.*)(?<!/brigade-training)/brigade06-27-2013/?$ $1/brigade-training/brigade06-27-2013
+RedirectMatch permanent ^/brigade12-12-2013/?$ /brigade-training/brigade12-12-2013
+RedirectMatch permanent ^/09-19-2013/?$ /brigade-training/09-19-2013
+RedirectMatch permanent ^/brigade01-09-2014/?$ /brigade-training/brigade01-09-2014	
+RedirectMatch permanent ^/brigade01-14-2014/?$ /brigade-training/brigade01-14-2014
+RedirectMatch permanent ^/brigade01-16-2014/?$ /brigade-training/brigade01-16-2014
+RedirectMatch permanent ^/brigade01-23-2014/?$ /brigade-training/brigade01-23-2014	
+RedirectMatch permanent ^/brigade02-06-2014/?$ /brigade-training/brigade02-06-2014
+RedirectMatch permanent ^/brigade02-11-2014/?$ /brigade-training/brigade02-11-2014
+RedirectMatch permanent ^/brigade02-12-2014/?$ /brigade-training/brigade02-12-2014
+RedirectMatch permanent ^/brigade02-13-2014/?$ /brigade-training/brigade02-13-2014
+RedirectMatch permanent ^/brigade02-13-2014-2/?$ /brigade-training/brigade02-13-2014-2
+RedirectMatch permanent ^/brigade06-27-2013/?$ /brigade-training/brigade06-27-2013
+RedirectMatch permanent ^/brigade12-10-2013/?$ /brigade-training/brigade12-10-2013
+RedirectMatch permanent ^/brigade06-27-2013/?$ /brigade-training/brigade06-27-2013
 
 #
 # Wordpress blog.
 #
-RedirectMatch permanent ^(.*)(?<!/blog)/(wp-admin.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(wp-login.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(wp-content/.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(\d\d\d\d/\d\d/\d\d/.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(category/.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(author/.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(feed/.+)$ $1/blog/$2
-RedirectMatch permanent ^(.*)(?<!/blog)/(feed/?)$ $1/blog/$2
+RedirectMatch permanent ^/(wp-admin.+)$ /blog/$2
+RedirectMatch permanent ^/(wp-login.+)$ /blog/$2
+RedirectMatch permanent ^/(wp-content/.+)$ /blog/$2
+RedirectMatch permanent ^/(\d\d\d\d/\d\d/\d\d/.+)$ /blog/$2
+RedirectMatch permanent ^/(category/.+)$ /blog/$2
+RedirectMatch permanent ^/(author/.+)$ /blog/$2
+RedirectMatch permanent ^/(feed/.+)$ /blog/$2
+RedirectMatch permanent ^/(feed/?)$ /blog/$2
 
 #
 # General information.
