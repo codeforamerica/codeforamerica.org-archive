@@ -15,6 +15,7 @@ config = '''
 LoadModule rewrite_module {ModulesPath}/mod_rewrite.so
 LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
+LoadModule mime_module {ModulesPath}/mod_mime.so
 
 Listen 0.0.0.0:{Port}
 PidFile httpd.pid
@@ -66,10 +67,14 @@ def run_apache(root, port):
             if not exists(httpd_path):
                 continue
 
-            httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf', '-X')
+            httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
+                         '-DFOREGROUND', '-DNO_DETACH')
+
+        stderr = open(join(root, 'stderr'), 'w')
+        stdout = open(join(root, 'stdout'), 'w')
 
         try:
-            httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
+            httpd = Popen(httpd_cmd, stderr=stderr, stdout=stdout)
             print 'Running at http://127.0.0.1:{}'.format(port)
             sleep(7 * 86400)
         finally:
