@@ -126,6 +126,11 @@ class TestApache (unittest.TestCase):
                  ('/02-18-2014', '/peer-network-training/02-18-2014/'),
                  ('/brigade12-12-2013', '/brigade-training/brigade12-12-2013/'),
                  ('/09-19-2013', '/brigade-training/09-19-2013/'),
+                 ('/blog/meettheauthors', '/peer-network-training/meettheauthors/'),
+                 ('/09-24-2013', '/peer-network-training/09-24-2013/'),
+                 ('/blog/08-22-2013', '/peer-network-training/08-22-2013/'),
+                 ('/08-07-2013', '/peer-network-training/08-07-2013/'),
+                 ('/blog/ask-a-fellow-2013', '/peer-network-training/ask-a-fellow-2013/'),
                  
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),

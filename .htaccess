@@ -54,25 +54,25 @@ RedirectMatch permanent ^/01-15-2014/?$ /peer-network-training/01-15-2014
 RedirectMatch permanent ^/03-20-2014/?$ /peer-network-training/03-20-2014
 
 
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/meettheauthors/?$ $1/peer-network-training/meettheauthors
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/09-24-2013/?$ $1/peer-network-training/09-24-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/08-22-2013/?$ $1/peer-network-training/08-22-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/08-07-2013/?$ $1/peer-network-training/08-07-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/ask-a-fellow-2013/?$ $1/peer-network-training/ask-a-fellow-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/07-18-2013/?$ $1/peer-network-training/07-18-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/07-11-2013/?$ $1/peer-network-training/07-11-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/07-11-2013-jared/?$ $1/peer-network-training/07-11-2013-jared
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/06-27-2013/?$ $1/peer-network-training/06-27-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-30-2013/?$ $1/peer-network-training/05-30-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-24-2013/?$ $1/peer-network-training/05-24-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-14-2013/?$ $1/peer-network-training/05-14-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-13-201/?$ $1/peer-network-training/05-13-201
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/07-02-2013/?$ $1/peer-network-training/07-02-2013
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/04-08-2014/?$ $1/peer-network-training/04-08-2014
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-08-14/?$ $1/peer-network-training/05-08-14
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/05-28-14/?$ $1/peer-network-training/05-28-2014
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/06-03-14/?$ $1/peer-network-training/06-03-2014
-RedirectMatch permanent ^(.*)(?<!/peer-network-training|/blog)(/blog)?/06-03-14/?$ $1/peer-network-training/06-03-2014
+RedirectMatch permanent ^(/blog)?/meettheauthors/?$ /peer-network-training/meettheauthors
+RedirectMatch permanent ^(/blog)?/09-24-2013/?$ /peer-network-training/09-24-2013
+RedirectMatch permanent ^(/blog)?/08-22-2013/?$ /peer-network-training/08-22-2013
+RedirectMatch permanent ^(/blog)?/08-07-2013/?$ /peer-network-training/08-07-2013
+RedirectMatch permanent ^(/blog)?/ask-a-fellow-2013/?$ /peer-network-training/ask-a-fellow-2013
+RedirectMatch permanent ^(/blog)?/07-18-2013/?$ /peer-network-training/07-18-2013
+RedirectMatch permanent ^(/blog)?/07-11-2013/?$ /peer-network-training/07-11-2013
+RedirectMatch permanent ^(/blog)?/07-11-2013-jared/?$ /peer-network-training/07-11-2013-jared
+RedirectMatch permanent ^(/blog)?/06-27-2013/?$ /peer-network-training/06-27-2013
+RedirectMatch permanent ^(/blog)?/05-30-2013/?$ /peer-network-training/05-30-2013
+RedirectMatch permanent ^(/blog)?/05-24-2013/?$ /peer-network-training/05-24-2013
+RedirectMatch permanent ^(/blog)?/05-14-2013/?$ /peer-network-training/05-14-2013
+RedirectMatch permanent ^(/blog)?/05-13-201/?$ /peer-network-training/05-13-201
+RedirectMatch permanent ^(/blog)?/07-02-2013/?$ /peer-network-training/07-02-2013
+RedirectMatch permanent ^(/blog)?/04-08-2014/?$ /peer-network-training/04-08-2014
+RedirectMatch permanent ^(/blog)?/05-08-14/?$ /peer-network-training/05-08-14
+RedirectMatch permanent ^(/blog)?/05-28-14/?$ /peer-network-training/05-28-2014
+RedirectMatch permanent ^(/blog)?/06-03-14/?$ /peer-network-training/06-03-2014
+RedirectMatch permanent ^(/blog)?/06-03-14/?$ /peer-network-training/06-03-2014
 #
 # Events and Brigade training broadcasts.
 #
