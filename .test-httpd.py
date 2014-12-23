@@ -131,6 +131,14 @@ class TestApache (unittest.TestCase):
                  ('/blog/08-22-2013', '/peer-network-training/08-22-2013/'),
                  ('/08-07-2013', '/peer-network-training/08-07-2013/'),
                  ('/blog/ask-a-fellow-2013', '/peer-network-training/ask-a-fellow-2013/'),
+
+                 ('/accelerator', '/companies/accelerator-faq/'),
+                 ('/accelerator-2013', '/companies/accelerator-faq/'),
+                 ('/accelerator-2', '/companies/accelerator-faq/'),
+                 ('/startups/accelerator', '/companies/accelerator-faq/'),
+                 ('/incubator', '/companies/incubator-faq/'),
+                 ('/incubator-2', '/companies/incubator-faq/'),
+                 ('/startups/incubator-2', '/companies/incubator-faq/'),
                  
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
