@@ -107,28 +107,28 @@ RedirectMatch permanent ^/(feed/?)$ /blog/$2
 # General information.
 #
 RedirectMatch permanent ^/team(/?)$ /about/team$1
-RedirectMatch permanent ^(.*)/who-we-are(/?)$ $1/about/team$2
-RedirectMatch permanent ^(.*)/donors(/?)$ $1/supporters$2
-RedirectMatch permanent ^(.*)/how-to-help(/?)$ $1/geeks$2
-RedirectMatch permanent ^(.*)/programs(/?)$ $1/about$2
-RedirectMatch permanent ^(.*)/get-involved(/?)$ $1/about$2
-RedirectMatch permanent ^(.*)/about/funders(/?)$ $1/supporters$2
-RedirectMatch permanent ^(.*)/support-2(/?)$ $1/supporters$2
-RedirectMatch permanent ^(.*)/pages/about(/?)$ $1/about$2
-RedirectMatch permanent ^(.*)/what-we-do(/?)$ $1/about$2
-RedirectMatch permanent ^/projects(/?)$ /apps$1
-RedirectMatch permanent ^(.*)/code-for-america-blog(/?)$ $1/blog$2
-RedirectMatch permanent ^(.*)/about/contact(/?)$ $1/contact$2
-RedirectMatch permanent ^/international(/?)$ /about/international$1
-RedirectMatch permanent ^(.*)/dc(/?)$ $1/cc$2
-RedirectMatch permanent ^(.*)/rss(/?)$ $1/feeds$2
-RedirectMatch permanent ^(.*)/speaker-request-form(/?)$ $1/contact$2
-RedirectMatch permanent ^(.*)/inkind(/?)$ $1/support-us$2
-RedirectMatch permanent ^(.*)/salon(/?)$ $1/events$2
-RedirectMatch permanent ^(.*)/governments/citizen-action-center(/?)$ $1/geeks$2
-RedirectMatch permanent ^(.*)/intern(/?)$ $1/jobs$2
+RedirectMatch permanent ^/who-we-are/?$ /about/team
+RedirectMatch permanent ^/donors/?$ /supporters
+RedirectMatch permanent ^/how-to-help/?$ /geeks
+RedirectMatch permanent ^/programs/?$ /about
+RedirectMatch permanent ^/get-involved/?$ /about
+RedirectMatch permanent ^/about/funders/?$ /supporters
+RedirectMatch permanent ^/support-2/?$ /supporters
+RedirectMatch permanent ^/pages/about/?$ /about
+RedirectMatch permanent ^/what-we-do/?$ /about
+RedirectMatch permanent ^/projects/?$ /apps
+RedirectMatch permanent ^/code-for-america-blog/?$ /blog
+RedirectMatch permanent ^/about/contact/?$ /contact
+RedirectMatch permanent ^/international/?$ /about/international
+RedirectMatch permanent ^/dc/?$ /cc
+RedirectMatch permanent ^/rss/?$ /feeds
+RedirectMatch permanent ^/speaker-request-form/?$ /contact
+RedirectMatch permanent ^/inkind/?$ /support-us
+RedirectMatch permanent ^/salon/?$ /events
+RedirectMatch permanent ^/governments/citizen-action-center/?$ /geeks
+RedirectMatch permanent ^/intern/?$ /jobs
 
-RedirectMatch permanent ^(.*)/code-across-america(/?)$ $1/code-across-america-2012$2
+RedirectMatch permanent ^/code-across-america/?$ /code-across-america-2012
 
 #
 # External redirects.
@@ -148,29 +148,29 @@ RedirectMatch permanent ^(.*)/summit/schedule(/?)$ https://cfasummit2014.pathabl
 #
 # Fellowship Program.
 #
-RedirectMatch permanent ^(.*)/fellows/faq(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellows/training(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellows/institute(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellows/selection(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellows/fellow-selection(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellowship-program-timeline(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellows/program-and-timeline(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/201-program-timeline(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellowship-program-timeline(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/fellows/2012-program-and-timeline(/?)$ $1/geeks/fellowship-faq$2
-RedirectMatch permanent ^(.*)/geeks/fellows/job-description(/?)$ $1/geeks/fellowship-faq$2
+RedirectMatch permanent ^/fellows/faq/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellows/training/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellows/institute/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellows/selection/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellows/fellow-selection/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellowship-program-timeline/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellows/program-and-timeline/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/201-program-timeline/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellowship-program-timeline/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/fellows/2012-program-and-timeline/?$ /geeks/fellowship-faq
+RedirectMatch permanent ^/geeks/fellows/job-description/?$ /geeks/fellowship-faq
 RedirectMatch permanent ^/fellows/job-description(/?)$ /geeks/fellows/job-description$1
 RedirectMatch permanent ^/fellows/spread-the-word(/?)$ /geeks/fellows/spread-the-word$1
 RedirectMatch permanent ^/fellows/nominate(/?)$ /geeks/fellows/nominate$1
-RedirectMatch permanent ^(.*)/governments/expectations-of-our-city-partners(/?)$ $1/governments/fellowship-faq$2
-RedirectMatch permanent ^(.*)/2012-city-videos(/?)$ $1/communications/testimonial$2
+RedirectMatch permanent ^/governments/expectations-of-our-city-partners/?$ /governments/fellowship-faq
+RedirectMatch permanent ^/2012-city-videos/?$ /communications/testimonial
 
 #
 # Fellowship lists.
 #
 RedirectMatch permanent ^/fellows/apply(/?)$ /geeks/fellowship-apply$1
 #RedirectMatch permanent ^(.*)(?<!/geeks/fellows|/governments)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
-RedirectMatch permanent ^(.*)/geeks/fellows/alumni-fellows(/?)$ $1/geeks/our-geeks/alumni-fellows$2
+RedirectMatch permanent ^/geeks/fellows/alumni-fellows/?$ /geeks/our-geeks/alumni-fellows
 RedirectMatch permanent ^/fellows/alumni-fellows(/?)$ /geeks/our-geeks/alumni-fellows$1
 RedirectMatch permanent ^/alumni-fellows(/?)$ /geeks/our-geeks/alumni-fellows$1
 # 2011:
@@ -182,8 +182,8 @@ RedirectMatch permanent ^/2012-fellows(/?)$ /geeks/our-geeks/2012-fellows$1
 # 2013:
 RedirectMatch permanent ^/fellows/2013-fellows(/?)$ /geeks/our-geeks/2013-fellows$1
 RedirectMatch permanent ^/2013-fellows(/?)$ /geeks/our-geeks/2013-fellows$1
-RedirectMatch permanent ^(.*)/fellows/current-fellows(/?)$ $1/geeks/our-geeks/2013-fellows$2
-RedirectMatch permanent ^(.*)/fellows/alumni-fellows/2013-fellows(/?)$ $1/geeks/our-geeks/2013-fellows$2
+RedirectMatch permanent ^/fellows/current-fellows/?$ /geeks/our-geeks/2013-fellows
+RedirectMatch permanent ^/fellows/alumni-fellows/2013-fellows/?$ /geeks/our-geeks/2013-fellows
 # 2014:
 RedirectMatch permanent ^/fellows/2014-fellows(/?)$ /geeks/our-geeks/2014-fellows$1
 RedirectMatch permanent ^/2014-fellows(/?)$ /geeks/our-geeks/2014-fellows$1
@@ -194,87 +194,87 @@ RedirectMatch permanent ^/2014-fellows(/?)$ /geeks/our-geeks/2014-fellows$1
 RedirectMatch permanent ^/startups(/?)$ /about/startups$1
 RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /geeks/accelerator-faq
 RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /geeks/incubator-faq
-RedirectMatch permanent ^(.*)/geeks/our-startups(/?)$ $1/companies/our-companies$2
-RedirectMatch permanent ^(.*)/geeks/accelerator-faq(/?)$ $1/companies/accelerator-faq$2
-RedirectMatch permanent ^(.*)/geeks/accelerator-apply(/?)$ $1/companies/accelerator-apply$2
-RedirectMatch permanent ^(.*)/geeks/incubator-faq(/?)$ $1/companies/incubator-faq$2
-RedirectMatch permanent ^(.*)/about/startups(/?)$ $1/about/companies$2
-#RedirectMatch permanent ^(.*)/mentor(/?)$ $1/companies$2
+RedirectMatch permanent ^/geeks/our-startups/?$ /companies/our-companies
+RedirectMatch permanent ^/geeks/accelerator-faq/?$ /companies/accelerator-faq
+RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/accelerator-apply
+RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-faq
+RedirectMatch permanent ^/about/startups/?$ /about/companies
+#RedirectMatch permanent ^/mentor/?$ /companies
 
 #
 # More Fellowship Program
 #
 #RedirectMatch permanent ^/fellowship(/?)$ /governments/fellowship$1
-RedirectMatch permanent ^(.*)/geeks/fellowship(/?)$ $1/about/fellowship$2
-RedirectMatch permanent ^(.*)/governments/city-impact(/?)$ $1/about/fellowship$2
+RedirectMatch permanent ^/geeks/fellowship/?$ /about/fellowship
+RedirectMatch permanent ^/governments/city-impact/?$ /about/fellowship
 RedirectMatch permanent ^/fellows(/?)$ /about/fellowship$1
-RedirectMatch permanent ^(.*)/the-program(/?)$ $1/about/fellowship$2
+RedirectMatch permanent ^/the-program/?$ /about/fellowship
 #RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 #RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 
 #
 # Another round of Fellowship Program reorganization
 #
-#RedirectMatch permanent ^(.*)/about/fellowship(/?)$ $1/governments/fellowship$2
-#RedirectMatch permanent ^(.*)/governments/fellowship-apply(/?)$ $1/governments/fellowship/apply$2
-#RedirectMatch permanent ^(.*)/governments/fellowship-faq(/?)$ $1/governments/fellowship/faq$2
+#RedirectMatch permanent ^/about/fellowship/?$ /governments/fellowship
+#RedirectMatch permanent ^/governments/fellowship-apply/?$ /governments/fellowship/apply
+#RedirectMatch permanent ^/governments/fellowship-faq/?$ /governments/fellowship/faq
 
 #
 # Governments.
 #
-RedirectMatch permanent ^(.*)/governments/apply(/?)$ $1/governments/fellowship-apply$2
-RedirectMatch permanent ^(.*)/governments/2013-apply-now(/?)$ $1/governments/fellowship-apply$2
-RedirectMatch permanent ^(.*)/governments/apply-now(/?)$ $1/governments/fellowship-apply$2
-RedirectMatch permanent ^(.*)/city-alumni(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/cfa-2012(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/2012(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/governments/faqs-cities-applying-to-program(/?)$ $1/governments/fellowship-faq$2
+RedirectMatch permanent ^/governments/apply/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/governments/2013-apply-now/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/governments/apply-now/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
+RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
+RedirectMatch permanent ^/2012/?$ /governments/alumni
+RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship-faq
 RedirectMatch permanent ^/procurement(/?)$ /governments/principles/procurement$1
 RedirectMatch permanent ^(.*)/governments/capabilities(/.+)?$ $1/governments/principles$2
 
-RedirectMatch permanent ^(.*)/civic-data-standards(/?)$ $1/governments/data-standards-faq$2
-RedirectMatch permanent ^(.*)/application-info(/?)$ $1/governments/fellowship-apply$2
-RedirectMatch permanent ^(.*)/application-questions(/?)$ $1/governments/fellowship-apply$2
-RedirectMatch permanent ^(.*)/governments/call-for-applications(/?)$ $1/governments/fellowship-apply$2
+RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
+RedirectMatch permanent ^/application-info/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/application-questions/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/governments/call-for-applications/?$ /governments/fellowship-apply
 
-RedirectMatch permanent ^(.*)/2013-partners(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/city-current(/?)$ $1/governments/alumni$2
-RedirectMatch permanent ^(.*)/governments/current(/?)$ $1/governments/alumni$2
+RedirectMatch permanent ^/2013-partners/?$ /governments/alumni
+RedirectMatch permanent ^/city-current/?$ /governments/alumni
+RedirectMatch permanent ^/governments/current/?$ /governments/alumni
 
-RedirectMatch permanent ^(.*)/2013-partners/kansas-city(/?)$ $1/governments/kansascity$2
-RedirectMatch permanent ^(.*)/2013-partners/louisville(/?)$ $1/governments/louisville$2
-RedirectMatch permanent ^(.*)/2013-partners/las-vegas(/?)$ $1/governments/lasvegas$2
-RedirectMatch permanent ^(.*)/2013-partners/new-york-city(/?)$ $1/governments/newyork$2
-RedirectMatch permanent ^(.*)/2013-partners/oakland(/?)$ $1/governments/oakland$2
-RedirectMatch permanent ^(.*)/2013-partners/san-francisco(/?)$ $1/governments/sanfrancisco$2
-RedirectMatch permanent ^(.*)/2013-partners/san-mateo-county(/?)$ $1/governments/sanmateocounty$2
-RedirectMatch permanent ^(.*)/2013-partners/south-bend(/?)$ $1/governments/southbend$2
-RedirectMatch permanent ^(.*)/2013-partners/summit-county(/?)$ $1/governments/summitcounty$2
+RedirectMatch permanent ^/2013-partners/kansas-city/?$ /governments/kansascity
+RedirectMatch permanent ^/2013-partners/louisville/?$ /governments/louisville
+RedirectMatch permanent ^/2013-partners/las-vegas/?$ /governments/lasvegas
+RedirectMatch permanent ^/2013-partners/new-york-city/?$ /governments/newyork
+RedirectMatch permanent ^/2013-partners/oakland/?$ /governments/oakland
+RedirectMatch permanent ^/2013-partners/san-francisco/?$ /governments/sanfrancisco
+RedirectMatch permanent ^/2013-partners/san-mateo-county/?$ /governments/sanmateocounty
+RedirectMatch permanent ^/2013-partners/south-bend/?$ /governments/southbend
+RedirectMatch permanent ^/2013-partners/summit-county/?$ /governments/summitcounty
 
-RedirectMatch permanent ^(.*)/city-current/kansas-city(/?)$ $1/governments/kansascity$2
-RedirectMatch permanent ^(.*)/city-current/louisville(/?)$ $1/governments/louisville$2
-RedirectMatch permanent ^(.*)/city-current/las-vegas(/?)$ $1/governments/lasvegas$2
-RedirectMatch permanent ^(.*)/city-current/new-york-city(/?)$ $1/governments/newyork$2
-RedirectMatch permanent ^(.*)/city-current/oakland(/?)$ $1/governments/oakland$2
-RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/governments/sanfrancisco$2
-RedirectMatch permanent ^(.*)/city-current/san-mateo-county(/?)$ $1/governments/sanmateocounty$2
-RedirectMatch permanent ^(.*)/city-current/south-bend(/?)$ $1/governments/southbend$2
-RedirectMatch permanent ^(.*)/city-current/summit-county(/?)$ $1/governments/summitcounty$2
+RedirectMatch permanent ^/city-current/kansas-city/?$ /governments/kansascity
+RedirectMatch permanent ^/city-current/louisville/?$ /governments/louisville
+RedirectMatch permanent ^/city-current/las-vegas/?$ /governments/lasvegas
+RedirectMatch permanent ^/city-current/new-york-city/?$ /governments/newyork
+RedirectMatch permanent ^/city-current/oakland/?$ /governments/oakland
+RedirectMatch permanent ^/city-current/san-francisco/?$ /governments/sanfrancisco
+RedirectMatch permanent ^/city-current/san-mateo-county/?$ /governments/sanmateocounty
+RedirectMatch permanent ^/city-current/south-bend/?$ /governments/southbend
+RedirectMatch permanent ^/city-current/summit-county/?$ /governments/summitcounty
 
-RedirectMatch permanent ^(.*)/2012-partners/austin(/?)$ $1/governments/austin$2
-RedirectMatch permanent ^(.*)/2012-partners/chicago(/?)$ $1/governments/chicago$2
-RedirectMatch permanent ^(.*)/2012-partners/detroit(/?)$ $1/governments/detroit$2
-RedirectMatch permanent ^(.*)/2012-partners/honolulu(/?)$ $1/governments/honolulu$2
-RedirectMatch permanent ^(.*)/2012-partners/macon(/?)$ $1/governments/macon$2
-RedirectMatch permanent ^(.*)/2012-partners/nola(/?)$ $1/governments/neworleans$2
-RedirectMatch permanent ^(.*)/2012-partners/philadelphia(/?)$ $1/governments/philadelphia$2
+RedirectMatch permanent ^/2012-partners/austin/?$ /governments/austin
+RedirectMatch permanent ^/2012-partners/chicago/?$ /governments/chicago
+RedirectMatch permanent ^/2012-partners/detroit/?$ /governments/detroit
+RedirectMatch permanent ^/2012-partners/honolulu/?$ /governments/honolulu
+RedirectMatch permanent ^/2012-partners/macon/?$ /governments/macon
+RedirectMatch permanent ^/2012-partners/nola/?$ /governments/neworleans
+RedirectMatch permanent ^/2012-partners/philadelphia/?$ /governments/philadelphia
 
-RedirectMatch permanent ^(.*)/2012-city-finalists(/?)$ $1/2012-city-finalists$2
-RedirectMatch permanent ^(.*)/2012-city-finalists/chicago(/?)$ $1/governments/chicago$2
-RedirectMatch permanent ^(.*)/2012-city-finalists/detroit(/?)$ $1/governments/detroit$2
-RedirectMatch permanent ^(.*)/2012-city-finalists/macon(/?)$ $1/governments/macon$2
-RedirectMatch permanent ^(.*)/2012-city-finalists/santa-cruz(/?)$ $1/governments/santacruz$2
-RedirectMatch permanent ^(.*)/2012-city-finalists/new-orleans(/?)$ $1/governments/neworleans$2
+RedirectMatch permanent ^/2012-city-finalists/?$ /2012-city-finalists
+RedirectMatch permanent ^/2012-city-finalists/chicago/?$ /governments/chicago
+RedirectMatch permanent ^/2012-city-finalists/detroit/?$ /governments/detroit
+RedirectMatch permanent ^/2012-city-finalists/macon/?$ /governments/macon
+RedirectMatch permanent ^/2012-city-finalists/santa-cruz/?$ /governments/santacruz
+RedirectMatch permanent ^/2012-city-finalists/new-orleans/?$ /governments/neworleans
 
 RedirectMatch permanent ^/austin(/?)$ /governments/austin$1
 RedirectMatch permanent ^/honolulu(/?)$ /governments/honolulu$1
@@ -282,10 +282,10 @@ RedirectMatch permanent ^/seattle(/?)$ /governments/seattle$1
 RedirectMatch permanent ^/boston(/?)$ /governments/boston$1
 RedirectMatch permanent ^/chicago(/?)$ /governments/chicago$1
 RedirectMatch permanent ^/philadelphia(/?)$ /governments/philadelphia$1
-RedirectMatch permanent ^(.*)/city-alumni/boston(/?)$ $1/governments/boston$2
-RedirectMatch permanent ^(.*)/city-alumni/chicago(/?)$ $1/governments/chicago$2
-RedirectMatch permanent ^(.*)/city-alumni/philadelphia(/?)$ $1/governments/philadelphia$2
-RedirectMatch permanent ^(.*)/governments/summit-county(/?)$ $1/governments/summitcounty$2
+RedirectMatch permanent ^/city-alumni/boston/?$ /governments/boston
+RedirectMatch permanent ^/city-alumni/chicago/?$ /governments/chicago
+RedirectMatch permanent ^/city-alumni/philadelphia/?$ /governments/philadelphia
+RedirectMatch permanent ^/governments/summit-county/?$ /governments/summitcounty
 
 #
 # People
@@ -312,22 +312,22 @@ RedirectMatch permanent ^/zach-williams(/?)$ /people/zach-williams$1
 #
 # Random crap.
 #
-RedirectMatch permanent ^(.*)/intern(/?)$ $1/jobs$2
+RedirectMatch permanent ^/intern/?$ /jobs
 RedirectMatch permanent ^(.*)/intern/(hammer___nails|difference|code|policy|tim-screwdriver|design_comms|design|code/\d+)(/?)$ $1/jobs$3
-RedirectMatch permanent ^(.*)/issues/openness(/?)$ $1/2011/03/08/openness-in-city-hall$2
-RedirectMatch permanent ^(.*)/2014(/?)$ $1/2013/10/15/2014fellowship_launch$2
-RedirectMatch permanent ^(.*)/2012-fellows/alex(/?)$ $1/2011/07/27/alex-hillman-cfa-is-a-hall-pass-for-bureaucracy$2
-RedirectMatch permanent ^(.*)/ted(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-video$2
-RedirectMatch permanent ^(.*)/TED(/?)$ $1/2012/03/08/jennifer-pahlka-at-ted-video$2
-RedirectMatch permanent ^(.*)/city-current/san-francisco(/?)$ $1/2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults$2
-RedirectMatch permanent ^(.*)/pages/tools(/?)$ $1/2013/07/16/tools-of-the-civic-trade$2
-RedirectMatch permanent ^(.*)/apps/blightstatus(/?)$ $1/apps/civicinsight$2
-RedirectMatch permanent ^(.*)/demo(/?)$ $1/2012/06/13/demo/$2
-RedirectMatch permanent ^(.*)/jennifer-pahlka-speaks-out(/?)$ $1/contact$2
-RedirectMatch permanent ^(.*)/codeacross(/?)$ $1/events/codeacross-2014/$2
-RedirectMatch permanent ^(.*)/code-across-america-2012(/?)$ $1/events/codeacross-2012/$2
+RedirectMatch permanent ^/issues/openness/?$ /2011/03/08/openness-in-city-hall
+RedirectMatch permanent ^/2014/?$ /2013/10/15/2014fellowship_launch
+RedirectMatch permanent ^/2012-fellows/alex/?$ /2011/07/27/alex-hillman-cfa-is-a-hall-pass-for-bureaucracy
+RedirectMatch permanent ^/ted/?$ /2012/03/08/jennifer-pahlka-at-ted-video
+RedirectMatch permanent ^/TED/?$ /2012/03/08/jennifer-pahlka-at-ted-video
+RedirectMatch permanent ^/city-current/san-francisco/?$ /2013/04/05/san-francisco-a-city-that-knows-it%e2%80%99s-faults
+RedirectMatch permanent ^/pages/tools/?$ /2013/07/16/tools-of-the-civic-trade
+RedirectMatch permanent ^/apps/blightstatus/?$ /apps/civicinsight
+RedirectMatch permanent ^/demo/?$ /2012/06/13/demo/
+RedirectMatch permanent ^/jennifer-pahlka-speaks-out/?$ /contact
+RedirectMatch permanent ^/codeacross/?$ /events/codeacross-2014/
+RedirectMatch permanent ^/code-across-america-2012/?$ /events/codeacross-2012/
 RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
-RedirectMatch permanent ^(.*)/focus(/?)$ $1/our-work/focus-areas$2
+RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 
 #

@@ -139,6 +139,58 @@ class TestApache (unittest.TestCase):
                  ('/incubator', '/companies/incubator-faq/'),
                  ('/incubator-2', '/companies/incubator-faq/'),
                  ('/startups/incubator-2', '/companies/incubator-faq/'),
+                 ('/who-we-are', '/about/team/'),
+                 ('/donors', '/supporters/'),
+                 ('/how-to-help', '/geeks/'),
+                 ('/code-across-america', '/events/codeacross-2012/'),
+                 ('/fellows/faq', '/geeks/fellowship-faq/'),
+                 ('/fellows/training', '/geeks/fellowship-faq/'),
+                 ('/fellows/institute', '/geeks/fellowship-faq/'),
+                 ('/governments/expectations-of-our-city-partners', '/governments/fellowship-faq'),
+                 ('/2012-city-videos', '/communications/testimonial/'),
+                 ('/geeks/fellows/alumni-fellows', '/geeks/our-geeks/alumni-fellows/'),
+                 ('/fellows/current-fellows', '/geeks/our-geeks/2013-fellows/'),
+                 ('/fellows/alumni-fellows/2013-fellows', '/geeks/our-geeks/2013-fellows/'),
+                 ('/geeks/our-startups', '/companies/our-companies/'),
+                 ('/geeks/accelerator-faq', '/companies/accelerator-faq/'),
+                 ('/geeks/accelerator-apply', '/companies/accelerator-apply/'),
+                 ('/geeks/fellowship', '/about/fellowship'),
+                 ('/governments/city-impact', '/about/fellowship'),
+                 ('/the-program', '/about/fellowship'),
+               # ('/about/fellowship', '/governments/fellowship/'),
+               # ('/governments/fellowship-apply', '/governments/fellowship/apply/'),
+               # ('/governments/fellowship-faq', '/governments/fellowship/faq/'),
+                 ('/governments/apply', '/governments/fellowship-apply'),
+                 ('/governments/2013-apply-now', '/governments/fellowship-apply'),
+                 ('/governments/apply-now', '/governments/fellowship-apply'),
+                 ('/city-alumni', '/governments/alumni/'),
+                 ('/cfa-2012', '/governments/alumni/'),
+                 ('/2012', '/governments/alumni/'),
+                 ('/governments/faqs-cities-applying-to-program', '/governments/fellowship-faq'),
+                 ('/civic-data-standards', '/governments/data-standards-faq/'),
+                 ('/application-info', '/governments/fellowship-apply'),
+                 ('/application-questions', '/governments/fellowship-apply'),
+                 ('/governments/call-for-applications', '/governments/fellowship-apply'),
+                 ('/2013-partners', '/governments/alumni/'),
+                 ('/city-current', '/governments/alumni/'),
+                 ('/governments/current', '/governments/alumni/'),
+                 ('/2013-partners/kansas-city', '/governments/kansascity/'),
+                 ('/2013-partners/louisville', '/governments/louisville/'),
+                 ('/2013-partners/las-vegas', '/governments/lasvegas/'),
+                 ('/city-current/kansas-city', '/governments/kansascity/'),
+                 ('/city-current/louisville', '/governments/louisville/'),
+                 ('/city-current/las-vegas', '/governments/lasvegas/'),
+                 ('/2012-partners/austin', '/governments/austin/'),
+                 ('/2012-partners/chicago', '/governments/chicago/'),
+                 ('/2012-partners/detroit', '/governments/detroit/'),
+               # ('/2012-city-finalists', '/2012-city-finalists/'),
+                 ('/2012-city-finalists/chicago', '/governments/chicago/'),
+                 ('/2012-city-finalists/detroit', '/governments/detroit/'),
+                 ('/city-alumni/boston', '/governments/boston/'),
+                 ('/city-alumni/chicago', '/governments/chicago/'),
+                 ('/city-alumni/philadelphia', '/governments/philadelphia/'),
+                 ('/governments/summit-county', '/governments/summitcounty/'),
+                 ('/focus', '/our-work/focus-areas/'),
                  
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
@@ -147,7 +199,10 @@ class TestApache (unittest.TestCase):
         for (start_path, end_path) in pairs:
             url = 'http://0.0.0.0:{0}{1}'.format(self.port, start_path)
         
-            while True:
+            for i in range(100):
+                if i > 10:
+                    raise Exception('Too many redirects from {0}, now at {1}'.format(start_path, url_path))
+            
                 _, url_host, url_path, _, _, _ = urlparse(url)
                 conn = HTTPConnection(*url_host.split(':'))
                 conn.request('GET', url_path)
