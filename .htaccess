@@ -133,17 +133,17 @@ RedirectMatch permanent ^/code-across-america/?$ /code-across-america-2012
 #
 # External redirects.
 #
-RedirectMatch permanent ^(.*)/donate/?$ https://secure.codeforamerica.org/page/contribute/default
-RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
-RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
-RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome
+RedirectMatch permanent ^/donate/?$ https://secure.codeforamerica.org/page/contribute/default
+RedirectMatch permanent ^/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
+RedirectMatch permanent ^/beyond-transparency/?$ http://beyondtransparency.org
+RedirectMatch permanent ^/apps/classtalk$ http://classtalk.org/welcome
 
 # Namecheap does some weird stuff with cfasummit.org redirects.
-RedirectMatch permanent ^(.*)/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
-RedirectMatch permanent ^(.*)/(contact|register|schedule|speakers|sponsors|submit|venue)/+summit/?$ $1/summit/$2/
+RedirectMatch permanent ^/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
+RedirectMatch permanent ^/(contact|register|schedule|speakers|sponsors|submit|venue)/+summit/?$ /summit/$1/
 
 #Summit Schedule to Pathable
-RedirectMatch permanent ^(.*)/summit/schedule(/?)$ https://cfasummit2014.pathable.com/meetings
+RedirectMatch permanent ^/summit/schedule/?$ https://cfasummit2014.pathable.com/meetings
 
 #
 # Fellowship Program.
@@ -209,8 +209,8 @@ RedirectMatch permanent ^/geeks/fellowship/?$ /about/fellowship
 RedirectMatch permanent ^/governments/city-impact/?$ /about/fellowship
 RedirectMatch permanent ^/fellows(/?)$ /about/fellowship$1
 RedirectMatch permanent ^/the-program/?$ /about/fellowship
-#RedirectMatch permanent ^(.*)/apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
-#RedirectMatch permanent ^(.*)/Apply(/?)$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+#RedirectMatch permanent ^/apply/?$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+#RedirectMatch permanent ^/Apply/?$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
 
 #
 # Another round of Fellowship Program reorganization
@@ -230,7 +230,7 @@ RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
 RedirectMatch permanent ^/2012/?$ /governments/alumni
 RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship-faq
 RedirectMatch permanent ^/procurement(/?)$ /governments/principles/procurement$1
-RedirectMatch permanent ^(.*)/governments/capabilities(/.+)?$ $1/governments/principles$2
+RedirectMatch permanent ^/governments/capabilities(/.+)?$ /governments/principles$1
 
 RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
 RedirectMatch permanent ^/application-info/?$ /governments/fellowship-apply
