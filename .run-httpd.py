@@ -1,14 +1,9 @@
 #!/usr/bin/env python
 from tempfile import mkdtemp
-from os.path import join, abspath, dirname, exists
-from urlparse import urljoin, urlparse
-from httplib import HTTPConnection
+from os.path import join, exists
 from subprocess import Popen, PIPE
-from random import randrange
 from shutil import rmtree
 from time import sleep
-
-import unittest
 
 config = '''
 {MLCP}LoadModule log_config_module {ModulesPath}/mod_log_config.so
