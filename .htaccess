@@ -21,9 +21,6 @@
 # More on processing order:
 #   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#order
 # 
-# Each directive was written and tested outside the document root, so they are
-# prefixed with the '^(.*)' pattern to work even in a local subdirectory.
-# 
 # The Apps section is handled using the Rewrite Engine, instead of Redirect.
 # Apps URLs on the previous site were implemented as query string patterns,
 # and only RewriteCond can find these.
