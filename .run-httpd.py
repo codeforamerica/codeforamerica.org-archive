@@ -2,8 +2,15 @@
 from tempfile import mkdtemp
 from os.path import join, exists
 from subprocess import Popen, PIPE
+from argparse import ArgumentParser
 from shutil import rmtree
 from time import sleep
+from os import mkdir
+
+parser = ArgumentParser(description='Serve Jekyll site')
+
+parser.add_argument('--watch', dest='watch', action='store_true',
+                    help='Watch for changes and rebuild.')
 
 config = '''
 {MLCP}LoadModule log_config_module {ModulesPath}/mod_log_config.so
@@ -25,10 +32,15 @@ ErrorLog "|tee /dev/stderr"
 </Directory>
 '''
 
-def build_site(destination):
+def build_site(destination, watch):
     '''
     '''
-    Popen(('jekyll', 'build', '-d', destination)).wait()
+    command = 'jekyll', 'build', '-d', destination
+    
+    if watch:
+        command += ('--watch', )
+    
+    Popen(command).wait()
     print 'Built to', destination
 
 def write_config(doc_root, root, port):
@@ -49,13 +61,13 @@ def write_config(doc_root, root, port):
     if not exists(join(root, 'httpd.conf')):
         raise RuntimeError('Did not make httpd.conf')
 
-def run_apache(root, port):
+def run_apache(root, port, watch):
     ''' Look for Apache executable and start it up.
     '''
     try:
         doc_root = join(root, '_site')
+        mkdir(doc_root)
 
-        build_site(doc_root)
         write_config(doc_root, root, port)
 
         for httpd_path in ('/usr/sbin/httpd', '/usr/sbin/apache2'):
@@ -71,6 +83,7 @@ def run_apache(root, port):
         try:
             httpd = Popen(httpd_cmd, stderr=stderr, stdout=stdout)
             print 'Running at http://127.0.0.1:{}'.format(port)
+            build_site(doc_root, watch)
             sleep(7 * 86400)
         finally:
             httpd.kill()
@@ -81,7 +94,8 @@ def run_apache(root, port):
 def main():
     '''
     '''
-    run_apache(mkdtemp(prefix='codeforamerica.org-'), 4000)
+    args = parser.parse_args()
+    run_apache(mkdtemp(prefix='codeforamerica.org-'), 4000, args.watch)
     
 if __name__ == '__main__':
     exit(main())
