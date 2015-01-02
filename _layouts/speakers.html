@@ -27,6 +27,16 @@ nav-breadcrumbs:
  - Citizens: "/geeks"
 ---
 
+Custom front matter for /speakers pages:
+
+include-jquery   - If true, loads jQuery for the page (useful for form validation)
+include-parsley  - If true, loads Parsley.js, a form validation library
+
+---
+include-jquery: true
+include-parsley: true
+---
+
 {% endcomment %}
 
 <!DOCTYPE html>
@@ -74,5 +84,13 @@ nav-breadcrumbs:
       </main>
     </div>
     {% include footer-scripts.html %}
+    {% if page.include-jquery %}
+      <!-- JQUERY LOADED -->
+      <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    {% endif %}
+    {% if page.include-parsley %}
+      <!-- JQUERY LOADED -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.6/parsley.min.js"></script>
+    {% endif %}
   </body>
 </html>
