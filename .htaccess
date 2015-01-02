@@ -119,7 +119,6 @@ RedirectMatch permanent ^(.*)/what-we-do(/?)$ $1/about$2
 RedirectMatch permanent ^(.*)(?<!/brigade)/projects(/?)$ $1/apps$2
 RedirectMatch permanent ^(.*)/code-for-america-blog(/?)$ $1/blog$2
 RedirectMatch permanent ^(.*)/about/contact(/?)$ $1/contact$2
-RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ $1/about/international$2
 RedirectMatch permanent ^(.*)/dc(/?)$ $1/cc$2
 RedirectMatch permanent ^(.*)/rss(/?)$ $1/feeds$2
 RedirectMatch permanent ^(.*)/speaker-request-form(/?)$ $1/contact$2
@@ -137,6 +136,7 @@ RedirectMatch permanent ^(.*)/donate/?$ https://secure.codeforamerica.org/page/c
 RedirectMatch permanent ^(.*)/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
 RedirectMatch permanent ^(.*)/beyond-transparency/?$ http://beyondtransparency.org
 RedirectMatch permanent ^(.*)/apps/classtalk$ http://classtalk.org/welcome
+RedirectMatch permanent ^(.*)(?<!/about)/international(/?)$ http://codeforall.org$2
 
 # Namecheap does some weird stuff with cfasummit.org redirects.
 RedirectMatch permanent ^(.*)/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
