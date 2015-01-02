@@ -18,13 +18,14 @@ LoadModule rewrite_module {ModulesPath}/mod_rewrite.so
 LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 LoadModule mime_module {ModulesPath}/mod_mime.so
+LoadModule unixd_module {ModulesPath}/mod_unixd.so
+LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
 
 Listen 0.0.0.0:{Port}
-PidFile httpd.pid
-LockFile accept.lock
+PidFile "{ServerRoot}/httpd.pid"
+#LockFile "{ServerRoot}/accept.lock"
+Mutex file:{ServerRoot}
 DocumentRoot "{DocumentRoot}"
-CustomLog "|tee /dev/stderr" "%h %l %u %t \\"%r\\" %>s %b"
-ErrorLog "|tee /dev/stderr"
 
 <Directory "{DocumentRoot}">
     Options +FollowSymLinks
@@ -53,7 +54,8 @@ def write_config(doc_root, root, port):
         log_config_so_path = join(mod_path, 'mod_log_config.so')
         log_config_prefix = '' if exists(log_config_so_path) else '#'
         vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
-                    Port=port, MLCP=log_config_prefix)
+                    Port=port, MLCP=log_config_prefix,
+                    ServerRoot=root)
 
         with open(join(root, 'httpd.conf'), 'w') as file:
             file.write(config.format(**vars))
@@ -67,6 +69,7 @@ def run_apache(root, port, watch):
     try:
         doc_root = join(root, '_site')
         mkdir(doc_root)
+        mkdir(join(root, 'logs'))
 
         write_config(doc_root, root, port)
 
