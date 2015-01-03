@@ -31,19 +31,23 @@ include-animate: true
 
 <section class="layout-breve">
 
-  <div class="layout-gutter"><!-- .layout-gutter Adds a little padding to the left of the questions -->
 
-    <h2>Request a speaker for your event<span id="headerColon" style="display:none;">:</span> <span id="speakerName" style="display:none;">Cyd Harrell</span> </h2>
+    <h2>Request a speaker for your event<span id="headerColon" style="display:none;">:</span> <span id="speakerName" style="display:none;"></span> </h2>
     <p>Please answer the questions below as completely as you can so we can evaluate your request. Required fields are marked <abbr title="Required">*</abbr></p>
     <br />
 
     <div id="formError" class="alert-failure" style="display:none;">
     </div>
 
+    <div id="infoSpeaker" class="layout-minor" style="display:none;">
+      <p>None.</p>
+    </div>
+
     <!-- Form content -->
-    <div class="layout-major-invert">
+    <div class="layout-major">
       <form name="interestForm" accept-charset="UTF-8" action="https://formkeep.com/f/ab9aff298fd2" onsubmit="" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
         <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="speakerRequested" id="speakerRequested" value="">
 
         <ul class="list-form">
           
@@ -205,23 +209,105 @@ include-animate: true
 
         </ul><!-- end form -->
       </form>
-    </div>
-
-    <div id="infoSpeaker" class="layout-minor-invert">
-      {% include people/cyd-harrell.html context="speaker-card" base=".." %}
-    </div>
+    </div><!-- end .layout-major -->
     
-  </div><!-- end .layout-gutter -->
-
 </section>
 
 <section class="layout-semibreve"></section>
 
+<!-- Generate markup for JS -->
+{% capture cardCydHarrell %}
+  {% include people/cyd-harrell.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJenniferPahlka %}
+  {% include people/jennifer-pahlka.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardMichalMigurski %}
+  {% include people/michal-migurski.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardCatherineBracy %}
+  {% include people/catherine-bracy.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardLukeNorris %}
+  {% include people/luke-norris.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardNicoleNeditch %}
+  {% include people/nicole-neditch.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardLaneBecker %}
+  {% include people/lane-becker.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardRebeccaCoelius %}
+  {% include people/rebecca-coelius.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJackMadans %}
+  {% include people/jack-madans.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardHannahYoung %}
+  {% include people/hannah-young.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJacobSolomon %}
+  {% include people/jacob-solomon.html context="speaker-card" base=".." %}
+{% endcapture %}
+
 <script>
-  // Pop the URL parameters
+
+  // ===== Populate our speaker card variables
+  var speakerCards = {
+    "cyd-harrell"       : '{{ cardCydHarrell | strip_newlines }}',
+    "jennifer-pahlka"   : '{{ cardJenniferPahlka | strip_newlines }}',
+    "michal-migurski"   : '{{ cardMichalMigurski | strip_newlines }}',
+    "catherine-bracy"   : '{{ cardCatherineBracy | strip_newlines }}',
+    "luke-norris"       : '{{ cardLukeNorris | strip_newlines }}',
+    "nicole-neditch"    : '{{ cardNicoleNeditch | strip_newlines }}',
+    "lane-becker"       : '{{ cardLaneBecker | strip_newlines }}',
+    "rebecca-coelius"   : '{{ cardRebeccaCoelius | strip_newlines }}',
+    "jack-madans"       : '{{ cardJackMadans | strip_newlines }}',
+    "hannah-young"      : '{{ cardHannahYoung | strip_newlines }}',
+    "jacob-solomon"     : '{{ cardJacobSolomon | strip_newlines }}',
+  };
+
+  // ===== Set up our functions
+  function showSpeaker(speaker,card) {
+    // Put speaker name in #speakerName span
+    $('#speakerName').html(speaker);
+
+    // Fill the #infoSpeaker card
+    $('#infoSpeaker').html(card);
+
+    // Animate #speakerName span and #headerColon into visibility
+    $('#speakerName, #headerColon').show("fast", function(){
+      $('#speakerName').addClass('animated fadeIn');
+    });
+
+    // Animate #speakerName span and #headerColon into visibility
+    $('#infoSpeaker').show("fast", function(){
+      $('#infoSpeaker').addClass('animated fadeIn');
+    });
+
+  };
+
+  function toPrettyName(name) {
+    // Split up the name at hyphens, make it headline case
+
+    // name = "firstname-lastname"
+    nameArray = name.split(/\s*\-\s*/g);
+
+    // nameArray = ["firstname","lastname"]    
+    for(var i = 0 ; i < nameArray.length ; i++) {
+      nameArray[i] = nameArray[i].charAt(0).toUpperCase() + nameArray[i].substr(1);
+    }
+    // nameArray = ["Firstname, "Lastname"]
+
+    return nameArray.join(" "); // "Firstname Lastname"
+  }
+
+  // ===== Pop the URL parameters
   // Credit for this snippet: Andy E on http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
   var urlParams;
+  var speakerParam;
   var requestedSpeaker;
+
   (window.onpopstate = function () {
       var match,
           pl     = /\+/g,  // Regex for replacing addition symbol with a space
@@ -233,17 +319,12 @@ include-animate: true
       while (match = search.exec(query))
          urlParams[decode(match[1])] = decode(match[2]);
 
-      // End snippet, begin custom code to retrieve speaker
-      requestedSpeaker = urlParams['speaker']
-      requestedCode = urlParams['speaker-code']
+      // End snippet, begin custom code
+      // Retrieve speaker name from the URL (expected format: firstname-lastname)
+      speakerParam = urlParams['speaker'];
   })();
 
-  function showSpeaker(requestedSpeaker) {
-    $('#speakerName, #headerColon').show("fast", function(){
-      $('#speakerName').addClass('animated flipInX');
-    });
-  };
-
+  // ===== Run our functions
   $(document).ready(function() {
     // Toggle the stipend details field when relevant radio buttons are clicked    
     $('#yesStipend').click(function(){
@@ -255,10 +336,18 @@ include-animate: true
       $('#stipendOffered').prop('required',false);
     });
 
-    if (requestedSpeaker) {
-      // if there was a speaker parameter
+    if (speakerParam) { // If there was a speaker parameter in the URL
       console.log("Request worked, passing parameters to function");
-      showSpeaker(requestedSpeaker);
+      
+      // Show the speaker name and card
+      requestedSpeaker = toPrettyName(speakerParam);
+      speakerContent = speakerCards[speakerParam];
+      showSpeaker(requestedSpeaker,speakerContent);
+
+      document.getElementById("speakerRequested").value = requestedSpeaker;
+
+      // Input speaker name into the form
+
     } else {
       console.log("Nope, it didn't work");
     }
