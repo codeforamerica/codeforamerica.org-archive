@@ -19,27 +19,18 @@ LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 LoadModule mime_module {ModulesPath}/mod_mime.so
 
-<IfDefine MPMEvent>
-    LoadModule mpm_event_module {ModulesPath}/mod_mpm_event.so
-</IfDefine>
-
-<IfDefine LogConfig>
-    LoadModule log_config_module {ModulesPath}/mod_log_config.so
-</IfDefine>
-
-<IfDefine AuthzCore>
-    LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
-</IfDefine>
-
 <IfDefine Unixd>
     LoadModule unixd_module {ModulesPath}/mod_unixd.so
 </IfDefine>
 
 <IfDefine Version2.2>
+    LoadModule log_config_module {ModulesPath}/mod_log_config.so
     LockFile "{ServerRoot}/accept.lock"
 </IfDefine>
 
 <IfDefine Version2.4>
+    LoadModule mpm_event_module {ModulesPath}/mod_mpm_event.so
+    LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
     Mutex file:{ServerRoot}
 </IfDefine>
 
@@ -113,15 +104,6 @@ def run_apache(root, port, watch):
         httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
                      '-DFOREGROUND', '-DNO_DETACH', version_param)
         
-        if exists(join(mod_path, 'mod_mpm_event.so')):
-            httpd_cmd += ('-DMPMEvent', )
-
-        if exists(join(mod_path, 'mod_log_config.so')):
-            httpd_cmd += ('-DLogConfig', )
-
-        if exists(join(mod_path, 'mod_authz_core.so')):
-            httpd_cmd += ('-DAuthzCore', )
-
         if exists(join(mod_path, 'mod_unixd.so')):
             httpd_cmd += ('-DUnixd', )
 
