@@ -46,7 +46,7 @@ LoadModule mime_module {ModulesPath}/mod_mime.so
 Listen 0.0.0.0:{Port}
 PidFile "{ServerRoot}/httpd.pid"
 DocumentRoot "{DocumentRoot}"
-TypesConfig /etc/mime.types
+TypesConfig {MimeTypes}
 
 <Directory "{DocumentRoot}">
     Options +FollowSymLinks
@@ -73,9 +73,11 @@ def write_config(doc_root, root, port):
     for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
         if not exists(join(mod_path, 'mod_dir.so')):
             continue
+        
+        mime_paths = filter(exists, ('/etc/apache2/mime.types', '/etc/mime.types'))
     
         vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
-                    Port=port, ServerRoot=root)
+                    Port=port, ServerRoot=root, MimeTypes=mime_paths[0])
 
         with open(join(root, 'httpd.conf'), 'w') as file:
             file.write(config.format(**vars))
