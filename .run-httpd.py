@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 from tempfile import mkdtemp
 from os.path import join, exists
-from subprocess import Popen, PIPE
+from subprocess import Popen, PIPE, check_output
 from argparse import ArgumentParser
 from shutil import rmtree
 from time import sleep
+from re import compile
 from os import mkdir
 
 parser = ArgumentParser(description='Serve Jekyll site')
@@ -30,10 +31,16 @@ LoadModule mime_module {ModulesPath}/mod_mime.so
     LoadModule unixd_module {ModulesPath}/mod_unixd.so
 </IfModule>
 
+<IfDefine Version2.2>
+    LockFile "{ServerRoot}/accept.lock"
+</IfDefine>
+
+<IfDefine Version2.4>
+    Mutex file:{ServerRoot}
+</IfDefine>
+
 Listen 0.0.0.0:{Port}
 PidFile "{ServerRoot}/httpd.pid"
-#LockFile "{ServerRoot}/accept.lock"
-Mutex file:{ServerRoot}
 DocumentRoot "{DocumentRoot}"
 
 <Directory "{DocumentRoot}">
@@ -69,6 +76,15 @@ def write_config(doc_root, root, port):
     if not exists(join(root, 'httpd.conf')):
         raise RuntimeError('Did not make httpd.conf')
 
+def apache_version(httpd_path):
+    ''' Return major, minor version tuple.
+    '''
+    pattern = compile(r'^Server version: Apache/(\d+)\.(\d+)\.(\d+)\b')
+    match = pattern.match(check_output((httpd_path, '-v')))
+    major, minor, patch = [int(match.group(i)) for i in (1, 2, 3)]
+
+    return major, minor
+
 def run_apache(root, port, watch):
     ''' Look for Apache executable and start it up.
     '''
@@ -82,9 +98,11 @@ def run_apache(root, port, watch):
         for httpd_path in ('/usr/sbin/httpd', '/usr/sbin/apache2'):
             if not exists(httpd_path):
                 continue
+            
+            version_param = '-DVersion{}.{}'.format(*apache_version(httpd_path))
 
             httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
-                         '-DFOREGROUND', '-DNO_DETACH')
+                         '-DFOREGROUND', '-DNO_DETACH', version_param)
 
         stderr = open(join(root, 'stderr'), 'w')
         stdout = open(join(root, 'stdout'), 'w')
