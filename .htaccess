@@ -133,6 +133,7 @@ RedirectMatch permanent ^/donate/?$ https://secure.codeforamerica.org/page/contr
 RedirectMatch permanent ^/open-impact/?$ http://brigade.codeforamerica.org/pages/openimpact
 RedirectMatch permanent ^/beyond-transparency/?$ http://beyondtransparency.org
 RedirectMatch permanent ^/apps/classtalk$ http://classtalk.org/welcome
+RedirectMatch permanent ^/about/international(/?)$ http://codeforall.org
 RedirectMatch permanent ^/international(/?)$ http://codeforall.org
 
 # Namecheap does some weird stuff with cfasummit.org redirects.

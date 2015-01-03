@@ -99,7 +99,6 @@ class TestApache (unittest.TestCase):
                  ('/governments/capabilities/procurement', '/governments/principles/procurement/'),
                  ('/team', '/about/team/'),
                  ('/projects', '/apps/'),
-                 ('/international', '/about/international/'),
                  ('/fellows/job-description', '/geeks/fellowship-faq/'),
                  ('/fellows/apply', '/geeks/fellowship-apply/'),
                  ('/fellows/alumni-fellows', '/geeks/our-geeks/alumni-fellows/'),
