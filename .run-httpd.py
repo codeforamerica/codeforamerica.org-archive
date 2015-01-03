@@ -13,13 +13,22 @@ parser.add_argument('--watch', dest='watch', action='store_true',
                     help='Watch for changes and rebuild.')
 
 config = '''
-{MLCP}LoadModule log_config_module {ModulesPath}/mod_log_config.so
 LoadModule rewrite_module {ModulesPath}/mod_rewrite.so
 LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 LoadModule mime_module {ModulesPath}/mod_mime.so
-LoadModule unixd_module {ModulesPath}/mod_unixd.so
-LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
+
+<IfModule {ModulesPath}/mod_log_config.so>
+    LoadModule log_config_module {ModulesPath}/mod_log_config.so
+</IfModule>
+
+<IfModule {ModulesPath}/mod_authz_core.so>
+    LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
+</IfModule>
+
+<IfModule {ModulesPath}/mod_unixd.so>
+    LoadModule unixd_module {ModulesPath}/mod_unixd.so
+</IfModule>
 
 Listen 0.0.0.0:{Port}
 PidFile "{ServerRoot}/httpd.pid"
@@ -51,11 +60,8 @@ def write_config(doc_root, root, port):
         if not exists(join(mod_path, 'mod_dir.so')):
             continue
     
-        log_config_so_path = join(mod_path, 'mod_log_config.so')
-        log_config_prefix = '' if exists(log_config_so_path) else '#'
         vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
-                    Port=port, MLCP=log_config_prefix,
-                    ServerRoot=root)
+                    Port=port, ServerRoot=root)
 
         with open(join(root, 'httpd.conf'), 'w') as file:
             file.write(config.format(**vars))
