@@ -19,7 +19,6 @@ include-parsley: true
     padding-bottom: 10px;
     margin-top: 10px
   }
-
   #speakerName {
     border-bottom: 1px solid black;
     padding-bottom: 0;
@@ -91,7 +90,7 @@ include-parsley: true
 
             <div class="form-field">
               <label for="eventWebsite">Event website link (if available)</label>
-              <input id="eventWebsite" name="eventWebsite" class="input" type="text" placeholder="i.e. amazingconference.org">
+              <input id="eventWebsite" name="eventWebsite" class="input" type="url" placeholder="i.e. amazingconference.org" data-parsley-error-message="If you enter a url, please ensure it's valid (i.e. website.com). This field isn't required.">
             </div>            
           </li>
 
@@ -104,7 +103,8 @@ include-parsley: true
 
             <div class="form-field">
               <label for="eventFormat">Event Format <abbr title="Required">*</abbr></label>
-              <select id="eventFormat">
+              <select id="eventFormat" required>
+                  <option value="">Pick one...</option>
                   <option>Keynote</option>
                   <option>Fireside chat</option>
                   <option>Panel</option>
@@ -158,7 +158,8 @@ include-parsley: true
 
             <div class="form-field">
               <label for="audienceType">Primary audience <abbr title="Required">*</abbr></label>
-              <select id="audienceType">
+              <select id="audienceType" required>
+                  <option value="">Pick one...</option>
                   <option>Government Officials/Staff</option>
                   <option>Techies and Civic Hackers: Coders, Designers, Researchers, etc.</option>
                   <option>Civic Startups and Investors</option>
@@ -183,7 +184,7 @@ include-parsley: true
                 </li>
               </ul>
 
-              <div class="form-field" style="display:none;">
+              <div class="form-field" id="stipendField" style="display: none;">
                 <label for="stipendOffered">If stipend/honorarium offered, please specify amount/items covered</label>
                 <input id="stipendOffered" name="stipendOffered" class="input disabled" type="text" placeholder="" required>
               </div>
