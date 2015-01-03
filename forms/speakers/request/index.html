@@ -5,6 +5,7 @@ masthead-image: "../../../../media/images/speakers/microphone.jpg"
 masthead-class: masthead-s
 include-jquery: true
 include-parsley: true
+include-animate: true
 ---
 <style>
   .list-form li.form-field {
@@ -32,7 +33,7 @@ include-parsley: true
 
   <div class="layout-gutter"><!-- .layout-gutter Adds a little padding to the left of the questions -->
 
-    <h2>Request <span id="speakerName">Cyd Harrell</span> to speak at your event</h2>
+    <h2>Request a speaker for your event<span id="headerColon" style="display:none;">:</span> <span id="speakerName" style="display:none;">Cyd Harrell</span> </h2>
     <p>Please answer the questions below as completely as you can so we can evaluate your request. Required fields are marked <abbr title="Required">*</abbr></p>
     <br />
 
@@ -234,14 +235,16 @@ include-parsley: true
 
       // End snippet, begin custom code to retrieve speaker
       requestedSpeaker = urlParams['speaker']
+      requestedCode = urlParams['speaker-code']
   })();
 
   function showSpeaker(requestedSpeaker) {
-
-  }
+    $('#speakerName, #headerColon').show("fast", function(){
+      $('#speakerName').addClass('animated flipInX');
+    });
+  };
 
   $(document).ready(function() {
-
     // Toggle the stipend details field when relevant radio buttons are clicked    
     $('#yesStipend').click(function(){
       $('#stipendField').show();
@@ -252,11 +255,12 @@ include-parsley: true
       $('#stipendOffered').prop('required',false);
     });
 
-      if (requestedSpeaker) {
-        // if there was a speaker parameter
-        console.log(requestedSpeaker);
-      } else {
-        console.log("Nope, it didn't work");
-      }
+    if (requestedSpeaker) {
+      // if there was a speaker parameter
+      console.log("Request worked, passing parameters to function");
+      showSpeaker(requestedSpeaker);
+    } else {
+      console.log("Nope, it didn't work");
+    }
   });
 </script>
