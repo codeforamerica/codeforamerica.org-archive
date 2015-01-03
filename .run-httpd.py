@@ -70,23 +70,21 @@ def write_config(doc_root, root, port):
     
         Return module directory.
     '''
-    for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
-        if not exists(join(mod_path, 'mod_dir.so')):
-            continue
-        
-        mime_paths = filter(exists, ('/etc/apache2/mime.types', '/etc/mime.types'))
+    mod_paths = '/usr/lib/apache2/modules', '/usr/libexec/apache2'
+    mime_paths = '/etc/apache2/mime.types', '/etc/mime.types'
     
-        vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
-                    Port=port, ServerRoot=root, MimeTypes=mime_paths[0])
+    mod_path = filter(exists, mod_paths)[0]
+    mime_path = filter(exists, mime_paths)[0]
 
-        with open(join(root, 'httpd.conf'), 'w') as file:
-            file.write(config.format(**vars))
+    vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
+                Port=port, ServerRoot=root, MimeTypes=mime_path)
+
+    with open(join(root, 'httpd.conf'), 'w') as file:
+        file.write(config.format(**vars))
         
-        break
-    
     if not exists(join(root, 'httpd.conf')):
         raise RuntimeError('Did not make httpd.conf')
-        
+    
     return mod_path
 
 def apache_version(httpd_path):
@@ -107,29 +105,25 @@ def run_apache(root, port, watch):
         mkdir(join(root, 'logs'))
 
         mod_path = write_config(doc_root, root, port)
+        httpd_paths = '/usr/sbin/httpd', '/usr/sbin/apache2'
+        httpd_path = filter(exists, httpd_paths)[0]
 
-        for httpd_path in ('/usr/sbin/httpd', '/usr/sbin/apache2'):
-            if not exists(httpd_path):
-                continue
-            
-            version_param = '-DVersion{}.{}'.format(*apache_version(httpd_path))
-            
-            httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
-                         '-DFOREGROUND', '-DNO_DETACH', version_param)
-            
-            if exists(join(mod_path, 'mod_mpm_event.so')):
-                httpd_cmd += ('-DMPMEvent', )
+        version_param = '-DVersion{}.{}'.format(*apache_version(httpd_path))
+        
+        httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
+                     '-DFOREGROUND', '-DNO_DETACH', version_param)
+        
+        if exists(join(mod_path, 'mod_mpm_event.so')):
+            httpd_cmd += ('-DMPMEvent', )
 
-            if exists(join(mod_path, 'mod_log_config.so')):
-                httpd_cmd += ('-DLogConfig', )
+        if exists(join(mod_path, 'mod_log_config.so')):
+            httpd_cmd += ('-DLogConfig', )
 
-            if exists(join(mod_path, 'mod_authz_core.so')):
-                httpd_cmd += ('-DAuthzCore', )
+        if exists(join(mod_path, 'mod_authz_core.so')):
+            httpd_cmd += ('-DAuthzCore', )
 
-            if exists(join(mod_path, 'mod_unixd.so')):
-                httpd_cmd += ('-DUnixd', )
-            
-            print httpd_cmd
+        if exists(join(mod_path, 'mod_unixd.so')):
+            httpd_cmd += ('-DUnixd', )
 
         stderr = open(join(root, 'stderr'), 'w')
         stdout = open(join(root, 'stdout'), 'w')
