@@ -215,3 +215,16 @@ include-parsley: true
 </section>
 
 <section class="layout-semibreve"></section>
+
+<script>
+  $( document ).ready(function() {
+    $('#yesStipend').click(function(){
+      $('#stipendField').show();
+      $('#stipendOffered').prop('required',true);
+    });
+    $('#noStipend').click(function(){
+      $('#stipendField').hide();
+      $('#stipendOffered').prop('required',false);
+    });
+  });
+</script>
