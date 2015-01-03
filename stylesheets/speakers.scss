@@ -282,3 +282,15 @@ div.play-symbol {
   } // end .featured-speaker
 
 }
+
+// ###### SPEAKER REQUEST FORM ######
+
+// Valid inputs, selects, textareas have a green border
+input.valid, select.valid, textarea.valid {
+  border: 1px solid #00a175;
+}
+
+// Invalid selects, textareas have a red border, like inputs
+select.invalid, textarea.invalid {
+    border: 1px solid #cf1b41;
+}
