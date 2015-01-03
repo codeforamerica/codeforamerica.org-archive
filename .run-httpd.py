@@ -19,17 +19,21 @@ LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 LoadModule mime_module {ModulesPath}/mod_mime.so
 
-<IfModule {ModulesPath}/mod_log_config.so>
+<IfDefine MPMEvent>
+    LoadModule mpm_event_module {ModulesPath}/mod_mpm_event.so
+</IfDefine>
+
+<IfDefine LogConfig>
     LoadModule log_config_module {ModulesPath}/mod_log_config.so
-</IfModule>
+</IfDefine>
 
-<IfModule {ModulesPath}/mod_authz_core.so>
+<IfDefine AuthzCore>
     LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
-</IfModule>
+</IfDefine>
 
-<IfModule {ModulesPath}/mod_unixd.so>
+<IfDefine Unixd>
     LoadModule unixd_module {ModulesPath}/mod_unixd.so
-</IfModule>
+</IfDefine>
 
 <IfDefine Version2.2>
     LockFile "{ServerRoot}/accept.lock"
@@ -42,6 +46,7 @@ LoadModule mime_module {ModulesPath}/mod_mime.so
 Listen 0.0.0.0:{Port}
 PidFile "{ServerRoot}/httpd.pid"
 DocumentRoot "{DocumentRoot}"
+TypesConfig /etc/mime.types
 
 <Directory "{DocumentRoot}">
     Options +FollowSymLinks
@@ -62,6 +67,8 @@ def build_site(destination, watch):
 
 def write_config(doc_root, root, port):
     ''' Look for Apache modules, write a configuration file.
+    
+        Return module directory.
     '''
     for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
         if not exists(join(mod_path, 'mod_dir.so')):
@@ -72,9 +79,13 @@ def write_config(doc_root, root, port):
 
         with open(join(root, 'httpd.conf'), 'w') as file:
             file.write(config.format(**vars))
+        
+        break
     
     if not exists(join(root, 'httpd.conf')):
         raise RuntimeError('Did not make httpd.conf')
+        
+    return mod_path
 
 def apache_version(httpd_path):
     ''' Return major, minor version tuple.
@@ -93,16 +104,30 @@ def run_apache(root, port, watch):
         mkdir(doc_root)
         mkdir(join(root, 'logs'))
 
-        write_config(doc_root, root, port)
+        mod_path = write_config(doc_root, root, port)
 
         for httpd_path in ('/usr/sbin/httpd', '/usr/sbin/apache2'):
             if not exists(httpd_path):
                 continue
             
             version_param = '-DVersion{}.{}'.format(*apache_version(httpd_path))
-
+            
             httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
                          '-DFOREGROUND', '-DNO_DETACH', version_param)
+            
+            if exists(join(mod_path, 'mod_mpm_event.so')):
+                httpd_cmd += ('-DMPMEvent', )
+
+            if exists(join(mod_path, 'mod_log_config.so')):
+                httpd_cmd += ('-DLogConfig', )
+
+            if exists(join(mod_path, 'mod_authz_core.so')):
+                httpd_cmd += ('-DAuthzCore', )
+
+            if exists(join(mod_path, 'mod_unixd.so')):
+                httpd_cmd += ('-DUnixd', )
+            
+            print httpd_cmd
 
         stderr = open(join(root, 'stderr'), 'w')
         stdout = open(join(root, 'stdout'), 'w')
