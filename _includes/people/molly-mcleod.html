@@ -19,7 +19,7 @@
 
 	<div class="layout-major">
 
-	    <p class="p-note">Molly is a graphic designer and media artist who has worked on board games, documentary films, and community murals. Most recently, she designed print and digital projects for federal public health agencies at CommunicateHealth. At Hampshire College, she designed an interdisciplinary concentration in typography, urban planning, and community-based art. Molly's mission is to empower people improve their communities through design.</p>
+	    <p class="p-note">Molly is a designer and typography geek passionate about social justice. As a 2014 Code for America fellow in Long Beach, she helped design a new process for city staff to coordinate to reduce 911 calls. Previously, she designed print and digital projects for federal public health agencies at CommunicateHealth. She’s also worked on documentary films, board games, and public art projects. Molly's mission is to empower people improve their communities through design.</p>
 
 
 	    <div class="spotlight">
@@ -35,18 +35,20 @@
 
 </div>
 
-{% elsif include.context == '2014-fellows' %}
+{% elsif include.context == '2014-fellows' or include.context == 'about-team' %}
 
 <div class="h-card profile-small">
     <h3 class="p-name profile-name">Molly McLeod</h3>
     <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/molly-mcleod.jpg" />
     <div class="p-note profile-note">
         <p>
+        	{% if include.context == '2014-fellows' %}
             <a href="{{ include.base }}/cities/longbeach/">Long Beach Team</a>
+            {% else %}
+                Designer
+            {% endif %}
         </p>
-        <p>
-            Molly is a graphic designer and media artist who has worked on board games, documentary films, and community murals. Most recently, she designed print and digital projects for federal public health agencies at CommunicateHealth. At Hampshire College, she designed an interdisciplinary concentration in…
-        </p>
+        <p>Molly is a designer and typography geek passionate about social justice. As a 2014 Code for America fellow in Long Beach, she helped design a new process for city staff to coordinate to reduce 911 calls. Previously, she designed print and digital projects for federal public health agencies at CommunicateHealth...</p>
         <p>
             <a class="link-more" href="{{ include.base }}/people/molly-mcleod/">More</a>
         </p>
