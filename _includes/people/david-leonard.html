@@ -1,3 +1,5 @@
+{% assign bio = 'David is a designer and developer. He helps Code for America focus on serving its users on the web and across digital platforms. David worked as a 2014 fellow in San Antonio, Texas, where his team developed open data practices and made <a href="http://homebasefix.com" target="_blank">Homebase</a>, an app to help homeowners fix their homes. As Digital Design Coordinator for Gannett&rsquo;s Louisville Design studio, David focused on helping Gannett newspapers lead the charge into a digital future with tablet-based publications.' %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -17,12 +19,13 @@
 	</div>
 
 	<div class="layout-major">
-    <p class="p-note">David is an ace designer. He recently worked as Digital Design Coordinator for Gannett's Louisville Design studio. He focused on helping Gannett newspapers lead the charge into a digital future with tablet-only publications. He also crafted front pages for the Cincinnati Enquirer, Indianapolis Star and other major newspapers. </p>
+    <p class="p-note">David is a designer and developer. He helps Code for America focus on serving its users on the web and across digital platforms. David worked as a 2014 fellow in San Antonio, Texas, where his team developed open data practices and made <a href="http://homebasefix.com" target="_blank">Homebase</a>, an app to help homeowners fix their homes.</p>
+    <p class="p-note">As Digital Design Coordinator for Gannett&rsquo;s Louisville Design studio, David focused on helping Gannett newspapers lead the charge into a digital future with tablet-based publications.</p>
     <div class="spotlight">
     	<h3 class="text-whisper">Contact</h3>
     	<table class="table-unstyled table-minor">
     		<tr><th>Twitter</th><td><a href="https://twitter.com/davidleonardii">@davidleonardii</a></td></tr>
-        <tr><th>Github</th><td><a href="http://github.com/davidleonardii">http://github<wbr>.com/<wbr>davidrleonard</a></td></tr>
+        <tr><th>Github</th><td><a href="http://github.com/davidrleonard">http://github<wbr>.com/<wbr>davidrleonard</a></td></tr>
         <tr><th>LinkedIn</th><td><a href="www.linkedin.com/in/davirleonard">www.linkedin.com/in/davidrleonard</a></td></tr>
     	</table>
     </div><!-- end .spotlight -->
@@ -30,25 +33,29 @@
 
 </div>
 
-{% elsif include.context == '2014-fellows' %}
+{% elsif include.context == '2014-fellows' or include.context == 'about-team' %}
 
 <div class="h-card profile-small">
-    <h3 class="p-name profile-name">David Leonard</h3>
-    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/david-leonard.jpg" />
-    <div class="p-note profile-note">
-        <p>
-            <a href="{{ include.base }}/cities/sanantonio/">San Antonio Team</a>
-        </p>
-        <p>
-            David is an ace designer. He recently worked as Digital Design Coordinator for Gannett's Louisville Design studio. He focused on helping Gannett newspapers lead the charge into a digital future with tablet-only publications. He also crafted front pages for the Cincinnati Enquirer, Indianapolis Star and…
-        </p>
-        <p>
-            <a class="link-more" href="{{ include.base }}/people/david-leonard/">More</a>
-        </p>
-        <ul class="list-social list-social-horizontal">
-            <li class="social-twitter"><a href="http://www.twitter.com/davidleonardii">@davidleonardii</a></li>
-        </ul>
-    </div>
+  <h3 class="p-name profile-name">David Leonard</h3>
+  <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/david-leonard.jpg" />
+
+  <div class="p-note profile-note">
+      <p>
+        {% if include.context == '2014-fellows' %}
+          <a href="{{ include.base }}/cities/sanantonio/">San Antonio Team</a>
+        {% else %}
+          Frontend Developer
+        {% endif %}
+      </p>
+      <p>David is a designer and developer. He helps Code for America focus on serving its users on the web and across digital platforms. David worked as a 2014 fellow in San Antonio, Texas, where his team developed open data practices and made <a href="http://homebasefix.com" target="_blank">Homebase</a> &hellip;</p>
+      <p><a class="link-more" href="{{ include.base }}/people/david-leonard/">More</a></p>
+      <ul class="list-social list-social-horizontal">
+        <li class="social-linkedin"><a href="http://www.linkedin.com/in/davidrleonard"></a></li>
+        <li class="social-github"><a href="https://github.com/davidrleonard">GitHub</a></li>
+        <li class="social-twitter"><a href="http://www.twitter.com/davidleonardii">@davidleonardii</a></li>
+      </ul>
+  </div><!-- end profile-note -->
+
 </div>
 
 {% endif %}
