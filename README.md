@@ -23,7 +23,7 @@ How to contribute
 
 We need your help to keep our content accurate and up to date. The easiest way for to help is to submit a pull request with one of the below: 
 
-* For members of the community including fellows, brigade captains, and staff, find yourself and your friends in the [big list of people](http://codeforamerica.org/people/) or one of the [lists of civic hackers](http://codeforamerica.org/geeks/our-geeks/) and let us know if your bio is correct and photo current. Personal photos should be about 200 x 200px.
+* For members of the community — including fellows, brigade captains, civic startups, and mentors — find yourself and your friends on one of the [lists of civic hackers](http://codeforamerica.org/geeks/our-geeks/) and let us know if your bio is correct and photo current. For staff, find yourself on the [staff page](http://codeforamerica.org/about/team/) and let us know if your bio is correct and photo current. Personal photos should be about 200 x 200px.
 * If you built an app or project as part of the fellowship or accelerator programs, find it on the [apps page](http://codeforamerica.org/apps) and verify that we’ve got it described accurately.
 * Check government information for brigades and fellowships on the [2014 government partners](http://codeforamerica.org/cities/2014-cities) and [alumni government partners](http://codeforamerica.org/cities/alumni) pages and fill in any blanks you might find.
 * We need quality photos for page headers. Should be about 1200 x 500px, JPG compressed to 150kb max.
