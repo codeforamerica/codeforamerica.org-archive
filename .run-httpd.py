@@ -23,13 +23,16 @@ LoadModule mime_module {ModulesPath}/mod_mime.so
     LoadModule unixd_module {ModulesPath}/mod_unixd.so
 </IfDefine>
 
+<IfDefine MpmEvent>
+    LoadModule mpm_event_module {ModulesPath}/mod_mpm_event.so
+</IfDefine>
+
 <IfDefine Version2.2>
     LoadModule log_config_module {ModulesPath}/mod_log_config.so
     LockFile "{ServerRoot}/accept.lock"
 </IfDefine>
 
 <IfDefine Version2.4>
-    LoadModule mpm_event_module {ModulesPath}/mod_mpm_event.so
     LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
     Mutex file:{ServerRoot}
 </IfDefine>
@@ -106,6 +109,9 @@ def run_apache(root, port, watch):
         
         if exists(join(mod_path, 'mod_unixd.so')):
             httpd_cmd += ('-DUnixd', )
+
+        if exists(join(mod_path, 'mod_mpm_event.so')):
+            httpd_cmd += ('-DMpmEvent', )
 
         stderr = open(join(root, 'stderr'), 'w')
         stdout = open(join(root, 'stdout'), 'w')
