@@ -135,6 +135,7 @@ h5 {
 .speaker-box {
   border: 1px solid #ccc;
   margin-top: 20px;
+  background-color: white;
 }
 .speaker-content {
   padding: 25px;  
@@ -151,19 +152,43 @@ p.speaker-name {
 
 /* Styling topic bugs */
 a.topic {
-  border: 2px solid #4298bb;
+  border-bottom: 2px solid #4298bb;
   text-transform: uppercase;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
   color: #4298bb;
 
   margin-bottom: 4px;
 }
 a.topic:hover {
-  border: 2px solid #4298bb;
+  border-bottom: 2px solid #4298bb;
   border-bottom: 2px solid;
   border-bottom-color: #4298bb;
   opacity: 0.5;
+}
+
+/* New topic bugs */
+div.topic {
+  border: 2px solid #4298bb;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-bottom: 4px;
+  line-height: 16px;
+}
+div.topic a {
+  font-size: 14px;
+  line-height: 10px;
+  color: #4298bb;
+}
+div.topic:hover {
+  border-bottom-color: #4298bb;
+  opacity: 0.5;
+  a {
+    border-bottom: none;
+  }
+}
+div.topic + div.topic {
+  margin-top: 10px;
 }
 
 /* Style the play symbol */
@@ -293,4 +318,28 @@ input.valid, select.valid, textarea.valid {
 // Invalid selects, textareas have a red border, like inputs
 select.invalid, textarea.invalid {
     border: 1px solid #cf1b41;
+}
+
+// ###### SPEAKER PAGE ######
+
+figure + h4 {
+  margin-top: 0.5em;
+}
+
+// ###### FIXES WE SHOULD FOLD INTO PATTERN LIBRARY ######
+
+.spotlight table {
+  margin-bottom: 0;
+}
+
+section + section {
+  margin-top: 2em;
+}
+
+.global-footer {
+  margin-top: 2em;
+}
+
+[class*="slab-"]+ .global-footer {
+  margin-top: 0;
 }

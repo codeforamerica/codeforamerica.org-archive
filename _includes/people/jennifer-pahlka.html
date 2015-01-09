@@ -10,18 +10,22 @@
 {% assign github            = 'pahlkadot' %}
 
 {% comment %} These variables are specifically for speaker pages and cards. {% endcomment %}
-{% assign speaker-bio       = 'Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards, including MIT’s Kevin Lynch Award, the Oxford Internet Institute’s Internet and Society Award, and the National Democratic Institute’s Democracy Award. She spent eight years at CMP Media, where she ran the Game Developers Conference, Game Developer magazine, Gamasutra.com, and the Independent Games Festival. Previously, she ran the Web 2.0 and Gov 2.0 events for TechWeb, in conjunction with O’Reilly Media. She is a graduate of Yale University and lives in Oakland, Calif. with her daughter, her fiance, and seven chickens.' %}
+{% assign speaker-bio       = 'Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and is the recipient of several awards, including MIT’s Kevin Lynch Award, the Oxford Internet Institute’s Internet and Society Award, and the National Democratic Institute’s Democracy Award. <!-- break -->She spent eight years at CMP Media, where she ran the Game Developers Conference, Game Developer magazine, Gamasutra.com, and the Independent Games Festival. Previously, she ran the Web 2.0 and Gov 2.0 events for TechWeb, in conjunction with O’Reilly Media. She is a graduate of Yale University and lives in Oakland, Calif. with her daughter, her fiance, and seven chickens.' %}
 {% assign speaker-short-bio = 'Jennifer is founder and executive director of Code for America. She recently served as US Deputy Chief Technology Officer at the White House.' %}
 {% assign speaker-title     = 'Executive Director, Code for America' %}
 
 {% assign speaker-topics     = 'philosophy-gov\Philosophy of Government Innovation|gov-software\Making Software for Governments' | split: "|" %}
 
-{% assign speaker-quote     = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, unde at debitis tenetur deleniti eum, est dignissimos ad illo dolore eos labore ducimus ut quaerat necessitatibus explicabo eaque nulla atque.' %}
-{% assign speaker-qoute-src = 'John Smith|Title, Conference' | split: '|' %}
+{% assign speaker-quote     = 'If there&rsquo;s one thing government needs desperately, it&rsquo;s the ability to quickly try something, pivot when necessary, and build complex systems by starting with simple systems that work and evolving from there, not the other way around.' %}
+{% assign speaker-quote-src = 'Jennifer Pahlka|Executive Director, Code for America' | split: '|' %}
 
-{% assign speaker-vid-title = 'Video Title Here Here' %}
-{% assign speaker-vid-link  = 'http://youtube.com/videolink' %}
+{% assign speaker-vid-title = 'Coding a Better Government' %}
 {% assign speaker-vid-desc  = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi distinctio cum, quae odit facilis reiciendis fugit facere culpa porro laudantium provident architecto excepturi adipisci odio modi nihil veritatis, nam quasi.' %}
+{% assign speaker-vid-date  = 'December 12, 2012' %}
+{% assign speaker-vid-loc   = 'San Francisco, CA' %}
+{% assign speaker-vid-group = 'TED Conference' %}
+{% capture embed %}<iframe src="http://embed.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
+{% assign speaker-playlist  = 'http://youtube.com/xxxxxxx' %}
 
 {% assign speaker-similar   = 'michal-migurski|catherine-bracy' | split: '|' %}
 {% comment %} End variables {% endcomment %}
@@ -65,7 +69,7 @@
 
 {% elsif include.context == 'speaker-page' %}
 
-<div class="layout-semibreve">
+<section class="layout-semibreve">
 
   <div class="layout-minor">
     <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/{{ key }}.jpg" />
@@ -74,44 +78,107 @@
       <strong>{{ name }}</strong><br />
       <small>{{ speaker-title }}</small>
     </p>
-    <p>{{ speaker-short-bio }}</p>
 
     <p><strong>Speaks about:</strong></p>
     {% for entries in speaker-topics %}
       {% for topic in entries %}
-        <p><a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="topic {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a></p>
+        <div class="topic {{ topic | split: '\' | first }}">
+          <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="">{{ topic | split: '\' | last }}</a>
+        </div>
       {% endfor %}
     {% endfor %}
 
-    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/{{ key }}">Request {{ name | split: ' ' | first }}</a></p>
   </div><!-- end .layout-minor -->
 
   <div class="layout-major">
-    <p class="p-note">Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards, including MIT’s Kevin Lynch Award, the Oxford Internet Institute’s Internet and Society Award, and the National Democratic Institute’s Democracy Award. She spent eight years at CMP Media, where she ran the Game Developers Conference, Game Developer magazine, Gamasutra.com, and the Independent Games Festival. Previously, she ran the Web 2.0 and Gov 2.0 events for TechWeb, in conjunction with O’Reilly Media. She is a graduate of Yale University and lives in Oakland, Calif. with her daughter, her fiance, and seven chickens.</p>
+    {% if speaker-bio contains '<!-- break -->' %}
+      <p>{{ speaker-bio | split: '<!-- break -->' | first }}</p>
+      <p>{{ speaker-bio | split: '<!-- break -->' | last }}</p>
+    {% else %}  
+      <p>{{ speaker-bio }}</p>
+    {% endif %}
     
-    <div class="spotlight">
-      <h3 class="text-whisper">Contact</h3>
-      <table class="table-unstyled table-minor">
+    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ key }}">Make a speaker request for {{ name | split: ' ' | first }}</a></p>
+  </div>
 
-        <tr>
-          <th>Twitter</th>
-          <td><a href="https://twitter.com/pahlkadot">@pahlkadot</a></td>
-        </tr>
-        <tr>
-          <th>LinkedIn</th>
-          <td><a href="http://www.linkedin.com/in/jpahlka">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>jpahlka</a></td>
-        </tr>
-        <tr>
-          <th>Blog Posts</th>
-          <td><a href="http://www.codeforamerica.org/author/jen/">http://www<wbr>.codeforamerica<wbr>.org/<wbr>author/<wbr>jen/</a></td>
-        </tr>
+</section><!-- end .layout-semibreve -->
 
-      </table>
-    </div><!-- end .spotlight -->
+{% if speaker-quote and speaker-quote-src %}
+  <section class="slab-blue">
+    <div class="layout-semibreve">
 
+    <div class="highlight">
+      <blockquote>
+        <p>{{ speaker-quote }}</p>
+      </blockquote>
+      <p class="attribute">{{ speaker-quote-src | first }} <a href="#">{{ speaker-quote-src | last }}</a></p>
+    </div>
+    
+    </div>
+  </section>
+{% endif %}
+
+<section class="layout-semibreve">
+
+  <div class="layout-minor">
+    {% if twitter or linkedin or github or blogpost-key %}
+      <ul class="list-no-bullets">
+        <li>On Social Media:</li>
+
+        {% if twitter %}
+          <li class="icon-twitter2"> <a href="https://twitter.com/{{ twitter }}">@{{ twitter }}</a></li>
+        {% endif %}
+        
+        {% if linkedin %}
+          <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ linkedin }}">{{ linkedin }}</li>
+        {% endif %}
+
+        {% if github %}
+          <li class="icon-github2"> <a href="http://github.com/{{ github }}">{{ github }}</a></li>
+        {% endif %}
+
+        {% if blogpost-key %}
+          <li class="icon-bubble"> <a href="http://www.codeforamerica.org/author/{{ blog-key }}/">Blog posts</a></li>
+        {% endif %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <div class="layout-major">
+
+    <figure>
+      {{ embed }}
+    </figure>
+
+    <h4><strong>Featured Engagement:</strong> {{ speaker-vid-title }}</h4>
+    <ul>
+      <li><strong>Event Name:</strong> {{ speaker-vid-group }}</li>
+      <li><strong>Date:</strong> {{ speaker-vid-date }}</li>
+      <li><strong>Location:</strong> {{ speaker-vid-loc }}</li>
+      <li><strong>Description:</strong> {{ speaker-vid-desc }}</li>
+    </ul>
+
+    <p><a href="{{ speaker-playlist }}">See more speaking engagements</a></p>
+    
   </div><!-- end .layout-major -->
 
-</div><!-- end .layout-semibreve -->
+</section><!-- end .layout-semibreve -->
+
+{% if speaker-similar %}
+  <section class="slab-gray">
+    <div class="layout-semibreve layout-centered">
+
+      <h2>Similar Speakers</h2>
+   
+      {% for entries in speaker-similar %}
+        {% for speaker in entries %}
+          <div class="layout-minim">{% include people/{{ speaker }}.html context="speaker-card" base=".." %}</div>
+        {% endfor %}
+      {% endfor %}
+    
+    </div>   
+  </section>
+{% endif %}
 
 {% elsif include.context == 'about-team' %}
 
