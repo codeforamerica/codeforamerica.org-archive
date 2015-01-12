@@ -322,7 +322,7 @@ RedirectMatch permanent ^/pages/tools/?$ /2013/07/16/tools-of-the-civic-trade
 RedirectMatch permanent ^/apps/blightstatus/?$ /apps/civicinsight
 RedirectMatch permanent ^/demo/?$ /2012/06/13/demo/
 RedirectMatch permanent ^/jennifer-pahlka-speaks-out/?$ /contact
-RedirectMatch permanent ^/codeacross/?$ /events/codeacross-2014/
+RedirectMatch permanent ^/codeacross/?$ /events/codeacross-2015/
 RedirectMatch permanent ^/code-across-america-2012/?$ /events/codeacross-2012/
 RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
 RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
