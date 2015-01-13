@@ -4,10 +4,7 @@
 {% assign position          = 'Executive Director' %}
 {% assign full-bio          = 'Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards, including MIT’s Kevin Lynch Award, the Oxford Internet Institute’s Internet and Society Award, and the National Democratic Institute’s Democracy Award. She spent eight years at CMP Media, where she ran the Game Developers Conference, Game Developer magazine, Gamasutra.com, and the Independent Games Festival. Previously, she ran the Web 2.0 and Gov 2.0 events for TechWeb, in conjunction with O’Reilly Media. She is a graduate of Yale University and lives in Oakland, Calif. with her daughter, her fiance, and seven chickens.' %}
 {% assign short-bio         = 'Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards...' %}
-{% assign speaker-twitter   = 'pahlkadot' %}
-{% assign speaker-linkedin  = 'jpahlka' %}
-{% assign speaker-blogposts = 'jen' %}
-{% assign speaker-github    = 'pahlkadot' %}
+
 
 {% comment %} These variables are specifically for speaker pages and cards. {% endcomment %}
 
@@ -19,16 +16,22 @@
   {% assign speaker-title     = 'Executive Director, Code for America' %}
   {% assign speaker-topics    = 'philosophy-gov\Philosophy of Government Innovation|gov-software\Making Software for Governments' | split: "|" %}
 
-  {% assign speaker-quote     = 'If there&rsquo;s one thing government needs desperately, it&rsquo;s the ability to quickly try something, pivot when necessary, and build complex systems by starting with simple systems that work and evolving from there, not the other way around.' %}
-  {% assign speaker-quote-src = 'Jennifer Pahlka|Executive Director, Code for America' | split: '|' %}
-
   {% assign speaker-vid-title = 'Coding a Better Government' %}
   {% assign speaker-vid-desc  = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi distinctio cum, quae odit facilis reiciendis fugit facere culpa porro laudantium provident architecto excepturi adipisci odio modi nihil veritatis, nam quasi.' %}
   {% assign speaker-vid-date  = 'December 12, 2012' %}
   {% assign speaker-vid-loc   = 'San Francisco, CA' %}
   {% assign speaker-vid-group = 'TED Conference' %}
-  {% capture embed %}<iframe src="http://embed.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
   {% assign speaker-playlist  = 'http://youtube.com/xxxxxxx' %}
+  {% capture embed %}<iframe src="http://embed.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
+
+  {% comment %} This information is not required but highly suggested. {% endcomment %}
+  {% assign speaker-twitter   = 'pahlkadot' %}
+  {% assign speaker-linkedin  = 'jpahlka' %}
+  {% assign speaker-blogposts = 'jen' %}
+  {% assign speaker-github    = 'pahlkadot' %}
+
+  {% assign speaker-quote     = 'If there&rsquo;s one thing government needs desperately, it&rsquo;s the ability to quickly try something, pivot when necessary, and build complex systems by starting with simple systems that work and evolving from there, not the other way around.' %}
+  {% assign speaker-quote-src = 'Jennifer Pahlka|Executive Director, Code for America' | split: '|' %}
 
   {% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}
 
@@ -84,7 +87,7 @@
     <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/{{ speaker-key }}.jpg" />
     
     <p>
-      <strong>{{ name }}</strong><br />
+      <strong>{{ speaker-name }}</strong><br />
       <small>{{ speaker-title }}</small>
     </p>
 
@@ -112,17 +115,17 @@
 
   <div class="layout-major">
     {% if speaker-topics %}
-    <h6>Speaks about:</h6>
+      <h6>Speaks about:</h6>
 
-    <div class="button-group">
+      <div class="button-group">
 
-      {% for entries in speaker-topics %}
-        {% for topic in entries %}
-          <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+        {% for entries in speaker-topics %}
+          {% for topic in entries %}
+            <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
 
-    </div>
+      </div>
     {% endif %}
 
     <h6>Biography:</h6>
@@ -133,7 +136,7 @@
       <p>{{ speaker-bio }}</p>
     {% endif %}
     
-    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ speaker-key }}">Request {{ name }}</a></p>
+    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ speaker-key }}">Request {{ speaker-name }}</a></p>
   </div>
 
 </section><!-- end .layout-semibreve -->
@@ -145,6 +148,8 @@
   </div>
 
   <div class="layout-minor">
+
+    {% if speaker-events %}
     <h6>Recent Events:</h6>
     <ul class="list-no-bullets">
     {% for entries in speaker-events %}
@@ -156,6 +161,8 @@
       {% endfor %}
     {% endfor %}
     </ul>
+    {% endif %}
+
   </div>
 
   <div class="layout-major">
