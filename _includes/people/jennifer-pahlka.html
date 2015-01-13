@@ -79,6 +79,26 @@
       <small>{{ speaker-title }}</small>
     </p>
 
+    {% if twitter or linkedin or github or blogpost-key %}
+      <ul class="list-no-bullets text-whisper">
+        {% if twitter %}
+          <li class="icon-twitter2"> <a href="https://twitter.com/{{ twitter }}">@{{ twitter }}</a></li>
+        {% endif %}
+        
+        {% if linkedin %}
+          <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ linkedin }}">{{ linkedin }}</li>
+        {% endif %}
+
+        {% if github %}
+          <li class="icon-github2"> <a href="http://github.com/{{ github }}">{{ github }}</a></li>
+        {% endif %}
+
+        {% if blogpost-key %}
+          <li class="icon-bubble"> <a href="http://www.codeforamerica.org/author/{{ blog-key }}/">Blog posts</a></li>
+        {% endif %}
+      </ul>
+    {% endif %}
+
     <p><strong>Speaks about:</strong></p>
     {% for entries in speaker-topics %}
       {% for topic in entries %}
@@ -98,7 +118,7 @@
       <p>{{ speaker-bio }}</p>
     {% endif %}
     
-    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ key }}">Make a speaker request for {{ name | split: ' ' | first }}</a></p>
+    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ key }}">Request {{ name | split: ' ' | first }}</a></p>
   </div>
 
 </section><!-- end .layout-semibreve -->
@@ -121,27 +141,7 @@
 <section class="layout-semibreve">
 
   <div class="layout-minor">
-    {% if twitter or linkedin or github or blogpost-key %}
-      <ul class="list-no-bullets">
-        <li>On Social Media:</li>
 
-        {% if twitter %}
-          <li class="icon-twitter2"> <a href="https://twitter.com/{{ twitter }}">@{{ twitter }}</a></li>
-        {% endif %}
-        
-        {% if linkedin %}
-          <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ linkedin }}">{{ linkedin }}</li>
-        {% endif %}
-
-        {% if github %}
-          <li class="icon-github2"> <a href="http://github.com/{{ github }}">{{ github }}</a></li>
-        {% endif %}
-
-        {% if blogpost-key %}
-          <li class="icon-bubble"> <a href="http://www.codeforamerica.org/author/{{ blog-key }}/">Blog posts</a></li>
-        {% endif %}
-      </ul>
-    {% endif %}
   </div>
 
   <div class="layout-major">
