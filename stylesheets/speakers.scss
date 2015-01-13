@@ -150,23 +150,6 @@ p.speaker-name {
   margin-bottom: 0;
 }
 
-/* Styling topic bugs */
-a.topic {
-  border-bottom: 2px solid #4298bb;
-  text-transform: uppercase;
-  padding: 5px;
-  font-size: 12px;
-  color: #4298bb;
-
-  margin-bottom: 4px;
-}
-a.topic:hover, a.topic:active {
-  border-bottom: 2px solid #4298bb;
-  border-bottom: 2px solid;
-  border-bottom-color: #4298bb;
-  opacity: 0.5;
-}
-
 /* Style the play symbol */
 
 div.play-symbol {
