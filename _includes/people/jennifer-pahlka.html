@@ -75,6 +75,27 @@
 
 </div>
 
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Jennifer Pahlka</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jennifer-pahlka.jpg">
+
+    <div class="p-note profile-note">
+   <p>Founder and Executive Director</p>
+    
+        <p>Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards...</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/jennifer-pahlka/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/in/jpahlka">LinkedIn</a></li>
+
+            <li class="social-github"><a href="https://github.com/pahlkadot">GitHub</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/pahlkadot">@pahlkadot</a></li>
+        </ul>
+    </div>
+</div>
+
 {% elsif include.context == 'speaker-page' %}
 
 <section class="layout-semibreve">
@@ -219,27 +240,6 @@
     </div>   
   </section>
 {% endif %}
-
-{% elsif include.context == 'about-team' %}
-
-<div class="h-card profile-small">
-    <h3 class="p-name profile-name">Jennifer Pahlka</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jennifer-pahlka.jpg">
-
-    <div class="p-note profile-note">
-	 <p>Founder and Executive Director</p>
-    
-        <p>Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards...</p>
-
-        <p><a class="link-more" href="{{ include.base }}/people/jennifer-pahlka/">More</a></p>
-
-        <ul class="list-social list-social-horizontal">
-            <li class="social-linkedin"><a href="http://www.linkedin.com/in/jpahlka">LinkedIn</a></li>
-
-            <li class="social-github"><a href="https://github.com/pahlkadot">GitHub</a></li>
-            <li class="social-twitter"><a href="https://twitter.com/pahlkadot">@pahlkadot</a></li>
-        </ul>
-    </div>
-</div>
 
 {% elsif include.context == 'speaker-card' %}
 
