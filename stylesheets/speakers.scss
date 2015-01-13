@@ -311,3 +311,11 @@ section + section {
 [class*="slab-"] + .global-footer {
   margin-top: 0;
 }
+
+[class*="topic"].button.button-subtle,
+[class*="topic"].button.button-subtle.button-s {
+  height: inherit;
+  line-height: 14px * 1.5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

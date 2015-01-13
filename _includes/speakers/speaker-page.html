@@ -42,7 +42,7 @@
 
         {% for entries in speaker-topics %}
           {% for topic in entries %}
-            <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+            <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="topic button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
           {% endfor %}
         {% endfor %}
 

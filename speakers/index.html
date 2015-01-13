@@ -2,6 +2,7 @@
 layout: speakers
 title: Find a Speaker
 masthead-image: "../media/images/speakers/jacob-solomon.jpg"
+include-jquery: true
 
 # This should be true if this is the landing page, or if this page accepts the full-depth header
 speaker-header: true
@@ -27,11 +28,12 @@ speaker-featured-description: "Jacob Solomon talks about opportunities to build 
   
   <div class="layout-minor">
     <h5><strong>Choose a speaker by topic:</strong></h5>
-    <p><a href="#" class="button topic">Principles of Government Innovation</a></p>
-    <p><a href="#" class="button button-bold topic">Community Organizing</a></p>
-    <p><a href="#" class="button button-alternative topic">User-centered Design</a></p>
-    <p><a href="#" class="button button-neutral topic">Open Source Government Software</a></p>
-    <p><a href="#" class="button topic">Civic Startups</a></p>
+    <p id="passedParams"></p>
+    <p><a href="#" id="philosophy-gov" class="topic-select button button-subtle">Principles of Government Innovation</a></p>
+    <p><a href="#" id="community" class="topic-select button button-subtle">Community Organizing</a></p>
+    <p><a href="#" id="design-ux" class="topic-select button button-subtle">User-centered Design</a></p>
+    <p><a href="#" id="open-source" class="topic-select button button-subtle">Open Source Government Software</a></p>
+    <p><a href="#" id="companies" class="topic-select button button-subtle">Civic Companies</a></p>
   </div>
 
   <div class="layout-major">
@@ -90,4 +92,24 @@ speaker-featured-description: "Jacob Solomon talks about opportunities to build 
 
 </section>
 
-<section class="layout-semibreve"></section>
+<script src="/script/params.js"></script>
+<script>
+  $(document).ready(function() {
+    if (!jQuery.isEmptyObject(urlParams)) {
+      topicParams = urlParams['topics'];
+
+      if (topicParams.indexOf(',') >= 0) {
+        topics = topicParams.split(',');
+        console.log('OK! Splitting up.')
+        console.log(topics);
+      } else {
+        topics = topicParams
+        console.log('No splitting necessary.')
+        console.log(topics);
+      }
+
+      console.log('topic params ' + topicParams);
+      $('#passedParams').html(topicParams);
+    }
+  });
+</script>
