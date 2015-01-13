@@ -171,7 +171,7 @@ a.topic:hover {
 div.topic {
   border-bottom: 2px solid #4298bb;
   text-transform: uppercase;
-  padding: 5px;
+  padding-bottom: 5px;
   margin-bottom: 4px;
   line-height: 16px;
 }
@@ -340,6 +340,7 @@ section + section {
   margin-top: 2em;
 }
 
-[class*="slab-"]+ .global-footer {
+[class*="slab-"] + [class*="slab-"],
+[class*="slab-"] + .global-footer {
   margin-top: 0;
 }

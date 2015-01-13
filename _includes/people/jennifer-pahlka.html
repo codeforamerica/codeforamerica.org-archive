@@ -123,21 +123,6 @@
 
 </section><!-- end .layout-semibreve -->
 
-{% if speaker-quote and speaker-quote-src %}
-  <section class="slab-blue">
-    <div class="layout-semibreve">
-
-    <div class="highlight">
-      <blockquote>
-        <p>{{ speaker-quote }}</p>
-      </blockquote>
-      <p class="attribute">{{ speaker-quote-src | first }} <a href="#">{{ speaker-quote-src | last }}</a></p>
-    </div>
-    
-    </div>
-  </section>
-{% endif %}
-
 <section class="layout-semibreve">
 
   <div class="layout-minor">
@@ -163,6 +148,21 @@
   </div><!-- end .layout-major -->
 
 </section><!-- end .layout-semibreve -->
+
+{% if speaker-quote and speaker-quote-src %}
+  <section class="slab-blue">
+    <div class="layout-semibreve">
+
+    <div class="highlight">
+      <blockquote>
+        <p>{{ speaker-quote }}</p>
+      </blockquote>
+      <p class="attribute">{{ speaker-quote-src | first }} <a href="#">{{ speaker-quote-src | last }}</a></p>
+    </div>
+    
+    </div>
+  </section>
+{% endif %}
 
 {% if speaker-similar %}
   <section class="slab-gray">
