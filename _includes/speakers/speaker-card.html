@@ -1,0 +1,21 @@
+<div class="speaker-box">
+  <img src="/media/images/speakers/{{ speaker-key }}.jpg" alt="">
+
+  <div class="speaker-content">
+
+    <p class="speaker-name">{{ speaker-name }}</p>
+    <p class="speaker-title">{{ speaker-title }}</p>
+
+    <p><strong>Speaks about:</strong></p>
+    {% for entries in speaker-topics %}
+      {% for topic in entries %}
+        <a href="/speakers/topics/{{ topic | split: '\' | first }}" class="button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+      {% endfor %}
+    {% endfor %}
+
+    <p><strong>Biography:</strong></p>
+    <p>{{ speaker-short-bio }}</p>
+
+    <a href="/speakers/{{ speaker-key }}/" class="button-s">Learn more</a>
+  </div>
+</div>
