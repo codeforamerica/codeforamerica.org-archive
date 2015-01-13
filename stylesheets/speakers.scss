@@ -160,35 +160,11 @@ a.topic {
 
   margin-bottom: 4px;
 }
-a.topic:hover {
+a.topic:hover, a.topic:active {
   border-bottom: 2px solid #4298bb;
   border-bottom: 2px solid;
   border-bottom-color: #4298bb;
   opacity: 0.5;
-}
-
-/* New topic bugs */
-div.topic {
-  border-bottom: 2px solid #4298bb;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-  margin-bottom: 4px;
-  line-height: 16px;
-}
-div.topic a {
-  font-size: 14px;
-  line-height: 10px;
-  color: #4298bb;
-}
-div.topic:hover {
-  border-bottom-color: #4298bb;
-  opacity: 0.5;
-  a {
-    border-bottom: none;
-  }
-}
-div.topic + div.topic {
-  margin-top: 10px;
 }
 
 /* Style the play symbol */
@@ -327,6 +303,15 @@ figure + h4 {
 }
 
 // ###### FIXES WE SHOULD FOLD INTO PATTERN LIBRARY ######
+
+h6 {
+  margin-bottom: 0;
+  margin-top: 1.5em;
+}
+
+h6 + * {
+  margin-top: 0.5em;
+}
 
 .spotlight table {
   margin-bottom: 0;
