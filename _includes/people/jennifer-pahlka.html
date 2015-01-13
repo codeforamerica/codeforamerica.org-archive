@@ -14,7 +14,7 @@
 {% assign speaker-short-bio = 'Jennifer is founder and executive director of Code for America. She recently served as US Deputy Chief Technology Officer at the White House.' %}
 {% assign speaker-title     = 'Executive Director, Code for America' %}
 
-{% assign speaker-topics     = 'philosophy-gov\Philosophy of Government Innovation|gov-software\Making Software for Governments' | split: "|" %}
+{% assign speaker-topics    = 'philosophy-gov\Philosophy of Government Innovation|gov-software\Making Software for Governments' | split: "|" %}
 
 {% assign speaker-quote     = 'If there&rsquo;s one thing government needs desperately, it&rsquo;s the ability to quickly try something, pivot when necessary, and build complex systems by starting with simple systems that work and evolving from there, not the other way around.' %}
 {% assign speaker-quote-src = 'Jennifer Pahlka|Executive Director, Code for America' | split: '|' %}
@@ -26,6 +26,8 @@
 {% assign speaker-vid-group = 'TED Conference' %}
 {% capture embed %}<iframe src="http://embed.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
 {% assign speaker-playlist  = 'http://youtube.com/xxxxxxx' %}
+
+{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}
 
 {% assign speaker-similar   = 'michal-migurski|catherine-bracy' | split: '|' %}
 {% comment %} End variables {% endcomment %}
@@ -71,6 +73,10 @@
 
 <section class="layout-semibreve">
 
+  <div class="heading">
+    <h3>Speaker Information</h3>
+  </div>
+
   <div class="layout-minor">
     <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/{{ key }}.jpg" />
     
@@ -99,18 +105,24 @@
       </ul>
     {% endif %}
 
-    <p><strong>Speaks about:</strong></p>
-    {% for entries in speaker-topics %}
-      {% for topic in entries %}
-        <div class="topic {{ topic | split: '\' | first }}">
-          <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="">{{ topic | split: '\' | last }}</a>
-        </div>
-      {% endfor %}
-    {% endfor %}
-
   </div><!-- end .layout-minor -->
 
   <div class="layout-major">
+    {% if speaker-topics %}
+    <h6>Speaks about:</h6>
+
+    <div class="button-group">
+
+      {% for entries in speaker-topics %}
+        {% for topic in entries %}
+          <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+        {% endfor %}
+      {% endfor %}
+
+    </div>
+    {% endif %}
+
+    <h6>Biography:</h6>
     {% if speaker-bio contains '<!-- break -->' %}
       <p>{{ speaker-bio | split: '<!-- break -->' | first }}</p>
       <p>{{ speaker-bio | split: '<!-- break -->' | last }}</p>
@@ -118,15 +130,29 @@
       <p>{{ speaker-bio }}</p>
     {% endif %}
     
-    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ key }}">Request {{ name | split: ' ' | first }}</a></p>
+    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ key }}">Request {{ name }}</a></p>
   </div>
 
 </section><!-- end .layout-semibreve -->
 
 <section class="layout-semibreve">
 
-  <div class="layout-minor">
+  <div class="heading">
+    <h3>Speaking Engagements</h3>
+  </div>
 
+  <div class="layout-minor">
+    <h6>Recent Events:</h6>
+    <ul class="list-no-bullets">
+    {% for entries in speaker-events %}
+      {% for event in entries %}
+        <li>
+          {{ event | split: '\' | first }}
+          <br /><span class="text-whisper">{{ event | split: '\' | last }}</span>
+        </li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
   </div>
 
   <div class="layout-major">
@@ -143,7 +169,9 @@
       <li><strong>Description:</strong> {{ speaker-vid-desc }}</li>
     </ul>
 
-    <p><a href="{{ speaker-playlist }}">See more speaking engagements</a></p>
+    {% if speaker-playlist %}
+      <p><a href="{{ speaker-playlist }}">See more engagement videos</a></p>  
+    {% endif %}
     
   </div><!-- end .layout-major -->
 
@@ -166,16 +194,18 @@
 
 {% if speaker-similar %}
   <section class="slab-gray">
-    <div class="layout-semibreve layout-centered">
+    <div class="layout-semibreve">
 
-      <h2>Similar Speakers</h2>
+      <div class="button-group">
+        <h3>Additional Speakers</h3>
+        <a class="button-default button-s" href="/speakers/">Find more speakers</a>
+      </div>
    
       {% for entries in speaker-similar %}
         {% for speaker in entries %}
           <div class="layout-minim">{% include people/{{ speaker }}.html context="speaker-card" base=".." %}</div>
         {% endfor %}
-      {% endfor %}
-    
+      {% endfor %}   
     </div>   
   </section>
 {% endif %}
