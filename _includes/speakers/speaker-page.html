@@ -108,7 +108,7 @@
 
 </section><!-- end .layout-semibreve -->
 
-{% if speaker-quote and speaker-quote-src %}
+{% if speaker-quote %}
   <section class="slab-blue">
     <div class="layout-semibreve">
 
@@ -116,7 +116,7 @@
       <blockquote>
         <p>{{ speaker-quote }}</p>
       </blockquote>
-      <p class="attribute">{{ speaker-quote-src | first }} <a href="#">{{ speaker-quote-src | last }}</a></p>
+      <p class="attribute">{{ speaker-name }}</p>
     </div>
     
     </div>
@@ -134,7 +134,7 @@
    
       {% for entries in speaker-similar %}
         {% for speaker in entries %}
-          <div class="layout-minim">{% b people/{{ speaker }}.html context="speaker-card" base=".." %}</div>
+          <div class="layout-minim">{% include people/{{ speaker }}.html context="speaker-card" base=".." %}</div>
         {% endfor %}
       {% endfor %}   
     </div>   
