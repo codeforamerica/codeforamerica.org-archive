@@ -306,15 +306,14 @@ figure + h4 {
 
 h6 {
   margin-bottom: 0;
+}
+
+* + h6 {
   margin-top: 1.5em;
 }
 
 h6 + * {
   margin-top: 0.5em;
-}
-
-.spotlight table {
-  margin-bottom: 0;
 }
 
 section + section {
