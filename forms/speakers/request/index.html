@@ -53,6 +53,7 @@ include-params: true
       <form name="speakerForm" accept-charset="UTF-8" action="https://formkeep.com/f/ab9aff298fd2" onsubmit="" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
         <input type="hidden" name="utf8" value="✓">
         <input type="hidden" name="speakerRequested" id="speakerRequested" value="">
+        <input type="hidden" name="requestMadeOn" id="requestMadeOn" value="">
 
         <ul class="list-form">
         
@@ -113,7 +114,7 @@ include-params: true
 
             <div class="form-field">
               <label for="eventFormat">Event Format <abbr title="Required">*</abbr></label>
-              <select id="eventFormat" required>
+              <select id="eventFormat" name="eventFormat" required>
                   <option value="">Pick one...</option>
                   <option>Keynote</option>
                   <option>Fireside chat</option>
@@ -146,14 +147,14 @@ include-params: true
 
           <li class="form-field-group">
             <div class="form-field">
-              <label for="speakerDate">Speaking date <abbr title="Required">*</abbr></label>
-              <input id="speakerDate" name="eventDate" class="input" type="date" placeholder="mm/dd/yyyy" required>
+              <label for="speakingDate">Speaking date <abbr title="Required">*</abbr></label>
+              <input id="speakingDate" name="speakingDate" class="input" type="date" placeholder="mm/dd/yyyy" required>
               <small class="note">Pick the specific day our speaker will be on stage.</small>
             </div>
 
             <div class="form-field">
-              <label for="speakerTime">Speaking time <abbr title="Required">*</abbr></label>
-              <input id="speakerTime" name="speakerTime" class="input" type="time" placeholder="09:00 AM" required>
+              <label for="speakingTime">Speaking time <abbr title="Required">*</abbr></label>
+              <input id="speakingTime" name="speakingTime" class="input" type="time" placeholder="09:00 AM" required>
               <small class="note">Pick a time for the speaking engagement.</small>
             </div>
           </li>
@@ -170,7 +171,7 @@ include-params: true
 
             <div class="form-field">
               <label for="audienceType">Primary audience <abbr title="Required">*</abbr></label>
-              <select id="audienceType" required>
+              <select id="audienceType" name="audienceType" required>
                   <option value="">Pick one...</option>
                   <option>Government Officials/Staff</option>
                   <option>Techies and Civic Hackers: Coders, Designers, Researchers, etc.</option>
@@ -197,19 +198,19 @@ include-params: true
               </ul>
 
               <div class="form-field" id="stipendField" style="display: none;">
-                <label for="stipendOffered">If stipend/honorarium offered, please specify amount/items covered</label>
-                <input id="stipendOffered" name="stipendOffered" class="input disabled" type="text" placeholder="" required>
+                <label for="stipendDetails">If stipend/honorarium offered, please specify amount/items covered</label>
+                <input id="stipendDetails" name="stipendDetails" class="input disabled" type="text" placeholder="" required>
               </div>
             </fieldset>
 
             <div class="form-field">
-              <label for="speakingDesc">What topic do you want us to cover, and how does it tie into your theme? <abbr title="Required">*</abbr></label>
-              <textarea id="speakingDesc" rows="8" cols="32" required></textarea>
+              <label for="speakingDescription">What topic do you want us to cover, and how does it tie into your theme? <abbr title="Required">*</abbr></label>
+              <textarea id="speakingDescription" name="speakingDescription" rows="8" cols="32" required></textarea>
             </div>
           </li>
           
           <li class="form-field">
-            <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox" checked/> Sign me up for the Code for America newsletter</label>
+            <label for="newsletterOptin"><input id="newsletterOptin" name="newsletterOptin" type="checkbox" checked/> Sign me up for the Code for America newsletter</label>
           </li>
 
           <input type="submit" value="Submit">
@@ -324,6 +325,10 @@ include-params: true
       $('#stipendOffered').prop('required',false);
     });
 
+    // Put current date + time into the form
+    var currentDate = new Date();
+    document.getElementById("requestMadeOn").value = currentDate;
+
     if (urlParams['speaker']) { // If there was a speaker parameter in the URL
       console.log("Request worked, passing parameters to function");
             
@@ -339,8 +344,6 @@ include-params: true
       document.getElementById("speakerRequested").value = requestedSpeaker;
     } else {
       console.log("No URL Params.");
-
-
     }
   });
 </script>
