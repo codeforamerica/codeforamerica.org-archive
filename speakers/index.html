@@ -91,25 +91,3 @@ speaker-featured-description: "Jacob Solomon talks about opportunities to build 
   </div>
 
 </section>
-
-<script src="/script/params.js"></script>
-<script>
-  $(document).ready(function() {
-    if (!jQuery.isEmptyObject(urlParams)) {
-      topicParams = urlParams['topics'];
-
-      if (topicParams.indexOf(',') >= 0) {
-        topics = topicParams.split(',');
-        console.log('OK! Splitting up.')
-        console.log(topics);
-      } else {
-        topics = topicParams
-        console.log('No splitting necessary.')
-        console.log(topics);
-      }
-
-      console.log('topic params ' + topicParams);
-      $('#passedParams').html(topicParams);
-    }
-  });
-</script>
