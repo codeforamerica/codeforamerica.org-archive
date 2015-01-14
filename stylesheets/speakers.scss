@@ -219,6 +219,9 @@ div.play-symbol {
   .masthead-s .masthead-header h1 {
     color: $color-medium-red;
   }
+  .overline {
+    display: none; // Hide overline on mobile
+  }
 
   .featured-speaker {
     position: relative;
