@@ -40,8 +40,12 @@ include-params: true
     <div id="formError" class="alert-failure" style="display:none;">
     </div>
 
-    <div id="infoSpeaker" class="layout-minor" style="display:none;">
-      <p>None.</p>
+    <div id="infoSpeaker" class="layout-minor">
+      <div class="alert">
+        <h4>You haven't chosen a speaker!</h4>
+        <p>Please <a href="/speakers/">view our speakers page</a> to find available speakers by name or topic.</p>
+        <p><br /><a href="/speakers/" class="button button-prominent">View available speakers</a></p>
+      </div>
     </div>
 
     <!-- Form content -->
@@ -51,6 +55,22 @@ include-params: true
         <input type="hidden" name="speakerRequested" id="speakerRequested" value="">
 
         <ul class="list-form">
+
+          <li class="form-field-group">
+             <fieldset>
+              <legend><strong>Your chosen speaker</strong></legend>
+            </fieldset>
+
+              <label for="eventFormat">Pick a speaker <abbr title="Required">*</abbr></label>
+              <select id="eventFormat" required>
+                  <option value="">Pick one...</option>
+                  <option value="cyd-harrell">Cyd Harrell</option>
+                  <option value="jennifer-pahlka">Jennifer Pahlka</option>
+                  <option>Panel</option>
+                  <option>Online</option>
+                  <option>Other</option>
+              </select>
+          </li>
           
           <li class="form-field-group">
              <fieldset>
@@ -318,11 +338,12 @@ include-params: true
       $('#stipendOffered').prop('required',false);
     });
 
-    if (urlParams) { // If there was a speaker parameter in the URL
+    if (urlParams['speaker']) { // If there was a speaker parameter in the URL
+      console.log("Request worked, passing parameters to function");
+            
       // Retrieve speaker name from the URL (expected format: firstname-lastname)
       speakerParam = urlParams['speaker'];
-      console.log("Request worked, passing parameters to function");
-      
+
       // Show the speaker name and card
       requestedSpeaker = toPrettyName(speakerParam);
       speakerContent = speakerCards[speakerParam];
@@ -332,6 +353,8 @@ include-params: true
       document.getElementById("speakerRequested").value = requestedSpeaker;
     } else {
       console.log("No URL Params.");
+
+
     }
   });
 </script>
