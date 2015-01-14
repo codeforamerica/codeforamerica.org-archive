@@ -6,6 +6,7 @@ masthead-class: masthead-s
 include-jquery: true
 include-parsley: true
 include-animate: true
+include-params: true
 ---
 <style>
   .list-form li.form-field {
@@ -302,27 +303,8 @@ include-animate: true
     return nameArray.join(" "); // "Firstname Lastname"
   }
 
-  // ===== Pop the URL parameters
-  // Credit for this snippet: Andy E on http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
-  var urlParams;
   var speakerParam;
   var requestedSpeaker;
-
-  (window.onpopstate = function () {
-      var match,
-          pl     = /\+/g,  // Regex for replacing addition symbol with a space
-          search = /([^&=]+)=?([^&]*)/g,
-          decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-          query  = window.location.search.substring(1);
-
-      urlParams = {};
-      while (match = search.exec(query))
-         urlParams[decode(match[1])] = decode(match[2]);
-
-      // End snippet, begin custom code
-      // Retrieve speaker name from the URL (expected format: firstname-lastname)
-      speakerParam = urlParams['speaker'];
-  })();
 
   // ===== Run our functions
   $(document).ready(function() {
@@ -336,7 +318,9 @@ include-animate: true
       $('#stipendOffered').prop('required',false);
     });
 
-    if (speakerParam) { // If there was a speaker parameter in the URL
+    if (urlParams) { // If there was a speaker parameter in the URL
+      // Retrieve speaker name from the URL (expected format: firstname-lastname)
+      speakerParam = urlParams['speaker'];
       console.log("Request worked, passing parameters to function");
       
       // Show the speaker name and card
@@ -347,7 +331,7 @@ include-animate: true
       // Input speaker name into the form
       document.getElementById("speakerRequested").value = requestedSpeaker;
     } else {
-      console.log("Nope, it didn't work");
+      console.log("No URL Params.");
     }
   });
 </script>
