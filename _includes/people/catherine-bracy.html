@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'catherine-bracy' %}
+{% assign speaker-name      = 'Catherine Bracy' %}
+{% assign speaker-bio       = 'Until November 2012, Catherine was a product manager and director of the Obama campaign&rsquo;s technology field office in San Francisco, the first of its kind in American political history. In that role she was responsible for organizing technologists to volunteer their skills to the campaign&rsquo;s technology and digital efforts.<!-- break -->Prior to joining the campaign, she ran the Knight Foundation&rsquo;s 2011 News Challenge and before that was the administrative director at Harvard&rsquo;s Berkman Center for Internet &amp; Society. She is on the board of directors at the Citizen Engagement Lab and the Public Laboratory.' %}
+{% assign speaker-short-bio = 'Catherine was a product manager and director of the Obama campaign&#8217;s technology field office in San Francisco, the first of its kind in US political history.' %}
+{% assign speaker-title     = 'Director of Community Organizing, Code for America' %}
+{% assign speaker-topics    = 'topic-community\Community Organizing' | split: "|" %}
+{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
+{% assign speaker-vid-title = 'Why Good Hackers Make Good Citizens' %}
+{% assign speaker-vid-desc  = 'Hacking is about more than mischief-making or political subversion. As Catherine Bracy describes in this spirited talk, it can be just as much a force for good as it is for evil. She spins through some inspiring civically-minded projects in Honolulu, Oakland and Mexico City &mdash; and makes a compelling case that we all have what it takes to get involved.' %}
+{% assign speaker-vid-date  = 'September 20, 2013' %}
+{% assign speaker-vid-loc   = 'New York, NY' %}
+{% assign speaker-vid-group = 'TEDCity2.0 2013' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'cbracy' %}
+{% assign speaker-linkedin  = false %}
+{% assign speaker-blogposts = 'catherine-bracy' %}
+{% assign speaker-github    = 'cbracy' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'lane-becker|hannah-young' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -57,7 +81,7 @@
     </div>
 </div>
 
-{% elsif include.context == 'speaker-card' %}
+{% elsif include.context == '' %}
 
 
 <div class="speaker-box">
@@ -66,16 +90,24 @@
   <div class="speaker-content">
 
     <p class="speaker-name">Catherine Bracy</p>
-    <p class="speaker-title">Director of Community Organizing, Code for America</p>
+    <p class="speaker-title"></p>
 
     <p><strong>Speaks about:</strong></p>
     <p><a href="#" class="topic topic-civic-community">Civic Engagement &amp; Community Building</a></p>
 
     <p><strong>Biography:</strong></p>
-    <p>Catherine was a product manager and director of the Obama campaign’s technology field office in San Francisco, the first of its kind in US political history.</p>
+    <p></p>
 
     <a href="/speakers/catherine-bracy/" class="button-s">Learn more</a>
   </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
