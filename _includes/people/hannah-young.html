@@ -1,3 +1,28 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'hannah-young' %}
+{% assign speaker-name      = 'Hannah Young' %}
+{% assign speaker-bio       = 'Hannah Young joined Code for America in December 2012. Before moving to San Francisco and getting bit by the startup bug, she worked in Wisconsin newsrooms, the U.S. House of Representatives, and on numerous political campaigns. Hannah graduated with dual degrees in political science and journalism from the University of Wisconsin&ndash;Madison. When she&rsquo;s not working, you can find her reading newspapers and seeking out the best kimchi, coffee, and microbrews San Francisco has to offer.' %}
+{% assign speaker-short-bio = 'Hannah has worked in Wisconsin newsrooms, the U.S. House of Representatives, and on numerous political campaigns.' %}
+{% assign speaker-title     = 'Brigade Program Manager, Code for America' %}
+{% assign speaker-topics    = 'topic-community\Community Organizing' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'HannahDotYoung' %}
+{% assign speaker-linkedin  = 'hannah-young/28/454/909' %}
+{% assign speaker-blogposts = 'hannah-young' %}
+{% assign speaker-github    = 'hannahyoung' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'catherine-bracy|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -55,7 +80,7 @@
     </div>
 </div>
 
-{% elsif include.context == 'speaker-card' %}
+{% elsif include.context == 'xxxxs' %}
 
 <div class="speaker-box">
   <img src="/media/images/speakers/hannah-young.jpg" alt="">
@@ -74,5 +99,13 @@
     <a href="/speakers/hannah-young/" class="button-s">Learn more</a>
   </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
