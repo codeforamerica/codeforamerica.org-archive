@@ -19,7 +19,13 @@
         {% endif %}
         
         {% if speaker-linkedin %}
-          <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-linkedin }}</li>
+          {% if speaker-linkedin contains '/' %}
+            <!-- Using linkedin long url -->
+            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-name }}</li>
+          {% else %}
+            <!-- Using linkedin shortcode -->
+            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-linkedin }}</li>
+          {% endif %}
         {% endif %}
 
         {% if speaker-github %}
