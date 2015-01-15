@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'dharmishta-rood' %}
+{% assign speaker-name      = 'Dharmistha Rood' %}
+{% assign speaker-bio       = 'Dharmishta believes that technology has the capacity to facilitate positive change in the world. Before joining Code for America, she was a Fellow in Psychology at Harvard, a Fellow at MITMedia Lab&rsquo;s Center for Civic Media, wrote cases, industry reports and researched the Internet at Harvard Business School, and was a researcher at the Berkman Center for Internet and Society.<!-- break --> While in Cambridge, she co-founded and co-directed MIT&rsquo;s festival for entrepreneurs in conjunction with the Trust Center for Entrepreneurship. She is on the board of SXSW&rsquo;s V2Venture and Startup Accelerator. She holds an EdM from Harvard University and graduated Phi Beta Kappa from UCLA with a BA in Design | Media Arts.' %}
+{% assign speaker-short-bio = 'Dharmishta was previously a Fellow in Psychology at Harvard, a Fellow at MITMedia Lab&rsquo;s Center for Civic Media, and researched the Internet at Harvard Business School.' %}
+{% assign speaker-title     = 'Accelerator Program Manager, Code for America' %}
+{% assign speaker-topics    = 'topic-community\Community Organizing' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'Dharmishta' %}
+{% assign speaker-linkedin  = 'dharmishta' %}
+{% assign speaker-blogposts = 'dharmishta-rood' %}
+{% assign speaker-github    = false %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'lane-becker|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -54,24 +78,12 @@
     </div>
 </div>
 
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
 {% elsif include.context == 'speaker-card' %}
 
-<div class="speaker-box">
-  <img src="/media/images/speakers/dharmishta-rood.jpg" alt="">
-
-  <div class="speaker-content">
-
-    <p class="speaker-name">Dharmishta Rood</p>
-    <p class="speaker-title">Accelerator Program Manager, Code for America</p>
-
-    <p><strong>Speaks about:</strong></p>
-    <p><a href="#" class="topic topic-companies">Civic Companies</a></p>
-
-    <p><strong>Biography:</strong></p>
-    <p>Dharmishta was previously a Fellow in Psychology at Harvard, a Fellow at MITMedia Lab’s Center for Civic Media, and researched the Internet at Harvard Business School.</p>
-
-    <a href="/speakers/dharmishta-rood/" class="button-s">Learn more</a>
-  </div>
-</div>
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
