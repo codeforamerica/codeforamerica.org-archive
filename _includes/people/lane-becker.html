@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'lane-becker' %}
+{% assign speaker-name      = 'Lane Becker' %}
+{% assign speaker-bio       = 'Until November 2012, Catherine was a product manager and director of the Obama campaign&rsquo;s technology field office in San Francisco, the first of its kind in American political history. In that role she was responsible for organizing technologists to volunteer their skills to the campaign&rsquo;s technology and digital efforts.<!-- break -->Prior to joining the campaign, she ran the Knight Foundation&rsquo;s 2011 News Challenge and before that was the administrative director at Harvard&rsquo;s Berkman Center for Internet &amp; Society. She is on the board of directors at the Citizen Engagement Lab and the Public Laboratory.' %}
+{% assign speaker-short-bio = 'Lane works to promote widespread reuse of Code for America applications within cities, and also runs the civic technology Startup and Accelerator program.' %}
+{% assign speaker-title     = 'Director of Startups, Code for America' %}
+{% assign speaker-topics    = 'companies\Civic Companies' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'monstro' %}
+{% assign speaker-linkedin  = 'lanebecker' %}
+{% assign speaker-blogposts = false %}
+{% assign speaker-github    = 'lanebecker' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'jack-madans|dharmishta-rood' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -39,7 +63,7 @@ over $20 million in investment.
 
 In 2012, Lane co-authored “Get Lucky: How to Put Planned Serendipity
 to Work,” a New York Times bestselling business book about harnessing
-serendipity as a business practice. He’s also a certified hula hooping
+serendipity as a business practice. He&rsquo;s also a certified hula hooping
 instructor.
 	</p>
 
@@ -79,25 +103,12 @@ technology Startup and Accelerator program....
     </div>
 </div>
 
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
 {% elsif include.context == 'speaker-card' %}
 
-<div class="speaker-box">
-  <img src="/media/images/speakers/lane-becker.jpg" alt="">
-
-  <div class="speaker-content">
-
-    <p class="speaker-name">Lane Becker</p>
-    <p class="speaker-title">Director of Startups, Code for America</p>
-
-    <p><strong>Speaks about:</strong></p>
-    <p><a href="#" class="topic topic-companies">Civic Companies</a></p>
-    <p><a href="#" class="topic topic-gov-software">Making Software for Governments</a></p>
-
-    <p><strong>Biography:</strong></p>
-    <p>Lane works to promote widespread reuse of Code for America applications within cities, and also runs the civic technology Startup and Accelerator program.</p>
-
-    <a href="/speakers/lane-becker/" class="button-s">Learn more</a>
-  </div>
-</div>
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
