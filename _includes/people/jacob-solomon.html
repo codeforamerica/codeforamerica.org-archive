@@ -1,3 +1,28 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'jacob-solomon' %}
+{% assign speaker-name      = 'Jacob Solomon' %}
+{% assign speaker-bio       = 'Jacob is a policy analyst and project manager from Oakland. Most recently, he studied the quality of care for mentally ill veterans, the forthcoming Medicaid expansion, and medical marijuana policy in California at RAND Corporation. Previously, he worked as a Forward Deployed Engineer at Palantir Technologies. Jacob studied Economics at Occidental College.' %}
+{% assign speaker-short-bio = 'Jacob is a policy analyst and project manager from Oakland. As a 2013 Fellow, he worked in San Francisco on improving public health outcomes.' %}
+{% assign speaker-title     = 'Health Team, Code for America' %}
+{% assign speaker-topics    = 'health\Health &amp; Human Safety' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'lippytak' %}
+{% assign speaker-linkedin  = 'jake-solomon/4/9b7/a70' %}
+{% assign speaker-blogposts = 'jacob' %}
+{% assign speaker-github    = false %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'rebecca-coelius|jack-madans' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
