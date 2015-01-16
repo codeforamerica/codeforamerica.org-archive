@@ -56,13 +56,7 @@
     {% endif %}
 
     <h6>Biography:</h6>
-    {% if speaker-bio contains '<!-- break -->' %}
-      <p>{{ speaker-bio | split: '<!-- break -->' | first }}</p>
-      <p>{{ speaker-bio | split: '<!-- break -->' | last }}</p>
-    {% else %}  
-      <p>{{ speaker-bio }}</p>
-    {% endif %}
-    
+    <p>{{ speaker-bio | replace: '<!-- break -->','</p><p>' }}</p>   
     <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ speaker-key }}">Request {{ speaker-name }}</a></p>
   </div>
 
