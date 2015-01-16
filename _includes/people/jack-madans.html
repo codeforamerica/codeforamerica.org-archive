@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'jack-madans' %}
+{% assign speaker-name      = 'Jack Madans' %}
+{% assign speaker-bio       = 'Jack&rsquo;s work with CfA’s government partners ranges broadly from innovation policy and open data efforts to change management and community organizing. He cut his teeth as a community organizer early on when he founded the pilot project, FoodCycle, while studying at the London School of Economics.<!-- break -->While interning at the White House, Jack assisted with policy production in the the Office of Urban Affairs and outreach to the nation&rsquo;s Mayors in the office of Intergovernmental Affairs. Jack earned a degree in Political Science from UC Berkeley.' %}
+{% assign speaker-short-bio = 'Jack works with Code for America&#39;s government partners on topics ranging from innovation policy and open data efforts to change management.' %}
+{% assign speaker-title     = 'Government Partnerships Manager, Code for America' %}
+{% assign speaker-topics    = 'open-data\Open Data|focus-justice\Safety &amp; Justice' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'jackmadans' %}
+{% assign speaker-linkedin  = 'jack-madans/38/407/51a' %}
+{% assign speaker-blogposts = 'jack-madans' %}
+{% assign speaker-github    = 'jmadans' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'luke-norris|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -55,25 +79,12 @@
     </div>
 </div>
 
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
 {% elsif include.context == 'speaker-card' %}
 
-<div class="speaker-box">
-  <img src="/media/images/speakers/jack-madans.jpg" alt="">
-
-  <div class="speaker-content">
-
-    <p class="speaker-name">Jack Madans</p>
-    <p class="speaker-title">Government Partnerships Manager, Code for America</p>
-
-    <p><strong>Speaks about:</strong></p>
-    <p><a href="#" class="topic topic-open-data">Open Data</a></p>
-    <p><a href="#" class="topic topic-justice">Safety and Justice</a></p>
-
-    <p><strong>Biography:</strong></p>
-    <p>Jack works with Code for America&#39;s government partners on topics ranging from innovation policy and open data efforts to change management.</p>
-
-    <a href="/speakers/jack-madans/" class="button-s">Learn more</a>
-  </div>
-</div>
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
