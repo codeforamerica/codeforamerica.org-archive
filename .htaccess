@@ -214,15 +214,19 @@ RedirectMatch permanent ^/the-program/?$ /about/fellowship
 # Another round of Fellowship Program reorganization
 #
 #RedirectMatch permanent ^/about/fellowship/?$ /governments/fellowship
-#RedirectMatch permanent ^/governments/fellowship-apply/?$ /governments/fellowship/apply
-#RedirectMatch permanent ^/governments/fellowship-faq/?$ /governments/fellowship/faq
 
 #
 # Governments.
 #
-RedirectMatch permanent ^/governments/apply/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/governments/2013-apply-now/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/governments/apply-now/?$ /governments/fellowship-apply
+# These old links should go to the base government fellowship information page.
+RedirectMatch permanent ^/governments/2013-apply-now/?$ /governments/fellowship
+RedirectMatch permanent ^/governments/fellowship-faq/?$ /governments/fellowship
+# While the fellowship government application is open, these links should go straight to it.
+RedirectMatch permanent ^/governments/apply/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/governments/apply-now/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/governments/fellowship-apply/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/forms/governments/interest/?$ /forms/governments/fellowship/apply
+# Other government redirects
 RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
 RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
 RedirectMatch permanent ^/2012/?$ /governments/alumni
