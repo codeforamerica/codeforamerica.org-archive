@@ -235,9 +235,9 @@ RedirectMatch permanent ^/procurement(/?)$ /governments/principles/procurement$1
 RedirectMatch permanent ^/governments/capabilities(/.+)?$ /governments/principles$1
 
 RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
-RedirectMatch permanent ^/application-info/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/application-questions/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/governments/call-for-applications/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/application-info/?$ /governments/fellowship
+RedirectMatch permanent ^/application-questions/?$ /governments/fellowship
+RedirectMatch permanent ^/governments/call-for-applications/?$ /governments/fellowship
 
 RedirectMatch permanent ^/2013-partners/?$ /governments/alumni
 RedirectMatch permanent ^/city-current/?$ /governments/alumni
