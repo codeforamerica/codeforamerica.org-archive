@@ -225,7 +225,7 @@ RedirectMatch permanent ^/governments/fellowship-faq/?$ /governments/fellowship
 RedirectMatch permanent ^/governments/apply/?$ /forms/governments/fellowship/apply
 RedirectMatch permanent ^/governments/apply-now/?$ /forms/governments/fellowship/apply
 RedirectMatch permanent ^/governments/fellowship-apply/?$ /forms/governments/fellowship/apply
-RedirectMatch permanent ^/forms/governments/interest/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/forms/governments/fellowship/interest/?$ /forms/governments/fellowship/apply
 # Other government redirects
 RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
 RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
