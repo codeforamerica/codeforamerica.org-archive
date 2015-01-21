@@ -160,7 +160,7 @@ RedirectMatch permanent ^/geeks/fellows/job-description/?$ /geeks/fellowship-faq
 RedirectMatch permanent ^/fellows/job-description(/?)$ /geeks/fellows/job-description$1
 RedirectMatch permanent ^/fellows/spread-the-word(/?)$ /geeks/fellows/spread-the-word$1
 RedirectMatch permanent ^/fellows/nominate(/?)$ /geeks/fellows/nominate$1
-RedirectMatch permanent ^/governments/expectations-of-our-city-partners/?$ /governments/fellowship-faq
+RedirectMatch permanent ^/governments/expectations-of-our-city-partners/?$ /governments/fellowship
 RedirectMatch permanent ^/2012-city-videos/?$ /communications/testimonial
 
 #
@@ -214,26 +214,30 @@ RedirectMatch permanent ^/the-program/?$ /about/fellowship
 # Another round of Fellowship Program reorganization
 #
 #RedirectMatch permanent ^/about/fellowship/?$ /governments/fellowship
-#RedirectMatch permanent ^/governments/fellowship-apply/?$ /governments/fellowship/apply
-#RedirectMatch permanent ^/governments/fellowship-faq/?$ /governments/fellowship/faq
 
 #
 # Governments.
 #
-RedirectMatch permanent ^/governments/apply/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/governments/2013-apply-now/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/governments/apply-now/?$ /governments/fellowship-apply
+# These old links should go to the base government fellowship information page.
+RedirectMatch permanent ^/governments/2013-apply-now/?$ /governments/fellowship
+RedirectMatch permanent ^/governments/fellowship-faq/?$ /governments/fellowship
+# While the fellowship government application is open, these links should go straight to it.
+RedirectMatch permanent ^/governments/apply/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/governments/apply-now/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/governments/fellowship-apply/?$ /forms/governments/fellowship/apply
+RedirectMatch permanent ^/forms/governments/fellowship/interest/?$ /forms/governments/fellowship/apply
+# Other government redirects
 RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
 RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
 RedirectMatch permanent ^/2012/?$ /governments/alumni
-RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship-faq
+RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship
 RedirectMatch permanent ^/procurement(/?)$ /governments/principles/procurement$1
 RedirectMatch permanent ^/governments/capabilities(/.+)?$ /governments/principles$1
 
 RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
-RedirectMatch permanent ^/application-info/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/application-questions/?$ /governments/fellowship-apply
-RedirectMatch permanent ^/governments/call-for-applications/?$ /governments/fellowship-apply
+RedirectMatch permanent ^/application-info/?$ /governments/fellowship
+RedirectMatch permanent ^/application-questions/?$ /governments/fellowship
+RedirectMatch permanent ^/governments/call-for-applications/?$ /governments/fellowship
 
 RedirectMatch permanent ^/2013-partners/?$ /governments/alumni
 RedirectMatch permanent ^/city-current/?$ /governments/alumni
