@@ -171,7 +171,7 @@ class TestApache (unittest.TestCase):
                  ('/civic-data-standards', '/governments/data-standards-faq/'),
                  ('/application-info', '/governments/fellowship/'),
                  ('/application-questions', '/governments/fellowship/'),
-                 ('/governments/call-for-applications', '/governments/fellowship'),
+                 ('/governments/call-for-applications', '/governments/fellowship/'),
                  ('/2013-partners', '/governments/alumni/'),
                  ('/city-current', '/governments/alumni/'),
                  ('/governments/current', '/governments/alumni/'),
