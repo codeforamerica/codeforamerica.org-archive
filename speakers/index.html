@@ -18,15 +18,9 @@ speaker-featured-video-title: "The Big Thing About Small Things"
 # REQUIRED: Fill in a description for the speaker (if a video is included, it should describe the video)
 speaker-featured-description: "Jacob Solomon talks about opportunities to build on the relationships and foundational work established during the Code for America Fellowship to further impact on important problems like food security."
 ---
-
-<section class="layout-semibreve layout-centered intro">
-  <h2>Find speakers that inspire</h2>
-  <p>Government reinvention. Social justice. Public open source software. Our staff and friends are respected leaders in a variety of fields. Find an engaging speaker for your next conference or event.</p>
-</section>
-
-<section class="layout-breve">
+<section class="layout-semibreve">
   
-  <div class="layout-minor">
+  <!-- <div class="layout-minor">
     <h5><strong>Choose a speaker by topic:</strong></h5>
     <p id="passedParams"></p>
     <p><a href="#" id="philosophy-gov" class="topic-select button button-subtle">Principles of Government Innovation</a></p>
@@ -34,60 +28,27 @@ speaker-featured-description: "Jacob Solomon talks about opportunities to build 
     <p><a href="#" id="design-ux" class="topic-select button button-subtle">User-centered Design</a></p>
     <p><a href="#" id="open-source" class="topic-select button button-subtle">Open Source Government Software</a></p>
     <p><a href="#" id="companies" class="topic-select button button-subtle">Civic Companies</a></p>
+  </div> -->
+  
+  <div class="layout-centered">
+    <h2>Find speakers that inspire</h2>
+    <p>Government reinvention. Social justice. Public open source software. Our staff and friends are respected leaders in a variety of fields. Find an engaging speaker for your next conference or event.</p>
+    <br />
   </div>
 
-  <div class="layout-major">
-    <div class="layout-minim">
-      {% include people/cyd-harrell.html context="speaker-card" base=".." %}
-    </div>
-    <div class="layout-minim">
-      {% include people/jennifer-pahlka.html context="speaker-card" base=".." %}
-    </div>
-  </div>
-
-  <div class="layout-major">
-    <div class="layout-minim">
-      {% include people/michal-migurski.html context="speaker-card" base=".." %}
-    </div>
-    <div class="layout-minim">
-      {% include people/catherine-bracy.html context="speaker-card" base=".." %}
-    </div>
-  </div>
-
-  <div class="layout-major">
-    <div class="layout-minim">
-      {% include people/luke-norris.html context="speaker-card" base=".." %}
-    </div>
-    <div class="layout-minim">
-      {% include people/nicole-neditch.html context="speaker-card" base=".." %}
-    </div>
-  </div>
-
-  <div class="layout-major">
-    <div class="layout-minim">
-      {% include people/lane-becker.html context="speaker-card" base=".." %}  
-    </div>
-    <div class="layout-minim">
-      {% include people/rebecca-coelius.html context="speaker-card" base=".." %}
-    </div>
-  </div>
-
-  <div class="layout-major">
-    <div class="layout-minim">
-      {% include people/dharmishta-rood.html context="speaker-card" base=".." %}
-    </div>
-    <div class="layout-minim">
-      {% include people/jack-madans.html context="speaker-card" base=".." %}
-    </div>
-  </div>
-
-  <div class="layout-major">
-    <div class="layout-minim">
-      {% include people/hannah-young.html context="speaker-card" base=".." %}
-    </div>
-    <div class="layout-minim">
-      {% include people/jacob-solomon.html context="speaker-card" base=".." %}
-    </div>
-  </div>
+  <ul class="layout-grid-minim">
+    <li>{% include people/cyd-harrell.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/jennifer-pahlka.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/michal-migurski.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/catherine-bracy.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/luke-norris.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/nicole-neditch.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/lane-becker.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/rebecca-coelius.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/dharmishta-rood.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/jack-madans.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/hannah-young.html context="speaker-card" base=".." %}</li>
+    <li>{% include people/jacob-solomon.html context="speaker-card" base=".." %}</li>
+  </ul>
 
 </section>
