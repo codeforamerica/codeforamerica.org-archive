@@ -333,6 +333,11 @@ RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 
 #
+# Pointer for health team
+#
+RedirectMatch permanent ^/health/?$ /our-work/focus-areas/health/projects
+
+#
 # Set of possible Jekyll file extensions + PHP, from
 # https://github.com/jekyll/jekyll/blob/dd3018ce/lib/jekyll/configuration.rb#L39
 #
