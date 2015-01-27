@@ -1,3 +1,28 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'hannah-young' %}
+{% assign speaker-name      = 'Hannah Young' %}
+{% assign speaker-bio       = 'Hannah Young leads Code for America&rsquo;s Brigade Program an international network of over 16,000 civic hackers in 137 cities. Hannah works with Brigades around the globe to build inclusive, sustainable local volunteer communities.<!-- break -->Before Code for America, Hannah worked in Wisconsin newsrooms, the U.S. House of Representatives, and on numerous political campaigns. Hannah graduated with dual degrees in political science and journalism from the University of Wisconsin-Madison.' %}
+{% assign speaker-short-bio = 'Hannah leads Code for America&rsquo;s Brigade Program, a network of over 16,000 civic hackers in 137 cities around the globe.' %}
+{% assign speaker-title     = 'Brigade Program Manager, Code for America' %}
+{% assign speaker-topics    = 'topic-community\Community Organizing|start-brigade\Starting a Brigade|diversity-women\Diversity and Women in Technology|civic-hacking\Civic Hacking' | split: "|" %}
+{% capture embed %}<iframe src="//www.youtube.com/embed/mMJil4Hzjjs" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
+{% assign speaker-vid-title = 'Future of Civic Volunteering: Brigades to Civic Organizations' %}
+{% assign speaker-vid-desc  = 'Hannah Young talks about the tremendous growth of the Brigade and what&rsquo;s next.' %}
+{% assign speaker-vid-date  = 'September 24, 2014' %}
+{% assign speaker-vid-loc   = 'San Francisco, CA' %}
+{% assign speaker-vid-group = 'Code for America Summit' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'HannahDotYoung' %}
+{% assign speaker-linkedin  = 'hannah-young/28/454/909' %}
+{% assign speaker-blogposts = 'hannah-young' %}
+{% assign speaker-github    = 'hannahyoung' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'catherine-bracy|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -54,5 +79,33 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'xxxxs' %}
+
+<div class="speaker-box">
+  <img src="/media/images/speakers/hannah-young.jpg" alt="">
+
+  <div class="speaker-content">
+
+    <p class="speaker-name">Hannah Young</p>
+    <p class="speaker-title">Brigade Program Manager, Code for America</p>
+
+    <p><strong>Speaks about:</strong></p>
+    <p><a href="#" class="topic topic-civic-community">Civic Engagement &amp; Community Building</a></p>
+
+    <p><strong>Biography:</strong></p>
+    <p>Hannah has worked in Wisconsin newsrooms, the U.S. House of Representatives, and on numerous political campaigns.</p>
+
+    <a href="/speakers/hannah-young/" class="button-s">Learn more</a>
+  </div>
+</div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}

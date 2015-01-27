@@ -1,3 +1,116 @@
+{% comment %} THIS INFORMATION IS REQUIRED FOR SPEAKERS.
+  
+  speaker-key: Speaker's first and last name, lowercase and hyphenated.
+    Example: Jane Smith:
+    # speaker-key = 'jane-smith'
+  
+  speaker-name: Speaker's first and last name, formatted normally
+    Example: Jane Smith:
+    # speaker-name = 'Jane Smith'
+
+  speaker-bio: A full, long bio used on the speaker page. (Format: To break it up into multiple paragraphs, use <!-- break -->.)
+    # speaker-bio = 'Jane Smith is a researcher and data scientist.<!-- break -->Jane works in San Francisco, CA.'
+  
+  speaker-short-bio: A short, succinct bio used on the speaker cards. Try to keep in under 140 characters.
+    # speaker-short-bio = 'Jane is a researcher at Code for America. She recently served as Chief Technology Officer of the Civic Widgets Company.'
+
+  speaker-title: Full title, including organization.
+    # speaker-title = 'Researcher, Code for America'
+
+  speaker-topics: An array of topics this speaker is an expert on. (Format: Separate strings with \, separate topics with |.)
+    Example: Philosophy of Government Innovation (short name: philosophy-gov), Making Software for Governments (short name: gov-software)
+    # speaker-topics = 'philosophy-gov\Philosophy of Government Innovation|gov-software\Making Software for Governments'
+    See a list of valid topics here: https://docs.google.com/a/codeforamerica.org/spreadsheets/d/1wH8OjbqE0z22DTd0pRD7LIPFRM3vWap5g_SB0J7gc6E/edit?usp=sharing (Requires cfa.org Google account)
+
+  embed: The embed code for the featured video.
+    # embed = '<iframe src="http://this.com/that" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+
+  speaker-vid-title: Title of the featured video we will embed on the page. (Format: Use Title Case Please)
+    # speaker-vid-title = 'One Seriously Amazing Talk'
+
+  speaker-vid-desc: A short description of what the featured video talk was about.
+    # speaker-vid-desc = 'Jane talks about amazing things happening in civic technology, and the future of awesomeness in the field.'
+
+  speaker-vid-date: Date the featured video talk was given. (Format: Month DD, YYYY)
+    # speaker-vid-date = 'March 21, 2014'
+
+  speaker-vid-loc: The location where the featured video talk was given.
+    # speaker-vid-loc = 'Atlanta, GA'
+
+  speaker-vid-group: The name of the conference the featured video talk was given to.
+    # speaker-vid-group = '2014 Civic Widget Conference'
+
+{% endcomment %}
+
+{% assign speaker-key       = 'jennifer-pahlka' %}
+{% assign speaker-name      = 'Jennifer Pahlka' %}
+{% assign speaker-bio       = 'Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and is the recipient of several awards, including MIT’s Kevin Lynch Award, the Oxford Internet Institute’s Internet and Society Award, and the National Democratic Institute’s Democracy Award. <!-- break -->She spent eight years at CMP Media, where she ran the Game Developers Conference, Game Developer magazine, Gamasutra.com, and the Independent Games Festival. Previously, she ran the Web 2.0 and Gov 2.0 events for TechWeb, in conjunction with O’Reilly Media. She is a graduate of Yale University and lives in Oakland, Calif. with her daughter, her fiance, and seven chickens.' %}
+{% assign speaker-short-bio = 'Jennifer is founder and executive director of Code for America. She recently served as US Deputy Chief Technology Officer at the White House.' %}
+{% assign speaker-title     = 'Executive Director, Code for America' %}
+{% assign speaker-topics    = 'philosophy-gov\Philosophy of Government Innovation' | split: "|" %}
+
+{% capture embed %}<iframe src="http://embed.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
+{% assign speaker-vid-title = 'Coding a Better Government' %}
+{% assign speaker-vid-desc  = 'Can government be run like the Internet, permissionless and open? Coder and activist Jennifer Pahlka believes it can — and that apps, built quickly and cheaply, are a powerful new way to connect citizens to their governments &ndash; and their neighbors.' %}
+{% assign speaker-vid-date  = 'February 2012' %}
+{% assign speaker-vid-loc   = 'Long Beach, CA' %}
+{% assign speaker-vid-group = 'TED2012' %}
+
+{% comment %} This information is not required but highly suggested. 
+
+  speaker-twitter: Speaker's twitter handle.
+    Example: @CivicJaneSmith222
+    # speaker-twitter = 'CivicJaneSmith222'
+
+  speaker-linkedin: Speaker's linkedin short code.
+    Example: http://linkedin.com/in/janesmith2
+    # speaker-linkedin = 'janesmith2'
+
+  speaker-blogposts: URL key for speaker's Code for America blog posts.
+    Example: http://www.codeforamerica.org/blog/author/janesmith/
+    # speaker-blogposts = 'janesmith'
+
+  speaker-github: Speaker's Github username.
+    Example: http://github.com/janesmithcodes
+    # speaker-github = 'janesmithcodes'
+
+  speaker-playlist: A link to a YouTube playlist that has more videos from this speaker.
+    # speaker-playlist = 'http://youtube.com/playlist-link-1234'
+
+  speaker-quote: An inspiring or interesting quote from the speaker.
+    Example: The only thing to fear is fear itself.
+    # speaker-quote = 'The only thing to fear is fear itself.'
+
+  speaker-events: An array of events this speaker has recently given a talk at. (Format: Separate strings with \, separate events with |.)
+    Format: First Talk Name, Event Name\Month DD, YYYY in City, State|Second Talk Name, Event Name\Month DD, YYYY in City, State
+    Example: 
+      - Background on Civic Tech, 2014 Civic Wigets Conference\April 12, 2014 in Oakland, CA
+      - The Civic Tech Ecosystem, Conference of Cool Tech\January 7, 2013 in Los Angeles, CA
+    # speaker-events = 'Background on Civic Tech, 2014 Civic Wigets Conference\April 12, 2014 in Oakland, CA|The Civic Tech Ecosystem, Conference of Cool Tech\January 7, 2013 in Los Angeles, CA'
+
+    speaker-similar: An array of similar speakers.
+      Example: Similar speakers are Frankie Johnson and Maria Gonzalez
+      # speaker-similar = 'frankie-johnson|maria-gonzalez'
+
+{% endcomment %}
+
+{% assign speaker-twitter   = 'pahlkadot' %}
+{% assign speaker-linkedin  = 'jpahlka' %}
+{% assign speaker-blogposts = 'jen' %}
+{% assign speaker-github    = 'pahlkadot' %}
+
+{% comment %}{% assign speaker-playlist  = 'http://youtube.com/xxxxxxx' %}{% endcomment %}
+
+{% assign speaker-quote     = 'If there&rsquo;s one thing government needs desperately, it&rsquo;s the ability to quickly try something, pivot when necessary, and build complex systems by starting with simple systems that work and evolving from there, not the other way around.' %}
+
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+
+{% assign speaker-similar   = 'michal-migurski|catherine-bracy' | split: '|' %}
+
+{% assign speaker-indemand  = true %}
+
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -41,7 +154,7 @@
     <h3 class="p-name profile-name">Jennifer Pahlka</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jennifer-pahlka.jpg">
 
     <div class="p-note profile-note">
-	 <p>Founder and Executive Director</p>
+   <p>Founder and Executive Director</p>
     
         <p>Jennifer Pahlka is the founder and executive director of Code for America. She recently served as the US Deputy Chief Technology Officer in the White House Office of Science and Technology Policy.  She is known for her <a href="http://codeforamerica.org/2012/03/08/jennifer-pahlka-at-ted-video">TED talk</a>, Coding a Better Government, and the recipient of several awards...</p>
 
@@ -55,5 +168,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}

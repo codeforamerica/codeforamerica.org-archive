@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'luke-norris' %}
+{% assign speaker-name      = 'Luke Norris' %}
+{% assign speaker-bio       = 'Luke Norris is the Director of Government Relations for Code for America.  Luke lives and works for CfA in Kansas City, Mo., where he&rsquo;s been recognized for his nonprofit and civic volunteerism. He was named a Rising Star of Philanthropy and appointed as a Commissioner to the Housing Authority of Kansas City. Most recently, Luke served as the Chair for the Mayor&rsquo;s Challenge Cabinet in Kansas City, MO and as the Vice President for Leadership Missouri 2014. <!-- break -->He&rsquo;s also a member of the Board of Advisors for Neighborly, a civic crowdfunding service and speaks nationally to elected officials, community leaders and government staff about seven principles identified by Code for America that are critical for governments of any size, structure in serving their communities.' %}
+{% assign speaker-short-bio = 'Luke helps Code for America connect with leaders in local governments across the country. He has been recognized for his nonprofit and civic volunteerism.' %}
+{% assign speaker-title     = 'Director of Government Relations, Code for America' %}
+{% assign speaker-topics    = 'philosophy-gov\Philosophy of Government Innovation' | split: "|" %}
+{% capture embed %}<iframe height="300" width="650" src="//www.youtube.com/embed/NjIhliCP9m4?list=PLF196e5NuW-pIw1krFaqZFtJpd5wV54qU" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}
+{% assign speaker-vid-title = 'Engaging Citizens in their Communities: The Role of Technology' %}
+{% assign speaker-vid-desc  = 'A mother checking out in grocery line with her children when her food stamp card doesn&rsquo;t work. Ice cream shop owners required to pull 27 permits to open shop. Hurricane Katrina survivors in need of food, but unable to get it. &quot;How can we use technology and engage citizens in new ways that will change the conversation?&quot; For the spring 2014 symposium, Luke Norris began the segment by speaking on how people can better utilize technology to aid government and community institutions as well as advance community change. Norris touched on the stories of these individuals using data in their communities to fix issues such as obtaining restaurant permits, food stamps, or licenses. Afterwards, Norris answered questions concerning technology in relation to healthcare, Code of America&rsquo;s site, and the future of technology in helping better local governments.' %}
+{% assign speaker-vid-date  = 'March 10, 2014' %}
+{% assign speaker-vid-loc   = 'Orlando, FL' %}
+{% assign speaker-vid-group = 'Lou Frey Institute Symposia' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'norrisluke' %}
+{% assign speaker-linkedin  = 'lukednorris' %}
+{% assign speaker-blogposts = 'luke-norris' %}
+{% assign speaker-github    = false %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'nicole-neditch|catherine-bracy' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -53,5 +77,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}

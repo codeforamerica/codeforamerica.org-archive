@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'dharmishta-rood' %}
+{% assign speaker-name      = 'Dharmishta Rood' %}
+{% assign speaker-bio       = 'Dharmishta believes that technology has the capacity to facilitate positive change in the world. Before joining Code for America, she was a Fellow in Psychology at Harvard, a Fellow at MIT Media Lab&rsquo;s Center for Civic Media, wrote cases, industry reports and researched the Internet at Harvard Business School, and was a researcher at the Berkman Center for Internet and Society.<!-- break --> While in Cambridge, she co-founded and co-directed MIT&rsquo;s festival for entrepreneurs in conjunction with the Trust Center for Entrepreneurship. She is on the board of SXSW&rsquo;s V2Venture and Startup Accelerator. She holds an EdM from Harvard University and graduated Phi Beta Kappa from UCLA with a BA in Design | Media Arts.' %}
+{% assign speaker-short-bio = 'Dharmishta was previously a Fellow in Psychology at Harvard, a Fellow at MIT Media Lab&rsquo;s Center for Civic Media, and researched the Internet at Harvard Business School.' %}
+{% assign speaker-title     = 'Accelerator Program Manager, Code for America' %}
+{% assign speaker-topics    = 'topic-companies\Civic Companies|topic-principles\Principles of Government Innovation' | split: "|" %}
+{% capture embed %}<iframe width="650" height="300" src="//www.youtube.com/embed/Xb45B89DZdM?list=PL65XgbSILalWScsYVIYgZXy9OuRcFwwg4" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>{% endcapture %}
+{% assign speaker-vid-title = 'Bay Area Technology Showcase' %}
+{% assign speaker-vid-desc  = 'The Bay Area Government Technology Showcase, hosted by Code for America, featured alumni from the 2014 Incubator and Accelerator Programs, as well as other individuals actively working and investing in the government technology ecosystem.' %}
+{% assign speaker-vid-date  = 'November 3, 2014' %}
+{% assign speaker-vid-loc   = 'San Francisco, CA' %}
+{% assign speaker-vid-group = 'Bay Area Government Technology Showcase' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'Dharmishta' %}
+{% assign speaker-linkedin  = 'dharmishta' %}
+{% assign speaker-blogposts = 'dharmishta-rood' %}
+{% assign speaker-github    = false %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% assign speaker-events    = 'Urban Tech Funding, <a href = "http://www.smartcitystartups.com/2014/">Smart City Startups</a>\April 24, 2014 in Miami, FL|Tactical Strategies and Steps, <a href = "URL">Civic Tech: Entrepreneurship Opportunities</a>\May 8, 2014 in San Francisco, CA|Urban Technologies, <a href = "http://startupfest.com/international-festival-2014/startup-2014/">International Startup Festival</a>\July 10, 2014 in Montreal, Canada|Open Procurement, <a href = "http://www.codeforamerica.org/summit/">Code for America Summit</a>\Sept. 25, 2014 in San Francisco, CA|More than a Vendor: Partnering with Startups to Accelerate Government Innovation, <a href = "http://www.codeforamerica.org/summit/">Code for America Summit</a>\Sept. 25, 2014 in San Francisco, CA|7 Principles for Government Technology Companies, <a href = "http://www.codeforamerica.org/companies/bay-area-government-technology-showcase/">Bay Area Government Technology Showcase</a>\Nov 3, 2014  in San Francisco, CA|Procurement, <a href = "http://www.eventbrite.com/e/urbantech-celebration-sfo-tickets-13712982901">#UrbanTech Celebration</a>\Nov. 11, 2014 in San Francisco, CA|TalkName, <a href = "http://collaborate.fosterly.com/#welcome">Collaborate</a>\Jan. 24, 2015 in Washington DC|Working With Innovative Companies, <a href = "http://www.uscommunities.org/">U.S. Communities 2015 Annual Conference</a>\Dec. 31, 2015 in San Francisco, CA|' | split: '|' %}
+{% assign speaker-similar   = 'lane-becker|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -19,7 +43,7 @@
 
 	<div class="layout-major">
 
-	    <p class="p-note"> Dharmishta Rood (Accelerator Program Manager) believes that technology has the capacity to facilitate positive change in the world. Before joining Code for America, she was a Fellow in Psychology at Harvard, a Fellow at MITMedia Lab’s Center for Civic Media, wrote cases, industry reports and researched the Internet at Harvard Business School, and was a researcher at the Berkman Center for Internet and Society. While in Cambridge, she co-founded and co-directed MIT’s festival for entrepreneurs in conjunction with the Trust Center for Entrepreneurship. She is on the board of SXSW’s V2Venture and Startup Accelerator. She holds an EdM from Harvard University and graduated Phi Beta Kappa from UCLA with a BA in Design | Media Arts.</p>
+	    <p class="p-note"> Dharmishta Rood (Accelerator Program Manager) believes that technology has the capacity to facilitate positive change in the world. Before joining Code for America, she was a Fellow in Psychology at Harvard, a Fellow at MIT Media Lab’s Center for Civic Media, wrote cases, industry reports and researched the Internet at Harvard Business School, and was a researcher at the Berkman Center for Internet and Society. While in Cambridge, she co-founded and co-directed MIT’s festival for entrepreneurs in conjunction with the Trust Center for Entrepreneurship. She is on the board of SXSW’s V2Venture and Startup Accelerator. She holds an EdM from Harvard University and graduated Phi Beta Kappa from UCLA with a BA in Design | Media Arts.</p>
 	    <p><a href="http://www.codeforamerica.org/2013/10/08/dharmishta-rood-why-im-coding-for-america/">Why does Dharmishta Rood code for America?</a></p>
 
 	    <div class="spotlight">
@@ -43,7 +67,7 @@
     <div class="p-note profile-note">
         <p>Accelerator Program Manager</p>
 
-        <p>Dharmishta Rood believes that technology has the capacity to facilitate positive change in the world. Before joining Code for America, she was a Fellow in Psychology at Harvard, a Fellow at MITMedia Lab’s Center for Civic Media, wrote cases, industry reports and researched…</p>
+        <p>Dharmishta Rood believes that technology has the capacity to facilitate positive change in the world. Before joining Code for America, she was a Fellow in Psychology at Harvard, a Fellow at MIT Media Lab’s Center for Civic Media, wrote cases, industry reports and researched…</p>
 
         <p><a class="link-more" href="{{ include.base }}/people/dharmishta-rood/">More</a></p>
 
@@ -53,5 +77,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
