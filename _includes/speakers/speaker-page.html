@@ -48,7 +48,8 @@
 
         {% for entries in speaker-topics %}
           {% for topic in entries %}
-            <a href="{{ include.base }}/speakers/topics/{{ topic | split: '\' | first }}" class="topic-item button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+            {% comment %} Link to topic: {{ include.base }}/speakers/topics/{{ topic | split: '\' | first }} {% endcomment %}
+            <a href="/speakers/" class="topic-item button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
           {% endfor %}
         {% endfor %}
 
