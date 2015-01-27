@@ -149,8 +149,10 @@
       {% if page.speaker-featured-video-link and page.speaker-featured-video-title %}
       <span class="featured-title"><a href="{{ page.speaker-featured-video-link }}" target="_blank">"{{ page.speaker-featured-video-title }}"</a></span> &raquo; 
       {% endif %}
-
-      Jacob Solomon talks about opportunities to build on the relationships and foundational work established during the Code for America Fellowship to further impact on important problems like food security.
+      
+      {% if page.speaker-featured-description %}
+      {{ page.speaker-featured-description }}
+      {% endif %}
     </p>
     {% endif %}
   </div>
