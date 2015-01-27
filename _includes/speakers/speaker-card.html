@@ -17,10 +17,6 @@
     <p><strong>Biography:</strong></p>
     <p>{{ speaker-short-bio }}</p>
 
-    {% if speaker-indemand and page.title == 'Request a Speaker' %}
-      <p class="alert-info">Note: {{ speaker-name | split: ' ' | first }} is in high demand for speaking engagements. Please consider <a href="/speakers/">choosing another speaker</a> to ensure we will be able to fulfill your request.</p>
-    {% endif %}
-
     <div class="button-group">
       <a href="/speakers/{{ speaker-key }}/" class="button-s">Learn more</a>
       {% unless page.title == 'Request a Speaker' %}
