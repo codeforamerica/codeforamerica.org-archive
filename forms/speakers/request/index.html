@@ -257,22 +257,42 @@ include-params: true
 {% capture cardJacobSolomon %}
   {% include people/jacob-solomon.html context="speaker-card" base=".." %}
 {% endcapture %}
+{% capture cardChristopherWhitaker %}
+  {% include people/christopher-whitaker.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardDanHon %}
+  {% include people/dan-hon.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardDavidLeonard %}
+  {% include people/david-leonard.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardDharmishtaRood %}
+  {% include people/dharmishta-rood.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardMollyMcLeod %}
+  {% include people/molly-mcleod.html context="speaker-card" base=".." %}
+{% endcapture %}
 
 <script>
 
   // ===== Populate our speaker card variables
   var speakerCards = {
-    "cyd-harrell"       : '{{ cardCydHarrell | strip_newlines }}',
-    "jennifer-pahlka"   : '{{ cardJenniferPahlka | strip_newlines }}',
-    "michal-migurski"   : '{{ cardMichalMigurski | strip_newlines }}',
-    "catherine-bracy"   : '{{ cardCatherineBracy | strip_newlines }}',
-    "luke-norris"       : '{{ cardLukeNorris | strip_newlines }}',
-    "nicole-neditch"    : '{{ cardNicoleNeditch | strip_newlines }}',
-    "lane-becker"       : '{{ cardLaneBecker | strip_newlines }}',
-    "rebecca-coelius"   : '{{ cardRebeccaCoelius | strip_newlines }}',
-    "jack-madans"       : '{{ cardJackMadans | strip_newlines }}',
-    "hannah-young"      : '{{ cardHannahYoung | strip_newlines }}',
-    "jacob-solomon"     : '{{ cardJacobSolomon | strip_newlines }}',
+    "cyd-harrell"           : '{{ cardCydHarrell | strip_newlines }}',
+    "jennifer-pahlka"       : '{{ cardJenniferPahlka | strip_newlines }}',
+    "michal-migurski"       : '{{ cardMichalMigurski | strip_newlines }}',
+    "catherine-bracy"       : '{{ cardCatherineBracy | strip_newlines }}',
+    "luke-norris"           : '{{ cardLukeNorris | strip_newlines }}',
+    "nicole-neditch"        : '{{ cardNicoleNeditch | strip_newlines }}',
+    "lane-becker"           : '{{ cardLaneBecker | strip_newlines }}',
+    "rebecca-coelius"       : '{{ cardRebeccaCoelius | strip_newlines }}',
+    "jack-madans"           : '{{ cardJackMadans | strip_newlines }}',
+    "hannah-young"          : '{{ cardHannahYoung | strip_newlines }}',
+    "jacob-solomon"         : '{{ cardJacobSolomon | strip_newlines }}',
+    "christopher-whitaker"  : '{{ cardChristopherWhitaker | strip_newlines }}',
+    "dan-hon"               : '{{ cardDanHon | strip_newlines }}',
+    "david-leonard"         : '{{ cardDavidLeonard | strip_newlines }}',
+    "dharmishta-rood"       : '{{ cardDharmishtaRood | strip_newlines }}',
+    "molly-mcleod"          : '{{ cardMollyMcLeod | strip_newlines }}',
   };
 
   // ===== Set up our functions
