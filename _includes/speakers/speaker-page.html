@@ -69,9 +69,9 @@
     <h3>Speaking Engagements</h3>
   </div>
 
+  {% if speaker-events %}
   <div class="layout-minor">
 
-    {% if speaker-events %}
     <h6>Recent Events:</h6>
     <ul class="list-no-bullets list-ruled">
     {% for entries in speaker-events %}
@@ -83,11 +83,15 @@
       {% endfor %}
     {% endfor %}
     </ul>
-    {% endif %}
-
   </div>
+  {% endif %}
 
-  <div class="layout-major">
+  <div class="
+    {% if speaker-events %}
+      layout-major
+    {% else %}
+      layout-major-invert
+    {% endif %}">
 
     <figure>
       {{ embed }}
