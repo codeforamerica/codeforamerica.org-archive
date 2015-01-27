@@ -10,7 +10,7 @@
     {% for entries in speaker-topics %}
       {% for topic in entries %}
         {% comment %} Link to topic: /speakers/topics/{{ topic | split: '\' | first }} {% endcomment %}
-        <a href="#" class="topic-item button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+        <a href="/speakers/" class="topic-item button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
       {% endfor %}
     {% endfor %}
 
