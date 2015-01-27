@@ -1,4 +1,11 @@
 <section class="layout-semibreve">
+  
+  {% if speaker-indemand %}
+    <div class="alert-info">
+      <h6>Note: High demand speaker</h6>
+      <p>{{ speaker-name | split: ' ' | first }} is in high demand for speaking engagements. Please consider <a href="/speakers/">choosing another speaker</a> to ensure we will be able to fulfill your request.</p>
+    </div>  
+  {% endif %}
 
   <div class="heading">
     <h3>Speaker Information</h3>
