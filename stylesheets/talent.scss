@@ -29,7 +29,7 @@ $color-medium-gray: #999595;
 }
 
 // Style the masthead
-$masthead-desktop-depth: 100vh; // Minimum depth of masthead on desktop
+$masthead-desktop-depth: calc(100vh - 96px); // Minimum depth of masthead on desktop
 $masthead-tablet-depth: 350px;
 $masthead-mobile-depth: 300px;
 
@@ -61,8 +61,9 @@ $masthead-mobile-depth: 300px;
 }
 .masthead-l .page-title {
   // Restyle the page header text
-  font-size: 80px;
-  line-height: 65px;
+  font-size: 65px;
+  line-height: 80px;
+  letter-spacing: -1px;
   line-height: 4.0625rem;
   margin-top: 0;
   text-transform: none;
@@ -80,7 +81,7 @@ $masthead-mobile-depth: 300px;
   text-align: center;
   margin-left: 12%;
   margin-right: 12%;
-  margin-top: 230px;
+  margin-top: 180px;
 
   p {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
