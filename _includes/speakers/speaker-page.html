@@ -1,0 +1,156 @@
+<section class="layout-semibreve">
+  
+  {% if speaker-indemand %}
+    <div class="alert-info">
+      <h6>Note: High demand speaker</h6>
+      <p>{{ speaker-name | split: ' ' | first }} is in high demand for speaking engagements. Please consider <a href="/speakers/">choosing another speaker</a> to ensure we will be able to fulfill your request.</p>
+    </div>  
+  {% endif %}
+
+  <div class="heading">
+    <h3>Speaker Information</h3>
+  </div>
+
+  <div class="layout-minor">
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/{{ speaker-key }}.jpg" />
+    
+    <p>
+      <strong>{{ speaker-name }}</strong><br />
+      <small>{{ speaker-title }}</small>
+    </p>
+
+    {% if speaker-twitter or speaker-linkedin or speaker-github or speaker-blogposts %}
+      <ul class="list-no-bullets text-whisper">
+        {% if speaker-twitter %}
+          <li class="icon-twitter2"> <a href="https://twitter.com/{{ speaker-twitter }}">@{{ speaker-twitter }}</a></li>
+        {% endif %}
+        
+        {% if speaker-linkedin %}
+          {% if speaker-linkedin contains '/' %}
+            <!-- Using linkedin long url -->
+            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-name }}</li>
+          {% else %}
+            <!-- Using linkedin shortcode -->
+            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-linkedin }}</li>
+          {% endif %}
+        {% endif %}
+
+        {% if speaker-github %}
+          <li class="icon-github2"> <a href="http://github.com/{{ speaker-github }}">{{ speaker-github }}</a></li>
+        {% endif %}
+
+        {% if speaker-blogposts %}
+          <li class="icon-quotes-left"> <a href="http://www.codeforamerica.org/blog/author/{{ speaker-blogposts }}/">Blog posts</a></li>
+        {% endif %}
+      </ul>
+    {% endif %}
+
+  </div><!-- end .layout-minor -->
+
+  <div class="layout-major">
+    {% if speaker-topics %}
+      <h6>Speaks about:</h6>
+
+      <div class="button-group">
+
+        {% for entries in speaker-topics %}
+          {% for topic in entries %}
+            {% comment %} Link to topic: {{ include.base }}/speakers/topics/{{ topic | split: '\' | first }} {% endcomment %}
+            <a href="/speakers/" class="topic-item button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+          {% endfor %}
+        {% endfor %}
+
+      </div>
+    {% endif %}
+
+    <h6>Biography:</h6>
+    <p>{{ speaker-bio | replace: '<!-- break -->','</p><p>' }}</p>   
+    <p><a class="button-bold button-l" href="{{ include.base }}/forms/speakers/request/index.html?speaker={{ speaker-key }}">Request {{ speaker-name }}</a></p>
+  </div>
+
+</section><!-- end .layout-semibreve -->
+
+{% if embed %}
+<section class="layout-semibreve">
+
+  <div class="heading">
+    <h3>Speaking Engagements</h3>
+  </div>
+
+  {% if speaker-events %}
+  <div class="layout-minor">
+
+    <h6>Recent Events:</h6>
+    <ul class="list-no-bullets list-ruled">
+    {% for entries in speaker-events %}
+      {% for event in entries %}
+        <li>
+          {{ event | split: '\' | first }}
+          <br /><span class="text-whisper">{{ event | split: '\' | last }}</span>
+        </li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="
+    {% if speaker-events %}
+      layout-major
+    {% else %}
+      layout-major-invert
+    {% endif %}">
+
+    <figure>
+      {{ embed }}
+    </figure>
+
+    <h4><strong>Featured Engagement:</strong> {{ speaker-vid-title }}</h4>
+    <ul>
+      <li><strong>Event Name:</strong> {{ speaker-vid-group }}</li>
+      <li><strong>Date:</strong> {{ speaker-vid-date }}</li>
+      <li><strong>Location:</strong> {{ speaker-vid-loc }}</li>
+      <li><strong>Description:</strong> {{ speaker-vid-desc }}</li>
+    </ul>
+
+    {% if speaker-playlist %}
+      <p><a href="{{ speaker-playlist }}">See more engagement videos</a></p>  
+    {% endif %}
+    
+  </div><!-- end .layout-major -->
+
+</section><!-- end .layout-semibreve -->
+{% endif %}
+
+{% if speaker-quote %}
+  <section class="slab-blue">
+    <div class="layout-semibreve">
+
+    <div class="highlight">
+      <blockquote>
+        <p>{{ speaker-quote }}</p>
+      </blockquote>
+      <p class="attribute">{{ speaker-name }}</p>
+    </div>
+    
+    </div>
+  </section>
+{% endif %}
+
+{% if speaker-similar %}
+  <section class="slab-gray">
+    <div class="layout-semibreve">
+
+      <div class="button-group">
+        <h3>Additional Speakers</h3>
+        <a class="button-default button-s" href="/speakers/">Find more speakers</a>
+      </div>
+   
+      {% for entries in speaker-similar %}
+        {% for speaker in entries %}
+          <div class="layout-minim">{% include people/{{ speaker }}.html context="speaker-card" base=".." %}</div>
+        {% endfor %}
+      {% endfor %}   
+    </div>   
+  </section>
+{% endif %}

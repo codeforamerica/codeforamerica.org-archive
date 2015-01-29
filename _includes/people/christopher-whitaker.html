@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'christopher-whitaker' %}
+{% assign speaker-name      = 'Christopher Whitaker' %}
+{% assign speaker-bio       = 'Christopher is a project management consultant at the Smart Chicago Collaborative, utilizing his experience in government and community organizing to advance civic innovation in Chicago. Whitaker also serves as the Chicago Brigade Captain for Code for America, supporting civic hacking events and teaching a weekly Civic Hacking 101 class. <!-- break -->He is a graduate of DePaul University (MPA) and Sam Houston State University (BA, Political Science). Previously, Whitaker served with the US Army in Iraq as a mechanized infantryman.' %}
+{% assign speaker-short-bio = 'Christopher uses his experience in government and community organizing to advance civic innovation at the Smart Chicago Collaborative and as the Brigade program in the Midwest.' %}
+{% assign speaker-title     = 'Midwestern Brigade Coordinator, Code for America' %}
+{% assign speaker-topics    = 'civic-hacking-101\Civic Hacking 101' | split: "|" %}
+{% capture embed %}<iframe width="560" height="315" src="//www.youtube.com/embed/H_on0kXZ07M" frameborder="0" allowfullscreen></iframe>{% endcapture %}
+{% assign speaker-vid-title = 'Civic Hacking 101' %}
+{% assign speaker-vid-desc  = 'An overview of Civic Hacking.' %}
+{% assign speaker-vid-date  = 'March 2, 2014' %}
+{% assign speaker-vid-loc   = 'Chicago, IL' %}
+{% assign speaker-vid-group = 'Webinar' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'civicwhitaker' %}
+{% assign speaker-linkedin  = 'christopherwhitaker' %}
+{% assign speaker-blogposts = 'chris-whitaker' %}
+{% assign speaker-github    = 'GovInTrenches' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% assign speaker-events    = 'Building Chicago&rsquo;s Innovation Ecosystem, National Association of Government Webmasters\September 4, 2014 in St. Paul, MN|The Future of Brigade, Code for America Summit\September 15, 2014 in San Francisco, CA' | split: '|' %}
+{% assign speaker-similar   = 'catherine-bracy|luke-norris' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -57,5 +81,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}

@@ -1,0 +1,369 @@
+---
+layout: speakers
+title: Request a Speaker
+masthead-image: "../../../../media/images/speakers/microphone.jpg"
+masthead-class: masthead-s
+include-jquery: true
+include-parsley: true
+include-animate: true
+include-params: true
+---
+<style>
+  .list-form li.form-field {
+    margin-bottom: 20px;
+  }
+  .list-form .form-field-group li.form-field {
+    margin-bottom: 10px;
+  }
+  fieldset {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-top: 10px
+  }
+  #speakerName {
+    border-bottom: 1px solid black;
+    padding-bottom: 0;
+
+    font-style: italic;
+  }
+</style>
+
+
+<section class="layout-breve">
+
+
+    <h2>Request a speaker for your event<span id="headerColon" style="display:none;">:</span> <span id="speakerName" style="display:none;"></span> </h2>
+    <p>Please answer the questions below as completely as you can so we can best respond your request. Required fields are marked <abbr title="Required">*</abbr></p>
+    <br />
+
+    <div id="formError" class="alert-failure" style="display:none;">
+    </div>
+
+    <div id="infoSpeaker" class="layout-minor">
+      <div class="alert">
+        <h4>You haven't chosen a speaker!</h4>
+        <p>Please <a href="/speakers/">view our speakers page</a> to find available speakers by name or topic.</p>
+        <p><br /><a href="/speakers/" class="button button-prominent">View available speakers</a></p>
+      </div>
+    </div>
+
+    <!-- Form content -->
+    <div class="layout-major">
+      <form name="speakerForm" accept-charset="UTF-8" action="https://formkeep.com/f/ab9aff298fd2" onsubmit="" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="speakerRequested" id="speakerRequested" value="">
+        <input type="hidden" name="requestMadeOn" id="requestMadeOn" value="">
+
+        <ul class="list-form">
+        
+          <li class="form-field-group">
+             <fieldset>
+              <legend><strong>Your name</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="firstName">First name <abbr title="Required">*</abbr></label>
+              <input id="firstName" name="firstName" class="input" type="text" placeholder="First name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="lastName">Last name <abbr title="Required">*</abbr></label>
+              <input id="lastName" name="lastName" class="input" type="text" placeholder="Last name" required>
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Your contact information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="email">Email <abbr title="Required">*</abbr></label>
+              <input id="email" name="email" class="input" type="email" placeholder="email@domain.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555">
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Event information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="eventName">Event name <abbr title="Required">*</abbr></label>
+              <input id="eventName" name="eventName" class="input" type="text" placeholder="i.e. Amazing Conference 1970" required>
+            </div>
+
+            <div class="form-field">
+              <label for="eventWebsite">Event website link (if available)</label>
+              <input id="eventWebsite" name="eventWebsite" class="input" type="url" placeholder="i.e. amazingconference.org" data-parsley-error-message="If you enter a url, please ensure it's valid (i.e. website.com). This field isn't required.">
+            </div>            
+          </li>
+
+          <li class="form-field-group">
+            <div class="form-field">
+              <label for="eventLocation">Event location <abbr title="Required">*</abbr></label>
+              <input id="eventLocation" name="eventLocation" class="input" type="text" placeholder="i.e. San Francisco, CA" required>
+              <small class="note">Code for America is based in headquartered in SF with the bulk of staff coming from the Bay Area.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="eventFormat">Event Format <abbr title="Required">*</abbr></label>
+              <select id="eventFormat" name="eventFormat" required>
+                  <option value="">Pick one...</option>
+                  <option>Keynote</option>
+                  <option>Fireside chat</option>
+                  <option>Panel</option>
+                  <option>Online</option>
+                  <option>Other</option>
+              </select>
+            </div><!-- end .form-field -->
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Date and time information</strong></legend>
+            </fieldset>
+
+            <p class="alert-info">Due to high requests, we appreciate more than a month lead time for speaking engagements.</p>
+
+            <div class="form-field">
+              <label for="eventStartDate">Event start date <abbr title="Required">*</abbr></label>
+              <input id="eventStartDate" name="eventStartDate" class="input" type="date" placeholder="mm/dd/yyyy" required>
+              <small class="note">Please let us know about the dates for the entire event.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="eventEndDate">Event end date (if multiple days)</label>
+              <input id="eventEndDate" name="eventEndDate" class="input" type="date" placeholder="mm/dd/yyyy">
+              <small class="note">If the event is only one day, ignore this.</small>
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <div class="form-field">
+              <label for="speakingDate">Speaking date <abbr title="Required">*</abbr></label>
+              <input id="speakingDate" name="speakingDate" class="input" type="date" placeholder="mm/dd/yyyy" required>
+              <small class="note">Pick the specific day our speaker will be on stage.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="speakingTime">Speaking time <abbr title="Required">*</abbr></label>
+              <input id="speakingTime" name="speakingTime" class="input" type="time" placeholder="09:00 AM" required>
+              <small class="note">Pick a time for the speaking engagement.</small>
+            </div>
+          </li>
+
+          <li class="form-field-group">
+            <fieldset>
+              <legend><strong>Audience information</strong></legend>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="audienceSize">Number of attendees <abbr title="Required">*</abbr></label>
+              <input id="audienceSize" name="audienceSize" class="input" type="text" placeholder="i.e. 2,000" required>
+            </div>
+
+            <div class="form-field">
+              <label for="audienceType">Primary audience <abbr title="Required">*</abbr></label>
+              <select id="audienceType" name="audienceType" required>
+                  <option value="">Pick one...</option>
+                  <option>Government Officials/Staff</option>
+                  <option>Techies and Civic Hackers: Coders, Designers, Researchers, etc.</option>
+                  <option>Civic Startups and Investors</option>
+                  <option>Other</option>
+              </select>
+            </div><!-- end .form-field -->
+          </li>
+
+          <li class="form-field">
+            <fieldset>
+              <legend><strong><br />Engagement information</strong></legend>
+            </fieldset>
+
+            <fieldset class="select field">
+              <label for="stipendOffered">Do you offer a stipend/honorarium for speaking, travel or lodging? <abbr title="Required">*</abbr></label>
+              <ul class="list-form">
+                <li>
+                  <label for="noStipend"><input id="noStipend" name="noStipend" type="radio" checked/> No</label>
+                </li>
+                <li>
+                  <label for="yesStipend"><input id="yesStipend" name="yesStipend" type="radio"/> Yes (please specify amount/items covered)</label>
+                </li>
+              </ul>
+
+              <div class="form-field" id="stipendField" style="display: none;">
+                <label for="stipendDetails">If stipend/honorarium offered, please specify amount/items covered</label>
+                <input id="stipendDetails" name="stipendDetails" class="input disabled" type="text" placeholder="" required>
+              </div>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="speakingDescription">What topic do you want us to cover, and how does it tie into your theme? <abbr title="Required">*</abbr></label>
+              <textarea id="speakingDescription" name="speakingDescription" rows="8" cols="32" required></textarea>
+            </div>
+          </li>
+          
+          <li class="form-field">
+            <label for="newsletterOptin"><input id="newsletterOptin" name="newsletterOptin" type="checkbox" checked/> Sign me up for the Code for America newsletter</label>
+          </li>
+
+          <input type="submit" value="Submit">
+
+        </ul><!-- end form -->
+      </form>
+    </div><!-- end .layout-major -->
+    
+</section>
+
+<section class="layout-semibreve"></section>
+
+<!-- Generate markup for JS -->
+{% capture cardCydHarrell %}
+  {% include people/cyd-harrell.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJenniferPahlka %}
+  {% include people/jennifer-pahlka.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardMichalMigurski %}
+  {% include people/michal-migurski.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardCatherineBracy %}
+  {% include people/catherine-bracy.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardLukeNorris %}
+  {% include people/luke-norris.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardNicoleNeditch %}
+  {% include people/nicole-neditch.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardLaneBecker %}
+  {% include people/lane-becker.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardRebeccaCoelius %}
+  {% include people/rebecca-coelius.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJackMadans %}
+  {% include people/jack-madans.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardHannahYoung %}
+  {% include people/hannah-young.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJacobSolomon %}
+  {% include people/jacob-solomon.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardChristopherWhitaker %}
+  {% include people/christopher-whitaker.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardDanHon %}
+  {% include people/dan-hon.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardDavidLeonard %}
+  {% include people/david-leonard.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardDharmishtaRood %}
+  {% include people/dharmishta-rood.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardMollyMcLeod %}
+  {% include people/molly-mcleod.html context="speaker-card" base=".." %}
+{% endcapture %}
+
+<script>
+
+  // ===== Populate our speaker card variables
+  var speakerCards = {
+    "cyd-harrell"           : '{{ cardCydHarrell | strip_newlines }}',
+    "jennifer-pahlka"       : '{{ cardJenniferPahlka | strip_newlines }}',
+    "michal-migurski"       : '{{ cardMichalMigurski | strip_newlines }}',
+    "catherine-bracy"       : '{{ cardCatherineBracy | strip_newlines }}',
+    "luke-norris"           : '{{ cardLukeNorris | strip_newlines }}',
+    "nicole-neditch"        : '{{ cardNicoleNeditch | strip_newlines }}',
+    "lane-becker"           : '{{ cardLaneBecker | strip_newlines }}',
+    "rebecca-coelius"       : '{{ cardRebeccaCoelius | strip_newlines }}',
+    "jack-madans"           : '{{ cardJackMadans | strip_newlines }}',
+    "hannah-young"          : '{{ cardHannahYoung | strip_newlines }}',
+    "jacob-solomon"         : '{{ cardJacobSolomon | strip_newlines }}',
+    "christopher-whitaker"  : '{{ cardChristopherWhitaker | strip_newlines }}',
+    "dan-hon"               : '{{ cardDanHon | strip_newlines }}',
+    "david-leonard"         : '{{ cardDavidLeonard | strip_newlines }}',
+    "dharmishta-rood"       : '{{ cardDharmishtaRood | strip_newlines }}',
+    "molly-mcleod"          : '{{ cardMollyMcLeod | strip_newlines }}',
+  };
+
+  // ===== Set up our functions
+  function showSpeaker(speaker,card) {
+    // Put speaker name in #speakerName span
+    $('#speakerName').html(speaker);
+
+    // Fill the #infoSpeaker card
+    $('#infoSpeaker').html(card);
+
+    // Animate #speakerName span and #headerColon into visibility
+    $('#speakerName, #headerColon').show("fast", function(){
+      $('#speakerName').addClass('animated fadeIn');
+    });
+
+    // Animate #speakerName span and #headerColon into visibility
+    $('#infoSpeaker').show("fast", function(){
+      $('#infoSpeaker').addClass('animated fadeIn');
+    });
+
+  };
+
+  function toPrettyName(name) {
+    // Split up the name at hyphens, make it headline case
+
+    // name = "firstname-lastname"
+    nameArray = name.split(/\s*\-\s*/g);
+
+    // nameArray = ["firstname","lastname"]    
+    for(var i = 0 ; i < nameArray.length ; i++) {
+      nameArray[i] = nameArray[i].charAt(0).toUpperCase() + nameArray[i].substr(1);
+    }
+    // nameArray = ["Firstname, "Lastname"]
+
+    return nameArray.join(" "); // "Firstname Lastname"
+  }
+
+  var speakerParam;
+  var requestedSpeaker;
+
+  // ===== Run our functions
+  $(document).ready(function() {
+    // Toggle the stipend details field when relevant radio buttons are clicked    
+    $('#yesStipend').click(function(){
+      $('#stipendField').show();
+      $('#stipendOffered').prop('required',true);
+    });
+    $('#noStipend').click(function(){
+      $('#stipendField').hide();
+      $('#stipendOffered').prop('required',false);
+    });
+
+    // Put current date + time into the form
+    var currentDate = new Date();
+    document.getElementById("requestMadeOn").value = currentDate;
+
+    if (urlParams['speaker']) { // If there was a speaker parameter in the URL
+      console.log("Request worked, passing parameters to function");
+            
+      // Retrieve speaker name from the URL (expected format: firstname-lastname)
+      speakerParam = urlParams['speaker'];
+
+      // Show the speaker name and card
+      requestedSpeaker = toPrettyName(speakerParam);
+      speakerContent = speakerCards[speakerParam];
+      showSpeaker(requestedSpeaker,speakerContent);
+
+      // Input speaker name into the form
+      document.getElementById("speakerRequested").value = requestedSpeaker;
+    } else {
+      console.log("No URL Params.");
+    }
+  });
+</script>

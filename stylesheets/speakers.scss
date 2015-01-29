@@ -1,0 +1,324 @@
+---
+---
+
+//
+// SPEAKERS SCSS
+// 
+// These custom styles are for the /speakers/ microsite.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: speakers-landing
+//
+
+// ###### MEDIA QUERY BREAKPOINTS + COLORS ######
+
+$breakpoint-tablet: 850px;
+$breakpoint-mobile: 640px;
+
+$color-medium-red: #aa1c3a;
+$color-yellow: #fedd44;
+$color-medium-gray: #999595;
+
+// ###### SPEAKER-LANDING ######
+
+// ## Styles for the nav and masthead ##
+
+// Make header flush with content below
+.global-header {
+  margin-bottom: 0;
+}
+
+// Style the masthead
+$masthead-desktop-depth: 525px; // Minimum depth of masthead on desktop
+$masthead-tablet-depth: 350px;
+$masthead-mobile-depth: 300px;
+
+.masthead:before {
+  // Custom background image in the masthead
+  // background-image: url('../media/images/speakers/jake-gif-smaller.gif');
+  background-size: cover;
+  // min-height: $masthead-desktop-depth;
+  opacity: 0.5;
+}
+.masthead {
+  // Deeper masthead
+  // min-height: $masthead-desktop-depth;
+  // Blue color the masthead image fades into
+  background-color: #004b6a;
+}
+
+// Big masthead
+.masthead-l {
+  min-height: $masthead-desktop-depth;
+}
+.masthead-l:before {
+  min-height: $masthead-desktop-depth;
+}
+
+.masthead-l .masthead-header {
+  // Make the header tight to the top
+  margin-top: 0;
+}
+.masthead-l .page-title {
+  // Restyle the page header text
+  font-size: 57px;
+  line-height: 65px;
+  line-height: 4.0625rem;
+  margin-top: 0;
+}
+
+// Create a custom content module for the masthead
+.on-top {
+  // Position content above image/overlays
+  position: relative;
+  z-index: 3;
+}
+
+.featured-speaker {
+  // Absolutely position featured speaker module in masthead
+  position: absolute;
+  text-align: left;
+  left: 30px;
+  bottom: 30px;
+  width: 60%;
+}
+
+// Text styles for the description
+.featured-speaker {
+  
+  p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .featured-name {
+    // Style the name
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    letter-spacing: -3px;
+    font-weight: 200;
+    text-transform: none;
+    font-size: 85px;
+    line-height: 85px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .featured-name a {
+    // Make the name white
+    color: white;
+  }
+
+  .featured-name a:hover {
+    // On hover, make the underline white
+    padding-bottom: 0;
+    border-bottom: 2px solid white;
+  }
+
+  .featured-description span a {
+    // Color and hover line color for title in the description
+    color: $color-yellow;
+    &:hover {
+      border-color: $color-yellow;
+    }
+  } // end .featured-description span a
+
+}
+
+/* Style header over topics */
+h5 {
+  margin-top: 0;
+}
+
+/* Style speaker boxes */
+
+.speaker-box {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  background-color: white;
+}
+.speaker-content {
+  padding: 25px;  
+}
+
+/* Style speaker box text */
+p.speaker-name {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Style the play symbol */
+
+div.play-symbol {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.play-symbol img {
+  cursor: pointer;
+}
+.play-symbol img:hover {
+  opacity: 0.5;
+}
+
+// Responsive header code
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  
+  // On tablet, featured speaker spans all the way across
+  .featured-speaker {
+    text-align: center;
+    left: 10%;
+    bottom: 10%;
+    width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+
+  .masthead:before {
+    // On mobile, don't hide our photo
+    display: inherit;
+    min-height: $masthead-mobile-depth;
+    opacity: 1; 
+  }
+  .masthead {
+    overflow: visible;
+    background-color: transparent;
+  }
+
+  // Big masthead
+  .masthead-l {
+    min-height: $masthead-mobile-depth;
+  }
+  .masthead-l:before {
+    min-height: $masthead-mobile-depth;
+  }
+  .masthead-l .masthead-header {
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+  }
+  .masthead-l h1.page-title {
+    color: white;
+  }
+
+  // Small masthead
+  .masthead-s:before {
+    position: relative;
+    min-height: 100px;
+  }
+  .masthead-s .masthead-header {
+    text-shadow: none;
+  }
+  .masthead-s .masthead-header h1 {
+    color: $color-medium-red;
+  }
+  .overline {
+    display: none; // Hide overline on mobile
+  }
+
+  .featured-speaker {
+    position: relative;
+    padding-top: 325px;
+
+    text-align: center;
+    left: auto;
+    bottom: auto;
+
+    margin-left: 5%;
+    width: 90%;
+
+    .featured-name { 
+      float: none;
+      text-align: center;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -1px;
+    }
+
+    .featured-name a {
+      color: #999595;
+      width: 100%;
+    }
+    .featured-name a:hover {
+      border-color: #999595;
+    }
+
+    .featured-description {
+      font-style: italic;
+      color: $color-medium-gray;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+
+    .featured-description span a {
+      // Color and hover line color for title in the description
+      color: $color-medium-red;
+      &:hover {
+        border-color: $color-medium-red;
+      }
+    } // end .featured-description span a
+
+  } // end .featured-speaker
+
+}
+
+// ###### SPEAKER REQUEST FORM ######
+
+// Valid inputs, selects, textareas have a green border
+input.valid, select.valid, textarea.valid {
+  border: 1px solid #00a175;
+}
+
+// Invalid selects, textareas have a red border, like inputs
+select.invalid, textarea.invalid {
+    border: 1px solid #cf1b41;
+}
+
+// ###### SPEAKER PAGE ######
+
+figure + h4 {
+  margin-top: 0.5em;
+}
+
+// ###### FIXES WE SHOULD FOLD INTO PATTERN LIBRARY ######
+
+h6 {
+  margin-bottom: 0;
+}
+
+* + h6 {
+  margin-top: 1.5em;
+}
+
+h6 + * {
+  margin-top: 0.5em;
+}
+
+section + section {
+  margin-top: 2em;
+}
+
+.global-footer {
+  margin-top: 2em;
+}
+
+[class*="slab-"] + [class*="slab-"],
+[class*="slab-"] + .global-footer {
+  margin-top: 0;
+}
+
+[class*="topic"].button.button-subtle,
+[class*="topic"].button.button-subtle.button-s {
+  height: inherit;
+  line-height: 14px * 1.5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

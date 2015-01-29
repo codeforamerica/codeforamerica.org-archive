@@ -1,0 +1,162 @@
+{% if page.nav_tier1_active %}
+    {% assign nav_tier1_active = page.nav_tier1_active %}
+{% elsif include.nav_tier1_active %}
+    {% assign nav_tier1_active = include.nav_tier1_active %}
+{% else %}
+    {% assign nav_tier1_active = false %}
+{% endif %}
+
+{% if page.masthead-class %}
+    {% assign masthead-class = page.masthead-class %}
+{% elsif include.masthead-class %}
+    {% assign masthead-class = include.masthead-class %}
+{% else %}
+    {% assign masthead-class = "masthead-l" %}
+{% endif %}
+
+{% if page.masthead-image %}
+    {% assign masthead-image = page.masthead-image %}
+{% elsif include.masthead-image %}
+    {% assign masthead-image = include.masthead-image %}
+{% else %}
+    {% assign masthead-image = false %}
+{% endif %}
+
+{% comment %}
+{% if include.nav-global-primary != "no" %}
+<nav class="nav-global-primary">
+  <ul class="layout-breve layout-tight">
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/library">Library</a></li>
+    <li>
+      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+          <!-- consider applying autofocus="autofocus" to input -->
+          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+      </form>
+    </li>
+  </ul>
+</nav>
+{% endif %}
+{% endcomment %}
+
+<!-- This empty nav is here so the global.js will collapse the main nav on mobile screens -->
+<nav class="nav-global-primary"></nav>
+
+<div class="global-header">  
+  <a href="/" class="global-header-logo">
+      <img src="/assets/logo.png" />
+  </a>
+  <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
+
+  <nav class="nav-global-secondary">
+    <ul>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/about" {% if nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
+        {% if nav_tier1_active == "about" %}
+        <ul class="nav-tier2">
+            <li><a href="/about/values">Values</a></li>
+            <li><a href="/about/board">Board</a></li>
+            <li><a href="/about/team">Team</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/press">Press</a></li>
+            <li><a href="/about/financial-information">Financial Information</a></li>
+            <li><a href="/support-us/">Support Us</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/contact">Contact</a></li> 
+        </ul>
+        {% endif %}
+      </li>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/governments" {% if nav_tier1_active == "governments" %}class="state-active"{% endif %}>Governments</a>
+        {% if nav_tier1_active == "governments" %}
+        <ul class="nav-tier2">
+          <li><a href="/governments/fellowship">Fellowship</a></li>
+          <li><a href="/governments/2015-cities">2015 Partners</a></li>
+          <li><a href="/governments/alumni">Alumni Partners</a></li>
+          <li><a href="/governments/principles">Principles for 21st Century Government</a></li>
+          <li><a href="/governments/data-standards-faq">Data Formats</a></li>
+        </ul>
+        {% endif %}
+      </li>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/geeks" {% if nav_tier1_active == "citizens" %}class="state-active"{% endif %}>Citizens</a>
+        {% if nav_tier1_active == "citizens" %}
+        <ul class="nav-tier2">
+          <li><a href="/geeks/our-geeks">Our Geeks</a></li>
+          <li><a href="https://github.com/codeforamerica">Our Code</a></li>
+          <li><a href="/geeks/our-startups">Our Startups</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/geeks/civicissues">Civic Tech Issue Finder</a></li>
+        </ul>
+        {% endif %}
+      </li>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/companies" {% if nav_tier1_active == "companies" %}class="state-active"{% endif %}>Companies</a>
+        {% if nav_tier1_active == "companies" %}
+         <ul class="nav-tier2">
+          <li><a href="/companies/our-companies">Our Companies</a></li>
+           <li><a href="/companies/newsletter">Newsletter</a></li>
+           <li><a href="/companies/incubator-faq">Incubator FAQ</a></li>
+          <li><a href="/companies/accelerator-faq">Accelerator FAQ</a></li>
+          <li><a href="/companies/accelerator-apply">Apply</a></li>
+        </ul>
+        {% endif %}
+      </li>
+      <li class="nav-tier1 nav-has-children">
+        <a href="/our-work" {% if nav_tier1_active == "our-work" %}class="state-active"{% endif %}>Our Work</a>
+        {% if nav_tier1_active == "our-work" %}
+        <ul class="nav-tier2">
+          <li><a href="/apps">Applications</a></li>
+          <li><a href="/our-work/initiatives">Initiatives</a></li>
+          <li><a href="/our-work/focus-areas">Focus Areas</a></li>
+          <li><a href="/our-work/data-formats">Data Formats</a></li>
+          <li><a href="/library">Library</a></li>
+        </ul>
+        {% endif %}
+      </li>
+      <li><a href="https://secure.codeforamerica.org/page/contribute/default?source_codes=nav-donate-button" class="button">Donate</a></li>
+    </ul>
+  </nav>    
+</div><!-- End Global Header -->
+
+
+{% if include.masthead != "no" %}
+<div class="masthead {{ masthead-class }}">
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      {% if masthead-image %}
+      style="background-image: url('{{ masthead-image }}')" 
+      {% endif %}>
+    </div>
+  </div>
+  <header class="layout-semibreve masthead-header">
+    {% if page.overline %}
+      <p class="overline">{{ page.overline }}</p>
+    {% endif %}
+    <h1 class="page-title">{% if page.title-h1 %}{{ page.title-h1 }}{% else %}{{ page.title }}{% endif %}</h1>
+  </header>
+
+  {% if page.speaker-header %}
+  <div class="on-top featured-speaker">
+    
+    {% if page.speaker-featured-name and page.speaker-featured-link %}
+    <p class="featured-name"><a href="/speakers/{{ page.speaker-featured-link }}">{{ page.speaker-featured-name }}</a></p>
+    {% endif %}
+
+    {% if page.speaker-featured-description %}
+    <p class="featured-description">
+      {% if page.speaker-featured-video-link and page.speaker-featured-video-title %}
+      <span class="featured-title"><a href="{{ page.speaker-featured-video-link }}" target="_blank">"{{ page.speaker-featured-video-title }}"</a></span> &raquo; 
+      {% endif %}
+      
+      {% if page.speaker-featured-description %}
+      {{ page.speaker-featured-description }}
+      {% endif %}
+    </p>
+    {% endif %}
+  </div>
+  {% endif %}
+
+</div>
+{% endif %}

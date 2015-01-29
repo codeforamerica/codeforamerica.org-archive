@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'cyd-harrell' %}
+{% assign speaker-name      = 'Cyd Harrell' %}
+{% assign speaker-bio       = 'Cyd is a highly versatile and collaborative user experience expert with 12+ years of success improving online and software products. As CfA’s UX evangelist she works with fellows and staff to ensure we&rsquo;re creating inventive and cost-effective solutions to serve the needs of real users.<!-- break -->Previously she has been a Board Member at Brightworks School and the VP of UX Research at Bolt Peters.' %}
+{% assign speaker-short-bio = 'Cyd is a highly versatile and collaborative user experience expert with 12+ years of success improving online and software products.' %}
+{% assign speaker-title     = 'Product Director, Code for America' %}
+{% assign speaker-topics    = 'design-ux\User-centered Design' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = false %}
+{% assign speaker-vid-desc  = false %}
+{% assign speaker-vid-date  = false %}
+{% assign speaker-vid-loc   = false %}
+{% assign speaker-vid-group = false %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'cydharrell' %}
+{% assign speaker-linkedin  = 'cydharrell' %}
+{% assign speaker-blogposts = 'cyd-harrell' %}
+{% assign speaker-github    = 'cbracy' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'michal-migurski|jack-madans' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -53,5 +77,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
