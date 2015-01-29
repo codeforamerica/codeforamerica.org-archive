@@ -112,7 +112,7 @@ class TestApache (unittest.TestCase):
                  ('/fellows/2014-fellows', '/geeks/our-geeks/2014-fellows/'),
                  ('/2014-fellows', '/geeks/our-geeks/2014-fellows/'),
                  ('/startups', '/about/companies/'),
-               # ('/fellowship', '/governments/fellowship/'),
+                 ('/fellowship', '/about/fellowship/'),
                # ('/fellows', '/about/fellowship/'),
                  ('/procurement', '/governments/principles/procurement/'),
                  ('/austin', '/governments/austin/'),
