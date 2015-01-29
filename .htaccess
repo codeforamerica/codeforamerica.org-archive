@@ -202,7 +202,7 @@ RedirectMatch permanent ^/about/startups/?$ /about/companies
 #
 # More Fellowship Program
 #
-#RedirectMatch permanent ^/fellowship(/?)$ /governments/fellowship$1
+RedirectMatch permanent ^/fellowship/?$ /about/fellowship
 RedirectMatch permanent ^/geeks/fellowship/?$ /about/fellowship
 RedirectMatch permanent ^/governments/city-impact/?$ /about/fellowship
 RedirectMatch permanent ^/fellows(/?)$ /about/fellowship$1
