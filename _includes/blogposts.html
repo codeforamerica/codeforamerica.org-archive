@@ -19,7 +19,8 @@
           
           <div class="text-whisper info">
             <span>Posted on </span>
-            <time class="post-date insulate text-whisper published" datetime="<%= post.date %>"><%= post.date %></time>
+            <% var date = makePrettyDate( post.date ); %>
+            <time class="post-date insulate text-whisper published" datetime="<%= post.date %>"><%= date %></time>
             <span> by </span>
             <span class="post-author vcard">
               <a class="url fn n" href="http://www.codeforamerica.org/blog/author/<%= post.author.slug %>/"><%= post.author.name %></a>
@@ -67,6 +68,25 @@
     excerpt += '...';
 
     return excerpt;
+  }
+
+  var makePrettyDate = function(date) {
+    // date is a string, let's make it a date object
+    var dateObject = new Date(date);
+
+    // Make an array of the months, so we can get the month by name
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    // Grab the month name out of the array
+    var month = months[dateObject.getMonth()];
+
+    // Get the day and year
+    var day = dateObject.getDay();
+    var year = dateObject.getFullYear();
+
+    // Return the date
+    prettyDate = month + " " + day + ", " + year;
+    return prettyDate;
   }
 
   $(document).ready(function(){
