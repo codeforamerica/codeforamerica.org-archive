@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="http://www.codeforamerica.org/blog/wp-content/themes/cfawp2012/style.css?ver=3.9.2">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+
+<script type="text/x-template" id="blogTemplate">
+  <section class="slab-gray">
+    <div class="layout-semibreve">
+      <header class="badge-heading badge-orange badge-fellowship">
+        <h2>Blog posts</h2>
+      </header>
+      <div class="layout-gutter">
+        <% _.each(posts, function(post){ %>
+        <article id="post-<%= post.id %>" class="post-<%= post.id %> post type-post status-publish format-standard hentry post-preview">
+          <header class="post-header isolate">
+            <h2 class="entry-title">
+              <a href="<%= post.link %>" rel="bookmark"><%= post.title %></a>
+            </h2>
+          </header>
+          
+          <div class="text-whisper info">
+            <span>Posted on </span>
+            <time class="post-date insulate text-whisper published" datetime="<%= post.date %>"><%= post.date %></time>
+            <span> by </span>
+            <span class="post-author vcard">
+              <a class="url fn n" href="http://www.codeforamerica.org/blog/author/<%= post.author.slug %>/"><%= post.author.name %></a>
+            </span>
+          </div>
+          
+          <div class="post-body">
+            <div class="post-content">
+              <% var content = stripHTML( post.content );
+                 var excerpt = toExcerpt( content ); %>
+              <p>
+                <%= excerpt %>
+                <a class="more-link" href="<%= post.link %>">Continue Reading</a>
+              </p>
+            </div>
+          </div><!-- .post-body -->
+        </article>
+        <% }); %>
+      
+      </div><!-- end .layout-gutter -->
+    </div><!-- end .layout-semibreve -->
+  </section>
+</script>
+
+<script type="text/javascript">
+    var stripHTML = function(html) {
+    // Thanks to: http://stackoverflow.com/questions/822452/strip-html-from-text-javascript
+
+    // Stripping the legal HTML tags
+    html = html.replace(/<[^>]*>/g, '');
+
+    // Escaping the remaining characters
+    var div = document.createElement('div');
+    div.textContent = html;
+    return div.innerHTML;
+  }
+
+  var toExcerpt = function(content) {
+    // content shouldn't have any html tags
+
+    // Get the first 200 characters
+    var excerpt = content.substring(0,220);
+
+    // Add some dots
+    excerpt += '...';
+
+    return excerpt;
+  }
+
+  $(document).ready(function(){
+    //var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
+    var url = "http://localhost:4000/script/{{ include.category }}";
+    var template = _.template(
+      $( "#blogTemplate" ).html(),
+      { variable: 'posts' }
+    );
+
+    var getPosts = $.getJSON( url, function(data) {
+      // ... do stuff
+      //var markup =  _.template(template, {variable: 'data'})({ data });
+      $('#js-blogposts').html(
+        template(data)
+      );
+    })
+    .fail(function(error){
+      console.log('failed to get' + url)
+    });
+
+  });
+
+</script>
