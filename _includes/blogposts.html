@@ -90,8 +90,8 @@
   }
 
   $(document).ready(function(){
-    //var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
-    var url = "http://localhost:4000/script/{{ include.category }}";
+    var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
+    //var url = "http://localhost:4000/script/{{ include.category }}";
     var template = _.template(
       $( "#blogTemplate" ).html(),
       { variable: 'posts' }
