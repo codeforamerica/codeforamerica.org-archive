@@ -1,0 +1,233 @@
+<link rel="stylesheet" href="http://www.codeforamerica.org/blog/wp-content/themes/cfawp2012/style.css?ver=3.9.2">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+
+<style>
+  /* ===========
+     Styles for our featured blog post
+     =========== */
+
+  div.format-featured {
+    overflow: hidden;
+  }
+  div.featured-header {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #004b6a;
+  }
+  div.featured-header:before {
+    background-image: url("http://www.codeforamerica.org/blog/wp-content/uploads/2015/01/FellowsBuildWeek01.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    width: 100%;
+    content: "";
+    display: block;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  div.featured-content {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    z-index: 2;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 3px;
+  }
+  div.featured-content a {
+    color: inherit;
+    font-weight: inherit;
+  }
+  div.featured-content a:link,
+  div.featured-content a:visited,
+  div.featured-content a:hover,
+  div.featured-content a:focus,
+  div.featured-content a:active {
+    border-color: white;
+    border-bottom-color: white;
+    color: inherit;
+    text-decoration: none;
+  }
+  div.featured-content h6 {
+    color: #fedd44;
+    margin-bottom: 5px;
+  }
+  div.featured-content h2 {
+    font-size: 40px;
+    line-height: 51px;
+  }
+  @media screen and (max-width: 40em) {
+    div.featured-content h2 {
+      font-size: 30px;
+      line-height: 41px;
+    }
+  }
+</style>
+
+<script type="text/x-template" id="blogTemplate">
+
+  <% 
+
+  // Grab the first post with an image so we can feature it
+  var featuredPost = _.find( posts, function(post){
+    return post.featured_image !== null; 
+  });
+
+  if (featuredPost) {
+    // Filter out the featured post, so we don't post it twice
+    var otherPosts = _.reject( posts, function(post){ 
+      return featuredPost.ID == post.ID;
+    });
+  } else {
+    var otherPosts = posts;
+  }
+  %>
+
+  <section class="slab-gray">
+    <div class="layout-semibreve">
+      <header class="badge-heading badge-orange badge-fellowship">
+        <h2>Fellowship team blog posts</h2>
+      </header>
+
+      <% if (featuredPost) { %>
+      <article id="post-<%= featuredPost.ID %>" class="post-<%= featuredPost.ID %> post format-featured">
+        <div class="featured-header">
+          <div class="featured-content">
+            <h6>Featured Post</h6>
+            <h2><a href="<%= featuredPost.link %>"><%= featuredPost.title %></a></h2>
+            <% var content = stripHTML( featuredPost.content );
+               var excerpt = toExcerpt( content, 100 ); %>
+            <p>
+              <%= excerpt %>
+              <a class="more-link" href="http://www.codeforamerica.org/blog/2015/01/26/doing-a-powerful-force-for-change/">[Continue Reading]</a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <% } %>
+
+      <div class="layout-gutter">
+        <% _.each(otherPosts, function(post){ %>
+        <article id="post-<%= post.ID %>" class="post-<%= post.ID %> post type-post status-publish format-standard hentry post-preview">
+          <header class="post-header isolate">
+            <h2 class="entry-title">
+              <a href="<%= post.link %>" rel="bookmark"><%= post.title %></a>
+            </h2>
+          </header>
+          
+          <div class="text-whisper info">
+            <span>Posted on </span>
+            <% var date = makePrettyDate( post.date ); %>
+            <time class="post-date insulate text-whisper published" datetime="<%= post.date %>"><%= date %></time>
+            <span> by </span>
+            <span class="post-author vcard">
+              <a class="url fn n" href="http://www.codeforamerica.org/blog/author/<%= post.author.slug %>/"><%= post.author.name %></a>
+            </span>
+          </div>
+          
+          <div class="post-body">
+            <div class="post-content">
+              <% var content = stripHTML( post.content );
+                 var excerpt = toExcerpt( content, 220 ); %>
+              <p>
+                <%= excerpt %>
+                <a class="more-link" href="<%= post.link %>">Continue Reading</a>
+              </p>
+            </div>
+          </div><!-- .post-body -->
+        </article>
+        <% }); /* end _.each */ %>
+     
+      </div><!-- end .layout-gutter -->
+    </div><!-- end .layout-semibreve -->
+    <br /><br />
+  </section>
+</script>
+
+<script type="text/javascript">
+    var stripHTML = function(html) {
+    // Thanks to: http://stackoverflow.com/questions/822452/strip-html-from-text-javascript
+
+    // Stripping the legal HTML tags
+    html = html.replace(/<[^>]*>/g, '');
+
+    // Escaping the remaining characters
+    var div = document.createElement('div');
+    div.textContent = html;
+    return div.innerHTML;
+  }
+
+  var toExcerpt = function(content, length) {
+    // content shouldn't have any html tags
+
+    // Get the first 200 characters
+    var excerpt = content.substring(0,length);
+
+    // Add some dots
+    excerpt += '...';
+
+    return excerpt;
+  }
+
+  var makePrettyDate = function(date) {
+    // date is a string, let's make it a date object
+    var dateObject = new Date(date);
+
+    // Make an array of the months, so we can get the month by name
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    // Grab the month name out of the array
+    var month = months[dateObject.getMonth()];
+
+    // Get the day and year
+    var day = dateObject.getDay();
+    var year = dateObject.getFullYear();
+
+    // Return the date
+    prettyDate = month + " " + day + ", " + year;
+    return prettyDate;
+  }
+
+  var handlePosts = function(data, template, target) {
+    // If the endpoint gave us any data
+    if (data.length > 0) {
+      // Build the template
+      var template = _.template(
+        $(template).html(),
+        { variable: 'posts' }
+      );
+
+      // Write the template to DOM
+      $(target).html(
+        template(data)
+      );
+
+      return true;
+    } else {
+      console.log('No data in endpoint: {{ include.category }} ');
+      return false;
+    }
+  }
+
+  $(document).ready(function(){
+    // Where to grab the data from
+    var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
+    // ID to grab our template from
+    var template = "#blogTemplate";
+    // Where to send the html generated from the data and template
+    var target = "#js-blogposts";
+
+    var getPosts = $.getJSON( url, function(data) {
+      handlePosts(data, template, target);
+    })
+    .fail(function(error){
+      console.log('failed to get' + url)
+    });
+  });
+
+</script>
