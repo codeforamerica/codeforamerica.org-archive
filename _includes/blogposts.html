@@ -2,15 +2,32 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 
+<style>
+    
+</style>
+
 <script type="text/x-template" id="blogTemplate">
   <section class="slab-gray">
     <div class="layout-semibreve">
       <header class="badge-heading badge-orange badge-fellowship">
-        <h2>Blog posts</h2>
+        <h2>Team blog posts</h2>
       </header>
+
+      <% var imagePost = _.find( posts, function(post){
+        return post.featured_image !== null; 
+      }); %>
+
+      <% if (imagePost) { %>
+        <%= imagePost.ID %>
+      <% } %>
+
       <div class="layout-gutter">
-        <% _.each(posts, function(post){ %>
-        <article id="post-<%= post.id %>" class="post-<%= post.id %> post type-post status-publish format-standard hentry post-preview">
+        <% var otherPosts = _.reject( posts, function(post){ 
+          return imagePost.ID == post.ID;
+        }); %>
+
+        <% _.each(otherPosts, function(post){ %>
+        <article id="post-<%= post.ID %>" class="post-<%= post.ID %> post type-post status-publish format-standard hentry post-preview">
           <header class="post-header isolate">
             <h2 class="entry-title">
               <a href="<%= post.link %>" rel="bookmark"><%= post.title %></a>
@@ -30,7 +47,7 @@
           <div class="post-body">
             <div class="post-content">
               <% var content = stripHTML( post.content );
-                 var excerpt = toExcerpt( content ); %>
+                 var excerpt = toExcerpt( content, 220 ); %>
               <p>
                 <%= excerpt %>
                 <a class="more-link" href="<%= post.link %>">Continue Reading</a>
@@ -38,8 +55,8 @@
             </div>
           </div><!-- .post-body -->
         </article>
-        <% }); %>
-      
+        <% }); /* end _.each */ %>
+     
       </div><!-- end .layout-gutter -->
     </div><!-- end .layout-semibreve -->
   </section>
@@ -58,11 +75,11 @@
     return div.innerHTML;
   }
 
-  var toExcerpt = function(content) {
+  var toExcerpt = function(content, length) {
     // content shouldn't have any html tags
 
     // Get the first 200 characters
-    var excerpt = content.substring(0,220);
+    var excerpt = content.substring(0,length);
 
     // Add some dots
     excerpt += '...';
@@ -112,7 +129,6 @@
 
   $(document).ready(function(){
     var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
-    //var url = "http://localhost:4000/script/sample-data/posts.json";
 
     var getPosts = $.getJSON( url, function(data) {
       handlePosts(data);
