@@ -95,6 +95,12 @@
       </header>
 
       <% if (featuredPost) { %>
+      <style>
+      div.featured-header:before {
+        background-image: url("<%= featuredPost.featured_image.guid %>");
+      }
+      </style>
+
       <article id="post-<%= featuredPost.ID %>" class="post-<%= featuredPost.ID %> post format-featured">
         <div class="featured-header">
           <div class="featured-content">
