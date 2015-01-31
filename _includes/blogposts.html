@@ -184,17 +184,17 @@
     return prettyDate;
   }
 
-  var handlePosts = function(data) {
+  var handlePosts = function(data, template, target) {
     // If the endpoint gave us any data
     if (data.length > 0) {
       // Build the template
       var template = _.template(
-        $( "#blogTemplate" ).html(),
+        $(template).html(),
         { variable: 'posts' }
       );
 
       // Write the template to DOM
-      $('#js-blogposts').html(
+      $(target).html(
         template(data)
       );
 
@@ -206,10 +206,15 @@
   }
 
   $(document).ready(function(){
+    // Where to grab the data from
     var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
+    // ID to grab our template from
+    var template = "#blogTemplate";
+    // Where to send the html generated from the data and template
+    var target = "#js-blogposts";
 
     var getPosts = $.getJSON( url, function(data) {
-      handlePosts(data);
+      handlePosts(data, template, target);
     })
     .fail(function(error){
       console.log('failed to get' + url)
