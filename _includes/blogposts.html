@@ -89,25 +89,37 @@
     return prettyDate;
   }
 
-  $(document).ready(function(){
-    var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
-    //var url = "http://localhost:4000/script/{{ include.category }}";
-    var template = _.template(
-      $( "#blogTemplate" ).html(),
-      { variable: 'posts' }
-    );
+  var handlePosts = function(data) {
+    // If the endpoint gave us any data
+    if (data.length > 0) {
+      // Build the template
+      var template = _.template(
+        $( "#blogTemplate" ).html(),
+        { variable: 'posts' }
+      );
 
-    var getPosts = $.getJSON( url, function(data) {
-      // ... do stuff
-      //var markup =  _.template(template, {variable: 'data'})({ data });
+      // Write the template to DOM
       $('#js-blogposts').html(
         template(data)
       );
+
+      return true;
+    } else {
+      console.log('No data in endpoint: {{ include.category }} ');
+      return false;
+    }
+  }
+
+  $(document).ready(function(){
+    var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ include.category }}";
+    //var url = "http://localhost:4000/script/sample-data/posts.json";
+
+    var getPosts = $.getJSON( url, function(data) {
+      handlePosts(data);
     })
     .fail(function(error){
       console.log('failed to get' + url)
     });
-
   });
 
 </script>
