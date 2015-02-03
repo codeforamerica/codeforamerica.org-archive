@@ -192,6 +192,7 @@ class TestApache (unittest.TestCase):
                  ('/city-alumni/philadelphia', '/governments/philadelphia/'),
                  ('/governments/summit-county', '/governments/summitcounty/'),
                  ('/focus', '/our-work/focus-areas/'),
+                 ('/projects/new-york-city-hhc-accelerator', '/projects/new-york-city-hhs-accelerator/'),
                  
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
