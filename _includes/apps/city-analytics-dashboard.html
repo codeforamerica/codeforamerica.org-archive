@@ -1,0 +1,81 @@
+{% if include.context == "app-page" %}
+  <div class="heading">
+    <h2>City Analytics Dashboard</h2>
+  </div>
+  
+  
+        
+      <p>The City Analytics Dashboard lets you display the live traffic on your website easily from your Google Analytics account.</p>
+      
+      <img class="isolate" src="{{ include.base }}/media/images/apps/dashboard-screenshot.png" width="900px" />
+      
+      <p>You can setup a dashboard in just a couple of minutes if you have:</p>
+
+    <ul>
+      <li>Access to the associated <a href="http://www.google.com/analytics/">Google Analytics</a> account</li>
+      <li>The ability to use or create a free account with <a href="http://heroku.com">Heroku</a></li>
+    </ul>
+
+
+
+      <div class="spotlight">
+        <table class="table-unstyled table-minor">
+          <tr><th>Live Example</th><td><a href="http://dashboard.dfd.codeforamerica.org/">dashboard.dfd.codeforamerica.org</a></td></tr>
+          <tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/city-analytics-dashboard">https://github<wbr>.com/<wbr>codeforamerica/<wbr>city-analytics-dashboard</a></td></tr>
+          <tr><th>Environment</th><td>Sinatra (ruby) and JavaScript</td></tr>
+          <tr><th>Redeploy</th><td>Use the  <a href="https://dashboard-setup.codeforamerica.org/">Dashboard Setup application</a> or follow <a href="https://github.com/codeforamerica/city-analytics-dashboard">installation instructions on Github</a>.</td></tr>
+        </table>
+      </div>
+      
+        <p>The dashboard is a fork of an <a href="https://github.com/edds/display-screen">open source project</a> created by <a href="http://e26.co.uk/">Edd Sowden</a> for the UK's <a href="https://gds.blog.gov.uk/">Government Digital Service</a>.</p>
+        <p>Initially, the dashboard was created for the <a href="/governments/oakland/">City of Oakland</a> as part of the first phase of collaborative work between Code for America and the city on the <a href="/our-work/initiatives/digitalfrontdoor/">Digital Front Door initiative</a>.  It provided a simple way to help the city employees to understand more about their online visitors.</p>
+        
+  <section class="slab-dark-blue" style="margin-bottom:2em"> 
+    <div style="padding:1em 3em;text-align:center">
+      <h4>Created by</h4>
+      <div class="layout-crotchet">
+        <a href="/governments/oakland/"><img style="border: 5px solid white" class="profile-photo u-photo" src="../../media/images/governments/oakland_seal.png" alt="southbend_seal"/></a>
+        <h4 class="text-whisper">City of Oakland</h4></a>
+      </div>
+      <div class="layout-crotchet">
+          <a href="/people/frances-berriman/"><img style="border: 5px solid white" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/frances-berriman.jpg"/>
+          <h4 class="text-whisper">Frances Berriman</h4></a>
+      </div>
+      <div class="layout-crotchet">
+          <a href="/people/michal-migurski/"><img style="border: 5px solid white" class="profile-photo u-photo" src="{{ include.base }}/media/images/people/michal-migurski.jpg"/>
+          <h4 class="text-whisper">Michal Migurski</h4></a>
+      </div>
+        <!--div class="layout-crotchet">
+          <a href="/people/reed-duecy-gibbs/"><img style="border: 5px solid white" class="profile-photo u-photo" src="{{ include.base }}/media/images/people/tamara-manik-perlman.jpg"/>
+          <h4 class="text-whisper">Tamara Manik-Perlman</h4></a>
+        </div-->
+    </div>
+  </section>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/apps/city-analytics-dashboard">
+                <h1 class="teaser-title">City Analytics Dashboard</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Display your website's live traffic</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p>Sinatra (ruby) and JavaScript</p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p>Use the  <a href="https://dashboard-setup.codeforamerica.org/">Dashboard Setup application</a> or follow <a href="https://github.com/codeforamerica/city-analytics-dashboard">installation instructions on Github</a>.</p>
+            
+            <p><a href="{{ include.base }}/apps/city-analytics-dashboard">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/apps/city-analytics-dashboard" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/dashboard-logo.png" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}

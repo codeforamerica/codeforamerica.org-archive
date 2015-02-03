@@ -1,0 +1,27 @@
+<div class="speaker-box">
+  <img src="/media/images/speakers/{{ speaker-key }}.jpg" alt="">
+
+  <div class="speaker-content">
+
+    <p class="speaker-name">{{ speaker-name }}</p>
+    <p class="speaker-title">{{ speaker-title }}</p>
+
+    <p><strong>Speaks about:</strong></p>
+    {% for entries in speaker-topics %}
+      {% for topic in entries %}
+        {% comment %} Link to topic: /speakers/topics/{{ topic | split: '\' | first }} {% endcomment %}
+        <a href="/speakers/" class="topic-item button button-s button-subtle {{ topic | split: '\' | first }}">{{ topic | split: '\' | last }}</a>
+      {% endfor %}
+    {% endfor %}
+
+    <p><strong>Biography:</strong></p>
+    <p>{{ speaker-short-bio }}</p>
+
+    <div class="button-group">
+      <a href="/speakers/{{ speaker-key }}/" class="button-s">Learn more</a>
+      {% unless page.title == 'Request a Speaker' %}
+        <a href="/forms/speakers/request/index.html?speaker={{ speaker-key }}" class="button-s">Request speaker</a>
+      {% endunless %}
+    </div>
+  </div>
+</div>

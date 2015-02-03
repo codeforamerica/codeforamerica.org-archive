@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'lane-becker' %}
+{% assign speaker-name      = 'Lane Becker' %}
+{% assign speaker-bio       = 'Lane Becker joined Code for America in May 2014 as Director of Products and Startups. He works to promote widespread reuse of Code for America applications within cities, and also runs the civic technology Startup and Accelerator program. <!-- break -->Lane co-founded Adaptive Path, one of the world&rsquo;s first user experience design firms, in 2001, and Get Satisfaction, an online customer service community platform, in 2007.<!-- break -->At Adaptive Path, Lane ran the Consulting practice as well as the New Ventures program, which aided early-stage startups with product development in exchange for equity. The program saw several successful exits and also developed Measure Map, a blog analytics tool acquired by Google in 2005 and incorporated into Google Analytics. Get Satisfaction is currently used by over 75,000 companies and has taken over $20 million in investment. <!-- break -->In 2012, Lane co-authored &ldquo;Get Lucky: How to Put Planned Serendipity to Work,&rdquo; a New York Times bestselling business book about harnessing serendipity as a business practice. He&rsquo;s also a certified hula hooping instructor.' %}
+{% assign speaker-short-bio = 'Lane works to promote widespread reuse of Code for America applications within cities, and also runs the civic technology Startup and Accelerator program.' %}
+{% assign speaker-title     = 'Director of Startups, Code for America' %}
+{% assign speaker-topics    = 'companies\Civic Companies' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'monstro' %}
+{% assign speaker-linkedin  = 'lanebecker' %}
+{% assign speaker-blogposts = false %}
+{% assign speaker-github    = 'lanebecker' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'jack-madans|dharmishta-rood' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -37,9 +61,9 @@ by Google in 2005 and incorporated into Google Analytics. Get
 Satisfaction is currently used by over 75,000 companies and has taken
 over $20 million in investment.
 
-In 2012, Lane co-authored “Get Lucky: How to Put Planned Serendipity
-to Work,” a New York Times bestselling business book about harnessing
-serendipity as a business practice. He’s also a certified hula hooping
+In 2012, Lane co-authored &ldquo;Get Lucky: How to Put Planned Serendipity
+to Work,&rdquo; a New York Times bestselling business book about harnessing
+serendipity as a business practice. He&rsquo;s also a certified hula hooping
 instructor.
 	</p>
 
@@ -78,5 +102,13 @@ technology Startup and Accelerator program....
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}

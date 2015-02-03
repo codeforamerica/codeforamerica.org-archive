@@ -1,0 +1,31 @@
+{% if include.context == 'card-small' %}
+  {% comment %}
+    This layout goes in layout-crochet 3-col grids on fellowship pages.
+    Example: /geeks/fellowship-apply/
+  {% endcomment %}
+
+    <h5><strong>Enlist the Fellows</strong></h5>
+    <img class="profile-photo" src="//style.codeforamerica.org/style/favicons/76x76/flag-red.png">
+    <img class="profile-photo" src="//style.codeforamerica.org/2/style/images/badge-fellowship.svg" style="background-color:#399fd3;">
+    <p>Applications to become a 2016 Fellowship government partner are now open and due March 31, 2015. Get caught up on the program and start a conversation with us.</p>
+    <p><a href="/governments/fellowship" class="button">Tell me more</a></p>
+{% elsif include.context == 'card-medium' %}
+  {% comment %}
+    This layout goes in layout-minim 2-col grids.
+    Example: /about/fellowship
+  {% endcomment %}
+
+  <h3>Bring the Fellows to Your Government</h3>
+  <p>Bring a team of technologists to your local government for a year. Applications to become a 2016 Fellowship government partner are now open and due March 31, 2015.</p>
+  <a class="button" href="/governments/fellowship">Enlist the Fellows</a>
+{% else %}
+  {% comment %}
+    This layout usually goes in a layout-semibreve full-width at the top of pages.
+    Example: /governments/
+  {% endcomment %}
+
+  <h2>Enlist the Fellows</h2>
+  <p>The Fellows are expert technologists who apply <a href="/governments/principles/">21st Century Government Principles</a> to important problems, focused on health, economic development and safety &amp; justice.</p>
+  <p>Applications to become a 2016 Fellowship government partner are now open and due March 31, 2015. Get caught up on the program and start a conversation with us.</p>
+  <p><a href="/governments/fellowship/" class="button button-bold">Learn more</a></p>
+{% endif %}
