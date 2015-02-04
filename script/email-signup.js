@@ -60,6 +60,8 @@ var submitForm = function(data) {
                 // It worked, let the user know
                 var success = '<h2>You did it</h2><p>' + response.msg + '</p><a href="#" class="button js-modal-exit">Close</a>';
                 $('.modal-content').html(success);
+        		// Push a pageview so we can track our funnel
+				ga('send', 'pageview', '/submit_email_signup_form');
             }
         }
     });
@@ -89,6 +91,8 @@ $(document).ready(function() {
 		showModal(email);
 		// Stop submitting the form
 		e.preventDefault();
+		// Push a pageview so we can track our fullen
+		ga('send', 'pageview', '/open_email_signup_form');
 	});
 
 	// When js-modal-exit is clicked, try to close the modal
