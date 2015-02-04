@@ -1,0 +1,74 @@
+---
+---
+
+//
+// STAGING SCSS
+// 
+// This is a staging area for changes to the core of the codeforamerica.org site that aren't part of the pattern library.
+// These changes may eventually be rolled into the pattern library.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: *
+//
+
+// ##### CHANGES TO GLOBAL FOOTER #####
+//
+// These styles adapt the .global-search area in the footer to become a mailing list signup.
+// These pull from the origin .global-search class in the pattern library but change the name and styles for a new purpose.
+//
+
+/* Global Footer - main */
+
+.global-footer .signup-global {
+	margin: 0 0 32px;
+	color: white;
+}
+
+.global-footer .signup-global h4 {
+	display: inline-block;
+	color: #c5c6c5;
+	margin-right: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.global-footer .signup-global h4 i:before {
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.global-footer .signup-global input[type="email"] {
+	background-color: transparent;
+	color: white;
+	font-size: 14px;
+	line-height: inherit;
+	margin: 0;
+	height: 40px;
+	padding: 0px 5px;
+	margin-bottom: 4px;
+	text-transform: none;
+	box-sizing: content-box;
+	border-radius: 0px;
+	width: 90%;
+}
+
+.global-footer .signup-global input:focus {
+	border-color: white;
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.global-footer .signup-global input[type="submit"] {
+	color: white;
+}
+
+/* Global footer - layout (screens above 40em) */
+
+@media all and (min-width: 40em) {
+	.global-footer .signup-global {
+		margin-left: 0;
+	}
+
+	.global-footer .signup-global input[type="email"] {
+		width: 300px;
+	}
+}
