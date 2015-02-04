@@ -17,16 +17,29 @@
 // These pull from the origin .global-search class in the pattern library but change the name and styles for a new purpose.
 //
 
-/* Global Footer - main */
+/* Global Footer - main - border */
+
+.global-footer {
+	// Remove the border from the top of the global footer
+	border-top: none;
+	// Remove the top padding so our new signup box snaps to top
+	padding-top: 0;
+}
+
+nav.nav-footer {
+	margin-top: 30px;
+}
+
+/* Global Footer - main - signup form */
 
 .global-footer .signup-global {
-	margin: 0 0 32px;
+	margin: 32px 0;
 	color: white;
 }
 
 .global-footer .signup-global h4 {
 	display: inline-block;
-	color: #c5c6c5;
+	color: white;
 	margin-right: 16px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -43,13 +56,14 @@
 	font-size: 14px;
 	line-height: inherit;
 	margin: 0;
+	margin-bottom: 8px;
 	height: 40px;
-	padding: 0px 5px;
-	margin-bottom: 4px;
+	padding: 0px 10px;
 	text-transform: none;
 	box-sizing: content-box;
 	border-radius: 0px;
 	width: 90%;
+	border-color: white;
 }
 
 .global-footer .signup-global input:focus {
@@ -59,6 +73,7 @@
 
 .global-footer .signup-global input[type="submit"] {
 	color: white;
+	margin-bottom: 8px;
 }
 
 /* Global footer - layout (screens above 40em) */
@@ -70,6 +85,7 @@
 
 	.global-footer .signup-global input[type="email"] {
 		width: 300px;
+		margin-right: 8px;
 	}
 }
 
