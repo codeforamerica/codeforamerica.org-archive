@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://www.codeforamerica.org/blog/wp-content/themes/cfawp2012/style.css?ver=3.9.2">
+<link rel="stylesheet" href="https://www.codeforamerica.org/blog/wp-content/themes/cfawp2012/style.css?ver=3.9.2">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 
@@ -71,16 +71,16 @@
 
 <script type="text/x-template" id="blogTemplate">
 
-  <% 
+  <%
 
   // Grab the first post with an image so we can feature it
   var featuredPost = _.find( posts, function(post){
-    return post.featured_image !== null; 
+    return post.featured_image !== null;
   });
 
   if (featuredPost) {
     // Filter out the featured post, so we don't post it twice
-    var otherPosts = _.reject( posts, function(post){ 
+    var otherPosts = _.reject( posts, function(post){
       return featuredPost.ID == post.ID;
     });
   } else {
@@ -125,7 +125,7 @@
               <a href="<%= post.link %>" rel="bookmark"><%= post.title %></a>
             </h2>
           </header>
-          
+
           <div class="text-whisper info">
             <span>Posted on </span>
             <% var date = makePrettyDate( post.date ); %>
@@ -135,7 +135,7 @@
               <a class="url fn n" href="http://www.codeforamerica.org/blog/author/<%= post.author.slug %>/"><%= post.author.name %></a>
             </span>
           </div>
-          
+
           <div class="post-body">
             <div class="post-content">
               <% var content = stripHTML( post.content );
@@ -148,7 +148,7 @@
           </div><!-- .post-body -->
         </article>
         <% }); /* end _.each */ %>
-     
+
       </div><!-- end .layout-gutter -->
     </div><!-- end .layout-semibreve -->
     <br /><br />
