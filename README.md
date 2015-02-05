@@ -11,31 +11,31 @@ For the past few months, we’ve worked with Colorado branding firm [Dojo4](http
 Who’s Working On It
 --------
 
-* [Michal Migurski](http://codeforamerica.org/people/michal-migurski): code, hosting, copy/paste
-* [Cyd Harrell](http://codeforamerica.org/people/cyd-harrell): information architecture, design
-* [Dana Oshiro](http://codeforamerica.org/people/dana-oshiro): content, copy/paste
-* [Andrew Hyder](http://codeforamerica.org/people/andrew-hyder): feedback
+* [Michal Migurski](https://www.codeforamerica.org/people/michal-migurski): code, hosting, copy/paste
+* [Cyd Harrell](https://www.codeforamerica.org/people/cyd-harrell): information architecture, design
+* [Dana Oshiro](https://www.codeforamerica.org/people/dana-oshiro): content, copy/paste
+* [Andrew Hyder](https://www.codeforamerica.org/people/andrew-hyder): feedback
 
 How to contribute
 --------
 
 ### Specific help we need
 
-We need your help to keep our content accurate and up to date. The easiest way for to help is to submit a pull request with one of the below: 
+We need your help to keep our content accurate and up to date. The easiest way for to help is to submit a pull request with one of the below:
 
-* For members of the community — including fellows, brigade captains, civic startups, and mentors — find yourself and your friends on one of the [lists of civic hackers](http://codeforamerica.org/geeks/our-geeks/) and let us know if your bio is correct and photo current. For staff, find yourself on the [staff page](http://codeforamerica.org/about/team/) and let us know if your bio is correct and photo current. Personal photos should be about 200 x 200px.
-* If you built an app or project as part of the fellowship or accelerator programs, find it on the [apps page](http://codeforamerica.org/apps) and verify that we’ve got it described accurately.
-* Check government information for brigades and fellowships on the [2015 government partners](http://codeforamerica.org/cities/2015-cities) and [alumni government partners](http://codeforamerica.org/cities/alumni) pages and fill in any blanks you might find.
+* For members of the community — including fellows, brigade captains, civic startups, and mentors — find yourself and your friends on one of the [lists of civic hackers](https://www.codeforamerica.org/geeks/our-geeks/) and let us know if your bio is correct and photo current. For staff, find yourself on the [staff page](https://www.codeforamerica.org/about/team/) and let us know if your bio is correct and photo current. Personal photos should be about 200 x 200px.
+* If you built an app or project as part of the fellowship or accelerator programs, find it on the [apps page](https://www.codeforamerica.org/apps) and verify that we’ve got it described accurately.
+* Check government information for brigades and fellowships on the [2015 government partners](https://www.codeforamerica.org/cities/2015-cities) and [alumni government partners](https://www.codeforamerica.org/cities/alumni) pages and fill in any blanks you might find.
 * We need quality photos for page headers. Should be about 1200 x 500px, JPG compressed to 150kb max.
 
 ### <a name="pulls"></a>Submitting a Pull Request
 
 An easy way to submit a pull request for just simple text changes is to:
 
-1. Find the page you'd like to edit on the [master branch](https://github.com/codeforamerica/codeforamerica.org/). 
+1. Find the page you'd like to edit on the [master branch](https://github.com/codeforamerica/codeforamerica.org/).
 2. Use Github's built in editor to make your changes.
-3. Down below the editor window, include a brief one sentence description of what you changed. Something like "Updated Andrew Hyder's bio". 
-4. Click the green Propose File Change button.  
+3. Down below the editor window, include a brief one sentence description of what you changed. Something like "Updated Andrew Hyder's bio".
+4. Click the green Propose File Change button.
 5. You'll get to review your changes. If everything looks right, click the green "Send pull request" button.
 
 If you need to add or replace an image, you'll need to:
@@ -84,7 +84,7 @@ Your computer should now be serving your local copy of the site at:
 ### Editing stylesheets
 
 All CSS and stylesheets are run from the `pattern-portfolio` branch,
-and served lived from http://style.codeforamerica.org.
+and served lived from https://style.codeforamerica.org.
 
 Technology Patterns
 --------
