@@ -1,7 +1,7 @@
 {% comment %}
 
-This is first version of a Focus Area Homepage Jekyll layout.
-Use it by specifying "layout: focus-area" in your Jekyll front-matter:
+This is the Focus Area page Jekyll layout for Code for America's website.
+Use it by specifying "layout: talent" in your Jekyll front-matter:
 
     http://jekyllrb.com/docs/frontmatter/
 
@@ -27,6 +27,18 @@ nav-breadcrumbs:
  - Citizens: "/geeks"
 ---
 
+Custom front matter for /speakers pages:
+
+include-jquery   - If true, loads jQuery for the page (useful for form validation)
+include-parsley  - If true, loads Parsley.js, a form validation library
+include-params   - If true, loads script/params.js, which pulls the params out of the URL.
+
+---
+include-jquery: true
+include-parsley: true
+include-params: true
+---
+
 {% endcomment %}
 
 <!DOCTYPE html>
@@ -46,8 +58,8 @@ nav-breadcrumbs:
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   {% endif %}
 
-  <!-- Custom stylesheet for speaker microsite; We use it for the big header area and navigation element. -->
-    <link rel="stylesheet" href="/stylesheets/speakers.css">
+  <!-- Custom stylesheet for speaker microsite -->
+  <link rel="stylesheet" href="/stylesheets/talent.css">
 
   {% if page.include-animate %}
     <!-- Custom Animate.css stylesheet by Dan Eden -->
@@ -69,16 +81,16 @@ nav-breadcrumbs:
       }
     </style>
   {% endif %}
-
+  
   {% include meta-header.html %}
 </head>
-
+      
   <body>
     <div class="js-container">
-      {% include nav-speakers.html %}
+      {% include nav-focus-areas.html %}
       <main role="main">
         {{ content }}
-
+        
         {% include global-footer.html %}
       </main>
     </div>
@@ -120,7 +132,6 @@ nav-breadcrumbs:
           check:          "You must select between %s and %s choices.",
           equalto:        "This value should be the same."
         });
-
         if ('undefined' !== typeof window.ParsleyValidator)
           window.ParsleyValidator.addCatalog('en', window.ParsleyConfig.i18n.en, true);
       </script>
