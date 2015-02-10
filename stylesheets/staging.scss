@@ -11,6 +11,29 @@
 // Layouts served: *
 //
 
+// ##### MIXINS AND HELPERS #####
+//
+// These are little mixins used to make our lives easier.
+//
+
+// This mixin allows us to style input field placeholder text
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    $color;
+	   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    $color;
+	   opacity:  1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    $color;
+	}
+}
+
 // ##### CHANGES TO GLOBAL FOOTER #####
 //
 // These styles adapt the .global-search area in the footer to become a mailing list signup.
@@ -65,9 +88,11 @@ nav.nav-footer {
 	width: 90%;
 	border-color: white;
 	border: 1px solid white;
+
+	@include placeholder-color(white);
 }
 
-.global-footer .signup-global input:focus {
+.global-footer .signup-global input[type="email"]:focus {
 	border-color: white;
 	border-color: rgba(255, 255, 255, 0.5);
 }
@@ -75,6 +100,7 @@ nav.nav-footer {
 .global-footer .signup-global input[type="submit"] {
 	color: white;
 	margin-bottom: 8px;
+	border-color: white;
 }
 
 /* Global footer - layout (screens above 40em) */
