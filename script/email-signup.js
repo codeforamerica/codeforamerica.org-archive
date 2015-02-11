@@ -84,9 +84,9 @@ $(document).keyup(function(e) {
 
 $(document).ready(function() {
 	// When the email address entry form in the footer is submitted, try to show the modal
-	$('#email-entry-form').submit(function(e){
+	$('.email-entry-form').submit(function(e){
 		// Get the email address
-		var email = document.forms['email-entry-form']['signup-email'].value;
+		var email = this['email'].value;
 		// Show the modal with the email
 		showModal(email);
 		// Stop submitting the form

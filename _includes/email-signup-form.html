@@ -1,0 +1,22 @@
+{% if include.context == 'footer' %}
+
+<form class="signup-global email-entry-form" action="#">
+  <h4><i class="icon-envelop"></i>Change your community. Join our email list.</h4>
+  <span class="combined">
+    <input type="email" name="email" id="signup-email" placeholder="Enter your email address" />
+    <input type="submit" value="Submit" class="button-invert text-whisper white" />
+  </span>
+</form>
+
+{% else %}
+
+<form class="email-entry-form" action="#">
+  <ul class="list-form">
+    <li class="form-field">
+      <input type="email" name="email" class="signup-email" placeholder="Enter your email address" />
+    </li>
+    <input type="submit" value="Sign up" />
+  </ul>
+</form>
+
+{% endif %}
