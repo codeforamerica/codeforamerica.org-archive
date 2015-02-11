@@ -28,10 +28,10 @@
 
   // Set the color we'll fade the background into
   background-color: #004b6a;
-  // The masthead should be at least 70% high
-  // min-height: 70vh;
+  // Add some padding to the top and bottom
   padding-top: 30px;
-  padding-bottom: 30px;
+  // Keep the text color white, even on mobile
+  color: white;
 
   // ## The header image, held in the :before pseudo-class
   
@@ -41,30 +41,39 @@
     background-size: cover;
     // Fade into the background color
     opacity: 0.3;
+    // Don't hide it on mobile
+    display: block;
   }
 
   // ## Typography
 
   .page-title {
     // Restyle the page header text
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 35px;
+    line-height: 40px;
     letter-spacing: -1px;
     margin-top: 0;
     text-transform: none;
+    // Keep the color white, even on mobile. Have to use here to override specificity.
+    color: white;
   }
 
   .page-overline {
     text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 4px;
+    font-size: 12px;
+    letter-spacing: 3px;
   }
 
   .page-description {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 26px;
     text-align: center;
+  }
+
+  p {
+    // On small screens, core styles try to float .masthead p to the left. Don't do that.
+    float: none;
   }
 
   // ## Submodule layout
@@ -73,8 +82,6 @@
   .description {
     position: relative;
     z-index: 3;
-    margin-left: 12%;
-    margin-right: 12%;
     margin-top: 100px;
   }
 
@@ -93,6 +100,25 @@
 
   @media all and (min-width: 40em) {
   // add responsive styles here
+    .page-title {
+      // Make the page title bigger
+      font-size: 53px;
+      line-height: 63px;
+      letter-spacing: -1px;
+    }
+
+    .page-overline {
+      // Make the overline a bit bigger
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+
+    .page-description {
+      // Make the page description text bigger
+      font-size: 20px;
+      line-height: 35px;
+    }
+
   }
 
 }
