@@ -90,7 +90,7 @@
                 <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</p>
                 <p>Join our e-mail list to learn how to use your skills to make your community better & we’ll send you info about Code for America’s work.</p>
                 <div class="layout-center">
-                    <a class="text-whisper button-invert white" href="#">Sign up</a>
+                    <a class="text-whisper button-invert white js-modal-show" href="#">Sign up</a>
                     <br/>
                 </div>
             </div>
@@ -187,9 +187,8 @@
 {% include global-footer.html %}
 </main>
 </div>
-<div class="js-modal">
-  {% include email-signup-modal.html %}
-</div>
+
+{% include email-signup-modal.html %}
 
 <!--<script src="script/global.js"></script>-->
 {% include footer-scripts.html %}
