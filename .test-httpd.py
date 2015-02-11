@@ -112,7 +112,7 @@ class TestApache (unittest.TestCase):
                  ('/fellows/2014-fellows', '/geeks/our-geeks/2014-fellows/'),
                  ('/2014-fellows', '/geeks/our-geeks/2014-fellows/'),
                  ('/startups', '/about/companies/'),
-               # ('/fellowship', '/governments/fellowship/'),
+                 ('/fellowship', '/about/fellowship/'),
                # ('/fellows', '/about/fellowship/'),
                  ('/procurement', '/governments/principles/procurement/'),
                  ('/austin', '/governments/austin/'),
@@ -192,6 +192,7 @@ class TestApache (unittest.TestCase):
                  ('/city-alumni/philadelphia', '/governments/philadelphia/'),
                  ('/governments/summit-county', '/governments/summitcounty/'),
                  ('/focus', '/our-work/focus-areas/'),
+                 ('/projects/new-york-city-hhc-accelerator/', '/projects/new-york-city-hhs-accelerator/'),
                  
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
