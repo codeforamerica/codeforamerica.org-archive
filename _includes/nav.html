@@ -36,6 +36,12 @@
     </li>
   </ul>
 </nav>
+{% else %}
+<!--  
+      If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
+      This requirement is because of the nav collapse functionality in global.js
+  -->
+<nav class="nav-global-primary"></nav>
 {% endif %}
 
 {% if include.masthead != "no" %}
