@@ -10,7 +10,7 @@ var showModal = function(submittedEmail) {
 	if (isModalVisible()) {
 		return;
 	}
-	if (submittedEmail !== "") {
+	if (typeof submittedEmail !== "undefined" && submittedEmail !== "") {
 		document.forms['email-signup-data-form']['mce-EMAIL'].value = submittedEmail;
 	}
 	// Scroll up to the top
@@ -95,6 +95,12 @@ $(document).ready(function() {
 		ga('send', 'pageview', '/open_email_signup_form');
 	});
 
+  // When a signup button is pressed, show the modal
+  $('.js-modal-show').click(function(e){
+    showModal();
+    e.preventDefault();
+  });
+
 	// When js-modal-exit is clicked, try to close the modal
 	// Using on notation so we can bind to elements that are added to the page as well
 	$(document).on('click', '.js-modal-exit', function(e){
@@ -104,8 +110,14 @@ $(document).ready(function() {
 
 	// When the modal is visible and the user clicks anywhere else on the page, close it
 	$(document).on('click', function(e) {
+    // If the user is trying to show the modal, show it, don't hide it
+    if ($(e.target).hasClass("js-modal-show")) {
+      showModal();
+      e.preventDefault();
+      return;
+    }
 		// If the user clicked anything except the modal dialog, and the modal is visible, hide the modal
-		if (!$(e.target).closest('.modal-dialog').length && isModalVisible()) {
+		else if (!$(e.target).closest('.modal-dialog').length && isModalVisible()) {
 			hideModal();
 		}
 	});
