@@ -1,0 +1,98 @@
+---
+---
+
+//
+// STAGING SCSS
+// 
+// This is a staging area for changes to the core of the codeforamerica.org site that aren't part of the pattern library.
+// These changes may eventually be rolled into the pattern library.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: *
+//
+
+// ##### MASTHEAD-CUSTOM #####
+//
+// Introduces a custom masthead that is deeper than usual and holds text and calls-to-action.
+//
+
+// When global-header comes before mastead-custom, it gets this class
+// Remove the margin so the masthead snaps to the bottom of the global-header
+.global-header-custom {
+  margin-bottom: 0;
+}
+
+.masthead.masthead-custom {
+ 
+  // ## Basic layout
+
+  // Set the color we'll fade the background into
+  background-color: #004b6a;
+  // The masthead should be at least 70% high
+  // min-height: 70vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  // ## The header image, held in the :before pseudo-class
+  
+  &:before {
+    // Same min-height as our container
+    min-height: 100%;
+    background-size: cover;
+    // Fade into the background color
+    opacity: 0.3;
+  }
+
+  // ## Typography
+
+  .page-title {
+    // Restyle the page header text
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    text-transform: none;
+  }
+
+  .page-overline {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+
+  .page-description {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  // ## Submodule layout
+
+  // This container holds the description
+  .description {
+    position: relative;
+    z-index: 3;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 100px;
+  }
+
+  // This container holds the down arrow, inside of .description
+  .arrow img {
+    width: 30px;
+    margin-bottom: 20px;
+  }
+
+  .arrow img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  // ## Styles for tablet and up
+
+  @media all and (min-width: 40em) {
+  // add responsive styles here
+  }
+
+}

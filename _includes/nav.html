@@ -22,7 +22,23 @@
     {% assign masthead-image = false %}
 {% endif %}
 
-{% if include.nav-global-primary != "no" %}
+{% if page.nav-global-primary %}
+    {% assign nav-global-primary = page.nav-global-primary %}
+{% elsif include.nav-global-primary %}
+    {% assign nav-global-primary = include.nav-global-primary %}
+{% else %}
+    {% assign nav-global-primary = false %}
+{% endif %}
+
+{% if page.masthead %}
+    {% assign masthead = page.masthead %}
+{% elsif include.masthead %}
+    {% assign masthead = include.masthead %}
+{% else %}
+    {% assign masthead = false %}
+{% endif %}
+
+{% if nav-global-primary != "no" %}
 <nav class="nav-global-primary">
   <ul class="layout-breve layout-tight">
     <li><a href="/blog">Blog</a></li>
@@ -44,7 +60,7 @@
 <nav class="nav-global-primary"></nav>
 {% endif %}
 
-{% if include.masthead != "no" %}
+{% if masthead != "no" %}
 <div class="masthead {{ masthead-class }}">
   <div class="masthead-hero">
     <div class="masthead-image" 
@@ -59,7 +75,14 @@
 </div>
 {% endif %}
 
-<div class="global-header">  
+<div class="global-header
+  {% comment %}
+  Right now, we need to kill the margin-bottom on global-header if we have a custom masthead (since it comes after global-header)
+  This checks if there's a custom masthead then applies a class we can style
+  In the future, this hack should be replaced with better pattern-portfolio styles for header above and below masthead 
+  {% endcomment %}
+  {% if page.masthead-custom %}global-header-custom{% endif %}
+  ">  
   <a href="/" class="global-header-logo">
       <img src="/assets/logo.png" />
   </a>
@@ -135,3 +158,29 @@
     </ul>
   </nav>    
 </div>
+
+{% if page.masthead-custom == "deep" %}
+<div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
+  
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      {% if masthead-image %}
+      style="background-image: url('{{ masthead-image }}')" 
+      {% endif %}>
+    </div>
+  </div>
+
+  <header class="layout-breve masthead-header">
+    {% if page.overline %}
+      <p class="page-overline">{{ page.overline }}</p>
+    {% endif %}
+    <h1 class="page-title">{% if page.title-h1 %}{{ page.title-h1 }}{% else %}{{ page.title }}{% endif %}</h1>
+  </header>
+  
+  {% if page.description %}
+  <div class="description">
+    <p class="page-description">{{ page.description }}</p>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
