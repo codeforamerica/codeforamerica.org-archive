@@ -34,6 +34,22 @@
 	}
 }
 
+// ##### SMALL PATTERNS #####
+//
+// Small patterns that can be used in multiple places. These add or overwrite pattern-library functionality.
+//
+
+// .button-invert with .white is completely white
+a.button-invert.white,
+input[type="submit"].button-invert.white,
+button.button-invert.white {
+	color: white;
+	// These importants are terrible. But the level of specificity on slab- and block- buttons is nearly impossible to overwrite.
+	// This is a hack for now that will need to be fixed in a later version of the pattern-library.
+	border-color: white !important;
+	border-bottom: 1px solid white !important;
+}
+
 // ##### CHANGES TO GLOBAL FOOTER #####
 //
 // These styles adapt the .global-search area in the footer to become a mailing list signup.
@@ -98,9 +114,7 @@ nav.nav-footer {
 }
 
 .global-footer .signup-global input[type="submit"] {
-	color: white;
 	margin-bottom: 8px;
-	border-color: white;
 }
 
 /* Global footer - layout (screens above 40em) */
