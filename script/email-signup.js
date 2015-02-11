@@ -91,14 +91,16 @@ $(document).ready(function() {
 		showModal(email);
 		// Stop submitting the form
 		e.preventDefault();
-		// Push a pageview so we can track our fullen
-		ga('send', 'pageview', '/open_email_signup_form');
+		// Push a pageview so we can track our funnel
+		ga('send', 'pageview', '/open_email_signup_form-fromfooter');
 	});
 
   // When a signup button is pressed, show the modal
   $('.js-modal-show').click(function(e){
     showModal();
     e.preventDefault();
+    // Push a pageview so we can track our funnel
+    ga('send', 'pageview', '/open_email_signup_form-frombutton');
   });
 
 	// When js-modal-exit is clicked, try to close the modal
