@@ -122,3 +122,27 @@
   }
 
 }
+
+// ##### SUMMIT 2015 #####
+//
+// These are styles for the 2015 summit microsite. I'm currently wrapping the pages in a #summit div. Will re-evaluate later.
+//
+
+#summit {
+
+  h1,h2,h3,h4,h5,h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+
+  h5 {
+    text-transform: none;
+    font-weight: bold;
+  }
+
+  p.quiet {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+}
