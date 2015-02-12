@@ -25,7 +25,7 @@
   {% if page.metadata.image-url %}
     <meta itemprop="image" content="{{ page.metadata.image-url }}">
   {% elsif page.metadata.image-url == null and page.masthead-image %}
-    <meta itemprop="image" content="{{ page.masthead-image }}">
+    <meta itemprop="image" content="http://codeforamerica.org/{{ page.masthead-image }}">
   {% else %}
     <meta itemprop="image" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
   {% endif %}
@@ -52,7 +52,7 @@
   {% if page.metadata.image-url %}
     <meta name="twitter:image:src" content="{{ page.metadata.image-url }}">
   {% elsif page.metadata.image-url == null and page.masthead-image %}
-    <meta name="twitter:image:src" content="{{ page.masthead-image }}">
+    <meta name="twitter:image:src" content="http://codeforamerica.org/{{ page.masthead-image }}">
   {% else %}
     <meta name="twitter:image:src" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
   {% endif %}
@@ -70,7 +70,7 @@
   {% if page.metadata.image-url %}
     <meta property="og:image" content="{{ page.metadata.image-url }}"> 
   {% elsif page.metadata.image-url == null and page.masthead-image %}
-    <meta property="og:image" content="{{ page.masthead-image }}"> 
+    <meta property="og:image" content="http://codeforamerica.org/{{ page.masthead-image }}"> 
   {% else %} 
     <meta property="og:image" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png"> 
   {% endif %}
