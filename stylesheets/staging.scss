@@ -145,4 +145,16 @@
     line-height: 2;
   }
 
+  table.schedule {
+    border: none;
+
+    td, th {
+      border-bottom: none;
+    }
+
+    tbody, tbody tr {
+      border-bottom: 1px solid #e9e9e9;
+    }
+  }
+
 }
