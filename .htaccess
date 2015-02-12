@@ -332,6 +332,7 @@ RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
 RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 RedirectMatch permanent ^/projects/new-york-city-hhc-accelerator/?$ /projects/new-york-city-hhs-accelerator/
+RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
 
 #
 # Set of possible Jekyll file extensions + PHP, from
