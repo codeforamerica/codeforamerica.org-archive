@@ -1,0 +1,50 @@
+<section>
+<h1>Code for America Fellowship Toolkit </h1>
+
+<p class="alert">This toolkit documents the Code for America (CfA) Fellowship program within the U.S. with a focus on the strategies we use. We hope that it will serve as a helpful reference to support those in other countries and in the U.S. who are interested in forming their own innovation Fellowships. The following is a living document serving anyone with the desire to replicate or remix parts of our program for their own purposes. This document was originally produced in collaboration by CfA staff: International Programs Manager, Lynn Fine, and Fellowship Program Manager, Alexander Tran. This resource was last updated in January 2015. </p>
+
+
+
+<h2>I. WELCOME // BIENVENIDO // CIAO </h2>
+
+<p>If you are looking to start a civic technology innovation program like CfA’s<a href= "http://www.codeforamerica.org/about/fellowship/">Fellowship </a>program, then you are in the right place.  This toolkit was mainly written to be used by local community groups who want to run “Code for”-style programs, but many of the lessons outlined in this toolkit are also relevant for those of you who work in government and want to bring an innovation Fellowship to your community.</p>
+
+<p><b>This is not your average toolkit.</b> What “works” in the United States won’t necessarily work everywhere, and what works in one context doesn’t necessarily work in another. This toolkit aims to take you on an analytical journey to determine the best way for you to make a difference in your own community using modern principles of design, technology, and social change. This toolkit does not intend to serve as a turnkey solution. In this spirit, we will ask you questions that will help you to evaluate different program options and provide you with a detailed account of how we run our Fellowship program. We will outline our own processes, the reasoning behind them, and provide you with some strategies we’ve found useful. We invite you to mix and match however you see fit and encourage you to<a href="https://docs.google.com/a/codeforamerica.org/forms/d/1j09kdqiwi9JRKFwfWX4pUAxmaFyXanRNBCqGU3E78rs/viewform"> share your own experience</a> which we will use to improve this resource.</p>
+
+
+<h2>II. INTRODUCTION TO CODE FOR AMERICA’S FELLOWSHIP PROGRAM </h2>
+
+<p>To provide some context, here’s the backstory outlining <a href="http://www.codeforamerica.org/blog/2011/09/30/were-two/">how CfA began</a>, eloquently penned in a blog post by the organization’s founder, Jennifer Pahlka. CfA’s Fellowship Program is a year-long public service program in which civic-minded developers, designers, activists, and product managers are grouped into three-person teams. These teams are each paired with a government partner (normally from a city) from different parts of the U.S. Fellows work out of the CfA office in San Francisco to develop solutions to problems facing their  government partners, using technology.
+
+<p>Fellows and the government staff in their partner cities work together to build apps, foster new approaches to problem solving throughout government, and tackle community issues. In the past, teams have worked on improving access to social services, identifying alternatives to incarceration, and civic engagement, among others. You can learn more about past projects <a href="http://www.codeforamerica.org/apps/">here</a>.</p>
+
+<p>The Fellowship began as CfA's flagship program. Today, it continues to help us learn about the inner workings of government and try out projects that can help governments use digital technology to deliver better services to residents. These learnings inform work in our more scaled programs such as the Brigade and the creation of resources and trainings.</p>
+
+<h2>III. GUIDING QUESTIONS</h2>
+<h3>Should you run a Fellowship program (in your country)?<h3>
+<p>There are a lot of factors that make it more likely for a CfA-style Fellowship program to succeed. Before running a CfA-inspired Fellowship program, we encourage you to ask yourself the following questions. They should help you decide if it makes sense to run a Fellowship program or if other approaches would be more effective. </p>
+
+<p>Questions to ask yourself:<p>
+ 
+ <ol>
+<li>Is there a robust developer community where you live? Enough people with technology skills (ideally young people in their late twenties or so) to make recruiting Fellows possible? If you’re unsure how to determine this it could be helpful to research private sector tech companies or see if there is a <a href="http://www.codeforamerica.org/brigade/">CfA Brigade</a> CfA’s international citizen volunteer program) group where you live.</li>
+
+<li>Would people from your technology community be interested in dedicating their time for a year of service? If you’re not sure, go to some tech events or ask around at tech companies and other organizations.</li>
+
+<li>Is there a local government office that is particularly interested in working to find technology solutions to service delivery challenges or to foster civic engagement?</li>
+
+<li>Does your government have strict procurement regulations that would make “procuring Fellows” (paying a stipend to Fellows) difficult? You can learn more about procurement <a href="http://www.codeforamerica.org/governments/principles/procurement/">here</a>.</li>
+
+<p>If yes to above, are there any workarounds to this such as a formal internship or government Fellowship program through which the government could pay for Fellows?</p>
+
+<li>Would your government be willing to pay/have the resources to support this kind of program?</li>
+
+<p>If there are governments that don’t have funds but are interested in the program, are there other possible funding sources? Corporate social responsibility programs? Foundations? See this <a href="https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit#">fundraising resource guide</a> we created for CfA’s Brigades for some ideas. Please note that the Fellowship program generally requires a hefty time commitment from technologists who sign up as Fellows. In our experience, paying Fellows is key to fostering commitment and acquiring a large talent pool for recruiting. </p>
+
+</ol>
+
+<p>If you have answered “NO” to any of the questions outlined above, you might want to consider <a href="http://www.codeforamerica.org/our-work/">other program alternatives</a> before moving forward with a CfA-style Fellowship program. If you have answered yes to these questions, a tailored variation of the CfA Fellowship Program will likely be best instead of trying to do exactly what we do for our Fellowship program. </p>
+
+<p>For example, our Fellowship program works with multiple city governments at the same time throughout the year. Fellows do not live in the cities with which they are paired, but work from CfA’s offices in San Francisco and travel to and from their partner cities about four times a year. This gives Fellowship teams the opportunity to share ideas with other Fellows and draw upon CfA office staff for consistent support and access to mentors who come through our offices. But it also limits collaboration between Fellows and city government partners and has other drawbacks. This model might not make sense in a smaller country or if there aren’t enough resources to cover travel costs for Fellowship teams to frequently visit their government partners. </p>
+
+<p>Some groups have run <a href="http://www.codeforamerica.org/about/international/2013-annual-report/">Fellowship programs where Fellows lived in their partner cities</a>. This provided lots of opportunities for community organizing and user research. We encourage you to take what works from our model, leave what doesn’t and create the rest (and then share back your learnings with the <a href="http://codeforall.org/">rest of the civic technology community!</a>).  See examples of variations other groups have done <a href="http://www.codeforamerica.org/about/international/2013-annual-report/">here</a>. </p>
