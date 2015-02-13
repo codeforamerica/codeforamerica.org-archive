@@ -2,4 +2,4 @@ exclude: ['blog', 'library', 'api']
 include: ['.htaccess']
 keep_files: ['blog', 'library', 'brigade', 'api']
 # Used to generate our social metadata
-url-base: "https://codeforamerica.org"
+url-base: "http://codeforamerica.org"
