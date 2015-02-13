@@ -32,7 +32,8 @@
 
 <!-- Twitter Card data --> 
   <meta name="twitter:card" content="summary_large_image"> 
-  <meta name="twitter:site" content="@codeforamerica"> 
+  <meta name="twitter:site" content="@codeforamerica">
+  <meta name="twitter:url" content="{{ page.url | prepend: site.url-base }}">
 
   {% if page.title %}
     <meta name="twitter:title" content="Code for America: {{ page.title }}"> 
@@ -59,13 +60,13 @@
 
 <!-- Open Graph data --> 
   {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }} | Code for America">
   {% else %} 
     <meta property="og:title" content="Code for America"> 
   {% endif %}
 
   <meta property="og:type" content="article"> 
-  <meta property="og:url" content="http://www.codeforamerica.org">
+  <meta property="og:url" content="{{ page.url | prepend: site.url-base }}">
 
   {% if page.metadata.image-url %}
     <meta property="og:image" content="{{ page.metadata.image-url }}"> 
