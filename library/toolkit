@@ -197,11 +197,88 @@
 
 <p>The most effective way we’ve found to to get governments interested in participating in the Fellowship program is  to contact them directly. This can be hard if you don’t have a direct connection so you may need to cold call or rely on those in your network to make an intro. Make a pipeline, prioritize and then execute against your outreach plan (calls, emails, etc).
 
-A big part of this strategy for getting governments interested in the Fellowship program revolves around understanding the needs of governments in the U.S. and tailoring our discussion of the Fellowship program to fit their needs. This has the dual effect of increasing the number of government applicants while simultaneously fostering dialogue around the role of technology in improving government at the local level.
+<p>A big part of this strategy for getting governments interested in the Fellowship program revolves around understanding the needs of governments in the U.S. and tailoring our discussion of the Fellowship program to fit their needs. This has the dual effect of increasing the number of government applicants while simultaneously fostering dialogue around the role of technology in improving government at the local level.</p>
 
-Once we have set the stage by publicizing the program among a large audience of potential government partners, we begin a process of even more focused outreach. Think of it as dating between CfA Staff and Government Partners. 
+<p>Once we have set the stage by publicizing the program among a large audience of potential government partners, we begin a process of even more focused outreach. Think of it as dating between CfA Staff and Government Partners. </p>
 
-There are two primary government candidates we target:
+
+<h4>High Level Government Officials<h4>
+
+<p>It is important to partner with mayors and other high-level government officials early on because they can connect and influence other government departments who might be interested in collaborating with the Fellows. Mayors in the U.S. generally understand what’s happening at the ground level in their governments and have the political capital to get others signed on. </p>
+
+<p>It is ideal to approach mayors shortly after an election. In our experience, mayors get excited about the program because they want innovation in their governments, and to be known as trying to “do things differently” with a new policy agenda. They oftentimes hope to use that to carry momentum for their term. Creating positive public relations opportunities such as photo-ops and media attention are helpful in working with mayors and other high level government officials. <p/>
+
+<p>Established tech executives in your community can be helpful in facilitating introductions to these officials (just getting your foot in the door to pitch to an official at that level can be hard). In CfA’s earlier years, we relied heavily on our Board member’s networks. Today, government officials who have participated in the program are extremely useful in getting others on board. On a case-by-case basis, CfA can help to facilitate introductions between mayors in other countries and those in the U.S. who can attest to the value of participating in the Fellowship program.  </p>
+
+<p>Here are some general tips for pitching the Fellowship program to high level government officials:</p>
+
+<ul>
+<li>Identify their biggest challenges to governing and suggest different ways that technology could help solve them.
+Highlight potential for positive publicity from participating in the program.</li>
+<li>Articulate the program as a way to help them achieve high-level goals and objectives. Find a specific official who’s responsible for a certain goal and explain how the Fellowship could help them meet that goal.</li>
+<li>Frame the Fellowship as a way inspire a culture of innovation that can sweep through their local government.</li>
+<li>Emphasize opportunities to increase efficiency, lower costs, enhance civic engagement and foster innovation.</li>
+<li>Share examples of success stories, either from your own work or from similar initiatives. You can find a list of examples of "wins" from CfA programs <a href="https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0Ah1olKDkcI9WdE1MVHl5ZGQ5LS1TZzRiQjU3Q2ZfX0E&usp=drive_web#gid=1">here</a> and videos showcasing apps and stories from past CfA projects <a href="http://www.codeforamerica.org/apps/">here.</a></li>
+<li>Invite them to a fun event where the energy will get them psyched. Often, asking them to speak is a way to get an official at an event they wouldn’t usually go to.</li>
+</ul>
+
+<p>As Luke explains:</p>
+
+<blockquote>
+    <p>“It's about identifying the goals and outcomes for their government. Often I encourage government partners to express problems that citizens encounter. I tell them I want them to do some fact-finding to ensure we know there is an issue and where those issues are. I explain that they can use data to pinpoint areas of opportunities, and then nudge them to identify the goals and outcomes they hope to see through the program.”</p>
+</blockquote>
+
+<h4>Government Officials in Middle Management</h4>
+<h6>(typically from the government IT Department, like an IT Manager, or from the larger government bureaucracy, like a Policy Manager) </h6>
+
+<p>Middle managers are crucial to government programs. In our experience it’s sometimes hard for them to envision how the Fellowship could be useful for their work. These officials have frequently been charged with safekeeping data and preserving processes which can seem in direct contrast with the Fellowship program. Generally, staff from the government IT department are resource-constrained so they initially see the only value in collaborating with the Fellowship program being an opportunity for their team to contribute to executing something specific and meaningful. The emphasis on cultivating and nurturing “emergent outcomes” that comes out of the Fellowship program is difficult to sell to this constituency. Many times higher level officials have been helpful to us in getting mid-level managers on board.</p>
+
+<p>Here are some tips for pitching the Fellowship program to middle-management government officials (a lot of these strategies are helpful for more senior government officials too):</p>
+
+<ul>
+<li>Give them a lot of information and concrete examples from past Fellowship programs. You can find examples of successes in this government <a href="https://docs.google.com/a/codeforamerica.org/document/d/1YiVsG_l7DXGvwnAq_kPjxnR3HmTvLz_N6wxsigF0SLY/edit">Guide on the Fellowship</a>, which is a handbook we prepare and distribute to government partners (present and potential). </li>
+
+<li>Go over some of the datasets that they already have in-house and explain how those data sets could be made useful. Focus on “non-controversial” datasets first. For example, if they have a dataset that lists all of the times and dates that garbage is picked up, explain how that dataset could be used as an input to an SMS application that can remind residents to take out their trash on that day. If you have the resources, it’s even better to show these “quick-wins” and build something simple that will give officials a clear picture of what can be accomplished. </li>
+
+<li>Focus your efforts on approaching top managers within these departments who have decision-making power.</li>
+
+<li>Try to get to know officials on a personal level and better understand the constraints facing their department, what they’re passionate about and what issues they’d like to work on. Find examples of civic tech innovations that could address those issues or brainstorm ideas for future projects that could be effective at leveraging technology to solve their problem.</li>
+
+<li>Target outreach efforts to Innovation Officers, Chief Data Officers, and Chief Digital Officers (or their equivalent) if these positions exist in the government you’re interested in working with. People with these roles can be very effective allies.</li>
+
+<li>Build a relationship with local citizen engagement and civic technology groups (if they exist), like a <a href="http://www.codeforamerica.org/brigade/">Brigade</a> in your community. They can connect you with officials.</li>
+</ul>
+
+<p>When you approach people in government about the Fellowship program, it’s important to be mindful of the language you use. If you have a technology background, don’t make any assumptions about a government official’s degree of technical expertise. Avoid using terms such as “open source, GitHub issues, API, prototyping, agile development” and other “jargon” unless you take the time to explain the meaning. These terms are commonplace in the technology world but are mostly foreign to government workers. Using tech-heavy terminology can be isolating, patronizing and, most importantly, derail the potential for collaboration.  </p>
+
+<p>Framing is also key. In CfA’s early days we made the mistake of presenting the program as CfA Fellows “fixing government.” The Fellowship program should always be presented as a partnership between two groups that are passionate about public service and want to make a difference in their communities. The emphasis on collaboration and participatory processes should be established at the very beginning.  Resources from our Brigade toolkit on <a href="https://docs.google.com/a/codeforamerica.org/document/d/1WtoE_Kfqcu73MCUOIXujrzTfqrQAW3DGt0sC8iKJ6Rw/edit#heading=h.z53m2pux0tw5">how to collaborate with government</a> may also be useful to you in your efforts to pitch the program to potential government partners.  </p>
+
+<h4>Approaching Potential Partners</h4>
+<p>The road to contracting with government partners differs a lot with each potential partner. When CfA first started out, we used personal networks, our Board, and publicity from speaking at events like government conferences to drum up interest in our programs. Now that we have a reputation for the work we’ve done, things play out a bit differently. Here are some examples to give you an idea of how we form partnerships with government partners.</p>
+
+<ul>
+<li>Somerville approached us to get involved in Code for America’s <a href="http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/">Digital Front Door</a> project. Code for America couldn’t work with them on that project, but we identified that Somerville officials wanted access to new tech and new ways of doing things. Our Fellowship team helped them understand how the Fellowship could support them in accomplishing their goals. They’re currently one of our <a href="http://www.codeforamerica.org/governments/2015-cities/">2015 Fellowship cities</a>.</li>
+<li>In Indianapolis, the mayor of South Bend, Indiana (a previous Code for America partner) sent a letter to the mayor of Indianapolis recommending that the city work with Code for America. This opened up a conversation with the mayor of Indianapolis about how partnering with CfA could help make progress towards goals they had for improving public safety in the city. This is an example of how government officials you’ve worked with in the past can be important advocates by introducing you to people in their network and by speaking on your behalf.</li>
+<li>In Richmond, VA’s case, the government officials there had applied previously for CfA’s Fellowship program but weren’t selected because there wasn’t a clear and specifically scoped out problem that the Fellowship program could help to solve. The Fellowship team kept Richmond engaged with Code for America through the <a href="http://www.codeforamerica.org/about/peernetwork/">Peer Network</a> (our network of government officials who receive trainings through webinars and connect to each other about how to use technology to better solve civic issues). They also kept in touch with government contacts in Richmond, educating them about our model, and working to better understand their thinking about the impact they want to make using technology. It was a long process of building the relationship and scoping out a possible project. We were eventually able to figure out a place where their needs overlapped with what the Fellowship program could offer and Richmond is a 2015 Fellowship city.</li>
+</ul>
+
+<h4>Application Flow</h4>
+
+<p>Code for America aims to both have the best applications, and as many as possible. We encourage many cities to apply even if funding is unclear, as we can help them figure that out later on in the process. Also, many first time applicants become cities in future rounds if they don’t make it the first time. In terms of communications, between Jan and March 31s we expect to have approximately 7-12 communications with the cities who are going through the application process, 3-4 times a month.</p>
+
+<h4>Selection Criteria</h4>
+
+<p>We use the following criteria to determine which cities applying to the Fellowship program we should work with:</p>
+<ul>
+<li>strong leadership and buy-in for the program</li>
+<li>internal sponsorship by key players in and outside of the department Code for America fellows would partner with
+a potential for impact and general project scope that aligns with Code for America’s <a href="http://www.codeforamerica.org/our-work/focus-areas/">focus areas</a></li>
+<li>confirmed or promised budget (these normally include prospective matching funds) </li>
+<li>a clear understanding of CfA’s approach</li>
+demonstrated interest in improving digital services in tangible ways (evidence we can actually see) 
+
+
+
 
 
 
