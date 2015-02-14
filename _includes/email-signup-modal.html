@@ -1,0 +1,52 @@
+{% comment %}
+
+This modal is loaded on all pages and hidden by default.
+It serves as a confirm screen and data entry form for our global-footer mailing list.
+
+{% endcomment %}
+<div class="js-modal">
+	<div id="modal-email-signup" class="modal">
+		<div class="modal-backdrop"></div>
+		<section class="modal-dialog">
+			<div class="modal-content">
+				<h2>Help us send you great stuff</h2>
+				<p>We'll use this information to send you interesting news, tools and updates.</p>
+				<p id="email-signup-error" class="alert-failure" style="display:none;"></p>
+				<form id="email-signup-data-form" action="//codeforamerica.us2.list-manage.com/subscribe/post-json?u=d9acf2a4c694efbd76a48936f&amp;id=3ac3aef1a5&c=?" method="get">
+					<ul class="list-form">
+						<li class="form-field">
+							<label for="mce-EMAIL">Email*</label>
+							<input type="email" id="mce-EMAIL" name="EMAIL" placeholder="email@domain.com" value="" />
+						</li>
+						<li class="form-field">
+							<label for="mce-FNAME">First name*</label>
+							<input type="text" id="mce-FNAME" name="FNAME" placeholder="Jane" />
+						</li>
+						<li class="form-field">
+							<label for="mce-LNAME">Last name*</label>
+							<input type="text" id="mce-LNAME" name="LNAME" placeholder="Doe" />
+						</li>
+						<p>
+							<legend>Check all that apply:</legend>
+						</p>
+						<li>
+							<label for="mce-group[10273]-10273-0"><input type="checkbox" value="4096" name="group[10273][4096]" id="mce-group[10273]-10273-0" /> I work in government</label>
+						</li>
+						<li>
+							<label for="mce-group[10273]-10273-1"><input type="checkbox" value="8192" name="group[10273][8192]" id="mce-group[10273]-10273-1"> I attend Brigade events</label>
+						</li>
+						<li>
+							<label for="mce-group[10273]-10273-2"><input type="checkbox" value="131072" name="group[10273][131072]" id="mce-group[10273]-10273-2" /> I am a technologist</label>
+						</li>
+						<input type="hidden" value="{{ page.url }}" name="REFERRAL" style="display:none;" id="mce-REFERRAL">
+						<div class="button-group">
+							<input type="submit" class="primary-button" value="Submit" />
+							<input type="button" class="button button-subtle js-modal-exit" value="Cancel"/>
+						</div>
+					</ul>
+				</form>
+			</div><!-- end .modal-content -->
+			<a href="#" class="modal-exit js-modal-exit">X</a>
+		</section>
+	</div><!-- end .modal-email-signup -->
+</div>

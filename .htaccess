@@ -198,6 +198,7 @@ RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/accelerator-appl
 RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-faq
 RedirectMatch permanent ^/about/startups/?$ /about/companies
 #RedirectMatch permanent ^/mentor/?$ /companies
+RedirectMatch permanent ^/companies/newsletter/?$ /companies
 
 #
 # More Fellowship Program

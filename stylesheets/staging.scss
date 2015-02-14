@@ -11,6 +11,190 @@
 // Layouts served: *
 //
 
+// ##### MIXINS AND HELPERS #####
+//
+// These are little mixins used to make our lives easier.
+//
+
+// This mixin allows us to style input field placeholder text
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    $color;
+	   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    $color;
+	   opacity:  1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    $color;
+	}
+}
+
+// ##### SMALL PATTERNS #####
+//
+// Small patterns that can be used in multiple places. These add or overwrite pattern-library functionality.
+//
+
+// .button-invert with .white is completely white
+a.button-invert.white,
+input[type="submit"].button-invert.white,
+button.button-invert.white {
+	color: white;
+	// These importants are terrible. But the level of specificity on slab- and block- buttons is nearly impossible to overwrite.
+	// This is a hack for now that will need to be fixed in a later version of the pattern-library.
+	border-color: white !important;
+	border-bottom: 1px solid white !important;
+}
+
+// ##### CHANGES TO GLOBAL FOOTER #####
+//
+// These styles adapt the .global-search area in the footer to become a mailing list signup.
+// These pull from the origin .global-search class in the pattern library but change the name and styles for a new purpose.
+//
+
+/* Global Footer - main - border */
+
+.global-footer {
+	// Remove the border from the top of the global footer
+	border-top: none;
+	// Remove the top padding so our new signup box snaps to top
+	padding-top: 0;
+}
+
+nav.nav-footer {
+	margin-top: 30px;
+}
+
+/* Global Footer - main - signup form */
+
+.global-footer .signup-global {
+	margin: 32px 0;
+	color: white;
+}
+
+.global-footer .signup-global h4 {
+	display: inline-block;
+	color: white;
+	margin-right: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.global-footer .signup-global h4 i:before {
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.global-footer .signup-global input[type="email"] {
+	background-color: transparent;
+	color: white;
+	font-size: 14px;
+	line-height: inherit;
+	margin: 0;
+	margin-bottom: 8px;
+	height: 40px;
+	padding: 0px 10px;
+	text-transform: none;
+	box-sizing: content-box;
+	border-radius: 0px;
+	width: 90%;
+	border-color: white;
+	border: 1px solid white;
+
+	@include placeholder-color(white);
+}
+
+.global-footer .signup-global input[type="email"]:focus {
+	border-color: white;
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.global-footer .signup-global input[type="submit"] {
+	margin-bottom: 8px;
+}
+
+/* Global footer - layout (screens above 40em) */
+
+@media all and (min-width: 40em) {
+	.global-footer .signup-global {
+		margin-left: 0;
+	}
+
+	.global-footer .signup-global input[type="email"] {
+		width: 300px;
+		margin-right: 8px;
+	}
+}
+
+// ##### ADD MODAL STYLES #####
+//
+// We have no concept of a modal. Modals are useful for some basic actions (like showing confirm pages.)
+// Borrowing styles from the Boostrap modal system here.
+//
+
+/* Modal */
+
+// Modal container that holds the dialog box, adds tinted background
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	overflow: hidden;
+	//-webkit-overflow-scrolling: touch;
+	outline: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+// When the modal is active
+body.modal-active {
+	.js-container {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.modal {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		display: block;
+	}
+
+	.modal .modal-dialog {
+		position: relative;
+		box-sizing: border-box;
+		background-color: white;
+
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 25px;
+		padding: 25px;
+	}
+	.modal .modal-exit {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+}
+
+// Styles for desktop and up
+@media all and (min-width: 40em) {
+	body.modal-active .modal .modal-dialog {
+		width: 70%;
+		margin-left: 15%;
+		margin-top: 100px;
+		padding: 4%;
+	}
+}
+
 // ##### MASTHEAD-CUSTOM #####
 //
 // Introduces a custom masthead that is deeper than usual and holds text and calls-to-action.

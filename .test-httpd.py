@@ -193,6 +193,7 @@ class TestApache (unittest.TestCase):
                  ('/governments/summit-county', '/governments/summitcounty/'),
                  ('/focus', '/our-work/focus-areas/'),
                  ('/projects/new-york-city-hhc-accelerator/', '/projects/new-york-city-hhs-accelerator/'),
+                 ('/companies/newsletter', '/companies/'),
                  ('/talent', '/our-work/initiatives/talent/'),
                  ('/health', '/our-work/focus-areas/health/')
                  
