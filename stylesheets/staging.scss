@@ -194,3 +194,115 @@ body.modal-active {
 		padding: 4%;
 	}
 }
+
+// ##### MASTHEAD-CUSTOM #####
+//
+// Introduces a custom masthead that is deeper than usual and holds text and calls-to-action.
+//
+
+// When global-header comes before mastead-custom, it gets this class
+// Remove the margin so the masthead snaps to the bottom of the global-header
+.global-header-custom {
+  margin-bottom: 0;
+}
+
+.masthead.masthead-custom {
+ 
+  // ## Basic layout
+
+  // Set the color we'll fade the background into
+  background-color: #004b6a;
+  // Add some padding to the top and bottom
+  padding-top: 30px;
+  // Keep the text color white, even on mobile
+  color: white;
+
+  // ## The header image, held in the :before pseudo-class
+  
+  &:before {
+    // Same min-height as our container
+    min-height: 100%;
+    background-size: cover;
+    // Fade into the background color
+    opacity: 0.3;
+    // Don't hide it on mobile
+    display: block;
+  }
+
+  // ## Typography
+
+  .page-title {
+    // Restyle the page header text
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    text-transform: none;
+    // Keep the color white, even on mobile. Have to use here to override specificity.
+    color: white;
+  }
+
+  .page-overline {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .page-description {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  p {
+    // On small screens, core styles try to float .masthead p to the left. Don't do that.
+    float: none;
+  }
+
+  // ## Submodule layout
+
+  // This container holds the description
+  .description {
+    position: relative;
+    z-index: 3;
+    margin-top: 100px;
+  }
+
+  // This container holds the down arrow, inside of .description
+  .arrow img {
+    width: 30px;
+    margin-bottom: 20px;
+  }
+
+  .arrow img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  // ## Styles for tablet and up
+
+  @media all and (min-width: 40em) {
+  // add responsive styles here
+    .page-title {
+      // Make the page title bigger
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -1px;
+    }
+
+    .page-overline {
+      // Make the overline a bit bigger
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+
+    .page-description {
+      // Make the page description text bigger
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+  }
+
+}

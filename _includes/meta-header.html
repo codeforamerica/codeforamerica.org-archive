@@ -1,28 +1,85 @@
 <!-- Place this data between the <head> tags of your website --> 
-<meta name="description" content="Page description. No longer than 155 characters.">
+  {% if page.description %}
+    <meta name="description" content="{{ page.description | truncate: 152, '.'  }}">
+  {% else %}
+    <meta name="description" content="Page description. No longer than 155 characters.">
+  {% endif %}
 
 <!-- Google Authorship and Publisher Markup --> 
-<link rel="author" href="https://plus.google.com/+codeforamerica/posts"/>
-<link rel="publisher" href="https://plus.google.com/+codeforamerica/about"/>
+  <link rel="author" href="https://plus.google.com/+codeforamerica/posts"/>
+  <link rel="publisher" href="https://plus.google.com/+codeforamerica/about"/>
 
 <!-- Schema.org markup for Google+ --> 
-<meta itemprop="name" content="Code for America">
-<meta itemprop="description" content="Code for America is working towards a government by the people, for the people, that works in the 21st century. We are a 501(c)3 non-profit that helps residents and governments harness technology to solve community problems.">
-<meta itemprop="image" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
+  {% if page.title %}
+    <meta itemprop="name" content="Code for America: {{ page.title }}" />
+  {% else %}
+    <meta itemprop="name" content="Code for America" />
+  {% endif %}
+
+  {% if page.description %}
+    <meta itemprop="description" content="{{ page.description }}">  
+  {% else %}
+    <meta itemprop="description" content="Code for America is working towards a government by the people, for the people, that works in the 21st century. We are a 501(c)3 non-profit that helps residents and governments harness technology to solve community problems.">
+  {% endif %}
+
+  {% if page.metadata.image-url %}
+    <meta itemprop="image" content="{{ page.metadata.image-url }}">
+  {% elsif page.metadata.image-url == null and page.masthead-image %}
+    <meta itemprop="image" content="http://codeforamerica.org/{{ page.masthead-image }}">
+  {% else %}
+    <meta itemprop="image" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
+  {% endif %}
 
 <!-- Twitter Card data --> 
-<meta name="twitter:card" content="summary_large_image"> 
-<meta name="twitter:site" content="@codeforamerica"> 
-<meta name="twitter:title" content="Code for America"> 
-<meta name="twitter:description" content="Code for America is working towards a government by the people, for the people, that works in the 21st century. We help residents and governments harness technology to solve community problems."> 
-<meta name="twitter:creator" content="@codeforamerica"> 
-<!-- Twitter summary card with large image must be at least 280x150px --> 
-<meta name="twitter:image:src" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
+  <meta name="twitter:card" content="summary_large_image"> 
+  <meta name="twitter:site" content="@codeforamerica">
+  <meta name="twitter:url" content="{{ page.url | prepend: site.url-base }}">
+
+  {% if page.title %}
+    <meta name="twitter:title" content="Code for America: {{ page.title }}"> 
+  {% else %}  
+    <meta name="twitter:title" content="Code for America"> 
+  {% endif %}
+
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">   
+  {% else %}
+    <meta name="twitter:description" content="Code for America is working towards a government by the people, for the people, that works in the 21st century. We help residents and governments harness technology to solve community problems."> 
+  {% endif %}
+
+  <meta name="twitter:creator" content="@codeforamerica"> 
+
+  <!-- Twitter summary card with large image must be at least 280x150px --> 
+  {% if page.metadata.image-url %}
+    <meta name="twitter:image:src" content="{{ page.metadata.image-url }}">
+  {% elsif page.metadata.image-url == null and page.masthead-image %}
+    <meta name="twitter:image:src" content="http://codeforamerica.org/{{ page.masthead-image }}">
+  {% else %}
+    <meta name="twitter:image:src" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
+  {% endif %}
 
 <!-- Open Graph data --> 
-<meta property="og:title" content="Code for America"> 
-<meta property="og:type" content="article"> 
-<meta property="og:url" content="http://www.codeforamerica.org">
-<meta property="og:image" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png">
-<meta property="og:description" content="Code for America is working towards a government by the people, for the people, that works in the 21st century. We are a 501(c)3 non-profit that helps residents and governments harness technology to solve community problems."> 
-<meta property="og:site_name" content="Code for America"> 
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }} | Code for America">
+  {% else %} 
+    <meta property="og:title" content="Code for America"> 
+  {% endif %}
+
+  <meta property="og:type" content="article"> 
+  <meta property="og:url" content="{{ page.url | prepend: site.url-base }}">
+
+  {% if page.metadata.image-url %}
+    <meta property="og:image" content="{{ page.metadata.image-url }}"> 
+  {% elsif page.metadata.image-url == null and page.masthead-image %}
+    <meta property="og:image" content="http://codeforamerica.org/{{ page.masthead-image }}"> 
+  {% else %} 
+    <meta property="og:image" content="http://www.codeforamerica.org/assets/CfA_logo_metatag_square.png"> 
+  {% endif %}
+
+  {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}"> 
+  {% else %}
+    <meta property="og:description" content="Code for America is working towards a government by the people, for the people, that works in the 21st century. We are a 501(c)3 non-profit that helps residents and governments harness technology to solve community problems."> 
+  {% endif %}
+
+  <meta property="og:site_name" content="Code for America"> 
