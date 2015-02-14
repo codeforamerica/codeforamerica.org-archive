@@ -49,6 +49,92 @@
 
 <p>Some groups have run <a href="http://www.codeforamerica.org/about/international/2013-annual-report/">Fellowship programs where Fellows lived in their partner cities</a>. This provided lots of opportunities for community organizing and user research. We encourage you to take what works from our model, leave what doesn’t and create the rest (and then share back your learnings with the <a href="http://codeforall.org/">rest of the civic technology community!</a>).  See examples of variations other groups have done <a href="http://www.codeforamerica.org/about/international/2013-annual-report/">here</a>.</p>
 
+<h4>IV. OVERVIEW OF CODE FOR AMERICA’S FELLOWSHIP PROGRAM </h4>
+<p>This <a href="https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0AksxopTEkLVNdGdmUEZ5azNtOEt1YTNnRDFBT2NmOGc#gid=0">Program Implementation Example</a> from the 2014 CfA Fellowship was created to organize the activities we do in each stage of the Fellowship. </p>
+
+<p class="alert-failure">Fellowship calendar -- need to upload from <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ji_Gxrbiaui3H1Z1bFdcbJmCJIpR-n8F50012h0f-2Q/edit">toolkit</a>. </p>
+
+<h4>The Fellowship Timeline from a Fellowship Team’s Perspective</h4>
+
+<p>
+<figure>
+ <img src="http://teambiglex.tumblr.com/image/83668497015"> 
+    <figcaption>
+      This image, courtesy of the Lexington Fellows team ‘14, illustrates the overall process from the Fellows’ perspective, in a beautiful and easy to use infographic.
+    </figcaption>
+</figure>
+</p>
+
+<h4>These include:</h4>
+
+<ul>
+<li><b>Preparation</b>: Get government partners ready for the Fellowship experience. We hold an onboarding session during the <a href="http://www.codeforamerica.org/summit/">CfA Summit</a> in the fall, followed by in-city visits. This process includes setting the stage with a broad range of city government staff, aligning community resources, ensuring access to relevant data and setting up logistics like work space, housing, meetings, and access to buildings and IT infrastructure. It also may include some baseline research in areas where we want to have an impact.</li>
+<li><b>Fellows Orientation</b>: Prepares Fellows for their monthlong residency period in government and for the program overall. This includes an orientation for Fellows on <a href="http://www.codeforamerica.org/our-work/">CfA’s programs</a> and approach, trainings about local government and research methodologies, talks from CfA advisors and mentors, and an opportunity to practice collaborating together to build applications.</li>
+
+<p class="alert"> This <a href="https://docs.google.com/a/codeforamerica.org/presentation/d/1dgAQNRBBXm6TQMjviU86PLcWcCyOAaN3h5FMl8HvLUg/edit#slide=id.p19">Fellow Curriculum Deep Dive Deck</a> was used during the Fellows’ January Training to prepare them for the curriculum of the first few months of the Fellowship. </p>
+
+<li><b>Government Residency (February)</b>: Provides an opportunity for Fellows to create relationships with government officials, conduct user research with citizens, develop partnerships with community nonprofits/start-ups, and helps them begin to further scope out the project and start identifying data sets that would be useful for the project. For this phase, Fellows live and work in their partner cities. </li>
+
+<li><b>Development Sprints & Mentorship (March–May)</b>: Gives the fellows a chance to build and refine the technology and better scope out the problem they’re trying to solve. When the Fellows come back from Residency they begin the development of their first project prototype after whittling their ideas down to a top few. This is when they really start using <a href="http://theleanstartup.com/principles"“lean” principles</a> to build their work. Fellows are also encouraged to use <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ybaIrGcUN3e4uWIHSphlx8UhjSCyr1yfcelg7jZ-Kr8/edit">agile development</a> processes and tests to increase the security and rigor of their app projects. These include unit testing, route testing, and integration testing. The tests functioned as a safeguard against unintentional regressions, and also helped to document the expected behavior of the code in clear, concise code. </li>
+
+<p>Staff engage with fellows at this time with recurring trainings, meetings, and one on one chats to continue supporting Fellows. Fellows also make plans to meet with their government partners in person throughout this phase to pitch ideas to them and other stakeholders and get feedback. </p>
+
+<li><b>Mid-Year Reports and Celebrations (June)</b>: We require all fellowship teams to put together a mid-year report on their project progress and metrics from the year thus far. We also hold a “Mini-Summit” (which we call “<a href="http://beta.codeforamerica.org/">BETA</a>”), a small conference that gives the CfA community a snapshot view into what the Fellows are working on.</li>
+
+<li><b>Product Sprints & Career Development (July–August)</b>: Fellows continue developing their next-stage prototypes and test to increase the security and rigor of their projects. Staff members begin to support fellows with connections and ideas about their post-Fellowship futures. Fellows travel as needed to meet with their government partners and others in the community to get more feedback on their project.</li>
+
+<li><b>CfA Summit (September)</b>: The Summit is an annual conference where CfA convenes the global civic tech community. At the Summit, fellows, their government partners and other civic tech enthusiasts tell their stories to a broader audience. The Summit includes very produced talks that promote the civic tech movement. Check out the <a href="https://www.youtube.com/watch?v=RLCZV9CR4dQ">app demo</a> from our Louisville Kentucky Team in 2013. We also announce our Government City Partners for the upcoming year at the Summit, and invite their elected officials and local government staff to attend. This gives our future partners a chance to talk to (and learn from) current government partners about the Fellowship experience and gives them more information about civic technology.  </li>
+
+<li>Transition & Sustainability (October - November): CfA fellows and staff work together throughout the entire year to develop and/or identify effective sustainability mechanisms to keep the project working and going for the government partner once the Fellowship comes to an end. October and November are used to focus on that transition, as well as have a celebration to close out the program. We also use this time to orient new government partners for the following year. </li>
+
+</ul>
+
+<h4>THE IDEATION PROCESS ILLUSTRATED</h4>
+<p>
+<figure>
+ <img src="http://coquicoders.org/content/images/2014/Mar/Ideation_Process_Notated.png"> 
+    <figcaption>
+      CfA’s Puerto Rico fellows from 2014 made this image to illustrate their brainstorming and selection process.
+    </figcaption>
+</figure>
+</p>
+
+<h4>Adapting the CfA Fellowship Program Timeline</h4>
+
+<p>The schedule above is for a program in which the fellows primarily work from one central location (San Francisco for CfA’s case), but make periodic trips to visit their government partner throughout the year. </p>
+
+<p>If you anticipate the fellows will work in the same place as their government partners all year long, your calendar may look more like the one below. This timeline describes the process for the <a href="http://www.codeforamerica.org/about/international/2013-annual-report/partners-cfmc.html">Code for Mexico City Fellowship program</a> organized by <a href="http://labplc.mx/">Mexico City’s Government Innovation Lab</a> where fellows worked in the same city as their government partners for the duration of their Fellowship: </p>
+
+<ol>
+<li><b>Fellowship promotion, application and selection</b>: The Lab promoted its Fellowship program in a variety of ways, including the creation of a special promotional video which was disseminated through official government channels. 150 people completed the Lab’s Fellowship application  and five were selected.</li>
+
+<li><b>Problem discovery (1 month)</b>: The Fellows worked with their government partners to determine the datasets they would need as inputs for their projects and took the necessary steps to make them available. For this stage, the Fellows spent some time doing prep work and then two weeks working side by side with their government partners. </li>
+
+<li><b>Minimum Viable Product  (2.5 months)</b>: The Fellows used the information they gathered during the Discovery phase to develop a Minimum Viable Product (MVP).  The MVP was a simple way to explain their idea and to test the viability of their proposed technological solution with Lab staff and their respective government counterparts (each Fellow worked with a different government department) used the MVP as a starting off point for feedback. </li>
+
+<li><b>Product development (2 months)</b>: Fellows were encouraged to quickly change the product based on the feedback on the MVP with the main goal being to make sure that the problem worked to tackle the problem at hand. Refinement of the MVP that takes into account the feedback and recommendations of other Fellows, lab staff, and government counterparts. For this portion, the Fellows focused their efforts on building out the technical components of their idea and on refining it from a graphic design and usability standpoint. Citizen usability and access were top priorities. By the end of this phase the Fellows had created a full-fledged beta version of their product (after moving from MVP to alpha).</li>
+ 
+<li><b>Testing (2 months)</b>: The Fellows took their products out into the world so that real people could try them out. This helped them to identify bugs and usability issues. They took into account these suggestions and made changes to their applications before handing them off to their government counterparts. </li> 
+
+<li><b>App launch and transition to government partners: As the Fellowship programs winds down for the year the Fellows work with their government partners to make sure someone from the city is responsible for and equipped to maintain the project. Preparation for this can include technical training for government staff and community organizing with local groups most closely connected to the project. In cities with active CfA Brigade chapters the members of the local Brigade are key to this transition. Sometimes Fellows hold formal launch events for their projects in their cities which is helpful in publicizing the project.</li>
+
+</ol>
+
+<h4>Staffing the Program</h4>
+
+<p>Many staff members work to support the CfA Fellowship program. The main roles and recommended staff profiles are as follows:</p>
+
+<ul>
+<li><b>Fellowship Program Director</b>: maintains overall strategy and oversees partnerships with other CfA programs and with government city partners. It’s ideal for this person to have a background in government.</li>
+
+<li><b>Fellowship Program Manager</b>: responsible for overall delivery, creation, and evaluation of the program. This person should be adept at managing interpersonal relationships, and be detail-oriented and organized.</li>
+
+<p>Both of these roles are directly involved in creating the Fellowship program calendar and schedule.</p>
+
+<li><b>Director of Government Relations</b>: works with local governments interested in the program to scope out possible projects, explain the Fellowship program and assist government partners throughout the Fellowship program. It’s helpful for this position to be filled by someone with a sales background with extensive communications skills and a working knowledge of local government.</li>
+
+<li><b>Senior Manager of City Engagements</b>: collaborates with the Director of Govt. Relations to develop strong relationships with potential government city partners, understand their needs and support them in applying and executing the Fellowship program. As with the Director of Govt. Relations, it’s helpful for this person to have a strong understanding of local government and have solid interpersonal skills. </li>
+
 <h2>V. RECRUITING FELLOWS</h2>
 
 <h3>Strategies for Recruiting Quality Fellows</h3>
