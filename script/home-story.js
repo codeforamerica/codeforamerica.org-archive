@@ -49,14 +49,18 @@ if(typeof document.createStyleSheet === 'undefined')
 function on_stories(stories)
 {
     var story = stories[Math.floor(Math.random() * stories.length)];
+    var head_html = '<a href="'+story.page_link+'">'+story.title+'</a>';
+    var onclick_event = "ga('send', 'event', 'Homepage', 'Hero link click', 'Story: "+story.title+"');";
 
-    document.getElementById('story-title').innerHTML = story.head_html;
+    document.getElementById('story-title').innerHTML = head_html;
     document.getElementById('story-content').innerHTML = story.content_html;
+    document.getElementById('story-title').getElementsByTagName('a')[0].setAttribute('onclick',onclick_event);
     
-    if(story.hasOwnProperty('box_text') && story.hasOwnProperty('box_link'))
+    if(story.hasOwnProperty('button_text') && story.hasOwnProperty('page_link'))
     {
-        document.getElementById('box-link').href = story.box_link;
-        document.getElementById('box-link').innerHTML = story.box_text;
+        document.getElementById('box-link').href = story.page_link;
+        document.getElementById('box-link').innerHTML = story.button_text;
+        document.getElementById('box-link').setAttribute('onclick',onclick_event);
     }
 
     var s = document.createStyleSheet();
