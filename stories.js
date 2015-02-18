@@ -56,7 +56,7 @@ on_stories(
         "title"         : "There has never been a better time to work on technology inside government.",
         "content_html"  : "Engineers, designers, product managers, data scientists, and more &mdash; put your skills to work in service to your country. Let’s bring government into the 21st century together.",
         "image_src"     : "/media/images/talent/space.jpg",
-        "button_text"   : "Server your government"
+        "button_text"   : "Serve your government"
     },
 ]
 );
