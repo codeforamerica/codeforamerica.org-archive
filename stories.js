@@ -31,11 +31,18 @@ on_stories(
     //     "box_text": "Read the announcement"
     // },
     {
-        "head_html": "<a href='governments/fellowship'>Bring the Fellows to you</a>",
-        "content_html": "Bring a team of technologists to your local government for a year.",
-        "image_src": "media/images/about_fellowship/longbeach.jpg",
-        "box_link": "governments/fellowship",
-        "box_text": "Learn more"
+        "page_link"     : "/governments/fellowship",
+        "title"         : "Bring the Fellows to you",
+        "content_html"  : "Bring a team of technologists to your local government for a year.",
+        "image_src"     : "/media/images/about_fellowship/longbeach.jpg",
+        "button_text"   : "Learn more"
+    },
+    {
+        "page_link"     : "/our-work/initiatives/health",
+        "title"         : "Delivering health services with dignity, by default",
+        "content_html"  : "Code for America is partnering with local governments to build digital health services focused on users.",
+        "image_src"     : "/media/images/health/somerville.jpg",
+        "button_text"   : "Learn more"
     }
 ]
 );
