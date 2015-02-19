@@ -86,7 +86,14 @@ nav-breadcrumbs:
       {% include nav.html %}
       <main role="main">
         {{ content }}
-        
+
+        <!-- Email signup form -->
+        <div class="slab-medium-red">
+          <div class="layout-breve layout-tight">
+            {% include email-signup-form.html context="footer" %}
+          </div><!-- end .layout-breve -->
+        </div><!-- end .slab-dark-blue -->
+
         {% include global-footer.html %}
       </main>
     </div>
