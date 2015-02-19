@@ -38,7 +38,7 @@ on_stories(
         "button_text"   : "Learn more"
     },
     {
-        "page_link"     : "/our-work/initiatives/health",
+        "page_link"     : "/our-work/focus-areas/health/",
         "title"         : "Delivering health services with dignity, by default",
         "content_html"  : "Code for America is partnering with local governments to build digital health services focused on users.",
         "image_src"     : "/media/images/health/somerville.jpg",
