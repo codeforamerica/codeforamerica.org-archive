@@ -38,7 +38,7 @@ on_stories(
         "button_text"   : "Learn more"
     },
     {
-        "page_link"     : "/our-work/initiatives/health",
+        "page_link"     : "/our-work/focus-areas/health/",
         "title"         : "Delivering health services with dignity, by default",
         "content_html"  : "Code for America is partnering with local governments to build digital health services focused on users.",
         "image_src"     : "/media/images/health/somerville.jpg",
@@ -56,7 +56,7 @@ on_stories(
         "title"         : "There has never been a better time to work on technology inside government.",
         "content_html"  : "Engineers, designers, product managers, data scientists, and more &mdash; put your skills to work in service to your country. Let’s bring government into the 21st century together.",
         "image_src"     : "/media/images/talent/space.jpg",
-        "button_text"   : "Server your government"
+        "button_text"   : "Serve your government"
     },
 ]
 );

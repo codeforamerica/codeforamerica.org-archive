@@ -71,12 +71,12 @@ nav.nav-footer {
 
 /* Global Footer - main - signup form */
 
-.global-footer .signup-global {
+.signup-global {
 	margin: 32px 0;
 	color: white;
 }
 
-.global-footer .signup-global h4 {
+.signup-global h4 {
 	display: inline-block;
 	color: white;
 	margin-right: 16px;
@@ -84,12 +84,12 @@ nav.nav-footer {
 	margin-bottom: 20px;
 }
 
-.global-footer .signup-global h4 i:before {
+.signup-global h4 i:before {
 	margin-right: 10px;
 	font-size: 24px;
 }
 
-.global-footer .signup-global input[type="email"] {
+.signup-global input[type="email"] {
 	background-color: transparent;
 	color: white;
 	font-size: 14px;
@@ -108,23 +108,23 @@ nav.nav-footer {
 	@include placeholder-color(white);
 }
 
-.global-footer .signup-global input[type="email"]:focus {
+.signup-global input[type="email"]:focus {
 	border-color: white;
 	border-color: rgba(255, 255, 255, 0.5);
 }
 
-.global-footer .signup-global input[type="submit"] {
+.signup-global input[type="submit"] {
 	margin-bottom: 8px;
 }
 
 /* Global footer - layout (screens above 40em) */
 
 @media all and (min-width: 40em) {
-	.global-footer .signup-global {
+	.signup-global {
 		margin-left: 0;
 	}
 
-	.global-footer .signup-global input[type="email"] {
+	.signup-global input[type="email"] {
 		width: 300px;
 		margin-right: 8px;
 	}

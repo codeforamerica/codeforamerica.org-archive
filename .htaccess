@@ -91,14 +91,14 @@ RedirectMatch permanent ^/brigade06-27-2013/?$ /brigade-training/brigade06-27-20
 #
 # Wordpress blog.
 #
-RedirectMatch permanent ^/(wp-admin.+)$ /blog/$2
-RedirectMatch permanent ^/(wp-login.+)$ /blog/$2
-RedirectMatch permanent ^/(wp-content/.+)$ /blog/$2
-RedirectMatch permanent ^/(\d\d\d\d/\d\d/\d\d/.+)$ /blog/$2
-RedirectMatch permanent ^/(category/.+)$ /blog/$2
-RedirectMatch permanent ^/(author/.+)$ /blog/$2
-RedirectMatch permanent ^/(feed/.+)$ /blog/$2
-RedirectMatch permanent ^/(feed/?)$ /blog/$2
+RedirectMatch permanent ^/(wp-admin.+)$ /blog/$1
+RedirectMatch permanent ^/(wp-login.+)$ /blog/$1
+RedirectMatch permanent ^/(wp-content/.+)$ /blog/$1
+RedirectMatch permanent ^/(\d\d\d\d/\d\d/\d\d/.+)$ /blog/$1
+RedirectMatch permanent ^/(category/.+)$ /blog/$1
+RedirectMatch permanent ^/(author/.+)$ /blog/$1
+RedirectMatch permanent ^/(feed/.+)$ /blog/$1
+RedirectMatch permanent ^/(feed/?)$ /blog/$1
 
 #
 # General information.
