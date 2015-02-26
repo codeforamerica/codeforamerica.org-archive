@@ -1,3 +1,13 @@
+---
+
+layout: default
+
+---
+
+<section class="layout-semibreve">
+
+<section>
+
 <h2> Recruiting Government Partners</h2>
 
 <p>CfA works to promote the Fellowship program and then receives applications from governments that are interested in participating. Once the application cycle is complete, CfA selects which governments to work with based upon pre-established selection criteria. We try to get a lot of different cities throughout the U.S. interested in the program because we work with multiple cities (between 8 and 10) simultaneously. </p>
@@ -137,3 +147,5 @@ a potential for impact and general project scope that aligns with Code for Ameri
 <li>a clear understanding of CfA’s approach</li>
 
 demonstrated interest in improving digital services in tangible ways (evidence we can actually see)
+
+</section>
