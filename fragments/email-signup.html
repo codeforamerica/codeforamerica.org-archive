@@ -129,7 +129,11 @@
 {% include email-signup-modal.html %}
 
 <!-- Print markup for the email signup modal -->
-{% include email-signup-form.html context="footer" %}
+<div class="slab-medium-red">
+  <div class="layout-breve layout-tight">
+    {% include email-signup-form.html context="footer" %}
+  </div><!-- end .layout-breve -->
+</div><!-- end .slab-dark-blue -->
 
 <!-- Call the email signup modal script -->
 <script type="text/javascript" src="//codeforamerica.org/script/email-signup.js"></script>
