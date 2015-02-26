@@ -1,0 +1,12 @@
+#
+# LOCAL DEVELOPMENT ENVIRONMENT
+#
+# This config file allows for local development without internet access.
+# It assumes you have the pattern library cloned down and served locally.
+# See https://github.com/codeforamerica/pattern-library for more information.
+
+# Deployment environment configuration
+env:
+  status: "development"
+  style_host: "http://localhost:8000"
+  webtype_host: ""
