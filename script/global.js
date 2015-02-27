@@ -71,10 +71,9 @@ document.getElementsByTagName('html')[0].className += ' js';
     }
 }(this, this.document));
 
-
 // Adds a fade to elements with the ID of "fade". Modified from http://stackoverflow.com/questions/3795481/javascript-slidedown-without-jquery
 var minheight = 50;
-var maxheight = document.getElementById('fade').offsetHeight + 15;
+//var maxheight = document.getElementById('fade').offsetHeight + 15;
 var time = 1000;
 var timer = null;
 var toggled = false;
@@ -104,3 +103,21 @@ if (document.getElementById('fade')) {
         };
     };
 }
+
+// Tracking inbound referral for use in non-Google Analytics APIs (namely, for fellowship application form)
+(function (doc) {
+    // Check if there is a referrer
+    console.log("hello");
+    if (doc.referrer !== "") { 
+        // Split up the referrer so we can look at it
+        var hash = (doc.referrer).split("/");
+        // Get the domain
+        var domain = hash[2];
+        // If the domain is Code for America, stop the presses
+        if (hash[2] == "www.codeforamerica.org" || hash[2] == "codeforamerica.org") { 
+            return;
+        }
+        // Otherwise, store it in local storage
+        localStorage.setItem('externalReferrer',doc.referrer);
+    }
+})(this.document);
