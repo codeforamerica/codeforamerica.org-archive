@@ -85,11 +85,11 @@ layout: default
 
 <ul>
 
-<li>Outline what’s broken with the current way that governments build digital services. Point to contextualized examples (in the U.S. speaking about the failure of healthcare.gov is really effective, in the U.K. it’s great to talk about the impact of Government Digital Services and how it transformed their national government). </li>
+<li><b>Outline what’s broken with the current way that governments build digital services.</b> Point to contextualized examples (in the U.S. speaking about the failure of healthcare.gov is really effective, in the U.K. it’s great to talk about the impact of Government Digital Services and how it transformed their national government). </li>
 
-<li>(Again) Be empathetic. A surefire way to turn off a government official from partnering with you is to dismiss their concerns. Start off by outlining that you understand their concerns (and truly work to do so) and then emphasize why this model works. </li>
+<li><b>Be empathetic. </b>A surefire way to turn off a government official from partnering with you is to dismiss their concerns. Start off by outlining that you understand their concerns (and truly work to do so) and then emphasize why this model works. </li>
 
-<li>Explain that emergent outcomes are the product of “agile and lean processes” which have to do with learning from citizens about their problems and then changing and improving the solution as we learn, quickly. Emphasize that top start-up businesses use these tactics because they work. Use clear and non-technical language to explain this. </li>
+<li><b>Highlight the benefits of an iterative work process.</b> Explain how learning from citizens about their problems and then changing and improving the solution as we learn, quickly. Emphasize that top start-up businesses use these tactics because they work. Use clear and non-technical language to explain this. </li>
 
 <li>Tell lots of stories that show the value of emergent outcomes. Pointing to real-world situations is especially helpful.
 
@@ -99,7 +99,7 @@ One example from CfA’s experience was when the CfA Fellows worked with the Cit
 
 <li>On a case by case basis CfA can connect potential government partners to other governments who can attest to the value of this approach and can chat about emergent outcomes in more detail.</li>
 
-<h5>Project Sustainability Concerns</h5>
+<h4>Project Sustainability Concerns</h4>
 
 <p>Fellows come in to a government, they build something, but then they leave. The government world is littered with failed technology projects because companies time and time again have done just that and government staff aren’t equipped to pick up the pieces to keep things running. This makes government officials understandably cautious about “hiring” outside people to build something for them instead of doing it in-house. It also makes them worried about the program’s end date.</p>
 
@@ -108,17 +108,17 @@ One example from CfA’s experience was when the CfA Fellows worked with the Cit
 
 <ul>
 
-<li>Emphasize how the Fellowship program is different from traditional IT contracts they may have faced in the past (agile processes, emergent outcomes, etc.). Explain why this is a good thing. </li>
+<li><b>Emphasize how this is different from traditional IT contracts they may have faced in the past.</b>Highlight the benefits of agile processes, emergent outcomes, and user research. Explain why this is a good thing. </li>
 
-<li>Focus on the culture change that occurs within governments as a result of participation in the fellowship program. Point to proven examples of culture changes that contribute to sustaining Fellowship projects and the “innovation virus” once the Fellowship is technically over. </li>
+<li><b>Focus on the culture change that occurs within governments from paritcipating in the program.</b> Point to proven examples of culture changes that contribute to sustaining Fellowship projects and the “innovation virus” once the Fellowship is technically over. </li>
 
-<li>Explain that fellows are trained to develop an application and have it completed by September or October (2 months before the end of CfA’s Fellowship program) to allow time for them to work with their government government teams to transition it to their partner.</li>
+<li><b>Explain the process.</b> Describe how fellows are trained to develop an application and have it completed by September or October (2 months before the end of CfA’s Fellowship program) to allow time for them to work with their government government teams to transition it to their partner.</li>
 
-<li>Tell government partners about the role the community can have in sustaining the project. For example, many of the CfA <a href="http://www.codeforamerica.org/brigade/">Brigades </a> work with their governments to collaborate on strategic and high impact tech projects. Encourage government partners to think through the resources they have at their disposal, not only within government but also in their community, who could contribute to maintaining the project once the Fellows leave. Keep in mind that some governments have very active hacker communities and civic tech enthusiasts who could be engaged (in places where this is not the case, this strategy isn’t the best fit). If this is the case, it’s highly advisable to get these groups involved from the start of the project (which CfA, for example, makes an effort to do through our Brigade program). </li>
+<li><b>Tell government partners about the role the community can have in sustaining the project.</b> For example, many of the CfA <a href="http://www.codeforamerica.org/brigade/">Brigades </a> work with their governments to collaborate on strategic and high impact tech projects. Encourage government partners to think through the resources they have at their disposal, not only within government but also in their community, who could contribute to maintaining the project once the Fellows leave. Keep in mind that some governments have very active hacker communities and civic tech enthusiasts who could be engaged (in places where this is not the case, this strategy isn’t the best fit). If this is the case, it’s highly advisable to get these groups involved from the start of the project (which CfA, for example, makes an effort to do through our Brigade program). </li>
 
-<li>Highlight the continual skill share, learning exchange and capacity-building that occurs throughout the Fellowship. Outline how participating in the Fellowship program will give the government partner’s staff the skills to make sustainability much easier. </li>
+<li<b>>Highlight the continual skill share, learning exchange and capacity-building that occurs throughout the Fellowship.</b> Outline how participating in the Fellowship program will give the government partner’s staff the skills to make sustainability much easier. </li>
 
 </ul>
 
-You can read more about an alternative funding models <p class="alert"><a href="http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf">Case study on alternative funding models for a fellowship program</a>.
+<p class="alert"><a href="http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf">Case study on alternative funding models for a fellowship program</a>.
 </section>
