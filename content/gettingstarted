@@ -10,7 +10,7 @@ layout: default
 
 <h2>Starting a Fellowship Program</h2>
 <p> After four years of running the program, we have found that there are essential elements that contribute to a successful fellowship program. 
-<ol>
+<ul>
 
 <li>A robust developer/ technologist community. Research private sector tech companies or see if there is a <a href="http://www.codeforamerica.org/brigade/">CfA Brigade</a> (CfA’s international citizen volunteer program) group where you live.</li>
 
@@ -18,19 +18,13 @@ layout: default
 
 <li>Interest from local government offices in finding technological solutions to service delivery challenges and fostering civic engagement.</li>
 
-<li>Resources, available budget, and flexible procurement policies that allow government agencies to pay for a fellowship program and fellows' stipdends.</li>
+<li>Resources, available budget, and flexible procurement policies that allow government agencies to pay for a fellowship program and fellows' stipdends.In our experience, paying fellows is <b>key</b> to fostering commitment and acquiring a large talent pool for recruiting. </li>
 
-<p>If there are governments that don’t have funds but are interested in the program, are there other possible funding sources? Corporate social responsibility programs? Foundations? See this <a href="https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit#">fundraising resource guide</a> we created for CfA’s Brigades for some ideas.
-
-<p>Please note that the Fellowship program generally requires a hefty time commitment from technologists who sign up as fellows. In our experience, paying fellows is key to fostering commitment and acquiring a large talent pool for recruiting. </p>
-
-</ol>
+</ul>
 
 <p>If you have answered “NO” to any of the questions outlined above, you might want to consider <a href="http://www.codeforamerica.org/our-work/">other program alternatives</a> before moving forward with a CfA-style fellowship program. Variations of fellowship programs can be found <a href="http://www.codeforamerica.org/about/international/2013-annual-report/">here</a>.</p>
 
-<p class="alert"> This <a href="https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0AksxopTEkLVNdGdmUEZ5azNtOEt1YTNnRDFBT2NmOGc#gid=0">Program Implementation Example</a> from the 2014 CfA Fellowship was created to organize the activities we do in each stage of the fellowship. </p>
 
-<p class="alert-failure">Fellowship calendar -- need to upload from <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ji_Gxrbiaui3H1Z1bFdcbJmCJIpR-n8F50012h0f-2Q/edit">toolkit</a>. </p>
 
 <h4>The Fellowship Timeline</h4>
 
@@ -131,5 +125,11 @@ CfA’s Puerto Rico fellows from 2014 made this image to illustrate their brains
 <li><b>Senior Manager of City Engagements</b>: collaborates with the Director of Government Relations to develop strong relationships with potential government city partners, understand their needs and support them in applying and executing the Fellowship program. As with the Director of Govt. Relations, it’s helpful for this person to have a strong understanding of local government and have solid interpersonal skills. </li>
 
 </ul>
+
+<p class="alert"> <a href="https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit#"><b>Fundraising resource guide</b></a> </p>
+
+<p class="alert"> <a href="https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0AksxopTEkLVNdGdmUEZ5azNtOEt1YTNnRDFBT2NmOGc#gid=0">Fellowship Program-  Implementation Schedule</a> </p>
+
+<p class="alert-failure">Fellowship calendar -- need to upload from <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ji_Gxrbiaui3H1Z1bFdcbJmCJIpR-n8F50012h0f-2Q/edit">toolkit</a>. </p>
 
 </section>
