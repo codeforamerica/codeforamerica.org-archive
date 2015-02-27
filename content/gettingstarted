@@ -39,7 +39,7 @@ layout: default
 
 <li><b>Development Sprints and Mentorship (March–May)</b>: Gives the fellows a chance to build and refine the technology and better scope out the problem they’re trying to solve. When the fellows come back from Residency they begin the development of their first project prototype after whittling their ideas down to a top few. This is when they really start using <a href="http://theleanstartup.com/principles">“lean” principles</a> to build their work. Fellows are also encouraged to use an <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ybaIrGcUN3e4uWIHSphlx8UhjSCyr1yfcelg7jZ-Kr8/edit">agile development</a> processes and tests to increase the security and rigor of their app projects. These include unit testing, route testing, and integration testing. The tests functioned as a safeguard against unintentional regressions, and also helped to document the expected behavior of the code in clear, concise code. </li>
 
-<p>Staff engage with fellows at this time with recurring trainings, meetings, and one on one chats to continue supporting fellows. Fellows also meet in person with their government partners and community stakeholders to pitch ideas and get project feedback. </p>
+<br>Staff engage with fellows at this time with recurring trainings, meetings, and one on one chats to continue supporting fellows. Fellows also meet in person with their government partners and community stakeholders to pitch ideas and get project feedback. 
 
 <li><b>Mid-Year Reports and Celebrations (June)</b>: Code for America fellowship teams create a mid-year report on their project progress and metrics. We also host “<a href="http://beta.codeforamerica.org/">BETA</a>”), a small conference that gives the CfA community a chance to learn about what the fellows are working on.</li>
 
@@ -81,11 +81,11 @@ CfA’s Puerto Rico fellows from 2014 made this image to illustrate their brains
 
 </p>
 
-
+<h4> Adaptations of the Fellowship Cycle: Mexico City </h4>
 
 <p>If fellows will work in the same place as their government partners all year long, your calendar may look different. For example, the <a href="http://www.codeforamerica.org/about/international/2013-annual-report/partners-cfmc.html">Code for Mexico City Fellowship program</a>, organized by <a href="http://labplc.mx/">Mexico City’s Government Innovation Lab</a> had fellows work in the same city as their government partners for the duration of their fellowship. </p>
 
-<ol>
+<ul>
 
 <li><b>Fellowship promotion, application and selection</b>: The Lab promoted its fellowship program in a variety of ways, including the creation of a special promotional video which was disseminated through official government channels. 150 people completed the Lab’s Fellowship application and five were selected.</li>
 
@@ -99,7 +99,7 @@ CfA’s Puerto Rico fellows from 2014 made this image to illustrate their brains
 
 <li><b>App launch and transition to government partners</b>: As the fellowship programs winds down for the year, the fellows work with their government partners to make sure someone from the city is responsible for and equipped to maintain the project. Preparation for this can include technical training for government staff and community organizing with local groups most closely connected to the project. In cities with active CfA Brigade chapters, the members of the local Brigade are key to this transition. Sometimes fellows hold formal launch events for their projects in their cities which is helpful in publicizing the project.</li>
 
-</ol>
+</ul>
 
 <h4>Staffing the Program</h4>
 
@@ -119,11 +119,11 @@ CfA’s Puerto Rico fellows from 2014 made this image to illustrate their brains
 
 <br>
 
-<p class="alert"> This <a href="https://docs.google.com/a/codeforamerica.org/presentation/d/1dgAQNRBBXm6TQMjviU86PLcWcCyOAaN3h5FMl8HvLUg/edit#slide=id.p19">Sample Curriculum for January fellows training</a> </p>
+<p class="alert"><a href="https://docs.google.com/a/codeforamerica.org/presentation/d/1dgAQNRBBXm6TQMjviU86PLcWcCyOAaN3h5FMl8HvLUg/edit#slide=id.p19">Sample Curriculum for January fellows training</a>. </p>
 
-<p class="alert"> <a href="https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit#"><b>Fundraising resource guide</b></a> </p>
+<p class="alert"> <a href="https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit#"><b>Fundraising resource guide</b></a>. </p>
 
-<p class="alert"> <a href="https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0AksxopTEkLVNdGdmUEZ5azNtOEt1YTNnRDFBT2NmOGc#gid=0">Fellowship Program-  Implementation Schedule</a> </p>
+<p class="alert"> <a href="https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0AksxopTEkLVNdGdmUEZ5azNtOEt1YTNnRDFBT2NmOGc#gid=0">Fellowship Program-  Implementation Schedule</a>. </p>
 
 <p class="alert-failure">Fellowship calendar -- need to upload from <a href="https://docs.google.com/a/codeforamerica.org/document/d/1ji_Gxrbiaui3H1Z1bFdcbJmCJIpR-n8F50012h0f-2Q/edit">toolkit</a>. </p>
 
