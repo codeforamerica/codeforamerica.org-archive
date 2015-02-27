@@ -47,3 +47,11 @@
   if ('undefined' !== typeof window.ParsleyValidator)
     window.ParsleyValidator.addCatalog('en', window.ParsleyConfig.i18n.en, true);
 </script>
+
+<script>
+  /* Put current date + time into the form */
+  $(document).ready(function(){
+    var currentDate = new Date();
+    document.getElementById("timestamp").value = currentDate;
+  });
+</script>
