@@ -1,6 +1,8 @@
 ---
 layout: default
-masthead-image: "/media/images/health/somerville.jpg"
+masthead-image: "/media/images/forms/fellowship/become-a-fellow/somerville-codeacross.jpg"
+helpers:
+  forms: true
 
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
@@ -8,10 +10,10 @@ nav-global-primary: "no"
 masthead-custom: deep
 
 # Title for the title bar, and the overline in the masthead
-title: Health Focus Area
+title: "Apply: Become a Fellow"
 
 # Content for the custom deep masthead
-headline: Health and social services delivered with dignity, by default.
+headline: Use your skills for good
 description: Code for America partners with local governments to build and grow digital health and human services focused on users, helping governments transform themselves along the way.
 ---
 <style>
@@ -26,57 +28,69 @@ description: Code for America partners with local governments to build and grow 
 
 <section class="layout-semibreve">
 
-  <h2>Congratulations! You're early to the party.</h2>
-  <p>The 2016 Fellowship city application opens on January 15, 2015. But we'd love to hear from you early and start the conversation. Please fill out the interest form below and we'll get back to you.</p>
-  <br />
+  <p>Please fill out the information below. If you have any questions, don't hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>
 
   <div id="formError" class="alert-failure" style="display:none;">
   </div>
   
   <!-- Form content -->
   <div class="layout-major-invert">
-    <form name="interestForm" accept-charset="UTF-8" action="https://formkeep.com/f/d116a6148517" onsubmit="return validate()" method="POST" >
+    <form name="become-a-fellow" accept-charset="UTF-8" action="" method="POST" >
       <input type="hidden" name="utf8" value="✓">
 
       <ul class="list-form">
         
-        <li class="form-field-group">
-          <div class="form-field">
-            <label for="firstname">First name <abbr title="Required">*</abbr></label>
-            <input id="firstname" name="firstname" class="input" type="text" placeholder="First name" required>
-          </div>
-
-          <div class="form-field">
-            <label for="lastname">Last name <abbr title="Required">*</abbr></label>
-            <input id="lastname" name="lastname" class="input" type="text" placeholder="Last name" required>
-          </div>
-        </li>
-
         <li class="form-field">
-          <label for="location">Where do you work? <abbr title="Required">*</abbr></label>
-          <input id="location" name="location" class="input" type="text" placeholder="i.e. City of San Francisco, CA" required>
-        </li>
-
-        <li class="form-field">
-          <label for="jobtitle">What is your job title? <abbr title="Required">*</abbr></label>
-          <input id="jobtitle" name="jobtitle" class="input" type="text" placeholder="i.e. Chief Technology Officer" required>
+          <label for="full-name">Full name <abbr title="Required">*</abbr></label>
+          <input id="full-name" name="full-name" class="input" type="text" placeholder="" required>
         </li>
 
         <li class="form-field-group">
           <div class="form-field">
-            <label for="email">What email can we reach you at? <abbr title="Required">*</abbr></label>
-            <input id="email" name="email" class="input" type="email" placeholder="email@domain.com" required>
+            <label for="email">Email address <abbr title="Required">*</abbr></label>
+            <input id="email" name="email" class="input" type="email" placeholder="" required>
           </div>
 
           <div class="form-field">
-            <label for="phone">What phone number can we reach you at?</label>
-            <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555">
+            <label for="location">Location (City, State) <abbr title="Required">*</abbr></label>
+            <input id="location" name="location" class="input" type="text" placeholder="" required>
           </div>
         </li>
 
         <li class="form-field">
-          <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox"> Sign me up for the Code for America newsletter</label>
+          <label for="referral">How did you hear about the Fellowship Program: <abbr title="Required">*</abbr></label>
+          <input id="referral" name="referral" class="input" type="text" placeholder="" required>
         </li>
+
+        <li class="form-field">
+          <label for="primary-skill-set">Primary skill set <abbr title="Required">*</abbr></label>
+          <select id="primary-skill-set" name="primary-skill-set" required>
+              <option value="">Pick one...</option>
+              <option>Developer or Data Scientist</option>
+              <option>Designer</option>
+              <option>Product Manager or Policy Wonk</option>
+              <option>Other</option>
+          </select>
+        </li><!-- end .form-field -->
+
+        <li class="form-field" id="js-skillset-other" style="display: none;">
+          <label for="skill-set-other">If other, please describe your primary skill set: </label>
+          <input id="skill-set-other" name="skill-set-other" class="input" type="text" placeholder="">
+        </li>
+
+        <li class="form-field">
+          <label for="portfolio">What is the most relevant webpage that shows off your skills: <abbr title="Required">*</abbr></label>
+          <input id="portfolio" name="portfolio" class="input" type="url" placeholder="" required>
+        </li>
+
+        <li class="form-field">
+          <label for="interest-paragraph">In 2-3 sentences, tell us why you want to be a CfA fellow: <abbr title="Required">*</abbr></label>
+          <textarea id="interest-paragraph" name="interest-paragraph" rows="8" cols="32" required></textarea>
+        </li>
+
+<!--         <li class="form-field">
+          <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox" checked> Sign me up for the Code for America newsletter</label>
+        </li> -->
 
         <input type="submit" value="Submit">
 
@@ -87,7 +101,7 @@ description: Code for America partners with local governments to build and grow 
   <div class="layout-minor-invert">
     <img src="../../../../media/images/about_fellowship/jen-summit.jpg" alt="Code for America Executive Director Jen Pahlka talks on stage at the 2014 Summit.">
     <h6><br />Learn more about the fellowship</h6>
-    <p>Want to learn more about the Fellowship and how we work with cities? Check out the <a href="/governments/fellowship">Fellowship page</a>.</p>
+    <p>Want to learn more about the Fellowship and how it works? Check out the <a href="/fellowship">Fellowship page</a>.</p>
   </div>
 
 </section>
