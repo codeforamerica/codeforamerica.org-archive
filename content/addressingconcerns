@@ -12,22 +12,6 @@ layout: default
 
 <p>Over the years, we’ve found that government officials share some common concerns around participating in the Code for America Fellowship program. We’ve outlined the most common ones below and offered some approaches for how to dissuade these issues. </p>
 
-<h4>Resource Constraints</h4>
-
-<p>Lots of local governments are worried that they don’t have enough resources to partner with the fellowship program. They’re oftentimes concerned that this is not a useful allocation of their (limited) resources. </p> Some strategies for addressing this concern:</p>
-
-<ul>
-
-<li><b>Listen to and try to understand their concerns.</b> Knowing what resources they do have will be important in working with them to find a way forward. </li>
-
-<li><b>Help them see how doing things differently could save them money in the long-term.</b> Do they agree that there are technology problems? That the tech they have isn’t working as well as they like or that they’re paying too much money for clunky systems? Do they have have a sense, real or perceived, that there is a better way of doing things? That they are doing things in ways that are maybe less efficient than they’d like, that don’t take advantage of modern web tools? Tease out these problems and explain how the Fellowship could help them to solve these problems. </li>
-
-<li><b>Explain that the fellowship is a proven model.</b> The fellowship has produced projects that have concretely helped government agencies deliver their services better, and/or delivered government partners lean, iterative, user-centered processes to start delivering better digital services themselves. The Fellowship gives talented people free space to come in and execute in environments typically mired in bureaucracy, but also empower others in the government to do the same. Emphasize this in response to expressed concerns.</li>
-
-<li><b>Reframe their objections.</b>Brainstorm with the potential government partner about how the fellowship can help them overcome some of the challenges that are behind their objections. Give them ideas about re-allocating resources and emphasize that the Fellowship is about more than just creating an application - that the experience itself is a full service in growing capabilities around delivering user-centered digital services.</li>
-
-</ul>
-
 <h4>Fundraising concerns</h4>
 
 <p>Your own fellowship programs will likely have different costs, but the Code for America Fellowship program costs $440,000. This is a lot of money for local governments and when they hear this some start to feel “sticker shock.” </p>
@@ -75,12 +59,14 @@ layout: default
 
 <h4>Knowing if the program is "worth it"</h4>
 
-<p>This is a very understandable concern. Government partners need to justify spending scarce resources on the program. At CfA, we are fortunate to be able to point to a track record of successes with previous Fellowship programs and also have the benefit of a very competitive application pool. Your own ability to successfully dissuade this concern will be tied in large part to your success recruiting quality Fellows. If you are able to recruit Fellows with impressive CVs and experiences you can point to them to ease these concerns. It’s a lot more challenging to make this assurance without already having Fellows on board. We suggest:</p>
+<p>This is a very understandable concern. Government partners need to justify spending scarce resources on the program. At CfA, we are fortunate to be able to point to a track record of successes with previous fellowship programs and also have the benefit of a very competitive application pool. Your own ability to successfully dissuade this concern will be tied in large part to your success recruiting quality fellows. If you are able to recruit fellows with impressive CVs and experiences you can point to them to ease these concerns. It’s a lot more challenging to make this assurance without already having Fellows on board. We suggest:</p>
 
 <ul>
-<li><b>Talk about your recruitment and application process.</b> We emphasize that our application is extremely competitive and stress that the acceptance rate to be part of a CfA Fellowship class is lower than Harvard’s.</li>
+<li><b>Talk about your recruitment and application process.</b> We emphasize that our application is extremely competitive and stress that the acceptance rate to be part of a CfA fellowship class is lower than Harvard University’s.</li>
 
 <li><b>Outline the positive qualities of the Fellows.</b> We at CfA explain that they are professional level, that their average age is 30, and that the majority have 5-10 years of professional work experience. We also stress that the background they have in cutting-edge technology complements more traditional government experience.</li>
+
+<li><b>Explain that the fellowship is a proven model.</b> The fellowship has produced projects that have concretely helped government agencies deliver their services better, and/or delivered government partners lean, iterative, user-centered processes to start delivering better digital services themselves. The Fellowship gives talented people free space to come in and execute in environments typically mired in bureaucracy, but also empower others in the government to do the same. Emphasize this in response to expressed concerns.</li>
 </ul>
 
 <h4>Wanting to solve a specific probelm and ignore "emergent outcomes"</h4>
