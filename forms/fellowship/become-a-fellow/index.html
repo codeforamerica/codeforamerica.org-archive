@@ -15,6 +15,23 @@ title: "Apply: Become a Fellow"
 # Content for the custom deep masthead
 headline: Use your skills for good
 description: Code for America's Fellowship program pairs teams of technologists with local governments to develop digital tools that help cities and counties deliver key public services across health, economic development, and safety and justice. 
+
+# Scripts to execute after jquery is loaded
+jquery-scripts: |
+  <script>
+    $(document).ready(function(){
+      // When skillset is changed, show or hide the other box
+      $('#primary-skill-set').bind('change', function(){
+        var option = this.value;
+        if (option == "Other") {
+          $('#js-skillset-other').show();
+          return;
+        }
+        $('#js-skillset-other').hide();
+      });
+    });
+  </script>
+
 ---
 <style>
   .list-form li.form-field {
@@ -46,16 +63,9 @@ description: Code for America's Fellowship program pairs teams of technologists 
           <input id="full-name" name="full-name" class="input" type="text" placeholder="" required>
         </li>
 
-        <li class="form-field-group">
-          <div class="form-field">
-            <label for="email">Email address <abbr title="Required">*</abbr></label>
-            <input id="email" name="email" class="input" type="email" placeholder="" required>
-          </div>
-
-          <div class="form-field">
-            <label for="location">Location (City, State) <abbr title="Required">*</abbr></label>
-            <input id="location" name="location" class="input" type="text" placeholder="" required>
-          </div>
+        <li class="form-field">
+          <label for="email">Email address <abbr title="Required">*</abbr></label>
+          <input id="email" name="email" class="input" type="email" placeholder="" required>
         </li>
 
         <li class="form-field">

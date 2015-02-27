@@ -18,3 +18,7 @@
 <script src="/script/email-signup.js"></script>
 <!-- Ethnio Activation Code -->
 <script type="text/javascript" language="javascript" src="//ethn.io/30340.js" async="true" charset="utf-8"></script>
+<!-- Load scripts from the page, if there are any -->
+{% if page.jquery-scripts %}
+  {{ page.jquery-scripts }}
+{% endif %}
