@@ -22,7 +22,28 @@ layout: default
 <li><b>Make relocation easy. </b>Provide logistical support to help fellows relocate during the fellowship. Make the transition as smooth as possible by helping them find housing,  transportation, resources to feel part of the community, etc. </li>
 <li><b>Help them find jobs post-fellowship.</b> Recognize the risk in participating in a one-year fellowship; create resources and a network to help the fellows find jobs after their fellowship. Providing this kind of support system will encourage others to take this risk.</ul>
 </ul>
+
+
+<h4>Team Formation </h4>
+
+<p>CfA seeks a diverse Fellowship class at both the team level (fellows are grouped into teams of three) and within the entire cohort (the entire Fellowship class is approximately 30 fellows). Each team is treated like a very early stage startup in terms of skill needs. We try to make sure each team has development talent (front fnd (JS, CSS, HTML, XML, JQUERY, ETC.), back end (Python, Ruby, JS/Node.js, Java, C#), mobile development database skills (SQL, MongoDB),Heroku, Git, data science), design talent (user experience, graphic design, design thinking, etc.), and people skills (project management, product management, community engagement, content development, and more.)</p>
+
+<p>Within CfA, we work very hard to foster a culture of collaboration within the cohort because no single team of three is guaranteed to have all the skills they need on their own to develop a finished product. </p>
+
+<p>You can also see a breakdown of data on where our total applicants come from and their skills in <a href="http://www.codeforamerica.org/blog/2013/08/01/2014_fellows_applications/">this blog post</a>. </p>
+
+<h4>Diversity</h4>
+
+<p>Diversity means something different to everyone, but what we mean by diversity when we talk about it in the context of the CfA Fellowship is that we expect the program to respect people from all walks of life, and that the Fellowship class should reflect the diversity of the communities we serve. </p>
+
+<p>We look for a diversity of skillsets and professional backgrounds that match the needs of our projects. We also actively reach out during our Fellows recruitment process to those who are traditionally less prevalent in the tech sector, such as women, racial minorities, and those of diverse sexual orientations, among others. </p>
+
+<p>We at CfA believe that the richer the diversity of a group, the more perspectives available to draw upon. This is very valuable to the work that we do.</p>
+
+<h3> Resources </h3>
+
 <p class="alert"><a href="https://docs.google.com/document/d/1OYHBMkubufM-Y-FSaHNby6WseXfctzuvlzYRz7WH-OA/edit">Sample recruitment press release</a>. </p>
+
 <p class="alert"><a href="https://docs.google.com/a/codeforamerica.org/presentation/d/1YUEvgW9bWCvbaQjrdo-SNVVRUhzsqtyFJwt9pgrxL5s/edit#slide=id.p14">Sample recruitment slide deck</a>. </p>
 
 
@@ -34,25 +55,5 @@ layout: default
 
 <p class="alert"><a href="https://docs.google.com/a/codeforamerica.org/document/d/1ptgrXFnF9wrqMhZqSvnvkUhGPWMbCr5oi4JdzYH-pBk/edit">Sample recruitment tweets</a>. </p>
 <p class="alert"><a href="https://vimeo.com/70212611"><b>Sample recruitment video from Mexico City's Fellowship program</a></b></p>
-
-
-
-
-
-<h4>Team Formation </h4>
-
-<p>CfA seeks a diverse Fellowship class at both the team level (fellows are grouped into teams of three) and within the entire cohort (the entire Fellowship class is approximately 30 fellows). Each team is treated like a very early stage startup in terms of skill needs. We try to make sure each team has development talent (both backend, frontend, database skills, data science), design talent (user experience, graphic design, design thinking, etc.), and people skills (project management, product management, community engagement, content development, and more.)</p>
-
-<p>Within CfA, we work very hard to foster a culture of collaboration within the cohort because no single team of three is guaranteed to have all the skills they need on their own to develop a finished product. </p>
-
-<p>Some examples of the specific skills we look for can be found in <a href="https://docs.google.com/a/codeforamerica.org/presentation/d/1ze5p79dQACvAnsUv5pQakCjIpC8d7oiGWrWWNEp4s-0/edit#slide=id.p16">this deck</a> that we prepared for the Mexico City government when they started a fellowship program. You can also see a breakdown of data on where our total applicants come from and their skills in <a href="http://www.codeforamerica.org/blog/2013/08/01/2014_fellows_applications/">this blog post</a>. </p>
-
-<h4>Diversity</h4>
-
-<p>Diversity means something different to everyone, but what we mean by diversity when we talk about it in the context of the CfA Fellowship is that we expect the program to respect people from all walks of life, and that the Fellowship class should reflect the diversity of the communities we serve. </p>
-
-<p>We look for a diversity of skillsets and professional backgrounds that match the needs of our projects. We also actively reach out during our Fellows recruitment process to those who are traditionally less prevalent in the tech sector, such as women, racial minorities, and those of diverse sexual orientations, among others. </p>
-
-<p>We at CfA believe that the richer the diversity of a group, the more perspectives available to draw upon. This is very valuable to the work that we do.</p>
 
 </section>
