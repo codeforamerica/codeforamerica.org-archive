@@ -14,7 +14,7 @@ layout: default
 
 <h4>Resource Constraints</h4>
 
-<p>Lots of local governments are worried that they don’t have enough resources to partner with the Fellowship program. They’re oftentimes concerned that this is not a useful allocation of their (limited) resources. </p> Some strategies for addressing this concern:</p>
+<p>Lots of local governments are worried that they don’t have enough resources to partner with the fellowship program. They’re oftentimes concerned that this is not a useful allocation of their (limited) resources. </p> Some strategies for addressing this concern:</p>
 
 <ul>
 
@@ -22,9 +22,11 @@ layout: default
 
 <li><b>Help them see how doing things differently could save them money in the long-term.</b> Do they agree that there are technology problems? That the tech they have isn’t working as well as they like or that they’re paying too much money for clunky systems? Do they have have a sense, real or perceived, that there is a better way of doing things? That they are doing things in ways that are maybe less efficient than they’d like, that don’t take advantage of modern web tools? Tease out these problems and explain how the Fellowship could help them to solve these problems. </li>
 
-<li><b>Explain that the Fellowship is a proven model.</b> The Fellowship has produced projects that have concretely helped government agencies deliver their services better, and/or delivered government partners lean, iterative, user-centered processes to start delivering better digital services themselves. The Fellowship gives talented people free space to come in and execute in environments typically mired in bureaucracy, but also empower others in the government to do the same. Emphasize this in response to expressed concerns.</li>
+<li><b>Explain that the fellowship is a proven model.</b> The fellowship has produced projects that have concretely helped government agencies deliver their services better, and/or delivered government partners lean, iterative, user-centered processes to start delivering better digital services themselves. The Fellowship gives talented people free space to come in and execute in environments typically mired in bureaucracy, but also empower others in the government to do the same. Emphasize this in response to expressed concerns.</li>
 
-<li><b>Reframe their objections.</b>Brainstorm with the potential government partner about how the Fellowship can help them overcome some of the challenges that are behind their objections. Give them ideas about re-allocating resources and emphasize that the Fellowship is about more than just creating an application - that the experience itself is a full service in growing capabilities around delivering user-centered digital services.</li>
+<li><b>Reframe their objections.</b>Brainstorm with the potential government partner about how the fellowship can help them overcome some of the challenges that are behind their objections. Give them ideas about re-allocating resources and emphasize that the Fellowship is about more than just creating an application - that the experience itself is a full service in growing capabilities around delivering user-centered digital services.</li>
+
+</ul>
 
 <h4>Fundraising concerns</h4>
 
@@ -32,7 +34,7 @@ layout: default
 
 <p>When we go over the costs with our government partners, we first make sure that they understand that they are not expected to pay for the whole program. Instead, they are paying $220K but receiving a program valued at $440K (CfA makes up the rest through a variety of fundraising mechanisms). It is a 50/50 match program between CfA and the government partner. </p>
 
-<p>Some of you may not charge your government partners, have partial match funding from foundations or other philanthropic organizations or perhaps your Fellows are on leave from their high-paid technology jobs and their company is footing most of the bill as part of a corporate social responsibility program. . But, for those groups who need their government partner to contribute, money (or a lack there of) can be a serious barrier to participation. </p> Some strategies we use for addressing this concern include:</p>
+<p>Some of you may not charge your government partners, have partial match funding from foundations or other philanthropic organizations or perhaps your Fellows are on leave from their high-paid technology jobs and their company is footing most of the bill as part of a corporate social responsibility program. But, for those groups who need their government partner to contribute, money (or a lack there of) can be a serious barrier to participation. Some strategies we use for addressing this concern include:</p>
 
 <ul>
 
@@ -51,6 +53,8 @@ layout: default
 </ul>
 
 <p>Some variations of the CfA Fellowship program have covered all of the costs of the Fellowship program. For example, the Code for the Caribbean program chose not to charge their first government partner for the cost of the program. They did this because it was more important to them to pilot the initiative in the Caribbean and have a tangible example to point to for future potential partners than to receive funding. Even though the <a href="http://www.codeforthecaribbean.org/">Code for the Caribbean</a> team’s government partner did not contribute financially, the government agency was still very invested in the program. In CfA’s experience, financial investment from our government partners appears to heighten commitment to the program and, thus, programmatic success. But, as the experience of Code for the Caribbean shows, this likely depends a lot on your own context and goals. Understand that there are benefits and challenges that come along with where your funding is from to make the decision that’s best for your context.</p>
+
+<br>
 
 <h4>Paying for fellows to mostly live/work in San Francisco</h4>
 
@@ -96,7 +100,7 @@ layout: default
 One example from CfA’s experience was when the CfA Fellows worked with the City of Boston on their public education program in 2011. Originally, the government partners were concerned that they didn’t have enough data about students in Boston’s public schools to drive policy decisions. They wanted the fellows to construct a way to capture student data more easily and make it accessible through an API. The Fellows started to talk to the community (conducting “user research”) and a different problem “emerged.” Parents were struggling to navigate the system for choosing their kids’ public schools. The Fellows figured this out and built a website to supercede the really complicated and confusing PDF document that parents had been using for 55 years to choose a school. In this way, the Fellows were still able to help the government toward the goal of using technology to improve education but the outcome was different and much more powerful, important and relevant to the community. The “emergent outcome” process made this better outcome possible. </li>
 
 <li><b>Work closely with the government partner to learn as much as possible about the problem they’re facing ahead of time.</b> Scope this out with them and explain how the Fellows will take this into account when doing research for their project.</li>
-
+</ul>
 
 <h4>Project Sustainability Concerns</h4>
 
