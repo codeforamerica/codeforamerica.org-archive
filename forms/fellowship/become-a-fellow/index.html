@@ -35,7 +35,7 @@ description: Code for America partners with local governments to build and grow 
   
   <!-- Form content -->
   <div class="layout-major-invert">
-    <form name="become-a-fellow" accept-charset="UTF-8" action="" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
+    <form name="become-a-fellow" accept-charset="UTF-8" action="https://formkeep.com/f/16aaed1c3fc1" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="timestamp" id="timestamp" value="">
 
@@ -108,74 +108,3 @@ description: Code for America partners with local governments to build and grow 
 </section>
 
 <section class="layout-semibreve"></section>
-
-<script type="text/javascript">
-  function validate() {
-
-    var valid = true;
-    var invalidMessage = []
-
-    // Check that the name fields are filled in
-    if(     isEmpty(document.forms["interestForm"]["firstname"].value) ||
-            isEmpty(document.forms["interestForm"]["lastname"].value)
-      ){
-
-      invalidMessage.push("&bull; Fill in your full name");
-      var valid = false;
-    }
-
-    // Check the job description fields are filled in
-    if(     isEmpty(document.forms["interestForm"]["jobtitle"].value) ||
-            isEmpty(document.forms["interestForm"]["location"].value)
-      ){
-
-      invalidMessage.push("&bull; Fill in your job description and title");
-      var valid = false;
-    }
-
-    // Check that email is filled in, check that email is valid
-    var formEmail = document.forms["interestForm"]["email"].value;
-    if  (    isEmpty(formEmail) ||
-             !validateEmail(formEmail)
-        ){
-    
-      invalidMessage.push("&bull; Fill in your email in the right format (i.e. name@domain.com)");
-      var valid = false;
-    }
-
-    if (!valid) {
-
-      // Build our message
-      var openMessage = "<h4><strong>There was a problem with your answers</strong></h4><p>\n";
-      var closeMessage = "</p>\n";
-
-      // Join together our errors
-      fullMessage = invalidMessage.join("<br />\n");
-
-      // Push to the error div
-      document.getElementById("formError").innerHTML = openMessage + fullMessage + closeMessage;
-
-      // Make hidden error message div visible
-      document.getElementById("formError").style.display = "inherit";
-
-      // Scroll back to the top of the page
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
-    }
-
-    return valid;
-
-  } // end function validate
-
-  function validateEmail(formEmail) {
-    var emailTest = /\S+@\S+\.\S+/;
-
-    var emailCorrect = false;
-    var emailCorrect = emailTest.test(formEmail);
-    return emailCorrect;
-
-  } // end function validateEmail
-
-  function isEmpty(value) {
-    return value == "" || value == null;
-  } // end function isEmpty
-</script>
