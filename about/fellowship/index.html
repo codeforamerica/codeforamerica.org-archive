@@ -1,98 +1,247 @@
 ---
 layout: default
-title: Fellowship
-nav_tier1_active: "about"
-masthead-image: "../../media/images/about_fellowship/fellowshipprogram.jpg"
-nav-breadcrumbs:
- - Who We Are: "/about"
- - Fellowship: "/about/fellowship"
+masthead-image: "/media/images/health/somerville.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: The Fellowship
+
+# Content for the custom deep masthead
+headline: Government that works for the people, by the people, in the 21st century
+description: The Fellowship Program pairs teams of technologists with local governments to develop digital tools that make government work for the people in the 21st century.
 ---
+<!-- Particularly on mobile, there is not enough room between the end of section slab and the heading for the following section. As a result, there is a <br> tag immediately preceding each section header. Breaks also follow each section header.-->
 
-<section class="slab-red">
-  <div class="layout-semibreve layout-centered">
-    <h2>The Fellowship</h2>
+<!-- When including <br> tags after the section headers, the layout-minim modules don't have enough space between columns. See the inline-style changes to width and padding around Rebecca's  and Jake's videos. -->
 
-    <p>The Fellowship program sends teams of civic-minded developers, designers, and product managers into local governments across the country to work full-time for a year in partnership with government officials. </p>
-    <!--     <p><strong>Are you a government employee looking for info?</strong> Contact <a href="mailto:luke@codeforamerica.org">Luke D. Norris</a>, Government Relations Director</p> -->
+<!-- text-align: center; was added to each instance of layout-crotchet, which doesn't seem like it should be necessary -->
+<section class="layout-semibreve layout-centered intro">
+  <h2>Get Involved</h2>
+  <br>
+  <div class="layout-minim">
+    <img src="/media/images/talent/badge-gov.svg" width="100px" alt="">
+    <h3 class="heading-contrast">for <strong>Governments</strong></h3>
+    <p>Code for America partners with 8-10 local governments each year to develop innovative digital approaches to delivering key public services across health, economic development, and safety and justice. Applications to become a 2016 
+government partner are now open and due March 31, 2015.
+</p>
+    <a href="http://www.codeforamerica.org/governments/fellowship/" class="button button-bold button-l" target="_blank">Enlist the Fellows</a>
+    <p><br /></p>
+  </div> 
+  <div class="layout-minim">
+    <img src="/media/images/talent/badge-fellowship.svg" width="100px" alt="">
+    <h3 class="heading-contrast">for <strong>Technologists</strong></h3>
+    <p>Each year we invite 24-30 experienced technologists who want to apply their skills for the public good into the fellowship program. The fellows enter a year-long partnership with a local government to develop digital tools that help governments deliver key services across health, economic development, and safety and justice. We are now looking for fellows for 2016. 
+</p>
+    <a href="http://www.codeforamerica.org/geeks/fellowship-apply/" class="button button-bold button-l">Become a Fellow</a>
+    <p><br /></p>
   </div>
 </section>
-
+<section class="slab-blue">
+	<div class="layout-semibreve">
+		<div class="highlight highlight-with-avatar">
+			<img class="highlight-avatar" src="../../../media/images/people/scott-smith.png"/>
+			<blockquote>
+				<p>Code for America helped the City of Mesa apply 21st Century digital principles and increase the city’s capacity to approach tough issues and find ways to better engage and serve residents. Across the nation, CfA has helped prove that lean, iterative, data-driven approaches to building technology and user-centered design can make government work better.</p>
+			</blockquote>
+			<p class="attribute">MAYOR SCOTT SMITH, MESA, AZ</p>
+		</div>
+	</div>
+</section>
 <section>
-  <div class="layout-breve">
+	<div class="layout-semibreve">
+		<br>
+		<h2>Our Approach</h2>
+		<br>
+		<p>The Fellowship program sends teams of experienced technologists into local governments across the country to work full-time for a year in partnership with government officials. The fellows apply <a href="/governments/principles">21st Century Government Principles</a> to important problems.</p>
 
-    <div class="layout-minim">
-      <h3>I Want to Become a Fellow</h3>
-      <p>Fellows inspire creativity, collaboration, and solve problems in local governments across the country.</p>
-      <a class="button" href="/geeks/fellowship-apply">Become a Fellow</a>
-      
-      <p class="heading-contrast"><br />Other ways to get involved:</p>
-      <ul class="list-ruled">
-        <li>Guide and advise fellows. <a href="../../mentor">Become a Mentor</a>.</li>
-        <li>Read about about the fellows from <a href="http://codeforamerica.org/geeks/our-geeks/2015-fellows/">2015</a>, <a href="http://codeforamerica.org/geeks/our-geeks/2014-fellows/">2014</a>, <a href="http://codeforamerica.org/geeks/our-geeks/2013-fellows/">2013</a>, <a href="http://codeforamerica.org/geeks/our-geeks/2012-fellows/">2012</a> and <a href="http://codeforamerica.org/geeks/our-geeks/2011-fellows/">2011</a>.</li>
-      </ul>
-    </div><!-- ./layout-minim -->
+<p>Over the course of the project period, the fellows immerse themselves in the community, researching user needs, meeting with stakeholders, proposing solutions, and collaborating with the government to build technology using an iterative, user-centered, and data-driven approach.</p>
 
-    <div class="layout-minim">
-      {% include enlist-the-fellows.html context="card-medium" base="../.." %}
-
-      <p class="heading-contrast"><br />Other ways to get involved:</p>
-      <ul class="list-ruled">
-        <li>Learn about <a href="http://www.codeforamerica.org/governments/principles/open-data/">open data best practices</a>.</li>
-        <li>Read about the <a href="http://codeforamerica.org/cities/2015-cities/">current</a> and <a href="http://www.codeforamerica.org/cities/alumni/">alumni</a> fellowship cities.
-      </ul>
-    </div><!-- ./layout-minim -->
-
-  </div><!-- ./layout-breve -->
+<p>While the product of the Fellowship is typically an early stage application that improves the delivery of a government service or function, the process acts as a vehicle for driving cultural and structural change inside of government — encouraging innovation, improving tolerance for risk, and increasing the organizations capacity for transparency and engagement.</p>
+ </div>
 </section>
+<section class="slab-dark-blue">
+	<div class="layout-semibreve layout-centered">
+		<h5>Our current partners</h5>
+		<nav class="list-credits" role="navigation">
+			<ul>
+				<li>San Francisco Human Services Agency </li>
+				<li>Food Bank of San Francisco and Marin </li>
+				<li>Solano County Human Services Agency </li>
+				<li>City of Long Beach, CA </li>
+				<li>San Mateo County, CA </li>
+				<li>City of West Sacramento, CA </li>
+				<li>Richmond Community Partners </li>
+				<li>Twilio </li>
+				<li>Amazon </li>
+				<li>The California Healthcare Foundation </li>
+			</ul>
+	</div>
+</section>
+<section>
+	<div class="layout-semibreve">
+		<br>
+		<h2>How we work</h2>
+		<br>
+		<p>Code for America’s focus areas bring together work across all of our programs, delivering an impact greater than what each program might achieve on its own. Across our programs, we undertake deep research into the delivery of critical services, develop new digital approaches to health, incubate digital products as they mature, and work with the highest levels of government support to scale digital services. Throughout these efforts, we work to empower our partner organizations through the <a href="/governments/principles">Principles of 21st Century Government.</a></p>
 
-<!-- 
-<section class="slab-gray">
-  <div class="layout-semibreve">
-    <div>
-      <a name="mentors"></a><h3>Advisors & Mentors</h3>
+		<div class="layout-crotchet" style="text-align:center;">
+		    <h5 class="heading">Original Research and Digital Work</h5>
+	        <p>Fellowship teams work with cities and counties to develop innovative digital approaches to delivering key government services.</p>
+		</div>
+		<div class="layout-crotchet" style="text-align:center;">
+		    <h5 class="heading">Building and scaling Digital Services</h5>
+	         <p>As fellowship teams move on, we work to transform promising new technologies into the mature digital services citizens deserve in the 21st century.</p>
+		</div>
+		<div class="layout-crotchet" style="text-align:center;">
+		    <h5 class="heading">Helping Governments Deliver Digital Services</h5>
+	        <p>We document what we learn to make building digital government easy to understand and copy through our <a href="http://www.codeforamerica.org/library/">library</a> and <a href="http://www.codeforamerica.org/about/peernetwork/">Peer Network</a>.
+		</div>
+		<br>
+	</div>
+</section>
+<section>
+	<div class="layout-semibreve">
+		<h4 class="heading">Original digital services produced with governments</h4>
+		<p><a href="/governments/fellowship/">The Code for America Fellowship Program</a> sends teams of technologists into local governments across the country to work full-time for a year in partnership with government officials and the community. The fellows apply 21st Century Government Principles to important problems, focused on health, economic development, and safety and justice. While the product of the Fellowship is typically an early stage application that improves the delivery of a government service, the process acts as a vehicle for driving cultural and structural change inside of government.</p>
+		<figure>
+		    <blockquote>
+		    	<p>We are currently recruiting city and county government partners for 2016 Fellowships! <a href="/governments/fellowship/">Learn more about applying.</a></p>
+		    </blockquote>
+		</figure>
+		<br>
+		<h4 class="heading">Building and scaling digital services</h4>
+		<div class="layout-minim">
+			<p>Beyond the fellowship, our staff technologists, designers, and researchers experiment and invest over time in high potential digital services.</p>
+			<p>In 2015, we are conducting ongoing research and product development to both improve the user experience and enrollment rate of the Supplemental Nutrition Assistance Program (SNAP) rate in California, building off foundational work done by the San Francisco Fellowship team in 2013.</p>
+			<p>You can follow all of our work on <a href="https://github.com/codeforamerica/health">Github</a>, and track our performance against key product indicators on our <a href="https://public.ducksboard.com/NsoSQbe655DQ0DlvQxr6/">public metrics page.</a></p>
+		</div>
+		<br>
+		<div class="layout-minim" style="width: 46%; padding-left: 4%;">
+			<iframe width="100%" height="300" src="https://www.youtube.com/embed/yViYA8IG36U" frameborder="0" allowfullscreen></iframe>
+			<small>
+				<b>The Big Thing About Small Things:</b> Learn more about the Health Lab's approach and work to date Jake Solomon's talk at the 2014 Code for America Summit.
+			</small>
+		</div>
+		<br>
+		<h4 class="heading">Our Projects</h4>
+		<ul class="teasers">
+			<li class="layout-crotchet">
+		    	<article class="teaser teaser-app no-logo">
+		        	<header class="teaser-header">
+		            	<a href="http://www.codeforamerica.org/apps/balance/">
+		                	<h1 class="teaser-title">Balance</h1>
+		            	</a>
+		        	</header>
+		        	<div class="teaser-body">
+						<p>Balance allows people who receive food stamps to check their balance via SMS. Balance brings a little dignity and convenience to the business of managing benefits.</p>
+		            	<p><a href="http://www.codeforamerica.org/apps/balance/">Learn more</a></p>
+		        	</div>
+		    	</article>
+		    </li>
+			<li class="layout-crotchet">
+		    	<article class="teaser teaser-app no-logo">
+		        	<header class="teaser-header">
+		            	<a href="http://www.codeforamerica.org/apps/clean/">
+		                	<h1 class="teaser-title">Clean</h1>
+		            	</a>
+		        	</header>
+		        	<div class="teaser-body">
+						<p>Clean is a simple and dignified online application for CalFresh. We believe that with a good user experience, thoughtful product marketing and the right partnerships that Clean will be able to meaningfully increase the number of people eligible for CalFresh enrolled in the program.</p>
+						<p><a href="http://www.codeforamerica.org/apps/clean/">Learn more</a></p>
+		        	</div>
+		    	</article>
+		    </li>
+			<li class="layout-crotchet">
+		    	<article class="teaser teaser-app no-logo">
+		        	<header class="teaser-header">
+		            	<a href="http://www.codeforamerica.org/apps/connect/">
+		                	<h1 class="teaser-title">Connect</h1>
+		            	</a>
+		        	</header>
+		        	<div class="teaser-body">
+		        		<p>Connect helps social service clients and enrollment assisters avoid wasting time on hold. Connect allows users to initiate a call to a social services agency via SMS, and get a call back when a human is on the other line.
+		        		</p>
+						<p><a href="http://www.codeforamerica.org/apps/connect/">Learn more</a></p>
+		        	</div>
+		    	</article>
+		    </li>
+			<li class="layout-crotchet">
+		    	<article class="teaser teaser-app no-logo">
+		        	<header class="teaser-header">
+		            	<a href="http://www.codeforamerica.org/apps/ebtnearme/">
+		                	<h1 class="teaser-title">EBT Near Me</h1>
+		            	</a>
+		        	</header>
+		        	<div class="teaser-body">
+				<p>EBT Near Me helps social service clients find important places they can use their EBT card. On their phone or when first enrolled, people can find ATMs without fees and CalFresh retail locations.
+				</p>
+						<p><a href="http://www.codeforamerica.org/apps/ebtnearme/">Learn more</a></p>
+		        	</div>
+		    	</article>
+		    </li>
+			<li class="layout-crotchet">
+			    <article class="teaser teaser-app no-logo">
+			        <header class="teaser-header">
+			            <a href="http://www.codeforamerica.org/apps/promptly/">
+			                <h1 class="teaser-title">Promptly</h1>
+			            </a>
+			        </header>
+			        <div class="teaser-body">
+			            <p>Promptly text messages San Francisco Human Services Agency clients with important information to keep them enrolled in services.</p>
+			            <p><a href="http://www.codeforamerica.org/apps/promptly/">Learn more</a></p>
+			        </div>
+			    </article>
+			</li>
+		    <li class="layout-crotchet">
+		        <article class="teaser teaser-app no-logo">
+		            <header class="teaser-header">
+		                <a href="http://www.codeforamerica.org/governments/longbeach/">
+		                    <h1 class="teaser-title">AddressIQ</h1>
+		                </a>
+		            </header>
+		            <div class="teaser-body">
+		                <p>In 2013, 52 percent of emergency medical calls in Long Beach, CA came from the same 10 percent of addresses. This dashboard analyzes data in order to identify these "super-utilizers" and help  find find ways to coordinate their care, reducing costs and improving outcomes.</p>
 
-      <div>
-        <table border="0" cellspacing="2" cellpadding="2">
-          <tbody>
-            <tr>
-              <td>
-                <p><b>Tom Lee</b>, Sunlight Foundation</p>
+		                <p><a href="http://www.codeforamerica.org/governments/longbeach/">Learn More</a></p>
+		            </div>
+		        </article>
+		    </li>
+		    <li class="layout-crotchet">
+		        <article class="teaser teaser-app no-logo">
+		            <header class="teaser-header">
+		                <a href="http://www.codeforamerica.org/our-work/data-formats/openreferral/">
+		                    <h1 class="teaser-title">Open Referral</h1>
+		                </a>
+		            </header>
+		            <div class="teaser-body">
+		                <p>People can't take advantage of services they don't know exist. Open Referral is an open data standard that makes it easier to find and share this information.</p>
 
-                <p><b>Thor Muller</b>, Originals</p>
-
-                <p><b>Alistair Croll</b>, Author</p>
-
-                <p><b>Tim Dierks</b>, Arnold Foundation</p>
-
-                <p><b>Parker Thompson</b>, Pivotal</p>
-
-                <p><b>Hillary Hoeber</b>, IDEO</p>
-
-                <p><b>Rick Klau</b>, Google Ventures</p>
-
-                <p><b>Stephanie Hannon</b>, Google</p>
-              </td>
-
-              <td>
-                <p><b>Eric Rodenbeck</b>, Stamen</p>
-
-                <p><b>Nadav Savio</b>, Google.org</p>
-
-                <p><b>Andrew Crow</b>, GE Design</p>
-
-                <p><b>Brian Yeung</b>, SoundCloud</p>
-
-                <p><b>Matt Deland</b>, Groupon</p>
-
-                <p><b>Ben Sigelman</b>, Stealthmode Startup</p>
-
-                <p><b>Thomson Nguyen</b>, Framed Data</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section> 
--->
+		                <p><a href="http://www.codeforamerica.org/our-work/data-formats/openreferral/">Learn More</a></p>
+		            </div>
+		        </article>
+		    </li>
+		</ul>
+		<p>
+			<br>
+		</p>
+	</div>
+</section>
+<section class="slab-dark-blue">
+	<div class="layout-semibreve">
+		<h2>Work with us</h2>
+		<div class="badge-heading badge-github badge-gov" style="border-bottom:none">
+			<h4>Get in touch to learn more.</h4>
+			<p>The Health focus area team includes designers, engineers, domain experts and fellows. <a href="/about/team">Learn about our entire team.</a> Get in touch to learn more about our work and how to deliver health and social services with dignity, by default.</p>
+			<p>Contact <strong><a href="/people/rebecca-coelius/">Rebecca Coelius, Director of Health</strong></a> at <a href="mailto:rebeccac@codeforamerica.org">rebeccac@codeforamerica.org</a></p>
+		</div>
+		<div class="badge-heading badge-github badge-black" style="border-bottom:none">
+			<h4>Data Analyst, Designer or Developer? Get involved right away.</h4>
+			<p>We operate in the open. Our work benefits from contributions across the civic tech movement and the health and human services domain. Watch our proress, share your ideas, and get involved.</p>
+			<button href="https://github.com/codeforamerica/health">Visit us on Github</button>
+		</div>
+	</div>
+</section>
