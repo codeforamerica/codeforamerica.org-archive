@@ -69,6 +69,10 @@ class TestApache (unittest.TestCase):
 
         self.httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
         sleep(.5)
+
+        if self.httpd.poll():
+            print self.httpd.stderr.read()
+            raise RuntimeError('{} exited with status {}'.format(httpd_path, self.httpd.poll()))
     
     def tearDown(self):
         ''' Kill Apache and delete ServerRoot.
