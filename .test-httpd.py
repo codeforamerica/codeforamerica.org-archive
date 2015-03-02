@@ -3,31 +3,50 @@ from tempfile import mkdtemp
 from os.path import join, abspath, dirname, exists
 from urlparse import urljoin, urlparse
 from httplib import HTTPConnection
-from subprocess import Popen, PIPE
+from subprocess import Popen, PIPE, check_output
 from random import randrange
 from shutil import rmtree
 from time import sleep
+from re import compile
+from os import mkdir
 
 import unittest
 
 config = '''
-{MLCP}LoadModule log_config_module {ModulesPath}/mod_log_config.so
 LoadModule rewrite_module {ModulesPath}/mod_rewrite.so
 LoadModule alias_module {ModulesPath}/mod_alias.so
 LoadModule dir_module {ModulesPath}/mod_dir.so
 
+<IfDefine Version2.2>
+    LoadModule log_config_module {ModulesPath}/mod_log_config.so
+    CustomLog "|tee /dev/stderr" "%h %l %u %t \\"%r\\" %>s %b"
+    ErrorLog "|tee /dev/stderr"
+    LockFile accept.lock
+</IfDefine>
+
+<IfDefine Version2.4>
+    LoadModule authz_core_module {ModulesPath}/mod_authz_core.so
+    Mutex file:{ServerRoot}
+</IfDefine>
+
 Listen 0.0.0.0:{Port}
 PidFile httpd.pid
-LockFile accept.lock
 DocumentRoot "{DocumentRoot}"
-CustomLog "|tee /dev/stderr" "%h %l %u %t \\"%r\\" %>s %b"
-ErrorLog "|tee /dev/stderr"
 
 <Directory "{DocumentRoot}">
     Options +FollowSymLinks
     AllowOverride Options FileInfo Indexes
 </Directory>
 '''
+
+def apache_version(httpd_path):
+    ''' Return major, minor version tuple.
+    '''
+    pattern = compile(r'^Server version: Apache/(\d+)\.(\d+)\.(\d+)\b')
+    match = pattern.match(check_output((httpd_path, '-v')))
+    major, minor, patch = [int(match.group(i)) for i in (1, 2, 3)]
+
+    return major, minor
 
 class TestApache (unittest.TestCase):
     
@@ -38,6 +57,8 @@ class TestApache (unittest.TestCase):
         '''
         self.root = mkdtemp()
         self.port = randrange(0x1000, 0x10000)
+
+        mkdir(join(self.root, 'logs'))
         
         #
         # Look for Apache modules, write a configuration file.
@@ -50,7 +71,7 @@ class TestApache (unittest.TestCase):
             log_config_so_path = join(mod_path, 'mod_log_config.so')
             log_config_prefix = '' if exists(log_config_so_path) else '#'
             vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
-                        Port=self.port, MLCP=log_config_prefix)
+                        Port=self.port, ServerRoot=dirname(abspath(__file__)))
 
             with open(join(self.root, 'httpd.conf'), 'w') as file:
                 file.write(config.format(**vars))
@@ -65,20 +86,23 @@ class TestApache (unittest.TestCase):
             if not exists(httpd_path):
                 continue
 
-            httpd_cmd = (httpd_path, '-d', self.root, '-f', 'httpd.conf', '-X')
+            version_param = '-DVersion{}.{}'.format(*apache_version(httpd_path))
+
+            httpd_cmd = (httpd_path, '-d', self.root, '-f', 'httpd.conf',
+                         '-DFOREGROUND', '-DNO_DETACH', version_param)
 
         self.httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
         sleep(.5)
 
         if self.httpd.poll():
             print self.httpd.stderr.read()
-            raise RuntimeError('{} exited with status {}'.format(httpd_path, self.httpd.poll()))
+            raise RuntimeError('{} exited with status {}'.format(httpd_cmd[0], self.httpd.poll()))
     
     def tearDown(self):
         ''' Kill Apache and delete ServerRoot.
         '''
         self.httpd.kill()
-        rmtree(self.root)
+        #rmtree(self.root)
 
     def test_home(self):
         ''' Test a basic 200 OK response from the home page.
