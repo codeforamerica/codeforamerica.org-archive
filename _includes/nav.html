@@ -22,7 +22,23 @@
     {% assign masthead-image = false %}
 {% endif %}
 
-{% if include.nav-global-primary != "no" %}
+{% if page.nav-global-primary %}
+    {% assign nav-global-primary = page.nav-global-primary %}
+{% elsif include.nav-global-primary %}
+    {% assign nav-global-primary = include.nav-global-primary %}
+{% else %}
+    {% assign nav-global-primary = false %}
+{% endif %}
+
+{% if page.masthead %}
+    {% assign masthead = page.masthead %}
+{% elsif include.masthead %}
+    {% assign masthead = include.masthead %}
+{% else %}
+    {% assign masthead = false %}
+{% endif %}
+
+{% if nav-global-primary != "no" %}
 <nav class="nav-global-primary">
   <ul class="layout-breve layout-tight">
     <li><a href="/blog">Blog</a></li>
@@ -36,9 +52,15 @@
     </li>
   </ul>
 </nav>
+{% else %}
+<!--  
+      If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
+      This requirement is because of the nav collapse functionality in global.js
+  -->
+<nav class="nav-global-primary"></nav>
 {% endif %}
 
-{% if include.masthead != "no" %}
+{% if masthead != "no" %}
 <div class="masthead {{ masthead-class }}">
   <div class="masthead-hero">
     <div class="masthead-image" 
@@ -53,7 +75,14 @@
 </div>
 {% endif %}
 
-<div class="global-header">  
+<div class="global-header
+  {% comment %}
+  Right now, we need to kill the margin-bottom on global-header if we have a custom masthead (since it comes after global-header)
+  This checks if there's a custom masthead then applies a class we can style
+  In the future, this hack should be replaced with better pattern-portfolio styles for header above and below masthead 
+  {% endcomment %}
+  {% if page.masthead-custom %}global-header-custom{% endif %}
+  ">  
   <a href="/" class="global-header-logo">
       <img src="/assets/logo.png" />
   </a>
@@ -106,7 +135,6 @@
         {% if nav_tier1_active == "companies" %}
          <ul class="nav-tier2">
           <li><a href="/companies/our-companies">Our Companies</a></li>
-           <li><a href="/companies/newsletter">Newsletter</a></li>
            <li><a href="/companies/incubator-faq">Incubator FAQ</a></li>
           <li><a href="/companies/accelerator-faq">Accelerator FAQ</a></li>
           <li><a href="/companies/accelerator-apply">Apply</a></li>
@@ -129,3 +157,31 @@
     </ul>
   </nav>    
 </div>
+
+{% if page.masthead-custom == "deep" %}
+<div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
+  
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      {% if masthead-image %}
+      style="background-image: url('{{ masthead-image }}')" 
+      {% endif %}>
+    </div>
+  </div>
+
+  <header class="masthead-header layout-semibreve">
+    {% if page.title and page.headline %}
+      <p class="page-overline">{{ page.title }}</p>
+      <h1 class="page-title">{{ page.headline }}</h1>
+    {% else %}
+      <h1 class="page-title">{{ page.title }}</h1>  
+    {% endif %}
+  </header>
+  
+  {% if page.description %}
+  <div class="description layout-semibreve">
+    <p class="page-description">{{ page.description }}</p>
+  </div>
+  {% endif %}
+</div>
+{% endif %}

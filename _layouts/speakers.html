@@ -51,6 +51,8 @@ include-params: true
   <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
   <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
   <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+  <!-- Link to style staging area -->
+  <link rel="stylesheet" href="/stylesheets/staging.css">
   <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
 
@@ -91,8 +93,18 @@ include-params: true
       <main role="main">
         {{ content }}
         
+        <!-- Email signup form -->
+        <div class="slab-medium-red">
+            <div class="layout-breve layout-tight">
+                {% include email-signup-form.html context="footer" %}
+            </div><!-- end .layout-breve -->
+        </div><!-- end .slab-dark-blue -->
+
         {% include global-footer.html %}
       </main>
+    </div>
+    <div class="js-modal">
+      {% include email-signup-modal.html %}
     </div>
     {% include footer-scripts.html %}
     {% if page.include-parsley %}

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
     <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
     <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+    <!-- Link to style staging area -->
+    <link rel="stylesheet" href="/stylesheets/staging.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
 
@@ -86,7 +88,11 @@
                 <h3>Who We Are</h3>
                 <p>Code for America believes government can work for the people, by the people in the 21st century.</p>
                 <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</p>
-                <p>Learn more about the <a href="/governments/capabilities/index.html">key capabilities</a> CfA strives to develop with local governments. <div align="center"><span style="text-align:center;"><a id="box-link" class="text-whisper button-invert" href="/governments/capabilities/feedback.html" target="_blank" style="border-bottom:1px solid #fff">share your insights here</a></span><br/></div></p>
+                <p>Join our e-mail list to learn how to use your skills to make your community better & we’ll send you info about Code for America’s work.</p>
+                <div class="layout-center">
+                    <a class="text-whisper button-invert white js-modal-show" href="#">Sign up</a>
+                    <br/>
+                </div>
             </div>
         </div>
         
@@ -104,31 +110,30 @@
 
         <article class="post-preview">
             <header class="post-header isolate">
-                <time class="post-date insulate text-whisper" datetime="">December 23, 2014</time>
-                <h2 class="post-title"><a href="http://www.codeforamerica.org/blog/2014/12/23/2014-brigade-in-review/">2014: Brigade in Review</a></h2>
+                <time class="post-date insulate text-whisper" datetime="">February 5, 2015</time>
+                <h2 class="post-title"><a href="https://www.codeforamerica.org/blog/2015/02/05/making-virtual-community-members-visible-with-google-analytics/" onclick="ga('send', 'event', 'Homepage', 'Blog headline click', 'Blog: Making Virtual Community Members Visible with Google Analytics');">Making Virtual Community Members Visible with Google Analytics</a></h2>
             </header>
 
             <div class="post-author">
                 <h2 class="text-whisper layout-tight">Written by</h2>
 
                 <div class="h-card">
-                    <h3 class="p-name profile-name text-prominent">Hannah Young</h3>
-                    <img class="u-photo profile-photo" src="media/images/people/hannah-young.jpg" alt="" />
+                    <h3 class="p-name profile-name text-prominent">Mai-Ling Garcia</h3>
+                    <img class="u-photo profile-photo" src="//www.codeforamerica.org/blog/wp-content/uploads/2015/02/me1.jpg" alt="" />
                 </div>
 
                 <div class="post-body">
                     <div class="post-content">
-                        <p>It’s hard to believe 2014 is nearly over. It was an amazing year for the Brigade network as a whole, as well as for individual chapters all around the world. As the year wraps up, we wanted to take time to celebrate this year’s wins and reflect on what we did together as a network.</p>
-                        <p>Before we do so, however, we wanted to stop and say thank you. Thank you to the hundreds of Brigade leaders, thousands of volunteers, and hundreds of local government and community partners who dedicated their time, skills, and passion to make their communities stronger. These accomplishments are yours. [...]</p>
+                        <p>The Oakland community hella loves Oakland. Community members have a robust presence at council meetings, town halls, and community events. However, who often goes unnoticed are the more than an average of 2,800 virtual visitors who engage with our City every day. That’s more than 1,000,000 interactions a year.</p>
+                        <p>That’s changed with the new Analytics Dashboard we launched. [...]</p>
                     </div>
                 </div>
 
-                <a class="post-link" href="http://www.codeforamerica.org/blog/2014/12/23/2014-brigade-in-review/">Read this post</a>
+                <a class="post-link" href="https://www.codeforamerica.org/blog/2015/02/05/making-virtual-community-members-visible-with-google-analytics/" onclick="ga('send', 'event', 'Homepage', 'Blog link click', 'Blog: Making Virtual Community Members Visible with Google Analytics');">Read this post</a>
             </div><!-- end .post-author -->
         </article>
     </div><!-- end .layout-minim -->
 </section>
-
 <section>
     <div class="layout-semibreve">
         <div class="badge-heading badge-github badge-blue">
@@ -138,7 +143,7 @@
                 Find more using the <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.
             </p>
         </div>
-        <iframe id="widget" src="/geeks/civicissues/widget?labels=help%20wanted&amp;number=3" width="100%" height="400px" frameBorder="0" onLoad="resize();"> </iframe>
+        <iframe id="widget" src="/geeks/civicissues/widget?labels=help%20wanted&amp;number=3&amp;tracking=false" width="100%" height="400px" frameBorder="0" onLoad="resize();"> </iframe>
         <script>
             // Resize iframe to fit content
             function resize()
@@ -178,9 +183,18 @@
 
 </section>
 
+<!-- Email signup form -->
+<div class="slab-medium-red">
+    <div class="layout-breve layout-tight">
+        {% include email-signup-form.html context="footer" %}
+    </div><!-- end .layout-breve -->
+</div><!-- end .slab-dark-blue -->
+
 {% include global-footer.html %}
 </main>
 </div>
+
+{% include email-signup-modal.html %}
 
 <!--<script src="script/global.js"></script>-->
 {% include footer-scripts.html %}

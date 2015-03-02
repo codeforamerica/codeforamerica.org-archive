@@ -91,14 +91,14 @@ RedirectMatch permanent ^/brigade06-27-2013/?$ /brigade-training/brigade06-27-20
 #
 # Wordpress blog.
 #
-RedirectMatch permanent ^/(wp-admin.+)$ /blog/$2
-RedirectMatch permanent ^/(wp-login.+)$ /blog/$2
-RedirectMatch permanent ^/(wp-content/.+)$ /blog/$2
-RedirectMatch permanent ^/(\d\d\d\d/\d\d/\d\d/.+)$ /blog/$2
-RedirectMatch permanent ^/(category/.+)$ /blog/$2
-RedirectMatch permanent ^/(author/.+)$ /blog/$2
-RedirectMatch permanent ^/(feed/.+)$ /blog/$2
-RedirectMatch permanent ^/(feed/?)$ /blog/$2
+RedirectMatch permanent ^/(wp-admin.+)$ /blog/$1
+RedirectMatch permanent ^/(wp-login.+)$ /blog/$1
+RedirectMatch permanent ^/(wp-content/.+)$ /blog/$1
+RedirectMatch permanent ^/(\d\d\d\d/\d\d/\d\d/.+)$ /blog/$1
+RedirectMatch permanent ^/(category/.+)$ /blog/$1
+RedirectMatch permanent ^/(author/.+)$ /blog/$1
+RedirectMatch permanent ^/(feed/.+)$ /blog/$1
+RedirectMatch permanent ^/(feed/?)$ /blog/$1
 
 #
 # General information.
@@ -198,6 +198,7 @@ RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/accelerator-appl
 RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-faq
 RedirectMatch permanent ^/about/startups/?$ /about/companies
 #RedirectMatch permanent ^/mentor/?$ /companies
+RedirectMatch permanent ^/companies/newsletter/?$ /companies
 
 #
 # More Fellowship Program
@@ -311,6 +312,13 @@ RedirectMatch permanent ^/serena-wales(/?)$ /people/serena-wales$1
 RedirectMatch permanent ^/sheba-najmi(/?)$ /people/sheba-najmi$1
 RedirectMatch permanent ^/zach-williams(/?)$ /people/zach-williams$1
 
+# 
+# Focus Areas and Initiatives (Short Links)
+# 
+RedirectMatch permanent ^/health/?$ /our-work/focus-areas/health/
+RedirectMatch permanent ^/safety-justice/?$ /our-work/focus-areas/safety-justice/
+RedirectMatch permanent ^/economic-development/?$ /our-work/focus-areas/economic-development/
+
 #
 # Random crap.
 #
@@ -332,6 +340,7 @@ RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
 RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 RedirectMatch permanent ^/projects/new-york-city-hhc-accelerator/?$ /projects/new-york-city-hhs-accelerator/
+RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
 
 #
 # Set of possible Jekyll file extensions + PHP, from

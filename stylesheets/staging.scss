@@ -1,0 +1,308 @@
+---
+---
+
+//
+// STAGING SCSS
+// 
+// This is a staging area for changes to the core of the codeforamerica.org site that aren't part of the pattern library.
+// These changes may eventually be rolled into the pattern library.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: *
+//
+
+// ##### MIXINS AND HELPERS #####
+//
+// These are little mixins used to make our lives easier.
+//
+
+// This mixin allows us to style input field placeholder text
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    $color;
+	   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    $color;
+	   opacity:  1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    $color;
+	}
+}
+
+// ##### SMALL PATTERNS #####
+//
+// Small patterns that can be used in multiple places. These add or overwrite pattern-library functionality.
+//
+
+// .button-invert with .white is completely white
+a.button-invert.white,
+input[type="submit"].button-invert.white,
+button.button-invert.white {
+	color: white;
+	// These importants are terrible. But the level of specificity on slab- and block- buttons is nearly impossible to overwrite.
+	// This is a hack for now that will need to be fixed in a later version of the pattern-library.
+	border-color: white !important;
+	border-bottom: 1px solid white !important;
+}
+
+// ##### CHANGES TO GLOBAL FOOTER #####
+//
+// These styles adapt the .global-search area in the footer to become a mailing list signup.
+// These pull from the origin .global-search class in the pattern library but change the name and styles for a new purpose.
+//
+
+/* Global Footer - main - border */
+
+.global-footer {
+	// Remove the border from the top of the global footer
+	border-top: none;
+	// Remove the top padding so our new signup box snaps to top
+	padding-top: 0;
+}
+
+nav.nav-footer {
+	margin-top: 30px;
+}
+
+/* Global Footer - main - signup form */
+
+.signup-global {
+	margin: 32px 0;
+	color: white;
+}
+
+.signup-global h4 {
+	display: inline-block;
+	color: white;
+	margin-right: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.signup-global h4 i:before {
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.signup-global input[type="email"] {
+	background-color: transparent;
+	color: white;
+	font-size: 14px;
+	line-height: inherit;
+	margin: 0;
+	margin-bottom: 8px;
+	height: 40px;
+	padding: 0px 10px;
+	text-transform: none;
+	box-sizing: content-box;
+	border-radius: 0px;
+	width: 90%;
+	border-color: white;
+	border: 1px solid white;
+
+	@include placeholder-color(white);
+}
+
+.signup-global input[type="email"]:focus {
+	border-color: white;
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.signup-global input[type="submit"] {
+	margin-bottom: 8px;
+}
+
+/* Global footer - layout (screens above 40em) */
+
+@media all and (min-width: 40em) {
+	.signup-global {
+		margin-left: 0;
+	}
+
+	.signup-global input[type="email"] {
+		width: 300px;
+		margin-right: 8px;
+	}
+}
+
+// ##### ADD MODAL STYLES #####
+//
+// We have no concept of a modal. Modals are useful for some basic actions (like showing confirm pages.)
+// Borrowing styles from the Boostrap modal system here.
+//
+
+/* Modal */
+
+// Modal container that holds the dialog box, adds tinted background
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	overflow: hidden;
+	//-webkit-overflow-scrolling: touch;
+	outline: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+// When the modal is active
+body.modal-active {
+	.js-container {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.modal {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		display: block;
+	}
+
+	.modal .modal-dialog {
+		position: relative;
+		box-sizing: border-box;
+		background-color: white;
+
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 25px;
+		padding: 25px;
+	}
+	.modal .modal-exit {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+}
+
+// Styles for desktop and up
+@media all and (min-width: 40em) {
+	body.modal-active .modal .modal-dialog {
+		width: 70%;
+		margin-left: 15%;
+		margin-top: 100px;
+		padding: 4%;
+	}
+}
+
+// ##### MASTHEAD-CUSTOM #####
+//
+// Introduces a custom masthead that is deeper than usual and holds text and calls-to-action.
+//
+
+// When global-header comes before mastead-custom, it gets this class
+// Remove the margin so the masthead snaps to the bottom of the global-header
+.global-header-custom {
+  margin-bottom: 0;
+}
+
+.masthead.masthead-custom {
+ 
+  // ## Basic layout
+
+  // Set the color we'll fade the background into
+  background-color: #004b6a;
+  // Add some padding to the top and bottom
+  padding-top: 30px;
+  // Keep the text color white, even on mobile
+  color: white;
+
+  // ## The header image, held in the :before pseudo-class
+  
+  &:before {
+    // Same min-height as our container
+    min-height: 100%;
+    background-size: cover;
+    // Fade into the background color
+    opacity: 0.3;
+    // Don't hide it on mobile
+    display: block;
+  }
+
+  // ## Typography
+
+  .page-title {
+    // Restyle the page header text
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    text-transform: none;
+    // Keep the color white, even on mobile. Have to use here to override specificity.
+    color: white;
+  }
+
+  .page-overline {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .page-description {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  p {
+    // On small screens, core styles try to float .masthead p to the left. Don't do that.
+    float: none;
+  }
+
+  // ## Submodule layout
+
+  // This container holds the description
+  .description {
+    position: relative;
+    z-index: 3;
+    margin-top: 100px;
+  }
+
+  // This container holds the down arrow, inside of .description
+  .arrow img {
+    width: 30px;
+    margin-bottom: 20px;
+  }
+
+  .arrow img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  // ## Styles for tablet and up
+
+  @media all and (min-width: 40em) {
+  // add responsive styles here
+    .page-title {
+      // Make the page title bigger
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -1px;
+    }
+
+    .page-overline {
+      // Make the overline a bit bigger
+      font-size: 16px;
+      letter-spacing: 4px;
+    }
+
+    .page-description {
+      // Make the page description text bigger
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+  }
+
+}
