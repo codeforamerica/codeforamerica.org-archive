@@ -181,6 +181,15 @@
   {% if page.description %}
   <div class="description layout-semibreve">
     <p class="page-description">{{ page.description }}</p>
+
+    {% if page.mailing-list-header %}
+      <form class="email-entry-form" action="//codeforamerica.us2.list-manage.com/subscribe/post?u=d9acf2a4c694efbd76a48936f&amp;id=3ac3aef1a5" method="post" target="_blank">
+        <span class="combined">
+          <input type="email" name="email" class="signup-email" placeholder="Enter your email address" style="width:50%" />
+          <input type="submit" value="Sign up" class="button-invert text-whisper white" />
+        </span>
+      </form>
+    {% endif %}
   </div>
   {% endif %}
 </div>
