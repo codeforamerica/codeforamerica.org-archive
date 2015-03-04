@@ -72,8 +72,14 @@ jquery-scripts: |
         </li>
 
         <li class="form-field">
-          <label for="referral">How did you hear about the Fellowship Program: <abbr title="Required">*</abbr></label>
+          <label for="referral">How did you hear about the Fellowship Program <abbr title="Required">*</abbr></label>
           <input id="referral" name="referral" class="input" type="text" placeholder="" required>
+        </li>
+
+        <li class="form-field">
+          <label for="brigade">If you're a member of your local brigade, please enter the brigade name</label>
+          <input id="brigade" name="brigade" class="input" type="text" placeholder="">
+          <p class="note">If you're not a Brigade member, you can leave this blank.</p>
         </li>
 
         <li class="form-field">
@@ -88,17 +94,17 @@ jquery-scripts: |
         </li><!-- end .form-field -->
 
         <li class="form-field" id="js-skillset-other" style="display: none;">
-          <label for="skill-set-other">If other, please describe your primary skill set: </label>
+          <label for="skill-set-other">If other, please describe your primary skill set </label>
           <input id="skill-set-other" name="skill-set-other" class="input" type="text" placeholder="">
         </li>
 
         <li class="form-field">
-          <label for="portfolio">What is the most relevant webpage that shows off your skills: <abbr title="Required">*</abbr></label>
+          <label for="portfolio">What is the most relevant webpage that shows off your skills <abbr title="Required">*</abbr></label>
           <input id="portfolio" name="portfolio" class="input" type="url" placeholder="" required>
         </li>
 
         <li class="form-field">
-          <label for="interest-paragraph">In 2-3 sentences, tell us why you want to be a CfA fellow: <abbr title="Required">*</abbr></label>
+          <label for="interest-paragraph">In 2-3 sentences, tell us why you want to be a CfA fellow <abbr title="Required">*</abbr></label>
           <textarea id="interest-paragraph" name="interest-paragraph" rows="8" cols="32" required></textarea>
         </li>
 
