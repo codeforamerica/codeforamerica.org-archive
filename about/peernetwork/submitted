@@ -11,8 +11,8 @@ masthead-custom: deep
 title: "Apply: Join the Peer Network"
 
 # Content for the custom deep masthead
-headline: Nice. That's a good looking application.
-description: Thank you for joining the Peer Network! Your confirmation will be sent via email and will include next steps on how to start accessing your membership benefits. 
+headline: Thanks for submitting your information!  
+description: We'll be in touch via email on next steps with your Peer Network membership shortly.  
 ---
 <section class="layout-semibreve layout-centered">
   <h2>Ready to get started now?</h2>
@@ -23,7 +23,7 @@ description: Thank you for joining the Peer Network! Your confirmation will be s
   <div class="layout-crotchet">
     <img src="/media/images/about/brigade.jpg" alt="">
     <h5>Bring our geeks to your city.</h5>
-    <p>Learn about the CfA Fellowship program, where technologists partner with governments to build tools and technology that help deliver key public services. .</p>
+    <p>Learn about the CfA Fellowship program, where technologists partner with governments to build tools and technology that help deliver key public services.</p>
     <a href="governments/fellowship/" class="button">Learn More</a>
   </div>
 
