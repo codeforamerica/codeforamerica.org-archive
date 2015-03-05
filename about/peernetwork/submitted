@@ -1,6 +1,6 @@
 ---
 layout: default
-masthead-image: "../../../../media/images/forms/thanks.gif"
+masthead-image: "/media/images/forms/thanks.gif"
 
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
