@@ -22,9 +22,9 @@ description: Thank you for joining the Peer Network! Your confirmation will be s
   
   <div class="layout-crotchet">
     <img src="/media/images/about/brigade.jpg" alt="">
-    <h5>Get involved in your community now, join your local Brigade.</h5>
-    <p>Brigades are groups of volunteers hacking on open data to improve the city they live in.</p>
-    <a href="/brigade/" class="button">Find your Brigade</a>
+    <h5>Bring our geeks to your city.</h5>
+    <p>Learn about the CfA Fellowship program, where technologists partner with governments to build tools and technology that help deliver key public services. .</p>
+    <a href="governments/fellowship/" class="button">Learn More</a>
   </div>
 
   <div class="layout-crotchet">
