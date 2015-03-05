@@ -34,10 +34,17 @@ nav-breadcrumbs:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
-    <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
-    <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
-    <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+    {% if site.env.status == "development" %}
+      <link rel="stylesheet" type="text/css" href="{{ site.environment.webtype_host }}" />
+      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/main.css">
+      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/layout.css" media="all and (min-width: 40em)">
+      <link href="{{ site.env.style_host }}/style/css/prism.css" rel="stylesheet" />
+    {% else %}
+      <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
+      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
+      <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+    {% endif %}
     <!-- Link to style staging area -->
     <link rel="stylesheet" href="/stylesheets/staging.css">
     <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
@@ -87,12 +94,14 @@ nav-breadcrumbs:
       <main role="main">
         {{ content }}
 
+        {% unless page.mailing-list-header %}
         <!-- Email signup form -->
         <div class="slab-medium-red">
           <div class="layout-breve layout-tight">
             {% include email-signup-form.html context="footer" %}
           </div><!-- end .layout-breve -->
         </div><!-- end .slab-dark-blue -->
+        {% endunless %}
 
         {% include global-footer.html %}
       </main>
