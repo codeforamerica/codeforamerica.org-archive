@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 from tempfile import mkdtemp
-from os.path import join, abspath, dirname, exists
+from os.path import join, abspath, dirname
 from urlparse import urljoin, urlparse
 from httplib import HTTPConnection
-from subprocess import Popen, PIPE
 from random import randrange
 from shutil import rmtree
 from time import sleep
+
+from httpd import run_apache_forever
 
 import unittest
 
@@ -38,36 +39,9 @@ class TestApache (unittest.TestCase):
         '''
         self.root = mkdtemp()
         self.port = randrange(0x1000, 0x10000)
+        doc_root = join(dirname(abspath(__file__)), '_site')
         
-        #
-        # Look for Apache modules, write a configuration file.
-        #
-        for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
-            if not exists(join(mod_path, 'mod_dir.so')):
-                continue
-        
-            doc_root = join(dirname(abspath(__file__)), '_site')
-            log_config_so_path = join(mod_path, 'mod_log_config.so')
-            log_config_prefix = '' if exists(log_config_so_path) else '#'
-            vars = dict(DocumentRoot=doc_root, ModulesPath=mod_path,
-                        Port=self.port, MLCP=log_config_prefix)
-
-            with open(join(self.root, 'httpd.conf'), 'w') as file:
-                file.write(config.format(**vars))
-        
-        if not exists(join(self.root, 'httpd.conf')):
-            raise RuntimeError('Did not make httpd.conf')
-        
-        #
-        # Look for Apache executable and start it up.
-        #
-        for httpd_path in ('/usr/sbin/httpd', '/usr/sbin/apache2'):
-            if not exists(httpd_path):
-                continue
-
-            httpd_cmd = (httpd_path, '-d', self.root, '-f', 'httpd.conf', '-X')
-
-        self.httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
+        self.httpd = run_apache_forever(doc_root, self.root, self.port, False)
         sleep(.5)
     
     def tearDown(self):

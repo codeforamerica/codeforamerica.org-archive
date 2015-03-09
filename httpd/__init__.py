@@ -82,8 +82,10 @@ def apache_version(httpd_path):
 
     return major, minor
 
-def run_apache(root, port, watch):
+def run_apache_with_jekyll(root, port, watch):
     ''' Look for Apache executable and start it up.
+    
+        When the user cancels or kills the process, stop Apache.
     '''
     try:
         doc_root = join(root, '_site')
@@ -115,6 +117,42 @@ def run_apache(root, port, watch):
             sleep(7 * 86400)
         finally:
             httpd.kill()
+
+    except KeyboardInterrupt:
+        rmtree(root)
+
+def run_apache_forever(doc_root, root, port, watch):
+    ''' Look for Apache executable and start it up.
+    
+        Return an instance of subprocess.Process.
+        
+        Assumes that jekyll build has already created root/_site.
+    '''
+    try:
+        mkdir(join(root, 'logs'))
+
+        mod_path = write_config(doc_root, root, port)
+        httpd_paths = '/usr/sbin/httpd', '/usr/sbin/apache2'
+        httpd_path = filter(exists, httpd_paths)[0]
+
+        version_param = '-DVersion{}.{}'.format(*apache_version(httpd_path))
+        
+        httpd_cmd = (httpd_path, '-d', root, '-f', 'httpd.conf',
+                     '-DFOREGROUND', '-DNO_DETACH', version_param)
+        
+        if exists(join(mod_path, 'mod_unixd.so')):
+            httpd_cmd += ('-DUnixd', )
+
+        if exists(join(mod_path, 'mod_mpm_event.so')):
+            httpd_cmd += ('-DMpmEvent', )
+
+        stderr = open(join(root, 'stderr'), 'w')
+        stdout = open(join(root, 'stdout'), 'w')
+
+        httpd = Popen(httpd_cmd, stderr=stderr, stdout=stdout)
+        print 'Running at http://127.0.0.1:{}'.format(port)
+        
+        return httpd
 
     except KeyboardInterrupt:
         rmtree(root)
