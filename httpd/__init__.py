@@ -34,7 +34,7 @@ PidFile "{ServerRoot}/httpd.pid"
 DocumentRoot "{DocumentRoot}"
 TypesConfig {MimeTypes}
 
-<Directory "{DocumentRoot}">
+<Directory "/">
     Options +FollowSymLinks
     AllowOverride Options FileInfo Indexes
 </Directory>
@@ -150,7 +150,7 @@ def run_apache_forever(doc_root, root, port, watch):
         stdout = open(join(root, 'stdout'), 'w')
 
         httpd = Popen(httpd_cmd, stderr=stderr, stdout=stdout)
-        print 'Running at http://127.0.0.1:{}'.format(port)
+        print 'Running at http://127.0.0.1:{} from {}'.format(port, root)
         
         return httpd
 
