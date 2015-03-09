@@ -7,7 +7,7 @@ from random import randrange
 from shutil import rmtree
 from time import sleep
 
-from httpd import run_apache_forever
+from httpd import run_apache_forever, build_site
 
 import unittest
 
@@ -203,4 +203,5 @@ class TestApache (unittest.TestCase):
             assert end_path == url_path, '{0} instead of {1} from {2}'.format(url_path, end_path, start_path)
     
 if __name__ == '__main__':
+    build_site(join(dirname(abspath(__file__)), '_site'), False)
     unittest.main()
