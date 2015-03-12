@@ -42,7 +42,11 @@
     <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/alan-williams.jpg" />
     <div class="p-note profile-note">
         <p>
-            <a href="{{ include.base }}/cities/summitcounty/">Summit County Team</a>
+            {% if include.context == '2014-fellows' %}
+                <a href="{{ include.base }}/cities/summitcounty/">Summit County Team</a>
+            {% else %}
+                Health Team
+            {% endif %}
         </p>
         <p>
             Alan is an urban planner, designer, and community strategist. Most recently he lead the Community team at Neighborland, a civic ideation platform. Alan’s early experience as a community organizer informed his work as a spatial analyst and urban planner in post-Katrina New Orleans. In 2011, he joined…

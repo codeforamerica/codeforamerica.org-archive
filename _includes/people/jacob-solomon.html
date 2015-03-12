@@ -67,7 +67,11 @@
     <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jacob-solomon.jpg" />
     <div class="p-note profile-note">
         <p>
-            <a href="{{ include.base }}/cities/sanfrancisco/">San Francisco Team</a>
+            {% if include.context == '2014-fellows' %}
+                <a href="{{ include.base }}/cities/sanfrancisco/">San Francisco Team</a>
+            {% else %}
+                Health Team
+            {% endif %}
         </p>
         <p>
             Jacob is a policy analyst and project manager from Oakland. Most recently, he studied the quality of care for mentally ill veterans, the forthcoming Medicaid expansion, and medical marijuana policy in California at RAND Corporation. Previously, he worked as a Forward Deployed Engineer at Palantir Technologies. Jacob studied Economics at Occidental College.
