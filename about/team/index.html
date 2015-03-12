@@ -120,6 +120,16 @@ nav-breadcrumbs:
 </section>
 
 <section class="layout-semibreve">
+  <h4>Product Team</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eos.</p>
+
+  <ul class="list-no-bullets layout-grid-crotchet">
+    <li>{% include people/cyd-harrell.html context="about-team" base="../.." %}</li>
+    <li>{% include people/jack-madans.html context="about-team" base="../.." %}</li>
+  </ul>
+</section>
+
+<section class="layout-semibreve">
   <h4>Revenue Team</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eos.</p>
 
@@ -144,12 +154,10 @@ nav-breadcrumbs:
   <h4>Tech Team</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eos.</p>
 
-  <ul class="list-no-bullets layout-grid-crotchet">
-    <li>{% include people/jack-madans.html context="about-team" base="../.." %}</li>
-    <li>{% include people/cyd-harrell.html context="about-team" base="../.." %}</li>
-    <li>{% include people/andrew-hyder.html context="about-team" base="../.." %}</li>
-    <li>{% include people/frances-berriman.html context="about-team" base="../.." %}</li>
+  <ul class="list-no-bullets layout-grid-crotchet">  
     <li>{% include people/tomas-apodaca.html context="about-team" base="../.." %}</li>
+    <li>{% include people/frances-berriman.html context="about-team" base="../.." %}</li>
+    <li>{% include people/andrew-hyder.html context="about-team" base="../.." %}</li>
   </ul>
 </section>
 
