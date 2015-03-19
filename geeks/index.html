@@ -13,64 +13,55 @@ nav-breadcrumbs:
 <script src='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 
 <section class="slab-red">
-  <div class="layout-breve layout-centered">
-    <h2>Geeks have the power to help their cities.</h2>
+  <div class="layout-semibreve layout-centered">
+    <h2>Citizens have the power to help their cities.</h2>
     <p>Here are three simple ways for you to get started with civic hacking.</p>
   </div>
 </section>
 
-<section class="layout-breve">
+<section class="layout-semibreve">
 
-  <div class="badge-heading badge-rocket badge-red">
-    <h2>Explore what Code for America volunteer <a href="/brigade">Brigades</a> are working on.</h2>
+    <div class="badge-heading badge-rocket badge-red">
+      <h2>Explore what Code for America volunteer <a href="/brigade">Brigades</a> are working on.</h2>
+      <div id="map" width="100%"></div>
+    </div>
 
-    <div id="map" width="100%"></div>
-    <img id="brigade-img" src="http://v3-brigade.herokuapp.com/static/images/the_brigade.png" />
+  <script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+  var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
 
-    <script>
-    L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
-    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
-
-    $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
-      $.each(response.features, function(i, org){
-        org.properties.title = org.properties.name;
-        org.properties['marker-color'] = '#cf1b41';
-        org.properties['marker-symbol'] = 'rocket';
-      })
-      map.featureLayer.setGeoJSON(response.features);
-      map.featureLayer.setStyle({color: 'red'});
+  $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
+    $.each(response.features, function(i, org){
+      org.properties.title = org.properties.name;
+      org.properties['marker-color'] = '#cf1b41';
+      org.properties['marker-symbol'] = 'rocket';
     })
+    map.featureLayer.setGeoJSON(response.features);
+    map.featureLayer.setStyle({color: 'red'});
+  })
 
-    map.featureLayer.on('click', function(e) {
-        window.open(e.layer.feature.properties.website);
-    });
+  map.featureLayer.on('click', function(e) {
+      window.open(e.layer.feature.properties.website);
+  });
 
-    map.featureLayer.on('mouseover', function(e) {
-        e.layer.openPopup(e.layer.feature.properties.name);
-    });
-    map.featureLayer.on('mouseout', function(e) {
-        e.layer.closePopup();
-    });
+  map.featureLayer.on('mouseover', function(e) {
+      e.layer.openPopup(e.layer.feature.properties.name);
+  });
+  map.featureLayer.on('mouseout', function(e) {
+      e.layer.closePopup();
+  });
 
-    </script>
+  </script>
 
-    <style>
-      #map {
-        height:500px;
-      }
+  <style>
+    #map {
+      height:300px;
+    }
+  </style>
 
-      #brigade-img{
-        position:absolute;
-        top:150px;
-        left:50px;
-        width:30%;
-        padding: 25px;
-        background-color: #cf1b41;
-        opacity: 0.85;
-      }
-    </style>
+</section>
 
-  </div>
+<section class="layout-semibreve">
 
   <div class="badge-heading badge-glasses badge-teal">
     <h2>Get involved in a civic tech project</h2>
