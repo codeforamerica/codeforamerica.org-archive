@@ -15,120 +15,101 @@ nav-breadcrumbs:
 <section class="slab-red">
   <div class="layout-semibreve layout-centered">
     <h2>Citizens have the power to help their cities.</h2>
-    <p>Here are three simple ways for you to get started with civic hacking.</p>
+    <p>Here are some simple ways for you to get started with civic hacking.</p>
   </div>
 </section>
 
-<section class="layout-semibreve">
+<section class="layout-breve">
 
-    <div class="badge-heading badge-rocket badge-red">
-      <h2>Explore what Code for America volunteer <a href="/brigade">Brigades</a> are working on.</h2>
-      <div id="map" width="100%"></div>
-    </div>
+  <div class="badge-heading badge-github badge-blue">
+      <a id="civicissues"></a>
+      <h2>Have an hour? Code for America Right Now</h2>
+      <p>These are open GitHub Issues labeled with
+      <span class="label" style="background-color : #00a175;">help wanted</span>
+      from across the civic technology movement. Find more using the
+      <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
 
-  <script>
-  L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
-  var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
+      <style>
+        .label {
+          border: 1px solid #00a175;
+          display: inline-block;
+          background-color:#00a175;
+          color: #fff;
+          text-align: center;
+          border-radius: .33em;
+          margin: 5px;
+          padding: 0 10px;
+          font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+          font-size:0.85em;
+        }
+      </style>
 
-  $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
-    $.each(response.features, function(i, org){
-      org.properties.title = org.properties.name;
-      org.properties['marker-color'] = '#cf1b41';
-      org.properties['marker-symbol'] = 'rocket';
-    })
-    map.featureLayer.setGeoJSON(response.features);
-    map.featureLayer.setStyle({color: 'red'});
-  })
+      <script>
+          // Resize iframe to fit content
+          function resize() {
+            var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+            document.getElementById("widget").height = newheight + "px";
+          }
+      </script>
+      <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
 
-  map.featureLayer.on('click', function(e) {
-      window.open(e.layer.feature.properties.website);
-  });
-
-  map.featureLayer.on('mouseover', function(e) {
-      e.layer.openPopup(e.layer.feature.properties.name);
-  });
-  map.featureLayer.on('mouseout', function(e) {
-      e.layer.closePopup();
-  });
-
-  </script>
-
-  <style>
-    #map {
-      height:300px;
-    }
-  </style>
+  </div>
 
 </section>
 
-<section class="layout-semibreve">
+<section class="layout-breve">
 
-  <div class="badge-heading badge-glasses badge-teal">
-    <h2>Get involved in a civic tech project</h2>
-    <p>Here are three most recently updated projects from our volunteer groups.</p>
-
-    <div id="projects"></div>
+  <div class="badge-heading badge-rocket badge-red">
+    <h2>Have one night a week? Go to your local volunteer <a href="/brigade">Brigades</a> hack night.</h2>
+    <div id="map" width="100%"></div>
 
     <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
 
-        $.getJSON('http://codeforamerica.org/api/projects?organization_type=Brigade&per_page=3', function(response){
+    $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
+      $.each(response.features, function(i, org){
+        org.properties.title = org.properties.name;
+        org.properties['marker-color'] = '#cf1b41';
+        org.properties['marker-symbol'] = 'rocket';
+      })
+      map.featureLayer.setGeoJSON(response.features);
+      map.featureLayer.setStyle({color: 'red'});
+    })
 
-          projects = response.objects;
+    map.featureLayer.on('click', function(e) {
+        window.open(e.layer.feature.properties.website);
+    });
 
-          // Tell the story
-          $.each(projects, function(i, project){
-
-            html = "<div class='block-teal'>"
-            html += "<h3 class='icon-glasses'>"+project.name+"</h3>";
-            html += "<p>"+project.description+"</p>";
-            html += "<p>By: "+project.organization.name+"</p>";
-            if (project.link_url) {
-              html += "<p><a href="+project.link_url+" class='icon-rocket'>"+project.link_url+"</a></p>";
-            }
-            if (project.code_url) {
-              html += "<p><a href="+project.code_url+" class='icon-github2'>"+project.code_url+"</a></p>";
-            }
-            html += "</div>"
-            html += "<br/>";
-
-            $("#projects").append(html);
-          });
-
-        });
+    map.featureLayer.on('mouseover', function(e) {
+        e.layer.openPopup(e.layer.feature.properties.name);
+    });
+    map.featureLayer.on('mouseout', function(e) {
+        e.layer.closePopup();
+    });
 
     </script>
-  </div>
 
-  <div class="layout-breve">
-    <div class="badge-heading badge-github badge-blue">
-        <a id="civicissues"></a>
-        <h2>Code for America Right Now!</h2>
-        <p>These are open GitHub Issues labeled with
-        <span class="label" style="background-color:#159818;">help wanted</span>
-        from across the civic technology movement. Find more using the
-        <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
-    </div>
     <style>
-      .label {
-        border: 1px solid #00a175;
-        display: inline-block;
-        background-color:#00a175;
-        color: #fff;
-        text-align: center;
-        border-radius: .33em;
-        margin: 5px;
-        padding: 0 10px;
-        font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
-        font-size:0.85em;
+      #map {
+        height:400px;
       }
     </style>
-    <script>
-        // Resize iframe to fit content
-        function resize() {
-          var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
-          document.getElementById("widget").height = newheight + "px";
-        }
-    </script>
-    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
+
   </div>
+
+</section>
+
+<section class="layout-breve">
+
+  <div class="badge-heading badge-glasses badge-blue">
+    <h2>Have a year for public service? Apply to be a <a href="http://www.codeforamerica.org/geeks/fellowship-apply/">Code for America Fellow</a></h2>
+  </div>
+
+  <div class="badge-heading badge-glasses badge-teal">
+
+    <h2>Want a career change? There has never been a better time to consider <a href="http://www.codeforamerica.org/our-work/initiatives/talent/">working in government</a>.</h2>
+
+  </div>
+
 </section>
