@@ -34,7 +34,7 @@ on_stories(
         "page_link"     : "http://2014.codeforamerica.org/",
         "title"         : "2014 was an amazing year",
         "content_html"  : "Thank you for making government work for everyone.",
-        "image_src"     : "/media/images/#.jpg",
+        "image_src"     : "/media/images/homepage-stories/2014ar.jpg",
         "button_text"   : "Read the 2014 Annual Report"
     },
     {
