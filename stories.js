@@ -31,6 +31,13 @@ on_stories(
     //     "box_text": "Read the announcement"
     // },
     {
+        "page_link"     : "http://2014.codeforamerica.org/",
+        "title"         : "2014 was an amazing year",
+        "content_html"  : "Thank you for making government work for everyone.",
+        "image_src"     : "/media/images/#.jpg",
+        "button_text"   : "Read the 2014 Annual Report"
+    },
+    {
         "page_link"     : "/governments/fellowship",
         "title"         : "Bring the Fellows to you",
         "content_html"  : "Bring a team of technologists to your local government for a year.",
