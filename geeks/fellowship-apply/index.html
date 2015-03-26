@@ -1,86 +1,146 @@
 ---
 layout: default
-title: Fellowship Application
-nav_tier1_active: "citizens"
-masthead-image: "../../media/images/geeks/fellowship-apply.jpg"
-nav-breadcrumbs:
- - citizens: "/geeks"
- - Fellowship Application: "/geeks/fellowship-apply"
+masthead-image: "/media/images/about_fellowship/jazmyne_vallejo4.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: The Fellowship Prgram
+
+# Content for the custom deep masthead
+headline: Become a Fellow
+description: Fellows have developed digital tools and inspired creativity, collaboration, and new approaches to problem solving in local governments across the country.
 ---
-<style>
-  .profile-photo {
-    width: 75px;
-    height: 75px;
-    margin-left: 8px;
-  }
-  a.piclink:hover {
-    border-bottom: none;
-    padding-bottom: none;
-    opacity: 0.5;
-  }
-</style>
 
-<section class="slab-medium-red">
-  <div class="layout-semibreve">
 
-    <div class="layout-minim">
-      <h2>Become a Fellow</h2>
-      <p>Fellows have inspired creativity, collaboration, and new approaches to problem solving in local governments across the country.</p>
-      <p>We invite you to join our cause and apply soon.</p>
+<section class="layout-semibreve layout-centered intro">
 
-      <a href="/forms/fellowship/become-a-fellow/" class="button" align="center">I'd like to apply</a>
-    </div>
+    <p>Code for America's Fellowship program pairs teams of technologists with local governments to develop digital tools that help cities and counties deliver key public services across health, economic development, and safety and justice.</p>
+    <a href="http://www.codeforamerica.org/governments/fellowship/" class="button button-bold button-l" target="_blank">Become a Fellow</a>
+  </div> 
 
-    <div class="layout-minim">
-      <figure>
+  <div class="layout-minim">
+    
+    <p>
+    <figure>
         <iframe src="http://player.vimeo.com/video/96946723?title=0&amp;byline=0&amp;portrait=0" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       </figure>
-    </div>
-
+       
+      </p>
+    
   </div>
-</section>   
+</section>
 
 
-<section>
-  <div class="layout-semibreve">
-
-    <div class="badge-heading badge-brigade badge-blue">
-        <h2>Want to Code for America before the next Fellowship?</h2>
-    </div>
-
-    <p>Contribute to&nbsp;<a href="https://github.com/codeforamerica">an existing app</a>, connect with your&nbsp;<a href="http://codeforamerica.org/brigade">local Code for America Brigade</a> or attend an&nbsp;<a href="http://codeforamerica.org/events">upcoming event or hackathon.</a> Don't live in the US? Connect with <a href="http://codeforamerica.org/about/international/">our international programs.</a></p>
-
-    <a href="/brigade/about" class="button">Find a local Brigade</a> <a href="/events" class="button">Check out local events</a>
-
-  </div><!-- end .layout-semibreve -->
+<section class="slab-blue">
+	<div class="layout-semibreve">
+		<div class="highlight highlight-with-avatar">
+			<img class="highlight-avatar" src="/../media/images/people/scott-smith.jpg"/>
+			<blockquote>
+				<p>Code for America helped the City of Mesa increase the city’s capacity to approach tough issues and find ways to better engage and serve residents. CfA has helped prove that lean, iterative, data-driven approaches to building technology and user-centered design can make government work better.</p>
+			</blockquote>
+			<p class="attribute">MAYOR SCOTT SMITH, <a href="http://www.mesaaz.gov/" target="_blank">MESA, AZ</a></p>
+		</div>
+	</div>
 </section>
 
 <section class="layout-semibreve">
-  <div class="layout-crotchet">
-    {% include enlist-the-fellows.html context="card-small" base="../.." %}
+  <h2>About the Program</h2>
+  <p>The Code for America fellowship is an 11-month paid, full-time fellowship for experienced technologists. Fellows come from the fields of software development, design, data science, project management, GIS, and often more. They are embedded in local governments in cross-functional teams of three people, and work with their government partners to create a measurable impact on a local problem.</p>
+
+<p>Fellows are based in San Francisco with extensive travel to their assigned city, and receive mentorship from top government and technology leaders. 2016 fellows will be selected by September, join their team in San Francisco in January, spend February in their host city, and divide the rest of their year between the two, with SF as a base. The fellowship ends at the Thanksgiving break.</p>
+
+<p>Code for America actively seeks a diverse fellowship class with multiple perspectives, and invites applications from everyone. Our initial technical skill assessment is blind, to minimize the impact of unconscious bias. We welcome and support technologists from traditionally underrepresented communities. The one restriction: you must be eligible to work in the United States in 2016.
+ </p>
+</section>
+
+<section class="layout-semibreve">
+  <h2>What We Look For</h2>
+  <p>Strong candidates have a track record of delivery in their chosen field as well as a demonstrated commitment to teamwork and respectful communication. They are curious, friendly, and tenacious when faced with a challenge. They combine pride in their skills and desire to use them for good with genuine admiration for the work of government and the people who do it. Many fellows come to us with previous experience as volunteers civic tech, but many bring other interesting perspectives as well. </p>
+
+<p>Have questions? Ask on Github or by emailing fellowship-staff[at]codeforamerica.org
+ </p>
+</section>
+
+
+<section class="layout-semibreve">
+  <h2>Our 2015 Class of Fellows</h2>
+  <p>Meet the 24 fellows who have committed a year to public service, using their skills for good. Want to join this list next year?</p>
+  <p><a href="/geeks/fellowship-apply/" class="button">Become a Fellow</a></p>
+
+  <ul class="layout-grid-crotchet list-no-bullets">
+    <li>{% include people/alex-soble.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/amir-hadjihabib.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/andrew-schneider.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/ben-golder.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/ben-smithgall.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/chris-reade.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/emma-smithayer.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/ernie-hsiung.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/grant-smith.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/imanol-aranzadi.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/jazmyn-latimer.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/jennings-hanna.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/laura-ellena.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/mari-muraki.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/mathias-gibson.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/natasha-fountain.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/nikki-zeichner.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/patrick-hammons.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/tiffany-andrews.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/sophia-dengo.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/sam-matthews.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/shelly-ni.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/william-tyner.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/yaniv-zimet.html context="2015-fellows" base="../.." %}</li>
+  </ul>
+
+  <h5>Meet our Previous Fellows</h5>
+  <ul class="list-inline list-no-bullets"> 
+    <li><a href="/geeks/our-geeks/2014-fellows" class="button">2014 Fellows</a></li>
+    <li><a href="/geeks/our-geeks/2013-fellows" class="button">2013 Fellows</a></li>
+    <li><a href="/geeks/our-geeks/2012-fellows" class="button">2012 Fellows</a></li>
+    <li><a href="/geeks/our-geeks/2011-fellows" class="button">2011 Fellows</a></li>
+  </ul>
+</section>
+
+<section class="layout-semibreve">
+  <h2>Our Work</h2>
+  <div class="layout-crotchet" style="text-align:center;">
+    <h5 class="heading">RecordTrac</h5>
+    <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage.</p>
+    <p><a href="/apps/recordtrac/" class="button button-bold button-l">Learn More</a></p>
   </div>
-
-  <div class="layout-crotchet">
-    <h5><strong>Meet the 2015 Cities</strong></h5>
-
-    <a href="/governments/albuquerque" target="_blank" class="piclink"><img class="profile-photo" src="../../media/images/governments/albuquerque-seal.png"></a>
-    <a href="/governments/pittsburgh" target="_blank" class="piclink"><img class="profile-photo" src="../../media/images/governments/pittsburgh-seal.png"></a>
-    <a href="/governments/somerville" target="_blank" class="piclink"><img class="profile-photo" src="../../media/images/governments/somerville-seal.jpg"></a>
-
-    <p>The 2015 Code for America fellowship class will work in partnership with eight communities across the country, using their skills to improve city services.</p>
-    <p><a href="/governments/2015-cities/" class="button">Meet the Cities</a></p>
+  <div class="layout-crotchet" style="text-align:center;">
+    <h5 class="heading">BlightStatus</h5>
+    <p>BlightStatus offers residents up-to-date information on the status of underutilized properties in their community.</p>
+    <p><a href="/apps/civicinsight/" class="button button-bold button-l">Learn More</a></p>
   </div>
-
-  <div class="layout-crotchet">
-    <h5><strong>Meet the 2015 Fellows</strong></h5>
-
-    <a href="/people/jazmyn-latimer/" target="_blank" class="piclink"><img class="profile-photo" src="../../media/images/people/jazmyn-latimer.jpg"></a>
-    <a href="/people/imanol-aranzadi/" target="_blank" class="piclink"><img class="profile-photo" src="../../media/images/people/imanol-aranzadi.jpg"></a>
-    <a href="/people/shelly-ni/" target="_blank" class="piclink"><img class="profile-photo" src="../../media/images/people/shelly-ni.jpg"></a>
-
-    <p>Twenty-four fellows will leave jobs at tech companies, their own businesses, and government, to pursue a year of using their skills for the public good.</p>
-    <p><a href="/geeks/our-geeks/2015-fellows/" class="button">Meet the Fellows</a></p>
+  <div class="layout-crotchet" style="text-align:center;">
+    <h5 class="heading">CourtBot</h5>
+    <p>CourtBot is a texting app that allows residents to pay traffic tickets or get reminders about their court dates.</p>
+    <p><a href="/governments/atlanta/" class="button button-bold button-l">Learn More</a></p>
   </div>
 </section>
 
-<section class="layout-semibreve"></section>
+<section class="slab-dark-blue">
+  <div class="layout-semibreve">
+    <h2>Work with us</h2>
+
+    <div class="badge-heading badge-github badge-gov" style="border-bottom:none">
+      <h4>Get in touch to learn more.</h4>
+      <p>Reach out to us to discuss the fellowship program and how to <a href="/governments/fellowship/">bring the fellows</a> to your government. Contact Luke Norris, Director of Government Relations, by email at <a href="mailto:luke@codeforamerica.org">luke[at]codeforamerica.org</a> or call 816-200-8925.</p>
+      <a href="/forms/governments/fellowship/apply" class="button">Enlist the Fellows</a>
+    </div>
+    <div class="badge-heading badge-github badge-black" style="border-bottom:none">
+      <h4>Designer, Developer or Data Scientist? Apply to be a Fellow.</h4>
+      <p>Fellows have inspired creativity, collaboration, and new approaches to problem solving in local governments across the country. We invite you to join our cause and apply.</p>
+      <a href="/forms/fellowship/become-a-fellow" class="button">Become a Fellow</a>
+    </div>
+  </div><!-- end .layout-semibreve -->
+</section>
+
+
