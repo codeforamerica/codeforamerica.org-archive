@@ -1,0 +1,56 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+  <div class="heading">
+    <h2 class="p-name">Leticia Figueroa</h2>
+  </div>
+
+  <div class="layout-minor">
+      <h4 class="text-whisper layout-tight">Member of</h4>
+
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+      </ul>
+
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/leticia-figueroa.jpg" />
+  </div>
+
+  <div class="layout-major">
+      <p class="p-note">
+          Leticia joined Code for America in late 2014, after working with us on a project basis for a few months. Leticia’s background is in Marketing and Event-planning and includes Dignity Health and The Pour House.  Originally from San Jose,  she moved to San Francisco to attend the Academy of Art University for the Fashion Design program. Her interest in art continues and she currently volunteers as a docent at the San Jose Museum of Art. 
+      </p>
+
+      <div class="spotlight">
+        <h3 class="text-whisper">Contact</h3>
+        <table class="table-unstyled table-minor">
+          <tr><th>Twitter</th><td><a href="https://twitter.com/LVFigueroa33">@LVFigueroa33</a></td></tr>
+          <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/pub/leticia-v-figueroa/21/85a/a90">Leticia Figueroa</a></td></tr>
+        </table>
+      </div>
+  </div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Leticia Figueroa</h3>
+
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/leticia-figueroa.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            Leticia joined Code for America in late 2014, after working with us on a project basis for a few months. Leticia’s background is in Marketing and Event-planning and includes Dignity Health and The Pour House...
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/leticia-figueroa/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="https://www.linkedin.com/pub/leticia-v-figueroa/21/85a/a90">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/LVFigueroa33">@LVFigueroa33</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
