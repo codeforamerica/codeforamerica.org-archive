@@ -1,6 +1,8 @@
+---
 layout: resource-detailed-guidance
 title: What Should A City Website Do?
 subtitle: Principles For City Websites
+---
 
 The internet has changed and improved many aspects of peoples' lives: from education to commerce and transport to employment. Cities must now also meet their citizens where they are spending more and more time: online.
 
