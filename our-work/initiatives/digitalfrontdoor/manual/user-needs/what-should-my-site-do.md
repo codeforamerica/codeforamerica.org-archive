@@ -12,13 +12,12 @@ In this guide, we'll cover general principles for city websites, how to start pu
 
 ## General principles for city websites
 
-City websites should:
+Based on our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/), municipal websites should:
 
  -  Serve citizens' needs
  -  Make it easy for everyone to be participate
  -  Be produced iteratively
  -  Use data to decide what to do
- - These guidelines are drawn from our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/). 
 
 
 ## Serve citizens' needs
