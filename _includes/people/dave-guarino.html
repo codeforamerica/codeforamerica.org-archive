@@ -36,14 +36,18 @@
 
 </div>
 
-{% elsif include.context == '2013-fellows' %}
+{% elsif include.context == '2013-fellows' or include.context == 'about-team' %}
 
 <div class="h-card profile-small">
     <h3 class="p-name profile-name">Dave Guarino</h3>
     <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/dave-guarino.jpg" />
     <div class="p-note profile-note">
         <p>
-            <a href="{{ include.base }}/cities/southbend/">South Bend Team</a>
+            {% if include.context == '2014-fellows' %}
+                <a href="{{ include.base }}/cities/southbend/">South Bend Team</a>
+            {% else %}
+                Engineer, Health Team
+            {% endif %}
         </p>
         <p>
             Dave Guarino is a backend developer, specializing in Ruby, and a public policy analyst. He primarily focuses on developing analytic software. His recent work includes an award-winning Challenge.gov application that addressed gender pay inequity and a federal wage data explorer. Before joining Code for…
