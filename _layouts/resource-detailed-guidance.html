@@ -130,21 +130,41 @@ nav-breadcrumbs:
 					  </head>
 					-->
       
-  <body>
-    <div class="js-container">
-      <main role="main">
+	<body>
+		
+		<div class="layout-semibreve">
 
-        {{ content }}
+			<header class="heading">
+		    	<h1>{ page.title }</h1>
+		    	<h2>{ page.subtitle }</h2>
+		    </header>
 
-      </main>
-    </div>
-    
-    <footer class="global-footer">
-	    <div class="layout-semibreve layout-tight">
-	    	<p>Last updated …</p>
-	    	<p>For help contact …</p>
-	    </div>
-	</footer>
+			<div class="layout-minor">
+				<nav role="navigation" class="toc" id="toc">
+					<h3>Contents</h3>
+					
+					    {{ page.content | toc_list }}
+
+				</nav>
+			</div>
+
+			<main id="content" class="layout-major">
+
+				{{ content }}
+								
+			</main>
+
+		</div>
+		
+		<a href="#toc" class="skip-to-nav">Skip to Contents</a>
+
+		<footer class="global-footer">
+		    <div class="layout-semibreve layout-tight">
+		    	<p>Last updated …</p>
+		    	<p>For help contact …</p>
+		    </div>
+		</footer>
+		
 	
-  </body>
+ 	</body>
 </html>
