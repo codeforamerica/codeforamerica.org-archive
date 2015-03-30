@@ -4,27 +4,28 @@ title: What Should A City Website Do?
 subtitle: Principles For City Websites
 ---
 
-The internet has changed and improved many aspects of peoples' lives: from education to commerce and transport to employment. Cities must now also meet their citizens where they are spending more and more time: online.
+The internet has changed and improved many aspects of peoples' lives: from education to commerce, from transportation to employment. Cities must now also meet their citizens where they are spending more and more time: online.
 
-A city's website is its front door: a place for it to do business with its citizens. A town hall that can be accessed from any location and at any time. A way to provide the services and information that citizens need simply, clearly and quickly. 
+A city's website is its digital front door. It's a place for it to do business with its citizens, a city hall that can be accessed from any location and at any time. Websites are a way to provide the services and information that citizens need simply, clearly and quickly. 
 
-In this guide, we'll cover general principles for city websites,  how to start publishing effective web content, and how to prioritise transactional needs.
+In this guide, we'll cover general principles for city websites, how to start publishing effective web content, and how to prioritize transactional needs.
 
 ## General principles for city websites
 
 City websites should:
 
- -  serve citizens' needs
- -  make it easy for everyone to be participate
- - be produced iteratively
- - use data to decide what to do
- - These guidelines are drawn from our principles for 21st Century Government.
+ -  Serve citizens' needs
+ -  Make it easy for everyone to be participate
+ -  Be produced iteratively
+ -  Use data to decide what to do
+ - These guidelines are drawn from our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/). 
+
 
 ## Serve citizens' needs
 
 Effective city websites serve their citizens' needs by identifying and thinking about the effective delivery of real user needs. Citizens come to city government websites to accomplish specific tasks and to fulfil needs - even when those needs may at first seem vague. 
 
-When we talk about cities serving citizens' needs, we explicitly mean citizens, not government. Example citizen needs might include choosing a school, starting a new business or paying a bill 
+When we talk about cities serving citizens' needs, we explicitly mean citizens, not government. Example citizen needs might include choosing a school, starting a new business or paying a bill. 
 
 Every page on a city website should be simple, clear and contain all the information that someone might need. 
 
@@ -40,7 +41,7 @@ Your city website should also be seen as a continual work-in-progress. Your work
 
 ## Use data to decide what to do
 
-City websites are already used by citizens, which means decisions can be made using real behaviour. Your website should provide you with actionable analytics data that helps city employees decide how to best serve user needs. 
+City websites are already used by citizens, which means decisions can be made using real behavior. Your website should provide you with actionable analytics data that helps city employees decide how design their website and best serve user needs. 
 
 ## Publishing effective content
 
@@ -53,15 +54,15 @@ Generally, city websites should only publish content that serves a clear citizen
  - explains the purpose of a city organization
  - is, or is about, something the city provides, does or pays for
 
-Use a [survey] to determine what the most common needs your citizens have when they're visiting your website. You can learn a lot from [analytics] 
+Use a [survey](x) to determine what the most common needs your citizens have when they're visiting your website. You can also learn a lot from [web analytics](x). 
 
-Make sure your staff have a content guidance so you can start building a practice of producing effective and understandable content. This guidance should include: 
+Make sure your staff have a communication plan so you can start building a practice of producing effective and understandable content. This strategy should include: 
  - a reading age standard (we recommend 9 years old)
  - a requirement to write in plain English that is easy to understand, without jargon or technical terms
  - advice to write in short sentences of up to around 25 words
 
 You should run user research at all stages of content development to make sure that what is being published fulfils your citizens' needs. 
 
-## Prioritising transactional needs
+## Prioritizing transactional needs
 
-The simplest way to prioritise which transactions to improve or deliver via your website is by volume of transactions across channels, but frequently this information doesn't exist. If it doesn't, your first action should be to run a [survey] and to examine the analytics data for your website. 
+The simplest way to prioritize which government transactions to improve or deliver via your website is by volume of transactions across channels, but frequently this information doesn't exist. If it doesn't, your first action should be to run a [survey](x) and to examine the analytics data for your website. 
