@@ -13,11 +13,12 @@ In this guide, we'll cover general principles for city websites,  how to start p
 ## General principles for city websites
 
 City websites should:
-* serve citizens' needs
-* make it easy for everyone to be participate
-* be produced iteratively
-* use data to decide what to do
-* These guidelines are drawn from our principles for 21st Century Government.
+
+ -  serve citizens' needs
+ -  make it easy for everyone to be participate
+ - be produced iteratively
+ - use data to decide what to do
+ - These guidelines are drawn from our principles for 21st Century Government.
 
 ## Serve citizens' needs
 
@@ -46,18 +47,18 @@ City websites are already used by citizens, which means decisions can be made us
 Above all, your content will be effective if it helps your users accomplish their specific need. A large part of publishing effective content is in identifying the right and specific need in the first place. 
 
 Generally, city websites should only publish content that serves a clear citizen need and:
-* is information or a service only provided by the city
-* explains what people, businesses or professionals can do, need to do, or need to do before they can do something
-* is about something regulated by the city
-* explains the purpose of a city organization
-* is, or is about, something the city provides, does or pays for
+ - is information or a service only provided by the city
+ - explains what people, businesses or professionals can do, need to do, or need to do before they can do something
+ - is about something regulated by the city
+ - explains the purpose of a city organization
+ - is, or is about, something the city provides, does or pays for
 
 Use a [survey] to determine what the most common needs your citizens have when they're visiting your website. You can learn a lot from [analytics] 
 
 Make sure your staff have a content guidance so you can start building a practice of producing effective and understandable content. This guidance should include: 
-* a reading age standard (we recommend 9 years old)
-* a requirement to write in plain English that is easy to understand, without jargon or technical terms
-* advice to write in short sentences of up to around 25 words
+ - a reading age standard (we recommend 9 years old)
+ - a requirement to write in plain English that is easy to understand, without jargon or technical terms
+ - advice to write in short sentences of up to around 25 words
 
 You should run user research at all stages of content development to make sure that what is being published fulfils your citizens' needs. 
 
