@@ -7,8 +7,12 @@ Use it by specifying "layout: default" in your Jekyll front-matter:
 
 Special page variables you can define in your front matter:
 
-title            - Page title and content of H1 tag in page header.
-title-h1         - Alternate page title for use in header H1 tag only.
+These variables are the ones Dan has tweaked so far:
+
+title            - Page title and content of H1 tag in page header.  / What Should A City Website Do?
+subtitle         - Alternate page title for use in header H1 tag only. / Principles for City Websites 
+
+
 nav_tier1_active - name of navigation section to show, see _includes/nav.html.
 nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
 masthead-class   - optionally "masthead-s" for a shorter masthead image.
@@ -17,9 +21,10 @@ masthead-image   - path to image for use in masthead.
 Sample front matter from one page:
 
 ---
-layout: default
-title: Ezra Spier
-title-h1: People
+layout: resource-detailed-guidance
+title: What Should A City Website Do?
+subtitle: Principles For City Websites
+
 nav_tier1_active: "citizens"
 masthead-class: masthead-s
 masthead-image: "../../media/images/masthead/masthead-5.jpg"
@@ -30,83 +35,116 @@ nav-breadcrumbs:
 {% endcomment %}
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+	<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
-    {% if site.env.status == "development" %}
-      <link rel="stylesheet" type="text/css" href="{{ site.environment.webtype_host }}" />
-      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/main.css">
-      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/layout.css" media="all and (min-width: 40em)">
-      <link href="{{ site.env.style_host }}/style/css/prism.css" rel="stylesheet" />
-    {% else %}
-      <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
-      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
-      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
-      <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
-    {% endif %}
-    <!-- Link to style staging area -->
-    <link rel="stylesheet" href="/stylesheets/staging.css">
-    <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
-
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>{ page.title }</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <link rel="stylesheet" href="https://style.codeforamerica.org/2/style/css/main.css">
     
-    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all">
-    <![endif]-->
-      
-    {% if page.masthead-image %}
-      <style type="text/css">
-        .masthead:before {
-                background-image: url('{{ page.masthead-image }}');
-        }
-      </style>
-    {% endif %}
-     <style>
-     .how-to h4{
-      clear:both;
-     }
-     .how-to .desc{
-      float: left;
-      width: 62%;
-     }
-     .how-to .recommendations{
-      float: right;
-      width: 33%;
-      background-color: #00a175;
-      color:#fff;
-      padding: 1em;
-     }
-     .no-logo .teaser-header{
-      margin-top:0;
-      text-align:center;
-     }
-     </style>
-    {% include meta-header.html %}
-  </head>
+    <!-- The light version of the main CFA stylesheet -->
+		<link rel="stylesheet" href="https://style.s.codeforamerica.org/1/style/css/cfa-light.css">
+	
+		<link rel="stylesheet" href="https://style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
+	
+		<!--[if lt IE 9]>
+		    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+		<link rel="stylesheet" href="../style/css/layout.css" media="all">
+		<![endif]-->
+		<!-- Link to a 32x32 favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+		
+		<!-- (Optional) Link to a 60x60 bookmark icon for iOS -->
+		<link rel="apple-touch-icon-precomposed" href="../style/favicons/60x60/flag-red.png"/>
+		<style>
+			ul li{
+				list-style:none;
+			}
+		</style>
+	</head>
+
+	
+  
+					<!--
+					  <head>
+					    <meta charset="utf-8">
+					    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+					    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
+					    {% if site.env.status == "development" %}
+					      <link rel="stylesheet" type="text/css" href="{{ site.environment.webtype_host }}" />
+					      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/main.css">
+					      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/layout.css" media="all and (min-width: 40em)">
+					      <link href="{{ site.env.style_host }}/style/css/prism.css" rel="stylesheet" />
+					    {% else %}
+					      <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+					      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
+					      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
+					      <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+					    {% endif %}
+					    <!-- Link to style staging area -->
+					    <link rel="stylesheet" href="/stylesheets/staging.css">
+					    <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
+					    <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
+					
+					    <!--[if lt IE 9]>
+					        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+					    <![endif]-->
+					    
+					    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+					        <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all">
+					    <![endif]-->
+					
+					<!--      
+					    {% if page.masthead-image %}
+					      <style type="text/css">
+					        .masthead:before {
+					                background-image: url('{{ page.masthead-image }}');
+					        }
+					      </style>
+					    {% endif %}
+					     <style>
+					     .how-to h4{
+					      clear:both;
+					     }
+					     .how-to .desc{
+					      float: left;
+					      width: 62%;
+					     }
+					     .how-to .recommendations{
+					      float: right;
+					      width: 33%;
+					      background-color: #00a175;
+					      color:#fff;
+					      padding: 1em;
+					     }
+					     .no-logo .teaser-header{
+					      margin-top:0;
+					      text-align:center;
+					     }
+					     </style>
+					    {% include meta-header.html %}
+					  </head>
+					-->
       
   <body>
     <div class="js-container">
-      {% include nav.html %}
       <main role="main">
+
         {{ content }}
 
-        {% unless page.mailing-list-header %}
-        <!-- Email signup form -->
-        <div class="slab-medium-red">
-          <div class="layout-breve layout-tight">
-            {% include email-signup-form.html context="footer" %}
-          </div><!-- end .layout-breve -->
-        </div><!-- end .slab-dark-blue -->
-        {% endunless %}
-
-        {% include global-footer.html %}
       </main>
     </div>
-    {% include email-signup-modal.html %}
-    {% include footer-scripts.html %}
+    
+    <footer class="global-footer">
+	    <div class="layout-semibreve layout-tight">
+	    	<p>Last updated …</p>
+	    	<p>For help contact …</p>
+	    </div>
+	</footer>
+	
   </body>
 </html>
