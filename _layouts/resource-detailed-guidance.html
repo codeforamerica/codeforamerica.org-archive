@@ -65,9 +65,30 @@ nav-breadcrumbs:
 				list-style:none;
 			}
 		</style>
+	<!-- end light version of the main CFA stylesheet -->
+	
+	<!-- metadata includes -->
+		{% include meta-header.html %}
+	<!-- end metadata includes -->
+
 	</head>
 
 	<body>
+		
+		<nav class="nav-global-primary">
+		  <ul class="layout-breve layout-tight">
+		    <li><a href="/blog">Blog</a></li>
+		    <li><a href="/library">Library</a></li>
+		    <li>
+		      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+		          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
+		          <!-- consider applying autofocus="autofocus" to input -->
+		          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
+		      </form>
+		    </li>
+		  </ul>
+		</nav>
+		
 		
 		<div class="layout-semibreve">
 
