@@ -14,17 +14,54 @@ title: Supporters
 # Content for the custom deep masthead
 headline: They make it all possible
 description: Helping us build government for the people, by the people, for the 21st century.
+
+# Scripts to execute after jquery is loaded
+jquery-scripts: |
+  <script>
+    $(document).ready(function(){
+      $('.js-supporters-show').click(function(){
+        // Hide any active lists by destroying styles
+        $('#active').text('');
+
+        // Show the list clicked
+        var target = $(this).attr('href');
+        target += "-list";
+
+        // Mark the button as clicked
+        var clicked = '#' + $(this).attr('id');
+
+        // Add the css to show above
+        $('#active').text(target + ' { display: block; } ' + clicked + ' { background-color: gray; }');
+      }); 
+    });
+  </script>
+
 ---
+
+<style>
+  .js-supporters-list {
+    display: none;
+  }
+  a:active {
+    background-color: gray;
+  }
+</style>
+
+<style id="active">
+  
+</style>
+
+{% assign orgs = 'Foundations,Companies,People,Fellowship Supporters' | split: ',' %}
+{% assign years = '2014,2015' | split: ',' %}
 
 <section class="layout-semibreve">
   <h2>Lorem serif ipsum dolor</h2>
   <p>Code for America is supported by a wide variety of generous donors and organizations committed to making government work in the 21st cetury. To learn more about our supporters, choose the kind of organization you'd like to browse through below.</p>
 
   <ul class="list-inline list-no-bullets">
-    <li><a href="#foundations" class="button">Foundations</a></li>
-    <li><a href="#companies" class="button">Companies</a></li>
-    <li><a href="#individuals" class="button">Individuals</a></li>
-    <li><a href="#governments" class="button">Governments</a></li>
+    {% for org in orgs %}
+      <li><a href="#{{ org | downcase | replace: ' ','-' }}" class="button">{{ org }}</a></li>
+    {% endfor %}
   </ul>
 </section>
 
@@ -40,6 +77,37 @@ description: Helping us build government for the people, by the people, for the 
   </div>
 </section>
 
+{% for org in orgs %}
+
+  <section class="layout-semibreve" id="{{ org | downcase | replace: ' ','-' }}">
+    <div class="badge-heading badge-blue">
+      <h2>{{ org }}</h2>
+    </div>
+
+    <ul class="list-inline list-no-bullets">
+      {% for year in years %}
+        <li><a id="{{ org | downcase | replace: ' ','-' }}-{{ year }}-button" href="#{{ org | downcase | replace: ' ','-' }}-{{ year }}" class="button js-supporters-show">{{year}}</a></li>
+      {% endfor %}
+    </ul>
+
+    {% for year in years %}
+    <div class="spotlight js-supporters-list" id="{{ org | downcase | replace: ' ','-' }}-{{ year }}-list">
+      <h3>{{ year }} {{ org }} Supporters</h3>
+      <ul class="list-no-bullets list-ruled layout-minim-staccato">
+        {% for donor in site.data.donors %}
+          {% if donor.org == org and donor.year == year %}
+            <li>{{ donor.name }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+  </section>
+
+{% endfor %}
+
+{% comment %}
 <section class="layout-semibreve" id="foundations">
   <div class="badge-heading badge-government badge-blue">
     <h2>Foundations</h2>
@@ -117,3 +185,4 @@ description: Helping us build government for the people, by the people, for the 
     <li><a href="#governments-2011" class="button js-show-supporters">See 2011 Supporters</a></li>
   </ul>
 </section>
+{% endcomment %}
