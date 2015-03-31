@@ -31,8 +31,8 @@ We recommend that you start with a discovery phase. This should take no longer t
 
 Your discovery phase should produce:
 
- - a prioritised list of user needs
- - a prioritised list of story cards to feed into project teams
+ - a prioritized list of user needs
+ - a prioritized list of story cards to feed into project teams
  - understanding of team and capability required to complete the project
  - ability to scope and plan an alpha
  - a decision to progress to next phase
