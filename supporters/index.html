@@ -23,15 +23,21 @@ jquery-scripts: |
         // Hide any active lists by destroying styles
         $('#active').text('');
 
-        // Show the list clicked
+        // The list we want to show
         var target = $(this).attr('href');
         target += "-list";
 
-        // Mark the button as clicked
+        // The button that was clicked
         var clicked = '#' + $(this).attr('id');
 
-        // Add the css to show above
+        // Show the list, make the clicked button gray
         $('#active').text(target + ' { display: block; } ' + clicked + ' { background-color: gray; }');
+
+        // The parent section
+        var parent = '#' + $(this.parentNode.parentNode.parentNode).attr('id');
+
+        // Scroll to the parent section
+        location.hash = parent;
       }); 
     });
   </script>
@@ -54,8 +60,7 @@ jquery-scripts: |
 {% assign orgs = 'Foundations,Companies,People,Fellowship Supporters' | split: ',' %}
 {% assign years = '2014,2015' | split: ',' %}
 
-<section class="layout-semibreve">
-  <h2>Lorem serif ipsum dolor</h2>
+<section class="layout-semibreve layout-centered">
   <p>Code for America is supported by a wide variety of generous donors and organizations committed to making government work in the 21st cetury. To learn more about our supporters, choose the kind of organization you'd like to browse through below.</p>
 
   <ul class="list-inline list-no-bullets">
@@ -93,7 +98,7 @@ jquery-scripts: |
     {% for year in years %}
     <div class="spotlight js-supporters-list" id="{{ org | downcase | replace: ' ','-' }}-{{ year }}-list">
       <h3>{{ year }} {{ org }} Supporters</h3>
-      <ul class="list-no-bullets list-ruled layout-minim-staccato">
+      <ul class="list-no-bullets list-ruled layout-grid-minim">
         {% for donor in site.data.donors %}
           {% if donor.org == org and donor.year == year %}
             <li>{{ donor.name }}</li>
