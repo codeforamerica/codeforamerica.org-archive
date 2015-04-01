@@ -23,7 +23,7 @@ In this guide, you'll find out how to
 ### The goal:
 You should aim for a response from at least 1 in 1,000 residents, with geographic, ethnic, and age distributions similar to your city's census data. This is challenging for most cities; part of the process is identifying gaps in outreach and figuring out how to fill them so that later, higher-stakes rounds of research during the development of the site can include everyone.
 
-Our sample surveys (English, Spanish, Chinese, Vietnamese) were used in a successful resident research effort in Oakland in 2014. We asked residents to tell us their neighborhood, age, and Internet and cell phone use, and then asked them to prioritize common city website needs and tell us about past experiences with the City of Oakland site. You are welcome to copy the questions and/or improve on them. 
+Our sample surveys ([English](https://cfa.typeform.com/to/MhYKsI), [Spanish](https://cfa.typeform.com/to/Rvmkom), [Chinese](https://cfa.typeform.com/to/bVjqMZ), [Vietnamese](https://cfa.typeform.com/to/ifptbR) were used in a successful resident research effort [in Oakland in 2014](https://cfa.typeform.com/to/MhYKsI). We asked residents to tell us their neighborhood, age, and Internet and cell phone use, and then asked them to prioritize common city website needs and tell us about past experiences with the City of Oakland site. You are welcome to [copy the questions](https://cfa.typeform.com/to/MhYKsI) and/or improve on them. 
 
 ### Pre-Survey Steps:
 1. Create your survey in the languages you will offer and test it with staff members who are native speakers.
@@ -36,8 +36,8 @@ Once your survey has been running for a week or so (or after the first 100 respo
 ### Post-Survey Steps:
 1. Identify areas where your responses are under- or over-weighted and write down assumptions about how this may skew the data.
 2. Run the basic numbers from closed-ended questions such as whether citizens are using mobile devices to access the Web. 
-3. Analyze open-ended responses to what citizens were doing last time they visited the site. Categorize them against our core service categories (or ceviche's info architecture) and see if any categories are missing. 
+3. Analyze open-ended responses to what citizens were doing last time they visited the site. [Categorize them](http://digifrodo.tumblr.com/post/78143740800/city-website-faq-top-pages-inventory) against core service categories and see if any categories are missing. 
 4. Rank the importance of the different categories - this can serve as guide for development priorities for your redesigned Alpha website.
 5. Look for phrases like "looking for" and "trying to" in your open-ended responses. What percentage uses them? These are an interesting qualitative baseline of frustration with your current site.
-6. Report back to the community.
+6. [Report back](http://digifrodo.tumblr.com/post/101788428227/what-are-people-looking-for-on-city-websites) to the community on your findings.
 
