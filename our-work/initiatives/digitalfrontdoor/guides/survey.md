@@ -1,5 +1,6 @@
 ---
 layout: markdown
+title: Surveying Residents
 ---
 
 ## How To: conduct a baseline survey of residents before you start your redesign
