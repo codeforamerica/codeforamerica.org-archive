@@ -8,10 +8,54 @@
  *    Basic settings
  */
 
+html,body {
+  height: 100%;
+  font-size: 16px;
+  color: #151515;
+}
+
 body {
   margin: 0;
   width: 100%;
-  height: 100%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* + * {
+  margin-top: 1em;
+}
+
+.compact * + * {
+  margin-top: 0.5em;
+}
+
+.content, .sidebar {
+  margin-top: 0;
+}
+
+a.button {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+  text-decoration: none;
+  color: #151515;
+
+  border: 2px solid #151515;
+  border-radius: 3px;
+  padding: 3px 8px;
+
+  transition: all 0.2s ease-in-out;
+
+  display: inline-block;
+}
+
+a.button:hover {
+  color: white;
+  background-color: #151515;
 }
 
 /*    ===========================================
@@ -28,24 +72,24 @@ p {
   font-family: "abril-text",sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 2;
 }
 
 /*    ===========================================
- *    Layout
+ *    Content
  */
 
-.container {
-  max-width: 650px;
-  margin: 0 auto;
+.content {
+  display: block;
+  float: left;
+  width: 75%;
 }
 
-.image {
-  width: 100%;
-  height: 350px;
-  background-image: url('img/notebook.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+@media screen and (max-width: 905px) {
+  .content {
+    float: none;
+    width: 100%;
+  }
 }
 
 /*    ===========================================
@@ -53,31 +97,256 @@ p {
  */
 
 .breaking {
-  position: relative;
   display: block;
   width: 100%;
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-.breaking:after,
-.breaking:before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #cf1b41;
-  margin: 0;
+  background-color: #aa1c3a;
+  color: white;
+  padding: 40px;
 }
 
 .breaking h2 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 905px) {
+  .breaking {
+    padding: 20px;
+  }
+}
+
+/*    ===========================================
+ *    Article
+ */
+
+article {
+  padding: 40px;
+  margin-top: -10px;
+}
+
+article h1 {
   font-family: "abril-text",sans-serif;
   font-style: normal;
-  text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 0;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+article .image {
+  height: 350px;
+  background-image: url('img/notebook.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.row {
+  margin-top: 3em;
+  display: block;
+  width: 100%;
+}
+
+.row > * {
   margin-top: 0;
-  color: #cf1b41;
-  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+article .image {
+  float: right;
+  width: 60%;
+  display: block;
+}
+
+article .copy {
+  float: left;
+  width: 40%;
+  padding-right: 25px;
+  display: block;
+}
+
+article a.button {
+  color: #aa1c3a;
+  border-color: #aa1c3a;
+  padding: 5px 12px;
+}
+
+article a.button:hover {
+  background-color: #aa1c3a;
+}
+
+@media screen and (max-width: 905px) {
+  article {
+    padding: 40px 20px;
+  }
+  article h1 {
+    font-size: 2em;
+    line-height: 1.5;
+  }
+  article .image,
+  article .copy {
+    float: none;
+    width: 100%;
+  }
+  article .image {
+    height: 250px;
+  }
+  article .copy {
+    padding-right: 0;
+    margin-top: 1.5em;
+  }
+  .row {
+    margin-top: 1.5em;
+  }
+  .copy-link {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+/*    ===========================================
+ *    Sidebar
+ */
+
+.sidebar {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Sidebar header */
+
+.sidebar-header {
+  padding: 20px;
+  width: 100%;
+}
+
+.header-logo {
+  background-image: url('img/newspaper.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 15px;
+}
+
+.header-words {
+  margin-top: 0;
+  display: inline-block;
+}
+
+.sidebar-header h4 {
+  font-family: "abril-text",sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #444444;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.sidebar-header .header-words p {
+  margin-top: -2px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1270px) {
+  .sidebar-header {
+    padding: 10px 20px;
+  }
+  .sidebar-header h4 {
+    font-size: 1.2em;
+  } 
+  .header-logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+}
+
+/* Other sidebar */
+
+.sidebar p {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar p {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 12px;
+  }
+}
+
+.sidebar p.story-overline {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #939393;
+}
+
+.sidebar p.story-button {
+  margin-top: 1em;
+}
+
+.sidebar .story-button a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #939393;
+
+  border: 2px solid #939393;
+  border-radius: 3px;
+  padding: 3px 8px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar .story-button a:hover {
+  background-color: #939393;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.sidebar li {
+  margin-top: 0;
+}
+
+.sidebar ul:before,
+.sidebar li:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.sidebar .story {
+  padding: 20px;
+}
+
+@media screen and (max-width: 905px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .sidebar ul {
+    display: none;
+  }
 }
