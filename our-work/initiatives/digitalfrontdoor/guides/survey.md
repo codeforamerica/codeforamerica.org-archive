@@ -14,7 +14,7 @@ In this guide, you'll find out how to
 
 ### You'll need:
 
-* a web survey tool such as Typeform, SurveyMonkey, Wufoo, or Google Forms
+* a web survey tool such as [Typeform](http://www.typeform.com/), [SurveyMonkey](https://www.surveymonkey.com/), [Wufoo](http://www.wufoo.com/), or [Google Forms](http://www.google.com/forms/about/)
 * translation resources for all the major languages in your city
 * basic geographic knowledge of neighborhood boundaries in your city
 * budget for printing flyers 
