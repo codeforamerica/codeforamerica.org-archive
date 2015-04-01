@@ -4,6 +4,7 @@ title: Surveying Residents
 ---
 
 ## How To: conduct a baseline survey of residents before you start your redesign
+
 ## What you'll do
 In this guide, you'll find out how to 
 
