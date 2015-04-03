@@ -97,7 +97,7 @@ jquery-scripts: |
 
     {% for year in years %}
     <div class="spotlight js-supporters-list" id="{{ org | downcase | replace: ' ','-' }}-{{ year }}-list">
-      <h3>{{ year }} {{ org }} Supporters</h3>
+      <h3>{{ year }} Supporters</h3>
       <ul class="list-no-bullets list-ruled layout-grid-minim">
         {% for donor in site.data.donors %}
           {% if donor.org == org and donor.year == year %}
