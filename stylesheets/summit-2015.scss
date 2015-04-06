@@ -11,13 +11,23 @@
 //
 
 // =====
-// .masthead override
+// Breakpoints
 // =====
 
+$breakpoint-tablet: 850px;
+$breakpoint-mobile: 640px;
+
+// =====
+// .masthead override
+// =====
 .masthead.masthead-custom {
   // tighten up .masthead to .nav-global-primary
   margin-top: 0;
-  padding: 100px 8% 50px;
+  padding: 25px 8%;
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    padding: 10px 3%;
+  }
 }
 
 // =====
@@ -29,7 +39,11 @@
   position: relative;
   z-index: 3;
   display: block;
-  // margin-right: 2%;
+  margin-bottom: 200px;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    margin-bottom: 100px;    
+  }
 }
 
 .masthead-nav:after,
@@ -53,6 +67,7 @@
 // anchor element
 
 .masthead-nav ul li a {
+  position: relative;
   padding: 5px 10px;
   color: white;
   text-transform: uppercase;
@@ -97,10 +112,22 @@
   text-align: left;
 }
 
+h1.masthead-content-title {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+  }
+}
+
 p.masthead-content-overline {
   font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  @media only screen and (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 }
 
 p.masthead-content-description {
@@ -108,4 +135,13 @@ p.masthead-content-description {
   line-height: 35px;
   font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
   max-width: 800px;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
