@@ -1,7 +1,10 @@
 ---
 layout: resource-detailed-guidance
-title: Where Do I start?
-subtitle: Building an iterative, user-centered practice around your city website
+title: Where do I start?
+subtitle: Starting an iterative, user-centered practice around your city website
+nav-breadcrumbs:
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
 ---
 
 This guide is to help leadership responsible for redesigning, re-implementing or overhauling a city website put in place the practices that will lead to delivering radically better digital services.  
@@ -24,10 +27,21 @@ This approach allows teams the flexibility to work out the best way to meet user
 
 ## Your next steps
 
-### Discovery
 We recommend that you start with a discovery phase. This should take no longer than 4 to 8 weeks. 
 
-#### Outputs
+### The Team
+
+Your starting team should be made up of your stakeholders and any core members that you've identified, including the person responsible for the quality and usage of your city's website. A good set of core team members would include:
+
+ - a delivery manager
+ - one or more designers
+ - one or more user researchers
+ - one or more developers
+ - one or more content designers
+ - the support of a technical architect
+ - the support of some web operations expertise
+
+### Outputs
 
 Your discovery phase should produce:
 
@@ -42,10 +56,6 @@ Your discovery phase should produce:
  - understanding of existing services, including those run by non-government sources
  - understanding of how many of your users will need assisted digital support, and what their user needs are
 
-### Alpha
+### After the discovery phase
 
-### Beta
-
-
-### Live
-
+Once you have completed the discovery phase, you'll be ready to move on to the alpha phase, where the team will build a prototype, test it with users and improve it.
