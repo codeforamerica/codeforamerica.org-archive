@@ -1,0 +1,83 @@
+---
+---
+
+//
+// SUMMIT-2015 SCSS
+// 
+// These custom styles are for the /summit-2015/ microsite.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: summit-2015
+//
+
+// =====
+// .masthead override
+// =====
+
+.masthead {
+  // tighten up .masthead to .nav-global-primary
+  margin-top: 0;
+
+  padding: 0 8% 20px;
+}
+
+// =====
+// .masthead-nav
+// Navigation embedded inside deep masthead
+// =====
+
+.masthead-nav {
+  position: relative;
+  z-index: 3;
+  display: block;
+  // margin-right: 2%;
+}
+
+.masthead-nav:after,
+.masthead-nav ul:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.masthead-nav ul {
+  display: table;
+}
+
+.masthead-nav ul li {
+  display: table-cell;
+  float: right;
+}
+
+// anchor element
+
+.masthead-nav ul li a {
+  padding: 5px 10px;
+  color: white;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #cf1b41;
+    border-radius: 2px;
+    border: none;
+  }
+}
+
+// =====
+// .masthead-content
+// Simpler take on the content embedded in the header (title/description)
+// =====
+
+.masthead-content {
+  position: relative;
+  z-index: 3;
+}
+
+.masthead-content *,
+.masthead-content h1 {
+  text-align: left;
+}
+
+.masthead-content-overline {
+  text-transform: uppercase;
+}
