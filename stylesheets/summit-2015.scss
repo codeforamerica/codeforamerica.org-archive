@@ -11,6 +11,18 @@
 //
 
 // =====
+// Box-sizing
+// =====
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// =====
 // Breakpoints
 // =====
 
@@ -18,16 +30,54 @@ $breakpoint-tablet: 850px;
 $breakpoint-mobile: 640px;
 
 // =====
+// Override typeface settings
+// =====
+
+$font-sans-serif: "Whitney SSm A", "Whitney SSm B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+$font-serif: "Sentinel SSm A", "Sentinel SSm B", Georgia, Times, "Times New Roman", serif;
+
+// $font-serif: "Whitney SSm A", "Whitney SSm B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+// $font-sans-serif: "Sentinel SSm A", "Sentinel SSm B", Georgia, Times, "Times New Roman", serif;
+
+body {
+  font-family: $font-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: none;
+  font-family: $font-sans-serif;
+  font-weight: 700; 
+  font-style: normal;
+}
+
+p {
+  font-family: $font-serif;
+}
+
+// =====
+// New layout type: .layout-whole (like .layout-semibreve)
+// =====
+
+.layout-whole {
+  // width: 100%;
+  padding: 3em 8%;
+  // max-width: 80em;
+  // margin: 0 auto;
+  float: none;
+}
+
+// =====
 // .masthead override
 // =====
 .masthead.masthead-custom {
   // tighten up .masthead to .nav-global-primary
   margin-top: 0;
-  padding: 25px 8%;
+  // padding: 25px 8%;
+  padding-top: 0;
 
-  @media only screen and (max-width: $breakpoint-mobile) {
-    padding: 10px 3%;
-  }
+  // @media only screen and (max-width: $breakpoint-mobile) {
+  //   padding: 10px 3%;
+  // }
 }
 
 // =====
@@ -39,7 +89,7 @@ $breakpoint-mobile: 640px;
   position: relative;
   z-index: 3;
   display: block;
-  margin-bottom: 200px;
+  margin-bottom: 4em;
 
   @media only screen and (max-width: $breakpoint-tablet) {
     margin-bottom: 100px;    
@@ -113,6 +163,9 @@ $breakpoint-mobile: 640px;
 }
 
 h1.masthead-content-title {
+  font-family: $font-sans-serif;
+  letter-spacing: 0;
+
   @media only screen and (max-width: $breakpoint-mobile) {
     font-size: 40px;
     line-height: 40px;
@@ -124,6 +177,8 @@ p.masthead-content-overline {
   font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  font-family: $font-serif;
+
   @media only screen and (max-width: $breakpoint-mobile) {
     font-size: 14px;
     letter-spacing: 2px;
@@ -133,7 +188,7 @@ p.masthead-content-overline {
 p.masthead-content-description {
   font-size: 20px;
   line-height: 35px;
-  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: $font-serif;
   max-width: 800px;
 
   @media only screen and (max-width: $breakpoint-tablet) {
