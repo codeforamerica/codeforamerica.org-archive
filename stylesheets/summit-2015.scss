@@ -14,11 +14,10 @@
 // .masthead override
 // =====
 
-.masthead {
+.masthead.masthead-custom {
   // tighten up .masthead to .nav-global-primary
   margin-top: 0;
-
-  padding: 0 8% 20px;
+  padding: 100px 8% 50px;
 }
 
 // =====
@@ -46,7 +45,9 @@
 
 .masthead-nav ul li {
   display: table-cell;
-  float: right;
+  float: left;
+  margin-right: 10px;
+  margin-top: 25px;
 }
 
 // anchor element
@@ -56,11 +57,29 @@
   color: white;
   text-transform: uppercase;
 
+  border: 2px solid white;
+  border-radius: 2px;
+
   &:hover {
-    background: #cf1b41;
-    border-radius: 2px;
-    border: none;
+    background: #fedd44;
+    border-color: #fedd44;
+    color: black;
+    text-shadow: none;
   }
+}
+
+.masthead-nav ul li a.active {
+  border-color: #fedd44;
+}
+
+// the logo
+
+.masthead-nav ul li.masthead-nav-logo {
+  width: 300px;
+  // reset the margin-top on all .masthead-nav li's
+  margin-top: 0;
+  // more margin after the logo
+  margin-right: 20px;
 }
 
 // =====
@@ -78,6 +97,15 @@
   text-align: left;
 }
 
-.masthead-content-overline {
+p.masthead-content-overline {
+  font-size: 16px;
+  letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+p.masthead-content-description {
+  font-size: 20px;
+  line-height: 35px;
+  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  max-width: 800px;
 }
