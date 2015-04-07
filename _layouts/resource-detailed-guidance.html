@@ -77,6 +77,8 @@ nav-breadcrumbs:
 
 	<body>
 		
+		<!-- this is the default header nav, copied in. It isn't right for this yet.
+					
 		<nav class="nav-global-primary">
 		  <ul class="layout-breve layout-tight">
 		    <li><a href="/blog">Blog</a></li>
@@ -84,12 +86,14 @@ nav-breadcrumbs:
 		    <li>
 		      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
 		          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-		          <!-- consider applying autofocus="autofocus" to input -->
 		          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
 		      </form>
 		    </li>
 		  </ul>
 		</nav>
+		
+		-->
+
 		
 		
 		<div class="layout-semibreve">
@@ -117,8 +121,10 @@ nav-breadcrumbs:
 			<main id="content" class="layout-major">
 
 				{{ content }}
+
 								
 			</main>
+
 
 		</div>
 		
@@ -126,8 +132,13 @@ nav-breadcrumbs:
 
 		<footer class="global-footer">
 		    <div class="layout-semibreve layout-tight">
-		    	<p>Last updated …</p>
-		    	<p>For help contact …</p>
+				<p>Help make our documentation better:</p>
+				<nav class="page-tools">
+					<ul>
+						<li><a title="View this page history on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/commits/master{{ page.url | replace:'.html','.md' }}">View this page's history on GitHub.</a>
+						<li><a title="View and suggest changes to this page source on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/blob/master{{ page.url | replace:'.html','.md' }}">View and suggest changes to this page on GitHub.</a>
+					</ul>
+				</nav>
 		    </div>
 		</footer>
 		
