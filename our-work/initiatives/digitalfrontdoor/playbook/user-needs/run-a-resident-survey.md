@@ -1,12 +1,15 @@
 ---
-layout: markdown
-title: Surveying Residents
+layout: resource-detailed-guidance
+title: How to: run a resident survey
+subtitle: Learn how to conduct a baseline survey of your residents before you start a redesign. 
+nav-breadcrumbs:
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
 ---
 
-## How To: conduct a baseline survey of residents before you start your redesign
 
 ## What you'll do
-In this guide, you'll find out how to 
+In this guide, you'll find out how to:
 
 * assess the devices and types of internet access used in different parts of your city
 * evaluate user needs to prioritize content development.
