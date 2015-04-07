@@ -78,7 +78,7 @@ Every page on a city website should be simple, clear and contain all the informa
 
 ## Make it easy for everyone to participate
 
-City websites are another platform that government can use to collaborate with the community and seek participation from all citizens in decisions that affect them. The language that you use on your website should be easy to understand. 
+City websites are another platform that government can use to collaborate with the community and seek participation from all citizens in decisions that affect them. The language that you use on your website should be easy to understand, and city websites should be designed to support multiple languages. 
 
 ## Be produced iteratively
 
