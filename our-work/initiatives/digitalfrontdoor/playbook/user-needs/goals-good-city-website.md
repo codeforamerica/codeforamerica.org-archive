@@ -1,7 +1,7 @@
 ---
 layout: resource-detailed-guidance
-title: What should a city website do?
-subtitle: Principles and goals for city websites
+title: What are the goals of a good city website?
+subtitle: The principles and goals city websites should plan to achieve
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
   - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
@@ -10,11 +10,7 @@ nav-breadcrumbs:
 
 The internet has changed and improved many aspects of peoples' lives: from education to commerce, from transportation to employment. Cities must now also meet their residents where they are spending more and more time: online.
 
-A city's website is its digital front door. It's a place for it to do business with its residents, a city hall that can be accessed from any location and at any time. Websites are a way to provide the services and information that residents need simply, clearly and quickly. 
-
-In this guide, we'll cover general principles for city websites, how to start publishing effective web content, and how to prioritize transactional needs.
-
-## General principles and goals for city websites
+## General goals for city websites
 
 Based on our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/), here are 9 principles and goals for city websites:
 
@@ -70,7 +66,7 @@ Based on our [Principles for 21st Century Government](https://www.codeforamerica
  
 ## Serve residents' needs
 
-Effective city websites serve their residents' needs by identifying and thinking about the effective delivery of real user needs. People come to city government websites to accomplish specific tasks and to fulfil needs - even when those needs may at first seem vague. 
+Effective city websites serve their residents' needs by identifying and thinking about the effective delivery of real user needs. People come to city government websites to accomplish specific tasks and to fulfill needs - even when those needs may at first seem vague. 
 
 When we talk about cities serving residents' needs, we explicitly mean residents, not government. Example resident needs might include choosing a school, starting a new business or paying a bill. 
 
