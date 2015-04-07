@@ -29,32 +29,24 @@ This approach allows teams the flexibility to work out the best way to meet user
 
 We recommend that you start with a discovery phase. This should take no longer than 4 to 8 weeks. 
 
-### The Team
+### The discovery team
 
 Your starting team should be made up of your stakeholders and any core members that you've identified, including the person responsible for the quality and usage of your city's website. A good set of core team members would include:
 
- - a delivery manager
- - one or more designers
- - one or more user researchers
- - one or more developers
- - one or more content designers
- - the support of a technical architect
- - the support of some web operations expertise
+ - someone to lead the overall project, for example, a communications director
+ - one or more people to be responsible for outreach and to run a user survey, or to work with a company that can run a survey for you
 
 ### Outputs
 
 Your discovery phase should produce:
 
  - a prioritized list of user needs
- - a prioritized list of story cards to feed into project teams
- - understanding of team and capability required to complete the project
- - ability to scope and plan an alpha
- - a decision to progress to next phase
- - maybe some rough prototypes
- - maybe some user personas
- - a list of stakeholders and input from them about existing services
- - understanding of existing services, including those run by non-government sources
- - understanding of how many of your users will need assisted digital support, and what their user needs are
+ - ability to decide what should in your alpha website and your plan for delivering it 
+ - a decision on whether or not to progress to the alpha website stage
+ - some rough sketches of an alpha website
+ - a list of stakeholders and input from them about what the existing website does, whether by government or third parties 
+ - a review of your website analytics (website traffic) to understand how many and pages and documents you have, and how frequently they are used
+ - the results of your [digital service census](https://service-census.herokuapp.com)
 
 ### After the discovery phase
 
