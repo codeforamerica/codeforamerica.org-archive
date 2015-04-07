@@ -1,7 +1,11 @@
 ---
 layout: resource-detailed-guidance
 title: What should a city website do?
-subtitle: Principles for city websites
+subtitle: Principles and goals for city websites
+nav-breadcrumbs:
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+
 ---
 
 The internet has changed and improved many aspects of peoples' lives: from education to commerce, from transportation to employment. Cities must now also meet their citizens where they are spending more and more time: online.
@@ -10,20 +14,15 @@ A city's website is its digital front door. It's a place for it to do business w
 
 In this guide, we'll cover general principles for city websites, how to start publishing effective web content, and how to prioritize transactional needs.
 
-## General principles for city websites
+## General principles and goals for city websites
 
-Based on our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/), municipal websites should:
-
- -  Serve citizens' needs
- -  Make it easy for everyone to be participate
- -  Be produced iteratively
- -  Use data to decide what to do
+Based on our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/), here are 9 principles and goals for city websites:
 
 ### 1. Embrace digital services as central to governing
 
- - Government services should be “digital by default,” available to us on the mainstream platforms and technologies we already use.</li>  
- - Services should be useful, accessible, and add value to our lives.</li>
- - Government should do more than broadcast out. Tools should make room for interaction, feedback, and citizen participation.</li>
+ - Government services should be “digital by default,” available to us on the mainstream platforms and technologies we already use.  
+ - Services should be useful, accessible, and add value to our lives.
+ - Government should do more than broadcast out. Tools should make room for interaction, feedback, and citizen participation.
 
 ### 2. Design with empathy, establish trust
 
