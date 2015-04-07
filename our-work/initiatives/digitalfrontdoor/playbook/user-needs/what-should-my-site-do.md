@@ -19,7 +19,56 @@ Based on our [Principles for 21st Century Government](https://www.codeforamerica
  -  Be produced iteratively
  -  Use data to decide what to do
 
+### 1. Embrace digital services as central to governing
 
+ - Government services should be “digital by default,” available to us on the mainstream platforms and technologies we already use.</li>  
+ - Services should be useful, accessible, and add value to our lives.</li>
+ - Government should do more than broadcast out. Tools should make room for interaction, feedback, and citizen participation.</li>
+
+### 2. Design with empathy, establish trust
+
+ - Government service design should reflect a respect for our time, dignity, and abilities.
+ - When the act of renewing a driver’s license, filing a request, or getting a business license is pleasant, citizens begin to trust and appreciate government.
+ - Services should be compelling enough that citizens prefer to use them.
+ 
+### 3. Serve everyone
+
+ - Government services should be designed to reach as many citizens as possible regardless of income, location, language, or access to technology.
+ - Government employees should get out of the building, test assumptions with real citizens, and tweak service design to improve it on a regular basis
+ 
+### 4. Encourage citizen participation
+
+ - Governments and citizens should share in decision-making and service design.
+ - Services should be built to anticipate participation from employees and citizens in the design and development process.
+ 
+### 5. Be transparent and accountable
+ 
+ - Let citizens and staff see and support what’s going on in government, whether it’s purchasing data, viewing open source code, or accessing open data portals.
+ - Governments should be clear on the goals of a service and identify areas that can be measured, displayed, and improved on by employees and the public.
+ 
+### 6. Build for flexibility, welcome change
+ 
+ - Online services are an ongoing investment that require attention and modification over time
+ - Government services should be launched as evolving pilot projects rather than one-time massive monoliths.
+ - Cities should invest in ongoing research, maintenance, and development and should have the internal support to push regular technology upgrades.
+ 
+### 7. Create better processes and policies
+
+ - The best government technologies should be easy-to-use and useful in a city employee’s regular work routine.
+ - Government technology should reduce overall workload and increase the efficiency of city employees.
+ - City policies should support the creation and deployment of better online services.
+
+### 8. Unlock the capabilities of government employees
+
+ - Governments should expect city employees to tweak and improve on city services.
+ - Innovation, technology maintenance, and service design should be a responsibility of all employees, rather than the realm of one group or department.
+ 
+### 9. Get value for tax dollars
+
+ - Whether through short-term trials or pilot programs, no system or vendor solution should be deployed en masse without evidence of success.
+ - When investing in technology, cities should consider their internal skills and ability to maintain and upgrade that technology in the future.
+ - Governments should reduce barriers to the contracting process and encourage greater competition amongst vendors in order to increase options and drive down the cost of technology.
+ 
 ## Serve citizens' needs
 
 Effective city websites serve their citizens' needs by identifying and thinking about the effective delivery of real user needs. Citizens come to city government websites to accomplish specific tasks and to fulfil needs - even when those needs may at first seem vague. 
