@@ -1,7 +1,7 @@
 ---
 layout: resource-detailed-guidance
 title: What are the goals of a good city website?
-subtitle: The principles and goals city websites should plan to achieve
+subtitle: The principles and goals city websites should aim to achieve
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
   - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
