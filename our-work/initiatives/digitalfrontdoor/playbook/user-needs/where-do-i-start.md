@@ -52,6 +52,8 @@ Your discovery phase should produce:
  - a review of your website analytics (website traffic) to understand how many and pages and documents you have, and how frequently they are used
  - the results of your [digital service census](https://service-census.herokuapp.com)
 
+Our [Oakland Digital Front Door phase 1 report](/our-work/initiatives/digitalfrontdoor/oakland-phase1-report/) is a good example of what you should have at the end of a successful discovery phase.  
+
 ### After the discovery phase
 
 Once you have completed the discovery phase, you'll be ready to move on to the alpha phase, where the team will build a prototype, test it with users and improve it.

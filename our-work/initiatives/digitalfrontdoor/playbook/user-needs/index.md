@@ -1,7 +1,7 @@
 ---
 layout: resource-topic-index
 title: User Needs
-subtitle: How to focus government services on users
+subtitle: How to focus city websites on users
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
 ---
