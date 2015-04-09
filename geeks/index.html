@@ -7,206 +7,114 @@ nav-breadcrumbs:
  - citizens: "/geeks"
 ---
 
-<section>
-  <div class="layout-breve layout-centered">
-    <h2>Citizens have the power to help their cities.</h2>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 
-    <p class="layout-semibreve" style="padding-top:0px;">The <a href="http://codeforamerica.org/brigade">Code for America Brigade</a> program is an international network of people committed to using their voices and hands, in collaboration with local governments, to make their cities better. The <a href="/about/fellowship">CfA Fellowship</a> is a one year residency placing developers, designers, and researchers within local governments.</p>
-
-  </div>
-</section>
+<link href='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<script src='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 
 <section class="slab-red">
-  <div class="layout-chimney">
-    <div class="layout-minim-staccato slab-medium-red chimney">
-      <div class="chimney-body">
-        <h3>Civic Hacker of the Week</h3>
-        <div class="h-card profile">
-            <a href="https://www.codeforamerica.org/people/andrew-schneider/"><h4 class="p-name profile-name">Andrew Schneider</h4>
-            <img class="u-photo profile-photo" src="../media/images/people/andrew-schneider.jpg" alt="" /></a>
-            <p class="p-role profile-role">2015 Fellow</p>
-            <p class="p-role profile-role">Working 2015 in <a href="https://www.codeforamerica.org/governments/vallejo/">Vallejo</a></p>
-            <p class="p-note profile-note">Famous online at <a class="p-org profile-org" href="https://twitter.com/adschneider04">https://twitter.com/adschneider04</a></p>
-        </div>
-        <a href="our-geeks" class="button button-prominent">Meet more civic hackers</a>
-      </div>
-    </div>
-
-    <div class="layout-minim-staccato">
-      <h3 class="h4">What's happening?</h3>
-        <ul class="list-no-bullets list-icons">
-        	<li class="icon-calendar"><span id="nextEvent"></span>
-        	<a class="text-whisper" href="http://codeforamerica.org/brigade/events">Other Events</a>
-        	</li>
-          <li class="icon-lamp"><span id="recentProject"></span>
-          	<a class="text-whisper" href="http://codeforamerica.org/brigade/projects">More civic tech projects</a>
-          </li>
-          <li class="icon-bullhorn"><span id="recentStory"></span>
-          	<a class="text-whisper" href="http://codeforamerica.tumblr.com/">More civic tech stories</a>
-          </li>
-        </ul>
-    </div>
+  <div class="layout-semibreve layout-centered">
+    <h2>You have the power to help your city.</h2>
+    <p>Here are some simple ways to get started with civic hacking.</p>
   </div>
+</section>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+<section class="layout-breve">
 
-  <script>
+  <div class="badge-heading badge-github badge-blue">
+      <a id="civicissues"></a>
+      <h2>Have an hour? Code for America Right Now</h2>
+      <p>These are open GitHub Issues labeled with
+      <span class="label" style="background-color : #00a175;">help wanted</span>
+      from across the civic technology movement. Find more using the
+      <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
 
-    getApi("http://codeforamerica.org/api/events/upcoming_events?per_page=1", showEvent);
-    getApi("http://codeforamerica.org/api/projects?per_page=1", showProject);
-    getApi("http://codeforamerica.org/api/stories?per_page=1", showStory);
+      <style>
+        .label {
+          border: 1px solid #00a175;
+          display: inline-block;
+          background-color:#00a175;
+          color: #fff;
+          text-align: center;
+          border-radius: .33em;
+          margin: 5px;
+          padding: 0 10px;
+          font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+          font-size:0.85em;
+        }
+      </style>
 
-    function getApi(url, callback){
-        // Make a api request and pass the response to the callback
-        var request = new XMLHttpRequest();
-        request.open('GET', url, true);
-
-        request.onload = function() {
-          if (request.status >= 200 && request.status < 400){
-            // Success!
-            data = JSON.parse(request.responseText);
-            callback(data);
-          } else {
-            // We reached our target server, but it returned an error
-            console.log(request.status);
+      <script>
+          // Resize iframe to fit content
+          function resize() {
+            var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+            document.getElementById("widget").height = newheight + "px";
           }
-        };
+      </script>
+      <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3&org_type=Brigade" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
 
-        request.onerror = function(e) {
-          // There was a connection error of some sort
-          console.log(request.status);
-        };
-
-        request.send();
-    }
-
-    function showEvent(data) {
-        // Display the next upcoming event.
-        var event = data.objects[0]
-        nextEvent = document.getElementById("nextEvent");
-        var html = "<a href=" + event.event_url + ">" + event.name + "</a>";
-        html += '<span class="text-whisper">' + moment(new Date(event.start_time)).fromNow();
-        html += " at " + event.organization.name + '</span>';
-        nextEvent.innerHTML = html;
-    }
-
-    function showProject(data) {
-        // Display the most recently updated project
-        var project = data.objects[0]
-        recentProject = document.getElementById("recentProject");
-        if (project.link_url) {
-            var html = "<a href=" + project.link_url + ">" + project.name + "</a>";
-            recentProject.innerHTML = html;
-        }
-        else if (project.code_url) {
-            var html = "<a href=" + project.code_url + ">" + project.name + "</a>";
-            recentProject.innerHTML = html;
-        } else {
-          getApi(data.pages.next, showProject);
-        }
-
-    }
-
-    function showStory(data) {
-        // Display the most recently updated project
-        var story = data.objects[0]
-        recentStory = document.getElementById("recentStory");
-        var html = "<a href=" + story.link + ">" + story.title + "</a>";
-        recentStory.innerHTML = html;
-    }
-
-  </script>
+  </div>
 
 </section>
 
-        <section>
-          <div class="layout-breve">
-            <div class="badge-heading badge-github badge-blue">
-                <h2>Code for America Right Now!</h2>
-                <p>These are open GitHub Issues labeled with
-                <span class="label" style="background-color:#159818;">help wanted</span>
-                from across the civic technology movement. Find more using the
-                <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
-            </div>
-            <style>
-              .label {
-                border: 1px solid #00a175;
-                display: inline-block;
-                background-color:#00a175;
-                color: #fff;
-                text-align: center;
-                border-radius: .33em;
-                margin: 5px;
-                padding: 0 10px;
-                font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
-                font-size:0.85em;
-              }
-            </style>
-            <script>
-                // Resize iframe to fit content
-                function resize() {
-                  var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
-                  document.getElementById("widget").height = newheight + "px";
-                }
-            </script>
-            <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
-          </div>
-        </section>
+<section class="layout-breve">
 
-<section>
-  <div class="layout-breve">
-    <div class="layout-crotchet-staccato">
-      <h3 class="heading-contrast">For <strong>Software developers</strong></h3>
-      <ul class="list-ruled">
-          <li>Get in <a href="https://github.com/codeforamerica">our code</a> and hack.</li>
-          <li>Deploy and build apps in your city. Join a local <a href="http://www.codeforamerica.org/brigade/">CfA Brigade</a>.</li>
-          <li>Guide and advise fellows and civic startups. <a href="/mentor">Become a Mentor</a>.</li>
-          <li>Learn about <a href="http://beyondtransparency.org/">open data and the civic tech ecosystem</a>.</li>
-      </ul>
-    </div>
+  <div class="badge-heading badge-rocket badge-red">
+    <h2>Have one night a week? Go to your local volunteer <a href="/brigade">Brigade</a> hack night.</h2>
+    <div id="map" width="100%"></div>
 
-    <div class="layout-crotchet-staccato">
-      <h3 class="heading-contrast">For <strong>Designers</strong></h3>
-      <ul class="list-ruled">
-          <li>Design great citizen experiences, join a local <a href="http://codeforamerica.org/brigade/">CfA Brigade</a>.</li>
-          <li><a href="/mentor">Mentor UX and graphic designers</a> in our <a href="http://www.codeforamerica.org/fellows/">fellowship</a> and <a href="http://codeforamerica.org/accelerator/">accelerator</a> programs.</li>
-          <li>Learn how to redesign government. Watch Mike Bracken’s <a href="http://www.youtube.com/watch?v=3bK9B8_0FDQ">CfA Summit presentation</a> or this <a href="http://www.youtube.com/watch?v=teIlbfF2SE0&list=PL65XgbSILalV-wInUiERrhjweMlJkukMd&index=56">redesigning government panel</a>.</li>
-      </ul>
-    </div>
+    <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
 
-    <div class="layout-crotchet-staccato">
-      <h3 class="heading-contrast">For <strong>Organizers</strong></h3>
-      <ul class="list-ruled">
-          <li><a href="http://us-city.census.okfn.org/">Release more open data</a>.</li>
-          <li>Organize a <a href="https://docs.google.com/a/codeforamerica.org/document/d/16CSiN809nNUksFYiQIpxzxHEhPZRAa_WpGA4DZ9upmc/edit#heading=h.7p1k5dwapvgf">civic write-a-thon</a>.</li>
-          <li>Test local apps, join a <a href="http://codeforamerica.org/brigade/">CfA Brigade</a>.</li>
-          <li>Persuade your local government to enlist the <a href="/about/fellowship">fellows</a>.</li>
-          <li>Learn about <a href="http://beyondtransparency.org/">government transparency and open data practices</a>.</li>
-      </ul>
-    </div>
+    $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
+      var brigades = [];
+      $.each(response.features, function(i, org){
+        if (org.properties.type.indexOf("Brigade") != -1) {
+          org.properties.title = org.properties.name;
+          org.properties['marker-color'] = '#cf1b41';
+          org.properties['marker-symbol'] = 'rocket';
+          brigades.push(org);
+        }
+
+      })
+      map.featureLayer.setGeoJSON(brigades);
+      map.featureLayer.setStyle({color: 'red'});
+    })
+
+    map.featureLayer.on('click', function(e) {
+        window.open(e.layer.feature.properties.website);
+    });
+
+    map.featureLayer.on('mouseover', function(e) {
+        e.layer.openPopup(e.layer.feature.properties.name);
+    });
+    map.featureLayer.on('mouseout', function(e) {
+        e.layer.closePopup();
+    });
+
+    </script>
+
+    <style>
+      #map {
+        height:400px;
+      }
+    </style>
+
   </div>
+
 </section>
 
-<section class="slab-gray">
-  <div class="layout-semibreve">
-    <div class="wodge wodge-l">
-      <h3 class="wodge-header">Fellowship: Ready to spend a year in civic service</h3>
-      <a href="/about/fellowship"><img src="../media/images/geeks/fellows_img.jpg" class="wodge-image" /></a>
-      <div class="wodge-text">
-          <p>Code for America’s Fellowship is a one-year paid fellowship program where cutting-edge developers, designers and urbanists are embedded in US cities to solve civic problems using technology. Fellows in past years have built apps that support citizen engagement, criminal justice and public health. Applications for the 2015 Fellowship are due July 15.</p>
-      	<p><a href="our-geeks/2014-fellows">Current fellows</a> & <a href="our-geeks/alumni-fellows">alumni fellows</a></p>
-      </div>
-      <a href="/about/fellowship" class="button wodge-button">Find out more</a>
-    </div>
+<section class="layout-breve">
 
-    <div class="wodge wodge-l">
-      <h3 class="wodge-header">Civic Startups: Are you a founder? Government needs options.</h3>
-      <a href="/about/startups"><img src="../media/images/geeks/startups_img.jpg" class="wodge-image" /></a>
-      <div class="wodge-text">
-          <p>Code for America’s Accelerator is an annual 4-month program bringing funding, support, and mentorship to early-stage technology businesses that serve local governments.</p>
-          <p><a href="/geeks/accelerator-faq/">Accelerator</a></p>
-      </div>
-      <a href="/about/startups" class="button wodge-button">The opportunity</a>
-    </div>
+  <div class="badge-heading badge-glasses badge-blue">
+    <h2>Have a year for public service? Apply to be a <a href="http://www.codeforamerica.org/geeks/fellowship-apply/">Code for America Fellow</a></h2>
   </div>
+
+  <div class="badge-heading badge-glasses badge-teal">
+
+    <h2>Want a career change? There has never been a better time to consider <a href="http://www.codeforamerica.org/our-work/initiatives/talent/">working in government</a>.</h2>
+
+  </div>
+
 </section>
