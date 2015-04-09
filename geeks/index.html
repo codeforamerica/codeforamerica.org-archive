@@ -14,8 +14,8 @@ nav-breadcrumbs:
 
 <section class="slab-red">
   <div class="layout-semibreve layout-centered">
-    <h2>Citizens have the power to help their cities.</h2>
-    <p>Here are some simple ways for you to get started with civic hacking.</p>
+    <h2>You have the power to help your city.</h2>
+    <p>Here are some simple ways to get started with civic hacking.</p>
   </div>
 </section>
 
@@ -51,7 +51,7 @@ nav-breadcrumbs:
             document.getElementById("widget").height = newheight + "px";
           }
       </script>
-      <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
+      <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3&org_type=Brigade" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
 
   </div>
 
@@ -68,12 +68,17 @@ nav-breadcrumbs:
     var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
 
     $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
+      var brigades = [];
       $.each(response.features, function(i, org){
-        org.properties.title = org.properties.name;
-        org.properties['marker-color'] = '#cf1b41';
-        org.properties['marker-symbol'] = 'rocket';
+        if (org.properties.type.indexOf("Brigade") != -1) {
+          org.properties.title = org.properties.name;
+          org.properties['marker-color'] = '#cf1b41';
+          org.properties['marker-symbol'] = 'rocket';
+          brigades.push(org);
+        }
+
       })
-      map.featureLayer.setGeoJSON(response.features);
+      map.featureLayer.setGeoJSON(brigades);
       map.featureLayer.setStyle({color: 'red'});
     })
 
