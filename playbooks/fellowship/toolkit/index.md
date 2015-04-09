@@ -9,7 +9,7 @@ nav-breadcrumbs:
 
 Learn how to start a civic technology innovation program like Code for America's [Fellowship](/about/fellowship/) program.
 
-### [Start a fellowship program](/playbooks/fellowship/toolkit/start-a-fellowship.html)
+### [Start a fellowship program](/playbooks/fellowship/toolkit/start-a-fellowship-program.html)
 This guide covers the essential elements that contribute to a successful fellowship program.
 
 ### [How to recruit fellows](/playbooks/fellowship/toolkit/how-to-recruit-fellows.html)
