@@ -3,8 +3,7 @@ layout: resource-detailed-guidance
 title: Starting a fellowship program
 subtitle: Essential elements that contribute to a successful fellowship program
 nav-breadcrumbs:
-  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
-  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+  - "Fellowship Toolkit": "/playbooks/fellowship/toolkit/"
 
 ---
 
