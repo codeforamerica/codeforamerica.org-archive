@@ -97,7 +97,7 @@ Generally, city websites should only publish content that serves a clear residen
  - explains the purpose of a city organization
  - is, or is about, something the city provides, does or pays for
 
-Use a [survey](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/guides/survey.html) to determine what the most common needs your residents have when they're visiting your website. You can also learn a lot from [web analytics](http://www.codeforamerica.org/apps/city-analytics-dashboard/). 
+Use a [survey](https://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/guides/survey.html) to determine what the most common needs your residents have when they're visiting your website. You can also learn a lot from [web analytics](https://www.codeforamerica.org/apps/city-analytics-dashboard/). 
 
 Make sure your staff have a communication plan so you can start building a practice of producing effective and understandable content. This strategy should include: 
  - a reading age standard (we recommend 9 years old)
@@ -108,4 +108,4 @@ You should run user research at all stages of content development to make sure t
 
 ## Prioritizing transactional needs
 
-The simplest way to prioritize which government transactions to improve or deliver via your website is by volume of transactions across channels, but frequently this information doesn't exist. If it doesn't, your first action should be to run a [survey](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/guides/survey.html) and to examine the analytics data for your website. 
+The simplest way to prioritize which government transactions to improve or deliver via your website is by volume of transactions across channels, but frequently this information doesn't exist. If it doesn't, your first action should be to run a [survey](https://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/guides/survey.html) and to examine the analytics data for your website. 
