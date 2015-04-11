@@ -24,10 +24,10 @@ on_stories(
     //     "image_src": "media/images/homepage-stories/Beta-Tiffani-Fumi-some-guy.jpg"
     // },
     // {
-    //     "head_html": "<a href='http://www.codeforamerica.org/blog/2014/11/20/announcing-the-2015-fellows'>Announcing the 2015 Fellows</a>",
+    //     "head_html": "<a href='https://www.codeforamerica.org/blog/2014/11/20/announcing-the-2015-fellows'>Announcing the 2015 Fellows</a>",
     //     "content_html": "Meet the 24 fellows who are taking leave from jobs at tech companies, their own businesses, and government, to use their skills for good during a year of public service.",
     //     "image_src": "media/images/homepage-stories/point-bonita.png",
-    //     "box_link": "http://www.codeforamerica.org/blog/2014/11/20/announcing-the-2015-fellows",
+    //     "box_link": "https://www.codeforamerica.org/blog/2014/11/20/announcing-the-2015-fellows",
     //     "box_text": "Read the announcement"
     // },
     {
