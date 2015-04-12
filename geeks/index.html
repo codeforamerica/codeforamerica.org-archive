@@ -61,46 +61,7 @@ nav-breadcrumbs:
 
   <div class="badge-heading badge-rocket badge-red">
     <h2>Have one night a week? Go to your local volunteer <a href="/brigade">Brigade</a> hack night.</h2>
-    <div id="map" width="100%"></div>
-
-    <script>
-    L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
-    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj', { scrollWheelZoom:false});
-
-    $.getJSON('http://codeforamerica.org/api/organizations.geojson', function(response){
-      var brigades = [];
-      $.each(response.features, function(i, org){
-        if (org.properties.type.indexOf("Brigade") != -1) {
-          org.properties.title = org.properties.name;
-          org.properties['marker-color'] = '#cf1b41';
-          org.properties['marker-symbol'] = 'rocket';
-          brigades.push(org);
-        }
-
-      })
-      map.featureLayer.setGeoJSON(brigades);
-      map.featureLayer.setStyle({color: 'red'});
-    })
-
-    map.featureLayer.on('click', function(e) {
-        window.open(e.layer.feature.properties.website);
-    });
-
-    map.featureLayer.on('mouseover', function(e) {
-        e.layer.openPopup(e.layer.feature.properties.name);
-    });
-    map.featureLayer.on('mouseout', function(e) {
-        e.layer.closePopup();
-    });
-
-    </script>
-
-    <style>
-      #map {
-        height:400px;
-      }
-    </style>
-
+    <a href="/brigade"><img src="../media/images/geeks/brigade_usa_map.png"/></a>
   </div>
 
 </section>
