@@ -52,5 +52,6 @@ Further, after a few hours copying and pasting the free-text responses, a patter
  
 ## Be responsive
  
+City websites should be responsive. 
 
 http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/
