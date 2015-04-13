@@ -74,7 +74,7 @@ Target outreach efforts to Innovation Officers, Chief Data Officers, and Chief D
 
 #### Build a relationship with local groups
 
-For example, see if your community has a local <a href="http://www.codeforamerica.org/brigade/">Brigade</a> chapter.</b> They can connect you with officials and help alleviate concerns about longterm sustainability of the project.
+For example, see if your community has a local <a href="http://www.codeforamerica.org/brigade/">Brigade</a> chapter. They can connect you with officials and help alleviate concerns about longterm sustainability of the project.
 
 #### Avoid jargon, buzzwords and clichés 
 

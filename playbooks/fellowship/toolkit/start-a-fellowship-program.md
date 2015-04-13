@@ -11,13 +11,12 @@ nav-breadcrumbs:
 
 After four years of running our program, we've identified essential elements that contribute to a successful fellowship program: 
 
- - A robust developer/ technologist community. This includes private sector tech companies or a local CfA Brigade (CfA’s international citizen volunteer program) chapter.
+ - A robust developer/ technologist community. This includes private sector tech companies or a local Code for America [Brigade](/brigade/) (CfA’s international citizen volunteer program) chapter.
  - Interest from the technology community to dedicate their time for a year of service.
  - Interest from local government offices in finding technological solutions to service delivery challenges and fostering civic engagement.
- - Resources, available budget, and flexible procurement policies that allow government agencies to pay for a fellowship program and fellows' stipdends. In our experience, paying fellows is key to fostering commitment and acquiring a large talent pool for recruiting. 
+ - Resources, available budget, and flexible procurement policies that allow government agencies to pay for a fellowship program and fellows' stipdends. In our experience, paying fellows is *key* to fostering commitment and acquiring a large talent pool for recruiting. 
 
-
-If these conditions aren't in place, you might want to consider other program alternatives before moving forward with a CfA-style fellowship program. Variations of fellowship programs can be found here.
+If these conditions aren't in place, you might want to consider [other program alternatives](/our-work/) before moving forward with a CfA-style fellowship program. Variations of fellowship programs can be found [here](/about/international/2013-annual-report/).
 
 ## The fellowship timeline
 
@@ -25,11 +24,11 @@ Running the fellowship program is an on-going cycle of recruiting fellows and ci
 
 ### Preparation (fall)
 
-Get government partners ready for the fellowship experience. We hold an onboarding session during the CfA Summit in the fall, followed by in-city visits. This process includes setting the stage with a broad range of city government staff, aligning community resources, ensuring access to relevant data and setting up logistics like work space, housing, meetings, and access to buildings and IT infrastructure. It also may include some baseline research in areas where we want to have an impact.
+Get government partners ready for the fellowship experience. We hold an onboarding session during the [CfA Summit](/summit/) in the fall, followed by in-city visits. This process includes setting the stage with a broad range of city government staff, aligning community resources, ensuring access to relevant data and setting up logistics like work space, housing, meetings, and access to buildings and IT infrastructure. It also may include some baseline research in areas where we want to have an impact.
 
 ### Fellows Orientation (January)
 
-Prepares fellows for their monthlong residency period in government and for the program overall. This includes an orientation for fellows on CfA’s programs and approach, trainings about local government and research methodologies, talks from CfA advisors and mentors, and an opportunity to practice collaborating together to build applications.
+Prepares fellows for their monthlong residency period in government and for the program overall. This includes an orientation for fellows on CfA’s [programs](/our-work/) and approach, trainings about local government and research methodologies, talks from CfA advisors and mentors, and an opportunity to practice collaborating together to build applications.
 
 ### Government Residency (February)
 
@@ -37,13 +36,13 @@ Provides an opportunity for fellows to create relationships with government offi
 
 ### Development Sprints and Mentorship (March–May)
 
-Gives the fellows a chance to build and refine the technology and better scope out the problem they’re trying to solve. When the fellows come back from Residency they begin the development of their first project prototype after whittling their ideas down to a top few. This is when they really start using “lean” principles to build their work. Fellows are also encouraged to use an agile development processes and tests to increase the security and rigor of their app projects. These include unit testing, route testing, and integration testing. The tests functioned as a safeguard against unintentional regressions, and also helped to document the expected behavior of the code in clear, concise code. 
+Gives the fellows a chance to build and refine the technology and better scope out the problem they’re trying to solve. When the fellows come back from Residency they begin the development of their first project prototype after whittling their ideas down to a top few. This is when they really start using [“lean” principles](http://theleanstartup.com/principles) to build their work. Fellows are also encouraged to use an [agile development](https://docs.google.com/a/codeforamerica.org/document/d/1ybaIrGcUN3e4uWIHSphlx8UhjSCyr1yfcelg7jZ-Kr8/edit) process and tests to increase the security and rigor of their app projects. These include unit testing, route testing, and integration testing. The tests functioned as a safeguard against unintentional regressions, and also helped to document the expected behavior of the code in clear, concise code. 
 
 Staff engage with fellows at this time with recurring trainings, meetings, and one on one chats to continue supporting fellows. Fellows also meet in person with their government partners and community stakeholders to pitch ideas and get project feedback. 
 
 ### Mid-Year Reports and Celebrations (June)
 
-Code for America fellowship teams create a mid-year report on their project progress and metrics. We also host “BETA”), a small conference that gives the CfA community a chance to learn about what the fellows are working on.
+Code for America fellowship teams create a mid-year report on their project progress and metrics. We also host “[BETA](http://beta.codeforamerica.org/)”, a small conference that gives the CfA community a chance to learn about what the fellows are working on.
 
 ### Product Sprints and Career Development (July–August)
 
@@ -51,23 +50,25 @@ Fellows continue developing their prototypes and conduct more user research to s
 
 ### CfA Summit (September)
 
-The Summit is an annual conference where CfA convenes the global civic tech community. At the Summit, fellows, their government partners, and other civic tech enthusiasts tell their stories to a broader audience. The Summit includes very produced talks that promote the civic tech movement. Check out the app demo from our Louisville Kentucky Team in 2013. We also announce our government city partners for the upcoming year at the Summit, and invite their elected officials and local government staff to attend. This gives our future partners a chance to talk to (and learn from) current government partners about the fellowship experience. 
+The Summit is an annual conference where CfA convenes the global civic tech community. At the Summit, fellows, their government partners, and other civic tech enthusiasts tell their stories to a broader audience. The Summit includes very produced talks that promote the civic tech movement. Check out the [demo](https://www.youtube.com/watch?v=RLCZV9CR4dQ) from our Louisville Kentucky Team in 2013. We also announce our government city partners for the upcoming year at the Summit, and invite their elected officials and local government staff to attend. This gives our future partners a chance to talk to (and learn from) current government partners about the fellowship experience. 
 
 ### Transition and Sustainability (October - November)
 
 CfA fellows and staff work finalize effective sustainability mechanisms to keep the project going for the government partner once the fellowship comes to an end. Staff organizes a celebration for the fellowship class, and begings orienting new government partners for the following year. 
 
+![Fellowship timeline](http://40.media.tumblr.com/8ad6ce429cbe2f065fe70ee69b5ce955/tumblr_n4iemcftDk1tr9bgvo1_1280.png)
+
 This infographic was created by the Lexington Fellowship Team (2014).
 
 ## The Ideation Process
 
+![The ideation process](http://coquicoders.org/content/images/2014/Mar/Ideation_Process_Notated.png)
 
 CfA’s Puerto Rico fellows from 2014 made this image to illustrate their brainstorming and selection process.
 
-
 ## Adaptations of the Fellowship Cycle: Mexico City 
 
-If fellows will work in the same place as their government partners all year long, your calendar may look different. For example, the Code for Mexico City Fellowship program, organized by Mexico City’s Government Innovation Lab had fellows work in the same city as their government partners for the duration of their fellowship. 
+If fellows will work in the same place as their government partners all year long, your calendar may look different. For example, the [Code for Mexico City Fellowship program](/about/international/2013-annual-report/partners-cfmc.html), organized by [Mexico City’s Government Innovation Lab](http://labplc.mx/) had fellows work in the same city as their government partners for the duration of their fellowship. 
 
 Fellowship promotion, application and selection: The Lab promoted its fellowship program in a variety of ways, including the creation of a special promotional video which was disseminated through official government channels. 150 people completed the Lab’s Fellowship application and five were selected.
 
@@ -103,8 +104,8 @@ Collaborates with the Director of Government Relations to develop strong relatio
 
 ## Further resources
 
- - Sample Curriculum for January fellows training. 
- - Fundraising resource guide. 
- - Fellowship Program-  Implementation Schedule. 
- - Fellowship calendar -- need to upload from toolkit. 
+ - [Sample Curriculum for January fellows training](https://docs.google.com/a/codeforamerica.org/presentation/d/1dgAQNRBBXm6TQMjviU86PLcWcCyOAaN3h5FMl8HvLUg/edit#slide=id.p19)
+ - [Fundraising resource guide](https://docs.google.com/a/codeforamerica.org/document/d/1Uc8cmQt9-c4DaMD0hvamQwG6cOxNtjFO5Mq6dcdQ9_o/edit#)
+ - [Fellowship Program-  Implementation Schedule](https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0AksxopTEkLVNdGdmUEZ5azNtOEt1YTNnRDFBT2NmOGc#gid=0)
+ - [Fellowship calendar -- need to upload from toolkit] 
 

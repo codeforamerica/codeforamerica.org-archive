@@ -114,5 +114,4 @@ Highlight the continual skill share, learning exchange and capacity-building tha
 
 ## More resources
 
-<p class="alert"><a href="http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf">Case study on alternative funding models for a fellowship program</a>.
-</section>
+ - [Alternative funding models for a fellowship program](http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf)
