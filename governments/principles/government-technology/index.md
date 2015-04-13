@@ -2,7 +2,7 @@
 layout: principles-standard
 title: Principles for Government Technology
 status: beta
-last-updated: April 13, 2015
+last-updated: April 13, 2015. These will be updated as we learn. Please help us by providing <a href="/governments/principles/government-technology/feedback.html" target="_blank">feedback</a>.
 masthead-image: "../../media/images/cities_fellowship_faq/citiesfaqheader.jpg"
 nav_tier1_active: "governments"
 nav-breadcrumbs:
