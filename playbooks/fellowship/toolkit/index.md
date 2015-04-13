@@ -19,8 +19,7 @@ Learn about how to recruit a successful fellowship team: the skills to look for,
 Learn how to recruit a government partner to a fellowship program, what an application process might look like, the roles different individuals in governments play, and how to have productive conversations with senior government officials.
 
 ### [Address government concerns](/playbooks/fellowship/toolkit/address-government-concerns.html)
-Learn how to recruit a government partner to a fellowship program, what an application process might look like, the roles different individuals in governments play, and how to have productive conversations with senior government officials.
-
+Learn how to deal with common concerns about a fellowship-style program, including funding concerns, how a fellowship residency period works, showing return on investment and how sustainable fellowship projects are. 
 
 ### [Deliver a successful fellowship project](/playbooks/fellowship/toolkit/deliver-successful-fellowship-project.html)
-Learn how to recruit a government partner to a fellowship program, what an application process might look like, the roles different individuals in governments play, and how to have productive conversations with senior government officials.
+This guide covers what goes in to a successful fellowship project, how you can prepare government partners for the program and how you can scope fellowship projects for success. 
