@@ -35,7 +35,7 @@ As well as price, massive improvements in value can be delivered through:
 
 ### 3. Enable data-driven government
 
-Governments should monitor their services in real-time for speed, availability and effectiveness in achieving policy. Government technology should deliver relevant, actionable information using open standards so that staff can evaluate the effectiveness of policies, tools and processes to better and more quickly serve their users.
+Governments should monitor their services in real-time for speed, availability, and effectiveness in achieving policy. Government technology should deliver relevant, actionable information using open standards so that staff can evaluate the effectiveness of policies, tools, and processes to better and more quickly serve their users.
 
 ### 4. Use and promote open standards
 
