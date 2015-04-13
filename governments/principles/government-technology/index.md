@@ -64,17 +64,16 @@ Requests for proposal (RFPs) must be written clearly and transparently, and must
 
 Government technology should be easy to sell and easy to buy. Contracts should:
 
-*   Have clear expectations for both parties;
-*	be written in easy to understand language;
-*   include transparent, predictable pricing;
-*	include clear maintenance responsibilities;
-*	include clear indemnity clauses to limit losses for both parties;
-*	include a clear and transparent process to cover any changes;
-*	make clear what happens when the contract ends or terminates;
-*	have effective escape or termination options for both parties;
-*	have a clear process to settle differences;
+*	be written clearly and transparently, in easy to understand language;
+*   include predictable pricing;
+*	include maintenance responsibilities;
+*	include indemnity clauses to limit losses for both parties;
+*	include a process to cover any changes;
+*	include effective escape or termination options for both parties;
+*	explain happens when the contract ends or terminates;
+*	include a process to settle differences;
+*   explicitly cover data ownership. These terms could be covered in the government’s Open Data Policy;
 *	include flexible intellectual property (IP) terms. For example, governments and vendors should consider licensing technology as another option alongside purchasing. Government and vendors should also consider a range of options for IP including open source licences. 
-*   explicitly cover data ownership. These terms could be covered in the government’s Open Data Policy.
 
 &#42; Based on interviews with govtech entrepreneurs  and governments. 
 

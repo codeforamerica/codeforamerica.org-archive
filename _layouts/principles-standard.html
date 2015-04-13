@@ -109,8 +109,29 @@ nav-breadcrumbs:
 					</div>     
 		  		{% endif %}
 		  		
-		        {{ content }}
-		        
+				<!-- start toc block -->
+				<div class="layout-minor">
+					<nav role="navigation" class="toc" id="toc">
+						<h3>Contents</h3>
+						
+						<div class="toc">
+						
+						    {{ page.content | toc_list }}
+						    
+						</div>
+	
+					</nav>
+				</div>
+				<!-- end toc block -->
+	
+				<main id="content" class="layout-major">
+	
+					{{ content }}
+	
+									
+				</main>
+
+
 	  		</div>
 	  	</section>
 
