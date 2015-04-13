@@ -50,9 +50,7 @@ The full data is here, but here are the top 10 results in:
 This right here is all 800 categorized responses, in free text. A couple of things to note: about 10% of responses did not fit our rough taxonomy (see the “Other” tab at far right). A brief look at the most common items there shows that city events and tasks related to housing are high on the list. That will help us prioritize.
 Further, after a few hours copying and pasting the free-text responses, a pattern jumped out: a large number of the text snippets seemed to begin with either “looking for” or “trying to” rather than just “doing X”. I wondered (though I have no benchmark) whether these tentative terms are a fair barometer of uncertainty on a website, so I ran the numbers. 37% of respondents began their statement with one of these two phrases. I’m very curious to see if our work on the DFD will bring that percentage down if we re-run the survey in the future.
  
-## be responsive
-
- - recent pew report
+## Be responsive
  
 
 http://www.pewinternet.org/2015/04/01/us-smartphone-use-in-2015/
