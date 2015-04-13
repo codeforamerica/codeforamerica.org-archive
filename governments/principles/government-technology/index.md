@@ -33,7 +33,7 @@ As well as price, massive  improvements in value can be delivered by:
 
 Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense  100x improvement in pricing and value over legacy “Big IT.”
 
-As well as price, massive iprovements in value can be delivered through:
+As well as price, massive improvements in value can be delivered through:
 
 *	vendors and governments using different business models;
 *	discovering new economies of scale; and 
