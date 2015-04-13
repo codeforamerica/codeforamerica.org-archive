@@ -26,4 +26,4 @@ If you are starting a website redesign, use this survey to assess the devices an
 ## Performance
 
 ### [Judge the performance of a city website](/our-work/initiatives/digitalfrontdoor/playbook/performance/judge-performance-city-website.html)
-Use this guide to find out what you need to measure to judge the performance of your city website, and what good performance looks like.
+Use this guide to find out how to measure the performance of your city website, and what good performance looks like.
