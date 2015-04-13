@@ -21,17 +21,11 @@ Listed below are seven principles that promote good digital products and practic
     
 ### 1. Design for and with people
 
-“Big IT” is what government is used to: expensive — up to hundreds-of-millions-of-dollars — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. Government technology should deliver a significant improvement in pricing and value over legacy “Big IT.” These products, with successful practices, are deployed in weeks, not years. 
-
-As well as price, massive  improvements in value can be delivered by:
-
-*   vendors and governments using different business models
-*   discovering new economies of scale and
-*   delivery of services via the cloud. 
+New Govtech products are focused on understanding and delivering against user needs - whether government employees or residents. These products deliver for interfaces that respect people's time, dignity, and abilities. They are so simple and easy to use that a user is able to succeed the first time, unassisted. 
 
 ### 2. Deliver a significant improvement in pricing and value over “Big IT”
 
-Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense  100x improvement in pricing and value over legacy “Big IT.”
+Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense 100x improvement in pricing and value over legacy “Big IT.”
 
 As well as price, massive improvements in value can be delivered through:
 
