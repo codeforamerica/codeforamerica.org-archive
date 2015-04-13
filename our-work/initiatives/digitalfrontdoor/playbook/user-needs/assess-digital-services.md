@@ -23,6 +23,8 @@ Through research in our [Digital Front Door](http://www.codeforamerica.org/our-w
 
 Through this census, you can benchmark whether these services are available on your site, and how useful and accessible they are for your community members. 
 
+<img class="isolate" src="https://github.com/codeforamerica/codeforamerica.org/blob/dfd-week-2/media/images/initiatives/service%20assessment.gif" width="700px" />
+
 ## What you'll do
 In this guide, you'll find out how to:
 
