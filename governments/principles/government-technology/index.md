@@ -33,7 +33,7 @@ As well as price, massive  improvements in value can be delivered by:
 
 ### 2. Deliver a significant improvement in pricing and value over “Big IT”
 
-Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense  100x improvement in pricing and value over legacy “Big IT.”. 
+Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense  100x improvement in pricing and value over legacy “Big IT.”
 
 As well as price, massive  improvements in value can be delivered by vendors and governments using different business models, and discovering new giteconomies of scale. 
 
@@ -68,7 +68,7 @@ New Govtech products strive to be easy to sell and easy to buy. Contract terms s
 *   Include flexible Intellectual Property (IP) arrangements and terms. Governments and vendors should consider licensing technology as another option to purchasing. Governments and vendors should consider a range of options for IP including  open source, but not limited to it.
 *   Explicitly cover data ownership. For example this could be covered in the government’s Open Data Policy.
 
-* Based on interviews with govtech entrepreneurs  and governments. 
+&#42; Based on interviews with govtech entrepreneurs  and governments. 
 
 ### 6. Deliver continuous improvement
 
