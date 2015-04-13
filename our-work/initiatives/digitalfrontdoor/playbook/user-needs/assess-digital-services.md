@@ -60,5 +60,5 @@ The goal of this assessment is to analyze how well your website is meeting Code 
 6. Report back to the community on your findings- via blog post or your city website. Be sure to indicate the next steps that have come out of the assessment. 
 
 
-This project is adapted from the Open Knowledge Foundation's [Open Data Census platform] (census.okfn.org).
+This project is adapted from the Open Knowledge Foundation's [Open Data Census platform](census.okfn.org).
 
