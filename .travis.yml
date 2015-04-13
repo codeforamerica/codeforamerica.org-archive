@@ -1,4 +1,6 @@
 language: ruby
+rvm: 
+- 2.2.0
 before_install:
 - travis_retry gem install jekyll --no-ri --no-rdoc
 - sudo apt-get update -y

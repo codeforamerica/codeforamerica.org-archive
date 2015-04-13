@@ -1,7 +1,7 @@
 ---
 layout: resource-topic-index
 title: User Needs
-subtitle: How to focus government services on users
+subtitle: How to focus city websites on users
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
 ---
@@ -10,9 +10,6 @@ People come to city websites with specific needs. Anything that gets between you
 
 ## [What are the goals of a good city website?](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/goals-good-city-website.html)
 Use this guide to learn about what goals a city website should have for government and residents and general principles. 
-
-## [What should a city website do?](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/what-should-a-city-website-do.html)
-Use this guide to learn general principles about how a city website should work for its users. 
 
 ## [Where do I start?](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/where-do-i-start.html)
 Use this guide if you are looking for advice on how to plan a new city website alpha, a redesign or overhaul and good tasks to start with.
