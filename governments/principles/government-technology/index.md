@@ -21,7 +21,7 @@ Listed below are seven principles that promote good digital products and practic
     
 ### 1. Design for and with people
 
-New Govtech products are focused on understanding and delivering against user needs - whether government employees or residents. These products deliver for interfaces that respect people's time, dignity, and abilities. They are so simple and easy to use that a user is able to succeed the first time, unassisted. 
+New Govtech products are focused on understanding and delivering against user needs — whether government employees or residents. These products deliver for interfaces that respect people's time, dignity, and abilities. They are so simple and easy to use that a user is able to succeed the first time, unassisted. 
 
 ### 2. Deliver a significant improvement in pricing and value over “Big IT”
 
