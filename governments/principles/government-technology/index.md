@@ -58,7 +58,7 @@ Purchasing decisions should be made based on their value-proposition - not just 
 *   30-60 days for state and local government* 
 *   45-120 days for the federal government.*
 
-Vendors should also consider the benefits of being on the GSA Schedule for working with the Federal Government. 
+Vendors should also consider the benefits of being on the [GSA Schedule] (http://www.gsa.gov/portal/content/197989 "GSA Schedule") for working with the Federal Government. 
 
 Requests for proposal (RFPs) must be written clearly and transparently, and must outline the problem to be solved, rather than the solution to be bought or procured. This gives vendors space for creativity and new ways to respond to the RFP. Also, subject matter experts (SMEs) and other stakeholders should be involved in the creation of the RFP as well as the selection and implementation process. Finally, consider whether the RFPs should be written to allow startups or small businesses to apply as well as established or incumbent vendors.
 
