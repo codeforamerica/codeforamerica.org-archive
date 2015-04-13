@@ -48,7 +48,7 @@ The goal of this assessment is to analyze how well your website is meeting Code 
 
 ### Pre-Survey Steps
 1. To add your city to the Local Digital Services Census, email us at <servicescensus@codeforamerica.org>.
-2. Partner with a third-party group to conduct the census. Since the goal is to measure the usability of the services, it's important to have a fresh set of eyes (i.e. people who don't work in government) do this. We suggest working with your local [Code for America Brigade] (http://www.codeforamerica.org/brigade/) chapter. While you can do this audit during any time of the year, we especially encourage cities to get involved during our annual [CodeAcross](http://www.codeforamerica.org/events/codeacross-2015/) and [National Day of Civic Hacking](http://hackforchange.org/) events. 
+2. Partner with a third-party group to conduct the census. Since the goal is to measure the usability of the services, it's important to have a fresh set of eyes (i.e. people who don't work in government) do this. We suggest working with your local [Code for America Brigade](http://www.codeforamerica.org/brigade/) chapter. While you can do this audit during any time of the year, we especially encourage cities to get involved during our annual [CodeAcross](http://www.codeforamerica.org/events/codeacross-2015/) and [National Day of Civic Hacking](http://hackforchange.org/) events. 
 4. Launch.
 
 
