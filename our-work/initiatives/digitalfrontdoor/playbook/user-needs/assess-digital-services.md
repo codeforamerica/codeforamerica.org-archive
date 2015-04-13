@@ -54,10 +54,10 @@ The goal of this assessment is to analyze how well your website is meeting Code 
 
 ### Post-Survey Steps
 1. Identify areas where your services scored poorly (i.e. are colored red).  
-2.Analyze any open-ended responses left by your auditors about specific services. 
-4. Rank the importance of different services to prioritize which services you should focus on improving first - this can serve as guide for development priorities for your redesigned Alpha website. Looking at the number of transactions performed by each service, or accompanying analytics around a webpage can help with this prioritization.
-5. Be sure to thank your auditors! Acknowledge their time and effort in collecting this valuable baseline data. 
-6. Report back to the community on your findings- via blog post or your city website. Be sure to indicate the next steps that have come out of the assessment. 
+2. Analyze any open-ended responses left by your auditors about specific services. 
+3. Rank the importance of different services to prioritize which services you should focus on improving first - this can serve as guide for development priorities for your redesigned Alpha website. Looking at the number of transactions performed by each service, or accompanying analytics around a webpage can help with this prioritization.
+4. Be sure to thank your auditors! Acknowledge their time and effort in collecting this valuable baseline data. 
+5. Report back to the community on your findings- via blog post or your city website. Be sure to indicate the next steps that have come out of the assessment. 
 
 
 This project is adapted from the Open Knowledge Foundation's [Open Data Census platform](census.okfn.org).
