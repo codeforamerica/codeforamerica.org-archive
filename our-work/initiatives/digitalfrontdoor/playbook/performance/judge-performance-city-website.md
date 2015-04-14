@@ -48,9 +48,17 @@ Look at performance trends over time, rather than taking a snapshot at a particu
 
 (nb this section from GDS so far https://www.gov.uk/service-manual/measurement/using-data.html)
 
+## Fail Whale
+
+don't do a healthcare.gov
+
+
+
 ## What "good" performance looks like
 
  - Ensure monitoring can measure median, 95th percentile, and 98th percentile performance
+ - something about availability like twitter, facebook, because fail whale isn't funny
+ 
 
 ## Resources
 
