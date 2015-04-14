@@ -23,7 +23,7 @@ Through research in our [Digital Front Door](http://www.codeforamerica.org/our-w
 
 Through this census, you can benchmark whether these services are available on your site, and how useful and accessible they are for your community members. 
 
-![Services GIF](/media/images/initiatives/service-assessment.gif)
+ <img class="isolate" src="{{ include.base }}/media/images/initiatives/service-assessment.gif" width="700px" />
 
 ## What you'll do
 In this guide, you'll find out how to:
