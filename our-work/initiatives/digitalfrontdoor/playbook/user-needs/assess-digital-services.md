@@ -1,14 +1,16 @@
 ---
-layout: resource-detailed-guidance
-title: "How to: assess your digital services"
-subtitle: Conduct a baseline survey of the quality and usability of your online city services. 
+layout: 		resource-detailed-guidance
+title: 			"How to: assess your digital services"
+subtitle: 		Conduct a baseline survey of the quality and usability of your online city services. 
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
   - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
+community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
 For many residents today, the city or county website is their first stop to access important public services and information — such as paying a parking ticket, contacting an elected official, or searching for government jobs.
 
-Through research in our [Digital Front Door](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/) initiative, we've identified some of the most searched for services on a city website, including: 
+Through research in our [Digital Front Door](/our-work/initiatives/digitalfrontdoor/) initiative, we've identified some of the most searched for services on a city website, including: 
 
 1. Find contact information for city officials
 2. Find the time and agenda for the next City Council meeting
@@ -29,7 +31,7 @@ Through this census, you can benchmark whether these services are available on y
 In this guide, you'll find out how to:
 
 * Create a baseline of what's working and what's not with your city's online services
-* Engage local government and community partners in a conversation about [building 21st century government](www.codeforamerica.org/governments/principles/)
+* Engage local government and community partners in a conversation about [building 21st century government](/governments/principles/)
 
 ### You'll need
 
@@ -50,7 +52,7 @@ The goal of this assessment is to analyze how well your website is meeting Code 
 
 ### Pre-Survey Steps
 1. To add your city to the Local Digital Services Census, email us at <servicescensus@codeforamerica.org>.
-2. Find some volunteers who are willing to conduct the census. Since the goal is to measure the usability of the services, it's important to have a fresh set of eyes (i.e. people who don't work in government) do this. We suggest working with your local [Code for America Brigade](http://www.codeforamerica.org/brigade/) chapter. While you can do this audit during any time of the year, we especially encourage cities to get involved during our annual [CodeAcross](http://www.codeforamerica.org/events/codeacross-2015/) and [National Day of Civic Hacking](http://hackforchange.org/) events. 
+2. Find some volunteers who are willing to conduct the census. Since the goal is to measure the usability of the services, it's important to have a fresh set of eyes (i.e. people who don't work in government) do this. We suggest working with your local [Code for America Brigade](/brigade/) chapter. While you can do this audit during any time of the year, we especially encourage cities to get involved during our annual [CodeAcross](/events/codeacross-2015/) and [National Day of Civic Hacking](http://hackforchange.org/) events. 
 4. Launch.
 
 
@@ -62,5 +64,5 @@ The goal of this assessment is to analyze how well your website is meeting Code 
 5. Report back to the community on your findings- via blog post or your city website. Be sure to indicate the next steps that have come out of the assessment. 
 
 
-This project is adapted from the Open Knowledge Foundation's [Open Data Census platform](census.okfn.org).
+This project is adapted from the Open Knowledge Foundation's [Open Data Census platform](http://census.okfn.org).
 
