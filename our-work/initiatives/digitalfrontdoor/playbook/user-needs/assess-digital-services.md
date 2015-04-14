@@ -8,7 +8,7 @@ nav-breadcrumbs:
 ---
 For many residents today, the city or county website is their first stop to access important public services and information — such as paying a parking ticket, contacting an elected official, or searching for government jobs.
 
-Through research in our [Digital Front Door](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/) initiative, we've identified the top ten most searched for services on a city website. They are: 
+Through research in our [Digital Front Door](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/) initiative, we've identified some of the top most searched for services on a city website, including: 
 
 1. Find contact information for city officials
 2. Find the time and agenda for the next City Council meeting
