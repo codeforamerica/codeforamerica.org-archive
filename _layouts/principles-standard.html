@@ -1,0 +1,167 @@
+{% comment %}
+
+This is the default Jekyll layout for Code for America's website.
+Use it by specifying "layout: default" in your Jekyll front-matter:
+
+    http://jekyllrb.com/docs/frontmatter/
+
+Special page variables you can define in your front matter:
+
+title            - Page title and content of H1 tag in page header.
+title-h1         - Alternate page title for use in header H1 tag only.
+nav_tier1_active - name of navigation section to show, see _includes/nav.html.
+nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
+masthead-class   - optionally "masthead-s" for a shorter masthead image.
+masthead-image   - path to image for use in masthead.
+
+Sample front matter from one page:
+
+---
+layout: default
+title: Ezra Spier
+title-h1: People
+nav_tier1_active: "citizens"
+masthead-class: masthead-s
+masthead-image: "../../media/images/masthead/masthead-5.jpg"
+nav-breadcrumbs:
+ - Citizens: "/geeks"
+---
+
+{% endcomment %}
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
+    {% if site.env.status == "development" %}
+      <link rel="stylesheet" type="text/css" href="{{ site.environment.webtype_host }}" />
+      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/main.css">
+      <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/layout.css" media="all and (min-width: 40em)">
+      <link href="{{ site.env.style_host }}/style/css/prism.css" rel="stylesheet" />
+    {% else %}
+      <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
+      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
+      <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+    {% endif %}
+    <!-- Link to style staging area -->
+    <link rel="stylesheet" href="/stylesheets/staging.css">
+    <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+        <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all">
+    <![endif]-->
+      
+    {% if page.masthead-image %}
+      <style type="text/css">
+        .masthead:before {
+                background-image: url('{{ page.masthead-image }}');
+        }
+      </style>
+    {% endif %}
+     <style>
+     .how-to h4{
+      clear:both;
+     }
+     .how-to .desc{
+      float: left;
+      width: 62%;
+     }
+     .how-to .recommendations{
+      float: right;
+      width: 33%;
+      background-color: #00a175;
+      color:#fff;
+      padding: 1em;
+     }
+     .no-logo .teaser-header{
+      margin-top:0;
+      text-align:center;
+     }
+     </style>
+    {% include meta-header.html %}
+  </head>
+      
+  <body>
+    <div class="js-container">
+      {% include nav.html %}
+	  <main role="main">
+	  	
+	  	
+	  	<section>
+	  	
+	  		<div class="layout-semibreve">
+		  	
+	            {% include nav-breadcrumbs.html %}
+
+		  		<!-- body title -->
+		  		<h2>{{ page.title }}</h2>
+		  		
+		  		{% if page.status == "beta" %}
+					<div class="alert-info">
+						<p><b>Beta: Last updated on {{ page.last-updated }}.</b></p>
+					</div>     
+		  		{% endif %}
+		  		
+				<!-- start toc block -->
+				<div class="layout-minor">
+					<nav role="navigation" class="toc" id="toc">
+						<h3>Contents</h3>
+						
+						<div class="toc">
+						
+						    {{ page.content | toc_list }}
+						    
+						</div>
+	
+					</nav>
+				</div>
+				<!-- end toc block -->
+	
+				<main id="content" class="layout-major">
+	
+					{{ content }}
+	
+					<hr/>
+				
+					<p><a href="#toc">Skip to contents</a></p>
+									
+				</main>
+
+
+	  		</div>
+	  	</section>
+
+		<!-- start github feedback section -->
+	    <div class="layout-breve slab-gray">
+			<p>Help make our documentation better:</p>
+			<ul>
+				<li><a title="View this page history on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/commits/master{{ page.url | replace:'.html','.md' }}">View this page's history on GitHub.</a>
+				<li><a title="View and suggest changes to this page source on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/blob/master{{ page.url | replace:'.html','.md' }}">View and suggest changes to this page on GitHub.</a>
+			</ul>
+	    </div>
+	    <!-- end github feedback section -->
+
+
+        {% unless page.mailing-list-header %}
+        <!-- Email signup form -->
+        <div class="slab-medium-red">
+          <div class="layout-breve layout-tight">
+            {% include email-signup-form.html context="footer" %}
+          </div><!-- end .layout-breve -->
+        </div><!-- end .slab-dark-blue -->
+        {% endunless %}
+
+        {% include global-footer.html %}
+      </main>
+    </div>
+    {% include email-signup-modal.html %}
+    {% include footer-scripts.html %}
+  </body>
+</html>
