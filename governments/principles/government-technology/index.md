@@ -67,7 +67,7 @@ Government technology should be easy to sell and easy to buy. Contracts should:
 *	explain happens when the contract ends or terminates;
 *	include a process to settle differences;
 *   explicitly cover data ownership. These terms could be covered in the government’s Open Data Policy;
-*	include flexible intellectual property (IP) terms. For example, governments and vendors should consider licensing technology as another option alongside purchasing. Government and vendors should also consider a range of options for IP including open source licences. 
+*	include flexible intellectual property (IP) terms. For example, governments and vendors should consider licensing technology as another option alongside purchasing. Government and vendors should also consider a range of options for IP including open source licenses. 
 
 &#42; Based on interviews with govtech entrepreneurs  and governments. 
 
@@ -81,7 +81,7 @@ By using services that continuously improve, government services can gain ongoin
 
 Government should do only what government can do. Government technology should be built using existing technology, when appropriate. This allows savings of funding, time, and resources. 
 
-Vendors of government technology shouldn't re-invent products or systems. Often parts of a product can be implemented from external sources or partners. For example, given that support resources need to be reliable and support expansion; partnering with a cloud hosting provide may be the most effective option rather than building a private cloud.
+Vendors of government technology shouldn't re-invent products or systems. Often parts of a product can be implemented from external sources or partners. For example, given that support resources need to be reliable and support expansion; partnering with a cloud hosting provider may be the most effective option rather than building a private cloud.
 
 
 
