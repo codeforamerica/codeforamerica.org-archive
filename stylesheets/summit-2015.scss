@@ -44,7 +44,7 @@ html {
 // Override typeface settings
 // =====
 
-$font-sans-serif: "Whitney SSm A", "Whitney SSm B", "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
+$font-sans-serif: 'Gotham A', 'Gotham B', "Open Sans Regular", "Verdana", "Helvetica", "Arial", sans-serif;
 $font-serif: "Sentinel SSm A", "Sentinel SSm B", Georgia, Times, "Times New Roman", serif;
 
 body {
@@ -107,6 +107,11 @@ p {
 .announcement {
   padding-left: 100px;
   color: white;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    margin-top: 2em;
+    padding-left: 0;
+  }
 }
 
 .announcement * {
