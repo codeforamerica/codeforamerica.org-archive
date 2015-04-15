@@ -4,64 +4,68 @@ title: Judge the performance of a city website
 subtitle: The data you need to measure and monitor for your city website
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
+community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 
 ---
 
-This guide explains the metrics you need to measure to work out how your city website is performing. You'll need to monitor them to make sure your website is efficient and providing value for money. By regularly examining them, you'll be able to discuss the strengths and weaknesses of your city website and find ways to improve it.
+We believe that city websites should: 
 
-## Website key performance indicators
+###**Be universally accessible**. 
+Simply put, city websites should work for everyone.
 
-### Cost per transaction
+Questions to start judging your site’s accessibility:
+	
+* Does your site offer content in all major languages spoken by your residents?
+* Is your site responsive to assistive technologies
+* Does your site provide a consistent experience to desktop and mobile devices (i.e. they have similar bounce rates)?
+* Is your site’s content written at an appropriate reading level?
+* Is your web traffic coming from all over town and in different languages?
 
-Cost per transaction is about how much it costs your government to provide each completed transaction.
 
-### User satisfaction
+###**Establish a sense of place**. 
+It’s important for your website to be official, provide up to date content, and act as the authoritative place for conducting city business online.
 
-User satisfaction helps you to measure the overall quality of your city's website.
+Questions to start judging your site’s officialness:
 
-### Completion rate
+* How many pages do you have on your website? 
+* Are pages being updated to stay current, or retired when they are no longer needed?
+* What is the ratio of content on your homepage that is actionable vs. outdated or not a distinct user need?
 
-When users are unable to complete a digital transaction, they can be pushed to use other channels. This leads to low levels of digital take-up and customer satisfaction, and a higher cost per transaction.
 
-Measuring end-to-end completion rates helps to identify whether users have problems completing a transaction. Examing the drop-out rate at each step of a transaction will pinpoint the specific processes that users fail to complete.
+###**Provide digital services**. 
+City websites should *be* the government, not just provide information *about* the government. 
 
-### Digital take-up
+Questions to start judging your site’s digital services:
 
-Digital take-up is a long term strategic measure of how well a change to a digital by default strategy is working. 
+* Does your site offer digital services?
+* How long does it take to complete the service?
+* What is the completion rate (start and finish) of the services that your site provides?
+* What is the breakdown in transactions happening online than in-person (in city hall or over the phone?)
 
-### Service availability
 
- - Monitor system-level resource utilization in real time
- - Monitor system performance in real-time (e.g. response time, latency, throughput, and error rates)
+###**Treat residents with dignity**. 
+City websites should be respectful of residents’ time and offer a simple and delightful experience. When sites have good usability, residents are able to quickly find what they’re looking for. 
+
+Questions to start judging your site’s respectfulness:
+
+* Are there feedback loops on your site to better understand users’ experience?
+* What is the tone of your site’s content? Is it bossy? Patronizing? 
+* Can users find what they are looking for?
+* Can residents do what they want to do online?
+
+
+###**Be resilient**. 
+City websites should be able to handle peak traffic on the site. 
+	
+Questions to start judging your site’s resiliency:
+
  
-## Set a baseline
 
-Establish a ‘baseline’ based on the current performance trends of each channel. 
-
-
-Use this to judge the effectiveness of any changes to your service. This will help you pinpoint the effectiveness of your initiatives, and identify what worked.
-
-Look at performance trends over time, rather than taking a snapshot at a particular point. Peaks and dips in performance can then be measured in relation to this base (or trend) line, which helps to:
-
- - identify the effect of your communications or design initiatives
- - reveal seasonal variations in performance
-
-(nb this section from GDS so far https://www.gov.uk/service-manual/measurement/using-data.html)
-
-## Fail Whale
-
-don't do a healthcare.gov
+#### Resources
 
 
-
-## What "good" performance looks like
-
- - Ensure monitoring can measure median, 95th percentile, and 98th percentile performance
- - something about availability like twitter, facebook, because fail whale isn't funny
- 
-
-## Resources
-
+ - Code for America's [Local Services Census](https://service-census.herokuapp.com/) and [how-to guide](https://jekit.codeforamerica.org/codeforamerica/codeforamerica.org/dfd-week-2/our-work/initiatives/digitalfrontdoor/playbook/user-needs/assess-digital-services.html)
  - "[Use data to drive decisions](https://playbook.cio.gov/#play12)" from the USDS Digital Playbook 
  - "[Using data](https://www.gov.uk/service-manual/measurement/using-data.html)" from the UK Government Digital Service
  - "[Measurement](https://www.gov.uk/service-manual/measurement)" from the UK Government Digital Service
