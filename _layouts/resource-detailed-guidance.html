@@ -22,15 +22,14 @@ masthead-image   - path to image for use in masthead.
 Sample front matter from one page:
 
 ---
-layout: resource-detailed-guidance
-title: What Should A City Website Do?
-subtitle: Principles For City Websites
-
-nav_tier1_active: "citizens"
-masthead-class: masthead-s
-masthead-image: "../../media/images/masthead/masthead-5.jpg"
+layout: 		resource-detailed-guidance
+title: 			"How to: assess your digital services"
+subtitle: 		Conduct a baseline survey of the quality and usability of your online city services. 
 nav-breadcrumbs:
- - Citizens: "/geeks"
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
+community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
 
 {% endcomment %}
@@ -133,24 +132,30 @@ nav-breadcrumbs:
 
 
 		</div>
+
+		<!-- start detailed guidance specific footer section -->
 		
-		<!-- start github feedback section -->
 	    <div class="layout-breve slab-gray">
 		    
-		    
+		    <!-- start community cta -->
 		    {% if page.community-url %}
 				<p>{{ page.community-cta }}</p>
 				
 				<a href="{{ page.community-url }}" class="button-s">Join this community</a>
-
+				
 		    {% endif %}
+		    <!-- end community cta -->
+
+			<!-- start github feedback -->
 			<p>Help make our documentation better:</p>
 			<ul>
 				<li><a title="View this page history on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/commits/master{{ page.url | replace:'.html','.md' }}">View this page's history on GitHub.</a>
 				<li><a title="View and suggest changes to this page source on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/blob/master{{ page.url | replace:'.html','.md' }}">View and suggest changes to this page on GitHub.</a>
 			</ul>
+			<!-- end github feedback -->
+			
 	    </div>
-	    <!-- end github feedback section -->
+	    <!-- end detailed guidance specific footer section -->
 	
         <!-- Email signup form -->
         <div class="slab-medium-red">
