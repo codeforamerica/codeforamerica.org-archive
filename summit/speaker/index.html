@@ -103,16 +103,6 @@ metadata:
         <input id="email" name="email" class="input" type="email" placeholder="" required>
       </li>
       
-       <fieldset>
-        <legend>Session Type <abbr title="Required">*</abbr></legend>
-        <li>
-          <label for="session-type" class="check"><input id="session-type" name="make-info-public" type="radio" class="radio" checked />Lightning Talk: a 5-minute talk on the main stage.</label>
-        </li>
-        <li>
-          <label for="session-type" class="check"><input id="session-type" name="session-type" type="radio" class="radio"/>Breakout Session: a 45-minute workshop or session with a smaller group.</label>
-        </li>
-      </fieldset>
-      
        <li class="form-field">
         <label for="session-title">Session Title<abbr title="Required">*</abbr></label>
         <input id="session-title" name="session-title" class="input" type="text" placeholder="" required>
@@ -120,7 +110,7 @@ metadata:
 
       <li class="form-field">
         <label for="session-paragraph">What will you talk about? Why does it matter? Who is the audience?<abbr title="Required">*</abbr></label>
-        <textarea id="interest-paragraph" name="interest-paragraph" rows="8" cols="32" required></textarea>
+        <textarea id="session-paragraph" name="session-paragraph" rows="8" cols="32" required></textarea>
       </li>
 
       <li class="form-field">
@@ -132,6 +122,16 @@ metadata:
         <label for="partners">Will you have any co-presenters? Who? <abbr title="Required">*</abbr></label>
         <input id="partners" name="partners" class="input" type="text" placeholder="" required>
       </li>
+      
+ <fieldset>
+        <legend>Session Type <abbr title="Required">*</abbr></legend>
+        <li>
+          <label for="session-type" class="check"><input id="session-type" name="make-info-public" type="radio" class="radio" checked />Lightning Talk: a 5-minute talk on the main stage.</label>
+        </li>
+        <li>
+          <label for="session-type" class="check"><input id="session-type" name="session-type" type="radio" class="radio"/>Breakout Session: a 45-minute workshop or session with a smaller group.</label>
+        </li>
+      </fieldset>
 
       <input type="submit" value="Submit">
     </ul>
