@@ -251,6 +251,24 @@ p.announcement-overline {
   left: 0;
 }
 
+.pullout-content-inner {
+  background-color: $color-summit-purple;
+  width: 50%;
+  padding: 1em;
+}
+
+.pullout-quote {
+  font-family: $font-sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.pullout-attribution {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 // =====
 // .masthead override
 // =====
