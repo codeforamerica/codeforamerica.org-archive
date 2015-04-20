@@ -37,9 +37,9 @@ Frame residency as an important opportunity for in-depth engagement with the gov
 
 ### Offer that fellows make more than the average 4 visits to their fellowship cities.
 
- Keep in mind that you’ll need, additional resources to cover these travel costs.</li>
+Keep in mind that you’ll need additional resources to cover these travel costs.
 
-### Stress  value.
+### Stress value
 
 Fellows will bring a fresh perspective on the government and the challenges they are addressing.
 

@@ -2,7 +2,7 @@
 layout: principles-standard
 title: Principles for Government Technology
 status: beta
-last-updated: April 13, 2015
+last-updated: April 13, 2015. These will be updated as we learn. Please help us by providing <a href="/governments/principles/government-technology/feedback.html" target="_blank">feedback</a>
 masthead-image: "../../media/images/cities_fellowship_faq/citiesfaqheader.jpg"
 nav_tier1_active: "governments"
 nav-breadcrumbs:
@@ -21,17 +21,11 @@ Listed below are seven principles that promote good digital products and practic
     
 ### 1. Design for and with people
 
-“Big IT” is what government is used to: expensive — up to hundreds-of-millions-of-dollars — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. Government technology should deliver a significant improvement in pricing and value over legacy “Big IT.” These products, with successful practices, are deployed in weeks, not years. 
-
-As well as price, massive  improvements in value can be delivered by:
-
-*   vendors and governments using different business models
-*   discovering new economies of scale and
-*   delivery of services via the cloud. 
+New Govtech products are focused on understanding and delivering against user needs — whether government employees or residents. These products deliver for interfaces that respect people's time, dignity, and abilities. They are so simple and easy to use that a user is able to succeed the first time, unassisted. 
 
 ### 2. Deliver a significant improvement in pricing and value over “Big IT”
 
-Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense  100x improvement in pricing and value over legacy “Big IT.”
+Big IT is what government is used to. Expensive — in the hundreds-of-millions-of-dollars range — slow to deliver and often unfit for purpose. When software and hardware is cheaper everywhere, government technology cannot be the exception. New Govtech products should deliver an immense 100x improvement in pricing and value over legacy “Big IT.”
 
 As well as price, massive improvements in value can be delivered through:
 
@@ -41,7 +35,7 @@ As well as price, massive improvements in value can be delivered through:
 
 ### 3. Enable data-driven government
 
-Governments should monitor their services in real-time for speed, availability and effectiveness in achieving policy. Government technology should deliver relevant, actionable information using open standards so that staff can evaluate the effectiveness of policies, tools and processes to better and more quickly serve their users.
+Governments should monitor their services in real-time for speed, availability, and effectiveness in achieving policy. Government technology should deliver relevant, actionable information using open standards so that staff can evaluate the effectiveness of policies, tools, and processes to better and more quickly serve their users.
 
 ### 4. Use and promote open standards
 
@@ -58,7 +52,7 @@ Purchasing decisions should be made based on their value-proposition - not just 
 *   30-60 days for state and local government* 
 *   45-120 days for the federal government.*
 
-Vendors should also consider the benefits of being on the GSA Schedule for working with the Federal Government. 
+Vendors should also consider the benefits of being on the [GSA Schedule](http://www.gsa.gov/portal/content/197989) for working with the Federal Government. 
 
 Requests for proposal (RFPs) must be written clearly and transparently, and must outline the problem to be solved, rather than the solution to be bought or procured. This gives vendors space for creativity and new ways to respond to the RFP. Also, subject matter experts (SMEs) and other stakeholders should be involved in the creation of the RFP as well as the selection and implementation process. Finally, consider whether the RFPs should be written to allow startups or small businesses to apply as well as established or incumbent vendors.
 
@@ -73,7 +67,7 @@ Government technology should be easy to sell and easy to buy. Contracts should:
 *	explain happens when the contract ends or terminates;
 *	include a process to settle differences;
 *   explicitly cover data ownership. These terms could be covered in the government’s Open Data Policy;
-*	include flexible intellectual property (IP) terms. For example, governments and vendors should consider licensing technology as another option alongside purchasing. Government and vendors should also consider a range of options for IP including open source licences. 
+*	include flexible intellectual property (IP) terms. For example, governments and vendors should consider licensing technology as another option alongside purchasing. Government and vendors should also consider a range of options for IP including open source licenses. 
 
 &#42; Based on interviews with govtech entrepreneurs  and governments. 
 
@@ -87,7 +81,7 @@ By using services that continuously improve, government services can gain ongoin
 
 Government should do only what government can do. Government technology should be built using existing technology, when appropriate. This allows savings of funding, time, and resources. 
 
-Vendors of government technology shouldn't re-invent products or systems. Often parts of a product can be implemented from external sources or partners. For example, given that support resources need to be reliable and support expansion; partnering with a cloud hosting provide may be the most effective option rather than building a private cloud.
+Vendors of government technology shouldn't re-invent products or systems. Often parts of a product can be implemented from external sources or partners. For example, given that support resources need to be reliable and support expansion; partnering with a cloud hosting provider may be the most effective option rather than building a private cloud.
 
 
 

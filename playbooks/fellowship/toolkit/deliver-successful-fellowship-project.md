@@ -13,7 +13,7 @@ Other partners may include foundations, nonprofits, and corporate sponsors. You 
 
 The involvement of non-government partners should be carefully managed to strike a balance between giving the fellows an appropriate amount of autonomy by ensuring partners don’t impose their own agenda but also cultivating a healthy collaboration between the two. It’s important to reinforce a focus on the citizen and government’s role in providing for citizens, not on any one partner’s agenda.
 
-## Preparing Government Partners for the Program
+## Preparing government partners for the program
 
 It’s important to get everyone on the same page and set the stage for the fellowship program to be a success. Setting up the right team support structure within government for the fellows, fostering continued government engagement, and encouraging ongoing participation are all crucial for this piece. We do this through:
 
@@ -28,9 +28,9 @@ It’s important to get everyone on the same page and set the stage for the fell
 
 We heavily rely on the fellows to push the project forward once the project has started, but Code for America staff is very involved. Code for America staff works continuously to support government partners overcome obstacles, get others excited about the program, and give advice about how to more productively engage with fellows.  In the future, Code for America is looking at ways to more concretely support cities throughout the program through more trainings and more targeted engagement during the course of the Fellowship program.
 
-## Scoping out a Project 
+## Scoping out a project 
 
-Correctly scoping a project for the fellows to work on takes time. Often, Code for America must work with city partners to help them broaden the focus of their project, to allow fellows the opportunity to work towards emergent outcomes. Many city partners come to us with a specific app or product that they'd like the fellows to build, and we must explain that is not how the fellowship program operates. Code for America makes sure no decisions are made about the exact technology platofrms that will be used or the specific products developed for the project. Instead, we try to identify initial technological issues, digital skill gaps (Google Analytics, user research, etc.), project goals, focus areas, and desired outcomes.
+Correctly scoping a project for the fellows to work on takes time. Often, Code for America must work with city partners to help them broaden the focus of their project, to allow fellows the opportunity to work towards emergent outcomes. Many city partners come to us with a specific app or product that they'd like the fellows to build, and we must explain that is not how the fellowship program operates. Code for America makes sure no decisions are made about the exact technology platforms that will be used or the specific products developed for the project. Instead, we try to identify initial technological issues, digital skill gaps (Google Analytics, user research, etc.), project goals, focus areas, and desired outcomes.
 
 ## More resources
  - Example [introduction agenda for government partners](https://docs.google.com/a/codeforamerica.org/document/d/1M6Q6987lmtqWN-Vb0ApqVUoAFEiC7hdJhBjVY7qgcvE/edit)
