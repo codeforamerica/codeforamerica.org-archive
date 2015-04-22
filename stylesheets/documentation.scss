@@ -1,0 +1,16 @@
+---
+---
+
+//
+// Documentation / Playbook SCSS
+// 
+// These custom styles are for documentation / dfd etc playbooks work in progress
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: resource-detailed-guidance
+//
+
+h1, h2, h3, h4 {
+  // removing any capitalization transformation for readability 
+  text-transform: none;
+}

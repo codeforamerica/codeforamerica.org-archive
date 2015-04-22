@@ -1,0 +1,112 @@
+{% if page.nav_tier1_active %}
+    {% assign nav_tier1_active = page.nav_tier1_active %}
+{% elsif include.nav_tier1_active %}
+    {% assign nav_tier1_active = include.nav_tier1_active %}
+{% else %}
+    {% assign nav_tier1_active = false %}
+{% endif %}
+
+{% if page.masthead-class %}
+    {% assign masthead-class = page.masthead-class %}
+{% elsif include.masthead-class %}
+    {% assign masthead-class = include.masthead-class %}
+{% else %}
+    {% assign masthead-class = "masthead-l" %}
+{% endif %}
+
+{% if page.masthead-image %}
+    {% assign masthead-image = page.masthead-image %}
+{% elsif include.masthead-image %}
+    {% assign masthead-image = include.masthead-image %}
+{% else %}
+    {% assign masthead-image = false %}
+{% endif %}
+
+{% if page.nav-global-primary %}
+    {% assign nav-global-primary = page.nav-global-primary %}
+{% elsif include.nav-global-primary %}
+    {% assign nav-global-primary = include.nav-global-primary %}
+{% else %}
+    {% assign nav-global-primary = false %}
+{% endif %}
+
+{% if page.masthead %}
+    {% assign masthead = page.masthead %}
+{% elsif include.masthead %}
+    {% assign masthead = include.masthead %}
+{% else %}
+    {% assign masthead = false %}
+{% endif %}
+
+{% if nav-global-primary != "no" %}
+<nav class="nav-global-primary">
+  <ul class="layout-breve layout-tight">
+    <li><a href="/">Presented by Code for America</a></li>
+  </ul>
+</nav>
+{% else %}
+<!--  
+      If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
+      This requirement is because of the nav collapse functionality in global.js
+  -->
+<nav class="nav-global-primary"></nav>
+{% endif %}
+
+{% if masthead != "no" %}
+<div class="masthead {{ masthead-class }}">
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      {% if masthead-image %}
+      style="background-image: url('{{ masthead-image }}')" 
+      {% endif %}>
+    </div>
+  </div>
+  <header class="layout-semibreve masthead-header">
+    <h1 class="page-title">{% if page.title-h1 %}{{ page.title-h1 }}{% else %}{{ page.title }}{% endif %}</h1>
+  </header>
+</div>
+{% endif %}
+
+{% if page.masthead-custom == "deep" %}
+<div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
+  
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      {% if masthead-image %}
+      style="background-image: url('{{ masthead-image }}')" 
+      {% endif %}>
+    </div>
+  </div>
+
+  <div class="masthead-nav">
+    <ul class="list-no-bullets">
+      <li class="masthead-nav-logo">
+        <img src="/media/images/summit/2015/summit-2015-logo-white.png">
+      </li>
+      <li class="masthead-nav-page">
+        <a href="/summit/" {% if page.url == "/summit/index.html" %}class="active"{% endif %}>Home</a>
+      </li>
+      <li class="masthead-nav-page">
+        <a href="/summit/sponsor/" {% if page.url == "/summit/sponsor/index.html" %}class="active"{% endif %}>Sponsor</a>
+      </li>
+      <li class="masthead-nav-page">
+        <a href="/summit/justification/" {% if page.url == "/summit/justification/index.html" %}class="active"{% endif %}>Gov Justification Letter</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="masthead-content">
+    {% if page.title and page.headline %}
+      <p class="masthead-content-overline">{{ page.title }}</p>
+      <h1 class="masthead-content-title">{{ page.headline }}</h1>
+    {% else %}
+      <h1 class="masthead-content-title">{{ page.title }}</h1>  
+    {% endif %}
+
+    {% if page.description %}
+      <p class="masthead-content-description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+
+</div>
+{% endif %}

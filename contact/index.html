@@ -6,40 +6,33 @@ masthead-image: "../media/images/contact/contact_header.jpg"
 nav-breadcrumbs:
  - Contact Us: "/contact"
 ---
+<section class="layout-semibreve">
+  {{ include nav-breadcrumbs.html }}
 
-        <section>
-            <div class="layout-semibreve">
-                
-                {{ include nav-breadcrumbs.html }}
+  <div class="layout-major">
+    <h2>Contact Us</h2>
 
-                <h2>Contact Us</h2>
+    <p>Code for America's headquarters are located in San Francisco's South of Market District at 155 9th Street, San Francisco, CA, 94103 [<a href="https://maps.google.com/maps?q=155+9th+Street,+San+Francisco,+CA&hl=en&sll=-26.719374,27.832642&sspn=0.011883,0.022359&hnear=155+9th+St,+San+Francisco,+California+94103&t=m&z=16">map</a>].</p>
 
-                <div class="layout-gutter">
-                    <div class="layout-minim">
-                        <p>Code for America's headquarters are located in San Francisco's South of Market District at 155 9th Street, San Francisco, CA, 94103 [<a href="https://maps.google.com/maps?q=155+9th+Street,+San+Francisco,+CA&hl=en&sll=-26.719374,27.832642&sspn=0.011883,0.022359&hnear=155+9th+St,+San+Francisco,+California+94103&t=m&z=16">map</a>].</p>
+    <p>Regular office hours are from 9am - 5pm PST and we also host evening and special events.</p>
 
-                        <p>Regular office hours are from 9am - 5pm PST and we also host evening and special events.</p>
+    <p>For questions or comments please contact us at info[at]codeforamerica.org or 415-625-9633.</p>
 
-                        <p>For questions or comments please contact us at info[at]codeforamerica.org or 415-625-9633.</p><a href="https://maps.google.com/maps?q=155+9th+Street,+San+Francisco,+CA&hl=en&sll=-26.719374,27.832642&sspn=0.011883,0.022359&hnear=155+9th+St,+San+Francisco,+California+94103&t=m&z=16"><img class="layout-break-left" src="../media/images/contact/office.jpg"></a>
-                        
-                        <h3>Media Requests</h3>
+    <p><a href="https://maps.google.com/maps?q=155+9th+Street,+San+Francisco,+CA&hl=en&sll=-26.719374,27.832642&sspn=0.011883,0.022359&hnear=155+9th+St,+San+Francisco,+California+94103&t=m&z=16"><img src="../media/images/contact/office.jpg"></a></p>
 
-                        <p>Please contact Jaime-Alexis Fowler at <!--415-200-9468 or--> ja[at]codeforamerica.org. For more information about Code for America visit our <a href="../communications">Communications</a> page.</p>
-                        
-                        <h3>Desk Rental</h3>
+    <h3>Media Requests</h3>
 
-                        <p>Need a desk and some office space with wifi, snacks, good people, and the occasional ping pong game? Code for America has <a href="../desks">desks available to rent</a>.</p>
-                    </div>
+    <p>Please contact Jaime-Alexis Fowler at <!--415-200-9468 or--> ja[at]codeforamerica.org. For more information about Code for America visit our <a href="../communications">Communications</a> page.</p>
 
-                    <div class="layout-minim">
-                        <form class="spotlight">
-                            <h3>Speaking Requests</h3>
+    <h3>Desk Rental</h3>
 
-                            <div class="list-form">
-                                {% include speaking-requests.html ga-tracking-label="Clicked from contact page" %}
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <p>Need a desk and some office space with wifi, snacks, good people, and the occasional ping pong game? Code for America has <a href="../desks">desks available to rent</a>.</p>
+  </div>
+
+  <div class="layout-minor">
+    <div class="spotlight">
+      <h3>Speaking Requests</h3>
+      {% include speaking-requests.html ga-tracking-label="Clicked from contact page" %}
+    </div>
+  </div>
+</section>

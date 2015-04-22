@@ -306,3 +306,15 @@ body.modal-active {
   }
 
 }
+
+// ##### CLEARFIX #####
+//
+// Adds a clearfix so parent containers don't collapse.
+//
+
+.layout-breve:after,
+.layout-semibreve:after {
+    content: "";
+    display: table;
+    clear: both;
+ }

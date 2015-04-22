@@ -1,0 +1,147 @@
+---
+---
+
+//
+// SUMMIT-2015 SCSS
+// 
+// These custom styles are for the /summit-2015/ microsite.
+// Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
+//
+// Layouts served: summit-2015
+//
+
+// =====
+// Breakpoints
+// =====
+
+$breakpoint-tablet: 850px;
+$breakpoint-mobile: 640px;
+
+// =====
+// .masthead override
+// =====
+.masthead.masthead-custom {
+  // tighten up .masthead to .nav-global-primary
+  margin-top: 0;
+  padding: 25px 8%;
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    padding: 10px 3%;
+  }
+}
+
+// =====
+// .masthead-nav
+// Navigation embedded inside deep masthead
+// =====
+
+.masthead-nav {
+  position: relative;
+  z-index: 3;
+  display: block;
+  margin-bottom: 200px;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    margin-bottom: 100px;    
+  }
+}
+
+.masthead-nav:after,
+.masthead-nav ul:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.masthead-nav ul {
+  display: table;
+}
+
+.masthead-nav ul li {
+  display: table-cell;
+  float: left;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+// anchor element
+
+.masthead-nav ul li a {
+  position: relative;
+  padding: 5px 10px;
+  color: white;
+  text-transform: uppercase;
+
+  border: 2px solid white;
+  border-radius: 2px;
+
+  &:hover {
+    background: #fedd44;
+    border-color: #fedd44;
+    color: black;
+    text-shadow: none;
+  }
+}
+
+.masthead-nav ul li a.active {
+  border-color: #fedd44;
+}
+
+// the logo
+
+.masthead-nav ul li.masthead-nav-logo {
+  width: 300px;
+  // reset the margin-top on all .masthead-nav li's
+  margin-top: 0;
+  // more margin after the logo
+  margin-right: 20px;
+}
+
+// =====
+// .masthead-content
+// Simpler take on the content embedded in the header (title/description)
+// =====
+
+.masthead-content {
+  position: relative;
+  z-index: 3;
+}
+
+.masthead-content *,
+.masthead-content h1 {
+  text-align: left;
+}
+
+h1.masthead-content-title {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+  }
+}
+
+p.masthead-content-overline {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  @media only screen and (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+p.masthead-content-description {
+  font-size: 20px;
+  line-height: 35px;
+  font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  max-width: 800px;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
