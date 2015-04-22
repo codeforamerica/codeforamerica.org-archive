@@ -3,8 +3,8 @@ layout: resource-detailed-guidance
 title: "How to: run a resident survey"
 subtitle: Learn how to conduct a baseline survey of your residents before you start a redesign. 
 nav-breadcrumbs:
-  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
-  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+ - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+ - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
 community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
 community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
