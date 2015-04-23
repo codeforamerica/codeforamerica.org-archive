@@ -11,7 +11,7 @@ community-cta:	"Join the conversation and talk to other local government staff i
 
 Leaders and managers are often asked for a strategy or point of view on what to do about "mobile", for example, whether this means building native applications.
 
-This guide provides a mobile strategy that ties in with delivering a digital front door or city website, as well as support for that mobile strategy.
+This guide provides a mobile strategy that ties in with delivering a city website.
 
 ## Our recommendations
 
@@ -32,6 +32,8 @@ In some cases, it might make sense to deliver a native app. Developing a native 
  - there are no native apps that meet that identified user need;
  - the main service is accompanied by open data and an API;
  - meeting the user need justifies the lifetime cost of the native app.
+
+For example, transportation-related information and services are good to be provided as mobile apps. This is because users are trying to perform a specific task in a time-constrained environment. While it providing maps and timetables with real-time information about public transit on the city's website is helpful, transit-specific apps provide a better user experience for transit riders. 
 
 ## Justify and build support for this position
 
