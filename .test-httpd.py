@@ -198,6 +198,8 @@ class TestApache (unittest.TestCase):
                  ('/health', '/our-work/focus-areas/health/'),
                  ('/safety-justice', '/our-work/focus-areas/safety-justice/'),
                  ('/economic-development', '/our-work/focus-areas/economic-development/'),
+                 ('/apply', '/geeks/fellowship-apply/'),
+                 ('/Apply', '/geeks/fellowship-apply/'),
                  
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),

@@ -208,8 +208,8 @@ RedirectMatch permanent ^/geeks/fellowship/?$ /about/fellowship
 RedirectMatch permanent ^/governments/city-impact/?$ /about/fellowship
 RedirectMatch permanent ^/fellows(/?)$ /about/fellowship$1
 RedirectMatch permanent ^/the-program/?$ /about/fellowship
-#RedirectMatch permanent ^/apply/?$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
-#RedirectMatch permanent ^/Apply/?$ https://screendoor.dobt.co/code-for-america/2015-fellowship-application
+RedirectMatch permanent ^/apply/?$ /geeks/fellowship-apply
+RedirectMatch permanent ^/Apply/?$ /geeks/fellowship-apply
 
 #
 # Another round of Fellowship Program reorganization
