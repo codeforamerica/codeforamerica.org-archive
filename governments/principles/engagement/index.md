@@ -104,7 +104,7 @@ Where and how you engage with people can make or break your strategy on an issue
  - Consider different access: mobile, ability, language, social norms.
  - Focus on spaces people trust, like churches, libraries, schools, and parks.
 
-## Productive Actions
+## 4. Productive Actions
 
 Whenever you engage, know how to make a hard ask for people to take a specific action with a clear desired outcome. Digital tools enable co-creation, co-design, and productive activity on a previously impossible scale for local government. Use these tools to show people they can participate in their government in a lot of ways, including building tools for public benefit. Make sure what you are asking people to do will actually add value to your work. Otherwise, you won’t use it and people will feel discouraged. Give people the right steps to take so they can see that their efforts move the issue forward.
 
