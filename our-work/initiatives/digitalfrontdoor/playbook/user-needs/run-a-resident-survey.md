@@ -36,7 +36,9 @@ Our sample surveys ([English](https://cfa.typeform.com/to/MhYKsI), [Spanish](htt
 3. Prepare your outreach. Contact community groups, arrange publicity with city officials, set up posts on the city's web and social media properties, print paper flyers or cards for areas where they will be effective.
 4. Launch.
 
-Once your survey has been running for a week or so (or after the first 100 responses) begin to assess whether you are in fact reaching everyone you want to reach. Our sample surveys include an open-ended question about neighborhood, which we highly recommend you include. Take a look at the initial responses to this question with someone who is very familiar with the city. It is likely that your responses won't be evenly distributed and that they may be weighted in the direction of wealthier residents who have better internet access and better access to city services in the first place. Once you know what neighborhoods (or language communities) you are missing, you can adjust your outreach to focus on the groups who haven't responded. One important outcome is gaining better connections in these communities for online outreach in the future.
+Once your survey has been running for a week or so (or after the first 100 responses) begin to assess whether you are in fact reaching everyone you want to reach. Our sample surveys include an open-ended question about neighborhood, which we highly recommend you include. Take a look at the initial responses to this question with someone who is very familiar with the city. 
+
+It is likely that your responses won't be evenly distributed and that they may be weighted in the direction of wealthier residents who have better internet access and better access to city services in the first place. Once you know what neighborhoods (or language communities) you are missing, you can adjust your outreach to focus on the groups who haven't responded. One important outcome is gaining better connections in these communities for online outreach in the future.
 
 ### Post-Survey Steps
 1. Identify areas where your responses are under- or over-weighted and write down assumptions about how this may skew the data.
