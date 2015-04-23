@@ -9,10 +9,11 @@ community-cta:	"Join the conversation and talk to other local government staff i
 
 ---
 
-Fundamentally, city websites are not merely a broadcasting tool, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents to get information and conduct business with government. 
-Generally speaking, we believe that city websites should: 
+City websites are not just a tool for broadcasting information, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents to get information and conduct business with government. 
 
-###**Be universally accessible**. 
+We believe that city websites should: 
+
+## Be universally accessible
 Simply put, city websites should work for everyone. The information and services on your website should be available to all users, including those with disabilities. They should be easy to use, easy to understand, be available in the major languages spoken by your community, and usable on different devices and browsing technology (i.e. older web browsers). 
 
 Questions to start judging your site’s accessibility:
@@ -25,7 +26,7 @@ Questions to start judging your site’s accessibility:
 * Is your web traffic coming from all over town and in different languages?
 
 
-###**Establish a sense of place**. 
+## Establish a sense of place
 It’s important for your website to be official, provide up to date content, and act as the authoritative place for conducting city business online.
 
 Questions to start judging your site’s officialness:
@@ -35,7 +36,7 @@ Questions to start judging your site’s officialness:
 * What is the ratio of content on your homepage that is actionable vs. outdated or not a distinct user need?
 
 
-###**Provide digital services**. 
+## Provide digital services
 City websites should *be* the government, not just provide information *about* the government. 
 
 Questions to start judging your site’s digital services:
@@ -46,7 +47,7 @@ Questions to start judging your site’s digital services:
 * What is the breakdown in transactions happening online than in-person (in city hall or over the phone?)
 
 
-###**Treat residents with dignity**. 
+## Treat residents with dignity
 City websites should be respectful of residents’ time and offer a simple and delightful experience. When sites have good usability, residents are able to quickly find what they’re looking for. City websites services and content should always provide an opportunity to give feedback. This creates a space for government to learn how to make the site a better experience for users.  
 
 Questions to start judging your site’s respectfulness:
@@ -58,10 +59,11 @@ Questions to start judging your site’s respectfulness:
 * Can residents do what they want to do online?
 
 
-###**Be resilient**. 
-City websites can go down due to hardware malfunction, server mainternance and overload, coding errors, or even unpredictable reasons. You should have a clear action plan on how to address these problems, and how to communicate them out to your users.  
+## Be resilient 
+City websites can be unavailable because of hardware problems, server maintenance and overload, coding errors, or other unpredictable reasons. You should have a clear plan on how to address these problems when they happen, and how to communicate them out to your users.  
 	
 Questions to start judging your site’s resiliency:
+
 * When your site is most heavily trafficked? 
 * How often is your site down?
 * How do you communicate to your residents when your site is not working?
@@ -71,7 +73,7 @@ Questions to start judging your site’s resiliency:
 
  
 
-#### Resources
+## Resources
 
 
  - Assess the usability of your digital services with Code for America's [Local Services Census](https://service-census.herokuapp.com/) and [how-to guide](https://jekit.codeforamerica.org/codeforamerica/codeforamerica.org/dfd-week-2/our-work/initiatives/digitalfrontdoor/playbook/user-needs/assess-digital-services.html)
