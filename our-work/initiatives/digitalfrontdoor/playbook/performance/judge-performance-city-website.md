@@ -9,12 +9,9 @@ community-cta:	"Join the conversation and talk to other local government staff i
 
 ---
 
-The internet has changed and improved many aspects of peoples’ lives: from education to commerce, from transportation to employment. Cities must now also meet their residents where they are spending more and more time: online. In a digital era, government services should be "digital by default", available to citizens on mainstream platforms and technologies we already use. 
+Fundamentally, city websites are not merely a broadcasting tool, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents. 
 
-One of the most fundamental things a city should understand about their website is that it is not merely a broadcasting tool, 
-but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for conducting business with government. 
-
-To provide a pleasant experience for residents, we believe that city websites should: 
+Generally speaking, we believe that city websites should: 
 
 ###**Be universally accessible**. 
 Simply put, city websites should work for everyone. The information and services on your website should be available to all users, including those with disabilities. They should be easy to use, easy to understand, be available in the major languages spoken by your community, and usable on different devices and browsing technology (i.e. older web browsers). 
