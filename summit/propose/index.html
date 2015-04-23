@@ -1,0 +1,145 @@
+---
+layout: summit-2015
+masthead-image: "/media/images/summit/2015/sponsor/summit-sponsor-header-photo.jpg"
+helpers:
+  forms: true
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: "2015 Summit: Propose a Session"
+
+# Content for the masthead-custom
+headline: Your chance to be a speaker   
+description: 
+
+# Metadata image
+metadata:
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
+  image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+---
+
+<style>
+  h1,h2,h3,h4,h5,h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+
+  h5 {
+    text-transform: none;
+    font-weight: bold;
+  }
+  p.quiet {
+    font-size: 14px;
+    line-height: 2;
+  }
+  .color-red {
+    color: #cf1b41;
+  }
+  .tight {
+    margin-bottom: 1em;
+  }
+  .tight * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .letter {
+    margin-top: 3em;
+    padding: 60px;
+    background-color: rgba(0,0,0,0.01);
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.06);
+  }
+  .letter:after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+  @media screen and (max-width: 40em) {
+    .letter {
+      padding: 20px;
+    }
+  }
+</style>
+
+<section class="layout-semibreve">
+  <p>Be a part of the biggest Code for America Summit yet! We're looking for a wide range of speakers to share their stories about transforming government for the 21st century. In particular, we want to feature champions in the field who are:</p>
+  
+  <ul>
+    <li>Making digital government services more usable and accessible</li>
+    <li>Helping governments and communities collaborate in new ways</li>
+    <li>Transforming the organizational culture and practices of government</li>
+    <li>Applying data-driven, user-centered, and iterative approaches to civic challenges</li>
+    <li>Making real impact in the areas of safety and justice, economic development, health, and/or government operations</li>
+  </ul>
+
+  <p>We'll be accepting proposals until <strong>June 1, 2015</strong>, and reviewing submissions on a rolling basis. If you have any questions, please reach out to Debs Schrimmer, Summit Conference Content Coordinator (<a href="mailto:debs@codeforamerica.org">debs@codeforamerica.org</a>).</p>
+
+  <h5>Tips:</h5>
+
+  <ul>
+    <li><strong>Breakouts</strong> are 1-hour, focused sessions with a group of 20-50 participants. These sessions should be actionable and focused on doing. Tell us how participants will walk away from your session with new skills to put into action.</li>
+    <li><strong>Lightning Talks</strong> are 5-minute, rapid-fire talks on the main stage. These sessions should focus on showing, not telling. What did you build or do? Why does it matter?</li>
+    <li>We like sessions that reflect our <a href="www.codeforamerica.org/governments/principles/">Principles for 21st Century Governments</a>.</li>
+  </ul>
+
+  <form accept-charset="UTF-8" action="//formkeep.com/f/ab7bf5a78abf" method="POST">
+    <input type="hidden" name="utf8" value="✓">
+    <input type="hidden" name="timestamp" id="timestamp" value="">
+    <input type="hidden" name="data-utm-referrer" id="data-utm-referrer" value="">
+    <input type="hidden" name="data-document-referrer" id="data-document-referrer" value="">
+
+    <ul class="list-form">
+      <li class="form-field">
+        <label for="first-name">First name <abbr title="Required">*</abbr></label>
+        <input id="first-name" name="first-name" class="input" type="text" placeholder="" required />
+      </li>
+
+      <li class="form-field">
+        <label for="last-name">Last name <abbr title="Required">*</abbr></label>
+        <input id="last-name" name="last-name" class="input" type="text" placeholder="" required>
+      </li>
+
+      <li class="form-field">
+        <label for="organization">Organization <abbr title="Required">*</abbr></label>
+        <input id="organization" name="organization" class="input" type="text" placeholder="" required>
+      </li>
+
+      <li class="form-field">
+        <label for="email">Email address <abbr title="Required">*</abbr></label>
+        <input id="email" name="email" class="input" type="email" placeholder="" required>
+      </li>
+      
+      <li class="form-field">
+        <label for="session-title">Session Title<abbr title="Required">*</abbr></label>
+        <input id="session-title" name="session-title" class="input" type="text" placeholder="" required>
+      </li>
+
+      <li class="form-field">
+        <label for="session-paragraph">What will you talk about? Why does it matter? Who is the audience?<abbr title="Required">*</abbr></label>
+        <textarea id="session-paragraph" name="session-paragraph" rows="8" cols="32" required></textarea>
+      </li>
+
+      <li class="form-field">
+        <label for="marketing-paragraph">Quick marketing blurb for your session <abbr title="Required">*</abbr></label>
+        <textarea id="marketing-paragraph" name="marketing-paragraph" rows="8" cols="32" required></textarea>
+      </li>
+
+      <li class="form-field">
+        <label for="partners">Will you have any co-presenters? Who?</label>
+        <input id="partners" name="partners" class="input" type="text" placeholder="">
+      </li>
+      
+      <fieldset class="select field">
+        <legend>Session Type <abbr title="Required">*</abbr></legend>
+        <li><label for="session-lightning"><input id="session-lightning" name="session-type" value="session-lightning" type="radio" class="radio" /> Lightning Talk: a 5-minute talk on the main stage.</label></li>
+        <li><label for="session-breakout"><input id="session-breakout" name="session-type" value="session-breakout" type="radio" class="radio" /> Breakout Session: a 1-hour workshop or session with a smaller group.</label></li>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </ul>
+  </form>
+  
+</section>
