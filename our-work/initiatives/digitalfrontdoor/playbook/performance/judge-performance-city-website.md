@@ -9,8 +9,7 @@ community-cta:	"Join the conversation and talk to other local government staff i
 
 ---
 
-Fundamentally, city websites are not merely a broadcasting tool, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents. 
-
+Fundamentally, city websites are not merely a broadcasting tool, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents to get information and conduct business with government. 
 Generally speaking, we believe that city websites should: 
 
 ###**Be universally accessible**. 
