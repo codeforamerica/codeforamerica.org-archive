@@ -1,6 +1,8 @@
 ---
 layout: summit-2015
 masthead-image: "/media/images/summit/2015/sponsor/summit-sponsor-header-photo.jpg"
+helpers:
+  forms: true
 
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
@@ -63,28 +65,26 @@ metadata:
 </style>
 
 <section class="layout-semibreve">
-  <p>Be a part of the biggest Code for America Summit yet! We're looking for a wide range of speakers to share their stories about transforming government for the 21st century. In particular, we want to feature champions in the field who are: </p>
+  <p>Be a part of the biggest Code for America Summit yet! We're looking for a wide range of speakers to share their stories about transforming government for the 21st century. In particular, we want to feature champions in the field who are:</p>
   
-<ul>
-  <li>Making digital government services more usable and accessible</li>
-  <li>Helping governments and communities collaborate in new ways</li>
-  <li>Transforming the organizational culture and practices of government</li>
-  <li>Applying data-driven, user-centered, and iterative approaches to civic challenges</li>
-  <li>Making real impact in the areas of safety and justice, economic development, health, and/or government operations</li>
-</ul>
+  <ul>
+    <li>Making digital government services more usable and accessible</li>
+    <li>Helping governments and communities collaborate in new ways</li>
+    <li>Transforming the organizational culture and practices of government</li>
+    <li>Applying data-driven, user-centered, and iterative approaches to civic challenges</li>
+    <li>Making real impact in the areas of safety and justice, economic development, health, and/or government operations</li>
+  </ul>
 
-<p>We'll be accepting proposals until <strong>June 1, 2015</strong>, and reviewing submissions on a rolling basis. If you have any questions, please reach out to Debs Schrimmer, Summit Conference Content Coordinator (debs@codeforamerica.org).</p>
+  <p>We'll be accepting proposals until <strong>June 1, 2015</strong>, and reviewing submissions on a rolling basis. If you have any questions, please reach out to Debs Schrimmer, Summit Conference Content Coordinator (<a href="mailto:debs@codeforamerica.org">debs@codeforamerica.org</a>).</p>
 
-<h5>Tips:</h5>
+  <h5>Tips:</h5>
 
-<ul>
-  
-<li><strong>Breakouts</strong> are 1-hour, focused sessions with a group of 20-50 participants. These sessions should be actionable and focused on doing. Tell us how participants will walk away from your session with new skills to put into action.</li>
-<li><strong>Lightning Talks</strong> are 5-minute, rapid-fire talks on the main stage. These sessions should focus on showing, not telling. What did you build or do? Why does it matter?</li>
-<li>We like sessions that reflect our <a href="www.codeforamerica.org/governments/principles/">Principles for 21st Century Governments</a>. </li>
-</ul>
+  <ul>
+    <li><strong>Breakouts</strong> are 1-hour, focused sessions with a group of 20-50 participants. These sessions should be actionable and focused on doing. Tell us how participants will walk away from your session with new skills to put into action.</li>
+    <li><strong>Lightning Talks</strong> are 5-minute, rapid-fire talks on the main stage. These sessions should focus on showing, not telling. What did you build or do? Why does it matter?</li>
+    <li>We like sessions that reflect our <a href="www.codeforamerica.org/governments/principles/">Principles for 21st Century Governments</a>.</li>
+  </ul>
 
-<div class="layout-semibreve">
   <form accept-charset="UTF-8" action="//formkeep.com/f/ab7bf5a78abf" method="POST">
     <input type="hidden" name="utf8" value="✓">
     <input type="hidden" name="timestamp" id="timestamp" value="">
@@ -94,7 +94,7 @@ metadata:
     <ul class="list-form">
       <li class="form-field">
         <label for="first-name">First name <abbr title="Required">*</abbr></label>
-        <input id="first-name" name="first-name" class="input" type="text" placeholder="" required>
+        <input id="first-name" name="first-name" class="input" type="text" placeholder="" required />
       </li>
 
       <li class="form-field">
@@ -112,7 +112,7 @@ metadata:
         <input id="email" name="email" class="input" type="email" placeholder="" required>
       </li>
       
-       <li class="form-field">
+      <li class="form-field">
         <label for="session-title">Session Title<abbr title="Required">*</abbr></label>
         <input id="session-title" name="session-title" class="input" type="text" placeholder="" required>
       </li>
@@ -127,19 +127,15 @@ metadata:
         <textarea id="marketing-paragraph" name="marketing-paragraph" rows="8" cols="32" required></textarea>
       </li>
 
- <li class="form-field">
-        <label for="partners">Will you have any co-presenters? Who? <abbr title="Required">*</abbr></label>
-        <input id="partners" name="partners" class="input" type="text" placeholder="" required>
+      <li class="form-field">
+        <label for="partners">Will you have any co-presenters? Who?</label>
+        <input id="partners" name="partners" class="input" type="text" placeholder="">
       </li>
       
- <fieldset>
+      <fieldset class="select field">
         <legend>Session Type <abbr title="Required">*</abbr></legend>
-        <li>
-          <label for="session-lightning" class="check"><input id="session-lightning" name="session-lightning" type="radio" class="radio" checked />Lightning Talk: a 5-minute talk on the main stage.</label>
-        </li>
-        <li>
-          <label for="session-breakout" class="check"><input id="session-breakout" name="session-breakout" type="radio" class="radio"/>Breakout Session: a 1-hour workshop or session with a smaller group.</label>
-        </li>
+        <li><label for="session-lightning"><input id="session-lightning" name="session-type" value="session-lightning" type="radio" class="radio" /> Lightning Talk: a 5-minute talk on the main stage.</label></li>
+        <li><label for="session-breakout"><input id="session-breakout" name="session-type" value="session-breakout" type="radio" class="radio" /> Breakout Session: a 1-hour workshop or session with a smaller group.</label></li>
       </fieldset>
 
       <input type="submit" value="Submit">
