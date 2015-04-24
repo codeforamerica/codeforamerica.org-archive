@@ -76,6 +76,6 @@ Questions to start judging your site’s resiliency:
 
  - Assess the usability of your digital services with Code for America's [Local Services Census](https://service-census.herokuapp.com/) and [how-to guide](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/assess-digital-services.html)
  - Learn how to [use data to drive decisions](https://playbook.cio.gov/#play12) from the USDS Digital Playbook 
- - Lear how to [use data](https://www.gov.uk/service-manual/measurement/using-data.html) from the UK Government Digital Service
+ - Learn how to [use data](https://www.gov.uk/service-manual/measurement/using-data.html) from the UK Government Digital Service
  - Learn about [Key performance indicators](https://www.gov.uk/service-manual/measurement/other-kpis.html) for your digital services from the UK Government Digital Service
  
