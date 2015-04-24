@@ -76,27 +76,13 @@ community-cta:	"Join the conversation and talk to other local government staff i
 	</head>
 
 	<body>
-		
-		<!-- this is the default header nav, copied in. It isn't right for this yet.
-					
-		<nav class="nav-global-primary">
-		  <ul class="layout-breve layout-tight">
-		    <li><a href="/blog">Blog</a></li>
-		    <li><a href="/library">Library</a></li>
-		    <li>
-		      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
-		          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-		          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
-		      </form>
-		    </li>
-		  </ul>
-		</nav>
-		
-		-->
+	
+
 
 		
 		
 		<div class="layout-semibreve">
+
 			
 			{% include nav-breadcrumbs.html %}
 
@@ -123,6 +109,12 @@ community-cta:	"Join the conversation and talk to other local government staff i
 			<main id="content" class="layout-major">
 
 				{{ content }}
+				
+				<!-- content team survey banner -->
+				<div class="alert-info">
+					<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
+				</div>
+				<!-- end content team survey banner -->
 
 				<hr/>
 				

@@ -1,7 +1,7 @@
 ---
 layout: resource-detailed-guidance
-title: Where do I start?
-subtitle: Learn how to start a redesign of your city website
+title: "Where do I start?"
+subtitle: "Learn how to start a redesign of your city website"
 nav-breadcrumbs:
  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"

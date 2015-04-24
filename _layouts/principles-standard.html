@@ -109,6 +109,12 @@ nav-breadcrumbs:
 					</div>     
 		  		{% endif %}
 		  		
+		  		{% if page.status == "alpha" %}
+					<div class="alert-info">
+						<p><b>Alpha: Last updated on {{ page.last-updated }}.</b></p>
+					</div>     
+		  		{% endif %}
+		  		
 				<!-- start toc block -->
 				<div class="layout-minor">
 					<nav role="navigation" class="toc" id="toc">
