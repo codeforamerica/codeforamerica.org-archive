@@ -9,7 +9,7 @@ community-cta:	"Join the conversation and talk to other local government staff i
 
 ---
 
-City websites are not just a tool for broadcasting information, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents to get information and conduct business with government. 
+City websites are not just a tool for broadcasting information, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements, municipal websites can be a pleasant experience for residents to get information and conduct business with government. 
 
 City websites should: 
 
@@ -19,12 +19,12 @@ City websites should work for everyone. The information and services on your web
 
 Start judging your website's accessibility by asking:
 	
-* Does your site offer content in all major languages spoken by your residents?
+* Does your site offer content in all major languages spoken by your residents? 
 * Is your site responsive to assistive technologies?
-* Does your site provide a consistent experience to desktop and mobile devices (i.e. they have similar bounce rates)?
+* Does your site provide a consistent experience to desktop and mobile devices? Higher bounce rates on mobile might indicate your site is not mobile responsive.
 * Is your site’s content written at an appropriate reading level?
 * Is your color scheme accessible for people with color blindness?
-* Is your web traffic coming from all over town and in different languages?
+* Is your web traffic coming from all over town and in different languages? A lack of traffic from all over town could indicate areas to improve citizen engagement.
 
 
 ## Establish a sense of place
@@ -34,7 +34,7 @@ Assess your site's authority by asking:
 
 * How many pages do you have on your website? 
 * Are pages being updated to stay current, or retired when they are no longer needed?
-* What is the ratio of content on your homepage that is actionable vs. outdated or not a distinct user need?
+* What is the ratio of content on your homepage that is actionable vs. outdated or not a distinct user need? If your homepage does not direct people to the most commonly searched for information and services, you might consider moving your content around to make a better user experience. 
 
 
 ## Provide digital services
@@ -45,7 +45,7 @@ Start assessing how well your city provides digital services by asking:
 * Does your site offer digital services?
 * How long does it take to complete each service or transaction?
 * What is the completion rate (start and finish) of the services that your site provides?
-* What is the breakdown in transactions happening online than in-person (in city hall or over the phone?)
+* What is the breakdown in transactions happening online than in-person (in City Hall or over the phone)? 
 
 
 ## Treat residents with dignity
@@ -53,10 +53,10 @@ City websites should be respectful of residents’ time and offer a simple exper
 
 Start judging how your site respects its users by asking:
 
-* Are there feedback loops on your site to better understand users’ experience? (i.e. surveys, comment boxes, email address, etc?)
+* Are there feedback loops on your site to better understand users’ experience? (i.e. surveys, comment boxes, email address, etc?) By asking users about their web experience, you will get qualitative answers that explain your site's analytics. 
 * What is the tone of your site’s content? Is it bossy? Patronizing? 
-* How many clicks does it take for a user to find what they are looking for?
-* Can users find what they are looking for at all?
+* How many clicks does it take for a user to find what they are looking for? Typically, if it takes more than three clicks to reach something, you should re-evaluate your site's information architecture. 
+* Can users find what they are looking for at all? 
 * Can residents do what they want to do online?
 
 
@@ -67,10 +67,10 @@ Questions to start judging your site’s resiliency:
 
 * When your site is most heavily trafficked? 
 * How often is your site down?
-* How do you communicate to your residents when your site is not working?
+* How do you communicate to your residents when your site is not working? 
 * What is your plan for fixing web errors and malfunctions?
 * What is the tone of your error messages? 
-* If digital services are currently unavailable, does your site provide alternative ways for residents to perform the transaction? 
+* If digital services are currently unavailable, does your site provide alternative ways for residents to perform the transaction? This might include a phone number or a physical location.  
 
 ## Resources
 
