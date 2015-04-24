@@ -23,3 +23,7 @@ Learn how to deal with common concerns about a fellowship-style program, includi
 
 ### [Deliver a successful fellowship project](/playbooks/fellowship/toolkit/deliver-successful-fellowship-project.html)
 This guide covers what goes in to a successful fellowship project, how you can prepare government partners for the program and how you can scope fellowship projects for success. 
+
+***
+
+This toolkit was produced by Lynn Fine and Alex Tran.

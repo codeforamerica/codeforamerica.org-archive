@@ -1,5 +1,6 @@
 name,org,year,
 Jonathan Abrams,People,2014,abram
+Amazon Smile Foundation,People,2015,ama
 Ameriprise Financial,People,2014,amer
 Strahimir Antoljak,People,2014,antol
 Blake Arnold,People,2014,arn
@@ -9,6 +10,9 @@ John Battelle,People,2014,batt
 Glenn Batuyong,People,2014,batu
 Richard Belew,People,2014,belew
 Story Bellows,People,2014,bell
+Benevity Community Impact Fund,People,2015,ben
+Darren Biel,People,2015,biel
+Regina Blaber,People,2015,blab
 Ryan Blair,People,2014,blai
 Blum-Merians Foundation,People,2014,blu
 Rob Brackett,People,2014,brack
@@ -23,6 +27,8 @@ Claudiu Ceia,People,2014,ceia
 Scott Chamberlain,People,2014,chamberl
 Craig Chatterton,People,2014,chatt
 Bryan Cockerham,People,2014,cocker
+David Cohen,People,2015,coh
+David Cohen,People,2015,cohe
 Conway Family Foundation,People,2014,con
 Thomas Congleton,People,2014,cong
 Russell Cox,People,2014,cox
@@ -31,6 +37,7 @@ Gerald D'Antonio,People,2014,dant
 Aakash Desai,People,2014,desa
 Daniel Devine,People,2014,devine
 Elizabeth Dixon,People,2014,dixon
+Jennifer Domel,People,2015,dome
 Kari and Joe Dougherty,People,2014,dough
 Shustek Dubinsky Family Philanthropic Fund,People,2014,dubi
 Elbaz Family Foundation,People,2014,elb
@@ -52,12 +59,16 @@ Robert Glushko and Pamela Samuelson,People,2014,glus
 Dinshaw Gobhai,People,2014,gob
 Golden Rule Foundation,People,2014,gol
 Karl Goodloe,People,2014,goodloe
+Jim Greer,People,2015,gree
 Charles Gregory,People,2014,gregory
 Sheila Grinell,People,2014,grine
 Katherine Griswold,People,2014,grisw
 Mark Headd,People,2014,head
+Mark Headd,People,2015,headd
 Adam Hecktman,People,2014,heckt
+William Hered,People,2015,here
 Jason Hibbets,People,2014,hibb
+Reid Hoffman,People,2015,hoff
 Rachel Horning,People,2014,horni
 Paul Hrebenak,People,2014,hrebenak
 Jukay Hsu,People,2014,hsu
@@ -66,7 +77,10 @@ Yu-hsun Hung,People,2014,hung
 Mikael Hveem,People,2014,hveem
 PJ Hyett,People,2014,hyet
 Susan James,People,2014,jame
+Charles Jameson,People,2015,jame
 Dr. William H. Janeway,People,2014,jane
+Dr. William H. Janeway,People,2015,jane
+Waldo Jaquith,People,2015,jaqu
 Marlene Jeffers,People,2014,jeff
 Alicia Johnson,People,2014,johns
 Rony Kahan,People,2014,kah
@@ -85,6 +99,7 @@ Andrew Lee,People,2014,lee
 Ryan Lengel,People,2014,leng
 Dana Levine,People,2014,levine
 Francis Li,People,2014,li
+Aki Libo-on,People,2015,lib
 Ricky Lim,People,2014,lim
 Beth Lingard,People,2014,linga
 Wade Lovell,People,2014,lovell
@@ -92,7 +107,10 @@ Chris Lundberg,People,2014,lundberg
 Greg Marra,People,2014,marr
 Nick Martinelli,People,2014,marti
 Jane Massey,People,2014,mass
+Hatsuji Matsumoto,People,2015,mats
+Raphael Mazet,People,2015,maze
 Raphael Mazet,People,2014,mazet
+John Mertens,People,2015,merte
 Helen Michaud,People,2014,mich
 Mark Moore,People,2014,moore
 John Muller,People,2014,mull
@@ -103,6 +121,7 @@ Tammy Oler,People,2014,oler
 Dante Ordonez,People,2014,ordon
 Tim O'Reilly,People,2014,ore
 Jessica Peakes,People,2014,peakes
+Gil Penchina,People,2015,penc
 Paul Picciani,People,2014,picc
 Henry Poole,People,2014,poole
 Jake Porway,People,2014,porway
@@ -123,6 +142,7 @@ Ward Silver,People,2014,silver
 Katherine Smith,People,2014,smith
 Steve Smoot,People,2014,smoo
 Kathleen Stone,People,2014,ston
+Brenda Stone,People,2015,stonn
 Paul Swartz,People,2014,swartz
 Janet Taylor,People,2014,tayl
 Taylor Teal,People,2014,teal
@@ -134,6 +154,7 @@ Tides Foundation,People,2014,tid
 Erek Tinker,People,2014,tinker
 Ian Todd,People,2014,todd
 Brendan Tompkins,People,2014,tomp
+Zachary Townsend,People,2015,town
 Greg Tracy,People,2014,tracy
 Volkan Unsal,People,2014,unsal
 Hal Varian,People,2014,var
@@ -145,6 +166,8 @@ Lawrence Wilkinson,People,2014,wil
 Ryan Wold,People,2014,wold
 Cheryl Yagi,People,2014,yagi
 Serena Zhao,People,2014,zha
+Serena Zhao,People,2015,zhao
+Jess Zimbabwe,People,2015,zimb
 Jess Zimbabwe,People,2014,zimbab
 Sarah-Beth Zoto,People,2014,zoto
 Ashoka Foundation,Foundations,2014,
@@ -187,10 +210,20 @@ QX.net Foundation,Fellowship Supporters,2014,
 Toyota,Fellowship Supporters,2014,
 University of Kentucky,Fellowship Supporters,2014,
 Warren Rosenthal,Fellowship Supporters,2014,
+Ashoka Foundation,Foundations,2015,
+Bon Secours Health System,Fellowship Supporters,2015,
+Foundry Group,Fellowship Supporters,2015,
+Miami Foundation,Fellowship Supporters,2015,
+Miami Downtown Development Authority,Fellowship Supporters,2015,
+WellPoint Systems Inc.,Fellowship Supporters,2015,
+Tendril Networks,Fellowship Supporters,2015,
 Accela,Companies,2014,
+Accela,Companies,2015,
 Acquia,Companies,2014,
 Adobe,Companies,2014,
+Adobe,Companies,2015,
 Altimeter Group,Companies,2014,
+Amazon Web Services,Companies,2015,
 Amazon Web Services,Companies,2014,
 AT&T,Companies,2014,
 Bad Robot,Companies,2014,
@@ -202,17 +235,25 @@ coUrbanize,Companies,2014,
 CourthouseUSA,Companies,2014,
 Esri,Companies,2014,
 GitHub,Companies,2014,
+Google for Entrepreneurs,Companies,2015,
 Google For Entrepreneurs,Companies,2014,
 GovDelivery,Companies,2014,
 Granicus,Companies,2014,
+HackHands,Companies,2015,
+Health Information Management System LLC,Companies,2015,
+Heroku,Companies,2015,
 Heroku,Companies,2014,
 IBM,Companies,2014,
 Insights,Companies,2014,
 Justinmind,Companies,2014,
+"Level Five Solutions, Inc.",Companies,2015,
+Mapzen,Companies,2015,
 Mapzen,Companies,2014,
+Microsoft,Companies,2015,
 Microsoft,Companies,2014,
 Ministry of Velocity,Companies,2014,
 MyCity,Companies,2014,
+National Instruments,Companies,2015,
 Nextdoor,Companies,2014,
 Omakase Charity,Companies,2014,
 Open Counter Enterprises,Companies,2014,
@@ -222,54 +263,19 @@ OpenPlans,Companies,2014,
 Oppsites,Companies,2014,
 Orange GigaStudio,Companies,2014,
 Palantir,Companies,2014,
-Rally for Impact Foundation,Companies,2014,
+Rally Software,Companies,2015,
+Rally Software,Companies,2014,
+Readme.io,Companies,2015,
 Recollect,Companies,2014,
 Red Hat,Companies,2014,
 Regroup,Companies,2014,
 SAP,Companies,2014,
 Slack,Companies,2014,
+SmartProcure,Companies,2015,
 Socrata,Companies,2014,
 Splunk,Companies,2014,
 Tropo,Companies,2014,
 Twilio,Companies,2014,
 VMWare Foundation,Companies,2014,
-Accela,Companies,2015,
-Adobe,Companies,2015,
-Aki Libo-on,People,2015,
-Amazon Smile Foundation,People,2015,
-Ashoka Foundation,Foundations,2015,
-Benevity Community Impact Fund,People,2015,
-Bon Secours Health System,Fellowship Supporters,2015,
-Charles Jameson,People,2015,
-Darren Biel,People,2015,
-David Cohen,People,2015,
-Dr. William H. Janeway,People,2015,
-Foundry Group,Fellowship Supporters,2015,
-Gil Penchina,People,2015,
-HackHands,Companies,2015,
-Hatsuji Matsumoto,People,2015,
-Health Information Management System LLC,Companies,2015,
-Jennifer Domel,People,2015,
-Jess Zimbabwe,People,2015,
-Jim Greer,People,2015,
-John Mertens,People,2015,
-"Level Five Solutions, Inc.",Companies,2015,
-Miami Foundation,Fellowship Supporters,2015,
-Microsoft,Companies,2015,
-National Instruments,Companies,2015,
-Rally for Impact Foundation,Companies,2015,
-Raphael Mazet,People,2015,
-Regina Blaber,People,2015,
-Reid Hoffman,People,2015,
-Serena Zhao,People,2015,
+VMWare Foundation,Companies,2015,
 Volunteers in Asia,Companies,2015,
-Waldo Jaquith,People,2015,
-WellPoint Systems Inc.,Fellowship Supporters,2015,
-William Hered,People,2015,
-Zachary Townsend,People,2015,
-Heroku,Companies,2015,
-Readme.io,Companies,2015,
-SmartProcure,Companies,2015,
-Google for Entrepreneurs,Companies,2015,
-Amazon Web Services,Companies,2015,
-Mapzen,Companies,2015,
