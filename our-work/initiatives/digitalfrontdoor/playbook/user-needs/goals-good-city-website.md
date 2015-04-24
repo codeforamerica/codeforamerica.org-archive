@@ -1,113 +1,81 @@
 ---
 layout: resource-detailed-guidance
-title: What are the goals of a good city website?
-subtitle: The principles and goals city websites should aim to achieve
+title: Judge the performance of a city website 
+subtitle: Getting started with assessing your site's performance
 nav-breadcrumbs:
- - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
- - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
 community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
 community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 
 ---
 
-The internet has changed and improved many aspects of peoples' lives: from education to commerce, from transportation to employment. Cities must now also meet their residents where they are spending more and more time: online.
+City websites are not just a tool for broadcasting information, but a space for interaction, feedback, and resident participation. Through thoughtful design, regular user research with real residents, and continuous improvements based on research, municipal websites can be a pleasant experience for residents to get information and conduct business with government. 
 
-## General goals for city websites
+City websites should: 
 
-Based on our [Principles for 21st Century Government](https://www.codeforamerica.org/governments/principles/), here are 9 principles and goals for city websites:
+## Be universally accessible
 
-### 1. Embrace digital services as central to governing
+City websites should work for everyone. The information and services on your website should be available to all users, including those with disabilities. They should be easy to use, easy to understand, be available in the major languages spoken by your community, and usable on different devices and browsing technology (i.e. older web browsers). 
 
- - Government services should be “digital by default,” available to us on the mainstream platforms and technologies we already use.  
- - Services should be useful, accessible, and add value to our lives.
- - Government should do more than broadcast out. Tools should make room for interaction, feedback, and resident participation.
+Start judging your website's accessibility by asking:
+	
+* Does your site offer content in all major languages spoken by your residents?
+* Is your site responsive to assistive technologies?
+* Does your site provide a consistent experience to desktop and mobile devices (i.e. they have similar bounce rates)?
+* Is your site’s content written at an appropriate reading level?
+* Is your color scheme accessible for people with color blindness?
+* Is your web traffic coming from all over town and in different languages?
 
-### 2. Design with empathy, establish trust
 
- - Government service design should reflect a respect for our time, dignity, and abilities.
- - When the act of renewing a driver’s license, filing a request, or getting a business license is pleasant, residents begin to trust and appreciate government.
- - Services should be compelling enough that people prefer to use them.
+## Establish a sense of place
+It’s important for your website to be official, provide up to date content, and act as the authoritative place for conducting city business online.
+
+Assess your site's authority by asking:
+
+* How many pages do you have on your website? 
+* Are pages being updated to stay current, or retired when they are no longer needed?
+* What is the ratio of content on your homepage that is actionable vs. outdated or not a distinct user need?
+
+
+## Provide digital services
+City websites should *be* the government, not just provide information *about* the government. Residents should be able to do anything they can do at city hall on your city's website, at any time, at any place and on any device of their choosing.
+
+Start assessing how well your city provides digital services by asking:
+
+* Does your site offer digital services?
+* How long does it take to complete each service or transaction?
+* What is the completion rate (start and finish) of the services that your site provides?
+* What is the breakdown in transactions happening online than in-person (in city hall or over the phone?)
+
+
+## Treat residents with dignity
+City websites should be respectful of residents’ time and offer a simple experience that works. When sites are easy to use, residents can quickly find what they’re looking for. It should always be easy and simple for your users to give feedback. This creates a space for government to learn how to make the site a better experience for users.  
+
+Start judging how your site respects its users by asking:
+
+* Are there feedback loops on your site to better understand users’ experience? (i.e. surveys, comment boxes, email address, etc?)
+* What is the tone of your site’s content? Is it bossy? Patronizing? 
+* How many clicks does it take for a user to find what they are looking for?
+* Can users find what they are looking for at all?
+* Can residents do what they want to do online?
+
+
+## Be resilient 
+City websites can be unavailable because of hardware problems, server maintenance and overload, coding errors, or other unpredictable reasons. You should have a clear plan on how to address these problems when they happen, and how to communicate them out to your users.  
+	
+Questions to start judging your site’s resiliency:
+
+* When your site is most heavily trafficked? 
+* How often is your site down?
+* How do you communicate to your residents when your site is not working?
+* What is your plan for fixing web errors and malfunctions?
+* What is the tone of your error messages? 
+* If digital services are currently unavailable, does your site provide alternative ways for residents to perform the transaction? 
+
+## Resources
+
+ - Assess the usability of your digital services with Code for America's [Local Services Census](https://service-census.herokuapp.com/) and [how-to guide](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/assess-digital-services.html)
+ - Learn how to [use data to drive decisions](https://playbook.cio.gov/#play12) from the USDS Digital Playbook 
+ - Lear how to [use data](https://www.gov.uk/service-manual/measurement/using-data.html) from the UK Government Digital Service
+ - Learn about [Key performance indicators](https://www.gov.uk/service-manual/measurement/other-kpis.html) for your digital services from the UK Government Digital Service
  
-### 3. Serve everyone
-
- - Government services should be designed to reach as many residents as possible regardless of income, location, language, or access to technology.
- - Government employees should get out of the building, test assumptions with real residents, and tweak service design to improve it on a regular basis
- 
-### 4. Encourage participation
-
- - Governments and residents should share in decision-making and service design.
- - Services should be built to anticipate participation from employees and residents in the design and development process.
- 
-### 5. Be transparent and accountable
- 
- - Let residents and staff see and support what’s going on in government, whether it’s purchasing data, viewing open source code, or accessing open data portals.
- - Governments should be clear on the goals of a service and identify areas that can be measured, displayed, and improved on by employees and the public.
- 
-### 6. Build for flexibility, welcome change
- 
- - Online services are an ongoing investment that require attention and modification over time
- - Government services should be launched as evolving pilot projects rather than one-time massive monoliths.
- - Cities should invest in ongoing research, maintenance, and development and should have the internal support to push regular technology upgrades.
- 
-### 7. Create better processes and policies
-
- - The best government technologies should be easy-to-use and useful in a city employee’s regular work routine.
- - Government technology should reduce overall workload and increase the efficiency of city employees.
- - City policies should support the creation and deployment of better online services.
-
-### 8. Unlock the capabilities of government employees
-
- - Governments should expect city employees to tweak and improve on city services.
- - Innovation, technology maintenance, and service design should be a responsibility of all employees, rather than the realm of one group or department.
- 
-### 9. Get value for tax dollars
-
- - Whether through short-term trials or pilot programs, no system or vendor solution should be deployed en masse without evidence of success.
- - When investing in technology, cities should consider their internal skills and ability to maintain and upgrade that technology in the future.
- - Governments should reduce barriers to the contracting process and encourage greater competition amongst vendors in order to increase options and drive down the cost of technology.
- 
-## Serve residents' needs
-
-Effective city websites serve their residents' needs by identifying and thinking about the effective delivery of real user needs. People come to city government websites to accomplish specific tasks and to fulfill needs - even when those needs may at first seem vague. 
-
-When we talk about cities serving residents' needs, we explicitly mean residents, not government. Example resident needs might include choosing a school, starting a new business or paying a bill. 
-
-Every page on a city website should be simple, clear and contain all the information that someone might need. 
-
-## Make it easy for everyone to participate
-
-City websites are another platform that government can use to collaborate with the community and seek participation from all residents in decisions that affect them. The language that you use on your website should be easy to understand, and city websites should be designed to support multiple languages. 
-
-## Be produced iteratively
-
-People expect information on city websites to be up-to-date and correct. The infrastructure behind your website must encourage and make it easy to update the content on your website so that it is correct.
-
-Your city website should also be seen as a continual work-in-progress. Your work can be seen in two phases: foundational work where you are identifying large, current problems and fixing them, and then a new rhythm of operations, where the website is continually iterated and improved upon to better serve existing needs, react to new needs and to monitor and improve performance and security.
-
-## Use data to decide what to do
-
-City websites are already used by residents, which means decisions can be made using real behavior. Your website should provide you with actionable analytics data that helps city employees decide how to design their website to best serve user needs. 
-
-## Publishing effective content
-
-Above all, your content will be effective if it helps your users accomplish their specific need. A large part of publishing effective content is in identifying the right and specific need in the first place. 
-
-Generally, city websites should only publish content that serves a clear resident need and:
- - is information or a service only provided by the city
- - explains what people, businesses or professionals can do, need to do, or need to do before they can do something
- - is about something regulated by the city
- - explains the purpose of a city organization
- - is, or is about, something the city provides, does or pays for
-
-Use a [survey](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/guides/survey.html) to determine what the most common needs your residents have when they're visiting your website. You can also learn a lot from [web analytics](http://www.codeforamerica.org/apps/city-analytics-dashboard/). 
-
-Make sure your staff have a communication plan so you can start building a practice of producing effective and understandable content. This strategy should include: 
- - a reading age standard (we recommend 9 years old)
- - a requirement to write in plain English that is easy to understand, without jargon or technical terms
- - advice to write in short sentences of up to around 25 words
-
-You should run user research at all stages of content development to make sure that what is being published fulfils your residents' needs. 
-
-## Prioritizing transactional needs
-
-The simplest way to prioritize which government transactions to improve or deliver via your website is by volume of transactions across channels, but frequently this information doesn't exist. If it doesn't, your first action should be to run a [survey](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/guides/survey.html) and to examine the analytics data for your website. 
