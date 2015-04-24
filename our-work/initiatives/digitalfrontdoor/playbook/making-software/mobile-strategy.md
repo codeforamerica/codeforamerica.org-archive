@@ -1,6 +1,6 @@
 ---
 layout: resource-detailed-guidance
-title: "Mobile strategy for a city's digital front door"
+title: "Mobile strategy"
 subtitle: "Code for America's position on mobile access to city services"
 nav-breadcrumbs:
  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
