@@ -21,29 +21,28 @@ Make sure that your city's website and digital services work well on mobile devi
 
 ### 2. Stimulate the market
 
-Make your data and application programming interfaces (API) available to third parties. This will stimulate the market if there is real demand for native apps.
+Make your data and application programming interfaces (API) available to third parties. This will stimulate the market if there is real demand for native apps. For example, 2014 Code for America fellows [worked with the City of Chattanooga](https://www.youtube.com/watch?v=dBAf2kwLx4k&index=38&list=PL65XgbSILalWFStqV0z0N9pvftstJ8AAh) to release their data in a way that enabled third party devlopers to build a transit app. Other companies, [Trailhead Labs](http://www.trailheadlabs.com/) leverage park data to build applications that help residents explore the outdoors. 
 
 ### 3. Allow exceptions, where they make sense
 
 In some cases, it might make sense to deliver a native app. Developing a native app might make sense when:
 
- - the main web service is already responsive;
- - there is an identified user need that can only be met with a native app;
- - there are no native apps that meet that identified user need;
+ - the primary user need cannot be met through a website-based solution alone;
+ - there are no existing third party native apps that meet the identified user need;
  - the main service is accompanied by open data and an API;
  - meeting the user need justifies the lifetime cost of the native app.
 
-For example, transportation-related information and services are good to be provided as mobile apps. This is because users are trying to perform a specific task in a time-constrained environment. While it providing maps and timetables with real-time information about public transit on the city's website is helpful, transit-specific apps provide a better user experience for transit riders. 
+For example, transportation-related information and services are good to be provided as mobile apps. This is because users are trying to perform a specific task in a time-constrained environment. While providing maps and timetables with real-time information about public transit on the city's website is helpful, transit-specific apps provide a better user experience for transit riders. 
 
 ## Justify and build support for this position
 
 ### 1. Mobile access cannot be ignored
 
-People should be able to use digital services wherever they are, on the device of their choosing: see our principles [design for people's needs](/governments/principles/#needs) and [make it easy for everyone to participate](/governments/principles/#everyone)). 
+People should be able to use digital services wherever they are, on the device of their choosing: see our principles [design for people's needs](/governments/principles/#needs) and [make it easy for everyone to participate](/governments/principles/#everyone). 
 
  - At the beginning of 2015, 64% of Americans own smartphones. These mobile devices are widely used for important life activities. 
  - Smartphones are often the only or main way some Americans get online. 10% of Americans own smartphones but do not have broadband at home, and 15% own a smartphone with only limited other ways to get online. 
- - Low-income, low educational attainment levels, younger adults and non-whites are also more likely to rely on smartphones to et online. 
+ - Low-income, low educational attainment levels, younger adults and non-whites are also more likely to rely on smartphones to get online. 
  
 ### 2. It costs less
 
