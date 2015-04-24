@@ -21,7 +21,7 @@ Make sure that your city's website and digital services work well on mobile devi
 
 ### 2. Stimulate the market
 
-Make your data and application programming interfaces (API) available to third parties. This will stimulate the market if there is real demand for native apps. For example, 2014 Code for America fellows [worked with the City of Chattanooga](https://www.youtube.com/watch?v=dBAf2kwLx4k&index=38&list=PL65XgbSILalWFStqV0z0N9pvftstJ8AAh) to release their data in a way that enabled third party devlopers to build a transit app. Other companies, [Trailhead Labs](http://www.trailheadlabs.com/) leverage park data to build applications that help residents explore the outdoors. 
+Make your data and application programming interfaces (API) available to third parties. This will stimulate the market if there is real demand for native apps. For example, 2014 Code for America fellows [worked with the City of Chattanooga](https://www.youtube.com/watch?v=dBAf2kwLx4k&index=38&list=PL65XgbSILalWFStqV0z0N9pvftstJ8AAh) to release their data in a way that enabled third party devlopers to build a transit app for the City. Other companies, like [Trailhead Labs](http://www.trailheadlabs.com/) leverage park data to build applications that help residents explore the outdoors. 
 
 ### 3. Allow exceptions, where they make sense
 
