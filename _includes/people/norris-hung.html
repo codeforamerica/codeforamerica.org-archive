@@ -1,0 +1,58 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Norris Hung</h2>
+	</div>
+
+	<div class="layout-minor">
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/norris-hung.jpg" />
+	</div>
+
+	<div class="layout-major">
+<p class="p-note">My name is Norris and design is how I choose to make the world a better place. I strive to make better products and content through simplifying and humanizing. I have a special enthuasiasm for design thinking, typography, information design, and web development.</p>
+
+<p class="p-note">Outside of design, I spend a lot of time thinking about conscious capitalism, sustainable food and agriculture, and journalism.</p>
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Website</th><td><a href="http://example.com">http://norrishung<wbr>.com</a></td></tr>
+	    		<tr><th>Github</th><td><a href="http://github.com/norrishung">http://github<wbr>.com/<wbr>norrishung</a></td></tr>
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">___ ___</h3>
+
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/___-___.jpg">
+
+    <div class="p-note profile-note">
+        <p>
+            Short bio text.
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/___-___/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-website"><a href="http://example.com/">Website</a></li>
+            <li class="social-linkedin"><a href="http://www.linkedin.com/pub/xxx">LinkedIn</a></li>
+            <li class="social-github"><a href="https://github.com/xxx">GitHub</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/xxx">@xxx</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
