@@ -121,3 +121,22 @@ if (document.getElementById('fade')) {
         localStorage.setItem('externalReferrer',doc.referrer);
     }
 })(this.document);
+
+// Send a Google Analytics event when links with class .js-track-outbound are clicked
+$(document).ready(function(){
+    $('.js-track-outbound').click(function(e){
+        e.preventDefault();
+        // The page they're on now
+        var ref = document.location.href;
+        // Where they're going
+        var url = this.href;
+        // What we'll tell GA
+        var message = 'Current location ' + ref + ' / Going to ' + url;
+        // Send to GA
+        ga('send', 'event', 'Outbound', 'Click', message, {'hitCallback':
+            function () {
+                document.location = url;
+            }
+        });
+    });
+});
