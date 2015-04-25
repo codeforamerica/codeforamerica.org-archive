@@ -152,8 +152,9 @@ $(document).ready(function(){
         \___/\____/____/___/   |__/|__/___/ /_/ /_//_/  \____/___/  
 
 
-           Do important work. (And sometimes spend an hour trying to print cheesy
-           ASCII art in the JavaScript Console.)
+
+           Do important work. Make stuff that helps a lot of people.
+           (And sometimes make ASCII art, too.)
 
            Apply to be a Code for America fellow: http://codeforamerica.org/apply
 
@@ -162,7 +163,7 @@ $(document).ready(function(){
 
         var line1 = "*****************************************************************************\n"
         var art = "  _________  ___  ____  _      ______________ __  __  ______ \n / ___/ __ \\/ _ \\/ __/ | | /| / /  _/_  __/ // / / / / / __/ \n/ /__/ /_/ / // / _/   | |/ |/ // /  / / / _  / / /_/ /\\ \\  \n\\___/\\____/____/___/   |__/|__/___/ /_/ /_//_/  \\____/___/  \n";
-        var line2 = "\n\n   Do important work. (And sometimes spend an hour trying to print cheesy\n   ASCII art in the JavaScript Console.)\n\n   Apply to be a Code for America fellow: http://codeforamerica.org/apply";
+        var line2 = "\n\n   Do important work. Make stuff that helps a lot of people.\n   (And sometimes make ASCII art, too.)\n\n   Apply to be a Code for America fellow: http://codeforamerica.org/apply";
         var line3 = "\n*****************************************************************************"
         console.log(line1);
         console.log(art);
