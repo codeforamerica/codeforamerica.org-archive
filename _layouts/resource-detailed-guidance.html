@@ -49,6 +49,7 @@ community-cta:	"Join the conversation and talk to other local government staff i
 		<link rel="stylesheet" href="https://style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
 		
 		<link rel="stylesheet" href="/stylesheets/documentation.css">
+		<link rel="stylesheet" href="/stylesheets/staging.css">
 	
 		<!--[if lt IE 9]>
 		    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,6 +67,12 @@ community-cta:	"Join the conversation and talk to other local government staff i
 			ul li{
 				list-style:none;
 			}
+			/* shame - hack to fix the email signup button using cfa-light stylesheet */
+			.signup-global input[type=submit].button-invert {
+				padding-top: 0;
+				padding-bottom: 0;
+				margin-top: 0;
+			}
 		</style>
 	<!-- end light version of the main CFA stylesheet -->
 	
@@ -76,88 +83,70 @@ community-cta:	"Join the conversation and talk to other local government staff i
 	</head>
 
 	<body>
-	
+		<div class="js-container">
+			<div class="layout-semibreve">
+				{% include nav-breadcrumbs.html %}
 
-
-		
-		
-		<div class="layout-semibreve">
-
-			
-			{% include nav-breadcrumbs.html %}
-
-			<header class="heading">
+				<header class="heading">
 		    	<h1>{{ page.title }}</h1>
 		    	<h2>{{ page.subtitle }}</h2>
 		    </header>
 
-			<!-- start toc block -->
-			<div class="layout-minor">
-				<nav role="navigation" class="toc" id="toc">
-					<h3>Contents</h3>
-					
-					<div class="toc">
-					
-					    {{ page.content | toc_list }}
-					    
-					</div>
-
-				</nav>
-			</div>
-			<!-- end toc block -->
-
-			<main id="content" class="layout-major">
-
-				{{ content }}
-				
-				<!-- content team survey banner -->
-				<div class="alert-info">
-					<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
+				<!-- start toc block -->
+				<div class="layout-minor">
+					<nav role="navigation" class="toc" id="toc">
+						<h3>Contents</h3>
+						<div class="toc">
+						    {{ page.content | toc_list }}
+						</div>
+					</nav>
 				</div>
-				<!-- end content team survey banner -->
+				<!-- end toc block -->
 
-				<hr/>
-				
-				<p><a href="#toc">Skip to contents</a></p>
-		
-			</main>
+				<main id="content" class="layout-major">
+					{{ content }}
+					<!-- content team survey banner -->
+					<div class="alert-info">
+						<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
+					</div>
+					<!-- end content team survey banner -->
+					<hr/>
+					<p><a href="#toc">Skip to contents</a></p>
+				</main>
 
+			</div><!-- end .layout-semibreve -->
 
-		</div>
+			<!-- start detailed guidance specific footer section -->
+	    <div class="slab-gray">
+	    	<div class="layout-breve">
+			    <!-- start community cta -->
+			    {% if page.community-url %}
+						<p>{{ page.community-cta }}</p>
+						<a href="{{ page.community-url }}" class="button-s">Join this community</a>
+			    {% endif %}
+			    <!-- end community cta -->
 
-		<!-- start detailed guidance specific footer section -->
-		
-	    <div class="layout-breve slab-gray">
-		    
-		    <!-- start community cta -->
-		    {% if page.community-url %}
-				<p>{{ page.community-cta }}</p>
-				
-				<a href="{{ page.community-url }}" class="button-s">Join this community</a>
-				
-		    {% endif %}
-		    <!-- end community cta -->
-
-			<!-- start github feedback -->
-			<p>Help make our documentation better:</p>
-			<ul>
-				<li><a title="View this page history on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/commits/master{{ page.url | replace:'.html','.md' }}">View this page's history on GitHub.</a>
-				<li><a title="View and suggest changes to this page source on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/blob/master{{ page.url | replace:'.html','.md' }}">View and suggest changes to this page on GitHub.</a>
-			</ul>
-			<!-- end github feedback -->
-			
+					<!-- start github feedback -->
+					<p>Help make our documentation better:</p>
+					<ul>
+						<li><a title="View this page history on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/commits/master{{ page.url | replace:'.html','.md' }}">View this page's history on GitHub.</a></li>
+						<li><a title="View and suggest changes to this page source on GitHub" href="https://github.com/codeforamerica/codeforamerica.org/blob/master{{ page.url | replace:'.html','.md' }}">View and suggest changes to this page on GitHub.</a></li>
+					</ul>
+					<!-- end github feedback -->
+				</div>
 	    </div>
 	    <!-- end detailed guidance specific footer section -->
-	
-        <!-- Email signup form -->
-        <div class="slab-medium-red">
-          <div class="layout-breve">
-            {% include email-signup-form.html context="footer" %}
-          </div><!-- end .layout-breve -->
-        </div><!-- end .slab-dark-blue -->
+		
+      <!-- Email signup form -->
+      <div class="slab-medium-red">
+        <div class="layout-breve layout-tight">
+          {% include email-signup-form.html context="footer" %}
+        </div><!-- end .layout-breve -->
+      </div><!-- end .slab-dark-blue -->
 
-        {% include global-footer.html %}
-
-
+	    {% include global-footer.html %}
+	  </div><!-- end .js-container -->
+	  {% include email-signup-modal.html %}
+		{% include footer-scripts.html %}
  	</body>
 </html>
