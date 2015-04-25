@@ -1,5 +1,5 @@
 ---
-layout: 		resource-detailed-guidance
+layout: 		resource
 title: 			"How to: assess your digital services"
 subtitle: 		Conduct a baseline survey of the quality and usability of your online city services. 
 nav-breadcrumbs:

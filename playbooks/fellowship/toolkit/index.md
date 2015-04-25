@@ -1,5 +1,6 @@
 ---
-layout: resource-topic-index
+layout: resource
+resource_index: true
 title: Fellowship toolkit
 subtitle: Starting a civic technology innovation program
 nav-breadcrumbs:

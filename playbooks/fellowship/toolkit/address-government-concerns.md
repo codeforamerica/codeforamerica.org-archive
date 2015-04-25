@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: Addressing government concerns
 subtitle: Learn how to deal with common concerns about a fellowship-style program
 nav-breadcrumbs:

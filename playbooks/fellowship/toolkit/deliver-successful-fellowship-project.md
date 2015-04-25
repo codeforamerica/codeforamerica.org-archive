@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: Delivering a successful fellowship project
 subtitle: Learn what goes in to a successful fellowship project
 nav-breadcrumbs:

@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: "How to: run a resident survey"
 subtitle: Learn how to conduct a baseline survey of your residents before you start a redesign. 
 nav-breadcrumbs:

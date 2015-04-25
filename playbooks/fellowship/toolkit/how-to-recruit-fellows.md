@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: How to recruit fellows
 subtitle: Learn about recruiting a successful fellowship team
 nav-breadcrumbs:

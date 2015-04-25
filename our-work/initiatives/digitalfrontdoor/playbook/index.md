@@ -1,5 +1,6 @@
 ---
-layout: resource-topic-index
+layout: resource
+resource_index: true
 title: Digital Front Door Playbook
 subtitle: 
 nav-breadcrumbs:

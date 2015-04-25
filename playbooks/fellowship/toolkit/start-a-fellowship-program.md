@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: Starting a fellowship program
 subtitle: Essential elements that contribute to a successful fellowship program
 nav-breadcrumbs:
