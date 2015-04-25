@@ -22,7 +22,7 @@ masthead-image   - path to image for use in masthead.
 Sample front matter from one page:
 
 ---
-layout: 		resource-detailed-guidance
+layout: 		resource
 title: 			"How to: assess your digital services"
 subtitle: 		Conduct a baseline survey of the quality and usability of your online city services. 
 nav-breadcrumbs:
@@ -45,9 +45,7 @@ community-cta:	"Join the conversation and talk to other local government staff i
     
     <!-- The light version of the main CFA stylesheet -->
 		<link rel="stylesheet" href="https://style.s.codeforamerica.org/1/style/css/cfa-light.css">
-	
 		<link rel="stylesheet" href="https://style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
-		
 		<link rel="stylesheet" href="/stylesheets/documentation.css">
 		<link rel="stylesheet" href="/stylesheets/staging.css">
 	
@@ -92,26 +90,37 @@ community-cta:	"Join the conversation and talk to other local government staff i
 		    	<h2>{{ page.subtitle }}</h2>
 		    </header>
 
-				<!-- start toc block -->
-				<div class="layout-minor">
-					<nav role="navigation" class="toc" id="toc">
-						<h3>Contents</h3>
-						<div class="toc">
-						    {{ page.content | toc_list }}
-						</div>
-					</nav>
-				</div>
-				<!-- end toc block -->
+				{% comment %}
+					If this is an index page, don't show the contents.
+				{% endcomment %}
 
-				<main id="content" class="layout-major">
-					{{ content }}
-					<!-- content team survey banner -->
-					<div class="alert-info">
-						<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
+				{% unless page.resource_index %}
+					<!-- start toc block -->
+					<div class="layout-minor">
+						<nav role="navigation" class="toc" id="toc">
+							<h3>Contents</h3>
+							<div class="toc">
+							    {{ page.content | toc_list }}
+							</div>
+						</nav>
 					</div>
-					<!-- end content team survey banner -->
-					<hr/>
-					<p><a href="#toc">Skip to contents</a></p>
+					<!-- end toc block -->
+				{% endunless %}
+
+				<main id="content" {% unless page.resource_index %}class="layout-major"{% endunless %}>
+					{{ content }}
+
+					{% if page.resource_index %}
+						<hr/>
+					{% else %}
+						<!-- content team survey banner -->
+						<div class="alert-info">
+							<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
+						</div>
+						<!-- end content team survey banner -->
+						<hr/>
+						<p><a href="#toc">Skip to contents</a></p>
+					{% endif %}
 				</main>
 
 			</div><!-- end .layout-semibreve -->
