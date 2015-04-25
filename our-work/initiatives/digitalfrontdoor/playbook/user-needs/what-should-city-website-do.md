@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: What should a city website do?
 subtitle: Principles and goals for city websites
 nav-breadcrumbs:

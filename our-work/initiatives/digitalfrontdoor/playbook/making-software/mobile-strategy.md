@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: "Mobile strategy"
 subtitle: "Code for America's position on mobile access to city services"
 nav-breadcrumbs:

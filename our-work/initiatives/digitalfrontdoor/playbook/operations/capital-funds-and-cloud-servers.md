@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: "Using capital funds for cloud or virtual infrastructure"
 subtitle: "How governments and agencies have successfully used capital funds for cloud or virtual infrastructure"
 nav-breadcrumbs:

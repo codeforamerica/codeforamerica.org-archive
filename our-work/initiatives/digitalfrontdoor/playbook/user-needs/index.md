@@ -1,5 +1,6 @@
 ---
-layout: resource-topic-index
+layout: resource
+resource_index: true
 title: User Needs
 subtitle: How to focus city websites on users
 nav-breadcrumbs:

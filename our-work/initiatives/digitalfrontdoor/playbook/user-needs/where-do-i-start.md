@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: "Where do I start?"
 subtitle: "Learn how to start a redesign of your city website"
 nav-breadcrumbs:

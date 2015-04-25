@@ -1,5 +1,5 @@
 ---
-layout: resource-detailed-guidance
+layout: resource
 title: How to recruit government partners
 subtitle: Learn about recruiting a government for a fellowship program
 nav-breadcrumbs:
