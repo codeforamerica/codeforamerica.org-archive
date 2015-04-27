@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: "How to: run a resident survey"
-subtitle: Learn how to conduct a baseline survey to understand your online residentss needs. 
+subtitle: Learn how to conduct a baseline survey to understand your online residents' needs. 
 nav-breadcrumbs:
  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
