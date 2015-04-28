@@ -1,0 +1,52 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Norris Hung</h2>
+	</div>
+
+	<div class="layout-minor">
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/norris-hung.jpg" />
+	</div>
+
+	<div class="layout-major">
+	    <p class="p-note">Norris is a designer and front-end developer with a special enthusiasm for design thinking, typography, information design, and web development. As a backer of the First Things First manifesto, he chooses to use his skills to make the world a better place. He joined Code for America in 2015 and focuses on the Digital Front Door initiative. Previously, he worked at education startup Inkling to help publishers define what textbooks could be in a modern digital world. He also worked for the Seedling Projects, a do-tank for the sustainable food movement, to launch the first year of the Good Food Awards. In his spare time, he likes to ferment various foods and spend his time in nature through backpacking, cycling, and climbing. He holds a Sc.B degree in Biology from Brown University.</p>
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Website</th><td><a href="http://norrishung.com">http://norrishung<wbr>.com</a></td></tr>
+	    		<tr><th>Github</th><td><a href="http://github.com/norrishung">http://github<wbr>.com/<wbr>norrishung</a></td></tr>
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Norris Hung</h3>
+
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/norris-hung.jpg">
+
+    <div class="p-note profile-note">
+        <p>Norris is a designer and front-end developer with a special enthusiasm for design thinking, typography, information design, and web development. He joined Code for America in 2015 and focuses on the Digital Front Door initiative...</p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/norris-hung/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-website"><a href="http://norrishung.com/">Website</a></li>
+            <li class="social-github"><a href="https://github.com/norrishung">GitHub</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
