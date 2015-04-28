@@ -107,7 +107,6 @@ if (document.getElementById('fade')) {
 // Tracking inbound referral for use in non-Google Analytics APIs (namely, for fellowship application form)
 (function (doc) {
     // Check if there is a referrer
-    console.log("hello");
     if (doc.referrer !== "") { 
         // Split up the referrer so we can look at it
         var hash = (doc.referrer).split("/");
@@ -140,3 +139,35 @@ $(document).ready(function(){
         });
     });
 });
+
+// Say hi in the console
+(function(win){
+    if (win.console) {
+        /* If there's a console (there isn't in <IE9), print this:
+        *****************************************************************************
+
+          _________  ___  ____  _      ______________ __  __  ______ 
+         / ___/ __ \/ _ \/ __/ | | /| / /  _/_  __/ // / / / / / __/ 
+        / /__/ /_/ / // / _/   | |/ |/ // /  / / / _  / / /_/ /\ \  
+        \___/\____/____/___/   |__/|__/___/ /_/ /_//_/  \____/___/  
+
+
+
+           Do important work. Make stuff that helps a lot of people.
+           (And sometimes make ASCII art, too.)
+
+           Apply to be a Code for America fellow: http://codeforamerica.org/apply
+
+        *****************************************************************************
+        */
+
+        var line1 = "*****************************************************************************\n"
+        var art = "  _________  ___  ____  _      ______________ __  __  ______ \n / ___/ __ \\/ _ \\/ __/ | | /| / /  _/_  __/ // / / / / / __/ \n/ /__/ /_/ / // / _/   | |/ |/ // /  / / / _  / / /_/ /\\ \\  \n\\___/\\____/____/___/   |__/|__/___/ /_/ /_//_/  \\____/___/  \n";
+        var line2 = "\n\n   Do important work. Make stuff that helps a lot of people.\n   (And sometimes make ASCII art, too.)\n\n   Apply to be a Code for America fellow: http://codeforamerica.org/apply";
+        var line3 = "\n*****************************************************************************"
+        console.log(line1);
+        console.log(art);
+        console.log(line2);
+        console.log(line3);
+    }
+})(window);
