@@ -35,6 +35,16 @@ metadata:
     font-size: 14px;
     line-height: 2;
   }
+  
+  /* Number component */
+  .number {
+    /* To match badge-heading */
+    padding-top: 32px;
+  }
+  .number__value {
+    font-size: 32px;
+    font-weight: bold;
+  }
 </style>
 
 <section class="layout-semibreve">
@@ -57,19 +67,37 @@ metadata:
 
 <section class="slab-gray">
   <div class="layout-semibreve">
-    <h2 id="announcement" class="layout-centered">Benefits</h2>
-    <div class="badge-heading badge-glasses" style="border-bottom:none;">
-      <h4>Breakout Sessions</h4>
-      <p>Captivate the audience with a breakout session on the topic of your choice.</p>
+    <div class="layout-minim">
+      <h2 id="announcement" class="layout-centered">Benefits</h2>
+      <div class="badge-heading badge-glasses" style="border-bottom:none;">
+        <h4>Breakout Sessions</h4>
+        <p>Captivate the audience with a breakout session on the topic of your choice.</p>
+      </div>
+      <div class="badge-heading badge-graph" style="border-bottom:none;">
+        <h4>Tech Fair</h4>
+        <p>Converse with government staff, developers and designers at this year's two-day Tech Fair.</p>
+      </div>
+      <div class="badge-heading" style="border-bottom:none;">
+        <h4>Branding</h4>
+        <p>Position yourself as a leader of innovative government tools and platforms.</p>
+      </div><!-- end .layout-semibreve -->
     </div>
-    <div class="badge-heading badge-graph" style="border-bottom:none;">
-      <h4>Tech Fair</h4>
-      <p>Converse with government staff, developers and designers at this year's two-day Tech Fair.</p>
+    <div class="layout-minim">
+      <h2 class="layout-centered">Breakdown</h2>
+      <div class="number">
+        <h4 class="number__value">826</h4>
+        <p class="number__description">Attendees at the 2014 Summit &mdash; we're expecting an even larger audience in 2015</p>
+      </div>
+      <div class="number">
+        <h4 class="number__value">64%</h4>
+        <p class="number__description">Increase in Summit attendees from 2013 to 2014</p>
+      </div>
+      <div class="number">
+        <h4 class="number__value">17,000</h4>
+        <p class="number__description">Technologists, governments, staff and entreprenuers engaging with our email list</p>
+      </div>
+      <p><a href="http://c4a.me/2015summitprospectus">(Read more by-the-numbers breakdowns in our Prospectus.)</a></p>
     </div>
-    <div class="badge-heading" style="border-bottom:none;">
-      <h4>Branding</h4>
-      <p>Position yourself as a leader of innovative government tools and platforms.</p>
-    </div><!-- end .layout-semibreve -->
   </div>
 </section>
 
