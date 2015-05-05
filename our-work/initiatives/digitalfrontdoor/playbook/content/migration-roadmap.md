@@ -9,8 +9,7 @@ community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/dig
 community-cta: "Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
 
-
-##Content Migration Roadmap
+Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content one time- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. Below is a recommended roadmap for building great content on your site. 
 
 ###1. Understand User Needs
 Start with understanding your users’ online needs. By conducting an online resident survey, you can assess the devices and types of internet access used in different parts of your city, evaluate user needs to prioritize content development on your site, and understand where your city has strong and weak connections to users of its website. 
@@ -44,12 +43,11 @@ In general, your content audit process should:
 3. Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. 
 
 ###3. Develop a Content Strategy 
-Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content one time- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. You must develop a clearly defined content strategy to reflect this. 
-
 From your content audit, you should have identified your top performing pages. As you build out your content strategy, track progress against these pages. 
 
 Your content strategy should consist of key values that can guide decisions you make about your web's content. This should include: 
 
+* goals for your content 
 * identifying a point person (or department) that will see individual pages
 * a plan for regularly updating your content
 * strategies to collect on-going feedback from users about your website
@@ -63,24 +61,28 @@ Your content strategy should consist of key values that can guide decisions you 
 
 ###5. Hold Content Writing Sessions
 
-A good city website is built upon information that is accurate and easy to understand. This can be achieved by letting subject matter experts (i.e. the department) own their online content, and teaching city staff to be confident web writers. 
+The technical aspects of your website are just one component of your site. At its core, a good city website means that information is accurate and easy to understand. This begins with building a strong writing culture and supporting your staff to be confident web writers. 
 
-Writing for the web background materials. Redesign reader. >> Ask Provo and Jack and Frances 
+To do this, we recommend holding content writing workshops to help your team build capability in writing for the web. During these sessions, you can go over your style guide, analytics around your webpage, and hold group exercises to practice writing in a consistent, unified voice.  
+
+Ideally, you should identify one representative from each department to serve as the deparment's designated writer and attend the content workshops. Your writers should have subject matter expertise in the content, some familiarity with (or interest in learning) technology, and an interest in professional development opportunities. 
+
+For some departments, it may make sense your city's public information officers can maintain their content. 
+
 
 For new content writers, we suggest checking out: 
 
-* “Don’t make me think” book (Steve Krug)
-* Book Apart series 
+* ["Don't Make Me Think: Common Sense to Web Usability"](http://www.indusvalley.edu.pk/library/e%20books/Don%27t%20Make%20Me%20Think%20%20A%20Common%20Sense%20Approach%20To%20Web%20Usability.pdf) by Steve Krug
+* The [Book Apart](http://abookapart.com/) series 
+* [Nicely Said: Writing for the Web with Style and Purpose](http://www.nicelysaid.co/) by Nicole Fenton and Kate Kiefer Lee
 
 
 #####Provo, UT Spotlight
 based on learnings from Provo - 1 rep from every department every week. 
 total # of people?
-Provo: city departments would send someone; Mayor would ask for someone else. Clarify with department heads the qualities that you want. 
-Editing the website is done by available admin; urge you to find people who are subject matter experts who understand the content well, person whose job is connected to communicating out information, people who have interest in technology and the web and see this as professional development opportunity
-people from department with top traffic websites
+Provo: city departments would send someone; Mayor would ask for someone else. 
 
-Public information officer will maintain content for departments who have small traffic webpages. ie firefighters. 
+
 technical piece is only small part of process; culture change and writing workshops need to be held in order to make it a sustainable content change 
 design, IA -- strip those things out. Just start writing together. 
 
