@@ -341,6 +341,7 @@ RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 RedirectMatch permanent ^/projects/new-york-city-hhc-accelerator/?$ /projects/new-york-city-hhs-accelerator/
 RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
+RedirectMatch permanent ^/our-work/data-formats/openreferral/?$ /our-work/data-formats/HSDS/
 
 #
 # Set of possible Jekyll file extensions + PHP, from
