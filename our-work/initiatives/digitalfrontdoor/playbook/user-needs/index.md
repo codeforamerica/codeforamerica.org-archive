@@ -9,7 +9,7 @@ nav-breadcrumbs:
 
 People come to city websites with specific needs. Anything that gets between your users and meeting those needs should be removed. Use these guides to find out how to provide the right content and the right services to your users. 
 
-## [What are the goals of a good city website?](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/goals-good-city-website.html)
+## [What are the goals of a good city website?](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/what-should-city-website-do.html)
 Use this guide to learn about what goals a city website should have for government and residents and general principles. 
 
 ## [Where do I start?](/our-work/initiatives/digitalfrontdoor/playbook/user-needs/where-do-i-start.html)
