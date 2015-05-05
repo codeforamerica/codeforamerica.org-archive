@@ -12,73 +12,66 @@ nav-breadcrumbs:
 <link href='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <script src='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 
-<section class="slab-red">
-  <div class="layout-semibreve layout-centered">
+
+<section class="layout-semibreve">
+  <div class="layout-centered">
     <h2>You have the power to help your city.</h2>
     <p>Here are some simple ways to get started with civic hacking.</p>
+    <br />
   </div>
-</section>
-
-<section class="layout-breve">
 
   <div class="badge-heading badge-glasses badge-blue">
-    <h2>Have a year for public service? Apply to be a <a href="http://www.codeforamerica.org/geeks/fellowship-apply/">Code for America Fellow</a></h2>
-    <figure>
-        <iframe src="http://player.vimeo.com/video/96946723?title=0&amp;byline=0&amp;portrait=0" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-      </figure>
+    <h3>Have a year for public service? Apply to be a <a href="http://www.codeforamerica.org/geeks/fellowship-apply/">Code for America Fellow</a></h3>
   </div>
-
+  <figure>
+    <iframe src="http://player.vimeo.com/video/96946723?title=0&amp;byline=0&amp;portrait=0" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </figure>
 </section>
 
-<section class="layout-breve">
-
+<section class="layout-semibreve">
   <div class="badge-heading badge-rocket badge-red">
-    <h2>Have one night a week? Go to your local volunteer <a href="/brigade">Brigade</a> hack night.</h2>
-    <a href="/brigade"><img src="../media/images/geeks/brigade_usa_map.png"/></a>
+    <h3>Have one night a week? Go to your local volunteer <a href="/brigade">Brigade</a> hack night.</h3>
   </div>
-
+  <a href="/brigade"><img src="../media/images/geeks/brigade_usa_map.png"/></a>
 </section>
 
-<section class="layout-breve">
-
+<section class="layout-semibreve">
   <div class="badge-heading badge-github badge-blue">
-      <a id="civicissues"></a>
-      <h2>Have an hour? Code for America Right Now</h2>
-      <p>These are open GitHub Issues labeled with
-      <span class="label" style="background-color : #00a175;">help wanted</span>
-      from across the civic technology movement. Find more using the
-      <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
-
-      <style>
-        .label {
-          border: 1px solid #00a175;
-          display: inline-block;
-          background-color:#00a175;
-          color: #fff;
-          text-align: center;
-          border-radius: .33em;
-          margin: 5px;
-          padding: 0 10px;
-          font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
-          font-size:0.85em;
-        }
-      </style>
-
-      <script>
-          // Resize iframe to fit content
-          function resize() {
-            var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
-            document.getElementById("widget").height = newheight + "px";
-          }
-      </script>
-      <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3&org_type=Brigade" width="100%" height="350px" frameBorder="0" onLoad="resize();"> </iframe>
-
+    <a id="civicissues"></a>
+    <h3>Have an hour? Code for America Right Now</h3>
   </div>
 
+  <p>These are open GitHub Issues labeled with <span class="label" style="background-color : #00a175;">help wanted</span> from across the civic technology movement. Find more using the <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+
+  <style>
+    .label {
+      border: 1px solid #00a175;
+      display: inline-block;
+      background-color:#00a175;
+      color: #fff;
+      text-align: center;
+      border-radius: .33em;
+      margin: 5px;
+      padding: 0 10px;
+      font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+      font-size:0.85em;
+    }
+  </style>
+
+    <script>
+      // Resize iframe to fit content
+      function resize() {
+        var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+        document.getElementById("widget").height = newheight + "px";
+      }
+    </script>
+
+    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3&org_type=Brigade" width="100%" height="350px" frameBorder="0" onLoad="resize();"></iframe>
+</section>
+
+<section class="layout-semibreve">
   <div class="badge-heading badge-glasses badge-teal">
-
-    <h2>Want a career change? There has never been a better time to consider <a href="http://www.codeforamerica.org/our-work/initiatives/talent/">working in government</a>.</h2>
-
+    <h3>Want a career change?</h3>
   </div>
-
+  <h3>There has never been a better time to consider <a href="http://www.codeforamerica.org/our-work/initiatives/talent/">working in government</a>.</h3>
 </section>
