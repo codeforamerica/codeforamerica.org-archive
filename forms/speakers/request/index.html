@@ -272,6 +272,12 @@ include-params: true
 {% capture cardMollyMcLeod %}
   {% include people/molly-mcleod.html context="speaker-card" base=".." %}
 {% endcapture %}
+{% capture cardAlanWilliams %}
+  {% include people/alan-williams.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJennyMontoyaTansey %}
+  {% include people/jenny-montoya-tansey.html context="speaker-card" base=".." %}
+{% endcapture %}
 
 <script>
 
@@ -293,6 +299,8 @@ include-params: true
     "david-leonard"         : '{{ cardDavidLeonard | strip_newlines }}',
     "dharmishta-rood"       : '{{ cardDharmishtaRood | strip_newlines }}',
     "molly-mcleod"          : '{{ cardMollyMcLeod | strip_newlines }}',
+    "alan-williams"         : '{{ cardAlanWilliams | strip_newlines }}',
+    "jenny-montoya-tansey"  : '{{ cardJennyMontoyaTansey | strip_newlines }}'
   };
 
   // ===== Set up our functions
