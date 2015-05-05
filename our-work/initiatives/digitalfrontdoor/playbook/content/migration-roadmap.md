@@ -19,7 +19,7 @@ Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-wor
 Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reacy, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
 
 
-####Oakland, CA Spotlight
+#####Oakland, CA Spotlight
 
 In 2014, Code for America worked with the [City of Oakland](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/oakland-phase1-report) to conduct a resident survey.
 
@@ -92,7 +92,7 @@ Some style guides we particularly like:
 ###Reading level tools
 Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. Using readability tools will highlight which pages on your site need to be rewritten and ultimately help teach your writers how to write appropriate, accessible content. 
 
-####Spotlight: The U.K.'s Government Digital Service
+#####Spotlight: The U.K.'s Government Digital Service
 The U.K.'s Government Digital Service has published some helpful [background research on how users read](https://www.gov.uk/service-manual/user-centred-design/how-users-read.html
 ). These findings inform the policies and decisions of their content [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
 
@@ -130,7 +130,7 @@ For new content writers, we suggest checking out:
 * [Nicely Said: Writing for the Web with Style and Purpose](http://www.nicelysaid.co/) by Nicole Fenton and Kate Kiefer Lee
  
 
-####Provo, UT Spotlight
+#####Provo, UT Spotlight
 based on learnings from Provo - 1 rep from every department every week. 
 total # of people?
 Provo: city departments would send someone; Mayor would ask for someone else. 
