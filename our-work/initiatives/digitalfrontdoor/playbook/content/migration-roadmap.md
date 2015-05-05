@@ -40,7 +40,7 @@ In general, your content audit process should:
 	* Grade level
     * Number of visits 
 	
-3. Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. 
+* Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. 
 
 ###3. Develop a Content Strategy 
 From your content audit, you should have identified your top performing pages. As you build out your content strategy, track progress against these pages. 
