@@ -1,3 +1,28 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'david-leonard' %}
+{% assign speaker-name      = 'David Leonard' %}
+{% assign speaker-bio       = 'David is a designer and developer. He helps Code for America focus on serving its users on the web and across digital platforms. David worked as a 2014 fellow in San Antonio, Texas, where his team developed open data practices and made <a href="http://homebasefix.com" target="_blank">Homebase</a>, an app to help homeowners fix their homes.<!-- break --> As Digital Design Coordinator for Gannett&rsquo;s Louisville Design studio, David focused on helping Gannett newspapers lead the charge into a digital future with tablet-based publications.' %}
+{% assign speaker-short-bio = 'David is a designer, developer and open data advocate. He develops inclusive websites and apps to push Code for America&rsquo;s mission forward.' %}
+{% assign speaker-title     = 'Frontend Developer, Code for America' %}
+{% assign speaker-topics    = 'design-ux\User-centered Design' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="//www.youtube.com/embed/yViYA8IG36U" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'davidleonardii' %}
+{% assign speaker-linkedin  = 'davidrleonard' %}
+{% assign speaker-blogposts = false %}
+{% assign speaker-github    = 'davidrleonard' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'rebecca-coelius|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -55,5 +80,13 @@
   </div><!-- end profile-note -->
 
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
