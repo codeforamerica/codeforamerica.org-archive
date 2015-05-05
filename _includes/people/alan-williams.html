@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'alan-williams' %}
+{% assign speaker-name      = 'Alan Williams' %}
+{% assign speaker-bio       = 'Alan is a product manager, designer and urban planner. As a 2013 Fellow, he helped a coalition of park and public lands develop <a href="http://codeforamerica.org/specifications/trails">OpenTrails</a>, a web-oriented data format for describing trail networks. Before joining Code for America, he lead the Community team at Neighborland, a civic-ideation startup. He began his career designing and building products for disaster recovery projects on the Gulf Coast.' %}
+{% assign speaker-short-bio = 'Alan is a product manager, designer and urban planner. As a 2013 Fellow, he helped a coalition of park and public lands develop <a href="http://codeforamerica.org/specifications/trails">OpenTrails</a>.' %}
+{% assign speaker-title     = 'Health Team, Code for America' %}
+{% assign speaker-topics    = 'health\Health &amp; Human Services' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="//www.youtube.com/embed/yViYA8IG36U" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'alanjosephwilli' %}
+{% assign speaker-linkedin  = 'alanjosephwilliams' %}
+{% assign speaker-blogposts = 'alanw' %}
+{% assign speaker-github    = 'alanjosephwilliams' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'rebecca-coelius|jacob-solomon' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -61,5 +85,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
