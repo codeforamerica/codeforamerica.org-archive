@@ -66,15 +66,15 @@ From your content audit, you should have identified your top performing pages. A
 
 Your content strategy should consist of key values that can guide decisions you make about your web's content. This should include: 
 
-* goals for your content
-* determine what types of content will live on your website or in [native apps](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/making-software/mobile-strategy.html)
-* identifying a point person (or department) that will see individual pages
-* regular intervals for going over your web content's analytics with the appropriate staff
-* a plan for regularly updating your content
-* methods for conducting ongoing user research to test how users behave with the site's content and features
-* strategies to collect on-going feedback from users about your website
-* criteria for when content can be archived or deleted 
-* on-going plans to train and empower best practices around writing for the web 
+* Goals for your content
+* Determine what types of content will live on your website or in [native apps](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/making-software/mobile-strategy.html)
+* Identifying a point person (or department) that will see individual pages
+* Regular intervals for going over your web content's analytics with the appropriate staff
+* A plan for regularly updating your content
+* Methods for conducting ongoing user research to test how users behave with the site's content and features
+* Strategies to collect on-going feedback from users about your website
+* Criteria for when content can be archived or deleted 
+* On-going plans to train and empower best practices around writing for the web 
 
 
 ##4. Create Internal Content Tools
