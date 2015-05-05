@@ -10,42 +10,29 @@ community-cta: "Join the conversation and talk to other local government staff i
 ---
 
 
-Notes from Erik
-Goal: writeup to get high level sponsorship
-A write up that can be used to get Mayoral support
-Point to cities that are pointing to this type of approach
-cities X, Y, and Z are doing this, and we should too. 
-Roadmap to delivery
-Would like writeup in the next two weeks May 14th 
-
-Bringing more people on the City-side into the hangouts. Shows an optimistic view of technology. 
-
-
-
-
-
-
-
 ##Content Migration Roadmap
 
-###1. Run resident survey
-Start with understanding your users’ online needs. By conducting a resident survey, you can assess the devices and types of internet access used in different parts of your city, evaluate user needs to prioritize content development on your site, and understand where your city has strong and weak connections to users of its website. 
+###1. Understand User Needs
+Start with understanding your users’ online needs. By conducting an online resident survey, you can assess the devices and types of internet access used in different parts of your city, evaluate user needs to prioritize content development on your site, and understand where your city has strong and weak connections to users of its website. 
 
-Code for America has worked with the [City of Oakland](http://digifrodo.tumblr.com/post/101788428227/what-are-people-looking-for-on-city-websites) to conduct a resident survey and [developed a guide](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html) for other cities to use. In addition, we recommend using tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. Analyze the results of your survey to make sure you are achieving geographic representation. Using zip code data, work to achieve a data sample that is reflective of your community. After identifying these gaps, work to disseminate the survey to groups who were not accounted for during the initial outreach.  
+Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html) to learn more about what kinds of questions to ask, and how to run the survey. You should aim for a response from at least 1 in 1,000 residents, with geographic, ethnic, and age distributions similar to your [city’s census data](http://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml). 
 
-
-###2. Develop a Content Strategy 
-At its core, a city website consists entirely of content. Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. You must develop a clearly defined content strategy to reflect this. 
+Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reacy, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
 
 
+######Oakland, CA Spotlight
 
-####Content Audit
+In 2014, Code for America worked with the [City of Oakland](http://digifrodo.tumblr.com/post/101788428227/what-are-people-looking-for-on-city-websites) to conduct a resident survey.  
+
+
+
+###2. Content Audit
 Conducting a content audit provides a quantitative understanding of how various webpages on your site are performing. It can help you determine which pages need to be pruned or consolidated on your site, which pages need to be rewritten, which pages are the most heavily trafficked, identify any gaps, and much more. 
 
 In general, your content audit process should be: 
 
 1. Collect all URLs on your site. 
-2. Gather KPIs and other information for each page. We suggest using URL profiler, a free tool that will gather various metrics, including:
+2. Gather KPIs and other information for each page. We suggest using both Google Analytics, and URL profiler, a free tool that will gather various metrics, including:
 	a. Bounce Rate
 	b. Exit rate
 	c. Unique visitors
@@ -53,14 +40,20 @@ In general, your content audit process should be:
 	e. Sentence count
 	f. Grade level
 	g. Number of visits
+
+Learn more about our City Analytics Dashboard a free tool that runs on Google Analytics. 
 	
 3. Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. 
 
-####Internal Content Tools
+###3. Develop a Content Strategy 
+At its core, a city website consists entirely of content. Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. You must develop a clearly defined content strategy to reflect this. 
+
+
+###4. Create Internal Content Tools
  Style guide
  Reading level tools
 
-####Content Writing Sessions
+###5. Hold Content Writing Sessions
 
 A good city website is built upon information that is accurate and easy to understand. This can be achieved by letting subject matter experts (i.e. the department) own their online content, and teaching city staff to be confident web writers. 
 
@@ -88,9 +81,7 @@ Duplicate content checker tool?
 Does it exist on one page or many pages?
 URLprofiler.com 
 
-https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0Aupv-89nVqawdGdPTFZmeEUxSnIwdW9UWmFFWlVlVkE&usp=sharing#gid=0 
-Don’t really need keyword matrix for government website
-Content Audit page- assign action. improve, delete, etc. 
+
 
 Run this free thing. 
 Similar to set up DFD dashboard
