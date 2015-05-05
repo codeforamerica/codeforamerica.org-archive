@@ -38,9 +38,9 @@ on_stories(
         "button_text"   : "Read the 2014 Annual Report"
     },
     {
-        "page_link"     : "/governments/fellowship",
-        "title"         : "Bring the Fellows to you",
-        "content_html"  : "Bring a team of technologists to your local government for a year.",
+        "page_link"     : "/geeks/fellowship-apply",
+        "title"         : "The hardest job you'll every love",
+        "content_html"  : "Apply to be a Code for America fellow.",
         "image_src"     : "/media/images/about_fellowship/longbeach.jpg",
         "button_text"   : "Learn more"
     },
