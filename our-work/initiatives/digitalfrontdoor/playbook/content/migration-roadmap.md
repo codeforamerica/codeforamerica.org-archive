@@ -19,7 +19,7 @@ Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-wor
 Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reacy, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
 
 
-######**Spotlight: Oakland, CA** 
+#####**Spotlight: Oakland, CA** 
 
 In 2014, Code for America worked with the [City of Oakland](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/oakland-phase1-report) to conduct a resident survey.
 
