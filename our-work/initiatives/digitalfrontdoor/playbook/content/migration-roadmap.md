@@ -20,44 +20,57 @@ Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-wor
 Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reacy, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
 
 
-######Oakland, CA Spotlight
+#####Oakland, CA Spotlight
 
 In 2014, Code for America worked with the [City of Oakland](http://digifrodo.tumblr.com/post/101788428227/what-are-people-looking-for-on-city-websites) to conduct a resident survey.  
 
 
 
-###2. Content Audit
+###2. Conduct a Content Audit
 Conducting a content audit provides a quantitative understanding of how various webpages on your site are performing. It can help you determine which pages need to be pruned or consolidated on your site, which pages need to be rewritten, which pages are the most heavily trafficked, identify any gaps, and much more. 
 
-In general, your content audit process should be: 
+In general, your content audit process should: 
 
-1. Collect all URLs on your site. 
-2. Gather KPIs and other information for each page. We suggest using both Google Analytics, and URL profiler, a free tool that will gather various metrics, including:
-	a. Bounce Rate
-	b. Exit rate
-	c. Unique visitors
-	d. Word count
-	e. Sentence count
-	f. Grade level
-	g. Number of visits
-
-Learn more about our City Analytics Dashboard a free tool that runs on Google Analytics. 
+* Collect all URLs on your site. 
+* Gather KPIs and other information for each page. We suggest using both our [City Analytics Dashboard](https://www.codeforamerica.org/apps/city-analytics-dashboard/), a free tool that runs on Google Analytics, and [URL profiler](http://urlprofiler.com/), a free third-party tool that will gather various metrics, including:
+	* Bounce Rate
+	 * Exit rate
+	 * Unique visitors
+	* Word count
+	* Sentence count
+	* Grade level
+    * Number of visits 
 	
 3. Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. 
 
 ###3. Develop a Content Strategy 
-At its core, a city website consists entirely of content. Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. You must develop a clearly defined content strategy to reflect this. 
+Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content one time- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. You must develop a clearly defined content strategy to reflect this. 
+
+From your content audit, you should have identified your top performing pages. As you build out your content strategy, track progress against these pages. 
+
+Your content strategy should consist of key values that can guide decisions you make about your web's content. This should include: 
+
+* identifying a point person (or department) that will see individual pages
+* a plan for regularly updating your content
+* strategies to collect on-going feedback from users about your website
+* criteria for when content can be archived or deleted 
+* on-going plans to train and empower best practices around writing for the web 
 
 
 ###4. Create Internal Content Tools
- Style guide
- Reading level tools
+ * Style guide
+ * Reading level tools
 
 ###5. Hold Content Writing Sessions
 
 A good city website is built upon information that is accurate and easy to understand. This can be achieved by letting subject matter experts (i.e. the department) own their online content, and teaching city staff to be confident web writers. 
 
-Writing for the web background materials. Redesign reader. >> Ask Provo and Jack and Frances “Don’t make me think” book (Steve Krug); Book Apart series 
+Writing for the web background materials. Redesign reader. >> Ask Provo and Jack and Frances 
+
+For new content writers, we suggest checking out: 
+
+* “Don’t make me think” book (Steve Krug)
+* Book Apart series 
 
 
 #####Provo, UT Spotlight
@@ -73,16 +86,3 @@ design, IA -- strip those things out. Just start writing together.
 
 
 
-
-Value of quantitative/ analytical side of URL profile service
-	will be an important part of the migration. Getting % of total of visits to get to critical point of total visits. Struggle to marry up Google Analytics with crawler data. Going to build a scraper in the future 
-
-Duplicate content checker tool?
-Does it exist on one page or many pages?
-URLprofiler.com 
-
-
-
-Run this free thing. 
-Similar to set up DFD dashboard
-Pull up URL profiler. Link to GA, asks for some kind of validation. 
