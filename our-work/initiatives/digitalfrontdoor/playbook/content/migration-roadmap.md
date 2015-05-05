@@ -67,7 +67,7 @@ To do this, we recommend holding content writing workshops to help your team bui
 
 Ideally, you should identify one representative from each department to serve as the deparment's designated writer and attend the content workshops. Your writers should have subject matter expertise in the content, some familiarity with (or interest in learning) technology, and an interest in professional development opportunities. 
 
-For some departments, it may make sense your city's public information officers can maintain their content. 
+Having writers from the departments of your website's most heavily trafficked pages is essential. However, for some departments, it may make sense your city's public information officers can maintain their content. This may include departments with low-traffic (or few) pages, or departments ill-equipped to have a designated writer (i.e. the Fire Department). 
 
 
 For new content writers, we suggest checking out: 
@@ -75,16 +75,13 @@ For new content writers, we suggest checking out:
 * ["Don't Make Me Think: Common Sense to Web Usability"](http://www.indusvalley.edu.pk/library/e%20books/Don%27t%20Make%20Me%20Think%20%20A%20Common%20Sense%20Approach%20To%20Web%20Usability.pdf) by Steve Krug
 * The [Book Apart](http://abookapart.com/) series 
 * [Nicely Said: Writing for the Web with Style and Purpose](http://www.nicelysaid.co/) by Nicole Fenton and Kate Kiefer Lee
-
+ 
 
 #####Provo, UT Spotlight
 based on learnings from Provo - 1 rep from every department every week. 
 total # of people?
 Provo: city departments would send someone; Mayor would ask for someone else. 
 
-
-technical piece is only small part of process; culture change and writing workshops need to be held in order to make it a sustainable content change 
-design, IA -- strip those things out. Just start writing together. 
 
 
 
