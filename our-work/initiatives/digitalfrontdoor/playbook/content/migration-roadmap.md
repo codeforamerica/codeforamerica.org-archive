@@ -9,15 +9,13 @@ community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/dig
 community-cta: "Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
 
-Your online content (both text and media) is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content one time- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. Below is a recommended roadmap for building great content on your site. 
+Your online content (both text and media) is a representation of your city and the services it delivers. During a website redesign, content isn't just migrated over once- it's an ongoing process of analyzing, refining, updating, and even deleting. Here's some steps to startbuilding great content on your site. 
 
 ##1. Understand User Needs
-Start with understanding your users’ online needs. By conducting an online resident survey, you can assess the devices and types of internet access used in different parts of your city, evaluate user needs to prioritize content development on your site, and understand where your city has strong and weak connections to users of its website. 
-
-Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html) to learn more about what kinds of questions to ask, how to run the survey, and what Oakland, CA learned from conducting it.
+Start with understanding your users’ online needs. By conducting an [online resident survey](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html), you can assess the devices and types of internet access used in different parts of your city, evaluate user needs to prioritize content development on your site, and understand where your city has strong and weak connections to users of its website. 
 
 ##2. Conduct a Content Audit
-Conducting a content audit provides a quantitative understanding of how various webpages on your site are performing. It can help you determine which pages need to be pruned or consolidated on your site, which pages need to be rewritten, which pages are the most heavily trafficked, identify any gaps, and much more. 
+Conducting a content audit provides a quantitative understanding of how various webpages on your site are performing. It can help you determine which pages need to be pruned or consolidated on your site, which pages need to be rewritten, which pages are the most heavily trafficked, identify any gaps, etc. 
 
 In general, your content audit process should: 
 
@@ -52,7 +50,7 @@ Your content strategy should consist of key values that can guide decisions you 
 Equipping your content writers with the appropriate tools is essential to delivering top quality content. Some helpful internal tools might include:
 
 ###Style guide
-A style guide sets the overall voice and tone for your content. It helps your writers understand how to write in a consistent and effective way. It should establish authority on how certain information is communicated -- be it dates, numbers, acronyms, etc. In addition, your style guide should denote any words that are not to be used, and offer suggestions or replacements. 
+A style guide sets the overall voice and tone for your content. It helps your writers understand how to communicate in a consistent and effective way. 
 
 Example Style Guides: 
 
@@ -61,7 +59,7 @@ Example Style Guides:
 * [Mail Chimp's Voice and Tone Guide](http://voiceandtone.com/)
 
 ###Reading level tools
-Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. Using readability tools will highlight which pages on your site need to be rewritten and ultimately help teach your writers how to write appropriate, accessible content. 
+Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. 
 
 #####**Spotlight: The U.K.'s Government Digital Service**
 The U.K.'s Government Digital Service has published some helpful [background research on how users read](https://www.gov.uk/service-manual/user-centred-design/how-users-read.html
@@ -79,7 +77,7 @@ As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, t
 
 The technical aspects of your website are just one component of your site. At its core, a good city website means that information is accurate and easy to understand. This begins with building a strong writing culture and supporting your staff to be confident web writers. 
 
-Holding content writing workshops can help your team build capability in writing for the web. During these sessions, you can go over your style guide, analytics around your webpage, and hold group exercises to practice writing in a consistent, unified voice.  
+Holding content writing workshops can help your team build capability in writing for the web. During these sessions, you can go over your sweb analytics, and hold group exercises to practice writing in a way that's consistent with the style guide. 
 
 You should try to identify representative from the departments of your high trafficked pages to serve as the deparment's designated writer and attend the content workshops. 
 
