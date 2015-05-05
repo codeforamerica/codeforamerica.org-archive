@@ -11,7 +11,7 @@ community-cta: "Join the conversation and talk to other local government staff i
 
 Your online content is a representation of your city and the services it delivers. During a website redesign, you are not just migrating over old content one time- it is an ongoing process where content will be continuously analyzed, updated, refined, and even deleted. Below is a recommended roadmap for building great content on your site. 
 
-##1. Understand User Needs
+#1. Understand User Needs
 Start with understanding your users’ online needs. By conducting an online resident survey, you can assess the devices and types of internet access used in different parts of your city, evaluate user needs to prioritize content development on your site, and understand where your city has strong and weak connections to users of its website. 
 
 Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html) to learn more about what kinds of questions to ask, and how to run the survey. You should aim for a response from at least 1 in 1,000 residents, with geographic, ethnic, and age distributions similar to your [city’s census data](http://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml). 
@@ -44,7 +44,7 @@ From this survey, the City has been able to identify key areas to focus on for r
 
 
 
-##2. Conduct a Content Audit
+#2. Conduct a Content Audit
 Conducting a content audit provides a quantitative understanding of how various webpages on your site are performing. It can help you determine which pages need to be pruned or consolidated on your site, which pages need to be rewritten, which pages are the most heavily trafficked, identify any gaps, and much more. 
 
 In general, your content audit process should: 
@@ -61,7 +61,7 @@ In general, your content audit process should:
 	
 * Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. 
 
-##3. Develop a Content Strategy 
+#3. Develop a Content Strategy 
 From your content audit, you should have identified your top performing pages. As you build out your content strategy, track progress against these pages. 
 
 Your content strategy should consist of key values that can guide decisions you make about your web's content. This should include: 
@@ -75,26 +75,29 @@ Your content strategy should consist of key values that can guide decisions you 
 * on-going plans to train and empower best practices around writing for the web 
 
 
-##4. Create Internal Content Tools
+#4. Create Internal Content Tools
 Equipping your content writers with the appropriate tools is essential to delivering top quality content. In order for your content to be easy to understand and stylistically consistent, we recommend having (and regularly using):
 
-###Style guide
+##Style guide
 
 
 
-###Reading level tools
-Readability tools can give writers real-time feedback on the clarity and reading level of their content. 
+##Reading level tools
+Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. Using readability tools will highlight which pages on your site need to be rewritten and ultimately help teach your writers how to write appropriate, accessible content. 
 
+####Spotlight: The U.K.'s Government Digital Service
+The U.K.'s Government Digital Service has published some helpful [background research on how users read](https://www.gov.uk/service-manual/user-centred-design/how-users-read.html
+). These findings inform the policies and decisions of their content [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
 
-###Pattern Portfolio
+##Pattern Portfolio
 While less specific to your site's written content, you should also have a pattern portfolio to maintain a cohesive and structured visual appearance to your site. 
 	
-#####Spotlight: Philadelphia
+####Spotlight: Philadelphia
 As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, the City of Philadelphia released a [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) that defines and shares common design elements on the site. By releasing a template package of the various styles, colors, and HTML markup features on the site, the City can maintain a consistent aesthetic and consistent experience for users. They also [documented their experience](http://phillyinnovates.com/2015/03/11/alpha-phila-gov-update-4-pattern-portfolio/) building the pattern library on their blog.
 
 
 
-##5. Hold Content Writing Sessions
+#5. Hold Content Writing Sessions
 
 The technical aspects of your website are just one component of your site. At its core, a good city website means that information is accurate and easy to understand. This begins with building a strong writing culture and supporting your staff to be confident web writers. 
 
@@ -104,14 +107,14 @@ Ideally, you should identify one representative from each department to serve as
 
 Having writers from the departments of your website's most heavily trafficked pages is essential. However, for some departments, it may make sense your city's public information officers can maintain their content. This may include departments with low-traffic (or few) pages, or departments ill-equipped to have a designated writer (i.e. the Fire Department). 
 
-###Writing for the Web 
+##Writing for the Web 
 In general, writing for the web means:  
 
-* using short sentences
-* keeping paragraphs short
-* avoiding jargon and writing in plain English
-* having lots of paragraph breaks
-* using subheadings
+* Using short sentences
+* Keeping paragraphs short
+* Avoiding jargon and writing in plain English
+* Having lots of paragraph breaks
+* Using subheadings
 
 For new content writers, we suggest checking out: 
 
