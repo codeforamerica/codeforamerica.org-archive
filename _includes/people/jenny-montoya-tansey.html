@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'jenny-montoya-tansey' %}
+{% assign speaker-name      = 'Jenny Montoya Tansey' %}
+{% assign speaker-bio       = 'Jenny leads CfA&rsquo;s public safety and criminal justice related work. She previously supported California counties on jail population management, pretrial programs, and access to health coverage and treatment at Californians for Safety and Justice. Jenny also spent four years with the United States Department of Agriculture working on civil rights issues, including law enforcement language access policies and racial profiling.<!-- break --> She is a graduate of Stanford Law School, and lives with her husband, Chris, and their son in Oakland. ' %}
+{% assign speaker-short-bio = 'Jenny leads CfA&rsquo;s public safety and criminal justice related work. She previously provided training and support to California counties on jail population management, pretrial programs, and access to health coverage.' %}
+{% assign speaker-title     = 'Director of Safety and Justice' %}
+{% assign speaker-topics    = 'design-ux\User-centered Design|health\Health &amp; Human Services' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="//www.youtube.com/embed/yViYA8IG36U" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = false %}
+{% assign speaker-linkedin  = false %}
+{% assign speaker-blogposts = false %}
+{% assign speaker-github    = false %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'rebecca-coelius|nicole-neditch' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -13,7 +37,7 @@
 	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
 	    </ul>
 
-		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/jenny-montoya-tansey.png" />
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/jenny-montoya-tansey.jpg" />
 	</div>
 
 	<div class="layout-major">
@@ -36,7 +60,7 @@
 <div class="h-card profile-small">
     <h3 class="p-name profile-name">Jenny Montoya Tansey</h3>
 
-    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jenny-montoya-tansey.png">
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/jenny-montoya-tansey.jpg">
 
     <div class="p-note profile-note">
         <p>Director of Safety and Justice</p>
@@ -52,5 +76,13 @@
         </ul>
     </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
