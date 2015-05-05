@@ -19,7 +19,7 @@ Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-wor
 Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reacy, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
 
 
-#####Spotlight: Oakland, CA 
+#####**Spotlight: Oakland, CA** 
 
 In 2014, Code for America worked with the [City of Oakland](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/oakland-phase1-report) to conduct a resident survey.
 
@@ -99,7 +99,7 @@ The U.K.'s Government Digital Service has published some helpful [background res
 ###Pattern Portfolio
 While less specific to your site's written content, you should also have a pattern portfolio to maintain a cohesive and structured visual appearance to your site. 
 	
-####Spotlight: Philadelphia
+####**Spotlight: Philadelphia**
 As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, the City of Philadelphia released a [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) that defines and shares common design elements on the site. By releasing a template package of the various styles, colors, and HTML markup features on the site, the City can maintain a consistent aesthetic and consistent experience for users. They also [documented their experience](http://phillyinnovates.com/2015/03/11/alpha-phila-gov-update-4-pattern-portfolio/) building the pattern library on their blog.
 
 
@@ -130,7 +130,7 @@ For new content writers, we suggest checking out:
 * [Nicely Said: Writing for the Web with Style and Purpose](http://www.nicelysaid.co/) by Nicole Fenton and Kate Kiefer Lee
  
 
-#####Spotlight: Provo, UT
+#####**Spotlight: Provo, UT**
 based on learnings from Provo - 1 rep from every department every week. 
 total # of people?
 Provo: city departments would send someone; Mayor would ask for someone else. 
