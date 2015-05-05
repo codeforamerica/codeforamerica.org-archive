@@ -27,10 +27,10 @@ An additional survey was shared to city staff to understand their web activities
 
 From the survey, the City learned the most highest rated topics that residents look for (or want to look for): 
 
- 1. Navigating the city government
- 2. Attractions and ammenities
- 3. Make payments 
- 4. Officials and politics 
+1. Navigating the city government
+2. Attractions and ammenities
+3. Make payments 
+4. Officials and politics 
 5. City environment + infrastructure 
 6. Official records and code 
 7. Getting around with the transportation network 
