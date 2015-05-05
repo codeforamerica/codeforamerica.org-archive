@@ -16,7 +16,7 @@ Start with understanding your users’ online needs. By conducting an online res
 
 Check out our [Run an Online Survey Guide](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html) to learn more about what kinds of questions to ask, and how to run the survey. You should aim for a response from at least 1 in 1,000 residents, with geographic, ethnic, and age distributions similar to your [city’s census data](http://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml). 
 
-Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reacy, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
+Analyze the results of your survey to make sure you are achieving responses that are representative of the entire community. Using zip code data and any socio-economic data collectived from the survey, identiy gaps in your reach, and work to disseminate the survey to groups who were not accounted for during the initial outreach. You can use tactics in our [civic engagement standard](http://www.codeforamerica.org/governments/principles/engagement/) to have better reach and a more holistic sample of the community. 
 
 
 #####**Spotlight: Oakland, CA** 
