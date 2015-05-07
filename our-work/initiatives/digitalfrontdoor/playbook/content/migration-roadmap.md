@@ -60,14 +60,14 @@ Example Style Guides:
 ###Reading level tools
 Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. 
 
-#####**Spotlight: The U.K.'s Government Digital Service**
+###Pattern Portfolio
+While less specific to your site's written content,  pattern portfolio can help maintain a cohesive and structured visual appearance to your site. 
+
+#####Spotlight: The U.K.'s Government Digital Service
 The U.K.'s Government Digital Service has published some helpful [background research on how users read](https://www.gov.uk/service-manual/user-centred-design/how-users-read.html
 ). These findings inform the policies and decisions of their content [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
 
-###Pattern Portfolio
-While less specific to your site's written content,  pattern portfolio can help maintain a cohesive and structured visual appearance to your site. 
-	
-#####**Spotlight: Philadelphia**
+#####Spotlight: Philadelphia
 As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, the City of Philadelphia released a [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) that defines and shares common design elements on the site. By releasing a template package of the various styles, colors, and HTML markup features on the site, the City can maintain a consistent aesthetic and consistent experience for users. They also [documented their experience](http://phillyinnovates.com/2015/03/11/alpha-phila-gov-update-4-pattern-portfolio/) building the pattern library on their blog.
 
 
