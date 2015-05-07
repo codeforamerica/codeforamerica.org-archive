@@ -21,18 +21,17 @@ In general, your content audit process should:
 
 * Collect all URLs on your site. 
 * Gather KPIs and other information for each page. We suggest using both our [City Analytics Dashboard](https://www.codeforamerica.org/apps/city-analytics-dashboard/), a free tool that runs on Google Analytics, and [URL profiler](http://urlprofiler.com/), a free third-party tool that will gather various metrics, including:
-	* Bounce rate
-	* Exit rate
+	* Bounce rate (Bounces are always one page sessions.It's the percentage of people who landed on a page and left right away)
+	* Exit rate (the percentage of people who left your site from a specific page. Exits may have viewed more than one page in a session (i.e. they navigated through your site to a particular page)
 	* Unique visitors
 	* Word count
 	* Sentence count
 	* Reading level
     * Number of visits 
 	
-* Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, should be removed. Pages that have duplicated information and purposes should be consolidated into one page.  
+* Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. Pages that have duplicate information and purposes should be consolidated into one page. Pages that contain outdated information should either be removed (if no longer applicable) or updated to reflect current statuses. 
 
 ##3. Develop a Content Strategy 
-From your content audit, you should have identified your top performing pages. As you build out your content strategy, track progress against these pages. 
 
 Your content strategy should consist of key values that can guide decisions you make about your web's content. This should include: 
 
@@ -77,7 +76,7 @@ As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, t
 
 The technical aspects of your website are just one component of your site. At its core, a good city website means that information is accurate and easy to understand. This begins with building a strong writing culture and supporting your staff to be confident web writers. 
 
-Holding content writing workshops can help your team build capability in writing for the web. During these sessions, you can go over your sweb analytics, and hold group exercises to practice writing in a way that's consistent with the style guide. 
+Holding content writing workshops can help your team build capability in writing for the web. During these sessions, you can go over your web analytics, and practice writing in a way that's consistent with your style guide. 
 
 You should try to identify representative from the departments of your high trafficked pages to serve as the deparment's designated writer and attend the content workshops. 
 
@@ -98,9 +97,7 @@ For new content writers, we suggest checking out:
  
 
 #####**Spotlight: Provo, UT**
-based on learnings from Provo - 1 rep from every department every week. 
-total # of people?
-Provo: city departments would send someone; Mayor would ask for someone else. 
+As part of the City's website redesign, the Mayor worked closely with the team to identify department leads to attend content writing sessions. For ten months, Provo's representatives from each department attended bi-weekly writing workshops. During these meetings, representatives kept individual blogs to build their web writing confidence, learned best practices for streamlined user experience, and practiced using web analytics to inform content decisions for their sites. 
 
 
 
