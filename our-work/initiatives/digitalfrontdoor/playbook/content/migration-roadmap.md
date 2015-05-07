@@ -27,8 +27,8 @@ In general, your content audit process should:
 	* Word count
 	* Sentence count
 	* Reading level
-    * Number of visits 
-	
+        * Number of visits 
+        
 * Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. Pages that have duplicate information and purposes should be consolidated into one page. Pages that contain outdated information should either be removed (if no longer applicable) or updated to reflect current statuses. 
 
 ##3. Develop a Content Strategy 
@@ -48,26 +48,23 @@ Your content strategy should consist of key values that can guide decisions you 
 ##4. Create Internal Content Tools
 Equipping your content writers with the appropriate tools is essential to delivering top quality content. Some helpful internal tools might include:
 
-###Style guide
+* Style guide
 A style guide sets the overall voice and tone for your content. It helps your writers understand how to communicate in a consistent and effective way. 
-
-Example Style Guides: 
-
-* [Gov.UK's A to Z Style Guide](https://www.gov.uk/guidance/style-guide)
-* [Mail Chimp's Style Guide](http://mailchimp.com/about/style-guide/) 
-* [Mail Chimp's Voice and Tone Guide](http://voiceandtone.com/)
-
-###Reading level tools
+	Example Style Guides: 
+		* [Gov.UK's A to Z Style Guide](https://www.gov.uk/guidance/style-guide)
+		* [Mail Chimp's Style Guide](http://mailchimp.com/about/style-guide/) 
+		* [Mail Chimp's Voice and Tone Guide](http://voiceandtone.com/)
+* Reading level tools
 Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. 
 
-###Pattern Portfolio
+* Pattern Portfolio
 While less specific to your site's written content,  pattern portfolio can help maintain a cohesive and structured visual appearance to your site. 
 
-#####Spotlight: The U.K.'s Government Digital Service
+####Spotlight: The U.K.'s Government Digital Service
 The U.K.'s Government Digital Service has published some helpful [background research on how users read](https://www.gov.uk/service-manual/user-centred-design/how-users-read.html
 ). These findings inform the policies and decisions of their content [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). 
 
-#####Spotlight: Philadelphia
+####Spotlight: Philadelphia
 As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, the City of Philadelphia released a [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) that defines and shares common design elements on the site. By releasing a template package of the various styles, colors, and HTML markup features on the site, the City can maintain a consistent aesthetic and consistent experience for users. They also [documented their experience](http://phillyinnovates.com/2015/03/11/alpha-phila-gov-update-4-pattern-portfolio/) building the pattern library on their blog.
 
 
@@ -96,7 +93,7 @@ For new content writers, we suggest checking out:
 * [Nicely Said: Writing for the Web with Style and Purpose](http://www.nicelysaid.co/) by Nicole Fenton and Kate Kiefer Lee
  
 
-#####**Spotlight: Provo, UT**
+####Spotlight: Provo, UT
 As part of the City's website redesign, the Mayor worked closely with the team to identify department leads to attend content writing sessions. For ten months, Provo's representatives from each department attended bi-weekly writing workshops. During these meetings, representatives kept individual blogs to build their web writing confidence, learned best practices for streamlined user experience, and practiced using web analytics to inform content decisions for their sites. 
 
 
