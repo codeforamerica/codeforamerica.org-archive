@@ -21,14 +21,13 @@ In general, your content audit process should:
 
 * Collect all URLs on your site. 
 * Gather KPIs and other information for each page. We suggest using both our [City Analytics Dashboard](https://www.codeforamerica.org/apps/city-analytics-dashboard/), a free tool that runs on Google Analytics, and [URL profiler](http://urlprofiler.com/), a free third-party tool that will gather various metrics, including:
-	* Bounce rate (Bounces are always one page sessions.It's the percentage of people who landed on a page and left right away)
-	* Exit rate (the percentage of people who left your site from a specific page. Exits may have viewed more than one page in a session (i.e. they navigated through your site to a particular page)
+	* Bounce rate: the percentage of people who landed on a page and left right away (i.e. a one page session)
+	* Exit rate: the percentage of people who left your site from a specific page. Exits may have viewed more than one page in a session (i.e. they navigated through your site to a particular page)
 	* Unique visitors
 	* Word count
 	* Sentence count
 	* Reading level
-        * Number of visits 
-        
+	* Number of visits 
 * Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. Pages that have duplicate information and purposes should be consolidated into one page. Pages that contain outdated information should either be removed (if no longer applicable) or updated to reflect current statuses. 
 
 ##3. Develop a Content Strategy 
@@ -50,10 +49,6 @@ Understanding your users and equipping your content writers with the appropriate
 ), which helps inform the policies and decisions of their content [style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style). Some helpful internal tools for your team might include:
 
 * **Style guide**: A style guide sets the overall voice and tone for your content. It helps your writers understand how to communicate in a consistent and effective way. 
-	Example Style Guides: 
-		* [Gov.UK's A to Z Style Guide](https://www.gov.uk/guidance/style-guide)
-		* [Mail Chimp's Style Guide](http://mailchimp.com/about/style-guide/) 
-		* [Mail Chimp's Voice and Tone Guide](http://voiceandtone.com/)
 		
 * **Reading level tools**: Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. 
 
