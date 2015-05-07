@@ -30,7 +30,7 @@ To successfully get approval to use capital funds for a virtual infrastructure, 
 
 - Work with the internal and/or external auditors that review your comprehensive annual financial report (CAFR) to get their approval that what you are planning is a system implementation.
 
-## Defining a Project
+## Defining a project
 
 - Many components of an IT system are allowable under standard GAAP capitalization rules, such as hardware, software, professional services and employee labor costs and training curriculum development. 
 - It may be possible to aggregate the costs of migration to a new cloud platform into a single capital project. This means it could be possible to include related business process development and documentation changes. Related up-front costs like “first year service fees” can sometimes be included too. 
