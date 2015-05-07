@@ -57,11 +57,11 @@ If you are migrating a legacy IT system to cloud or virtual infrastructure, you 
  
 ## Sources
 
--	Lance Ahern, CIO, Municipality of Anchorage 
-- Jonathan Feldman, CIO, City of Asheville, NC 
-- Jascha Franklin-Hodge, Chief Information Officer, City of Boston 
-- Bill Haight, Chief Information Officer, Salt Lake City 
-- Bruce Haupt, former Deputy Assistant Director, Finance Department, City of Houston (City Performance Improvement Manager) 
-- Mark Headd, Developer Evangelist, Accela, Inc. 
--	Mark Leech, Application Services Group Manager, City of Albuquerque
+-	Lance Ahern, CIO, [Municipality of Anchorage](http://www.muni.org/) 
+- Jonathan Feldman, CIO, [City of Asheville, NC](http://www.ashevillenc.gov) 
+- Jascha Franklin-Hodge, Chief Information Officer, [City of Boston](http://www.cityofboston.gov) 
+- Bill Haight, Chief Information Officer, [Salt Lake City](http://www.ci.slc.ut.us) 
+- Bruce Haupt, former Deputy Assistant Director, Finance Department, [City of Houston](http://www.houstontx.gov) (City Performance Improvement Manager) 
+- Mark Headd, Developer Evangelist, Accela, Inc, former Chief Data Officer, City of Philadelphia. 
+-	Mark Leech, Application Services Group Manager, [City of Albuquerque](http://www.cabq.gov)
  
