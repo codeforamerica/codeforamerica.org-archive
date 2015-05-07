@@ -47,7 +47,7 @@ To successfully get approval to use capital funds for a virtual infrastructure, 
 If you are migrating a legacy IT system to cloud or virtual infrastructure, you should be making significant budget savings. In general, most finance cash-flows can be changed with the right process and procedure, though the mechanism for how to accomplish this varies between jurisdictions. In some jurisdictions, you can take a budget amendment to your board with finance support. Making significant savings is a good news story that should help you achieve a budget amendment.
 
 
-## Communciate informally and frequently
+## Communicate informally and frequently
 
  - Using capital funds to partly fund cloud or virtual infrastructure is still a new development, so there are still differing interpretations of what's allowed. 
  
