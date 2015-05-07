@@ -39,7 +39,7 @@ on_stories(
     },
     {
         "page_link"     : "/geeks/fellowship-apply",
-        "title"         : "The hardest job you'll every love",
+        "title"         : "The hardest job you'll ever love",
         "content_html"  : "Apply to be a Code for America fellow.",
         "image_src"     : "/media/images/about_fellowship/longbeach.jpg",
         "button_text"   : "Learn more"
