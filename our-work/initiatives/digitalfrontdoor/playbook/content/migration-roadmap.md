@@ -28,7 +28,7 @@ In general, your content audit process should:
 	* Sentence count
 	* Reading level
 	* Number of visits 
-* Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. Pages that have duplicate information and purposes should be consolidated into one page. Pages that contain outdated information should either be removed (if no longer applicable) or updated to reflect current statuses. 
+* Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. Pages that have duplicate information and purposes should be consolidated into one page.
 
 ##3. Develop a Content Strategy 
 
@@ -52,7 +52,7 @@ Understanding your users and equipping your content writers with the appropriate
 		
 * **Reading level tools**: Tools like [Readability-score.com](https://readability-score.com/) can give writers real-time feedback on the clarity and reading level of their content. In general, pages should strive for a 6-8th grade reading level. 
 
-* **Pattern Portfolio**: While less specific to your site's written content,  pattern portfolio can help maintain a cohesive and structured visual appearance to your site. 
+* **Pattern portfolio**: While less specific to your site's written content,  pattern portfolio can help maintain a cohesive and structured visual appearance to your site. 
 
 ####Spotlight: Philadelphia
 As part of its [alpha.phila.gov](http://www.alpha.phila.gov) redesign process, the City of Philadelphia released a [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) that defines and shares common design elements on the site. By releasing a template package of the various styles, colors, and HTML markup features on the site, the City can maintain a consistent aesthetic and consistent experience for users. They also [documented their experience](http://phillyinnovates.com/2015/03/11/alpha-phila-gov-update-4-pattern-portfolio/) building the pattern library on their blog.
