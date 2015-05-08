@@ -15,9 +15,9 @@ The primary goal of your engagement strategy should be to reach a representative
 
 If you've collected any data during your engagement process to date, compare these numbers against Census data to idetnify any gaps. We suggest using over/under thresholds to see where you might be underrepresented or oversampling.  
 
-	Any communities that are underrepresented in your outreach should become priority groups for your future work. Focus on your biggest gaps first.
+Any communities that are underrepresented in your outreach should become priority groups for your future work. Focus on your biggest gaps first.
 
-	If you aren't yet meausuring the reach of your engagement efforts, here's a few simple ways to start surveying who is in the room and is being represented: 
+If you aren't yet meausuring the reach of your engagement efforts, here's a few simple ways to start surveying who is in the room and is being represented: 
 
  * **Sticky dot exercise**. During a public meeting, make posterboards with key demographic categories you are sampling. Have dot stickers available for the people to place on the boards to show what groups they identify with. 
 
@@ -27,9 +27,9 @@ If you've collected any data during your engagement process to date, compare the
  * **On-line surveys**. 
  * **Clicker surveys**. 
 
-##Build relationships with key community groups.
+###Build relationships with key community groups.
 
-##Measure on-going progress of your engagement strategy.
+###Measure on-going progress of your engagement strategy.
 
 
 ###Boulder, CO Spotlight
