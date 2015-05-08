@@ -5,10 +5,8 @@ subtitle: 		Use census demographics to identify underrepsented groups in your co
 nav-breadcrumbs:
   - "Playbooks": "/playbooks/"
   - "Engagement": "/playbooks/engagement/"
-community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
-community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
-An effective engagement strategy collects feedback that is both an inclusive and representative sampling of your community's demogrpahics. By surfacing any unheard voices or underrepresented groups in your current outreach processes, you can better understand which constituenecies need to reach, and then take concrete steps towards bringing them into your engagement process and surfacing their opinions. 
+An effective engagement strategy collects feedback that is both inclusive and representative of your community. By surfacing any unheard voices or underrepresented groups in your current outreach processes, you can better understand which constituenecies you need to reach, and then take concrete steps towards bringing them into your engagement process and surfacing their opinions. 
 
 ###Getting Started
 
@@ -20,15 +18,13 @@ An effective engagement strategy collects feedback that is both an inclusive and
 
 	If you aren't yet meausuring the reach of your engagement efforts, here's a few simple ways to start surveying who is in the room and is being represented: 
 
-* **Sticky dot exercise**. During a public meeting, make posterboards with key demographic categories you are sampling. Have dot stickers available for the people to place on the boards to show what groups they identify with. 
+ * **Sticky dot exercise**. During a public meeting, make posterboards with key demographic categories you are sampling. Have dot stickers available for the people to place on the boards to show what groups they identify with. 
 
 ![Sticky dot exercise](/media/images/principles/dot-exercise.jpg "Learning who is in the room in Boulder, CO")
 
-	
-	
-* **Paper surveys**. 
-* **On-line surveys**. 
-* **Clicker surveys**. 
+ * **Paper surveys**. 
+ * **On-line surveys**. 
+ * **Clicker surveys**. 
 
 3. **Build relationships with key community groups**. 
 4. **Measure on-going progress of your engagement strategy**. 
