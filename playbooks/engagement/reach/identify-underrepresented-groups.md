@@ -1,8 +1,12 @@
 ---
-layout: resource
-title: "Expanding Your Reach"
-subtitle: How to: use census demographics to identify underrepsented groups in your community engagement process
+layout: 		resource
+title: 			"How to: Expand your reach"
+subtitle: 		Use census demographics to identify underrepsented groups in your community engagement proces. 
 nav-breadcrumbs:
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
+community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
 ---
 
 1. Understand your community's composition. The primary goal of your engagement strategy should be to reach a representative sample of your community. Free tools like [Census Reporter](http://censusreporter.org/) pull data from the Census Bureau and visualize key socio-economic indicators in an easy to understand way. 
