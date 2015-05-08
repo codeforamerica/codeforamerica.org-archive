@@ -8,11 +8,12 @@ nav-breadcrumbs:
 ---
 An effective engagement strategy collects feedback that is both inclusive and representative of your community. By surfacing any unheard voices or underrepresented groups in your current outreach processes, you can better understand which constituenecies you need to reach, and then take concrete steps towards bringing them into your engagement process and surfacing their opinions. 
 
-###Getting Started
+###Understand your community's composition. 
+The primary goal of your engagement strategy should be to reach a representative sample of your community. Free tools like [Census Reporter](http://censusreporter.org/) pull data from the Census Bureau and visualize key socio-economic indicators in an easy to understand way. 
 
-1. **Understand your community's composition**. The primary goal of your engagement strategy should be to reach a representative sample of your community. Free tools like [Census Reporter](http://censusreporter.org/) pull data from the Census Bureau and visualize key socio-economic indicators in an easy to understand way. 
+###Assess the effectiveness of your outreach to date. 
 
-2. **Assess the effectiveness of your outreach to date**. If you've collected any data during your engagement process to date, compare these numbers against Census data to idetnify any gaps. We suggest using over/under thresholds to see where you might be underrepresented or oversampling.  
+If you've collected any data during your engagement process to date, compare these numbers against Census data to idetnify any gaps. We suggest using over/under thresholds to see where you might be underrepresented or oversampling.  
 
 	Any communities that are underrepresented in your outreach should become priority groups for your future work. Focus on your biggest gaps first.
 
@@ -26,8 +27,9 @@ An effective engagement strategy collects feedback that is both inclusive and re
  * **On-line surveys**. 
  * **Clicker surveys**. 
 
-3. **Build relationships with key community groups**. 
-4. **Measure on-going progress of your engagement strategy**. 
+##Build relationships with key community groups.
+
+##Measure on-going progress of your engagement strategy.
 
 
-##Boulder, CO Spotlight
+###Boulder, CO Spotlight
