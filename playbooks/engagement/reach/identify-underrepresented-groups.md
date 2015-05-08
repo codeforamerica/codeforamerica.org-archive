@@ -1,7 +1,7 @@
 ---
 layout: 		resource
 title: 			"How to: Expand your reach"
-subtitle: 		Use census demographics to identify underrepsented groups in your community engagement proces. 
+subtitle: 		Identifying underrepsented groups in your community engagement proces. 
 nav-breadcrumbs:
   - "Playbooks": "/playbooks/"
   - "Engagement": "/playbooks/engagement/"
@@ -20,7 +20,7 @@ Any communities that are underrepresented in your outreach should become priorit
 
 If you aren't yet meausuring the reach of your engagement efforts, here's a few simple ways to start surveying who is in the room and is being represented: 
 
- * **Sticky dot exercise**. During a public meeting, make posterboards with key demographic categories you are sampling. Have dot stickers available for the people to place on the boards to show what groups they identify with. 
+ * **Sticky dot exercise**. During a public meeting, make posterboards with key demographic categories you are sampling. Have dot stickers available for people to place on the boards to show what groups they identify with. 
 
 ![Sticky dot exercise](/media/images/principles/dot-exercise.jpg "Learning who is in the room in Boulder, CO")
 
@@ -34,3 +34,4 @@ If you aren't yet meausuring the reach of your engagement efforts, here's a few 
 
 
 ###Boulder, CO Spotlight
+
