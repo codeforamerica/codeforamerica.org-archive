@@ -22,7 +22,9 @@ An effective engagement strategy collects feedback that is both an inclusive and
 
 * **Sticky dot exercise**. During a public meeting, make posterboards with key demographic categories you are sampling. Have dot stickers available for the people to place on the boards to show what groups they identify with. 
 
-	[insert photo of Boulder]
+![Sticky dot exercise](/media/images/principles/dot-exercise.jpg "Learning who is in the room in Boulder, CO")
+
+	
 	
 * **Paper surveys**. 
 * **On-line surveys**. 
