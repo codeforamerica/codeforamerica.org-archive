@@ -8,6 +8,7 @@ nav-breadcrumbs:
 ---
 An effective engagement strategy collects feedback that is both inclusive and representative of your community. By surfacing any unheard voices or underrepresented groups in your current outreach processes, you can better understand which constituenecies you need to reach, and then take concrete steps towards bringing them into your engagement process and surfacing their opinions. 
 ##Getting started
+ 
 
 ###1. Understand your community's composition. 
 The primary goal of your engagement strategy should be to reach a representative sample of your community. Free tools like [Census Reporter](http://censusreporter.org/) pull data from the Census Bureau and visualize key socio-economic indicators in an easy to understand way. 
