@@ -29,7 +29,10 @@ In general, your content audit process should:
 	* Reading level
 	* Number of visits 
    
-* Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", etc. For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. Pages that have duplicate information and purposes should be consolidated into one page.
+* Determine whether pages are meeting broader [goals of a city website](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/what-should-city-website-do.html). Analyze your content based on its metrics. Assign a specific action to each URL-- such as "keep", "remove", "update", "simplify" etc. 
+ 	* For example, if a page hasn't been accessed in the last year, and isn't legally required information, it should be removed. 
+ 	* Pages that have duplicate information and purposes should be consolidated into one page. 
+ 	* Look at the user journey for your most viewed pages. Is it easy to navigate to this page? Can the information architecture be simplified so that a user can get there in less than three clicks. Mark these as "simplify".
 
 ##3. Develop a Content Strategy 
 
