@@ -7,6 +7,21 @@ masthead-class: masthead-s
 masthead-image: "../../media/images/masthead/masthead-5.jpg"
 nav-breadcrumbs:
  - "Apps & APIs": "/apps"
+jquery-scripts: |
+  <script type="text/javascript">
+    var current;
+    var target;
+    $(document).ready(function(){
+      current = window.location.href;
+      target = '#voiceTop';
+      console.log(current.indexOf(target));
+      if (current.indexOf(target) > -1) {
+        console.log("we're there");
+      } else {
+        window.location = current + target;
+      }
+    });
+  </script>
 ---
     
 <div class="layout-semibreve">
