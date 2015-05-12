@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: "Content Migration Roadmap"
-subtitle: Recommended Steps to Migrate Your Website's Content 
+subtitle: Recommended steps to migrate (and write) effective web content
 nav-breadcrumbs:
   - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
   - "Content": "/our-work/initiatives/digitalfrontdoor/playbook/content/"
