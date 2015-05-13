@@ -31,12 +31,10 @@ Custom front matter for /speakers pages:
 
 include-jquery   - If true, loads jQuery for the page (useful for form validation)
 include-parsley  - If true, loads Parsley.js, a form validation library
-include-params   - If true, loads script/params.js, which pulls the params out of the URL.
 
 ---
 include-jquery: true
 include-parsley: true
-include-params: true
 ---
 
 {% endcomment %}
@@ -148,9 +146,6 @@ include-params: true
         if ('undefined' !== typeof window.ParsleyValidator)
           window.ParsleyValidator.addCatalog('en', window.ParsleyConfig.i18n.en, true);
       </script>
-    {% endif %}
-    {% if page.include-params %}
-      <script src="/script/params.js"></script>
     {% endif %}
   </body>
 </html>
