@@ -7,7 +7,6 @@ helpers:
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
 nav-global-primary: "no"
-masthead-custom: deep
 
 # Title for the title bar, and the overline in the masthead
 title: "Apply for the 2016 Code for America Fellowship"
@@ -40,90 +39,181 @@ jquery-scripts: |
   .list-form .form-field-group li.form-field {
     margin-bottom: 10px;
   }
+  .intro {
+    margin-top: 5em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 40em) {
+    .intro {
+      margin-top: 0;
+    }
+  }
+  h1 {
+    text-transform: none;
+  }
+  h5 {
+    font-weight: 700;
+    line-height: 2em;
+  }
+  h1, h5 {
+    margin: 0;
+  }
+  .process-graphic {
+    margin-top: -1em;
+  }
+  .process-graphic ul {
+    position: relative;
+  }
+  .process-graphic ul:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 1.1em;
+    top: 1.2em;
+    height: 70%;
+    width: 1px;
+    background-color: #999595;
+  }
+  .process-graphic li {
+    margin-left: 3em;
+    position: relative;
+  }
+  .process-graphic li:before {
+    content: "1";
+    background-color: #999595;
+    padding: 10px;
+    color: white;
+    border-radius: 100%;
+    font-size: 0.7em;
+    height: 0.7em;
+    width: 0.7em;
+    line-height: 0.7em;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    left: -4em;
+    top: 0.1em;
+  }
+  .process-graphic li.current:before {
+    background-color: #aa1c3a;
+  }
+  .process-graphic li.step2:before {
+    content: "2";
+  }
+  .process-graphic li.step3:before {
+    content: "3";
+  }
+  .process-graphic li.current .title {
+    color: #aa1c3a;
+  }
+  .process-graphic .title {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .process-graphic .details {
+    margin-top: 0;
+    line-height: 1.8em;
+  }
 </style>
 
-
-<section class="layout-semibreve">
-
-  <p>We’re actively looking for talented candidates now. Let us know you want to apply by filling out the information below. If you have any questions, don't hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>
-
-  <div id="formError" class="alert-failure" style="display:none;">
+<section class="layout-breve intro">
+  <div class="layout-solo">
+    <h5>Step 1: Interest Form</h5>
+    <h1>Apply for the 2016 Fellowship</h1>
+    <p><strong>Use your skills for good.</strong> Code for America's Fellowship program pairs teams of technologists with local governments to develop digital tools that help cities and counties deliver key public services across health, economic development, and safety and justice. Fellows are based in San Francisco for one year. Express your interest right now. Applications will be reviewed on a rolling basis starting in May through July 15th. If you have any questions, don't hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>
   </div>
-  
-  <!-- Form content -->
-  <div class="layout-major-invert">
-    <form name="become-a-fellow" accept-charset="UTF-8" action="https://formkeep.com/f/16aaed1c3fc1" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
-      <input type="hidden" name="utf8" value="✓">
-      <input type="hidden" name="timestamp" id="timestamp" value="">
-      <input type="hidden" name="data-utm-referrer" id="data-utm-referrer" value="">
-      <input type="hidden" name="data-document-referrer" id="data-document-referrer" value="">
-      <input type="hidden" name="data-external-referrer" id="data-external-referrer" value="">
+  <div class="layout-solo">
+    <div id="formError" class="alert-failure" style="display:none;">
+    </div>
+    
+    <!-- Form content -->
+    <div class="layout-major-invert">
+      <form name="become-a-fellow" accept-charset="UTF-8" action="https://formkeep.com/f/16aaed1c3fc1" method="POST" data-parsley-validate data-parsley-ui-enabled="true">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="timestamp" id="timestamp" value="">
+        <input type="hidden" name="data-utm-referrer" id="data-utm-referrer" value="">
+        <input type="hidden" name="data-document-referrer" id="data-document-referrer" value="">
+        <input type="hidden" name="data-external-referrer" id="data-external-referrer" value="">
 
-      <ul class="list-form">
-        
-        <li class="form-field">
-          <label for="full-name">Full name <abbr title="Required">*</abbr></label>
-          <input id="full-name" name="full-name" class="input" type="text" placeholder="" required>
-        </li>
+        <ul class="list-form">
+          
+          <li class="form-field">
+            <label for="full-name">Full name <abbr title="Required">*</abbr></label>
+            <input id="full-name" name="full-name" class="input" type="text" placeholder="" required>
+          </li>
 
-        <li class="form-field">
-          <label for="email">Email address <abbr title="Required">*</abbr></label>
-          <input id="email" name="email" class="input" type="email" placeholder="" required>
-        </li>
+          <li class="form-field">
+            <label for="email">Email address <abbr title="Required">*</abbr></label>
+            <input id="email" name="email" class="input" type="email" placeholder="" required>
+          </li>
 
-        <li class="form-field">
-          <label for="referral">How did you hear about the Fellowship Program <abbr title="Required">*</abbr></label>
-          <input id="referral" name="referral" class="input" type="text" placeholder="" required>
-        </li>
+          <li class="form-field">
+            <label for="referral">How did you hear about the Fellowship Program <abbr title="Required">*</abbr></label>
+            <input id="referral" name="referral" class="input" type="text" placeholder="" required>
+          </li>
 
-        <li class="form-field">
-          <label for="brigade">If you're a member of your local brigade, please enter the brigade name</label>
-          <input id="brigade" name="brigade" class="input" type="text" placeholder="">
-          <p class="note">If you're not a Brigade member, you can leave this blank.</p>
-        </li>
+          <li class="form-field">
+            <label for="brigade">If you're a member of your local brigade, please enter the brigade name</label>
+            <input id="brigade" name="brigade" class="input" type="text" placeholder="">
+            <p class="note">If you're not a Brigade member, you can leave this blank.</p>
+          </li>
 
-        <li class="form-field">
-          <label for="primary-skill-set">Primary skill set <abbr title="Required">*</abbr></label>
-          <select id="primary-skill-set" name="primary-skill-set" required>
-              <option value="">Pick one...</option>
-              <option>Developer or Data Scientist</option>
-              <option>Designer</option>
-              <option>Product Manager or Policy Wonk</option>
-              <option>Other</option>
-          </select>
-        </li><!-- end .form-field -->
+          <li class="form-field">
+            <label for="primary-skill-set">Primary skill set <abbr title="Required">*</abbr></label>
+            <select id="primary-skill-set" name="primary-skill-set" required>
+                <option value="">Pick one...</option>
+                <option>Developer or Data Scientist</option>
+                <option>Designer</option>
+                <option>Product Manager or Policy Wonk</option>
+                <option>Other</option>
+            </select>
+          </li><!-- end .form-field -->
 
-        <li class="form-field" id="js-skillset-other" style="display: none;">
-          <label for="skill-set-other">If other, please describe your primary skill set </label>
-          <input id="skill-set-other" name="skill-set-other" class="input" type="text" placeholder="">
-        </li>
+          <li class="form-field" id="js-skillset-other" style="display: none;">
+            <label for="skill-set-other">If other, please describe your primary skill set </label>
+            <input id="skill-set-other" name="skill-set-other" class="input" type="text" placeholder="">
+          </li>
 
-        <li class="form-field">
-          <label for="portfolio">What is the most relevant webpage that shows off your skills <abbr title="Required">*</abbr></label>
-          <input id="portfolio" name="portfolio" class="input" type="url" placeholder="" required>
-        </li>
+          <li class="form-field">
+            <label for="portfolio">What is the most relevant webpage that shows off your skills <abbr title="Required">*</abbr></label>
+            <input id="portfolio" name="portfolio" class="input" type="url" placeholder="" required>
+          </li>
 
-        <li class="form-field">
-          <label for="interest-paragraph">In 2-3 sentences, tell us why you want to be a CfA fellow <abbr title="Required">*</abbr></label>
-          <textarea id="interest-paragraph" name="interest-paragraph" rows="8" cols="32" required></textarea>
-        </li>
+          <li class="form-field">
+            <label for="interest-paragraph">In 2-3 sentences, tell us why you want to be a CfA fellow <abbr title="Required">*</abbr></label>
+            <textarea id="interest-paragraph" name="interest-paragraph" rows="8" cols="32" required></textarea>
+          </li>
 
-<!--         <li class="form-field">
-          <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox" checked> Sign me up for the Code for America newsletter</label>
-        </li> -->
+          <input type="submit" value="Submit">
 
-        <input type="submit" value="Submit">
+        </ul><!-- end form -->
+      </form>
+    </div>
 
-      </ul><!-- end form -->
-    </form>
-  </div>
-
-  <div class="layout-minor-invert">
-    <img src="/media/images/about_fellowship/jen-summit.jpg" alt="Code for America Executive Director Jen Pahlka talks on stage at the 2014 Summit.">
-    <h6><br />Learn more about the fellowship</h6>
-    <p>Want to learn more about the Fellowship and how it works? Check out the <a href="http://www.codeforamerica.org/about/fellowship/">Fellowship page</a>.</p>
-  </div>
-
+    <div class="layout-minor-invert">
+        <p>
+          <strong>Application Steps</strong><br />
+          <span class="note">There are 3 steps in the application process &mdash; please follow the guide below to see where you are.</span>
+        </p>
+        <div class="process-graphic">
+          <ul class="list-no-bullets note">
+            <li class="step1 current">
+              <p class="title">Interest Form</p>
+              <p class="details">Basic questions about you, your skillset and your background.</p>
+            </li>
+            <li class="step2">
+              <p class="title">Written Responses</p>
+              <p class="details">In-depth questions about your interest in the fellowship.</p>
+            </li>
+            <li class="step3">
+              <p class="title">Skills Challenge</p>
+              <p class="details">A short challenge that tests your chosen skillset.</p>
+            </li>
+          </ul>
+        </div>
+    </div><!-- end .layout-minor-invert -->
+  </div><!-- end .layout-solo -->
 </section>
 
 <section class="layout-semibreve"></section>
