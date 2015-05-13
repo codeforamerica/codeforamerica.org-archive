@@ -18,6 +18,10 @@ description: Code for America's Fellowship program pairs teams of technologists 
 # Scripts to execute after jquery is loaded
 jquery-scripts: |
   <script>
+    function randomIntFrom(min,max) {
+      return Math.floor(Math.random()*(max-min+1)+min);
+    }
+    var applicationId = randomIntFrom(10000000,99999999);
     $(document).ready(function(){
       // When skillset is changed, show or hide the other box
       $('#primary-skill-set').bind('change', function(){
@@ -135,6 +139,7 @@ jquery-scripts: |
         <input type="hidden" name="data-utm-referrer" id="data-utm-referrer" value="">
         <input type="hidden" name="data-document-referrer" id="data-document-referrer" value="">
         <input type="hidden" name="data-external-referrer" id="data-external-referrer" value="">
+        <input type="hidden" name="applicant-id" id="applicant-id" value="">
 
         <ul class="list-form">
           
@@ -199,16 +204,16 @@ jquery-scripts: |
         <div class="process-graphic">
           <ul class="list-no-bullets note">
             <li class="step1 current">
-              <p class="title">Interest Form</p>
-              <p class="details">Basic questions about you, your skillset and your background.</p>
+              <p class="title">Basic Information</p>
+              <p class="details">Quick questions about you, your skill set, and your background (5 minutes)</p>
             </li>
             <li class="step2">
               <p class="title">Written Responses</p>
-              <p class="details">In-depth questions about your interest in the fellowship.</p>
+              <p class="details">In-depth questions about your interest in the fellowship. (15-30 minutes)</p>
             </li>
             <li class="step3">
               <p class="title">Skills Challenge</p>
-              <p class="details">A short challenge that tests your chosen skillset.</p>
+              <p class="details">A 20-30 minute task that tests your chosen skillset.</p>
             </li>
           </ul>
         </div>
