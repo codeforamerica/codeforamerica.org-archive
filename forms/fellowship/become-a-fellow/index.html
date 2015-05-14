@@ -23,6 +23,9 @@ jquery-scripts: |
     }
     var applicationId = randomIntFrom(10000000,99999999);
     $(document).ready(function(){
+      // Fill in the application-id hidden field with a big random number
+      // $('#applicant-id').value = randomIntFrom(10000000,99999999);
+      document.getElementById('applicant-id').value = randomIntFrom(10000000,99999999);
       // When skillset is changed, show or hide the other box
       $('#primary-skill-set').bind('change', function(){
         var option = this.value;
@@ -123,7 +126,7 @@ jquery-scripts: |
 
 <section class="layout-breve intro">
   <div class="layout-solo">
-    <h5>Step 1: Interest Form</h5>
+    <h5>Step 1: Basic Information</h5>
     <h1>Apply for the 2016 Fellowship</h1>
     <p><strong>Use your skills for good.</strong> Code for America's Fellowship program pairs teams of technologists with local governments to develop digital tools that help cities and counties deliver key public services across health, economic development, and safety and justice. Fellows are based in San Francisco for one year. Express your interest right now. Applications will be reviewed on a rolling basis starting in May through July 15th. If you have any questions, don't hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>
   </div>
