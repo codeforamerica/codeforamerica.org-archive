@@ -5,15 +5,116 @@ masthead-image: "../../../../media/images/forms/thanks.gif"
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
 nav-global-primary: "no"
-masthead-custom: deep
-
-# Title for the title bar, and the overline in the masthead
-title: 
 
 # Content for the custom deep masthead
 headline: "Nice! You completed the first step."
 description: Thank you for expressing interest in the 2016 Fellowship! Applications will open on May 15th. We’ll be send the application to you at that time. The application will include a personal statement, a technical test around your primary skill set, and a video response.
+
+# Scripts to execute after jquery is loaded
+jquery-scripts: |
+  <script>
+    function randomIntFrom(min,max) {
+      return Math.floor(Math.random()*(max-min+1)+min);
+    }
+    var applicationId = randomIntFrom(10000000,99999999);
+    $(document).ready(function(){
+      // Do we have a URL param for applicant-id?
+      if (urlParams['applicant-id']) {
+        var output = [];
+        // escape() -> components for 
+        output.push('<p>We recieved your message loud and clear. Now, finish the next two steps and keep the momentum going. And if you have any questions, don\'t hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>');
+        output.push('<p><a href="https://cfa.typeform.com/to/nxZhxl?email='+escape(urlParams['email'])+'&applicantid='+escape(urlParams['applicant-id'])+'&from=application&app=true" class="button-bold button-lg">Start Step 2: Written Reponses</a></p>');
+        output.push('<p>Don\'t have time to start Step 2 right now? We sent you an email at <strong>'+urlParams['email']+'</strong> with a link to the next step in the process. Follow the link in that email for more information.</p>');
+        $('#js-target-replace').html( output.join('') );
+      }
+    });
+  </script>
 ---
+<style>
+  .list-form li.form-field {
+    margin-bottom: 20px;
+  }
+  .list-form .form-field-group li.form-field {
+    margin-bottom: 10px;
+  }
+  .intro {
+    margin-top: 5em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 40em) {
+    .intro {
+      margin-top: 0;
+    }
+  }
+  h1 {
+    text-transform: none;
+  }
+  h5 {
+    font-weight: 700;
+    line-height: 2em;
+  }
+  h1, h5 {
+    margin: 0;
+  }
+  .process-graphic {
+    margin-top: -1em;
+  }
+  .process-graphic ul {
+    position: relative;
+  }
+  .process-graphic ul:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 1.1em;
+    top: 1.2em;
+    height: 70%;
+    width: 1px;
+    background-color: #999595;
+  }
+  .process-graphic li {
+    margin-left: 3em;
+    position: relative;
+  }
+  .process-graphic li:before {
+    content: "1";
+    background-color: #999595;
+    padding: 10px;
+    color: white;
+    border-radius: 100%;
+    font-size: 0.7em;
+    height: 0.7em;
+    width: 0.7em;
+    line-height: 0.7em;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    left: -4em;
+    top: 0.1em;
+  }
+  .process-graphic li.current:before {
+    background-color: #aa1c3a;
+  }
+  .process-graphic li.step2:before {
+    content: "2";
+  }
+  .process-graphic li.step3:before {
+    content: "3";
+  }
+  .process-graphic li.current .title {
+    color: #aa1c3a;
+  }
+  .process-graphic .title {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .process-graphic .details {
+    margin-top: 0;
+    line-height: 1.8em;
+  }
+</style>
+<!-- 
 <section class="layout-semibreve layout-centered">
   <h2>Want to get started right now?</h2>
 
@@ -40,7 +141,44 @@ description: Thank you for expressing interest in the 2016 Fellowship! Applicati
     <p>Learn about interesting job openings in local governments across the nation.</p>
     <a href="/talent/" class="button">See them</a>
   </div>
+</section> 
+-->
 
+<section class="layout-breve intro">
+  <div class="layout-solo">
+    <h5>2016 Fellowship Application</h5>
+    <h1>Nice. You completed the first step. Keep going!</h1>
+  </div>
+  <div class="layout-solo">
+    <div class="layout-major-invert">
+      <div id="js-target-replace">
+        <p>Please check your email for a link to the next step in the application process.</p>
+        <p>And if you have any questions, don't hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>
+      </div>
+    </div>
+    <div class="layout-minor-invert">
+        <p>
+          <strong>Application Steps</strong><br />
+          <span class="note">There are 3 steps in the application process &mdash; please follow the guide below to see where you are.</span>
+        </p>
+        <div class="process-graphic">
+          <ul class="list-no-bullets note">
+            <li class="step1 current">
+              <p class="title">Basic Information</p>
+              <p class="details">Quick questions about you, your skill set, and your background (5 minutes)</p>
+            </li>
+            <li class="step2">
+              <p class="title">Written Responses</p>
+              <p class="details">In-depth questions about your interest in the fellowship. (15-30 minutes)</p>
+            </li>
+            <li class="step3">
+              <p class="title">Skills Challenge</p>
+              <p class="details">A 20-30 minute task that tests your chosen skillset.</p>
+            </li>
+          </ul>
+        </div>
+    </div><!-- end .layout-minor-invert -->
+  </div><!-- end .layout-solo -->
 </section>
 
 <section class="layout-semibreve"></section>
