@@ -55,13 +55,25 @@ jquery-scripts: |
     padding-bottom: 0;
     margin-bottom: 0;
   }
+  .list-logos li {
+    width: 20%;
+    height: auto;
+    border: 1px solid white;
+    padding: 20px;
+    backgr
+  }
+  @media screen and (max-width: 40em) {
+    .list-logos li {
+      width: 80%;
+    }
+  }
 </style>
 
 <style id="active">
   
 </style>
 
-{% assign orgs = 'Foundations,Companies,People,Fellowship Supporters' | split: ',' %}
+{% assign orgs = 'Foundations,People,Fellowship Supporters' | split: ',' %}
 {% assign years = '2014,2015' | split: ',' %}
 
 <section class="layout-semibreve layout-centered">
@@ -169,15 +181,15 @@ jquery-scripts: |
   <div class="spotlight js-supporters-list" id="companies-2015-list">
     <h3>2015 Supporters</h3>
 
-    <ul class="list-no-bullets list-ruled layout-grid-minim list-logos">
-      <li>Accela</li>
-      <li>Adobe</li>
-      <li>Amazon Web Services</li>
-      <li>Google for Entrepreneurs</li>
-      <li>HackHands</li>
-      <li>Health Information Management System LLC</li>
-
-
+    <ul class="list-no-bullets list-logos">
+      <li>
+        <a href="#"><img src="/media/images/logo-supporters/accela.png" alt="Accela"></a>
+      </li>
+      <li><img src="/media/images/logo-supporters/adobe.png" alt="Adobe"></li>
+      <li><img src="/media/images/logo-supporters/aws.png" alt="Amazon Web Services"></li>
+      <li><img src="/media/images/logo-supporters/g4e.png" alt="Google for Entrepreneurs"></li>
+      <li><img src="/media/images/logo-supporters/hackhands.png" alt="HackHands"></li>
+      <li><img src="/media/images/logo-supporters/hims.png" alt="Health Information Management System LLC"></li>
       <li class="no-logo">Heroku</li>
       <li class="no-logo">Level Five Solutions, Inc.</li>
       <li class="no-logo">Mapzen</li>
