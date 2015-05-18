@@ -6,7 +6,6 @@ masthead-class: masthead-s
 include-jquery: true
 include-parsley: true
 include-animate: true
-include-params: true
 ---
 <style>
   .list-form li.form-field {
@@ -186,22 +185,11 @@ include-params: true
               <legend><strong><br />Engagement information</strong></legend>
             </fieldset>
 
-            <fieldset class="select field">
-              <label for="stipendOffered">Do you offer a stipend/honorarium for speaking, travel or lodging? <abbr title="Required">*</abbr></label>
-              <ul class="list-form">
-                <li>
-                  <label for="noStipend"><input id="noStipend" name="noStipend" type="radio" checked/> No</label>
-                </li>
-                <li>
-                  <label for="yesStipend"><input id="yesStipend" name="yesStipend" type="radio"/> Yes (please specify amount/items covered)</label>
-                </li>
-              </ul>
-
-              <div class="form-field" id="stipendField" style="display: none;">
-                <label for="stipendDetails">If stipend/honorarium offered, please specify amount/items covered</label>
-                <input id="stipendDetails" name="stipendDetails" class="input disabled" type="text" placeholder="" required>
-              </div>
-            </fieldset>
+            <div class="form-field">
+              <label for="stipendDetails">If you offer a stipend/honorarium for speaking, travel or lodging, please specify the amount and items covered.</label>
+              <input id="stipendDetails" name="stipendDetails" class="input" type="text">
+              <small class="note">If no stipend is offered, you can leave this field blank.</small>
+            </div>
 
             <div class="form-field">
               <label for="speakingDescription">What topic do you want us to cover, and how does it tie into your theme? <abbr title="Required">*</abbr></label>
@@ -272,6 +260,12 @@ include-params: true
 {% capture cardMollyMcLeod %}
   {% include people/molly-mcleod.html context="speaker-card" base=".." %}
 {% endcapture %}
+{% capture cardAlanWilliams %}
+  {% include people/alan-williams.html context="speaker-card" base=".." %}
+{% endcapture %}
+{% capture cardJennyMontoyaTansey %}
+  {% include people/jenny-montoya-tansey.html context="speaker-card" base=".." %}
+{% endcapture %}
 
 <script>
 
@@ -293,6 +287,8 @@ include-params: true
     "david-leonard"         : '{{ cardDavidLeonard | strip_newlines }}',
     "dharmishta-rood"       : '{{ cardDharmishtaRood | strip_newlines }}',
     "molly-mcleod"          : '{{ cardMollyMcLeod | strip_newlines }}',
+    "alan-williams"         : '{{ cardAlanWilliams | strip_newlines }}',
+    "jenny-montoya-tansey"  : '{{ cardJennyMontoyaTansey | strip_newlines }}'
   };
 
   // ===== Set up our functions
@@ -335,16 +331,6 @@ include-params: true
 
   // ===== Run our functions
   $(document).ready(function() {
-    // Toggle the stipend details field when relevant radio buttons are clicked    
-    $('#yesStipend').click(function(){
-      $('#stipendField').show();
-      $('#stipendOffered').prop('required',true);
-    });
-    $('#noStipend').click(function(){
-      $('#stipendField').hide();
-      $('#stipendOffered').prop('required',false);
-    });
-
     // Put current date + time into the form
     var currentDate = new Date();
     document.getElementById("requestMadeOn").value = currentDate;

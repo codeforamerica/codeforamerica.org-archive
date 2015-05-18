@@ -1,3 +1,27 @@
+{% comment %} Required speaker variables {% endcomment %}
+{% assign speaker-key       = 'molly-mcleod' %}
+{% assign speaker-name      = 'Molly McLeod' %}
+{% assign speaker-bio       = 'Molly is a designer and typography geek passionate about social justice. As a 2014 Code for America Fellow in Long Beach, she helped design a new process for city staff to coordinate information in order to reduce 911 calls.<!-- break --> Previously, she designed print and digital projects for federal public health agencies at CommunicateHealth. She has also worked on documentary films, board games, and public art projects. Molly&rsquo;s mission is to empower people to improve their communities through design.' %}
+{% assign speaker-short-bio = 'Molly is a designer and typography geek passionate about social justice. As a 2014 Code for America fellow in Long Beach, she helped design a new process for city staff to coordinate to reduce 911 calls.' %}
+{% assign speaker-title     = 'Designer, Code for America' %}
+{% assign speaker-topics    = 'design-ux\User-centered Design|health\Health &amp; Human Services' | split: "|" %}
+{% comment %}{% capture embed %}<iframe src="//www.youtube.com/embed/yViYA8IG36U" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
+{% assign speaker-vid-title = '' %}
+{% assign speaker-vid-desc  = '' %}
+{% assign speaker-vid-date  = '' %}
+{% assign speaker-vid-loc   = '' %}
+{% assign speaker-vid-group = '' %}
+{% comment %} Optional speaker variables {% endcomment %}
+{% assign speaker-twitter   = 'mollyampersand' %}
+{% assign speaker-linkedin  = false %}
+{% assign speaker-blogposts = 'molly-mcleod' %}
+{% assign speaker-github    = 'mollymcleod' %}
+{% assign speaker-playlist  = false %}
+{% assign speaker-quote     = false %}
+{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
+{% assign speaker-similar   = 'rebecca-coelius|jack-madans' | split: '|' %}
+{% comment %} End variables {% endcomment %}
+
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -9,6 +33,7 @@
 	<div class="layout-minor">
 	    <h4 class="text-whisper layout-tight">Member of</h4>
 	    <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
 	    	<li><a href="{{ include.base }}/geeks/our-geeks/2014-fellows/">2014 Fellows</a></li>
 	    </ul>
 		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/molly-mcleod.jpg" />
@@ -51,5 +76,13 @@
       </ul>
   </div>
 </div>
+
+{% elsif include.context == 'speaker-page' %}
+
+  {% include speakers/speaker-page.html base="../.." %}
+
+{% elsif include.context == 'speaker-card' %}
+
+  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
