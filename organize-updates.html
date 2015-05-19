@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="slab-black" id="organize-video">
+    <div class="layout-semibreve layout-centered">
+      <figure>
+        <iframe width="560" height="315" style="padding:1px;border:1px solid black;" src="//www.youtube.com/embed/_9-E7CLQX48?list=PL65XgbSILalW_PV2Cgmz7gOWY3YLwC87M" frameborder="0" allowfullscreen></iframe>
+      </figure>
+    </div>
+</section>
+
+<section class="slab-gray">
+
+  <div class="layout-semibreve">
+
+    <h2 class="isolate">Want to Organize a Brigade?</h2>
+    <p>That's fantastic!  We are so excited you and your team are interested in joining this awesome network of developers, designers, community organizers, storytellers, government partners, and caring residents.</p>
+
+
+    <ol>
+      <li>Check to see if there is already an active Brigade near you. <button id='geolocate'>Check for a nearby Brigade</button></li>
+      <div class="alert-success" style="display:none;">
+        <p>The closest Brigade to you is <a id="closest-brigade">...</a>.</p>
+      </div>
+      <li>Fill out the below form and we will send you an email with organizing resources.</li>
+
+    </ol>
+  </div>
+
+  <div id="newsignup">{{ signup | safe }}</div>
+
+  <div class="layout-semibreve">
+    <p> Want to organize a civic-tech volunteer group from outside the United States?</b> You can participate as a Brigade Network Member too!  You can also visit
+      <a href="http://codeforall.org/about">codeforall.org/about</a> to learn about evolving into a Code for All Partner.</p>
+
+    <p> Are you employed by your city or state?  Be sure to check out our <a href="/governments/">Government resources</a>.</p>
+
+  </div>
+
+</section>
+
+<section class="layout-semibreve">
+    <h2>How Does Code for America Support Brigades</h2>
+    <p>Code for America provides resources, training, and access to the wider civic technology movement for volunteers who are interested in starting, leading, or participating in a Brigade. Brigades can participate and engage in the Brigade network at different levels.</p>
+
+    <h2>How Are Brigades Organized</h2>
+    <p>Brigades are organized through the “Four Ps:”</p>
+
+    <p><strong>People</strong> power Brigades, and everyone is invited to join! Brigades have a Code of Conduct to ensure everyone feels welcome and respected.</p>
+    <p><strong>Participation</strong> allows our network to grow and sustain. We connect through communication channels and collective days of action, such as CodeAcross, and National Day of Civic Hacking.</p>
+    <p><strong>Plans</strong> enable Brigades to set goals and measure outcomes. Brigades orient projects around the Principles for 21st Century Government and the Code for America Focus Areas.</p>
+    <p><strong>Partnerships</strong> with local community organizations and government are at the core of Brigades. Collaborating with partners is key to building civic technology that works for everyone.</p>
+
+
+    <p>*To get full instructions on becoming either a Brigade Network Member or an Official Brigade Chapter fill out the above form, click "I want to lead a Brigade in my community" and we will send you all the details!</p>
+
+</section>
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/turf.min.js') }}"></script>
+
+<script>
+
+$(document).ready(function(){
+
+  $("#geolocate").click(function(e){
+    e.preventDefault();
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        $("#geolocate").addClass("button-progress").text("Finding the closest Brigade");
+        var brigades = {{ brigades | safe }};
+        var brigade_points = []
+        $.each(brigades, function(i,brigade){
+          brigade_point = turf.point(brigade.geometry.coordinates, brigade.properties);
+          brigade_points.push(brigade_point);
+        });
+        var my_lnglat = [position.coords.longitude, position.coords.latitude]
+        var point = turf.point(my_lnglat);
+        var against = turf.featurecollection(brigade_points);
+        var nearest = turf.nearest(point,against);
+
+        $("#geolocate").hide();
+
+        $("#closest-brigade").attr("href", nearest.properties.website).text(nearest.properties.name);
+        $(".alert-success").show();
+
+
+      });
+    } else {
+      $("#geolocate").text = 'Geolocation is not available';
+    }
+  });
+
+
+  // Set up form
+  $("#signupformdiv").remove();
+  $("#newsignup h4").text("Sign up to organize");
+  $(".slab-medium-red").attr("style","text-align: center;");
+
+  $('input[name=REFERRAL]').val("/brigade/organize");
+  $('input[name="group[10273][8192]"]').prop('checked',true);
+
+  // Hide other groups
+  $("#email-signup-data-form ul").children().slice(4,7).hide();
+  // Add Organize group
+  $("#email-signup-data-form ul").append('<li id="organize-checkbox"><input type="checkbox" value="16777216" name="group[10273][16777216]" id="mce-group[10273]-10273-4" checked="checked" ><label for="mce-group[10273]-10273-4">I want to organize a Brigade</label></li>');
+
+  $("#email-signup-data-form").on( "submit", function( event ) {
+    event.preventDefault();
+    $.post("/brigade/signup/", $( this ).serialize(), function(response){
+      console.log(response);
+    }, "json");
+  });
+
+})
+
+</script>
+
+{% endblock %}
