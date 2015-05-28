@@ -318,3 +318,22 @@ body.modal-active {
     display: table;
     clear: both;
  }
+
+// ##### LAYOUT-WHOLE #####
+//
+// Adds a layout class that fills parent and clearfixes
+//
+
+@media all and (min-width: 40em) {
+  .layout-whole {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
