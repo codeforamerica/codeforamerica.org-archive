@@ -30,10 +30,10 @@ Most of the top search results are county websites, which act as canonical sourc
 ##Steps: 
 
 ###Provide the Correct Information
-	It's important to respect people's time and adopt a "no wrong door" approach to providing information. Provide the information they are looking for on your page- don't redirect them to another page and make them continue seeking out answers. Make sure your information is regularly updated so that it is correct. Key information includes:
+It's important to respect people's time and adopt a "no wrong door" approach to providing information. Provide the information they are looking for on your page- don't redirect them to another page and make them continue seeking out answers. Make sure your information is regularly updated so that it is correct. Key information includes:
 
 ####Income eligibility requirements
-	Let people know right away if they are eligible to apply for CalFresh. Effective October 1, 2014- September 30, 2015, the CalFresh income and eligibility limits are: 
+Let people know right away if they are eligible to apply for CalFresh. Effective October 1, 2014- September 30, 2015, the CalFresh income and eligibility limits are: 
 
 	* 1 person in household: $1,946 gross monthly income 
 	* 2 people in household: $2,622 gross monthly income 
@@ -46,7 +46,7 @@ Most of the top search results are county websites, which act as canonical sourc
 	* For each additional household member: add $678 to the gross monthly income
 
 ####Monthly CalFresh benefits allotment
-	Once a prospective client has determined that they meet the monthly income limits, they will likely want to know how much money they can expect to receive from CalFresh each month. Effective October 1, 2014- September 30, 2015, the CalFresh maximum monthly CalFresh benefit amounts are: 
+Once a prospective client has determined that they meet the monthly income limits, they will likely want to know how much money they can expect to receive from CalFresh each month. Effective October 1, 2014- September 30, 2015, the CalFresh maximum monthly CalFresh benefit amounts are: 
 
 	* 1 person in household: $194 a month in CalFresh benefits
 	* 2 people in household: $357 a month in CalFresh benefits
@@ -71,7 +71,7 @@ In general, writing for the web means:
 * Using subheadings
 * Optimizing your content with words your users are searching for
 
-You can learn more about [what makes a good city website](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/what-should-city-website-do.html) through our [Digital Front Door Initiative]((http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor). 
+You can learn more about [what makes a good city website](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/what-should-city-website-do.html) through our [Digital Front Door Initiative](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor). 
 
 ##Create a Meaningful Feedback Loop
 
