@@ -35,28 +35,28 @@ It's important to respect people's time and adopt a "no wrong door" approach to 
 ####Income eligibility requirements
 Let people know right away if they are eligible to apply for CalFresh. Effective October 1, 2014- September 30, 2015, the CalFresh income and eligibility limits are: 
 
-	* 1 person in household: $1,946 gross monthly income 
-	* 2 people in household: $2,622 gross monthly income 
-	* 3 people in household: $3,300 gross monthly income 
-	* 4 people in household: $3,976 gross monthly income 
-	* 5 people in household: $4,652 gross monthly income 
-	* 6 people in household: $5,330 gross monthly income 
-	* 7 people in household: $6,006 gross monthly income
-	* 8 people in household: $3,341 gross monthly income
-	* For each additional household member: add $678 to the gross monthly income
+* 1 person in household: $1,946 gross monthly income 
+* 2 people in household: $2,622 gross monthly income 
+* 3 people in household: $3,300 gross monthly income 
+* 4 people in household: $3,976 gross monthly income 
+* 5 people in household: $4,652 gross monthly income 
+* 6 people in household: $5,330 gross monthly income 
+* 7 people in household: $6,006 gross monthly income
+* 8 people in household: $3,341 gross monthly income
+* For each additional household member: add $678 to the gross monthly income
 
 ####Monthly CalFresh benefits allotment
 Once a prospective client has determined that they meet the monthly income limits, they will likely want to know how much money they can expect to receive from CalFresh each month. Effective October 1, 2014- September 30, 2015, the CalFresh maximum monthly CalFresh benefit amounts are: 
 
-	* 1 person in household: $194 a month in CalFresh benefits
-	* 2 people in household: $357 a month in CalFresh benefits
-	* 3 people in household: $511 a month in CalFresh benefits
-	* 4 people in household: $649 a month in CalFresh benefits
-	* 5 people in household: $771 a month in CalFresh benefits
-	* 6 people in household: $925 a month in CalFresh benefits
-	* 7 people in household: $1,022 a month in CalFresh benefits
-	* 8 people in household: $1,169 a month in CalFresh benefits
-	* For each additional member, add $146 to monthly CalFresh benefits
+* 1 person in household: $194 a month in CalFresh benefits
+* 2 people in household: $357 a month in CalFresh benefits
+* 3 people in household: $511 a month in CalFresh benefits
+* 4 people in household: $649 a month in CalFresh benefits
+* 5 people in household: $771 a month in CalFresh benefits
+* 6 people in household: $925 a month in CalFresh benefits
+* 7 people in household: $1,022 a month in CalFresh benefits
+* 8 people in household: $1,169 a month in CalFresh benefits
+* For each additional member, add $146 to monthly CalFresh benefits
 
 ###Make Your Site Mobile-friendly
 
