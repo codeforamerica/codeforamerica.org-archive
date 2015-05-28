@@ -1,0 +1,59 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+  <div class="heading">
+  	<h2 class="p-name">Efrem Bycer</h2>
+  </div>
+
+  <div class="layout-minor">
+    <p>Director of Economic Development</p>
+    <h4 class="text-whisper layout-tight">Member of</h4>
+
+    <ul class="list-no-bullets text-whisper link-invert">
+    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+    </ul>
+
+  	<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/efrem-bycer.jpg" />
+  </div>
+
+  <div class="layout-major">
+    
+    <p class="p-note">
+      Efrem leads Code for America’s efforts to help governments better leverage open data and civic technology to support their economic development efforts. Prior to joining CfA in May 2015, Efrem was a Manager, Economic Development at the San Diego Regional Economic Development Corporation where he led EDC’s work on public policy, global strategic initiatives, and select industries, including life sciences, clean technology, and craft beer. He has also served as a Performance Auditor for the City of San Diego and as a board member of multiple organizations supporting leadership development, education, and community engagement. In his spare time, Efrem is an avid runner, snowboarder and homebrewer. Efrem has a B.S. in Urban and Regional Studies from <a href="http://www.cornell.edu">Cornell University</a> and an M.P.A. from the Maxwell School of <a href="http://www.syracuse.edu">Syracuse University</a>.
+    </p>
+
+    <div class="spotlight">
+    	<h3 class="text-whisper">Contact</h3>
+    	<table class="table-unstyled table-minor">
+    		<tr><th>Twitter</th><td><a href="https://twitter.com/ezbycer">@ezbycer</a></td></tr>
+    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/ezbycer">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>ezbycer</a></td></tr>
+    	</table>
+    </div>
+  </div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Efrem Bycer</h3>
+
+  <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/efrem-bycer.jpg">
+
+  <div class="p-note profile-note">
+    <p>Director of Economic Development</p>
+    <p>
+      Efrem leads Code for America’s efforts to help governments better leverage open data and civic technology to support their economic development efforts. Prior to joining CfA in May 2015, Efrem was a Manager, Economic Development at the San Diego Regional Economic Development Corporation&hellip;
+    </p>
+
+    <p><a class="link-more" href="{{ include.base }}/people/efrem-bycer/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="http://www.linkedin.com/in/ezbycer">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/ezbycer">@ezbycer</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

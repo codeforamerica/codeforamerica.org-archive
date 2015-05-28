@@ -1,0 +1,60 @@
+  {% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Mischa Byruck</h2>
+	</div>
+
+	<div class="layout-minor">
+      <p>Director of Institutional Partnerships</p>
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/mischa-byruck.jpg" />
+	</div>
+
+	<div class="layout-major">
+	    <p class="p-note">
+	   Mischa leads CfA's relationships with its major foundation funders, along with other strategic partners. Previously, he was the Manager of Strategic Partnerships at <a href="http://datakind.org">DataKind</a>, an organization harnessing the power of data science in the service of humanity. Mischa brings a wide-ranging social sector expertise to CfA. He has worked as a labor journalist, an activist and community organizer, and in economic development roles in Kansas City, New York, New Orleans, Ghana and Nepal. In 2005, following Hurricane Katrina, he founded Emergency Communities, an organization that operated large-scale disaster relief camps along the Gulf Coast. A frequent startup consultant, Mischa occasionally gives talks and workshops about building 21st Century social sector organizations. He received his BA from Columbia University and his MPA from NYU.  
+        </p>
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Website</th><td><a href="http://mischabyruck.com">http://mischabyruck.<wbr>.com</a></td></tr>
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/mbyruck">@mbyruck</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/pub/mbyruck">http://www<wbr>.linkedin<wbr>.com/<wbr>pub/<wbr>mbyruck</a></td></tr>
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Mischa Byruck</h3>
+
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/mischa-byruck.jpg">
+
+    <div class="p-note profile-note">
+        <p>Director of Institutional Partnerships</p>
+        <p>
+            Mischa leads CfA's relationships with its major foundation funders, along with other strategic partners. Previously, he was the Manager of Strategic Partnerships at <a href="http://datakind.org">DataKind</a>, an organization harnessing the power of data science in the service of humanity&hellip;
+        </p>
+
+        <p><a class="link-more" href="{{ include.base }}/people/mischa-byruck/">More</a></p>
+
+        <ul class="list-social list-social-horizontal">
+            <li class="social-website"><a href="http://mischabyruck.com/">Website</a></li>
+            <li class="social-linkedin"><a href="http://www.linkedin.com/pub/mbyruck">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/mbyruck">@mbyruck</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
