@@ -29,10 +29,10 @@ Most of the top search results are county websites, which act as canonical sourc
 
 ##Steps: 
 
-###Provide the Correct Information
+##1. Provide the Correct Information
 It's important to respect people's time and adopt a "no wrong door" approach to providing information. Provide the information they are looking for on your page- don't redirect them to another page and make them continue seeking out answers. Make sure your information is regularly updated so that it is correct. Key information includes:
 
-####Income eligibility requirements
+#####Income eligibility requirements
 Let people know right away if they are eligible to apply for CalFresh. Effective October 1, 2014- September 30, 2015, the CalFresh income and eligibility limits are: 
 
 * 1 person in household: $1,946 gross monthly income 
@@ -45,7 +45,7 @@ Let people know right away if they are eligible to apply for CalFresh. Effective
 * 8 people in household: $3,341 gross monthly income
 * For each additional household member: add $678 to the gross monthly income
 
-####Monthly CalFresh benefits allotment
+#####Monthly CalFresh benefits allotment
 Once a prospective client has determined that they meet the monthly income limits, they will likely want to know how much money they can expect to receive from CalFresh each month. Effective October 1, 2014- September 30, 2015, the CalFresh maximum monthly CalFresh benefit amounts are: 
 
 * 1 person in household: $194 a month in CalFresh benefits
@@ -58,12 +58,13 @@ Once a prospective client has determined that they meet the monthly income limit
 * 8 people in household: $1,169 a month in CalFresh benefits
 * For each additional member, add $146 to monthly CalFresh benefits
 
-###Make Your Site Mobile-friendly
+##2. Make Your Site Mobile-friendly
 
-###Write for the Web
+##3. Write for the Web
 At its core, city websites must provide information that is accurate and easy to understand. This means avoiding highly technical language or jargon, spelling out and explaining acronyms, and making sure your content is written at an 8th grade reading level. 
 
 In general, writing for the web means: 
+
 * Putting the most important information at the top of the page
 * Using short sentences and paragraphs
 * Making bullets and numbered lists
@@ -73,7 +74,7 @@ In general, writing for the web means:
 
 You can learn more about [what makes a good city website](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor/playbook/user-needs/what-should-city-website-do.html) through our [Digital Front Door Initiative](http://www.codeforamerica.org/our-work/initiatives/digitalfrontdoor). 
 
-##Create a Meaningful Feedback Loop
+##4. Create a Meaningful Feedback Loop
 
 
 
