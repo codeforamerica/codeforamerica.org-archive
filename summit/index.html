@@ -19,6 +19,24 @@ description: "September 30 - October 2, Oakland, California: The #CfASummit is a
 metadata:
   # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
   image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+
+# jQuery
+jquery-scripts: |
+  <script>
+    (function(win,doc){
+      console.log("Loaded");
+      if (typeof(urlParams["discount"]) !== "undefined" && urlParams["discount"] !== "") {
+        console.log("IT DOES THINGS");
+        var iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt";
+        var iframe_discount_code = "&discount=" + urlParams["discount"];
+        var path = iframe_base_path + iframe_discount_code;
+        document.getElementById('iframe-source').setAttribute('src', path);
+
+        // send a discount code notice
+        $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
+      }
+    })(window,document);
+  </script>
 ---
 
 <style>
@@ -81,8 +99,8 @@ metadata:
   </div>
   
     <h5><i class="icon-bullhorn"></i> Speakers on tap</h5>
-    <p class="quiet">Speakers include <strong>Mayor Libby Schaaf</strong> (City of Oakland), <strong>Kellan Elliott-McCrea</strong> (CTO, Etsy), <strong>Dana Chisnell</strong> (CEO of Usability Works and Generalist Problem Solver, United States Digital Service), <strong>Gabe Klein</strong> (Mobility and Tech advisor), <strong>Emily Castor</strong> (Director of Transportation Policy, Lyft), and <strong>Will Lightbourne</strong>, Director California Department of Social Services.</p>
-    <p><a href="#schedule" class="button button-bold">Learn more</a></p>
+    <p class="quiet">Hear from leaders inside and outside of government who are building 21st Century government.</p>
+    <p><a href="/summit/speakers" class="button button-bold">See the lineup</a></p>
 </section>
 
 <section class="slab-dark-blue">
@@ -158,7 +176,8 @@ metadata:
     <p>Unhackathons, keynotes, deep dives, a two-day tech fair. The Summit is the place to discuss the future of government technology. Register now and save your spot.</p>
   </div>
   <div class="layout-major">
-    <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="675" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=etckt">The 2015 Code for America Summit</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+    <div id="discount-alert-target"></div>
+    <div style="width:100%; text-align:left;" ><iframe  id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="675" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=etckt">The 2015 Code for America Summit</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
   </div>
   <br /><br />
 </section>

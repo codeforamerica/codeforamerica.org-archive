@@ -1,58 +1,84 @@
 {% if include.context == "app-page" %}
+<h2 id="tracTop">RecordTrac</h2>
+<p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage.</p>
+<img class="isolate" src="{{ include.base }}/media/images/apps/recordtrac-home.png" style="border:2px solid #999595"/>
 
-	<div class="heading">
-		<h2>RecordTrac</h2>
-	</div>
-	
-	<div class="layout-minor">
-		<img class="isolate" src="{{ include.base }}/media/images/apps/RecordTrac_header.jpg" />
-	    <h3 class="text-prominent">Overview</h3>
-	    <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage.</p>
-	    
-	    <p class="text-whisper"><a href="http://records.oaklandnet.com">http://records<wbr>.oaklandnet<wbr>.com</a></p>
-	    
-	    <h4 class="text-whisper layout-tight">Created by</h4>
-	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/people/cris-cristina">Cris Cristina</a></li>
-	    	<li><a href="{{ include.base }}/people/richa-agarwal">Richa Agarwal</a></li>
-	    	<li><a href="{{ include.base }}/people/sheila-dugan">Sheila Dugan</a></li>
-	    </ul>
-	    
-	    <h4 class="text-whisper layout-tight">Created for</h4>
-	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/cities/oakland">City of Oakland</a></li>
-	    </ul>
-	    
-	</div>
-	
-	<div class="layout-major">
-	    	
-	    <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage. The application is delivered by PostCode.io, a full service civic technology company.</p>
-	        
-	    <div class="spotlight">
-	    	<h3 class="text-whisper">Summary</h3>
-	    	<table class="table-unstyled table-minor">
-	    		<tr><th>Live</th><td><a href="http://records.oaklandnet.com">http://records<wbr>.oaklandnet<wbr>.com</a></td></tr>
-	    		<tr><th>Video</th><td><a href="http://www.youtube.com/watch?v=F4XP9DJ-htg">http://www<wbr>.youtube<wbr>.com/<wbr>watch?v=F4XP9DJ-htg</a></td></tr>
-	    		<tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/public-records/">https://github<wbr>.com/<wbr>codeforamerica/<wbr>public-records/</a></td></tr>
-	    		<tr><th>Environment</th><td></td></tr>
-	    		<tr><th>Redeploy</th><td>Contact <a href="http://postcode.io">Postcode.io</a> or follow <a href="https://github.com/codeforamerica/recordtrac/blob/master/docs/redeploy.md">installation instructions on Github</a>.</td></tr>
-	    	</table>
-	    </div>
-	    
-        <p>In 2013, the City of Oakland recognized the need to digitize and improve its public records program. At the time, requests were not well tracked, city staff found the system tough to navigate and the information was often buried. In essence, the public was left wondering where their requests were going and whether they'd be fulfilled. RecordTrac aims to solve that.</p>
-        <p>Built by the 2013 fellowship team Richa Agarwal, Cris Cristina and Sheila Dugan for the City of Oakland, the app offers transparency into the request process including letting city employees:</p>
-        <ul>
-        <li>upload links or documents;</li>
-        <li>triage requests to other departments;</li>
-        <li>ask questions of requesters;</li>
-        <li>explain whether or not the requests' fulfillment is in paper format or online; and,</li>
-        <li>track request timing / fulfillment</li>
-        </ul>
-        <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage. The application is delivered by PostCode.io, a full service civic technology company.</p>
-        <p>To date the request app is widely used across Oakland City departments. To try it visit <a href="records.oaklandnet.com/landing">records.oaklandnet.com</a>.</p>
-	    
-	</div>
+<div class="heading">
+  <h4>Details</h4>
+</div>
+<p>You can set up RecordTrac if you have:</p>
+<ul>
+  <li>A list of emails for records liaisons by department</li>
+  <li>Accounts, or ability to sign up for accounts, at Heroku, Scribd, and Sendgrid</li>
+  <li>A high level commitment to deliver records online.</li>
+</ul>
+
+<div class="heading">
+  <h4>Setup</h4>
+</div>
+<div class="spotlight">
+  <table class="table-unstyled table-minor">
+    <tr>
+      <th>Live Example</th>
+      <td><a href="http://records.oaklandnet.com/">http://records<wbr>.oaklandnet<wbr>.com/</a></td>
+    </tr>
+    <tr>
+      <th>Video</th>
+      <td><a href="http://www.youtube.com/watch?v=F4XP9DJ-htg">http://www<wbr>.youtube<wbr>.com/<wbr>watch?v=<wbr>F4XP9DJ-htg</a></td>
+    </tr>
+    <tr>
+      <th>Codebase</th>
+      <td><a href="https://github.com/codeforamerica/recordtrac">https://github<wbr>.com/<wbr>codeforamerica/<wbr>recordtrac</a></td>
+      </tr>
+    <tr>
+      <th>Environment</th>
+      <td>Python application built on a backend Flask framework.</td>
+    </tr>
+    <tr>
+      <th>Redeploy</th>
+      <td>Use the <a href="http://recordtrac-setup.codeforamerica.org/">RecordTrac setup application</a> or follow Heroku <a href="https://github.com/codeforamerica/recordtrac/blob/master/docs/redeploy.md">installation instructions on Github</a>.</td>
+    </tr>
+  </table>
+  <a href="mailto:jack@codeforamerica.org" class="button-alternative">Contact us for a trial</a>
+</div>
+
+<p>&nbsp;</p>
+<div class="heading">
+  <h4>How it works</h4>
+</div>
+<p>RecordTrac makes the process of requesting and delivering official public records simpler and fully compliant with local policies. It works best when cities:</p>
+<ul><li>Track all public records requests through RecordTrac, even if originally received it through other channels</li>
+
+<li>Thoroughly redact documents before posting</li>
+
+<li>Upload scanned copies of the [redacted] records to RecordTrac. This prevents answering the same public records request multiple times and provides proof you responded.</li>
+</ul>
+
+<p>This is the open-source version. There is a proprietary version offered as a hosted service by <a href="https://www.nextrequest.com/">NextRequest</a>.</p>
+
+<div class="heading">
+  <h4>Created by:</h4>
+</div>
+
+<div class="layout-minor">
+  <a href="/governments/southbend/"><img style="border: 5px solid red" class="profile-photo u-photo" src="../../media/images/governments/oakland_seal.png" alt="southbend_seal"/>
+  <h4 class="text-whisper">Oakland, Ca.</h4></a> 
+</div>
+
+<div class="layout-major">
+  <div class="layout-crotchet">
+    <a href="/people/richa-agarwal/"><img style="border: 5px solid white" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/richa-agarwal.jpg"/>
+    <h4 class="text-whisper">Richa Agarwal</h4></a>
+  </div>
+  <div class="layout-crotchet">
+    <a href="/people/cris-cristina/"><img style="border: 5px solid white" class="profile-photo u-photo" src="{{ include.base }}/media/images/people/cris-cristina.jpg"/>
+    <h4 class="text-whisper">Cris Cristina</h4></a>
+  </div>
+  <div class="layout-crotchet">
+    <a href="/people/sheila-dugan/"><img style="border: 5px solid white" class="profile-photo u-photo" src="{{ include.base }}/media/images/people/sheila-dugan.jpg"/>
+    <h4 class="text-whisper">Sheila Dugan</h4></a>
+  </div>
+</div>
 
 {% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
 
@@ -63,13 +89,13 @@
             </a>
         </header>
         <div class="teaser-body">
-            <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage. The application is delivered by PostCode.io, a full service civic technology company.</p>
+            <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage.</p>
             
             <h2 class="text-whisper">Environment</h2>
-            <p></p>
+            <p>Python application built on a backend Flask framework.</p>
             
             <h2 class="text-whisper">Redeploy</h2>
-            <p>Contact <a href="http://postcode.io">Postcode.io</a> or follow Heroku <a href="https://github.com/codeforamerica/cityvoice#setup-internal-documentation">installation instructions on Github</a>.</p>
+            <p>Use the <a href="http://recordtrac-setup.codeforamerica.org/">RecordTrac setup application</a> or follow Heroku <a href="https://github.com/codeforamerica/recordtrac/blob/master/docs/redeploy.md">installation instructions on Github</a>.</p>
             
             <p><a href="{{ include.base }}/apps/recordtrac">Learn more about this app</a></p>
         </div>

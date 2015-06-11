@@ -34,6 +34,24 @@
 	}
 }
 
+// Colors
+$color-red: #cf1b41;
+$color-red-medium: #aa1c3a;
+$color-blue: #399fd3;
+$color-blue-light: #7ab5d6;
+$color-blue-medium: #4298bb;
+$color-blue-dark: #004b6a;
+$color-gray: #6D6E71;
+$color-gray-light: #e5e5e5;
+$color-gray-medium: #999595;
+$color-gray-dark: #444444;
+$color-orange: #e87d2b;
+$color-purple: #69579C;
+$color-green: #00a175;
+$color-yellow: #fedd44;
+$color-black: rgba(0,0,0,0.7);
+
+
 // ##### SMALL PATTERNS #####
 //
 // Small patterns that can be used in multiple places. These add or overwrite pattern-library functionality.
@@ -318,3 +336,98 @@ body.modal-active {
     display: table;
     clear: both;
  }
+
+// ##### LAYOUT-WHOLE #####
+//
+// Adds a layout class that fills parent and clearfixes
+//
+
+@media all and (min-width: 40em) {
+  .layout-whole {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+// ##### MARKER #####
+//
+// New version of badge that stands alone. Should be ported over to take the place of and 
+// become a more flexible version of badge.
+//
+
+%marker-icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  // Default red, can be changed
+  background-color: $color-red;
+  // Default center align, can be changed
+  margin-left: auto;
+  margin-right: auto;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+// Base of marker ... pick an icon
+.marker-safety-justice {
+  @extend %marker-icon;
+  &:before {
+    background-image: url('/media/images/icons/safety.png');
+    padding-top: 5%;
+    background-size: 55%;
+  }
+}
+.marker-health {
+  @extend %marker-icon;
+  &:before {
+    background-image: url('/media/images/icons/health.png');
+    padding-top: 5%;
+    background-size: 65%;
+  }
+}
+.marker-economic-development {
+  @extend %marker-icon;
+  &:before {
+    background-image: url('/media/images/icons/economic.png');
+  }
+}
+.marker-civic-engagement {
+  @extend %marker-icon;
+  &:before {
+    background-image: url('/media/images/icons/info.png');
+  }
+}
+
+// Change the color. It's $medium-red by default.
+.marker-blue { background-color: $color-red; }
+.marker-blue { background-color: $color-blue; }
+.marker-green { background-color: $color-green; }
+.marker-orange { background-color: $color-orange; }
+.marker-purple { background-color: $color-purple; }
+
+// Change the size. It's 65px of the container by default.
+.marker-big {
+  width: 80px;
+  height: 80px;
+}
+
+// Change the alignment. It's centered by default.
+.marker-left {
+  margin-left: 0;
+  margin-right: 0;
+}
