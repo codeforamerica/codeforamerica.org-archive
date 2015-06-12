@@ -193,3 +193,24 @@ jquery-scripts: |
     <img src="/media/images/summit/2015/marriott-lobby.jpg" alt="The lobby of the Oakland Marriott City Center." width="100%" class="width:100%;">
   </div>
 </section>
+
+
+
+
+<section class="layout-semibreve layout-centered">
+  <ul class="list-logos-primary muted">
+    <h4>Capstone Supporters</h4>
+    {% for capstone in site.data.summit_supporters.capstone %}
+      <li><a href="{{ capstone.link }}"><img src="{{ capstone.logo }}"/></a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="list-logos-secondary muted">
+    <h4>Platinum Supporters</h4>
+    {% for platinum in site.data.summit_supporters.platinum %}
+      <li><a href="{{ platinum.link }}"><img src="{{ platinum.logo }}"/></a></li>
+    {% endfor %}
+  </ul>
+
+  <p class="layout-centered"><a href="/summit/supporters/">More&hellip;</a></p>
+</section>
