@@ -1,0 +1,26 @@
+{
+  "capstone": [
+    {
+      "name" : "Microsoft",
+      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
+      "description" : "Microsoft was founded on an optimistic belief in the empowering potential of technology. In the rapidly emerging cloud first/mobile first world, we are committed to partnering with civic leaders on leveraging technology for effective, efficient, and relevant services that help make citizens’ lives better.",
+      "link" : "http://www.microsoft.com"
+    }
+  ],
+  "platinum" : [
+    {
+      "name" : "Accela",
+      "logo" : "/media/images/summit/2015/logos/accela.jpg",
+      "description" : "Accela provides cloud-based civic engagement solutions for government. Accela's Civic Platform enables and improves core processes for city, county, state and federal governments and addresses the diverse needs of their constituents by making publicly available information more accessible. The Platform includes solutions for land management, asset management, licensing and case management, legislative management and more.",
+      "link" : "http://www.accela.com"
+    }
+  ],
+  "gold" : [
+  ],
+  "silver" : [
+  ],
+  "supporter" : [
+  ],
+  "civic-startup" : [
+  ]
+}
