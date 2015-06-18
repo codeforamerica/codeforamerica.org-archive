@@ -12,7 +12,19 @@ nav-breadcrumbs:
 
 <style>
     .header-edit{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom-width: 0px;
+    }
+    .space{
+        padding-top: 40px;
+    }
+    .h4-size{
+        font-size: 18px;
+        margin: 0 0 3px 0;
+    }
+    .table-of-contents-head{
+        border-bottom-width: 1px;
+        border-bottom: 1px solid #6D6E71;
     }
     .layout-top{
         padding-bottom: 0;
@@ -28,6 +40,10 @@ nav-breadcrumbs:
         width: 80%;
         margin-bottom: 20px;
     }
+    .layout-fix{
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
     .card{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
@@ -35,6 +51,9 @@ nav-breadcrumbs:
         padding-right: 0.5em;
         background-color: white;
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.06);
+    }
+    .card-spacing{
+        margin-bottom: 40px;
     }
 </style>
 <div class="masthead masthead-xl">
@@ -44,15 +63,19 @@ nav-breadcrumbs:
   </header>
 </div>
 
-<section>
-     <div class="layout-semibreve">
+<section class="slab-red">
+     <div class="layout-semibreve layout-fix">
          <header class="header-edit badge-heading badge-gov badge-red"> <h2>Principles for the 21st Century</h2>
            <p>Since 2011, Code for America has partnered with dozens of local governments to apply this approach to deliver better services and outcomes for their communities. We’ve seen that governments of any size, structure, or political persuasion can adopt these practices to better work for the people, by the people, in the 21st century.</p>      </div>
+</section>
+    
+<section class="space">
     
 <div class="layout-edit layout-breve">
 <div class="layout-minor">
-    <nav role="navigation" class="nav nav-horizontal">
+    <nav role="navigation" class="nav nav-horizontal">        
     		<ul class="card">
+                <header class="table-of-contents-head"><h4 class="h4-size">Table of Contents</h4></header>
       			<li>1. <a href="#people">Put People First</a></li>
       			<li>2. <a href="#start">Start Small</a></li>
       			<li>3. <a href="#collaborate">Make Digital</a></li>
@@ -63,7 +86,7 @@ nav-breadcrumbs:
 
 </div>	
     
-<div id="people" class="layout-major card">
+<div id="people" class="layout-major card card-spacing">
               <h2 style="color: #6D6E71">1. Put people first</h2>   
                 <p>Taking a <b>user-centered approach</b> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
             <section class="layout-semibreve-intro">
@@ -104,7 +127,7 @@ nav-breadcrumbs:
 </div>
     
     
-<div class="layout-major card" id="start">
+<div class="layout-major card card-spacing" id="start">
               <h2 style="color: #6D6E71">2. Put people first</h2>   
                 <p>Taking a <b>user-centered approach</b> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
             <section class="layout-semibreve">
@@ -145,7 +168,7 @@ nav-breadcrumbs:
 
 
 </div>
-<div class="layout-major card" id="collaborate">
+<div class="layout-major card card-spacing" id="collaborate">
 
               <h2 style="color: #6D6E71">3. Collaborate</h2>   
                 <p>Taking a <b>user-centered approach</b> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
@@ -187,9 +210,9 @@ nav-breadcrumbs:
 
 
 </div>
-<div class="layout-major card">
+<div class="layout-major card card-spacing" id="open">
 
-              <h2 id="open" style="color: #6D6E71">4. Open</h2>   
+              <h2 style="color: #6D6E71">4. Open</h2>   
                 <p>Taking a <b>user-centered approach</b> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
             <section class="layout-semibreve">
 
@@ -229,7 +252,7 @@ nav-breadcrumbs:
 
 
 </div>
-<div class="layout-major card" id="data" >
+<div class="layout-major card card-spacing" id="data" >
 
               <h2 style="color: #6D6E71">5. Data</h2>   
                 <p>Taking a <b>user-centered approach</b> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
