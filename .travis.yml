@@ -7,7 +7,7 @@ before_install:
 - sudo apt-get update -y
 - sudo apt-get install -y apache2
 script: ./.run-tests.sh
-after_script: ./.run-percy.sh
+after_success: ./.run-percy.sh
 branches:
   only:
     - master
