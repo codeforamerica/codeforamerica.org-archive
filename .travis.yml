@@ -6,6 +6,10 @@ before_install:
 - sudo apt-get update -y
 - sudo apt-get install -y apache2
 script: ./.run-tests.sh
+after_success:
+- travis_retry gem install percy-cli
+- jekyll build -d ~/_site
+- percy snapshot ~/_site --repo "codeforamerica/codeforamerica.org" --autoload_remote_resources
 branches:
   only:
     - master
