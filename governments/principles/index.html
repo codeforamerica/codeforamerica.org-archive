@@ -87,6 +87,11 @@ nav-breadcrumbs:
     }
     .heading-margin{
         margin: 0em 0;
+        padding: 0.5em;
+    }
+    .header-border{
+        border-bottom: 1px solid;
+        border-color: rgba(229, 229, 229, 0.8);
     }
     ul.checkmark
     {
@@ -104,6 +109,13 @@ nav-breadcrumbs:
         content: "\e370";
         float: left;
         width: 2em;
+    }
+    .expand{
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    .expand:before{
+        font-size: 50px;
     }
 </style>
 <div class="masthead masthead-xl">
@@ -158,26 +170,30 @@ nav-breadcrumbs:
                     <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
                 </ul>
             </div> 
-
+            <div class="header-border slab-dark-blue">
             <div class="layout-section-bottom">
                 <div class="layout-crotchet" style="text-align:center;">
-                    <h5 class="heading heading-margin">Guidance</h5>
+                    <div class="expand icon-thumbs-up"></div>
+                    <h5 class="heading heading-margin ">Guidance</h5>
                     <p><a href="/governments/principles/engagement/">Read the Civic Engagement Standard</a></p>
                     <p>Five key elements of an effective, 21st century civic engagement strategy for local government.</p>
                 </div>
 
                 <div class="layout-crotchet" style="text-align:center;">
+                    <div class="expand icon-cogs"></div>
                     <h5 class="heading heading-margin">Practice</h5>
                     <p><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html">Run a resident survey</a></p>
                     <p>How to conduct a baseline survey to understand your residents' online needs.</p>
                 </div>
 
                 <div class="layout-crotchet" style="text-align:center;">
+                    <div class="expand icon-tools" width: 200%></div>
                     <h5 class="heading heading-margin">Tool</h5>
                     <p><a href="/apps/cityvoice/#voiceTop">Gather community feedback with CityVoice</a></p>
                     <p>An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>          
                 </div>
 
+            </div>
             </div>
 
         </div>
