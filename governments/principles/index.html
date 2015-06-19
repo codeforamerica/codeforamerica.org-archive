@@ -45,44 +45,45 @@ nav-breadcrumbs:
         padding-bottom: 5px;
     }
     .layout-section-top{
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-    }
-    .layout-section-side{
         padding-right: 3em;
         padding-left: 3em;
+        padding-top: 1.5em;
     }
-    .card{
+    .layout-section-middle{
+        padding-bottom: 0em;
+        padding-top: 0.75em;
+    }
+    .layout-section-checklist{
+        clear: both;
+        padding-right: 3em;
+        padding-left: 3em; 
+        padding-top: 1.5em;
+    }
+    .layout-section-bottom{
+        float: left;
+        padding-right: 3em;
+        padding-left: 3em; 
+        padding-bottom: 2em;
+    }
+    .middle-padding{
+        padding-bottom: 0;
+        padding-top: 1em;
+        clear: both;
+    }
+    .card-toc{
         padding-top: 1em;
         padding-bottom: 0.5em;
         padding-left: 1em;
         padding-right: 1em;
         background-color: white;
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(109, 110, 113, 0.35);
     }
-
     .card-sections{
-/*
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        padding-left: .5em;
-        padding-right: .5em;
-*/
         background-color: white;
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.06);
         border: 1px solid rgba(109, 110, 113, 0.35);
-    }
-    .card-spacing{
-        margin-bottom: 40px;
-    }
-    .section-block{
-        display: inline-block;
-    }
-    .extend-padding{
-        margin-left: 0;
-        margin-right: 0;
-        padding-right: 4.5em;
-        padding-bottom: 0.5em;
+        margin-bottom: 3.5em;
     }
 </style>
 <div class="masthead masthead-xl">
@@ -97,7 +98,7 @@ nav-breadcrumbs:
 <div class="layout-edit layout-breve">
 <div class="layout-minor">
     <nav role="navigation" class="nav nav-horizontal">        
-    		<ul class="card">
+    		<ul class="card-toc">
                 <header class="table-of-contents-head"><h4 class="h4-size">Table of Contents</h4></header>
       			<li>1. <a href="#people">Put People First</a></li>
       			<li>2. <a href="#start">Start Small</a></li>
@@ -111,12 +112,11 @@ nav-breadcrumbs:
       
 <div class="layout-major card-sections card-spacing" id="people">
     <div class="layout-section-top">
-        <div class="layout-section-side">
               <h2 style="color: #6D6E71">1. Put people first</h2>   
                 <p>Taking a <b>user-centered approach</b> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
-        </div>
-            <section class="slab-red extend-padding layout-section-side layout-semibreve">
-
+    </div>
+<div class="slab-red middle-padding">
+    <div class="layout-semibreve layout-section-middle">
             <h4>What’s possible: Saving time and opening access to Pre-K</h4>
             <div class="layout-minim"> 
               <img src="/media/images/pandas.png" alt="Placeholder: pandas.png" width="100%" class="width:100%;"> 
@@ -125,15 +125,16 @@ nav-breadcrumbs:
               The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more 
             </div>
 
-        </section>
-        <div class="layout-section-side">
+    </div>
+</div>
+<div class="layout-section-checklist">
         <ul>
 			 <h4>Checklist</h4>
            		<li>Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
            		<li>Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
            		<li>Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
-
       </ul>
+    </div>
       <div class="layout-crotchet" style="text-align:center;">
         <h5 class="heading">Guidance</h5>
         <p><a href="/governments/principles/engagement/">Read the Civic Engagement Standard</a></p>
@@ -147,10 +148,10 @@ nav-breadcrumbs:
       <div class="layout-crotchet" style="text-align:center;">
         <h5 class="heading">Tool</h5>
         <p><a href="/apps/cityvoice/#voiceTop">Gather community feedback with CityVoice</a></p>
-        <p>An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>      
-      </div>
-</div>
-</div>
+        <p>An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>          
+    </div>
+        <div class="layout-section-bottom">
+        </div>
 </div>
     
     
