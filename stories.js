@@ -31,6 +31,13 @@ on_stories(
     //     "box_text": "Read the announcement"
     // },
     {
+    "page_link"     : "http://awards.codeforamerica.org/",
+    "title"         : "Announcing the 2015 Code for America Technology Awards",
+    "content_html"  : "The Code for America Technology Awards recognize outstanding products and implementations of government technology.",
+    "image_src"     : "/media/images/homepage-stories/awards-header-photo.jpg",
+    "button_text"   : "Learn more"
+    },
+    {
         "page_link"     : "http://2014.codeforamerica.org/",
         "title"         : "2014 was an amazing year",
         "content_html"  : "Thank you for making government work for everyone.",
