@@ -203,7 +203,7 @@ class TestApache (unittest.TestCase):
                  ('/companies/our-companies/', '/companies/icubator-accelerator/'),
                  ('/companies/accelerator-faq/', '/companies/icubator-accelerator/'),
                  ('/companies/accelerator-apply/', '/companies/icubator-accelerator/'),
-                 ('/companies/incubator-far/', '/companies/icubator-accelerator/'),
+                 ('/companies/incubator-faq/', '/companies/icubator-accelerator/'),
                  ('/companies/incubator-apply/', '/companies/icubator-accelerator/'),
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
