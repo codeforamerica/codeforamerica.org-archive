@@ -431,3 +431,12 @@ body.modal-active {
   margin-left: 0;
   margin-right: 0;
 }
+
+// ##### MARKER #####
+//
+// Heading class is unwieldly. Let's condense it a bit.
+//
+.heading-tight {
+  margin-bottom: 1em;
+  padding-bottom: 0.1em;
+}
