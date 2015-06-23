@@ -190,8 +190,8 @@ RedirectMatch permanent ^/2014-fellows(/?)$ /geeks/our-geeks/2014-fellows$1
 # Startup Program
 #
 RedirectMatch permanent ^/startups(/?)$ /about/startups$1
-RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /geeks/accelerator-faq
-RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /geeks/incubator-faq
+RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /companies/icubator-accelerator
+RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /companies/icubator-accelerator
 RedirectMatch permanent ^/geeks/our-startups/?$ /companies/our-companies
 RedirectMatch permanent ^/geeks/accelerator-faq/?$ /companies/accelerator-faq
 RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/accelerator-apply
