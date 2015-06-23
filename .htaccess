@@ -344,6 +344,15 @@ RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
 RedirectMatch permanent ^/awards/?$ http://awards.codeforamerica.org$1
 
 #
+# Remove Incubator + Accelerator
+#
+RedirectMatch permanent ^/companies/our-companies/?$ /companies/icubator-accelerator
+RedirectMatch permanent ^/companies/accelerator-faq/?$ /companies/icubator-accelerator
+RedirectMatch permanent ^/companies/accelerator-apply/?$ /companies/icubator-accelerator
+RedirectMatch permanent ^/companies/incubator-faq/?$ /companies/icubator-accelerator
+RedirectMatch permanent ^/companies/incubator-apply/?$ /companies/icubator-accelerator
+
+#
 # Set of possible Jekyll file extensions + PHP, from
 # https://github.com/jekyll/jekyll/blob/dd3018ce/lib/jekyll/configuration.rb#L39
 #
