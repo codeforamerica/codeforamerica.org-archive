@@ -8,6 +8,33 @@ nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
  - Principles for 21st Century Government: "/governments/principles"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
 ---
 
 <style>
@@ -19,13 +46,12 @@ nav-breadcrumbs:
         margin: 0 0 3px 0;
         margin-bottom: 0;
     }
-    .table-of-contents-head {
-        border-bottom-width: 1px;
-        border-bottom: 1px solid #6D6E71;
+    .nav-head {
+      font-weight: 700;
     }
     .layout-top {
         padding-bottom: 0;
-        padding-top: 20; 
+        padding-top: 20;
     }
     .layout-edit {
         padding-top: 0;
@@ -148,6 +174,15 @@ nav-breadcrumbs:
       padding-top: 0.5em;
       padding-bottom: 0.5em;
     }
+    /* Styling the active TOC item */
+    .nav-item a {
+      color: black;
+      font-weight: 400;
+    }
+    .nav-item-active, .nav-item-active a {
+      color: #aa1c3a;
+      font-weight: 700;
+    }
 </style>
 
 <div class="masthead masthead-xl">
@@ -156,25 +191,24 @@ nav-breadcrumbs:
     <p id="story-content">Since 2011, Code for America has partnered with dozens of local governments to apply this approach to deliver better services and outcomes for their communities. We’ve seen that governments of any size, structure, or political persuasion can adopt these practices to better work for the people, by the people, in the 21st century.</p>
   </header>
 </div>
-    
+
 <section class="layout-breve">
-  <div class="layout-minor card-toc">
-    <nav role="navigation" class="nav nav-horizontal">        
-      <header class="table-of-contents-head">
-        <h4 class="h4-size">Table of Contents</h4>
-      </header>
+
+  <div class="layout-minor">
+    <nav role="navigation" class="nav nav-horizontal card-toc" id="js-sticky-nav">
+      <h4 class="h4-size nav-head">Table of Contents</h4>
       <ul class="toc-padding">
-        <li>1. <a href="#people">Put People First</a></li>
-        <li>2. <a href="#start">Start Small</a></li>
-        <li>3. <a href="#collaborate">Make Digital</a></li>
-        <li>4. <a href="#open">Open vs. Closed</a></li>
-        <li>5. <a href="#data">Improve Decisions</a></li>     	      
+        <li class="nav-item" id="js-nav-people">1. <a href="#people">Put People First</a></li>
+        <li class="nav-item" id="js-nav-start">2. <a href="#start">Start Small</a></li>
+        <li class="nav-item" id="js-nav-collaborate">3. <a href="#collaborate">Make Digital</a></li>
+        <li class="nav-item" id="js-nav-open">4. <a href="#open">Open vs. Closed</a></li>
+        <li class="nav-item" id="js-nav-decisions">5. <a href="#decisions">Improve Decisions</a></li>
       </ul>
     </nav>
   </div><!-- end .layout-minor -->
 
   <div class="layout-major">
-      
+
     <!------------------Principle 1---------------------->
     <div class="layout-whole principle" id="people">
       <!-- Header -->
@@ -186,39 +220,39 @@ nav-breadcrumbs:
           <h3>Story: Saving time and opening access to Pre-K</h3>
         </div>
 
-        <div class="layout-minim"> 
-          <img src="/media/images/people/mapzen.jpg" alt="Placeholder: mapzen.jpg" width="100%" class="width:100%;"> 
+        <div class="layout-minim">
+          <img src="/media/images/people/mapzen.jpg" alt="Placeholder: mapzen.jpg" width="100%" class="width:100%;">
         </div>
 
         <div class="layout-minim">
           <p>The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more</p>
         </div>
-          
+
       </div><!-- end .principle-section -->
 
       <div class="principle-section layout-whole">
         <div class="heading">
           <h3>Checklist: Take action</h3>
         </div>
-          
+
         <ul class="checkmark list-no-bullets">
           <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
           <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
           <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
         </ul>
-          
+
       </div><!-- end .principle-section -->
 
       <div class="principle-section layout-whole">
         <div class="heading">
           <h3>Next steps: Get started</h3>
         </div>
-          
+
         <div class="header-border slab-dark-blue">
           <div class="layout-semibreve layout-semibreve-tight">
             <div class="layout-crotchet" style="text-align:center;">
               <div class="expand icon-thumbs-up"></div>
-              <h5 class="heading heading-margin ">Guidance</h5>                    
+              <h5 class="heading heading-margin ">Guidance</h5>
               <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
               <a href="#" class="button">Read the standard</a>
             </div>
@@ -236,16 +270,16 @@ nav-breadcrumbs:
               <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
               <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
             </div>
-              
+
           </div><!-- end .layout-semibreve -->
-            
+
         </div><!-- end .slab -->
-          
+
       </div><!-- end .principle-section -->
 
     </div><!-- end Principle 1 -->
-      
-      
+
+
     <!------------------Principle 2---------------------->
     <div class="layout-whole principle" id="start">
       <!-- Header -->
@@ -257,8 +291,8 @@ nav-breadcrumbs:
           <h3>Story: Saving time and opening access to Pre-K</h3>
         </div>
 
-        <div class="layout-minim"> 
-            <img src="/media/images/geeks_accelerator_apply/people_at_work.jpg" alt="Placeholder: people_at_work.jpg" width="100%" class="width:100%;"> 
+        <div class="layout-minim">
+            <img src="/media/images/geeks_accelerator_apply/people_at_work.jpg" alt="Placeholder: people_at_work.jpg" width="100%" class="width:100%;">
         </div>
 
         <div class="layout-minim">
@@ -281,12 +315,12 @@ nav-breadcrumbs:
         <div class="heading">
           <h3>Next steps: Get started</h3>
         </div>
-          
+
         <div class="header-border slab-medium-red">
           <div class="layout-semibreve layout-semibreve-tight">
             <div class="layout-crotchet" style="text-align:center;">
               <div class="expand icon-thumbs-up"></div>
-              <h5 class="heading heading-margin ">Guidance</h5>                    
+              <h5 class="heading heading-margin ">Guidance</h5>
               <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
               <a href="#" class="button">Read the standard</a>
             </div>
@@ -304,20 +338,20 @@ nav-breadcrumbs:
               <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
               <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
             </div>
-              
+
           </div> <!-- end .layout-semibreve -->
-            
+
         </div><!-- end .slab -->
-          
+
       </div><!-- end .principle-section -->
 
     </div><!-- end Principle 2 -->
 
-      
+
     <!------------------Principle 3---------------------->
     <div class="layout-whole principle" id="collaborate">
       <!-- Header -->
-      <h2 class="section-header">3. Make Digital</h2>   
+      <h2 class="section-header">3. Make Digital</h2>
       <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
 
       <div class="principle-section layout-whole">
@@ -325,12 +359,12 @@ nav-breadcrumbs:
           <h3>Story: Saving time and opening access to Pre-K</h3>
         </div>
 
-        <div class="layout-minim"> 
-            <img src="/media/images/big-data.jpg" alt="Placeholder: big-data.jpg" width="100%" class="width:100%;"> 
+        <div class="layout-minim">
+            <img src="/media/images/big-data.jpg" alt="Placeholder: big-data.jpg" width="100%" class="width:100%;">
         </div>
 
-        <div class="layout-minim"> 
-              The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more 
+        <div class="layout-minim">
+              The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more
         </div>
       </div><!-- end .principle-section -->
 
@@ -339,25 +373,25 @@ nav-breadcrumbs:
         <div class="heading">
           <h3>Checklist: Take action</h3>
         </div>
-          
+
         <ul class="checkmark list-no-bullets">
           <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
           <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
           <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
         </ul>
-          
+
       </div><!-- end .principle-section -->
 
       <div class="principle-section layout-whole">
         <div class="heading">
           <h3>Next steps: Get started</h3>
         </div>
-          
+
         <div class="header-border slab-dark-blue">
           <div class="layout-semibreve layout-semibreve-tight">
             <div class="layout-crotchet" style="text-align:center;">
               <div class="expand icon-thumbs-up"></div>
-              <h5 class="heading heading-margin ">Guidance</h5>                    
+              <h5 class="heading heading-margin ">Guidance</h5>
               <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
               <a href="#" class="button">Read the standard</a>
             </div>
@@ -375,11 +409,11 @@ nav-breadcrumbs:
               <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
               <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
             </div>
-              
+
           </div><!-- end .layout-semibreve -->
-            
+
         </div><!-- end .slab -->
-          
+
       </div><!-- end .principle-section -->
 
     </div><!-- end Principle 3 -->
@@ -387,7 +421,7 @@ nav-breadcrumbs:
     <!------------------Section 4---------------------->
     <div class="layout-whole principle" id="open">
       <!-- Header -->
-      <h2 class="section-header">4. Open vs. Closed</h2>   
+      <h2 class="section-header">4. Open vs. Closed</h2>
       <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
 
       <div class="principle-section layout-whole">
@@ -395,26 +429,26 @@ nav-breadcrumbs:
           <h3>Story: Saving time and opening access to Pre-K</h3>
         </div>
 
-        <div class="layout-minim"> 
-            <img src="/media/images/accelerator.JPG" alt="Placeholder: accelerator.JPG" width="100%" class="width:100%;"> 
+        <div class="layout-minim">
+            <img src="/media/images/accelerator.JPG" alt="Placeholder: accelerator.JPG" width="100%" class="width:100%;">
         </div>
 
-        <div class="layout-minim"> 
-              The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more 
+        <div class="layout-minim">
+              The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more
         </div>
-          
-      </div><!-- end .principle-section -->  
+
+      </div><!-- end .principle-section -->
 
       <div class="principle-section layout-whole">
         <div class="heading">
           <h3>Next steps: Get started</h3>
         </div>
-          
+
         <div class="header-border slab-medium-red">
           <div class="layout-semibreve layout-semibreve-tight">
             <div class="layout-crotchet" style="text-align:center;">
               <div class="expand icon-thumbs-up"></div>
-              <h5 class="heading heading-margin ">Guidance</h5>                    
+              <h5 class="heading heading-margin ">Guidance</h5>
               <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
               <a href="#" class="button">Read the standard</a>
             </div>
@@ -432,17 +466,17 @@ nav-breadcrumbs:
               <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
               <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
             </div>
-              
+
           </div><!-- end .layout-semibreve -->
-            
+
         </div><!-- end .slab -->
-          
+
       </div><!-- end .principle-section -->
 
     </div><!-- end Principle 4 -->
 
-                  <!------------------Section 5---------------------->
-    <div class="layout-whole principle" id="people">
+                  <!------------------Principle 5---------------------->
+    <div class="layout-whole principle" id="decisions">
       <!-- Header -->
       <h2 class="section-header">5. Improve Decisions</h2>
       <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
@@ -451,40 +485,40 @@ nav-breadcrumbs:
         <div class="heading">
           <h3>Story: Saving time and opening access to Pre-K</h3>
         </div>
-                  
-        <div class="layout-minim"> 
-            <img src="/media/images/about_fellowship/jen-summit.jpg" alt="Placeholder: jen-summit.jpg" width="100%" class="width:100%;"> 
+
+        <div class="layout-minim">
+            <img src="/media/images/about_fellowship/jen-summit.jpg" alt="Placeholder: jen-summit.jpg" width="100%" class="width:100%;">
         </div>
 
         <div class="layout-minim">
           <p>The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more</p>
         </div>
-          
+
       </div><!-- end .principle-section -->
 
       <div class="principle-section layout-whole">
         <div class="heading">
           <h3>Checklist: Take action</h3>
         </div>
-          
+
         <ul class="checkmark list-no-bullets">
           <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
           <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
           <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
         </ul>
-          
+
       </div><!-- end .principle-section -->
 
       <div class="principle-section layout-whole">
         <div class="heading">
           <h3>Next steps: Get started</h3>
         </div>
-          
+
         <div class="header-border slab-dark-blue">
           <div class="layout-semibreve layout-semibreve-tight">
             <div class="layout-crotchet" style="text-align:center;">
               <div class="expand icon-thumbs-up"></div>
-              <h5 class="heading heading-margin ">Guidance</h5>                    
+              <h5 class="heading heading-margin ">Guidance</h5>
               <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
               <a href="#" class="button">Read the standard</a>
             </div>
@@ -502,18 +536,15 @@ nav-breadcrumbs:
               <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
               <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
             </div>
-              
+
           </div><!-- end .layout-semibreve -->
-            
+
         </div><!-- end .slab -->
-          
+
       </div><!-- end .principle-section -->
 
     </div><!-- end principle5 -->
-      
+
   </div><!-- end .layout-major -->
 
 </section>
-
-
-
