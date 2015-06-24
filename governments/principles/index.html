@@ -13,8 +13,12 @@ jquery-scripts: |
     <script src="/script/jquery.sticky.js"></script>
     <script src="/script/jquery.scrollspy.js"></script>
     <script type="text/javascript" >
+        //if you resize page, you need to refresh for javascript to work properly. Any way to automatically update?
+        var bottom = $('#content').position().top+$('#content').outerHeight(true);
+        var documentHeight = $( document ).height(); // to prevent table of contents from jumping into footer, needed to calculate the height between content and footer. 
+        var bottomSpacing = documentHeight - bottom + 23; // +23 accounts for padding on the layout-major so the table of contents stops at end of Principle 5
       $(document).ready(function(){
-        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+        $("#js-sticky-nav").sticky({ topSpacing: 67, bottomSpacing: bottomSpacing, widthFromWrapper: false }); //changed widthFromWrapper this to false because it would change the width while scrolling...didn't look good
 
         // now we can spy on stuff to see when our section appears WHOOSH
         $('.principle').each(function(i) {
@@ -38,6 +42,9 @@ jquery-scripts: |
 ---
 
 <style>
+    #people {
+        margin-top: .25em; /* Nav was not highlighting because top portion had no margin. Slight Margin fixed this without changing the page. */
+    }
     .space {
         padding-top: 3em;
     }
@@ -99,7 +106,7 @@ jquery-scripts: |
         border-right-width: 2px;
         border-left-width: 2px;
         border-top-width: 2px;
-        margin-top: 5px;
+        margin-top: 0px;
     }
     .heading-margin {
         margin: 0em 0;
@@ -207,7 +214,7 @@ jquery-scripts: |
     </nav>
   </div><!-- end .layout-minor -->
 
-  <div class="layout-major">
+<div class="layout-major" id="content"><!-- content ID used to calculate height of all content in .layout-major  -->
 
     <!------------------Principle 1---------------------->
     <div class="layout-whole principle" id="people">
