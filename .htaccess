@@ -190,12 +190,12 @@ RedirectMatch permanent ^/2014-fellows(/?)$ /geeks/our-geeks/2014-fellows$1
 # Startup Program
 #
 RedirectMatch permanent ^/startups(/?)$ /about/startups$1
-RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /geeks/accelerator-faq
-RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /geeks/incubator-faq
-RedirectMatch permanent ^/geeks/our-startups/?$ /companies/our-companies
-RedirectMatch permanent ^/geeks/accelerator-faq/?$ /companies/accelerator-faq
-RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/accelerator-apply
-RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-faq
+RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/our-startups/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/accelerator-faq/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-accelerator/
 RedirectMatch permanent ^/about/startups/?$ /about/companies
 #RedirectMatch permanent ^/mentor/?$ /companies
 RedirectMatch permanent ^/companies/newsletter/?$ /companies
@@ -342,6 +342,15 @@ RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/f
 RedirectMatch permanent ^/projects/new-york-city-hhc-accelerator/?$ /projects/new-york-city-hhs-accelerator/
 RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
 RedirectMatch permanent ^/awards/?$ http://awards.codeforamerica.org$1
+
+#
+# Remove Incubator + Accelerator
+#
+RedirectMatch permanent ^/companies/our-companies/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/accelerator-faq/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/accelerator-apply/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/incubator-faq/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/incubator-apply/?$ /companies/incubator-accelerator/
 
 #
 # Set of possible Jekyll file extensions + PHP, from
