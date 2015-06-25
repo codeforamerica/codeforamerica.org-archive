@@ -1,6 +1,10 @@
 {% if include.context == "app-page" %}
 <h2 id="voiceTop">CityVoice</h2>
 <p>CityVoice is a place-based call-in system to collect community feedback on geographic entities (like vacant properties) using the simple, accessible medium of the telephone.</p>
+<div class="layout-centered">
+  <p><a href="mailto:jack@codeforamerica.org" class="button-alternative button-l">Contact us for a trial</a></p>
+</div>
+
 <img class="isolate" src="{{ include.base }}/media/images/cityvoice-park-story.png"/>
 
 <div class="heading">
@@ -33,10 +37,6 @@
     <tr>
       <th>Environment</th>
       <td>Ruby on Rails with Twilio for telephone integration.</td>
-    </tr>
-    <tr>
-      <th>Redeploy</th>
-      <td>Contact <a href="http://postcode.io">Postcode.io</a> or follow Heroku <a href="https://github.com/codeforamerica/cityvoice#setup-internal-documentation">installation instructions on Github</a>.</td>
     </tr>
   </table>
   <a href="mailto:jack@codeforamerica.org" class="button-alternative">Contact us for a trial</a>
