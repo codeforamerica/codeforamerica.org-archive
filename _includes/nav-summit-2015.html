@@ -45,7 +45,7 @@
   </ul>
 </nav>
 {% else %}
-<!--  
+<!--
       If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
       This requirement is because of the nav collapse functionality in global.js
   -->
@@ -55,9 +55,9 @@
 {% if masthead != "no" %}
 <div class="masthead {{ masthead-class }}">
   <div class="masthead-hero">
-    <div class="masthead-image" 
+    <div class="masthead-image"
       {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')" 
+      style="background-image: url('{{ masthead-image }}')"
       {% endif %}>
     </div>
   </div>
@@ -69,11 +69,11 @@
 
 {% if page.masthead-custom == "deep" %}
 <div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
-  
+
   <div class="masthead-hero">
-    <div class="masthead-image" 
+    <div class="masthead-image"
       {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')" 
+      style="background-image: url('{{ masthead-image }}')"
       {% endif %}>
     </div>
   </div>
@@ -101,6 +101,9 @@
       <li class="masthead-nav-page">
         <a href="/library/tag/Summit+2014">2014 Summit Videos</a>
       </li>
+      <li class="masthead-nav-page">
+        <a href="/summit/#register">Register</a>
+      </li>
     </ul>
   </div>
 
@@ -109,7 +112,7 @@
       <p class="masthead-content-overline">{{ page.title }}</p>
       <h1 class="masthead-content-title">{{ page.headline }}</h1>
     {% else %}
-      <h1 class="masthead-content-title">{{ page.title }}</h1>  
+      <h1 class="masthead-content-title">{{ page.title }}</h1>
     {% endif %}
 
     {% if page.description %}
