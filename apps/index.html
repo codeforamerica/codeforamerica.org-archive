@@ -1,16 +1,20 @@
 ---
 layout: default
-title: "Apps & APIs"
+
+# Don't use the default masthead
+masthead: "no"
+nav-global-primary: "no"
+
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
- - "Apps & APIs": "/our-work/apps"
+ - "Apps": "/our-work/apps"
 ---
 
-    <section>
+<section>
 
-    <div class="layout-semibreve layout-tight">
+<!--     <div class="layout-breve layout-tight">
 
-        {% include nav-breadcrumbs.html %}
+        
         
         <div class="layout-centered">
             
@@ -19,134 +23,160 @@ nav-breadcrumbs:
                         
         </div>
     
-    </div>
+    </div> -->
     
-    <div class="nav-tabs" id="nav-tabs">
+<!--     <div class="nav-tabs" id="nav-tabs">
     	<ul class="layout-semibreve layout-tight">
 	        <li class="nav-tab"><a class="nav-tab-link" href="local-service.html#nav-tabs">Local service apps</a></li>
 	        <li class="nav-tab"><a class="nav-tab-link" href="citizen-engagement.html#nav-tabs">Citizen engagements apps</a></li>
 	        <li class="nav-tab"><a class="nav-tab-link" href="free.html#nav-tabs">Free apps</a></li>
 	        <li class="nav-tab"><a class="nav-tab-link" href="paid.html#nav-tabs">Paid apps</a></li>
         </ul>
-    </div>
-    
-    <div class="layout-semibreve layout-tight">
-    <div class="tab-content">
-        <div class="tab-pane state-active">
-            <ul class="teasers">
-            
-	<li class="layout-crotchet">
-        {% include apps/adopt-a-hydrant.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-	    {% include apps/archivesocial.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/aunt-bertha.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/bizfriendly.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/captricity.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/city-analytics-dashboard.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/cityvoice.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/civicinsight.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/click-that-hood.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/development-fastpass.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/discover-bps.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/family-assessment-form.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/honolulu-answers.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/jail-population-management-dashboard.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/learnsprout.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/localdata.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/measured-voice.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/mindmixer.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/ohana-api.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/opencounter.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/prepared-ly.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/promptly.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/public-art-finder.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/recordtrac.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/recovers-org.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/reroute-it.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/revelstone.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/smartprocure.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-	    {% include apps/streetcred.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/streetmix.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/streetscope.html context="apps-list" base=".." %}
-        </li>
-	<li class="layout-crotchet">
-        {% include apps/textizen.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/text-my-bus.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/to-the-trails.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/wheres-my-school-bus.html context="apps-list" base=".." %}
-	</li>
-	
-</ul>
+    </div> -->
+    <div class="layout-breve layout-tight">
+	    <div class="layout-minor layout-tight">
+	    	{% include nav-breadcrumbs.html %}
 
-        </div>
+	    	<!-- App sorting menu -->
+	    	<p> SORT THE APPS
+	    		<br>
+	    		(put search menu here)
+	    	</p>
+	    </div>
+
+	    <div class="layout-major layout-tight">
+	    	<!-- Featured App -->
+	    	<div class="layout-breve layout-tight">
+	    		<h1>Apps</h1>
+	    		<div>
+    				<div class="layout-major-invert">
+    				<img src="/media/images/apps/cityvoice.jpg" height="200em">
+    				</div>
+
+    				<div class="layout-minor-invert">
+    					<h3>Featured App</h3>
+    					<h4>CityVoice</h4>
+    					<p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.<a href="../apps/cityvoice/#voiceTop">Read more</a></p>
+    				</div>
+	    		</div>
+	    	</div>
+
+		    <div class="tab-content">
+		        <div class="tab-pane state-active">
+		            <ul class="teasers">
+		            
+			<li class="layout-crotchet">
+		        {% include apps/adopt-a-hydrant.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+			    {% include apps/archivesocial.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/aunt-bertha.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/bizfriendly.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/captricity.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/city-analytics-dashboard.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/cityvoice.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/civicinsight.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/click-that-hood.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/development-fastpass.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/discover-bps.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/family-assessment-form.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/honolulu-answers.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/jail-population-management-dashboard.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/learnsprout.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/localdata.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/measured-voice.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/mindmixer.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/ohana-api.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/opencounter.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/prepared-ly.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/promptly.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/public-art-finder.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/recordtrac.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/recovers-org.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/reroute-it.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/revelstone.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/smartprocure.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+			    {% include apps/streetcred.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/streetmix.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/streetscope.html context="apps-list" base=".." %}
+		        </li>
+			<li class="layout-crotchet">
+		        {% include apps/textizen.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/text-my-bus.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/to-the-trails.html context="apps-list" base=".." %}
+			</li>
+			<li class="layout-crotchet">
+		        {% include apps/wheres-my-school-bus.html context="apps-list" base=".." %}
+			</li>
+			
+		</ul>
+
+		        </div>
+		    </div>
+	    </div>
     </div>
-    </div>
-    
 </section>
     
 
