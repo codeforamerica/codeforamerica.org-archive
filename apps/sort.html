@@ -1,0 +1,115 @@
+---
+layout: default
+masthead: no
+title: "Products"
+nav-breadcrumbs:
+ - "Apps & APIs": "/our-work/apps"
+---
+<style>
+  .layout-product {
+    width: 18%;
+    text-align: center;
+    border: 1px solid #000000;
+    font-size: 10px;
+    line-height: 14px;
+  }
+</style>
+
+<section class="layout-breve layout-whole">
+  <div>
+  <h2>Communications & Engagement</h2>
+  {% for product in site.data.products %}
+    {% if product.focus-area == 'Comms & Engagement' %}
+    <div class="layout-product js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+        <h3>{{ product.name }}</h3>
+        {% if product.imgUrl == null %}
+          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+        {% else %}
+          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+        {% endif %}
+        <p>
+          {{ product.description }}
+        </p>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+  <!-- <h2>Economic Development</h2>
+  <ul>
+  {% for product in site.data.products %}
+    {% if product.focus-area == 'Economic Development' %}
+    <li class="layout-crotchet js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+      <div>
+        <h3>{{ product.name }}</h3>
+        {% if product.imgUrl == null %}
+          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+        {% else %}
+          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+        {% endif %}
+        <p>
+          {{ product.description }}
+        </p>
+      </div>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+  <h2>Health</h2>
+  <ul>
+  {% for product in site.data.products %}
+    <li class="layout-crotchet js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+      <div>
+        <h3>{{ product.name }}</h3>
+        {% if product.imgUrl == null %}
+          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+        {% else %}
+          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+        {% endif %}
+        <p>
+          {{ product.description }}
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <h2>Safety & Justice</h2>
+  <ul>
+  {% for product in site.data.products %}
+    <li class="layout-crotchet js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+      <div>
+        <h3>{{ product.name }}</h3>
+        {% if product.imgUrl == null %}
+          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+        {% else %}
+          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+        {% endif %}
+        <p>
+          {{ product.description }}
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <h2>Other</h2>
+  <ul>
+  {% for product in site.data.products %}
+    <li class="layout-crotchet js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+      <div>
+        <h3>{{ product.name }}</h3>
+        {% if product.imgUrl == null %}
+          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+        {% else %}
+          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+        {% endif %}
+        <p>
+          {{ product.description }}
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+</ul> -->
+</section>
