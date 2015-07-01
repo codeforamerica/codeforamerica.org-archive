@@ -14,8 +14,15 @@ nav-breadcrumbs:
     width: 100px;
     height: 40px;
   }
-  sort-border {
-
+  .teaser-title {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: inherit;
+    line-height: 22px;
+    margin: 0;
+    text-transform: none;
+    color: #cf1b41;
   }
 </style>
 <section>
@@ -23,7 +30,7 @@ nav-breadcrumbs:
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="layout-minor layout-tight">
-        <div class="sort-border">                
+        <div class="sort-border">
 	    	<h3>Sort By Stage</h3>
 	    	<ul>
           <li><input type="button" value="Live" class="button-alternative button-sort"></li>
@@ -40,7 +47,7 @@ nav-breadcrumbs:
 	    		<h1>Apps</h1>
 	    		<div>
     				<div class="layout-major-invert">
-    				<img src="/media/images/apps/cityvoice.jpg" height="200em">
+    				  <img src="/media/images/apps/cityvoice.jpg" height="200em">
     				</div>
 
     				<div class="layout-minor-invert">
@@ -51,120 +58,95 @@ nav-breadcrumbs:
 	    		</div>
 	    	</div>
 
-		    <div class="tab-content">
-		        <div class="tab-pane state-active">
-		            <ul class="teasers">
+        <div class="layout-whole">
+  	    		<h3>Economic Development</h3>
+            {% for product in site.data.products %}
+              {% if product.focus-area == "Economic Development" %}
+    		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                  {% if product.imgUrl == null %}
+                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                  {% else %}
+                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                  {% endif %}
+                  <h1 class="teaser-title">{{ product.name }}</h1>
+                  <p>{{ product.description }}</p>
+    		    		</div>
+              {% endif %}
+            {% endfor %}
+        </div>
 
-			<li class="layout-crotchet">
-		        {% include apps/adopt-a-hydrant.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-			    {% include apps/archivesocial.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/aunt-bertha.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/bizfriendly.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/captricity.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/city-analytics-dashboard.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/cityvoice.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/civicinsight.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/click-that-hood.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/development-fastpass.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/discover-bps.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/family-assessment-form.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/honolulu-answers.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/jail-population-management-dashboard.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/learnsprout.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/localdata.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/measured-voice.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/mindmixer.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/ohana-api.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/opencounter.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/prepared-ly.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/promptly.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/public-art-finder.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/recordtrac.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/recovers-org.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/reroute-it.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/revelstone.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/smartprocure.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-			    {% include apps/streetcred.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/streetmix.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/streetscope.html context="apps-list" base=".." %}
-		        </li>
-			<li class="layout-crotchet">
-		        {% include apps/textizen.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/text-my-bus.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/to-the-trails.html context="apps-list" base=".." %}
-			</li>
-			<li class="layout-crotchet">
-		        {% include apps/wheres-my-school-bus.html context="apps-list" base=".." %}
-			</li>
+        <div class="layout-whole">
+  	    		<h3>Safety and Justice</h3>
+            {% for product in site.data.products %}
+              {% if product.focus-area == "Safety & Justice" %}
+    		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                  {% if product.imgUrl == null %}
+                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                  {% else %}
+                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                  {% endif %}
+                  <h1 class="teaser-title">{{ product.name }}</h1>
+                  <p>{{ product.description }}</p>
+    		    		</div>
+              {% endif %}
+            {% endfor %}
+        </div>
 
-		</ul>
+        <div class="layout-whole">
+            <h3>Health</h3>
+            {% for product in site.data.products %}
+              {% if product.focus-area == "Health" %}
+                <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                  {% if product.imgUrl == null %}
+                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                  {% else %}
+                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                  {% endif %}
+                  <h1 class="teaser-title">{{ product.name }}</h1>
+                  <p>{{ product.description }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
 
-		        </div>
-		    </div>
-	    </div>
+        <div class="layout-whole">
+            <h3>Communications and Engagement</h3>
+            {% for product in site.data.products %}
+              {% if product.focus-area == "Comms & Engagement" %}
+                <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                  {% if product.imgUrl == null %}
+                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                  {% else %}
+                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                  {% endif %}
+                  <h1 class="teaser-title">{{ product.name }}</h1>
+                  <p>{{ product.description }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="layout-whole">
+            <h3>Other</h3>
+            {% for product in site.data.products %}
+              {% if product.focus-area != "Comms & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
+                <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                  {% if product.imgUrl == null %}
+                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                  {% else %}
+                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                  {% endif %}
+                  <h1 class="teaser-title">{{ product.name }}</h1>
+                  <p>{{ product.description }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+      </div>
+
     </div>
+
+
+
+
 </section>
