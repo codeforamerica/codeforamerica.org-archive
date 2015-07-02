@@ -8,10 +8,60 @@ nav-global-primary: "no"
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
  - "Apps": "/our-work/apps"
+jquery-scripts: |
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="/script/isotope.pkgd.min.js"></script>
+   <script>
+     var $economic = $('.economic').isotope({
+       itemSelector: '.js-product',
+       layoutMode: 'fitRows'
+     });
+     $('.product-filters').on( 'click', 'a', function() {
+       var filterValue = $( this ).attr('data-filter');
+       $economic.isotope({ filter: filterValue });
+     });
+
+    var $health = $('.health').isotope({
+       itemSelector: '.js-product',
+       layoutMode: 'fitRows'
+     });
+     $('.product-filters').on( 'click', 'a', function() {
+       var filterValue = $( this ).attr('data-filter');
+       $health.isotope({ filter: filterValue });
+     });
+
+     var $safety = $('.safety').isotope({
+        itemSelector: '.js-product',
+        layoutMode: 'fitRows'
+      });
+      $('.product-filters').on( 'click', 'a', function() {
+        var filterValue = $( this ).attr('data-filter');
+        $safety.isotope({ filter: filterValue });
+      });
+
+      var $comms = $('.comms').isotope({
+         itemSelector: '.js-product',
+         layoutMode: 'fitRows'
+       });
+       $('.product-filters').on( 'click', 'a', function() {
+         var filterValue = $( this ).attr('data-filter');
+         $comms.isotope({ filter: filterValue });
+       });
+
+       var $other = $('.other').isotope({
+          itemSelector: '.js-product',
+          layoutMode: 'fitRows'
+        });
+        $('.product-filters').on( 'click', 'a', function() {
+          var filterValue = $( this ).attr('data-filter');
+          $other.isotope({ filter: filterValue });
+        });
+     console.log('yup');
+   </script>
 ---
 <style>
-  input[type="button"] {
-    width: 100px;
+  [class*="button"][class*="button"]:link {
+    width: 120px;
     height: 40px;
   }
   .teaser-title {
@@ -24,19 +74,47 @@ nav-breadcrumbs:
     text-transform: none;
     color: #cf1b41;
   }
+  .border {
+    border: 1px solid #000;
+  }
 </style>
-<section>
 
+<section>
+{% assign live = 0 %}
+{% assign beta = 0 %}
+{% assign alpha = 0 %}
+{% assign experimental = 0 %}
+{% for product in site.data.products %}
+  {% assign number = forloop.length %}
+
+  {% if product.stage == 'Live' %}
+    {% assign live = live | plus:1 %}
+  {% endif %}
+  {% assign beta_check = product.stage | downcase %}
+  {% if beta_check contains 'beta' %}
+    {% assign beta = beta | plus:1 %}
+  {% endif %}
+
+  {% if product.stage contains 'Alpha' %}
+    {% assign alpha = alpha | plus:1 %}
+  {% endif %}
+
+  {% if product.stage contains 'Experimental' %}
+    {% assign experimental = experimental | plus:1 %}
+  {% endif %}
+
+{% endfor %}
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="layout-minor layout-tight">
-        <div class="sort-border">
+        <div class="sort-border product-filters">
 	    	<h3>Sort By Stage</h3>
 	    	<ul>
-          <li><input type="button" value="Live" class="button-alternative button-sort"></li>
-          <li><input type="button" value="Beta" class="button-default button-sort"></li>
-          <li><input type="button" value="Alpha" class="button-bold button-sort"></li>
-          <li><input type="button" value="Experimental" class="button-subtle button-sort"></li>
+          <li><a href="#" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
+          <li><a href="#" class="button-alternative button-sort" data-filter=".js-product-live">Live ({{ live }})</a></li>
+          <li><a href="#" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
+          <li><a href="#" class="button-bold button-sort" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
+          <li><a href="#" class="button-subtle button-sort" data-filter=".js-product-experimental">Experimental ({{ experimental }})</a></li>
         </ul>
         </div>
 	    </div>
@@ -58,8 +136,10 @@ nav-breadcrumbs:
 	    		</div>
 	    	</div>
 
+    <div class="products">
+      <h3>Economic Development</h3>
+      <div class="economic border">
         <div class="layout-whole">
-  	    		<h3>Economic Development</h3>
             {% for product in site.data.products %}
               {% if product.focus-area == "Economic Development" %}
     		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
@@ -74,9 +154,11 @@ nav-breadcrumbs:
               {% endif %}
             {% endfor %}
         </div>
+      </div>
 
+      <h3>Safety & Justice </h3>
+      <div class="safety border">
         <div class="layout-whole">
-  	    		<h3>Safety and Justice</h3>
             {% for product in site.data.products %}
               {% if product.focus-area == "Safety & Justice" %}
     		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
@@ -91,9 +173,11 @@ nav-breadcrumbs:
               {% endif %}
             {% endfor %}
         </div>
+      </div>
 
+      <h3>Health</h3>
+      <div class="health border">
         <div class="layout-whole">
-            <h3>Health</h3>
             {% for product in site.data.products %}
               {% if product.focus-area == "Health" %}
                 <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
@@ -108,9 +192,11 @@ nav-breadcrumbs:
               {% endif %}
             {% endfor %}
         </div>
+      </div>
 
+      <h3>Communications & Engagement</h3>
+      <div class="comms border">
         <div class="layout-whole">
-            <h3>Communications and Engagement</h3>
             {% for product in site.data.products %}
               {% if product.focus-area == "Comms & Engagement" %}
                 <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
@@ -125,9 +211,11 @@ nav-breadcrumbs:
               {% endif %}
             {% endfor %}
         </div>
+      </div>
 
+      <h3>Other</h3>
+      <div class="other border">
         <div class="layout-whole">
-            <h3>Other</h3>
             {% for product in site.data.products %}
               {% if product.focus-area != "Comms & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
                 <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
@@ -143,8 +231,13 @@ nav-breadcrumbs:
             {% endfor %}
         </div>
       </div>
+    </div>
+
+      </div>
 
     </div>
+
+  </div>
 
 
 
