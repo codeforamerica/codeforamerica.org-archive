@@ -77,6 +77,9 @@ jquery-scripts: |
   .border {
     border: 1px solid #000;
   }
+  .sort-border {
+    margin-top: 4em;
+  }
 </style>
 
 <section>
@@ -106,15 +109,20 @@ jquery-scripts: |
 {% endfor %}
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
-	    <div class="layout-minor layout-tight">
+	    <div class="layout-minor">
         <div class="sort-border product-filters">
 	    	<h3>Sort By Stage</h3>
-	    	<ul>
+	    	<ul class="list-no-bullets">
           <li><a href="#" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <li><a href="#" class="button-alternative button-sort" data-filter=".js-product-live">Live ({{ live }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <li><a href="#" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <li><a href="#" class="button-bold button-sort" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <li><a href="#" class="button-subtle button-sort" data-filter=".js-product-experimental">Experimental ({{ experimental }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </ul>
         </div>
 	    </div>
@@ -136,6 +144,31 @@ jquery-scripts: |
 	    		</div>
 	    	</div>
 
+        {% assign sections = "Economic Development,Safety & Justice,Health,Communications & Engagement,Other" | split: "," %}
+
+        {% for section in sections %}
+          <!-- {{ section }} -->
+          <div class="products">
+            <h3>{{ section }}</h3>
+            <div class="economic border">
+              <div class="layout-whole">
+                  {% for product in site.data.products %}
+                    {% if product.focus-area == section %}
+                      <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                        {% if product.imgUrl == null %}
+                          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                        {% else %}
+                          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                        {% endif %}
+                        <h1 class="teaser-title">{{ product.name }}</h1>
+                        <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+              </div>
+            </div>
+        {% endfor %}
+
         <!-- Focus Areas -->
         <div class="products">
           <h3>Economic Development</h3>
@@ -150,7 +183,7 @@ jquery-scripts: |
                         <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
                       {% endif %}
                       <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description }}</p>
+                      <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
         		    		</div>
                   {% endif %}
                 {% endfor %}
@@ -169,7 +202,7 @@ jquery-scripts: |
                         <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
                       {% endif %}
                       <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description }}</p>
+                      <p>{{ product.description | truncate: 140, '...' }}</p>
         		    		</div>
                   {% endif %}
                 {% endfor %}
@@ -188,7 +221,7 @@ jquery-scripts: |
                         <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
                       {% endif %}
                       <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description }}</p>
+                      <p>{{ product.description | truncate: 140, '...' }}</p>
                     </div>
                   {% endif %}
                 {% endfor %}
@@ -207,7 +240,7 @@ jquery-scripts: |
                         <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
                       {% endif %}
                       <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description }}</p>
+                      <p>{{ product.description | truncate: 140, '...' }}</p>
                     </div>
                   {% endif %}
                 {% endfor %}
@@ -226,7 +259,7 @@ jquery-scripts: |
                         <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
                       {% endif %}
                       <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description }}</p>
+                      <p>{{ product.description | truncate: 140, '...' }}</p>
                     </div>
                   {% endif %}
                 {% endfor %}
@@ -237,7 +270,7 @@ jquery-scripts: |
       </div>
     </div>
 
-  </div>
+<!--   </div> -->
 
 
 </section>
