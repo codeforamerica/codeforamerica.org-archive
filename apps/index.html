@@ -12,51 +12,17 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
    <script>
-     var $economic = $('.economic').isotope({
-       itemSelector: '.js-product',
-       layoutMode: 'fitRows'
-     });
-     $('.product-filters').on( 'click', 'a', function() {
-       var filterValue = $( this ).attr('data-filter');
-       $economic.isotope({ filter: filterValue });
-     });
-
-    var $health = $('.health').isotope({
-       itemSelector: '.js-product',
-       layoutMode: 'fitRows'
-     });
-     $('.product-filters').on( 'click', 'a', function() {
-       var filterValue = $( this ).attr('data-filter');
-       $health.isotope({ filter: filterValue });
-     });
-
-     var $safety = $('.safety').isotope({
+    var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communications-and-engagement', '.other' ];
+    $.each(grids, function(key,val){
+      var $grid = $(val).isotope({
         itemSelector: '.js-product',
         layoutMode: 'fitRows'
       });
       $('.product-filters').on( 'click', 'a', function() {
         var filterValue = $( this ).attr('data-filter');
-        $safety.isotope({ filter: filterValue });
+        $grid.isotope({ filter: filterValue });
       });
-
-      var $comms = $('.comms').isotope({
-         itemSelector: '.js-product',
-         layoutMode: 'fitRows'
-       });
-       $('.product-filters').on( 'click', 'a', function() {
-         var filterValue = $( this ).attr('data-filter');
-         $comms.isotope({ filter: filterValue });
-       });
-
-       var $other = $('.other').isotope({
-          itemSelector: '.js-product',
-          layoutMode: 'fitRows'
-        });
-        $('.product-filters').on( 'click', 'a', function() {
-          var filterValue = $( this ).attr('data-filter');
-          $other.isotope({ filter: filterValue });
-        });
-     console.log('yup');
+    });
    </script>
 ---
 <style>
@@ -74,8 +40,20 @@ jquery-scripts: |
     text-transform: none;
     color: #cf1b41;
   }
-  .border {
-    border: 1px solid #000;
+  /* js-product spacing */
+  .js-product { box-sizing: border-box; }
+  @media screen and (min-width: 50em){
+    .layout-whole-products {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+    .js-product {
+      display: block;
+      float: left;
+      width: calc(100%/3);
+      margin: 0;
+      padding: 0 0.5em;
+    }
   }
   .sort-border {
     margin-top: 4em;
@@ -124,15 +102,15 @@ jquery-scripts: |
         <div class="sort-border product-filters">
 	    	<h3>Sort By Stage</h3>
 	    	<ul class="list-no-bullets">
-          <li><a href="#" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
+          <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
           <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <li><a href="#" class="button-alternative button-sort" data-filter=".js-product-live">Live ({{ live }})</a></li>
+          <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live">Live ({{ live }})</a></li>
           <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <li><a href="#" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
+          <li><a href="#" onclick="return false" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
           <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <li><a href="#" class="button-bold button-sort" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
+          <li><a href="#" onclick="return false" class="button-bold button-sort" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
           <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <li><a href="#" class="button-subtle button-sort" data-filter=".js-product-experimental">Experimental ({{ experimental }})</a></li>
+          <li><a href="#" onclick="return false" class="button-subtle button-sort" data-filter=".js-product-experimental">Experimental ({{ experimental }})</a></li>
           <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </ul>
         </div>
@@ -155,17 +133,20 @@ jquery-scripts: |
 	    		</div>
 	    	</div>
 
+          <div class="products">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communications & Engagement,Other" | split: "," %}
 
         {% for section in sections %}
+
+        {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
           <!-- {{ section }} -->
-          <div class="products">
             <h3>{{ section }}</h3>
-            <div class="economic border">
-              <div class="layout-whole">
+            <div class="{{ section_class }} border">
+              <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
-                    {% if product.focus-area == section %}
-                      <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                    {% if section == 'Other' %}
+                      {% if product.focus-area != "Communications & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
+                      <div class="js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
                         {% if product.imgUrl == null %}
                           <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
                         {% else %}
@@ -174,112 +155,28 @@ jquery-scripts: |
                         <h1 class="teaser-title">{{ product.name }}</h1>
                         <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
                       </div>
+                      {% endif %}
+                    {% else %}
+                      {% if product.focus-area == section %}
+                        <div class="js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                          {% if product.imgUrl == null %}
+                            <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                          {% else %}
+                            <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                          {% endif %}
+                          <h1 class="teaser-title">{{ product.name }}</h1>
+                          <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
+                        </div>
+                      {% endif %}
                     {% endif %}
                   {% endfor %}
               </div>
             </div>
         {% endfor %}
 
-        <!-- Focus Areas -->
-        <div class="products">
-          <h3>Economic Development</h3>
-          <div class="economic border">
-            <div class="layout-whole">
-                {% for product in site.data.products %}
-                  {% if product.focus-area == "Economic Development" %}
-        		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                      {% if product.imgUrl == null %}
-                        <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                      {% else %}
-                        <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                      {% endif %}
-                      <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
-        		    		</div>
-                  {% endif %}
-                {% endfor %}
-            </div>
-          </div>
-
-          <h3>Safety & Justice </h3>
-          <div class="safety border">
-            <div class="layout-whole">
-                {% for product in site.data.products %}
-                  {% if product.focus-area == "Safety & Justice" %}
-        		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                      {% if product.imgUrl == null %}
-                        <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                      {% else %}
-                        <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                      {% endif %}
-                      <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description | truncate: 140, '...' }}</p>
-        		    		</div>
-                  {% endif %}
-                {% endfor %}
-            </div>
-          </div>
-
-          <h3>Health</h3>
-          <div class="health border">
-            <div class="layout-whole">
-                {% for product in site.data.products %}
-                  {% if product.focus-area == "Health" %}
-                    <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                      {% if product.imgUrl == null %}
-                        <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                      {% else %}
-                        <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                      {% endif %}
-                      <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description | truncate: 140, '...' }}</p>
-                    </div>
-                  {% endif %}
-                {% endfor %}
-            </div>
-          </div>
-
-          <h3>Communications & Engagement</h3>
-          <div class="comms border">
-            <div class="layout-whole">
-                {% for product in site.data.products %}
-                  {% if product.focus-area == "Comms & Engagement" %}
-                    <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                      {% if product.imgUrl == null %}
-                        <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                      {% else %}
-                        <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                      {% endif %}
-                      <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description | truncate: 140, '...' }}</p>
-                    </div>
-                  {% endif %}
-                {% endfor %}
-            </div>
-          </div>
-
-          <h3>Other</h3>
-          <div class="other border">
-            <div class="layout-whole">
-                {% for product in site.data.products %}
-                  {% if product.focus-area != "Comms & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
-                    <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                      {% if product.imgUrl == null %}
-                        <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                      {% else %}
-                        <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                      {% endif %}
-                      <h1 class="teaser-title">{{ product.name }}</h1>
-                      <p>{{ product.description | truncate: 140, '...' }}</p>
-                    </div>
-                  {% endif %}
-                {% endfor %}
             </div>
           </div>
         </div>
-
-      </div>
-    </div>
 
 <!--   </div> -->
 
