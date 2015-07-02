@@ -67,7 +67,36 @@ jquery-scripts: |
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+  }
 
+/*  .center-featured-image {
+    display: block;
+    margin: 0 auto;
+  }*/
+
+  .fill {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden
+  }
+  .fill img {
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%;
+  }
+
+  #parent {position: relative;}
+
+  #child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
   }
 </style>
 
@@ -96,6 +125,7 @@ jquery-scripts: |
   {% endif %}
 
 {% endfor %}
+
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="layout-minor">
@@ -119,10 +149,10 @@ jquery-scripts: |
 	    <div class="layout-major layout-tight">
 	    	<!-- Featured App -->
 	    	<div class="layout-breve layout-tight featured">
-	    		<h1>Apps</h1>
-	    		<div>
-    				<div class="layout-major-invert">
-    				  <img src="/media/images/apps/cityvoice.jpg" height="240em">
+	    		<h1>Products</h1>
+	    		<div class="slab-red">
+    				<div class="layout-major-invert fill">
+    				  <img src="/media/images/apps/cityvoice.jpg">
     				</div>
 
     				<div class="layout-minor-invert">
@@ -177,8 +207,5 @@ jquery-scripts: |
             </div>
           </div>
         </div>
-
-<!--   </div> -->
-
 
 </section>
