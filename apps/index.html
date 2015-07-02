@@ -8,10 +8,26 @@ nav-global-primary: "no"
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
  - "Apps": "/our-work/apps"
+jquery-scripts: |
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="/script/isotope.pkgd.min.js"></script>
+   <script>
+    var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communications-and-engagement', '.other' ];
+    $.each(grids, function(key,val){
+      var $grid = $(val).isotope({
+        itemSelector: '.js-product',
+        layoutMode: 'fitRows'
+      });
+      $('.product-filters').on( 'click', 'a', function() {
+        var filterValue = $( this ).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
+    });
+   </script>
 ---
 <style>
-  input[type="button"] {
-    width: 100px;
+  [class*="button"][class*="button"]:link {
+    width: 120px;
     height: 40px;
   }
   .teaser-title {
@@ -24,19 +40,67 @@ nav-breadcrumbs:
     text-transform: none;
     color: #cf1b41;
   }
+  /* js-product spacing */
+  .js-product { box-sizing: border-box; }
+  @media screen and (min-width: 50em){
+    .layout-whole-products {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+    .js-product {
+      display: block;
+      float: left;
+      width: calc(100%/3);
+      margin: 0;
+      padding: 0 0.5em;
+    }
+  }
+  .sort-border {
+    margin-top: 4em;
+  }
 </style>
-<section>
 
+<section>
+{% assign live = 0 %}
+{% assign beta = 0 %}
+{% assign alpha = 0 %}
+{% assign experimental = 0 %}
+{% for product in site.data.products %}
+  {% assign number = forloop.length %}
+
+  {% if product.stage == 'Live' %}
+    {% assign live = live | plus:1 %}
+  {% endif %}
+  {% assign beta_check = product.stage | downcase %}
+  {% if beta_check contains 'beta' %}
+    {% assign beta = beta | plus:1 %}
+  {% endif %}
+
+  {% if product.stage contains 'Alpha' %}
+    {% assign alpha = alpha | plus:1 %}
+  {% endif %}
+
+  {% if product.stage contains 'Experimental' %}
+    {% assign experimental = experimental | plus:1 %}
+  {% endif %}
+
+{% endfor %}
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
-	    <div class="layout-minor layout-tight">
-        <div class="sort-border">
+	    <div class="layout-minor">
+        <div class="sort-border product-filters">
 	    	<h3>Sort By Stage</h3>
-	    	<ul>
-          <li><input type="button" value="Live" class="button-alternative button-sort"></li>
-          <li><input type="button" value="Beta" class="button-default button-sort"></li>
-          <li><input type="button" value="Alpha" class="button-bold button-sort"></li>
-          <li><input type="button" value="Experimental" class="button-subtle button-sort"></li>
+	    	<ul class="list-no-bullets">
+          <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live">Live ({{ live }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <li><a href="#" onclick="return false" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <li><a href="#" onclick="return false" class="button-bold button-sort" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <li><a href="#" onclick="return false" class="button-subtle button-sort" data-filter=".js-product-experimental">Experimental ({{ experimental }})</a></li>
+          <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </ul>
         </div>
 	    </div>
@@ -53,100 +117,57 @@ nav-breadcrumbs:
     				<div class="layout-minor-invert">
     					<h3>Featured App</h3>
     					<h4>CityVoice</h4>
-    					<p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.<a href="../apps/cityvoice/#voiceTop">Read more</a></p>
+    					<p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
     				</div>
 	    		</div>
 	    	</div>
 
-        <div class="layout-whole">
-  	    		<h3>Economic Development</h3>
-            {% for product in site.data.products %}
-              {% if product.focus-area == "Economic Development" %}
-    		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                  {% if product.imgUrl == null %}
-                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                  {% else %}
-                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                  {% endif %}
-                  <h1 class="teaser-title">{{ product.name }}</h1>
-                  <p>{{ product.description }}</p>
-    		    		</div>
-              {% endif %}
-            {% endfor %}
+          <div class="products">
+        {% assign sections = "Economic Development,Safety & Justice,Health,Communications & Engagement,Other" | split: "," %}
+
+        {% for section in sections %}
+
+        {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
+          <!-- {{ section }} -->
+            <h3>{{ section }}</h3>
+            <div class="{{ section_class }} border">
+              <div class="layout-whole layout-whole-products">
+                  {% for product in site.data.products %}
+                    {% if section == 'Other' %}
+                      {% if product.focus-area != "Communications & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
+                      <div class="js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                        {% if product.imgUrl == null %}
+                          <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                        {% else %}
+                          <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                        {% endif %}
+                        <h1 class="teaser-title">{{ product.name }}</h1>
+                        <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
+                      </div>
+                      {% endif %}
+                    {% else %}
+                      {% if product.focus-area == section %}
+                        <div class="js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                          {% if product.imgUrl == null %}
+                            <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
+                          {% else %}
+                            <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
+                          {% endif %}
+                          <h1 class="teaser-title">{{ product.name }}</h1>
+                          <p>{{ product.description | truncate: 140, '...' }} Read more.</p>
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+              </div>
+            </div>
+        {% endfor %}
+
+            </div>
+          </div>
         </div>
 
-        <div class="layout-whole">
-  	    		<h3>Safety and Justice</h3>
-            {% for product in site.data.products %}
-              {% if product.focus-area == "Safety & Justice" %}
-    		  			<div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                  {% if product.imgUrl == null %}
-                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                  {% else %}
-                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                  {% endif %}
-                  <h1 class="teaser-title">{{ product.name }}</h1>
-                  <p>{{ product.description }}</p>
-    		    		</div>
-              {% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="layout-whole">
-            <h3>Health</h3>
-            {% for product in site.data.products %}
-              {% if product.focus-area == "Health" %}
-                <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                  {% if product.imgUrl == null %}
-                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                  {% else %}
-                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                  {% endif %}
-                  <h1 class="teaser-title">{{ product.name }}</h1>
-                  <p>{{ product.description }}</p>
-                </div>
-              {% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="layout-whole">
-            <h3>Communications and Engagement</h3>
-            {% for product in site.data.products %}
-              {% if product.focus-area == "Comms & Engagement" %}
-                <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                  {% if product.imgUrl == null %}
-                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                  {% else %}
-                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                  {% endif %}
-                  <h1 class="teaser-title">{{ product.name }}</h1>
-                  <p>{{ product.description }}</p>
-                </div>
-              {% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="layout-whole">
-            <h3>Other</h3>
-            {% for product in site.data.products %}
-              {% if product.focus-area != "Comms & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
-                <div class="layout-crotchet-staccato layout-tight js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                  {% if product.imgUrl == null %}
-                    <img src="/media/images/apps/app-generic.jpg" height="80" width="247.5">
-                  {% else %}
-                    <img src="/media/images/apps/{{ product.imgUrl }}" height="80" width="247.5">
-                  {% endif %}
-                  <h1 class="teaser-title">{{ product.name }}</h1>
-                  <p>{{ product.description }}</p>
-                </div>
-              {% endif %}
-            {% endfor %}
-        </div>
-      </div>
-
-    </div>
-
-
+<!--   </div> -->
 
 
 </section>
