@@ -59,6 +59,10 @@ jquery-scripts: |
     font-size: 2em;
     line-height: 20px;
   }
+  .featured-title {
+    font-size: 2.5em;
+    line-height: 20px;
+  }
   .product-nav {
     border-right: 1px solid #e0dede;
     padding-right: 1em;
@@ -115,6 +119,11 @@ jquery-scripts: |
     min-width:100%;
     min-height:100%;
   }
+  .featured-description {
+    margin-left: 0;
+    text-align: center;
+  }
+
 
   #parent {position: relative;}
 
@@ -178,22 +187,34 @@ jquery-scripts: |
         </div>
 	    </div>
 
-	    <div class="pull-out layout-major layout-tight">
+	    <div class="pull-out layout-major">
 	    	<!-- Featured App -->
-	    	<div class="layout-breve layout-tight featured">
+<!-- 	    	<div class="layout-breve layout-tight featured">
 	    		<h1>Products</h1>
-	    		<div class="slab-red">
+	    		<div class="slab-dark-gray">
     				<div class="layout-major-invert fill">
     				  <img src="/media/images/apps/cityvoice.jpg">
     				</div>
 
     				<div class="layout-minor-invert">
-    					<h3>Featured App</h3>
-    					<h3>CityVoice</h3>
+    					<h3>Featured App:</h3>
+    					<h1>CityVoice</h1>
     					<p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
     				</div>
 	    		</div>
-	    	</div>
+	    	</div> -->
+        <h1 class="featured-title">Featured App:</h1>
+        <div class="slab-gray">
+          <div class="layout-breve layout-tight slab-dark-gray fill">
+            <img src="/media/images/apps/cityvoice.jpg">
+          </div>
+
+          <div class="featured-description layout-breve layout-tight">
+              <!-- <h2>CityVoice</h2> -->
+              <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
+
+          </div>
+        </div>
 
           <div class="products">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communications & Engagement,Other" | split: "," %}
