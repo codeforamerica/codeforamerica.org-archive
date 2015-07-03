@@ -59,6 +59,10 @@ jquery-scripts: |
     font-size: 2em;
     line-height: 20px;
   }
+  .featured-title {
+    font-size: 2.5em;
+    line-height: 20px;
+  }
   .product-nav {
     border-right: 1px solid #e0dede;
     padding-right: 1em;
@@ -78,6 +82,7 @@ jquery-scripts: |
   .sort-border {
     margin-top: 4em;
   }
+
   .img-container {
     text-align: center;
     padding-bottom: 1em;
@@ -86,6 +91,51 @@ jquery-scripts: |
     flex-shrink:0;
     min-height: 72px;
     max-height:90px;
+  }
+  .featured {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+/*  .center-featured-image {
+    display: block;
+    margin: 0 auto;
+  }*/
+
+  .fill {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden
+  }
+  .fill img {
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%;
+  }
+  .featured-description {
+    margin-left: 0;
+    text-align: center;
+  }
+
+
+  #parent {position: relative;}
+
+  #child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
   }
 </style>
 
@@ -114,6 +164,7 @@ jquery-scripts: |
   {% endif %}
 
 {% endfor %}
+
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="pull-in layout-minor">
@@ -136,22 +187,34 @@ jquery-scripts: |
         </div>
 	    </div>
 
-	    <div class="pull-out layout-major layout-tight">
+	    <div class="pull-out layout-major">
 	    	<!-- Featured App -->
-	    	<div class="layout-breve layout-tight">
-	    		<h1>Apps</h1>
-	    		<div>
-    				<div class="layout-major-invert">
-    				  <img src="/media/images/apps/cityvoice.jpg" height="200em">
+<!-- 	    	<div class="layout-breve layout-tight featured">
+	    		<h1>Products</h1>
+	    		<div class="slab-dark-gray">
+    				<div class="layout-major-invert fill">
+    				  <img src="/media/images/apps/cityvoice.jpg">
     				</div>
 
     				<div class="layout-minor-invert">
-    					<h3>Featured App</h3>
-    					<h4>CityVoice</h4>
+    					<h3>Featured App:</h3>
+    					<h1>CityVoice</h1>
     					<p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
     				</div>
 	    		</div>
-	    	</div>
+	    	</div> -->
+        <h1 class="featured-title">Featured App:</h1>
+        <div class="slab-gray">
+          <div class="layout-breve layout-tight slab-dark-gray fill">
+            <img src="/media/images/apps/cityvoice.jpg">
+          </div>
+
+          <div class="featured-description layout-breve layout-tight">
+              <!-- <h2>CityVoice</h2> -->
+              <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
+
+          </div>
+        </div>
 
           <div class="products">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communications & Engagement,Other" | split: "," %}
@@ -201,8 +264,5 @@ jquery-scripts: |
             </div>
           </div>
         </div>
-
-<!--   </div> -->
-
 
 </section>
