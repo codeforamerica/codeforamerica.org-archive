@@ -11,7 +11,13 @@ nav-breadcrumbs:
 jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
-   <script>
+  <script src="/script/jquery.sticky.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 0 }); //changed widthFromWrapper this to false because it would change the width while scrolling...didn't look good
+    });
+    </script>
+    <script>
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
     });
@@ -188,7 +194,7 @@ jquery-scripts: |
         <div class="sort-border product-filters">
   	    	<h3>Sort By Stage</h3>
           <div>
-    	    	<ul class="list-no-bullets product-nav">
+    	    	<ul class="list-no-bullets product-nav js-sticky-nav">
               <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
@@ -204,7 +210,7 @@ jquery-scripts: |
         </div>
 	    </div>
 
-	    <div class="pull-out layout-major">
+	    <div class="pull-out layout-major content">
 
         <h1 class="featured-title">Products</h1>
         <div class="slab-gray featured-margin">
