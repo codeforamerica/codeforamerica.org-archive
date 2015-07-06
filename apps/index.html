@@ -1,273 +1,152 @@
 ---
 layout: default
-
-# Don't use the default masthead
-masthead: "no"
-nav-global-primary: "no"
-
+title: "Apps & APIs"
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
- - "Apps": "/our-work/apps"
-jquery-scripts: |
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="/script/isotope.pkgd.min.js"></script>
-   <script>
-    $('.product-filters').on( 'click', 'a', function() {
-      $('.none-section').remove();
-    });
-    var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communications-and-engagement', '.other' ];
-    $.each(grids, function(key,val){
-      var $grid = $(val).isotope({
-        itemSelector: '.js-product',
-        layoutMode: 'fitRows'
-      });
-      $('.product-filters').on( 'click', 'a', function() {
-        var filterValue = $( this ).attr('data-filter');
-        $test = $grid.isotope({ filter: filterValue });
-        var iso = $test.data('isotope');
-        // count how many
-        console.log( 'filtered ' + iso.filteredItems.length + ' items' );
-        // first element
-        if(iso.filteredItems.length == 0) {
-          var className = '.' + $grid.attr('class').split(' ')[0];
-          console.log(className);
-          $("<p class='none-section note'>None Available</p>").appendTo( $(className).prev() );
-        }
-
-      });
-    });
-   </script>
+ - "Apps & APIs": "/our-work/apps"
 ---
-<style>
-  [class*="button"][class*="button"]:link {
-    max-width: 120px;
-    min-height: 40px;
-  }
-  .header-section {
-    text-align: center;
-  }
-  .teaser-title {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 25px;
-    font-weight: normal;
-    letter-spacing: inherit;
-    line-height: 22px;
-    margin: 0;
-    text-transform: none;
-    color: #cf1b41;
-  }
-  /* js-product spacing */
-  .js-product { box-sizing: border-box; }
-  @media screen and (min-width: 50em){
-    .layout-whole-products {
-      margin-left: -1em;
-      margin-right: -1em;
-    }
-    .js-product {
-      display: block;
-      float: left;
-      width: calc(100%/3);
-      margin: 0;
-      padding: 0 0.5em;
-    }
-  }
-  div.products h1 {
-    font-size: 2em;
-    line-height: 28px;
-    text-align: center;
-    margin-top: 0.5em;
-  }
-  .featured-title {
-    font-size: 2.5em;
-    line-height: 28px;
-  }
-  .product-nav {
-    border-right: 1px solid #e0dede;
-    padding-right: 1em;
-  }
-  .product-card {
-    border: 1px solid #e0dede;
-    border-top: none;
-    border-bottom: none;
-    margin-bottom: .75em;
-  }
-  .pull-in {
-    width: 15%;
-  }
-  .pull-out {
-    width: 78%;
-  }
-  .sort-border {
-    margin-top: 4em;
-  }
 
-  .img-container {
-    text-align: center;
-    padding-bottom: 1em;
-  }
-  .img-container img {
-    flex-shrink:0;
-    min-height: 72px;
-    max-height:90px;
-  }
-  .featured {
-    margin-bottom: 2em;
-  }
+    <section>
 
-  .fill {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden
-  }
-  .fill img {
-    flex-shrink:0;
-    min-width:100%;
-    min-height:100%;
-  }
-  .featured-description {
-    margin-left: 0;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: left;
-  }
+    <div class="layout-semibreve layout-tight">
 
-  #parent {position: relative;}
-
-  #child {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 30%;
-    margin: auto;
-  }
-
-  .featured-margin {
-    margin-bottom: 1.5em;
-  }
-  .section-border {
-    border-bottom: 3px solid #e0dede;
-    margin-bottom: 2em;
-    padding-bottom: 1em;
-  }
-</style>
-
-<section>
-{% assign live = 0 %}
-{% assign beta = 0 %}
-{% assign alpha = 0 %}
-{% assign experimental = 0 %}
-{% for product in site.data.products %}
-  {% assign number = forloop.length %}
-
-  {% if product.stage contains 'Live' %}
-    {% assign live = live | plus:1 %}
-  {% endif %}
-  {% assign beta_check = product.stage | downcase %}
-  {% if beta_check contains 'beta' %}
-    {% assign beta = beta | plus:1 %}
-  {% endif %}
-
-  {% if product.stage contains 'Alpha' %}
-    {% assign alpha = alpha | plus:1 %}
-  {% endif %}
-
-  {% if product.stage contains 'Experimental' %}
-    {% assign experimental = experimental | plus:1 %}
-  {% endif %}
-
-{% endfor %}
-
-    <div class="layout-breve layout-tight">
-      <!-- App sorting menu -->
-	    <div class="pull-in layout-minor">
-        <div class="sort-border product-filters">
-  	    	<h3>Sort By Stage</h3>
-          <div>
-    	    	<ul class="list-no-bullets product-nav">
-              <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <li><a href="#" onclick="return false" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <li><a href="#" onclick="return false" class="button-bold button-sort" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <li><a href="#" onclick="return false" class="button-subtle button-sort" data-filter=".js-product-experimental">Experimental ({{ experimental }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </ul>
-          </div>
+        {% include nav-breadcrumbs.html %}
+        
+        <div class="layout-centered">
+            
+            <h2 class="h3">Our fellowship, accelerator and incubator apps are the product of hundreds of community interviews. In partnership with our government partners, fellows and govtech founders figure out how to best serve citizens.</h2>
+            
+                        
         </div>
-	    </div>
+    
+    </div>
+    
+    <div class="nav-tabs" id="nav-tabs">
+    	<ul class="layout-semibreve layout-tight">
+	        <li class="nav-tab"><a class="nav-tab-link" href="local-service.html#nav-tabs">Local service apps</a></li>
+	        <li class="nav-tab"><a class="nav-tab-link" href="citizen-engagement.html#nav-tabs">Citizen engagements apps</a></li>
+	        <li class="nav-tab"><a class="nav-tab-link" href="free.html#nav-tabs">Free apps</a></li>
+	        <li class="nav-tab"><a class="nav-tab-link" href="paid.html#nav-tabs">Paid apps</a></li>
+        </ul>
+    </div>
+    
+    <div class="layout-semibreve layout-tight">
+    <div class="tab-content">
+        <div class="tab-pane state-active">
+            <ul class="teasers">
+            
+	<li class="layout-crotchet">
+        {% include apps/adopt-a-hydrant.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+	    {% include apps/archivesocial.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/aunt-bertha.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/bizfriendly.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/captricity.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/city-analytics-dashboard.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/cityvoice.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/civicinsight.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/click-that-hood.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/development-fastpass.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/discover-bps.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/family-assessment-form.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/honolulu-answers.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/jail-population-management-dashboard.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/learnsprout.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/localdata.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/measured-voice.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/mindmixer.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/ohana-api.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/opencounter.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/prepared-ly.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/promptly.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/public-art-finder.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/recordtrac.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/recovers-org.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/reroute-it.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/revelstone.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/smartprocure.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+	    {% include apps/streetcred.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/streetmix.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/streetscope.html context="apps-list" base=".." %}
+        </li>
+	<li class="layout-crotchet">
+        {% include apps/textizen.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/text-my-bus.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/to-the-trails.html context="apps-list" base=".." %}
+	</li>
+	<li class="layout-crotchet">
+        {% include apps/wheres-my-school-bus.html context="apps-list" base=".." %}
+	</li>
+	
+</ul>
 
-	    <div class="pull-out layout-major">
-
-        <h1 class="featured-title">Products</h1>
-        <div class="slab-gray featured-margin">
-          <div class="layout-breve layout-tight slab-dark-gray fill">
-            <img src="/media/images/apps/cityvoice.jpg">
-          </div>
-
-          <div class="featured-description layout-breve layout-tight">
-              <h4>CityVoice</h4>
-              <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
-          </div>
         </div>
-
-          <div class="products layout-whole">
-        {% assign sections = "Economic Development,Safety & Justice,Health,Communications & Engagement,Other" | split: "," %}
-
-        {% for section in sections %}
-
-        {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
-          <!-- {{ section }} -->
-            <div class="header-section">
-              <h3>{{ section }}</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="{{ section_class }} section-border">
-              <div class="layout-whole layout-whole-products">
-                  {% for product in site.data.products %}
-                    {% if section == 'Other' %}
-                      {% if product.focus-area != "Communications & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
-                      <div class="product-card js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                        <div class="img-container">
-                        {% if product.imgUrl == null %}
-                          <img src="/media/images/apps/app-generic.jpg">
-                        {% else %}
-                          <img src="/media/images/apps/{{ product.imgUrl }}">
-                        {% endif %}
-                        </div>
-                        <h2 class="teaser-title">{{ product.name }}</h2>
-                        <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
-                      </div>
-                      {% endif %}
-                    {% else %}
-                      {% if product.focus-area == section %}
-                        <div class="product-card js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
-                          <div class="img-container">
-                          {% if product.imgUrl == null %}
-                            <img src="/media/images/apps/app-generic.jpg">
-                          {% else %}
-                            <img src="/media/images/apps/{{ product.imgUrl }}">
-                          {% endif %}
-                          </div>
-                          <h2 class="teaser-title">{{ product.name }}</h2>
-                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
-                        </div>
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-              </div>
-            </div>
-        {% endfor %}
-
-            </div>
-          </div>
-        </div>
-
+    </div>
+    </div>
+    
 </section>
+    
+
