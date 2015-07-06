@@ -146,9 +146,13 @@ jquery-scripts: |
     margin: auto;
   }
 
+  .featured-margin {
+    margin-bottom: 1.5em;
+  }
   .section-border {
     border-bottom: 3px solid #e0dede;
     margin-bottom: 2em;
+    padding-bottom: 1em;
   }
 </style>
 
@@ -187,7 +191,7 @@ jquery-scripts: |
     	    	<ul class="list-no-bullets product-nav">
               <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live">Live ({{ live }})</a></li>
+              <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <li><a href="#" onclick="return false" class="button-default button-sort" data-filter=".js-product-local-beta, .js-product-national-beta">Beta ({{ beta }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -203,7 +207,7 @@ jquery-scripts: |
 	    <div class="pull-out layout-major">
 
         <h1 class="featured-title">Products</h1>
-        <div class="slab-gray">
+        <div class="slab-gray featured-margin">
           <div class="layout-breve layout-tight slab-dark-gray fill">
             <img src="/media/images/apps/cityvoice.jpg">
           </div>
@@ -211,7 +215,6 @@ jquery-scripts: |
           <div class="featured-description layout-breve layout-tight">
               <h4>CityVoice</h4>
               <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
-
           </div>
         </div>
 
@@ -226,7 +229,7 @@ jquery-scripts: |
               <h3>{{ section }}</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="{{ section_class }} border">
+            <div class="{{ section_class }} section-border">
               <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
                     {% if section == 'Other' %}
