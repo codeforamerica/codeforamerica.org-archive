@@ -12,6 +12,9 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
    <script>
+    $('.product-filters').on( 'click', 'a', function() {
+      $('.none-section').remove();
+    });
     var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communications-and-engagement', '.other' ];
     $.each(grids, function(key,val){
       var $grid = $(val).isotope({
@@ -20,7 +23,17 @@ jquery-scripts: |
       });
       $('.product-filters').on( 'click', 'a', function() {
         var filterValue = $( this ).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
+        $test = $grid.isotope({ filter: filterValue });
+        var iso = $test.data('isotope');
+        // count how many
+        console.log( 'filtered ' + iso.filteredItems.length + ' items' );
+        // first element
+        if(iso.filteredItems.length == 0) {
+          var className = '.' + $grid.attr('class').split(' ')[0];
+          console.log(className);
+          $("<p class='none-section note'>None Available</p>").appendTo( $(className).prev() );
+        }
+
       });
     });
    </script>
@@ -29,6 +42,9 @@ jquery-scripts: |
   [class*="button"][class*="button"]:link {
     width: 120px;
     height: 40px;
+  }
+  .header-section {
+    text-align: center;
   }
   .teaser-title {
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -68,7 +84,7 @@ jquery-scripts: |
 {% for product in site.data.products %}
   {% assign number = forloop.length %}
 
-  {% if product.stage == 'Live' %}
+  {% if product.stage contains 'Live' %}
     {% assign live = live | plus:1 %}
   {% endif %}
   {% assign beta_check = product.stage | downcase %}
@@ -129,7 +145,9 @@ jquery-scripts: |
 
         {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
           <!-- {{ section }} -->
-            <h3>{{ section }}</h3>
+            <div class="header-section">
+              <h1>{{ section }}</h1>
+            </div>
             <div class="{{ section_class }} border">
               <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
