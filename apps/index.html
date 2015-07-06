@@ -95,20 +95,8 @@ jquery-scripts: |
     max-height:90px;
   }
   .featured {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 2em;
   }
-
-/*  .center-featured-image {
-    display: block;
-    margin: 0 auto;
-  }*/
 
   .fill {
     display:flex;
@@ -123,9 +111,11 @@ jquery-scripts: |
   }
   .featured-description {
     margin-left: 0;
-    text-align: center;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
   }
-
 
   #parent {position: relative;}
 
@@ -138,6 +128,11 @@ jquery-scripts: |
     width: 50%;
     height: 30%;
     margin: auto;
+  }
+
+  .section-border {
+    border-bottom: 3px solid #e0dede;
+    margin-bottom: 2em;
   }
 </style>
 
@@ -198,7 +193,7 @@ jquery-scripts: |
           </div>
 
           <div class="featured-description layout-breve layout-tight">
-              <!-- <h2>CityVoice</h2> -->
+              <h4>CityVoice</h4>
               <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
 
           </div>
@@ -211,8 +206,9 @@ jquery-scripts: |
 
         {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
           <!-- {{ section }} -->
-            <h1>{{ section }}</h1>
-            <div class="{{ section_class }} border">
+            <h3>{{ section }}</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="{{ section_class }} section-border">
               <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
                     {% if section == 'Other' %}
