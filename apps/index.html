@@ -46,12 +46,15 @@ jquery-scripts: |
   .header-section {
     text-align: left;
   }
+  .header-section .section-description, h3{
+    text-align: left;
+  }
   .teaser-title {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 25px;
     font-weight: normal;
     letter-spacing: inherit;
-    line-height: 22px;
+    line-height: 26px;
     margin: 0;
     text-transform: none;
     color: #cf1b41;
@@ -66,10 +69,14 @@ jquery-scripts: |
     .js-product {
       display: block;
       float: left;
-      width: calc(100%/3);
+      width: calc(100%/3.3);
       margin: 0;
       padding: 0 0.5em;
     }
+  }
+
+  .card-content {
+    padding: 0 0.5em;
   }
   div.products h1 {
     font-size: 2em;
@@ -87,9 +94,10 @@ jquery-scripts: |
   }
   .product-card {
     border: 1px solid #e0dede;
-    border-top: none;
-    border-bottom: none;
-    margin-bottom: .75em;
+
+    margin-bottom: 2em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
   }
   .pull-in {
     width: 15%;
@@ -108,12 +116,18 @@ jquery-scripts: |
 
   .img-container {
     text-align: center;
-    padding-bottom: 1em;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    border-bottom: 1px solid #e0dede;
+    margin-bottom: 0.5em;
   }
   .img-container img {
     flex-shrink:0;
     min-height: 72px;
-    max-height:90px;
+    max-height:89px;
+    max-width: 85%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
   }
 
   .featured {
@@ -235,7 +249,7 @@ jquery-scripts: |
           <!-- {{ section }} -->
             <div class="header-section">
               <h3>{{ section }}</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="{{ section_class }} section-border">
               <div class="layout-whole layout-whole-products">
@@ -250,8 +264,10 @@ jquery-scripts: |
                           <img src="/media/images/apps/{{ product.imgUrl }}">
                         {% endif %}
                         </div>
-                        <h2 class="teaser-title">{{ product.name }}</h2>
-                        <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                        <div class="card-content">
+                          <h2 class="teaser-title">{{ product.name }}</h2>
+                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                        </div>
                       </div>
                       {% endif %}
                     {% else %}
@@ -264,8 +280,10 @@ jquery-scripts: |
                             <img src="/media/images/apps/{{ product.imgUrl }}">
                           {% endif %}
                           </div>
-                          <h2 class="teaser-title">{{ product.name }}</h2>
-                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                          <div class="card-content">
+                            <h2 class="teaser-title">{{ product.name }}</h2>
+                            <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                          </div>
                         </div>
                       {% endif %}
                     {% endif %}
