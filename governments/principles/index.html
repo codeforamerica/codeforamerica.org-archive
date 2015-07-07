@@ -10,97 +10,125 @@ nav-breadcrumbs:
  - Principles for 21st Century Government: "/governments/principles"
 
 jquery-scripts: |
-    <script src="/script/jquery.sticky.js"></script>
-    <script src="/script/jquery.scrollspy.js"></script>
-    <script type="text/javascript" >
-      $(document).ready(function(){
-        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+    <script src="/script/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/script/vendor/waypoints/shortcuts/inview.min.js"></script>
+    <!-- <script src="/script/vendor/waypoints/shortcuts/sticky.min.js"></script> -->
 
-        // now we can spy on stuff to see when our section appears WHOOSH
-        $('.principle').each(function(i) {
-            var position = $(this).position();
-            console.log(position);
-            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
-            $(this).scrollspy({
-                min: position.top,
-                max: position.top + $(this).height(),
-                onEnter: function(element, position) {
-                    $("#js-nav-" + element.id).addClass("nav-item-active");
-                },
-                onLeave: function(element, position) {
-                   $("#js-nav-" + element.id).removeClass("nav-item-active");
-                }
-            });
+    <script type="text/javascript">
+      $(document).ready(function(){
+        /*
+         * When we enter a principle, add an active class to the
+         * nav-item representing that principle. Also, remove all
+         * active classes every time the event triggers so we
+         * don't keep inactive things highlighted
+         */
+        var principles = $('.principle');
+        var setActive = function(section){
+          var active = '#js-nav-' + section.id;
+          $(active).addClass('nav-item-active');
+        }
+        var unsetAllActive = function(){
+          $.each($('.nav-item'), function(key,item){
+            if ($(item).hasClass('nav-item-active')){
+              $(item).removeClass('nav-item-active');
+            }
+          });
+        }
+        $.each(principles, function(key,section){
+          new Waypoint({
+            element: section,
+            handler: function(direction){
+              unsetAllActive();
+              setActive(section);
+            },
+            offset: '25px'
+          });
         });
-        console.log("yup");
+
+        /*
+         * When a nav button is clicked, automatically clear active
+         * sections and make that section active.
+         */
+
+
+
+        /*
+         * When we enter the page content (i.e. leave the header),
+         * stick the nav to the page so it follows us.
+         */
+        var pageContent = new Waypoint.Inview({
+          element: $('#page-content')[0],
+          enter: function(dir){},
+          entered: function(dir){
+            console.log('entered ' + dir);
+            $('#js-sticky-nav').removeClass('fixed');
+          },
+          exit: function(dir){
+            console.log('exit ' + dir);
+            $('#js-sticky-nav').addClass('fixed');
+          },
+          exited: function(dir){}
+        });
+
       });
     </script>
 ---
 
 <style>
-    .space {
-        padding-top: 3em;
-    }
-    .h4-size {
-        font-size: 18px;
-        margin: 0 0 3px 0;
-        margin-bottom: 0;
-    }
+    /******
+     * TABLE OF CONTENTS
+     ******/
+
+    /* Table of contents head */
     .nav-head {
+      font-size: 18px;
+      margin: 0 0 3px 0;
+      margin-bottom: 0;
       font-weight: 700;
     }
+
+    /* Turn the table of contents into a card style */
+    .card-toc {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-left: 1em;
+      padding-right: 0.25em;
+      background-color: white;
+      border: 2px solid rgba(109, 110, 113, 0.25);
+      margin-top: 5px;
+    }
+
+    .toc-padding {
+      padding-bottom: 0.75em;
+      margin-bottom: 0;
+    }
+
+    /******
+     * PAGE HEADER
+     ******/
+
+    /* Styles for the photo header */
     .layout-top {
-        padding-bottom: 0;
-        padding-top: 20;
+      padding-bottom: 0;
+      padding-top: 20;
     }
-    .layout-edit {
-        padding-top: 0;
-    }
-    .layout-minor {
+
+    /******
+     * LAYOUT
+     ******/
+
+    /* Tweak default layout sizes to make main content bigger */
+    @media screen and (min-width: 40em) {
+      .layout-minor {
         width: 16%;
-    }
-    .layout-major {
+      }
+      .layout-major {
         width: 80%;
         margin-bottom: 20px;
+      }
     }
-    .layout-section-top {
-        padding-top: 1.5em;
-        clear: both;
-    }
-    .layout-section-middle {
-        padding-bottom: 0em;
-        padding-top: 0.75em;
-    }
-    .layout-section-checklist {
-        clear: both;
-        padding-top: 1.5em;
-    }
-    .layout-section-bottom {
-        float: left;
-        padding-bottom: 0.25em;
-    }
-    .middle-padding {
-        padding-bottom: 0;
-        padding-top: 1em;
-        clear: both;
-    }
-    .card-toc {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        padding-left: 1em;
-        padding-right: 0.25em;
-        background-color: white;
-        border-color: rgba(109, 110, 113, 0.25);
-        border-top-style: solid;
-        border-right-style: solid;
-        border-bottom-style: solid;
-        border-left-style: solid;
-        border-bottom-width: 2px;
-        border-right-width: 2px;
-        border-left-width: 2px;
-        border-top-width: 2px;
-        margin-top: 5px;
-    }
+
+
     .heading-margin {
         margin: 0em 0;
         padding: 0.5em;
@@ -113,10 +141,7 @@ jquery-scripts: |
         border-bottom: 1px solid;
         border-color: rgba(229, 229, 229, 0.8);
     }
-    .toc-padding {
-        padding-bottom: 0.75em;
-        margin-bottom: 0;
-    }
+
     ul.checkmark h4 {
         padding-left: 1.5em;
     }
@@ -183,6 +208,14 @@ jquery-scripts: |
       color: #aa1c3a;
       font-weight: 700;
     }
+    @media screen and (min-width: 40em) {
+      .fixed {
+        position: fixed;
+        top: 3em;
+        left: 2%;
+        width: 14%;
+      }
+    }
 </style>
 
 <div class="masthead masthead-xl">
@@ -192,17 +225,17 @@ jquery-scripts: |
   </header>
 </div>
 
-<section class="layout-breve">
+<section class="layout-breve" id="page-content">
 
   <div class="layout-minor">
     <nav role="navigation" class="nav nav-horizontal card-toc" id="js-sticky-nav">
       <h4 class="h4-size nav-head">Table of Contents</h4>
       <ul class="toc-padding">
-        <li class="nav-item" id="js-nav-people">1. <a href="#people">Put People First</a></li>
-        <li class="nav-item" id="js-nav-start">2. <a href="#start">Start Small</a></li>
-        <li class="nav-item" id="js-nav-collaborate">3. <a href="#collaborate">Make Digital</a></li>
-        <li class="nav-item" id="js-nav-open">4. <a href="#open">Open vs. Closed</a></li>
-        <li class="nav-item" id="js-nav-decisions">5. <a href="#decisions">Improve Decisions</a></li>
+        <li><a class="nav-item" id="js-nav-people" href="#people">1. Put People First</a></li>
+        <li><a class="nav-item" id="js-nav-start" href="#start">2. Start Small</a></li>
+        <li><a class="nav-item" id="js-nav-collaborate" href="#collaborate">3. Make Digital</a></li>
+        <li><a class="nav-item" id="js-nav-open" href="#open">4. Open vs. Closed</a></li>
+        <li><a class="nav-item" id="js-nav-decisions" href="#decisions">5. Improve Decisions</a></li>
       </ul>
     </nav>
   </div><!-- end .layout-minor -->
