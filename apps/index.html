@@ -1,10 +1,5 @@
 ---
 layout: default
-
-# Don't use the default masthead
-masthead: "no"
-nav-global-primary: "no"
-
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
  - "Apps": "/our-work/apps"
@@ -223,14 +218,13 @@ jquery-scripts: |
 </style>
 
 <section>
+
 {% assign live = 0 %}
 {% assign local-beta = 0 %}
 {% assign wide-beta = 0 %}
 {% assign alpha = 0 %}
 {% assign experiment = 0 %}
 {% for product in site.data.products %}
-  {% assign number = forloop.length %}
-
   {% if product.stage contains 'Live' %}
     {% assign live = live | plus:1 %}
   {% endif %}
@@ -241,11 +235,9 @@ jquery-scripts: |
   {% if beta_check contains 'beta' and beta_check contains 'national' %}
     {% assign wide-beta = wide-beta | plus:1 %}
   {% endif %}
-
   {% if product.stage contains 'Alpha' %}
     {% assign alpha = alpha | plus:1 %}
   {% endif %}
-
   {% if product.stage contains 'Experiment' %}
     {% assign experiment = experiment | plus:1 %}
   {% endif %}
@@ -341,7 +333,7 @@ jquery-scripts: |
         {% endfor %}
 
             </div>
-          </div>
         </div>
+
 
 </section>
