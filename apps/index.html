@@ -13,14 +13,23 @@ jquery-scripts: |
   <script src="/script/isotope.pkgd.min.js"></script>
   <script src="/script/jquery.sticky.js"></script>
   <script>
+  var bottom = $('#content').position().top+$('#content').outerHeight(true);
+  var documentHeight = $( document ).height(); // to prevent table of contents from jumping into footer, needed to calculate the height between content and footer.
+  var bottomSpacing = documentHeight - bottom + 55; // +55 accounts for padding on the layout-major so the table of contents stops at end of Principle 5
+
     $(document).ready(function(){
-        $("#js-sticky-nav").sticky({ topSpacing: 0 }); //changed widthFromWrapper this to false because it would change the width while scrolling...didn't look good
+        $("#sticker").sticky({  topSpacing: -50, bottomSpacing: bottomSpacing, widthFromWrapper: false }); //changed widthFromWrapper this to false because it would change the width while scrolling...didn't look good
+        console.log("yup");
     });
-    </script>
-    <script>
+
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
     });
+
+    </script>
+
+    <script>
+
     var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communications-and-engagement', '.other' ];
     $.each(grids, function(key,val){
       var $grid = $(val).isotope({
@@ -191,10 +200,10 @@ jquery-scripts: |
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="pull-in layout-minor">
-        <div class="sort-border product-filters">
+        <div class="sort-border product-filters" id="sticker">
   	    	<h3>Sort By Stage</h3>
           <div>
-    	    	<ul class="list-no-bullets product-nav js-sticky-nav">
+    	    	<ul class="list-no-bullets product-nav">
               <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter="*">All ({{ number }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <li><a href="#" onclick="return false" class="button-alternative button-sort" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
@@ -210,7 +219,7 @@ jquery-scripts: |
         </div>
 	    </div>
 
-	    <div class="pull-out layout-major content">
+	    <div class="pull-out layout-major" id="content">
 
         <h1 class="featured-title">Products</h1>
         <div class="slab-gray featured-margin">
