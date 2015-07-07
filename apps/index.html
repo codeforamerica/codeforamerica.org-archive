@@ -15,7 +15,7 @@ jquery-scripts: |
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
     });
-    var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communications-and-engagement', '.other' ];
+    var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communication-and-engagement', '.other' ];
     $.each(grids, function(key,val){
       var $grid = $(val).isotope({
         itemSelector: '.js-product',
