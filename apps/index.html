@@ -1,10 +1,6 @@
 ---
 layout: default
-
-# Don't use the default masthead
-masthead: "no"
-nav-global-primary: "no"
-
+title: "Apps & APIs"
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
  - "Apps": "/our-work/apps"
@@ -228,9 +224,7 @@ jquery-scripts: |
     {% assign wide-beta = wide-beta | plus:1 %}
   {% endif %}
 
-  {% if product.stage contains 'Alpha' %}
-    {% assign alpha = alpha | plus:1 %}
-  {% endif %}
+    <section>
 
   {% if product.stage contains 'Experiment' %}
     {% assign experiment = experiment | plus:1 %}
@@ -273,6 +267,7 @@ jquery-scripts: |
               <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
           </div>
         </div>
+    
 
           <div class="products layout-whole">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communication & Engagement,Other" | split: "," %}
@@ -327,7 +322,11 @@ jquery-scripts: |
         {% endfor %}
 
             </div>
-          </div>
-        </div>
 
+          </div>
+    
+    </div>
+    
 </section>
+    
+
