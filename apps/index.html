@@ -1,6 +1,7 @@
 ---
 layout: default
 # Don't use the default masthead
+title: Products
 masthead: "no"
 nav-global-primary: "no"
 nav_tier1_active: "our-work"
@@ -96,7 +97,7 @@ jquery-scripts: |
     background-color: rgba(190,60,76,1);
   }
 
-  .product-nav .not-emph {
+  .product-nav .not-emph, .not-emph {
     font-weight: lighter;
   }
 
@@ -194,6 +195,50 @@ jquery-scripts: |
     padding-right: 2em;
     text-align: left;
   }
+  .stage-experiment {
+    background-color: rgba(190,60,76,1);
+  }
+  .stage-alpha {
+    background-color: rgba(99,95,155,1);
+  }
+  .stage-local-beta {
+    background-color: rgba(83,160,208,1);
+  }
+  .stage-national-beta {
+    background-color: rgba(27,77,105,1);
+  }
+  .stage-local-live, .stage-live {
+    background-color: rgba(75,155,116,1);
+  }
+  .stage-label {
+    float: right;
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 12px;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 8px 8px 0;
+    min-height: 19px;
+    min-width: auto;
+    overflow: visible;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: middle;
+    width: auto;
+  }
 
   #parent {position: relative;}
 
@@ -289,6 +334,7 @@ jquery-scripts: |
         {% for section in sections %}
 
         {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
+
           <!-- {{ section }} -->
             <div class="header-section">
               <h3>{{ section }}</h3>
@@ -297,6 +343,27 @@ jquery-scripts: |
             <div class="{{ section_class }} section-border">
               <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
+                    {% assign stage_prefix = "" %}
+                    {% assign live_check = product.stage | downcase %}
+                    {% if live_check contains 'live' %}
+                      {% assign stage_label = 'live' %}
+                    {% endif %}
+                    {% assign beta_check = product.stage | downcase %}
+                    {% if beta_check contains 'beta' and beta_check contains 'local' %}
+                      {% assign stage_prefix = "<span class='not-emph'>local</span>" %}
+                      {% assign stage_label = 'beta' %}
+                    {% endif %}
+                    {% if beta_check contains 'beta' and beta_check contains 'national' %}
+                      {% assign stage_prefix = "<span class='not-emph'>wide</span>" %}
+                      {% assign stage_label = 'beta' %}
+                    {% endif %}
+                    {% if product.stage contains 'Alpha' %}
+                      {% assign stage_label = 'alpha' %}
+                    {% endif %}
+                    {% if product.stage contains 'Experiment' %}
+                      {% assign stage_label = 'experiment' %}
+                    {% endif %}
+
                     {% if section == 'Other' %}
                       {% if product.focus-area != "Communication & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
                       <div class="product-card js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
@@ -309,7 +376,7 @@ jquery-scripts: |
                         </div>
                         <div class="card-content">
                           <h2 class="teaser-title">{{ product.name }}</h2>
-                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p><span class="stage-label stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
                         </div>
                       </div>
                       {% endif %}
@@ -325,7 +392,7 @@ jquery-scripts: |
                           </div>
                           <div class="card-content">
                             <h2 class="teaser-title">{{ product.name }}</h2>
-                            <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                            <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p><span class="stage-label stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
                           </div>
                         </div>
                       {% endif %}
