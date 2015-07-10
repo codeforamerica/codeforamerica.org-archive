@@ -10,6 +10,18 @@ nav-breadcrumbs:
 jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
+  <script>
+    var grids = [ 'economic-development', 'health', 'safety-and-justice', 'communication-and-engagement', 'other' ];
+    $.each(grids, function(key,val){
+      $(document).ready(function (){
+        $("#scroll-" + val).click(function() {
+          $('html, body').animate({
+            scrollTop: $("#" + val).offset().top
+          }, 500);
+          });
+        });
+    });
+  </script>
    <script>
    $(document).ready(fit);
    $(window).resize(fit);
@@ -363,11 +375,11 @@ jquery-scripts: |
           <h3>Focus Areas</h3>
             <div>
               <ol>
-                <li><a href="#economic-development">Economic Development</a></li>
-                <li><a href="#safety-and-justice">Safety & Justice</a></li>
-                <li><a href="#health">Health</a></li>
-                <li><a href="#communication-and-engagement">Communication & Engagement</a></li>
-                <li><a href="#other">Other</a></li>
+                <li><a href="#economic-development" id="scroll-economic-development">Economic Development</a></li>
+                <li><a href="#safety-and-justice" id="scroll-safety-and-justice">Safety & Justice</a></li>
+                <li><a href="#health" id="scroll-health">Health</a></li>
+                <li><a href="#communication-and-engagement" id="scroll-communication-and-engagement">Communication & Engagement</a></li>
+                <li><a href="#other" id="scroll-other">Other</a></li>
               </ol>
             </div> 
   	    	<h3>Sort By Stage</h3>
