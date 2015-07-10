@@ -11,6 +11,26 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
    <script>
+   $(document).ready(fit);
+   $(window).resize(fit);
+      function fit() {
+       var heightDescr = $('.featured-description').height();
+       var heightImg = $('#featured-img').height();
+       console.log("Paragraph: " + heightDescr);
+       console.log("Image: " + heightImg);
+       if(heightDescr > heightImg){
+         var heightOf = $('.featured-description').height();
+         console.log(heightOf)
+         $('#featured-img').css('margin-top', heightOf/14);
+       }
+       else{
+         $('#featured-img').css('margin-top', 0);
+       }
+       //get height of image
+       //get height of p div
+       //if height greater than height of div, do function
+     };
+
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
     });
@@ -122,6 +142,10 @@ jquery-scripts: |
   .card-content {
     padding: 0 0.5em;
   }
+
+  .products {
+    margin-top: 1em;
+  }
   div.products h1 {
     font-size: 2em;
     line-height: 28px;
@@ -149,7 +173,7 @@ jquery-scripts: |
     width: 78%;
   }
   .sort-border {
-    margin-top: 4em;
+    margin-top: 1em;
   }
 
   .title-margin {
@@ -178,23 +202,22 @@ jquery-scripts: |
   }
 
   .fill {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
   .fill img {
-    flex-shrink:0;
-    min-width:98%;
-    min-height:100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   .featured-description {
     margin-left: 0;
     padding-top: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 0.5em;
     text-align: left;
   }
+
   .stage-experiment {
     background-color: rgba(190,60,76,1);
   }
@@ -240,28 +263,58 @@ jquery-scripts: |
     width: auto;
   }
 
-  #parent {position: relative;}
-
-  #child {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 30%;
-    margin: auto;
-  }
-
   .featured-margin {
     margin-bottom: 1.5em;
-    padding-top: 1.5em;
-    background-color: #DDDDDD;
+    margin-top: 1em;
+    padding-top: 0;
+    border-radius: 4px;
   }
+
   .section-border {
     border-bottom: 3px solid #e0dede;
     margin-bottom: 2em;
     padding-bottom: 2em;
+  }
+
+  .featured-width {
+    width: 80%;
+  }
+  @media screen and (min-width: 50em){
+    .pull-right {
+      width: 30%;
+      float: right;
+      clear: none;
+    }
+    .pull-left {
+      float: left;
+      clear: none;
+      width: 65%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 49em){
+    .pull-left{
+      float: left;
+      clear: none;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    .pull-right {
+      width: 100%;
+      float: left;
+      clear: none;
+    }
+    #featured-img {
+      padding: 0 0 0 0;
+    }
+  }
+  #featured-img {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    position: relative;
   }
 </style>
 
@@ -291,7 +344,18 @@ jquery-scripts: |
   {% endif %}
 
 {% endfor %}
-
+    <div class="featured-width layout-breve layout-tight">
+      <h1 class="featured-title title-margin">Products</h1>
+      <div class="featured-margin slab-gray" id="featured-div">
+          <div class="pull-left">
+            <img id="featured-img" src="/media/images/cityvoice-park-story.png">
+          </div>
+          <div class="featured-description pull-right">
+                <h4>CityVoice</h4>
+                <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
+          </div>
+      </div>
+    </div>
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="pull-in layout-minor">
@@ -300,33 +364,21 @@ jquery-scripts: |
           <div>
     	    	<ul class="list-no-bullets product-nav">
               <li><a href="#" onclick="return false" class="button button-sort" id="button-live" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-wide-beta" data-filter=".js-product-national-beta"><span class="not-emph">Wide</span> Beta ({{ wide-beta }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-local-beta" data-filter=".js-product-local-beta"><span class="not-emph">Local</span> Beta ({{ local-beta }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-alpha" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-experiment" data-filter=".js-product-experimental">Experiment ({{ experiment }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </ul>
           </div>
         </div>
 	    </div>
 
 	    <div class="pull-out layout-major">
-
-        <h1 class="featured-title title-margin">Products</h1>
-        <div class="featured-margin">
-          <div class="layout-breve layout-tight fill">
-            <img src="/media/images/cityvoice-park-story.png">
-          </div>
-
-          <div class="featured-description layout-breve layout-tight">
-              <h4>CityVoice</h4>
-              <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
-          </div>
-        </div>
 
           <div class="products layout-whole">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communication & Engagement,Other" | split: "," %}
