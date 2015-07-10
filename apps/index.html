@@ -360,6 +360,16 @@ jquery-scripts: |
       <!-- App sorting menu -->
 	    <div class="pull-in layout-minor">
         <div class="sort-border product-filters">
+          <h3>Focus Areas</h3>
+            <div>
+              <ol>
+                <li><a href="#economic-development">Economic Development</a></li>
+                <li><a href="#safety-and-justice">Safety & Justice</a></li>
+                <li><a href="#health">Health</a></li>
+                <li><a href="#communication-and-engagement">Communication & Engagement</a></li>
+                <li><a href="#other">Other</a></li>
+              </ol>
+            </div> 
   	    	<h3>Sort By Stage</h3>
           <div>
     	    	<ul class="list-no-bullets product-nav">
@@ -379,7 +389,6 @@ jquery-scripts: |
 	    </div>
 
 	    <div class="pull-out layout-major">
-
           <div class="products layout-whole">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communication & Engagement,Other" | split: "," %}
 
@@ -389,7 +398,7 @@ jquery-scripts: |
 
           <!-- {{ section }} -->
             <div class="header-section">
-              <h3>{{ section }}</h3>
+              <h3 id="{{section_class}}">{{ section }}</h3>
               <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="{{ section_class }} section-border">
