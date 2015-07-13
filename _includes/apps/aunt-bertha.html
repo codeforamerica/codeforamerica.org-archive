@@ -1,32 +1,40 @@
 {% if include.context == "app-page" %}
 
+	<div class="alert">
+		<h2>Reach out to Aunt Bertha for more information</h2>
+		<p>To learn more about the services Aunt Bertha provides, <a href="https://www.auntbertha.com">please visit their website</a>.</p>
+		<p><a class="button" href="https://www.auntbertha.com/">Contact Aunt Bertha</a></p>
+	</div>
+
 	<div class="heading">
 		<h2>Aunt Bertha</h2>
 	</div>
-	
+
 	<div class="layout-minor">
 		<img class="isolate" src="{{ include.base }}/media/images/apps/aunt-bertha.jpg" />
 	    <h3 class="text-prominent">Overview</h3>
 	    <p>Aunt Bertha helps users find food, health, housing and employment programs based on their postal code.</p>
-	    
+
 	    <p class="text-whisper"><a href="https://www.auntbertha.com/">https://www<wbr>.auntbertha<wbr>.com/</a></p>
-	    
+
 	    <h4 class="text-whisper layout-tight">Founded by</h4>
 	    <ul class="list-no-bullets text-whisper link-invert">
 	    	<li>Erine Gray</li>
 	    </ul>
-	    
+
 	    <h4 class="text-whisper layout-tight">Part of</h4>
 	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/about/civic-startups">2012 Accelerator</a></li>
+	    	<li><a href="{{ include.base }}/companies/incubator-accelerator">2012 Accelerator</a></li>
 	    </ul>
-	    
+
 	</div>
-	
+
 	<div class="layout-major">
-	    	
+
 	    <p>Aunt Bertha helps users find food, health, housing and employment programs based on their postal code.</p>
-	        
+			<p>Aunt Bertha picks up where Uncle Sam left off by simplifying the search and application process for social services. The app collects information on federal, state, county, city, neighborhood and nonprofit programs and puts it all in one place.</p>
+			<p>Aunt Bertha was part of the <a href="/companies/incubator-accelerator/">2012 Accelerator</a> class at Code for America.</p>
+
 	    <div class="spotlight">
 	    	<h3 class="text-whisper">Summary</h3>
 	    	<table class="table-unstyled table-minor">
@@ -34,13 +42,9 @@
 	    		<tr><th>Video</th><td><a href="http://www.youtube.com/watch?v=wE6vPyba_lw">http://www<wbr>.youtube<wbr>.com/<wbr>watch?v=<wbr>wE6vPyba_lw</a></td></tr>
 	    		<tr><th>Deploy</th><td>Centrally-managed directory; contact Aunt Bertha <a href="https://www.auntbertha.com/contact">to add your city</a>.</td></tr>
 	    	</table>
-	    	<a href="https://codeforamerica.wufoo.com/forms/app-inquiry-form/" class="button-alternative">Contact us to deploy this app</a>
+	    	<a href="https://www.auntbertha.com" class="button">Contact Aunt Bertha to learn more</a>
 	    </div>
-	    
-        <p>Aunt Bertha picks up where Uncle Sam left off by simplifying the search and application process for social services. The app collects information on federal, state, county, city, neighborhood and nonprofit programs and puts it all in one place.</p>
-        <p>In just a few seconds, users can enter basic information and find programs relevant to their needs. Currently, Aunt Bertha has rolled out this search service to the State of Texas (roughly 1/12 of the American population) and is preparing to scale nationwide. More than 17,000 people have already used AuntBertha.com.</p>
-        <p>Use the App.</p>
-	    
+
 	</div>
 
 {% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
@@ -53,10 +57,10 @@
         </header>
         <div class="teaser-body">
             <p>Aunt Bertha helps users find food, health, housing and employment programs based on their postal code.</p>
-            
+
             <h2 class="text-whisper">Deploy</h2>
             <p>Centrally-managed directory; contact Aunt Bertha <a href="https://www.auntbertha.com/mycity">to add your city</a>.</p>
-            
+
             <p><a href="{{ include.base }}/apps/aunt-bertha">Learn more about this app</a></p>
         </div>
         <footer class="teaser-footer">
