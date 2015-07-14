@@ -11,18 +11,6 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
   <script>
-    var grids = [ 'economic-development', 'health', 'safety-and-justice', 'communication-and-engagement', 'other' ];
-    $.each(grids, function(key,val){
-      $(document).ready(function (){
-        $("#scroll-" + val).click(function() {
-          $('html, body').animate({
-            scrollTop: $("#" + val).offset().top
-          }, 500);
-          });
-        });
-    });
-  </script>
-   <script>
    $(document).ready(fit);
    $(window).resize(fit);
       function fit() {
@@ -42,9 +30,9 @@ jquery-scripts: |
        //get height of p div
        //if height greater than height of div, do function
      };
-
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
+      sortButton = $( this ).attr('id');
     });
     var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communication-and-engagement', '.other' ];
     $.each(grids, function(key,val){
@@ -52,20 +40,25 @@ jquery-scripts: |
         itemSelector: '.js-product',
         layoutMode: 'fitRows'
       });
+
       $('.product-filters').on( 'click', 'a', function() {
-        var filterValue = $( this ).attr('data-filter');
+        filterValue = $( this ).attr('data-filter');
         $test = $grid.isotope({ filter: filterValue });
         var iso = $test.data('isotope');
         // count how many
-        console.log( 'filtered ' + iso.filteredItems.length + ' items' );
+        console.log( filterValue );
         // first element
         if(iso.filteredItems.length == 0) {
           var className = '.' + $grid.attr('class').split(' ')[0];
-          console.log(className);
           $("<p class='none-section note'>None Available</p>").appendTo( $(className).prev() );
         }
-
       });
+    });
+    $('.focus-area-filters').on( 'click', 'a', function() {
+      $('.focus-area').hide();
+      var section = $( this ).attr('target');
+      $(section+"-container").show();
+      $('#'+sortButton).click();
     });
    </script>
 ---
@@ -328,6 +321,11 @@ jquery-scripts: |
     padding-right: 0.5em;
     position: relative;
   }
+  .header-section img {
+    padding-left: 1em;
+    height: 40px;
+    width: auto;
+  }
 </style>
 
 <section>
@@ -371,19 +369,19 @@ jquery-scripts: |
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="pull-in layout-minor">
-        <div class="sort-border product-filters">
+        <div class="sort-border">
           <h3>Focus Areas</h3>
-            <div>
+            <div class="focus-area-filters">
               <ol>
-                <li><a href="#economic-development" id="scroll-economic-development">Economic Development</a></li>
-                <li><a href="#safety-and-justice" id="scroll-safety-and-justice">Safety & Justice</a></li>
-                <li><a href="#health" id="scroll-health">Health</a></li>
-                <li><a href="#communication-and-engagement" id="scroll-communication-and-engagement">Communication & Engagement</a></li>
-                <li><a href="#other" id="scroll-other">Other</a></li>
+                <li><a href="#" onclick="return false" target="#economic-development" id="filter-economic-development">Economic Development</a></li>
+                <li><a href="#" onclick="return false" target="#safety-and-justice" id="filter-safety-and-justice">Safety & Justice</a></li>
+                <li><a href="#" onclick="return false" target="#health" id="filter-health">Health</a></li>
+                <li><a href="#" onclick="return false" target="#communication-and-engagement" id="filter-communication-and-engagement">Communication & Engagement</a></li>
+                <li><a href="#" onclick="return false" target="#other" id="filter-other">Other</a></li>
               </ol>
-            </div> 
-  	    	<h3>Sort By Stage</h3>
-          <div>
+            </div>
+  	    	<h3>Filter By Stage</h3>
+          <div class="product-filters">
     	    	<ul class="list-no-bullets product-nav">
               <li><a href="#" onclick="return false" class="button button-sort" id="button-live" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -409,8 +407,9 @@ jquery-scripts: |
         {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
 
           <!-- {{ section }} -->
+          <div class="focus-area" id="{{ section_class }}-container">
             <div class="header-section">
-              <h3 id="{{section_class}}">{{ section }}</h3>
+              <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}</h3>
               <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="{{ section_class }} section-border">
@@ -473,6 +472,7 @@ jquery-scripts: |
                   {% endfor %}
               </div>
             </div>
+          </div>
         {% endfor %}
 
             </div>
