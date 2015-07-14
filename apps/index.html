@@ -11,40 +11,9 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
   <script>
-    var grids = [ 'economic-development', 'health', 'safety-and-justice', 'communication-and-engagement', 'other' ];
-    $.each(grids, function(key,val){
-      $(document).ready(function (){
-        $("#scroll-" + val).click(function() {
-          $('html, body').animate({
-            scrollTop: $("#" + val).offset().top
-          }, 500);
-          });
-        });
-    });
-  </script>
-   <script>
-   $(document).ready(fit);
-   $(window).resize(fit);
-      function fit() {
-       var heightDescr = $('.featured-description').height();
-       var heightImg = $('#featured-img').height();
-       console.log("Paragraph: " + heightDescr);
-       console.log("Image: " + heightImg);
-       if(heightDescr > heightImg){
-         var heightOf = $('.featured-description').height();
-         console.log(heightOf)
-         $('#featured-img').css('margin-top', heightOf/14);
-       }
-       else{
-         $('#featured-img').css('margin-top', 0);
-       }
-       //get height of image
-       //get height of p div
-       //if height greater than height of div, do function
-     };
-
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
+      sortButton = $( this ).attr('id');
     });
     var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communication-and-engagement', '.other' ];
     $.each(grids, function(key,val){
@@ -52,35 +21,35 @@ jquery-scripts: |
         itemSelector: '.js-product',
         layoutMode: 'fitRows'
       });
+
       $('.product-filters').on( 'click', 'a', function() {
-        var filterValue = $( this ).attr('data-filter');
+        filterValue = $( this ).attr('data-filter');
         $test = $grid.isotope({ filter: filterValue });
         var iso = $test.data('isotope');
         // count how many
-        console.log( 'filtered ' + iso.filteredItems.length + ' items' );
+        console.log( filterValue );
         // first element
         if(iso.filteredItems.length == 0) {
           var className = '.' + $grid.attr('class').split(' ')[0];
-          console.log(className);
           $("<p class='none-section note'>None Available</p>").appendTo( $(className).prev() );
         }
-
       });
+    });
+    $('.focus-area-filters').on( 'click', 'a', function() {
+      $('.focus-area').hide();
+      var section = $( this ).attr('target');
+      $(section+"-container").show();
+      $('#'+sortButton).click();
     });
    </script>
 ---
 <style>
-  [class*="button"][class*="button"]:link {
+  [class*="button"][class*="button-sort"]:link {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
     font-weight: bold;
     border-radius: 0;
     padding: 0 15px;
     text-transform: uppercase;
-  }
-
-  .products .other {
-    border-bottom: none;
-    margin-bottom: none;
   }
   .header-section {
     text-align: center;
@@ -98,13 +67,44 @@ jquery-scripts: |
     text-transform: none;
     color: #cf1b41;
   }
+  [class*="button"][class*="focus-area-button"]:link {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 15px;
+    margin: 0 0.5em 1em 0;
+    text-transform: uppercase;
+  }
+  #button-reset {
+    background-color: rgba(68, 68, 68, 1);
+    margin-bottom: 1.5em;
+  }
+  #filter-other {
+    background-color: rgba(153, 149, 149, 1);
+    margin-bottom: 0em;
+  }
+  #filter-economic-development {
+    background-color: rgba(0, 162, 116, 1);
+  }
+  #filter-safety-and-justice {
+    background-color: rgba(105, 85, 158, 1);
+  }
+  #filter-health {
+    background-color: rgba(172, 25, 56, 1);
+  }
+  #filter-communication-and-engagement {
+    background-color: rgba(234, 125, 25, 1);
+  }
   #button-live:hover {
+    background-color: rgba(75,155,116,0.8);
+  }
+  #button-live link:active {
     background-color: rgba(75,155,116,0.8);
   }
   #button-live {
     background-color: rgba(75,155,116,1);
   }
-  #button-wide-beta:hover {
+  #button-wide-beta:hover, #button-wide-beta:active {
     background-color: rgba(27,77,105,0.8);
   }
   #button-wide-beta {
@@ -291,6 +291,9 @@ jquery-scripts: |
   .featured-width {
     width: 80%;
   }
+  .pull-right-reset {
+    float: right;
+  }
   @media screen and (min-width: 50em){
     .pull-right {
       width: 30%;
@@ -327,6 +330,11 @@ jquery-scripts: |
     padding-top: 0.5em;
     padding-right: 0.5em;
     position: relative;
+  }
+  .header-section img {
+    padding-left: 1em;
+    height: 40px;
+    width: auto;
   }
 </style>
 
@@ -371,19 +379,19 @@ jquery-scripts: |
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="pull-in layout-minor">
-        <div class="sort-border product-filters">
+        <div class="sort-border">
           <h3>Focus Areas</h3>
-            <div>
-              <ol>
-                <li><a href="#economic-development" id="scroll-economic-development">Economic Development</a></li>
-                <li><a href="#safety-and-justice" id="scroll-safety-and-justice">Safety & Justice</a></li>
-                <li><a href="#health" id="scroll-health">Health</a></li>
-                <li><a href="#communication-and-engagement" id="scroll-communication-and-engagement">Communication & Engagement</a></li>
-                <li><a href="#other" id="scroll-other">Other</a></li>
-              </ol>
-            </div> 
-  	    	<h3>Sort By Stage</h3>
-          <div>
+            <div class="focus-area-filters">
+              <ul class="list-no-bullets">
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#economic-development" id="filter-economic-development">Economic Dev</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort"target="#safety-and-justice" id="filter-safety-and-justice">Safety & Justice</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#health" id="filter-health">Health</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#communication-and-engagement" id="filter-communication-and-engagement">C & E</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#other" id="filter-other">Other</a></li>
+              </ul>
+            </div>
+  	    	<h3>Filter By Stage</h3>
+          <div class="product-filters">
     	    	<ul class="list-no-bullets product-nav">
               <li><a href="#" onclick="return false" class="button button-sort" id="button-live" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -409,8 +417,9 @@ jquery-scripts: |
         {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
 
           <!-- {{ section }} -->
+          <div class="focus-area" id="{{ section_class }}-container">
             <div class="header-section">
-              <h3 id="{{section_class}}">{{ section }}</h3>
+              <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}<span class="product-filters pull-right-reset"><a href="#" onclick="return false" class="button button-sort" id="button-reset" data-filter="*">Reset</a></span></h3>
               <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="{{ section_class }} section-border">
@@ -473,6 +482,7 @@ jquery-scripts: |
                   {% endfor %}
               </div>
             </div>
+          </div>
         {% endfor %}
 
             </div>
