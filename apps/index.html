@@ -164,10 +164,7 @@ jquery-scripts: |
     text-align: center;
     margin-top: 0.5em;
   }
-  .featured-title {
-    font-size: 2.5em;
-    line-height: 28px;
-  }
+
   .product-nav {
     border-right: 1px solid #e0dede;
     padding-right: 1em;
@@ -178,20 +175,11 @@ jquery-scripts: |
     margin-left: 0.75em;
     margin-right: 0.75em;
   }
-  .pull-in {
-    width: 15%;
-  }
-  .pull-out {
-    width: 78%;
-  }
+
   .sort-border {
     margin-top: 1em;
   }
 
-  .title-margin {
-    margin-top: 0.6em;
-    margin-bottom: 0.5em;
-  }
 
   .img-container {
     text-align: center;
@@ -221,13 +209,6 @@ jquery-scripts: |
     display: block;
     max-width: 100%;
     height: auto;
-  }
-  .featured-description {
-    margin-left: 0;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 0.5em;
-    text-align: left;
   }
 
   .stage-experiment {
@@ -275,13 +256,6 @@ jquery-scripts: |
     width: auto;
   }
 
-  .featured-margin {
-    margin-bottom: 1.5em;
-    margin-top: 1em;
-    padding-top: 0;
-    border-radius: 4px;
-  }
-
   /* Each focus area except the last one has a border below it. */
   .focus-area {
     border-bottom: 1px solid #ccc;
@@ -291,9 +265,90 @@ jquery-scripts: |
     border-bottom: none;
   }
 
-  .featured-width {
-    width: 80%;
+  /**
+  * For this page, let's reset the standard h1 and h3 to not be uppercase
+  * all the time. this will allow us to clean up the header.
+  */
+  h1 {
+    text-transform: none;
   }
+  h5 {
+    font-weight: 700;
+    line-height: 2em;
+  }
+  h1, h5 {
+    margin: 0;
+  }
+
+  /**
+   * Because our base pattern assumes there will be a photo underneath the nav
+   * there is terrible spacing. Let's invent an intro class that correctly spaces
+   * on desktop and mobile.
+   */
+  .intro {
+    margin-top: 5em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 40em) {
+    .intro {
+      margin-top: 2em;
+    }
+  }
+
+  /**
+   * The featured app is a module at the top of the page that holds a special
+   * app that's more prominent than the others. On tablet up, it has a big image
+   * that floats on the left and description on the right. It collapses smaller.
+   */
+  .featured-product {
+    margin-bottom: 1.5em;
+    box-sizing: border-box;
+  }
+  .featured-product * { box-sizing: border-box; }
+  /*
+  The featured product image floats left in the module on tablet up. Otherwise,
+  it collapses.
+  */
+  .featured-product-image {
+    max-width: 100%;
+    padding: 0.5em;
+  }
+  .featured-product-description {
+    padding: 0 1em;
+  }
+
+  @media screen and (min-width: 40em) {
+    /* Tablet and up */
+    .featured-product-image {
+      display: block;
+      float: left;
+      width: 60%;
+      height: auto;
+      margin: 0;
+    }
+    .featured-product-description {
+      display: block;
+      float: left;
+      width: 40%;
+      margin: 0;
+      padding: 1em;
+    }
+  }
+
+  /**
+   * Let's pull in layout-minor and layout-major a bit on tablet up.
+   */
+   @media screen and (min-width: 40em) {
+     /* Tablet and up */
+     .layout-minor, [class*="layout-minor"] {
+       width: 15%;
+     }
+     .layout-major, [class*="layout-major"] {
+       width: 80%;
+     }
+   }
+
   .pull-right-reset {
     float: right;
   }
@@ -324,16 +379,9 @@ jquery-scripts: |
       float: left;
       clear: none;
     }
-    #featured-img {
-      padding: 0 0 0 0;
-    }
+
   }
-  #featured-img {
-    padding-left: 0.5em;
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-    position: relative;
-  }
+
   .header-section img {
     padding-left: 1em;
     height: 40px;
@@ -343,11 +391,17 @@ jquery-scripts: |
 
 <section>
 
+{% comment %}
+  We use this to count the number of apps in each category to show on the sort
+  buttons.
+{% endcomment %}
+
 {% assign live = 0 %}
 {% assign local-beta = 0 %}
 {% assign wide-beta = 0 %}
 {% assign alpha = 0 %}
 {% assign experiment = 0 %}
+
 {% for product in site.data.products %}
   {% if product.stage contains 'Live' %}
     {% assign live = live | plus:1 %}
@@ -365,23 +419,33 @@ jquery-scripts: |
   {% if product.stage contains 'Experiment' %}
     {% assign experiment = experiment | plus:1 %}
   {% endif %}
-
 {% endfor %}
-    <div class="featured-width layout-breve layout-tight">
-      <h1 class="featured-title title-margin">Products</h1>
-      <div class="featured-margin slab-gray" id="featured-div">
-          <div class="pull-left">
-            <img id="featured-img" src="/media/images/cityvoice-park-story.png">
-          </div>
-          <div class="featured-description pull-right">
-                <h4>CityVoice</h4>
-                <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback. <a href="../apps/cityvoice/#voiceTop">Read more</a></p>
-          </div>
-      </div>
-    </div>
+
+    <div class="layout-breve layout-tight intro">
+      <h1>Products &amp; Applications</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsa sint nesciunt iusto placeat sed, dolores veritatis maxime minima officia.</p>
+
+      <div class="featured-product clearfix slab-gray" id="featured-div">
+        <div class="featured-product-image">
+          <img id="featured-img" src="/media/images/cityvoice-park-story.png">
+        </div>
+        <div class="featured-product-description">
+          <h3>CityVoice</h3>
+
+          <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.</p>
+          <p><a href="/apps/cityvoice/" class="button">Learn more</a></p>
+
+          <p class="h6"><strong>Join the beta program</strong></p>
+          <p>Code for America is currently partnering with South Bend, In. and Somewhere, Ca. to beta test the CityVoice platform. Do you want to join in?</p>
+          <p><a href="#" class="button button-bold button">Join the beta</a></p>
+        </div>
+      </div><!-- end .featured-post -->
+
+    </div><!-- end .layout-breve -->
+
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
-	    <div class="pull-in layout-minor">
+	    <div class="layout-minor">
         <div class="sort-border">
           <h3>Focus Areas</h3>
             <div class="focus-area-filters">
@@ -411,7 +475,7 @@ jquery-scripts: |
         </div>
 	    </div>
 
-	    <div class="pull-out layout-major">
+	    <div class="layout-major">
           <div class="products layout-whole">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communication & Engagement,Other" | split: "," %}
 
