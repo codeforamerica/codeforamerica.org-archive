@@ -11,6 +11,7 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
   <script>
+    // javascript to reshow all sections on
     $('.reset-filters').on( 'click', 'a', function() {
       $('.focus-area').show();
     });
@@ -83,25 +84,47 @@ jquery-scripts: |
     margin: 0 0.5em 1em 0;
     text-transform: uppercase;
   }
+
+  /* Manually change color of buttons (reg and on hover) with IDs */
   #button-reset {
     background-color: rgba(68, 68, 68, 1);
+    margin-bottom: 1.5em;
+  }
+  #button-reset:hover {
+    background-color: rgba(68, 68, 68, .8);
     margin-bottom: 1.5em;
   }
   #filter-other {
     background-color: rgba(153, 149, 149, 1);
     margin-bottom: 0em;
   }
+  #filter-other:hover {
+    background-color: rgba(153, 149, 149, 0.8);
+    margin-bottom: 0em;
+  }
   #filter-economic-development {
     background-color: rgba(0, 162, 116, 1);
+  }
+  #filter-economic-development:hover {
+    background-color: rgba(0, 162, 116, 0.8);
   }
   #filter-safety-and-justice {
     background-color: rgba(105, 85, 158, 1);
   }
+  #filter-safety-and-justice:hover {
+    background-color: rgba(105, 85, 158, 0.8);
+  }
   #filter-health {
     background-color: rgba(172, 25, 56, 1);
   }
+  #filter-health:hover {
+    background-color: rgba(172, 25, 56, 0.8);
+  }
   #filter-communication-and-engagement {
     background-color: rgba(234, 125, 25, 1);
+  }
+  #filter-communication-and-engagement:hover {
+    background-color: rgba(234, 125, 25, 0.8);
   }
   #button-live:hover {
     background-color: rgba(75,155,116,0.8);
@@ -357,9 +380,6 @@ jquery-scripts: |
      }
    }
 
-  .pull-right-reset {
-    float: right;
-  }
   @media screen and (min-width: 50em){
     .pull-right {
       width: 30%;
@@ -455,6 +475,7 @@ jquery-scripts: |
       <!-- App sorting menu -->
 	    <div class="layout-minor">
         <div class="sort-border">
+          <!-- Span is needed for isotope to identify by class-all buttons have an onclick false so it doesn't jump to top -->
           <span class="product-filters reset-filters"><a href="#" onclick="return false" class="button button-sort" id="button-reset" data-filter="*">Reset All</a></span>
           <h3>Focus Areas</h3>
             <div class="focus-area-filters">
@@ -465,7 +486,7 @@ jquery-scripts: |
                 <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#communication-and-engagement" id="filter-communication-and-engagement">C & E</a></li>
                 <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#other" id="filter-other">Other</a></li>
               </ul>
-            </div>
+            </div><!-- end .focus-area-filters -->
   	    	<h3>Filter By Stage</h3>
           <div class="product-filters">
     	    	<ul class="list-no-bullets product-nav">
@@ -480,12 +501,12 @@ jquery-scripts: |
               <li><a href="#" onclick="return false" class="button button-sort" id="button-experiment" data-filter=".js-product-experimental">Experiment ({{ experiment }})</a></li>
               <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </ul>
-          </div>
-        </div>
-	    </div>
+          </div><!-- end .product-filters -->
+        </div><!-- end .sort-border -->
+	    </div><!-- end .layout-minor -->
 
 	    <div class="layout-major">
-          <div class="products layout-whole">
+        <div class="products layout-whole">
         {% assign sections = "Economic Development,Safety & Justice,Health,Communication & Engagement,Other" | split: "," %}
 
         {% for section in sections %}
@@ -497,7 +518,8 @@ jquery-scripts: |
             <div class="header-section">
               <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}</h3>
               <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+            </div><!-- end .header-section -->
+
             <div class="{{ section_class }}">
               <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
@@ -507,6 +529,9 @@ jquery-scripts: |
                       {% assign stage_label = 'live' %}
                     {% endif %}
                     {% assign beta_check = product.stage | downcase %}
+                    {% comment %}
+                      To make the labels auto generate, local and wide beta buttons need a prefix so a span class can be added to wide/local
+                    {% endcomment %}
                     {% if beta_check contains 'beta' and beta_check contains 'local' %}
                       {% assign stage_prefix = "<span class='not-emph'>local</span>" %}
                       {% assign stage_label = 'beta' %}
@@ -531,38 +556,45 @@ jquery-scripts: |
                         {% else %}
                           <img src="/media/images/apps/{{ product.imgUrl }}">
                         {% endif %}
-                        </div>
+                        </div><!-- end .img-container -->
+
                         <div class="card-content">
                           <h2 class="teaser-title">{{ product.name }}</h2>
                           <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p><span class="stage-label stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
-                        </div>
-                      </div>
+                        </div><!-- end .card-content -->
+
+                      </div><!-- end {{ section }} .product-card -->
                       {% endif %}
                     {% else %}
                       {% if product.focus-area == section %}
                         <div class="product-card js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
                           <div class="img-container">
+                          {% comment %}
+                            Checks for img, if not it puts the generic logo
+                          {% endcomment %}
                           {% if product.imgUrl == null %}
                             <img src="/media/images/apps/app-generic.jpg">
                           {% else %}
                             <img src="/media/images/apps/{{ product.imgUrl }}">
                           {% endif %}
-                          </div>
+                          </div><!-- end .img-container -->
+
                           <div class="card-content">
                             <h2 class="teaser-title">{{ product.name }}</h2>
                             <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p><span class="stage-label stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
-                          </div>
-                        </div>
+                          </div><!-- end .card-content -->
+
+                        </div><!-- end {{ section }} .product-card -->
                       {% endif %}
                     {% endif %}
                   {% endfor %}
-              </div>
-            </div>
-          </div>
+              </div><!-- end div.layout-whole layout-whole-products -->
+            </div><!-- end {{ section_class }} -->
+          </div><!-- end {{ section }} div.focus-area -->
         {% endfor %}
 
-            </div>
-        </div>
+      </div><!-- end div.products .layout-whole-products -->
+        </div><!-- end .layout-major -->
 
 
-</section>
+</section><!-- end section -->
