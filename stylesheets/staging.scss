@@ -3,7 +3,7 @@
 
 //
 // STAGING SCSS
-// 
+//
 // This is a staging area for changes to the core of the codeforamerica.org site that aren't part of the pattern library.
 // These changes may eventually be rolled into the pattern library.
 // Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
@@ -225,7 +225,7 @@ body.modal-active {
 }
 
 .masthead.masthead-custom {
- 
+
   // ## Basic layout
 
   // Set the color we'll fade the background into
@@ -236,7 +236,7 @@ body.modal-active {
   color: white;
 
   // ## The header image, held in the :before pseudo-class
-  
+
   &:before {
     // Same min-height as our container
     min-height: 100%;
@@ -330,11 +330,19 @@ body.modal-active {
 // Adds a clearfix so parent containers don't collapse.
 //
 
+%clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clearfix:after {
+	@extend %clearfix;
+}
+
 .layout-breve:after,
 .layout-semibreve:after {
-    content: "";
-    display: table;
-    clear: both;
+	@extend %clearfix;
  }
 
 // ##### LAYOUT-WHOLE #####
@@ -358,7 +366,7 @@ body.modal-active {
 
 // ##### MARKER #####
 //
-// New version of badge that stands alone. Should be ported over to take the place of and 
+// New version of badge that stands alone. Should be ported over to take the place of and
 // become a more flexible version of badge.
 //
 

@@ -53,7 +53,7 @@
   </ul>
 </nav>
 {% else %}
-<!--  
+<!--
       If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
       This requirement is because of the nav collapse functionality in global.js
   -->
@@ -63,9 +63,9 @@
 {% if masthead != "no" %}
 <div class="masthead {{ masthead-class }}">
   <div class="masthead-hero">
-    <div class="masthead-image" 
+    <div class="masthead-image"
       {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')" 
+      style="background-image: url('{{ masthead-image }}')"
       {% endif %}>
     </div>
   </div>
@@ -79,10 +79,10 @@
   {% comment %}
   Right now, we need to kill the margin-bottom on global-header if we have a custom masthead (since it comes after global-header)
   This checks if there's a custom masthead then applies a class we can style
-  In the future, this hack should be replaced with better pattern-portfolio styles for header above and below masthead 
+  In the future, this hack should be replaced with better pattern-portfolio styles for header above and below masthead
   {% endcomment %}
   {% if page.masthead-custom %}global-header-custom{% endif %}
-  ">  
+  ">
   <a href="/" class="global-header-logo">
       <img src="/assets/logo.png" />
   </a>
@@ -102,7 +102,7 @@
             <li><a href="/about/financial-information">Financial Information</a></li>
             <li><a href="/support-us/">Support Us</a></li>
             <li><a href="/jobs">Jobs</a></li>
-            <li><a href="/contact">Contact</a></li> 
+            <li><a href="/contact">Contact</a></li>
         </ul>
         {% endif %}
       </li>
@@ -144,7 +144,7 @@
         <a href="/our-work" {% if nav_tier1_active == "our-work" %}class="state-active"{% endif %}>Our Work</a>
         {% if nav_tier1_active == "our-work" %}
         <ul class="nav-tier2">
-          <li><a href="/apps">Applications</a></li>
+          <li><a href="/apps">Products</a></li>
           <li><a href="/our-work/initiatives">Initiatives</a></li>
           <li><a href="/our-work/focus-areas">Focus Areas</a></li>
           <li><a href="/our-work/data-formats">Data Formats</a></li>
@@ -154,16 +154,16 @@
       </li>
       <li><a href="https://secure.codeforamerica.org/page/contribute/default?source_codes=nav-donate-button" class="button">Donate</a></li>
     </ul>
-  </nav>    
+  </nav>
 </div>
 
 {% if page.masthead-custom == "deep" %}
 <div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
-  
+
   <div class="masthead-hero">
-    <div class="masthead-image" 
+    <div class="masthead-image"
       {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')" 
+      style="background-image: url('{{ masthead-image }}')"
       {% endif %}>
     </div>
   </div>
@@ -173,10 +173,10 @@
       <p class="page-overline">{{ page.title }}</p>
       <h1 class="page-title">{{ page.headline }}</h1>
     {% else %}
-      <h1 class="page-title">{{ page.title }}</h1>  
+      <h1 class="page-title">{{ page.title }}</h1>
     {% endif %}
   </header>
-  
+
   {% if page.description %}
   <div class="description layout-semibreve">
     <p class="page-description">{{ page.description }}</p>
