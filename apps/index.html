@@ -11,9 +11,17 @@ jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
   <script>
+    $('.reset-filters').on( 'click', 'a', function() {
+      $('.focus-area').show();
+    });
     $('.product-filters').on( 'click', 'a', function() {
       $('.none-section').remove();
-      sortButton = $( this ).attr('id');
+      if($( this ).attr('id') == 'button-reset') {
+        sortButton = "";
+      }
+      else{
+        sortButton = $( this ).attr('id');
+      }
     });
     var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communication-and-engagement', '.other' ];
     $.each(grids, function(key,val){
@@ -447,6 +455,7 @@ jquery-scripts: |
       <!-- App sorting menu -->
 	    <div class="layout-minor">
         <div class="sort-border">
+          <span class="product-filters reset-filters"><a href="#" onclick="return false" class="button button-sort" id="button-reset" data-filter="*">Reset All</a></span>
           <h3>Focus Areas</h3>
             <div class="focus-area-filters">
               <ul class="list-no-bullets">
@@ -486,7 +495,7 @@ jquery-scripts: |
           <!-- {{ section }} -->
           <div class="focus-area" id="{{ section_class }}-container">
             <div class="header-section">
-              <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}<span class="product-filters pull-right-reset"><a href="#" onclick="return false" class="button button-sort" id="button-reset" data-filter="*">Reset</a></span></h3>
+              <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}</h3>
               <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="{{ section_class }}">
