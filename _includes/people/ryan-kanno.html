@@ -1,0 +1,80 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Ryan Kanno</h2>
+	</div>
+
+	<div class="layout-minor">
+
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="http://codeforhawaii.org">Hawaii Brigade</a></li>
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains/">Brigade Captains</a></li>
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/ryan-kanno.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">
+            Ryan Kanno is Co-Captain of Code for Hawaii. He's spent over 15
+            years as a software developer / manager in the defense, media,
+            and finance industries. Prior to leading Code for Hawaii, he's
+            helped organize <a href="http://hicapacity.org">HI Capacity</a>, the first
+            Honolulu Makerspace.  Currently, he is the
+            <a href="http://www.meetup.com/Ansible-Hawaii/">Ansible Hawaiʻi</a>
+            Meetup Organizer.
+        </p>
+
+	    <p class="p-note">
+            Ryan has a BS in Computer Science from the
+            University of Illinois, Urbana-Champaign, a Master's in Computer
+            Science from the University of Illinois, Urbana-Champaign, and a
+            Master's in Business Administration from the University of Hawaii.
+        </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>LinkedIn</th><td><a href="https://linkedin.com/in/ryankanno">LinkedIn</a></td></tr>
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/ryankanno">@ryankanno</a></td></tr>
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Ryan Kanno</h3>
+    <img alt="burt-lum" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/ryan-kanno.jpg" />
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://codeforhawaii.org">Hawaii Brigade</a>
+        </p>
+        <p>
+            Ryan Kanno is Co-Captain of Code for Hawaii. He's spent over 15
+            years as a software developer / manager in the defense, media,
+            and finance industries. Prior to leading Code for Hawaii, he's
+            helped organize <a href="http://hicapacity.org">HI Capacity</a>, the first
+            Honolulu Makerspace.  Currently, he is the
+            <a href="http://www.meetup.com/Ansible-Hawaii/">Ansible Hawaiʻi</a> Meetup Organizer.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/ryan-kanno/">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-website"><a href="http://nocruft.com">Website</a></li>
+            <li class="social-linkedin"><a href="http://linkedin.com/in/ryankanno">Website</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/ryankanno">@ryankanno</a></li>
+            <li class="social-github"><a href="https://github.com/ryankanno">Github</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
