@@ -282,10 +282,13 @@ jquery-scripts: |
     border-radius: 4px;
   }
 
-  .section-border {
-    border-bottom: 3px solid #e0dede;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
+  /* Each focus area except the last one has a border below it. */
+  .focus-area {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3em;
+  }
+  .focus-area:last-of-type {
+    border-bottom: none;
   }
 
   .featured-width {
@@ -422,7 +425,7 @@ jquery-scripts: |
               <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}<span class="product-filters pull-right-reset"><a href="#" onclick="return false" class="button button-sort" id="button-reset" data-filter="*">Reset</a></span></h3>
               <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="{{ section_class }} section-border">
+            <div class="{{ section_class }}">
               <div class="layout-whole layout-whole-products">
                   {% for product in site.data.products %}
                     {% assign stage_prefix = "" %}
