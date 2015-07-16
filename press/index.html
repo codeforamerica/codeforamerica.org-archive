@@ -5,48 +5,8 @@ nav_tier1_active: "about"
 masthead-image: "../media/images/press/press_header.jpg"
 nav-breadcrumbs:
  - Press: "/press"
-helpers:
-    underscore: true
-
-jquery-scripts: |
-    <script type="text/javascript">
-        $(document).ready(function(){
-            // 3: A few things:
-            //    - Join the array together with commas
-            //    - Split the array at commas
-            //    - Select only unique elements from the array (filter out duplicates)
-            tags = _.uniq(tags.join(',').split(','));
-            // 4: Create the template. Get the template code below, use the variable
-            //    tags inside the template.
-            var template = _.template( 
-                    $('#js-template-navtag').html(), 
-                    { variable: 'tags' }
-                );
-            // 5. Compile the template by passing in our clean, unique array of tags
-            var compiled = template(tags);
-            // 6. Put the compiled template onto the page in our empty DIV
-            $('#js-tags-target').html( compiled );
-        });
-    </script>
 
 ---
-<!-- The first thing we do: get the tags -->
-<script type="text/javascript">
-    // 1: Create an empty array called tags. It's a global variable.
-    var tags = [];
-    // 2: For each article, push its' tags to the array
-    {% for article in site.data.press %}
-            tags.push('{{article.tags}}');
-    {% endfor %}
-</script>
-
-
-<!-- right tabs menu -->
-<script id="js-template-navtag" type="x/template">
-    <% _.each(tags, function(tag){ %>
-        <li><a href="#"><%= tag %></a></li>
-    <% }); %>
-</script>
 
 <style>
 
@@ -89,6 +49,8 @@ background: rgba(57, 159, 211, 0.6);
 /*End tag-widget styles*/
 
 </style>
+
+<div id="js-tags-target"></div>
 
     <section>
 
@@ -163,10 +125,24 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
                 <h3 class="h4">Explore by tag</h3>
 
                 <ul>
+                    {% assign allTags = "" %}
 
-                    <div id='js-tags-target'></div>
+                    {% for article in site.data.press %}
+                        {% assign articleTags = article.tags | split: "," %} 
+                        {% for articleTag in articleTags %}
+                            {% unless allTags contains articleTag %}
+                                {% capture allTags %}{{allTags}}|{{articleTag}}{% endcapture %}
+                            {% endunless %}
+                        {% endfor %}
+                    {% endfor %}
 
+                    {% assign tagsList = allTags | split: "|" %}
 
+                    {% for uniqueTag in tagsList %}
+                        {% unless uniqueTag == "" %}
+                            <li><a href="#">{{ uniqueTag }}</a></li>
+                        {% endunless %}
+                    {% endfor %}
                 </ul>
             </nav>
         </div> <!-- end layout-minor-invert -->
