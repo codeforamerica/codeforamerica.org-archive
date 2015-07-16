@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: A background to government technology procurement
-subtitle: How governments buy technology
+subtitle: How governments typically treat and buy technology
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 
@@ -37,7 +37,6 @@ This background guide concentrates on how governments deliver digital services. 
 Some of these services are also called the safety net because they are frequently services of the last resort, which means that the government is the only provider. For many people, there are no alternatives to enrolling for social welfare programs. 
 
 ### Government services are special 
-
 
 #### They're uniquely big
 

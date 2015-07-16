@@ -2,7 +2,7 @@
 layout: resource
 resource_index: true
 title: Government technology procurement
-subtitle: Getting from buying technology to delivering services that work
+subtitle: From buying technology to delivering services that work
 nav-breadcrumbs:
   - "Government technology procurement": "/playbook/technology-procurement/"
 ---
@@ -13,21 +13,21 @@ This _Government technology procurement_ playbook has been produced in the conte
 
 This playbook has been split up into four parts: a background guide, general best practices, recommendations for RFPs and structural recommendations for government leadership. 
 
-## [1. A background to government technology procurement](/playbooks/technology-procurement/background/)
+## [An introduction to government technology procurement](/playbooks/technology-procurement/background/)
 
-This background guide explains how technology is typically treated and bought in government.
+How governments typically treat and buy technology.
 
-## [2. Best practices in government technology procurement](/playbooks/technology-procurement/best-practices/)
+## [Best practices in government technology procurement](/playbooks/technology-procurement/best-practices/)
 
 This guide is an overview of the best practices that governments around the world are using to deliver digital services that work. 
 
-## [3. Recommendations for technology RFPs](/playbooks/technology-procurement/rfp-recommendations/)
+## [Writing better technology RFPs](/playbooks/technology-procurement/rfp-recommendations/)
 
 In this guide, we list
 
 * five ways in which technology RFPs can usually be improved; and 
 * xx specific recommendations that could be applied to a typical technology RFP
 
-## [4. Structural recommendations for government technology](/playbooks/technology-procurement/structural-recommendations/)
+## [Structural recommendations for government technology](/playbooks/technology-procurement/structural-recommendations/)
 
 In this guide, we cover structural recommendations that government leadership - at department, agency, county, city or state level - should carry out to deliver digital services that work. 

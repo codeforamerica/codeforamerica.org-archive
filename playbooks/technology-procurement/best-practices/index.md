@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: Best practices in technology procurement
-subtitle: How governments buy and deliver technology that works
+subtitle: How governments are delivering services that work
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 
@@ -15,22 +15,21 @@ This guide is a brief overview of how successful government technology is being 
 
 ### 1. Government for the people means meeting user needs
 
-Technology in government works when it delivers what its users need, not what government thinks its users need. Real and tested user needs - not requirements drawn up in isolation, in response to policy - help government discover what is needed to deliver a successful service. 
+Technology in government works when it delivers what its users need, not what government thinks its users need. Real and tested user needs - not requirements drawn up in isolation, in response to policy - help  discover what's needed to deliver a successful service. 
 
 #### Starting with user needs
-In delivering government services, meeting user needs means identifying and thinking about real users and what they need - whether those users are residents, citizens or government staff. Teams must thoroughly understand what users really need - whether it’s claiming SNAP or WIC benefits, licensing a childcare facility or starting a new business. 
+Starting with user needs means identifying and thinking about real users and what they need - whether those users are residents, citizens or government staff. Teams must thoroughly understand what users really need - whether it’s claiming SNAP or WIC benefits, licensing a childcare facility or starting a new business. 
 
 #### User research is important
-One of the biggest factors for success we have seen has been developing a true user research capability. Note that we do not say user testing, because invariably testing comes after development and does not a core focus of discovering, validating and meeting real user needs. 
+One of the biggest factors for success we have seen has been developing a true [user research](https://www.gov.uk/service-manual/user-researchers) capability. User research, not user testing: because normally testing is about checking needs and approaches, not finding them in the first place. 
 
 #### Services, not solutions
-Bad government technology projects can usually be described as policy-led searches for complete solutions. Instead, government has a higher chance of successfully delivering technology if the focus is on delivering a service to users instead of a solution that will solve a problem, no matter how detailed the description of the problem. 
-
+Bad government technology projects can usually be described as policy-led searches for complete solutions. Instead, governments have a higher chance of successfully delivering technology if the focus is on delivering a service to users instead of a solution that will solve a problem, no matter how detailed the description of the problem. 
 
 ### 2. Letting digital leaders lead
 
 #### Digital Directors
-Strong digital executive leadership is needed for technology to work. Governments that have succeeded have appointed Digital Directors with absolute authority over the delivery of digital services and digital spending. These directors are  fully supported by, and part of, the executive to lead change. 
+Strong digital executive leadership is needed for technology to work. Governments that have succeeded have appointed Digital Directors with absolute authority over delivering digital services with spend and budget controls. To lead change, these directors are fully supported by, and part of, the executive. 
 
 #### Simpler governance
 Digital leadership also needs simpler governance. In the UK, the Office of the Chief Technology Officer has [simplified](https://governmenttechnology.blog.gov.uk/2015/03/29/better-for-less/) existing boards, committees and relationships into four areas: Mission IT, Digital Public Services, Infrastructure and Shared Services to re-focus on outcomes and escape process loops. 
@@ -40,12 +39,27 @@ Finally, internal teams succeed when they have ownership of the services they ov
 
 The USDS [recommends](https://playbook.cio.gov/#play6) that government services have a single Product Owner with the authority to make product, business and technical decisions, and ultimate accountability; GDS calls product owners[Service Managers](https://www.gov.uk/service-manual/the-team/service-manager.html), who work throughout central government, departments and agencies, each with the authority to manage and direct the services they're responsible for. 
 
-### 3. Using the right methods, at the right time, for the right problems
+### 3. No more one-size-fits all: use the right method at the right time
 
-Successful governments are delivering digital services with an assortment of methods that fit the work that needs to be done. These governments recognize that digital service delivery is an intrinsic part of 21st century government and use methods that allow them to retain ownership and control of the user’s experience. 
+Successful governments are not delivering services using long, large IT contracts. Instead, they are delivering digital services using the right methods for the work that needs to be done. These governments are:
+
+* building or commissioning technology;
+* renting products; and
+* using commodities and utilities.
+
+These governments recognize that digital service delivery is an intrinsic part of 21st century government and use these methods to retain ownership and control of the user’s experience.
+
+The [Wardley map](http://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html) below shows how a large project has been broken up into contracts that group components by their evolution. Five contracts cover items that are in the product/rental and commodity/utility stage, and four individual contracts cover items that are newer and are best served by custom-building. Understanding which parts of a digital service are at different levels of maturity means being able to choose the right contract for the right component, instead of using a single vendor, one-size-fits-all contract. 
+
+![A Wardley map showing the contract structure of a large project. Five medium-sized contracts cover product/rental commodity/utility items. Four smaller contracts each include one custom built or genesis item.](/media/images/playbooks/technology-procurement/best-practices-less-ideal-contract-wardley.png "A more ideal contract structure")
+
+> A [Wardley map](http://blog.gardeviance.org/2015/07/the-100-day-corporate-get-fit-plan.html) showing the contract structure of a large project. Five medium-sized contracts cover product/rental commodity/utility items. Four smaller contracts each include one custom built or genesis item.
+
 
 #### Build or commission: in-house, agile and iterative
-Where problems are not clearly defined and new user-centered services (or replacements for legacy services) are being delivered, an in-house agile or iterative, build or commission model helps deliver working software into the hands of users quickly and frequently with the capacity to make repeated adjustments in response to feedback. Agile and iterative development is best-suited to such early stages where user needs are being continually researched and refined. 
+Where problems are not clearly defined and new user-centered services (or replacements for legacy services) are being delivered, an in-house agile or iterative, build or commission model helps deliver working software into the hands of users quickly and frequently with the capacity to make repeated adjustments in response to feedback. 
+
+Agile and iterative development is best-suited to such early stages where user needs are being continually researched and refined. 
 
 #### Rent: established commercial off-the-shelf products
 Where there are more mature products available like payment services that must “just work”, governments can take advantage of economy of scale by using off-the-shelf products. It doesn’t make sense for governments to replicate accepting payments: government should concentrate on what only government can do. Renting these types of commercial off-the-shelf products from specialists allows governments to use lean methods of management to improve efficiency and performance. 
