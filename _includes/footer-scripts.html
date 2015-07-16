@@ -22,6 +22,10 @@
 {% if page.helpers.blogpost %}
   {% include blogpost-helpers.html %}
 {% endif %}
+<!-- If requested, load underscore -->
+{% if page.helpers.underscore %}
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+{% endif %}
 <script src="/script/email-signup.js"></script>
 <!-- Ethnio Activation Code -->
 <script type="text/javascript" language="javascript" src="//ethn.io/30340.js" async="true" charset="utf-8"></script>

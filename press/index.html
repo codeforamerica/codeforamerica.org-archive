@@ -5,7 +5,90 @@ nav_tier1_active: "about"
 masthead-image: "../media/images/press/press_header.jpg"
 nav-breadcrumbs:
  - Press: "/press"
+helpers:
+    underscore: true
+
+jquery-scripts: |
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // 3: A few things:
+            //    - Join the array together with commas
+            //    - Split the array at commas
+            //    - Select only unique elements from the array (filter out duplicates)
+            tags = _.uniq(tags.join(',').split(','));
+            // 4: Create the template. Get the template code below, use the variable
+            //    tags inside the template.
+            var template = _.template( 
+                    $('#js-template-navtag').html(), 
+                    { variable: 'tags' }
+                );
+            // 5. Compile the template by passing in our clean, unique array of tags
+            var compiled = template(tags);
+            // 6. Put the compiled template onto the page in our empty DIV
+            $('#js-tags-target').html( compiled );
+        });
+    </script>
+
 ---
+<!-- The first thing we do: get the tags -->
+<script type="text/javascript">
+    // 1: Create an empty array called tags. It's a global variable.
+    var tags = [];
+    // 2: For each article, push its' tags to the array
+    {% for article in site.data.press %}
+            tags.push('{{article.tags}}');
+    {% endfor %}
+</script>
+
+
+<!-- right tabs menu -->
+<script id="js-template-navtag" type="x/template">
+    <% _.each(tags, function(tag){ %>
+        <li><a href="#"><%= tag %></a></li>
+    <% }); %>
+</script>
+
+<style>
+
+.date {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.source {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+/*Begin tag-widget styles*/
+.tag-widget li {
+    display: inline-block;
+}
+
+.tag-widget li a {
+background: #6d6e71;
+background: rgba(57, 159, 211, 0.6);
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font-weight: normal;
+    font-size: small;
+    margin: 0 5px 8px 0;
+    padding: 0px 7px;
+}
+
+.tag-widget li a:hover,
+.tag-widget li a:focus,
+.tag-widget li a:active,
+.tag-widget .state-active a {
+background: #399fd3;
+background: rgba(57, 159, 211, 0.6);
+}
+/*End tag-widget styles*/
+
+</style>
 
     <section>
 
@@ -27,6 +110,71 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
     </div>
 
 </section>
+
+<!-- Begin Playground -->
+
+<section>
+    <div class="layout-semibreve">
+        <div class="layout-major-invert">
+
+        {% for article in site.data.press %}
+            <div class="layout-breve">
+                <!-- Image -->
+                <div class="layout-minor">
+                    <a href={{ article.article-url }}>
+                        <img src={{ article.image-url }}>
+                    </a>
+                </div>
+                <!-- Title, source, date and teaser paragraph -->
+                <div class="layout-major">
+                    <header>
+                        <a href={{ article.article-url}}>
+                        <h3>{{ article.title }}</h3>
+                        </a>
+                    </header>
+
+<!--                     <div>
+                        <p class="source">From: <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp" class="teaser-source">{{ article.news-source }}</a></p>
+                    </div> -->
+
+                    <div>
+                        <p class="date">{{ article.date }}</p>
+                    </div>
+
+                    <div class="teaser-body">
+                        <p>{{ article.teaser }} [&hellip;] <a href={{ article.url }}>Read more at {{ article.news-source }}</a></p>
+                    </div>
+
+                    <div class="tag-widget">
+                        {% assign tags = article.tags | split: "," %}
+
+                        {% for tag in tags %}
+                            <li><a href="#">{{ tag }}</a></li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div> <!-- end layout-breve -->
+        {% endfor %}
+
+        </div> <!-- end layout-major-invert -->
+
+        <div class="layout-minor-invert">
+            <nav class="nav-tags" role="navigation">
+                <h3 class="h4">Explore by tag</h3>
+
+                <ul>
+
+                    <div id='js-tags-target'></div>
+
+
+                </ul>
+            </nav>
+        </div> <!-- end layout-minor-invert -->
+
+    </div>
+</section>
+
+<!-- End Playground -->
 
 <section>
 
@@ -2200,4 +2348,3 @@ Five American cities have been selected for a random act of kindness from softwa
     </div>
     
 </section>
-       
