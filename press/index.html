@@ -6,20 +6,34 @@ masthead-image: "../media/images/press/press_header.jpg"
 nav-breadcrumbs:
  - Press: "/press"
 
+jquery-scripts: |
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/script/isotope.pkgd.min.js"></script>
+    <script>
+    $('.list').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows'
+        });
+
+
+      $('.tag-filter').on( 'click', 'a', function() {
+        filterValue = $( this ).attr('data-filter');
+        $test = $('.list').isotope({ filter: filterValue });
+        var iso = $test.data('isotope');
+        // count how many
+        console.log( filterValue );
+      });
+
+
+    </script>
+
 ---
 
 <style>
 
-.date {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-bottom: 0px;
-}
-
-.source {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-bottom: 0px;
+.list-item {
+    width: 100%;
 }
 
 /*Begin tag-widget styles*/
@@ -77,10 +91,17 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
 
 <section>
     <div class="layout-semibreve">
-        <div class="layout-major-invert">
+        <div class="layout-major-invert list">
 
         {% for article in site.data.press %}
-            <div class="layout-breve">
+            <div class="layout-breve list-item
+                {% assign tags = article.tags | split: "," %}
+
+                {% for tag in tags %}
+                    {% assign tag_class = tag | replace: ' ','-' | replace: '&','and' %}
+                    {{ tag_class }}
+                {% endfor %}
+            ">
                 <!-- Image -->
                 <div class="layout-minor">
                     <a href={{ article.article-url }}>
@@ -95,12 +116,12 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
                         </a>
                     </header>
 
-<!--                     <div>
-                        <p class="source">From: <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp" class="teaser-source">{{ article.news-source }}</a></p>
+<!--                <div>
+                        <p>From: <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp" class="teaser-source">{{ article.news-source }}</a></p>
                     </div> -->
 
                     <div>
-                        <p class="date">{{ article.date }}</p>
+                        <p>{{ article.date }}</p>
                     </div>
 
                     <div class="teaser-body">
@@ -113,7 +134,12 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
                         {% for tag in tags %}
                             <li><a href="#">{{ tag }}</a></li>
                         {% endfor %}
+
                     </div>
+<!-- 
+                    {% unless article.tags == "" %}
+                        <p>First tag is {{ article.tags[0] }}</p>
+                    {% endunless %} -->
                 </div>
             </div> <!-- end layout-breve -->
         {% endfor %}
@@ -124,7 +150,7 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
             <nav class="nav-tags" role="navigation">
                 <h3 class="h4">Explore by tag</h3>
 
-                <ul>
+                <ul class="tag-filter">
                     {% assign allTags = "" %}
 
                     {% for article in site.data.press %}
@@ -140,7 +166,8 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
 
                     {% for uniqueTag in tagsList %}
                         {% unless uniqueTag == "" %}
-                            <li><a href="#">{{ uniqueTag }}</a></li>
+                            {% assign uniqueTag_class = uniqueTag| replace: ' ','-' | replace: '&','and' %}
+                            <li><a onclick="return false" href="#" data-filter=".{{ uniqueTag_class }}">{{ uniqueTag }}</a></li>
                         {% endunless %}
                     {% endfor %}
                 </ul>
@@ -2130,7 +2157,7 @@ Microsoft is demonstrating our support for Code for America by committing to a $
 </div>
             <footer class="teaser-footer">
                 <a href="http://mayormcginn.seattle.gov/code-for-america" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/jul2010_seattle.jpgg" />
+                    <img class="teaser-image" src="../media/images/press/jul2010_seattle.jpg" />
                     <span class="teaser-type teaser-type-article">Article</span>
                 </a>
                 <a href="http://mayormcginn.seattle.gov/code-for-america" class="teaser-source">Seattle.gov</a>
@@ -2150,7 +2177,7 @@ Microsoft is demonstrating our support for Code for America by committing to a $
 </div>
             <footer class="teaser-footer">
                 <a href="http://www.techflash.com/seattle/2010/07/city_of_seattle_looks_to_bring_the_block_watch_into_the_21st_century.html" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/jul2010_pugetsound_bizjounal.jpg" />
+                   
                     <span class="teaser-type teaser-type-article">Article</span>
                 </a>
                 <a href="http://www.techflash.com/seattle/2010/07/city_of_seattle_looks_to_bring_the_block_watch_into_the_21st_century.html" class="teaser-source">Tech Flash</a>
@@ -2271,7 +2298,7 @@ Five American cities have been selected for a random act of kindness from softwa
 </div>
             <footer class="teaser-footer">
                 <a href="http://www.govloop.com/profiles/blogs/gov-20-is-not-cool-tech" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/sept2010_govloop" />
+                    
                     <span class="teaser-type teaser-type-article">Article</span>
                 </a>
                 <a href="http://www.govloop.com/profiles/blogs/gov-20-is-not-cool-tech" class="teaser-source">Gov Loop</a>
