@@ -40,14 +40,14 @@
   ],
   "civic-startup" : [
     {
-      "name" : "MYCITY",
-      "logo" : "/media/images/summit/2015/logos/mycity.png",
-      "link" : "http://mycity.io/",
-    },
-    {
       "name" : "COURTHOUSE",
       "logo" : "/media/images/summit/2015/logos/courthouse.png",
       "link" : "http://courthouseusa.com/",
+    },
+    {
+      "name" : "MYCITY",
+      "logo" : "/media/images/summit/2015/logos/mycity.png",
+      "link" : "http://mycity.io/",
     },
     {
       "name" : "Open Counter",
@@ -55,14 +55,14 @@
       "link" : "http://opencounter.us/",
     },
     {
-      "name" : "SEAMLESS",
-      "logo" : "/media/images/summit/2015/logos/seamless.png",
-      "link" : "http://www2.seamlessdocs.com/",
-    },
-    {
       "name" : "OPPSITES",
       "logo" : "/media/images/summit/2015/logos/oppsites.png",
       "link" : "http://oppsites.com/",
+    },
+    {
+      "name" : "SEAMLESS",
+      "logo" : "/media/images/summit/2015/logos/seamless.png",
+      "link" : "http://www2.seamlessdocs.com/",
     }
   ]
 }
