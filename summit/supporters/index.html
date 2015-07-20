@@ -46,11 +46,14 @@ metadata:
   .platinum-logo {
     height: 60px;
   }
-  .mycity {
+  #mycity {
     height: 200px;
   }
-  .courthouse {
+  #courthouse {
     height: 200px;
+  }
+  .civic-logo {
+    height: 60px;
   }
 </style>
 
@@ -110,7 +113,7 @@ metadata:
   <ul class="layout-grid-minim">
     {% for supporter in site.data.summit_supporters.civic-startup %}
       <li>
-        <img class="{{ supporter.name | replace:' ','-' | downcase }} supporter-logo" src="{{ supporter.logo }}"/>
+        <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="civic-logo supporter-logo" src="{{ supporter.logo }}"/>
         <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
