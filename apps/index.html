@@ -129,9 +129,6 @@ jquery-scripts: |
   #button-live:hover {
     background-color: rgba(75,155,116,0.8);
   }
-  #button-live link:active {
-    background-color: rgba(75,155,116,0.8);
-  }
   #button-live {
     background-color: rgba(75,155,116,1);
   }
@@ -256,8 +253,58 @@ jquery-scripts: |
   .stage-local-live, .stage-live {
     background-color: rgba(75,155,116,1);
   }
-  .stage-label {
+
+  .label-health {
+    background-color: rgba(172, 25, 56, 1);
+  }
+  .label-communication-and-engagement {
+    background-color: rgba(234, 125, 25, 1);
+  }
+  .label-safety-and-justice {
+    background-color: rgba(105, 85, 158, 1);
+  }
+  .label-economic-development {
+    background-color: rgba(75,155,116,1);
+  }
+  .label-education, .label-maps-and-transit, .label-na{
+    background-color: rgba(153, 149, 149, 1);
+  }
+  
+  .label-mobile-only {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 12px;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 8px 8px 0;
+    min-height: 19px;
+    min-width: auto;
+    overflow: visible;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: middle;
+    width: auto;
+  }
+  .label-focus-area {
+    float: left;
+  }
+  .label-stage {
     float: right;
+  }
+  .label {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
     font-weight: bold;
     border-radius: 0;
@@ -532,11 +579,11 @@ jquery-scripts: |
                       To make the labels auto generate, local and wide beta buttons need a prefix so a span class can be added to wide/local
                     {% endcomment %}
                     {% if beta_check contains 'beta' and beta_check contains 'local' %}
-                      {% assign stage_prefix = "<span class='not-emph'>local</span>" %}
+                      {% assign stage_prefix = "<span class='not-emph'>local </span>" %}
                       {% assign stage_label = 'beta' %}
                     {% endif %}
                     {% if beta_check contains 'beta' and beta_check contains 'national' %}
-                      {% assign stage_prefix = "<span class='not-emph'>wide</span>" %}
+                      {% assign stage_prefix = "<span class='not-emph'>wide </span>" %}
                       {% assign stage_label = 'beta' %}
                     {% endif %}
                     {% if product.stage contains 'Alpha' %}
@@ -559,7 +606,8 @@ jquery-scripts: |
 
                         <div class="card-content">
                           <h2 class="teaser-title">{{ product.name }}</h2>
-                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p><span class="stage-label stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
+                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                          <span class="label-mobile-only label-focus-area label-{{ product.focus-area | replace:' ', '-' | replace:'&', 'and' | replace:'/','' | downcase }}">{{ product.focus-area }}</span><span class="label label-stage stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
                         </div><!-- end .card-content -->
 
                       </div><!-- end {{ section }} .product-card -->
@@ -580,7 +628,8 @@ jquery-scripts: |
 
                           <div class="card-content">
                             <h2 class="teaser-title">{{ product.name }}</h2>
-                            <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p><span class="stage-label stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
+                            <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                            <span class="label-mobile-only label-focus-area label-{{ product.focus-area | replace:' ', '-' | replace:'&', 'and' | downcase }}">{{ product.focus-area }}</span><span class="label label-stage stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }}{{ stage_label }}</span>
                           </div><!-- end .card-content -->
 
                         </div><!-- end {{ section }} .product-card -->
