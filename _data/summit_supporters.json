@@ -17,7 +17,7 @@
     {
       "name" : "Socrata",
       "logo" : "/media/images/summit/2015/logos/socrata.jpeg",
-      "description" : "Socrata’s solutions assist government leaders in improving transparency, modernizing citizen access to information, and bringing data into every decision, all with unprecedented speed and cost savings. Delivered as turnkey services, Socrata’s technologies unlock data trapped in enterprise silos, mobilize and transform it into useful information that everyone can easily access, visualize, share and reuse. To learn more, visit www.socrata.com.",
+      "description" : "Socrata’s solutions assist government leaders in improving transparency, modernizing citizen access to information, and bringing data into every decision, all with unprecedented speed and cost savings. Delivered as turnkey services, Socrata’s technologies unlock data trapped in enterprise silos, mobilize and transform it into useful information that everyone can easily access, visualize, share and reuse.",
       "link" : "http://www.socrata.com/"
     }
   ],
@@ -25,7 +25,7 @@
     {
       "name" : "Google for Entrepreneurs",
       "logo" : "/media/images/summit/2015/logos/googleforentrepreneurs.jpeg",
-      "description" : "Google for Entrepreneurs provides financial support and the best of Google's resources to dozens of coworking spaces and community programs across 125 countries. We also create Campuses: physical hubs where entrepreneurs can learn, connect, and build companies that will change the world. To learn more about Google for Entrepreneurs, visit google.com/entrepreneurs or follow us on G+ (+GoogleForEntrepreneurs) and Twitter (@GoogleForEntrep).",
+      "description" : "Google for Entrepreneurs provides financial support and the best of Google's resources to dozens of coworking spaces and community programs across 125 countries. We also create Campuses: physical hubs where entrepreneurs can learn, connect, and build companies that will change the world. To learn more about Google for Entrepreneurs, visit <a href='google.com/entrepreneurs'>google.com/entrepreneurs</a> or follow us on G+ (+GoogleForEntrepreneurs) and Twitter (@GoogleForEntrep).",
       "link" : "https://www.googleforentrepreneurs.com/",
     }
   ],

@@ -50,9 +50,8 @@ metadata:
     {% for supporter in site.data.summit_supporters.capstone %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
-        <p><a href="{{ supporter.link }}">Read more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>
@@ -64,9 +63,8 @@ metadata:
     {% for supporter in site.data.summit_supporters.platinum %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
-        <p><a href="{{ supporter.link }}">Read more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>
@@ -78,9 +76,8 @@ metadata:
     {% for supporter in site.data.summit_supporters.gold %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
-        <p><a href="{{ supporter.link }}">Read more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>
@@ -92,8 +89,7 @@ metadata:
     {% for supporter in site.data.summit_supporters.supporter %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
-        <p><a href="{{ supporter.link }}">See more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>
@@ -105,8 +101,7 @@ metadata:
     {% for supporter in site.data.summit_supporters.civic-startup %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
-        <p><a href="{{ supporter.link }}">See more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>
