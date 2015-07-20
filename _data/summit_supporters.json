@@ -13,14 +13,56 @@
       "logo" : "/media/images/summit/2015/logos/accela.jpg",
       "description" : "Accela provides cloud-based civic engagement solutions for government. Accela's Civic Platform enables and improves core processes for city, county, state and federal governments and addresses the diverse needs of their constituents by making publicly available information more accessible. The Platform includes solutions for land management, asset management, licensing and case management, legislative management and more.",
       "link" : "http://www.accela.com"
+    },
+    {
+      "name" : "Socrata",
+      "logo" : "/media/images/summit/2015/logos/socrata.jpeg",
+      "description" : "Socrata’s solutions assist government leaders in improving transparency, modernizing citizen access to information, and bringing data into every decision, all with unprecedented speed and cost savings. Delivered as turnkey services, Socrata’s technologies unlock data trapped in enterprise silos, mobilize and transform it into useful information that everyone can easily access, visualize, share and reuse. To learn more, visit www.socrata.com.",
+      "link" : "http://www.socrata.com/"
     }
   ],
   "gold" : [
+    {
+      "name" : "Google for Entrepreneurs",
+      "logo" : "/media/images/summit/2015/logos/googleforentrepreneurs.jpeg",
+      "description" : "Google for Entrepreneurs provides financial support and the best of Google's resources to dozens of coworking spaces and community programs across 125 countries. We also create Campuses: physical hubs where entrepreneurs can learn, connect, and build companies that will change the world. To learn more about Google for Entrepreneurs, visit google.com/entrepreneurs or follow us on G+ (+GoogleForEntrepreneurs) and Twitter (@GoogleForEntrep).",
+      "link" : "https://www.googleforentrepreneurs.com/",
+    }
   ],
   "silver" : [
   ],
   "supporter" : [
+    {
+      "name" : "CartoDB",
+      "logo" : "/media/images/summit/2015/logos/cartodb.png",
+      "link" : "https://cartodb.com/",
+    }
   ],
   "civic-startup" : [
+    {
+      "name" : "MYCITY",
+      "logo" : "/media/images/summit/2015/logos/mycity.png",
+      "link" : "http://mycity.io/",
+    },
+    {
+      "name" : "COURTHOUSE",
+      "logo" : "/media/images/summit/2015/logos/courthouse.png",
+      "link" : "http://courthouseusa.com/",
+    },
+    {
+      "name" : "Open Counter",
+      "logo" : "/media/images/summit/2015/logos/opencounter.png",
+      "link" : "http://opencounter.us/",
+    },
+    {
+      "name" : "SEAMLESS",
+      "logo" : "/media/images/summit/2015/logos/seamless.png",
+      "link" : "http://www2.seamlessdocs.com/",
+    },
+    {
+      "name" : "OPPSITES",
+      "logo" : "/media/images/summit/2015/logos/oppsites.png",
+      "link" : "http://oppsites.com/",
+    }
   ]
 }
