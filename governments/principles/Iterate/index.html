@@ -1,0 +1,151 @@
+---
+layout: default
+title: Iterative Development
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+nav_tier1_active: "governments"
+nav-breadcrumbs:
+ - Governments: "/cities"
+ - Principles for 21st Century Government: "/governments/principles"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+
+
+
+<div class="masthead masthead-custom masthead-deep">
+  
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      
+      style="background-image: url('/media/images/principles/addressiq.jpg')" 
+      >
+    </div>
+  </div>
+
+  <header class="masthead-header layout-semibreve">
+      <p class="page-overline">principle number three</p>
+      <h1 class="page-title">Start Small, and Iterate</h1>
+    
+  </header>
+  
+  
+  <div class="description layout-semibreve">
+    <p>When you are building or buying government technology, start small and get a working Minimum Viable Product (MVP) into people's hands as early as possible, test with users frequently, and make continuous improvements based on feedback.</p>
+    
+  </div>
+  
+</div>
+	
+<section class="layout-semibreve">
+	
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+		
+      <!-- Header -->
+      <h2>Iterative Development</h2>
+      <p>Over the past decade, leading companies in the tech industry have changed the way they design, build, and deploy technology projects. They have gone from using a <strong>"waterfall" development process</strong>, a linear process starting with requirements and ending with deployment, to using <strong>an iterative approach</strong> (also called lean or agile), based on shorter development cycles and continuous improvement based on user feedback.</p>
+
+      <p>High-profile technology challenges like the launch of healthcare.gov have highlighted why an iterative approach must be applied towards government technology projects. Instead of scoping all possible requirements at the start of a project, focus on shipping a functional “minimum viable product” (MVP) that solves a core user need as soon as possible. Then, continue to build, test and revise based on user feedback.</p>
+
+      <p>Code for America works with local governments to build digital services using an iterative approach. We've seen first hand the importance of <a href="http://www.codeforamerica.org/blog/2014/12/22/how-a-bumpy-ride-turned-into-a-golden-ticket/">testing ideas rapidly</a>, and how starting small and addressing core user needs, can make a <a href="https://www.youtube.com/watch?v=yViYA8IG36U&list=UU6VjQY-gIxXGKmjW0LeMGOw&index=50">big impact on how people experience government services</a>.</p>
+	</div><!-- end Principle 1 -->
+</section>
+<section class="slab-gray">
+
+	<div class="layout-semibreve">
+		
+		<div class="badge-heading badge-red">
+		    <h2 id='resources'>Practice Iterative Development</h2>
+		</div>
+		
+		<p>We're publishing a set of guides, tools and resources for governments that want to start practicing iterative development.</p>
+		
+		<h3>Guides</h3>
+
+		<ul class="list-no-bullets list-icons">
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/where-do-i-start.html">How to: Write a RFP that allows for iterative development</a>
+				<p>If you are contracting out your development work, find out how to stucture your Request for Proposal to allow for iterative development.
+				</li>
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/where-do-i-start.html">How to: Plan your MVP</a>
+				<p>Use this guide if you are just getting started and looking for advice on how to align around goals and plan your MVP.</p>
+				</li>
+			
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/making-software/mobile-strategy.html">How to: Set up your sprints</a>
+				<p>Learn how to plan your sprint cycles and conduct standups and retrospectives. </p>
+			
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/assess-digital-services.html">How to: Define your product stages</a>
+				<p>Indicate where a product is in development, by using terms such as "alpha," "beta," or "live".</p>
+				</li>
+
+		</ul>
+		
+		<h3>Tools</h3>
+		
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-tools"><a href="https://www.codeforamerica.org/apps/city-analytics-dashboard/">Tool: Track issues and control versions</a>
+				<p>Use github to work in the open, track issues, catalog features and bugs, and keep track of versions. </p>		
+			</li>
+		</ul>
+
+		<h3>Spotlight</h3>
+		
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: Eric Ries talks about the Lean Startup Methodolgy</a>
+				<p>Watch Eric Ries, author of the Lean Startup, talk at our 2012 Summit. </p>		
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: Alistair Croll talks about Lean Analytics</a>
+				<p>Watch Alistair Croll, author of the Lean Analytics, talk at our 2013 Summit. </p>		
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: Denver's Peak Academy</a>
+				<p>The City of Denver applies techniques based on lean and agile principles to help government staff reform their department’s internal processes.</p>		
+			</li>
+		</ul>
+		<h3>Further Reading</h3>
+		
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-new-tab"><a href="https://www.gov.uk/service-manual/agile">Read: Agile Development at Gov.UK</a>
+				<p>Gov.UK's Government Service Design Manual lays out what agile is, why it works and how to do it.</p>		
+			</li>
+			<li class="icon-new-tab"><a href="http://handbook.agilegovleaders.org/">Read: The Agile Government Handbook</a>
+				<p>The Agile Government Leadership Project developed this handbook to help governments learn and adopt Agile development practices.</p>		
+			</li>
+			<li class="icon-new-tab"><a href="http://ben.balter.com/2011/11/29/towards-a-more-agile-government/">Read: Towards a More Agile Government</a>
+				<p>Ben Balter makes a case for rebooting federal IT procurement.</p>		
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: How to run an Agile project in Government</a>
+				<p>Robert Reed from 18f gives an overview of Agile software development, specifically from a program manager or CIO’s perspective.</p>		
+			</li>
+		</ul>
+
+	</div>
+</section>
+
+     

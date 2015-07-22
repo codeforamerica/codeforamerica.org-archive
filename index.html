@@ -1,4 +1,9 @@
 ---
+# Allows us to call the most recent post from the blog
+helpers:
+  blogpost:
+    category: ""
+    max_post_count: 1
 ---
 <!DOCTYPE html>
 <html lang="en-us">
@@ -30,9 +35,9 @@
 		.masthead:before {
 			background-image: url('media/images/homepage-stories/nothing.png');
 		}
-		
+
 		.masthead-homepage:before { min-height: 310px }
-		
+
 		@media (min-height: 45em)
 		{
 			.masthead-homepage:before { min-height: 600px }
@@ -46,7 +51,7 @@
         }
 
         ul.list-logos li { width: 15% }
-    
+
         @media (max-width: 900px)
         {
             ul.list-logos { width: 100% }
@@ -62,15 +67,15 @@
 
 	</style>
     {% include meta-header.html %}
-    
+
     <!-- DH's GWT verification code -->
     <meta name="google-site-verification" content="aHfXE_zmYIz9jIBKZEGrd4vMF17X_F3KdBog0BN-CHk" />
     <!-- end -->
-    
+
     <!-- Bing site verification code -->
     <meta name="msvalidate.01" content="BE3AE53B67B9DB3031EE38B0A976C834" />
     <!-- end -->
-    
+
 </head>
 
 <body>
@@ -105,17 +110,17 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="layout-minim-staccato">
             <h4><a href="geeks/fellowship-apply/index.html?utm_source=homepage_video">Video: Become a Fellow</a></h4>
             <iframe src="//www.youtube.com/embed/HNzWnIbjL1g" width="100%" height="240px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <a href="geeks/fellowship-apply/index.html?utm_source=homepage_video" class="text-whisper button-invert white">Apply today</a>
         </div>
-    
+
     </div>
 </section>
 
-<section class="slab-black slab-bg1">
+<section class="slab-black slab-bg1" id="js-blogposts">
     <div class="layout-minim layout-solo insulate">
         <h2 class="h5">Blogging [For America]</h2>
 
@@ -144,6 +149,7 @@
         </article>
     </div><!-- end .layout-minim -->
 </section>
+
 <section>
     <div class="layout-semibreve">
         <div class="badge-heading badge-github badge-blue">
@@ -206,7 +212,61 @@
 
 {% include email-signup-modal.html %}
 
-<!--<script src="script/global.js"></script>-->
 {% include footer-scripts.html %}
+
+  <!--
+  BLOG POST GETTER
+  This template replaces the static blog post in the id #js-blogposts above
+  with the most recent blog post, pulled from our blog's API.
+  It relies on the YAML frontmatter, which invokes `includes/blogpost-helpers`,
+  providing us with all the hooks to call the API and feed it into the
+  template below.
+
+  Begin template for homepage blog post -->
+  <script type="text/x-template" id="blogTemplate">
+    <%
+    // Our iterator variable is posts. Posts should be an array with 1 entry.
+    // Let's take the first item in the array and make it post.
+    var post = posts[0];
+
+    // Let's get the excerpt of the post
+    var postContent = stripHTML( post.content );
+    var postExcerpt = toExcerpt( postContent, 220 );
+
+    // Create a pretty date
+    var postDate = makePrettyDate( post.date );
+    %>
+
+    <section class="slab-black slab-bg1" id="js-blogposts">
+        <div class="layout-minim layout-solo insulate">
+            <h2 class="h5">Blogging [For America]</h2>
+
+            <article class="post-preview">
+                <header class="post-header isolate">
+                    <time class="post-date insulate text-whisper" datetime="<%= postDate %>"><%= postDate %></time>
+                    <h2 class="post-title"><a href="<%= post.link %>" onclick="ga('send', 'event', 'Homepage', 'Blog headline click');"><%= post.title %></a></h2>
+                </header>
+
+                <div class="post-author">
+                    <h2 class="text-whisper layout-tight">Written by</h2>
+
+                    <div class="h-card">
+                        <h3 class="p-name profile-name text-prominent"><%= post.author.name %></h3>
+                        <img class="u-photo profile-photo" src="<%= post.author.avatar %>" alt="<%= post.author.name %>" />
+                    </div>
+
+                    <div class="post-body">
+                        <div class="post-content">
+                            <p><%= postExcerpt %></p>
+                        </div>
+                    </div>
+
+                    <a class="post-link" href="<%= post.link %>" onclick="ga('send', 'event', 'Homepage', 'Blog link click');">Read this post</a>
+                </div><!-- end .post-author -->
+            </article>
+        </div><!-- end .layout-minim -->
+    </section>
+  </script>
+  <!-- End Template for homepage blogpost -->
 </body>
 </html>
