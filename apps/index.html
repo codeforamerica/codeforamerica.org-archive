@@ -10,6 +10,10 @@ nav-breadcrumbs:
 jquery-scripts: |
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/script/isotope.pkgd.min.js"></script>
+  <script src="/script/jquery.flexnav.min.js"></script>
+  <script>
+    $(".flexnav").flexNav({ 'animationSpeed' : 'fast' });
+  </script>
   <script>
     // javascript to reshow all sections on
     $('.reset-filters').on( 'click', 'a', function() {
@@ -53,6 +57,281 @@ jquery-scripts: |
    </script>
 ---
 <style>
+    .flexnav {
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      transition: none;
+      -webkit-transform-style: preserve-3d;
+      overflow: hidden;
+      margin: 0 auto;
+      width: 100%;
+      max-height: 0; }
+      .flexnav.opacity {
+        opacity: 0; }
+      .flexnav.flexnav-show {
+        max-height: 2000px;
+        opacity: 1;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out; }
+      .flexnav.one-page {
+        position: fixed;
+        top: 50px;
+        right: 5%;
+        max-width: 200px; }
+      .flexnav li {
+        font-size: 100%;
+        position: relative;
+        overflow: hidden; }
+      .flexnav li a {
+        position: relative;
+        display: block;
+        padding: .96em;
+        z-index: 2;
+        overflow: hidden;
+        color: #222222;
+        background: #a6a6a2;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+      .flexnav li ul {
+        width: 100%; }
+        .flexnav li ul li {
+          font-size: 100%;
+          position: relative;
+          overflow: hidden; }
+      .flexnav li ul.flexnav-show li {
+        overflow: visible; }
+      .flexnav li ul li a {
+        display: block;
+        background: #b2b2af; }
+      .flexnav ul li ul li a {
+        background: #bfbfbc; }
+      .flexnav ul li ul li ul li a {
+        background: #cbcbc9; }
+      .flexnav .touch-button {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background: #acaca1;
+        background: rgba(0, 0, 0, 0.075);
+        text-align: center; }
+        .flexnav .touch-button:hover {
+          cursor: pointer; }
+        .flexnav .touch-button .navicon {
+          position: relative;
+          top: 1.4em;
+          font-size: 12px;
+          color: #666; }
+
+    .menu-button {
+      position: relative;
+      display: block;
+      padding: 1em;
+      background: #fff;
+      color: #222222;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .menu-button.one-page {
+        position: fixed;
+        top: 0;
+        right: 5%;
+        padding-right: 45px; }
+      .menu-button .touch-button {
+        background: transparent;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        text-align: center; }
+        .menu-button .touch-button .navicon {
+          font-size: 16px;
+          position: relative;
+          top: 1em;
+          color: #666; }
+
+    @media all and (min-width: 800px) {
+      body.one-page {
+        padding-top: 70px; }
+
+      .flexnav {
+        overflow: visible; }
+        .flexnav.opacity {
+          opacity: 1; }
+        .flexnav.one-page {
+          top: 0;
+          right: auto;
+          max-width: 1080px; }
+        .flexnav li {
+          position: relative;
+          list-style: none;
+          float: left;
+          display: block;
+          background-color: #a6a6a2;
+          overflow: visible;
+          width: 20%; }
+        .flexnav li a {
+          border-left: 1px solid #acaca1;
+          border-bottom: none; }
+        .flexnav li > ul {
+          position: absolute;
+          top: auto;
+          left: 0; }
+          .flexnav li > ul li {
+            width: 100%; }
+        .flexnav li ul li > ul {
+          margin-left: 100%;
+          top: 0; }
+        .flexnav li ul li a {
+          border-bottom: none; }
+        .flexnav li ul.open {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          z-index: 1; }
+          .flexnav li ul.open li {
+            overflow: visible;
+            max-height: 100px; }
+          .flexnav li ul.open ul.open {
+            margin-left: 100%;
+            top: 0; }
+
+      .menu-button {
+        display: none; } }
+    .oldie body.one-page {
+      padding-top: 70px; }
+    .oldie .flexnav {
+      overflow: visible; }
+      .oldie .flexnav.one-page {
+        top: 0;
+        right: auto;
+        max-width: 1080px; }
+      .oldie .flexnav li {
+        position: relative;
+        list-style: none;
+        float: left;
+        display: block;
+        background-color: #a6a6a2;
+        width: 20%;
+        min-height: 50px;
+        overflow: visible; }
+      .oldie .flexnav li:hover > ul {
+        display: block;
+        width: 100%;
+        overflow: visible; }
+        .oldie .flexnav li:hover > ul li {
+          width: 100%;
+          float: none; }
+      .oldie .flexnav li a {
+        border-left: 1px solid #acaca1;
+        border-bottom: none;
+        overflow: visible; }
+      .oldie .flexnav li > ul {
+        background: #acaca1;
+        position: absolute;
+        top: auto;
+        left: 0;
+        display: none;
+        z-index: 1;
+        overflow: visible; }
+      .oldie .flexnav li ul li ul {
+        top: 0; }
+      .oldie .flexnav li ul li a {
+        border-bottom: none; }
+      .oldie .flexnav li ul.open {
+        display: block;
+        width: 100%;
+        overflow: visible; }
+        .oldie .flexnav li ul.open li {
+          width: 100%; }
+        .oldie .flexnav li ul.open ul.open {
+          margin-left: 100%;
+          top: 0;
+          display: block;
+          width: 100%;
+          overflow: visible; }
+      .oldie .flexnav ul li:hover ul {
+        margin-left: 100%;
+        top: 0; }
+    .oldie .menu-button {
+      display: none; }
+    .oldie.ie7 .flexnav li {
+      width: 19.9%; }
+  @media screen and (min-width: 41em) {
+    .sort-border {
+      margin-top: 1em;
+    }
+  }
+  @media screen and (max-width: 40em) {
+    .sort-border {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 40em) {
+    .label-mobile-only {
+      font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+      font-weight: bold;
+      border-radius: 0;
+      padding: 0 12px;
+      text-transform: uppercase;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: 10px;
+      height: 25px;
+      line-height: 25px;
+      margin: 0 8px 8px 0;
+      min-height: 19px;
+      min-width: auto;
+      overflow: visible;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: none;
+      vertical-align: middle;
+      width: auto;
+    }
+  }
+
+  @media screen and (min-width: 41em) {
+    .label-mobile-only {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 41em) {
+    .mobile-sort-buttons {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 40em) {
+    .mobile-sort-buttons {
+
+    }
+  }
+
+  #filter-focus-areas {
+    float: left;
+    width: 40%;
+  }
+  #filter-stages {
+    float: right;
+    width: 20%;
+  }
+
   [class*="button"][class*="button-sort"]:link {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
     font-weight: bold;
@@ -203,11 +482,6 @@ jquery-scripts: |
     margin-right: 0.75em;
   }
 
-  .sort-border {
-    margin-top: 1em;
-  }
-
-
   .img-container {
     text-align: center;
     padding-right: 0.75em;
@@ -266,38 +540,10 @@ jquery-scripts: |
   .label-economic-development {
     background-color: rgba(75,155,116,1);
   }
-  .label-education, .label-maps-and-transit, .label-na{
+  .label-education, .label-maps-and-transit, .label-na {
     background-color: rgba(153, 149, 149, 1);
   }
-  
-  .label-mobile-only {
-    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
-    font-weight: bold;
-    border-radius: 0;
-    padding: 0 12px;
-    text-transform: uppercase;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    border: none;
-    color: white;
-    display: inline-block;
-    font-size: 10px;
-    height: 25px;
-    line-height: 25px;
-    margin: 0 8px 8px 0;
-    min-height: 19px;
-    min-width: auto;
-    overflow: visible;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    vertical-align: middle;
-    width: auto;
-  }
+
   .label-focus-area {
     float: left;
   }
@@ -517,6 +763,19 @@ jquery-scripts: |
 
     </div><!-- end .layout-breve -->
 
+
+        <div class="layout-breve">
+          <div class="menu-button mobile-sort-buttons">Menu</div>
+          <nav>
+              <ul class="flexnav" data-breakpoint="800">
+                <li class="button-sort" id="filter-economic-development"><a href="#" onclick="return false" target="#economic-development">Economic Dev</a></li>
+                <li class="button-sort" id="filter-safety-and-justice"><a href="#" onclick="return false" target="#safety-and-justice">Safety & Justice</a></li>
+                <li id="filter-health"><a href="#" onclick="return false"ß target="#health">Health</a></li>
+                <li id="filter-communication-and-engagement"><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#communication-and-engagement">C & E</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#other" id="filter-other">Other</a></li>
+              </ul>
+            </nav>
+        </div>
     <div class="layout-breve layout-tight">
       <!-- App sorting menu -->
 	    <div class="layout-minor">
