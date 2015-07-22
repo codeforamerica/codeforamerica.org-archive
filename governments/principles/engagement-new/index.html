@@ -1,0 +1,135 @@
+---
+layout: default
+title: Iterative Development
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+masthead-custom: deep
+nav-global-primary: "no"
+
+# Title for the title bar, and the overline in the masthead
+title: principle number two
+
+# Content for the custom deep masthead
+headline: Ensure everyone can participate
+description: Create ways for every community member to productively participate in decisions about issues that affect them. Proactively reach out to a cross section of your community, communicate using language that’s easy to understandand, and engage people through diverse channels that meet people where they are.
+
+# The picture for the page
+masthead-image: "/media/images/focus-areas/nikki-police.jpg"
+
+nav_tier1_active: "governments"
+nav-breadcrumbs:
+ - Governments: "/cities"
+ - Principles for 21st Century Government: "/governments/principles"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+<section class="layout-semibreve">
+
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+      <!-- Header -->
+      <h2>Civic Engagement</h2>
+      <p>Code for America works at the intersection of <a href="/brigade/">civic engagement</a>, <a href="/about/fellowship/">government</a>, and <a href="/apps/">technology</a>.</p>
+      <p>We build digital tools that improve the public’s interactions with government, and use those tools as a catalyst for structural changes that make government more open, more responsive, and more engaging.</p>
+      <p>We emphasize the role of the citizen not just as a passive recipient of government services, but as an active participant in building government.</p>
+      <p>We have seen glimpses of a better model of engagement working for government staff and the public across America. This Engagement Standard systematizes what we have seen work and offers both governments and residents concrete tools and tactics to use in their communities.</p>
+
+	</div><!-- end Principle 1 -->
+</section>
+
+<section class="slab-gray">
+
+	<div class="layout-semibreve">
+
+		<div class="badge-heading badge-red">
+		    <h2 id='resources'>Practice Civic Engagement</h2>
+		</div>
+
+		<p>We're publishing a set of guides, tools and resources for governments that want to start engaging residents in new ways.</p>
+
+		<h3>Guides</h3>
+
+		<ul class="list-no-bullets list-icons">
+				<li class="icon-lamp">
+          <a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/where-do-i-start.html">How to: Write a RFP that allows for iterative development</a>
+  				<p>If you are contracting out your development work, find out how to stucture your Request for Proposal to allow for iterative development.
+				</li>
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/where-do-i-start.html">How to: Plan your MVP</a>
+				<p>Use this guide if you are just getting started and looking for advice on how to align around goals and plan your MVP.</p>
+				</li>
+
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/making-software/mobile-strategy.html">How to: Set up your sprints</a>
+				<p>Learn how to plan your sprint cycles and conduct standups and retrospectives. </p>
+
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/assess-digital-services.html">How to: Define your product stages</a>
+				<p>Indicate where a product is in development, by using terms such as "alpha," "beta," or "live".</p>
+				</li>
+
+		</ul>
+
+		<h3>Tools</h3>
+
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-tools"><a href="https://www.codeforamerica.org/apps/city-analytics-dashboard/">Tool: Track issues and control versions</a>
+				<p>Use github to work in the open, track issues, catalog features and bugs, and keep track of versions. </p>
+			</li>
+		</ul>
+
+		<h3>Spotlight</h3>
+
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: Eric Ries talks about the Lean Startup Methodolgy</a>
+				<p>Watch Eric Ries, author of the Lean Startup, talk at our 2012 Summit. </p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: Alistair Croll talks about Lean Analytics</a>
+				<p>Watch Alistair Croll, author of the Lean Analytics, talk at our 2013 Summit. </p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: Denver's Peak Academy</a>
+				<p>The City of Denver applies techniques based on lean and agile principles to help government staff reform their department’s internal processes.</p>
+			</li>
+		</ul>
+		<h3>Further Reading</h3>
+
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-new-tab"><a href="https://www.gov.uk/service-manual/agile">Read: Agile Development at Gov.UK</a>
+				<p>Gov.UK's Government Service Design Manual lays out what agile is, why it works and how to do it.</p>
+			</li>
+			<li class="icon-new-tab"><a href="http://handbook.agilegovleaders.org/">Read: The Agile Government Handbook</a>
+				<p>The Agile Government Leadership Project developed this handbook to help governments learn and adopt Agile development practices.</p>
+			</li>
+			<li class="icon-new-tab"><a href="http://ben.balter.com/2011/11/29/towards-a-more-agile-government/">Read: Towards a More Agile Government</a>
+				<p>Ben Balter makes a case for rebooting federal IT procurement.</p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=FpBjClJTVQ0&feature=youtube_gdata">Watch: How to run an Agile project in Government</a>
+				<p>Robert Reed from 18f gives an overview of Agile software development, specifically from a program manager or CIO’s perspective.</p>
+			</li>
+		</ul>
+
+	</div>
+</section>
