@@ -36,6 +36,11 @@
       "name" : "CartoDB",
       "logo" : "/media/images/summit/2015/logos/cartodb.png",
       "link" : "https://cartodb.com/",
+    },
+    {
+      "name" : "OpenDataSoft",
+      "logo" : "/media/images/summit/2015/logos/opendatasoft.png",
+      "link" : "https://www.opendatasoft.com/"
     }
   ],
   "civic-startup" : [
