@@ -80,7 +80,12 @@ button.button-invert.white {
 	// Remove the border from the top of the global footer
 	border-top: none;
 	// Remove the top padding so our new signup box snaps to top
-	padding-top: 0;
+	// padding-top: 0;
+}
+
+.global-footer .search-global {
+	// this margin is messing up things
+	margin: 0;
 }
 
 nav.nav-footer {
