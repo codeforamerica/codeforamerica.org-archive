@@ -7,7 +7,7 @@ nav-breadcrumbs:
 
 ---
 
-## 1. Require an agile development process to frequently deliver usable software to users
+## 1. Require an iterative development process to frequently deliver usable software to users
 
 Services have a much higher chance of success if parts of their functionality can be delivered to users as they are developed rather than as a whole after a long period of development. This is the principle of least surprise: contracts should structure delivery gradually and frequently rather than as a complete solution in a big bang, even if you are using techniques like pilots. 
 
@@ -16,6 +16,10 @@ If you have an RFP that describes a large, complex system, restructure the RFP t
 There is less inherent risk to tackle smaller service areas iteratively and individually, rather than requiring the development of a complete system comprising all of them, and to roll out each service to users when it is ready. Where possible, large RFPs should be split up into smaller contracts, each to deliver individual new services. 
 
 These smaller contracts may describe discovery, alpha, beta and live phases of service delivery and follow the suggestions of the [U.S. Digital Service Playbook](https://playbook.cio.gov/) to [structure budgets and contracts to support delivery](https://playbook.cio.gov/#play5).
+
+You should:
+
+* remove or simplify organizational layers so that features and improvements can be released multiple times a month
 
 ## 2. Require a user research capability 
 
@@ -27,13 +31,15 @@ For example, it is unclear how checkpoint builds, quality builds and the user ac
 
 The RFP also shows no emphasis toward user research in general, and hardly any expectation that a successful bidder validate the requirements set by the State. This approach is unlikely to lead to an effective system. 
 
-Governments should:
+You should:
 
-* make sure that there is user research capability in the government service team and on the vendor’s team;
-* make clear that the beginning phase of a project includes a discovery process to understand and validate the needs of users; 
-* require that the vendor work with the  service team to use qualitative and quantitative user research techniques;
-* require frequent and regular testing of software with real users during any development phases;
+* make sure that there is user research capability in the government service team and on the vendor’s team
+* make clear that the beginning phase of a project includes a discovery process to understand and validate the needs of users 
+* require that the vendor work with the  service team to use qualitative and quantitative user research techniques
+* require frequent and regular testing of software with real users during any development phases
 * structure other development phases to account for changes that need to be made because of user research and testing
+* require that user research is used to make the service simple and intuitive so that users succeed at their tasks first time
+
 
 ## 3. Allow in-house, custom or commissioned options 
 
@@ -43,9 +49,9 @@ Transfer systems may promise a lower initial cost because they have already been
 
 ## 4. Choose vendors who have delivered large-scale services that meet user needs 
 
-Many administrative requirements of the RFP are designed to reduce the risk of receiving a solution that is not fit-for-purpose. 
+Many administrative requirements of RFPs are designed to reduce the risk of getting a solution that doesn't work and to reduce surprise. 
 
-Some ways of reducing this risk are through key staff and certification requirements that don't ensure the delivery of good software or services. Certification requirements just show that certifications standards have been met. 
+Some ways of reducing this risk are through key staff and certification requirements, but these requirements don't ensure the delivery of good software or services. They just show that certification standards have been met. 
 
 Governments should make sure they have the internal capability to choose a bidder based on their history of delivering large-scale services that meet user needs instead of secondary requirements that will not reduce the risk of bad software being delivered. Successful governments have generally built this capability by putting together multidisciplinary internal teams. 
 
@@ -55,21 +61,20 @@ For example, when creating a federal marketplace for agile delivery services, 18
 >
 > [Creating a federal marketplace for agile delivery services](https://18f.gsa.gov/2015/01/08/creating-a-federal-marketplace-for-agile-delivery-services/)
 
-## 5. Use RFPs to deliver services, not to procure technology solutions
+You should: 
 
-It is clear from the RFP and supporting documentation that responsibility for and management of delivering the CWS-NS solution is spread among many people and groups. In our experience, this had not led to the delivery of effective large-scale digital services. If the intent of CWS-NS is to deliver large-scale positive organizational change in CDSS, then a competent and qualified Digital Director must be appointed with the support of a CWS-NS delivery team. 
+* require vendors to deliver live demonstrations, not presentations or mockups
 
-The State should:
+## 5. Describe ongoing services, not solutions 
 
-appoint a CDSS Digital Director with absolute authority over digital services and digital services spending;
-create a multi-disciplinary team at CDSS with the authority and responsibility for delivering and iterating upon CWS-NS
+Use your RFP to describe a service that continues to improve and not a product or solution that is bought and make this clear to bidders and vendors. Look for opportunities to make it easier for the service to improve after it goes live, whether that's using open standards, or making sure that you're measuring the right data to know what to work on next.
 
-This position is inspired by Martha Lane Fox’s letter to Francis Maude, the Minister for the Cabinet Office in the UK that led to the creation of the UK’s Government Digital Service. Lane Fox recommends that this director have the control and power to set standards across CDSS in areas such as:
+You should:
 
-technical standards: including APIs, data models and security;
-content standards: including format, taxonomy, meta-tagging and and rules for syndication partners;
-design standards: including usability, accessibility and look-and-feel;
-process standards: including content creation, content review processes, SLA and partner processes; and
-customer standards: including feedback, consultation, insight, analytics, segmentation and registration.
+* use open standards and common or commodity platforms to make it easier to regularly and frequently improve the service 
+* simplify the kinds of changes that can be made to the service after it is live
+* make user research an essential part of the team that decides changes to the services after it is live
+* set key performance indicators for the service
+* set and require the collection of performance data to analyze success and choose features and tasks for improvement
 
-In particular, this Director should also oversee the re-integration of the spun-out Office of Systems Integration. 
+
