@@ -11,7 +11,7 @@ jquery-scripts: |
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="/script/isotope.pkgd.min.js"></script>
     <script>
-    $('.list').isotope({
+    var $list = $('.list').isotope({
         itemSelector: '.list-item',
         layoutMode: 'fitRows'
         });
@@ -20,11 +20,11 @@ jquery-scripts: |
       $('.tag-filter').on( 'click', 'a', function() {
         filterValue = $( this ).attr('data-filter');
         $test = $('.list').isotope({ filter: filterValue });
-        var iso = $test.data('isotope');
-        // count how many
-        console.log( filterValue );
       });
 
+      $('.reset').on( 'click', 'a', function() {
+        $list.isotope({ sortBy : 'original-order' });
+      });
 
     </script>
 
@@ -32,30 +32,38 @@ jquery-scripts: |
 
 <style>
 
+.nobr {
+    white-space: nowrap;
+}
+
+.read-more-tag, [class*="read-more-tag"][class*="read-more-tag"]:link {
+    background-color: #000;
+}
+
 .list-item {
     width: 100%;
 }
 
 /*Begin tag-widget styles*/
-.tag-widget li {
+.tag-widget {
     display: inline-block;
 }
 
-.tag-widget li a {
+.tag-widget a {
 background: #6d6e71;
 background: rgba(57, 159, 211, 0.6);
     border-radius: 3px;
     color: white;
-    display: block;
+    display: inline-block;
     font-weight: normal;
     font-size: small;
     margin: 0 5px 8px 0;
     padding: 0px 7px;
 }
 
-.tag-widget li a:hover,
-.tag-widget li a:focus,
-.tag-widget li a:active,
+.tag-widget a:hover,
+.tag-widget a:focus,
+.tag-widget a:active,
 .tag-widget .state-active a {
 background: #399fd3;
 background: rgba(57, 159, 211, 0.6);
@@ -82,73 +90,20 @@ background: rgba(57, 159, 211, 0.6);
 For more info visit <a href="/communications">codeforamerica.org/communications</a>
                         
         </div>
-    
     </div>
-
 </section>
 
-<!-- Begin Playground -->
+<!-- Begin List Playground -->
 
 <section>
     <div class="layout-semibreve">
-        <div class="layout-major-invert list">
-
-        {% for article in site.data.press %}
-            <div class="layout-breve list-item
-                {% assign tags = article.tags | split: "," %}
-
-                {% for tag in tags %}
-                    {% assign tag_class = tag | replace: ' ','-' | replace: '&','and' %}
-                    {{ tag_class }}
-                {% endfor %}
-            ">
-                <!-- Image -->
-                <div class="layout-minor">
-                    <a href={{ article.article-url }}>
-                        <img src={{ article.image-url }}>
-                    </a>
-                </div>
-                <!-- Title, source, date and teaser paragraph -->
-                <div class="layout-major">
-                    <header>
-                        <a href={{ article.article-url}}>
-                        <h3>{{ article.title }}</h3>
-                        </a>
-                    </header>
-
-<!--                <div>
-                        <p>From: <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp" class="teaser-source">{{ article.news-source }}</a></p>
-                    </div> -->
-
-                    <div>
-                        <p>{{ article.date }}</p>
-                    </div>
-
-                    <div class="teaser-body">
-                        <p>{{ article.teaser }} [&hellip;] <a href={{ article.url }}>Read more at {{ article.news-source }}</a></p>
-                    </div>
-
-                    <div class="tag-widget">
-                        {% assign tags = article.tags | split: "," %}
-
-                        {% for tag in tags %}
-                            <li><a href="#">{{ tag }}</a></li>
-                        {% endfor %}
-
-                    </div>
-<!-- 
-                    {% unless article.tags == "" %}
-                        <p>First tag is {{ article.tags[0] }}</p>
-                    {% endunless %} -->
-                </div>
-            </div> <!-- end layout-breve -->
-        {% endfor %}
-
-        </div> <!-- end layout-major-invert -->
-
-        <div class="layout-minor-invert">
+        
+        <div class="layout-minor">
+            <!-- Filtering Menu -->
             <nav class="nav-tags" role="navigation">
                 <h3 class="h4">Explore by tag</h3>
+
+                <p><a class="reset" data-filter="*" onclick="return false" href="#">Reset</a></p>
 
                 <ul class="tag-filter">
                     {% assign allTags = "" %}
@@ -170,14 +125,122 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
                             <li><a onclick="return false" href="#" data-filter=".{{ uniqueTag_class }}">{{ uniqueTag }}</a></li>
                         {% endunless %}
                     {% endfor %}
+                    
                 </ul>
             </nav>
-        </div> <!-- end layout-minor-invert -->
+
+        </div> <!-- end layout-minor -->
+
+        <div class="layout-major list">
+
+        {% assign sorted_articles = (site.data.press | sort: "timestamp" ) %}
+
+        {% for article in sorted_articles reversed %}
+            <div class="layout-breve list-item 
+                {% assign tags = article.tags | split: "," %}
+
+                {% for tag in tags %}
+                    {% assign tag_class = tag | replace: ' ','-' | replace: '&','and' %}
+                    {{ tag_class }}
+                {% endfor %}
+
+            ">
+                <!-- Image -->
+                <div class="layout-minor">
+                    <a href={{ article.article-url }}>
+                        <img src={{ article.image-url }}>
+                    </a>
+                </div>
+                <!-- Title, source, date and teaser paragraph -->
+                <div class="layout-major">
+                    <header>
+                        <a href={{ article.article-url}}>
+                        <h3>{{ article.title }}</h3>
+                        </a>
+                    </header>
+
+                    <div>
+                        <p>Publication: <a href={{ article.article-url }} class="teaser-source">{{ article.news-source }}</a></p>
+                    </div>
+
+                    <p>Topics: <span class="tag-widget">
+                        {% assign tags = article.tags | split: "," %}
+                        {% for tag in tags %}
+                            <a href="#">{{ tag }}</a>
+                        {% endfor %}
+                    </span><p>
+
+                    <div>
+                        <p>{{ article.date }}</p>
+                    </div>
+
+                    <div>
+                        <p>{{ article.teaser }} [&hellip;] <!-- <a href={{ article.article-url }}>Read more at {{ article.news-source }}</a> --></p>
+                    </div>
+
+                    <a class="read-more-button button" href={{ article.article-url }}>Read more</a>
+                </div>
+            </div> <!-- end layout-breve -->
+        {% endfor %}
+
+        </div> <!-- end layout-major -->
 
     </div>
 </section>
 
-<!-- End Playground -->
+<!-- End List Playground -->
+
+<!-- Begin Grid Playground -->
+
+<section>
+
+    <div class="layout-semibreve">
+        <ul class="teasers img-list">
+
+        {% assign sorted_articles = (site.data.press | sort: "timestamp" ) %}
+
+        {% for article in sorted_articles reversed %}
+            <div class="layout-crotchet
+                {% assign tags = article.tags | split: "," %}
+
+                {% for tag in tags %}
+                    {% assign tag_class = tag | replace: ' ','-' | replace: '&','and' %}
+                    {{ tag_class }}
+                {% endfor %}
+
+            ">
+
+                <li class="layout-crochet">
+                    <article class="teaser">
+                        <header class="teaser-header">
+                            <a href={{ article.article-url }}>
+                                <h1 class="teaser-title">{{ article.title }}</h1>
+                            </a>
+                        </header>
+
+                        <div class="teaser-body">
+                            <p>{{ article.teaser }} [&hellip;] <a href={{ article.article-url }}>Read more</a></p>
+                        </div>
+
+                        <footer class="teaser-footer">
+                            <a href={{ article.article-url }} class="teaser-masthead">
+                            <img class="teaser-image" src={{ article.image-url }}>
+                            </a>
+
+                            <a href={{ article.article-url }} class="teaser-source">{{ article.news-source }}</a>
+                        </footer>
+
+                    </article>
+                </li>
+            </div>
+
+        {% endfor %} 
+        </ul>
+    </div>
+</section>
+
+
+<!-- End Grid Playground -->
 
 <section>
 
@@ -185,214 +248,6 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
         
         <ul class="teasers">
         
-                <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp">
-                    <h1 class="teaser-title">Philadelphia, Portland and Code For America work on building a better RFP</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>While Healthcare.gov is now often used as short-hand for government procurement challenges and questions are being raised about New York City's [&hellip;] <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/cfapress-201409-techpres.png" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://techpresident.com/news/25254/philadelphia-portland-and-code-america-work-building-better-rfp" class="teaser-source">techPresident</a>
-            </footer>
-        </article>
-        </li>
-        
-        <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/25/how-the-u-s-digital-service-could-upset-d-c-s-it-vendor-ecosystem/">
-                    <h1 class="teaser-title">How the U.S. Digital Service could upset D.C.’s ‘IT vendor ecosystem’</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Jennifer Pahlka was in London when Todd Park, the chief technology officer of the United States, called to ask her if she'd become his deputy.[&hellip;] <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/25/how-the-u-s-digital-service-could-upset-d-c-s-it-vendor-ecosystem/">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/25/how-the-u-s-digital-service-could-upset-d-c-s-it-vendor-ecosystem/" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/cfapress-201408-wapo.png" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/25/how-the-u-s-digital-service-could-upset-d-c-s-it-vendor-ecosystem/" class="teaser-source">Washington Post</a>
-            </footer>
-        </article>
-        </li>
-    
-<li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.rd.com/advice/work-career/creative-ways-to-volunteer/">
-                    <h1 class="teaser-title">11 Creative Ways to Volunteer</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Code for America: Dubbed the Peace Corps for Geeks, this group seeks techies who want to volunteer to help local communities.[&hellip;] <a href="http://www.rd.com/advice/work-career/creative-ways-to-volunteer/">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.rd.com/advice/work-career/creative-ways-to-volunteer/" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/cfapress-201404-rd.png" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.rd.com/advice/work-career/creative-ways-to-volunteer/" class="teaser-source">Reader's Digest</a>
-            </footer>
-        </article>
-    </li>
-    
-<li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.statetechmagazine.com/article/2014/02/what-expect-code-america-2014/">
-                    <h1 class="teaser-title">What to Expect from Code for America in 2014</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Code for America’s impact on local government has been nothing short of revolutionary. Also know as the “Peace Corps for geeks,”...[&hellip;] <a href="http://www.statetechmagazine.com/article/2014/02/what-expect-code-america-2014">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.statetechmagazine.com/article/2014/02/what-expect-code-america-2014" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/feb2014_statetech.jpg" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.statetechmagazine.com/article/2014/02/what-expect-code-america-2014" class="teaser-source">State Tech Magazine</a>
-            </footer>
-        </article>
-    </li>
-
-        
-           
- <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.theatlanticcities.com/technology/2014/01/what-really-happens-when-you-sign-food-stamps/8094/">
-                    <h1 class="teaser-title">The Weird Stuff That Happens When You Sign Up for Food Stamps</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>It's a cliché of course, but no doubt some of the worst experiences with government bureaucracy really do start and end at the DMV.[&hellip;] <a href="http://www.theatlanticcities.com/technology/2014/01/what-really-happens-when-you-sign-food-stamps/8094">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.theatlanticcities.com/technology/2014/01/what-really-happens-when-you-sign-food-stamps/8094/" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/jan15_atlanticcities.jpg" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.theatlanticcities.com/technology/" class="teaser-source">Atlantic Cities Technology</a>
-            </footer>
-        </article>
-    </li>
-    
-               
- <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.modernluxury.com/san-francisco/story/debuggov">
-                    <h1 class="teaser-title">Debug.gov</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Code for America's Jennifer Pahlka has argued for years that tech can help solve civic problems—and now, the White House is listening.[&hellip;] <a href="http://www.modernluxury.com/san-francisco/story/debuggov">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.modernluxury.com/san-francisco/story/debuggov" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/dec5_debug.jpg" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.modernluxury.com/san-francisco/story/debuggov" class="teaser-source">Atlantic Cities Technology</a>
-            </footer>
-        </article>
-    </li>
-    
-    </li>
-       
- <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.sfgate.com/bayarea/article/Food-stamp-app-helps-residents-keep-benefits-5029025.php">
-                    <h1 class="teaser-title">Food Stamp App Helps Residents Keep Benefits</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Nealie Yarbrough, a 51-year-old single mother, knows the sting of being at the grocery store checkout and having her debit card denied.[&hellip;] <a href="http://www.sfgate.com/bayarea/article/Food-stamp-app-helps-residents-keep-benefits-5029025.php">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.sfgate.com/bayarea/article/Food-stamp-app-helps-residents-keep-benefits-5029025.php" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/foodstamps.jpg" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.sfgate.com/bayarea/" class="teaser-source">SF Chronicle</a>
-            </footer>
-        </article>
-
-    </li>
-       
- <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="https://techpresident.com/news/wegov/24533/book-review-what-code-america-has-and-hasnt-learned-about-getting-beyond-transparency">
-                    <h1 class="teaser-title">Beyond Transparency: Book Review</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>What Code for America Has, and Hasn't, Learned About Getting "Beyond Transparency"[&hellip;] <a href="http://techpresident.com/news/wegov/24533/book-review-what-code-america-has-and-hasnt-learned-about-getting-beyond-transparency">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://techpresident.com/news/wegov/24533/book-review-what-code-america-has-and-hasnt-learned-about-getting-beyond-transparency" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/beyond_transparency.png" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://techpresident.com/news/" class="teaser-source">Tech President</a>
-            </footer>
-        </article>
-
-    </li>
-       
- <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.govtech.com/data/7-Tactics-for-21st-Century-Cities.html">
-                    <h1 class="teaser-title">7 Tactics for a 21st Century Government</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Be it the burden placed on them by shrinking federal support, or the opportunity presented by modern technology, 21st-century cities are finding new ways to do things. [&hellip;] <a href="http://www.govtech.com/data/7-Tactics-for-21st-Century-Cities.html">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.govtech.com/data/7-Tactics-for-21st-Century-Cities.html" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/abhi_nemani.jpg" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.govtech.com" class="teaser-source">Government Technology</a>
-            </footer>
-        </article>
-
-    </li>
-       
- <li class="layout-crotchet">
-        <article class="teaser">
-            <header class="teaser-header">
-                <a href="http://www.sfgate.com/technology/article/Brigades-helps-communities-build-better-websites-4908253.php">
-                    <h1 class="teaser-title">Brigades Help Communities Build Better Websites</h1>
-                </a>
-            </header>
-            <div class="teaser-body">
-                <p>Outside of San Francisco, government officials are often suspicious when groups of unknown programmers with paramilitary titles set out to “hack” them.  [&hellip;] <a href="http://www.sfgate.com/technology/article/Brigades-helps-communities-build-better-websites-4908253.php">Read more</a></p>
-            </div>
-            <footer class="teaser-footer">
-                <a href="http://www.sfgate.com/technology/article/Brigades-helps-communities-build-better-websites-4908253.php" class="teaser-masthead">
-                    <img class="teaser-image" src="../media/images/press/sfchron_brigades.jpg" />
-                    <span class="teaser-type teaser-type-article">Article</span>
-                </a>
-                <a href="http://www.sfgate.com/" class="teaser-source">San Francisco Chronicle</a>
-            </footer>
-        </article>
-        
-    </li>
            
  <li class="layout-crotchet">
         <article class="teaser">
