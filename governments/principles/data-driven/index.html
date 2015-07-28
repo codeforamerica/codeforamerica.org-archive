@@ -1,1 +1,137 @@
+---
+layout: default
+title: Iterative Development
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+nav_tier1_active: "governments"
+nav-breadcrumbs:
+ - Governments: "/cities"
+ - Principles for 21st Century Government: "/governments/principles"
 
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+
+
+
+<div class="masthead masthead-custom masthead-deep">
+  
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      
+      style="background-image: url('/media/images/principles/addressiq.jpg')" 
+      >
+    </div>
+  </div>
+
+  <header class="masthead-header layout-semibreve">
+      <p class="page-overline">practice number four</p>
+      <h1 class="page-title">Use Real-time Data to Inform Decisions</h1>
+    
+  </header>
+  
+  
+  <div class="description layout-semibreve">
+    <p>Nicole to add text here.</p>
+    
+  </div>
+  
+</div>
+	
+<section class="layout-semibreve">
+	
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+		
+      <!-- Header -->
+      <h2>Data Driven Decisions</h2>
+      <p>Nicole to add text here</p>
+
+      <p></p>
+
+      <p>Code for America works with local governments to build digital services using a user reasearch approach...</p>
+	</div><!-- end Principle 1 -->
+</section>
+<section class="slab-gray">
+
+	<div class="layout-semibreve">
+		
+		<div class="badge-heading badge-red">
+		    <h2 id='resources'>Practice Iterative Development</h2>
+		</div>
+		
+		<p>We're publishing a set of guides, tools and resources for governments that want to start practicing iterative development.</p>
+		
+		<h3>Guides</h3>
+
+		<ul class="list-no-bullets list-icons">
+				<li class="icon-lamp"><a href="/governments/principles/design/">User Center Design Guide</a>
+				<p>Use this guide if you are just getting started with a user centered approach to solving problems, designing services or products.</p>
+				</li>
+				<li class="icon-lamp"><a href="http://www.usability.gov/what-and-why/user-centered-government.html">User Research Policy Toolkit</a>
+				<p>This guide will help you develop policy that makes it easier to implement user centered principles.</p>
+				</li>
+				<li class="icon-lamp"><a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html">Resident Survey Guide</a>
+				<p>Use this guide from our Digital Front Door program if you are planning to reach out to your greater community to solicit their feedback.</p>
+				</li>
+
+		</ul>
+
+		<h3>Spotlight</h3>
+		
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=rkqVWJKUqK4&list=PL65XgbSILalV-wInUiERrhjweMlJkukMd">Watch: Dana Chisnell talks about usability in government</a>
+				<p>Watch Dana Chisnell, Co-founder of Center for Civic Design and Consultant at United States Digital Service, talk at our 2013 Summit </p>		
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=odfNGuh7VN0&index=16&list=UU6VjQY-gIxXGKmjW0LeMGOw">Watch: Jacob Anderson shares a user centered approach to designing a city website</a>
+				<p>Watch Jacob Anderson, IT Project Manager for the City of Colorado Springs, talk at our 2014 Summit. </p>		
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=ipjLBcBD21I&index=21&list=PL65XgbSILalVoej11T95Tc7D7-F1PdwHq">Watch: Cyd Harrel and Kavi Harshawat workshop user research methods for creating better citizen experiences</a>
+				<p>Watch Cyd Harrell, Sr. Director of Products at Code for America and Kavi Harshawat, Digital Sevice Expert at the VA and 2014 Code for America Fellow, talk in a breakout session at our 2014 Summit.</p>		
+			</li>
+		</ul>
+		<h3>Further Reading</h3>
+		
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-new-tab"><a href="http://beyondtransparency.org/chapters/part-3/the-beginning-of-a-beautiful-friendship-data-and-design-in-innovative-citizen-experiences/">Read: Beyond Transparency, Data and Design in Innovative Citizen Experiences</a>
+				<p>In our Publication 'Beyond Transpatency' Cyd Harrell discusses how to use data and design processes to improve the citizen experience with city services.</p>		
+			</li>
+			<li class="icon-new-tab"><a href="http://www.smartchicagocollaborative.org/work/ecosystem/civic-user-testing-group/">Read: Chicago Smart Collaborative Cut Group Handbook</a>
+				<p>The Smart Chicago Collaborative developed this book to share their experiences launching and running a civic user testing group.</p>		
+			</li>
+			<li class="icon-new-tab"><a href="https://www.gov.uk/service-manual/user-centred-design/user-research">Read: An Introduction to User Research Techniques</a>
+				<p>The Government Digital Service in the UK compiled lessons of user research into this toolkit.</p>		
+			</li>
+			<li class="icon-new-tab"><a href="https://userresearch.blog.gov.uk/2015/01/21/user-research-for-government-services-8-strategies-that-worked-for-us/">Read: Eight Strategies of user research that work for Gov.uk</a>
+				<p>The Government Digital Service in the UK shares eight strategies of user research that worked for them.</p>		
+			</li>
+		</ul>
+
+	</div>
+</section>
