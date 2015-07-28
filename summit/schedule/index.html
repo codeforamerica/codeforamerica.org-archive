@@ -97,7 +97,12 @@ metadata:
   }
   .schedule-item_speaker_name {
     position: relative;
-    top: 0.8em;
+    top: 0.4em;
+  }
+  .schedule-item_speaker_title {
+    color: #6D6E71;
+    font-size: 0.8em;
+    margin-top: -1.2em;
   }
 
   .nav-tag { display: inline-block; }
@@ -157,6 +162,7 @@ metadata:
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_1}}.jpg" />
                 {% endif %}
                 <p class="schedule-item_speaker_name">{{entry.speaker_name_1}}</p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_1}}</p>
               </div>
               {% endif %}
               {% if entry.speaker_name_2 %}
@@ -167,6 +173,7 @@ metadata:
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_2}}.jpg" />
                 {% endif %}
                 <p class="schedule-item_speaker_name">{{entry.speaker_name_2}}</p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_2}}</p>
               </div>
               {% endif %}
               {% if entry.speaker_name_3 %}
@@ -177,6 +184,7 @@ metadata:
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_3}}.jpg" />
                 {% endif %}
                 <p class="schedule-item_speaker_name">{{entry.speaker_name_3}}</p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_3}}</p>
               </div>
               {% endif %}
               {% if entry.speaker_name_4 %}
@@ -187,6 +195,7 @@ metadata:
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_4}}.jpg" />
                 {% endif %}
                 <p class="schedule-item_speaker_name">{{entry.speaker_name_4}}</p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_4}}</p>
               </div>
               {% endif %}
               {% if entry.speaker_name_5 %}
@@ -197,6 +206,7 @@ metadata:
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_5}}.jpg" />
                 {% endif %}
                 <p class="schedule-item_speaker_name">{{entry.speaker_name_5}}</p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_5}}</p>
               </div>
               {% endif %}
             </div>
