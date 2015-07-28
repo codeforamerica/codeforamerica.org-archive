@@ -3,7 +3,7 @@
 
 //
 // SUMMIT-2015 SCSS
-// 
+//
 // These custom styles are for the /summit-2015/ microsite.
 // Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
 //
@@ -42,7 +42,7 @@ $breakpoint-mobile: 640px;
   margin-bottom: 200px;
 
   @media only screen and (max-width: $breakpoint-tablet) {
-    margin-bottom: 100px;    
+    margin-bottom: 100px;
   }
 }
 
@@ -85,6 +85,24 @@ $breakpoint-mobile: 640px;
 
 .masthead-nav ul li a.active {
   border-color: #fedd44;
+}
+
+// the logo -- unstyled
+
+.masthead-nav ul li a.logo-unstyled {
+  position: relative;
+  padding: 0;
+  color: white;
+  text-transform: none;
+
+  border: none;
+  border-radius: none;
+
+  &:hover {
+    background: transparent;
+    border-color: none;
+    text-shadow: none;
+  }
 }
 
 // the logo

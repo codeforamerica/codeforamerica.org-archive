@@ -81,10 +81,13 @@
   <div class="masthead-nav">
     <ul class="list-no-bullets">
       <li class="masthead-nav-logo">
-        <img src="/media/images/summit/2015/summit-2015-logo-white.png">
+        <a class="logo-unstyled" href="/summit/"><img src="/media/images/summit/2015/summit-2015-logo-white.png"></a>
       </li>
       <li class="masthead-nav-page">
         <a href="/summit/" {% if page.url == "/summit/index.html" %}class="active"{% endif %}>Home</a>
+      </li>
+      <li class="masthead-nav-page">
+        <a href="/summit/schedule/" {% if page.url == "/summit/schedule/index.html" %}class="active"{% endif %}>Schedule</a>
       </li>
       <li class="masthead-nav-page">
         <a href="/summit/sponsor/" {% if page.url == "/summit/sponsor/index.html" %}class="active"{% endif %}>Become a Sponsor</a>
