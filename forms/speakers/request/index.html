@@ -55,7 +55,7 @@ include-animate: true
         <input type="hidden" name="requestMadeOn" id="requestMadeOn" value="">
 
         <ul class="list-form">
-        
+
           <li class="form-field-group">
              <fieldset>
               <legend><strong>Your name</strong></legend>
@@ -101,7 +101,7 @@ include-animate: true
             <div class="form-field">
               <label for="eventWebsite">Event website link (if available)</label>
               <input id="eventWebsite" name="eventWebsite" class="input" type="url" placeholder="i.e. amazingconference.org" data-parsley-error-message="If you enter a url, please ensure it's valid (i.e. website.com). This field isn't required.">
-            </div>            
+            </div>
           </li>
 
           <li class="form-field-group">
@@ -196,7 +196,7 @@ include-animate: true
               <textarea id="speakingDescription" name="speakingDescription" rows="8" cols="32" required></textarea>
             </div>
           </li>
-          
+
           <li class="form-field">
             <label for="newsletterOptin"><input id="newsletterOptin" name="newsletterOptin" type="checkbox" checked/> Sign me up for the Code for America newsletter</label>
           </li>
@@ -206,7 +206,7 @@ include-animate: true
         </ul><!-- end form -->
       </form>
     </div><!-- end .layout-major -->
-    
+
 </section>
 
 <section class="layout-semibreve"></section>
@@ -229,9 +229,6 @@ include-animate: true
 {% endcapture %}
 {% capture cardNicoleNeditch %}
   {% include people/nicole-neditch.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardLaneBecker %}
-  {% include people/lane-becker.html context="speaker-card" base=".." %}
 {% endcapture %}
 {% capture cardRebeccaCoelius %}
   {% include people/rebecca-coelius.html context="speaker-card" base=".." %}
@@ -277,7 +274,6 @@ include-animate: true
     "catherine-bracy"       : '{{ cardCatherineBracy | strip_newlines }}',
     "luke-norris"           : '{{ cardLukeNorris | strip_newlines }}',
     "nicole-neditch"        : '{{ cardNicoleNeditch | strip_newlines }}',
-    "lane-becker"           : '{{ cardLaneBecker | strip_newlines }}',
     "rebecca-coelius"       : '{{ cardRebeccaCoelius | strip_newlines }}',
     "jack-madans"           : '{{ cardJackMadans | strip_newlines }}',
     "hannah-young"          : '{{ cardHannahYoung | strip_newlines }}',
@@ -317,7 +313,7 @@ include-animate: true
     // name = "firstname-lastname"
     nameArray = name.split(/\s*\-\s*/g);
 
-    // nameArray = ["firstname","lastname"]    
+    // nameArray = ["firstname","lastname"]
     for(var i = 0 ; i < nameArray.length ; i++) {
       nameArray[i] = nameArray[i].charAt(0).toUpperCase() + nameArray[i].substr(1);
     }
@@ -337,7 +333,7 @@ include-animate: true
 
     if (urlParams['speaker']) { // If there was a speaker parameter in the URL
       console.log("Request worked, passing parameters to function");
-            
+
       // Retrieve speaker name from the URL (expected format: firstname-lastname)
       speakerParam = urlParams['speaker'];
 
