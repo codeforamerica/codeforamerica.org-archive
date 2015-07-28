@@ -13,7 +13,7 @@ title: "2015 Summit: Schedule"
 # Content for the masthead-custom
 headline: What to look forward to
 description: |
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque neque earum temporibus. Molestias expedita aut, maiores et, adipisci architecto repellat, deleniti, error voluptatum commodi sunt harum. Officiis ullam excepturi nobis.
+  The Summit is three days of action-packed content, featuring the passionate people who are building a government that can work for the people, by the people, in the 21st century.
   <div class="button-group">
     <p>
       <a class="button" href="#wednesday">Wednesday</a>
@@ -119,7 +119,8 @@ metadata:
   .schedule-item_speaker_title {
     color: #6D6E71;
     font-size: 0.8em;
-    margin-top: -1.2em;
+    margin-top: -0.9em;
+    line-height: 1.5;
   }
   .schedule-item_speaker_moderator {
     display: inline-block;
@@ -155,7 +156,16 @@ metadata:
     background: rgba(57, 159, 211, 0.6);
     border-bottom: none;
   }
+
+  .layout-less-padding {
+    padding: 16px 4% 0px;
+  }
 </style>
+
+<div class="layout-semibreve layout-less-padding">
+  <p>Learn how open source technology and new approaches to problem-solving are making real human impact across health, economic development, public safety, criminal justice, and communication and engagement.</p>
+  <p>The Summit will equip you with new tools, platforms, skills and practices-- and leave you feeling inspired to bring 21st century government to your community. Speakers will be added to the schedule as they are confirmed.</p>
+</div>
 
 {% assign days = "Wednesday,Thursday,Friday" | split: "," %}
 {% for day in days %}
@@ -188,7 +198,7 @@ metadata:
             </div>
 
             <div class="layout-minim">
-              <p class="quiet">Presented by:</p>
+              <p class="quiet">Speakers include:</p>
               {% if entry.speaker_name_1 %}
               <div class="schedule-item_speaker clearfix">
                 {% if entry.speaker_photo_1 == "STAFF" %}
