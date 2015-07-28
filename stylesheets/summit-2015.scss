@@ -39,10 +39,10 @@ $breakpoint-mobile: 640px;
   position: relative;
   z-index: 3;
   display: block;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
   @media only screen and (max-width: $breakpoint-tablet) {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -61,11 +61,10 @@ $breakpoint-mobile: 640px;
   display: table-cell;
   float: left;
   margin-right: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 // anchor element
-
 .masthead-nav ul li a {
   position: relative;
   padding: 5px 10px;
@@ -74,12 +73,30 @@ $breakpoint-mobile: 640px;
 
   border: 2px solid white;
   border-radius: 2px;
+  font-size: 0.9em;
 
   &:hover {
     background: #fedd44;
     border-color: #fedd44;
     color: black;
     text-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .masthead-pages {
+    width: 100%;
+    &:before, &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  .masthead-nav ul li {
+    margin-top: 10px;
+  }
+  .masthead-nav ul li a {
+    font-size: 0.8em;
   }
 }
 

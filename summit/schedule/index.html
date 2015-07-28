@@ -173,7 +173,7 @@ metadata:
     <h2>{{day}}{% if day == "Wednesday" %}, Sept. 30{% endif %}{% if day == "Thursday" %}, Oct. 1{% endif %}{% if day == "Friday" %}, Oct. 2{% endif %}</h2>
     {% for entry in site.data.summit_schedule %}
       {% if entry.day == day %}
-        {% if entry.session_type == "Break" or entry.session_type == "Lunch" or entry.session_type == "Meet and Greet" or entry.session_type == "Tech Fair" or entry.session_type == "Reception" or entry.session_type == "Breakouts" %}
+        {% if entry.session_type == "Break" or entry.session_type == "Lunch" or entry.session_type == "Meet and Greet" or entry.session_type == "Tech Fair" or entry.session_type == "Reception" or entry.session_type == "Breakouts" or entry.session_type == "Hackspace" or entry.session_type == "Unconference" %}
           <div class="schedule-item schedule-item--break layout-whole">
             <div class="schedule-item_time">
               <p>{{entry.time_block}}</p>
