@@ -83,6 +83,23 @@ metadata:
     color: white;
   }
 
+  .schedule-item_type {
+    display: inline-block;
+    background-color: #999595;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: white;
+    font-weight: 700;
+    height: 0.8em;
+    line-height: 0.8em;
+    margin-bottom: 0;
+    margin-top: 1.3em;
+    position: relative;
+    top: -0.2em;
+  }
+  .schedule-item_type--keynote { background-color: #399fd3; }
+  .schedule-item_type--lightning-talks { background-color: #69579C; }
+
   .schedule-item_speaker {
     display: block;
     width: 100%;
@@ -114,6 +131,8 @@ metadata:
     height: 0.8em;
     line-height: 0.8em;
     margin-left: 0.2em;
+    position: relative;
+    top: -0.2em;
   }
 
   .nav-tag { display: inline-block; }
@@ -160,7 +179,12 @@ metadata:
 
             <div class="layout-minim">
               <h4>{{entry.session_title}}</h4>
-              <p>{{entry.session_description}}</p>
+              {% if entry.session_description %}
+              <p>
+                <span class="schedule-item_type schedule-item_type--{{entry.session_type | downcase | replace: ' ','-'}}">{{entry.session_type}}</span>
+                {{entry.session_description}}
+              </p>
+              {% endif %}
             </div>
 
             <div class="layout-minim">
