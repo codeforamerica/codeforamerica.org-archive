@@ -104,6 +104,17 @@ metadata:
     font-size: 0.8em;
     margin-top: -1.2em;
   }
+  .schedule-item_speaker_moderator {
+    display: inline-block;
+    background-color: #aa1c3a;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: white;
+    font-weight: 700;
+    height: 0.8em;
+    line-height: 0.8em;
+    margin-left: 0.2em;
+  }
 
   .nav-tag { display: inline-block; }
   .nav-tag a {
@@ -161,7 +172,10 @@ metadata:
                 {% elsif entry.speaker_photo_1 == "SPEAKER" %}
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_1}}.jpg" />
                 {% endif %}
-                <p class="schedule-item_speaker_name">{{entry.speaker_name_1}}</p>
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_1}}
+                  {% if entry.speaker_moderator_1 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
                 <p class="schedule-item_speaker_title">{{entry.speaker_title_org_1}}</p>
               </div>
               {% endif %}
@@ -172,7 +186,10 @@ metadata:
                 {% elsif entry.speaker_photo_2 == "SPEAKER" %}
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_2}}.jpg" />
                 {% endif %}
-                <p class="schedule-item_speaker_name">{{entry.speaker_name_2}}</p>
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_2}}
+                  {% if entry.speaker_moderator_2 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
                 <p class="schedule-item_speaker_title">{{entry.speaker_title_org_2}}</p>
               </div>
               {% endif %}
@@ -183,7 +200,10 @@ metadata:
                 {% elsif entry.speaker_photo_3 == "SPEAKER" %}
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_3}}.jpg" />
                 {% endif %}
-                <p class="schedule-item_speaker_name">{{entry.speaker_name_3}}</p>
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_3}}
+                  {% if entry.speaker_moderator_3 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
                 <p class="schedule-item_speaker_title">{{entry.speaker_title_org_3}}</p>
               </div>
               {% endif %}
@@ -194,7 +214,10 @@ metadata:
                 {% elsif entry.speaker_photo_4 == "SPEAKER" %}
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_4}}.jpg" />
                 {% endif %}
-                <p class="schedule-item_speaker_name">{{entry.speaker_name_4}}</p>
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_4}}
+                  {% if entry.speaker_moderator_4 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
                 <p class="schedule-item_speaker_title">{{entry.speaker_title_org_4}}</p>
               </div>
               {% endif %}
@@ -205,7 +228,10 @@ metadata:
                 {% elsif entry.speaker_photo_5 == "SPEAKER" %}
                   <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_5}}.jpg" />
                 {% endif %}
-                <p class="schedule-item_speaker_name">{{entry.speaker_name_5}}</p>
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_5}}
+                  {% if entry.speaker_moderator_5 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
                 <p class="schedule-item_speaker_title">{{entry.speaker_title_org_5}}</p>
               </div>
               {% endif %}
