@@ -21,7 +21,7 @@ How governments typically treat and buy technology.
 
 Learn how governments around the world are delivering digital services that work. 
 
-## [Writing better technology RFPs](/playbooks/technology-procurement/rfp-recommendations/)
+## [Write better technology RFPs](/playbooks/technology-procurement/rfp-recommendations/)
 
 Five areas where typical government technology RFPs can be improved. 
 
