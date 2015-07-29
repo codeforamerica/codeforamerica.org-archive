@@ -342,6 +342,12 @@ body.modal-active {
     clear: both;
  }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 // ##### LAYOUT-WHOLE #####
 //
 // Adds a layout class that fills parent and clearfixes
