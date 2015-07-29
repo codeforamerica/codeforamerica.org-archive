@@ -140,9 +140,6 @@ RedirectMatch permanent ^/international(/?)$ http://codeforall.org
 RedirectMatch permanent ^/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
 RedirectMatch permanent ^/(contact|register|schedule|speakers|sponsors|submit|venue)/+summit/?$ /summit/$1/
 
-#Summit Schedule to Pathable
-RedirectMatch permanent ^/summit/schedule/?$ https://cfasummit2014.pathable.com/meetings
-
 #
 # Fellowship Program.
 #
