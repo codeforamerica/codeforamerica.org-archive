@@ -77,7 +77,7 @@ community-cta:	"Join the conversation and talk to other local government staff i
       .heading-opener {
         margin-top: 0;
       }
-      li + li {
+      main li + li {
         margin-top: 1em;
       }
       h4 {
@@ -124,6 +124,47 @@ community-cta:	"Join the conversation and talk to other local government staff i
       .block-gray .blockquote {
         margin: 1em inherit;
       }
+      /* The navigation between sections */
+      .nav-page {
+        text-align: left;
+        margin-top: 65px;
+      }
+      .nav-page .full { display: none; }
+      .nav-page li {
+        vertical-align: middle;
+        position: relative;
+      }
+      .nav-page .is-active:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: #7ab5d6;
+      }
+      .nav-page ul { margin-top: 0; }
+      .nav-header {
+        margin: 0;
+        color: white;
+        padding: 10px 10px 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .nav-page a:link, .nav-page a:visited, .nav-page a:hover, .nav-page a:focus, .nav-page a:active {
+        padding: 20px;
+      }
+      @media screen and (min-width: 40em) {
+        .nav-page { margin-top: 0; }
+        .nav-page .short { display: none; }
+        .nav-page .full { display: initial; }
+        .nav-page a:link, .nav-page a:visited, .nav-page a:hover, .nav-page a:focus, .nav-page a:active {
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
 		</style>
 	<!-- end light version of the main CFA stylesheet -->
 
@@ -136,6 +177,37 @@ community-cta:	"Join the conversation and talk to other local government staff i
 	<body>
 		<div class="js-container">
       {% include nav.html %}
+
+      <nav role="navigation" class="nav nav-page">
+          <p class="nav-header">Boulder Toolkit Sections</p>
+          <ul class="list">
+              <li><a href="/governments/boulder/toolkit/expanding-reach/index.html" {% if page.url == "/governments/boulder/toolkit/expanding-reach/index.html" %}class="is-active"{% endif %}>
+                <span class="full">1. Expanding reach</span>
+                <span class="short">1</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/relevant-info/index.html" {% if page.url == "/governments/boulder/toolkit/relevant-info/index.html" %}class="is-active"{% endif %}>
+                <span class="full">2. Providing relevant and usable information</span>
+                <span class="short">2</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/participation/index.html" {% if page.url == "/governments/boulder/toolkit/participation/index.html" %}class="is-active"{% endif %}>
+                <span class="full">3. Using spaces and channels for participation</span>
+                <span class="short">3</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/productive-actions/index.html" {% if page.url == "/governments/boulder/toolkit/productive-actions/index.html" %}class="is-active"{% endif %}>
+                <span class="full">4. Encouraging productive actions</span>
+                <span class="short">4</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/feedback-loops/index.html" {% if page.url == "/governments/boulder/toolkit/feedback-loops/index.html" %}class="is-active"{% endif %}>
+                <span class="full">5. Creating useful feedback loops</span>
+                <span class="short">5</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/recommendations/index.html" {% if page.url == "/governments/boulder/toolkit/recommendations/index.html" %}class="is-active"{% endif %}>
+                <span class="full">6. Additional recommendations</span>
+                <span class="short">6</span>
+              </a></li>
+          </ul>
+      </nav><!--/.nav-page-->
+
 			<div class="layout-semibreve">
 				{% include nav-breadcrumbs.html %}
 
