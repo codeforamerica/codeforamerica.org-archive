@@ -339,7 +339,9 @@ include-animate: true
 
       // Lane doesn't work here any more. If he's requested, don't show anything
       // at the top of the page.
-      if speakerParam = "lane-becker" { return; }
+      if (speakerParam == 'lane-becker') {
+        return;
+      }
 
       // Show the speaker name and card
       requestedSpeaker = toPrettyName(speakerParam);
