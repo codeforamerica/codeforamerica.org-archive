@@ -1,33 +1,33 @@
-# 
+#
 # Below are all URL redirects for Code for America.
-# 
+#
 # For these to work, the document root must have the FollowSymLinks option
 # enabled and the FileInfo configuration override active.
 #   http://httpd.apache.org/docs/2.4/mod/core.html#options
 #   http://httpd.apache.org/docs/2.4/mod/directive-dict.html#Override
-# 
+#
 # Over the years, we've moved a lot of content from place to place. In the
 # past, a Wordpress plugin was used to provide this functionality. With the
 # move to a static site, we've reimplemented most redirects as Apache
 # RedirectMatch directives, found below.
-# 
+#
 # More on RedirectMatch:
 #   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch
-# 
+#
 # Directives are processed in order, and the first match is used. If you have
 # new ones to add, put them at the end of this file to minimize conflicts and
 # problems.
-# 
+#
 # More on processing order:
 #   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#order
-# 
+#
 # The Apps section is handled using the Rewrite Engine, instead of Redirect.
 # Apps URLs on the previous site were implemented as query string patterns,
 # and only RewriteCond can find these.
-# 
+#
 # More on Rewrite:
 #   http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html
-# 
+#
 
 #
 # Apps.
@@ -75,10 +75,10 @@ RedirectMatch permanent ^(/blog)?/06-03-14/?$ /peer-network-training/06-03-2014
 #
 RedirectMatch permanent ^/brigade12-12-2013/?$ /brigade-training/brigade12-12-2013
 RedirectMatch permanent ^/09-19-2013/?$ /brigade-training/09-19-2013
-RedirectMatch permanent ^/brigade01-09-2014/?$ /brigade-training/brigade01-09-2014	
+RedirectMatch permanent ^/brigade01-09-2014/?$ /brigade-training/brigade01-09-2014
 RedirectMatch permanent ^/brigade01-14-2014/?$ /brigade-training/brigade01-14-2014
 RedirectMatch permanent ^/brigade01-16-2014/?$ /brigade-training/brigade01-16-2014
-RedirectMatch permanent ^/brigade01-23-2014/?$ /brigade-training/brigade01-23-2014	
+RedirectMatch permanent ^/brigade01-23-2014/?$ /brigade-training/brigade01-23-2014
 RedirectMatch permanent ^/brigade02-06-2014/?$ /brigade-training/brigade02-06-2014
 RedirectMatch permanent ^/brigade02-11-2014/?$ /brigade-training/brigade02-11-2014
 RedirectMatch permanent ^/brigade02-12-2014/?$ /brigade-training/brigade02-12-2014
@@ -139,9 +139,6 @@ RedirectMatch permanent ^/international(/?)$ http://codeforall.org
 # Namecheap does some weird stuff with cfasummit.org redirects.
 RedirectMatch permanent ^/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
 RedirectMatch permanent ^/(contact|register|schedule|speakers|sponsors|submit|venue)/+summit/?$ /summit/$1/
-
-#Summit Schedule to Pathable
-RedirectMatch permanent ^/summit/schedule/?$ https://cfasummit2014.pathable.com/meetings
 
 #
 # Fellowship Program.
@@ -312,9 +309,9 @@ RedirectMatch permanent ^/serena-wales(/?)$ /people/serena-wales$1
 RedirectMatch permanent ^/sheba-najmi(/?)$ /people/sheba-najmi$1
 RedirectMatch permanent ^/zach-williams(/?)$ /people/zach-williams$1
 
-# 
+#
 # Focus Areas and Initiatives (Short Links)
-# 
+#
 RedirectMatch permanent ^/health/?$ /our-work/focus-areas/health/
 RedirectMatch permanent ^/safety-justice/?$ /our-work/focus-areas/safety-justice/
 RedirectMatch permanent ^/economic-development/?$ /our-work/focus-areas/economic-development/
@@ -351,6 +348,9 @@ RedirectMatch permanent ^/companies/accelerator-faq/?$ /companies/incubator-acce
 RedirectMatch permanent ^/companies/accelerator-apply/?$ /companies/incubator-accelerator/
 RedirectMatch permanent ^/companies/incubator-faq/?$ /companies/incubator-accelerator/
 RedirectMatch permanent ^/companies/incubator-apply/?$ /companies/incubator-accelerator/
+
+# Redirect AuntBertha to our Incubator/Accelerator page
+RedirectMatch permanent ^/apps/aunt-bertha/?$ /companies/incubator-accelerator/#aunt-bertha
 
 #
 # Set of possible Jekyll file extensions + PHP, from

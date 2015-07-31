@@ -1,0 +1,246 @@
+{% comment %}
+
+This is the default Jekyll layout for Code for America's website.
+Use it by specifying "layout: default" in your Jekyll front-matter:
+
+    http://jekyllrb.com/docs/frontmatter/
+
+Special page variables you can define in your front matter:
+
+These variables are the ones Dan has tweaked so far:
+
+title            - Page title and content of H1 tag in page header.  / What Should A City Website Do?
+subtitle         - Alternate page title for use in header H1 tag only. / Principles for City Websites
+community-url	 - Use this URL for a community call to action
+community-cta	 - Use this variable for the community call to action
+
+nav_tier1_active - name of navigation section to show, see _includes/nav.html.
+nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
+masthead-class   - optionally "masthead-s" for a shorter masthead image.
+masthead-image   - path to image for use in masthead.
+
+Sample front matter from one page:
+
+---
+layout: 		resource
+title: 			"How to: assess your digital services"
+subtitle: 		Conduct a baseline survey of the quality and usability of your online city services.
+nav-breadcrumbs:
+  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
+  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
+community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
+community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
+---
+
+{% endcomment %}
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <link rel="stylesheet" href="https://style.codeforamerica.org/3/style/css/main.css">
+
+    <!-- The light version of the main CFA stylesheet -->
+		<link rel="stylesheet" href="https://style.s.codeforamerica.org/1/style/css/cfa-light.css">
+		<link rel="stylesheet" href="https://style.codeforamerica.org/3/style/css/layout.css" media="all and (min-width: 40em)">
+		<link rel="stylesheet" href="/stylesheets/documentation.css">
+		<link rel="stylesheet" href="/stylesheets/staging.css">
+
+		<!--[if lt IE 9]>
+		    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
+		<link rel="stylesheet" href="../style/css/layout.css" media="all">
+		<![endif]-->
+		<!-- Link to a 32x32 favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+		<!-- (Optional) Link to a 60x60 bookmark icon for iOS -->
+		<link rel="apple-touch-icon-precomposed" href="../style/favicons/60x60/flag-red.png"/>
+		<style>
+			ul li{
+				list-style:none;
+			}
+			/* shame - hack to fix the email signup button using cfa-light stylesheet */
+			.signup-global input[type=submit].button-invert {
+				padding-top: 0;
+				padding-bottom: 0;
+				margin-top: 0;
+			}
+      .global-header {
+        margin-bottom: 0;
+      }
+      .heading-opener {
+        margin-top: 0;
+      }
+      main li + li {
+        margin-top: 1em;
+      }
+      h4 {
+        font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+        font-weight: 700;
+        margin-top: 2em;
+        font-size: 22px;
+      }
+      h5 {
+        font-weight: 700;
+      }
+      .block-gray {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 1em;
+      }
+      /* Table of contents styles */
+      .toc-item-primary {
+
+      }
+      .toc-item-secondary {
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 10px;
+      }
+      .toc-item-secondary a {
+        color: gray;
+      }
+
+      /* A survey card element */
+      .block-gray .survey-card {
+        border: 1px solid #6D6E71;
+        display: block;
+        margin: 1em 2em;
+      }
+      .survey-card > * {
+        padding: 0.5em 1em;
+      }
+      .survey-card ul { margin: 0.5em 0; }
+      .survey-card-header {
+        border-bottom: 1px solid #6D6E71;
+      }
+      /* Blockquotes inside blocks */
+      .block-gray .blockquote {
+        margin: 1em inherit;
+      }
+      /* The navigation between sections */
+      .nav-page {
+        text-align: left;
+        margin-top: 65px;
+      }
+      .nav-page .full { display: none; }
+      .nav-page li {
+        vertical-align: middle;
+        position: relative;
+      }
+      .nav-page .is-active:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: #7ab5d6;
+      }
+      .nav-page ul { margin-top: 0; }
+      .nav-header {
+        margin: 0;
+        color: white;
+        padding: 10px 10px 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .nav-page a:link, .nav-page a:visited, .nav-page a:hover, .nav-page a:focus, .nav-page a:active {
+        padding: 20px;
+      }
+      @media screen and (min-width: 40em) {
+        .nav-page { margin-top: 0; }
+        .nav-page .short { display: none; }
+        .nav-page .full { display: initial; }
+        .nav-page a:link, .nav-page a:visited, .nav-page a:hover, .nav-page a:focus, .nav-page a:active {
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+      /* Tables */
+      .block-gray table.table {
+        background-color: transparent;
+        margin: 1em 0;
+      }
+		</style>
+	<!-- end light version of the main CFA stylesheet -->
+
+	<!-- metadata includes -->
+		{% include meta-header.html %}
+	<!-- end metadata includes -->
+
+	</head>
+
+	<body>
+		<div class="js-container">
+      {% include nav.html %}
+
+      <nav role="navigation" class="nav nav-page">
+          <p class="nav-header">Boulder Toolkit Sections</p>
+          <ul class="list">
+              <li><a href="/governments/boulder/toolkit/expanding-reach/index.html" {% if page.url == "/governments/boulder/toolkit/expanding-reach/index.html" %}class="is-active"{% endif %}>
+                <span class="full">1. Expanding reach</span>
+                <span class="short">1</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/relevant-info/index.html" {% if page.url == "/governments/boulder/toolkit/relevant-info/index.html" %}class="is-active"{% endif %}>
+                <span class="full">2. Providing relevant and usable information</span>
+                <span class="short">2</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/participation/index.html" {% if page.url == "/governments/boulder/toolkit/participation/index.html" %}class="is-active"{% endif %}>
+                <span class="full">3. Using spaces and channels for participation</span>
+                <span class="short">3</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/productive-actions/index.html" {% if page.url == "/governments/boulder/toolkit/productive-actions/index.html" %}class="is-active"{% endif %}>
+                <span class="full">4. Encouraging productive actions</span>
+                <span class="short">4</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/feedback-loops/index.html" {% if page.url == "/governments/boulder/toolkit/feedback-loops/index.html" %}class="is-active"{% endif %}>
+                <span class="full">5. Creating useful feedback loops</span>
+                <span class="short">5</span>
+              </a></li>
+              <li><a href="/governments/boulder/toolkit/recommendations/index.html" {% if page.url == "/governments/boulder/toolkit/recommendations/index.html" %}class="is-active"{% endif %}>
+                <span class="full">6. Additional recommendations</span>
+                <span class="short">6</span>
+              </a></li>
+          </ul>
+      </nav><!--/.nav-page-->
+
+			<div class="layout-semibreve">
+				{% include nav-breadcrumbs.html %}
+
+				<header class="heading heading-opener">
+		    	<h1>{{ page.title }}</h1>
+		    	<h2>{{ page.subtitle }}</h2>
+		    </header>
+
+				<main id="content">
+					{{ content }}
+          <div class="layout-whole">
+  					<hr/>
+  					<p><a href="#toc">Skip to contents</a></p>
+          </div>
+				</main>
+
+			</div><!-- end .layout-semibreve -->
+
+      <!-- Email signup form -->
+      <div class="slab-medium-red">
+        <div class="layout-breve layout-tight">
+          {% include email-signup-form.html context="footer" %}
+        </div><!-- end .layout-breve -->
+      </div><!-- end .slab-dark-blue -->
+
+	    {% include global-footer.html %}
+	  </div><!-- end .js-container -->
+	  {% include email-signup-modal.html %}
+		{% include footer-scripts.html %}
+ 	</body>
+</html>

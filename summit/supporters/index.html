@@ -36,11 +36,24 @@ metadata:
     font-size: 14px;
     line-height: 2;
   }
-  
+
   /* Number component */
   .supporter-logo {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    height: 80px;
+  }
+  .platinum-logo {
+    height: 60px;
+  }
+  #mycity {
+    height: 200px;
+  }
+  #courthouse {
+    height: 200px;
+  }
+  .civic-logo {
+    height: 60px;
   }
 </style>
 
@@ -50,9 +63,8 @@ metadata:
     {% for supporter in site.data.summit_supporters.capstone %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
-        <p><a href="{{ supporter.link }}">Read more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>
@@ -63,10 +75,46 @@ metadata:
   <ul class="layout-grid-minim">
     {% for supporter in site.data.summit_supporters.platinum %}
       <li>
-        <img class="supporter-logo" src="{{ supporter.logo }}"/>
-        <h4>{{ supporter.name }}</h4>
+        <img class="platinum-logo supporter-logo" src="{{ supporter.logo }}"/>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
-        <p><a href="{{ supporter.link }}">Read more</a></p>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="layout-semibreve layout-centered">
+  <h2>Gold Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.gold %}
+      <li>
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="layout-semibreve layout-centered">
+  <h2>Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.supporter %}
+      <li>
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="layout-semibreve layout-centered">
+  <h2>Startup Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.civic-startup %}
+      <li>
+        <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="civic-logo supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
   </ul>

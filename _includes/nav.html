@@ -38,27 +38,13 @@
     {% assign masthead = false %}
 {% endif %}
 
-{% if nav-global-primary != "no" %}
-<nav class="nav-global-primary">
-  <ul class="layout-breve layout-tight">
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/library">Library</a></li>
-    <li>
-      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
-          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-          <!-- consider applying autofocus="autofocus" to input -->
-          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
-      </form>
-    </li>
-  </ul>
-</nav>
-{% else %}
-<!--
-      If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
-      This requirement is because of the nav collapse functionality in global.js
-  -->
+{% comment %}
+      We previously had a nav-global-primary that has been removed. However, due
+      to a bug, if we don't show the primary nav, we need an empty container so
+      we can collapse the main nav on mobile screens. This requirement is because
+      of the nav collapse functionality in global.js.
+{% endcomment %}
 <nav class="nav-global-primary"></nav>
-{% endif %}
 
 {% if masthead != "no" %}
 <div class="masthead {{ masthead-class }}">
@@ -144,13 +130,16 @@
         <a href="/our-work" {% if nav_tier1_active == "our-work" %}class="state-active"{% endif %}>Our Work</a>
         {% if nav_tier1_active == "our-work" %}
         <ul class="nav-tier2">
-          <li><a href="/apps">Products</a></li>
+          <li><a href="/apps">Applications</a></li>
           <li><a href="/our-work/initiatives">Initiatives</a></li>
           <li><a href="/our-work/focus-areas">Focus Areas</a></li>
           <li><a href="/our-work/data-formats">Data Formats</a></li>
           <li><a href="/library">Library</a></li>
         </ul>
         {% endif %}
+      </li>
+      <li class="nav-tier1">
+        <a href="/blog">Blog</a>
       </li>
       <li><a href="https://secure.codeforamerica.org/page/contribute/default?source_codes=nav-donate-button" class="button">Donate</a></li>
     </ul>

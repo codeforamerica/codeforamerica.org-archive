@@ -1,0 +1,161 @@
+<link rel="stylesheet" href="http://www.codeforamerica.org/blog/wp-content/themes/cfawp2012/style.css?ver=3.9.2">
+
+<style>
+  /* ===========
+     Styles for our featured blog post
+     =========== */
+
+  div.format-featured {
+    overflow: hidden;
+  }
+  div.featured-header {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #004b6a;
+  }
+  div.featured-header:before {
+    background-image: url("http://www.codeforamerica.org/blog/wp-content/uploads/2015/01/FellowsBuildWeek01.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    width: 100%;
+    content: "";
+    display: block;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  div.featured-content {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    z-index: 2;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 3px;
+  }
+  div.featured-content a {
+    color: inherit;
+    font-weight: inherit;
+  }
+  div.featured-content a:link,
+  div.featured-content a:visited,
+  div.featured-content a:hover,
+  div.featured-content a:focus,
+  div.featured-content a:active {
+    border-color: white;
+    border-bottom-color: white;
+    color: inherit;
+    text-decoration: none;
+  }
+  div.featured-content h6 {
+    color: #fedd44;
+    margin-bottom: 5px;
+  }
+  div.featured-content h2 {
+    font-size: 40px;
+    line-height: 51px;
+  }
+  @media screen and (max-width: 40em) {
+    div.featured-content h2 {
+      font-size: 30px;
+      line-height: 41px;
+    }
+  }
+</style>
+
+<div id="js-blogposts"></div>
+
+<!-- Template for blog posts -->
+<script type="text/x-template" id="blogTemplate">
+
+  <%
+
+  // Grab the first post with an image so we can feature it
+  var featuredPost = _.find( posts, function(post){
+    return post.featured_image !== null;
+  });
+
+  if (featuredPost) {
+    // Filter out the featured post, so we don't post it twice
+    var otherPosts = _.reject( posts, function(post){
+      return featuredPost.ID == post.ID;
+    });
+  } else {
+    var otherPosts = posts;
+  }
+  %>
+
+  <section class="slab-gray">
+    <div class="layout-semibreve">
+      <header class="badge-heading badge-orange badge-fellowship">
+        {% if page.helpers.blogpost.title %}
+          <h2>{{ page.helpers.blogpost.title }}</h2>
+        {% else %}
+          <h2>Related blog posts</h2>
+        {% endif %}
+      </header>
+
+      <% if (featuredPost) { %>
+      <style>
+      div.featured-header:before {
+        background-image: url("<%= featuredPost.featured_image.guid %>");
+      }
+      </style>
+
+      <article id="post-<%= featuredPost.ID %>" class="post-<%= featuredPost.ID %> post format-featured">
+        <div class="featured-header">
+          <div class="featured-content">
+            <h6>Featured Post</h6>
+            <h2><a href="<%= featuredPost.link %>"><%= featuredPost.title %></a></h2>
+            <% var content = stripHTML( featuredPost.content );
+               var excerpt = toExcerpt( content, 100 ); %>
+            <p>
+              <%= excerpt %>
+              <a class="more-link" href="http://www.codeforamerica.org/blog/2015/01/26/doing-a-powerful-force-for-change/">[Continue Reading]</a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <% } %>
+
+      <div class="layout-gutter">
+        <% _.each(otherPosts, function(post){ %>
+        <article id="post-<%= post.ID %>" class="post-<%= post.ID %> post type-post status-publish format-standard hentry post-preview">
+          <header class="post-header isolate">
+            <h2 class="entry-title">
+              <a href="<%= post.link %>" rel="bookmark"><%= post.title %></a>
+            </h2>
+          </header>
+
+          <div class="text-whisper info">
+            <span>Posted on </span>
+            <% var date = makePrettyDate( post.date ); %>
+            <time class="post-date insulate text-whisper published" datetime="<%= post.date %>"><%= date %></time>
+            <span> by </span>
+            <span class="post-author vcard">
+              <a class="url fn n" href="http://www.codeforamerica.org/blog/author/<%= post.author.slug %>/"><%= post.author.name %></a>
+            </span>
+          </div>
+
+          <div class="post-body">
+            <div class="post-content">
+              <% var content = stripHTML( post.content );
+                 var excerpt = toExcerpt( content, 220 ); %>
+              <p>
+                <%= excerpt %>
+                <a class="more-link" href="<%= post.link %>">Continue Reading</a>
+              </p>
+            </div>
+          </div><!-- .post-body -->
+        </article>
+        <% }); /* end _.each */ %>
+
+      </div><!-- end .layout-gutter -->
+    </div><!-- end .layout-semibreve -->
+    <br /><br />
+  </section>
+</script>
