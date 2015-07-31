@@ -162,12 +162,13 @@ jquery-scripts: |
     vertical-align: middle;
     width: auto;
   }
-  
+
   [class*="button"][class*="button-sort"]:link {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
     font-weight: bold;
     border-radius: 0;
     padding: 0 15px;
+    margin: 0 0.5em 1em 0;
     text-transform: uppercase;
   }
   .header-section {
@@ -188,6 +189,7 @@ jquery-scripts: |
   }
   [class*="button"][class*="focus-area-button"]:link {
     font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-size: 13px;
     font-weight: bold;
     border-radius: 0;
     padding: 0 15px;
@@ -560,7 +562,8 @@ jquery-scripts: |
 
     <div class="layout-breve layout-tight intro">
       <h1>Products &amp; Applications</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsa sint nesciunt iusto placeat sed, dolores veritatis maxime minima officia.</p>
+      <!-- Empty description  -->
+      <p></p>
 
       <div class="featured-product clearfix slab-gray" id="featured-div">
         <div class="featured-product-image">
@@ -589,10 +592,10 @@ jquery-scripts: |
           <h3>Focus Areas</h3>
             <div class="focus-area-filters">
               <ul class="list-no-bullets">
-                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#economic-development" id="filter-economic-development">Economic Dev</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#economic-development" id="filter-economic-development">Econ Development</a></li>
                 <li><a href="#" onclick="return false" class="focus-area-button button button-sort"target="#safety-and-justice" id="filter-safety-and-justice">Safety & Justice</a></li>
                 <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#health" id="filter-health">Health</a></li>
-                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#communication-and-engagement" id="filter-communication-and-engagement">C & E</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#communication-and-engagement" id="filter-communication-and-engagement">Comms & Engagement</a></li>
                 <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#other" id="filter-other">Other</a></li>
               </ul>
             </div><!-- end .focus-area-filters -->
@@ -600,15 +603,11 @@ jquery-scripts: |
           <div class="product-filters">
     	    	<ul class="list-no-bullets product-nav">
               <li><a href="#" onclick="return false" class="button button-sort" id="button-live" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-wide-beta" data-filter=".js-product-national-beta"><span class="not-emph">Wide</span> Beta ({{ wide-beta }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-local-beta" data-filter=".js-product-local-beta"><span class="not-emph">Local</span> Beta ({{ local-beta }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-alpha" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
               <li><a href="#" onclick="return false" class="button button-sort" id="button-experiment" data-filter=".js-product-experimental">Experiment ({{ experiment }})</a></li>
-              <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="note"></p>
             </ul>
           </div><!-- end .product-filters -->
         </div><!-- end .sort-border -->
@@ -626,7 +625,7 @@ jquery-scripts: |
           <div class="focus-area" id="{{ section_class }}-container">
             <div class="header-section">
               <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}</h3>
-              <p class='section-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class='section-description'></p>
             </div><!-- end .header-section -->
 
             <div class="{{ section_class }}">
