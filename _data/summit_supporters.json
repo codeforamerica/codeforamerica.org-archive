@@ -45,6 +45,11 @@
   ],
   "civic-startup" : [
     {
+      "name" : "APPCITYLIFE",
+      "logo" : "/media/images/summit/2015/logos/appcitylife.png",
+      "link" : "http://appcitylife.com/",
+    },
+    {
       "name" : "COURTHOUSE",
       "logo" : "/media/images/summit/2015/logos/courthouse.png",
       "link" : "http://courthouseusa.com/",
@@ -63,6 +68,11 @@
       "name" : "OPPSITES",
       "logo" : "/media/images/summit/2015/logos/oppsites.png",
       "link" : "http://oppsites.com/",
+    },
+    {
+      "name" : "PLACESPEAK",
+      "logo" : "/media/images/summit/2015/logos/placespeak.png",
+      "link" : "https://www.placespeak.com/",
     },
     {
       "name" : "SEAMLESS",
