@@ -70,6 +70,37 @@ background: rgba(57, 159, 211, 0.6);
 }
 /*End tag-widget styles*/
 
+.date p{
+    font-size: 10px;
+}
+
+.article h3{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.article p{
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #000;
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
 </style>
 
 <div id="js-tags-target"></div>
@@ -109,12 +140,14 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
                     {% assign allTags = "" %}
 
                     {% for article in site.data.press %}
-                        {% assign articleTags = article.tags | split: "," %} 
-                        {% for articleTag in articleTags %}
-                            {% unless allTags contains articleTag %}
-                                {% capture allTags %}{{allTags}}|{{articleTag}}{% endcapture %}
-                            {% endunless %}
-                        {% endfor %}
+                        <!-- {% unless article.tags == "" %} -->
+                            {% assign articleTags = article.tags | split: "," %} 
+                            {% for articleTag in articleTags %}
+                                {% unless allTags contains articleTag %}
+                                    {% capture allTags %}{{allTags}}|{{articleTag}}{% endcapture %}
+                                {% endunless %}
+                            {% endfor %}
+                        <!-- {% endunless %} -->
                     {% endfor %}
 
                     {% assign tagsList = allTags | split: "|" %}
@@ -147,38 +180,41 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
             ">
                 <!-- Image -->
                 <div class="layout-minor">
-                    <a href={{ article.article-url }}>
+                    <a href={{ article.article-url }} target="_blank">
                         <img src={{ article.image-url }}>
                     </a>
                 </div>
-                <!-- Title, source, date and teaser paragraph -->
-                <div class="layout-major">
+
+                <!-- Date, title, source, tags and teaser paragraph -->
+                <div class="layout-major article">
+                    <div class="date">
+                        <p>{{ article.date }}</p>
+                    </div>
+
                     <header>
-                        <a href={{ article.article-url}}>
+                        <a href={{ article.article-url}} target="_blank">
                         <h3>{{ article.title }}</h3>
                         </a>
                     </header>
 
                     <div>
-                        <p>Publication: <a href={{ article.article-url }} class="teaser-source">{{ article.news-source }}</a></p>
+                        <p>Publication: <a href={{ article.article-url }} target="_blank" class="teaser-source">{{ article.news-source }}</a></p>
                     </div>
 
+                    {% unless article.tags == "" %}
                     <p>Topics: <span class="tag-widget">
                         {% assign tags = article.tags | split: "," %}
                         {% for tag in tags %}
                             <a href="#">{{ tag }}</a>
                         {% endfor %}
                     </span><p>
-
-                    <div>
-                        <p>{{ article.date }}</p>
-                    </div>
+                    {% endunless %}
 
                     <div>
                         <p>{{ article.teaser }} [&hellip;] <!-- <a href={{ article.article-url }}>Read more at {{ article.news-source }}</a> --></p>
                     </div>
 
-                    <a class="read-more-button button" href={{ article.article-url }}>Read more</a>
+                    <a class="read-more-button button" href={{ article.article-url }} target="_blank">Read more</a>
                 </div>
             </div> <!-- end layout-breve -->
         {% endfor %}
@@ -192,7 +228,7 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
 
 <!-- Begin Grid Playground -->
 
-<section>
+<!-- <section>
 
     <div class="layout-semibreve">
         <ul class="teasers img-list">
@@ -238,7 +274,7 @@ For more info visit <a href="/communications">codeforamerica.org/communications<
         </ul>
     </div>
 </section>
-
+ -->
 
 <!-- End Grid Playground -->
 
