@@ -1,7 +1,7 @@
 ---
 layout: resource
 status: beta
-title: Government technology procurement: an introduction
+title: Government technology procurement
 subtitle: How governments buy technology to deliver digital services. 
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"

@@ -11,7 +11,7 @@ In our work with local and state governments we have seen several high-profile f
 
 This playbook has been produced in the context of our wider work - the people, practices and products needed to deliver [21st century government](/governments/principles/) - to help governments in America improve the way they buy and use technology to deliver digital services that work.
 
-## [Government technology procurement: an introduction](/playbooks/technology-procurement/background/)
+## [Government technology procurement](/playbooks/technology-procurement/background/)
 
 How governments buy technology to deliver digital services. 
 
