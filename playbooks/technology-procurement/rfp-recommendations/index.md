@@ -7,53 +7,75 @@ nav-breadcrumbs:
 
 ---
 
-## 1. Require an iterative development process to frequently deliver usable software to users
+## 1. Require iterative development to frequently deliver usable software to users
 
-Services have a much higher chance of success if parts of their functionality can be delivered to users as they are developed rather than as a whole after a long period of development. This is the principle of least surprise: contracts should structure delivery gradually and frequently rather than as a complete solution in a big bang, even if you are using techniques like pilots. 
+Services are more likely to succeed if parts of their functionality can be delivered to users as they are developed instead of as a whole after a long period of development. This is the principle of least surprise: structure contracts so delivery happens gradually and frequently instead of a complete solution all at once. 
 
-If you have an RFP that describes a large, complex system, restructure the RFP to require the development of small pieces of functional software as services that will work together over time. If an RFP already exists, it may already describe smaller services that could stand on their own. 
+If your RFP is for a large, complex system, rewrite the RFP to require small pieces of functional software as services that will work together over time. Your RFP may already describe these smaller services that could work on their own. 
 
-There is less inherent risk to tackle smaller service areas iteratively and individually, rather than requiring the development of a complete system comprising all of them, and to roll out each service to users when it is ready. Where possible, large RFPs should be split up into smaller contracts, each to deliver individual new services. 
+There is less risk in working on smaller pieces iteratively and individually, instead of working on a complete system all at once. There is also less risk in going live with each service to users when it is ready. If you can, break up large RFPs into smaller contracts, for individual services or smaller groups of services. 
 
 These smaller contracts may describe discovery, alpha, beta and live phases of service delivery and follow the suggestions of the [U.S. Digital Service Playbook](https://playbook.cio.gov/) to [structure budgets and contracts to support delivery](https://playbook.cio.gov/#play5).
 
-You should:
+Your RFP should:
 
+* be the right size: group similar services together and separate custom development from commodity services
+* require frequent delivery of working software to users
+* describe small services that can be delivered on their own 
 * remove or simplify organizational layers so that features and improvements can be released multiple times a month
 
-## 2. Require a user research capability 
+## 2. Require user research to check and meet user needs
 
-Many big government IT projects end up being digital transformation and organizational change projects that affect lots of people. If a service is meant to bring about digital transformation or organizational change, then the development and delivery of new services must be with and for their users. We have seen governments provide supplemental information like 
+Many big government IT projects end up being digital transformation and organizational change projects that affect lots of people. Services meant to do digital transformation or organizational change must be developed and delivered with and for their users. 
 
-Though the State provides additional documentation such as A Day In The Life of Case Workers and Licensing Workers, there is not enough evidence that the State and successful vendors will have user research and user testing to make sure that CWS/NS is simple, clear and easy to use to deliver the anticipated benefits. 
+This means doing user research throughout the development and delivery of the service to make sure the service is always improving and meeting user needs.
 
-For example, it is unclear how checkpoint builds, quality builds and the user acceptance testing and end-to-end testing phases take into account how the service performs in the hands of its day-to-day users. 
+Sometimes RFPs include information like stories of a typical user's day. Unfortunately, they're not very helpful. This is because: 
 
-The RFP also shows no emphasis toward user research in general, and hardly any expectation that a successful bidder validate the requirements set by the State. This approach is unlikely to lead to an effective system. 
+* Stories and narratives only describe what typical users do, not real users. 
+* It's hard for these accounts to be detailed enough to help the delivery team clearly understand what users need. 
+* They give the impression that user research only needs to be done once or that no more research is needed.
 
-You should:
+Doing the work to provide a story doesn't make up for a user research capability that's used during the whole development and delivery process. If your government doesn't have a user research capability, use the RFP to make sure vendors will do user research with you as part of a discovery process.
 
-* make sure that there is user research capability in the government service team and on the vendor’s team
-* make clear that the beginning phase of a project includes a discovery process to understand and validate the needs of users 
-* require that the vendor work with the  service team to use qualitative and quantitative user research techniques
-* require frequent and regular testing of software with real users during any development phases
-* structure other development phases to account for changes that need to be made because of user research and testing
-* require that user research is used to make the service simple and intuitive so that users succeed at their tasks first time
+RFPs also usually require checkpoint builds (delivery of software to check for progress, but not for quality), quality builds (where the reliability and quality are checked) and then phases of user acceptance testing and end-to-end testing. This is also a problem. User needs often keep being discovered when software is actually being used, so do user research on builds as early and often as possible to keep focussed on checking and then improving the software to meet user needs. 
 
+Your RFP should require:
+
+* a discovery phase to understand and validate user's needs 
+* qualified user researchers in the service team, either in government or from the vendor
+* the service team to use qualitative and quantitative user research techniques
+* doing user research regularly and frequently with real users during the development process
+* development phases that let priorities change because of what's learned from user research
+* that user research is an important way to make services simple and intuitive enough to 
 
 ## 3. Allow in-house, custom or commissioned options 
 
-RFPs are often written to only consider commercial off-the-shelf software or transfer software (custom software that has already been written for and is being used by another customer), with only a small proportion of custom software. 
+RFPs often require commercial off-the-shelf software or "transfer" software (custom software written for a customer that can be used elsewhere). In these RFPs, only a small part of the service or solution can be custom. Sometimes this is done to save money.
 
-Transfer systems may promise a lower initial cost because they have already been delivered for another customer. But, because governments  rarely  own, understand or control transfer systems, it will be more difficult or impossible to get the benefits of a software that is designed to meet its users' needs. Also, transfer systems also mean that governments will continue to lack a good understanding of what's required to 
+Commercial or off-the-shelf software might be cheaper at the start because they already exist. But, a lot of this commercial or off-the-shelf government software doesn't actually meet user needs - even if it's being used by other customers. 
+
+With a good understanding of user needs, a qualified product or service manager should decide which parts of a system are best delivered by renting commercial software, and which parts need to be custom. 
+
+You should:
+
+* use a method like mapping to understand what technology is needed to meet your user's needs
+* understand where user needs are well known and unlikely to change 
+* understand where user needs are unclear and likely to change 
+
+Your RFP should:
+
+* require renting software services where user needs are well known
+* require custom development using iterative methods where user needs are not well known
+* be flexible and allow you to choose the best vendors or different ones for renting and custom development
 
 ## 4. Choose vendors who have delivered large-scale services that meet user needs 
 
-Many administrative requirements of RFPs are designed to reduce the risk of getting a solution that doesn't work and to reduce surprise. 
+Most of the requirements of RFPs are there to reduce the risk of a bad surprise or of a system or solution that doesn't work.
 
-Some ways of reducing this risk are through key staff and certification requirements, but these requirements don't ensure the delivery of good software or services. They just show that certification standards have been met. 
+Some RFPs try to reduce this risk with key staff and certification requirements. These requirements don't ensure the delivery of working software or services that meet user needs. They just show that certification standards have been met. It also means that "key staff" aren't really key: they could be replaced by anyone else with the same certification.
 
-Governments should make sure they have the internal capability to choose a bidder based on their history of delivering large-scale services that meet user needs instead of secondary requirements that will not reduce the risk of bad software being delivered. Successful governments have generally built this capability by putting together multidisciplinary internal teams. 
+Make sure your team can pick a bidder based on their history of delivering large-scale services that meet user needs. Service or product managers who understand digital delivery and user needs should be able to do this. 
 
 For example, when creating a federal marketplace for agile delivery services, 18f asked vendors for
 
@@ -61,20 +83,21 @@ For example, when creating a federal marketplace for agile delivery services, 18
 >
 > [Creating a federal marketplace for agile delivery services](https://18f.gsa.gov/2015/01/08/creating-a-federal-marketplace-for-agile-delivery-services/)
 
-You should: 
+Your RFP should:
 
-* require vendors to deliver live demonstrations, not presentations or mockups
+* require vendors to show what they can do through working software, not presentations or mockups
+* not waste time on key staff or certification requirements
 
 ## 5. Describe ongoing services, not solutions 
 
-Use your RFP to describe a service that continues to improve and not a product or solution that is bought and make this clear to bidders and vendors. Look for opportunities to make it easier for the service to improve after it goes live, whether that's using open standards, or making sure that you're measuring the right data to know what to work on next.
+Make clear that you are looking for a service that continues to improve, not a product or solution that is bought. This is on top of maintenance to make sure the service keeps working, it means requiring research and development that continues after the service goes live. Use the RFP to make it easy for the service to improve after it goes live, by using open standards and making sure you're measuring the right data to decide what to work on next.
 
-You should:
+Your RFP should:
 
-* use open standards and common or commodity platforms to make it easier to regularly and frequently improve the service 
-* simplify the kinds of changes that can be made to the service after it is live
-* make user research an essential part of the team that decides changes to the services after it is live
+* require open standards and common or commodity platforms so the service can be regularly and frequently improved
+* describe a clear and simple way to make changes to the service after it goes live
+* make user research an essential part of the team that decides how to improve the service after it goes live
 * set key performance indicators for the service
-* set and require the collection of performance data to analyze success and choose features and tasks for improvement
+* require the collection of performance data to analyze success and choose features and tasks for improvement
 
 
