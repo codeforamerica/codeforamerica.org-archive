@@ -21,7 +21,7 @@ How governments meet user needs, on time and on budget.
 
 ## [Digital Service RFPs](/playbooks/technology-procurement/rfp-recommendations/)
 
-What an RFP needs to include. 
+What should be in an RFP. 
 
 ## [Organize government for digital services](/playbooks/technology-procurement/organization-recommendations/)
 

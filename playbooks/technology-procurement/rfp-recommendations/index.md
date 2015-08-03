@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: Digital Service RFPs
-subtitle: What an RFP needs to include. 
+subtitle: What should be in an RFP. 
 
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
