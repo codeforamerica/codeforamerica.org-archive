@@ -9,8 +9,8 @@ It serves as a confirm screen and data entry form for our global-footer mailing 
 		<div class="modal-backdrop"></div>
 		<section class="modal-dialog">
 			<div class="modal-content">
-				<h2>Help us send you great stuff</h2>
-				<p>We'll use this information to send you interesting news, tools and updates.</p>
+				<h2 id="js-modal-headline">Help us send you great stuff</h2>
+				<p id="js-modal-description">We'll use this information to send you interesting news, tools and updates.</p>
 				<p id="email-signup-error" class="alert-failure" style="display:none;"></p>
 				<form id="email-signup-data-form" action="//codeforamerica.us2.list-manage.com/subscribe/post-json?u=d9acf2a4c694efbd76a48936f&amp;id=3ac3aef1a5&c=?" method="get">
 					<ul class="list-form">
@@ -29,15 +29,17 @@ It serves as a confirm screen and data entry form for our global-footer mailing 
 						<p>
 							<legend>Check all that apply:</legend>
 						</p>
-						<li>
-							<label for="mce-group[10273]-10273-0"><input type="checkbox" value="4096" name="group[10273][4096]" id="mce-group[10273]-10273-0" /> I work in government</label>
-						</li>
-						<li>
-							<label for="mce-group[10273]-10273-1"><input type="checkbox" value="8192" name="group[10273][8192]" id="mce-group[10273]-10273-1"> I attend Brigade events</label>
-						</li>
-						<li>
-							<label for="mce-group[10273]-10273-2"><input type="checkbox" value="131072" name="group[10273][131072]" id="mce-group[10273]-10273-2" /> I am a technologist</label>
-						</li>
+						<div id="modal-checkboxes">
+							<li>
+								<label for="mce-group[10273]-10273-0"><input type="checkbox" value="4096" name="group[10273][4096]" id="mce-group[10273]-10273-0" /> I work in government</label>
+							</li>
+							<li>
+								<label for="mce-group[10273]-10273-1"><input type="checkbox" value="8192" name="group[10273][8192]" id="mce-group[10273]-10273-1"> I attend Brigade events</label>
+							</li>
+							<li>
+								<label for="mce-group[10273]-10273-2"><input type="checkbox" value="131072" name="group[10273][131072]" id="mce-group[10273]-10273-2" /> I am a technologist</label>
+							</li>
+						</div>
 						<input type="hidden" value="{{ page.url }}" name="REFERRAL" style="display:none;" id="mce-REFERRAL">
 						<div class="button-group">
 							<input type="submit" class="primary-button" value="Submit" />

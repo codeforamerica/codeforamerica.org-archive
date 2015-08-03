@@ -5,13 +5,22 @@
 *
 **/
 
-var showModal = function(submittedEmail) {
+var showModal = function(submittedEmail,elem) {
 	// If the body has a modal class, we've already shown the modal
 	if (isModalVisible()) {
 		return;
 	}
 	if (typeof submittedEmail !== "undefined" && submittedEmail !== "") {
 		document.forms['email-signup-data-form']['mce-EMAIL'].value = submittedEmail;
+	}
+	// If there's an elem, they clicked a button ... check it to do things
+	if (typeof(elem) !== "undefined" && elem !== "") {
+		// If this is an economic development button, show special things
+		if ($(elem).hasClass('js-email-economic-development')) {
+			$('#js-modal-headline').text('I\'m interested in Economic Development');
+			$('#js-modal-description').text('Want to learn more about what Code for America is doing to promote inclusive economic growth? Join our email list help inform Code for America\'s work in this area.');
+			$('#modal-checkboxes').append('<li><label for="mce-group[10273]-10273-5"><input type="checkbox" value="8589934592" name="group[10273][8589934592]" id="mce-group[10273]-10273-5" checked> I\'m interested in economic development</label></li>')
+		}
 	}
 	// Scroll up to the top
 	$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -40,7 +49,7 @@ var submitForm = function(data) {
         cache       : false,
         dataType    : 'jsonp',
         contentType: "application/json-p; charset=utf-8",
-        error       : function(err) { 
+        error       : function(err) {
         	console.log("Could not connect to the registration server. Please try again later.");
             var error = '<strong>There was a problem connecting to the server:</strong><br />' + err.msg;
             $(button).removeClass('button-progress');
@@ -76,7 +85,7 @@ var isModalVisible = function() {
 $(document).keyup(function(e) {
 	// When the escape key is pressed and the modal is visible, hide the modal
 	if (isModalVisible()) {
-		if (e.keyCode == 27) { 
+		if (e.keyCode == 27) {
 			hideModal();
 		}
 	}
@@ -97,7 +106,7 @@ $(document).ready(function() {
 
   // When a signup button is pressed, show the modal
   $('.js-modal-show').click(function(e){
-    showModal();
+		showModal('',this);
     e.preventDefault();
     // Push a pageview so we can track our funnel
     ga('send', 'pageview', '/open_email_signup_form-frombutton');
