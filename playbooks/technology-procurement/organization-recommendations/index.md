@@ -1,7 +1,7 @@
 ---
 layout: resource
-title: Organizing government to deliver digital services 
-subtitle: How to move from buying technology to an internal digital service capability
+title: Organize government for digital services 
+subtitle: Organizational design for delivering successful change through technology.
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 

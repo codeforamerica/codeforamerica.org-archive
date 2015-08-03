@@ -2,29 +2,27 @@
 layout: resource
 resource_index: true
 title: Government technology procurement
-subtitle: From buying technology to delivering services that work
+subtitle: From buying technology to delivering digital services that work.
 nav-breadcrumbs:
   - "Government technology procurement": "/playbook/technology-procurement/"
 ---
 
 In our work with local and state governments we have seen several high-profile failures in government technology - projects over budget, late, or broken, or existing technology with serious problems. These failures have drawn attention to the way that our governments buy and deliver the technology they need to govern well. 
 
-This playbook has been produced in the context of our wider work - the people, practices and products needed to deliver [21st century government](/governments/principles/) - to help governments in America improve the way they buy and use technology to deliver services that work.
+This playbook has been produced in the context of our wider work - the people, practices and products needed to deliver [21st century government](/governments/principles/) - to help governments in America improve the way they buy and use technology to deliver digital services that work.
 
-This playbook has been split up into four parts: a background guide, the best practices we've seen around the world, recommendations for writing better technology RFPs and recommendations for organizing government to deliver digital services. 
+## [Government technology procurement: an introduction](/playbooks/technology-procurement/background/)
 
-## [An introduction to government technology procurement](/playbooks/technology-procurement/background/)
+How governments buy technology to deliver digital services. 
 
-How governments typically treat and buy technology.
+## [Delivering digital services](/playbooks/technology-procurement/best-practices/)
 
-## [Best practices in government technology procurement](/playbooks/technology-procurement/best-practices/)
+How governments meet user needs, on time and on budget. 
 
-Learn how governments around the world are delivering digital services that work. 
+## [Digital Service RFPs](/playbooks/technology-procurement/rfp-recommendations/)
 
-## [Write better technology RFPs](/playbooks/technology-procurement/rfp-recommendations/)
+What an RFP needs to include. 
 
-Five areas where typical government technology RFPs can be improved. 
+## [Organize government for digital services](/playbooks/technology-procurement/organization-recommendations/)
 
-## [Organizing government to deliver digital services](/playbooks/technology-procurement/organization-recommendations/)
-
-Structural and organizational recommendations that government leadership - at department, agency, county, city or state level - should carry out to deliver digital services that work. 
+Organizational design for delivering successful change through technology.

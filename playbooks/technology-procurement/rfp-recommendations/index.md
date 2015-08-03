@@ -1,7 +1,8 @@
 ---
 layout: resource
-title: Writing better technology RFPs
-subtitle: Five changes you can make to improve technology RFPs
+title: Digital Service RFPs
+subtitle: What an RFP needs to include. 
+
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 

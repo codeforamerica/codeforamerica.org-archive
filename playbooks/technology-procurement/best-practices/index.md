@@ -1,7 +1,7 @@
 ---
 layout: resource
-title: Best practices in technology procurement
-subtitle: How governments are delivering digital services that work, on time and on budget
+title: Delivering digital services
+subtitle: How governments deliver digital services that meet user needs, on time and on budget. 
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 
