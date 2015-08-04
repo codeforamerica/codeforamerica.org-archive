@@ -23,6 +23,11 @@ var showModal = function(submittedEmail,elem) {
 				$('.js-economic-development-checkbox').toggleClass('hidden');
 				$('.js-economic-development-checkbox').find('input').prop('checked',true);
 			}
+			$.each($('.js-email-default-option'), function(index,option){
+				if (!$(option).hasClass('hidden')) {
+					$(option).addClass('hidden');
+				}
+			});
 		}
 	}
 	// Scroll up to the top
