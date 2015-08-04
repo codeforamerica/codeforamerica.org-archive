@@ -15,14 +15,14 @@ This playbook has been produced in the context of our wider work - the people, p
 
 How governments buy technology to deliver digital services. 
 
-## [Delivering digital services](/playbooks/technology-procurement/best-practices/)
+## [Delivering digital services](/playbooks/technology-procurement/delivering-digital-services/)
 
 How governments meet user needs, on time and on budget. 
 
-## [Digital Service RFPs](/playbooks/technology-procurement/rfp-recommendations/)
+## [Digital Service RFPs](/playbooks/technology-procurement/digital-service-rfps/)
 
 What should be in an RFP. 
 
-## [Organize government for digital services](/playbooks/technology-procurement/organization-recommendations/)
+## [Organize government for digital services](/playbooks/technology-procurement/organize-government-for-digital-services/)
 
 Organizational design for delivering successful change through technology.

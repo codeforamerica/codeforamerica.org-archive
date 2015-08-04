@@ -70,7 +70,7 @@ Experience from the UK suggests a core team made of:
 
 ## 4. Simplify governance
 
-Government technology projects usually lack clear and simple governance. It is normal for large projects to have three levels of governance, like an executive board, a project governance committee and a project management committee and for each level to make decisions by consensus or agreement. 
+Government technology projects usually lack clear and simple governance. It's normal for large projects to have three levels of governance, like an executive board, a project governance committee and a project management committee and for each level to make decisions by consensus or agreement. 
 
 While there are good reasons for requiring consensus, we're not persuaded that the way government technology projects are governed results in effective services that meet their users' needs. 
 
