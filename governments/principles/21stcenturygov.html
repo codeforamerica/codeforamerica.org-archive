@@ -1,0 +1,271 @@
+---
+layout: default
+title: 21st Century Government
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+nav_tier1_active: "governments"
+nav-breadcrumbs:
+ - Governments: "/cities"
+ - 21st Century Government: "/governments/principles"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+<style>
+    .space {
+        padding-top: 3em;
+    }
+    .h4-size {
+        font-size: 18px;
+        margin: 0 0 3px 0;
+        margin-bottom: 0;
+    }
+    .nav-head {
+      font-weight: 700;
+    }
+    .layout-top {
+        padding-bottom: 0;
+        padding-top: 20;
+    }
+    .layout-edit {
+        padding-top: 0;
+    }
+
+    .layout-section-top {
+        padding-top: 1.5em;
+        clear: both;
+    }
+    .layout-section-middle {
+        padding-bottom: 0em;
+        padding-top: 0.75em;
+    }
+    .layout-section-checklist {
+        clear: both;
+        padding-top: 1.5em;
+    }
+    .layout-section-bottom {
+        float: left;
+        padding-bottom: 0.25em;
+    }
+    .middle-padding {
+        padding-bottom: 0;
+        padding-top: 1em;
+        clear: both;
+    }
+    .card-toc {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 0.25em;
+        background-color: white;
+        border-color: rgba(109, 110, 113, 0.25);
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+        border-left-width: 2px;
+        border-top-width: 2px;
+        margin-top: 5px;
+    }
+    .heading-margin {
+        margin: 0em 0;
+        padding: 0.5em;
+    }
+    .slab-dark-blue .heading {
+        border-bottom: 1px solid;
+        border-color: rgba(229, 229, 229, 0.8);
+    }
+    .slab-medium-red .heading {
+        border-bottom: 1px solid;
+        border-color: rgba(229, 229, 229, 0.8);
+    }
+    .toc-padding {
+        padding-bottom: 0.75em;
+        margin-bottom: 0;
+    }
+    ul.checkmark h4 {
+        padding-left: 1.5em;
+    }
+    ul.checkmark {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    ul.checkmark li {
+        text-indent: -2em;
+        padding-left: 4em;
+        line-height: 30px;
+    }
+    ul.checkmark li:before {
+        font-family: 'ico-moon';
+        content: "\e370";
+        float: left;
+        width: 2em;
+    }
+    .expand {
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    .expand:before {
+        font-size: 50px;
+    }
+    .border-shadow {
+        background-color: white;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(109, 110, 113, 0.15);
+    }
+    /*
+    Creates a bigger text size for section introduction sentences*/
+    .lead-paragraph {
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    /* Typography stuff */
+    .section-header {
+      color: #6D6E71;
+      font-weight: 700;
+    }
+    .spotlight {
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+    }
+    p:first-of-type {
+      margin-top: 0;
+    }
+    /* Spacing stuff */
+    .principle + .principle {
+      margin-top: 3em;
+    }
+    .layout-semibreve-tight {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    
+    
+</style>
+
+
+
+<div class="masthead masthead-custom masthead-deep">
+  
+  <div class="masthead-hero">
+    <div class="masthead-image" 
+      
+      style="background-image: url('/media/images/about_fellowship/16270929958_f1498d22c2_z.jpg')" 
+      >
+    </div>
+  </div>
+
+  <header class="masthead-header layout-semibreve">
+    
+      <h1 class="page-title">21st Century Government</h1>
+    
+  </header>
+  
+  
+  <div class="description layout-semibreve">
+    <p>We belive the government can work, for the people, by the people, in the 21st Century. To do that, governments need to be online, adaptive, and open.</p>
+    
+  </div>
+  
+</div>
+	
+<section class="layout-semibreve">
+	
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+		
+      <!-- Header -->
+      <h2>1. Meet people where they are: online</h2>
+      <p>Government programs and services should be designed to meet people where they are, which in the 21st century, is online.</p>
+
+      <p>With more than 80% of American adults online, and a new generation of people coming of age on the internet, governments need to adapt their programs and services to be responsive in the digital age. Major businesses and industries are now running their companies entirely on online software, giving them access to data and insights that improve the operations of their business and improve their bottom line. They are making information easy to find, and delivering their services online, allowing users to access them at anytime of the day or night and on any device.</p>
+
+      <p>Digital transformation can not be realized through outsourcing to a vendor or by filing an IT help ticket, digital needs to be a core competency, with skills embedded at all levels of the organization, and owned by those responsible for delivering programs and services to the public.</p>
+      
+	</div><!-- end Principle 1 -->
+
+    <!------------------Principle 2---------------------->
+    <div class="principle" id="participate">
+      <!-- Header -->
+      <h2>2. Ensure policy and delivery are adaptive and working together to meet people’s needs</h2>
+      <p>If we can’t implement the policies we create, we can’t govern.</p>
+
+      <p>In order for governments to be able to respond swiftly and dynamically to the needs of their community, a new approach to policy making needs to emerge. 
+        <ul>
+            <li>Policy and delivery need to be intrinsically connected.</li>
+            <li>The needs of users should drive policy decisions.</li>
+            <li>Policies should be updated regularly to respond to user feedback.</li>
+        </ul>
+      </p>
+      <p>The best articulation of this transformation remains the blog post The Strategy is Delivery by Mike Bracken (the UK’s Cabinet Office Executive Director of Digital and the head of the Government Digital Service), which compares the old process for approaching the creation of digital services to the approach the Government Digital Service has taken.</p>
+      
+    </div><!-- end Principle 2 -->
+    <!------------------Principle 3---------------------->
+    <div class="principle" id="iterate">
+      <!-- Header -->
+      <h2>3. Harness the power of the community to help make government work better</h2>
+      <p>Government, at its core, is about doing together what we can’t do alone.</p>
+
+      <p>In Tim O’Reilly’s Government as a Platform, he talks about how the web has inspired a new generation of people to use creativity and collaboration to address challenges facing our country and the world. In order for governments to take advantage of all of the people who want to help, they need to open up and allow for a cross-section of the community to participate, and collaborate on shaping the programs and services that are offered.</p>
+      
+    </div><!-- end Principle 3 -->
+
+   
+
+</section>
+
+<section class="slab-gray">
+ <div class="principle layout-semibreve">
+ <h2 class="badge-heading badge-red">Start Implementing the Principles</h2>
+      <div class="layout-semibreve layout-semibreve-tight">
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-calendar"></div>
+              <h5 class="heading heading-margin ">The Summit</h5>
+              <p>Join innovators from hundreds of governments across the U.S. along with civic-minded technologists to explore how we can transform government for the 21st Century.</p>
+              <a href="/summit/" class="button">Come to the Summit</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-key" width: 200%></div>
+              <h5 class="heading heading-margin">Our Work</h5>
+              <p>Code for America helps governments apply these principles to digital projects in Communications & Engagement, Economic Development, Health, and Safety & Justice.</p>
+              <p><a href="/our-work/focus-areas/" class="button">Partner with Us</a></p>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-users"></div>
+              <h5 class="heading heading-margin">Communities of Practice</h5>
+              <p>Implementing these principles in your government? Join our communities of practice to share resources and best practices with other like-minded government professionals.</p>
+              <a href="/about/peernetwork/" class="button">Join a Community of Practice</a>
+            </div>
+ </div>
+</section>
+
