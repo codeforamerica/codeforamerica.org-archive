@@ -19,9 +19,9 @@ var showModal = function(submittedEmail,elem) {
 		if ($(elem).hasClass('js-email-economic-development')) {
 			$('#js-modal-headline').text('I\'m interested in Economic Development');
 			$('#js-modal-description').text('Want to learn more about what Code for America is doing to promote inclusive economic growth? Join our email list help inform Code for America\'s work in this area.');
-			if ($('.js-economic-development-checkbox').length === 0) {
-				// If we haven't already added the checkbox, add it.
-				$('#modal-checkboxes').append('<li class="js-economic-development-checkbox"><label for="mce-group[10273]-10273-5"><input type="checkbox" value="8589934592" name="group[10273][8589934592]" id="mce-group[10273]-10273-5" checked> I\'m interested in economic development</label></li>')
+			if ($('.js-economic-development-checkbox').hasClass('hidden')) {
+				$('.js-economic-development-checkbox').toggleClass('hidden');
+				$('.js-economic-development-checkbox').find('input').prop('checked',true);
 			}
 		}
 	}
