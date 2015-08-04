@@ -26,11 +26,13 @@ Governments should:
 
 ## 2. Bring ownership and control back to departments 
 
-In some governments, treating technology as a solution to be bought has led to the centralization of IT project management and contracting. Doing this usually leads to departments responsible for services losing ownership and control of their digital services. 
+Treating technology as a solution to be bought has led to centralized IT project management and contracting. In turn, this leads to departments responsible for services losing understanding, ownership and control of their digital services.
 
-Having separate, external organizations to government departments wholly responsible for digital services and delivery stops government from effectively delivering its services. Departments that have to work in client relationships where they are dependent upon an external supplier (the other government department), who also contracts out to another vendor, for critical digital services. In the United Kingdom, the central Government Digital Service works alongside and supports departments who are also building their own digital capability. 
+Separate, external IT project management departments that are wholly responsible for digital services and delivery stops departments effectively delivering their services. 
 
-Departments should make use of central technology leadership for commodities, utilities and standards across government. This means departments must have leadership who can decide how their services can be best meet user needs using custom and commodity technology. 
+Departments don’t succeed when they must work in client relationships where they depend on an external supplier (like an IT project management department), who then contract with vendors. In the United Kingdom, the central Government Digital Service works alongside and supports departments who are also building their own digital capability.
+
+Departments should make use of central technology leadership for commodities, utilities and standards across government. This means departments must have leadership who can decide how their services can best meet user needs using custom and commodity technology. 
 
 Governments cannot govern well in the 21st century if it lacks the knowledge and skills to deliver digital services based on modern technology.
 
