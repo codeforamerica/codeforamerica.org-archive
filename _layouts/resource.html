@@ -14,6 +14,16 @@ subtitle         - Alternate page title for use in header H1 tag only. / Princip
 community-url	 - Use this URL for a community call to action
 community-cta	 - Use this variable for the community call to action
 
+status			 - acceptable values:
+						- alpha (displays alpha banner if set)
+						
+feedback-name	 - name (e.g. "Dan Hon" for email feedback to be used in alpha banner)
+feedback-email	 - email address (e.g. "dan@codeforamerica.org" to be used in alpha banner)
+						
+resource_index	 - if "true" then the content will be laid out as an index page
+						- use layout-major (wide layout, no left hand common)
+						- do not generate & show table of contents
+
 nav_tier1_active - name of navigation section to show, see _includes/nav.html.
 nav-breadcrumbs  - list name/path pairs for _includes/nav-breadcrumbs.html.
 masthead-class   - optionally "masthead-s" for a shorter masthead image.
@@ -22,14 +32,7 @@ masthead-image   - path to image for use in masthead.
 Sample front matter from one page:
 
 ---
-layout: 		resource
-title: 			"How to: assess your digital services"
-subtitle: 		Conduct a baseline survey of the quality and usability of your online city services.
-nav-breadcrumbs:
-  - "Digital Front Door": "/our-work/initiatives/digitalfrontdoor/"
-  - "User Needs": "/our-work/initiatives/digitalfrontdoor/playbook/user-needs/"
-community-url:	"https://groups.google.com/a/codeforamerica.org/forum/#!forum/digital-front-door"
-community-cta:	"Join the conversation and talk to other local government staff in our Digital Front Door community."
+
 ---
 
 {% endcomment %}
@@ -88,10 +91,26 @@ community-cta:	"Join the conversation and talk to other local government staff i
 				<header class="heading">
 		    	<h1>{{ page.title }}</h1>
 		    	<h2>{{ page.subtitle }}</h2>
+		    	
+		    	{% comment %}
+					If page.status is "alpha", then show alpha banner and 
+					show a feedback CTA using pagefeedback-name and 
+					page.feedback-email
+				{% endcomment %}
+					
+				{% if page.status == "alpha" %}
+					
+					<div class="alert-info">
+						<p><strong>ALPHA: The information on this page is in alpha, which means it's an early draft. We'll update it as we learn.</strong></p>
+						<p>Please send feedback to {{ page.feedback-name }} at <a href="mailto:{{ page.feedback-email }}?subject={{ page.title }}">{{ page.feedback-email }}</a>.</p>
+			        </div>
+					
+				{% endif %}
+
 		    </header>
 
 				{% comment %}
-					If this is an index page, don't show the contents.
+					Show table of contents, *unless* this is an index page.
 				{% endcomment %}
 
 				{% unless page.resource_index %}
@@ -108,19 +127,27 @@ community-cta:	"Join the conversation and talk to other local government staff i
 				{% endunless %}
 
 				<main id="content" {% unless page.resource_index %}class="layout-major"{% endunless %}>
+					
+					
 					{{ content }}
 
-					{% if page.resource_index %}
-						<hr/>
-					{% else %}
-						<!-- content team survey banner -->
-						<div class="alert-info">
-							<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
-						</div>
-						<!-- end content team survey banner -->
-						<hr/>
+					<hr/>
+
+					<!-- content team survey banner -->
+					<div class="alert-info">
+						<a href="https://www.surveymonkey.com/s/codeforamerica-content">Tell us what you think</a> (opens a 3 minute survey on another website)
+					</div>
+					<!-- end content team survey banner -->
+
+					{% comment %}
+						Link back to table of contents unless this is an index page.
+					{% endcomment %}
+					
+					{% unless page.resource_index %}
 						<p><a href="#toc">Skip to contents</a></p>
-					{% endif %}
+					{% endunless %}
+
+
 				</main>
 
 			</div><!-- end .layout-semibreve -->

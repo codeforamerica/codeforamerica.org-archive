@@ -1,10 +1,16 @@
 ---
-layout: resource
+layout: 		resource
 resource_index: true
-title: Government technology procurement
-subtitle: From buying technology to delivering digital services that work.
+title: 			Government technology procurement
+subtitle: 		From buying technology to delivering digital services that work.
+status: 		alpha
+feedback-name: 	"Dan Hon"
+feedback-email:	dan@codeforamerica.org
+
 nav-breadcrumbs:
   - "Government technology procurement": "/playbook/technology-procurement/"
+
+
 ---
 
 In our work with local and state governments we have seen several high-profile failures in government technology - projects over budget, late, or broken, or existing technology with serious problems. These failures have drawn attention to the way that our governments buy and deliver the technology they need to govern well. 
@@ -19,9 +25,9 @@ How governments buy technology to deliver digital services.
 
 How governments meet user needs, on time and on budget. 
 
-## [Digital Service RFPs](/playbooks/technology-procurement/digital-service-rfps/)
+## [Digital service RFPs](/playbooks/technology-procurement/digital-service-rfps/)
 
-What should be in an RFP. 
+Advice about what should be in a digital service RFP.
 
 ## [Organize government for digital services](/playbooks/technology-procurement/organize-government-for-digital-services/)
 
