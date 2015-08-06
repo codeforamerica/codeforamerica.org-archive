@@ -2,6 +2,10 @@
 layout: resource
 title: Organize government for digital services 
 subtitle: Organizational design for delivering successful change through technology.
+status: 		alpha
+feedback-name: 	"Dan Hon"
+feedback-email:	dan@codeforamerica.org
+
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 

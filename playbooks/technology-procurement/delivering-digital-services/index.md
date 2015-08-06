@@ -2,6 +2,10 @@
 layout: resource
 title: Delivering digital services
 subtitle: How governments deliver digital services that meet user needs, on time and on budget. 
+status: 		alpha
+feedback-name: 	"Dan Hon"
+feedback-email:	dan@codeforamerica.org
+
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 

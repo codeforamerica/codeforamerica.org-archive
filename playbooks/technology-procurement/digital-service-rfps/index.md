@@ -2,6 +2,10 @@
 layout: resource
 title: Digital Service RFPs
 subtitle: What should be in an RFP. 
+status: 		alpha
+feedback-name: 	"Dan Hon"
+feedback-email:	dan@codeforamerica.org
+
 
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"

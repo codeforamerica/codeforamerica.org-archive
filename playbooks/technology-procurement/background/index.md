@@ -3,6 +3,10 @@ layout: resource
 status: beta
 title: Government technology procurement
 subtitle: How governments buy technology to deliver digital services. 
+status: 		alpha
+feedback-name: 	"Dan Hon"
+feedback-email:	dan@codeforamerica.org
+
 nav-breadcrumbs:
   - "Government technology procurement": "/playbooks/technology-procurement/"
 
