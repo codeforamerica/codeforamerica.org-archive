@@ -100,6 +100,7 @@ This is nothing short of digital transformation of government, of improving the 
 * [Better for Less](https://governmenttechnology.blog.gov.uk/2015/03/29/better-for-less/), Liam Maxwell
 * [The Office of the Chief Technology Officer](https://governmenttechnology.blog.gov.uk/about-the-team/)
 * [Digital Leadership](https://speakerdeck.com/kitcollingwood/digital-leadership-presentation), Kit Collingwood-Richardson
+* [Strategy, mapping and situational awareness](http://forever.codeforamerica.org/wardley-mapping-2015-07.pdf), Simon Wardley (10mb PDF)
 * [On Government, platform, purchasing and the commercial world](http://blog.gardeviance.org/2015/02/on-government-platform-purchasing-and.html), Simon Wardley
 * [Towers of SIAM, trade associations and Civil Servants](http://blog.gardeviance.org/2015/03/towers-of-siam-trade-associations-and.html), Simon Wardley
 * [The Towers of Salmon and Hungry Bears](http://blog.gardeviance.org/2015/03/the-towers-of-salmon-and-hungry-bears.html), Simon Wardley

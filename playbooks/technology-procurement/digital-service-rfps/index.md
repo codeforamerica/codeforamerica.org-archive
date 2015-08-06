@@ -39,7 +39,7 @@ Sometimes RFPs include information like stories of a typical user's day. Unfortu
 
 Doing the work to provide a story doesn't make up for a user research capability that's used during the whole development and delivery process. If your government doesn't have a user research capability, use the RFP to make sure vendors will do user research with you as part of a discovery process.
 
-RFPs also usually require checkpoint builds (delivery of software to check for progress, but not for quality), quality builds (where the reliability and quality are checked) and then phases of user acceptance testing and end-to-end testing. This is also a problem. User needs often keep being discovered when software is actually being used, so do user research on builds as early and often as possible to keep focussed on checking and then improving the software to meet user needs. 
+RFPs also usually require checkpoint builds (delivery of software to check for progress, but not for quality), quality builds (where the reliability and quality are checked) and then phases of user acceptance testing and end-to-end testing. This is also a problem. User needs are often discovered when software is actually being used, so do user research on your software from the start and as often as possible. 
 
 Your RFP should require:
 
