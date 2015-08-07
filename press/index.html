@@ -118,7 +118,7 @@ background: rgba(57, 159, 211, 0.6);
                 <ul class="tag-filter">
 
                     <p><a class="reset" data-filter="*" onclick="return false" href="#">Reset</a></p>
-                    
+
                     {% assign allTags = "" %}
 
                     {% for article in site.data.press %}
@@ -134,10 +134,13 @@ background: rgba(57, 159, 211, 0.6);
 
                     {% assign tagsList = allTags | split: "|" %}
 
-                    {% for uniqueTag in tagsList %}
+                    {% assign tagsAlphabetize = (tagsList | sort:0) %}
+
+                    {% for uniqueTag in tagsAlphabetize %}
                         {% unless uniqueTag == "" %}
                             {% assign uniqueTag_class = uniqueTag| replace: ' ','-' | replace: '&','and' %}
                             <li><a onclick="return false" href="#" data-filter=".{{ uniqueTag_class }}">{{ uniqueTag }}</a></li>
+                            <br>
                         {% endunless %}
                     {% endfor %}
                 </ul>
