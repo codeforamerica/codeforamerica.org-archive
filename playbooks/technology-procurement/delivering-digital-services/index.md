@@ -38,7 +38,7 @@ Digital leadership also needs simpler governance. In the UK, the Office of the C
 #### Product owners with authority
 Finally, internal teams succeed when they have ownership of the services they oversee. 
 
-The USDS [recommends](https://playbook.cio.gov/#play6) that government services have a single Product Owner with the authority to make product, business and technical decisions, and ultimate accountability; GDS calls product owners[Service Managers](https://www.gov.uk/service-manual/the-team/service-manager.html), who work throughout central government, departments and agencies, each with the authority to manage and direct the services they're responsible for. 
+The USDS [recommends](https://playbook.cio.gov/#play6) that government services have a single Product Owner with the authority to make product, business and technical decisions, and ultimate accountability; GDS calls product owners [Service Managers](https://www.gov.uk/service-manual/the-team/service-manager.html), who work throughout central government, departments and agencies, each with the authority to manage and direct the services they're responsible for. 
 
 ### 3. Use the right methods at the right time
 
