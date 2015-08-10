@@ -85,9 +85,9 @@ Kentucky’s health insurance exchange, [kynect](https://kynect.ky.gov/) is a go
 
 In Asheville’s [SimpliCity](http://cityofasheville.github.io/simplicity-ui/#/search), developed in-house, a focus on user needs meant that eight different mapping products and services were replaced with just one service that now delights users instead of aggravating them. SimpliCity combines the approach of integrating legacy back-end enterprise services with new cloud-based services as well as a user research-led approach.
 
-### 3. Relying on outsourcing has meant the decline of knowledge in government
+### 3. Relying on outsourcing has meant less digital knowledge in government
 
-Most governments are reliant on vendors and outsourcing to deliver digital services. But increasing reliance on outsourcing in the valid desire to provide value for money has resulted in a systemic lack of experience and understanding at the leadership and implementation level of what delivering a modern user-centered digital service requires. Worse, this reliance on outsourcing has turned IT in government into more of a contract and project management capability focussed on buying products and solutions, leading to a vicious circle. This fundamental lack of understanding and ownership in digital services means results in less effective and efficient services. And when these services inevitably result in poor user experiences, they leave citizens with less trust in government. 
+Most governments rely on vendors and outsourcing to deliver digital services through a valid need to provide value for money. Unfortunately, relying on vendors and outsourcing has over time lead to to a lack of experience and understanding in government of what's needed to deliver a modern, user-centered digtal service. Worse, relying on outsourcing has turned IT in government into more of a contract and project management capability whose job is to buy products and solutions, leading to a vicious circle. This lack of understanding and ownership in digital services results in less effective and efficient services. When these services inevitably result in poor user experiences, they leave citizens with less trust in government. 
 
 ### 4. Surprises are politically undesirable and must be avoided
 
