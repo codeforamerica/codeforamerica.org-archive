@@ -46,11 +46,11 @@ metadata:
   .platinum-logo {
     height: 60px;
   }
-  #mycity {
-    height: 200px;
-  }
   #courthouse {
-    height: 200px;
+    height: 150px;
+  }
+  #appcitylife {
+    height: 150px;
   }
   .civic-logo {
     height: 60px;
@@ -87,6 +87,19 @@ metadata:
   <h2>Gold Supporters</h2>
   <ul class="layout-grid-minim">
     {% for supporter in site.data.summit_supporters.gold %}
+      <li>
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="layout-semibreve layout-centered">
+  <h2>Silver Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.silver %}
       <li>
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}

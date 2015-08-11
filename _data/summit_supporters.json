@@ -30,6 +30,12 @@
     }
   ],
   "silver" : [
+    {
+      "name" : "Esri",
+      "logo" : "/media/images/summit/2015/logos/esri.jpg",
+       "description" : "Esri® helps organizations map and model our world. Esri’s GIS technology enables them to effectively analyze and manage their geographic information and make better decisions. They are supported by an experienced and knowledgeable staff and an extensive network of business partners and international distributors.",
+       "link" : "http://www.esri.com",
+    }
   ],
   "supporter" : [
     {
@@ -45,9 +51,19 @@
   ],
   "civic-startup" : [
     {
+      "name" : "APPCITYLIFE",
+      "logo" : "/media/images/summit/2015/logos/appcitylife.png",
+      "link" : "http://appcitylife.com/",
+    },
+    {
       "name" : "COURTHOUSE",
       "logo" : "/media/images/summit/2015/logos/courthouse.png",
       "link" : "http://courthouseusa.com/",
+    },
+    {
+      "name" : "FAF",
+      "logo" : "/media/images/summit/2015/logos/faf.jpg",
+      "link" : "http://all4kids.org",
     },
     {
       "name" : "MYCITY",
@@ -63,6 +79,16 @@
       "name" : "OPPSITES",
       "logo" : "/media/images/summit/2015/logos/oppsites.png",
       "link" : "http://oppsites.com/",
+    },
+    {
+      "name" : "PLACEMETER",
+      "logo" : "/media/images/summit/2015/logos/placemeter.png",
+      "link" : "https://www.placemeter.com/",
+    },
+    {
+      "name" : "PLACESPEAK",
+      "logo" : "/media/images/summit/2015/logos/placespeak.png",
+      "link" : "https://www.placespeak.com/",
     },
     {
       "name" : "SEAMLESS",

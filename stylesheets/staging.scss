@@ -3,7 +3,7 @@
 
 //
 // STAGING SCSS
-// 
+//
 // This is a staging area for changes to the core of the codeforamerica.org site that aren't part of the pattern library.
 // These changes may eventually be rolled into the pattern library.
 // Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
@@ -61,9 +61,9 @@ $color-black: rgba(0,0,0,0.7);
 a.button-invert.white,
 input[type="submit"].button-invert.white,
 button.button-invert.white {
-	color: white;
 	// These importants are terrible. But the level of specificity on slab- and block- buttons is nearly impossible to overwrite.
 	// This is a hack for now that will need to be fixed in a later version of the pattern-library.
+	color: white !important;
 	border-color: white !important;
 	border-bottom: 1px solid white !important;
 }
@@ -230,7 +230,7 @@ body.modal-active {
 }
 
 .masthead.masthead-custom {
- 
+
   // ## Basic layout
 
   // Set the color we'll fade the background into
@@ -241,7 +241,7 @@ body.modal-active {
   color: white;
 
   // ## The header image, held in the :before pseudo-class
-  
+
   &:before {
     // Same min-height as our container
     min-height: 100%;
@@ -369,7 +369,7 @@ body.modal-active {
 
 // ##### MARKER #####
 //
-// New version of badge that stands alone. Should be ported over to take the place of and 
+// New version of badge that stands alone. Should be ported over to take the place of and
 // become a more flexible version of badge.
 //
 
