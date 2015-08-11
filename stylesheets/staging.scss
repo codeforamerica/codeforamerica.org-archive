@@ -451,3 +451,57 @@ body.modal-active {
   margin-bottom: 1em;
   padding-bottom: 0.1em;
 }
+
+// ##### CARD #####
+//
+// Nice, self-contained things that fit inside containers with a border and a
+// white background.
+//
+
+.card {
+	border: 1px solid $color-gray-light;
+	padding: 1em;
+	background-color: white;
+}
+
+// ##### ICONS #####
+
+i.symbol {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: $color-gray-dark;
+}
+
+i.symbol-rocket {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-rocket.svg');
+	background-size: 70%;
+	background-position: 40% 70%;
+	background-repeat: no-repeat;
+	background-color: $color-orange;
+}
+
+i.symbol-glasses {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-glasses.svg');
+	background-size: 85%;
+	background-position: 55% 55%;
+	background-repeat: no-repeat;
+	background-color: $color-blue-dark;
+}
+
+i.symbol-gov {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-gov.svg');
+	background-size: 55%;
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+	background-color: $color-purple;
+}
+
+i.symbol-key {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-fellowship.svg');
+	background-size: 40%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: $color-red-medium;
+}
