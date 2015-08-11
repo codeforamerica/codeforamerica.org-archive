@@ -281,10 +281,6 @@ metadata:
   </section>
 {% endfor %}
 
-<!-- Breakout schedule -->
-
-{% assign breakout_tracks = "IT Leadership,CfA Basics,Other,Civic Engagement,Brigade Leadership,Safety & Justice,Economic Development,Government Website Design,Health: Designing Human & Social Services,Open Data,Performance & Analytics,Procurement" | split: "," %}
-
 <section class="layout-semibreve">
   <a id="breakouts"></a>
   <h2>Breakout Sessions</h2>
@@ -293,17 +289,17 @@ metadata:
 
   <div class="button-group">
     <p>
-      {% for track in breakout_tracks %}
-      <a class="button button-s" href="#{{track | downcase}}">{{track}}</a>
+      {% for track in site.data.summit_audiences %}
+      <a class="button button-s" href="#{{track.audiences | downcase}}">{{track.audiences}}</a>
       {% endfor %}
     </p>
   </div>
 
-  {% for track in breakout_tracks %}
-    <a id="{{track | downcase}}"></a>
-    <h4><strong>{{track}}</strong></h4>
+  {% for track in site.data.summit_audiences %}
+    <a id="{{track.audiences | downcase}}"></a>
+    <h4><strong>{{track.audiences}}</strong></h4>
     {% for entry in site.data.summit_breakouts %}
-      {% if entry.session_audience == track %}
+      {% if entry.session_audience == track.audiences %}
         {% if entry.status == "Confirmed" %}
           <div class="schedule-item layout-whole">
             <div class="schedule-item_time">
