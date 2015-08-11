@@ -76,22 +76,80 @@
 
   <nav class="nav-global-secondary">
     <ul>
+      <!-- 1.2 ABOUT -->
       <li class="nav-tier1 nav-has-children">
         <a href="/about" {% if nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
         {% if nav_tier1_active == "about" %}
         <ul class="nav-tier2">
+            <li><a href="/about/">What we do</a></li>
+            <!-- Not sure what to do with this
             <li><a href="/about/values">Values</a></li>
-            <li><a href="/about/board">Board</a></li>
+            -->
             <li><a href="/about/team">Team</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <!-- Potential sub-items
+            <li><a href="/about/board">Board</a></li>
+            -->
             <li><a href="/press">Press</a></li>
-            <li><a href="/about/financial-information">Financial Information</a></li>
-            <li><a href="/support-us/">Support Us</a></li>
-            <li><a href="/jobs">Jobs</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/about/financial-information">Financial information</a></li>
+            <!-- <li><a href="/jobs">Jobs</a></li> -->
         </ul>
         {% endif %}
       </li>
+
+      <!-- 1.3 WORK WITH US -->
+      <li class="nav-tier1 nav-has-children">
+        <a href="/work-with-us" {% if nav_tier1_active == "work-with-us" %}class="state-active"{% endif %}>Work with us</a><!-- NO PAGE! -->
+        {% if nav_tier1_active == "work-with-us" %}
+        <ul class="nav-tier2">
+            <li><a href="/governments">Government partnerships</a></li>
+            <li><a href="/geeks/fellowship-apply">Become a fellow</a></li>
+            <li><a href="/jobs">Apply for a job</a></li>
+            <li><a href="/support-us">Fund our work</a></li>
+            <li><a href="/brigade">Volunteer your skills</a></li>
+            <li><a href="/our-work/initiatives/talent">Work inside government</a></li>
+        </ul>
+        {% endif %}
+      </li>
+
+      <!-- 1.4 HOW WE WORK -->
+      <li class="nav-tier1 nav-has-children">
+        <a href="/how-we-work" {% if nav_tier1_active == "how-we-work" %}class="state-active"{% endif %}>How we work</a><!-- NO PAGE! -->
+        {% if nav_tier1_active == "how-we-work" %}
+        <ul class="nav-tier2">
+          <li><a href="/governments/principles">21st Century Government</a></li>
+          <li><a href="/summit">Summit</a></li>
+          <li><a href="/our-work/focus-areas/health">Health</a></li>
+          <li><a href="/our-work/focus-areas/safety-justice">Safety and Justice</a></li>
+          <li><a href="/our-work/focus-areas/economic-development">Economic Development</a></li>
+          <li><a href="/our-work/focus-areas/communications-engagement">Communications and Engagement</a></li><!-- NO PAGE! -->
+          <li><a href="/our-work/focus-areas/communications-engagement">Products</a></li>
+          <li><a href="/about/fellowship">Fellowship</a></li>
+        </ul>
+        {% endif %}
+      </li>
+
+      <!-- 1.5 OUR COMMUNITY -->
+      <li class="nav-tier1 nav-has-children">
+        <a href="/community" {% if nav_tier1_active == "community" %}class="state-active"{% endif %}>Our community</a><!-- NO PAGE! -->
+        {% if nav_tier1_active == "community" %}
+        <ul class="nav-tier2">
+          <li><a href="/brigade">Brigades</a></li>
+          <li><a href="/companies">Companies</a></li>
+          <li><a href="#">Partners</a></li><!-- NO PAGE -->
+          <li><a href="http://codeforall.org/" target="_blank">Code for All</a></li><!-- NO PAGE -->
+        </ul>
+        {% endif %}
+      </li>
+
+      <li class="nav-tier1">
+        <a href="/summit">Summit</a>
+      </li>
+      <li class="nav-tier1">
+        <a href="/blog">Blog</a>
+      </li>
+
+      <!-- OLD ITEMS THAT MAY OR MAY NOT NEED A HOME
       <li class="nav-tier1 nav-has-children">
         <a href="/governments" {% if nav_tier1_active == "governments" %}class="state-active"{% endif %}>Governments</a>
         {% if nav_tier1_active == "governments" %}
@@ -138,9 +196,7 @@
         </ul>
         {% endif %}
       </li>
-      <li class="nav-tier1">
-        <a href="/blog">Blog</a>
-      </li>
+      -->
       <li><a href="https://secure.codeforamerica.org/page/contribute/default?source_codes=nav-donate-button" class="button">Donate</a></li>
     </ul>
   </nav>
