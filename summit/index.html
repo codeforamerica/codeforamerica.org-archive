@@ -91,14 +91,17 @@ jquery-scripts: |
   <p class="when"><strong><i class="icon-calendar"></i>When:</strong> September 30 - October 2  &nbsp;&nbsp;&nbsp;<span class="break"></span>  <strong><i class="icon-location"></i>Where:</strong> Oakland Marriott City Center</p>
   <!-- <p>The 2015 Code for America will kick-off September 30 in Oakland, California. For three days, more than 1,300 government leaders, technologists, and community members will work together and share ideas about transforming government for the 21st Century.</p> -->
 
-  <br />
   <div class="layout-semibreve layout-centered">
     <h3><i class="icon-checkmark"></i>Register today</h3>
     <p>Get your ticket by August 15th to to get an early-bird discount and secure your spot for the biggest, and most action-packed, Summit yet.</p>
-    <p><a href="#register" class="button button-bold">Register</a></p>
+    <div id="discount-alert-target"></div>
+    <div style="width:100%; text-align:left;" >
+      <iframe  id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="675" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
   </div>
 
-  <!-- <div class="layout-crotchet">
+  <!--
+  <div class="layout-crotchet">
     <h5><i class="icon-bullhorn"></i> Speakers on tap</h5>
     <p class="quiet">Hear from leaders inside and outside of government who are building 21st Century government.</p>
     <p><a href="/summit/speakers" class="button button-bold">See the lineup</a></p>
@@ -109,7 +112,9 @@ jquery-scripts: |
     <p class="quiet">The Summit is three days of action-packed content, featuring passionate people who are transforming government.</p>
     <p><a href="/summit/schedule" class="button button-bold">See the schedule</a></p>
   </div>
-</section> -->
+  -->
+
+</section>
 
 <!-- <section class="slab-gray">
   <div class="layout-semibreve">
@@ -127,8 +132,7 @@ jquery-scripts: |
     <p>Keynotes, breakout sessions, a hack space, an unconference, and a two-day tech fair. The Summit is the place to discuss the future of government technology. Register now and save your spot.</p>
   </div>
   <div class="layout-major">
-    <div id="discount-alert-target"></div>
-    <div style="width:100%; text-align:left;" ><iframe  id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="675" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=etckt">The 2015 Code for America Summit</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+
   </div>
   <br /><br />
 </section>
@@ -176,3 +180,37 @@ jquery-scripts: |
 
   <p class="layout-centered"><a href="/summit/supporters/">More&hellip;</a></p>
 </section>
+
+
+<!-- SEO -->
+<meta name="author" content="Code for America">
+<meta name="description" content="Five years ago, few believed that government could change. Today, thousands of volunteers 'Code for America' in their own communities e...">
+<link rel="canonical" href="http://2014.codeforamerica.org/">
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@codeforamerica">
+<meta name="twitter:creator" content="Code for America">
+<meta name="twitter:title" content="Introduction | Code for America 2014 Annual Report">
+<meta name="twitter:description" content="Five years ago, few believed that government could change. Today, thousands of volunteers 'code for America' in their own communities e...">
+<meta name="twitter:image:src" content="http://2014.codeforamerica.org/assets/images/defaults/swag.jpg">
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="og:url" content="http://2014.codeforamerica.org/">
+<meta property="og:this.type" content="article">
+<meta property="og:title" content="Introduction | Code for America 2014 Annual Report">
+<meta property="og:image" content="http://2014.codeforamerica.org/assets/images/defaults/swag.jpg">
+<meta property="og:description" content="
+
+Five years ago, few believed that government could change. Today, thousands of volunteers “code for America” in their own communities e...">
+<meta property="og:site_name" content="Code for America | 2014 Annual Report">
+<meta property="article:publisher" content="https://www.facebook.com/codeforamerica">
+
+<!-- Social: Google+ / Schema.org  -->
+<link rel="author" href="https://plus.google.com/+codeforamerica/posts"/>
+<link rel="publisher" href="https://plus.google.com/+codeforamerica/about"/>
+<meta itemprop="name" content="Introduction | Code for America 2014 Annual Report">
+<meta itemprop="description" content="
+
+Five years ago, few believed that government could change. Today, thousands of volunteers “code for America” in their own communities e...">
+<meta itemprop="image" content="http://2014.codeforamerica.org/assets/images/defaults/swag.jpg">
