@@ -27,10 +27,13 @@ jquery-scripts: |
       console.log("Loaded");
       if (typeof(urlParams["discount"]) !== "undefined" && urlParams["discount"] !== "") {
         console.log("IT DOES THINGS");
-        var iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt";
-        var iframe_discount_code = "&discount=" + urlParams["discount"];
-        var path = iframe_base_path + iframe_discount_code;
-        document.getElementById('iframe-source').setAttribute('src', path);
+        var discount_code = "&discount=" + urlParams["discount"],
+        iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
+        iframe_path = iframe_base_path + discount_code,
+        link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
+        link_path = link_base_path + discount_code;
+        document.getElementById('iframe-source').setAttribute('src', iframe_path);
+        document.getElementById('link-source').href = link_path;
 
         // send a discount code notice
         $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
@@ -40,50 +43,47 @@ jquery-scripts: |
 ---
 
 <style>
+  /* Reset some font defaults for Summit branding style */
   h1,h2,h3,h4,h5,h6 {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
   }
-
   h5 {
     text-transform: none;
     font-weight: bold;
   }
 
+  /* Quiet is a little smaller */
   p.quiet {
     font-size: 14px;
     line-height: 2;
   }
 
-  table.schedule {
-    border: none;
+  /* We use .break to break up text on mobile vs. desktop */
+  span.break { display: block; }
+  @media screen and (min-width: 40em) {
+    span.break { display: none; }
   }
 
-  table.schedule tbody, table.schedule td, table.schedule th {
-    border-bottom: none;
+  /* On mobile, show our button to leave to eventbrite. On desktop, show our
+   * nice grid of ticket options.
+  **/
+  .eventbrite-iframe { display: none; }
+  @media screen and (min-width: 40em) {
+   .eventbrite-iframe { display: inherit; }
+   .eventbrite-link { display: none; }
   }
 
-  table.schedule tr.lined {
-    border-bottom: 1px solid #e9e9e9;
-  }
+  /* Let's resize the iframe as the page size changes. This is tied pretty
+   * closely to the content that's in it, so it might break.
+  **/
 
-  span.break {
-    display: none;
-  }
-
-  @media screen and (max-width: 40em) {
-    table p {
-      font-size: 12px;
-      word-break: keep-all;
-    }
-    table th {
-      font-size: 14px;
-    }
-
-    span.break {
-      display: block;
-    }
-  }
+  /* small */
+                                        #iframe-source { height: 620px; }
+  /* medium */
+  @media screen and (min-width: 50em) { #iframe-source { height: 600px; } }
+  /* largest */
+  @media screen and (min-width: 60em) { #iframe-source { height: 551px; } }
 </style>
 
 <section class="layout-semibreve layout-centered">
@@ -95,8 +95,11 @@ jquery-scripts: |
     <h3><i class="icon-checkmark"></i>Register today</h3>
     <p>Get your ticket by August 15th to to get an early-bird discount and secure your spot for the biggest, and most action-packed, Summit yet.</p>
     <div id="discount-alert-target"></div>
-    <div style="width:100%; text-align:left;" >
-      <iframe  id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="675" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+    <div class="eventbrite-iframe">
+      <iframe id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
+    <div class="eventbrite-link">
+      <a id="link-source" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink" class="button button-lg button-bold">Buy your ticket now</a>
     </div>
   </div>
 
@@ -116,7 +119,8 @@ jquery-scripts: |
 
 </section>
 
-<!-- <section class="slab-gray">
+<!--
+<section class="slab-gray">
   <div class="layout-semibreve">
     <div class="layout-major-invert">
       <p>Sponsored by:</p>
@@ -124,30 +128,8 @@ jquery-scripts: |
       <p>Leading governments partner with Socrata to improve outcomes in quality of life, operational excellence, and economic impact through data</p>
     </div>
   </div>
-</section> -->
-
-<section class="layout-semibreve">
-  <div class="layout-minor">
-    <h2 id="register">Register</h2>
-    <p>Keynotes, breakout sessions, a hack space, an unconference, and a two-day tech fair. The Summit is the place to discuss the future of government technology. Register now and save your spot.</p>
-  </div>
-  <div class="layout-major">
-
-  </div>
-  <br /><br />
 </section>
-
-<section class="slab-dark-blue">
-  <div class="layout-semibreve">
-    <div class="highlight highlight-with-avatar">
-      <img class="highlight-avatar" src="/media/images/summit/2015/seal-asheville.png" style="border-color:darkgray;" />
-      <blockquote>
-        <p>Of all the conferences and trainings I do, I learn more valuable, applicable information in the three days of this conference than all others combined. It sets the tone and mindset for a whole year of getting stuff done.</p>
-      </blockquote>
-      <p class="attribute">Dave Michelson, GIS Analyst <a href="#">City of Asheville</a></p>
-    </div>
-  </div>
-</section>
+-->
 
 <section class="layout-semibreve">
   <div class="layout-minor">
@@ -155,13 +137,12 @@ jquery-scripts: |
     <p>A limited number of rooms are available at a discounted rate of $199 per night at the Oakland Marriott City Center, the official host hotel for the CfA Summit.</p>
     <p><a href="//www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Code%20For%20America%20Summit%5Eoakdt%60cdacdaa%60199.00%60USD%60false%609/27/15%6010/4/15%609/6/15&app=resvlink&stop_mobi=yes" target="_blank">Reserve your room today</a> or call 800-991-7249 and reference the Code for America Summit for this special rate to be closest to all the action.</p>
     <a href="//www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Code%20For%20America%20Summit%5Eoakdt%60cdacdaa%60199.00%60USD%60false%609/27/15%6010/4/15%609/6/15&app=resvlink&stop_mobi=yes" class="button-bold" target="_blank">Reserve your room</a>
+    <p>&nbsp;</p>
   </div>
   <div class="layout-major">
     <img src="/media/images/summit/2015/marriott-lobby.jpg" alt="The lobby of the Oakland Marriott City Center." width="100%" class="width:100%;">
   </div>
 </section>
-
-
 
 <section class="layout-semibreve layout-centered">
   <ul class="list-logos-primary muted">
@@ -181,36 +162,14 @@ jquery-scripts: |
   <p class="layout-centered"><a href="/summit/supporters/">More&hellip;</a></p>
 </section>
 
-
-<!-- SEO -->
-<meta name="author" content="Code for America">
-<meta name="description" content="Five years ago, few believed that government could change. Today, thousands of volunteers 'Code for America' in their own communities e...">
-<link rel="canonical" href="http://2014.codeforamerica.org/">
-
-<!-- Social: Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@codeforamerica">
-<meta name="twitter:creator" content="Code for America">
-<meta name="twitter:title" content="Introduction | Code for America 2014 Annual Report">
-<meta name="twitter:description" content="Five years ago, few believed that government could change. Today, thousands of volunteers 'code for America' in their own communities e...">
-<meta name="twitter:image:src" content="http://2014.codeforamerica.org/assets/images/defaults/swag.jpg">
-
-<!-- Social: Facebook / Open Graph -->
-<meta property="og:url" content="http://2014.codeforamerica.org/">
-<meta property="og:this.type" content="article">
-<meta property="og:title" content="Introduction | Code for America 2014 Annual Report">
-<meta property="og:image" content="http://2014.codeforamerica.org/assets/images/defaults/swag.jpg">
-<meta property="og:description" content="
-
-Five years ago, few believed that government could change. Today, thousands of volunteers “code for America” in their own communities e...">
-<meta property="og:site_name" content="Code for America | 2014 Annual Report">
-<meta property="article:publisher" content="https://www.facebook.com/codeforamerica">
-
-<!-- Social: Google+ / Schema.org  -->
-<link rel="author" href="https://plus.google.com/+codeforamerica/posts"/>
-<link rel="publisher" href="https://plus.google.com/+codeforamerica/about"/>
-<meta itemprop="name" content="Introduction | Code for America 2014 Annual Report">
-<meta itemprop="description" content="
-
-Five years ago, few believed that government could change. Today, thousands of volunteers “code for America” in their own communities e...">
-<meta itemprop="image" content="http://2014.codeforamerica.org/assets/images/defaults/swag.jpg">
+<section class="slab-dark-blue">
+  <div class="layout-semibreve">
+    <div class="highlight highlight-with-avatar">
+      <img class="highlight-avatar" src="/media/images/summit/2015/seal-asheville.png" style="border-color:darkgray;" />
+      <blockquote>
+        <p>Of all the conferences and trainings I do, I learn more valuable, applicable information in the three days of this conference than all others combined. It sets the tone and mindset for a whole year of getting stuff done.</p>
+      </blockquote>
+      <p class="attribute">Dave Michelson, GIS Analyst <a href="#">City of Asheville</a></p>
+    </div>
+  </div>
+</section>
