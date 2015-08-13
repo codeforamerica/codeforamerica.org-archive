@@ -180,3 +180,34 @@ p.masthead-content-description {
     line-height: 25px;
   }
 }
+
+// =====
+// Sponsor banner module, for the little sponsor banners throughout
+// =====
+.sponsor-banner {
+  display: none;
+}
+.sponsor-banner.sponsor-baner-visible {
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+}
+.sponsor-banner p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  line-height: 1.2;
+}
+.sponsor-banner img {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: -10px;
+}
