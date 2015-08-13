@@ -59,15 +59,13 @@ metadata:
 
 <section class="layout-semibreve layout-centered">
   <h2>Capstone Supporters</h2>
-  <ul class="layout-grid-minim">
     {% for supporter in site.data.summit_supporters.capstone %}
-      <li>
+
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
         <p><a href="{{ supporter.link }}">More</a></p>
-      </li>
+
     {% endfor %}
-  </ul>
 </section>
 
 <section class="layout-semibreve layout-centered">
