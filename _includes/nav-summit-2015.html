@@ -67,6 +67,15 @@
 </div>
 {% endif %}
 
+{% if page.sponsor-banner %}
+<section>
+  <div class="sponsor-banner" id="sponsor-banner">
+    <p>Sponsored by:</p>
+    <img id="sponsor-banner-image" src="/media/images/summit/2015/logos/socrata-cutout.png" alt="Summit sponsor logo">
+  </div>
+</section>
+{% endif %}
+
 {% if page.masthead-custom == "deep" %}
 <div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
 
