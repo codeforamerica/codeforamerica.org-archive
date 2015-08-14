@@ -254,6 +254,14 @@ body.modal-active {
 
   // ## Typography
 
+	h5 {
+		font-weight: 700;
+		text-transform: none;
+		font-size: 1.3em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
   .page-title {
     // Restyle the page header text
     font-size: 35px;

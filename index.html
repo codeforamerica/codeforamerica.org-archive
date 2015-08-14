@@ -30,48 +30,49 @@ helpers:
         <link rel="stylesheet" href="//style.codeforamerica.org/3/style/css/layout.css" media="all">
     <![endif]-->
 
-	<style type="text/css">
+    <style>
+      /* Styles that make the sponsor logos resize appropriately */
+      ul.list-logos {
+        width: 900px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      ul.list-logos li { width: 15% }
+      @media (max-width: 900px) {
+        ul.list-logos { width: 100% }
+        ul.list-logos li { width: 140px }
+      }
 
-		.masthead:before {
-			background-image: url('media/images/homepage-stories/nothing.png');
-		}
+      /* Pull in global masthead */
+      .global-header {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
 
-		.masthead-homepage:before { min-height: 310px }
+      /* Custom width */
+      .layout-semibreve.layout-kindabreve {
+        max-width: 70rem;
+      }
 
-		@media (min-height: 45em)
-		{
-			.masthead-homepage:before { min-height: 600px }
-		}
+      /* Redo typography */
+      h1 {
+        text-transform: none;
+        margin: 0.25em 0;
+      }
+      h5 {
+    		font-weight: 700;
+    		text-transform: none;
+    		font-size: 1.3em;
+    		margin-top: 0.5em;
+    		margin-bottom: 0.5em;
+    	}
+  	</style>
 
-        ul.list-logos
-        {
-            width: 900px;
-            margin: 0 auto;
-            padding: 0;
-        }
-
-        ul.list-logos li { width: 15% }
-
-        @media (max-width: 900px)
-        {
-            ul.list-logos { width: 100% }
-            ul.list-logos li { width: 140px }
-        }
-
-        /* Collapse global header with following masthead */
-        .global-header
-        {
-            margin-bottom: 0 !important;
-            border-bottom: 0 !important;
-        }
-
-	</style>
     {% include meta-header.html %}
 
     <!-- DH's GWT verification code -->
     <meta name="google-site-verification" content="aHfXE_zmYIz9jIBKZEGrd4vMF17X_F3KdBog0BN-CHk" />
     <!-- end -->
-
     <!-- Bing site verification code -->
     <meta name="msvalidate.01" content="BE3AE53B67B9DB3031EE38B0A976C834" />
     <!-- end -->
@@ -83,42 +84,30 @@ helpers:
 
 {% include nav.html masthead="no" %}
 
-<div class="masthead masthead-xl masthead-homepage">
-  <header class="layout-semibreve masthead-header">
-    <h1 id="story-title" class="page-title"><a href="governments/sanfrancisco/">In San Francisco</a></h1>
-    <p id="story-content">One third of HSA clients are unnecessarily cut from food benefits. Four fellows built <a href="/apps/promptly/">Promptly</a> offering SMS notifications to keep families fed.</p>
-    <a id="box-link" class="text-whisper button-invert" href="/about">Learn More About What We Do</a>
-  </header>
-</div>
-
-<script src="script/home-story.js"></script>
-<script src="stories.js"></script>
 
 <main role="main">
-
-<section class="slab-blue">
-    <div class="layout-chimney">
-        <div class="layout-minim-staccato slab-dark-blue chimney">
-            <div class="chimney-body">
-                <h3>Who We Are</h3>
-                <p>Code for America believes government can work for the people, by the people in the 21st century.</p>
-                <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</p>
-                <p>Join our e-mail list to learn how to use your skills to make your community better & we’ll send you info about Code for America’s work.</p>
-                <div class="layout-center">
-                    <a class="text-whisper button-invert white js-modal-show" href="#">Sign up</a>
-                    <br/>
-                </div>
-            </div>
+  <section class="layout-semibreve layout-kindabreve">
+    <h1>Code for America believes government can work for the people, by the people in the 21st century.</h1>
+    <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use. You can help. Here's how:</p>
+    <ul class="layout-grid-minim">
+      <li>
+        <div class="card card-action">
+          <i class="symbol symbol-gov"></i>
+          <h5>Roll up your sleeves at the CfA Summit</h5>
+          <p>Join us for three days of government leaders, technologists, and community members delving into how we can transform government together.</p>
+          <a href="#" class="button button-lg">Save your spot</a>
         </div>
-
-        <div class="layout-minim-staccato">
-            <!-- <h4><a href="http://www.codeforamerica.org/summit/?utm_source=homepage">Join Us at the Summit</a></h4> -->
-            <a href="http://www.codeforamerica.org/summit/?utm_source=homepage"><img src="media/images/summit-home-white.png" /></a>
-            <a href="http://www.codeforamerica.org/summit/?utm_source=homepage" class="text-whisper button-invert white">Join us at the Summit</a>
+      </li>
+      <li>
+        <div class="card card-action">
+          <i class="symbol symbol-key"></i>
+          <h5>Volunteer your skills for just one night</h5>
+          <p>Join a Brigade of volunteers working to solve real problems in your community. Put your skills and transform 21st century government in your city.</p>
+          <a href="#" class="button button-lg">Help transform government</a>
         </div>
-
-    </div>
-</section>
+      </li>
+    </ul>
+  </section>
 
 <section class="slab-black slab-bg1" id="js-blogposts">
     <div class="layout-minim layout-solo insulate">
