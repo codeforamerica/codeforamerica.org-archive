@@ -46,12 +46,14 @@ helpers:
       /* Pull in global masthead */
       .global-header {
         margin-top: 0 !important;
-        margin-bottom: 0 !important;
+        margin-bottom: 2em !important;
+        box-shadow: none !important;
       }
 
       /* Custom width */
       .layout-semibreve.layout-kindabreve {
         max-width: 70rem;
+        padding-top: 0;
       }
 
       /* Redo typography */
@@ -89,10 +91,10 @@ helpers:
   <section class="layout-semibreve layout-kindabreve">
     <h1>Code for America believes government can work for the people, by the people in the 21st century.</h1>
     <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use. You can help. Here's how:</p>
-    <ul class="layout-grid-minim">
+    <ul class="layout-grid-crotchet">
       <li>
         <div class="card card-action">
-          <i class="symbol symbol-gov"></i>
+          <img src="/media/images/actions/computer.jpg" alt="">
           <h5>Roll up your sleeves at the CfA Summit</h5>
           <p>Join us for three days of government leaders, technologists, and community members delving into how we can transform government together.</p>
           <a href="#" class="button button-lg">Save your spot</a>
@@ -100,9 +102,17 @@ helpers:
       </li>
       <li>
         <div class="card card-action">
-          <i class="symbol symbol-key"></i>
+          <img src="/media/images/actions/brigade.jpg" alt="">
           <h5>Volunteer your skills for just one night</h5>
           <p>Join a Brigade of volunteers working to solve real problems in your community. Put your skills and transform 21st century government in your city.</p>
+          <a href="#" class="button button-lg">Help transform government</a>
+        </div>
+      </li>
+      <li>
+        <div class="card card-action">
+          <img src="/media/images/actions/meeting.jpg" alt="">
+          <h5>Transform your government, one practice at a time</h5>
+          <p>We've gathered years of research on how to transform government for the 21st century into one place. Get a jump start by reading our playbook.</p>
           <a href="#" class="button button-lg">Help transform government</a>
         </div>
       </li>
