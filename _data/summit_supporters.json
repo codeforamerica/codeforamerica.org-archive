@@ -95,5 +95,22 @@
       "logo" : "/media/images/summit/2015/logos/seamless.png",
       "link" : "http://www2.seamlessdocs.com/",
     }
+  ],
+  "media-partners": [
+    {
+      "name" : "Microsoft",
+      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
+      "link" : "http://www.microsoft.com"
+    },
+    {
+      "name" : "Microsoft",
+      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
+      "link" : "http://www.microsoft.com"
+    },
+    {
+      "name" : "Microsoft",
+      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
+      "link" : "http://www.microsoft.com"
+    }
   ]
 }
