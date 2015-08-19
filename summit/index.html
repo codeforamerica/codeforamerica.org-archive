@@ -9,16 +9,16 @@ nav-global-primary: "no"
 masthead-custom: "deep"
 
 # Title for the title bar, and the overline in the masthead
-title: "The CFA Summit"
+title: "The Code for America Summit"
 
 # Content for the custom deep masthead
-headline: "Transforming 21st Century Government"
+headline: "Transforming Government for the 21st Century"
 description: "September 30 - October 2, Oakland, California: The #CfASummit is a roll-up-your-sleeves conference that brings together innovators from hundreds of governments across the U.S. along with civic-minded technologists, designers, community organizers, and entrepreneurs."
 
 # Metadata image
 metadata:
-  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
-  image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/summit-social.png
+  image-url: "http://codeforamerica.org/media/images/summit/2015/summit-social.png"
 
 # jQuery
 jquery-scripts: |
@@ -27,10 +27,13 @@ jquery-scripts: |
       console.log("Loaded");
       if (typeof(urlParams["discount"]) !== "undefined" && urlParams["discount"] !== "") {
         console.log("IT DOES THINGS");
-        var iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt";
-        var iframe_discount_code = "&discount=" + urlParams["discount"];
-        var path = iframe_base_path + iframe_discount_code;
-        document.getElementById('iframe-source').setAttribute('src', path);
+        var discount_code = "&discount=" + urlParams["discount"],
+        iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
+        iframe_path = iframe_base_path + discount_code,
+        link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
+        link_path = link_base_path + discount_code;
+        document.getElementById('iframe-source').setAttribute('src', iframe_path);
+        document.getElementById('link-source').href = link_path;
 
         // send a discount code notice
         $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
@@ -40,146 +43,81 @@ jquery-scripts: |
 ---
 
 <style>
+  /* Reset some font defaults for Summit branding style */
   h1,h2,h3,h4,h5,h6 {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
   }
-
   h5 {
     text-transform: none;
     font-weight: bold;
   }
 
+  /* Quiet is a little smaller */
   p.quiet {
     font-size: 14px;
     line-height: 2;
   }
 
-  table.schedule {
-    border: none;
+  /* We use .break to break up text on mobile vs. desktop */
+  span.break { display: block; }
+  @media screen and (min-width: 40em) {
+    span.break { display: none; }
   }
 
-  table.schedule tbody, table.schedule td, table.schedule th {
-    border-bottom: none;
+  /* On mobile, show our button to leave to eventbrite. On desktop, show our
+   * nice grid of ticket options.
+  **/
+  .eventbrite-iframe { display: none; }
+  @media screen and (min-width: 40em) {
+   .eventbrite-iframe { display: inherit; }
+   .eventbrite-link { display: none; }
   }
 
-  table.schedule tr.lined {
-    border-bottom: 1px solid #e9e9e9;
-  }
+  /* Let's resize the iframe as the page size changes. This is tied pretty
+   * closely to the content that's in it, so it might break.
+  **/
 
-  span.break {
-    display: none;
-  }
-
-  @media screen and (max-width: 40em) {
-    table p {
-      font-size: 12px;
-      word-break: keep-all;
-    }
-    table th {
-      font-size: 14px;
-    }
-
-    span.break {
-      display: block;
-    }
-  }
+  /* small */
+                                        #iframe-source { height: 620px; }
+  /* medium */
+  @media screen and (min-width: 50em) { #iframe-source { height: 600px; } }
+  /* largest */
+  @media screen and (min-width: 60em) { #iframe-source { height: 551px; } }
 </style>
 
 <section class="layout-semibreve layout-centered">
-  <h2 id="announcement">Announcing the 2015 Summit</h2>
-  <p class="when"><strong><i class="icon-alarm"></i>When:</strong> September 30 - October 2  &nbsp;&nbsp;&nbsp;<span class="break"></span>  <strong><i class="icon-location"></i>Where:</strong> Oakland Marriott City Center</p>
-  <p>The 2015 Code for America will kick-off September 30 in Oakland, California. For three days, more than 1,300 government leaders, technologists, and community members will take over the Oakland Marriott City Center, to delve into how, together, we can transform government for the 21st Century.</p>
+  <h2 id="announcement">Join us at the 2015 Summit</h2>
+  <p class="when"><strong><i class="icon-calendar"></i>When:</strong> September 30 - October 2  &nbsp;&nbsp;&nbsp;<span class="break"></span>  <strong><i class="icon-location"></i>Where:</strong> Oakland Marriott City Center</p>
+  <!-- <p>The 2015 Code for America will kick-off September 30 in Oakland, California. For three days, more than 1,300 government leaders, technologists, and community members will work together and share ideas about transforming government for the 21st Century.</p> -->
 
-  <br />
-  <div class="layout-minim">
-    <h5><i class="icon-checkmark"></i> Register now</h5>
-    <p class="quiet">Early-bird registration secures your spot for the biggest, and most action-packed, Summit yet.</p>
-    <p><a href="#register" class="button button-bold">Register</a></p>
+  <div class="layout-semibreve layout-centered">
+    <a id="register"></a>
+    <h3><i class="icon-checkmark"></i>Register today</h3>
+    <p>Secure your spot for the biggest, and most action-packed, Summit yet.</p>
+    <div id="discount-alert-target"></div>
+    <div class="eventbrite-iframe">
+      <iframe id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
+    <div class="eventbrite-link">
+      <a id="link-source" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink" class="button button-lg button-bold">Buy your ticket now</a>
+    </div>
   </div>
-  
+
+  <!--
+  <div class="layout-crotchet">
     <h5><i class="icon-bullhorn"></i> Speakers on tap</h5>
     <p class="quiet">Hear from leaders inside and outside of government who are building 21st Century government.</p>
     <p><a href="/summit/speakers" class="button button-bold">See the lineup</a></p>
-</section>
-
-<section class="slab-dark-blue">
-  <div class="layout-semibreve">
-    <div class="highlight highlight-with-avatar">
-      <img class="highlight-avatar" src="/media/images/summit/2015/seal-asheville.png" style="border-color:darkgray;" />
-      <blockquote>
-        <p>Of all the conferences and or training I do, I learn more valuable applicable information in the three days of this conference than all the others combined and sets the tone and mindset for a whole year of getting stuff done.</p>
-      </blockquote>
-      <p class="attribute">Dave Michelson, GIS Analyst <a href="#">City of Asheville</a></p>
-    </div>
   </div>
-</section>
 
-<section class="layout-semibreve">
-
-  <div class="layout-minor">
-    <h2 id="schedule">Schedule</h2>
-    <p>The Summit draws a diverse audience of government officials, technologists, civic leaders, and philanthropists. More speakers will be added as they are confirmed.</p>
+  <div class="layout-crotchet">
+    <h5><i class="icon-alarm"></i> Schedule</h5>
+    <p class="quiet">The Summit is three days of action-packed content, featuring passionate people who are transforming government.</p>
+    <p><a href="/summit/schedule" class="button button-bold">See the schedule</a></p>
   </div>
-  <div class="layout-major">
-    <table class="schedule">
+  -->
 
-      <thead>
-        <tr>
-          <th></th>
-          <th>Wed.</th>
-          <th>Thurs.</th>
-          <th>Fri.</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr class="lined">
-          <th><p>Morning</p></th>
-          <td>
-            <p>Mainstage sessions</p>
-            <p>Opening Keynote</p>
-          </td>
-          <td>
-            <p>Mainstage sessions</p>
-          </td>
-          <td>
-            <p>Mainstage sessions</p>
-            <p>Closing keynote</p>
-          </td>
-        </tr>
-        <tr>
-          <th><p>Afternoon</p></th>
-          <td>
-            <p>Breakouts</p>
-            <p>Unconference</p>
-            <p>Hackspace</p>
-            <p>Tech Fair</p>
-          </td>
-          <td>
-            <p>Breakouts</p>
-            <p>Unconference</p>
-            <p>Hackspace</p>
-            <p>Tech Fair</p>
-          </td>
-          <td></td>
-      </tr>
-
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="layout-semibreve">
-  <div class="layout-minor">
-    <h2 id="register">Register</h2>
-    <p>Unhackathons, keynotes, deep dives, a two-day tech fair. The Summit is the place to discuss the future of government technology. Register now and save your spot.</p>
-  </div>
-  <div class="layout-major">
-    <div id="discount-alert-target"></div>
-    <div style="width:100%; text-align:left;" ><iframe  id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="675" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=etckt">The 2015 Code for America Summit</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
-  </div>
-  <br /><br />
 </section>
 
 <section class="layout-semibreve">
@@ -188,14 +126,12 @@ jquery-scripts: |
     <p>A limited number of rooms are available at a discounted rate of $199 per night at the Oakland Marriott City Center, the official host hotel for the CfA Summit.</p>
     <p><a href="//www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Code%20For%20America%20Summit%5Eoakdt%60cdacdaa%60199.00%60USD%60false%609/27/15%6010/4/15%609/6/15&app=resvlink&stop_mobi=yes" target="_blank">Reserve your room today</a> or call 800-991-7249 and reference the Code for America Summit for this special rate to be closest to all the action.</p>
     <a href="//www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Code%20For%20America%20Summit%5Eoakdt%60cdacdaa%60199.00%60USD%60false%609/27/15%6010/4/15%609/6/15&app=resvlink&stop_mobi=yes" class="button-bold" target="_blank">Reserve your room</a>
+    <p>&nbsp;</p>
   </div>
   <div class="layout-major">
     <img src="/media/images/summit/2015/marriott-lobby.jpg" alt="The lobby of the Oakland Marriott City Center." width="100%" class="width:100%;">
   </div>
 </section>
-
-
-
 
 <section class="layout-semibreve layout-centered">
   <ul class="list-logos-primary muted">
@@ -213,4 +149,16 @@ jquery-scripts: |
   </ul>
 
   <p class="layout-centered"><a href="/summit/supporters/">More&hellip;</a></p>
+</section>
+
+<section class="slab-dark-blue">
+  <div class="layout-semibreve">
+    <div class="highlight highlight-with-avatar">
+      <img class="highlight-avatar" src="/media/images/summit/2015/seal-asheville.png" style="border-color:darkgray;" />
+      <blockquote>
+        <p>Of all the conferences and trainings I do, I learn more valuable, applicable information in the three days of this conference than all others combined. It sets the tone and mindset for a whole year of getting stuff done.</p>
+      </blockquote>
+      <p class="attribute">Dave Michelson, GIS Analyst <a href="#">City of Asheville</a></p>
+    </div>
+  </div>
 </section>

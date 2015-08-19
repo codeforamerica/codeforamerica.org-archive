@@ -3,7 +3,7 @@
 
 //
 // SUMMIT-2015 SCSS
-// 
+//
 // These custom styles are for the /summit-2015/ microsite.
 // Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
 //
@@ -39,10 +39,10 @@ $breakpoint-mobile: 640px;
   position: relative;
   z-index: 3;
   display: block;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
   @media only screen and (max-width: $breakpoint-tablet) {
-    margin-bottom: 100px;    
+    margin-bottom: 50px;
   }
 }
 
@@ -61,11 +61,10 @@ $breakpoint-mobile: 640px;
   display: table-cell;
   float: left;
   margin-right: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 // anchor element
-
 .masthead-nav ul li a {
   position: relative;
   padding: 5px 10px;
@@ -74,6 +73,7 @@ $breakpoint-mobile: 640px;
 
   border: 2px solid white;
   border-radius: 2px;
+  font-size: 0.9em;
 
   &:hover {
     background: #fedd44;
@@ -83,8 +83,43 @@ $breakpoint-mobile: 640px;
   }
 }
 
+@media screen and (max-width: 1145px) {
+  .masthead-pages {
+    width: 100%;
+    &:before, &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  .masthead-nav ul li {
+    margin-top: 10px;
+  }
+  .masthead-nav ul li a {
+    font-size: 0.8em;
+  }
+}
+
 .masthead-nav ul li a.active {
   border-color: #fedd44;
+}
+
+// the logo -- unstyled
+
+.masthead-nav ul li a.logo-unstyled {
+  position: relative;
+  padding: 0;
+  color: white;
+  text-transform: none;
+
+  border: none;
+  border-radius: none;
+
+  &:hover {
+    background: transparent;
+    border-color: none;
+    text-shadow: none;
+  }
 }
 
 // the logo
@@ -144,4 +179,35 @@ p.masthead-content-description {
     font-size: 14px;
     line-height: 25px;
   }
+}
+
+// =====
+// Sponsor banner module, for the little sponsor banners throughout
+// =====
+.sponsor-banner {
+  display: none;
+}
+.sponsor-banner.sponsor-baner-visible {
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+}
+.sponsor-banner p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  line-height: 1.2;
+}
+.sponsor-banner img {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: -10px;
 }

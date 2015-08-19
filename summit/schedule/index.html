@@ -1,0 +1,418 @@
+---
+layout: summit-2015
+masthead-image: "/media/images/summit/2015/sponsor/summit-sponsor-header-photo.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: "2015 Summit: Schedule"
+
+# Content for the masthead-custom
+headline: What to look forward to
+description: |
+  The Summit is three days of action-packed content, featuring the passionate people who are transforming government to work for the people, by the people, in the 21st century.
+  <div class="button-group">
+    <p>
+      <a class="button" href="#wednesday">Wednesday</a>
+      <a class="button" href="#thursday">Thursday</a>
+      <a class="button" href="#friday">Friday</a>
+      <a class="button" href="#breakouts">Breakout Sessions</a>
+    </p>
+  </div>
+
+# Metadata image
+metadata:
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
+  image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+
+# Has a sponsor banner
+sponsor-banner: true
+---
+
+<style>
+  h1,h2,h3,h4,h5,h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+
+  h5 {
+    text-transform: none;
+    font-weight: bold;
+  }
+
+  p.quiet {
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 0;
+  }
+
+  .schedule-item {
+    margin-top: 1.5em;
+  }
+  .schedule-item:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #6D6E71;
+  }
+  .schedule-item--break {
+    color: #6D6E71;
+    margin-bottom: 3em;
+  }
+  .schedule-item--break .schedule-item_time { margin-bottom: 0; }
+  .schedule-item--break .schedule-item_time p {
+    background-color: transparent;
+    color: #6D6E71;
+    padding: 0;
+  }
+
+  .schedule-item_time {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    display: block;
+    width: 100%;
+  }
+  .schedule-item_time p {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 0.8em;
+    background-color: #6D6E71;
+    color: white;
+  }
+
+  .schedule-item_type {
+    display: inline-block;
+    background-color: #999595;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: white;
+    font-weight: 700;
+    height: 0.8em;
+    line-height: 0.8em;
+    margin-bottom: 0;
+    margin-top: 1.3em;
+    position: relative;
+    top: -0.2em;
+  }
+  .schedule-item_type--keynote { background-color: #399fd3; }
+  .schedule-item_type--lightning-talks { background-color: #69579C; }
+
+  .schedule-item_speaker {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  .schedule-item_speaker + .schedule-item_speaker { margin-top: 0.5em; }
+  .schedule-item_speaker .profile-photo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 0.7em;
+  }
+  .schedule-item_speaker_name {
+    position: relative;
+    top: 0.4em;
+  }
+  .schedule-item_speaker_title {
+    color: #6D6E71;
+    font-size: 0.8em;
+    margin-top: -0.9em;
+    line-height: 1.5;
+  }
+  .schedule-item_speaker_moderator {
+    display: inline-block;
+    background-color: #aa1c3a;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: white;
+    font-weight: 700;
+    height: 0.8em;
+    line-height: 0.8em;
+    margin-left: 0.2em;
+    position: relative;
+    top: -0.2em;
+  }
+
+  .nav-tag { display: inline-block; }
+  .nav-tag a {
+    background: #6d6e71;
+    background: rgba(109, 110, 113, 0.4);
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font-weight: normal;
+    margin: 1em 5px 0 0;
+    padding: 3px 13px;
+    font-size: 0.8em;
+  }
+  .nav-tag a:hover,
+  .nav-tag a:focus,
+  .nav-tag a:active,
+  .nav-tag.state-active a {
+    background: #399fd3;
+    background: rgba(57, 159, 211, 0.6);
+    border-bottom: none;
+  }
+
+  .layout-less-padding {
+    padding: 16px 4% 0px;
+  }
+
+</style>
+
+<div class="layout-semibreve layout-less-padding">
+  <p>This year’s Summit will focus specifically on practices, products, and skills that are central to building 21st century government, particularly in the areas of health, economic development, safety and justice, and communications and engagement. Speakers will be added to the schedule as they are confirmed.</p>
+</div>
+
+<!-- Mainstage/general schedule for each day -->
+{% assign days = "Wednesday,Thursday,Friday" | split: "," %}
+{% for day in days %}
+  <section class="layout-semibreve">
+    <a id="{{day | downcase}}"></a>
+    <h2>{{day}}{% if day == "Wednesday" %}, Sept. 30{% endif %}{% if day == "Thursday" %}, Oct. 1{% endif %}{% if day == "Friday" %}, Oct. 2{% endif %}</h2>
+    {% for entry in site.data.summit_schedule %}
+      {% if entry.day == day %}
+        {% if entry.session_type == "Break" or entry.session_type == "Lunch" or entry.session_type == "Meet and Greet" or entry.session_type == "Tech Fair" or entry.session_type == "Reception" or entry.session_type == "Breakouts" or entry.session_type == "Hackspace" or entry.session_type == "Unconference" %}
+          <div class="schedule-item schedule-item--break layout-whole">
+            <div class="schedule-item_time">
+              <p>{{entry.time_block}}</p>
+            </div>
+            <div class="layout-minim">
+              <h4>{{entry.session_title}}</h4>
+              <p>{{entry.session_description}}</p>
+            </div>
+          </div><!-- end .schedule-item -->
+        {% else %}
+          <div class="schedule-item layout-whole">
+            <div class="schedule-item_time">
+              <p>{{entry.time_block}}</p>
+            </div>
+
+            <div class="layout-minim">
+              <h4>{{entry.session_title}}</h4>
+              {% if entry.session_description %}
+              <p>
+                <span class="schedule-item_type schedule-item_type--{{entry.session_type | downcase | replace: ' ','-'}}">{{entry.session_type}}</span>
+                {{entry.session_description}}
+              </p>
+              {% endif %}
+            </div>
+
+            <div class="layout-minim">
+              <p class="quiet">Speakers include:</p>
+              {% if entry.speaker_name_1 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_1 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_1}}.jpg" />
+                {% elsif entry.speaker_photo_1 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_1}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_1}}
+                  {% if entry.speaker_moderator_1 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_1}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_2 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_2 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_2}}.jpg" />
+                {% elsif entry.speaker_photo_2 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_2}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_2}}
+                  {% if entry.speaker_moderator_2 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_2}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_3 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_3 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_3}}.jpg" />
+                {% elsif entry.speaker_photo_3 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_3}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_3}}
+                  {% if entry.speaker_moderator_3 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_3}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_4 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_4 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_4}}.jpg" />
+                {% elsif entry.speaker_photo_4 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_4}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_4}}
+                  {% if entry.speaker_moderator_4 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_4}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_5 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_5 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_5}}.jpg" />
+                {% elsif entry.speaker_photo_5 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_5}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_5}}
+                  {% if entry.speaker_moderator_5 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_5}}</p>
+              </div>
+              {% endif %}
+            </div>
+          </div><!-- end .schedule-item -->
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </section>
+{% endfor %}
+
+<section class="layout-semibreve">
+  <a id="breakouts"></a>
+  <h2>Breakout Sessions</h2>
+  <p>Exact times and date TBD. Select a specific track to see related sessions:</p>
+  <p></p>
+
+  <div class="button-group">
+    <p>
+      {% for track in site.data.summit_audiences %}
+      <a class="button button-s" href="#{{track.audiences | downcase}}">{{track.audiences}}</a>
+      {% endfor %}
+    </p>
+  </div>
+
+  {% for track in site.data.summit_audiences %}
+    <a id="{{track.audiences | downcase}}"></a>
+    <h4><strong>{{track.audiences}}</strong></h4>
+    {% for entry in site.data.summit_breakouts %}
+      {% if entry.session_audience == track.audiences %}
+        {% if entry.status == "Confirmed" %}
+          <div class="schedule-item layout-whole">
+            <div class="schedule-item_time">
+              <p>TBD</p>
+            </div>
+
+            <div class="layout-minim">
+              <h4>{{entry.session_title}}</h4>
+              {% if entry.session_description %}
+              <p>
+                <span class="schedule-item_type schedule-item_type--{{entry.session_type | downcase | replace: ' ','-'}}">{{entry.session_audience}}</span>
+                {{entry.session_description}}
+              </p>
+              {% endif %}
+            </div>
+
+            <div class="layout-minim">
+              {% if entry.speaker_name_1 %}
+                <p class="quiet">Speakers include:</p>
+              {% endif %}
+              {% if entry.speaker_name_1 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_1 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_1}}.jpg" />
+                {% elsif entry.speaker_photo_1 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_1}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_1}}
+                  {% if entry.speaker_moderator_1 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_1}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_2 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_2 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_2}}.jpg" />
+                {% elsif entry.speaker_photo_2 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_2}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_2}}
+                  {% if entry.speaker_moderator_2 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_2}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_3 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_3 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_3}}.jpg" />
+                {% elsif entry.speaker_photo_3 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_3}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_3}}
+                  {% if entry.speaker_moderator_3 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_3}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_4 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_4 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_4}}.jpg" />
+                {% elsif entry.speaker_photo_4 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_4}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_4}}
+                  {% if entry.speaker_moderator_4 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_4}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_5 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_5 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_5}}.jpg" />
+                {% elsif entry.speaker_photo_5 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_5}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_5}}
+                  {% if entry.speaker_moderator_5 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_5}}</p>
+              </div>
+              {% endif %}
+              {% if entry.speaker_name_6 %}
+              <div class="schedule-item_speaker clearfix">
+                {% if entry.speaker_photo_6 == "STAFF" %}
+                  <img class="profile-photo u-photo" src="/media/images/people/{{entry.speaker_safe_6}}.jpg" />
+                {% elsif entry.speaker_photo_6 == "SPEAKER" %}
+                  <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{entry.speaker_safe_6}}.jpg" />
+                {% endif %}
+                <p class="schedule-item_speaker_name">
+                  {{entry.speaker_name_6}}
+                  {% if entry.speaker_moderator_6 == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                </p>
+                <p class="schedule-item_speaker_title">{{entry.speaker_title_org_6}}</p>
+              </div>
+              {% endif %}
+            </div>
+          </div><!-- end .schedule-item -->
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}<!-- track in breakout_tracks -->
+
+</section>

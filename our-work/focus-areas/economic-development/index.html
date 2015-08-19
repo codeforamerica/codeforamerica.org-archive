@@ -13,6 +13,13 @@ title: Economic Development Focus Area
 # Content for the custom deep masthead
 headline: Delivering core economic development services, promoting inclusive economic opportunities
 description: Code for America partners with local governments to build and grow digital economic development services focused on inclusive opportunities, helping governments transform themselves along the way.
+
+# Blogpost helpers
+helpers:
+  blogpost:
+    category: economic-development
+    max_post_count: 4
+
 ---
 <style>
 	* + section {
@@ -26,12 +33,16 @@ description: Code for America partners with local governments to build and grow 
 <!-- OUR APPROACH -->
 <section class="layout-semibreve intro">
 
+
 	<h2>Our Approach</h2>
 
 	<div class="layout-minim">
 		<p>The economic development focus area works to improve economic opportunity for all people and their communities. Economic outcomes depend on a place-based context of communities, and range across concentrated growth, revitalization or advancement of core governmental services and benefits necessary for business and job growth.</p>
-		
+
 		<p>Code for America works across a wide variety of teams who contribute to these outcomes—including municipal economic development departments, public-private economic development corporations, redevelopment authorities, and non-profit organizations. Together, we develop digital services that measurably improve economic opportunity, and help these teams retool their ways of delivering services to be more effective in the digital world.</p>
+
+    <p><strong>Want to learn more about what Code for America is doing to promote inclusive economic growth? Join our email list help inform Code for America’s work in this area.</strong></p>
+    <p><a href="#" class="js-modal-show js-email-economic-development button button-l button-bold">Sign up</a></p>
 	</div><!-- end .layout-major-invert -->
 
 	<div class="layout-minim" style="width:46%; padding-left: 4%;">
@@ -60,8 +71,8 @@ description: Code for America partners with local governments to build and grow 
 <section class="layout-semibreve">
 	<h2>Get Involved</h2>
 
-	<p>Pursuing inclusive economic outcomes often requires cross-sector partnerships spanning public, non-profit, and private-sector stakeholder groups.</p>		
-	
+	<p>Pursuing inclusive economic outcomes often requires cross-sector partnerships spanning public, non-profit, and private-sector stakeholder groups.</p>
+
 	<p>To expand our work and deepen impact on entrepreneurs and economic development practitioners, we are seeking partners in cities and states across the country, along with key institutional support. If you are committed to improving economic outcomes in your community through the transformation of public services, <a href="mailto:info@codeforamerica.org">contact us.</a></p>
 
 	<!-- Space between paragraph and badges needed -->
@@ -69,7 +80,7 @@ description: Code for America partners with local governments to build and grow 
 	<div class="layout-crotchet layout-centered">
 		<img src="/media/images/talent/badge-gov.svg" width="100px" alt="">
 		<h3 class="heading-contrast"><strong>State and Local Governments</strong></h3>
-		<p>Partnerships with city, county and state governments are the foundation of our work.</p>	
+		<p>Partnerships with city, county and state governments are the foundation of our work.</p>
 	</div>
 	<div class="layout-crotchet layout-centered">
 		<img src="/media/images/health/badge-fellowship.svg" width="100px" alt="">
@@ -131,7 +142,7 @@ description: Code for America partners with local governments to build and grow 
 
 	<figure>
 	    <blockquote>
-	    	<p>We are currently recruiting city and county government partners for 2016 Fellowships! <a href="/governments/fellowship/">Learn more about applying.</a></p>
+	    	<p>We will soon begin recruiting city and county government partners for 2017 Fellowships! <a href="/governments/fellowship/">Learn more about applying.</a></p>
 	    </blockquote>
 	</figure>
 
@@ -244,7 +255,7 @@ description: Code for America partners with local governments to build and grow 
 <section class="layout-semibreve">
 	<h2>Our Team</h2>
 	<ul class="layout-grid-crotchet list-no-bullets">
-		<li>{% include people/alicia-rouault.html context="focus-area" base="../../.." %}</li>
+		<li>{% include people/efrem-bycer.html context="about-team" base="../../.." %}</li>
 		<li>{% include people/jennings-hanna.html context="2015-fellows" base="../../.." %}</li>
 		<li>{% include people/yaniv-zimet.html context="2015-fellows" base="../../.." %}</li>
 		<li>{% include people/william-tyner.html context="2015-fellows" base="../../.." %}</li>
@@ -257,13 +268,15 @@ description: Code for America partners with local governments to build and grow 
 	</ul>
 </section>
 
+{% include blogpost-markup.html %}
+
 <section class="slab-dark-blue">
 	<div class="layout-semibreve">
 		<h2>Work with us</h2>
 		<div class="badge-heading badge-github badge-gov" style="border-bottom:none">
 			<h4>Get in touch to learn more.</h4>
 			<p>Learn more about how you can work with the Economic Development focus area at Code for America.</p>
-			<p>Contact <strong><a href="/people/alicia-rouault/">Alicia Rouault, Economic Development Advisor</a> at <a href="mailto:alicia@codeforamerica.org">alicia@codeforamerica.org</a></p>
+			<p>Contact <strong><a href="/people/efrem-bycer/">Efrem Bycer, Economic Development Director</a></strong> at <a href="mailto:efrem@codeforamerica.org">efrem@codeforamerica.org</a></p>
 		</div>
 		<div class="badge-heading badge-github badge-black" style="border-bottom:none">
 			<h4>Experience in Economic Development? Get involved right away.</h4>

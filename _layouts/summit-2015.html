@@ -41,24 +41,24 @@ nav-breadcrumbs:
       <link href="{{ site.env.style_host }}/style/css/prism.css" rel="stylesheet" />
     {% else %}
       <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
-      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
-      <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
-      <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+      <link rel="stylesheet" href="//style.codeforamerica.org/3/style/css/main.css">
+      <link rel="stylesheet" href="//style.codeforamerica.org/3/style/css/layout.css" media="all and (min-width: 40em)">
+      <link href="//style.codeforamerica.org/3/style/css/prism.css" rel="stylesheet" />
     {% endif %}
     <!-- Link to style staging area -->
     <link rel="stylesheet" href="/stylesheets/staging.css">
     <link rel="stylesheet" href="/stylesheets/summit-2015.css">
-    <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/2/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/2/style/favicons/60x60/flag-red.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="//style.codeforamerica.org/3/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="//style.codeforamerica.org/3/style/favicons/60x60/flag-red.png"/>
 
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
     <!--[if (lt IE 9)&(gt IE 6)&(!IEMobile)]>
-        <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all">
+        <link rel="stylesheet" href="//style.codeforamerica.org/3/style/css/layout.css" media="all">
     <![endif]-->
-      
+
     {% if page.masthead-image %}
       <style type="text/css">
         .masthead:before {
@@ -88,7 +88,7 @@ nav-breadcrumbs:
      </style>
     {% include meta-header.html %}
   </head>
-      
+
   <body id="jk-layout-summit-2015">
     <div class="js-container">
       {% include nav-summit-2015.html %}
@@ -109,5 +109,27 @@ nav-breadcrumbs:
     </div>
     {% include email-signup-modal.html %}
     {% include footer-scripts.html %}
+
+    {% if page.sponsor-banner %}
+      <!-- CUSTOM FOR THE SUMMIT: SPONSOR BANNER -->
+      <script>
+        function randomIntFrom(min,max) {
+          return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        (function(win,doc){
+          var supporters = [],
+          wanted;
+          {% for supporter in site.data.summit_supporters.capstone %}
+            supporters.push({ 'name' : '{{supporter.name}}', 'logo' : '{{supporter.logo}}' });
+          {% endfor %}
+          {% for supporter in site.data.summit_supporters.platinum %}
+            supporters.push({ 'name' : '{{supporter.name}}', 'logo' : '{{supporter.logo}}' });
+          {% endfor %}
+          wanted = Math.round(Math.random() * ((supporters.length - 1) - 0) + 0);
+          doc.getElementById('sponsor-banner-image').setAttribute('src', supporters[wanted].logo);
+          doc.getElementById('sponsor-banner').className = doc.getElementById('sponsor-banner').className + ' sponsor-baner-visible';
+        })(window,document);
+      </script>
+    {% endif %}
   </body>
 </html>
