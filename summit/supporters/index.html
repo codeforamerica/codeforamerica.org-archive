@@ -130,3 +130,14 @@ metadata:
     {% endfor %}
   </ul>
 </section>
+<section class="layout-semibreve layout-centered">
+  <h2>Media Partners</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.media-partners %}
+      <li>
+        <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="media-logo supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
