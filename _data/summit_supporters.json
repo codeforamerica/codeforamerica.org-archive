@@ -95,5 +95,22 @@
       "logo" : "/media/images/summit/2015/logos/seamless.png",
       "link" : "http://www2.seamlessdocs.com/",
     }
+  ],
+  "media-partners": [
+    {
+      "name" : "GovFresh",
+      "logo" : "/media/images/summit/2015/logos/govfresh-logo.png",
+      "link" : "http://www.govfresh.com"
+    },
+    {
+      "name" : "GovLoop",
+      "logo" : "/media/images/summit/2015/logos/GL_Logo_1000px.png",
+      "link" : "https://www.govloop.com/"
+    },
+    {
+      "name" : "Route Fifty",
+      "logo" : "/media/images/summit/2015/logos/RF.png",
+      "link" : "http://www.routefifty.com/"
+    }
   ]
 }
