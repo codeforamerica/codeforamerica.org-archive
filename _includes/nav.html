@@ -81,7 +81,7 @@
         <a href="/about" {% if nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
         {% if nav_tier1_active == "about" %}
         <ul class="nav-tier2">
-            <li><a href="/about/">What we do</a></li>
+            <li><a href="/governments/principles/">21st Century Government</a></li>
             <!-- Not sure what to do with this
             <li><a href="/about/values">Values</a></li>
             -->
@@ -91,10 +91,14 @@
             <li><a href="/press">Press</a></li>
             -->
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/jobs">Jobs</a></li>
             <li><a href="/about/financial-information">Financial information</a></li>
-            <!-- <li><a href="/jobs">Jobs</a></li> -->
         </ul>
         {% endif %}
+      </li>
+
+      <li class="nav-tier1">
+        <a href="/summit">Why government?</a>
       </li>
 
       <!-- 1.3 WORK WITH US -->
@@ -102,30 +106,28 @@
         <a href="/join" {% if nav_tier1_active == "join" %}class="state-active"{% endif %}>What you can do</a><!-- NO PAGE! -->
         {% if nav_tier1_active == "join" %}
         <ul class="nav-tier2">
-            <li><a href="/governments">Government partnerships</a></li>
+            <li><a href="/governments">Be a gov partner</a></li>
             <li><a href="/geeks/fellowship-apply">Become a fellow</a></li>
-            <li><a href="/jobs">Apply for a job</a></li>
             <li><a href="/support-us">Fund our work</a></li>
             <li><a href="/brigade">Volunteer your skills</a></li><!-- i.e Brigade -->
-            <li><a href="/our-work/initiatives/talent">Work inside government</a></li>
+            <li><a href="/our-work/initiatives/talent">Work in government</a></li>
             <li><a href="/companies/">Get your company recognized</a></li><!-- i.e. Companies/Awards -->
-            <li><a href="http://codeforall.org" target="_blank">Global partnerships</a></li>
+            <li><a href="/apps/">Use our products</a></li><!-- i.e. Companies/Awards -->
         </ul>
         {% endif %}
       </li>
 
       <!-- 1.4 HOW WE WORK -->
       <li class="nav-tier1 nav-has-children">
-        <a href="/how-we-work" {% if nav_tier1_active == "how-we-work" %}class="state-active"{% endif %}>How we work</a><!-- NO PAGE! -->
+        <a href="/how-we-work" {% if nav_tier1_active == "how-we-work" %}class="state-active"{% endif %}>Where we focus</a><!-- NO PAGE! -->
         {% if nav_tier1_active == "how-we-work" %}
         <ul class="nav-tier2">
-          <li><a href="/governments/principles">21st Century Government</a></li>
           <li><a href="/our-work/focus-areas/health">Health</a></li>
           <li><a href="/our-work/focus-areas/safety-justice">Safety and Justice</a></li>
           <li><a href="/our-work/focus-areas/economic-development">Economic Development</a></li>
           <li><a href="/our-work/focus-areas/communications-engagement">Communications and Engagement</a></li><!-- NO PAGE! -->
-          <li><a href="/our-work/focus-areas/communications-engagement">Products</a></li>
-          <li><a href="/about/fellowship">Fellowship</a></li>
+          <!-- <li><a href="/about/fellowship">Fellowship</a></li>
+          <li><a href="/about/fellowship">Global partnerships</a></li> -->
         </ul>
         {% endif %}
       </li>
