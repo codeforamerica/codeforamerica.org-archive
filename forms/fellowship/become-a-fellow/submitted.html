@@ -13,6 +13,7 @@ description: Thank you for expressing interest in the 2016 Fellowship! Applicati
 # Scripts to execute after jquery is loaded
 jquery-scripts: |
   <script>
+    /*
     function randomIntFrom(min,max) {
       return Math.floor(Math.random()*(max-min+1)+min);
     }
@@ -21,13 +22,14 @@ jquery-scripts: |
       // Do we have a URL param for applicant-id?
       if (urlParams['applicant-id']) {
         var output = [];
-        // escape() -> components for 
+        // escape() -> components for
         output.push('<p>We recieved your message loud and clear. Now, finish the next two steps and keep the momentum going. And if you have any questions, don\'t hesitate to <a href="mailto:info@codeforamerica.org">reach out.</a></p>');
         output.push('<p><a href="https://cfa.typeform.com/to/nxZhxl?email='+escape(urlParams['email'])+'&applicantid='+escape(urlParams['applicant-id'])+'&from=application&app=true" class="button-bold button-lg">Start Step 2: Written Reponses</a></p>');
         output.push('<p>Don\'t have time to start Step 2 right now? We sent you an email at <strong>'+urlParams['email']+'</strong> with a link to the next step in the process. Follow the link in that email for more information.</p>');
         $('#js-target-replace').html( output.join('') );
       }
     });
+    */
   </script>
 ---
 <style>
@@ -114,13 +116,13 @@ jquery-scripts: |
     line-height: 1.8em;
   }
 </style>
-<!-- 
+<!--
 <section class="layout-semibreve layout-centered">
   <h2>Want to get started right now?</h2>
 
   <p>Why don't you <a href="http://www.codeforamerica.org/geeks/our-geeks/2015-fellows/">catch up with the 2015 Fellows</a>. If you'd like to ask them a question, they'd love to hear from you. Looking for another way to get involved? Great! Here are some great ways you can:</p>
   <br />
-  
+
   <div class="layout-crotchet">
     <img src="/media/images/about/brigade.jpg" alt="">
     <h5>Get involved in your community now, join your local Brigade.</h5>
@@ -141,44 +143,13 @@ jquery-scripts: |
     <p>Learn about interesting job openings in local governments across the nation.</p>
     <a href="/talent/" class="button">See them</a>
   </div>
-</section> 
+</section>
 -->
 
 <section class="layout-breve intro">
   <div class="layout-solo">
-    <h5>2016 Fellowship Application</h5>
-    <h1>Nice. You completed the first step. Keep going!</h1>
+    <h1>We'll be in touch later</h1>
+    <p>Thanks for letting us know you're interested in the fellowship! Applications for the 2016 fellowship are now closed. But we'll keep you up-to-date with future opportunities, and let you know with the 2017 Fellowship application opens.</p>
+    <p>If you have any questions, please don't hesitate to reach out to us by sending an email to <a href="mailto:fellowship-staff@codeforamerica.org">fellowship-staff@codeforamerica.org</a>. Thanks, Code for America Fellowship Team!</p>
   </div>
-  <div class="layout-solo">
-    <div class="layout-major-invert">
-      <div id="js-target-replace">
-        <p>Please check your email for a link to the next step in the application process.</p>
-        <p>And if you have any questions, don't hesitate to <a href="mailto:fellowship-staff@codeforamerica.org">reach out.</a></p>
-      </div>
-    </div>
-    <div class="layout-minor-invert">
-        <p>
-          <strong>Application Steps</strong><br />
-          <span class="note">There are 3 steps in the application process &mdash; please follow the guide below to see where you are.</span>
-        </p>
-        <div class="process-graphic">
-          <ul class="list-no-bullets note">
-            <li class="step1 current">
-              <p class="title">Basic Information</p>
-              <p class="details">Quick questions about you, your skill set, and your background (5 minutes)</p>
-            </li>
-            <li class="step2">
-              <p class="title">Written Responses</p>
-              <p class="details">In-depth questions about your interest in the fellowship. (15-30 minutes)</p>
-            </li>
-            <li class="step3">
-              <p class="title">Skills Challenge</p>
-              <p class="details">A 20-30 minute task that tests your chosen skillset.</p>
-            </li>
-          </ul>
-        </div>
-    </div><!-- end .layout-minor-invert -->
-  </div><!-- end .layout-solo -->
 </section>
-
-<section class="layout-semibreve"></section>
