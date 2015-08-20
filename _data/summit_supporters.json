@@ -98,19 +98,19 @@
   ],
   "media-partners": [
     {
-      "name" : "Microsoft",
-      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
-      "link" : "http://www.microsoft.com"
+      "name" : "GovFresh",
+      "logo" : "/media/images/summit/2015/logos/govfresh-logo.png",
+      "link" : "http://www.govfresh.com"
     },
     {
-      "name" : "Microsoft",
-      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
-      "link" : "http://www.microsoft.com"
+      "name" : "GovLoop",
+      "logo" : "/media/images/summit/2015/logos/GL_Logo_1000px.png",
+      "link" : "https://www.govloop.com/"
     },
     {
-      "name" : "Microsoft",
-      "logo" : "/media/images/summit/2015/logos/microsoft.jpg",
-      "link" : "http://www.microsoft.com"
+      "name" : "Route Fifty",
+      "logo" : "/media/images/summit/2015/logos/RF.png",
+      "link" : "http://www.routefifty.com/"
     }
   ]
 }
