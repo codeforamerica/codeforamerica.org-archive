@@ -67,6 +67,15 @@
 </div>
 {% endif %}
 
+{% if page.sponsor-banner %}
+<section>
+  <div class="sponsor-banner" id="sponsor-banner">
+    <p>Sponsored by:</p>
+    <img id="sponsor-banner-image" src="/media/images/summit/2015/logos/socrata-cutout.png" alt="Summit sponsor logo">
+  </div>
+</section>
+{% endif %}
+
 {% if page.masthead-custom == "deep" %}
 <div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
 
@@ -91,6 +100,9 @@
           <a href="/summit/schedule/" {% if page.url == "/summit/schedule/index.html" %}class="active"{% endif %}>Schedule</a>
         </li>
         <li class="masthead-nav-page">
+          <a href="/summit/speakers/" {% if page.url == "/summit/speakers/index.html" %}class="active"{% endif %}>Speakers</a>
+        </li>
+        <li class="masthead-nav-page">
           <a href="/summit/sponsor/" {% if page.url == "/summit/sponsor/index.html" %}class="active"{% endif %}>Become a Sponsor</a>
         </li>
         <li class="masthead-nav-page">
@@ -98,9 +110,6 @@
         </li>
         <li class="masthead-nav-page">
           <a href="/summit/justification/" {% if page.url == "/summit/justification/index.html" %}class="active"{% endif %}>Gov Justification Letter</a>
-        </li>
-        <li class="masthead-nav-page">
-          <a href="/summit/speakers/" {% if page.url == "/summit/speakers/index.html" %}class="active"{% endif %}>Speakers</a>
         </li>
         <li class="masthead-nav-page">
           <a href="https://www.youtube.com/playlist?list=PL65XgbSILalWFStqV0z0N9pvftstJ8AAh">2014 Summit Videos</a>
