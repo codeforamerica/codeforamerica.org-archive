@@ -109,5 +109,27 @@ nav-breadcrumbs:
     </div>
     {% include email-signup-modal.html %}
     {% include footer-scripts.html %}
+
+    {% if page.sponsor-banner %}
+      <!-- CUSTOM FOR THE SUMMIT: SPONSOR BANNER -->
+      <script>
+        function randomIntFrom(min,max) {
+          return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        (function(win,doc){
+          var supporters = [],
+          wanted;
+          {% for supporter in site.data.summit_supporters.capstone %}
+            supporters.push({ 'name' : '{{supporter.name}}', 'logo' : '{{supporter.logo}}' });
+          {% endfor %}
+          {% for supporter in site.data.summit_supporters.platinum %}
+            supporters.push({ 'name' : '{{supporter.name}}', 'logo' : '{{supporter.logo}}' });
+          {% endfor %}
+          wanted = Math.round(Math.random() * ((supporters.length - 1) - 0) + 0);
+          doc.getElementById('sponsor-banner-image').setAttribute('src', supporters[wanted].logo);
+          doc.getElementById('sponsor-banner').className = doc.getElementById('sponsor-banner').className + ' sponsor-baner-visible';
+        })(window,document);
+      </script>
+    {% endif %}
   </body>
 </html>

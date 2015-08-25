@@ -14,26 +14,26 @@ nav-breadcrumbs:
 
 ## Background
 
-Over the last few years in our work with local and state governments we have seen several high-profile failures in government technology - projects over budget and or late, failing to work or services already in use showing problems - have drawn more and more attention to the way that government buys and delivers technology to its residents, staff and citizens. 
+In 2015, it’s normal for government technology projects to be late, over budget or to not work.  These projects have drawn attention to how governments buy and deliver technology to its residents and staff.
 
-This isn’t just a problem with government: businesses are also dealing with how they can best use technology, from providing better service to doing more with less and competing with newcomers. 
+Businesses are also dealing with how technology can help them compete, provide better service and do more with less. Like governments, their technology projects are failing as well.
 
-In 2015, it is normal for government technology projects to be late, over budget or to not work. These failures are happening even though procurement is getting stricter and more prescriptive as a reaction to previous failures. In general, the process through which governments normally acquire and deliver technology is complex, involved and slow.
+These failures are happening even though procurement is getting stricter and more prescriptive. 
 
-Most government technology is also bought. It’s rare for central governments, departments and agencies and even more rare for local government to develop, deliver and support technology on their own. Technology is frequently seen as a commodity or product that can be bought from an external vendor: many technology RFPs talk about needing a “solution”, and vendors are only too happy to describe their products as “solutions”. Technology or IT is normally treated like a single entity, when it is much more complicated than that. 
+Most government technology is treated like a solution, bought from a vendor in a complex and slow process. Technology is much more complicated than that, but, it’s rare for governments, to understand, develop, deliver and support technology on their own.
 
-The problem is that the promise of technology and its capability to deliver significant improvements has massively changed over the last twenty years. This is obvious in consumer technology, where companies like Google, Facebook and Apple have designed, developed and delivered services used by hundreds of millions of people every single day. The internet, web and smartphones are changing the lives of all Americans - not just the middle class - and successful products and services are building new, higher expectations of how the world should work. 
+The internet, web and smartphones are changing the lives of all Americans are building new, higher expectations of how the world should work. Technology and its ability to deliver significant improvements has massively changed over the last twenty years. 
 
-Government, though, has been left behind by this revolution. 
+Large companies like Google, Facebook and Apple deliver services used and loved by hundreds of millions of people for the fraction of the cost of a large government RFP. 
 
-Digital technology has made the gap between policy and successful delivery impossible to ignore. When well-designed digital services implement policy, they genuinely create services and government interactions that are “so good that people prefer to use them.” 
+Well-designed government digital services can be so good that people prefer to use them.
 
-In the U.S., users are surprised when government services work as quickly as commercial services:
+Users are surprised when government services work as quickly as commercial services:
 
 > “With Simplicity, it’s so fast that people were refreshing and thinking, “it didn’t take my query.” The team fixed that by putting in a fake spinning thing. Haha!”
->  - [Asheville CIO Jonathan Feldman](http://www.codeforamerica.org/blog/2015/06/18/creating-simplicity-a-qa-with-asheville-cio-jonathan-feldman/)
+>  - [Asheville, North Carolina CIO Jonathan Feldman](http://www.codeforamerica.org/blog/2015/06/18/creating-simplicity-a-qa-with-asheville-cio-jonathan-feldman/)
 
-And in the UK, although circumstances are different and GDS has had a head start, customer call centers have [added a way to record positive feedback](https://gds.blog.gov.uk/2013/08/23/this-week-at-gds-44/). 
+And in the UK, government call centers have had to [add a way to record positive feedback](https://gds.blog.gov.uk/2013/08/23/this-week-at-gds-44/). 
 
 ## How governments buy technology
 
