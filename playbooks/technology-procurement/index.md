@@ -35,7 +35,7 @@ Well-designed government digital services can be so good that people prefer to u
 
 ### [Government technology procurement](/playbooks/technology-procurement/how-governments-buy-technology/)
 
-How governments are buying technology to deliver digital services. 
+How governments buy technology and common problems.  
 
 ### [Delivering digital services](/playbooks/technology-procurement/delivering-digital-services/)
 

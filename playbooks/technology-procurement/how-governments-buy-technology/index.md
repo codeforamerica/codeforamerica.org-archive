@@ -1,8 +1,7 @@
 ---
 layout: resource
-status: beta
 title: Government technology procurement
-subtitle: How governments buy technology to deliver digital services. 
+subtitle: How governments buy technology and common problems that result. 
 status: 		alpha
 feedback-name: 	"Dan Hon"
 feedback-email:	dan@codeforamerica.org
@@ -12,13 +11,36 @@ nav-breadcrumbs:
 
 ---
 
-This guide explains how governments treat and buy the technology needed to deliver digital services. These services range from the outwardly simple (for example, a maternity leave or minimum wage calculator) - to the complex (like benefit eligibility, tax filing, healthcare, education, immigration services and other social services). All of these services are important and critical. They are also not just social program services: starting businesses, paying employees and buying property are all things that citizens and residents need to do that involve the government, all around the world. 
+Governments buy technology to meet policy requirements. It's usually outsourced, with over-engineered requirements in a one-size fits all contract that tries to prevent surprises. Treating technology like this means that:
 
-Some of these services are also called the safety net because they are frequently services of the last resort, which means that the government is the only provider. For many people, there are no alternatives to enrolling for social welfare programs. 
+ * user needs aren't met (the technology frequently "doesn't work")
+ * governments don't have the digital knowledge, skill and understanding they need to deliver services
+ * governments pay more than they should
+ * technology is late 
 
-First, government technology is treated as if it is special. 
+## 1. Technology is bought to meet policy needs
 
-### 1. Government technology is special 
+> “We need to continually test the products we build with real people to keep us honest about what is important.”
+> [U.S. Digital Service Playbook](https://playbook.cio.gov/#play1)
+
+The procurement model of government digital services generally leads to services that satisfy policy needs, not user needs. In other words, it is easy to specify and deliver services that adhere to the letter of the law, whilst at the same time missing the spirit of the law. 
+
+A good explanation in Mike Bracken’s (the United Kingdom Cabinet Office Executive Director of Digital and head of the Government Digital Service) blog post, [The Strategy is Delivery](http://mikebracken.com/blog/the-strategy-is-delivery-again/):
+
+> “For digital services, we usually start with a detailed policy.... ...We then look to embed that in current process, or put simply, look for a digital version of how services are delivered in different channels. This is why so many of our digital services look like clunky, hard-to-use versions of our paper forms: because the process behind the paper version dictates the digital thinking.”
+> [The Strategy is Delivery](http://mikebracken.com/blog/the-strategy-is-delivery-again/) - Mike Bracken
+
+When government starts with designing and buying products, solutions or systems from policy, users are excluded from the start and their needs and outcomes will always be at best secondary to department or agency needs. This approach rarely if ever leads to digital services that work, never mind services that are humane. 
+
+Kentucky’s health insurance exchange, [kynect](https://kynect.ky.gov/) is a good example: it doesn’t make its users create an account before they can see available plans. The kynect team recognized that the goal was to make enrollment easy - and that requiring users to sign in or create an account before being able to see any information about a plan would be a big barrier. 
+
+In Asheville’s [SimpliCity](http://cityofasheville.github.io/simplicity-ui/#/search), developed in-house, a focus on user needs meant that eight different mapping products and services were replaced with just one service that now delights users instead of aggravating them. SimpliCity combines the approach of integrating legacy back-end enterprise services with new cloud-based services as well as a user research-led approach.
+
+## 2. Technology is outsourced to vendors
+
+Most governments rely on vendors and outsourcing to deliver digital services through a valid need to provide value for money. Unfortunately, relying on vendors and outsourcing has over time lead to to a lack of experience and understanding in government of what's needed to deliver a modern, user-centered digtal service. Worse, relying on outsourcing has turned IT in government into more of a contract and project management capability whose job is to buy products and solutions, leading to a vicious circle. This lack of understanding and ownership in digital services results in less effective and efficient services. When these services inevitably result in poor user experiences, they leave citizens with less trust in government. 
+
+## 3. Requirements are over-engineered
 
 #### Government technology is uniquely big
 
@@ -42,35 +64,7 @@ The private sector has shown that successful security is a practice, not a requi
 
 Twenty years is a long time in technology. A history of treating technology as products or solutions to be bought, frozen and maintained has left governments with a large number of legacy systems that are proprietary, closed-source and with limited ability to extract or export data. 
 
-### 2. Government technology satisfies policy needs, not user needs
-
-> “We need to continually test the products we build with real people to keep us honest about what is important.”
-> [U.S. Digital Service Playbook](https://playbook.cio.gov/#play1)
-
-The procurement model of government digital services generally leads to services that satisfy policy needs, not user needs. In other words, it is easy to specify and deliver services that adhere to the letter of the law, whilst at the same time missing the spirit of the law. 
-
-A good explanation in Mike Bracken’s (the United Kingdom Cabinet Office Executive Director of Digital and head of the Government Digital Service) blog post, [The Strategy is Delivery](http://mikebracken.com/blog/the-strategy-is-delivery-again/):
-
-> “For digital services, we usually start with a detailed policy.... ...We then look to embed that in current process, or put simply, look for a digital version of how services are delivered in different channels. This is why so many of our digital services look like clunky, hard-to-use versions of our paper forms: because the process behind the paper version dictates the digital thinking.”
-> [The Strategy is Delivery](http://mikebracken.com/blog/the-strategy-is-delivery-again/) - Mike Bracken
-
-When government starts with designing and buying products, solutions or systems from policy, users are excluded from the start and their needs and outcomes will always be at best secondary to department or agency needs. This approach rarely if ever leads to digital services that work, never mind services that are humane. 
-
-Kentucky’s health insurance exchange, [kynect](https://kynect.ky.gov/) is a good example: it doesn’t make its users create an account before they can see available plans. The kynect team recognized that the goal was to make enrollment easy - and that requiring users to sign in or create an account before being able to see any information about a plan would be a big barrier. 
-
-In Asheville’s [SimpliCity](http://cityofasheville.github.io/simplicity-ui/#/search), developed in-house, a focus on user needs meant that eight different mapping products and services were replaced with just one service that now delights users instead of aggravating them. SimpliCity combines the approach of integrating legacy back-end enterprise services with new cloud-based services as well as a user research-led approach.
-
-### 3. Relying on outsourcing has meant less digital knowledge in government
-
-Most governments rely on vendors and outsourcing to deliver digital services through a valid need to provide value for money. Unfortunately, relying on vendors and outsourcing has over time lead to to a lack of experience and understanding in government of what's needed to deliver a modern, user-centered digtal service. Worse, relying on outsourcing has turned IT in government into more of a contract and project management capability whose job is to buy products and solutions, leading to a vicious circle. This lack of understanding and ownership in digital services results in less effective and efficient services. When these services inevitably result in poor user experiences, they leave citizens with less trust in government. 
-
-### 4. Surprises are politically undesirable and must be avoided
-
-Bad surprises - late, broken or expensive projects - are bad news to anyone working in government, no matter how removed they may be from public politics. Wanting to avoid bad surprises - which is completely reasonable and understandable - is normally dealt with by becoming more detailed and prescriptive. In the end, this rational desire to reduce the risk of bad news is part of why RFPs now tend to hundreds of pages of detailed requirements, contributing to the problem without reducing risk at all. 
-
-It seems like it would make sense that specifying all the requirements of a particular piece of technology at the beginning of a project would reduce risk: in theory, government and the vendor would all know what they were required to deliver. The reality is that it is very difficult - if not impossible - to gather all the requirements of a new piece of technology before it is used. Once requirements are documented in an RFP, though, they become much harder (and expensive) to change, even when changes may be obvious to all those involved. In other words, [no plan survives contact with the enemy](https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder), and requirements can and will change as soon as software starts to be used. 
-
-### 5. Technology is bought using one size fits all contracts
+## 4. Technology is bought using one size fits all contracts
 
 Because governments have treated technology as a single entity, they have used a procurement approach where "one size fits all" contracts are used to deliver technology and services. This approach fails because the same fixed contract used for commodity or utility parts of a service that are known is also used for the new, changing parts that aren't known: customers end up with expensive changes and late deliverables. 
 
@@ -79,6 +73,14 @@ The [Wardley map](http://blog.gardeviance.org/2015/02/an-introduction-to-wardley
 ![A Wardley map showing the contract structure of a large government project. One large contract includes many parts of a service including those in genesis, custom-built, product/rental and commodity/utility stages of evolution. A smaller contract includes three utility items, and there are four single-item contracts.](/media/images/playbooks/technology-procurement/best-practices-less-ideal-contract-wardley.png "A less ideal contract structure")
 
 > A [Wardley map](http://blog.gardeviance.org/2015/07/the-100-day-corporate-get-fit-plan.html) showing the contract structure of a large government project. One large contract includes many parts of a service including those in genesis, custom-built, product/rental and commodity/utility stages of evolution. 
+
+## 5. Surprises must be avoided
+
+Bad surprises - late, broken or expensive projects - are bad news to anyone working in government, no matter how removed they may be from public politics. Wanting to avoid bad surprises - which is completely reasonable and understandable - is normally dealt with by becoming more detailed and prescriptive. In the end, this rational desire to reduce the risk of bad news is part of why RFPs now tend to hundreds of pages of detailed requirements, contributing to the problem without reducing risk at all. 
+
+It seems like it would make sense that specifying all the requirements of a particular piece of technology at the beginning of a project would reduce risk: in theory, government and the vendor would all know what they were required to deliver. The reality is that it is very difficult - if not impossible - to gather all the requirements of a new piece of technology before it is used. Once requirements are documented in an RFP, though, they become much harder (and expensive) to change, even when changes may be obvious to all those involved. In other words, [no plan survives contact with the enemy](https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder), and requirements can and will change as soon as software starts to be used. 
+
+
 
 ## The result
 
