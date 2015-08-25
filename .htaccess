@@ -354,7 +354,7 @@ RedirectMatch permanent ^/apps/aunt-bertha/?$ /companies/incubator-accelerator/#
 
 # Temporary redirect the /library/ pages to home. Later, we'll permanently redirect
 # individual category pages to their appropriate Practice page.
-RedirectMatch 302 ^/library/?$ /
+RedirectMatch temp ^/library/?$ /
 
 #
 # Set of possible Jekyll file extensions + PHP, from
