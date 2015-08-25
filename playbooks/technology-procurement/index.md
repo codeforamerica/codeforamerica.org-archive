@@ -13,22 +13,38 @@ nav-breadcrumbs:
 
 ---
 
-In our work with local and state governments we have seen several high-profile failures in government technology - projects over budget, late, or broken, or existing technology with serious problems. These failures have drawn attention to the way that our governments buy and deliver the technology they need to govern well. 
+Use this playbook to learn how to buy and use technology to deliver digital services that work, on time and on budget. 
 
-This playbook has been produced in the context of our wider work - the people, practices and products needed to deliver [21st century government](/governments/principles/) - to help governments in America improve the way they buy and use technology to deliver digital services that work.
+## Introduction
 
-## [Government technology procurement](/playbooks/technology-procurement/background/)
+In 2015, it’s normal for government technology projects to be late, over budget or to not work.  These projects have drawn attention to how governments buy and deliver technology to its residents and staff.
 
-How governments buy technology to deliver digital services. 
+Businesses are also dealing with how technology can help them compete, provide better service and do more with less. Like governments, their technology projects are failing as well.
 
-## [Delivering digital services](/playbooks/technology-procurement/delivering-digital-services/)
+These failures are happening even though procurement is getting stricter and more prescriptive. 
+
+Most government technology is treated like a solution, bought from a vendor in a complex and slow process. Technology is much more complicated than that, but it’s rare for governments to understand, develop, deliver and support technology on their own.
+
+The internet, web and smartphones have changed the lives of all Americans. Technology and its ability to real improvements has massively changed over the last twenty years. We have new, higher expectations of how the world should work. 
+
+Large companies like Google, Facebook and Apple deliver services used and loved by hundreds of millions of people for the fraction of the cost of a large government RFP. 
+
+Well-designed government digital services can be so good that people prefer to use them.
+
+## The guides
+
+### [Government technology procurement](/playbooks/technology-procurement/how-governments-buy-technology/)
+
+How governments are buying technology to deliver digital services. 
+
+### [Delivering digital services](/playbooks/technology-procurement/delivering-digital-services/)
 
 How governments meet user needs, on time and on budget. 
 
-## [Digital service RFPs](/playbooks/technology-procurement/digital-service-rfps/)
+### [Digital service RFPs](/playbooks/technology-procurement/digital-service-rfps/)
 
 Advice about what should be in a digital service RFP.
 
-## [Organize government for digital services](/playbooks/technology-procurement/organize-government-for-digital-services/)
+### [Organize government for digital services](/playbooks/technology-procurement/organize-government-for-digital-services/)
 
 Organizational design for delivering successful change through technology.
