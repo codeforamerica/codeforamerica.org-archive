@@ -108,4 +108,5 @@ This is nothing short of digital transformation of government, of improving the 
 * [On Government, platform, purchasing and the commercial world](http://blog.gardeviance.org/2015/02/on-government-platform-purchasing-and.html), Simon Wardley
 * [Towers of SIAM, trade associations and Civil Servants](http://blog.gardeviance.org/2015/03/towers-of-siam-trade-associations-and.html), Simon Wardley
 * [The Towers of Salmon and Hungry Bears](http://blog.gardeviance.org/2015/03/the-towers-of-salmon-and-hungry-bears.html), Simon Wardley
+* [The TechFAR Handbook](https://playbook.cio.gov/techfar/), The U.S. Digital Service
 * [Avoiding cloudfall: A systematic approach to cloud migration](https://18f.gsa.gov/2015/06/22/avoiding-cloudfall/), V David Zvenyach, Noah Kunin, Jay Finch, Ozzy Johnson, Mike Bland, and Chris Cairns, 18f
