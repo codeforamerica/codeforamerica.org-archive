@@ -47,6 +47,11 @@
       "name" : "OpenDataSoft",
       "logo" : "/media/images/summit/2015/logos/opendatasoft.png",
       "link" : "https://www.opendatasoft.com/"
+    },
+    {
+      "name" : "ACQUIA",
+      "logo" : "/media/images/summit/2015/logos/acquia.png",
+      "link" : "http://www.acquia.com/"
     }
   ],
   "civic-startup" : [
