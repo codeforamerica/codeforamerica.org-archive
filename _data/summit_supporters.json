@@ -19,6 +19,12 @@
       "logo" : "/media/images/summit/2015/logos/socrata.jpeg",
       "description" : "Socrata’s solutions assist government leaders in improving transparency, modernizing citizen access to information, and bringing data into every decision, all with unprecedented speed and cost savings. Delivered as turnkey services, Socrata’s technologies unlock data trapped in enterprise silos, mobilize and transform it into useful information that everyone can easily access, visualize, share and reuse.",
       "link" : "http://www.socrata.com/"
+    },
+    {
+      "name" : "Google",
+      "logo" : "/media/images/summit/2015/logos/googleorglogo.png",
+      "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful.",
+      "link" : "http://google.org/"
     }
   ],
   "gold" : [
@@ -27,6 +33,18 @@
       "logo" : "/media/images/summit/2015/logos/googleforentrepreneurs.jpeg",
       "description" : "Google for Entrepreneurs provides financial support and the best of Google's resources to dozens of coworking spaces and community programs across 125 countries. We also create Campuses: physical hubs where entrepreneurs can learn, connect, and build companies that will change the world. To learn more about Google for Entrepreneurs, visit <a href='google.com/entrepreneurs'>google.com/entrepreneurs</a> or follow us on <a href='https://plus.google.com/+GoogleforEntrepreneurs/'>G+</a> and <a href='https://twitter.com/googleforentrep'>Twitter</a>.",
       "link" : "https://www.googleforentrepreneurs.com/",
+    },
+    {
+      "name" : "Tropo",
+      "logo" : "/media/images/summit/2015/logos/tropo.png",
+      "description" : "Tropo, now part of Cisco, makes it easy for developers to integrate telephony into their applications. Send a text message, make a phone call, have a phone number that’s answered by your code. No contracts, no install costs. We’ll even host your code. Access the best customer support you’ve ever seen.",
+      "link" : "https://www.tropo.com/",
+    },
+    {
+      "name" : "Rally",
+      "logo" : "/media/images/summit/2015/logos/rally.png",
+      "description" : "CA Technologies + Rally delivers software and services that drive agility. We help teams manage their software development lifecycle by aligning with strategic business objectives, facilitating collaboration, and increasing transparency. We are proud to provide funding, tools, and expertise to fuel the growth and effectiveness of the Code for America Brigade program.",
+      "link" : "https://www.rallydev.com/",
     }
   ],
   "silver" : [
