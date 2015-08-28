@@ -1,0 +1,53 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+	<div class="heading">
+    <h2 class="p-name">Alexis Charles</h2>
+	</div>
+
+	<div class="layout-minor">
+    <p>Practices and Communications Writer</p>
+    <h4 class="text-whisper layout-tight">Member of</h4>
+
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/alexis-charles.jpg" />
+	</div>
+
+	<div class="layout-major">
+    <p class="p-note">
+      Long bio text.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/alexisbyday">@alexisbyday</a></td></tr>
+      </table>
+    </div>
+	</div>
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Alexis Charles</h3>
+
+  <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/alexis-charles.jpg">
+
+  <div class="p-note profile-note">
+    <p>
+      Short bio text.
+    </p>
+
+    <p><a class="link-more" href="{{ include.base }}/people/alexis-charles/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-twitter"><a href="https://twitter.com/alexisbyday">@alexisbyday</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
