@@ -57,19 +57,24 @@
   ],
   "supporter" : [
     {
+      "name" : "ACQUIA",
+      "logo" : "/media/images/summit/2015/logos/acquia.png",
+      "link" : "http://www.acquia.com/"
+    },
+    {
       "name" : "CartoDB",
       "logo" : "/media/images/summit/2015/logos/cartodb.png",
       "link" : "https://cartodb.com/",
     },
     {
+      "name" : "GovDelivery",
+      "logo" : "/media/images/summit/2015/logos/govdelivery.png",
+      "link" : "http://govdelivery.com/"
+    },
+    {
       "name" : "OpenDataSoft",
       "logo" : "/media/images/summit/2015/logos/opendatasoft.png",
       "link" : "https://www.opendatasoft.com/"
-    },
-    {
-      "name" : "ACQUIA",
-      "logo" : "/media/images/summit/2015/logos/acquia.png",
-      "link" : "http://www.acquia.com/"
     }
   ],
   "civic-startup" : [
@@ -92,6 +97,11 @@
       "name" : "MYCITY",
       "logo" : "/media/images/summit/2015/logos/mycity.png",
       "link" : "http://mycity.io/",
+    },
+    {
+      "name" : "NextRequest",
+      "logo" : "/media/images/summit/2015/logos/nextrequest.png",
+      "link" : "http://nextrequest.com/",
     },
     {
       "name" : "Open Counter",
@@ -117,6 +127,11 @@
       "name" : "SEAMLESS",
       "logo" : "/media/images/summit/2015/logos/seamless.png",
       "link" : "http://www2.seamlessdocs.com/",
+    },
+    {
+      "name" : "SmartBetterCities",
+      "logo" : "/media/images/summit/2015/logos/smartbettercities.png",
+      "link" : "http://www.smarterbettercities.ch/",
     }
   ],
   "media-partners": [
@@ -132,7 +147,7 @@
     },
     {
       "name" : "Government Technology",
-      "logo" : "/media/images/summit/2015/logos/GT14 print logo 4c_4x4.eps",
+      "logo" : "/media/images/summit/2015/logos/govtech.png",
       "link" : "http://www.govtech.com/"
     },
     {
