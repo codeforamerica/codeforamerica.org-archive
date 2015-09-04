@@ -10,12 +10,43 @@
 // Layouts served: summit-2015
 //
 
-// =====
-// Breakpoints
-// =====
+// Colors
+$color-red: #cf1b41;
+$color-red-medium: #aa1c3a;
+$color-blue: #399fd3;
+$color-blue-light: #7ab5d6;
+$color-blue-medium: #4298bb;
+$color-blue-dark: #004b6a;
+$color-gray: #6D6E71;
+$color-gray-light: #e5e5e5;
+$color-gray-medium: #999595;
+$color-gray-dark: #444444;
+$color-orange: #e87d2b;
+$color-purple: #69579C;
+$color-green: #00a175;
+$color-yellow: #fedd44;
+$color-black: rgba(0,0,0,0.7);
 
+// Mobile-first media query helper
+@mixin media($bp) {
+	@media screen and (min-width: #{$bp}) {
+		@content;
+	}
+}
+
+// Breakpoints
 $breakpoint-tablet: 850px;
 $breakpoint-mobile: 640px;
+$mobile-up: 40em;
+
+// clearfix
+@mixin clearfix(){
+  &, &:before, &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 // =====
 // .masthead override
@@ -210,4 +241,137 @@ p.masthead-content-description {
   margin-right: auto;
   position: relative;
   left: -10px;
+}
+
+// =====
+// Summit schedule grid
+// =====
+
+.schedule ul { margin: 0; }
+.schedule ul.schedule-grid__dayparts {
+  margin-top: 1em;
+  @include media($mobile-up) { margin-top: 2em; }
+}
+
+.schedule-grid__dayparts {
+  position: relative;
+  padding-left: 1em;
+
+  &:before {
+    content: "";
+    background-color: $color-gray-light;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+  }
+
+  .schedule-grid__daypart__title {
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.4;
+    color: $color-blue-dark;
+
+    &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: $color-blue-dark;
+      left: -1.55em;
+      left: calc(-1em - 10px);
+      top: 0;
+      position: absolute;
+    }
+  }
+}
+
+.schedule-grid__dayparts > li + li {
+  margin-top: 4em;
+}
+
+.schedule-grid__timeblocks > li {
+  position: relative;
+  margin-top: 1em;
+  padding-top: 1em;
+  @include clearfix();
+  width: 100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    width: calc(100% + 1em);
+    height: 1px;
+    background-color: $color-gray-light;
+    top: 0;
+    left: -1em;
+  }
+
+  .schedule-grid__timeblock__title {
+    margin: 0;
+    color: $color-gray;
+  }
+}
+
+.schedule-grid__timeblocks > li + li {
+  margin-top: 2em;
+}
+
+.schedule-grid__events > li {
+  background-color: #F2F3F4;
+  padding: 1em;
+  @include media($mobile-up) { padding: 1.5em; }
+  margin-top: 1em;
+  max-width: 60em;
+
+  p { margin-bottom: 0; }
+  .layout-minim { margin: 0; }
+
+  .schedule-grid__event__type {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    color: $color-gray-medium;
+    border: 2px solid $color-gray-medium;
+    padding: 0.3em;
+    display: inline-block;
+    width: auto;
+    line-height: 1;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+}
+
+.schedule-grid__event__speakers > li {
+  position: relative;
+  width: 100%;
+  display: block;
+
+  .schedule-grid__event__speaker__name {
+    position: relative;
+    top: 0.4em;
+    margin: 0;
+  }
+
+  .schedule-grid__event__speaker__title {
+    color: #6D6E71;
+    font-size: 0.8em;
+    margin-top: 0.4em;
+    line-height: 1.5;
+  }
+
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 0.7em;
+  }
+}
+
+.layout-grid-minim .schedule-grid__event__speakers > li:first-of-type { margin-top: 1em; }
+
+.schedule-grid__event__speakers > li + li {
+  margin-top: 1.5em;
 }
