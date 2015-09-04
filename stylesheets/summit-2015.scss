@@ -371,6 +371,10 @@ p.masthead-content-description {
 }
 
 .layout-grid-minim .schedule-grid__event__speakers > li:first-of-type { margin-top: 1em; }
+.schedule-grid__event__speakers > li {
+	margin-top: 1em;
+	@include media($mobile-up) { margin-top: 0; }
+}
 
 .schedule-grid__event__speakers > li + li {
   margin-top: 1.5em;
