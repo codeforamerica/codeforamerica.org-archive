@@ -79,7 +79,7 @@ sponsor-banner: true
 {% assign days = site.data.summit_schedule | uniq_array_by: "day" %}
 {% for day in days %}
 <section class="layout-breve schedule">
-  <a href="{{day|downcase}}"></a>
+  <a id="{{day|downcase}}"></a>
   <h2>{{day}}</h2>
   <ul class="list-no-bullets schedule-grid__dayparts">
     {% assign dayparts = site.data.summit_schedule | if_it_has: "day", day | uniq_array_by: "session_daypart" %}
