@@ -19,6 +19,12 @@
       "logo" : "/media/images/summit/2015/logos/socrata.jpeg",
       "description" : "Socrata’s solutions assist government leaders in improving transparency, modernizing citizen access to information, and bringing data into every decision, all with unprecedented speed and cost savings. Delivered as turnkey services, Socrata’s technologies unlock data trapped in enterprise silos, mobilize and transform it into useful information that everyone can easily access, visualize, share and reuse.",
       "link" : "http://www.socrata.com/"
+    },
+    {
+      "name" : "Google",
+      "logo" : "/media/images/summit/2015/logos/googleorglogo.png",
+      "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful.",
+      "link" : "http://google.org/"
     }
   ],
   "gold" : [
@@ -27,22 +33,65 @@
       "logo" : "/media/images/summit/2015/logos/googleforentrepreneurs.jpeg",
       "description" : "Google for Entrepreneurs provides financial support and the best of Google's resources to dozens of coworking spaces and community programs across 125 countries. We also create Campuses: physical hubs where entrepreneurs can learn, connect, and build companies that will change the world. To learn more about Google for Entrepreneurs, visit <a href='google.com/entrepreneurs'>google.com/entrepreneurs</a> or follow us on <a href='https://plus.google.com/+GoogleforEntrepreneurs/'>G+</a> and <a href='https://twitter.com/googleforentrep'>Twitter</a>.",
       "link" : "https://www.googleforentrepreneurs.com/",
+    },
+    {
+      "name" : "Tropo",
+      "logo" : "/media/images/summit/2015/logos/tropo.png",
+      "description" : "Tropo, now part of Cisco, makes it easy for developers to integrate telephony into their applications. Send a text message, make a phone call, have a phone number that’s answered by your code. No contracts, no install costs. We’ll even host your code. Access the best customer support you’ve ever seen.",
+      "link" : "https://www.tropo.com/",
+    },
+    {
+      "name" : "Rally",
+      "logo" : "/media/images/summit/2015/logos/rally.png",
+      "description" : "Rally, now a part of CA Technologies, delivers software and services that drive agility. We help teams manage their software development lifecycle by aligning with strategic business objectives, facilitating collaboration, and increasing transparency. We are proud to provide funding, tools, and expertise to fuel the growth and effectiveness of the Code for America Brigade program.",
+      "link" : "https://www.rallydev.com/",
     }
   ],
   "silver" : [
+    {
+      "name" : "Esri",
+      "logo" : "/media/images/summit/2015/logos/esri.jpg",
+       "description" : "Esri® helps organizations map and model our world. Esri’s GIS technology enables them to effectively analyze and manage their geographic information and make better decisions. They are supported by an experienced and knowledgeable staff and an extensive network of business partners and international distributors.",
+       "link" : "http://www.esri.com",
+    }
   ],
   "supporter" : [
+    {
+      "name" : "ACQUIA",
+      "logo" : "/media/images/summit/2015/logos/acquia.png",
+      "link" : "http://www.acquia.com/"
+    },
     {
       "name" : "CartoDB",
       "logo" : "/media/images/summit/2015/logos/cartodb.png",
       "link" : "https://cartodb.com/",
+    },
+    {
+      "name" : "GovDelivery",
+      "logo" : "/media/images/summit/2015/logos/govdelivery.png",
+      "link" : "http://govdelivery.com/"
+    },
+    {
+      "name" : "OpenDataSoft",
+      "logo" : "/media/images/summit/2015/logos/opendatasoft.png",
+      "link" : "https://www.opendatasoft.com/"
     }
   ],
   "civic-startup" : [
     {
+      "name" : "APPCITYLIFE",
+      "logo" : "/media/images/summit/2015/logos/appcitylife.png",
+      "link" : "http://appcitylife.com/",
+    },
+    {
       "name" : "COURTHOUSE",
       "logo" : "/media/images/summit/2015/logos/courthouse.png",
       "link" : "http://courthouseusa.com/",
+    },
+    {
+      "name" : "FAF",
+      "logo" : "/media/images/summit/2015/logos/faf.jpg",
+      "link" : "http://all4kids.org",
     },
     {
       "name" : "MYCITY",
@@ -60,9 +109,46 @@
       "link" : "http://oppsites.com/",
     },
     {
+      "name" : "PLACEMETER",
+      "logo" : "/media/images/summit/2015/logos/placemeter.png",
+      "link" : "https://www.placemeter.com/",
+    },
+    {
+      "name" : "PLACESPEAK",
+      "logo" : "/media/images/summit/2015/logos/placespeak.png",
+      "link" : "https://www.placespeak.com/",
+    },
+    {
       "name" : "SEAMLESS",
       "logo" : "/media/images/summit/2015/logos/seamless.png",
       "link" : "http://www2.seamlessdocs.com/",
+    },
+    {
+      "name" : "SmartBetterCities",
+      "logo" : "/media/images/summit/2015/logos/smartbettercities.png",
+      "link" : "http://www.smarterbettercities.ch/",
+    }
+  ],
+  "media-partners": [
+    {
+      "name" : "GovFresh",
+      "logo" : "/media/images/summit/2015/logos/govfresh-logo.png",
+      "link" : "http://www.govfresh.com"
+    },
+    {
+      "name" : "GovLoop",
+      "logo" : "/media/images/summit/2015/logos/GL_Logo_1000px.png",
+      "link" : "https://www.govloop.com/"
+    },
+    {
+      "name" : "Government Technology",
+      "logo" : "/media/images/summit/2015/logos/govtech.png",
+      "link" : "http://www.govtech.com/"
+    },
+    {
+      "name" : "Route Fifty",
+      "logo" : "/media/images/summit/2015/logos/RF.png",
+      "link" : "http://www.routefifty.com/?utm_source=rf&utm_medium=ROS&utm_campaign=CodeForAmerica"
     }
   ]
 }
