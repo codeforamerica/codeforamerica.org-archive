@@ -49,6 +49,22 @@ $mobile-up: 40em;
 }
 
 // =====
+// Typography
+// =====
+h1,h2,h3,h4,h5,h6 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+h5 {
+	text-transform: none;
+	font-weight: bold;
+}
+p.quiet {
+	font-size: 14px;
+	line-height: 2;
+}
+
+// =====
 // .masthead override
 // =====
 .masthead.masthead-custom {
