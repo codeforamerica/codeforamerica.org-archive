@@ -22,7 +22,7 @@
     },
     {
       "name" : "Google",
-      "logo" : "/media/images/summit/2015/logos/googleorglogo.png",
+      "logo" : "/media/images/summit/2015/logos/google.png",
       "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful.",
       "link" : "http://google.org/"
     }
@@ -91,7 +91,7 @@
     {
       "name" : "FAF",
       "logo" : "/media/images/summit/2015/logos/faf.jpg",
-      "link" : "http://all4kids.org",
+      "link" : "http://myfaf.org/",
     },
     {
       "name" : "MYCITY",
