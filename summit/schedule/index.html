@@ -33,32 +33,12 @@ sponsor-banner: true
 ---
 
 <style>
-  h1,h2,h3,h4,h5,h6 {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-  }
-
-  h5 {
-    text-transform: none;
-    font-weight: bold;
-  }
-
   main *, main *:before, main *:after {
     box-sizing: border-box;
-  }
-
-  p.quiet {
-    font-size: 14px;
-    line-height: 2;
-    margin-top: 0;
   }
   .layout-breve {
     width: 100%;
   }
-  .layout-less-padding {
-    padding: 16px 4% 0px;
-  }
-
   .schedule-item_speaker_moderator {
     display: inline-block;
     background-color: #aa1c3a;
@@ -72,8 +52,6 @@ sponsor-banner: true
     position: relative;
     top: -0.2em;
   }
-
-
 </style>
 
 
@@ -113,6 +91,7 @@ sponsor-banner: true
                           {% for breakout in breakouts %}
                           {% if breakout.status == "Confirmed" %}
                             <li class="clearfix">
+                                <a id="{{breakout.session_unique_key}}"></a>
                                 {% unless breakout.session_audience == breakout.session_title or breakout.session_audience == null %}<p class="schedule-grid__event__type">{{breakout.session_audience}}</p>{% endunless %}
                                 <h4>{{breakout.session_title}}</h4>
                                 <p>{{breakout.session_description}}</p>
@@ -146,6 +125,7 @@ sponsor-banner: true
                   END BREAKOUTS ONLY -->
                 {% else %}
                   <li class="clearfix">
+                    <a id="{{event.session_unique_key}}"></a>
                     <div class="layout-minim">
                       {% unless event.session_type == event.session_title or event.session_type == null %}<p class="schedule-grid__event__type">{{event.session_type}}</p>{% endunless %}
                       <h4>{{event.session_title}}</h4>
