@@ -18,6 +18,8 @@
   var toExcerpt = function(content, length) {
     // content shouldn't have any html tags
 
+    content = decodeEntities(content);
+
     // Get the first 200 characters
     var excerpt = content.substring(0,length);
 
@@ -25,6 +27,13 @@
     excerpt += '...';
 
     return excerpt;
+  }
+
+  var decodeEntities = function(content) {
+    // Using a textarea does not affect HTML tags, but will decode entities.
+    var textarea = document.createElement("textarea");
+    textarea.innerHTML = content;
+    return textarea.value;
   }
 
   var makePrettyDate = function(date) {
