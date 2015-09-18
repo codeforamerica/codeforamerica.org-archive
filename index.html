@@ -1,7 +1,8 @@
 ---
 # Allows us to call the most recent post from the blog
 helpers:
-  blogpost:
+  underscore: true
+  blogpost-helpers:
     category: ""
     max_post_count: 1
 ---
@@ -217,8 +218,7 @@ helpers:
     var post = posts[0];
 
     // Let's get the excerpt of the post
-    var postContent = stripHTML( post.content );
-    var postExcerpt = toExcerpt( postContent, 220 );
+    var postExcerpt = toExcerpt( post.content, 220 );
 
     // Create a pretty date
     var postDate = makePrettyDate( post.date );
