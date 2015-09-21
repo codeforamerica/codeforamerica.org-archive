@@ -13,7 +13,19 @@ date,day,time_block,session_unique_key,session_title,session_description,session
 09/30/15,Wednesday,12:30 PM - 2:00 PM,session_111,Speaker Meet and Greet,Inspired by a particular speaker? Want to ask them a question? Join them at the Meet and Greet for some informal discussion. ,,Meet and Greet,Lunchtime Activities,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 09/30/15,Wednesday,12:30 PM - 7:00 PM,session_112,Tech Fair,Demo and learn more about the newest tools and technology powering 21st century governments around the country.  ,,Tech Fair,Lunchtime Activities,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 09/30/15,Wednesday,2:00 PM - 5:30 PM ,session_113,Breakout Sessions,Roll up your sleeves for some curated workshops focused on building digital government.,,Breakouts,Workshops,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-09/30/15,Wednesday,2:00 PM - 5:30 PM ,session_114,Hackspace,Use your skills for good and start coding for America.,,Hackspace,Workshops,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+09/30/15,Wednesday,2:00 PM - 5:30 PM ,session_114,Hackspace,"Swing by the Code for America Hackspace to bring back a new app for your community. The hackspace is run by our volunteer civic technologist community, who will help you get the code up and running. 
+<br>
+<br><b>Apps include</b>: 
+<ul>
+<li><b><a href=""https://www.citygram.org/"">Citygram</b></a> - Sends text messages about important open data in your neighborhood.</li>
+<li><a href=""http://uscensusbureau.github.io/citysdk/""><b>CitySDK</b></a> - Easily build new apps using the national Census data.</li>
+<li><a href=""https://twitter.com/CutePetsDenver""><b>CutePets</b></a> - Set up a Twitter bot for a local animal shelter.</li>
+<li><b><a href=""http://dashboard.dfd.codeforamerica.org/"">City Analytics Dashboard</b></a> - A live view into who is visiting your City’s website.</li>
+<li><b><a href=""http://click-that-hood.com/"">Click that Hood</b></a> - A game to help learn the neighborhoods in your city.</li>
+<li><b><a href=""http://us-city.census.okfn.org/"">Open Data Census</b></a> - Research the quality of important data sets in your city.</li>
+<li><b><a href=""https://service-census.herokuapp.com/"">Digital Service Census</b></a> - Research the quality of your City’s website.</li>
+<li><b><a href=""http://www.codeforamerica.org/geeks/civicissues"">Civic Tech Issues</b></a> - Hundreds of small civic tech tasks that need your help.</li>
+</ul>",,Hackspace,Workshops,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 09/30/15,Wednesday,2:00 PM - 5:30 PM ,session_115,Unconference,"Swing by the Unconference for interactive, participant-led, 45-minute small group discussions. There is no formal preparation necessary to lead a discussion- so feel free to join in!",,Unconference,Workshops,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 09/30/15,Wednesday,5:30 PM - 7:00 PM,session_116,Reception,Hang out with the Code for America community while enjoying light snacks and refreshments. ,,Reception,Reception,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 10/01/15,Thursday,9:00 AM - 9:20 AM,session_117,Why This Work Matters,"Learn how creating accessible digital social services and delivering them in a streamlined, dignified way is critical to improving health and supporting upward economic mobility for millions of Californians (and beyond).",,Keynote,Mainstage,,,William Lightbourne,william-lightbourne,"Director, California Department of Social Services",,SPEAKER,Jacob Solomon,jacob-solomon,"Health Product Manager, Code for America",MODERATOR,STAFF,,,,,,,,,,,,,,,,,,,,,,,,,
