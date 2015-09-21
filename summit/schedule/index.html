@@ -52,6 +52,13 @@ sponsor-banner: true
     position: relative;
     top: -0.2em;
   }
+  p.item-link {
+    font-size: 0.8em;
+    margin-top: 0.8em;
+  }
+  p.item-link a {
+    color: #6D6E71;
+  }
 </style>
 
 
@@ -95,6 +102,7 @@ sponsor-banner: true
                                 {% unless breakout.session_audience == breakout.session_title or breakout.session_audience == null %}<p class="schedule-grid__event__type">{{breakout.session_audience}}</p>{% endunless %}
                                 <h4>{{breakout.session_title}}</h4>
                                 <p>{{breakout.session_description}}</p>
+                                <p class="item-link"><a href="https://www.codeforamerica.org/summit/schedule/#{{breakout.session_unique_key}}">[Copy Link]</a></p>
                                 <ul class="list-no-bullets schedule-grid__event__speakers">
                                   {% assign speakers = breakout | bundle_object: "speaker_name,speaker_safe,speaker_photo,speaker_moderator,speaker_title_org", 6 %}
                                   {% for speaker in speakers %}
@@ -130,6 +138,7 @@ sponsor-banner: true
                       {% unless event.session_type == event.session_title or event.session_type == null %}<p class="schedule-grid__event__type">{{event.session_type}}</p>{% endunless %}
                       <h4>{{event.session_title}}</h4>
                       {% if event.session_description %}<p>{{event.session_description}}</p>{% endif %}
+                      <p class="item-link"><a href="https://www.codeforamerica.org/summit/schedule/#{{event.session_unique_key}}">[Copy Link]</a></p>
                     </div>
                     <div class="layout-minim">
                       <ul class="list-no-bullets schedule-grid__event__speakers">
