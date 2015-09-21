@@ -142,7 +142,7 @@ sponsor-banner: true
                     </div>
                     <div class="layout-minim">
                       <ul class="list-no-bullets schedule-grid__event__speakers">
-                        {% assign speakers = event | bundle_object: "speaker_name,speaker_safe,speaker_photo,speaker_moderator,speaker_title_org", 6 %}
+                        {% assign speakers = event | bundle_object: "speaker_name,speaker_safe,speaker_photo,speaker_moderator,speaker_title_org", 7 %}
                         {% for speaker in speakers %}
                           {% unless speaker.speaker_name == null %}
                             <li>
