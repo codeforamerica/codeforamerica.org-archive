@@ -17,7 +17,7 @@ date,day,time_block,session_unique_key,session_title,session_description,session
 <br>
 <br><b>Apps include</b>: 
 <ul>
-<li><b><a href=""https://www.citygram.org/"">Citygram</b></a> - Sends text messages about important open data in your neighborhood.</li>
+<li><b><a href=""https://www.citygram.org/"">Citygram</b></a> - Subscribe to your city with Citygram. Put your city's open data in the hands of its citizens.</li>
 <li><a href=""http://uscensusbureau.github.io/citysdk/""><b>CitySDK</b></a> - Easily build new apps using the national Census data.</li>
 <li><a href=""https://twitter.com/CutePetsDenver""><b>CutePets</b></a> - Set up a Twitter bot for a local animal shelter.</li>
 <li><b><a href=""http://dashboard.dfd.codeforamerica.org/"">City Analytics Dashboard</b></a> - A live view into who is visiting your City’s website.</li>
