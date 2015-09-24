@@ -34,7 +34,7 @@ var showModal = function(submittedEmail,elem) {
 		}
 		// Do they want to show a specific checkbox and hide all others?
 		if (hasAttr(elem,'data-email-only-show-group') ) {
-			var theClass = '.' + $(elem).attr('data-email-only-show-group');
+			var theClass = '.js-' + $(elem).attr('data-email-only-show-group') + '-checkbox';
 			if ($(theClass).hasClass('hidden')) {
 				$(theClass).toggleClass('hidden');
 				$(theClass).find('input').prop('checked',true);
