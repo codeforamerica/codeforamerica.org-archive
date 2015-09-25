@@ -94,7 +94,6 @@ class TestApache (unittest.TestCase):
                  ('/focus', '/our-work/focus-areas/'),
                  ('/governments/capabilities', '/governments/practices/'),
                  ('/governments/capabilities/index.html', '/governments/practices/index.html'),
-                 ('/governments/capabilities/open-data', '/governments/practices/open-data/'),
                  ('/procurement', '/governments/practices/procurement/'),
                  ('/governments/capabilities/procurement', '/governments/practices/procurement/'),
                  ('/team', '/about/team/'),
