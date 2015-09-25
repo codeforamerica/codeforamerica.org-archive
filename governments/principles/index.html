@@ -1,162 +1,583 @@
 ---
 layout: default
-title: Principles for 21st Century Government
-masthead-image: "../../media/images/cities_fellowship_faq/citiesfaqheader.jpg"
+title: Our Approach
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
 nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
  - Principles for 21st Century Government: "/governments/principles"
+
+jquery-scripts: |
+    <script src="/script/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/script/vendor/waypoints/shortcuts/inview.min.js"></script>
+    <!-- <script src="/script/vendor/waypoints/shortcuts/sticky.min.js"></script> -->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        /*
+         * When we enter a principle, add an active class to the
+         * nav-item representing that principle. Also, remove all
+         * active classes every time the event triggers so we
+         * don't keep inactive things highlighted
+         */
+        var principles = $('.principle');
+        var setActive = function(section){
+          var active = '#js-nav-' + section.id;
+          $(active).addClass('nav-item-active');
+        }
+        var unsetAllActive = function(){
+          $.each($('.nav-item'), function(key,item){
+            if ($(item).hasClass('nav-item-active')){
+              $(item).removeClass('nav-item-active');
+            }
+          });
+        }
+        $.each(principles, function(key,section){
+          new Waypoint({
+            element: section,
+            handler: function(direction){
+              unsetAllActive();
+              setActive(section);
+            },
+            offset: '25px'
+          });
+        });
+
+        /*
+         * When a nav button is clicked, automatically clear active
+         * sections and make that section active.
+         */
+
+
+
+        /*
+         * When we enter the page content (i.e. leave the header),
+         * stick the nav to the page so it follows us.
+         */
+        var pageContent = new Waypoint.Inview({
+          element: $('#page-content')[0],
+          enter: function(dir){},
+          entered: function(dir){
+            console.log('entered ' + dir);
+            $('#js-sticky-nav').removeClass('fixed');
+          },
+          exit: function(dir){
+            console.log('exit ' + dir);
+            $('#js-sticky-nav').addClass('fixed');
+          },
+          exited: function(dir){}
+        });
+
+      });
+    </script>
 ---
 
- <section>
-<div class="layout-semibreve">
-    
-            {% include nav-breadcrumbs.html %}
-              <header class="badge-heading badge-gov badge-red"> <h2>Principles for 21st Century Government</h2>
-            
-           <p>Since 2011, Code for America has worked with 32 local governments through our Fellowship program, using technology and new ways of working to deliver more effective, efficient, and fair government fit for the 21st century.</p>
+<style>
+    /******
+     * TABLE OF CONTENTS
+     ******/
 
-<p>Through these Fellowships, we've identified seven principles that we believe are critical for governments of any size, structure, or political persuasion in serving their communities.</p>
+    /* Table of contents head */
+    .nav-head {
+      font-size: 18px;
+      margin: 0 0 3px 0;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
 
-<p>Code for America helps local governments learn and apply these principles to <a href="/our-work/focus-areas/">important problems</a>.</p>
+    /* Turn the table of contents into a card style */
+    .card-toc {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-left: 1em;
+      padding-right: 0.25em;
+      background-color: white;
+      border: 2px solid rgba(109, 110, 113, 0.25);
+      margin-top: 5px;
+    }
 
-<div class="alert-info">
-    <p><em><b>BETA: Last updated on April 13, 2015.</b></h5></p>
-        <p></p>These will be updated as we learn. Please help us by providing <a href="/governments/principles/feedback.html" target="_blank">feedback</a>.</em></p>
-        </div>
-    <nav role="navigation" class="nav nav-horizontal">
-    		<ul class="list">
-      			<li>1. <a href="#needs">Design for people's needs</a></li>
-      			<li>2. <a href="#everyone">Make it easy for everyone to participate</a></li>
-      			<li>3. <a href="#collaborate">Focus on what government can do</a></li>
-      	 		<li>4. <a href="#open">Make data easy to find and use</a></li>
-      	 		<li>5. <a href="#data">Use data to make and improve decisions</a></li>
-      	 		<li>6. <a href="#procurement">Choose the right technology for the job</a></li>
-     	      	 	<li>7. <a href="#organization">Organize for results</a></li>
-  		</ul>
-	</nav>
-	
-                <h2 id="needs">1. Design for people's needs</h2>
-                <p>Government’s purpose is to serve residents, and we can do this best when we deeply understand who we’re working for. When government services are designed to treat all residents with respect, empathy, and dignity, a transformative trust can be gained. 21st century governments:</p>
-                <ul>
-           		<li>Begin projects by conducting research with real people to understand who they are, what they need, and how they behave.</li>
-           		<li>Design processes, policy, and services around those needs, continuously returning to residents to get feedback.</li>
-           	</ul>
-                <h3>Example</h3>
-                <ul>
-                	
-                <li>In Chicago, new civic apps undergo user research with residents from diverse racial, socioeconomic, and geographic backgrounds.</li>
-        	</ul>
-        	
-        	<ul class="list-inline list-no-bullets layout-centered"> 
-				<li><a href="/governments/principles/design" class="button">Read the CfA Design Standard</a></li>
-			</ul>
+    .toc-padding {
+      padding-bottom: 0.75em;
+      margin-bottom: 0;
+    }
 
+    /******
+     * PAGE HEADER
+     ******/
 
-<h2 id="everyone">2. Make it easy for everyone to participate</h2>
-		<p>Serving everyone means working with, not just for, a true cross-section of the community. Governments should proactively collaborate with the community and seek participation from all residents in decisions that affect them. Government should serve as a platform for raising the voices of all members of the community. 21st century governments:</p>
-		<ul>
-			<li>Create ways for every community member to take part in decisions and issues that affect them, regardless of language or ability.</li>
-		<li>Communicate using language that’s easy to understand, and in ways that are easy to use, with residents both online and offline. </li>
-           	</ul>
-           	
-           	<h3>Example</h3>
-		<ul>
-			<li>In Tampa, Florida, the Metropolitan Planning Commission let neighborhood residents give feedback about a proposed roadway construction project by text message survey.</li>
-		</ul>
-		
-</li>
+    /* Styles for the photo header */
+    .layout-top {
+      padding-bottom: 0;
+      padding-top: 20;
+    }
 
-	<ul class="list-inline list-no-bullets layout-centered"> 
-				<li><a href="/governments/principles/engagement" class="button">Read the CfA Engagement Standard</a></li>
-			</ul>
+    /******
+     * LAYOUT
+     ******/
 
-	<h2 id="collaborate">3. Focus on what government can do</h2>
-		<p>Government can't and shouldn't do everything alone. With limited resources to solve complex problems facing our communities, they should prioritize the work where they can have the most impact. By collaborating with others, they can make better services and save more money by focusing resources. 21st century governments:</p>
-		<ul>
-			<li>Develop relationships with outside partners working towards similar goals — like local universities, community groups, or other governments in their region — to share skills and resources.</li>
-			<li>Build on or borrow existing work when possible, rather than duplicating efforts.</li>
-			<li>Make it easy for others to build on their work by offering data in easy to use formats with clear documentation.</li>
-		</ul>
-           	
-		<h3>Example</h3>
-		<ul>
-			<li>In Oakland, city officials and a community group collaborated to write answers to the questions that citizens searched for most frequently on the city website.</li>
-		</ul>
-
-	<h2 id="open">4. Make data easy to find and use </h2>
-		<p>Open data helps make government better. Governments hold a lot of information that is valuable — and sometimes critically important — to residents, organizations, companies, and government itself. A 21st century government:
-</p>
-
-<ul>
-	<li>Makes public data available by default in digital formats so that others can use it in meaningful ways.</li>
-	<li>Gets the relevant data to the right people at the right time, in a format that’s easy to understand.</li>
-</ul>
-           	<h3>Example</h3>
-		<ul>
-			<li>In Detroit, the Department of Transportation used open data to build an application that helps over 600 Detroiters find out when their bus will be arriving and avoid long waits in the cold or on an unsafe corner at night.</li>
-		</ul>
-		
-           		<ul class="list-inline list-no-bullets layout-centered"> 
-    <li><a href="/governments/principles/open-data/" class="button">Read the CfA Open Data Playbook</a></li>
-</ul>
-
-<h2 id="data">5. Use data to make and improve decisions</h2>
-		<p>Good decisions are informed by real-world data, and as we gather more information by testing assumptions, we can make better decisions. Governments who embrace approaches like analytics, data-informed performance management techniques, and predictive modeling can better meet residents' expectations, create new opportunities and improve overall efficiency. 21st century governments:</p>
-		
- <ul>
- 	<li>Use data tools and analytics to get a more complete understanding of problems.</li>
- 	<li>Start with small solutions, test them with real people to gather more data, and make improvements based on what's learned. 
- 	<li> Make this data publicly available to drive transparency, community engagement, and accountability.  </li>
- 
- </ul>
-           	<h3>Example</h3>
-		<ul>
-			<li>In Louisville, departments use data analytics to identify inefficiencies in their work processes. Using this approach, they reduced unscheduled overtime and workers’ compensation expenditures by more than $2 million.</li>
-		</ul>
-
-	<h2 id="procurement">6. Choose the right technology for the job</h2>
-		<p>Over the last four years, Code for America has seen how modern technology tools and approaches helps government build trust with their communities and better address the challenges they face. Today, good governance requires good technology — and for government, accessing or buying good technology can require new ways of doing business. 21st century governments:</p>
-		
-		<ul>
-			<li>Understand current, widely-accepted technology best practices to make informed decisions — including when to buy and when to build software.</li>
-			<li>Break large-scale software projects into smaller RFPs to avoid vendor lock-in and allow for better project management.</li>
-			<li>Seek out vendors that work in an iterative way to provide user-friendly digital services, and reduce policy and process obstacles to working with those companies.</li>
-			<li>Reform procurement policy to make it easier to buy better technology.</li>
-		</ul>
-		
-
-		
-        <h3>Example</h3>
-		<ul>
-			<li>In Philadelphia, the city does direct outreach to local web development firms about opportunities to bid on technology contracts.</li>
-		</ul>
-
-       	<ul class="list-inline list-no-bullets layout-centered"> 
-			<li><a href="/governments/principles/government-technology" class="button">Read the CfA Government Technology Principles</a></li>
-		</ul>
+    /* Tweak default layout sizes to make main content bigger */
+    @media screen and (min-width: 40em) {
+      .layout-minor {
+        width: 16%;
+      }
+      .layout-major {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
 
 
-<h2 id="organization">7. Organize for results</h2>
-		<p>Across 32 fellowship engagements, the successful governments have been those that challenge and reform policies and practices that are outdated, inefficient, and prevent delivery. This is nothing but the transformation of government, with technology and new processes working together. 21st century governments:</p>
-           	<ul>
-           		<li>Work in an agile way, continuously improving existing processes.</li>
-           		<li>Support new approaches to problem solving and delivery.</li>
-           		<li>Invest in staff to build skills at all levels of the organization, as well as hiring new talent where it’s needed. </li>
-           		<li>Acknowledge and reward good work, including trying new approaches and attitudes to risk.</li>
-           		<li>Build multidisciplinary teams focused on delivery.</li>
-           		<li>Recognize that the once a service has been delivered, continuous improvement of the service must be in place.</li>
-           	
-           	</ul>
-           	<h3>Examples</h3>
+    .heading-margin {
+        margin: 0em 0;
+        padding: 0.5em;
+    }
+    .slab-dark-blue .heading {
+        border-bottom: 1px solid;
+        border-color: rgba(229, 229, 229, 0.8);
+    }
+    .slab-medium-red .heading {
+        border-bottom: 1px solid;
+        border-color: rgba(229, 229, 229, 0.8);
+    }
 
-		<ul>
-			<li>In Denver, department heads learn how to use Lean methods through the Peak Academy program. After four hours of training, one staff member was able to create $46,000 of annual savings in the Wastewater Division Department.</li>
-			<li>In New York City, the Mayor’s Office of Data Analytics recruited fixed-term contractors with experience in statistics to improve the government’s data analysis capability.</li>
-		</ul>
+    ul.checkmark h4 {
+        padding-left: 1.5em;
+    }
+    ul.checkmark {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    ul.checkmark li {
+        text-indent: -2em;
+        padding-left: 4em;
+        line-height: 30px;
+    }
+    ul.checkmark li:before {
+        font-family: 'ico-moon';
+        content: "\e370";
+        float: left;
+        width: 2em;
+    }
+    .expand {
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    .expand:before {
+        font-size: 50px;
+    }
+    .border-shadow {
+        background-color: white;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(109, 110, 113, 0.15);
+    }
+    /*
+    Creates a bigger text size for section introduction sentences*/
+    .lead-paragraph {
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+    /* Typography stuff */
+    .section-header {
+      color: #6D6E71;
+      font-weight: 700;
+    }
+    .heading {
+      margin-top: 0.5em;
+      padding-bottom: 0;
+      margin-bottom: 1em;
+    }
+    p:first-of-type {
+      margin-top: 0;
+    }
+    /* Spacing stuff */
+    .principle + .principle {
+      margin-top: 3em;
+    }
+    .layout-semibreve-tight {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    /* Styling the active TOC item */
+    .nav-item a {
+      color: black;
+      font-weight: 400;
+    }
+    .nav-item-active, .nav-item-active a {
+      color: #aa1c3a;
+      font-weight: 700;
+    }
+    @media screen and (min-width: 40em) {
+      .fixed {
+        position: fixed;
+        top: 3em;
+        left: 2%;
+        width: 14%;
+      }
+    }
+</style>
+
+<div class="masthead masthead-xl">
+  <header class="layout-top layout-semibreve masthead-header">
+    <h1 id="story-title" class="page-title">Principles for the 21st Century</h1>
+    <p id="story-content">Since 2011, Code for America has partnered with dozens of local governments to apply this approach to deliver better services and outcomes for their communities. We’ve seen that governments of any size, structure, or political persuasion can adopt these practices to better work for the people, by the people, in the 21st century.</p>
+  </header>
 </div>
+
+<section class="layout-breve" id="page-content">
+
+  <div class="layout-minor">
+    <nav role="navigation" class="nav nav-horizontal card-toc" id="js-sticky-nav">
+      <h4 class="h4-size nav-head">Table of Contents</h4>
+      <ul class="toc-padding">
+        <li><a class="nav-item" id="js-nav-people" href="#people">1. Put People First</a></li>
+        <li><a class="nav-item" id="js-nav-start" href="#start">2. Start Small</a></li>
+        <li><a class="nav-item" id="js-nav-collaborate" href="#collaborate">3. Make Digital</a></li>
+        <li><a class="nav-item" id="js-nav-open" href="#open">4. Open vs. Closed</a></li>
+        <li><a class="nav-item" id="js-nav-decisions" href="#decisions">5. Improve Decisions</a></li>
+      </ul>
+    </nav>
+  </div><!-- end .layout-minor -->
+
+  <div class="layout-major">
+
+    <!------------------Principle 1---------------------->
+    <div class="layout-whole principle" id="people">
+      <!-- Header -->
+      <h2 class="section-header">1. Put people first</h2>
+      <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Story: Saving time and opening access to Pre-K</h3>
+        </div>
+
+        <div class="layout-minim">
+          <img src="/media/images/people/mapzen.jpg" alt="Placeholder: mapzen.jpg" width="100%" class="width:100%;">
+        </div>
+
+        <div class="layout-minim">
+          <p>The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more</p>
+        </div>
+
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Checklist: Take action</h3>
+        </div>
+
+        <ul class="checkmark list-no-bullets">
+          <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
+          <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
+          <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
+        </ul>
+
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Next steps: Get started</h3>
+        </div>
+
+        <div class="header-border slab-dark-blue">
+          <div class="layout-semibreve layout-semibreve-tight">
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-thumbs-up"></div>
+              <h5 class="heading heading-margin ">Guidance</h5>
+              <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
+              <a href="#" class="button">Read the standard</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-cogs"></div>
+              <h5 class="heading heading-margin">Practice</h5>
+              <p><strong>Run a Resident Survey:</strong> How to conduct a baseline survey to understand your residents' online needs.</p>
+              <a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html" class="button">Run a survey</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-tools" width: 200%></div>
+              <h5 class="heading heading-margin">Tool</h5>
+              <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
+              <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
+            </div>
+
+          </div><!-- end .layout-semibreve -->
+
+        </div><!-- end .slab -->
+
+      </div><!-- end .principle-section -->
+
+    </div><!-- end Principle 1 -->
+
+
+    <!------------------Principle 2---------------------->
+    <div class="layout-whole principle" id="start">
+      <!-- Header -->
+      <h2 class="section-header">2. Start Small</h2>
+      <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Story: Saving time and opening access to Pre-K</h3>
+        </div>
+
+        <div class="layout-minim">
+            <img src="/media/images/geeks_accelerator_apply/people_at_work.jpg" alt="Placeholder: people_at_work.jpg" width="100%" class="width:100%;">
+        </div>
+
+        <div class="layout-minim">
+          <p>The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more</p>
+        </div>
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Checklist: Take action</h3>
+        </div>
+        <ul class="checkmark list-no-bullets">
+          <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
+          <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
+          <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
+        </ul>
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Next steps: Get started</h3>
+        </div>
+
+        <div class="header-border slab-medium-red">
+          <div class="layout-semibreve layout-semibreve-tight">
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-thumbs-up"></div>
+              <h5 class="heading heading-margin ">Guidance</h5>
+              <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
+              <a href="#" class="button">Read the standard</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-cogs"></div>
+              <h5 class="heading heading-margin">Practice</h5>
+              <p><strong>Run a Resident Survey:</strong> How to conduct a baseline survey to understand your residents' online needs.</p>
+              <a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html" class="button">Run a survey</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-tools" width: 200%></div>
+              <h5 class="heading heading-margin">Tool</h5>
+              <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
+              <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
+            </div>
+
+          </div> <!-- end .layout-semibreve -->
+
+        </div><!-- end .slab -->
+
+      </div><!-- end .principle-section -->
+
+    </div><!-- end Principle 2 -->
+
+
+    <!------------------Principle 3---------------------->
+    <div class="layout-whole principle" id="collaborate">
+      <!-- Header -->
+      <h2 class="section-header">3. Make Digital</h2>
+      <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Story: Saving time and opening access to Pre-K</h3>
+        </div>
+
+        <div class="layout-minim">
+            <img src="/media/images/big-data.jpg" alt="Placeholder: big-data.jpg" width="100%" class="width:100%;">
+        </div>
+
+        <div class="layout-minim">
+              The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more
+        </div>
+      </div><!-- end .principle-section -->
+
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Checklist: Take action</h3>
+        </div>
+
+        <ul class="checkmark list-no-bullets">
+          <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
+          <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
+          <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
+        </ul>
+
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Next steps: Get started</h3>
+        </div>
+
+        <div class="header-border slab-dark-blue">
+          <div class="layout-semibreve layout-semibreve-tight">
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-thumbs-up"></div>
+              <h5 class="heading heading-margin ">Guidance</h5>
+              <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
+              <a href="#" class="button">Read the standard</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-cogs"></div>
+              <h5 class="heading heading-margin">Practice</h5>
+              <p><strong>Run a Resident Survey:</strong> How to conduct a baseline survey to understand your residents' online needs.</p>
+              <a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html" class="button">Run a survey</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-tools" width: 200%></div>
+              <h5 class="heading heading-margin">Tool</h5>
+              <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
+              <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
+            </div>
+
+          </div><!-- end .layout-semibreve -->
+
+        </div><!-- end .slab -->
+
+      </div><!-- end .principle-section -->
+
+    </div><!-- end Principle 3 -->
+
+    <!------------------Section 4---------------------->
+    <div class="layout-whole principle" id="open">
+      <!-- Header -->
+      <h2 class="section-header">4. Open vs. Closed</h2>
+      <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Story: Saving time and opening access to Pre-K</h3>
+        </div>
+
+        <div class="layout-minim">
+            <img src="/media/images/accelerator.JPG" alt="Placeholder: accelerator.JPG" width="100%" class="width:100%;">
+        </div>
+
+        <div class="layout-minim">
+              The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more
+        </div>
+
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Next steps: Get started</h3>
+        </div>
+
+        <div class="header-border slab-medium-red">
+          <div class="layout-semibreve layout-semibreve-tight">
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-thumbs-up"></div>
+              <h5 class="heading heading-margin ">Guidance</h5>
+              <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
+              <a href="#" class="button">Read the standard</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-cogs"></div>
+              <h5 class="heading heading-margin">Practice</h5>
+              <p><strong>Run a Resident Survey:</strong> How to conduct a baseline survey to understand your residents' online needs.</p>
+              <a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html" class="button">Run a survey</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-tools" width: 200%></div>
+              <h5 class="heading heading-margin">Tool</h5>
+              <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
+              <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
+            </div>
+
+          </div><!-- end .layout-semibreve -->
+
+        </div><!-- end .slab -->
+
+      </div><!-- end .principle-section -->
+
+    </div><!-- end Principle 4 -->
+
+                  <!------------------Principle 5---------------------->
+    <div class="layout-whole principle" id="decisions">
+      <!-- Header -->
+      <h2 class="section-header">5. Improve Decisions</h2>
+      <p class="lead-paragraph">Taking a <strong>user-centered approach</strong> to designing government services ensures we deeply understand the needs of the people we’re serving -- and that we deliver services that are respectful, inclusive, and easy for everyone to use.</p>
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Story: Saving time and opening access to Pre-K</h3>
+        </div>
+
+        <div class="layout-minim">
+            <img src="/media/images/about_fellowship/jen-summit.jpg" alt="Placeholder: jen-summit.jpg" width="100%" class="width:100%;">
+        </div>
+
+        <div class="layout-minim">
+          <p>The Rhode Island Department of Education partnered with Code for America to redesign the pre-Kindergarten application process. By starting with research and interviews to understand the needs of parents and school administrators, they created a new user-friendly registration tool called Golden Ticket that saved over 800 hours of parent and staff time and led to a 20% increase in registrations. Golden Ticket helped Rhode Island win $19 million in federal funding to expand from 17 classrooms to 60 between 2015 and 2019, giving more kids a great start in life. Read more</p>
+        </div>
+
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Checklist: Take action</h3>
+        </div>
+
+        <ul class="checkmark list-no-bullets">
+          <li> Do research with real people from the community to understand who they are, what they need, and how they behave.</li>
+          <li> Make sure everyone’s voice is represented and meeting people where they already are to invite their input.</li>
+          <li> Design processes, policy, and services to be easy for all residents to use and understand, regardless of language or ability.</li>
+        </ul>
+
+      </div><!-- end .principle-section -->
+
+      <div class="principle-section layout-whole">
+        <div class="heading">
+          <h3>Next steps: Get started</h3>
+        </div>
+
+        <div class="header-border slab-dark-blue">
+          <div class="layout-semibreve layout-semibreve-tight">
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-thumbs-up"></div>
+              <h5 class="heading heading-margin ">Guidance</h5>
+              <p><strong>Read the Civic Engagement Standard:</strong> Learn five key elements of an effective, 21st century engagement strategy for local government.</p>
+              <a href="#" class="button">Read the standard</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-cogs"></div>
+              <h5 class="heading heading-margin">Practice</h5>
+              <p><strong>Run a Resident Survey:</strong> How to conduct a baseline survey to understand your residents' online needs.</p>
+              <a href="/our-work/initiatives/digitalfrontdoor/playbook/user-needs/run-a-resident-survey.html" class="button">Run a survey</a>
+            </div>
+
+            <div class="layout-crotchet" style="text-align:center;">
+              <div class="expand icon-tools" width: 200%></div>
+              <h5 class="heading heading-margin">Tool</h5>
+              <p><strong>Gather community feedback with CityVoice</strong>: An app that makes it easy to collect resident feedback on neighborhood issues via telephone.</p>
+              <p><a href="/apps/cityvoice/#voiceTop" class="button">Get feedback</a></p>
+            </div>
+
+          </div><!-- end .layout-semibreve -->
+
+        </div><!-- end .slab -->
+
+      </div><!-- end .principle-section -->
+
+    </div><!-- end principle5 -->
+
+  </div><!-- end .layout-major -->
+
 </section>
-
-</li>
-</ol>
-

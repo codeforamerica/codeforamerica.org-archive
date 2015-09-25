@@ -1,149 +1,710 @@
 ---
 layout: default
-title: "Apps & APIs"
+# Don't use the default masthead
+title: Products
+masthead: "no"
+nav-global-primary: "no"
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
- - "Apps & APIs": "/our-work/apps"
+ - "Apps": "/our-work/apps"
+jquery-scripts: |
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="/script/isotope.pkgd.min.js"></script>
+  <script>
+    // javascript to reshow all sections on
+    $('.reset-filters').on( 'click', 'a', function() {
+      $('.focus-area').show();
+    });
+    $('.product-filters').on( 'click', 'a', function() {
+      $('.none-section').remove();
+      if($( this ).attr('id') == 'button-reset') {
+        sortButton = "";
+      }
+      else{
+        sortButton = $( this ).attr('id');
+      }
+    });
+    var grids = [ '.economic-development', '.health', '.safety-and-justice', '.communication-and-engagement', '.other' ];
+    $.each(grids, function(key,val){
+      var $grid = $(val).isotope({
+        itemSelector: '.js-product',
+        layoutMode: 'fitRows'
+      });
+
+      $('.product-filters').on( 'click', 'a', function() {
+        filterValue = $( this ).attr('data-filter');
+        $test = $grid.isotope({ filter: filterValue });
+        var iso = $test.data('isotope');
+        // count how many
+        console.log( filterValue );
+        // first element
+        if(iso.filteredItems.length == 0) {
+          var className = '.' + $grid.attr('class').split(' ')[0];
+          $("<p class='none-section note'>None Available</p>").appendTo( $(className).prev() );
+        }
+      });
+    });
+    $('.focus-area-filters').on( 'click', 'a', function() {
+      $('.focus-area').hide();
+      var section = $( this ).attr('target');
+      $(section+"-container").show();
+      $('#'+sortButton).click();
+    });
+   </script>
 ---
+<style>
+  @media screen and (max-width: 40em) {
+    .sort-border {
+      display: none;
+    }
+  }
 
-    <section>
+  @media screen and (max-width: 40em) {
+    .label-mobile-only {
+      font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+      font-weight: bold;
+      border-radius: 0;
+      padding: 0 12px;
+      text-transform: uppercase;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: 10px;
+      height: 25px;
+      line-height: 25px;
+      margin: 0 8px 8px 0;
+      min-height: 19px;
+      min-width: auto;
+      overflow: visible;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: none;
+      vertical-align: middle;
+      width: auto;
+    }
+  }
 
-    <div class="layout-semibreve layout-tight">
+  @media screen and (min-width: 41em) {
+    .label-mobile-only {
+      display: none;
+    }
+  }
 
-        {% include nav-breadcrumbs.html %}
-        
-        <div class="layout-centered">
-            
-            <h2 class="h3">Our fellowship, accelerator and incubator apps are the product of hundreds of community interviews. In partnership with our government partners, fellows and govtech founders figure out how to best serve citizens.</h2>
-            
-                        
+  .stage-experiment {
+    background-color: rgba(190,60,76,1);
+  }
+  .stage-alpha {
+    background-color: rgba(99,95,155,1);
+  }
+  .stage-local-beta {
+    background-color: rgba(83,160,208,1);
+  }
+  .stage-national-beta {
+    background-color: rgba(27,77,105,1);
+  }
+  .stage-local-live, .stage-live {
+    background-color: rgba(75,155,116,1);
+  }
+
+  .label-health {
+    background-color: rgba(172, 25, 56, 1);
+  }
+  .label-communication-and-engagement {
+    background-color: rgba(234, 125, 25, 1);
+  }
+  .label-safety-and-justice {
+    background-color: rgba(105, 85, 158, 1);
+  }
+  .label-economic-development {
+    background-color: rgba(75,155,116,1);
+  }
+  .label-education, .label-maps-and-transit, .label-na {
+    background-color: rgba(153, 149, 149, 1);
+  }
+
+  .label-focus-area {
+    float: left;
+  }
+  .label-stage {
+    float: right;
+  }
+  .label {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 12px;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 8px 8px 0;
+    min-height: 19px;
+    min-width: auto;
+    overflow: visible;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  [class*="button"][class*="button-sort"]:link {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 15px;
+    margin: 0 0.5em 1em 0;
+    text-transform: uppercase;
+  }
+  .header-section {
+    text-align: center;
+  }
+  .header-section .section-description, h3{
+    text-align: left;
+  }
+  .teaser-title {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: inherit;
+    line-height: 26px;
+    margin: 0;
+    text-transform: none;
+    color: #cf1b41;
+  }
+  [class*="button"][class*="focus-area-button"]:link {
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 15px;
+    margin: 0 0.5em 1em 0;
+    text-transform: uppercase;
+  }
+
+  /* Manually change color of buttons (reg and on hover) with IDs */
+  #button-reset {
+    background-color: rgba(68, 68, 68, 1);
+    margin-bottom: 1.5em;
+  }
+  #button-reset:hover {
+    background-color: rgba(68, 68, 68, .8);
+    margin-bottom: 1.5em;
+  }
+  #filter-other {
+    background-color: rgba(153, 149, 149, 1);
+    margin-bottom: 0em;
+  }
+  #filter-other:hover {
+    background-color: rgba(153, 149, 149, 0.8);
+    margin-bottom: 0em;
+  }
+  #filter-economic-development {
+    background-color: rgba(0, 162, 116, 1);
+  }
+  #filter-economic-development:hover {
+    background-color: rgba(0, 162, 116, 0.8);
+  }
+  #filter-safety-and-justice {
+    background-color: rgba(105, 85, 158, 1);
+  }
+  #filter-safety-and-justice:hover {
+    background-color: rgba(105, 85, 158, 0.8);
+  }
+  #filter-health {
+    background-color: rgba(172, 25, 56, 1);
+  }
+  #filter-health:hover {
+    background-color: rgba(172, 25, 56, 0.8);
+  }
+  #filter-communication-and-engagement {
+    background-color: rgba(234, 125, 25, 1);
+  }
+  #filter-communication-and-engagement:hover {
+    background-color: rgba(234, 125, 25, 0.8);
+  }
+  #button-live:hover {
+    background-color: rgba(75,155,116,0.8);
+  }
+  #button-live link:active {
+    background-color: rgba(75,155,116,0.8);
+  }
+  #button-live {
+    background-color: rgba(75,155,116,1);
+  }
+  #button-wide-beta:hover, #button-wide-beta:active {
+    background-color: rgba(27,77,105,0.8);
+  }
+  #button-wide-beta {
+    background-color: rgba(27,77,105,1);
+  }
+  #button-local-beta:hover {
+    background-color: rgba(83,160,208,0.8);
+  }
+  #button-local-beta {
+    background-color: rgba(83,160,208,1);
+  }
+  #button-alpha:hover {
+    background-color: rgba(99,95,155,0.8);
+  }
+  #button-alpha {
+    background-color: rgba(99,95,155,1);
+  }
+  #button-experiment:hover {
+    background-color: rgba(190,60,76,0.8);
+  }
+  #button-experiment {
+    background-color: rgba(190,60,76,1);
+  }
+
+  .product-nav .not-emph, .not-emph {
+    font-weight: lighter;
+  }
+
+
+
+  /* js-product spacing */
+  .js-product { box-sizing: border-box; }
+  @media screen and (min-width: 50em){
+    .layout-whole-products {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+    .js-product {
+      display: block;
+      float: left;
+      width: calc(100%/3.3);
+      margin: 0;
+      padding: 0 0.5em;
+    }
+  }
+
+  .card-content {
+    padding: 0 0.5em;
+  }
+
+  .products {
+    margin-top: 1em;
+  }
+  div.products h1 {
+    font-size: 2em;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  .product-nav {
+    padding-right: 1em;
+  }
+  .product-card {
+    border: 1px solid #e0dede;
+    margin-bottom: 1.5em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+  }
+
+  .sort-border {
+    margin-top: 1em;
+  }
+
+
+  .img-container {
+    text-align: center;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    border-bottom: 1px solid #e0dede;
+    margin-bottom: 0.5em;
+  }
+  .img-container img {
+    flex-shrink:0;
+    min-height: 72px;
+    max-height:89px;
+    max-width: 85%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  .featured {
+    margin-bottom: 2em;
+  }
+
+  .fill {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .fill img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .stage-experiment {
+    background-color: rgba(190,60,76,1);
+  }
+  .stage-alpha {
+    background-color: rgba(99,95,155,1);
+  }
+  .stage-local-beta {
+    background-color: rgba(83,160,208,1);
+  }
+  .stage-national-beta {
+    background-color: rgba(27,77,105,1);
+  }
+  .stage-local-live, .stage-live {
+    background-color: rgba(75,155,116,1);
+  }
+  .stage-label {
+    float: right;
+    font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+    font-weight: bold;
+    border-radius: 0;
+    padding: 0 12px;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 8px 8px 0;
+    min-height: 19px;
+    min-width: auto;
+    overflow: visible;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  /* Each focus area except the last one has a border below it. */
+  .focus-area {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2em;
+  }
+  .focus-area:last-of-type {
+    border-bottom: none;
+  }
+
+  /**
+  * For this page, let's reset the standard h1 and h3 to not be uppercase
+  * all the time. this will allow us to clean up the header.
+  */
+  h1 {
+    text-transform: none;
+  }
+  h5 {
+    font-weight: 700;
+    line-height: 2em;
+  }
+  h1, h5 {
+    margin: 0;
+  }
+
+  /**
+   * Because our base pattern assumes there will be a photo underneath the nav
+   * there is terrible spacing. Let's invent an intro class that correctly spaces
+   * on desktop and mobile.
+   */
+  .intro {
+    margin-top: 5em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 40em) {
+    .intro {
+      margin-top: 2em;
+    }
+  }
+
+  /**
+   * The featured app is a module at the top of the page that holds a special
+   * app that's more prominent than the others. On tablet up, it has a big image
+   * that floats on the left and description on the right. It collapses smaller.
+   */
+  .featured-product {
+    margin-bottom: 1.5em;
+    box-sizing: border-box;
+  }
+  .featured-product * { box-sizing: border-box; }
+  /*
+  The featured product image floats left in the module on tablet up. Otherwise,
+  it collapses.
+  */
+  .featured-product-image {
+    max-width: 100%;
+    padding: 0.5em;
+  }
+  .featured-product-description {
+    padding: 0 1em;
+  }
+
+  @media screen and (min-width: 40em) {
+    /* Tablet and up */
+    .featured-product-image {
+      display: block;
+      float: left;
+      width: 60%;
+      height: auto;
+      margin: 0;
+    }
+    .featured-product-description {
+      display: block;
+      float: left;
+      width: 40%;
+      margin: 0;
+      padding: 1em;
+    }
+  }
+
+  /**
+   * Let's pull in layout-minor and layout-major a bit on tablet up.
+   */
+   @media screen and (min-width: 40em) {
+     /* Tablet and up */
+     .layout-minor, [class*="layout-minor"] {
+       width: 15%;
+     }
+     .layout-major, [class*="layout-major"] {
+       width: 80%;
+     }
+   }
+
+  @media screen and (min-width: 50em){
+    .pull-right {
+      width: 30%;
+      float: right;
+      clear: none;
+    }
+    .pull-left {
+      float: left;
+      clear: none;
+      width: 65%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 49em){
+    .pull-left{
+      float: left;
+      clear: none;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    .pull-right {
+      width: 100%;
+      float: left;
+      clear: none;
+    }
+
+  }
+
+  .header-section img {
+    padding-left: 1em;
+    height: 40px;
+    width: auto;
+  }
+</style>
+
+<section>
+
+{% comment %}
+  We use this to count the number of apps in each category to show on the sort
+  buttons.
+{% endcomment %}
+
+{% assign live = 0 %}
+{% assign local-beta = 0 %}
+{% assign wide-beta = 0 %}
+{% assign alpha = 0 %}
+{% assign experiment = 0 %}
+
+{% for product in site.data.products %}
+  {% if product.stage contains 'Live' %}
+    {% assign live = live | plus:1 %}
+  {% endif %}
+  {% assign beta_check = product.stage | downcase %}
+  {% if beta_check contains 'beta' and beta_check contains 'local' %}
+    {% assign local-beta = local-beta | plus:1 %}
+  {% endif %}
+  {% if beta_check contains 'beta' and beta_check contains 'national' %}
+    {% assign wide-beta = wide-beta | plus:1 %}
+  {% endif %}
+  {% if product.stage contains 'Alpha' %}
+    {% assign alpha = alpha | plus:1 %}
+  {% endif %}
+  {% if product.stage contains 'Experiment' %}
+    {% assign experiment = experiment | plus:1 %}
+  {% endif %}
+{% endfor %}
+
+    <div class="layout-breve layout-tight intro">
+      <h1>Products &amp; Applications</h1>
+      <!-- Empty description  -->
+      <p></p>
+
+      <div class="featured-product clearfix slab-gray" id="featured-div">
+        <div class="featured-product-image">
+          <img id="featured-img" src="/media/images/cityvoice-park-story.png">
         </div>
-    
-    </div>
-    
-    <div class="nav-tabs" id="nav-tabs">
-    	<ul class="layout-semibreve layout-tight">
-	        <li class="nav-tab"><a class="nav-tab-link" href="local-service.html#nav-tabs">Local service apps</a></li>
-	        <li class="nav-tab"><a class="nav-tab-link" href="citizen-engagement.html#nav-tabs">Citizen engagements apps</a></li>
-	        <li class="nav-tab"><a class="nav-tab-link" href="free.html#nav-tabs">Free apps</a></li>
-	        <li class="nav-tab"><a class="nav-tab-link" href="paid.html#nav-tabs">Paid apps</a></li>
-        </ul>
-    </div>
-    
-    <div class="layout-semibreve layout-tight">
-    <div class="tab-content">
-        <div class="tab-pane state-active">
-            <ul class="teasers">
-            
-	<li class="layout-crotchet">
-        {% include apps/adopt-a-hydrant.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-	    {% include apps/archivesocial.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/bizfriendly.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/captricity.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/city-analytics-dashboard.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/cityvoice.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/civicinsight.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/click-that-hood.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/development-fastpass.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/discover-bps.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/family-assessment-form.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/honolulu-answers.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/jail-population-management-dashboard.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/learnsprout.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/localdata.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/measured-voice.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/mindmixer.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/ohana-api.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/opencounter.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/prepared-ly.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/promptly.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/public-art-finder.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/recordtrac.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/recovers-org.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/reroute-it.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/revelstone.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/smartprocure.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-	    {% include apps/streetcred.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/streetmix.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/streetscope.html context="apps-list" base=".." %}
-        </li>
-	<li class="layout-crotchet">
-        {% include apps/textizen.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/text-my-bus.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/to-the-trails.html context="apps-list" base=".." %}
-	</li>
-	<li class="layout-crotchet">
-        {% include apps/wheres-my-school-bus.html context="apps-list" base=".." %}
-	</li>
-	
-</ul>
-
+        <div class="featured-product-description">
+          <h3>CityVoice</h3>
         </div>
-    </div>
-    </div>
-    
-</section>
-    
 
+          <p>CityVoice is a location based call-in system for collecting, sharing and understanding community feedback.</p>
+          <p><a href="/apps/cityvoice/" class="button">Learn more</a></p>
+
+          <p class="h6"><strong>Join the beta program</strong></p>
+          <p>Code for America is currently partnering with South Bend, In. and Somewhere, Ca. to beta test the CityVoice platform. Do you want to join in?</p>
+          <p><a href="#" class="button button-bold button">Join the beta</a></p>
+      </div><!-- end .featured-post -->
+
+    </div><!-- end .layout-breve -->
+
+    <div class="layout-breve layout-tight">
+      <!-- App sorting menu -->
+	    <div class="layout-minor">
+        <div class="sort-border">
+          <!-- Span is needed for isotope to identify by class-all buttons have an onclick false so it doesn't jump to top -->
+          <span class="product-filters reset-filters"><a href="#" onclick="return false" class="button button-sort" id="button-reset" data-filter="*">Reset All</a></span>
+          <h3>Focus Areas</h3>
+            <div class="focus-area-filters">
+              <ul class="list-no-bullets">
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#economic-development" id="filter-economic-development">Econ Development</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort"target="#safety-and-justice" id="filter-safety-and-justice">Safety & Justice</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#health" id="filter-health">Health</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#communication-and-engagement" id="filter-communication-and-engagement">Comms & Engagement</a></li>
+                <li><a href="#" onclick="return false" class="focus-area-button button button-sort" target="#other" id="filter-other">Other</a></li>
+              </ul>
+            </div><!-- end .focus-area-filters -->
+  	    	<h3>Filter By Stage</h3>
+          <div class="product-filters">
+    	    	<ul class="list-no-bullets product-nav">
+              <li><a href="#" onclick="return false" class="button button-sort" id="button-live" data-filter=".js-product-live, .js-product-local-live">Live ({{ live }})</a></li>
+              <li><a href="#" onclick="return false" class="button button-sort" id="button-wide-beta" data-filter=".js-product-national-beta"><span class="not-emph">Wide</span> Beta ({{ wide-beta }})</a></li>
+              <li><a href="#" onclick="return false" class="button button-sort" id="button-local-beta" data-filter=".js-product-local-beta"><span class="not-emph">Local</span> Beta ({{ local-beta }})</a></li>
+              <li><a href="#" onclick="return false" class="button button-sort" id="button-alpha" data-filter=".js-product-alpha">Alpha ({{ alpha }})</a></li>
+              <li><a href="#" onclick="return false" class="button button-sort" id="button-experiment" data-filter=".js-product-experimental">Experiment ({{ experiment }})</a></li>
+              <p class="note"></p>
+            </ul>
+          </div><!-- end .product-filters -->
+        </div><!-- end .sort-border -->
+	    </div><!-- end .layout-minor -->
+
+	    <div class="layout-major">
+        <div class="products layout-whole">
+        {% assign sections = "Economic Development,Safety & Justice,Health,Communication & Engagement,Other" | split: "," %}
+
+        {% for section in sections %}
+
+        {% assign section_class = section | downcase | replace: ' ','-' | replace: '&','and' %}
+
+          <!-- {{ section }} -->
+          <div class="focus-area" id="{{ section_class }}-container">
+            <div class="header-section">
+              <h3 id="{{section_class}}">{{ section }}{% if section != "Other" %}<img class="focus-img" src="/media/images/apps/{{ section_class }}.png">{% endif %}</h3>
+              <p class='section-description'></p>
+            </div><!-- end .header-section -->
+
+            <div class="{{ section_class }}">
+              <div class="layout-whole layout-whole-products">
+                  {% for product in site.data.products %}
+                    {% assign stage_prefix = "" %}
+                    {% assign live_check = product.stage | downcase %}
+                    {% if live_check contains 'live' %}
+                      {% assign stage_label = 'live' %}
+                    {% endif %}
+                    {% assign beta_check = product.stage | downcase %}
+                    {% comment %}
+                      To make the labels auto generate, local and wide beta buttons need a prefix so a span class can be added to wide/local
+                    {% endcomment %}
+                    {% if beta_check contains 'beta' and beta_check contains 'local' %}
+                      {% assign stage_prefix = "<span class='not-emph'>local</span>" %}
+                      {% assign stage_label = 'beta' %}
+                    {% endif %}
+                    {% if beta_check contains 'beta' and beta_check contains 'national' %}
+                      {% assign stage_prefix = "<span class='not-emph'>wide</span>" %}
+                      {% assign stage_label = 'beta' %}
+                    {% endif %}
+                    {% if product.stage contains 'Alpha' %}
+                      {% assign stage_label = 'alpha' %}
+                    {% endif %}
+                    {% if product.stage contains 'Experiment' %}
+                      {% assign stage_label = 'experiment' %}
+                    {% endif %}
+
+                    {% if section == 'Other' %}
+                      {% if product.focus-area != "Communication & Engagement" and product.focus-area != "Economic Development" and product.focus-area != "Health" and product.focus-area != "Safety & Justice" %}
+                      <div class="product-card js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                        <div class="img-container">
+                        {% if product.imgUrl == null %}
+                          <img src="/media/images/apps/app-generic.jpg">
+                        {% else %}
+                          <img src="/media/images/apps/{{ product.imgUrl }}">
+                        {% endif %}
+                        </div><!-- end .img-container -->
+
+                        <div class="card-content">
+                          <h2 class="teaser-title">{{ product.name }}</h2>
+                          <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                          <span class="label-mobile-only label-focus-area label-{{ product.focus-area | replace:' ', '-' | replace:'&', 'and' | replace:'/','' | downcase }}">{{ product.focus-area }}</span><span class="label label-stage stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
+                        </div><!-- end .card-content -->
+
+                      </div><!-- end {{ section }} .product-card -->
+                      {% endif %}
+                    {% else %}
+                      {% if product.focus-area == section %}
+                        <div class="product-card js-product js-product-{{ product.stage | replace:' ', '-' | downcase }}">
+                          <div class="img-container">
+                          {% comment %}
+                            Checks for img, if not it puts the generic logo
+                          {% endcomment %}
+                          {% if product.imgUrl == null %}
+                            <img src="/media/images/apps/app-generic.jpg">
+                          {% else %}
+                            <img src="/media/images/apps/{{ product.imgUrl }}">
+                          {% endif %}
+                          </div><!-- end .img-container -->
+
+                          <div class="card-content">
+                            <h2 class="teaser-title">{{ product.name }}</h2>
+                            <p>{{ product.description | truncate: 140, '...' }} <a href="#" onclick="return false">Read more</a></p>
+                            <span class="label-mobile-only label-focus-area label-{{ product.focus-area | replace:' ', '-' | replace:'&', 'and' | replace:'/','' | downcase }}">{{ product.focus-area }}</span><span class="label label-stage stage-{{ product.stage | replace:' ', '-' | downcase }}">{{ stage_prefix }} {{ stage_label }}</span>
+                          </div><!-- end .card-content -->
+
+                        </div><!-- end {{ section }} .product-card -->
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+              </div><!-- end div.layout-whole layout-whole-products -->
+            </div><!-- end {{ section_class }} -->
+          </div><!-- end {{ section }} div.focus-area -->
+        {% endfor %}
+
+      </div><!-- end div.products .layout-whole-products -->
+        </div><!-- end .layout-major -->
+
+
+</section><!-- end section -->
