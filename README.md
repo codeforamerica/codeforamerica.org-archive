@@ -33,7 +33,7 @@ We need your help to keep our content accurate and up to date. The easiest way f
 An easy way to submit a pull request for just simple text changes is to:
 
 1. Find the page you'd like to edit on the [master branch](https://github.com/codeforamerica/codeforamerica.org/). 
-2. Use Github's built in editor to make your changes.
+2. Use GitHub's built in editor to make your changes.
 3. Down below the editor window, include a brief one sentence description of what you changed. Something like "Updated Andrew Hyder's bio". 
 4. Click the green Propose File Change button.  
 5. You'll get to review your changes. If everything looks right, click the green "Send pull request" button.

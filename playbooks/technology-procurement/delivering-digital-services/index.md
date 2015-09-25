@@ -38,7 +38,7 @@ Digital leadership also needs simpler governance. In the UK, the Office of the C
 #### Product owners with authority
 Finally, internal teams succeed when they have ownership of the services they oversee. 
 
-The USDS [recommends](https://playbook.cio.gov/#play6) that government services have a single Product Owner with the authority to make product, business and technical decisions, and ultimate accountability; GDS calls product owners[Service Managers](https://www.gov.uk/service-manual/the-team/service-manager.html), who work throughout central government, departments and agencies, each with the authority to manage and direct the services they're responsible for. 
+The USDS [recommends](https://playbook.cio.gov/#play6) that government services have a single Product Owner with the authority to make product, business and technical decisions, and ultimate accountability; GDS calls product owners [Service Managers](https://www.gov.uk/service-manual/the-team/service-manager.html), who work throughout central government, departments and agencies, each with the authority to manage and direct the services they're responsible for. 
 
 ### 3. Use the right methods at the right time
 
@@ -108,4 +108,5 @@ This is nothing short of digital transformation of government, of improving the 
 * [On Government, platform, purchasing and the commercial world](http://blog.gardeviance.org/2015/02/on-government-platform-purchasing-and.html), Simon Wardley
 * [Towers of SIAM, trade associations and Civil Servants](http://blog.gardeviance.org/2015/03/towers-of-siam-trade-associations-and.html), Simon Wardley
 * [The Towers of Salmon and Hungry Bears](http://blog.gardeviance.org/2015/03/the-towers-of-salmon-and-hungry-bears.html), Simon Wardley
+* [The TechFAR Handbook](https://playbook.cio.gov/techfar/), The U.S. Digital Service
 * [Avoiding cloudfall: A systematic approach to cloud migration](https://18f.gsa.gov/2015/06/22/avoiding-cloudfall/), V David Zvenyach, Noah Kunin, Jay Finch, Ozzy Johnson, Mike Bland, and Chris Cairns, 18f

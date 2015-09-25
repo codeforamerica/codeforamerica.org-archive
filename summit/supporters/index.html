@@ -21,22 +21,6 @@ metadata:
 ---
 
 <style>
-  h1,h2,h3,h4,h5,h6 {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    margin-bottom: 0.25em;
-  }
-
-  h5 {
-    text-transform: none;
-    font-weight: bold;
-  }
-
-  p.quiet {
-    font-size: 14px;
-    line-height: 2;
-  }
-
   /* Number component */
   .supporter-logo {
     margin-top: 0.5em;
@@ -59,15 +43,13 @@ metadata:
 
 <section class="layout-semibreve layout-centered">
   <h2>Capstone Supporters</h2>
-  <ul class="layout-grid-minim">
     {% for supporter in site.data.summit_supporters.capstone %}
-      <li>
+
         <img class="supporter-logo" src="{{ supporter.logo }}"/>
         {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
         <p><a href="{{ supporter.link }}">More</a></p>
-      </li>
+
     {% endfor %}
-  </ul>
 </section>
 
 <section class="layout-semibreve layout-centered">
@@ -127,6 +109,17 @@ metadata:
     {% for supporter in site.data.summit_supporters.civic-startup %}
       <li>
         <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="civic-logo supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Media Partners</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.media-partners %}
+      <li>
+        <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="media-logo supporter-logo" src="{{ supporter.logo }}"/>
         <p><a href="{{ supporter.link }}">More</a></p>
       </li>
     {% endfor %}
