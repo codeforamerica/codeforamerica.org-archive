@@ -23,13 +23,8 @@
     {
       "name" : "Google",
       "logo" : "/media/images/summit/2015/logos/google.png",
-<<<<<<< HEAD
-      "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful.",
-      "link" : "http://google.org/"
-=======
-      "description" : " Google’s mission is to organize the world’s information and make it universally accessible and useful. Through Search, Maps, Android and our other projects, we're working to bring people closer to politics and civics by making relevant information and resources easier to find and interact with.",
+      "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful. Through Search, Maps, Android and our other projects, we're working to bring people closer to politics and civics by making relevant information and resources easier to find and interact with.",
       "link" : "http://google.com/"
->>>>>>> master
     }
   ],
   "gold" : [
@@ -108,8 +103,6 @@
       "name" : "FAF",
       "logo" : "/media/images/summit/2015/logos/faf.jpg",
       "link" : "http://myfaf.org/",
-<<<<<<< HEAD
-=======
     },
     {
       "name" : "iLobby",
@@ -120,7 +113,6 @@
       "name" : "LiveStories",
       "logo" : "/media/images/summit/2015/logos/livestories.png",
       "link" : "https://livestories.com/",
->>>>>>> master
     },
     {
       "name" : "MYCITY",
