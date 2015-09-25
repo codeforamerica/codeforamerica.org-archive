@@ -6,6 +6,7 @@ nav_tier1_active: "governments"
 nav-breadcrumbs:
 - Governments: "/cities"
 - Pittsburgh: "/cities/pittsburgh"
+<<<<<<< HEAD
 ---
 
 {% include blogposts.html category='pittsburgh' %}
@@ -85,4 +86,87 @@ nav-breadcrumbs:
   </ul>
 </section>
 
+=======
+helpers:
+  blogpost-helpers:
+    category: "pittsburgh"
+    max_post_count: 5
+  blogpost-markup: true
+  underscore: true
+---
+<section class="layout-semibreve">
+  {% include nav-breadcrumbs.html %}
+  <header class="badge-heading badge-blue badge-fellowship">
+    <h2>Pittsburgh</h2>
+  </header>
+  <div class="layout-minim">
+    <p>The ways in which governments buy what they need is a fundamental part of how they function. Improving procurement requires addressing the basics, which carries implications for the ways governments provide quality service to their citizens. The Code for America team in Pittsburgh is partnering with the City of Pittsburgh’s Office of Innovation and Performance and the RK Mellon Foundation to help tackle these problems.</p>
+  </div>
+  <div class="layout-minim">
+    <img src="/media/images/governments/pittsburgh-purchasing_usertesting.jpg" alt>
+  </div>
+</section>
+
+<section class="slab-blue">
+  <div class="layout-semibreve">
+    <div class="highlight highlight-with-avatar">
+      <img class="highlight-avatar" src="../../media/images/governments/pittsburgh-seal.png" />
+      <blockquote>
+        <p>I am honored and excited that Pittsburgh is joining with Code for America to build the city's reputation for innovation and transparency. We look forward to working in particular on new approaches to procurement that drive increased community participation, and in so doing, build the digital capabilities of our great city. I know the Fellows can learn from us -- and us from them -- as we work together to make government better for city residents.&rdquo;</p>
+      </blockquote>
+      <p class="attribute">Mayor William Peduto, Pittsburgh, Pennsylvania</p>
+    </div>
+  </div>
+</section>
+
+<section class="layout-semibreve">
+  <header class="badge-heading badge-red badge-fellowship">
+    <h2>The 2015 Fellowship in Pittsburgh</h2>
+  </header>
+  <div class="layout-minim">
+    <h3>Midyear Report</h3>
+    <p>In February, the Pittsburgh fellowship team conducted user interviews with over 50 City employees as well as 25 local businesses. These conversations highlighted a few key problem areas shared across the board. You can read more about these findings and the fellows progress in the midyear report.</p>
+    <div class="button wodge-button">
+      <a href="http://codeforamerica.github.io/pittsburgh-midyear-report/" class="button wodge-button" >Read the Report</a>
+    </div>
+  </div><!-- end .layout-minim -->
+  <div class="layout-minim">
+    <h3>BETA Presentation</h3>
+    <p>BETA is an event for the fellows to discuss their midway progress.</p>
+    <iframe width="450" height="215" src="https://www.youtube.com/embed/15fonX_ohbQ?list=PL65XgbSILalWylZ6sbNbjROtkdB4I52OG" frameborder="0" allowfullscreen></iframe>
+  </div><!-- end .layout-minim -->
+
+  <h4>Meet the team:</h4>
+  <ul class="layout-grid-crotchet list-no-bullets">
+    <li>{% include people/ben-smithgall.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/shelly-ni.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/patrick-hammons.html context="2015-fellows" base="../.." %}</li>
+  </ul>
+  <div class="layout-whole">
+    <p><strong>Team Leads</strong>: Laura Meixell, Analytics and Strategy Manager and Matthew Barron, Policy Officer</p>
+    <p><strong>Community Partners</strong>: Richard King Mellon Foundation</p>
+  </div>
+</section><!-- end .layout-semibreve -->
+
+<section class="layout-semibreve">
+  <header class="badge-heading badge-orange badge-fellowship">
+    <h2>Articles &amp; video</h2>
+  </header>
+
+  <ul class="teasers layout-grid-crotchet">
+    <li>
+      <a href="http://www.post-gazette.com/local/city/2015/02/13/Code-for-America-fellows-aim-to-make-Pittsburgh-more-transparent/stories/201502130068">
+        <h3>'Code for America' fellows aim to make Pittsburgh more transparent</h3>
+        <div>
+          <img alt="Pittsburgh Post-Gazette article" src="../../media/images/fellowship-media-coverage/pittsburgh-media-feb.jpg"/>
+          <span class="teaser-type-article">Article</span>
+        </div>
+      </a>
+      <span>Pittsburgh Post-Gazette</span>
+      <p>Introducing the three twentysomethings who will take a crack at making city procurement more transparent this year, Mr. Peduto charged them with a task not quite as lofty as a moon landing but maybe just as difficult. [&hellip;] <a href="http://www.post-gazette.com/local/city/2015/02/13/Code-for-America-fellows-aim-to-make-Pittsburgh-more-transparent/stories/201502130068">Read more</a></p></a>
+    </li>
+  </ul>
+</section>
+
+>>>>>>> master
 <div id="js-blogposts"></div>

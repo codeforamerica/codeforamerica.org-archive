@@ -6,7 +6,14 @@ nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
  - Albuquerque: "/cities/albuquerque"
+helpers:
+  blogpost-helpers:
+    category: "albuquerque"
+    max_post_count: 5
+  blogpost-markup: true
+  underscore: true
 ---
+<<<<<<< HEAD
 
 {% include blogposts.html category='albuquerque' %}
 
@@ -44,6 +51,42 @@ nav-breadcrumbs:
     <p><a href="http://codeforamerica.github.io/abq-midyear/" class="button button-bold">Read the Midyear Report</a></p>
   </div>
 
+=======
+<section class="layout-semibreve">
+  {% include nav-breadcrumbs.html %}
+  <header class="badge-heading badge-blue badge-fellowship">
+    <h2>Albuquerque</h2>
+  </header>
+  <div class="layout-minim">
+    <p>Code for America has partnered with the Albuquerque Mayor’s Office to research and build interventions addressing the barriers that residents face in accessing critical information, services, and employment opportunities. The Code for America fellows are testing and developing technology solutions that facilitate upward mobility for Albuquerque residents.</p>
+  </div>
+  <div class="layout-minim">
+    <img src="/media/images/governments/albuquerque-news.JPG" alt>
+  </div>
+</section>
+
+<section class="slab-blue">
+  <div class="layout-semibreve">
+    <div class="highlight highlight-with-avatar">
+      <img class="highlight-avatar" src="../../media/images/governments/albuquerque-seal.png" />
+      <blockquote>
+        <p>We are delighted to welcome the 2015 Code for America fellows to Albuquerque. We look forward to collaborating with the fellows to identify ways in which we can match citizens in need with critical information and services. This exciting collaboration between the City of Albuquerque, the fellows, and our community will build digital capabilities in the city and continue to strengthen Albuquerque’s position as an innovative place to live, thrive, and do business.</p>
+      </blockquote>
+      <p class="attribute">Mayor Richard J. Berry, Albuquerque, New Mexico</p>
+    </div>
+  </div>
+</section>
+
+<section class="layout-semibreve">
+  <header class="badge-heading badge-red badge-fellowship">
+    <h2>The 2015 Fellowship in Albuquerque</h2>
+  </header>
+  <div>
+    <p>A key outcome of the fellowship is to connect the dots and standardize some of the communications and data being shared between the city and its residents around economic development departments, initiatives, and community partners. The city would also like to see the fellows ‘refresh’ some of the technology now used for skills based hiring, including hiring within city hall. Another key objective is to improve access to talent for small businesses moving to or operating out of the metro area.</p>
+    <p><a href="http://codeforamerica.github.io/abq-midyear/" class="button button-bold">Read the Midyear Report</a></p>
+  </div>
+
+>>>>>>> master
   <h4>Meet the team:</h4>
   <ul class="layout-grid-crotchet list-no-bullets">
     <li>{% include people/william-tyner.html context="2015-fellows" base="../.." %}</li>

@@ -6,7 +6,14 @@ nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
  - Indianapolis: "/cities/indianapolis"
+helpers:
+  blogpost-helpers:
+    category: "indianapolis"
+    max_post_count: 5
+  blogpost-markup: true
+  underscore: true
 ---
+<<<<<<< HEAD
 
 {% include blogposts.html category='indianapolis' %}
 
@@ -70,6 +77,68 @@ nav-breadcrumbs:
     <h2>Articles &amp; video</h2>
   </header>
 
+=======
+<section class="layout-semibreve">
+  {% include nav-breadcrumbs.html %}
+  <header class="badge-heading badge-blue badge-fellowship">
+    <h2>Indianapolis</h2>
+  </header>
+  <div class="layout-minim">
+    <p>The Code for America fellowship team is working with the Indianapolis Department of Public Safety to strengthen the relationship between law enforcement and the community it serves. The fellows aim it to enable stronger conversations and oversight around the most critical police professional standards information, and strengthening the existing feedback capabilities available to citizens.</p>
+  </div>
+  <div class="layout-minim">
+    <img src="/media/images/governments/indianapolis-team.jpg" alt>
+  </div>
+</section>
+
+<section class="slab-blue">
+  <div class="layout-semibreve">
+    <div class="highlight highlight-with-avatar">
+      <img class="highlight-avatar" src="../../media/images/governments/indianapolis-seal.gif" />
+      <blockquote>
+        <p>Indy’s selection for the next Code for America program provides an excellent opportunity to bring forward-thinking solutions to city government. Indy is using data in innovative ways to enhance public safety.  Our team looks forward to working with the Code for America fellows to better integrate data in our daily efforts to make Indy an even better place live and work.&rdquo;</p>
+      </blockquote>
+      <p class="attribute">Mayor Greg Ballard, Indianapolis, Indiana</p>
+    </div>
+  </div>
+</section>
+
+<section class="layout-semibreve">
+  <header class="badge-heading badge-red badge-fellowship">
+    <h2>The 2015 Fellowship in Indianapolis</h2>
+  </header>
+
+  <div class="layout-minim">
+    <h3>Midyear Report</h3>
+    <p>Trust is a critical resource in policing. The public’s perception of law enforcement impacts not only the tenor of their direct interactions with officers but their general willingness to follow the law. Critical to that trust is a belief that law enforcement is acting in a just and consistent manner. For the community to build that belief they require two tools: access to accurate information on the behavior of law enforcement and the ability to bring about change in how law enforcement acts. Read about how the fellows helping make this happen in their Midyear report.
+    <div class="button wodge-button">
+      <a href="https://codeforamerica.github.io/indy-mid-year/" class="button wodge-button" >Read the Report</a>
+    </div>
+  </div><!-- end .layout-minim -->
+  <div class="layout-minim">
+    <h3>BETA Presentation</h3>
+    <p>BETA is an event for the fellows to discuss their midway progress.</p>
+    <iframe width="450" height="215" src="https://www.youtube.com/embed/ffFgmQssCrI?list=PL65XgbSILalWylZ6sbNbjROtkdB4I52OG" frameborder="0" allowfullscreen></iframe>
+  </div><!-- end .layout-minim -->
+
+  <h4>Meet the team:</h4>
+  <ul class="layout-grid-crotchet list-no-bullets">
+    <li>{% include people/laura-ellena.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/chris-reade.html context="2015-fellows" base="../.." %}</li>
+    <li>{% include people/tiffany-andrews.html context="2015-fellows" base="../.." %}</li>
+  </ul>
+  <div class="layout-whole">
+    <p><strong>Team Leads</strong>: Gary Coons, Data/Chief of Homeland Security and Troy Riggs, Director of Public Safety</p>
+    <p><strong>Community Partners</strong>: Lilly Endowment</p>
+  </div>
+</section><!-- end .layout-semibreve -->
+
+<section class="layout-semibreve">
+  <header class="badge-heading badge-orange badge-fellowship">
+    <h2>Articles &amp; video</h2>
+  </header>
+
+>>>>>>> master
   <ul class="teasers layout-grid-crotchet">
     <li>
       <a href="https://www.themarshallproject.org/2015/07/02/is-google-more-accurate-than-the-fbi">

@@ -23,8 +23,13 @@
     {
       "name" : "Google",
       "logo" : "/media/images/summit/2015/logos/google.png",
+<<<<<<< HEAD
       "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful.",
       "link" : "http://google.org/"
+=======
+      "description" : " Google’s mission is to organize the world’s information and make it universally accessible and useful. Through Search, Maps, Android and our other projects, we're working to bring people closer to politics and civics by making relevant information and resources easier to find and interact with.",
+      "link" : "http://google.com/"
+>>>>>>> master
     }
   ],
   "gold" : [
@@ -35,16 +40,22 @@
       "link" : "https://www.googleforentrepreneurs.com/",
     },
     {
-      "name" : "Tropo",
-      "logo" : "/media/images/summit/2015/logos/tropo.png",
-      "description" : "Tropo, now part of Cisco, makes it easy for developers to integrate telephony into their applications. Send a text message, make a phone call, have a phone number that’s answered by your code. No contracts, no install costs. We’ll even host your code. Access the best customer support you’ve ever seen.",
-      "link" : "https://www.tropo.com/",
+      "name" : "GitHub",
+      "logo" : "/media/images/summit/2015/logos/github.png",
+      "description" : "GitHub is where people build software. Tens of thousands of government users around the world use GitHub to discover, share, and contribute to software—from data and exxperiments to popular frameworks and leading applications. Together, we're defining how software is built today.",
+      "link" : "https://government.github.com/",
     },
     {
       "name" : "Rally",
       "logo" : "/media/images/summit/2015/logos/rally.png",
       "description" : "Rally, now a part of CA Technologies, delivers software and services that drive agility. We help teams manage their software development lifecycle by aligning with strategic business objectives, facilitating collaboration, and increasing transparency. We are proud to provide funding, tools, and expertise to fuel the growth and effectiveness of the Code for America Brigade program.",
       "link" : "https://www.rallydev.com/",
+    },
+    {
+      "name" : "Tropo",
+      "logo" : "/media/images/summit/2015/logos/tropo.png",
+      "description" : "Tropo, now part of Cisco, makes it easy for developers to integrate telephony into their applications. Send a text message, make a phone call, have a phone number that’s answered by your code. No contracts, no install costs. We’ll even host your code. Access the best customer support you’ve ever seen.",
+      "link" : "https://www.tropo.com/",
     }
   ],
   "silver" : [
@@ -84,6 +95,11 @@
       "link" : "http://appcitylife.com/",
     },
     {
+      "name" : "BroadbandUSA",
+      "logo" : "/media/images/summit/2015/logos/broadbandusa.png",
+      "link" : "http://ntia.doc.gov/",
+    },
+    {
       "name" : "COURTHOUSE",
       "logo" : "/media/images/summit/2015/logos/courthouse.png",
       "link" : "http://courthouseusa.com/",
@@ -92,11 +108,29 @@
       "name" : "FAF",
       "logo" : "/media/images/summit/2015/logos/faf.jpg",
       "link" : "http://myfaf.org/",
+<<<<<<< HEAD
+=======
+    },
+    {
+      "name" : "iLobby",
+      "logo" : "/media/images/summit/2015/logos/ilobby.png",
+      "link" : "https://www.ilobby.co/",
+    },
+    {
+      "name" : "LiveStories",
+      "logo" : "/media/images/summit/2015/logos/livestories.png",
+      "link" : "https://livestories.com/",
+>>>>>>> master
     },
     {
       "name" : "MYCITY",
       "logo" : "/media/images/summit/2015/logos/mycity.png",
       "link" : "http://mycity.io/",
+    },
+    {
+      "name" : "Ontodia",
+      "logo" : "/media/images/summit/2015/logos/civicdashboards.png",
+      "link" : "http://ontodia.com/",
     },
     {
       "name" : "Open Counter",
@@ -119,9 +153,19 @@
       "link" : "https://www.placespeak.com/",
     },
     {
+      "name" : "Rachio",
+      "logo" : "/media/images/summit/2015/logos/rachio.png",
+      "link" : "http://rachio.com/",
+    },
+    {
       "name" : "SEAMLESS",
       "logo" : "/media/images/summit/2015/logos/seamless.png",
       "link" : "http://www2.seamlessdocs.com/",
+    },
+    {
+      "name" : "SeeClickFix",
+      "logo" : "/media/images/summit/2015/logos/seeclickfix.png",
+      "link" : "http://seeclickfix.com/",
     },
     {
       "name" : "SmartBetterCities",
