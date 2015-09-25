@@ -2,17 +2,17 @@
 layout: principles-standard
 title: Civic Engagement
 status: alpha
-last-updated: April 22, 2015. These will be updated as we learn. Please help us by providing <a href="/governments/principles/government-technology/feedback.html" target="_blank">feedback</a>
+last-updated: April 22, 2015. These will be updated as we learn. Please help us by providing <a href="/governments/practices/government-technology/feedback.html" target="_blank">feedback</a>
 masthead-image: "../../media/images/cities_fellowship_faq/citiesfaqheader.jpg"
 nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
- - Principles for 21st Century Government: "/governments/principles/"
+ - Practices of 21st Century Government: "/governments/practices"
 ---
 
 
 Code for America works at the intersection of [civic engagement](/brigade/), [government](/about/fellowship/), and [technology](/apps/).
-  
+
 We build digital tools that improve the public’s interactions with government, and use those tools as a catalyst for structural changes that make government more open, more responsive, and more engaging.
 
 We emphasize the role of the citizen not just as a passive recipient of government services, but as an active participant in building government.
@@ -126,7 +126,7 @@ Whenever you engage, know how to make a hard ask for people to take a specific a
 
 Feedback is how the public knows and trusts their input is making meaningful change in their community. If citizens can’t see that their investment of time resulted in a clear outcome they won’t be incentivized to participate again. Find ways to continue conversations with residents and build lasting relationships.
 
-### Feedback Loops checklist 
+### Feedback Loops checklist
 
  - Show people the influence of their investment and engagement on the issue.
  - Design the engagement process to produce actionable feedback.
@@ -134,10 +134,8 @@ Feedback is how the public knows and trusts their input is making meaningful cha
  - Implement a shared set of tools that keep residents in the loop about how their inputs are being used.
  - Think about the pathway you are creating to deepen residents’ engagement. Let this be the first of many opportunities to engage.
 
-### Feedback Loops tactics 
+### Feedback Loops tactics
 
  - Establish the method by which members of the public will [understand the outcome of their participation](/blog/2014/06/04/community-engagement-lessons-from-boston/).
  - Consider city officials as agents of community outreach, constantly building relationships and joining events even when not necessary.
  - Provide an opportunity for [instant feedback](http://blog.textizen.com/palo-alto-20150204/).
- 
- 

@@ -7,28 +7,28 @@ masthead-image: "../../media/images/cities_fellowship_faq/citiesfaqheader.jpg"
 nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
- - Principles for 21st Century Government: "/governments/principles/"
+ - Practices of 21st Century Government: "/governments/practices/"
 ---
 
-            
+
 Government should meet the needs of people who use and rely on their services. In the 21st century, this means designing services to meet user needs and using the best tools digital delivery can offer.
 
 
 In producing this standard, we have researched best practices from multiple sources and from our work in fellowships across 32 cities  since 2011.  Some of these findings come from the U.S. Digital Services' [Playbook](https://playbook.cio.gov/), which focuses on agile software development and customer-driven processes.  We have also drawn from what the United Kingdom's Government Digital Service (GDS) has learned and published in their [Design Principles](https://www.gov.uk/design-principles) and [Service Design Manual](https://www.gov.uk/service-manual).
- 
+
 Above all, government services must respect citizens' time, dignity, and abilities, and those of public servants as well. The Code for America Design Standard is a set of practices for teams designing and delivering public services. They ensure that government services are high quality,  easy to use, and responsive to real peoples' needs-- both the users and the public servants delivering it. Well-designed digital services demonstrate through their design that citizens and government are on the same side.
 
-As governments begin to enact Code for America's [Principles for 21st Century Governments](/governments/principles), this standard presents a way to evaluate a government's ability to design and deliver public services that meet people's needs. This Design Standard is a checklist, not a tactical manual. 
-    	
+As governments begin to enact Code for America's [Practices of 21st Century Governments](/governments/practices), this standard presents a way to evaluate a government's ability to design and deliver public services that meet people's needs. This Design Standard is a checklist, not a tactical manual.
+
 ## 1. Understand people's needs
 
 Service design must come from a place of empathy. Above all, the needs of people, not of the policy or the government process, should inform service design decisions.
 
 ### Checklist:
 
- - Identify existing goals, behaviors, and pain points in the way people accomplish tasks through the existing service. 
- - Conduct user research with those delivering the service as well as those using it (and who might use it). 
- - Critically examine any policies that set the constraints of the service (e.g. requiring "wet signatures" on forms over digital ones). 
+ - Identify existing goals, behaviors, and pain points in the way people accomplish tasks through the existing service.
+ - Conduct user research with those delivering the service as well as those using it (and who might use it).
+ - Critically examine any policies that set the constraints of the service (e.g. requiring "wet signatures" on forms over digital ones).
 
 
 ## 2. Design the service, not the website
@@ -38,7 +38,7 @@ The ecosystem around a service- including the users, practices they perform, dev
 ### Checklist:
 
  - Understanding of where a project fits into the larger way people currently obtain the government service being offered, as well as the way public servants deliver the service.
- - Considering which people will have the most difficulty with the new service. 
+ - Considering which people will have the most difficulty with the new service.
 
 
 ## 3. Make it accessible and intuitive
@@ -48,9 +48,9 @@ Government services must be universally designed for everyone. They must be so s
 ### Checklist:
 
  - The service facilitates a user's primary task.  
- - The service design is consistent, easy to understand, and comfortable for a user to access on their own. 
+ - The service design is consistent, easy to understand, and comfortable for a user to access on their own.
  - A plan is in place for providing assistance to a user, should they need it (i.e. page of instructions, FAQ, support hotline, etc.).
- - While conducting usability testing and user research, the service is tested on people of different abilities, including elderly and disabled users. 
+ - While conducting usability testing and user research, the service is tested on people of different abilities, including elderly and disabled users.
 
 ## 4. Build small things quickly
 
@@ -81,5 +81,3 @@ After a service is live, the work is not done. A digital service must continuous
 
  - During each stage of usability testing, gaps are identified in addressing user needs and then refined through additional development.
  - Determine who will be responsible for on-going maintenance of your service.
-
-
