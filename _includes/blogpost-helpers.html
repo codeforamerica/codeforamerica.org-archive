@@ -1,30 +1,24 @@
-<!-- Load underscore for templating -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-
 <!-- Handle our call to the WordPress API, bunle and inject into page -->
 <script type="text/javascript">
-    var stripHTML = function(html) {
+    var cleanHTML = function(html) {
     // Thanks to: http://stackoverflow.com/questions/822452/strip-html-from-text-javascript
 
     // Stripping the legal HTML tags
     html = html.replace(/<[^>]*>/g, '');
 
-    // Escaping the remaining characters
-    var div = document.createElement('div');
-    div.textContent = html;
-    return div.innerHTML;
+    // Escaping the remaining characters. Using a textarea does not affect HTML tags, but will decode entities.
+    var textarea = document.createElement("textarea");
+    textarea.innerHTML = html;
+    return textarea.value;
   }
 
   var toExcerpt = function(content, length) {
-    // content shouldn't have any html tags
-
+    // Strip HTML tags and decode entities
+    content = cleanHTML(content);
     // Get the first 200 characters
     var excerpt = content.substring(0,length);
-
-    // Add some dots
-    excerpt += '...';
-
-    return excerpt;
+    // Add some dots and return
+    return excerpt + '...';
   }
 
   var makePrettyDate = function(date) {
@@ -69,7 +63,7 @@
 
   $(document).ready(function(){
     // Where to grab the data from
-    var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ page.helpers.blogpost.category }}&filter[posts_per_page]={{ page.helpers.blogpost.max_post_count }}";
+    var url = "http://www.codeforamerica.org/blog/wp-json/posts?filter[category_name]={{ page.helpers.blogpost-helpers.category }}&filter[posts_per_page]={{ page.helpers.blogpost-helpers.max_post_count }}";
     // ID to grab our template from
     var template = "#blogTemplate";
     // Where to send the html generated from the data and template

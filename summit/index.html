@@ -43,22 +43,9 @@ jquery-scripts: |
 ---
 
 <style>
-  /* Reset some font defaults for Summit branding style */
-  h1,h2,h3,h4,h5,h6 {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-  }
   h5 {
-    text-transform: none;
-    font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
-  }
-
-  /* Quiet is a little smaller */
-  p.quiet {
-    font-size: 14px;
-    line-height: 2;
   }
 
   /* We use .break to break up text on mobile vs. desktop */
@@ -95,7 +82,7 @@ jquery-scripts: |
 
   <div class="layout-semibreve layout-centered">
     <a id="register"></a>
-    <h3><i class="icon-checkmark"></i>Register today</h3>
+    <h2><i class="icon-checkmark"></i>Register today</h2>
     <p>Secure your spot for the biggest, and most action-packed, Summit yet. Questions about registration? Discount code not working? Want to apply for a discounted ticket? Email <a href="mailto:summit@codeforamerica.org?Subject=2015%20CfA%20Summit" target="_blank">summit@codeforamerica.org</a></p>
     <div id="discount-alert-target"></div>
     <div class="eventbrite-iframe">
@@ -123,56 +110,21 @@ jquery-scripts: |
 </section>
 
 <section class="layout-semibreve layout-centered">
-  <h2 id="venue">Venue &amp; Travel</h2>
-  <p>The official Summit host hotel, the Oakland Marriott City Center, is <strong>sold out</strong>. But there are still excellent hotels available a short walk or drive away from Summit HQ:</p>
-  <ul class="layout-grid-crotchet list-no-bullets">
-    <li>
-      <h5>Courtyard by Marriott Oakland</h5>
-      <img src="/media/images/summit/2015/hotels/courtyard.jpg" alt="Exterior of the Courtyard by Marriott hotel in the daytime.">
-      <p>
-        Walking time: <strong>3 minutes</strong>
-        <br>Rooms from: <strong>$269</strong>
-        <br><a href="http://www.marriott.com/hotels/travel/oakcd-courtyard-oakland-downtown/" target="_blank">Book now</a>
-      </p>
-    </li>
-    <li>
-      <h5>Washington Inn</h5>
-      <img src="/media/images/summit/2015/hotels/washington-inn.jpg" alt="Exterior of the Washington Inn hotel in the afternoon.">
-      <p>
-        Walking time: <strong>3 minutes</strong>
-        <br>Rooms from: <strong>$219</strong>
-        <br><a href="https://secure.iqres01233.com/iqreservations/asp/IQHome.asp" target="_blank">Book now</a>
-      </p>
-    </li>
-    <li>
-      <h5>Clarion Oakland City Center</h5>
-      <img src="/media/images/summit/2015/hotels/clarion.jpg" alt="Bedroom at the Clarion hotel in Oakland.">
-      <p>
-        Walking time: <strong>5 minutes</strong>
-        <br>Rooms from: <strong>$127</strong>
-        <br><a href="https://www.choicehotels.com/california/oakland/clarion-hotels/cab03" target="_blank">Book now</a>
-      </p>
-    </li>
-    <li>
-      <h5>Inn at Jack London Square</h5>
-      <img src="/media/images/summit/2015/hotels/inn-jack-london.jpg" alt="Reception desk at the Inn at Jack London Square.">
-      <p>
-        Driving time: <strong>5 minutes</strong>
-        <br>Walking time: <strong>15 minutes</strong>
-        <br>Rooms from: <strong>$165</strong>
-        <br><a href="http://www.innatthesquare.com/" target="_blank">Book now</a>
-      </p>
-    </li>
-    <li>
-      <h5>Waterfront Hotel</h5>
-      <img src="/media/images/summit/2015/hotels/waterfront.jpg" alt="Exterior of the Waterfront Hotel in the daytime.">
-      <p>
-        Driving time: <strong>5 minutes</strong>
-        <br>Walking time: <strong>15 minutes</strong>
-        <br>Rooms from: <strong>$269</strong>
-        <br><a href="http://www.jdvhotels.com/hotels/california/san-francisco-hotels/waterfront-hotel/" target="_blank">Book now</a>
-      </p>
-    </li>
+  <a id="venue"></a>
+  <h2>Venue &amp; Travel</h2>
+  <p>The official Summit host hotel, the Oakland Marriott City Center, is <strong>sold out</strong>. So are many Downtown Oakland hotels. Here are some great options for finding a convenient place to stay:</p>
+  <div class="layout-minim-staccato">
+    <img src="/media/images/summit/2015/lake.jpg" />
+    <h5>Stay in an Airbnb, be oh-so-close</h5>
+    <p>Live like a local stay near the Summit action. Explore the hundreds of options available in Downtown Oakland or nearby neighborhoods on Airbnb.</p>
+    <p><a href="https://www.airbnb.com/s/Oakland--CA--United-States?guests=&checkin=09%2F30%2F2015&checkout=10%2F03%2F2015">Find your Airbnb</a></p>
+  </div>
+  <div class="layout-minim-staccato">
+    <img src="/media/images/summit/2015/BART.jpg" />
+    <h5>Stay in SF, take the train</h5>
+    <p>Good news! Hotels in Downtown San Francisco are just minutes away from the Summit hotel by BART, the Bay Area's regional train service. Snag a great room now:</p>
+    <p><a href="https://www.google.com/search?q=hotels%20san%20francisco&rflfq=1&tbm=lcl&hotel_dates=2015-09-30%2C2015-10-03&rlfi=hd%3A2015-09-30%2C2015-10-03%3Bsi%3A&rct=j">Find your hotel</a></p>
+  </div>
   </ul>
 </section>
 
