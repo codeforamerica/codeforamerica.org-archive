@@ -218,6 +218,18 @@ body.modal-active {
 	}
 }
 
+// ##### MASTHEAD FIXES #####
+//
+// Shrink the size of the default masthead text
+//
+
+@media all and (min-width: 40em) {
+	.masthead-l .page-title,
+	.masthead-s .page-title {
+		font-size: 57px;
+	}
+}
+
 // ##### MASTHEAD-CUSTOM #####
 //
 // Introduces a custom masthead that is deeper than usual and holds text and calls-to-action.
