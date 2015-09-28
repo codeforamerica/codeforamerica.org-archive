@@ -167,6 +167,11 @@
       "link" : "http://oppsites.com/"
     },
     {
+      "name" : "OJBC",
+      "logo" : "/media/images/summit/2015/logos/ojbc.png",
+      "link" : "http://http://www.ojbc.org"
+    },
+    {
       "name" : "PLACEMETER",
       "logo" : "/media/images/summit/2015/logos/placemeter.png",
       "link" : "https://www.placemeter.com/"
