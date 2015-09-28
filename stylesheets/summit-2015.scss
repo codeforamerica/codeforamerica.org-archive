@@ -395,3 +395,16 @@ p.masthead-content-description {
 .schedule-grid__event__speakers > li + li {
   margin-top: 1.5em;
 }
+
+.schedule-grid__event__logo {
+	max-width: 200px;
+	margin-top: 1em;
+}
+
+ul.list-has-bullets li {
+	background-image: url("../images/bullet.gif");
+	background-position: left 0.63em;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding-left: 1.3em;
+}
