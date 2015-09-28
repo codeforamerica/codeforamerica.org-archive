@@ -218,6 +218,18 @@ body.modal-active {
 	}
 }
 
+// ##### MASTHEAD FIXES #####
+//
+// Shrink the size of the default masthead text
+//
+
+@media all and (min-width: 40em) {
+	.masthead-l .page-title,
+	.masthead-s .page-title {
+		font-size: 57px;
+	}
+}
+
 // ##### MASTHEAD-CUSTOM #####
 //
 // Introduces a custom masthead that is deeper than usual and holds text and calls-to-action.
@@ -450,4 +462,24 @@ body.modal-active {
 .heading-tight {
   margin-bottom: 1em;
   padding-bottom: 0.1em;
+}
+
+// ##### CHECKMARK LIST #####
+//
+// A list with classes .checkmark.list-no-bullets that has checkmark icons
+//
+ul.checkmark {
+	padding-top: 0;
+	margin-top: 0;
+}
+ul.checkmark li {
+	text-indent: -2em;
+	padding-left: 4em;
+	line-height: 30px;
+}
+ul.checkmark li:before {
+	font-family: 'ico-moon';
+	content: "\e370";
+	float: left;
+	width: 2em;
 }

@@ -23,8 +23,8 @@
     {
       "name" : "Google",
       "logo" : "/media/images/summit/2015/logos/google.png",
-      "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful.",
-      "link" : "http://google.org/"
+      "description" : "Google’s mission is to organize the world’s information and make it universally accessible and useful. Through Search, Maps, Android and our other projects, we're working to bring people closer to politics and civics by making relevant information and resources easier to find and interact with.",
+      "link" : "http://google.com/"
     }
   ],
   "gold" : [
@@ -32,27 +32,45 @@
       "name" : "Google for Entrepreneurs",
       "logo" : "/media/images/summit/2015/logos/googleforentrepreneurs.jpeg",
       "description" : "Google for Entrepreneurs provides financial support and the best of Google's resources to dozens of coworking spaces and community programs across 125 countries. We also create Campuses: physical hubs where entrepreneurs can learn, connect, and build companies that will change the world. To learn more about Google for Entrepreneurs, visit <a href='google.com/entrepreneurs'>google.com/entrepreneurs</a> or follow us on <a href='https://plus.google.com/+GoogleforEntrepreneurs/'>G+</a> and <a href='https://twitter.com/googleforentrep'>Twitter</a>.",
-      "link" : "https://www.googleforentrepreneurs.com/",
+      "link" : "https://www.googleforentrepreneurs.com/"
     },
     {
-      "name" : "Tropo",
-      "logo" : "/media/images/summit/2015/logos/tropo.png",
-      "description" : "Tropo, now part of Cisco, makes it easy for developers to integrate telephony into their applications. Send a text message, make a phone call, have a phone number that’s answered by your code. No contracts, no install costs. We’ll even host your code. Access the best customer support you’ve ever seen.",
-      "link" : "https://www.tropo.com/",
+      "name" : "GitHub",
+      "logo" : "/media/images/summit/2015/logos/github.png",
+      "description" : "GitHub is where people build software. Tens of thousands of government users around the world use GitHub to discover, share, and contribute to software—from data and exxperiments to popular frameworks and leading applications. Together, we're defining how software is built today.",
+      "link" : "https://government.github.com/"
     },
     {
       "name" : "Rally",
       "logo" : "/media/images/summit/2015/logos/rally.png",
       "description" : "Rally, now a part of CA Technologies, delivers software and services that drive agility. We help teams manage their software development lifecycle by aligning with strategic business objectives, facilitating collaboration, and increasing transparency. We are proud to provide funding, tools, and expertise to fuel the growth and effectiveness of the Code for America Brigade program.",
-      "link" : "https://www.rallydev.com/",
+      "link" : "https://www.rallydev.com/"
+    },
+    {
+      "name" : "Tropo",
+      "logo" : "/media/images/summit/2015/logos/tropo.png",
+      "description" : "Tropo, now part of Cisco, makes it easy for developers to integrate telephony into their applications. Send a text message, make a phone call, have a phone number that’s answered by your code. No contracts, no install costs. We’ll even host your code. Access the best customer support you’ve ever seen.",
+      "link" : "https://www.tropo.com/"
     }
   ],
   "silver" : [
     {
+      "name" : "AWS",
+      "logo" : "/media/images/summit/2015/logos/aws.png",
+       "description" : "Amazon Web Services offers a broad set of global compute, storage, database, analytics, application, and deployment services that help organizations move faster, lower IT costs, and scale applications. These services are trusted by the largest enterprises and the hottest start-ups to power a wide variety of workloads including: web and mobile applications, data processing and warehousing, storage, archive, and many others.",
+       "link" : "https://aws.amazon.com"
+    },
+    {
       "name" : "Esri",
       "logo" : "/media/images/summit/2015/logos/esri.jpg",
        "description" : "Esri® helps organizations map and model our world. Esri’s GIS technology enables them to effectively analyze and manage their geographic information and make better decisions. They are supported by an experienced and knowledgeable staff and an extensive network of business partners and international distributors.",
-       "link" : "http://www.esri.com",
+       "link" : "http://www.esri.com"
+    },
+    {
+      "name" : "Pivotal",
+      "logo" : "/media/images/summit/2015/logos/pivotal.png",
+       "description" : "Pivotal offers a modern approach to technology that organizations need to thrive in a new era of business innovation. Our solutions intersect cloud, big data and agile development, creating a framework that increases data leverage, accelerates application delivery, and decreases costs, while providing enterprises the speed and scale they need to compete.",
+       "link" : "http://pivotal.io/"
     }
   ],
   "supporter" : [
@@ -72,61 +90,111 @@
       "link" : "http://govdelivery.com/"
     },
     {
+      "name" : "Lyft",
+      "logo" : "/media/images/summit/2015/logos/lyft.png",
+      "link" : "http://lyft.com/"
+    },
+    {
       "name" : "OpenDataSoft",
       "logo" : "/media/images/summit/2015/logos/opendatasoft.png",
       "link" : "https://www.opendatasoft.com/"
+    },
+    {
+      "name" : "Mapzen",
+      "logo" : "/media/images/summit/2015/logos/mapzen.png",
+      "link" : "https://mapzen.com/"
     }
   ],
   "civic-startup" : [
     {
       "name" : "APPCITYLIFE",
       "logo" : "/media/images/summit/2015/logos/appcitylife.png",
-      "link" : "http://appcitylife.com/",
+      "link" : "http://appcitylife.com/"
+    },
+    {
+      "name" : "BroadbandUSA",
+      "logo" : "/media/images/summit/2015/logos/broadbandusa.png",
+      "link" : "http://ntia.doc.gov/"
     },
     {
       "name" : "COURTHOUSE",
       "logo" : "/media/images/summit/2015/logos/courthouse.png",
-      "link" : "http://courthouseusa.com/",
+      "link" : "http://courthouseusa.com/"
     },
     {
       "name" : "FAF",
       "logo" : "/media/images/summit/2015/logos/faf.jpg",
-      "link" : "http://myfaf.org/",
+      "link" : "http://myfaf.org/"
+    },
+    {
+      "name" : "iLobby",
+      "logo" : "/media/images/summit/2015/logos/ilobby.png",
+      "link" : "https://www.ilobby.co/"
+    },
+    {
+      "name" : "LiveStories",
+      "logo" : "/media/images/summit/2015/logos/livestories.png",
+      "link" : "https://livestories.com/"
     },
     {
       "name" : "MYCITY",
       "logo" : "/media/images/summit/2015/logos/mycity.png",
-      "link" : "http://mycity.io/",
+      "link" : "http://mycity.io/"
+    },
+    {
+      "name" : "NextRequest",
+      "logo" : "/media/images/summit/2015/logos/nextrequest.png",
+      "link" : "https://www.nextrequest.com/"
+    },
+    {
+      "name" : "oneconcern",
+      "logo" : "/media/images/summit/2015/logos/oneconcern.png",
+      "link" : "http://www.oneconcern.com"
+    },
+    {
+      "name" : "Ontodia",
+      "logo" : "/media/images/summit/2015/logos/civicdashboards.png",
+      "link" : "http://ontodia.com/"
     },
     {
       "name" : "Open Counter",
       "logo" : "/media/images/summit/2015/logos/opencounter.png",
-      "link" : "http://opencounter.us/",
+      "link" : "http://opencounter.us/"
     },
     {
       "name" : "OPPSITES",
       "logo" : "/media/images/summit/2015/logos/oppsites.png",
-      "link" : "http://oppsites.com/",
+      "link" : "http://oppsites.com/"
     },
     {
       "name" : "PLACEMETER",
       "logo" : "/media/images/summit/2015/logos/placemeter.png",
-      "link" : "https://www.placemeter.com/",
+      "link" : "https://www.placemeter.com/"
     },
     {
       "name" : "PLACESPEAK",
       "logo" : "/media/images/summit/2015/logos/placespeak.png",
-      "link" : "https://www.placespeak.com/",
+      "link" : "https://www.placespeak.com/"
+    },
+    {
+      "name" : "Rachio",
+      "logo" : "/media/images/summit/2015/logos/rachio.png",
+      "link" : "http://rachio.com/"
     },
     {
       "name" : "SEAMLESS",
       "logo" : "/media/images/summit/2015/logos/seamless.png",
-      "link" : "http://www2.seamlessdocs.com/",
+      "link" : "http://www2.seamlessdocs.com/"
+    },
+    {
+      "name" : "SeeClickFix",
+      "logo" : "/media/images/summit/2015/logos/seeclickfix.png",
+      "link" : "http://seeclickfix.com/"
     },
     {
       "name" : "SmartBetterCities",
       "logo" : "/media/images/summit/2015/logos/smartbettercities.png",
-      "link" : "http://www.smarterbettercities.ch/",
+      "link" : "http://www.smarterbettercities.ch/"
     }
   ],
   "media-partners": [

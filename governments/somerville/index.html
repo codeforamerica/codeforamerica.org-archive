@@ -6,10 +6,13 @@ nav_tier1_active: "governments"
 nav-breadcrumbs:
  - Governments: "/cities"
  - Somerville: "/cities/somerville"
+helpers:
+  blogpost-helpers:
+    category: "somerville"
+    max_post_count: 5
+  blogpost-markup: true
+  underscore: true
 ---
-
-{% include blogposts.html category='somerville' %}
-
 <section class="layout-semibreve">
   {% include nav-breadcrumbs.html %}
   <header class="badge-heading badge-blue badge-fellowship">

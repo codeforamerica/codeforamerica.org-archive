@@ -33,7 +33,13 @@ nav-breadcrumbs:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America</title>
+    <title>
+      {% if page.title and page.headline %}
+        {{ page.title }}: {{ page.headline }} - Code for America
+      {% else %}
+        {% if page.title != "Code for America" %}{{ page.title }} —{% endif %} Code for America
+      {% endif %}
+    </title>
     {% if site.env.status == "development" %}
       <link rel="stylesheet" type="text/css" href="{{ site.environment.webtype_host }}" />
       <link rel="stylesheet" href="{{ site.env.style_host }}/style/css/main.css">
@@ -94,7 +100,7 @@ nav-breadcrumbs:
       <main role="main">
         {{ content }}
 
-        {% unless page.mailing-list-header %}
+        {% unless page.hide-mailing-list-footer %}
         <!-- Email signup form -->
         <div class="slab-medium-red">
           <div class="layout-breve layout-tight">

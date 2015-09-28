@@ -111,10 +111,8 @@
           <div class="featured-content">
             <h6>Featured Post</h6>
             <h2><a href="<%= featuredPost.link %>"><%= featuredPost.title %></a></h2>
-            <% var content = stripHTML( featuredPost.content );
-               var excerpt = toExcerpt( content, 100 ); %>
             <p>
-              <%= excerpt %>
+              <%= toExcerpt(featuredPost.content, 100 ) %>
               <a class="more-link" href="http://www.codeforamerica.org/blog/2015/01/26/doing-a-powerful-force-for-change/">[Continue Reading]</a>
             </p>
           </div>
@@ -143,10 +141,8 @@
 
           <div class="post-body">
             <div class="post-content">
-              <% var content = stripHTML( post.content );
-                 var excerpt = toExcerpt( content, 220 ); %>
               <p>
-                <%= excerpt %>
+                <%= toExcerpt(post.content, 220) %>
                 <a class="more-link" href="<%= post.link %>">Continue Reading</a>
               </p>
             </div>
