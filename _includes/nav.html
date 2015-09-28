@@ -98,7 +98,18 @@
       </li>
 
       <li class="nav-tier1">
-        <a href="/summit">Why government?</a>
+        <a href="/practices" {% if nav_tier1_active == "practices" %}class="state-active"{% endif %}>Why government?</a>
+        {% if nav_tier1_active == "practices" %}
+        <ul class="nav-tier2">
+            <li><a href="/practices/design">User centered design</a></li>
+            <li><a href="/practices/engagement">Community engagement</a></li>
+            <li><a href="/practices/iterate">Iterative development</a></li>
+            <li><a href="/practices/data-driven">Data-driven decision making</a></li>
+            <li><a href="/practices/open">Open government</a></li>
+            <li><a href="/practices/team-building">Team building</a></li>
+            <li><a href="/practices/procurement">Procurement</a></li>
+        </ul>
+        {% endif %}
       </li>
 
       <!-- 1.3 WORK WITH US -->
