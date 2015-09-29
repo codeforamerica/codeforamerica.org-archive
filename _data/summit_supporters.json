@@ -57,8 +57,8 @@
     {
       "name" : "AWS",
       "logo" : "/media/images/summit/2015/logos/aws.png",
-       "description" : "Amazon Web Services offers a broad set of global compute, storage, database, analytics, application, and deployment services that help organizations move faster, lower IT costs, and scale applications. These services are trusted by the largest enterprises and the hottest start-ups to power a wide variety of workloads including: web and mobile applications, data processing and warehousing, storage, archive, and many others.",
-       "link" : "https://aws.amazon.com"
+       "description" : "Amazon Web Services’ Worldwide Public Sector Team offers enterprise class cloud computing services to Government, Education, Healthcare and Nonprofit organizations globally. With the cloud, public sector IT professionals no longer need to plan for IT infrastructure months in advance, but rather can be operational in minutes.",
+       "link" : "http://aws.amazon.com/government-education/"
     },
     {
       "name" : "Esri",
