@@ -137,6 +137,7 @@ sponsor-banner: true
                     <div class="layout-minim">
                       {% unless event.session_type == event.session_title or event.session_type == null %}<p class="schedule-grid__event__type">{{event.session_type}}</p>{% endunless %}
                       <h4>{{event.session_title}}</h4>
+                      {% if event.sponsor_logo_link %}<img class="schedule-grid__event__logo" src="{{event.sponsor_logo_link}}" alt="{{event.session_description}}" />{% endif %}
                       {% if event.session_description %}<p>{{event.session_description}}</p>{% endif %}
                       <p class="item-link"><a href="https://www.codeforamerica.org/summit/schedule/#{{event.session_unique_key}}">[Copy Link]</a></p>
                     </div>
