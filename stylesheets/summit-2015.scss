@@ -117,6 +117,7 @@ p.quiet {
   padding: 5px 10px;
   color: white;
   text-transform: uppercase;
+	font-weight: normal;
 
   border: 2px solid white;
   border-radius: 2px;
@@ -128,6 +129,10 @@ p.quiet {
     color: black;
     text-shadow: none;
   }
+}
+
+.masthead-nav ul li a.active {
+  border-color: #fedd44;
 }
 
 @media screen and (max-width: 1145px) {
@@ -145,10 +150,6 @@ p.quiet {
   .masthead-nav ul li a {
     font-size: 0.8em;
   }
-}
-
-.masthead-nav ul li a.active {
-  border-color: #fedd44;
 }
 
 // the logo -- unstyled
@@ -407,4 +408,100 @@ ul.list-has-bullets li {
 	background-repeat: no-repeat;
 	list-style-type: none;
 	padding-left: 1.3em;
+}
+
+// =====
+// Hackity hack hack, custom styles for Summit homepage
+// =====
+
+body.summit-2015-home {
+	// override, no margin below on these
+	.masthead-nav, .masthead-nav ul.list-no-bullets {
+		margin-bottom: 0;
+	}
+
+	// change nav colors
+	.masthead-nav ul li a {
+		color: #6D6E71;
+	  border-color: #6D6E71;
+
+	  &:hover {
+	    background: #7ab5d6;
+	    border-color: #7ab5d6;
+	    color: #6D6E71;
+	    text-shadow: none;
+	  }
+	}
+	.masthead-nav ul li a.active {
+	  border-color: #7ab5d6;
+	}
+
+	// need this again for an override
+	.masthead-nav ul li a.logo-unstyled {
+	  position: relative;
+	  padding: 0;
+	  color: white;
+	  text-transform: none;
+
+	  border: none;
+	  border-radius: none;
+
+	  &:hover {
+	    background: transparent;
+	    border-color: none;
+	    text-shadow: none;
+	  }
+	}
+
+	// tighten up space at the top
+	.summit-header.layout-breve {
+		padding-top: 0;
+	}
+
+	.when {
+		margin-top: .5em;
+		margin-bottom: .5em;
+		font-size: 0.8em;
+		@include media($mobile-up) { font-size: 0.85em; }
+		color: #6D6E71;
+		i { display: none; }
+		@include media($mobile-up) { i { display: inline; } }
+	}
+
+	.livestream-overhead {
+		text-transform: uppercase;
+		color: #6D6E71;
+		margin-top: 1.5em;
+		margin-bottom: 0;
+
+		display: block;
+		position: relative;
+		width: 100%;
+		padding-top: 0.5em;
+		&:before {
+			content: "";
+			width: 100%;
+			height: 1px;
+			background-color: #6D6E71;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.livestream-secondary {
+		font-size: 0.85em;
+		margin-top: 0;
+		color: #6D6E71;
+		a {
+			color: #6D6E71;
+			text-decoration: underline;
+			&:hover { text-decoration: none; }
+		}
+	}
+	.masthead.masthead-custom {
+		@include media($mobile-up) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
 }

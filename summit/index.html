@@ -2,6 +2,8 @@
 # Custom layout for summit pages
 layout: summit-2015
 masthead-image: "/media/images/summit/2015/summit-selfie.jpg"
+summit-body-class: "summit-2015-home"
+summit-hide-header: true
 
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
@@ -54,6 +56,66 @@ jquery-scripts: |
   }
 </style>
 
+<!-- CUSTOM HEADER -->
+<nav class="nav-global-primary"></nav>
+
+<section class="slab-gray">
+  <div class="summit-header layout-breve">
+    <div class="masthead-nav">
+      <ul class="list-no-bullets">
+        <li class="masthead-nav-logo">
+          <a class="logo-unstyled" href="/summit/"><img src="/media/images/summit/2015/summit-2015-logo-color.png"></a>
+        </li>
+        <div class="masthead-pages">
+          <li class="masthead-nav-page">
+            <a href="/summit/" class="active">Home</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/#livestream">Live Stream</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/schedule/">Schedule</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/speakers/">Speakers</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/supporters/">Our Supporters</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/sponsor/">Become a Sponsor</a>
+          </li>
+        </div>
+      </ul>
+    </div><!-- end .masthead-nav -->
+
+    <p class="when"><i class="icon-calendar"></i>September 30 - October 2  &nbsp;&nbsp; <i class="icon-location"></i>Oakland Marriott City Center</p>
+    <a id="livestream"></a>
+    <p class="livestream-overhead"><span>Starting at 9:30 am &#8594;</span> Summit Day 1 Live Stream</p>
+    <p class="livestream-secondary">See the lineup for this morning <a href="/summit/schedule" target="_blank">on the schedule</a>.</p>
+    <div class="livestream-container">
+      <iframe src="http://livestream.com/accounts/11470777/events/4375540/player?width=960&height=540&autoPlay=true&mute=false" width="100%" height="540px" frameborder="0" scrolling="no"> </iframe>
+    </div>
+  </div>
+</section>
+
+<div class="masthead masthead-custom masthead-no-background">
+
+  <!-- <div class="masthead-hero">
+    <div class="masthead-image" style="background-image: url('/media/images/summit/2015/summit-selfie.jpg')"></div>
+  </div> -->
+
+
+  <div class="masthead-content">
+    <p class="masthead-content-overline">{{ page.title }}</p>
+    <h1 class="masthead-content-title">{{ page.headline }}</h1>
+    <p class="masthead-content-description">{{ page.description }}</p>
+  </div>
+
+</div>
+
+<!-- END CUSTOM HEADER -->
+
 <section class="layout-semibreve">
   <ul class="list-no-bullets layout-grid-minim">
     <li>
@@ -76,7 +138,7 @@ jquery-scripts: |
       <h3>Venue</h3>
       <p>The Summit is hosted at the Oakland Marriott City Center, in downtown Oakland. <a href="https://www.google.com/maps/dir//Oakland+Marriott+City+Center,+1001+Broadway,+Oakland,+CA+94607/@37.8020479,-122.272945,17z/data=!4m13!1m4!3m3!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2sOakland+Marriott+City+Center!3b1!4m7!1m0!1m5!1m1!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2m2!1d-122.272945!2d37.8020479" target="_blank">Get directions to the hotel.</a></p>
       <p>The Marriott is just a block from 12st Oakland BART, with quick access to regional airports and downtown San Francisco.</p>
-      <p><a href="https://www.google.com/maps/dir//Oakland+Marriott+City+Center,+1001+Broadway,+Oakland,+CA+94607/@37.8020479,-122.272945,17z/data=!4m13!1m4!3m3!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2sOakland+Marriott+City+Center!3b1!4m7!1m0!1m5!1m1!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2m2!1d-122.272945!2d37.8020479" target="_blank">Get directions</a></p>
+      <p><a href="https://www.google.com/maps/dir//Oakland+Marriott+City+Center,+1001+Broadway,+Oakland,+CA+94607/@37.8020479,-122.272945,17z/data=!4m13!1m4!3m3!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2sOakland+Marriott+City+Center!3b1!4m7!1m0!1m5!1m1!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2m2!1d-122.272945!2d37.8020479" target="_blank" class="button">Get directions</a></p>
     </li>
   </ul>
 </section>
