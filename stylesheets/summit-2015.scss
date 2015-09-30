@@ -471,7 +471,7 @@ body.summit-2015-home {
 	.livestream-overhead {
 		text-transform: uppercase;
 		color: #6D6E71;
-		margin-top: 1.5em;
+		margin-top: 2em;
 		margin-bottom: 0;
 
 		display: block;
@@ -498,10 +498,19 @@ body.summit-2015-home {
 			&:hover { text-decoration: none; }
 		}
 	}
+
+	// custom width and padding for masthead below livestream
 	.masthead.masthead-custom {
 		@include media($mobile-up) {
 			padding-top: 60px;
 			padding-bottom: 60px;
+		}
+	}
+	.masthead .masthead-content {
+		@include media($mobile-up) {
+			max-width: 60rem;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
