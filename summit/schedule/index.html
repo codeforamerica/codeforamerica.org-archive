@@ -101,6 +101,7 @@ sponsor-banner: true
                                 <a id="{{breakout.session_unique_key}}"></a>
                                 {% unless breakout.session_audience == breakout.session_title or breakout.session_audience == null %}<p class="schedule-grid__event__type">{{breakout.session_audience}}</p>{% endunless %}
                                 <h4>{{breakout.session_title}}</h4>
+                                <p class="item-link">{{breakout.time_block}}{% if breakout.room_location %} | {{breakout.room_location}}{% endif %}</p>
                                 <p>{{breakout.session_description}}</p>
                                 <p class="item-link"><a href="https://www.codeforamerica.org/summit/schedule/#{{breakout.session_unique_key}}">[Copy Link]</a></p>
                                 <ul class="list-no-bullets schedule-grid__event__speakers">
