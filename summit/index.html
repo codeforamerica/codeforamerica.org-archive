@@ -26,108 +26,62 @@ jquery-scripts: |
     (function(win,doc){
       console.log("Loaded");
       if (typeof(urlParams["discount"]) !== "undefined" && urlParams["discount"] !== "") {
-        console.log("IT DOES THINGS");
-        var discount_code = "&discount=" + urlParams["discount"],
-        iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
-        iframe_path = iframe_base_path + discount_code,
-        link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
-        link_path = link_base_path + discount_code;
-        document.getElementById('iframe-source').setAttribute('src', iframe_path);
-        document.getElementById('link-source').href = link_path;
-
-        // send a discount code notice
-        $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
+        // console.log("IT DOES THINGS");
+        // var discount_code = "&discount=" + urlParams["discount"],
+        // iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
+        // iframe_path = iframe_base_path + discount_code,
+        // link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
+        // link_path = link_base_path + discount_code;
+        // document.getElementById('iframe-source').setAttribute('src', iframe_path);
+        // document.getElementById('link-source').href = link_path;
+        //
+        // // send a discount code notice
+        // $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
+        alert('Registration is now closed. If you have any questions, please reach out to us by email at summit@codeforamerica.org.')
       }
     })(window,document);
   </script>
 ---
-
 <style>
   h5 {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-
   /* We use .break to break up text on mobile vs. desktop */
   span.break { display: block; }
   @media screen and (min-width: 40em) {
     span.break { display: none; }
   }
-
-  /* On mobile, show our button to leave to eventbrite. On desktop, show our
-   * nice grid of ticket options.
-  **/
-  .eventbrite-iframe { display: none; }
-  @media screen and (min-width: 40em) {
-   .eventbrite-iframe { display: inherit; }
-   .eventbrite-link { display: none; }
-  }
-
-  /* Let's resize the iframe as the page size changes. This is tied pretty
-   * closely to the content that's in it, so it might break.
-  **/
-
-  /* small */
-                                        #iframe-source { height: 560px; margin-bottom: -180px; }
-  /* medium */
-  @media screen and (min-width: 50em) { #iframe-source { height: 520px; }  }
-  /* largest */
-  @media screen and (min-width: 60em) { #iframe-source { height: 482px; margin-bottom: -160px; }  }
 </style>
 
-<section class="layout-semibreve layout-centered">
-  <h2 id="announcement">Join us at the 2015 Summit</h2>
-  <p class="when"><strong><i class="icon-calendar"></i>When:</strong> September 30 - October 2  &nbsp;&nbsp;&nbsp;<span class="break"></span>  <strong><i class="icon-location"></i>Where:</strong> Oakland Marriott City Center</p>
-  <!-- <p>The 2015 Code for America will kick-off September 30 in Oakland, California. For three days, more than 1,300 government leaders, technologists, and community members will work together and share ideas about transforming government for the 21st Century.</p> -->
-
-  <div class="layout-semibreve layout-centered">
-    <a id="register"></a>
-    <h2><i class="icon-checkmark"></i>Register today</h2>
-    <p>Secure your spot for the biggest, and most action-packed, Summit yet. Questions about registration? Discount code not working? Want to apply for a discounted ticket? Email <a href="mailto:summit@codeforamerica.org?Subject=2015%20CfA%20Summit" target="_blank">summit@codeforamerica.org</a></p>
-    <div id="discount-alert-target"></div>
-    <div class="eventbrite-iframe">
-      <iframe id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-    </div>
-    <div class="eventbrite-link">
-      <a id="link-source" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink" class="button button-lg button-bold">Buy your ticket now</a>
-    </div>
-  </div>
-
-  <!--
-  <div class="layout-crotchet">
-    <h5><i class="icon-bullhorn"></i> Speakers on tap</h5>
-    <p class="quiet">Hear from leaders inside and outside of government who are building 21st Century government.</p>
-    <p><a href="/summit/speakers" class="button button-bold">See the lineup</a></p>
-  </div>
-
-  <div class="layout-crotchet">
-    <h5><i class="icon-alarm"></i> Schedule</h5>
-    <p class="quiet">The Summit is three days of action-packed content, featuring passionate people who are transforming government.</p>
-    <p><a href="/summit/schedule" class="button button-bold">See the schedule</a></p>
-  </div>
-  -->
-
-</section>
-
-<section class="layout-semibreve layout-centered">
-  <a id="venue"></a>
-  <h2>Venue &amp; Travel</h2>
-  <p>The official Summit host hotel, the Oakland Marriott City Center, is <strong>sold out</strong>. So are many Downtown Oakland hotels. Here are some great options for finding a convenient place to stay:</p>
-  <div class="layout-minim-staccato">
-    <img src="/media/images/summit/2015/lake.jpg" />
-    <h5>Stay in an Airbnb, be oh-so-close</h5>
-    <p>Live like a local stay near the Summit action. Explore the hundreds of options available in Downtown Oakland or nearby neighborhoods on Airbnb.</p>
-    <p><a href="https://www.airbnb.com/s/Oakland--CA--United-States?guests=&checkin=09%2F30%2F2015&checkout=10%2F03%2F2015">Find your Airbnb</a></p>
-  </div>
-  <div class="layout-minim-staccato">
-    <img src="/media/images/summit/2015/BART.jpg" />
-    <h5>Stay in SF, take the train</h5>
-    <p>Good news! Hotels in Downtown San Francisco are just minutes away from the Summit hotel by BART, the Bay Area's regional train service. Snag a great room now:</p>
-    <p><a href="https://www.google.com/search?q=hotels%20san%20francisco&rflfq=1&tbm=lcl&hotel_dates=2015-09-30%2C2015-10-03&rlfi=hd%3A2015-09-30%2C2015-10-03%3Bsi%3A&rct=j">Find your hotel</a></p>
-  </div>
+<section class="layout-semibreve">
+  <ul class="list-no-bullets layout-grid-minim">
+    <li>
+      <h3>Registration &amp; Check-in</h3>
+      <p>Pick up your badge starting Wednesday at 7:30 am in the Marriott City Center lobby.</p>
+      <p>New registration for the conference is now closed.If you still need to register for the conference, please contact us by email at <a href="mailto:summit@codeforamerica.org">summit@codeforamerica.org</a>.</p>
+    </li>
+    <li>
+      <h3>Schedule</h3>
+      <p>The Summit is three days of action-packed content, featuring passionate people who are transforming government.</p>
+      <p>Each morning opens with main stage talks, and afternoons feature more intimate breakouts, the unconference and hackathon, and the Tech Fair.</p>
+      <p><a href="/summit/schedule/" class="button">See the online schedule</a></p>
+    </li>
+    <li>
+      <h3>Live Stream</h3>
+      <p>Main stage talks will be live streamed on the <a href="http://codeforamerica.org/summit/#livestream">Summit homepage</a> each morning starting at 9 am.</p>
+      <p>Follow along with live video on this page, and keep up-to-date with the conversation on Twitter <a href="https://twitter.com/search?q=%23CfASummit" target="_blank">using the hashtag #CfASummit</a>.</p>
+    </li>
+    <li>
+      <h3>Venue</h3>
+      <p>The Summit is hosted at the Oakland Marriott City Center, in downtown Oakland. <a href="https://www.google.com/maps/dir//Oakland+Marriott+City+Center,+1001+Broadway,+Oakland,+CA+94607/@37.8020479,-122.272945,17z/data=!4m13!1m4!3m3!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2sOakland+Marriott+City+Center!3b1!4m7!1m0!1m5!1m1!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2m2!1d-122.272945!2d37.8020479" target="_blank">Get directions to the hotel.</a></p>
+      <p>The Marriott is just a block from 12st Oakland BART, with quick access to regional airports and downtown San Francisco.</p>
+      <p><a href="https://www.google.com/maps/dir//Oakland+Marriott+City+Center,+1001+Broadway,+Oakland,+CA+94607/@37.8020479,-122.272945,17z/data=!4m13!1m4!3m3!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2sOakland+Marriott+City+Center!3b1!4m7!1m0!1m5!1m1!1s0x808f80b6cf472ecd:0x2d742d59c91dc38!2m2!1d-122.272945!2d37.8020479" target="_blank">Get directions</a></p>
+    </li>
   </ul>
 </section>
 
+<!-- SUPPORTERS -->
 <section class="layout-semibreve layout-centered">
   <ul class="list-logos-primary muted">
     <h4>Capstone Supporters</h4>
