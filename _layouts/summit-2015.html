@@ -62,36 +62,19 @@ nav-breadcrumbs:
     {% if page.masthead-image %}
       <style type="text/css">
         .masthead:before {
-                background-image: url('{{ page.masthead-image }}');
+          background-image: url('{{ page.masthead-image }}');
         }
       </style>
     {% endif %}
-     <style>
-     .how-to h4{
-      clear:both;
-     }
-     .how-to .desc{
-      float: left;
-      width: 62%;
-     }
-     .how-to .recommendations{
-      float: right;
-      width: 33%;
-      background-color: #00a175;
-      color:#fff;
-      padding: 1em;
-     }
-     .no-logo .teaser-header{
-      margin-top:0;
-      text-align:center;
-     }
-     </style>
+
     {% include meta-header.html %}
   </head>
 
-  <body id="jk-layout-summit-2015">
+  <body id="jk-layout-summit-2015" {% if page.summit-body-class %}class="{{page.summit-body-class}}"{% endif %}>
     <div class="js-container">
+      {% unless page.summit-hide-header %}
       {% include nav-summit-2015.html %}
+      {% endunless %}
       <main role="main">
         {{ content }}
 

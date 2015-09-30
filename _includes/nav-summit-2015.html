@@ -97,26 +97,29 @@
           <a href="/summit/" {% if page.url == "/summit/index.html" %}class="active"{% endif %}>Home</a>
         </li>
         <li class="masthead-nav-page">
+          <a href="/summit/#livestream">Live Stream</a>
+        </li>
+        <li class="masthead-nav-page">
           <a href="/summit/schedule/" {% if page.url == "/summit/schedule/index.html" %}class="active"{% endif %}>Schedule</a>
         </li>
         <li class="masthead-nav-page">
           <a href="/summit/speakers/" {% if page.url == "/summit/speakers/index.html" %}class="active"{% endif %}>Speakers</a>
         </li>
         <li class="masthead-nav-page">
-          <a href="/summit/sponsor/" {% if page.url == "/summit/sponsor/index.html" %}class="active"{% endif %}>Become a Sponsor</a>
-        </li>
-        <li class="masthead-nav-page">
           <a href="/summit/supporters/" {% if page.url == "/summit/supporters/index.html" %}class="active"{% endif %}>Our Supporters</a>
         </li>
+        <li class="masthead-nav-page">
+          <a href="/summit/sponsor/" {% if page.url == "/summit/sponsor/index.html" %}class="active"{% endif %}>Become a Sponsor</a>
+        </li>
+        {% comment %}
+        <!-- Hide these for now, because the Summit is actually going on! -->
         <li class="masthead-nav-page">
           <a href="/summit/justification/" {% if page.url == "/summit/justification/index.html" %}class="active"{% endif %}>Gov Justification Letter</a>
         </li>
         <li class="masthead-nav-page">
-          <a href="https://www.youtube.com/playlist?list=PL65XgbSILalWFStqV0z0N9pvftstJ8AAh">2014 Summit Videos</a>
-        </li>
-        <li class="masthead-nav-page">
           <a href="/summit/#register">Register</a>
         </li>
+        {% endcomment %}
       </div>
     </ul>
   </div>
