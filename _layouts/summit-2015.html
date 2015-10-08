@@ -72,9 +72,7 @@ nav-breadcrumbs:
 
   <body id="jk-layout-summit-2015" {% if page.summit-body-class %}class="{{page.summit-body-class}}"{% endif %}>
     <div class="js-container">
-      {% unless page.summit-hide-header %}
       {% include nav-summit-2015.html %}
-      {% endunless %}
       <main role="main">
         {{ content }}
 

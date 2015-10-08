@@ -38,35 +38,14 @@
     {% assign masthead = false %}
 {% endif %}
 
-{% if nav-global-primary != "no" %}
-<nav class="nav-global-primary">
-  <ul class="layout-breve layout-tight">
-    <li><a href="/">Presented by Code for America</a></li>
-  </ul>
-</nav>
-{% else %}
-<!--
+
+{% comment %}
       If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
       This requirement is because of the nav collapse functionality in global.js
-  -->
+{% endcomment %}
 <nav class="nav-global-primary"></nav>
-{% endif %}
 
-{% if masthead != "no" %}
-<div class="masthead {{ masthead-class }}">
-  <div class="masthead-hero">
-    <div class="masthead-image"
-      {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')"
-      {% endif %}>
-    </div>
-  </div>
-  <header class="layout-semibreve masthead-header">
-    <h1 class="page-title">{% if page.title-h1 %}{{ page.title-h1 }}{% else %}{{ page.title }}{% endif %}</h1>
-  </header>
-</div>
-{% endif %}
-
+{% comment %}
 {% if page.sponsor-banner %}
 <section>
   <div class="sponsor-banner" id="sponsor-banner">
@@ -97,7 +76,7 @@
           <a href="/summit/" {% if page.url == "/summit/index.html" %}class="active"{% endif %}>Home</a>
         </li>
         <li class="masthead-nav-page">
-          <a href="/summit/#livestream">Live Stream</a>
+          <a href="/summit/videos/" {% if page.url == "/summit/videos/index.html" %}class="active"{% endif %}>Videos</a>
         </li>
         <li class="masthead-nav-page">
           <a href="/summit/schedule/" {% if page.url == "/summit/schedule/index.html" %}class="active"{% endif %}>Schedule</a>
@@ -139,3 +118,47 @@
 
 </div>
 {% endif %}
+{% endcomment %}
+
+<!-- CUSTOM HEADER -->
+<nav class="nav-global-primary"></nav>
+
+<section class="slab-gray">
+  <div class="summit-header layout-breve">
+    <div class="masthead-nav">
+      <p class="summit-overhead">The 2015 Code for America Summit is Over!</p>
+      <p class="summit-secondary">We'll be back at the Oakland Marriott City Center Nov. 2 - 4, 2016 for the next CfA Summit. <a href="#" data-email-signup-button="true" data-email-headline="I want updates about Code for America and the 2016 Summit" data-email-description="Want to learn more about Code for America, including updates about registration and details for the 2016 Code for America Summit? Enter your information and we'll keep you up-to-date with the latest.">Sign up for our mailing list</a> to get notified when registration opens.</a>
+      <ul class="list-no-bullets">
+        <li class="masthead-nav-logo">
+          <a class="logo-unstyled" href="/summit/"><img src="/media/images/summit/2015/summit-2015-logo-color.png" alt="Code for America Summit Logo"></a>
+        </li>
+        <div class="masthead-pages">
+          <li class="masthead-nav-page">
+            <a href="/summit/" {% if page.url == "/summit/index.html" %}class="active"{% endif %}>Home</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/videos/" {% if page.url == "/summit/videos/index.html" %}class="active"{% endif %}>Videos</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/schedule/" {% if page.url == "/summit/schedule/index.html" %}class="active"{% endif %}>Schedule</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/speakers/" {% if page.url == "/summit/speakers/index.html" %}class="active"{% endif %}>Speakers</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/supporters/" {% if page.url == "/summit/supporters/index.html" %}class="active"{% endif %}>Our Supporters</a>
+          </li>
+          <li class="masthead-nav-page">
+            <a href="/summit/sponsor/" {% if page.url == "/summit/sponsor/index.html" %}class="active"{% endif %}>Become a Sponsor</a>
+          </li>
+        </div>
+      </ul>
+    </div><!-- end .masthead-nav -->
+    <!-- <p class="summit-when"><i class="icon-calendar"></i>September 30 - October 2, 2015  &nbsp;&nbsp; <i class="icon-location"></i>Oakland Marriott City Center</p> -->
+    <div class="summit-page-header">
+      <!-- <p class="summit-page-overline">{{ page.title }}</p> -->
+      <h1 class="summit-page-title">{{ page.headline }}</h1>
+      <p class="summit-page-description">{{ page.description }}</p>
+    </div>
+  </div><!-- end .summit-header -->
+</section>
