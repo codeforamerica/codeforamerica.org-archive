@@ -1,0 +1,58 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+	<div class="heading">
+    <h2 class="p-name">Monique Baena-Tan</h2> 
+	</div>
+
+	<div class="layout-minor">
+    <p>Brigade Program Coordinator</p>
+    <h4 class="text-whisper layout-tight">Member of</h4>
+
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/monique-baena-tan.jpg" />
+	</div>
+
+	<div class="layout-major">
+    <p class="p-note">
+      Monique supports the partnership and ecosystems team by engaging with all the Brigades across the network. She helps them build a stronger community by connecting them, capturing best practices and providing resources for growth and sustainability. 
+    </p>
+    <p class="p-note">
+      Monique moved to San Francisco from New York where she was working with various non-profit organizations in developing more inclusive and engaging urban planning processes. Most recently she supported the research phase of an interactive workshop toolkit at Center for Urban Pedagogy that aimed to educate communities on complicated policy issues. She also helped organize a network of anchoring institutions in Orange, NJ to empower the community and provide channels for collaboration. She holds a BFA in Printmaking and an MS in Design and Urban Ecologies from Parsons School of Design.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Website</th><td><a href="http://www.moniquebt.com/">http://www.moniquebt.com</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/moniquebt">https://www.linkedin.com/in/<wbr>moniquebt</a></td></tr>
+      </table>
+    </div>
+	</div>
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Monique Baena-Tan</h3>
+
+  <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/monique-baena-tan.jpg">
+
+  <div class="p-note profile-note">
+    <p>
+      Monique supports the partnerships and ecosystems team by engaging with all the Brigades across the network. She helps them build a stronger community by connecting them, capturing best practices and providing resources for growth and sustainability. Monique...
+    </p>
+
+    <p><a class="link-more" href="{{ include.base }}/people/monique-baena-tan/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-website"><a href="http://www.moniquebt.com/">Website</a></li>
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/moniquebt">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
