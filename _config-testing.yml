@@ -1,0 +1,17 @@
+testing_css: |
+  <style>
+  @-moz-document domain(proxyme.percy.io) {
+    * {
+      -o-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -webkit-transition: none !important;
+      transition: none !important;
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+    }
+  }
+  </style>
