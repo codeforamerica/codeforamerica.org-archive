@@ -1,0 +1,96 @@
+---
+layout: default
+title: Team Building
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+masthead-custom: deep
+nav-global-primary: "no"
+
+# Title for the title bar, and the overline in the masthead
+title: practice number six
+
+# Content for the custom deep masthead
+headline: Team Building
+description: Invest in people who value the role of digital at all levels of the organization. Increase tech skills and literacy among staff, hire new tech talent where it’s needed, and build multidisciplinary teams focused on delivery.
+
+# The picture for the page
+masthead-image: "/media/images/practices/teambuilding.jpg"
+
+nav_tier1_active: "governments"
+nav-breadcrumbs:
+ - Governments: "/cities"
+ - Practices of 21st Century Government: "/governments/practices"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+<section class="layout-semibreve">
+
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+      <!-- Header -->
+      <h2>Team Building</h2>
+      <p>Digital must be a key skill of government, at all levels, owned by the people responsible for delivering programs and services to the public.</p>
+	</div><!-- end Principle 1 -->
+</section>
+
+<section class="slab-gray">
+
+	<div class="layout-semibreve">
+
+		<div class="badge-heading badge-red">
+		    <h2 id='resources'>Practice Team Building</h2>
+		</div>
+
+		<p>We're publishing a set of guides, tools and resources to help governments work in the open, proactively publish public data online, and collaborate with the community to help make programs and services better for everyone.</p>
+
+		<h3>Guides</h3>
+
+		<ul class="list-no-bullets list-icons">
+
+				<li class="icon-lamp"><a href="/playbooks/technology-procurement/organize-government-for-digital-services/">How to: Organize Government for Digital Services</a>
+				<p>Read this guide when developing a new team or reorganizing your existing people for digital service creation and delivery.</p>
+				</li>
+
+				<li class="icon-lamp"><a href="/playbooks/technology-procurement/delivering-digital-services/">How to: Deliver Digital Services</a>
+				<p>This guide walks you through the initial thoughts when beginning to think about digital services. It also includes additional resources.</p>
+				</li>
+		</ul>
+
+		<h3>Further Reading</h3>
+
+		<ul class="list-no-bullets list-icons">
+
+			<li class="icon-new-tab"><a href="http://sunlightfoundation.com/opendataguidelines/">Read: The Sunlight Foundation's Open Data Policy Guidelines</a>
+				<p>The Sunlight Foundation created this living set of open data guidelines to address: what data should be public, how to make data public, and how to implement policy.</p>
+			</li>
+
+		</ul>
+
+	</div>
+</section>

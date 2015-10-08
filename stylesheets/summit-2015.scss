@@ -3,19 +3,66 @@
 
 //
 // SUMMIT-2015 SCSS
-// 
+//
 // These custom styles are for the /summit-2015/ microsite.
 // Note: Some of these styles are fresh, and some rewrite existing pattern-portfolio behavior.
 //
 // Layouts served: summit-2015
 //
 
-// =====
-// Breakpoints
-// =====
+// Colors
+$color-red: #cf1b41;
+$color-red-medium: #aa1c3a;
+$color-blue: #399fd3;
+$color-blue-light: #7ab5d6;
+$color-blue-medium: #4298bb;
+$color-blue-dark: #004b6a;
+$color-gray: #6D6E71;
+$color-gray-light: #e5e5e5;
+$color-gray-medium: #999595;
+$color-gray-dark: #444444;
+$color-orange: #e87d2b;
+$color-purple: #69579C;
+$color-green: #00a175;
+$color-yellow: #fedd44;
+$color-black: rgba(0,0,0,0.7);
 
+// Mobile-first media query helper
+@mixin media($bp) {
+	@media screen and (min-width: #{$bp}) {
+		@content;
+	}
+}
+
+// Breakpoints
 $breakpoint-tablet: 850px;
 $breakpoint-mobile: 640px;
+$mobile-up: 40em;
+
+// clearfix
+@mixin clearfix(){
+  &, &:before, &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// =====
+// Typography
+// =====
+h1,h2,h3,h4,h5,h6 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+h5 {
+	text-transform: none;
+	font-weight: bold;
+}
+p.quiet {
+	font-size: 14px;
+	line-height: 2;
+}
 
 // =====
 // .masthead override
@@ -39,10 +86,10 @@ $breakpoint-mobile: 640px;
   position: relative;
   z-index: 3;
   display: block;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
   @media only screen and (max-width: $breakpoint-tablet) {
-    margin-bottom: 100px;    
+    margin-bottom: 50px;
   }
 }
 
@@ -61,40 +108,127 @@ $breakpoint-mobile: 640px;
   display: table-cell;
   float: left;
   margin-right: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 // anchor element
-
 .masthead-nav ul li a {
   position: relative;
   padding: 5px 10px;
-  color: white;
+  color: #6D6E71;
   text-transform: uppercase;
+	font-weight: normal;
 
-  border: 2px solid white;
+  border: 2px solid #6D6E71;
   border-radius: 2px;
+  font-size: 0.9em;
 
   &:hover {
-    background: #fedd44;
-    border-color: #fedd44;
-    color: black;
+    background: #7ab5d6;
+    border-color: #7ab5d6;
+    color: #6D6E71;
     text-shadow: none;
   }
 }
 
 .masthead-nav ul li a.active {
-  border-color: #fedd44;
+  border-color: #7ab5d6;
+}
+
+@media screen and (max-width: 1145px) {
+  .masthead-pages {
+    width: 100%;
+    &:before, &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  .masthead-nav ul li {
+    margin-top: 10px;
+  }
+  .masthead-nav ul li a {
+    font-size: 0.8em;
+  }
+}
+
+// tighten up space at the top
+.summit-header.layout-breve {
+	padding-top: 0;
+}
+
+// the logo -- unstyled
+.masthead-nav ul li a.logo-unstyled {
+  position: relative;
+  padding: 0;
+  color: white;
+  text-transform: none;
+
+  border: none;
+  border-radius: none;
+
+  &:hover {
+    background: transparent;
+    border-color: none;
+    text-shadow: none;
+  }
 }
 
 // the logo
-
 .masthead-nav ul li.masthead-nav-logo {
   width: 300px;
   // reset the margin-top on all .masthead-nav li's
   margin-top: 0;
   // more margin after the logo
   margin-right: 20px;
+}
+
+// No margin below these
+.masthead-nav, .masthead-nav ul.list-no-bullets {
+	margin-bottom: 0;
+}
+
+// The date/location under the logo
+.summit-when {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	font-size: 0.8em;
+	@include media($mobile-up) { font-size: 0.85em; }
+	color: #6D6E71;
+	i { display: none; }
+	@include media($mobile-up) { i { display: inline; } }
+}
+
+// Overhead info on the page
+.summit-overhead {
+	text-transform: uppercase;
+	color: #6D6E71;
+	margin-top: 2em;
+	margin-bottom: 0;
+
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-top: 0.5em;
+	&:before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: #6D6E71;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.summit-secondary {
+	font-size: 0.85em;
+	margin-top: 0;
+	color: #6D6E71;
+	a {
+		color: #6D6E71;
+		text-decoration: underline;
+		&:hover { text-decoration: none; }
+	}
 }
 
 // =====
@@ -144,4 +278,200 @@ p.masthead-content-description {
     font-size: 14px;
     line-height: 25px;
   }
+}
+
+// =====
+// .summit-page-header
+// The header at the top of each Summit page.
+// =====
+
+.summit-page-header {
+	max-width: 60em;
+
+	.summit-page-title {
+		margin-top: 1rem;
+		@include media($mobile-up) { margin-top: 2rem; }
+		text-transform: none;
+	}
+}
+
+// =====
+// Sponsor banner module, for the little sponsor banners throughout
+// =====
+.sponsor-banner {
+  display: none;
+}
+.sponsor-banner.sponsor-baner-visible {
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+}
+.sponsor-banner p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  line-height: 1.2;
+}
+.sponsor-banner img {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: -10px;
+}
+
+// =====
+// Summit schedule grid
+// =====
+
+.schedule ul { margin: 0; }
+.schedule ul.schedule-grid__dayparts {
+  margin-top: 1em;
+  @include media($mobile-up) { margin-top: 2em; }
+}
+
+.schedule-grid__dayparts {
+  position: relative;
+  padding-left: 1em;
+
+  &:before {
+    content: "";
+    background-color: $color-gray-light;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+  }
+
+  .schedule-grid__daypart__title {
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.4;
+    color: $color-blue-dark;
+
+    &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: $color-blue-dark;
+      left: -1.55em;
+      left: calc(-1em - 10px);
+      top: 0;
+      position: absolute;
+    }
+  }
+}
+
+.schedule-grid__dayparts > li + li {
+  margin-top: 4em;
+}
+
+.schedule-grid__timeblocks > li {
+  position: relative;
+  margin-top: 1em;
+  padding-top: 1em;
+  @include clearfix();
+  width: 100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    width: calc(100% + 1em);
+    height: 1px;
+    background-color: $color-gray-light;
+    top: 0;
+    left: -1em;
+  }
+
+  .schedule-grid__timeblock__title {
+    margin: 0;
+    color: $color-gray;
+  }
+}
+
+.schedule-grid__timeblocks > li + li {
+  margin-top: 2em;
+}
+
+.schedule-grid__events > li {
+  background-color: #F2F3F4;
+  padding: 1em;
+  @include media($mobile-up) { padding: 1.5em; }
+  margin-top: 1em;
+  max-width: 60em;
+
+  p { margin-bottom: 0; }
+  .layout-minim { margin: 0; }
+
+  .schedule-grid__event__type {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    color: $color-gray-medium;
+    border: 2px solid $color-gray-medium;
+    padding: 0.3em;
+    display: inline-block;
+    width: auto;
+    line-height: 1;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+}
+
+.schedule-grid__event__speakers > li {
+  position: relative;
+  width: 100%;
+  display: block;
+
+  .schedule-grid__event__speaker__name {
+    position: relative;
+    top: 0.4em;
+    margin: 0;
+  }
+
+  .schedule-grid__event__speaker__title {
+    color: #6D6E71;
+    font-size: 0.8em;
+    margin-top: 0.4em;
+    line-height: 1.5;
+  }
+
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 0.7em;
+  }
+}
+
+.layout-grid-minim .schedule-grid__event__speakers > li:first-of-type { margin-top: 1em; }
+.schedule-grid__event__speakers > li {
+	margin-top: 1em;
+	@include media($mobile-up) { margin-top: 0; }
+}
+
+.schedule-grid__event__speakers > li + li {
+  margin-top: 1.5em;
+}
+
+.schedule-grid__event__logo {
+	max-width: 200px;
+	margin-top: 1em;
+}
+
+ul.list-has-bullets li {
+	background-image: url("../images/bullet.gif");
+	background-position: left 0.63em;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding-left: 1.3em;
 }

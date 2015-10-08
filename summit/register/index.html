@@ -1,0 +1,109 @@
+---
+# Custom layout for summit pages
+layout: summit-2015
+masthead-image: "/media/images/summit/2015/summit-selfie.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: "deep"
+
+# Title for the title bar, and the overline in the masthead
+title: "The Code for America Summit"
+
+# Content for the custom deep masthead
+headline: "Register for the 2015 Summit"
+
+# Metadata image
+metadata:
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/summit-social.png
+  image-url: "http://codeforamerica.org/media/images/summit/2015/summit-social.png"
+
+# jQuery
+jquery-scripts: |
+  <script>
+    (function(win,doc){
+      console.log("Loaded");
+      if (typeof(urlParams["discount"]) !== "undefined" && urlParams["discount"] !== "") {
+        console.log("IT DOES THINGS");
+        var discount_code = "&discount=" + urlParams["discount"],
+        iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
+        iframe_path = iframe_base_path + discount_code,
+        link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
+        link_path = link_base_path + discount_code;
+        document.getElementById('iframe-source').setAttribute('src', iframe_path);
+        document.getElementById('link-source').href = link_path;
+
+        // send a discount code notice
+        $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
+      }
+    })(window,document);
+  </script>
+---
+
+<style>
+  h5 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  /* We use .break to break up text on mobile vs. desktop */
+  span.break { display: block; }
+  @media screen and (min-width: 40em) {
+    span.break { display: none; }
+  }
+
+  /* On mobile, show our button to leave to eventbrite. On desktop, show our
+   * nice grid of ticket options.
+  **/
+  .eventbrite-iframe { display: none; }
+  @media screen and (min-width: 40em) {
+   .eventbrite-iframe { display: inherit; }
+   .eventbrite-link { display: none; }
+  }
+
+  /* Let's resize the iframe as the page size changes. This is tied pretty
+   * closely to the content that's in it, so it might break.
+  **/
+
+  /* small */
+                                        #iframe-source { height: 560px; margin-bottom: -180px; }
+  /* medium */
+  @media screen and (min-width: 50em) { #iframe-source { height: 520px; }  }
+  /* largest */
+  @media screen and (min-width: 60em) { #iframe-source { height: 482px; margin-bottom: -160px; }  }
+</style>
+
+<section class="layout-semibreve layout-centered">
+  <div class="layout-semibreve layout-centered">
+    <a id="register"></a>
+    <h2>There's still time. Register right now.</h2>
+    <p>The Summit has already started! <a href="/summit/">Check in on the Summit homepage</a> for details about checking in and watching our live stream. If you still need to register, please fill out the form below. If you have questions, send an email to <a href="mailto:summit@codeforamerica.org?Subject=2015%20CfA%20Summit" target="_blank">summit@codeforamerica.org</a>.</p>
+    <div id="discount-alert-target"></div>
+    <div class="eventbrite-iframe">
+      <iframe id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
+    <div class="eventbrite-link">
+      <a id="link-source" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink" class="button button-lg button-bold">Buy your ticket now</a>
+    </div>
+  </div>
+</section>
+
+<section class="layout-semibreve layout-centered">
+  <a id="venue"></a>
+  <h2>Venue &amp; Travel</h2>
+  <p>The official Summit host hotel, the Oakland Marriott City Center, is <strong>sold out</strong>. So are many Downtown Oakland hotels. Here are some great options for finding a convenient place to stay:</p>
+  <div class="layout-minim-staccato">
+    <img src="/media/images/summit/2015/lake.jpg" />
+    <h5>Stay in an Airbnb, be oh-so-close</h5>
+    <p>Live like a local stay near the Summit action. Explore the hundreds of options available in Downtown Oakland or nearby neighborhoods on Airbnb.</p>
+    <p><a href="https://www.airbnb.com/s/Oakland--CA--United-States?guests=&checkin=09%2F30%2F2015&checkout=10%2F03%2F2015">Find your Airbnb</a></p>
+  </div>
+  <div class="layout-minim-staccato">
+    <img src="/media/images/summit/2015/BART.jpg" />
+    <h5>Stay in SF, take the train</h5>
+    <p>Good news! Hotels in Downtown San Francisco are just minutes away from the Summit hotel by BART, the Bay Area's regional train service. Snag a great room now:</p>
+    <p><a href="https://www.google.com/search?q=hotels%20san%20francisco&rflfq=1&tbm=lcl&hotel_dates=2015-09-30%2C2015-10-03&rlfi=hd%3A2015-09-30%2C2015-10-03%3Bsi%3A&rct=j">Find your hotel</a></p>
+  </div>
+  </ul>
+</section>

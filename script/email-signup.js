@@ -1,17 +1,50 @@
-/**
+	/**
 *
 * email-signup.js
 * This JS helps our newsletter email signup, which is now in the footer on every page. It relies in jQuery.
 *
 **/
 
-var showModal = function(submittedEmail) {
+var hasAttr = function(elem,attrib) {
+	if (typeof($(elem).attr(attrib)) !== "undefined" && $(elem).attr(attrib) !== "") {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+var showModal = function(submittedEmail,elem) {
 	// If the body has a modal class, we've already shown the modal
 	if (isModalVisible()) {
 		return;
 	}
 	if (typeof submittedEmail !== "undefined" && submittedEmail !== "") {
 		document.forms['email-signup-data-form']['mce-EMAIL'].value = submittedEmail;
+	}
+	// If there's an elem, they clicked a button ... check it to do things
+	if (typeof(elem) !== "undefined" && elem !== "") {
+		// Do they want a custom headline?
+		if (hasAttr(elem,'data-email-headline') ) {
+			$('#js-modal-headline').text($(elem).attr('data-email-headline'));
+		}
+		// Do they want a custom description?
+		if (hasAttr(elem,'data-email-description') ) {
+			$('#js-modal-description').text($(elem).attr('data-email-description'));
+		}
+		// Do they want to show a specific checkbox and hide all others?
+		if (hasAttr(elem,'data-email-only-show-group') ) {
+			var theClass = '.js-' + $(elem).attr('data-email-only-show-group') + '-checkbox';
+			if ($(theClass).hasClass('hidden')) {
+				$(theClass).toggleClass('hidden');
+				$(theClass).find('input').prop('checked',true);
+			}
+			$.each($('.js-email-default-option'), function(index,option){
+				if (!$(option).hasClass('hidden')) {
+					$(option).addClass('hidden');
+				}
+			});
+		}
 	}
 	// Scroll up to the top
 	$("html, body").animate({ scrollTop: 0 }, "slow");
@@ -40,7 +73,7 @@ var submitForm = function(data) {
         cache       : false,
         dataType    : 'jsonp',
         contentType: "application/json-p; charset=utf-8",
-        error       : function(err) { 
+        error       : function(err) {
         	console.log("Could not connect to the registration server. Please try again later.");
             var error = '<strong>There was a problem connecting to the server:</strong><br />' + err.msg;
             $(button).removeClass('button-progress');
@@ -76,7 +109,7 @@ var isModalVisible = function() {
 $(document).keyup(function(e) {
 	// When the escape key is pressed and the modal is visible, hide the modal
 	if (isModalVisible()) {
-		if (e.keyCode == 27) { 
+		if (e.keyCode == 27) {
 			hideModal();
 		}
 	}
@@ -97,7 +130,7 @@ $(document).ready(function() {
 
   // When a signup button is pressed, show the modal
   $('.js-modal-show').click(function(e){
-    showModal();
+		showModal('',this);
     e.preventDefault();
     // Push a pageview so we can track our funnel
     ga('send', 'pageview', '/open_email_signup_form-frombutton');
@@ -113,8 +146,9 @@ $(document).ready(function() {
 	// When the modal is visible and the user clicks anywhere else on the page, close it
 	$(document).on('click', function(e) {
     // If the user is trying to show the modal, show it, don't hide it
-    if ($(e.target).hasClass("js-modal-show")) {
-      showModal();
+    // if ($(e.target).hasClass("js-modal-show")) {
+		if (hasAttr(e.target,'data-email-signup-button')) {
+      showModal('',e.target);
       e.preventDefault();
       return;
     }

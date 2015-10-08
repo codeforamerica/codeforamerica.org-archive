@@ -1,27 +1,3 @@
-{% comment %} Required speaker variables {% endcomment %}
-{% assign speaker-key       = 'rebecca-coelius' %}
-{% assign speaker-name      = 'Rebecca Coelius' %}
-{% assign speaker-bio       = 'Rebecca Coelius uses her background in medicine, govenrment, and technology to improve the enrollment, usability, and delivery of health and human services as Director of the Health Focus Area. Prior to joining CfA, Rebecca led and founded inititiaves for better policy and technology to access medical records, and government support for new health technology companies as the Medical Officer for Innovation at Health and Human Services.  <!-- break -->She has worked for and continues to advise digital health start up companies including Hint Health, Health Loop, Doximity, and Medivo, Founded and served as Executive Director of the non profit for social entrepreneurship SpanAfrica, researched and implemented NASA-inspired technology to decrease maternal mortality, and studied global health policy and its impact on women&rsquo;s health and economic vitality as a Fulbright Scholar in India. Rebecca received her Medical Degree from the University of California - San Francisco School of Medicine.' %}
-{% assign speaker-short-bio = 'Rebecca is a doctor and social entrepreneur helping government, non profits, and healthcare systems embed a little more health and dignity into our digital service delivery and the lived environment of our communities.' %}
-{% assign speaker-title     = 'Director of Health, Code for America' %}
-{% assign speaker-topics    = 'focus-health\Health and Human Services|diversity-women\Diversity and Women in Technology|' | split: "|" %}
-{% comment %}{% capture embed %}<iframe src="https://www.youtube.com/watch?v=VwoY6EbSnRc" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
-{% assign speaker-vid-title = 'Deepening Impact in Health' %}
-{% assign speaker-vid-desc  = 'Code for America&rsquo;s Director of Health explains why local governments impact and responsibility for health reaches far beyond the local Health Department.' %}
-{% assign speaker-vid-date  = 'September 24, 2014' %}
-{% assign speaker-vid-loc   = 'San Francisco, CA' %}
-{% assign speaker-vid-group = 'Code for America Summit' %}
-{% comment %} Optional speaker variables {% endcomment %}
-{% assign speaker-twitter   = 'rebeccacoelius' %}
-{% assign speaker-linkedin  = 'rebeccacoelius' %}
-{% assign speaker-blogposts = false %}
-{% assign speaker-github    = 'RebeccaCoelius' %}
-{% assign speaker-playlist  = false %}
-{% assign speaker-quote     = false %}
-{% comment %}{% assign speaker-events    = 'Liberating Data, Spurring Innovation, and Empowering Patients, New York Times Health for Tomorrow\May 28, 2014 in San Francisco, CA|Scaling up Innovation, Creating a Formal Pathway to Clinical Partnership\May. 21, 2013 in San Francisco, CA' | split: '|' %}{% endcomment %}
-{% assign speaker-similar   = 'jacob-solomon|lane-becker' | split: '|' %}
-{% comment %} End variables {% endcomment %}
-
 {% if include.context == 'people-page' %}
 
 <div class="layout-semibreve h-card">
@@ -31,11 +7,10 @@
 	</div>
 
 	<div class="layout-minor">
-		<p>Director of Health</p>
+		<p>Former Director of Health</p>
 	    <h4 class="text-whisper layout-tight">Member of</h4>
 	    <ul class="list-no-bullets text-whisper link-invert">
-	    	<li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
-
+	    	<li><a href="{{ include.base }}/about/team/#staff">Former Staff</a></li>
 	    </ul>
 
 		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/rebecca-coelius.jpg" />
@@ -66,7 +41,7 @@
     <h3 class="p-name profile-name">Rebecca Coelius</h3><img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/rebecca-coelius.jpg">
 
     <div class="p-note profile-note">
-        <p>Director of Health</p>
+        <p>Former Director of Health</p>
 
         <p>Rebecca Coelius is a doctor using her background in clinical medicine, policy-making, and social entrepreneurship to advance the health of individuals and cities through the Code for America Health Practice. Prior to  joining CfA, Rebecca worked for the...
 </p>
@@ -75,18 +50,10 @@
 
         <ul class="list-social list-social-horizontal">
             <li class="social-linkedin"><a href="http://www.linkedin.com/in/rebeccacoelius">LinkedIn</a></li>
-        
+
             <li class="social-twitter"><a href="https://twitter.com/rebeccacoelius">Twitter</a></li>
         </ul>
     </div>
 </div>
-
-{% elsif include.context == 'speaker-page' %}
-
-  {% include speakers/speaker-page.html base="../.." %}
-
-{% elsif include.context == 'speaker-card' %}
-
-  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
