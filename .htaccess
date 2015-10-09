@@ -353,6 +353,11 @@ RedirectMatch permanent ^/companies/incubator-apply/?$ /companies/incubator-acce
 # Redirect AuntBertha to our Incubator/Accelerator page
 RedirectMatch permanent ^/apps/aunt-bertha/?$ /companies/incubator-accelerator/#aunt-bertha
 
+# Redirect to the right link for procurement. This was on the mainstage at 2015 Summit, so it should
+# stay around in the future in case someone watches a recap video.
+
+RedirectMatch permanent ^/playbooks/technology-playbook/?$ /playbooks/technology-procurement/background/
+
 #
 # Set of possible Jekyll file extensions + PHP, from
 # https://github.com/jekyll/jekyll/blob/dd3018ce/lib/jekyll/configuration.rb#L39

@@ -115,19 +115,24 @@ p.quiet {
 .masthead-nav ul li a {
   position: relative;
   padding: 5px 10px;
-  color: white;
+  color: #6D6E71;
   text-transform: uppercase;
+	font-weight: normal;
 
-  border: 2px solid white;
+  border: 2px solid #6D6E71;
   border-radius: 2px;
   font-size: 0.9em;
 
   &:hover {
-    background: #fedd44;
-    border-color: #fedd44;
-    color: black;
+    background: #7ab5d6;
+    border-color: #7ab5d6;
+    color: #6D6E71;
     text-shadow: none;
   }
+}
+
+.masthead-nav ul li a.active {
+  border-color: #7ab5d6;
 }
 
 @media screen and (max-width: 1145px) {
@@ -147,12 +152,12 @@ p.quiet {
   }
 }
 
-.masthead-nav ul li a.active {
-  border-color: #fedd44;
+// tighten up space at the top
+.summit-header.layout-breve {
+	padding-top: 0;
 }
 
 // the logo -- unstyled
-
 .masthead-nav ul li a.logo-unstyled {
   position: relative;
   padding: 0;
@@ -170,13 +175,60 @@ p.quiet {
 }
 
 // the logo
-
 .masthead-nav ul li.masthead-nav-logo {
   width: 300px;
   // reset the margin-top on all .masthead-nav li's
   margin-top: 0;
   // more margin after the logo
   margin-right: 20px;
+}
+
+// No margin below these
+.masthead-nav, .masthead-nav ul.list-no-bullets {
+	margin-bottom: 0;
+}
+
+// The date/location under the logo
+.summit-when {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	font-size: 0.8em;
+	@include media($mobile-up) { font-size: 0.85em; }
+	color: #6D6E71;
+	i { display: none; }
+	@include media($mobile-up) { i { display: inline; } }
+}
+
+// Overhead info on the page
+.summit-overhead {
+	text-transform: uppercase;
+	color: #6D6E71;
+	margin-top: 2em;
+	margin-bottom: 0;
+
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-top: 0.5em;
+	&:before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: #6D6E71;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.summit-secondary {
+	font-size: 0.85em;
+	margin-top: 0;
+	color: #6D6E71;
+	a {
+		color: #6D6E71;
+		text-decoration: underline;
+		&:hover { text-decoration: none; }
+	}
 }
 
 // =====
@@ -226,6 +278,21 @@ p.masthead-content-description {
     font-size: 14px;
     line-height: 25px;
   }
+}
+
+// =====
+// .summit-page-header
+// The header at the top of each Summit page.
+// =====
+
+.summit-page-header {
+	max-width: 60em;
+
+	.summit-page-title {
+		margin-top: 1rem;
+		@include media($mobile-up) { margin-top: 2rem; }
+		text-transform: none;
+	}
 }
 
 // =====
@@ -394,4 +461,17 @@ p.masthead-content-description {
 
 .schedule-grid__event__speakers > li + li {
   margin-top: 1.5em;
+}
+
+.schedule-grid__event__logo {
+	max-width: 200px;
+	margin-top: 1em;
+}
+
+ul.list-has-bullets li {
+	background-image: url("../images/bullet.gif");
+	background-position: left 0.63em;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding-left: 1.3em;
 }

@@ -2,6 +2,8 @@
 # Custom layout for summit pages
 layout: summit-2015
 masthead-image: "/media/images/summit/2015/summit-selfie.jpg"
+summit-body-class: "summit-2015-home"
+summit-hide-header: true
 
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
@@ -13,7 +15,7 @@ title: "The Code for America Summit"
 
 # Content for the custom deep masthead
 headline: "Transforming Government for the 21st Century"
-description: "September 30 - October 2, Oakland, California: The #CfASummit is a roll-up-your-sleeves conference that brings together innovators from hundreds of governments across the U.S. along with civic-minded technologists, designers, community organizers, and entrepreneurs."
+description: "The #CfASummit is a roll-up-your-sleeves conference that brings together innovators from hundreds of governments across the U.S. along with civic-minded technologists, designers, community organizers, and entrepreneurs. The 2015 #CfASummit is over, but you can dive into videos, recaps and moments below."
 
 # Metadata image
 metadata:
@@ -22,122 +24,115 @@ metadata:
 
 # jQuery
 jquery-scripts: |
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
   <script>
+    /* Retrieve the URL param for a discount code and supply it to our Eventbrite iFrame */
     (function(win,doc){
       console.log("Loaded");
       if (typeof(urlParams["discount"]) !== "undefined" && urlParams["discount"] !== "") {
-        console.log("IT DOES THINGS");
-        var discount_code = "&discount=" + urlParams["discount"],
-        iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
-        iframe_path = iframe_base_path + discount_code,
-        link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
-        link_path = link_base_path + discount_code;
-        document.getElementById('iframe-source').setAttribute('src', iframe_path);
-        document.getElementById('link-source').href = link_path;
-
-        // send a discount code notice
-        $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
+        // console.log("IT DOES THINGS");
+        // var discount_code = "&discount=" + urlParams["discount"],
+        // iframe_base_path = "//eventbrite.com/tickets-external?eid=15674802757&ref=etckt",
+        // iframe_path = iframe_base_path + discount_code,
+        // link_base_path = "https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink",
+        // link_path = link_base_path + discount_code;
+        // document.getElementById('iframe-source').setAttribute('src', iframe_path);
+        // document.getElementById('link-source').href = link_path;
+        //
+        // // send a discount code notice
+        // $('#discount-alert-target').html( '<div class="alert"><p>The discount code <strong>'+ urlParams["discount"] +'</strong> has been automatically applied to your purchase.</p></div>' );
+        alert('Registration is now closed. If you have any questions, please reach out to us by email at summit@codeforamerica.org.')
       }
     })(window,document);
+    /* Dynamically resive our YouTube videos */
+    $(document).ready(function(){
+      $('.js-fit-vids').fitVids();
+    });
   </script>
+  <!-- Load for the embedded tweets -->
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
-
 <style>
   h5 {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-
-  /* We use .break to break up text on mobile vs. desktop */
-  span.break { display: block; }
-  @media screen and (min-width: 40em) {
-    span.break { display: none; }
-  }
-
-  /* On mobile, show our button to leave to eventbrite. On desktop, show our
-   * nice grid of ticket options.
-  **/
-  .eventbrite-iframe { display: none; }
-  @media screen and (min-width: 40em) {
-   .eventbrite-iframe { display: inherit; }
-   .eventbrite-link { display: none; }
-  }
-
-  /* Let's resize the iframe as the page size changes. This is tied pretty
-   * closely to the content that's in it, so it might break.
-  **/
-
-  /* small */
-                                        #iframe-source { height: 560px; margin-bottom: -180px; }
-  /* medium */
-  @media screen and (min-width: 50em) { #iframe-source { height: 520px; }  }
-  /* largest */
-  @media screen and (min-width: 60em) { #iframe-source { height: 482px; margin-bottom: -160px; }  }
 </style>
 
-<section class="layout-semibreve layout-centered">
-  <h2 id="announcement">Join us at the 2015 Summit</h2>
-  <p class="when"><strong><i class="icon-calendar"></i>When:</strong> September 30 - October 2  &nbsp;&nbsp;&nbsp;<span class="break"></span>  <strong><i class="icon-location"></i>Where:</strong> Oakland Marriott City Center</p>
-  <!-- <p>The 2015 Code for America will kick-off September 30 in Oakland, California. For three days, more than 1,300 government leaders, technologists, and community members will work together and share ideas about transforming government for the 21st Century.</p> -->
-
-  <div class="layout-semibreve layout-centered">
-    <a id="register"></a>
-    <h2><i class="icon-checkmark"></i>Register today</h2>
-    <p>Secure your spot for the biggest, and most action-packed, Summit yet. Questions about registration? Discount code not working? Want to apply for a discounted ticket? Email <a href="mailto:summit@codeforamerica.org?Subject=2015%20CfA%20Summit" target="_blank">summit@codeforamerica.org</a></p>
-    <div id="discount-alert-target"></div>
-    <div class="eventbrite-iframe">
-      <iframe id="iframe-source" src="//eventbrite.com/tickets-external?eid=15674802757&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-    </div>
-    <div class="eventbrite-link">
-      <a id="link-source" href="https://www.eventbrite.com/e/the-2015-code-for-america-summit-registration-15674802757?ref=elink" class="button button-lg button-bold">Buy your ticket now</a>
-    </div>
-  </div>
-
-  <!--
-  <div class="layout-crotchet">
-    <h5><i class="icon-bullhorn"></i> Speakers on tap</h5>
-    <p class="quiet">Hear from leaders inside and outside of government who are building 21st Century government.</p>
-    <p><a href="/summit/speakers" class="button button-bold">See the lineup</a></p>
-  </div>
-
-  <div class="layout-crotchet">
-    <h5><i class="icon-alarm"></i> Schedule</h5>
-    <p class="quiet">The Summit is three days of action-packed content, featuring passionate people who are transforming government.</p>
-    <p><a href="/summit/schedule" class="button button-bold">See the schedule</a></p>
-  </div>
-  -->
-
-</section>
-
-<section class="layout-semibreve layout-centered">
-  <a id="venue"></a>
-  <h2>Venue &amp; Travel</h2>
-  <p>The official Summit host hotel, the Oakland Marriott City Center, is <strong>sold out</strong>. So are many Downtown Oakland hotels. Here are some great options for finding a convenient place to stay:</p>
-  <div class="layout-minim-staccato">
-    <img src="/media/images/summit/2015/lake.jpg" />
-    <h5>Stay in an Airbnb, be oh-so-close</h5>
-    <p>Live like a local stay near the Summit action. Explore the hundreds of options available in Downtown Oakland or nearby neighborhoods on Airbnb.</p>
-    <p><a href="https://www.airbnb.com/s/Oakland--CA--United-States?guests=&checkin=09%2F30%2F2015&checkout=10%2F03%2F2015">Find your Airbnb</a></p>
-  </div>
-  <div class="layout-minim-staccato">
-    <img src="/media/images/summit/2015/BART.jpg" />
-    <h5>Stay in SF, take the train</h5>
-    <p>Good news! Hotels in Downtown San Francisco are just minutes away from the Summit hotel by BART, the Bay Area's regional train service. Snag a great room now:</p>
-    <p><a href="https://www.google.com/search?q=hotels%20san%20francisco&rflfq=1&tbm=lcl&hotel_dates=2015-09-30%2C2015-10-03&rlfi=hd%3A2015-09-30%2C2015-10-03%3Bsi%3A&rct=j">Find your hotel</a></p>
-  </div>
+<section class="layout-breve">
+  <h2>Watch the videos</h2>
+  <p>All the 2015 Code for America Summit main stage talks are streaming now. Dive into some highlighted talks below, or <a href="/summit/videos/">browse all the talks</a>.</p>
+  <ul class="list-no-bullets layout-grid-crotchet js-fit-vids">
+    <li>
+      <iframe src="https://www.youtube.com/embed/lqTFi2U2Ebc" frameborder="0" allowfullscreen></iframe>
+      <p><strong>Jake Solomon &ndash; Defining a 21st Century Government</strong></p>
+      <p>The Code for America Health team is taking a user-centered approach to understanding bottlenecks in the CalFresh (food stamps) enrollment process and identifying high priority areas for improvement — with implications for underlying policy and process.</p>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/rcmYwcTItds" frameborder="0" allowfullscreen></iframe>
+      <p><strong>Sam Vaughn &ndash; A New Standard for Community Engagement</strong></p>
+      <p>Sam Vaughn, Neighborhood Change Agent, Office of Neighborhood Safety, City of Richmond, CA, describes how his team is meeting community members where they are and creating lasting impact in safety and justice with the Operation Peacemaker Fellowship.</p>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/R4MNQenjB2Q" frameborder="0" allowfullscreen></iframe>
+      <p><strong>Dana Chisnell &ndash; Next Generation of Civic Designers</strong></p>
+      <p>Dana Chisnell, User Researcher at the United States Digital Service, spotlights how public servants are civic designers in their own right, and the importance of shifting the conversation from "how do we get government to learn about design" to "how do we use design to solve problems."</p>
+    </li>
   </ul>
+  <p class="layout-centered"><a href="/summit/videos/" class="button button-l button-bold">Browse all the videos</a></p>
 </section>
 
+<section class="layout-breve">
+  <h2>Read the recaps</h2>
+  <p>Check out these in-depth recaps of the important themes and moments from each day of the 2015 #CfASummit.</p>
+  <ul class="list-no-bullets layout-grid-crotchet">
+    <li>
+      <img src="http://www.codeforamerica.org/blog/wp-content/uploads/2015/10/summit.jpg" alt="A crowd of Summit attendees in their seats.">
+      <p><strong>Day 1 Takeaways:</strong> Transforming government for the 21st century encodes our values. It doesn’t just change tools, but it fundamentally changes how we work.</p>
+      <p><a href="http://www.codeforamerica.org/blog/2015/09/30/cfasummit-day-1-from-the-main-stage/">Read the Day 1 Recap</a></p>
+    </li>
+    <li>
+      <img src="/media/images/summit/2015/photos/will.jpg" alt="William Lightbourne, Director, California Department of Social Services speaking on stage at the Summit.">
+      <p><strong>Day 2 Takeaways:</strong> This work matters to our communities. We aren’t just opening and using data for the sake of data&mdash;it’s to serve people and to deliver better services.</p>
+      <p><a href="http://www.codeforamerica.org/blog/2015/10/01/cfasummit-day-2-from-the-main-stage/">Read the Day 2 Recap</a></p>
+    </li>
+    <li>
+      <img src="http://www.codeforamerica.org/blog/wp-content/uploads/2015/10/10-2-15-code-for-america-AM-drew-bird-photo-0063.jpg" alt="Kellan Elliot McCrea, Chief Technology Officer, Etsy speaking on stage at the Summit.">
+      <p><strong>Day 3 Takeaways:</strong> Governments are diverse because they reflect the communities they serve. We embed honor this diversity by delivering user-centered services for the people.</p>
+      <p><a href="http://www.codeforamerica.org/blog/2015/10/02/cfa-summit-day-3-from-the-main-stage/">Read the Day 3 Recap</a></p>
+    </li>
+  </ul>
+  <p class="layout-centered"><a href="/blog/" class="button button-l button-bold">Read more posts on our blog</a></p>
+</section>
+
+<section class="layout-breve">
+  <h2>Tweetable moments</h2>
+  <p>Share these thought-provoking quotes from the Summit mainstage. <a href="https://twitter.com/search?q=%23cfasummit">Scroll back through the #CfASummit hashtag</a> for more moments.</p>
+  <ul class="list-no-bullets layout-grid-crotchet">
+    <li>
+      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;Starting w/ users isn’t just how we shld be making tech, it’s how we shld be making govt&quot; - <a href="https://twitter.com/pahlkadot">@pahlkadot</a> at <a href="https://twitter.com/hashtag/cfasummit?src=hash">#cfasummit</a> <a href="http://t.co/OtwVJGREKO">pic.twitter.com/OtwVJGREKO</a></p>&mdash; Code for America (@codeforamerica) <a href="https://twitter.com/codeforamerica/status/649369433677262852">September 30, 2015</a></blockquote>
+    </li>
+    <li>
+      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">“Can we use power of data as a tool of transparency and accountability?” <a href="https://twitter.com/TiffiAndrews">@TiffiAndrews</a> <a href="https://twitter.com/hashtag/Indianapolis?src=hash">#Indianapolis</a> <a href="https://twitter.com/hashtag/CfASummit?src=hash">#CfASummit</a> <a href="https://t.co/eCRB8I2o9V">pic.twitter.com/eCRB8I2o9V</a></p>&mdash; Code for America (@codeforamerica) <a href="https://twitter.com/codeforamerica/status/649653950874947584">October 1, 2015</a></blockquote>
+    </li>
+    <li>
+      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;It&#39;s not about tech, it&#39;s about people&quot; - Oakland Mayor <a href="https://twitter.com/LibbySchaaf">@LibbySchaaf</a> talks about equitable digital gov at <a href="https://twitter.com/hashtag/cfasummit?src=hash">#cfasummit</a> <a href="http://t.co/k4xdAouToz">pic.twitter.com/k4xdAouToz</a></p>&mdash; Code for America (@codeforamerica) <a href="https://twitter.com/codeforamerica/status/649373170940661760">October 1, 2015</a></blockquote>
+    </li>
+  </ul>
+  <p class="layout-centered"><a href="https://twitter.com/search?q=%23cfasummit" class="button button-l button-bold">Find more Tweetable moments</a></p>
+</section>
+
+<!-- SUPPORTERS -->
 <section class="layout-semibreve layout-centered">
   <ul class="list-logos-primary muted">
-    <h4>Capstone Supporters</h4>
+    <h4>2015 Capstone Supporters</h4>
     {% for capstone in site.data.summit_supporters.capstone %}
       <li><a href="{{ capstone.link }}"><img src="{{ capstone.logo }}"/></a></li>
     {% endfor %}
   </ul>
 
   <ul class="list-logos-secondary muted">
-    <h4>Platinum Supporters</h4>
+    <h4>2015 Platinum Supporters</h4>
     {% for platinum in site.data.summit_supporters.platinum %}
       <li><a href="{{ platinum.link }}"><img src="{{ platinum.logo }}"/></a></li>
     {% endfor %}
