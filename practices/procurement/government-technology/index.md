@@ -4,11 +4,11 @@ title: Principles for Government Technology
 status: beta
 last-updated: April 13, 2015. These will be updated as we learn. Please help us by providing <a href="/governments/practices/procurement/government-technology/feedback.html" target="_blank">feedback</a>
 masthead-image: "/media/images/cities_fellowship_faq/citiesfaqheader.jpg"
-nav_tier1_active: "governments"
+nav_tier1_active: "practices"
 nav-breadcrumbs:
- - Governments: "/cities"
- - Practices of 21st Century Government: "/governments/practices/"
- - Procurement: "/governments/practices/procurement"
+  - Practices of 21st Century Government: "/practices"
+  - Choose the Right Technology: "/practices/procurement"
+  - Government Technology: "/practices/procurement/government-technology"
 ---
 
 
