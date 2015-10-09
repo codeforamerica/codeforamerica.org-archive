@@ -119,7 +119,6 @@ class TestApache (unittest.TestCase):
                  ('/alex-pandel', '/people/alex-pandel/'),
                  ('/alex-yule', '/people/alex-yule/'),
                  ('/cities', '/governments/'),
-                 ('/cities/2015-partners', '/governments/2015-partners/'),
                  ('/codeacross-2014', '/events/codeacross-2014/'),
                  ('/codeacross', '/events/codeacross-2015/'),
                  ('/02-18-2014', '/peer-network-training/02-18-2014/'),
