@@ -313,9 +313,9 @@ RedirectMatch permanent ^/zach-williams(/?)$ /people/zach-williams$1
 #
 # Focus Areas and Initiatives (Short Links)
 #
-RedirectMatch permanent ^/health/?$ /our-work/focus-areas/health/
-RedirectMatch permanent ^/safety-justice/?$ /our-work/focus-areas/safety-justice/
-RedirectMatch permanent ^/economic-development/?$ /our-work/focus-areas/economic-development/
+RedirectMatch permanent ^/health/?$ /focus/health/
+RedirectMatch permanent ^/safety-justice/?$ /focus/safety-justice/
+RedirectMatch permanent ^/economic-development/?$ /focus/economic-development/
 
 #
 # Random crap.
