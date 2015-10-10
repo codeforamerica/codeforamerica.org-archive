@@ -1,10 +1,12 @@
 ---
 layout: default
 title: "CalFresh"
-masthead-image: "/media/images/href="/focus-areas/cover.jpg"
+masthead-image: "/media/images/focus-areas/cover.jpg"
 nav_tier1_active: "our-work"
 nav-breadcrumbs:
- - "Initiatives": "/our-work/href="/focus-areas"
+  - Where We Focus: "/focus"
+  - "Health &amp; Human Services": "/focus/health"
+  - CalFresh: "/focus/health/calfresh"
 helpers:
   email_signup:
     headline: "I'm interested in Health"
@@ -12,23 +14,13 @@ helpers:
     join_message: "Get updates on our Health work. Join our email list."
     show_group: "health"
 ---
-<nav class="nav-breadcrumbs" role="navigation">
-    <!--ul>
-    
-        <li><a href="/home">Home</a></li>
-        <li><a href="/our-work">Our Work</a></li>
-        <li><a href="/our-work/initiatives">Initiatives</a></li>
-    
-    </ul-->
-    
-    </nav>
-
 <section class="layout-semibreve">
+  {% include nav-breadcrumbs.html %}
   <h2>About CalFresh</h2>
   <div class="layout-minim">
     <p>GetCalFresh.org is an easy to use mobile-friendly website that lets people apply for CalFresh in 10 minutes. In California around 40% of people eligible for CalFresh, the Supplemental Nutrition Assistance Program (SNAP), aren't receiving benefits. This is the second worst participation rate in the country. While there are many barriers to receiving CalFresh, one of the biggest is that it’s difficult to enroll. GetCalFresh.org provides customer support and makes the enrollment process simpler. GetCalFresh.org currently works with 9 California counties, and has been used by over 1000 people.</p>
-  </div> 
-  
+  </div>
+
   <div class="layout-minim">
    <iframe width="560" height="315" src="https://www.youtube.com/embed/yViYA8IG36U" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -53,7 +45,7 @@ helpers:
 </div>
 <div class="layout-minim">
 	<a href="https://www.getcalfresh.org/" />
-    <img src="/media/images/href="/focus-areas/calfresh-landingpage.jpg" alt>
+    <img src="/media/images/focus-areas/calfresh-landingpage.jpg" alt>
     </a>
 </div>
 
