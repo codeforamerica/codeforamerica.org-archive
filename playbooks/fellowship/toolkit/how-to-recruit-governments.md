@@ -20,12 +20,12 @@ We use the following criteria to determine which cities applying to the Fellowsh
 
  - Strong leadership and support for the program
  - Internal sponsorship by key people in and outside of the department fellows would partner with
- - A potential for impact and general project scope that aligns with our [focus areas](/our-work/focus-areas/)
+ - A potential for impact and general project scope that aligns with our [focus areas](/focus/)
  - Confirmed or promised budget (these normally include prospective matching funds)
  - A clear understanding of Code for America's approach
  - Demonstrated interest and evidence for improving digital services in tangible ways
- 
- 
+
+
 ## Laying the Groundwork for Good Government Partners
 
 Government officials may not be familiar with the working style of Code for America fellows (agile methodologies, etc). Explaining these and concepts like “emergent outcomes” are important first steps. Another key component is supporting interested government officials in their own work “selling up or selling down,” helping them approach government officials who may be higher or lower in their city’s hierarchy. The fellowship team helps government officials do this mainly by giving them experience and coaching them on how the fellowship can have a positive impact. They provide them with stories, data points, and other information from previous successful projects (such as press clippings, stories about impact). Specifically, they choose a couple of officials within government who can be an internal evangelist of Code for America and the program and give them examples of past projects that are most relevant to their own situation.
@@ -52,9 +52,9 @@ Established tech executives in your community can be helpful in facilitating int
 
 Middle managers typically from the government IT Department, like an IT Manager, or from the larger government bureaucracy, like a Policy Manager) are crucial to government programs. In our experience it’s sometimes hard for them to envision how the Fellowship program could be useful for their work. These officials have frequently been charged with safekeeping data and preserving processes which can seem in direct contrast with the Fellowship program. Generally, staff from the government IT department are resource-constrained so they initially see the only value in collaborating with the Fellowship program being an opportunity for their team to contribute to executing something specific and meaningful. The emphasis on cultivating and nurturing “emergent outcomes” that comes out of the Fellowship program is difficult to sell to this constituency. Many times higher level officials have been helpful to us in getting mid-level managers on board.Here are some tips for pitching the Fellowship program to middle-management government officials (a lot of these strategies are helpful for more senior government officials too):
 
-#### Frame the opportunity 
+#### Frame the opportunity
 
-In CfA’s early days we made the mistake of presenting the program as CfA fellows “fixing government.” The Fellowship program should always be presented as a partnership between two groups that are passionate about public service and want to make a difference in their communities. The emphasis on collaboration and participatory processes should be established at the very beginning. 
+In CfA’s early days we made the mistake of presenting the program as CfA fellows “fixing government.” The Fellowship program should always be presented as a partnership between two groups that are passionate about public service and want to make a difference in their communities. The emphasis on collaboration and participatory processes should be established at the very beginning.
 
 #### Give concrete examples
 
@@ -76,7 +76,7 @@ Target outreach efforts to Innovation Officers, Chief Data Officers, and Chief D
 
 For example, see if your community has a local <a href="http://www.codeforamerica.org/brigade/">Brigade</a> chapter. They can connect you with officials and help alleviate concerns about longterm sustainability of the project.
 
-#### Avoid jargon, buzzwords and clichés 
+#### Avoid jargon, buzzwords and clichés
 
 When you approach people in government about a fellowship program, it’s important to be mindful of the language you use. If you have a technology background, don’t make any assumptions about a government official’s degree of technical expertise. Avoid using terms such as open source, GitHub issues, API, prototyping, agile development and other “jargon” unless you take the time to explain the meaning. These terms are commonplace in the technology world but are mostly foreign to government workers. Using tech-heavy terminology can be isolating, patronizing and, most importantly, derail the potential for collaboration.
 
