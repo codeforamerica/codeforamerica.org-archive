@@ -1,6 +1,6 @@
 ---
 layout: principles-standard
-title: Principles for Government Technology
+title: Practices for Government Technology
 status: beta
 last-updated: April 13, 2015. These will be updated as we learn. Please help us by providing <a href="/governments/practices/procurement/government-technology/feedback.html" target="_blank">feedback</a>
 masthead-image: "/media/images/cities_fellowship_faq/citiesfaqheader.jpg"
@@ -12,13 +12,13 @@ nav-breadcrumbs:
 ---
 
 
-One of our [principles for 21st Century Government](/governments/principles/ "Principles for 21st Century Government") is [use the right technology for the job](/governments/principles/#procurement "Use the right technology for the job"). This principle sits where government and vendors meet.
+One of our [Practices for 21st Century Government](/governments/practices/ "Practices for 21st Century Government") is [use the right technology for the job](/governments/practices/#procurement "Use the right technology for the job"). This practice sits where government and vendors meet.
 
 Government technology is at an important point: the number and quality of vendors is increasing, and government interest in digital technology that works is rising. There is an unmet opportunity to move the market towards government technology that works in the 21st century.
 
 And while government purchasing is highly regulated to deliver accountability, value for money, fairness, security and transparency, it’s clear that these aims are not always met. Sometimes, technology is delivered that is not fit for purpose.
 
-Listed below are seven principles that promote good digital products and practices in government technology. We’ve based these principles on how successful governments, vendors and products work together to deliver 21st Century Government.
+Listed below are seven practices that promote good digital products and practices in government technology. We’ve based these practices on how successful governments, vendors and products work together to deliver 21st Century Government.
 
 ### 1. Design for and with people
 
