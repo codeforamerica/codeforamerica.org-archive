@@ -2,15 +2,17 @@
 layout: default
 title: Support Us
 masthead-image: "../media/images/donate/donate_header.jpg"
+# Navigation
+nav_tier1_active: "join"
 nav-breadcrumbs:
- - Donate: "/support-us"
+  - What You Can Do: "/join"
+  - Fund Our Work: "/support-us"
 ---
 
         <section>
-            <div class="layout-semibreve">
-                <div class="layout-centered">
-                    <h2 class="h3">Help us build government for the people, by the people, for the 21st century.</h2>
-                </div>
+            <div class="layout-semibreve layout-tight">
+              {% include nav-breadcrumbs.html %}
+              <h2 class="h3">Help us build government for the people, by the people, for the 21st century.</h2>
             </div>
         </section>
 

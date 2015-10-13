@@ -2,6 +2,12 @@
 layout: default
 masthead-image: "/media/images/about_fellowship/16270929958_f1498d22c2_z.jpg"
 
+# Navigation
+nav_tier1_active: "join"
+nav-breadcrumbs:
+  - What You Can Do: "/join"
+  - Be a Government Partner: "/governments/fellowship"
+
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
 nav-global-primary: "no"
@@ -20,6 +26,7 @@ description: The Fellowship Program pairs teams of technologists with local gove
     <p>Applications for the 2016 fellowship partnership are now closed. Contact Luke Norris, Director of Government Relations, to discuss the 2017 fellowship program: luke[at]codeforamerica.org or call 816-200-8925.</p>
   </div>
   <br />
+  {% include nav-breadcrumbs.html %}
   <h2>About the Fellowship</h2>
   <div class="layout-minim">
     <p>Code for America partners with 6-10 local governments each year to develop innovative digital approaches to delivering key public services across health, economic development, and safety and justice. </p>
