@@ -1,5 +1,5 @@
-exclude: ['blog', 'library', 'api']
+exclude: ['blog', 'library', 'api', 'media']
 include: ['.htaccess']
-keep_files: ['blog', 'library', 'brigade', 'api']
+keep_files: ['blog', 'library', 'brigade', 'api', 'media']
 # Used to generate our social metadata
 url-base: "http://codeforamerica.org"

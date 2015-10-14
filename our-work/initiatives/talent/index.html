@@ -2,6 +2,12 @@
 layout: default
 masthead-image: "/media/images/talent/space.jpg"
 
+# Navigation
+nav_tier1_active: "join"
+nav-breadcrumbs:
+  - What You Can Do: "/join"
+  - Work in Government: "/our-work/initiatives/talent"
+
 # Don't use the default masthead, use the custom deep masthead
 masthead: "no"
 nav-global-primary: "no"
@@ -15,6 +21,7 @@ headline: There has never been a better time to work on technology inside govern
 description: Engineers, designers, product managers, data scientists, and moreâ€”put your skills to work in service to your country. Letâ€™s bring government into the 21st century together.
 ---
 <section class="layout-semibreve layout-centered intro">
+  {% include nav-breadcrumbs.html %}
   <h2>Get Involved</h2>
   <br>
   <div class="layout-minim">
@@ -30,7 +37,7 @@ description: Engineers, designers, product managers, data scientists, and moreâ€
     <p>Need to hire a technologist, or need to make your organization a place where talented technologists can succeed? We can help.</p>
     <a href="//c4a.me/demand_cfaorg" class="button button-bold button-l" target="_blank" onclick="ga('send', 'event', 'Talent', 'Visit info forms', 'Governments form');">I'm Interested</a>
     <p><br /></p>
-  </div> 
+  </div>
 </section>
 
 <section class="slab-dark-blue">
@@ -38,7 +45,7 @@ description: Engineers, designers, product managers, data scientists, and moreâ€
 
     <div class="layout-minim-staccato">
       <h3 class="h4">Interesting Job Opportunities</h3>
-      
+
       <ul class="list-no-bullets list-icons">
         <li class="icon-user"><a href="https://www.dice.com/jobsearch/servlet/JobSearch?op=302&dockey=xml/3/3/3314d7c24e7a3d74d340480a842852bc@endecaindex&source=0&FREE_TEXT=&rating=&">Open Data Architect</a>IT Department, San Jose, CA</li>
         <li class="icon-user"><a href="//jobs.spb.ca.gov/ceabulletins/exemptpdfs/11142014_2.pdf">Assistant Director for Horizontal Integration</a>California Department of Social Services, Sacramento, CA</li>
@@ -50,7 +57,7 @@ description: Engineers, designers, product managers, data scientists, and moreâ€
 
     <div class="layout-minim-staccato">
       <h3 class="h4">Upcoming Appearances</h3>
-      
+
       <ul class="list-no-bullets list-icons">
         <li class="icon-calendar"><a href="http://schedule.sxsw.com/2015/events/event_IAP996688">How Government Fails and How You Can Fix It</a>Jen Pahlka, Executive Director, Code for America, & Mikey Dickerson, Administrator, United States Digital Service<br />SXSW Interactive, Austin, TX, March 16, 2015</li>
         <li class="icon-calendar"><a href="//schedule.sxsw.com/2015/events/event_IAP997459">Mentor Session: Going into Government</a>Lane Becker, Director, Talent Initiative<br />SXSW Interactive, Austin, TX, March 17, 2015</li>

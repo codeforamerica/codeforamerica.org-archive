@@ -229,9 +229,12 @@ RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
 RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
 RedirectMatch permanent ^/2012/?$ /governments/alumni
 RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship
-RedirectMatch permanent ^/procurement(/?)$ /governments/practices/procurement$1
-RedirectMatch permanent ^/governments/capabilities(/.*)?$ /governments/practices$1
-RedirectMatch permanent ^/governments/principles(/.*)?$ /governments/practices$1
+# We've changed the name/location of our practices (formerly principles, formerly capabilities) a lot
+# This should be the most up-to-date
+RedirectMatch permanent ^/procurement(/?)$ /practices/procurement$1
+RedirectMatch permanent ^/governments/capabilities(/.*)?$ /practices$1
+RedirectMatch permanent ^/governments/principles(/.*)?$ /practices$1
+RedirectMatch permanent ^/governments/practices(/.*)?$ /practices$1
 
 RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
 RedirectMatch permanent ^/application-info/?$ /governments/fellowship
@@ -313,9 +316,9 @@ RedirectMatch permanent ^/zach-williams(/?)$ /people/zach-williams$1
 #
 # Focus Areas and Initiatives (Short Links)
 #
-RedirectMatch permanent ^/health/?$ /our-work/focus-areas/health/
-RedirectMatch permanent ^/safety-justice/?$ /our-work/focus-areas/safety-justice/
-RedirectMatch permanent ^/economic-development/?$ /our-work/focus-areas/economic-development/
+RedirectMatch permanent ^/health/?$ /focus/health/
+RedirectMatch permanent ^/safety-justice/?$ /focus/safety-justice/
+RedirectMatch permanent ^/economic-development/?$ /focus/economic-development/
 
 #
 # Random crap.
@@ -335,7 +338,6 @@ RedirectMatch permanent ^/jennifer-pahlka-speaks-out/?$ /contact
 RedirectMatch permanent ^/codeacross/?$ /events/codeacross-2015/
 RedirectMatch permanent ^/code-across-america-2012/?$ /events/codeacross-2012/
 RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
-RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 RedirectMatch permanent ^/projects/new-york-city-hhc-accelerator/?$ /projects/new-york-city-hhs-accelerator/
 RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
@@ -355,8 +357,12 @@ RedirectMatch permanent ^/apps/aunt-bertha/?$ /companies/incubator-accelerator/#
 
 # Redirect to the right link for procurement. This was on the mainstage at 2015 Summit, so it should
 # stay around in the future in case someone watches a recap video.
-
 RedirectMatch permanent ^/playbooks/technology-playbook/?$ /playbooks/technology-procurement/background/
+
+#
+# Move everything that used to be under /our-work/focus-areas/ to /focus/
+#
+RedirectMatch permanent ^/our-work/focus-areas(/.*)?$ /focus$1
 
 #
 # Set of possible Jekyll file extensions + PHP, from
