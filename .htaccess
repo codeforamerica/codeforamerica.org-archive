@@ -359,7 +359,7 @@ RedirectMatch permanent ^/playbooks/technology-playbook/?$ /playbooks/technology
 #
 # Move everything that used to be under /our-work/focus-areas/ to /focus/
 #
-RedirectMatch permanent ^/our-work/focus-areas(.*)?$ /focus/$1
+RedirectMatch permanent ^/our-work/focus-areas(/.*)?$ /focus$1
 
 #
 # Set of possible Jekyll file extensions + PHP, from
