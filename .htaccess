@@ -229,9 +229,12 @@ RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
 RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
 RedirectMatch permanent ^/2012/?$ /governments/alumni
 RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship
+# We've changed the name/location of our practices (formerly principles, formerly capabilities) a lot
+# This should be the most up-to-date
 RedirectMatch permanent ^/procurement(/?)$ /practices/procurement$1
 RedirectMatch permanent ^/governments/capabilities(/.*)?$ /practices$1
 RedirectMatch permanent ^/governments/principles(/.*)?$ /practices$1
+RedirectMatch permanent ^/governments/practices(/.*)?$ /practices$1
 
 RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
 RedirectMatch permanent ^/application-info/?$ /governments/fellowship
