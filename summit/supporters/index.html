@@ -1,0 +1,122 @@
+---
+layout: summit-2015
+masthead-image: "/media/images/summit/2015/sponsor/summit-sponsor-header-photo.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: "2015 Summit: Supporters"
+
+# Content for the masthead-custom
+headline: They make it all possible
+description: The Summit is supported by a wide variety of generous donors and organizations committed to making government work in the 21st century.
+
+# Metadata image
+metadata:
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
+  image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+---
+
+<style>
+  /* Number component */
+  .supporter-logo {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 80px;
+  }
+  .platinum-logo {
+    height: 60px;
+  }
+  #courthouse {
+    height: 150px;
+  }
+  #appcitylife {
+    height: 150px;
+  }
+  .civic-logo {
+    height: 60px;
+  }
+</style>
+
+<section class="layout-semibreve layout-centered">
+  <h2>Capstone Supporters</h2>
+    {% for supporter in site.data.summit_supporters.capstone %}
+
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
+        <p><a href="{{ supporter.link }}">More</a></p>
+
+    {% endfor %}
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Platinum Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.platinum %}
+      <li>
+        <img class="platinum-logo supporter-logo" src="{{ supporter.logo }}"/>
+        {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Gold Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.gold %}
+      <li>
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Silver Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.silver %}
+      <li>
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        {% if supporter.description %}<p>{{ supporter.description }}</p>{% endif %}
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.supporter %}
+      <li>
+        <img class="supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Startup Supporters</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.civic-startup %}
+      <li>
+        <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="civic-logo supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="layout-semibreve layout-centered">
+  <h2>Media Partners</h2>
+  <ul class="layout-grid-minim">
+    {% for supporter in site.data.summit_supporters.media-partners %}
+      <li>
+        <img id="{{ supporter.name | replace:' ','-' | downcase }}" class="media-logo supporter-logo" src="{{ supporter.logo }}"/>
+        <p><a href="{{ supporter.link }}">More</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

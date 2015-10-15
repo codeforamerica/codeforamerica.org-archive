@@ -1,33 +1,33 @@
-# 
+#
 # Below are all URL redirects for Code for America.
-# 
+#
 # For these to work, the document root must have the FollowSymLinks option
 # enabled and the FileInfo configuration override active.
 #   http://httpd.apache.org/docs/2.4/mod/core.html#options
 #   http://httpd.apache.org/docs/2.4/mod/directive-dict.html#Override
-# 
+#
 # Over the years, we've moved a lot of content from place to place. In the
 # past, a Wordpress plugin was used to provide this functionality. With the
 # move to a static site, we've reimplemented most redirects as Apache
 # RedirectMatch directives, found below.
-# 
+#
 # More on RedirectMatch:
 #   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch
-# 
+#
 # Directives are processed in order, and the first match is used. If you have
 # new ones to add, put them at the end of this file to minimize conflicts and
 # problems.
-# 
+#
 # More on processing order:
 #   http://httpd.apache.org/docs/2.4/mod/mod_alias.html#order
-# 
+#
 # The Apps section is handled using the Rewrite Engine, instead of Redirect.
 # Apps URLs on the previous site were implemented as query string patterns,
 # and only RewriteCond can find these.
-# 
+#
 # More on Rewrite:
 #   http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html
-# 
+#
 
 #
 # Apps.
@@ -75,10 +75,10 @@ RedirectMatch permanent ^(/blog)?/06-03-14/?$ /peer-network-training/06-03-2014
 #
 RedirectMatch permanent ^/brigade12-12-2013/?$ /brigade-training/brigade12-12-2013
 RedirectMatch permanent ^/09-19-2013/?$ /brigade-training/09-19-2013
-RedirectMatch permanent ^/brigade01-09-2014/?$ /brigade-training/brigade01-09-2014	
+RedirectMatch permanent ^/brigade01-09-2014/?$ /brigade-training/brigade01-09-2014
 RedirectMatch permanent ^/brigade01-14-2014/?$ /brigade-training/brigade01-14-2014
 RedirectMatch permanent ^/brigade01-16-2014/?$ /brigade-training/brigade01-16-2014
-RedirectMatch permanent ^/brigade01-23-2014/?$ /brigade-training/brigade01-23-2014	
+RedirectMatch permanent ^/brigade01-23-2014/?$ /brigade-training/brigade01-23-2014
 RedirectMatch permanent ^/brigade02-06-2014/?$ /brigade-training/brigade02-06-2014
 RedirectMatch permanent ^/brigade02-11-2014/?$ /brigade-training/brigade02-11-2014
 RedirectMatch permanent ^/brigade02-12-2014/?$ /brigade-training/brigade02-12-2014
@@ -140,9 +140,6 @@ RedirectMatch permanent ^/international(/?)$ http://codeforall.org
 RedirectMatch permanent ^/startupsponsor/+summit$ https://docs.google.com/forms/d/1noEZYL-rcqfhdhKvg5n-jxlnXLZronhEge_-VEOKbkM/viewform
 RedirectMatch permanent ^/(contact|register|schedule|speakers|sponsors|submit|venue)/+summit/?$ /summit/$1/
 
-#Summit Schedule to Pathable
-RedirectMatch permanent ^/summit/schedule/?$ https://cfasummit2014.pathable.com/meetings
-
 #
 # Fellowship Program.
 #
@@ -190,12 +187,12 @@ RedirectMatch permanent ^/2014-fellows(/?)$ /geeks/our-geeks/2014-fellows$1
 # Startup Program
 #
 RedirectMatch permanent ^/startups(/?)$ /about/startups$1
-RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /geeks/accelerator-faq
-RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /geeks/incubator-faq
-RedirectMatch permanent ^/geeks/our-startups/?$ /companies/our-companies
-RedirectMatch permanent ^/geeks/accelerator-faq/?$ /companies/accelerator-faq
-RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/accelerator-apply
-RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-faq
+RedirectMatch permanent ^/(accelerator|accelerator-2013|accelerator-2|startups/accelerator)/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/(incubator|incubator-2|startups/incubator-2)/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/our-startups/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/accelerator-faq/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/accelerator-apply/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/geeks/incubator-faq/?$ /companies/incubator-accelerator/
 RedirectMatch permanent ^/about/startups/?$ /about/companies
 #RedirectMatch permanent ^/mentor/?$ /companies
 RedirectMatch permanent ^/companies/newsletter/?$ /companies
@@ -232,8 +229,12 @@ RedirectMatch permanent ^/city-alumni/?$ /governments/alumni
 RedirectMatch permanent ^/cfa-2012/?$ /governments/alumni
 RedirectMatch permanent ^/2012/?$ /governments/alumni
 RedirectMatch permanent ^/governments/faqs-cities-applying-to-program/?$ /governments/fellowship
-RedirectMatch permanent ^/procurement(/?)$ /governments/principles/procurement$1
-RedirectMatch permanent ^/governments/capabilities(/.*)?$ /governments/principles$1
+# We've changed the name/location of our practices (formerly principles, formerly capabilities) a lot
+# This should be the most up-to-date
+RedirectMatch permanent ^/procurement(/?)$ /practices/procurement$1
+RedirectMatch permanent ^/governments/capabilities(/.*)?$ /practices$1
+RedirectMatch permanent ^/governments/principles(/.*)?$ /practices$1
+RedirectMatch permanent ^/governments/practices(/.*)?$ /practices$1
 
 RedirectMatch permanent ^/civic-data-standards/?$ /governments/data-standards-faq
 RedirectMatch permanent ^/application-info/?$ /governments/fellowship
@@ -312,12 +313,12 @@ RedirectMatch permanent ^/serena-wales(/?)$ /people/serena-wales$1
 RedirectMatch permanent ^/sheba-najmi(/?)$ /people/sheba-najmi$1
 RedirectMatch permanent ^/zach-williams(/?)$ /people/zach-williams$1
 
-# 
+#
 # Focus Areas and Initiatives (Short Links)
-# 
-RedirectMatch permanent ^/health/?$ /our-work/focus-areas/health/
-RedirectMatch permanent ^/safety-justice/?$ /our-work/focus-areas/safety-justice/
-RedirectMatch permanent ^/economic-development/?$ /our-work/focus-areas/economic-development/
+#
+RedirectMatch permanent ^/health/?$ /focus/health/
+RedirectMatch permanent ^/safety-justice/?$ /focus/safety-justice/
+RedirectMatch permanent ^/economic-development/?$ /focus/economic-development/
 
 #
 # Random crap.
@@ -337,10 +338,31 @@ RedirectMatch permanent ^/jennifer-pahlka-speaks-out/?$ /contact
 RedirectMatch permanent ^/codeacross/?$ /events/codeacross-2015/
 RedirectMatch permanent ^/code-across-america-2012/?$ /events/codeacross-2012/
 RedirectMatch permanent ^(.*)/pdf/(2011_CfA_Report.*)$ $1/2011-annual-report/$2
-RedirectMatch permanent ^/focus/?$ /our-work/focus-areas
 RedirectMatch permanent ^/(FluShotFinder|flu-shot-finder|flushotfinder)$ /apps/flu-shot-finder/
 RedirectMatch permanent ^/projects/new-york-city-hhc-accelerator/?$ /projects/new-york-city-hhs-accelerator/
 RedirectMatch permanent ^/talent/?$ /our-work/initiatives/talent/
+RedirectMatch permanent ^/awards/?$ http://awards.codeforamerica.org$1
+
+#
+# Remove Incubator + Accelerator
+#
+RedirectMatch permanent ^/companies/our-companies/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/accelerator-faq/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/accelerator-apply/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/incubator-faq/?$ /companies/incubator-accelerator/
+RedirectMatch permanent ^/companies/incubator-apply/?$ /companies/incubator-accelerator/
+
+# Redirect AuntBertha to our Incubator/Accelerator page
+RedirectMatch permanent ^/apps/aunt-bertha/?$ /companies/incubator-accelerator/#aunt-bertha
+
+# Redirect to the right link for procurement. This was on the mainstage at 2015 Summit, so it should
+# stay around in the future in case someone watches a recap video.
+RedirectMatch permanent ^/playbooks/technology-playbook/?$ /playbooks/technology-procurement/background/
+
+#
+# Move everything that used to be under /our-work/focus-areas/ to /focus/
+#
+RedirectMatch permanent ^/our-work/focus-areas(/.*)?$ /focus$1
 
 #
 # Set of possible Jekyll file extensions + PHP, from

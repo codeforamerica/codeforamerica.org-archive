@@ -55,13 +55,25 @@ jquery-scripts: |
     padding-bottom: 0;
     margin-bottom: 0;
   }
+  .list-logos li {
+    width: 20%;
+    height: auto;
+    border: 1px solid white;
+    padding: 20px;
+    backgr
+  }
+  @media screen and (max-width: 40em) {
+    .list-logos li {
+      width: 80%;
+    }
+  }
 </style>
 
 <style id="active">
   
 </style>
 
-{% assign orgs = 'Foundations,Companies,People,Fellowship Supporters' | split: ',' %}
+{% assign orgs = 'Foundations,People,Fellowship Supporters' | split: ',' %}
 {% assign years = '2014,2015' | split: ',' %}
 
 <section class="layout-semibreve layout-centered">
@@ -96,6 +108,102 @@ jquery-scripts: |
     <li><a href="https://www.google.org/"><img src="../media/images/donate/google_logo.jpg"></a></li>
   </ul>
 </section>
+
+<!-- BEGIN COMPANIES -->
+<section class="layout-semibreve" id="companies">
+  <div class="badge-heading badge-blue">
+    <h2>Companies</h2>
+  </div>
+
+  <ul class="list-inline list-no-bullets">
+    <li>
+      <a class="button js-supporters-show" href="#companies-2014" id="companies-2014-button">2014</a>
+    </li>
+
+    <li>
+      <a class="button js-supporters-show" href="#companies-2015" id="companies-2015-button">2015</a>
+    </li>
+  </ul>
+
+  <div class="spotlight js-supporters-list" id="companies-2014-list">
+    <h3>2014 Supporters</h3>
+
+    <ul class="list-no-bullets list-ruled layout-grid-minim">
+      <li>Accela</li>
+      <li>Acquia</li>
+      <li>Adobe</li>
+      <li>Altimeter Group</li>
+      <li>Amazon Web Services</li>
+      <li>AT&amp;T</li>
+      <li>Bad Robot</li>
+      <li>Bluehost with the support of Hari Ravichandran</li>
+      <li>Bright Funds</li>
+      <li>Buildingeye</li>
+      <li>Civic Eagle</li>
+      <li>coUrbanize</li>
+      <li>CourthouseUSA</li>
+      <li>Esri</li>
+      <li>GitHub</li>
+      <li>Google For Entrepreneurs</li>
+      <li>GovDelivery</li>
+      <li>Granicus</li>
+      <li>Heroku</li>
+      <li>IBM</li>
+      <li>Insights</li>
+      <li>Justinmind</li>
+      <li>Mapzen</li>
+      <li>Microsoft</li>
+      <li>Ministry of Velocity</li>
+      <li>MyCity</li>
+      <li>Nextdoor</li>
+      <li>Omakase Charity</li>
+      <li>Open Counter Enterprises</li>
+      <li>Open Media Foundation</li>
+      <li>OpenGov</li>
+      <li>OpenPlans</li>
+      <li>Oppsites</li>
+      <li>Orange GigaStudio</li>
+      <li>Palantir</li>
+      <li>Rally Software</li>
+      <li>Recollect</li>
+      <li>Red Hat</li>
+      <li>Regroup</li>
+      <li>SAP</li>
+      <li>Slack</li>
+      <li>Socrata</li>
+      <li>Splunk</li>
+      <li>Tropo</li>
+      <li>Twilio</li>
+      <li>VMWare Foundation</li>
+    </ul>
+  </div>
+
+  <div class="spotlight js-supporters-list" id="companies-2015-list">
+    <h3>2015 Supporters</h3>
+
+    <ul class="list-no-bullets list-logos">
+      <li>
+      <img src="/media/images/logo-supporters/accela.png" alt="Accela">
+      </li>
+      <li><img src="/media/images/logo-supporters/adobe.png" alt="Adobe"></li>
+      <li><img src="/media/images/logo-supporters/aws.png" alt="Amazon Web Services"></li>
+      <li><img src="/media/images/logo-supporters/g4e.png" alt="Google for Entrepreneurs"></li>
+      <li><img src="/media/images/logo-supporters/hackhands.png" alt="HackHands"></li>
+      <li><img src="/media/images/logo-supporters/hims.png" alt="Health Information Management System LLC"></li>
+      <li><img src="/media/images/logos/heroku.png" alt="Heroku"></li>
+      <li><img src="/media/images/logos/level-five.png" alt="Level Five Solutions"></li>
+      <li><img src="/media/images/logos/mapzen.png" alt="Mapzen"></li>
+      <li><img src="/media/images/logos/Microsoft.png" alt="Microsoft"></li>
+      <li><img src="/media/images/logos/national-instruments.png" alt="National Instruments"></li>
+      <li><img src="/media/images/logos/rally.png" alt="Rally"></li>
+      <li><img src="/media/images/logos/readmeio.png" alt="Readmeio"></li>
+      <li><img src="/media/images/logos/smartprocure.png" alt="SmartProcure"></li>
+      <li><img src="/media/images/logos/vmware.png" alt="VMWare Foundation"></li>
+      <li><img src="/media/images/logos/via.png" alt="Volunteers In Asian"></li>
+    </ul>
+  </div>
+</section>
+<!-- END COMPANIES -->
 
 {% for org in orgs %}
 

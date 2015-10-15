@@ -1,0 +1,181 @@
+---
+layout: summit-2015
+masthead-image: "/media/images/summit/2015/sponsor/summit-sponsor-header-photo.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: "2015 Summit: Schedule"
+
+# Content for the masthead-custom
+headline: A transformative lineup
+description: |
+  The CfA Summit was three days of action-packed content, featuring the passionate people who are transforming government to work for the people, by the people, in the 21st century.
+  <div class="button-group">
+    <p>
+      <a class="button" href="#tuesday">Tuesday</a>
+      <a class="button" href="#wednesday">Wednesday</a>
+      <a class="button" href="#thursday">Thursday</a>
+      <a class="button" href="#friday">Friday</a>
+    </p>
+  </div>
+
+# Metadata image
+metadata:
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
+  image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+
+# Has a sponsor banner
+sponsor-banner: true
+---
+
+<style>
+  main *, main *:before, main *:after {
+    box-sizing: border-box;
+  }
+  .layout-breve {
+    width: 100%;
+  }
+  .schedule-item_speaker_moderator {
+    display: inline-block;
+    background-color: #aa1c3a;
+    padding: 0.5em;
+    font-size: 0.7em;
+    color: white;
+    font-weight: 700;
+    height: 1.8em;
+    line-height: 0.8em;
+    margin-left: 0.2em;
+    position: relative;
+    top: -0.2em;
+  }
+  p.item-link {
+    font-size: 0.8em;
+    margin-top: 0.8em;
+  }
+  p.item-link a {
+    color: #6D6E71;
+  }
+</style>
+
+<p class="alert-info">Like what you see here? All the 2015 #CfASummit main stage talks are available for streaming right now <a href="/summit/videos/">on the videos page</a>.</p>
+
+{% assign days = site.data.summit_schedule | uniq_array_by: "day" %}
+{% for day in days %}
+<section class="layout-breve schedule">
+  <a id="{{day|downcase}}"></a>
+  <h2>{{day}}</h2>
+  <ul class="list-no-bullets schedule-grid__dayparts">
+    {% assign dayparts = site.data.summit_schedule | if_it_has: "day", day | uniq_array_by: "session_daypart" %}
+    {% for daypart in dayparts %}
+      <li>
+        <h5 class="schedule-grid__daypart__title">{{daypart}}</h5>
+        <ul class="schedule-grid__timeblocks">
+        {% assign timeblocks = site.data.summit_schedule | if_it_has: "session_daypart", daypart | if_it_has: "day", day | uniq_array_by: "time_block" %}
+        {% for timeblock in timeblocks %}
+{% unless timeblock contains "2:00 PM - 5:30 PM" %}
+          <li>
+            <p class="schedule-grid__timeblock__title">{{timeblock}}</p>
+{% endunless %}
+            <ul class="list-no-bullets schedule-grid__events">
+              {% assign events = site.data.summit_schedule | if_it_has: "day", day | if_it_has: "time_block", timeblock %}
+
+
+              {% for event in events %}
+                {% if event.session_type == "Breakouts" %}
+                  <!--------------------------------------------------------------------
+                  BREAKOUTS ONLY -->
+                  {% assign all_breakouts = site.data.summit_breakouts | if_it_has: "day", day %}
+                  {% assign breakout_timeblocks = all_breakouts | uniq_array_by: "time_block" %}
+                  {% for breakout_timeblock in breakout_timeblocks %}
+                    {% if forloop.first %}</ul><ul class="schedule-grid__timeblocks">{% endif %}
+                      <li>
+                        <p class="schedule-grid__timeblock__title">{{breakout_timeblock}}</p>
+                        <ul class="list-no-bullets schedule-grid__events layout-grid-minim">
+                          {% assign breakouts = site.data.summit_breakouts | if_it_has: "day", day | if_it_has: "time_block", breakout_timeblock %}
+                          {% for breakout in breakouts %}
+                          {% if breakout.status == "Confirmed" %}
+                            <li class="clearfix">
+                                <a id="{{breakout.session_unique_key}}"></a>
+                                {% unless breakout.session_audience == breakout.session_title or breakout.session_audience == null %}<p class="schedule-grid__event__type">{{breakout.session_audience}}</p>{% endunless %}
+                                <h4>{{breakout.session_title}}</h4>
+                                <p class="item-link">{{breakout.time_block}}{% if breakout.room_location %} | {{breakout.room_location}}{% endif %}</p>
+                                <p>{{breakout.session_description}}</p>
+                                <p class="item-link"><a href="https://www.codeforamerica.org/summit/schedule/#{{breakout.session_unique_key}}">[Copy Link]</a></p>
+                                <ul class="list-no-bullets schedule-grid__event__speakers">
+                                  {% assign speakers = breakout | bundle_object: "speaker_name,speaker_safe,speaker_photo,speaker_moderator,speaker_title_org", 7 %}
+                                  {% for speaker in speakers %}
+                                    {% unless speaker.speaker_name == null %}
+                                      <li>
+                                        {% if speaker.speaker_photo == "STAFF" %}
+                                          <img class="profile-photo u-photo" src="/media/images/people/{{speaker.speaker_safe}}.jpg" />
+                                        {% elsif speaker.speaker_photo == "SPEAKER" %}
+                                          <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{speaker.speaker_safe}}.jpg" />
+                                        {% endif %}
+                                        <p class="schedule-grid__event__speaker__name">
+                                          {{speaker.speaker_name}}
+                                          {% if speaker.speaker_moderator == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                                        </p>
+                                        <p class="schedule-grid__event__speaker__title">{{speaker.speaker_title_org}}</p>
+                                      </li>
+                                    {% endunless %}
+                                  {% endfor %}
+                                </ul>
+                            </li>
+                          {% endif %}
+                          {% endfor %}
+                        </ul>
+                      </li>
+                    {% if forloop.last %}</ul><li><ul class="list-no-bullets schedule-grid__events"><p class="schedule-grid__timeblock__title">{{timeblock}}</p>{% endif %}
+                  {% endfor %}
+                  <!--------------------------------------------------------------------
+                  END BREAKOUTS ONLY -->
+                {% else %}
+                  <li class="clearfix">
+                    <a id="{{event.session_unique_key}}"></a>
+                    <div class="layout-minim">
+                      {% unless event.session_type == event.session_title or event.session_type == null %}<p class="schedule-grid__event__type">{{event.session_type}}</p>{% endunless %}
+                      <h4>{{event.session_title}}</h4>
+                      <p class="item-link">{{event.time_block}}{% if event.room_location %} | {{event.room_location}}{% endif %}</p>
+                      {% if event.sponsor_logo_link %}<img class="schedule-grid__event__logo" src="{{event.sponsor_logo_link}}" alt="{{event.session_description}}" />{% endif %}
+                      {% if event.session_description %}<p>{{event.session_description}}</p>{% endif %}
+                      <p class="item-link"><a href="https://www.codeforamerica.org/summit/schedule/#{{event.session_unique_key}}">[Copy Link]</a></p>
+                    </div>
+                    <div class="layout-minim">
+                      <ul class="list-no-bullets schedule-grid__event__speakers">
+                        {% assign speakers = event | bundle_object: "speaker_name,speaker_safe,speaker_photo,speaker_moderator,speaker_title_org", 7 %}
+                        {% for speaker in speakers %}
+                          {% unless speaker.speaker_name == null %}
+                            <li>
+                              {% if speaker.speaker_photo == "STAFF" %}
+                                <img class="profile-photo u-photo" src="/media/images/people/{{speaker.speaker_safe}}.jpg" />
+                              {% elsif speaker.speaker_photo == "SPEAKER" %}
+                                <img class="profile-photo u-photo" src="/media/images/summit/2015/speakers/thumbnails/{{speaker.speaker_safe}}.jpg" />
+                              {% endif %}
+                              <p class="schedule-grid__event__speaker__name">
+                                {{speaker.speaker_name}}
+                                {% if speaker.speaker_moderator == "MODERATOR" %}<span class="schedule-item_speaker_moderator">Moderator</span>{% endif %}
+                              </p>
+                              <p class="schedule-grid__event__speaker__title">{{speaker.speaker_title_org}}</p>
+                            </li>
+                          {% endunless %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </li>
+                {% endif %}
+              {% endfor %}
+
+
+            </ul>
+          </li>
+        {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

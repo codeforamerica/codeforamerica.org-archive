@@ -1,0 +1,61 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Michael Schnuerle</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="http://www.civicdataalliance.org/">Civic Data Alliance</a></li>
+      <li><a href="http://www.meetup.com/Louisville-Civic-Data-Alliance/">Louisville, KY Brigade Meetup</a></li>
+      <li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains/">Brigade Captains</a></li>
+    </ul>
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/michael-schnuerle.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p>Michael has over 20 years working experience specific to the internet, project management, and mapping. After studying abroad in Australia, and working in Paris, Edinburgh, and San Francisco, Michael returned to Louisville, KY.</p>
+    <p>He started working with civic tech in 2005, launching a Louisville Crime Map based around Google Maps and open records data.  This expanded to Metro Mapper in 2006 with restaurant ratings, homes for sale, traffic cams and speed, and historic sites. In 2009 this became national with YourMapper, and included an API for civic data like property values, building permits, car accidents, pollution, and property values.</p>
+    <p>In 2010, Michael helped Louisville launch its first open data portal (with online maps), and founded the local CfA brigade in 2012.  Now his focus is on open data, policy, connecting people, and building civic tools that the community can use.</p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/yourmapper">@yourmapper</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/schnuerle/">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>schnuerle/</a></td></tr>
+        <tr><th>Website</th><td><a href="http://www.YourMapper.com/">www.YourMapper.com</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Michael Schnuerle</h3>
+    <img alt="chase-southard" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/michael-schnuerle.jpg" />
+    <div class="p-note profile-note">
+      <p>
+        <a href="http://www.civicdataalliance.org/">Civic Data Alliance</a>
+      </p>
+      <p>
+        <a href="http://www.meetup.com/Louisville-Civic-Data-Alliance/">Louisville, KY Brigade</a>
+      </p>
+      <p>
+        After working for 10 years in the internet space in Paris, San Francisco, and Edinburgh, Michael returned to Louisville and began working with civic tech in 2005, building a detailed Louisville crime map using data from open records requests.  Since then he's built dozens of civic data tools and helped shape open data policy and technical specifications.  After founding the Civic Data Alliance in 2012 (Louisville's brigade) his focus is open data, policy, connecting people, and building civic tools that the community can use.
+      </p>
+      <p>
+        <a class="link-more" href="{{ include.base }}/people/michael-schnuerle/">More</a>
+      </p>
+      <ul class="list-social list-social-horizontal">
+        <li class="social-twitter"><a href="https://twitter.com/yourmapper">@yourmapper</a></li>
+        <li class="social-website"><a href="http://www.YourMapper.com/">Website</a></li>
+        <li class="social-linkedin"><a href="http://www.linkedin.com/in/schnuerle/">LinkedIn</a></li>
+        <li class="social-github"><a href="http://www.github.com/schnuerle/">GitHub</a></li>
+      </ul>
+    </div>
+</div>
+
+{% endif %}

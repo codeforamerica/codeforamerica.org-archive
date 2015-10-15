@@ -30,22 +30,22 @@ ErrorLog "|tee /dev/stderr"
 '''
 
 class TestApache (unittest.TestCase):
-    
+
     def setUp(self):
         ''' Run Apache in a subprocess on a random port number.
-        
+
             Create a temporary directory to hold ServerRoot and configuration.
         '''
         self.root = mkdtemp()
         self.port = randrange(0x1000, 0x10000)
-        
+
         #
         # Look for Apache modules, write a configuration file.
         #
         for mod_path in ('/usr/lib/apache2/modules', '/usr/libexec/apache2'):
             if not exists(join(mod_path, 'mod_dir.so')):
                 continue
-        
+
             doc_root = join(dirname(abspath(__file__)), '_site')
             log_config_so_path = join(mod_path, 'mod_log_config.so')
             log_config_prefix = '' if exists(log_config_so_path) else '#'
@@ -54,10 +54,10 @@ class TestApache (unittest.TestCase):
 
             with open(join(self.root, 'httpd.conf'), 'w') as file:
                 file.write(config.format(**vars))
-        
+
         if not exists(join(self.root, 'httpd.conf')):
             raise RuntimeError('Did not make httpd.conf')
-        
+
         #
         # Look for Apache executable and start it up.
         #
@@ -69,7 +69,7 @@ class TestApache (unittest.TestCase):
 
         self.httpd = Popen(httpd_cmd, stderr=PIPE, stdout=PIPE)
         sleep(.5)
-    
+
     def tearDown(self):
         ''' Kill Apache and delete ServerRoot.
         '''
@@ -82,21 +82,21 @@ class TestApache (unittest.TestCase):
         conn = HTTPConnection('0.0.0.0', self.port)
         conn.request('GET', '/')
         resp = conn.getresponse()
-        
+
         assert resp.status == 200
-    
+
     def test_redirects(self):
         ''' Check a selection of HTTP redirect pairs.
         '''
-        pairs = [('/accelerator', '/companies/accelerator-faq/'),
-                 ('/incubator', '/companies/incubator-faq/'),
+        pairs = [('/accelerator', '/companies/incubator-accelerator/'),
+                 ('/incubator', '/companies/incubator-accelerator/'),
                  ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects'),
-                 ('/focus', '/our-work/focus-areas/'),
-                 ('/governments/capabilities', '/governments/principles/'),
-                 ('/governments/capabilities/index.html', '/governments/principles/index.html'),
-                 ('/governments/capabilities/open-data', '/governments/principles/open-data/'),
-                 ('/procurement', '/governments/principles/procurement/'),
-                 ('/governments/capabilities/procurement', '/governments/principles/procurement/'),
+                 ('/our-work/focus-areas', '/focus/'),
+                 ('/our-work/focus-areas/health', '/focus/health/'),
+                 ('/governments/capabilities', '/practices/'),
+                 ('/governments/capabilities/index.html', '/practices/index.html'),
+                 ('/procurement', '/practices/procurement/'),
+                 ('/governments/capabilities/procurement', '/practices/procurement/'),
                  ('/team', '/about/team/'),
                  ('/projects', '/apps/'),
                  ('/fellows/job-description', '/geeks/fellowship-faq/'),
@@ -114,13 +114,14 @@ class TestApache (unittest.TestCase):
                  ('/startups', '/about/companies/'),
                  ('/fellowship', '/about/fellowship/'),
                # ('/fellows', '/about/fellowship/'),
-                 ('/procurement', '/governments/principles/procurement/'),
+                 ('/procurement', '/practices/procurement/'),
+                 ('/governments/practices/engagement', '/practices/engagement/'),
+                 ('/governments/principles/engagement', '/practices/engagement/'),
                  ('/austin', '/governments/austin/'),
                  ('/honolulu', '/governments/honolulu/'),
                  ('/alex-pandel', '/people/alex-pandel/'),
                  ('/alex-yule', '/people/alex-yule/'),
                  ('/cities', '/governments/'),
-                 ('/cities/2015-partners', '/governments/2015-partners/'),
                  ('/codeacross-2014', '/events/codeacross-2014/'),
                  ('/codeacross', '/events/codeacross-2015/'),
                  ('/02-18-2014', '/peer-network-training/02-18-2014/'),
@@ -132,13 +133,13 @@ class TestApache (unittest.TestCase):
                  ('/08-07-2013', '/peer-network-training/08-07-2013/'),
                  ('/blog/ask-a-fellow-2013', '/peer-network-training/ask-a-fellow-2013/'),
 
-                 ('/accelerator', '/companies/accelerator-faq/'),
-                 ('/accelerator-2013', '/companies/accelerator-faq/'),
-                 ('/accelerator-2', '/companies/accelerator-faq/'),
-                 ('/startups/accelerator', '/companies/accelerator-faq/'),
-                 ('/incubator', '/companies/incubator-faq/'),
-                 ('/incubator-2', '/companies/incubator-faq/'),
-                 ('/startups/incubator-2', '/companies/incubator-faq/'),
+                 ('/accelerator', '/companies/incubator-accelerator/'),
+                 ('/accelerator-2013', '/companies/incubator-accelerator/'),
+                 ('/accelerator-2', '/companies/incubator-accelerator/'),
+                 ('/startups/accelerator', '/companies/incubator-accelerator/'),
+                 ('/incubator', '/companies/incubator-accelerator/'),
+                 ('/incubator-2', '/companies/incubator-accelerator/'),
+                 ('/startups/incubator-2', '/companies/incubator-accelerator/'),
                  ('/who-we-are', '/about/team/'),
                  ('/donors', '/supporters/'),
                  ('/how-to-help', '/geeks/'),
@@ -151,9 +152,9 @@ class TestApache (unittest.TestCase):
                  ('/geeks/fellows/alumni-fellows', '/geeks/our-geeks/alumni-fellows/'),
                  ('/fellows/current-fellows', '/geeks/our-geeks/2013-fellows/'),
                  ('/fellows/alumni-fellows/2013-fellows', '/geeks/our-geeks/2013-fellows/'),
-                 ('/geeks/our-startups', '/companies/our-companies/'),
-                 ('/geeks/accelerator-faq', '/companies/accelerator-faq/'),
-                 ('/geeks/accelerator-apply', '/companies/accelerator-apply/'),
+                 ('/geeks/our-startups', '/companies/incubator-accelerator/'),
+                 ('/geeks/accelerator-faq', '/companies/incubator-accelerator/'),
+                 ('/geeks/accelerator-apply', '/companies/incubator-accelerator/'),
                  ('/geeks/fellowship', '/about/fellowship/'),
                  ('/governments/city-impact', '/about/fellowship/'),
                  ('/the-program', '/about/fellowship/'),
@@ -191,44 +192,47 @@ class TestApache (unittest.TestCase):
                  ('/city-alumni/chicago', '/governments/chicago/'),
                  ('/city-alumni/philadelphia', '/governments/philadelphia/'),
                  ('/governments/summit-county', '/governments/summitcounty/'),
-                 ('/focus', '/our-work/focus-areas/'),
                  ('/projects/new-york-city-hhc-accelerator/', '/projects/new-york-city-hhs-accelerator/'),
                  ('/companies/newsletter', '/companies/'),
                  ('/talent', '/our-work/initiatives/talent/'),
-                 ('/health', '/our-work/focus-areas/health/'),
-                 ('/safety-justice', '/our-work/focus-areas/safety-justice/'),
-                 ('/economic-development', '/our-work/focus-areas/economic-development/'),
+                 ('/health', '/focus/health/'),
+                 ('/safety-justice', '/focus/safety-justice/'),
+                 ('/economic-development', '/focus/economic-development/'),
                  ('/apply', '/geeks/fellowship-apply/'),
                  ('/Apply', '/geeks/fellowship-apply/'),
-                 
+                 ('/companies/our-companies/', '/companies/incubator-accelerator/'),
+                 ('/companies/accelerator-faq/', '/companies/incubator-accelerator/'),
+                 ('/companies/accelerator-apply/', '/companies/incubator-accelerator/'),
+                 ('/companies/incubator-faq/', '/companies/incubator-accelerator/'),
+                 ('/companies/incubator-apply/', '/companies/incubator-accelerator/'),
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
                  ]
-        
+
         for (start_path, end_path) in pairs:
             url = 'http://0.0.0.0:{0}{1}'.format(self.port, start_path)
-        
+
             for i in range(100):
                 if i > 10:
                     raise Exception('Too many redirects from {0}, now at {1}'.format(start_path, url_path))
-            
+
                 _, url_host, url_path, _, _, _ = urlparse(url)
                 conn = HTTPConnection(*url_host.split(':'))
                 conn.request('GET', url_path)
                 resp = conn.getresponse()
                 conn.close()
-        
+
                 if resp.status not in range(300, 399):
                     break
 
                 url = urljoin(url, resp.getheader('location'))
                 _, new_host, url_path, _, _, _ = urlparse(url)
-                
+
                 # Stop if we go off-site
                 if new_host != url_host:
                     break
 
             assert end_path == url_path, '{0} instead of {1} from {2}'.format(url_path, end_path, start_path)
-    
+
 if __name__ == '__main__':
     unittest.main()

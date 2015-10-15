@@ -1,0 +1,58 @@
+---
+layout: summit-2015
+masthead-image: "/media/images/summit/2015/sponsor/summit-sponsor-header-photo.jpg"
+
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+nav-global-primary: "no"
+masthead-custom: deep
+
+# Title for the title bar, and the overline in the masthead
+title: "2015 Summit: Video"
+
+# Content for the masthead-custom
+headline: Watch the 2015 Summit Talks
+description: "Watch all the main stage talks from the 2015 #CfASummit online now. Selected breakouts will be posted in the future &ndash; check back on this page for updates."
+
+# Metadata image
+metadata:
+  # image should be a full url, i.e. http://codeforamerica.org/media/images/summit/social.jpg
+  image-url: "http://codeforamerica.org/media/images/summit/2015/social.png"
+
+# Load after jQuery
+jquery-scripts: |
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+  <script>
+    /* Dynamically resive our YouTube videos */
+    $(document).ready(function(){ $('.js-fit-vids').fitVids(); });
+  </script>
+---
+<section class="layout-breve">
+  <a id="top"></a>
+  <h2>Must-see talks</h2>
+  <p>Want a introcution to what the 2015 #CfASummit was all about? Watch these videos for a crash course in the future of 21st century government, told from the main stage. <a href="#all">Scroll down for all the talks</a></p>
+  <ul class="list-no-bullets layout-grid-crotchet js-fit-vids">
+    <li>
+      <iframe src="https://www.youtube.com/embed/lqTFi2U2Ebc" frameborder="0" allowfullscreen></iframe>
+      <p><strong>Jake Solomon &ndash; Defining a 21st Century Government</strong></p>
+      <p>The Code for America Health team is taking a user-centered approach to understanding bottlenecks in the CalFresh (food stamps) enrollment process and identifying high priority areas for improvement — with implications for underlying policy and process.</p>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/rcmYwcTItds" frameborder="0" allowfullscreen></iframe>
+      <p><strong>Sam Vaughn &ndash; A New Standard for Community Engagement</strong></p>
+      <p>Sam Vaughn, Neighborhood Change Agent, Office of Neighborhood Safety, City of Richmond, CA, describes how his team is meeting community members where they are and creating lasting impact in safety and justice with the Operation Peacemaker Fellowship.</p>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/R4MNQenjB2Q" frameborder="0" allowfullscreen></iframe>
+      <p><strong>Dana Chisnell &ndash; Next Generation of Civic Designers</strong></p>
+      <p>Dana Chisnell, User Researcher at the United States Digital Service, spotlights how public servants are civic designers in their own right, and the importance of shifting the conversation from "how do we get government to learn about design" to "how do we use design to solve problems."</p>
+    </li>
+  </ul>
+</section>
+
+<section class="layout-breve js-fit-vids">
+  <a id="all"></a>
+  <h2>Watch the whole thing</h2>
+  <p>Play all the main stage talks in the embedded player below, or <a href="https://www.youtube.com/playlist?list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M">check out the playlist on YouTube</a>.</p>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M" frameborder="0" allowfullscreen></iframe>
+</section>

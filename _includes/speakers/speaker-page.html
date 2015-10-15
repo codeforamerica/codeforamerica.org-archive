@@ -28,10 +28,10 @@
         {% if speaker-linkedin %}
           {% if speaker-linkedin contains '/' %}
             <!-- Using linkedin long url -->
-            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-name }}</li>
+            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-name }}</a></li>
           {% else %}
             <!-- Using linkedin shortcode -->
-            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-linkedin }}</li>
+            <li class="icon-linkedin"> <a href="http://www.linkedin.com/in/{{ speaker-linkedin }}">{{ speaker-linkedin }}</a></li>
           {% endif %}
         {% endif %}
 

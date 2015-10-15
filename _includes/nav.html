@@ -38,34 +38,20 @@
     {% assign masthead = false %}
 {% endif %}
 
-{% if nav-global-primary != "no" %}
-<nav class="nav-global-primary">
-  <ul class="layout-breve layout-tight">
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/library">Library</a></li>
-    <li>
-      <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
-          <input type="search" id="search-global-input" class="search-global-input" autocomplete="off" placeholder="Search" name="q" />
-          <!-- consider applying autofocus="autofocus" to input -->
-          <button class="search-global-submit" id="search-global-submit" value="www.codeforamerica.org" type="submit" name="as_sitesearch">Search</button>
-      </form>
-    </li>
-  </ul>
-</nav>
-{% else %}
-<!--  
-      If we don't show the primary nav, we need an empty container so we can collapse the main nav on mobile screens
-      This requirement is because of the nav collapse functionality in global.js
-  -->
+{% comment %}
+      We previously had a nav-global-primary that has been removed. However, due
+      to a bug, if we don't show the primary nav, we need an empty container so
+      we can collapse the main nav on mobile screens. This requirement is because
+      of the nav collapse functionality in global.js.
+{% endcomment %}
 <nav class="nav-global-primary"></nav>
-{% endif %}
 
 {% if masthead != "no" %}
 <div class="masthead {{ masthead-class }}">
   <div class="masthead-hero">
-    <div class="masthead-image" 
+    <div class="masthead-image"
       {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')" 
+      style="background-image: url('{{ masthead-image }}')"
       {% endif %}>
     </div>
   </div>
@@ -79,33 +65,106 @@
   {% comment %}
   Right now, we need to kill the margin-bottom on global-header if we have a custom masthead (since it comes after global-header)
   This checks if there's a custom masthead then applies a class we can style
-  In the future, this hack should be replaced with better pattern-portfolio styles for header above and below masthead 
+  In the future, this hack should be replaced with better pattern-portfolio styles for header above and below masthead
   {% endcomment %}
   {% if page.masthead-custom %}global-header-custom{% endif %}
-  ">  
+  ">
   <a href="/" class="global-header-logo">
-      <img src="/assets/logo.png" />
+      <img src="/assets/logo.png" alt="Code for America logo" />
   </a>
   <p class="skip-to-nav"><a href="#global-footer">Menu</a></p>
 
   <nav class="nav-global-secondary">
     <ul>
+      <!-- 1.2 ABOUT -->
       <li class="nav-tier1 nav-has-children">
         <a href="/about" {% if nav_tier1_active == "about" %}class="state-active"{% endif %}>About</a>
         {% if nav_tier1_active == "about" %}
         <ul class="nav-tier2">
+            <li><a href="/governments">Government partners</a></li>
+            <!-- Not sure what to do with this
             <li><a href="/about/values">Values</a></li>
-            <li><a href="/about/board">Board</a></li>
+            -->
             <li><a href="/about/team">Team</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about/board">Board</a></li>
+            <!--
             <li><a href="/press">Press</a></li>
-            <li><a href="/about/financial-information">Financial Information</a></li>
-            <li><a href="/support-us/">Support Us</a></li>
+            -->
+            <li><a href="/contact">Contact</a></li>
             <li><a href="/jobs">Jobs</a></li>
-            <li><a href="/contact">Contact</a></li> 
+            <li><a href="/about/financial-information">Financial information</a></li>
         </ul>
         {% endif %}
       </li>
+
+      <li class="nav-tier1">
+        <a href="/practices" {% if nav_tier1_active == "practices" %}class="state-active"{% endif %}>Build 21st Century Gov</a>
+        {% if nav_tier1_active == "practices" %}
+        <ul class="nav-tier2">
+            <li><a href="/practices/design">User centered design</a></li>
+            <li><a href="/practices/engagement">Community engagement</a></li>
+            <li><a href="/practices/iterate">Iterative development</a></li>
+            <li><a href="/practices/data-driven">Data-driven decision making</a></li>
+            <li><a href="/practices/open">Open government</a></li>
+            <li><a href="/practices/team-building">Team building</a></li>
+            <li><a href="/practices/procurement">Procurement</a></li>
+        </ul>
+        {% endif %}
+      </li>
+
+      <!-- 1.3 WORK WITH US -->
+      <li class="nav-tier1 nav-has-children">
+        <a href="/join" {% if nav_tier1_active == "join" %}class="state-active"{% endif %}>What you can do</a><!-- NO PAGE! -->
+        {% if nav_tier1_active == "join" %}
+        <ul class="nav-tier2">
+            <li><a href="/governments/fellowship">Be a gov partner</a></li>
+            <li><a href="/geeks/fellowship-apply">Become a fellow</a></li>
+            <li><a href="/support-us">Fund our work</a></li>
+            <li><a href="/brigade">Volunteer your skills</a></li><!-- i.e Brigade -->
+            <li><a href="/our-work/initiatives/talent">Work in government</a></li>
+            <li><a href="http://awards.codeforamerica.org">Get your company recognized</a></li><!-- i.e. Companies/Awards -->
+            <li><a href="/apps/">Use our products</a></li><!-- i.e. Companies/Awards -->
+        </ul>
+        {% endif %}
+      </li>
+
+      <!-- 1.4 HOW WE WORK -->
+      <li class="nav-tier1 nav-has-children">
+        <a href="/focus" {% if nav_tier1_active == "focus" %}class="state-active"{% endif %}>Where we focus</a><!-- NO PAGE! -->
+        {% if nav_tier1_active == "focus" %}
+        <ul class="nav-tier2">
+          <li><a href="/focus/health">Health</a></li>
+          <li><a href="/focus/safety-justice">Safety and Justice</a></li>
+          <li><a href="/focus/economic-development">Economic Development</a></li>
+          <li><a href="/focus/communications-engagement">Communications and Engagement</a></li><!-- NO PAGE! -->
+          <!-- <li><a href="/about/fellowship">Fellowship</a></li>
+          <li><a href="/about/fellowship">Global partnerships</a></li> -->
+        </ul>
+        {% endif %}
+      </li>
+
+      <!-- 1.5 OUR COMMUNITY
+      <li class="nav-tier1 nav-has-children">
+        <a href="/community" {% if nav_tier1_active == "community" %}class="state-active"{% endif %}>Our community</a>
+        {% if nav_tier1_active == "community" %}
+        <ul class="nav-tier2">
+          <li><a href="/brigade">Brigades</a></li>
+          <li><a href="/companies">Companies</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="http://codeforall.org/" target="_blank">Code for All</a></li>
+        </ul>
+        {% endif %}
+      </li>
+      -->
+
+      <li class="nav-tier1">
+        <a href="/summit">Summit</a>
+      </li>
+      <li class="nav-tier1">
+        <a href="/blog">Blog</a>
+      </li>
+
+      <!-- OLD ITEMS THAT MAY OR MAY NOT NEED A HOME
       <li class="nav-tier1 nav-has-children">
         <a href="/governments" {% if nav_tier1_active == "governments" %}class="state-active"{% endif %}>Governments</a>
         {% if nav_tier1_active == "governments" %}
@@ -113,7 +172,7 @@
           <li><a href="/governments/fellowship">Fellowship</a></li>
           <li><a href="/governments/2015-cities">2015 Partners</a></li>
           <li><a href="/governments/alumni">Alumni Partners</a></li>
-          <li><a href="/governments/principles">Principles for 21st Century Government</a></li>
+          <li><a href="/governments/practices">Practices for 21st Century Government</a></li>
         </ul>
         {% endif %}
       </li>
@@ -134,10 +193,9 @@
         <a href="/companies" {% if nav_tier1_active == "companies" %}class="state-active"{% endif %}>Companies</a>
         {% if nav_tier1_active == "companies" %}
          <ul class="nav-tier2">
-          <li><a href="/companies/our-companies">Our Companies</a></li>
-           <li><a href="/companies/incubator-faq">Incubator FAQ</a></li>
-          <li><a href="/companies/accelerator-faq">Accelerator FAQ</a></li>
-          <li><a href="/companies/accelerator-apply">Apply</a></li>
+          <li><a href="/companies">Get Involved</a></li>
+          <li><a href="http://awards.codeforamerica.org" target="_blank">Technology Awards</a></li>
+          <li><a href="/companies/incubator-accelerator">Accelerator &amp; Incubator</a></li>
         </ul>
         {% endif %}
       </li>
@@ -147,24 +205,24 @@
         <ul class="nav-tier2">
           <li><a href="/apps">Applications</a></li>
           <li><a href="/our-work/initiatives">Initiatives</a></li>
-          <li><a href="/our-work/focus-areas">Focus Areas</a></li>
+          <li><a href="/focus">Focus Areas</a></li>
           <li><a href="/our-work/data-formats">Data Formats</a></li>
-          <li><a href="/library">Library</a></li>
         </ul>
         {% endif %}
       </li>
+      -->
       <li><a href="https://secure.codeforamerica.org/page/contribute/default?source_codes=nav-donate-button" class="button">Donate</a></li>
     </ul>
-  </nav>    
+  </nav>
 </div>
 
 {% if page.masthead-custom == "deep" %}
 <div class="masthead masthead-custom masthead-{{ page.masthead-custom }}">
-  
+
   <div class="masthead-hero">
-    <div class="masthead-image" 
+    <div class="masthead-image"
       {% if masthead-image %}
-      style="background-image: url('{{ masthead-image }}')" 
+      style="background-image: url('{{ masthead-image }}')"
       {% endif %}>
     </div>
   </div>
@@ -174,10 +232,10 @@
       <p class="page-overline">{{ page.title }}</p>
       <h1 class="page-title">{{ page.headline }}</h1>
     {% else %}
-      <h1 class="page-title">{{ page.title }}</h1>  
+      <h1 class="page-title">{{ page.title }}</h1>
     {% endif %}
   </header>
-  
+
   {% if page.description %}
   <div class="description layout-semibreve">
     <p class="page-description">{{ page.description }}</p>
