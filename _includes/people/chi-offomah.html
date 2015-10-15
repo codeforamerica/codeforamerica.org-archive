@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+	<div class="heading">
+    <h2 class="p-name">Chi Offomah</h2>
+	</div>
+
+	<div class="layout-minor">
+    <p>Title</p>
+    <h4 class="text-whisper layout-tight">Member of</h4>
+
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/chi-offomah.jpg" />
+	</div>
+
+	<div class="layout-major">
+    <p class="p-note">
+      Long bio text.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/chichi_ohh">@chichi_ohh</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/pub/chidinma-offomah/81/931/14b">https://<wbr>www.linkedin.com/<wbr>pub/chidinma-offomah/<wbr>81/931/14b</a></td></tr>
+      </table>
+    </div>
+	</div>
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Chi Offomah</h3>
+
+  <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/chi-offomah.jpg">
+
+  <div class="p-note profile-note">
+    <p>
+      Short bio text. BLOOP twitter length
+    </p>
+
+    <p><a class="link-more" href="{{ include.base }}/people/___-___/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/pub/chidinma-offomah/81/931/14b">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/chichi_ohh">@chichi_ohh</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
