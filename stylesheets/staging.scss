@@ -474,6 +474,13 @@ body.modal-active {
 	border: 1px solid $color-gray-light;
 	padding: 1em;
 	background-color: #fcfcfc;
+	h5 {
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+	}
 }
 
 .card img {
@@ -487,6 +494,12 @@ body.modal-active {
 	margin-top: calc(-1em + -1px);
 }
 
+.card-inverse {
+	border-color: white;
+	background-color: transparent;
+	color: white;
+}
+
 // ##### ICONS #####
 
 i.symbol {
@@ -495,6 +508,12 @@ i.symbol {
 	height: 50px;
 	border-radius: 100%;
 	background-color: $color-gray-dark;
+}
+
+i.symbol-invert {
+	background-color: transparent !important;
+	border: 1px solid white;
+	border-radius: 100%;
 }
 
 i.symbol-rocket {
