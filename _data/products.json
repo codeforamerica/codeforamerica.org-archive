@@ -28,7 +28,7 @@
   },
   {
     "name":"Adopt-a-Hydrant",
-    "safeName":"#",
+    "safeName":"adopt-a-hydrant",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Adopt-a-Hydrant makes it easy for community members to volunteer to take care of local infrastructure, like fire hydrants, in case of severe weather. The app can be customized for any type of infrastructure, from storm drains to tsunami sirens.",
@@ -73,7 +73,7 @@
   },
   {
     "name":"HNL Answers   ",
-    "safeName":"#",
+    "safeName":"honolulu-answers",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Honolulu Answers allows residents to find clear, simple answers to the most frequently asked questions about city services. ",
@@ -91,7 +91,7 @@
   },
   {
     "name":"Prepared.ly",
-    "safeName":"#",
+    "safeName":"prepared-ly",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Prepared.ly helps residents learn how to protect their communities from natural disasters with checklists and facts about disaster preparedness.",
@@ -100,7 +100,7 @@
   },
   {
     "name":"Record Trac",
-    "safeName":"#",
+    "safeName":"recordtrac",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Record Trac is a public records request management system that is friendly for residents to use and easy for officials to maintain.",
@@ -118,7 +118,7 @@
   },
   {
     "name":"Analytics Dashboard",
-    "safeName":"#",
+    "safeName":"city-analytics-dashboard",
     "category":"Communication & Engagement",
     "stage":"National Beta",
     "description":"The City Analytics Dashboard lets users display the live traffic on your website easily from your Google Analytics account.",
@@ -127,7 +127,7 @@
   },
   {
     "name":"City Voice",
-    "safeName":"#",
+    "safeName":"cityvoice",
     "category":"Communication & Engagement",
     "stage":"National Beta",
     "description":"City Voice is a call-in system for gathering, sharing, and understanding community feedback about places in a neighborhood, such as vacant lots.",
@@ -136,7 +136,7 @@
   },
   {
     "name":"Develpoment Fast Pass",
-    "safeName":"#",
+    "safeName":"development-fastpass",
     "category":"Economic Development",
     "stage":"Alpha",
     "description":"Development Fast Pass recommends the best potential locations for new businesses based on characteristics like land use, zoning, building occupancy, and business incentives.",
@@ -145,7 +145,7 @@
   },
   {
     "name":"BizFriendly",
-    "safeName":"#",
+    "safeName":"bizfriendly",
     "category":"Economic Development",
     "stage":"Local Beta",
     "description":"BizFriendly helps small business owners learn and share digital literacy skills to grow their businesses.",
@@ -163,7 +163,7 @@
   },
   {
     "name":"Infrasructure Map",
-    "safeName":"#",
+    "safeName":"",
     "category":"Economic Development",
     "stage":"Local Beta",
     "description":"This interactive map tracks how Atlanta is spending money on a key capital infrastructure project and lets residents discuss spending priorities.",
@@ -181,7 +181,7 @@
   },
   {
     "name":"Discover BPS",
-    "safeName":"#",
+    "safeName":"discover-bps",
     "category":"Education",
     "stage":"Local Live",
     "description":"DiscoverBPS combines eligibility criteria, school data, and advanced mapping tools to help parents easily find the right school for their child.",
@@ -217,7 +217,7 @@
   },
   {
     "name":"Balance",
-    "safeName":"#",
+    "safeName":"balance",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Balance allows a recipient of food benefits to check the balance of their EBT card via SMS.\n",
@@ -226,7 +226,7 @@
   },
   {
     "name":"Clean",
-    "safeName":"#",
+    "safeName":"clean",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Clean helps users fill out an application for Calfresh (Food Stamps in California).",
@@ -235,7 +235,7 @@
   },
   {
     "name":"Connect",
-    "safeName":"#",
+    "safeName":"connect",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Connect waits on hold so you don't have to and calls you back when a human picks up the phone. ",
@@ -244,7 +244,7 @@
   },
   {
     "name":"Prompt.ly",
-    "safeName":"#",
+    "safeName":"promptly",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Prompt.ly is a text messaging system that helps social services workers communicate with benefits recipients about important information like deadlines and required paperwork.",
@@ -262,7 +262,7 @@
   },
   {
     "name":"Click that Hood",
-    "safeName":"#",
+    "safeName":"click-that-hood",
     "category":"Maps & Transit",
     "stage":"Live",
     "description":"Click that Hood is a game to test your understanding of neighborhood geography. It is quick and easy to create a version for a new city or other location, making it an ideal first open source project.",
@@ -271,7 +271,7 @@
   },
   {
     "name":"Streetmix",
-    "safeName":"#",
+    "safeName":"streetmix",
     "category":"Maps & Transit",
     "stage":"Live",
     "description":"Streetmix is an interactive tool that lets anyone create a visual representation of their ideal street, based on methods already used by city planners. ",
@@ -280,7 +280,7 @@
   },
   {
     "name":"Public Art App",
-    "safeName":"#",
+    "safeName":"public-art-finder",
     "category":"Maps & Transit",
     "stage":"Local Beta",
     "description":"Public Art App enables crowd-sourced mapping of public art installations in a friendly mobile interface.",
@@ -289,7 +289,7 @@
   },
   {
     "name":"Text My bus ",
-    "safeName":"#",
+    "safeName":"text-my-bus",
     "category":"Maps & Transit",
     "stage":"Local Beta",
     "description":"Text My Bus lets residents find out the arrival time of the next bus via SMS by texting the nearest bus stop number.",
@@ -298,7 +298,7 @@
   },
   {
     "name":"Where's My School Bus?",
-    "safeName":"#",
+    "safeName":"wheres-my-school-bus",
     "category":"Maps & Transit",
     "stage":"Local Beta",
     "description":"Where's My School Bus? is a location information app allowing parents to track their child’s bus in real time -- reducing the time children spend unsupervised and in harms way.",
@@ -325,7 +325,7 @@
   },
   {
     "name":"Jail Population Dashboard",
-    "safeName":"#",
+    "safeName":"jail-population-management-dashboard",
     "category":"Safety & Justice",
     "stage":"Local Beta",
     "description":"The Jail Population Management Dashboard gives judges, corrections staff, and police a real-time, in-depth view of the local metro jail system, for real time data driven decision making.",
