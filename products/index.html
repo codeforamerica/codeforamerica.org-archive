@@ -5,7 +5,7 @@ title: "Products"
 nav_tier1_active: "join"
 nav-breadcrumbs:
   - What You Can Do: "/join"
-  - Use our products: "/apps"
+  - Use our products: "/products"
 helpers:
   underscore: true
   react: true
@@ -46,16 +46,16 @@ helpers:
           <li class="layout-crotchet">
             <article class="teaser teaser-app">
               <header class="teaser-header">
-                <a href="/apps/{{product.safeName}}" title="{{product.name}}">
+                <a href="/products/{{product.safeName}}" title="{{product.name}}">
                   <h1 class="teaser-title">{{product.name}}</h1>
                 </a>
               </header>
               <div class="teaser-body">
                 <p>{{product.description}}</p>
-                <p><a href="/apps/{{product.safeName}}">Learn more about this app</a></p>
+                <p><a href="/products/{{product.safeName}}">Learn more about this app</a></p>
               </div>
               <footer class="teaser-footer">
-                <a href="/apps/{{product.safeName}}" class="teaser-masthead">
+                <a href="/products/{{product.safeName}}" class="teaser-masthead">
                   <img class="teaser-image" src="/media/images/apps/{{product.imageURL}}" />
                 </a>
               </footer>
@@ -76,16 +76,16 @@ helpers:
         <li className="layout-crotchet">
           <article className="teaser teaser-app">
             <header className="teaser-header">
-              <a href={"/apps/" + this.props.product.safeName} title="{this.props.product.name}">
+              <a href={"/products/" + this.props.product.safeName} title="{this.props.product.name}">
                 <h1 className="teaser-title">{this.props.product.name}</h1>
               </a>
             </header>
             <div className="teaser-body">
               <p>{this.props.product.description}</p>
-              <p><a href={"/apps/" + this.props.product.safeName}>{'Learn more about this app'}</a></p>
+              <p><a href={"/products/" + this.props.product.safeName}>{'Learn more about this app'}</a></p>
             </div>
             <footer className="teaser-footer">
-              <a href={"/apps/" + this.props.product.safeName} className="teaser-masthead">
+              <a href={"/products/" + this.props.product.safeName} className="teaser-masthead">
                 <img className="teaser-image" src={"/media/images/apps/" + this.props.product.imageURL} />
               </a>
             </footer>
