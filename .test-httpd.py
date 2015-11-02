@@ -90,7 +90,8 @@ class TestApache (unittest.TestCase):
         '''
         pairs = [('/accelerator', '/companies/incubator-accelerator/'),
                  ('/incubator', '/companies/incubator-accelerator/'),
-                 ('/projects', '/apps/'), ('/brigade/projects', '/brigade/projects'),
+                 ('/projects', '/products/'),
+                 ('/brigade/projects', '/brigade/projects'),
                  ('/our-work/focus-areas', '/focus/'),
                  ('/our-work/focus-areas/health', '/focus/health/'),
                  ('/governments/capabilities', '/practices/'),
@@ -98,7 +99,6 @@ class TestApache (unittest.TestCase):
                  ('/procurement', '/practices/procurement/'),
                  ('/governments/capabilities/procurement', '/practices/procurement/'),
                  ('/team', '/about/team/'),
-                 ('/projects', '/apps/'),
                  ('/fellows/job-description', '/geeks/fellowship-faq/'),
                  ('/fellows/apply', '/geeks/fellowship-apply/'),
                  ('/fellows/alumni-fellows', '/geeks/our-geeks/alumni-fellows/'),
@@ -205,6 +205,8 @@ class TestApache (unittest.TestCase):
                  ('/companies/accelerator-apply/', '/companies/incubator-accelerator/'),
                  ('/companies/incubator-faq/', '/companies/incubator-accelerator/'),
                  ('/companies/incubator-apply/', '/companies/incubator-accelerator/'),
+                 ('/apps', '/products/'),
+                 ('/apps/cityvoice', '/products/cityvoice/'),
                  # # This actually goes to BSD, but we check for it anyway.
                  # ('/donate', '/page/contribute/default'),
                  ]

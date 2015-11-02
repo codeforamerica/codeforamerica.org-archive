@@ -1,0 +1,274 @@
+---
+layout: default
+title: "Products"
+# Navigation
+nav_tier1_active: "join"
+nav-breadcrumbs:
+  - What You Can Do: "/join"
+  - Use our products: "/products"
+helpers:
+  underscore: true
+  react: true
+---
+<style>
+  .heading {
+    margin-top: 0;
+    padding-top: 1em;
+  }
+  * + .heading { margin-top: 1em; }
+  h5 {
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-weight: 700;
+  }
+  .teaser-pdf .teaser-footer, .teaser-app .teaser-footer, .teasers li > a[href$=".pdf"] > div {
+    border-top: 1px solid #e5e5e5;
+  }
+</style>
+<section class="layout-breve">
+  {% include nav-breadcrumbs.html %}
+  <section id="ProductsApp">
+    <div class="layout-minor">
+      <h5>Search products</h5>
+      <button class="button-subtle button-progress" disabled>Loading product filters...</button>
+    </div>
+    <div class="layout-major">
+      {% assign categories = site.data.products | uniq_array_by: "category" %}
+      {% for category in categories %}
+      <div class="layout-whole">
+        {% assign products = site.data.products | if_it_has: "category", category %}
+
+        <div class="heading">
+          <h4>{{category}}</h4>
+        </div>
+        <ul class="teasers">
+        {% for product in products %}
+          <li class="layout-crotchet">
+            <article class="teaser teaser-app">
+              <header class="teaser-header">
+                <a href="/products/{{product.safeName}}" title="{{product.name}}">
+                  <h1 class="teaser-title">{{product.name}}</h1>
+                </a>
+              </header>
+              <div class="teaser-body">
+                <p>{{product.description}}</p>
+                <p><a href="/products/{{product.safeName}}">Learn more about this app</a></p>
+              </div>
+              <footer class="teaser-footer">
+                <a href="/products/{{product.safeName}}" class="teaser-masthead">
+                  <img class="teaser-image" src="/media/images/apps/{{product.imageURL}}" />
+                </a>
+              </footer>
+            </article>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+
+    </div>
+  </section>
+</section>
+<script type="text/babel">
+  var Product = React.createClass({
+    render: function() {
+      return(
+        <li className="layout-crotchet">
+          <article className="teaser teaser-app">
+            <header className="teaser-header">
+              <a href={"/products/" + this.props.product.safeName} title="{this.props.product.name}">
+                <h1 className="teaser-title">{this.props.product.name}</h1>
+              </a>
+            </header>
+            <div className="teaser-body">
+              <p>{this.props.product.description}</p>
+              <p><a href={"/products/" + this.props.product.safeName}>{'Learn more about this app'}</a></p>
+            </div>
+            <footer className="teaser-footer">
+              <a href={"/products/" + this.props.product.safeName} className="teaser-masthead">
+                <img className="teaser-image" src={"/media/images/apps/" + this.props.product.imageURL} />
+              </a>
+            </footer>
+          </article>
+        </li>
+      );
+    }
+  });
+
+  var ProductCategory = React.createClass({
+    filterResults: function(source,comparison) {
+      return source.toLowerCase().indexOf(comparison.toLowerCase()) !== -1;
+    },
+    render: function() {
+      var products = this.props.products;
+      // If the user has entered search text, filter the products
+      if (this.props.searchText !== '') {
+        products = products.filter(function(product){
+          if (this.filterResults(product.name,this.props.searchText) || this.filterResults(product.description,this.props.searchText) || this.filterResults(product.category,this.props.searchText)) {
+            return true;
+          }
+        }, this);
+      }
+      if (products.length > 0) {
+        return(
+          <div className="layout-whole">
+            <div className="heading"><h4>{this.props.category}</h4></div>
+            <ul className="teasers">
+              {products.map(function(product,index) {
+                return <Product product={product} key={index} />;
+              })}
+            </ul>
+          </div>
+        );
+      }
+      else {
+        return(
+          <div>
+            <div className="heading"><h4>{this.props.category}</h4></div>
+            <p>Sorry, your search returned no products in {this.props.category}. Try changing your filters.</p>
+          </div>
+        );
+      }
+    }
+  });
+
+  var ProductList = React.createClass({
+    render: function() {
+      var productCategories = this.props.categories;
+      // If the user filtered by category, only show those categories
+      if (this.props.chosenCategories.length > 0) {
+        productCategories = productCategories.filter(function(category){
+          if (this.props.chosenCategories.indexOf(category) > -1) {
+            return true;
+          }
+        }, this);
+      }
+
+      return(
+        <div>
+          {productCategories.map(function(category,index){
+            return(
+              <ProductCategory
+                category={category}
+                products={_.where(this.props.products, {category: category})}
+                key={index}
+                searchText={this.props.searchText}
+              />
+            );
+          }, this)}
+        </div>
+      );
+    }
+  });
+
+  var ProductCategoryButton = React.createClass({
+    render: function() {
+      if (this.props.handleAddCategoryFilter) {
+        return <button className="button button-s" onClick={this.props.handleAddCategoryFilter.bind(null,this.props.category)}>{this.props.category}</button>;
+      }
+      else if (this.props.handleRemoveCategoryFilter) {
+        return <button className="button button-s button-invert" onClick={this.props.handleRemoveCategoryFilter.bind(null,this.props.category)}>{'[x] ' + this.props.category}</button>;
+      }
+    }
+    });
+
+    var ProductFilters = React.createClass({
+    render: function() {
+      var productCategoryButtons = this.props.categories.map(function(category,index) {
+        return(
+          <ProductCategoryButton category={category} key={index} handleAddCategoryFilter={this.props.handleAddCategoryFilter} />
+        );
+      }, this);
+      var activeCategoryFilters = this.props.chosenCategories.map(function(category,index) {
+        return(
+          <ProductCategoryButton category={category} key={index} handleRemoveCategoryFilter={this.props.handleRemoveCategoryFilter} />
+        );
+      }, this);
+      return(
+        <div className="product-filters">
+          <h5>Search products</h5>
+          <input value={this.props.searchText} onChange={this.props.handleSearch} placeholder="Search for a product" />
+          <h5>Filter by category</h5>
+          {productCategoryButtons}
+          <h5>Currently active filters</h5>
+          {activeCategoryFilters}
+        </div>
+      );
+    }
+  });
+
+  var ProductApp = React.createClass({
+    getInitialState: function() {
+      return {
+        searchText: "",
+        chosenCategories: new Array(),
+        products: new Array(),
+        categories: new Array()
+      };
+    },
+    componentDidMount: function() {
+      $.get(this.props.source, function(result) {
+        if (this.isMounted()) {
+          var categories = _.uniq(_.pluck(result, 'category'));
+          this.setState({
+            products: result,
+            categories: categories
+          });
+        }
+      }.bind(this));
+    },
+    handleSearch: function(evt) {
+      this.setState({
+        searchText: evt.target.value
+      });
+    },
+    handleAddCategoryFilter: function(categoryString,evt) {
+      // If this category is NOT already added to this.state.chosenCategories then
+      // add it.
+      if (this.state.chosenCategories.indexOf(categoryString) === -1) {
+        var chosenCategories = this.state.chosenCategories;
+        chosenCategories.push(categoryString);
+        this.setState({
+          chosenCategories: chosenCategories
+        });
+      };
+    },
+    handleRemoveCategoryFilter: function(categoryString,evt) {
+      // Remove the category from this.state.chosenCategories
+      var chosenCategories = _.without(this.state.chosenCategories, categoryString);
+      this.setState({
+        chosenCategories: chosenCategories
+      });
+    },
+    render: function() {
+      return(
+        <div>
+          <div className="layout-minor">
+            <ProductFilters
+              products={this.state.products}
+              categories={this.state.categories}
+              chosenCategories={this.state.chosenCategories}
+              handleSearch={this.handleSearch}
+              handleAddCategoryFilter={this.handleAddCategoryFilter}
+              handleRemoveCategoryFilter={this.handleRemoveCategoryFilter}
+            />
+          </div>
+          <div className="layout-major">
+            <ProductList
+              products={this.state.products}
+              categories={this.state.categories}
+              chosenCategories={this.state.chosenCategories}
+              searchText={this.state.searchText}
+            />
+          </div>
+        </div>
+      );
+    }
+  });
+
+  // Do the thing
+  ReactDOM.render(
+    <ProductApp source="/fragments/products.json" />,
+    document.getElementById('ProductsApp')
+  );
+</script>

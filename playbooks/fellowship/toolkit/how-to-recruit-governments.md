@@ -45,7 +45,7 @@ Established tech executives in your community can be helpful in facilitating int
  - Articulate the program as a way to help them achieve high-level goals and objectives.
  - Frame the Fellowship as a way inspire a culture of innovation that can sweep through their local government.
  - Emphasize opportunities to increase efficiency, lower costs, enhance civic engagement and foster innovation.
- - Share examples of success stories, either from your own work or from similar initiatives. For example, a [list of "wins"](https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0Ah1olKDkcI9WdE1MVHl5ZGQ5LS1TZzRiQjU3Q2ZfX0E&usp=drive_web#gid=1) from Code for America programs and videos of [apps and stories](/apps/) from past Code for America projects.
+ - Share examples of success stories, either from your own work or from similar initiatives. For example, a [list of "wins"](https://docs.google.com/a/codeforamerica.org/spreadsheet/ccc?key=0Ah1olKDkcI9WdE1MVHl5ZGQ5LS1TZzRiQjU3Q2ZfX0E&usp=drive_web#gid=1) from Code for America programs and videos of [apps and stories](/products/) from past Code for America projects.
  - Invite them to come speak at an event and build their enthusiasm for your program.
 
 ### Government Officials in Middle Management

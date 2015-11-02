@@ -1,0 +1,78 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Measured Voice</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/measured-voice.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Measured Voice is a simple dashboard allowing groups to measure, respond and collaborate via shared social media accounts.</p>
+	    
+	    <p class="text-whisper"><a href="https://app.measuredvoice.com/">https://app.measuredvoice.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Founded by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li>Jed Sundwall</li>
+	    	<li>Lee Vann</li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Part of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/startups">2012 Accelerator</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Measured Voice is a simple dashboard allowing groups to measure, respond and collaborate via shared social media accounts.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="https://measuredvoice.com/">https://measuredvoice<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href="http://www.youtube.com/watch?v=dWIVb3owczQ">http://www<wbr>.youtube<wbr>.com/<wbr>watch?v=<wbr>dWIVb3owczQ</a></td></tr>
+	    		<tr><th>Deploy</th><td>Commercially-available hosted platform <a href="http://measuredvoice.com/tour/#hd-pricing">with tiered pricing model</td></tr>
+	    	</table>
+	    	<a href="https://codeforamerica.wufoo.com/forms/app-inquiry-form/" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p>Measured Voice is a tool for professional social media communication teams. It has been built specifically to solve a problem faced by government organizations at all levels: the need to communicate briefly, frequently, and directly with citizens.</p>
+        <p>It lets you:</p>
+        <ul>
+        <li>Focus on what matters in social media: your content.</li>
+        <li>Collaborate with your team to write great messages.</li>
+        <li>Schedule social media messages in advance.</li>
+        <li>Optimize your messaging with useful analytics.</li>
+        <li>Create guidelines to develop a strong voice.</li>
+        <li>Develop workflow for an efficient and professional social media team.</li>
+        </ul>
+        <p>Use the App.</p>
+
+	</div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/products/measured-voice">
+                <h1 class="teaser-title">Measured Voice</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Measured Voice is a simple dashboard allowing groups to measure, respond and collaborate via shared social media accounts.</p>
+            
+            <h2 class="text-whisper">Deploy</h2>
+            <p>Commercially-available hosted platform <a href="http://measuredvoice.com/tour/#hd-pricing">with tiered pricing model</p>
+            
+            <p><a href="{{ include.base }}/products/measured-voice">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/products/measured-voice" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/measured-voice.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}
