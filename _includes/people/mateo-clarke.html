@@ -1,0 +1,63 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Mateo Clarke</h2>
+	</div>
+
+	<div class="layout-minor">
+
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+				<li><a href="http://www.open-austin.org/">Austin, TX Brigade</a></li>
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains/">Brigade Captains</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/mateo-clarke.jpg" />
+	</div>
+
+	<div class="layout-major">
+
+			<p>Mateo Clarke is a Web Developer, Fiddler, and Community Organizer dedicated to leveraging technology for social good. Mateo works as a Frontend Engineer using Javascript &amp; Ruby on Rails at AcademicWorks, helping schools and foundations award more scholarship money to students.</p>
+			<p>As Brigade Captain at Open Austin, Mateo has helped to activate the volunteer civic hacking community in Austin through developer outreach, partnerships with municipal and governmental groups, and running civic hack nights. Mateo currently serves on the Austin Community Technology and Telecommunications Commission, which advises the Austin City Council on technology matters.</p>
+			<p>Mateo graduated from the University of Texas at Austin with degrees in Economics &amp; Latin American Studies and later completed Makersquare’s immersive programming bootcamp. Mateo is a big soccer fan and you can find him out on the pitch in Austin most Sundays.</p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/mateoclarke">@mateoclarke</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/in/mateoclarke">http://www<wbr>.linkedin<wbr>.com/<wbr>in/<wbr>mateoclarke</a></td></tr>
+					<tr><th>Github</th><td><a href="http://www.github.com/mateoclarke">github.com/mateoclarke</a></td></tr>
+					<tr><th>Website</th><td><a href="http://www.mateoclarke.com/">mateoclarke.com</a></td></tr>
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Mateo Clarke</h3>
+    <img alt="harlan-weber" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/mateo-clarke.jpg" />
+    <div class="p-note profile-note">
+				<p>
+						<a href="http://www.open-austin.org/">Austin, TX Brigade</a>
+				</p>
+				<p>Mateo Clarke is a Web Developer, Fiddler, and Community Organizer dedicated to leveraging technology for social good. Mateo is the Brigade Captain at Open Austin and works as a Frontend Engineer.</p>
+
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/mateo-clarke/">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+					<li class="social-website"><a href="http://mateoclarke.com/">Website</a></li>
+					<li class="social-twitter"><a href="https://twitter.com/mateoclarke">@mateoclarke</a></li>
+					<li class="social-github"><a href="https://github.com/mateoclarke">github.com/mateoclarke</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
