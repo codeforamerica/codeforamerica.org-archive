@@ -1,0 +1,53 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Mike Rossetti</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/mike-rossetti.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Mike is a civic technologist from Branford, Connecticut. He has prior experience as a business school professor, agile software engineer, political data analyst, and government technology consultant. When not exploring the streets of urban America or contributing to open source software, Mike practices guitar, rowing, basketball, and yoga.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/data_creative">@data_creative</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/mikerossetti">https://www.linkedin.com/in/mikerossetti</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Mike Rossetti</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/mike-rossetti.jpg" />
+
+  <div class="p-note profile-note">
+    <p>
+      Mike is a civic technologist from Branford, Connecticut. He has prior experience as a business school professor, agile software engineer, political data analyst, and government technology consultant. ...
+    </p>
+
+    <p><a class="link-more" href="/people/mike-rossetti/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/mikerossetti">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/data_creative">@data_creative</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
