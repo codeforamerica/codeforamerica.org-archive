@@ -24,6 +24,10 @@ helpers:
   .teaser-pdf .teaser-footer, .teaser-app .teaser-footer, .teasers li > a[href$=".pdf"] > div {
     border-top: 1px solid #e5e5e5;
   }
+  input.full-width {
+    width: 100%;
+    max-width: 100%;
+  }
 </style>
 <section class="layout-breve">
   {% include nav-breadcrumbs.html %}
@@ -187,7 +191,7 @@ helpers:
       return(
         <div className="product-filters">
           <h5>Search products</h5>
-          <input value={this.props.searchText} onChange={this.props.handleSearch} placeholder="Search for a product" />
+          <input value={this.props.searchText} onChange={this.props.handleSearch} className="full-width" placeholder="Search for a product" />
           <h5>Filter by category</h5>
           {productCategoryButtons}
           <h5>Currently active filters</h5>
