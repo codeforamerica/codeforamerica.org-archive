@@ -1,7 +1,7 @@
 [
   {
     "name":"MuniciPal ",
-    "safeName":"#",
+    "relativeURL":"/governments/mesa/#product",
     "category":"Communication & Engagement",
     "stage":"Alpha",
     "description":"Municipal helps residents stay current on news about elected officials and legislation that is relevant to the neighborhood where they live or work.",
@@ -10,7 +10,7 @@
   },
   {
     "name":"311 Dashboard",
-    "safeName":"#",
+    "relativeURL":"/governments/chicago/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"The 311 Dashboard visualizes a city's 311 non-emergency service request data to show neighborhood-level needs and trends.",
@@ -19,7 +19,7 @@
   },
   {
     "name":"311 Service Tracker",
-    "safeName":"#",
+    "relativeURL":"/governments/chicago/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"311 Service Tracker makes it easy for anyone to find out the status of a 311 service request.",
@@ -28,7 +28,7 @@
   },
   {
     "name":"Adopt-a-Hydrant",
-    "safeName":"adopt-a-hydrant",
+    "relativeURL":"/products/adopt-a-hydrant/",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Adopt-a-Hydrant makes it easy for community members to volunteer to take care of local infrastructure, like fire hydrants, in case of severe weather. The app can be customized for any type of infrastructure, from storm drains to tsunami sirens.",
@@ -37,7 +37,7 @@
   },
   {
     "name":"Atlanta Procurement Website",
-    "safeName":"#",
+    "relativeURL":"/governments/atlanta/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"The Atlanta Procurement Website provides information on city procurement opportunities, explains the procurement process, and lets users sign up to receive automatic updates about new opportunities.",
@@ -46,7 +46,7 @@
   },
   {
     "name":"ATX  Floods",
-    "safeName":"#",
+    "relativeURL":"/governments/austin/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"ATX Floods is a tool for crowd-sourced reporting and mapping of flash flood conditions like emergency road closures and high water. ",
@@ -55,7 +55,7 @@
   },
   {
     "name":"CityGram ",
-    "safeName":"#",
+    "relativeURL":"/governments/charlotte/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"CityGram lets residents subscribe to SMS and email notifications by topic and neighborhood, powered by a variety of open data sources.",
@@ -64,7 +64,7 @@
   },
   {
     "name":"Cute Pets IN",
-    "safeName":"#",
+    "relativeURL":"/governments/denver/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Cute Pets In is an app that automatically posts photos and profiles of available pets in municipal shelters to a Twitter feed to help more pets find adopted homes.",
@@ -73,7 +73,7 @@
   },
   {
     "name":"HNL Answers   ",
-    "safeName":"honolulu-answers",
+    "relativeURL":"/products/honolulu-answers/",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Honolulu Answers allows residents to find clear, simple answers to the most frequently asked questions about city services. ",
@@ -82,7 +82,7 @@
   },
   {
     "name":"Home Base",
-    "safeName":"#",
+    "relativeURL":"/governments/sanantonio/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Home Base guides citizens through the permitting process for home remodels in San Antonio.",
@@ -91,7 +91,7 @@
   },
   {
     "name":"Prepared.ly",
-    "safeName":"prepared-ly",
+    "relativeURL":"prepared-ly",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Prepared.ly helps residents learn how to protect their communities from natural disasters with checklists and facts about disaster preparedness.",
@@ -100,7 +100,7 @@
   },
   {
     "name":"Record Trac",
-    "safeName":"recordtrac",
+    "relativeURL":"/products/recordtrac/",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"Record Trac is a public records request management system that is friendly for residents to use and easy for officials to maintain.",
@@ -109,7 +109,7 @@
   },
   {
     "name":"The Daily Brief",
-    "safeName":"#",
+    "relativeURL":"/governments/chicago/#product",
     "category":"Communication & Engagement",
     "stage":"Local Beta",
     "description":"The Daily Brief allows users to explore and filter 311 service requests by neighborhood, service type, and status.",
@@ -118,7 +118,7 @@
   },
   {
     "name":"Analytics Dashboard",
-    "safeName":"city-analytics-dashboard",
+    "relativeURL":"/products/city-analytics-dashboard/",
     "category":"Communication & Engagement",
     "stage":"National Beta",
     "description":"The City Analytics Dashboard lets users display the live traffic on your website easily from your Google Analytics account.",
@@ -127,7 +127,7 @@
   },
   {
     "name":"City Voice",
-    "safeName":"cityvoice",
+    "relativeURL":"/products/cityvoice/",
     "category":"Communication & Engagement",
     "stage":"National Beta",
     "description":"City Voice is a call-in system for gathering, sharing, and understanding community feedback about places in a neighborhood, such as vacant lots.",
@@ -136,7 +136,7 @@
   },
   {
     "name":"Develpoment Fast Pass",
-    "safeName":"development-fastpass",
+    "relativeURL":"/products/development-fastpass/",
     "category":"Economic Development",
     "stage":"Alpha",
     "description":"Development Fast Pass recommends the best potential locations for new businesses based on characteristics like land use, zoning, building occupancy, and business incentives.",
@@ -145,7 +145,7 @@
   },
   {
     "name":"BizFriendly",
-    "safeName":"bizfriendly",
+    "relativeURL":"/products/bizfriendly/",
     "category":"Economic Development",
     "stage":"Local Beta",
     "description":"BizFriendly helps small business owners learn and share digital literacy skills to grow their businesses.",
@@ -154,7 +154,7 @@
   },
   {
     "name":"Food Trucks of Downtown Las Vegas",
-    "safeName":"#",
+    "relativeURL":"/governments/lasvegas/#product",
     "category":"Economic Development",
     "stage":"Local Beta",
     "description":"Food Trucks of Downtown Las Vegas shows which food trucks will be at a given location on a given day.",
@@ -163,7 +163,7 @@
   },
   {
     "name":"Infrasructure Map",
-    "safeName":"",
+    "relativeURL":"/governments/atlanta/#product",
     "category":"Economic Development",
     "stage":"Local Beta",
     "description":"This interactive map tracks how Atlanta is spending money on a key capital infrastructure project and lets residents discuss spending priorities.",
@@ -172,7 +172,7 @@
   },
   {
     "name":"Primer Peso",
-    "safeName":"#",
+    "relativeURL":"/focus/economic-development/#product",
     "category":"Economic Development",
     "stage":"Local Beta",
     "description":"Primer Perso helps entrepreneurs discover what benefits and incentives are available to them when starting a business in Puerto Rico.\n",
@@ -181,7 +181,7 @@
   },
   {
     "name":"Discover BPS",
-    "safeName":"discover-bps",
+    "relativeURL":"/products/discover-bps/",
     "category":"Education",
     "stage":"Local Live",
     "description":"DiscoverBPS combines eligibility criteria, school data, and advanced mapping tools to help parents easily find the right school for their child.",
@@ -190,7 +190,7 @@
   },
   {
     "name":"Golden Ticket",
-    "safeName":"#",
+    "relativeURL":"/governments/rhodeisland/#product",
     "category":"Education",
     "stage":"Local Beta",
     "description":"Golden Ticket is a platform for parents to sign their children up for program lottery while performing the selection process, automating a time-consuming manual process for administrators. ",
@@ -199,7 +199,7 @@
   },
   {
     "name":"Ticket to Ride",
-    "safeName":"#",
+    "relativeURL":"/governments/rhodeisland/#product",
     "category":"Education",
     "stage":"Local Beta",
     "description":"Ticket to RIDE (Rhode Island Department of Education) brings the paper-based student registration process online, making it simpler and friendlier for parents and school administrators.",
@@ -208,7 +208,7 @@
   },
   {
     "name":"Best Nest",
-    "safeName":"#",
+    "relativeURL":"/governments/chattanooga/#product",
     "category":"Health",
     "stage":"Alpha",
     "description":"Best Nest helps renters make more informed housing choices. It brings together data from a variety of sources -- including code violations, evictions, energy, transit, and parcel data -- to hep renters find fair, safe, and affordable housing.",
@@ -217,7 +217,7 @@
   },
   {
     "name":"Balance",
-    "safeName":"balance",
+    "relativeURL":"/products/balance/",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Balance allows a recipient of food benefits to check the balance of their EBT card via SMS.\n",
@@ -226,7 +226,7 @@
   },
   {
     "name":"Clean",
-    "safeName":"clean",
+    "relativeURL":"/products/clean/",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Clean helps users fill out an application for Calfresh (Food Stamps in California).",
@@ -235,7 +235,7 @@
   },
   {
     "name":"Connect",
-    "safeName":"connect",
+    "relativeURL":"/products/connect/",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Connect waits on hold so you don't have to and calls you back when a human picks up the phone. ",
@@ -244,7 +244,7 @@
   },
   {
     "name":"Prompt.ly",
-    "safeName":"promptly",
+    "relativeURL":"/products/promptly/",
     "category":"Health",
     "stage":"Local Beta",
     "description":"Prompt.ly is a text messaging system that helps social services workers communicate with benefits recipients about important information like deadlines and required paperwork.",
@@ -253,7 +253,7 @@
   },
   {
     "name":"SMS Connect",
-    "safeName":"#",
+    "relativeURL":"/governments/sanmateocounty/#product",
     "category":"Health",
     "stage":"Local Beta",
     "description":"SMS Connect helps users find community services in San Mateo County.",
@@ -262,7 +262,7 @@
   },
   {
     "name":"Click that Hood",
-    "safeName":"click-that-hood",
+    "relativeURL":"/products/click-that-hood/",
     "category":"Maps & Transit",
     "stage":"Live",
     "description":"Click that Hood is a game to test your understanding of neighborhood geography. It is quick and easy to create a version for a new city or other location, making it an ideal first open source project.",
@@ -271,7 +271,7 @@
   },
   {
     "name":"Streetmix",
-    "safeName":"streetmix",
+    "relativeURL":"/products/streetmix/",
     "category":"Maps & Transit",
     "stage":"Live",
     "description":"Streetmix is an interactive tool that lets anyone create a visual representation of their ideal street, based on methods already used by city planners. ",
@@ -280,7 +280,7 @@
   },
   {
     "name":"Public Art App",
-    "safeName":"public-art-finder",
+    "relativeURL":"/products/public-art-finder/",
     "category":"Maps & Transit",
     "stage":"Local Beta",
     "description":"Public Art App enables crowd-sourced mapping of public art installations in a friendly mobile interface.",
@@ -289,7 +289,7 @@
   },
   {
     "name":"Text My bus ",
-    "safeName":"text-my-bus",
+    "relativeURL":"/products/text-my-bus/",
     "category":"Maps & Transit",
     "stage":"Local Beta",
     "description":"Text My Bus lets residents find out the arrival time of the next bus via SMS by texting the nearest bus stop number.",
@@ -298,7 +298,7 @@
   },
   {
     "name":"Where's My School Bus?",
-    "safeName":"wheres-my-school-bus",
+    "relativeURL":"/products/wheres-my-school-bus/",
     "category":"Maps & Transit",
     "stage":"Local Beta",
     "description":"Where's My School Bus? is a location information app allowing parents to track their child’s bus in real time -- reducing the time children spend unsupervised and in harms way.",
@@ -307,7 +307,7 @@
   },
   {
     "name":"NYC Criminal Case Search",
-    "safeName":"#",
+    "relativeURL":"/governments/newyork/#product",
     "category":"Safety & Justice",
     "stage":"Alpha",
     "description":"Criminal Case Search lets municipal court staff identify candidates eligible for alternative to incarceration (ATI) programs from their mobile phone. ",
@@ -316,7 +316,7 @@
   },
   {
     "name":"Court Bot",
-    "safeName":"#",
+    "relativeURL":"/focus/safety-justice/courtbot",
     "category":"Safety & Justice",
     "stage":"Local Beta",
     "description":"Court Bot gives residents easy-to-understand information about resolving citations and timely reminders about upcoming court dates.",
@@ -325,7 +325,7 @@
   },
   {
     "name":"Jail Population Dashboard",
-    "safeName":"jail-population-management-dashboard",
+    "relativeURL":"jail-population-management-dashboard",
     "category":"Safety & Justice",
     "stage":"Local Beta",
     "description":"The Jail Population Management Dashboard gives judges, corrections staff, and police a real-time, in-depth view of the local metro jail system, for real time data driven decision making.",
@@ -334,7 +334,7 @@
   },
   {
     "name":"Lunch Roulette",
-    "safeName":"#",
+    "relativeURL":"#",
     "category":"Other",
     "stage":"Alpha",
     "description":"Lunch Roulette is a simple web-based app to randomly pair people within your organization for a lunch date -- making it easier to meet new people and be exposed to new ideas at work.",
@@ -343,7 +343,7 @@
   },
   {
     "name":"Early Oakland",
-    "safeName":"#",
+    "relativeURL":"/governments/oakland/#product",
     "category":"Other",
     "stage":"Brigade",
     "description":"Early Oakland helps residents easily find childcare and preschool options for their families using open public data about programs from a variety of sources. ",
@@ -352,7 +352,7 @@
   },
   {
     "name":"Denver Street Sweeping",
-    "safeName":"#",
+    "relativeURL":"/governments/denver/#product",
     "category":"Other",
     "stage":"Local Beta",
     "description":"Denver Street Sweeping lets residents find street sweeping information for any address in Denver.",
@@ -361,7 +361,7 @@
   },
   {
     "name":"Change my Record",
-    "safeName":"#",
+    "relativeURL":"/focus/safety-justice/changemyrecord",
     "category":"Safety & Justice",
     "stage":"Alpha",
     "description":"Change My Record helps Californians with criminal records get a fresh start. In California, Prop 47 provides individuals with past felony convictions for low-level crimes, the opportunity to request a record change with the court.",
@@ -370,7 +370,7 @@
   },
   {
     "name":"AddressIQ",
-    "safeName":"#",
+    "relativeURL":"/focus/health/addressiq",
     "category":"Health",
     "stage":"Alpha",
     "description":"AddressIQ is a web application to reduce the demand on emergency services by analyzing city data to help identify addresses with a high number of 911 calls.",
