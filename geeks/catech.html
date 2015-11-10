@@ -7,8 +7,16 @@ nav-breadcrumbs:
  - citizens: "/geeks"
 ---
 
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<link href='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<script src='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+
+
 <section class="layout-semibreve">
   <div class="layout-centered">
+    <h1>CA Technology</h1>
     <h2>You have the power to help your city.</h2>
     <p>Here are some simple ways to get started with civic hacking.</p>
     <br />
@@ -49,17 +57,35 @@ nav-breadcrumbs:
   <div class="badge-heading badge-rocket badge-red">
     <h3>Have one night a week? Go to your local volunteer <a href="/brigade">Brigade</a> hack night.</h3>
   </div>
-  <a href="/brigade"><img src="../media/images/geeks/brigade_usa_map.png"/></a>
+  <div id="map"></div>
+  <!-- <a href="/brigade"><img src="../media/images/geeks/brigade_usa_map.png"/></a> -->
 
-  <div class="badge-heading badge-glasses badge-blue">
-    <h3>Have a year for public service? Let us know you're interested in becoming a <a href="http://www.codeforamerica.org/geeks/fellowship-apply/">Code for America Fellow</a> in 2017</h3>
-  </div>
-  <figure>
-    <iframe src="http://player.vimeo.com/video/96946723?title=0&amp;byline=0&amp;portrait=0" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-  </figure>
+  <style>
+    #map {
+      width: 100%;
+      height: 691px;
+    }
+  </style>
 
-  <div class="badge-heading badge-glasses badge-teal">
-    <h3>Want a career change?</h3>
-  </div>
-  <h3>There has never been a better time to consider <a href="http://www.codeforamerica.org/our-work/initiatives/talent/">working in government</a>.</h3>
+  <script>
+    // Provide your access token
+    L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+
+    // Create a map in the div #map
+    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj');
+
+    $.getJSON("https://www.codeforamerica.org/api/organizations.geojson", function(response){
+
+      $.each(response.features ,function(i,org){
+        if (org.properties.type.indexOf("Official") != -1) {
+          L.mapbox.featureLayer(org).addTo(map);
+          L.mapbox.featureLayer(org).on('click', function(e) {
+            window.open(e.layer.feature.properties.website);
+          });
+        }
+      });
+
+    });
+  </script>
+
 </section>
