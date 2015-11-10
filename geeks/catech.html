@@ -1,0 +1,91 @@
+---
+layout: default
+title: Citizens
+nav_tier1_active: "citizens"
+masthead-image: "../media/images/geeks/geeks_header.jpg"
+nav-breadcrumbs:
+ - citizens: "/geeks"
+---
+
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<link href='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<script src='//api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+
+
+<section class="layout-semibreve">
+  <div class="layout-centered">
+    <h1>CA Technology</h1>
+    <h2>You have the power to help your city.</h2>
+    <p>Here are some simple ways to get started with civic hacking.</p>
+    <br />
+  </div>
+
+  <div class="badge-heading badge-github badge-blue">
+    <a id="civicissues"></a>
+    <h3>Have an hour? Code for America Right Now</h3>
+  </div>
+
+  <p>These are open GitHub Issues labeled with <span class="label" style="background-color : #00a175;">help wanted</span> from across the civic technology movement. Find more using the <a href="/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+
+  <style>
+    .label {
+      border: 1px solid #00a175;
+      display: inline-block;
+      background-color:#00a175;
+      color: #fff;
+      text-align: center;
+      border-radius: .33em;
+      margin: 5px;
+      padding: 0 10px;
+      font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
+      font-size:0.85em;
+    }
+  </style>
+
+  <script>
+    // Resize iframe to fit content
+    function resize() {
+      var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+      document.getElementById("widget").height = newheight + "px";
+    }
+  </script>
+
+  <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help%&number=3&org_type=Brigade" width="100%" height="350px" frameBorder="0" onLoad="resize();"></iframe>
+
+  <div class="badge-heading badge-rocket badge-red">
+    <h3>Have one night a week? Go to your local volunteer <a href="/brigade">Brigade</a> hack night.</h3>
+  </div>
+  <div id="map"></div>
+  <!-- <a href="/brigade"><img src="../media/images/geeks/brigade_usa_map.png"/></a> -->
+
+  <style>
+    #map {
+      width: 100%;
+      height: 691px;
+    }
+  </style>
+
+  <script>
+    // Provide your access token
+    L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+
+    // Create a map in the div #map
+    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj');
+
+    $.getJSON("https://www.codeforamerica.org/api/organizations.geojson", function(response){
+
+      $.each(response.features ,function(i,org){
+        if (org.properties.type.indexOf("Official") != -1) {
+          L.mapbox.featureLayer(org).addTo(map);
+          L.mapbox.featureLayer(org).on('click', function(e) {
+            window.open(e.layer.feature.properties.website);
+          });
+        }
+      });
+
+    });
+  </script>
+
+</section>
