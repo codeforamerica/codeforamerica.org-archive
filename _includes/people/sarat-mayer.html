@@ -1,0 +1,54 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+	<div class="heading">
+    <h2 class="p-name">SaraT L. Mayer</h2>
+	</div>
+
+	<div class="layout-minor">
+    <p>Senior Director, Health and Human Services</p>
+    <h4 class="text-whisper layout-tight">Member of</h4>
+
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="{{ include.base }}/about/team/#staff">Staff</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/sarat-mayer.jpg" />
+	</div>
+
+	<div class="layout-major">
+    <p class="p-note">
+     SaraT (ST) Mayer leads Code for America's work to leverage technology and user centered design to transform the health and human services engagement landscape.  Prior to joining CfA in November 2015, ST worked at the <a href="http://smchealth.org">San Mateo County Health System</a> as their Public Health Director where she developed and grew their place-based prevention and health equity work with a focus on policy change and led the development and implementation of core public health services.   She speaks often on the relationship between health and place, health equity and leadership development.  ST has served on the Boards of Directors for several non-profit organizations.  She is currently Board Chair at <a href="http://humanimpact.org"> Human Impact Partners</a> located in Oakland, CA and a member of the inaugural  National Public Health and Equity Leadership Development Cohort.   She is proud to call San Francisco home where she lives with her wife and two children.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/saratmayer">https://www.<wbr>linkedin.com/in<wbr>/saratmayer</a></td></tr>
+      </table>
+    </div>
+	</div>
+</div>
+
+{% elsif include.context == 'about-team' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">SaraT L. Mayer</h3>
+
+  <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/sarat-mayer.jpg">
+
+  <div class="p-note profile-note">
+		<p>Senior Director, Health and Human Services</p>
+    <p>
+    SaraT (ST) Mayer leads Code for America's work to leverage civic technology and user centered design to transform the health and human services engagement landscape.  Prior to joining CfA in November 2015, ST worked at the San Mateo County Health System as their Public Health Director...
+    </p>
+
+    <p><a class="link-more" href="{{ include.base }}/people/sarat-mayer/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/saratmayer">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
