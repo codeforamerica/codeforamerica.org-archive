@@ -1,0 +1,53 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Patrick McDonnell</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/patrick-mcdonnell.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Patrick is an urbanist, designer, and strategist. A proud University of Michigan grad, he uses his background in urban planning and higher education to shape cities forward and make urbanism accessible. He has worked as a Community Designer and Project Manager for the last few years. He believes government is sexy, public spaces have power, and loves documenting all things urban.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/patrickm02L">@patrickm02L</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/patrickm02l">https://www.linkedin.com/in/patrickm02l</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Patrick McDonnell</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/patrick-mcdonnell.jpg" />
+
+  <div class="p-note profile-note">
+    <p>
+      Patrick is an urbanist, designer, and strategist. A proud University of Michigan grad, he uses his background in urban planning and higher education to shape cities forward and make urbanism accessibl...
+    </p>
+
+    <p><a class="link-more" href="/people/patrick-mcdonnell/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/patrickm02l">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/patrickm02L">@patrickm02L</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
