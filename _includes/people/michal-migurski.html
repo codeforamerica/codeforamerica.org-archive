@@ -1,26 +1,3 @@
-{% comment %} Required speaker variables {% endcomment %}
-{% assign speaker-key       = 'michal-migurski' %}
-{% assign speaker-name      = 'Michal Migurski' %}
-{% assign speaker-bio       = 'Michal Migurski joined Code For America in 2013. Michal previously spent 9 years as a partner and technology director at celebrated San Francisco design studio Stamen where he architected the technical aspects of Stamen&rsquo;s work, moving comfortably from active participation in Stamen&rsquo;s design process, designing database schemas and API&rsquo;s, to creating the dynamic applications that Stamen delivers to clients. At Code For America, he is responsible for engineering standards and technical sustainability. <!-- break -->Michal has been building for the web since 1995, specializing in data design and publishing for a diverse range of clients and numerous public, technical research projects and active open source codebases. He&rsquo;s a Polish National and holds a degree in Cognitive Science from UC Berkeley.' %}
-{% assign speaker-short-bio = 'Michal spent 9 years as a partner and technology director at San Francisco design studio Stamen where he led technical aspects of Stamen&rsquo;s work.' %}
-{% assign speaker-title     = 'Chief Technology Officer, Code for America' %}
-{% assign speaker-topics    = 'gov-software\Making Software for Governments' | split: "|" %}
-{% comment %}{% capture embed %}<iframe src="http://embed.ted.com/talks/catherine_bracy_why_good_hackers_make_good_citizens.html" height="300" width="650" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>{% endcapture %}{% endcomment %}
-{% assign speaker-vid-title = '' %}
-{% assign speaker-vid-desc  = '' %}
-{% assign speaker-vid-date  = '' %}
-{% assign speaker-vid-loc   = '' %}
-{% assign speaker-vid-group = '' %}
-{% comment %} Optional speaker variables {% endcomment %}
-{% assign speaker-twitter   = 'michalmigurski' %}
-{% assign speaker-linkedin  = false %}
-{% assign speaker-blogposts = 'michal-migurski' %}
-{% assign speaker-github    = 'migurski' %}
-{% assign speaker-playlist  = false %}
-{% assign speaker-quote     = false %}
-{% comment %}{% assign speaker-events    = 'Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA|Talk Name, Event Name\Dec. 31, 2014 in San Francisco, CA' | split: '|' %}{% endcomment %}
-{% assign speaker-similar   = 'jacob-solomon|cyd-harrell' | split: '|' %}
-{% comment %} End variables {% endcomment %}
 
 {% if include.context == 'people-page' %}
 
@@ -81,13 +58,5 @@
         </ul>
     </div>
 </div>
-
-{% elsif include.context == 'speaker-page' %}
-
-  {% include speakers/speaker-page.html base="../.." %}
-
-{% elsif include.context == 'speaker-card' %}
-
-  {% include speakers/speaker-card.html base="../.." %}
 
 {% endif %}
