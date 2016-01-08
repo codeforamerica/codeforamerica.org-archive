@@ -160,8 +160,8 @@
       <li class="nav-tier1">
         <a href="/summit">Summit</a>
       </li>
-      <li class="nav-tier1 {% if include.blog-is-active %}state-active{% endif %}">
-        <a href="/blog">Blog</a>
+      <li class="nav-tier1">
+        <a href="/blog" {% if include.blog-is-active %}class="state-active"{% endif %}>Blog</a>
       </li>
 
       <!-- OLD ITEMS THAT MAY OR MAY NOT NEED A HOME
