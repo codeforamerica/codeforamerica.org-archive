@@ -567,6 +567,24 @@ ul.checkmark li:before {
 	float: left;
 	width: 2em;
 }
+
+// ##### PILL #####
+//
+// A grey-background pill with text in it indicating relatioship to a Focus Area.
+// Used for government partner cards and people cards.
+//
+.focus-area-pill {
+	display: inline-block;
+	width: auto;
+	background-color: #999595;
+	color: white;
+	font-weight: 400;
+	font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 6px;
+}
+
 // ##### BILLTWOBYFOUR #####
 //
 // Like a billboard. But not a big link. (Two by four. Board. Get it?)
