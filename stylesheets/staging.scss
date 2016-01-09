@@ -567,3 +567,21 @@ ul.checkmark li:before {
 	float: left;
 	width: 2em;
 }
+// ##### BILLTWOBYFOUR #####
+//
+// Like a billboard. But not a big link. (Two by four. Board. Get it?)
+//
+.billtwobyfour,
+li.billtwobyfour {
+	background-color: #fff;
+	border-radius: 5px;
+	border-bottom: none;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+	clear: none;
+	display: block;
+	margin: 0 0 18px;
+	padding: 16px;
+	text-align: center;
+	box-sizing: border-box;
+}
