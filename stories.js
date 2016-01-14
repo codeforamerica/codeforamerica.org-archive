@@ -9,9 +9,9 @@ on_stories(
     // },
     {
       "page_link"     : "/governments/2016-announcement/",
-      "title"         : "Announcing the 2016 Fellowship",
+      "title"         : "Welcome the 2016 Code for America Fellows",
       "content_html"  : "The Code for America Fellowship pairs local governments with teams of experienced technologists for one year.",
-      "image_src"     : "/media/images/about/brigade.jpg",
+      "image_src"     : "/media/images/about/2016fellows.jpg",
       "button_text"   : "Meet the 2016 Class"
     }
 ]
