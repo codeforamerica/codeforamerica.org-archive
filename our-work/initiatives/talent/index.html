@@ -1,25 +1,27 @@
 ---
 layout: default
+title: Government Talent Initiative
 masthead-image: "/media/images/talent/space.jpg"
-
 # Navigation
 nav_tier1_active: "join"
 nav-breadcrumbs:
   - What You Can Do: "/join"
   - Work in Government: "/our-work/initiatives/talent"
-
-# Don't use the default masthead, use the custom deep masthead
-masthead: "no"
-nav-global-primary: "no"
-masthead-custom: deep
-
-# Title for the title bar, and the overline in the masthead
-title: Government Talent Initiative
-
-# Content for the custom deep masthead
-headline: There has never been a better time to work on technology inside government.
-description: Engineers, designers, product managers, data scientists, and more—put your skills to work in service to your country. Let’s bring government into the 21st century together.
 ---
+<section class="layout-semibreve">
+  {% include nav-breadcrumbs.html %}
+  <h3>There has never been a better time to work on technology inside government.</h3>
+  <p>Engineers, designers, product managers, data scientists, and more—put your skills to work in service to your country. Let’s bring government into the 21st century together.</p>
+
+  <header class="badge-heading badge-gov badge-blue">
+    <h3>Get Involved</h3>
+  </header>
+  <h4>Become a fellow</h4>
+  <p>Join a year-long partnership with a local government to develop digital tools that help governments deliver key services.</p>
+  <a href="/geeks/fellowship-apply" class="button button-lg">Help transform government</a>
+</section>
+
+{% comment %}
 <section class="layout-semibreve layout-centered intro">
   {% include nav-breadcrumbs.html %}
   <h2>Get Involved</h2>
@@ -68,3 +70,4 @@ description: Engineers, designers, product managers, data scientists, and more�
    </div><!-- end .layout-minim-staccato -->
   </div>
 </section>
+{% endcomment %}
