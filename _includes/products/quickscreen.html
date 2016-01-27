@@ -1,0 +1,48 @@
+{% if include.context == "app-page" %}
+
+  <div class="heading">
+    <h2>QuickScreen</h2>
+  </div>
+  
+  <div class="layout-minor">
+    <img class="isolate" src="{{ include.base }}/media/images/apps/placeholder.png" />
+      <p>
+      QuickScreen is an eligibility screening tool that determines whether a patient is eligible for free or discounted health care in the Richmond area.
+      </p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/sam-matthews">Sam Matthews</a></li>
+        <li><a href="{{ include.base }}/people/ben-golder">Ben Golder</a></li>
+        <li><a href="{{ include.base }}/people/emma-smithayer">Emma Smithayer</a></li>
+      </ul>
+      
+      <h4 class="text-whisper layout-tight">In partnership with</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li>Andreas Addison, Chief Innovation Officer and Danny Avula, Deputy Director, Richmond City Health Department</li>
+        <li>Bon Secours, Richmond Memorial Health Foundation, VCU Health Systems, Jenkins Foundation, The Community Foundation Serving Richmond and Central Virginia</li>
+      </ul>
+  
+  </div>
+  
+  <div class="layout-major">
+      <p>QuickScreen is an eligibility screening tool that determines whether a patient is eligible for free or discounted care in the Richmond area. Quickscreen lets users upload basic patient information to a profile, and then use their profile to apply to numerous health care providers at once. For care providers, the tool allows them to spend less time processing screenings, and more time on the human elements of providing care services. </p>
+
+      <div class="spotlight">
+        <table class="table-unstyled table-minor">
+          <tr><th>Live</th><td><a href="http://quickscreenrva.com/">quickscreenrva.com/</a></td></tr>
+          <tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/rva-screening">github.com/codeforamerica/rva-screening</a></td></tr>
+          <tr><th>Video Demo</th><td><a href="https://www.youtube.com/watch?v=Sge08gIC98U">2015 Summit Talk</a></td></tr>
+        </table>
+        
+      </div>
+
+      <p><h3 class="text-prominent">Background</h3></p>
+      <br> <p>More than a quarter of Richmond, VA’s residents live in poverty. Because many of them do not have health insurance, they rely on a variety of safety-net health services that are scattered across different organizations and difficult to enroll in. During the 2015 Fellowship, Code for America fellows partnered with the Richmond City Health District and City of Richmond to reimagine the application and eligibility screening process to connect patients more quickly and easily to critical health services.</p>
+
+      <p>The fellows saw how hard it was for the community to keep track of the City’s various health services and determine eligibility for them. This frustration was felt by everyone involved: both for the users trying to receive care, as well as the social workers trying to connect patients to care. The fellows identified that technology could help make the first step of the journey: applications and eligibility screeners a more user-friendly and efficient experience. </p>
+
+  </div>
+
+
+{% endif %}
