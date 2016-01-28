@@ -1,0 +1,398 @@
+[
+  {
+    "FIELD1":"name",
+    "FIELD2":"relativeURL",
+    "FIELD3":"category",
+    "FIELD4":"stage",
+    "FIELD5":"description",
+    "FIELD6":"imageURL",
+    "FIELD7":"isFeatured"
+  },
+  {
+    "FIELD1":"MuniciPal ",
+    "FIELD2":"/governments/mesa/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Alpha",
+    "FIELD5":"Municipal helps residents stay current on news about elected officials and legislation that is relevant to the neighborhood where they live or work.",
+    "FIELD6":"municipal.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"311 Dashboard",
+    "FIELD2":"/governments/chicago/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"The 311 Dashboard visualizes a city's 311 non-emergency service request data to show neighborhood-level needs and trends.",
+    "FIELD6":"311labs.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"311 Service Tracker",
+    "FIELD2":"/governments/chicago/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"311 Service Tracker makes it easy for anyone to find out the status of a 311 service request.",
+    "FIELD6":"311labs.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Adopt-a-Hydrant",
+    "FIELD2":"/products/adopt-a-hydrant/",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Adopt-a-Hydrant makes it easy for community members to volunteer to take care of local infrastructure, like fire hydrants, in case of severe weather. The app can be customized for any type of infrastructure, from storm drains to tsunami sirens.",
+    "FIELD6":"adopt-a-hydrant.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Atlanta Procurement Website",
+    "FIELD2":"/governments/atlanta/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"The Atlanta Procurement Website provides information on city procurement opportunities, explains the procurement process, and lets users sign up to receive automatic updates about new opportunities.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"ATX  Floods",
+    "FIELD2":"/governments/austin/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"ATX Floods is a tool for crowd-sourced reporting and mapping of flash flood conditions like emergency road closures and high water. ",
+    "FIELD6":"atx.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"CityGram ",
+    "FIELD2":"/governments/charlotte/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"CityGram lets residents subscribe to SMS and email notifications by topic and neighborhood, powered by a variety of open data sources.",
+    "FIELD6":"citygram.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Cute Pets IN",
+    "FIELD2":"/governments/denver/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Cute Pets In is an app that automatically posts photos and profiles of available pets in municipal shelters to a Twitter feed to help more pets find adopted homes.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"HNL Answers   ",
+    "FIELD2":"/products/honolulu-answers/",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Honolulu Answers allows residents to find clear, simple answers to the most frequently asked questions about city services. ",
+    "FIELD6":"honolulu-answers.jpg",
+    "FIELD7":"TRUE"
+  },
+  {
+    "FIELD1":"Home Base",
+    "FIELD2":"/governments/sanantonio/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Home Base guides citizens through the permitting process for home remodels in San Antonio.",
+    "FIELD6":"homebase.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Prepared.ly",
+    "FIELD2":"/products/prepared-ly/",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Prepared.ly helps residents learn how to protect their communities from natural disasters with checklists and facts about disaster preparedness.",
+    "FIELD6":"prepared-ly.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Record Trac",
+    "FIELD2":"/products/recordtrac/",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Record Trac is a public records request management system that is friendly for residents to use and easy for officials to maintain.",
+    "FIELD6":"RecordTrac_header.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"The Daily Brief",
+    "FIELD2":"/governments/chicago/#product",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"Local Beta",
+    "FIELD5":"The Daily Brief allows users to explore and filter 311 service requests by neighborhood, service type, and status.",
+    "FIELD6":"the-daily-brief.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Analytics Dashboard",
+    "FIELD2":"/products/city-analytics-dashboard/",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"National Beta",
+    "FIELD5":"The City Analytics Dashboard lets users display the live traffic on your website easily from your Google Analytics account.",
+    "FIELD6":"dashboard-logo.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"City Voice",
+    "FIELD2":"/products/cityvoice/",
+    "FIELD3":"Communication & Engagement",
+    "FIELD4":"National Beta",
+    "FIELD5":"City Voice is a call-in system for gathering, sharing, and understanding community feedback about places in a neighborhood, such as vacant lots.",
+    "FIELD6":"cityvoice.jpg",
+    "FIELD7":"TRUE"
+  },
+  {
+    "FIELD1":"Develpoment Fast Pass",
+    "FIELD2":"/products/development-fastpass/",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Alpha",
+    "FIELD5":"Development Fast Pass recommends the best potential locations for new businesses based on characteristics like land use, zoning, building occupancy, and business incentives.",
+    "FIELD6":"development-fastpass.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"BizFriendly",
+    "FIELD2":"/products/bizfriendly/",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Local Beta",
+    "FIELD5":"BizFriendly helps small business owners learn and share digital literacy skills to grow their businesses.",
+    "FIELD6":"bizfriendly.jpg",
+    "FIELD7":"TRUE"
+  },
+  {
+    "FIELD1":"Food Trucks of Downtown Las Vegas",
+    "FIELD2":"/governments/lasvegas/#product",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Food Trucks of Downtown Las Vegas shows which food trucks will be at a given location on a given day.",
+    "FIELD6":"foodtruck.png",
+    "FIELD7":"TRUE"
+  },
+  {
+    "FIELD1":"Infrasructure Map",
+    "FIELD2":"/governments/atlanta/#product",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Local Beta",
+    "FIELD5":"This interactive map tracks how Atlanta is spending money on a key capital infrastructure project and lets residents discuss spending priorities.",
+    "FIELD6":"infrastructure-map.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Primer Peso",
+    "FIELD2":"/focus/economic-development/primerpeso/",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Primer Perso helps entrepreneurs discover what benefits and incentives are available to them when starting a business in Puerto Rico.\n",
+    "FIELD6":"primer-peso.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Discover BPS",
+    "FIELD2":"/products/discover-bps/",
+    "FIELD3":"Education",
+    "FIELD4":"Local Live",
+    "FIELD5":"DiscoverBPS combines eligibility criteria, school data, and advanced mapping tools to help parents easily find the right school for their child.",
+    "FIELD6":"discover-bps.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Golden Ticket",
+    "FIELD2":"/governments/rhodeisland/#product",
+    "FIELD3":"Education",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Golden Ticket is a platform for parents to sign their children up for program lottery while performing the selection process, automating a time-consuming manual process for administrators. ",
+    "FIELD6":"golden-ticket.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Ticket to Ride",
+    "FIELD2":"/governments/rhodeisland/#product",
+    "FIELD3":"Education",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Ticket to RIDE (Rhode Island Department of Education) brings the paper-based student registration process online, making it simpler and friendlier for parents and school administrators.",
+    "FIELD6":"ticket-to-ride.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Best Nest",
+    "FIELD2":"/governments/chattanooga/#product",
+    "FIELD3":"Health",
+    "FIELD4":"Alpha",
+    "FIELD5":"Best Nest helps renters make more informed housing choices. It brings together data from a variety of sources -- including code violations, evictions, energy, transit, and parcel data -- to hep renters find fair, safe, and affordable housing.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Balance",
+    "FIELD2":"/products/balance/",
+    "FIELD3":"Health",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Balance allows a recipient of food benefits to check the balance of their EBT card via SMS.\n",
+    "FIELD6":"balance.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Clean",
+    "FIELD2":"/products/clean/",
+    "FIELD3":"Health",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Clean helps users fill out an application for Calfresh (Food Stamps in California).",
+    "FIELD6":"clean.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Connect",
+    "FIELD2":"/products/connect/",
+    "FIELD3":"Health",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Connect waits on hold so you don't have to and calls you back when a human picks up the phone. ",
+    "FIELD6":"connect.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Prompt.ly",
+    "FIELD2":"/products/promptly/",
+    "FIELD3":"Health",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Prompt.ly is a text messaging system that helps social services workers communicate with benefits recipients about important information like deadlines and required paperwork.",
+    "FIELD6":"promptly.jpg",
+    "FIELD7":"TRUE"
+  },
+  {
+    "FIELD1":"SMS Connect",
+    "FIELD2":"/governments/sanmateocounty/#product",
+    "FIELD3":"Health",
+    "FIELD4":"Local Beta",
+    "FIELD5":"SMS Connect helps users find community services in San Mateo County.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Click that Hood",
+    "FIELD2":"/products/click-that-hood/",
+    "FIELD3":"Maps & Transit",
+    "FIELD4":"Live",
+    "FIELD5":"Click that Hood is a game to test your understanding of neighborhood geography. It is quick and easy to create a version for a new city or other location, making it an ideal first open source project.",
+    "FIELD6":"click-that-hood.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Streetmix",
+    "FIELD2":"/products/streetmix/",
+    "FIELD3":"Maps & Transit",
+    "FIELD4":"Live",
+    "FIELD5":"Streetmix is an interactive tool that lets anyone create a visual representation of their ideal street, based on methods already used by city planners. ",
+    "FIELD6":"streetmix.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Public Art App",
+    "FIELD2":"/products/public-art-finder/",
+    "FIELD3":"Maps & Transit",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Public Art App enables crowd-sourced mapping of public art installations in a friendly mobile interface.",
+    "FIELD6":"public-art-finder.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Text My bus ",
+    "FIELD2":"/products/text-my-bus/",
+    "FIELD3":"Maps & Transit",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Text My Bus lets residents find out the arrival time of the next bus via SMS by texting the nearest bus stop number.",
+    "FIELD6":"text-my-bus.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Where's My School Bus?",
+    "FIELD2":"/products/wheres-my-school-bus/",
+    "FIELD3":"Maps & Transit",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Where's My School Bus? is a location information app allowing parents to track their child’s bus in real time -- reducing the time children spend unsupervised and in harms way.",
+    "FIELD6":"wheres-my-school-bus.jpg",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"NYC Criminal Case Search",
+    "FIELD2":"/governments/newyork/#product",
+    "FIELD3":"Safety & Justice",
+    "FIELD4":"Alpha",
+    "FIELD5":"Criminal Case Search lets municipal court staff identify candidates eligible for alternative to incarceration (ATI) programs from their mobile phone. ",
+    "FIELD6":"criminal-case-search.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Court Bot",
+    "FIELD2":"/focus/safety-justice/courtbot",
+    "FIELD3":"Safety & Justice",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Court Bot gives residents easy-to-understand information about resolving citations and timely reminders about upcoming court dates.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Jail Population Dashboard",
+    "FIELD2":"jail-population-management-dashboard",
+    "FIELD3":"Safety & Justice",
+    "FIELD4":"Local Beta",
+    "FIELD5":"The Jail Population Management Dashboard gives judges, corrections staff, and police a real-time, in-depth view of the local metro jail system, for real time data driven decision making.",
+    "FIELD6":"jail-population-management-dashboard.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Lunch Roulette",
+    "FIELD2":"#",
+    "FIELD3":"Other",
+    "FIELD4":"Alpha",
+    "FIELD5":"Lunch Roulette is a simple web-based app to randomly pair people within your organization for a lunch date -- making it easier to meet new people and be exposed to new ideas at work.",
+    "FIELD6":"lunch-roulette.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Early Oakland",
+    "FIELD2":"/governments/oakland/#product",
+    "FIELD3":"Other",
+    "FIELD4":"Brigade",
+    "FIELD5":"Early Oakland helps residents easily find childcare and preschool options for their families using open public data about programs from a variety of sources. ",
+    "FIELD6":"early-oakland.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Denver Street Sweeping",
+    "FIELD2":"/governments/denver/#product",
+    "FIELD3":"Other",
+    "FIELD4":"Local Beta",
+    "FIELD5":"Denver Street Sweeping lets residents find street sweeping information for any address in Denver.",
+    "FIELD6":"denver-street-sweeping.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Change my Record",
+    "FIELD2":"/focus/safety-justice/changemyrecord",
+    "FIELD3":"Safety & Justice",
+    "FIELD4":"Alpha",
+    "FIELD5":"Change My Record helps Californians with criminal records get a fresh start. In California, Prop 47 provides individuals with past felony convictions for low-level crimes, the opportunity to request a record change with the court.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"AddressIQ",
+    "FIELD2":"/focus/health/addressiq",
+    "FIELD3":"Health",
+    "FIELD4":"Alpha",
+    "FIELD5":"AddressIQ is a web application to reduce the demand on emergency services by analyzing city data to help identify addresses with a high number of 911 calls.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"QuickScreen",
+    "FIELD2":"/products/quickscreen/",
+    "FIELD3":"Health",
+    "FIELD4":"Alpha",
+    "FIELD5":"QuickScreen is an eligibility screening tool that determines whether a patient is eligible for free or discounted health care in the Richmond area.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  }
+]
