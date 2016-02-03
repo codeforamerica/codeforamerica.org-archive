@@ -74,7 +74,7 @@ jquery-scripts: |
 </style>
 
 {% assign orgs = 'Foundations,People,Fellowship Supporters' | split: ',' %}
-{% assign years = '2014,2015' | split: ',' %}
+{% assign years = '2014,2015,2016' | split: ',' %}
 
 <section class="layout-semibreve layout-centered">
   <p>To learn more, choose the kind of supporter you'd like to browse through below.</p>
@@ -100,7 +100,7 @@ jquery-scripts: |
 
 <section class="layout-semibreve no-spacing-bottom">
   <div class="heading">
-    <h2> Major Supporters</h2>
+    <h2>Major Supporters</h2>
   </div>
   <ul class="list-inline insulate layout-centered no-spacing-bottom">
     <li><a href="http://knightfoundation.org/"><img src="../media/images/donate/knight_logo.jpg"></a></li>
@@ -223,11 +223,16 @@ jquery-scripts: |
     <div class="spotlight js-supporters-list" id="{{ org | downcase | replace: ' ','-' }}-{{ year }}-list">
       <h3>{{ year }} Supporters</h3>
       <ul class="list-no-bullets list-ruled layout-grid-minim">
+        {% assign yearHasRecord = false %}
         {% for donor in site.data.donors %}
           {% if donor.org == org and donor.year == year %}
             <li>{{ donor.name }}</li>
+            {% assign yearHasRecord = true %}
           {% endif %}
         {% endfor %}
+        {% if yearHasRecord == false %}
+          <li>We're working on updating these records. Please check back soon.</li>
+        {% endif %}
       </ul>
     </div>
     {% endfor %}
