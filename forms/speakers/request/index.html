@@ -215,12 +215,6 @@ include-animate: true
 {% capture cardJenniferPahlka %}
   {% include people/jennifer-pahlka.html context="speaker-card" base=".." %}
 {% endcapture %}
-{% capture cardCatherineBracy %}
-  {% include people/catherine-bracy.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardLukeNorris %}
-  {% include people/luke-norris.html context="speaker-card" base=".." %}
-{% endcapture %}
 {% capture cardNicoleNeditch %}
   {% include people/nicole-neditch.html context="speaker-card" base=".." %}
 {% endcapture %}
@@ -232,9 +226,6 @@ include-animate: true
 {% endcapture %}
 {% capture cardChristopherWhitaker %}
   {% include people/christopher-whitaker.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardDanHon %}
-  {% include people/dan-hon.html context="speaker-card" base=".." %}
 {% endcapture %}
 {% capture cardDavidLeonard %}
   {% include people/david-leonard.html context="speaker-card" base=".." %}
@@ -254,13 +245,10 @@ include-animate: true
   // ===== Populate our speaker card variables
   var speakerCards = {
     "jennifer-pahlka"       : '{{ cardJenniferPahlka | strip_newlines }}',
-    "catherine-bracy"       : '{{ cardCatherineBracy | strip_newlines }}',
-    "luke-norris"           : '{{ cardLukeNorris | strip_newlines }}',
     "nicole-neditch"        : '{{ cardNicoleNeditch | strip_newlines }}',
     "hannah-young"          : '{{ cardHannahYoung | strip_newlines }}',
     "jacob-solomon"         : '{{ cardJacobSolomon | strip_newlines }}',
     "christopher-whitaker"  : '{{ cardChristopherWhitaker | strip_newlines }}',
-    "dan-hon"               : '{{ cardDanHon | strip_newlines }}',
     "david-leonard"         : '{{ cardDavidLeonard | strip_newlines }}',
     "molly-mcleod"          : '{{ cardMollyMcLeod | strip_newlines }}',
     "alan-williams"         : '{{ cardAlanWilliams | strip_newlines }}',
