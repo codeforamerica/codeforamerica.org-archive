@@ -388,10 +388,55 @@
   },
   {
     "FIELD1":"QuickScreen",
-    "FIELD2":"/products/quickscreen/",
+    "FIELD2":"/products/quickscreen",
     "FIELD3":"Health",
     "FIELD4":"Alpha",
     "FIELD5":"QuickScreen is an eligibility screening tool that determines whether a patient is eligible for free or discounted health care in the Richmond area.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Student Insights",
+    "FIELD2":"/products/student-insights",
+    "FIELD3":"Education",
+    "FIELD4":"Alpha",
+    "FIELD5":"Student Insights enables educators to identify at-risk students and match them to the help they need.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"The MDC Dashboard",
+    "FIELD2":"/products/mdc-dashboard",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Alpha",
+    "FIELD5":"The Miami-Dade County Dashboard is a feedback collection, delivery, and display system.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Financial Wellness Calculator",
+    "FIELD2":"/products/financial-wellness-calculator",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Alpha",
+    "FIELD5":"The Financial Wellness Calculator is a tool that allows employers to help their employees achieve financial wellness by connecting them to pre-existing government services.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Acres",
+    "FIELD2":"/products/acres",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Alpha",
+    "FIELD5":"Acres is a tool that surface the municipal data like zoning regulations, water billing data, and soil characteristics in a farmer friendly manner.",
+    "FIELD6":"placeholder.png",
+    "FIELD7":"FALSE"
+  },
+  {
+    "FIELD1":"Farm Stand",
+    "FIELD2":"/products/farm-stand",
+    "FIELD3":"Economic Development",
+    "FIELD4":"Alpha",
+    "FIELD5":"Farm Stand is a collection of tools that urban farmers in West Sacramento can use to easily catalogue what they were growing, when it will be available, where they are selling their produce, and for how much.",
     "FIELD6":"placeholder.png",
     "FIELD7":"FALSE"
   }
