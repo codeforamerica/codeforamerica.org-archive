@@ -1,45 +1,46 @@
 {% if include.context == "app-page" %}
-  <section class="layout-semibreve">
-    {% include nav-breadcrumbs.html %}
-    <header class="badge-heading">
-      <h2>Comport</h2>
-    </header>
-    <div class="layout-minim">
-      <p>Comport is an application that extracts, cleans and anonymizes incident-level data from a police department’s IA Pro database, creates data visualizations with summaries, and allows download of datasets. This tool is intended to help law enforcement agencies be transparent about police interactions with the community and for the community to have access to updated information to hold law enforcement agencies  accountable and collaborate on solutions to systemic problems.</p>
-      <p><a href="/media/docs/comport-info.pdf" class="button button-lg button-bold">Download the Pilot Information PDF</a></p>
-      <p>Comport enables stakeholders to:</p>
-      <ul>
-        <li>Easily keep the department and community informed about trends with automated data visualizations</li>
-        <li>Use data as a starting point for conversations on your city’s community policing goals and practices</li>
-        <li>Allow all stakeholders to explore incident-level data to increase the range of potential insight</li>
+
+  <div class="heading">
+    <h2>Student Insights</h2>
+  </div>
+  
+  <div class="layout-minor">
+    <img class="isolate" src="{{ include.base }}/media/images/apps/placeholder.png" />
+      <p>
+      Student Insights helps teachers use data to identify at-risk students and match them to the help they need.
+      </p>
+      
+      <h4 class="text-whisper layout-tight">Created by</h4>
+      <ul class="list-no-bullets text-whisper link-invert">
+        <li><a href="{{ include.base }}/people/alex-soble">Alex Soble</a></li>
+        <li><a href="{{ include.base }}/people/mari-muraki">Mari Muraki</a></li>
+        <li><a href="{{ include.base }}/people/amir-hadjihabib">Amir Hadjihabib</a></li>
       </ul>
-    </div>
-    <div class="layout-minim">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/GRFf_MdzqT8?list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M" frameborder="0" allowfullscreen></iframe>
-      <p class="text-whisper"><strong>Video:</strong> Code for America's Indianapolis Fellowship team shares their experience building Comport to open police department data and strengthen the relationship between Indianapolis law enforcement and the community it serves.</p>
-    </div>
+  
+  </div>
+  
+  <div class="layout-major">
+      <p>Student Insights enables educators to identify at-risk students and match them to the help they need, such as tutoring, parent/teacher conferences, etc. With Student Insights, teachers can look at various risk factors- such as assessment scores or attendance, and view a full story of a student's academic and behavioral history in one place. By using this tool, teachers can avoid manually tracking down this information, and can instead work closely with their pupils.</p>
 
-    <header class="isolate badge-heading badge-gov badge-blue">
-      <h3>Join the Comport Pilot Program</h3>
-    </header>
-    <p>Code for America will be offering a free pilot of the Comport software for law enforcement agencies in the United States with funding support from  Laura and John Arnold Foundation. To learn more about participating, download the <a href="/media/docs/comport-info.pdf">Comport Pilot Information PDF</a>.</p>
-    <div class="button-group">
-    	<a class="button button-lg button-bold" href="/media/docs/comport-info.pdf">Apply for the Pilot</a>
-      <a class="button button-lg button-subtle" href="https://www.projectcomport.org/interest/">Download the Pilot Information PDF</a>
-    </div>
+      <div class="spotlight">
+        <table class="table-unstyled table-minor">
+          <tr><th>Live</th><td><a href="https://somerville-teacher-tool-demo.herokuapp.com/">https://somerville-teacher-tool-demo.herokuapp.com</a></td></tr>
+          <tr><th>Codebase</th><td><a href="https://github.com/codeforamerica/Somerville-Teacher-Tool">https://github.com/codeforamerica/Somerville-Teacher-Tool</a></td></tr>
+          <tr><th>Video</th><td><a href="https://www.youtube.com/watch?v=MzhKX49Pi0Q">Student Insights Demo at the 2015 Summit</a></td></tr>
+        </table>
+        
+      </div>
 
-    <p><strong>Questions? Interested in learning more?</strong> Reach out to Jenny Montoya Tansey, Director of Safety and Justice at Code for America through email at <a href="mailto:jenny@codeforamerica.org">jenny@codeforamerica.org</a>.</p>
-  </section>
-{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
-  <article class="teaser teaser-app">
-    <header class="teaser-header">
-      <a href="/products/comport">
-        <h1 class="teaser-title">Comport</h1>
-      </a>
-    </header>
-    <div class="teaser-body">
-      <p>Comport is an application that extracts, cleans and anonymizes incident-level data from a police department’s IA Pro database, creates data visualizations with summaries, and allows download of datasets.</p>
-      <p><a href="/products/comport">Learn more about this app</a></p>
-    </div>
-  </article>
+      <p><h3 class="text-prominent">Background</h3></p>
+      <p>During the 2015 Fellowship, the Somerville team worked with partners in the City and the Somerville school district to bring technology and data-driven decision-making into the classroom. While the school district was already collecting various data about its students, the process was very manual and time-consuming for teachers, which limited their face-to-face time with students. The fellows identified that technology could help make this process more efficient, and give educators more time to work directly with their students.</p>
+
+        <p><h3 class="text-prominent">In Partnership With</h3></p>
+        <ul>
+          <li><b>Denise Taylor</b>, Director of Communications and Community Engagement, City of Somerville</li>
+          <li><b>Stephanie Hirsch</b>, Advisor to the Mayor, City of Somerville</li>
+          <li><b>Uri Harel</b>, Elementary Curriculum Coordinator, Somerville Public Schools</li>
+        </ul>
+  </div>
+
+
 {% endif %}
