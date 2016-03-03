@@ -123,7 +123,7 @@ class TestApache (unittest.TestCase):
                  ('/alex-yule', '/people/alex-yule/'),
                  ('/cities', '/governments/'),
                  ('/codeacross-2014', '/events/codeacross-2014/'),
-                 ('/codeacross', '/events/codeacross-2015/'),
+                 ('/codeacross', '/events/codeacross-2016/'),
                  ('/02-18-2014', '/peer-network-training/02-18-2014/'),
                  ('/brigade12-12-2013', '/brigade-training/brigade12-12-2013/'),
                  ('/09-19-2013', '/brigade-training/09-19-2013/'),
