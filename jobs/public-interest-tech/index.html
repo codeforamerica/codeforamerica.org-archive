@@ -8,8 +8,12 @@ nav-breadcrumbs:
  - About: "/about"
  - Jobs: "/jobs"
 ---
+<div class="alert-failure">
+  <p><strong>This job is posting is no longer open for applications. Please see the <a href="/jobs">Jobs</a> page for open positions.</strong></p>
+</div>
 <section class="layout-semibreve">
   {% include nav-breadcrumbs.html %}
+
   <header class="badge-heading badge-brigade badge-blue">
     <h2>Director, Public Interest Technology Baseline Project</h2>
   </header>
@@ -47,9 +51,14 @@ nav-breadcrumbs:
   <p><strong>Equal Opportunity Employer</strong></p>
   <p>Code for America values a <a href="/jobs/diversity/">diverse workplace</a> and strongly encourages women, people of color, LGBT individuals, people with disabilities, members of ethnic minorities, foreign-born residents, and veterans to apply. Code for America is an equal opportunity employer. Applicants will not be discriminated against because of race, color, sex, sexual orientation, gender identity or expression, age, religion, national origin, disability, ancestry, marital status, veteran status, medical condition or any protected category prohibited by local, state or federal laws.</p>
 
+  <div class="alert-failure">
+    <p><strong>This job is posting is no longer open for applications. Please see the <a href="/jobs">Jobs</a> page for open positions.</strong></p>
+  </div>
+
+  {% comment %}
   <h3>Apply</h3>
   <p>To apply, please <a class="typeform-share link" href="https://cfa.typeform.com/to/IKlnFT" data-mode="2" target="_blank">respond with your resume</a> and no more than two page proposal for the project by filling out the form below. If you have any questions, please reach out to us by email at <a href="mailto:mischa@codeforamerica.org">mischa@codeforamerica.org</a>.</p>
   <a class="typeform-share link button button-lg button-bold" href="https://cfa.typeform.com/to/IKlnFT" data-mode="2" target="_blank">Apply for the job</a>
   <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
+  {% endcomment %}
 </section>
