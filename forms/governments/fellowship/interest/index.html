@@ -29,8 +29,7 @@ nav_tier1_active: "governments"
       <input type="hidden" name="utf8" value="✓">
 
       <ul class="list-form">
-        <h3>Executive Sponsorship</h3>
-        <p>To express interest, you must identify an executive sponsor (e.g. mayor, city manager, county administrator, public health director, or equivalent). </p>
+        
         <li class="form-field-group">
           <div class="form-field">
             <label for="firstname">First name <abbr title="Required">*</abbr></label>
@@ -63,6 +62,21 @@ nav_tier1_active: "governments"
             <label for="phone">What phone number can we reach you at?</label>
             <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555">
           </div>
+        </li>
+        
+        <li class="form-field">
+          <label for="interest">In 2017, Code for America is focused on redesigning government services which advance outcomes in our three focus areas, Healthy Communities, Safety & Justice, and Economic Development. Which of these areas are you interested in? (check all that apply) <abbr title="Required">*</abbr></label>
+          <ul class="list-form">
+		<li>
+			<label for="economicdev" class="check"><input id="economicdev" name="checkbox" type="checkbox" checked="checked"/>Economic Development</label>
+		</li>
+		<li>
+			<label for="healthycom" class="check"><input id="healthycom" name="checkbox" type="checkbox"/>Healthy Communities</label>
+		</li>
+		<li>
+			<label for="safejust" class="check"><input id="safejust" name="checkbox" type="checkbox"/>Safety & Justice</label>
+		</li>
+	</ul>
         </li>
 
         <li class="form-field">
