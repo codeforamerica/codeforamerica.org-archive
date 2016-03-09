@@ -68,25 +68,25 @@ nav_tier1_active: "governments"
           <p>In 2017, Code for America is focused on redesigning government services which advance outcomes in our three focus areas, Healthy Communities, Safety & Justice, and Economic Development. Which of these areas are you interested in? (check all that apply) <abbr title="Required">*</abbr></p>
           <ul>
 		<li>
-			<label for="economicdev" class="check"><input value="economicdev" name="focusarea" type="checkbox"/>Economic Development</label>
+			<label for="economicdev" class="check"><input value="economicdev" name="focusareas[]" type="checkbox"/>Economic Development</label>
 		</li>
 		<li>
-			<label for="healthycom" class="check"><input value="healthycom" name="focusarea" type="checkbox"/>Healthy Communities</label>
+			<label for="healthycom" class="check"><input value="healthycom" name="focusareas[]" type="checkbox"/>Healthy Communities</label>
 		</li>
 		<li>
-			<label for="safejust" class="check"><input value="safejust" name="focusarea" type="checkbox"/>Safety & Justice</label>
+			<label for="safejust" class="check"><input value="safejust" name="focusareas[]" type="checkbox"/>Safety & Justice</label>
 		</li>
 	</ul>
         </li>
 
         <li class="form-field">
-          <label for="interest">In 100 words or less, describe the challenge(s) you want to address through a partnership with Code for America? <abbr title="Required">*</abbr></label>
-          <input id="interest" name="interest" class="input" type="text" placeholder="e.g. social services enrollment, business services, jail management" required>
+          <label for="challenge">In 100 words or less, describe the challenge(s) you want to address through a partnership with Code for America? <abbr title="Required">*</abbr></label>
+          <input id="challenge" name="challenge" class="input" type="text" placeholder="e.g. social services enrollment, business services, jail management" required>
         </li>
 
         <li class="form-field">
-          <label for="comments">How did you hear about the Code for America Fellowship program?  </label>
-          <input id="comments" name="comments" class="input" type="text" placeholder="" >
+          <label for="referred">How did you hear about the Code for America Fellowship program?  </label>
+          <input id="referred" name="referred" class="input" type="text" placeholder="" >
         </li>
 
         <input type="submit" value="Submit">
