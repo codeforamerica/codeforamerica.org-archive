@@ -1,0 +1,124 @@
+---
+layout: default
+title: National Day of Civic Hacking 2016
+masthead-image: "../../media/images/events/codeacross2014.jpg"
+nav-breadcrumbs:
+ - events: "/events"
+ - National Day 2016: "/events/nationalday-2016"
+---
+
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+
+<section>
+  <div class="layout-breve">
+    <header>
+      <img src="brigade.png" width="75" style="display:inline;">
+      <h2 style="display:inline;">What is National Day?</h2>
+    </header>
+
+    <p>The weekend of March 5-6, 2016, Code for America will hold its fifth annual CodeAcross event. CodeAcross is a weekend of civic hacking events hosted by nodes of the Code for America network around the world. It is timed to coincide with <a href="http://opendataday.org/">International Open Data Day</a>. The goal of CodeAcross is to activate the Code for America network and inspire residents everywhere to get actively involved in their community.</p>
+
+    <p>Who should get involved? Urbanists, civic hackers, government staff,
+    developers, designers, community organizers, and anyone with the passion to make their city
+    better.</p>
+  </div>
+</section>
+
+<section>
+  <div class="layout-breve">
+    <table>
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Website</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+  </div>
+</section>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+     var URL = "1cxPblkshUVyKzvo_KuyCjo_NZdsB8F3nrnV_qeT1SuE"
+     Tabletop.init( { key: URL, callback: callback, simpleSheet: true } )
+    })
+    
+    function callback(data) {
+      console.log(data);
+      // Make a table
+      $.each(data, function(i,event){
+        var html = "<tr>\
+                    <td>"+event["Event Name"]+"</td>\
+                    <td>"+event["Event URL"]+"</td>\
+                    <td>"+event["City, State"]+"</td>\
+                    </tr>"
+        $("tbody").append(html);
+      })
+      
+    }
+    
+</script>
+
+
+<section>
+  <div class="layout-breve">
+
+    <header>
+      <img src="brigade.png" width="75" style="display:inline;">
+      <h2 style="display:inline;">Resources</h2>
+    </header>
+
+    <div class="layout-crotchet">
+      <h4>Organizer Resources</h4>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.653i7g1za88y">Organizer's Playbook</a> has a great section on organizing and hosting days of action.</li>
+        <li><a href="https://github.com/codeforamerica/codeofconduct/">Code of Conduct</a> and <a href="https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.o91zkk5ioexr">guide on how to make it effective</a>.</li>
+        <li><a href="https://docs.google.com/presentation/d/16CJzBbrKGESeFikxpJ0yHQW6pQpm1dDsHIbOqas4FTY/edit?usp=sharing">Template: Welcome Slide Deck</a></li>
+        <li><a href="http://forum.codeforamerica.org/t/2016-january-7-codeacross-webinar-1/341/1">Review the slides and watch our first organizing workshop</a></li>
+        <li><a href="http://forum.codeforamerica.org/t/2016-february-11-codeacross-webinar-2/375">Review the slides and watch our second organizing workshop</a></li>
+      </ul>
+    </div>
+
+    <div class="layout-crotchet">
+      <h4>Marketing Resources</h4>
+      <ul>
+
+        <li>
+            <div>
+              <!-- <p><a href="CodeAcross2016-files.zip" target="_blank">Download all graphics and logos (.zip)</a></p> -->
+            </div>
+        </li>
+
+        <li>
+            <!-- <p><img src="Small_CodeAcross2016_Banner.jpg" /></p> -->
+            <!-- <p><a href="CodeAcross2016_Banner.jpg" target="_blank">Download Banner</a></p> -->
+        </li>
+
+        <li>
+            <!-- <p><img src="Small_CodeAcross2016_Postcard.jpg" /></p> -->
+            <!-- <p><a href="CodeAcross2016_Postcard.jpg" target="_blank">Download Save the Date Postcard</a></p> -->
+        </li>
+
+        <li>
+            <p><a href="https://docs.google.com/presentation/d/1YUiytet0rdQQgHv_8MseTM4hKGpGS7zXpZftqmooHuo/edit#slide=id.p" target="_blank">Download "Should I go to CodeAcross" Poster</a> &mdash; Visit this <a href="https://docs.google.com/presentation/d/1YUiytet0rdQQgHv_8MseTM4hKGpGS7zXpZftqmooHuo/edit#slide=id.p">Google Template</a> to make a flowchart poster customized for your event.</p>
+            <!-- <p><img src="/media/images/codeacross-2015/Thumb_CodeAcross2015-Flowchart.jpg" /></p> -->
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="layout-crotchet">
+      <h4>Webinars</h4>
+      <ul>
+        <li>EXAMPLE</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
