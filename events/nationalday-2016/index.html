@@ -7,9 +7,26 @@ nav-breadcrumbs:
  - National Day 2016: "/events/nationalday-2016"
 ---
 
+
 <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+
+<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+
+<style>
+  .global-header { margin-bottom: 0; }
+  #map { height: 500px; width:100%; }
+</style>
+
+
+<section>
+  <div id="map">
+  </div>
+</section>
+
 
 <section>
   <div class="layout-breve">
@@ -23,6 +40,15 @@ nav-breadcrumbs:
     <p>Who should get involved? Urbanists, civic hackers, government staff,
     developers, designers, community organizers, and anyone with the passion to make their city
     better.</p>
+  </div>
+</section>
+
+<section>
+  <div id="challenges">
+    <header>
+      <img src="brigade.png" width="75" style="display:inline;">
+      <h2 style="display:inline;">Challenges</h2>
+    </header>
   </div>
 </section>
 
@@ -43,28 +69,6 @@ nav-breadcrumbs:
   </div>
 </section>
 
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-     var URL = "1cxPblkshUVyKzvo_KuyCjo_NZdsB8F3nrnV_qeT1SuE"
-     Tabletop.init( { key: URL, callback: callback, simpleSheet: true } )
-    })
-    
-    function callback(data) {
-      console.log(data);
-      // Make a table
-      $.each(data, function(i,event){
-        var html = "<tr>\
-                    <td>"+event["Event Name"]+"</td>\
-                    <td>"+event["Event URL"]+"</td>\
-                    <td>"+event["City, State"]+"</td>\
-                    </tr>"
-        $("tbody").append(html);
-      })
-      
-    }
-    
-</script>
-
 
 <section>
   <div class="layout-breve">
@@ -79,9 +83,7 @@ nav-breadcrumbs:
       <ul>
         <li><a href="https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.653i7g1za88y">Organizer's Playbook</a> has a great section on organizing and hosting days of action.</li>
         <li><a href="https://github.com/codeforamerica/codeofconduct/">Code of Conduct</a> and <a href="https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.o91zkk5ioexr">guide on how to make it effective</a>.</li>
-        <li><a href="https://docs.google.com/presentation/d/16CJzBbrKGESeFikxpJ0yHQW6pQpm1dDsHIbOqas4FTY/edit?usp=sharing">Template: Welcome Slide Deck</a></li>
-        <li><a href="http://forum.codeforamerica.org/t/2016-january-7-codeacross-webinar-1/341/1">Review the slides and watch our first organizing workshop</a></li>
-        <li><a href="http://forum.codeforamerica.org/t/2016-february-11-codeacross-webinar-2/375">Review the slides and watch our second organizing workshop</a></li>
+        <li>MORE COMING SOON</li>
       </ul>
     </div>
 
@@ -89,26 +91,7 @@ nav-breadcrumbs:
       <h4>Marketing Resources</h4>
       <ul>
 
-        <li>
-            <div>
-              <!-- <p><a href="CodeAcross2016-files.zip" target="_blank">Download all graphics and logos (.zip)</a></p> -->
-            </div>
-        </li>
-
-        <li>
-            <!-- <p><img src="Small_CodeAcross2016_Banner.jpg" /></p> -->
-            <!-- <p><a href="CodeAcross2016_Banner.jpg" target="_blank">Download Banner</a></p> -->
-        </li>
-
-        <li>
-            <!-- <p><img src="Small_CodeAcross2016_Postcard.jpg" /></p> -->
-            <!-- <p><a href="CodeAcross2016_Postcard.jpg" target="_blank">Download Save the Date Postcard</a></p> -->
-        </li>
-
-        <li>
-            <p><a href="https://docs.google.com/presentation/d/1YUiytet0rdQQgHv_8MseTM4hKGpGS7zXpZftqmooHuo/edit#slide=id.p" target="_blank">Download "Should I go to CodeAcross" Poster</a> &mdash; Visit this <a href="https://docs.google.com/presentation/d/1YUiytet0rdQQgHv_8MseTM4hKGpGS7zXpZftqmooHuo/edit#slide=id.p">Google Template</a> to make a flowchart poster customized for your event.</p>
-            <!-- <p><img src="/media/images/codeacross-2015/Thumb_CodeAcross2015-Flowchart.jpg" /></p> -->
-        </li>
+        <li>MORE COMING SOON</li>
 
       </ul>
     </div>
@@ -116,9 +99,57 @@ nav-breadcrumbs:
     <div class="layout-crotchet">
       <h4>Webinars</h4>
       <ul>
-        <li>EXAMPLE</li>
+        <li>MORE COMING SOON</li>
       </ul>
     </div>
 
   </div>
 </section>
+
+
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+  var map = L.mapbox.map('map', 'mapbox.streets')
+      .setView([40, -98], 4);
+</script>
+
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+     var URL = "1cxPblkshUVyKzvo_KuyCjo_NZdsB8F3nrnV_qeT1SuE"
+     Tabletop.init( { key: URL, callback: callback, simpleSheet: true } )
+    })
+    
+    function callback(data) {
+      console.log(data);
+      // Make a table
+      $.each(data, function(i,event){
+        // geocode each event
+        $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/"+event["City, State"]+".json?access_token=pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q", function(response){
+            // Build up geojson features and add to map individually
+            var geometry = response.features[0].geometry;
+            geometry.properties = {
+              "icon": {
+                "iconUrl": "brigade.png",
+                "iconSize": [50, 50]
+              }
+            }
+            var feature = {
+              type: 'Feature',
+              geometry: geometry
+            }
+            var markers = L.mapbox.featureLayer(feature).addTo(map);
+          });
+
+        // Build up the table of events
+        var html = "<tr>\
+                  <td>"+event["Event Name"]+"</td>\
+                  <td>"+event["Event URL"]+"</td>\
+                  <td>"+event["City, State"]+"</td>\
+                  </tr>"
+        $("tbody").append(html);
+      });
+    }
+
+</script>
+
