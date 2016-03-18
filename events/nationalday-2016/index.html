@@ -109,8 +109,10 @@ nav-breadcrumbs:
 
 <script>
   L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
-  var map = L.mapbox.map('map', 'mapbox.streets')
-      .setView([40, -98], 4);
+  var map = L.mapbox.map('map', 'mapbox.streets',{
+    zoomControl: false
+  }).setView([40, -98], 4);
+  map.scrollWheelZoom.disable();
 </script>
 
 
@@ -121,11 +123,32 @@ nav-breadcrumbs:
     })
     
     function callback(data) {
-      console.log(data);
-      // Make a table
+      console.log(data); // debug
+
+      // Loop through each event to add them to map
       $.each(data, function(i,event){
-        // geocode each event
-        $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/"+event["City, State"]+".json?access_token=pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q", function(response){
+        // Use latlon if available, otherwise geocode
+        if (event["latitude"] != '' && event["longitude"] != ''){
+
+          var geometry = {
+            type : "Point",
+            coordinates : [ event["longitude"], event["latitude"] ],
+            properties : {
+              "icon": {
+                "iconUrl": "brigade.png",
+                "iconSize": [50, 50]
+              }
+            }
+          }
+          var feature = {
+            type: 'Feature',
+            geometry: geometry
+          }
+          L.mapbox.featureLayer(feature).addTo(map);
+
+        } else {
+          // geocode each event
+          $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/"+event["City, State"]+".json?access_token=pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q", function(response){
             // Build up geojson features and add to map individually
             var geometry = response.features[0].geometry;
             geometry.properties = {
@@ -138,8 +161,9 @@ nav-breadcrumbs:
               type: 'Feature',
               geometry: geometry
             }
-            var markers = L.mapbox.featureLayer(feature).addTo(map);
+            L.mapbox.featureLayer(feature).addTo(map);
           });
+        }
 
         // Build up the table of events
         var html = "<tr>\
