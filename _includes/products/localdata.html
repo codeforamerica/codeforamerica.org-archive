@@ -1,0 +1,86 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>LocalData</h2>
+	</div>
+	
+	<div class="layout-minor">
+	    <img class="isolate" src="{{ include.base }}/media/images/apps/localdata.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>LocalData helps cities and communities capture and
+	    visualize data to make informed local decisions in real time.</p>
+	    
+	    <p class="text-whisper"><a href="http://localdata.com/">http://localdata<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Created by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/people/matt-hampel">Matt Hampel</a></li>
+	    	<li><a href="{{ include.base }}/people/alicia-rouault">Alicia Rouault</a></li>
+	    	<li><a href="{{ include.base }}/people/prashant-singh">Prashant Singh</a></li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Created for</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/cities/detroit">City of Detroit</a></li>
+	    </ul>
+	    
+	     <h4 class="text-whisper layout-tight">Part of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/civic-startups">2013 Incubator</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>LocalData is a cloud-based platform for collecting geospatial data. It helps
+	    cities and communities make data-driven decisions with tools to capture and
+	    visualize data in real time.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://localdata.com/">http://localdata<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href="http://vimeo.com/44016871">http://vimeo<wbr>.com/<wbr>44016871</a></td></tr>
+	    		<tr><th>Codebase</th><td><a href="https://github.com/LocalData">https://github<wbr>.com/<wbr>localdata</a></td></tr>
+	    		<tr><th>Environment</th><td></td></tr>
+	    		<tr><th>Redeploy</th><td></td></tr>
+	    	</table>
+	    	<a href="https://codeforamerica.wufoo.com/forms/app-inquiry-form/" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+        <p>Using LocalData, cities and nonprofits collect the data they need to make local decisions. From tracking blight and abandoned houses to understanding commercial corridors and surveying Infrastructure, LocalData is used around the country. Several detailed case studies are available at <a href="http://localdata.com">LocalData.com</a>.</p>
+        <p>In the past, data analysts and community groups collected location-based data using a pen and paper, only to find inconsistencies and errors in data entry. These inconsistencies made it impossible to share data across organizations. LocalData solves this challenge by providing shared surveys and fully customizable forms through a mobile collection tool with a map interface.</p>
+        <p>Surveys are based on rich administrative geodata, like parcels, building footprints, streetlights, fire hydrants, or other objects. This results in  faster surveying and more accurate data that can be joined with existing city resources.</p>
+        <p>LocalData has grown from its roots as a 2012 Fellowship project with the City of Detroit into a civic tech startup with customers and deployments around the world. From its first pilot, aided by city contact Karla Henderson and funding from the Knight Foundation and Kellogg Foundation, LocalData customers have included the City of Louisville, MIT, and Smart Chicago.</p>
+	</div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/products/localdata">
+                <h1 class="teaser-title">LocalData</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+	    <p>LocalData is a cloud-based platform for collecting geospatial data. It helps
+	    cities and communities make data-driven decisions with tools to capture and
+	    visualize data in real time.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p></p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p><a href="http://localdata.com">Details at LocalData.com</a></p>
+            
+            <p><a href="{{ include.base }}/products/localdata">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/products/localdata" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/localdata.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}

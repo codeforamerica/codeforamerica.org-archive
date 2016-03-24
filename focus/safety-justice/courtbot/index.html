@@ -1,0 +1,78 @@
+---
+layout: default
+title: "CourtBot"
+masthead-image: "/media/images/focus-areas/safety-justice/CourtBot-line.jpg"
+nav_tier1_active: "focus"
+nav-breadcrumbs:
+  - Where We Focus: "/focus"
+  - "Safety &amp; Justice": "/focus/safety-justice"
+  - CourtBot: "/focus/safety-justice/courtbot"
+helpers:
+  email_signup:
+    headline: "I'm interested in Safety and Justice"
+    description: "Want to learn more about what what Code for America is doing to create a justice system that is safe, fair and effective?  Join our email list to help inform Code for America's work in this area."
+    join_message: "Get updates on our Safety & Justice work. Join our email list."
+    show_group: "safety-justice"
+---
+<section class="layout-semibreve">
+  {% include nav-breadcrumbs.html %}
+  <h2>About CourtBot</h2>
+  <div class="layout-minim">
+    <p>Courtbot was built with the city of <a href="https://www.codeforamerica.org/governments/atlanta/" target="_blank">Atlanta</a> in partnership with the Atlanta Committee for Progress to simplify the process of resolving a traffic citation. After receiving a citation, people are often unsure of what to do next. Should they should appear in court, when should they appear, how much will the fine cost, or how can they contend the citation? The default is often to show up at the courthouse and wait in line for hours. Courbot allows the public to find out more information and pay their citations immediately via a text message.</p>
+  </div>
+
+  <div class="layout-minim">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/HwJplmFgVZo" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="slab-blue">
+	<div class="layout-semibreve">
+		<div class="highlight highlight-with-avatar">
+			<img class="highlight-avatar" src="/media/images/focus-areas/safety-justice/ryan-shepard.jpg"/>
+			<blockquote>
+				<p>Folks take off work, they arrange for child care, they head down to municipal court, to wait in a line. Imagine what it’s like standing in that line with bad weather, or when it’s windy out, or when you’ve cut it just close to make it to your 8am docket time. So, in Atlanta, you see folks show up for court, and stand in line.</p>
+			</blockquote>
+			<p class="attribute">RYAN SHEPARD, Mayor’s Office, <a href="http://www.atlantaga.gov/" target="_blank">Atlanta, GA</a></p>
+		</div>
+	</div>
+</section>
+
+
+<section class="layout-semibreve" style="padding: 3em 2% 1em 2%;">
+  <h2>The Product</h2>
+<div class="layout-minim">
+  <p>Courtbot is a simple web service for handling court case data. It offers a basic HTTP endpoint for integration with websites, and a set of advanced <a href="https://www.twilio.com/"target="_blank">twilio</a> workflows to handle text-based lookup. Specifically, the twilio features include:</p>
+  <ul>
+  <li>A Payable Prompt. If a case can be paid immediately, the app offers a phone number and link to begin payment.</li>
+  <li>Reminders. If a case requires a court appearance, the app allows users to sign up for reminders, served 24 hours in advance of the case.</li>
+  <li>Queued Cases. If a case isn't in the system, the app allows users to get information when it becomes available. The app continues checking each day for up to 16 days and sends the case information when found (or an apology if not).</li>
+  </ul>
+</div>
+<div class="layout-minim">
+    <img src="/media/images/focus-areas/safety-justice/CourtBot.jpg" alt>
+</div>
+
+<div class="badge-heading badge-gov badge-red">
+		<h3>Courtbot Government Partners</h3>
+	</div>
+	<div class="layout-gutter">
+		<ul class="list-no-bullets layout-grid">
+                <li class="layout-crotchet">
+                        <img class="citylogo" title="Atlanta" alt="" src="/media/images/governments/atlanta_seal.png" width="100" height="100">
+                </li>
+            </ul>
+        </div>
+</section>
+
+<section class="slab-dark-blue">
+	<div class="layout-semibreve">
+		<h2>Work with us</h2>
+
+		<div class="badge-heading badge-github badge-gov" style="border-bottom:none">
+			<h4>Get in touch to learn more about CourtBot.</h4>
+			<p>Contact <strong>Jenny Montoya Tansey, Director of Safety and Justice</strong> at <a href="mailto:jenny@codeforamerica.org">jenny@codeforamerica.org</a></p>
+		</div>
+
+	</div><!-- end .layout-semibreve -->
+</section>

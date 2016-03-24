@@ -16,8 +16,9 @@ nav_tier1_active: "governments"
 
 <section class="layout-semibreve">
 
-  <h2>Congratulations! You're early to the party.</h2>
-  <p>The 2016 Fellowship city application opens on January 15, 2015. But we'd love to hear from you early and start the conversation. Please fill out the interest form below and we'll get back to you.</p>
+  <h2>Apply to bring the fellows to you</h2>
+  <p>The Code for America Fellowship is a highly competitive program. We are only able to accept a handful of local governments each year. To express interest, the primary point of contact must identify an executive sponsor (e.g. mayor, city manager, county administrator, public health director, or equivalent) and complete the interest form below. Following the completion of the form, you will receive information about the rest of the application process. </p>
+  <p>Final applications for the 2016/17 program will be due by <strong>April 29th, 2016</strong>.</p>
   <br />
 
   <div id="formError" class="alert-failure" style="display:none;">
@@ -25,47 +26,128 @@ nav_tier1_active: "governments"
   
   <!-- Form content -->
   <div class="layout-major-invert">
-    <form name="interestForm" accept-charset="UTF-8" action="https://formkeep.com/f/d116a6148517" onsubmit="return validate()" method="POST" >
+    <form name="interestForm" accept-charset="UTF-8" action="https://formkeep.com/f/034664d5524c" onsubmit="return validate()" method="POST" >
       <input type="hidden" name="utf8" value="✓">
 
       <ul class="list-form">
-        
+        <strong>Executive Sponsorship</strong>
+        <li class="form-field">
+          <label for="government">Government Name <abbr title="Required">*</abbr></label>
+          <input id="government" name="government" class="input" type="text" placeholder="e.g. City of San Francisco, CA" required>
+        </li>
+        <li class="form-field">
+          <label for="agency">Agency or Department <abbr title="Required">*</abbr></label>
+          <input id="agency" name="agency" class="input" type="text" placeholder="e.g. Health and Human Services" required>
+        </li>
         <li class="form-field-group">
           <div class="form-field">
-            <label for="firstname">First name <abbr title="Required">*</abbr></label>
-            <input id="firstname" name="firstname" class="input" type="text" placeholder="First name" required>
+            <label for="sponsorfirstname">First Name <abbr title="Required">*</abbr></label>
+            <input id="sponsorfirstname" name="sponsorfirstname" class="input" type="text" placeholder="First name" required>
           </div>
 
           <div class="form-field">
-            <label for="lastname">Last name <abbr title="Required">*</abbr></label>
-            <input id="lastname" name="lastname" class="input" type="text" placeholder="Last name" required>
+            <label for="sponsorlastname">Last Name <abbr title="Required">*</abbr></label>
+            <input id="sponsorlastname" name="sponsorlastname" class="input" type="text" placeholder="Last name" required>
           </div>
         </li>
 
         <li class="form-field">
-          <label for="location">Where do you work? <abbr title="Required">*</abbr></label>
-          <input id="location" name="location" class="input" type="text" placeholder="i.e. City of San Francisco, CA" required>
+          <label for="sponsortitle">Executive Sponsor Title <abbr title="Required">*</abbr></label>
+          <input id="sponsortitle" name="sponsortitle" class="input" type="text" placeholder="e.g. County Administrator" required>
         </li>
+        <strong>Primary Contact</strong>
+        <br>
+        The primary contact will be the person who receives all communications from Code for America throughout the application process.
+        <li class="form-field-group">
+          <div class="form-field">
+            <label for="contactfirstname">First Name <abbr title="Required">*</abbr></label>
+            <input id="contactfirstname" name="contactfirstname" class="input" type="text" placeholder="First name" required>
+          </div>
 
+          <div class="form-field">
+            <label for="contactlastname">Last Name <abbr title="Required">*</abbr></label>
+            <input id="contactlastname" name="contactlastname" class="input" type="text" placeholder="Last Name" required>
+          </div>
+        </li>
         <li class="form-field">
-          <label for="jobtitle">What is your job title? <abbr title="Required">*</abbr></label>
-          <input id="jobtitle" name="jobtitle" class="input" type="text" placeholder="i.e. Chief Technology Officer" required>
+          <label for="contacttitle">Title <abbr title="Required">*</abbr></label>
+          <input id="contacttitle" name="contacttitle" class="input" type="text" placeholder="e.g. Chief Technology Officer" required>
         </li>
-
+        <li class="form-field">
+          <label for="contactagency">Agency or Department <abbr title="Required">*</abbr></label>
+          <input id="contactagency" name="contactagency" class="input" type="text" placeholder="e.g. Health and Human Services" required>
+        </li>
         <li class="form-field-group">
           <div class="form-field">
             <label for="email">What email can we reach you at? <abbr title="Required">*</abbr></label>
-            <input id="email" name="email" class="input" type="email" placeholder="email@domain.com" required>
+            <input id="email" name="email" class="input" type="email" placeholder="email@domain.gov" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">What phone number can we reach you at? <abbr title="Required">*</abbr></label>
+            <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555" required>
+          </div>
+        </li>
+        <li class="form-field">
+          <label for="address">Mailing Address <abbr title="Required">*</abbr></label>
+          <input id="address" name="address" class="input" type="text" placeholder="e.g. 1 Main St" required>
+        </li>
+        <li class="form-field-group">
+          <div class="form-field">
+            <label for="city">City <abbr title="Required">*</abbr></label>
+            <input id="city" name="city" class="input" type="text" placeholder="e.g. San Francisco" required>
+          </div>
+          <div class="form-field">
+            <label for="state">State <abbr title="Required">*</abbr></label>
+            <input id="state" name="state" class="input" type="text" placeholder="e.g. CA" required>
+          </div>  
+          <div class="form-field">
+            <label for="zip">Postal Code <abbr title="Required">*</abbr></label>
+            <input id="zip" name="zip" class="input" type="text" placeholder="e.g. 94103" required>
+          </div>
+        </li>
+        <strong>Secondary Contact</strong>
+        <br>
+        Provide the details of another member on your team who should receive communication from Code for America.
+         <li class="form-field-group">
+          <div class="form-field">
+            <label for="contact2firstname">First Name <abbr title="Required">*</abbr></label>
+            <input id="contact2firstname" name="contact2firstname" class="input" type="text" placeholder="First name" required>
           </div>
 
           <div class="form-field">
-            <label for="phone">What phone number can we reach you at?</label>
-            <input id="phone" name="phone" class="input" type="text" placeholder="555-555-5555">
+            <label for="contact2lastname">Last Name <abbr title="Required">*</abbr></label>
+            <input id="contact2lastname" name="contact2lastname" class="input" type="text" placeholder="Last Name" required>
           </div>
+        </li>
+        <li class="form-field">
+          <label for="contact2email">Email <abbr title="Required">*</abbr></label>
+          <input id="contact2email" name="contact2email" class="input" type="email" placeholder="email@domain.gov" required>
         </li>
 
         <li class="form-field">
-          <label for="newsletter-optin"><input id="newsletter-optin" name="newsletter-optin" type="checkbox"> Sign me up for the Code for America newsletter</label>
+          <p>In 2017, Code for America is focused on redesigning government services which advance outcomes in our three focus areas, Healthy Communities, Safety & Justice, and Economic Development. Which of these areas are you interested in? (check all that apply) <abbr title="Required">*</abbr></p>
+          <label for="economicdev" class="check"><input value="Econ Dev" name="focusareas[]" type="checkbox"/>Economic Development</label>
+	  <label for="healthycom" class="check"><input value="Health" name="focusareas[]" type="checkbox"/>Healthy Communities</label>
+	  <label for="safejust" class="check"><input value="S&J" name="focusareas[]" type="checkbox"/>Safety & Justice</label>
+        </li>
+
+        <li class="form-field">
+          <label for="challenge">In 100 words or less, describe the challenge(s) you want to address through a partnership with Code for America? <abbr title="Required">*</abbr></label>
+          <input id="challenge" name="challenge" class="input" type="text" placeholder="e.g. social services enrollment, business services, jail management" required>
+        </li>
+
+        <li class="form-field">
+          <label for="referred">How did you hear about the Code for America Fellowship program?  </label>
+          <label for="naco" class="check"><input value="NACO" name="referral[]" type="checkbox"/>NACO</label>
+          <label for="naccho" class="check"><input value="NACCHO" name="referral[]" type="checkbox"/>NACCHO</label>
+          <label for="uscm" class="check"><input value="USCM" name="referral[]" type="checkbox"/>USCM</label>
+          <label for="icma" class="check"><input value="ICMA" name="referral[]" type="checkbox"/>ICMA</label>
+          <label for="living" class="check"><input value="Living Cities" name="referral[]" type="checkbox"/>Living Cities</label>
+          <label for="nlc" class="check"><input value="National League of Cities" name="referral[]" type="checkbox"/>National League of Cities</label>
+          <label for="pmi" class="check"><input value="PMI" name="referral[]" type="checkbox"/>PMI</label>
+          <label for="media" class="check"><input value="Media" name="referral[]" type="checkbox"/>Media/Press Report</label>
+          <label for="other">Other</label>
+          <input id="other" name="other" class="input" type="text" >
         </li>
 
         <input type="submit" value="Submit">
@@ -77,7 +159,7 @@ nav_tier1_active: "governments"
   <div class="layout-minor-invert">
     <img src="../../../../media/images/about_fellowship/jen-summit.jpg" alt="Code for America Executive Director Jen Pahlka talks on stage at the 2014 Summit.">
     <h6><br />Learn more about the fellowship</h6>
-    <p>Want to learn more about the Fellowship and how we work with cities? Check out the <a href="/governments/fellowship">Fellowship page</a>.</p>
+    <p>Want to learn more about the Fellowship? Check out the <a href="/governments/fellowship">Fellowship page</a>.</p>
   </div>
 
 </section>

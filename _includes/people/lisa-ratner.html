@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Lisa Ratner</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/longbeach/">Long Beach Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/lisa-ratner.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Lisa is a Urban Planning focused User Experience Designer. Most recently, she designed for RideScout, a transportation technology company that builds mobility tools. She has received a liberal arts education at Scripps College, city planning certificates at UC Berkeley and University of Amsterdam, and UX training at General Assembly.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/lisa_ratner">@lisa_ratner</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/lisaratner">https://www.linkedin.com/in/lisaratner</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Lisa Ratner</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/lisa-ratner.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/longbeach/">Long Beach Team</a></p>
+    <p>
+      Lisa is a Urban Planning focused User Experience Designer. Most recently, she designed for RideScout, a transportation technology company that builds mobility tools. She has received a liberal arts ed...
+    </p>
+
+    <p><a class="link-more" href="/people/lisa-ratner/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/lisaratner">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/lisa_ratner">@lisa_ratner</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

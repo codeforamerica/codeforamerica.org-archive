@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Jessica Cole</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/kansascity/">Kansas City (MO) Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/jessica-cole.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Jessica is a builder and a civic organizer. She believes that technology, at its best, creates neighborhoods out of people. Most recently, she served as Director of Outreach at Panorama Education to bring perception data to 6500 public schools, organized civic retreats, and instigated field trips across Yale and Boston.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/jessunscripted">@jessunscripted</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/jessicamcole">https://www.linkedin.com/in/jessicamcole</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Jessica Cole</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/jessica-cole.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/kansascity/">Kansas City (MO) Team</a></p>
+    <p>
+      Jessica is a builder and a civic organizer. She believes that technology, at its best, creates neighborhoods out of people. Most recently, she served as Director of Outreach at Panorama Education to b...
+    </p>
+
+    <p><a class="link-more" href="/people/jessica-cole/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/jessicamcole">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/jessunscripted">@jessunscripted</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

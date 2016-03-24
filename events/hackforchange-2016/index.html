@@ -1,0 +1,186 @@
+---
+layout: default
+title: Hack for Change 2016
+masthead-image: "./banner.jpg"
+nav-breadcrumbs:
+ - events: "/events"
+ - Hack for Change 2016: "/events/hackforchange-2016"
+---
+
+
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+
+<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+
+<style>
+  .global-header { margin-bottom: 0; }
+  #map { height: 500px; width:100%; }
+</style>
+
+
+<section>
+  <div id="map">
+  </div>
+</section>
+
+
+<section>
+  <div class="layout-breve">
+    <header>
+      <img src="brigade.png" width="75" style="display:inline;">
+      <h2 style="display:inline;">What is Hack for Change?</h2>
+    </header>
+
+    <p>On June 4, 2016, thousands of people from across the world will come together to Hack for Change. This event, formerly known as National Day of Civic Hacking, will bring together urbanists, civic hackers, government staff, developers, designers, community organizers and anyone with the passion to make their city better. They will collaboratively build new solutions using publicly-released data, technology, and design processes to improve their communities and the governments that serve them. Anyone can participate; you don’t have to be an expert in technology, you just have to care about your neighborhood and community.</p>
+
+    <p>This is the fourth annual Hack for Change event. Hack for Change is organized by <a href="http://www.codeforamerica.org/">Code for America</a>. The leadership team is made up of <a href="http://www.nasa.gov/">NASA</a>, and <a href="http://secondmuse.com/">SecondMuse</a>.</p>
+
+    <p><strong>What:</strong> Hack for Change, formerly known as National Day of Civic Hacking</p>
+    <p><strong>When:</strong> June 4, 2016</p>
+    <p><strong>Where:</strong> Cities across the world</p>
+    <p><strong>Who:</strong> YOU</p>
+    <p><strong>Why:</strong> To improve our communities and the governments that serve them. The goal of Hack for Change is for residents, community groups, and governments to collaborate to make their communities stronger.</p>
+    <p><strong>Contact us:</strong> hello@hackforchange.org </p>
+
+  </div>
+</section>
+
+<section>
+  <div id="challenges" class="layout-breve">
+    <header>
+      <img src="brigade.png" width="75" style="display:inline;">
+      <h2 style="display:inline;">Challenges</h2>
+    </header>
+    <p>We’ll be offering technical and research based challenges around our <a href="https://www.codeforamerica.org/focus/">three focus areas</a> for organizers to use at their events. More information coming soon!</p>
+  </div>
+</section>
+
+<section>
+  <div class="layout-breve">
+
+    <header>
+      <img src="brigade.png" width="75" style="display:inline;">
+      <h2 style="display:inline;">Resources</h2>
+    </header>
+
+    <div class="layout-crotchet">
+      <h4>Organizer Resources</h4>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.653i7g1za88y">Organizer's Playbook</a> has a great section on organizing and hosting days of action.</li>
+        <li><a href="https://github.com/codeforamerica/codeofconduct/">Code of Conduct</a> and <a href="https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.o91zkk5ioexr">guide on how to make it effective</a>.</li>
+        <li>MORE COMING SOON</li>
+      </ul>
+    </div>
+
+    <div class="layout-crotchet">
+      <h4>Marketing Resources</h4>
+      <ul>
+
+        <li>MORE COMING SOON</li>
+
+      </ul>
+    </div>
+
+    <div class="layout-crotchet">
+      <h4>Webinars</h4>
+      <ul>
+        <li>MORE COMING SOON</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+  <div class="layout-breve">
+    <table>
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Website</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+  </div>
+</section>
+
+
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
+  var map = L.mapbox.map('map', 'mapbox.streets',{
+    zoomControl: false
+  }).setView([40, -98], 4);
+  map.scrollWheelZoom.disable();
+</script>
+
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+     var KEY = "1oQ1pSpBUdiBSuNAqlyiQvuQHnN9y5FZ-8296oZ7yAkU"
+     Tabletop.init( { key: KEY, callback: callback, simpleSheet: true } )
+    })
+    
+    function callback(data) {
+      console.log(data); // debug
+
+      // Loop through each event to add them to map
+      $.each(data, function(i,event){
+        // Use latlon if available, otherwise geocode
+        if (event["latitude"] != '' && event["longitude"] != ''){
+
+          var geometry = {
+            type : "Point",
+            coordinates : [ event["longitude"], event["latitude"] ],
+            properties : {
+              "icon": {
+                "iconUrl": "brigade.png",
+                "iconSize": [50, 50]
+              }
+            }
+          }
+          var feature = {
+            type: 'Feature',
+            geometry: geometry
+          }
+          L.mapbox.featureLayer(feature).addTo(map);
+
+        } else {
+          // geocode each event
+          $.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/"+event["City, State"]+".json?access_token=pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q", function(response){
+            // Build up geojson features and add to map individually
+            var geometry = response.features[0].geometry;
+            geometry.properties = {
+              "icon": {
+                "iconUrl": "brigade.png",
+                "iconSize": [50, 50]
+              }
+            }
+            var feature = {
+              type: 'Feature',
+              geometry: geometry
+            }
+            L.mapbox.featureLayer(feature).addTo(map);
+          });
+        }
+
+        // Build up the table of events
+        var html = "<tr>\
+                  <td>"+event["Event Name"]+"</td>\
+                  <td>"+event["Event URL"]+"</td>\
+                  <td>"+event["City, State"]+"</td>\
+                  </tr>"
+        $("tbody").append(html);
+      });
+    }
+
+</script>
+

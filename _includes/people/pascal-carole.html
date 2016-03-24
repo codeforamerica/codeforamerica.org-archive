@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Pascal Carole</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/kansascity/">Kansas City (MO) Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/pascal-carole.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Pascal is a developer originally from Martinique. He spent his early career at Microsoft both as an engineer and a product manager. Most recently, Pascal led the engineering team at Do.com as the company grew from 3 people to what it is today. Pascal is a proud Michigan Wolverine.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/pacarole">@pacarole</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/pacarole">https://www.linkedin.com/in/pacarole</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Pascal Carole</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/pascal-carole.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/neworleans/">New Orleans Team</a></p>
+    <p>
+      Pascal is a developer originally from Martinique. He spent his early career at Microsoft both as an engineer and a product manager. Most recently, Pascal led the engineering team at Do.com as the comp...
+    </p>
+
+    <p><a class="link-more" href="/people/pascal-carole/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/pacarole">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/pacarole">@pacarole</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

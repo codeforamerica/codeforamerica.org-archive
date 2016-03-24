@@ -1,40 +1,52 @@
+[![Build Status](https://travis-ci.org/codeforamerica/codeforamerica.org.png?branch=master)](https://travis-ci.org/codeforamerica/codeforamerica.org)
+
 Code For America Dot Org
 ========================
 
-[![Build Status](https://travis-ci.org/codeforamerica/codeforamerica.org.png?branch=master)](https://travis-ci.org/codeforamerica/codeforamerica.org)
+This repository holds the source code and static assets for [codeforamerica.org](https://www.codeforamerica.org). Learn more about what Code for America does [on our About page](https://www.codeforamerica.org/about/).
 
-Description
+How It Works
 --------
 
-For the past few months, we’ve worked with Colorado branding firm [Dojo4](http://dojo4.com/), Brighton web design firm [Clearleft](http://clearleft.com/), and our own internal communications and technology teams on a new visual design and front-end for the Code for America website. Today, we’re making the first of this work public and asking for input from the CfA community to ensure that the information presented on the site is accurate and up-to-date.
+We use Github like a content management system -- all our templates and content are collaboratively edited by staff and external contributors on Github. We use Jekyll to generate everything into static HTML files that are served using Apache.
+
+How We Built it
+--------
+
+Our technology and communications teams built the site in partnership with Brighton web design firm [Clearleft](http://clearleft.com/) and Colorado branding firm [Dojo4](http://dojo4.com/). Ongoing maintenance and improvements on the site are done collaboratively with internal staff and external volunteers. Members of the CfA community are welcomed to provide their input using Github issues, or help make improvements by submitting a Pull Request.
 
 Who’s Working On It
 --------
 
-* [Michal Migurski](http://codeforamerica.org/people/michal-migurski): code, hosting, copy/paste
-* [Cyd Harrell](http://codeforamerica.org/people/cyd-harrell): information architecture, design
-* [Dana Oshiro](http://codeforamerica.org/people/dana-oshiro): content, copy/paste
-* [Andrew Hyder](http://codeforamerica.org/people/andrew-hyder): feedback
+* [David Leonard](https://www.codeforamerica.org/people/david-leonard): code, design, project management
+* [Michal Migurski](https://www.codeforamerica.org/people/michal-migurski): hosting, answering many questions
+* [Andrew Hyder](https://www.codeforamerica.org/people/andrew-hyder): brigade site updates
+* [Molly McLeod](https://www.codeforamerica.org/people/molly-mcleod): design
+* [Zoe Blumenfeld](https://www.codeforamerica.org/people/zoe-blumenfeld): audience engagement
+* [Matthew Loveless](https://www.codeforamerica.org/people/matthew-loveless): analytics
+* [Alexis Charles](https://www.codeforamerica.org/people/alexis-charles): writing
+* [Nicole Neditch](https://www.codeforamerica.org/people/nicole-neditch): writing
+
+... and many more CfA staff members and community contributors.
 
 How to contribute
 --------
 
 ### Specific help we need
 
-We need your help to keep our content accurate and up to date. The easiest way for to help is to submit a pull request with one of the below: 
+We need your help to keep our content accurate and up to date. The easiest way for to help is to submit a pull request with one of the below:
 
-* For members of the community — including fellows, brigade captains, civic startups, and mentors — find yourself and your friends on one of the [lists of civic hackers](http://codeforamerica.org/geeks/our-geeks/) and let us know if your bio is correct and photo current. For staff, find yourself on the [staff page](http://codeforamerica.org/about/team/) and let us know if your bio is correct and photo current. Personal photos should be about 200 x 200px.
-* If you built an app or project as part of the fellowship or accelerator programs, find it on the [apps page](http://codeforamerica.org/apps) and verify that we’ve got it described accurately.
-* Check government information for brigades and fellowships on the [2015 government partners](http://codeforamerica.org/cities/2015-cities) and [alumni government partners](http://codeforamerica.org/cities/alumni) pages and fill in any blanks you might find.
-* We need quality photos for page headers. Should be about 1200 x 500px, JPG compressed to 150kb max.
+* For staff and members of the community, find yourself and your friends on one of the [team pages](https://www.codeforamerica.org/about/team) and let us know if your bio is correct and photo current. Note: Personal photos should be about 200 x 200px.
+* If you built an app or project as part of the fellowship or accelerator programs, find it on the [apps page](https://www.codeforamerica.org/apps) and verify that it's described accurately.
+* Check government information for brigades and fellowships on the [2015 government partners](https://www.codeforamerica.org/governments/#2015) and [alumni government partners](https://www.codeforamerica.org/governments/#alumni) pages and fill in any blanks you might find.
 
 ### <a name="pulls"></a>Submitting a Pull Request
 
 An easy way to submit a pull request for just simple text changes is to:
 
-1. Find the page you'd like to edit on the [master branch](https://github.com/codeforamerica/codeforamerica.org/). 
+1. Find the page you'd like to edit on the [master branch](https://github.com/codeforamerica/codeforamerica.org/).
 2. Use GitHub's built in editor to make your changes.
-3. Down below the editor window, include a brief one sentence description of what you changed. Something like "Updated Andrew Hyder's bio". 
+3. Down below the editor window, include a brief one sentence description of what you changed. Something like "Updated Andrew Hyder's bio".
 4. Click the green Propose File Change button.  
 5. You'll get to review your changes. If everything looks right, click the green "Send pull request" button.
 
@@ -67,7 +79,7 @@ https://jekit.codeforamerica.org/lolname/codeforamerica.org/master/people/dave-g
 
 ### Running the Site Locally on Your Computer
 
-To run the site locally on your own computer (most helpful for previewing your own changes), you will need Jekyll installed ([click here for Jekyll installation instructions](http://jekyllrb.com/docs/installation/).)
+To run the site locally on your own computer (most helpful for previewing your own changes), you will need Jekyll installed ([click here for Jekyll installation instructions](https://github.com/codeforamerica/howto/blob/master/Jekyll.md).)
 
 Fork and clone the repository, then run the following command in the root directory of the repo:
 
@@ -83,8 +95,7 @@ Your computer should now be serving your local copy of the site at:
 
 ### Editing stylesheets
 
-All CSS and stylesheets are run from the `pattern-portfolio` branch,
-and served lived from http://style.codeforamerica.org.
+All CSS and stylesheets are hosted in the [pattern-library repository](https://github.com/codeforamerica/pattern-library), and served lived from http://style.codeforamerica.org.
 
 Technology Patterns
 --------

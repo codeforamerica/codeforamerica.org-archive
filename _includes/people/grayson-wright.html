@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Grayson Wright</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/seattle/">Seattle Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/grayson-wright.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Grayson is a design-minded full stack developer who loves solving human problems. During his time at thoughtbot, and previously as an independent freelancer, he's helped dozens of startups and established companies launch and maintain their web services. Grayson's been actively involved in the Code for San Francisco Brigade since early 2015, helping to expand social service access to those who need it most. He spends his weekends on his motorcycle, looking for places to set up his next long-exposure photo shoot.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/grayson_wright">@grayson_wright</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/pub/grayson-wright/a1/2b/bb0">https://www.linkedin.com/pub/grayson-wright/a1/2b/bb0</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Grayson Wright</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/grayson-wright.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/seattle/">Seattle Team</a></p>
+    <p>
+      Grayson is a design-minded full stack developer who loves solving human problems. During his time at thoughtbot, and previously as an independent freelancer, he's helped dozens of startups and establi...
+    </p>
+
+    <p><a class="link-more" href="/people/grayson-wright/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/pub/grayson-wright/a1/2b/bb0">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/grayson_wright">@grayson_wright</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

@@ -30,7 +30,12 @@ src="https://www.facebook.com/tr?id=854714257976441&ev=PageView&noscript=1"
 <!-- Load our scripts -->
 <script src="/script/global.js"></script>
 {% if page.helpers.underscore %}
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+{% endif %}
+{% if page.helpers.react %}
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.min.js"></script>
 {% endif %}
 <!-- If requested in page frontmatter, load form helpers -->
 {% if page.helpers.forms %}
@@ -43,8 +48,6 @@ src="https://www.facebook.com/tr?id=854714257976441&ev=PageView&noscript=1"
 {% if page.helpers.blogpost-markup %}
   {% include blogpost-markup.html %}
 {% endif %}
-<!-- If requested, load underscore -->
-<script src="/script/email-signup.js"></script>
 {% comment %}
   Ethnio Screener: "What are you here to do?"
   Owned by David Leonard (github: @davidrleonard)
@@ -54,8 +57,10 @@ src="https://www.facebook.com/tr?id=854714257976441&ev=PageView&noscript=1"
   Ethnio is paused while the Summit is happening
   <script type="text/javascript" language="javascript" src="//ethn.io/66016.js" async="true" charset="utf-8"></script>
 {% endcomment %}
-<!-- Params.js -->
+<!-- Get params -->
 <script src="/script/params.js"></script>
+<!-- Email signup script -->
+<script src="/script/email-signup.js"></script>
 <!-- Load scripts from the page, if there are any -->
 {% if page.jquery-scripts %}
   {{ page.jquery-scripts }}

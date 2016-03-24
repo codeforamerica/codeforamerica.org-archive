@@ -4,31 +4,33 @@ title: CfA Team
 nav_tier1_active: "about"
 masthead-image: "../../media/images/about/team/team_header.jpg"
 nav-breadcrumbs:
- - Who We Are: "/about"
+ - About: "/about"
  - CfA Team: "/about/team"
 ---
-
 <section class="layout-semibreve">
-
+  {% include nav-breadcrumbs.html %}
   <header class="badge-heading badge-brigade badge-blue">
     <h2>Who We Are</h2>
   </header>
-  <p>Our team is made up of tech geeks, government experts, and technology industry leaders who are dedicated to improving their communities.
+  <p>Our team is made up of tech geeks, government experts, and technology industry leaders who are dedicated to improving their communities.</p>
 
   <ul class="list-inline list-no-bullets">
-    <li><a href="/about/board" class="button">Meet the Board</a></li>
-    <li><a href="/geeks/our-geeks/2015-fellows/" class="button">Meet the 2015 Fellows</a></li>
-    <li><a href="/jobs" class="button">Job Opportunities</a></li>
+    <li><a href="#staff" class="button-s">Meet the Staff</a></li>
+    <li><a href="/about/board" class="button-s">Meet the Board</a></li>
+    <li><a href="/geeks/our-geeks/2016-fellows/" class="button-s">Meet the 2016 Fellows</a></li>
+    <li><a href="/geeks/our-geeks/#fellows" class="button-s">Meet the Alumni Fellows</a></li>
+    <li><a href="/geeks/our-geeks/brigade-captains/" class="button-s">Meet the Brigade Captains</a></li>
+    <li><a href="/jobs" class="button-s">Find Job Opportunities</a></li>
   </ul>
 </section>
 
 <section class="layout-semibreve">
+  <a id="staff"></a>
   <h4>Executive Team</h4>
 
   <ul class="list-no-bullets layout-grid-crotchet">
     <li>{% include people/jennifer-pahlka.html context="about-team" base="../.." %}</li>
-    <li>{% include people/greg-kerwin.html context="about-team" base="../.." %}</li>
-    <li>{% include people/michal-migurski.html context="about-team" base="../.." %}</li>
+    <li>{% include people/maryann-kongovi.html context="about-team" base="../.." %}</li>
     <li>{% include people/meghan-reilly.html context="about-team" base="../.." %}</li>
     <li>{% include people/alicia-rouault.html context="about-team" base="../.." %}</li>
   </ul>
@@ -39,17 +41,7 @@ nav-breadcrumbs:
 
   <ul class="list-no-bullets layout-grid-crotchet">
     <li>{% include people/monique-baena-tan.html context="about-team" base="../.." %}</li>
-    <li>{% include people/catherine-bracy.html context="about-team" base="../.." %}</li>
-    <li>{% include people/dharmishta-rood.html context="about-team" base="../.." %}</li>
     <li>{% include people/hannah-young.html context="about-team" base="../.." %}</li>
-  </ul>
-</section>
-
-<section class="layout-semibreve">
-  <h4>Editorial Team</h4>
-
-  <ul class="list-no-bullets layout-grid-crotchet">
-    <li>{% include people/dan-hon.html context="about-team" base="../.." %}</li>
   </ul>
 </section>
 
@@ -58,7 +50,7 @@ nav-breadcrumbs:
 
   <ul class="list-no-bullets layout-grid-crotchet">
     <li>{% include people/becca-blazak.html context="about-team" base="../.." %}</li>
-    <li>{% include people/garrett-jacobs.html context="about-team" base="../.." %}</li>
+    <li>{% include people/caitlin-docker.html context="about-team" base="../.." %}</li>
     <li>{% include people/nicole-neditch.html context="about-team" base="../.." %}</li>
     <li>{% include people/debs-schrimmer.html context="about-team" base="../.." %}</li>
   </ul>
@@ -73,21 +65,23 @@ nav-breadcrumbs:
 </section>
 
 <section class="layout-semibreve">
-  <h4>Focus Area Leads</h4>
+  <h4>Focus Area Team</h4>
 
   <ul class="list-no-bullets layout-grid-crotchet">
     <li>{% include people/efrem-bycer.html context="about-team" base="../.." %}</li>
+    <li>{% include people/sarat-mayer.html context="about-team" base="../.." %}</li>
     <li>{% include people/jenny-montoya-tansey.html context="about-team" base="../.." %}</li>
   </ul>
 </section>
 
+{% comment %}
 <section class="layout-semibreve">
   <h4>Government Relations Team</h4>
 
   <ul class="list-no-bullets layout-grid-crotchet">
-    <li>{% include people/luke-norris.html context="about-team" base="../.." %}</li>
   </ul>
 </section>
+{% endcomment %}
 
 <section class="layout-semibreve">
   <h4>Marketing and Communications Team</h4>
@@ -115,11 +109,8 @@ nav-breadcrumbs:
   <h4>Product Team</h4>
 
   <ul class="list-no-bullets layout-grid-crotchet">
-    <li>{% include people/frances-berriman.html context="about-team" base="../.." %}</li>
     <li>{% include people/colleen-cotter.html context="about-team" base="../.." %}</li>
-    <li>{% include people/cyd-harrell.html context="about-team" base="../.." %}</li>
     <li>{% include people/norris-hung.html context="about-team" base="../.." %}</li>
-    <li>{% include people/jack-madans.html context="about-team" base="../.." %}</li>
     <li>{% include people/jacob-solomon.html context="about-team" base="../.." %}</li>
     <li>{% include people/alan-williams.html context="about-team" base="../.." %}</li>
   </ul>
@@ -129,9 +120,8 @@ nav-breadcrumbs:
   <h4>Revenue Team</h4>
 
   <ul class="list-no-bullets layout-grid-crotchet">
-    <li>{% include people/matt-boitano.html context="about-team" base="../.." %}</li>
     <li>{% include people/mischa-byruck.html context="about-team" base="../.." %}</li>
-    <li>{% include people/jennifer-childs.html context="about-team" base="../.." %}</li>
+    <li>{% include people/chi-offomah.html context="about-team" base="../.." %}</li>
     <li>{% include people/jessica-silverman.html context="about-team" base="../.." %}</li>
   </ul>
 </section>
@@ -143,8 +133,30 @@ nav-breadcrumbs:
     <li>{% include people/tomas-apodaca.html context="about-team" base="../.." %}</li>
     <li>{% include people/dave-guarino.html context="about-team" base="../.." %}</li>
     <li>{% include people/andrew-hyder.html context="about-team" base="../.." %}</li>
-    <li>{% include people/norris-hung.html context="about-team" base="../.." %}</li>
-    <li>{% include people/william-pietri.html context="about-team" base="../.." %}</li>
+  </ul>
+</section>
+
+<section class="layout-semibreve">
+  <h4>2016 Fellows</h4>
+
+  <ul class="list-no-bullets layout-grid-crotchet">
+    <li>{% include people/georgia-andrews.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/amulya-aradhyula.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/kevin-berry.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/kuan-butts.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/stephanie-cain.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/pascal-carole.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/jessica-cole.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/rachel-edelman.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/meredith-hitchcock.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/keith-kurson.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/patrick-mcdonnell.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/katherine-nammacher.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/ben-peterson.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/lisa-ratner.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/mark-rossetti.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/charlie-weems.html context="2016-fellows" base="../../.." %}</li>
+    <li>{% include people/grayson-wright.html context="2016-fellows" base="../../.." %}</li>
   </ul>
 </section>
 

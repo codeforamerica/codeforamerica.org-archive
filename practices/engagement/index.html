@@ -1,0 +1,199 @@
+---
+layout: default
+title: Civic Engagement
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+masthead-custom: deep
+nav-global-primary: "no"
+
+# Title for the title bar, and the overline in the masthead
+title: Community Engagement
+
+# Content for the custom deep masthead
+headline: Ensure everyone can participate
+description: Create ways for every community member to productively participate in decisions about issues that affect them. Proactively reach out to a cross section of your community, communicate using language that’s easy to understandand, and engage people through diverse channels that meet people where they are.
+
+# The picture for the page
+masthead-image: "/media/images/practices/roundtable.jpg"
+
+nav_tier1_active: "practices"
+nav-breadcrumbs:
+  - Practices of 21st Century Government: "/practices"
+  - Civic Engagement: "/practices/engagement"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+<section class="layout-semibreve">
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+      {% include nav-breadcrumbs.html %}
+      <!-- Header -->
+      <h2>Community Engagement</h2>
+      <p>In order for governments to be open, responsive, and engaging, community members must feel they are active participants in building government, and that their participation can influence decisions about issues that effect them.</p>
+      <p>Technology can be a powerful tool for community engagement. It can help local government expand their reach to a broad cross-section of the community (and clearly see who is being left out), help people understand the issues at hand, encourage productive actions, and demonstrate how those actions are creating positive outcomes.</p>
+  	  </p>Over the past five years, Code for America has worked with local governments across the country and developed a number of tools designed to increase participation and engagement. We have seen that there are five key elements of effective 21st century community engagement.</p>
+
+  	  <ol>
+  	  	<li><em>Reach</em>: Governments need to define the constituency they are trying to reach, with an emphasis on identifying those whose voices aren’t already represented.
+  	  	<li><em>Information</em>: Relevant information should be easy to find and understand, spoken in a clear, simple, and authentic voice.
+  	  	<li><em>Channels</em>: A diversity of engagement channels should be used, both online and offline, that meet people where they are.
+  	  	<li><em>Productive Actions</em>: Identify clear, concrete and meaningful actions that the community can take to reach their desired outcomes.
+  	  	<li><em>Feedback Loops</em>: An engagement process isn't complete until the community has been followed up with and shown how their actions have impacted positive outcomes.
+  	  </ol>
+  	  <p>When the community sees their actions contributing to positive outcomes for <em>all</em> people, we should see an increase in the number of people using their hands (and not just their voices) to help, and stronger relationships form between community and government.</p>
+	</div><!-- end Principle 1 -->
+</section>
+
+<section class="slab-gray">
+
+	<div class="layout-semibreve">
+
+		<div class="badge-heading badge-red">
+		    <h2 id='resources'>Practice Community Engagement</h2>
+		</div>
+
+		<p>We're publishing a set of guides, tools and resources to help governments implement the five key elements of effective 21st century community engagement.</p>
+
+		<h3>Guides</h3>
+
+		<ul class="list-no-bullets list-icons">
+				<li class="icon-lamp"><a href="/governments/boulder/toolkit/expanding-reach/">How to: Expand your reach</a>
+  				<p>An effective engagement strategy reaches constituents who don’t usually take part in public feedback. It pays attention to the people and communities who will be most affected by the policies and processes that result. This allows you to get a fuller understanding of what your community needs, and create programs and policies that meet those needs.
+				</li>
+				<li class="icon-lamp"><a href="/governments/boulder/toolkit/relevant-info/">How to: Provide relevant and useful information</a>
+				<p>Once you have identified the people you want to reach, you need them to understand the issue you’re seeking input on and how they can participate. The web is increasingly the primary place people expect to find information, take action, and communicate with government.</p>
+				</li>
+
+				<li class="icon-lamp"><a href="/governments/boulder/toolkit/participation/">How to: Collect community input through a variety of channels</a>
+				<p>Many people don’t take part in traditional public meetings because they are held in spaces or at times that aren’t convenient or welcoming. To invite participation from everyone, you should use a variety of spaces and channels to meet people where they are. All forums, whether online or offline, should be accessible, safe, and welcoming.</p>
+
+				<li class="icon-lamp"><a href="/governments/boulder/toolkit/productive-actions/">How to: Encourage productive actions</a>
+				<p>Make it easy for residents to usefully and meaningfully contribute to the city's work. Prioritize clear and specific requests. Make sure what you are asking people to do will actually add value to your work. Don’t waste their time by asking for vague feedback that won’t get used or to attend a meeting that doesn’t have a clear purpose.</p>
+				</li>
+
+				<li class="icon-lamp"><a href="/governments/boulder/toolkit/feedback-loops//">How to: Create useful feedback loops</a>
+				<p>Your community needs to know that their feedback was valued and what the result was of their participation. By creating useful feedback loops, you can build meaningful, trusting relationships with residents.</p>
+				</li>
+
+		</ul>
+
+		<h3>Tools</h3>
+
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-tools"><a href="https://www.codeforamerica.org/products/cityvoice/#voiceTop">Tool: CityVoice</a>
+				<p>A place-based call-in system to collect community feedback on places (like vacant properties or public parks) using the the telephone.</p>
+			</li>
+			<li class="icon-tools"><a href="https://textizen.com/">Tool: Textizen</a>
+				<p>A survey tool that uses text messaging to collect feedback about key issues.</p>
+			</li>
+			<li class="icon-tools"><a href="https://github.com/codeforamerica/MuniciPal#readme">Tool: MuniciPal</a>
+				<p>MuniciPal surfaces upcoming public decisions based on geography, and allows residents to give feedback to their local representitives.</p>
+			</li>
+		</ul>
+
+		<h3>Spotlight</h3>
+
+		<ul class="teasers">
+                            <li class="layout-crotchet">
+        <article class="teaser">
+            <header class="teaser-header">
+                <a href="https://youtu.be/_94nuYefE_Y?list=UU6VjQY-gIxXGKmjW0LeMGOw">
+                    <h1 class="teaser-title">Catherine Bracy: Building For Inclusive Community Participation</h1>
+                </a>
+            </header>
+            <div class="teaser-body">
+
+            </div>
+            <footer class="teaser-footer">
+                <a href="https://youtu.be/_94nuYefE_Y?list=UU6VjQY-gIxXGKmjW0LeMGOw" class="teaser-masthead">
+                    <img class="teaser-image" src="http://img.youtube.com/vi/_94nuYefE_Y/0.jpg" style="top: 0px; position: relative">
+                    <span class="teaser-type teaser-type-article">2014 Summit</span>
+                </a>
+            </footer>
+        </article>
+        </li>
+                            <li class="layout-crotchet">
+        <article class="teaser">
+            <header class="teaser-header">
+                <a href="https://www.youtube.com/watch?v=Eph5S1d35eg">
+                    <h1 class="teaser-title">Karen Boyd: Service delivery in Oakland, default to digital</h1>
+                </a>
+            </header>
+            <div class="teaser-body">
+
+            </div>
+            <footer class="teaser-footer">
+                <a href="https://www.youtube.com/watch?v=Eph5S1d35eg" class="teaser-masthead">
+                    <img class="teaser-image" src="/media/images/practices/karen-boyd.jpg" style="top: 0px; position: relative">
+                    <span class="teaser-type teaser-type-article">2015 Summit</span>
+                </a>
+            </footer>
+        </article>
+        </li>
+                            <li class="layout-crotchet">
+        <article class="teaser">
+            <header class="teaser-header">
+                <a href="https://www.youtube.com/watch?v=sbqNkz_mjng&index=28&list=UU6VjQY-gIxXGKmjW0LeMGOw">
+                    <h1 class="teaser-title">Laurenellen McCann: Meeting residents where they are</h1>
+					</h1>
+                </a>
+            </header>
+            <div class="teaser-body">
+
+            </div>
+            <footer class="teaser-footer">
+                <a href="https://www.youtube.com/watch?v=sbqNkz_mjng&index=28&list=UU6VjQY-gIxXGKmjW0LeMGOw" class="teaser-masthead">
+                    <img class="teaser-image" src="http://img.youtube.com/vi/sbqNkz_mjng/0.jpg" style="top: 0px; position: relative">
+                    <span class="teaser-type teaser-type-article">2014 Summit</span>
+                </a>
+
+            </footer>
+        </article>
+        </li>
+    </ul>
+
+		<h3 class="isolate">Further Reading</h3>
+
+		<ul class="list-no-bullets list-icons">
+			<li class="icon-new-tab"><a href="http://mncampuscompact.org/cdce/">Read: List of Digital Engagement Tools</a>
+				<p>The Center for Digital Civic Engagement's last post inclues a list of tools for digital engagement.</p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=_MscPGVijqU">Watch: Engaging immigrant communities</a>
+				<p>Denise Taylor discusses how the City of Somerville intentionally includes the local immigrant community.</p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=16ik6Td7iyQ&index=8&list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M">Watch: Citizen Satisfaction Survey</a>
+				<p>How the Citizen Satisfaction Survey helps Kansas City take productive actions to improve residents’ quality of life.</p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=eoiGeinZMco">Watch: Community-Building for Diversity and Inclusivity</a>
+				<p>This panel discussion covers goal setting and strategies for moving towards more inclusive communities</p>
+			</li>
+		</ul>
+
+	</div>
+</section>

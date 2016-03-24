@@ -83,13 +83,15 @@ helpers:
 
 <body>
 <div class="js-container">
-
+  <div class="alert-failure" style="margin:0">
+    <p><strong>You're on our archived site. (That's okay, there's still some great stuff here.) We're currently beta-testing a refreshed website focused on you. See the updated site at <a href="https://www.codeforamerca.org/">https://www.codeforamerica.org</a>.</strong></p>
+  </div>
 {% include nav.html masthead="no" %}
 
 <div class="masthead masthead-xl masthead-homepage">
   <header class="layout-semibreve masthead-header">
     <h1 id="story-title" class="page-title"><a href="governments/sanfrancisco/">In San Francisco</a></h1>
-    <p id="story-content">One third of HSA clients are unnecessarily cut from food benefits. Four fellows built <a href="/apps/promptly/">Promptly</a> offering SMS notifications to keep families fed.</p>
+    <p id="story-content">One third of HSA clients are unnecessarily cut from food benefits. Four fellows built <a href="/products/promptly/">Promptly</a> offering SMS notifications to keep families fed.</p>
     <a id="box-link" class="text-whisper button-invert" href="/about">Learn More About What We Do</a>
   </header>
 </div>
@@ -108,18 +110,19 @@ helpers:
                 <p>We build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</p>
                 <p>Join our e-mail list to learn how to use your skills to make your community better & we’ll send you info about Code for America’s work.</p>
                 <div class="layout-center">
-                    <a class="text-whisper button-invert white js-modal-show" href="#">Sign up</a>
+                    <a class="text-whisper button-invert white js-modal-show" href="/signup" data-email-signup-button="true">Sign up</a>
                     <br/>
                 </div>
             </div>
         </div>
-
         <div class="layout-minim-staccato">
-            <!-- <h4><a href="http://www.codeforamerica.org/summit/?utm_source=homepage">Join Us at the Summit</a></h4> -->
-            <a href="http://www.codeforamerica.org/summit/?utm_source=homepage"><img src="media/images/summit-home-white.png" /></a>
-            <a href="http://www.codeforamerica.org/summit/?utm_source=homepage" class="text-whisper button-invert white">Join us at the Summit</a>
+          <div class="card card-action card-inverse">
+            <i class="symbol symbol-glasses symbol-invert"></i>
+            <h5>Use your skills</h5>
+            <p>Discover the ways you get involved and help us build 21st century government.</p>
+            <a href="/join" class="text-whisper button-invert white">Find opportunities</a>
+          </div>
         </div>
-
     </div>
 </section>
 

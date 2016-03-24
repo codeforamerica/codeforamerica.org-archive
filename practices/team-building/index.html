@@ -1,0 +1,159 @@
+---
+layout: default
+title: Team Building
+# Don't use the default masthead, use the custom deep masthead
+masthead: "no"
+masthead-custom: deep
+nav-global-primary: "no"
+
+# Title for the title bar, and the overline in the masthead
+title: Team Building
+
+# Content for the custom deep masthead
+headline: Build the Right Team
+description: Invest in people who value the role of digital at all levels of the organization. Increase tech skills and literacy among staff, hire new tech talent where it’s needed, and build multidisciplinary teams focused on delivery.
+
+# The picture for the page
+masthead-image: "/media/images/practices/teambuilding.jpg"
+
+nav_tier1_active: "practices"
+nav-breadcrumbs:
+  - Practices of 21st Century Government: "/practices"
+  - Team Building: "/practices/team-building"
+
+jquery-scripts: |
+    <script src="/script/jquery.sticky.js"></script>
+    <script src="/script/jquery.scrollspy.js"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+        $("#js-sticky-nav").sticky({ topSpacing: 50, widthFromWrapper: true });
+
+        // now we can spy on stuff to see when our section appears WHOOSH
+        $('.principle').each(function(i) {
+            var position = $(this).position();
+            console.log(position);
+            console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
+            $(this).scrollspy({
+                min: position.top,
+                max: position.top + $(this).height(),
+                onEnter: function(element, position) {
+                    $("#js-nav-" + element.id).addClass("nav-item-active");
+                },
+                onLeave: function(element, position) {
+                   $("#js-nav-" + element.id).removeClass("nav-item-active");
+                }
+            });
+        });
+        console.log("yup");
+      });
+    </script>
+---
+
+<section class="layout-semibreve">
+    {% include nav-breadcrumbs.html %}
+    <!------------------Principle 1---------------------->
+    <div class="principle" id="people">
+      <!-- Header -->
+      <h2>Team Building</h2>
+      <p>Digital must be a key skill of government, at all levels, owned by the people responsible for delivering programs and services to the public.</p>
+	</div><!-- end Principle 1 -->
+</section>
+
+<section class="slab-gray">
+
+	<div class="layout-semibreve">
+
+		<div class="badge-heading badge-red">
+		    <h2 id='resources'>Practice Team Building</h2>
+		</div>
+
+		<p>We're publishing a set of guides, tools and resources to help governments work in the open, proactively publish public data online, and collaborate with the community to help make programs and services better for everyone.</p>
+
+		<h3>Guides</h3>
+
+		<ul class="list-no-bullets list-icons">
+
+				<li class="icon-lamp"><a href="/playbooks/technology-procurement/organize-government-for-digital-services/">How to: Organize Government for Digital Services</a>
+				<p>Read this guide when developing a new team or reorganizing your existing people for digital service creation and delivery.</p>
+				</li>
+
+				<li class="icon-lamp"><a href="/playbooks/technology-procurement/delivering-digital-services/">How to: Deliver Digital Services</a>
+				<p>This guide walks you through the initial thoughts when beginning to think about digital services. It also includes additional resources.</p>
+				</li>
+		</ul>
+		
+	<h3>Spotlight</h3>
+
+	<ul class="teasers">
+           <li class="layout-crotchet">
+        <article class="teaser">
+            <header class="teaser-header">
+                <a href="https://www.youtube.com/watch?v=6BGw2Msv2Wg&index=36&list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M">
+                    <h1 class="teaser-title">Maksim Pecherskiy, Almis Udrys: Lessons from bringing technologists into the City of San Diego’s government.</h1>
+                </a>
+            </header>
+            <div class="teaser-body">
+
+            </div>
+            <footer class="teaser-footer">
+                <a href="https://www.youtube.com/watch?v=6BGw2Msv2Wg&index=36&list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M" class="teaser-masthead">
+                    <img class="teaser-image" src="/media/images/focus-areas/maksim_almis.jpg" style="top: 0px; position: relative">
+                    <span class="teaser-type teaser-type-article">2015 Summit</span>
+                </a>
+            </footer>
+        </article>
+        </li>
+                            <li class="layout-crotchet">
+        <article class="teaser">
+            <header class="teaser-header">
+                <a href="https://www.youtube.com/watch?v=xucMptZBQL8&index=38&list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M">
+                    <h1 class="teaser-title">Daro Mott: Developing great people in government - Staff Development System with 7 tools</h1>
+                </a>
+            </header>
+            <div class="teaser-body">
+
+            </div>
+            <footer class="teaser-footer">
+                <a href="https://www.youtube.com/watch?v=xucMptZBQL8&index=38&list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M" class="teaser-masthead">
+                    <img class="teaser-image" src="/media/images/focus-areas/daro-mott.jpg" style="top: 0px; position: relative">
+                    <span class="teaser-type teaser-type-article">2015 Summit</span>
+                </a>
+            </footer>
+        </article>
+        </li>
+                            <li class="layout-crotchet">
+        <article class="teaser">
+            <header class="teaser-header">
+                <a href="https://www.youtube.com/watch?v=YH1tFQ0emGc">
+                    <h1 class="teaser-title">Ariel Kennan: Getting Designers into Government - Informing the right communities</h1>
+					</h1>
+                </a>
+         </header>
+            <div class="teaser-body">
+
+            </div>
+            <footer class="teaser-footer">
+                <a href="https://www.youtube.com/watch?v=YH1tFQ0emGc" class="teaser-masthead">
+                    <img class="teaser-image" src="/media/images/focus-areas/ariel.jpg" style="top: 0px; position: relative">
+                    <span class="teaser-type teaser-type-article">2015 Summit</span>
+                </a>
+
+            </footer>
+        </article>
+        </li>
+    </ul>
+		<h3 class="isolate">Further Reading</h3>
+
+		<ul class="list-no-bullets list-icons">
+
+			<li class="icon-new-tab"><a href="http://sunlightfoundation.com/opendataguidelines/">Read: The Sunlight Foundation's Open Data Policy Guidelines</a>
+				<p>The Sunlight Foundation created this living set of open data guidelines to address: what data should be public, how to make data public, and how to implement policy.</p>
+			</li>
+			<li class="icon-youtube"><a href="https://www.youtube.com/watch?v=gbb7xGs0Rwg&list=PL65XgbSILalUbldgqtt8e03hN01L4Z978&index=10">Watch: Growing the Pie for IT Talent Through TechHire</a>
+				<p>Byron Auguste, Stephen Yadzinski, Sandi Hoff and Mindy Aronoff discuss how to grow the pie with TechHire, an initiative to expand the pool for IT talent through accelerated training and inclusive hiring practices focused on skills and competencies rather than degrees or pedigree.</p>
+			</li>
+
+		</ul>
+
+	</div>
+</section>

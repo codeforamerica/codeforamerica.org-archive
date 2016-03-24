@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Georgia Andrews</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/kansascity/">Kansas City (MO) Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/georgia-andrews.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Georgia is a software engineer, Women Who Code San Francisco city director, and dedicated long-distance bike commuter. She spent the last four years building and tuning core applications for insurance companies at Guidewire Software, and now knows more about Oracle databases than she ever thought she would. Georgia has a BS in Mathematical & Computational Science from Stanford University.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/antislice">@antislice</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/georgiaandrews">https://www.linkedin.com/in/georgiaandrews</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Georgia Andrews</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/georgia-andrews.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/neworleans/">New Orleans Team</a></p>
+    <p>
+      Georgia is a software engineer, Women Who Code San Francisco city director, and dedicated long-distance bike commuter. She spent the last four years building and tuning core applications for insurance...
+    </p>
+
+    <p><a class="link-more" href="/people/georgia-andrews/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-twitter"><a href="http://www.twitter.com/antislice">@antislice</a></li>
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/georgiaandrews">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

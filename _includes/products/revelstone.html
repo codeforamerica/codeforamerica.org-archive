@@ -1,0 +1,68 @@
+{% if include.context == "app-page" %}
+
+	<div class="heading">
+		<h2>Revelstone</h2>
+	</div>
+	
+	<div class="layout-minor">
+		<img class="isolate" src="{{ include.base }}/media/images/apps/revelstone.jpg" />
+	    <h3 class="text-prominent">Overview</h3>
+	    <p>Revelstone™ Compass combines the power of performance analytics, benchmarking, and reporting to citizens in one solution, designed for local governments.</p>
+	    
+	    <p class="text-whisper"><a href="http://www.revelstonelabs.com/">http://www<wbr>.revelstonelabs<wbr>.com/</a></p>
+	    
+	    <h4 class="text-whisper layout-tight">Founded by</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li>Ken Wolf</li>
+	    	<li>Mark Nelson</li>
+	    </ul>
+	    
+	    <h4 class="text-whisper layout-tight">Part of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="{{ include.base }}/about/civic-startups">2012 Accelerator</a></li>
+	    </ul>
+	    
+	</div>
+	
+	<div class="layout-major">
+	    	
+	    <p>Revelstone provides the only web-based platform that combines the power of performance analytics, benchmarking, and reporting to citizens in one solution.</p>
+	        
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Summary</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Live</th><td><a href="http://www.revelstonelabs.com/">http://www<wbr>.revelstonelabs<wbr>.com/</a></td></tr>
+	    		<tr><th>Video</th><td><a href="http://www.youtube.com/watch?v=f_UzWY-nym8">http://www<wbr>.youtube<wbr>.com/<wbr>watch?v=<wbr>f_UzWY-nym8</a></td></tr>
+	    		<tr><th>Deploy</th><td>Commercially-available hosted platform</td></tr>
+	    	</table>
+	    	<a href="https://codeforamerica.wufoo.com/forms/app-inquiry-form/" class="button-alternative">Contact us to deploy this app</a>
+	    </div>
+	    
+	    <p>Revelstone is a performance metrics and social networking company for the public sector. It's an online virtual community that enables local government leaders to measure, compare, and discuss operational performance results with their peers in order to learn from each other to improve. The Compass product, is the first and only SAAS-based platform that leverages both performance management and social media technologies to achieve this goal.</p>
+	    
+	</div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/products/revelstone">
+                <h1 class="teaser-title">Revelstone</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>Revelstone combines the power of performance analytics, benchmarking, and reporting to citizens in one solution designed for local governments.</p>
+            
+           <h2 class="text-whisper">Deploy</h2>
+            <p>Commercially-available hosted platform</p>
+            
+            <p><a href="{{ include.base }}/products/revelstone">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/products/revelstone" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/revelstone.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}

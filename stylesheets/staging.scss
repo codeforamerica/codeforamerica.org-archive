@@ -464,6 +464,90 @@ body.modal-active {
   padding-bottom: 0.1em;
 }
 
+// ##### CARD #####
+//
+// Nice, self-contained things that fit inside containers with a border and a
+// white background.
+//
+
+.card {
+	border: 1px solid $color-gray-light;
+	padding: 1em;
+	background-color: #fcfcfc;
+	h5 {
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+	}
+}
+
+.card img {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	// if browsers support calc
+	width: calc(100% + 2em + 2px);
+	max-width: calc(100% + 2em + 2px);
+	margin-left: calc(-1em + -1px);
+	margin-top: calc(-1em + -1px);
+}
+
+.card-inverse {
+	border-color: white;
+	background-color: transparent;
+	color: white;
+}
+
+// ##### ICONS #####
+
+i.symbol {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: $color-gray-dark;
+}
+
+i.symbol-invert {
+	background-color: transparent !important;
+	border: 1px solid white;
+	border-radius: 100%;
+}
+
+i.symbol-rocket {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-rocket.svg');
+	background-size: 70%;
+	background-position: 40% 70%;
+	background-repeat: no-repeat;
+	background-color: $color-orange;
+}
+
+i.symbol-glasses {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-glasses.svg');
+	background-size: 85%;
+	background-position: 55% 55%;
+	background-repeat: no-repeat;
+	background-color: $color-blue-dark;
+}
+
+i.symbol-gov {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-gov.svg');
+	background-size: 55%;
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+	background-color: $color-purple;
+}
+
+i.symbol-key {
+	background-image: url('http://style.codeforamerica.org/style/images/badge-fellowship.svg');
+	background-size: 40%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: $color-red-medium;
+}
+
 // ##### CHECKMARK LIST #####
 //
 // A list with classes .checkmark.list-no-bullets that has checkmark icons
@@ -482,4 +566,40 @@ ul.checkmark li:before {
 	content: "\e370";
 	float: left;
 	width: 2em;
+}
+
+// ##### PILL #####
+//
+// A grey-background pill with text in it indicating relatioship to a Focus Area.
+// Used for government partner cards and people cards.
+//
+.focus-area-pill {
+	display: inline-block;
+	width: auto;
+	background-color: #999595;
+	color: white;
+	font-weight: 400;
+	font-family: "Interstate", "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 6px;
+}
+
+// ##### BILLTWOBYFOUR #####
+//
+// Like a billboard. But not a big link. (Two by four. Board. Get it?)
+//
+.billtwobyfour,
+li.billtwobyfour {
+	background-color: #fff;
+	border-radius: 5px;
+	border-bottom: none;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+	clear: none;
+	display: block;
+	margin: 0 0 18px;
+	padding: 16px;
+	text-align: center;
+	box-sizing: border-box;
 }

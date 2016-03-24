@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Mark Rossetti</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/longbeach/">Long Beach Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/mark-rossetti.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Mark is a software engineer from San Jose, CA with an interest in making the world run a little more positively and efficiently. When time allows, he enjoys spending his time on music, rock climbing, or picking up a new language (human or computer).
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/rossetti211">@rossetti211</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/markrossetti">https://www.linkedin.com/in/markrossetti</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Mark Rossetti</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/mark-rossetti.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/longbeach/">Long Beach Team</a></p>
+    <p>
+      Mark is a software engineer from San Jose, CA with an interest in making the world run a little more positively and efficiently. When time allows, he enjoys spending his time on music, rock climbing, ...
+    </p>
+
+    <p><a class="link-more" href="/people/mark-rossetti/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/markrossetti">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/rossetti211">@rossetti211</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}

@@ -1,0 +1,109 @@
+{% if include.context == "app-page" %}
+<h2 id="tracTop">RecordTrac</h2>
+<p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage.</p>
+<img class="isolate" src="{{ include.base }}/media/images/apps/recordtrac-home.png" style="border:2px solid #999595"/>
+
+<div class="heading">
+  <h4>Details</h4>
+</div>
+<p>You can set up RecordTrac if you have:</p>
+<ul>
+  <li>A list of emails for records liaisons by department</li>
+  <li>Accounts, or ability to sign up for accounts, at Heroku, Scribd, and Sendgrid</li>
+  <li>A high level commitment to deliver records online.</li>
+</ul>
+
+<div class="heading">
+  <h4>Setup</h4>
+</div>
+<div class="spotlight">
+  <table class="table-unstyled table-minor">
+    <tr>
+      <th>Live Example</th>
+      <td><a href="http://records.oaklandnet.com/">http://records<wbr>.oaklandnet<wbr>.com/</a></td>
+    </tr>
+    <tr>
+      <th>Video</th>
+      <td><a href="http://www.youtube.com/watch?v=F4XP9DJ-htg">http://www<wbr>.youtube<wbr>.com/<wbr>watch?v=<wbr>F4XP9DJ-htg</a></td>
+    </tr>
+    <tr>
+      <th>Codebase</th>
+      <td><a href="https://github.com/codeforamerica/recordtrac">https://github<wbr>.com/<wbr>codeforamerica/<wbr>recordtrac</a></td>
+      </tr>
+    <tr>
+      <th>Environment</th>
+      <td>Python application built on a backend Flask framework.</td>
+    </tr>
+    <tr>
+      <th>Redeploy</th>
+      <td>Use the <a href="http://recordtrac-setup.codeforamerica.org/">RecordTrac setup application</a> or follow Heroku <a href="https://github.com/codeforamerica/recordtrac/blob/master/docs/redeploy.md">installation instructions on GitHub</a>.</td>
+    </tr>
+  </table>
+  <a href="mailto:jack@codeforamerica.org" class="button-alternative">Contact us for a trial</a>
+</div>
+
+<p>&nbsp;</p>
+<div class="heading">
+  <h4>How it works</h4>
+</div>
+<p>RecordTrac makes the process of requesting and delivering official public records simpler and fully compliant with local policies. It works best when cities:</p>
+<ul><li>Track all public records requests through RecordTrac, even if originally received it through other channels</li>
+
+<li>Thoroughly redact documents before posting</li>
+
+<li>Upload scanned copies of the [redacted] records to RecordTrac. This prevents answering the same public records request multiple times and provides proof you responded.</li>
+</ul>
+
+<p>This is the open-source version. There is a proprietary version offered as a hosted service by <a href="https://www.nextrequest.com/">NextRequest</a>.</p>
+
+<div class="heading">
+  <h4>Created by:</h4>
+</div>
+
+<div class="layout-minor">
+  <a href="/governments/southbend/"><img style="border: 5px solid red" class="profile-photo u-photo" src="../../media/images/governments/oakland_seal.png" alt="southbend_seal"/>
+  <h4 class="text-whisper">Oakland, Ca.</h4></a> 
+</div>
+
+<div class="layout-major">
+  <div class="layout-crotchet">
+    <a href="/people/richa-agarwal/"><img style="border: 5px solid white" class="u-photo profile-photo" src="{{ include.base }}/media/images/people/richa-agarwal.jpg"/>
+    <h4 class="text-whisper">Richa Agarwal</h4></a>
+  </div>
+  <div class="layout-crotchet">
+    <a href="/people/cris-cristina/"><img style="border: 5px solid white" class="profile-photo u-photo" src="{{ include.base }}/media/images/people/cris-cristina.jpg"/>
+    <h4 class="text-whisper">Cris Cristina</h4></a>
+  </div>
+  <div class="layout-crotchet">
+    <a href="/people/sheila-dugan/"><img style="border: 5px solid white" class="profile-photo u-photo" src="{{ include.base }}/media/images/people/sheila-dugan.jpg"/>
+    <h4 class="text-whisper">Sheila Dugan</h4></a>
+  </div>
+</div>
+
+{% elsif include.context == 'apps-list' or include.context == 'our-startups' %}
+
+    <article class="teaser teaser-app">
+        <header class="teaser-header">
+            <a href="{{ include.base }}/products/recordtrac">
+                <h1 class="teaser-title">RecordTrac</h1>
+            </a>
+        </header>
+        <div class="teaser-body">
+            <p>RecordTrac makes public records requests friendlier for the public and easier for governments to manage.</p>
+            
+            <h2 class="text-whisper">Environment</h2>
+            <p>Python application built on a backend Flask framework.</p>
+            
+            <h2 class="text-whisper">Redeploy</h2>
+            <p>Use the <a href="http://recordtrac-setup.codeforamerica.org/">RecordTrac setup application</a> or follow Heroku <a href="https://github.com/codeforamerica/recordtrac/blob/master/docs/redeploy.md">installation instructions on GitHub</a>.</p>
+            
+            <p><a href="{{ include.base }}/products/recordtrac">Learn more about this app</a></p>
+        </div>
+        <footer class="teaser-footer">
+            <a href="{{ include.base }}/products/recordtrac" class="teaser-masthead">
+                <img class="teaser-image" src="{{ include.base }}/media/images/apps/RecordTrac_header.jpg" />
+            </a>
+        </footer>
+    </article>
+
+{% endif %}

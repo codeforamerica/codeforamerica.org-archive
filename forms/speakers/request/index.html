@@ -212,26 +212,11 @@ include-animate: true
 <section class="layout-semibreve"></section>
 
 <!-- Generate markup for JS -->
-{% capture cardCydHarrell %}
-  {% include people/cyd-harrell.html context="speaker-card" base=".." %}
-{% endcapture %}
 {% capture cardJenniferPahlka %}
   {% include people/jennifer-pahlka.html context="speaker-card" base=".." %}
 {% endcapture %}
-{% capture cardMichalMigurski %}
-  {% include people/michal-migurski.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardCatherineBracy %}
-  {% include people/catherine-bracy.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardLukeNorris %}
-  {% include people/luke-norris.html context="speaker-card" base=".." %}
-{% endcapture %}
 {% capture cardNicoleNeditch %}
   {% include people/nicole-neditch.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardJackMadans %}
-  {% include people/jack-madans.html context="speaker-card" base=".." %}
 {% endcapture %}
 {% capture cardHannahYoung %}
   {% include people/hannah-young.html context="speaker-card" base=".." %}
@@ -242,14 +227,8 @@ include-animate: true
 {% capture cardChristopherWhitaker %}
   {% include people/christopher-whitaker.html context="speaker-card" base=".." %}
 {% endcapture %}
-{% capture cardDanHon %}
-  {% include people/dan-hon.html context="speaker-card" base=".." %}
-{% endcapture %}
 {% capture cardDavidLeonard %}
   {% include people/david-leonard.html context="speaker-card" base=".." %}
-{% endcapture %}
-{% capture cardDharmishtaRood %}
-  {% include people/dharmishta-rood.html context="speaker-card" base=".." %}
 {% endcapture %}
 {% capture cardMollyMcLeod %}
   {% include people/molly-mcleod.html context="speaker-card" base=".." %}
@@ -265,19 +244,12 @@ include-animate: true
 
   // ===== Populate our speaker card variables
   var speakerCards = {
-    "cyd-harrell"           : '{{ cardCydHarrell | strip_newlines }}',
     "jennifer-pahlka"       : '{{ cardJenniferPahlka | strip_newlines }}',
-    "michal-migurski"       : '{{ cardMichalMigurski | strip_newlines }}',
-    "catherine-bracy"       : '{{ cardCatherineBracy | strip_newlines }}',
-    "luke-norris"           : '{{ cardLukeNorris | strip_newlines }}',
     "nicole-neditch"        : '{{ cardNicoleNeditch | strip_newlines }}',
-    "jack-madans"           : '{{ cardJackMadans | strip_newlines }}',
     "hannah-young"          : '{{ cardHannahYoung | strip_newlines }}',
     "jacob-solomon"         : '{{ cardJacobSolomon | strip_newlines }}',
     "christopher-whitaker"  : '{{ cardChristopherWhitaker | strip_newlines }}',
-    "dan-hon"               : '{{ cardDanHon | strip_newlines }}',
     "david-leonard"         : '{{ cardDavidLeonard | strip_newlines }}',
-    "dharmishta-rood"       : '{{ cardDharmishtaRood | strip_newlines }}',
     "molly-mcleod"          : '{{ cardMollyMcLeod | strip_newlines }}',
     "alan-williams"         : '{{ cardAlanWilliams | strip_newlines }}',
     "jenny-montoya-tansey"  : '{{ cardJennyMontoyaTansey | strip_newlines }}'

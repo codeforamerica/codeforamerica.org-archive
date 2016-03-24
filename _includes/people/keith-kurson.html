@@ -1,0 +1,55 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+  <div class="heading">
+    <h2 class="p-name">Keith Kurson</h2>
+  </div>
+
+  <div class="layout-minor">
+    <h4 class="text-whisper layout-tight">Member of</h4>
+    <ul class="list-no-bullets text-whisper link-invert">
+      <li><a href="/geeks/our-geeks/2016-fellows/">2016 Fellows</a></li>
+      <li><a href="/governments/newyork/">New York City Team</a></li>
+    </ul>
+
+    <img class="profile-photo u-photo" src="/media/images/people/keith-kurson.jpg" />
+  </div>
+
+  <div class="layout-major">
+    <p class="p-note">
+      Keith is a web developer and social game creator from San Francisco. Originally from North Carolina, Keith is excited to join CfA and help government work at its full potential by using technology. When not learning a new JavaScript framework, he can found be traveling Europe by train or scientifically ranking the taquerias of San Francisco.
+    </p>
+
+    <div class="spotlight">
+      <h3 class="text-whisper">Contact</h3>
+      <table class="table-unstyled table-minor">
+        <tr><th>Twitter</th><td><a href="https://twitter.com/keithkurson">@keithkurson</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/keithkurson">https://www.linkedin.com/in/keithkurson</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% elsif include.context == '2016-fellows' %}
+
+<div class="h-card profile-small">
+  <h3 class="p-name profile-name">Keith Kurson</h3>
+
+  <img class="u-photo profile-photo" src="/media/images/people/keith-kurson.jpg" />
+
+  <div class="p-note profile-note">
+    <p><a href="/governments/newyork/">New York City Team</a></p>
+    <p>
+      Keith is a web developer and social game creator from San Francisco. Originally from North Carolina, Keith is excited to join CfA and help government work at its full potential by using technology. Wh...
+    </p>
+
+    <p><a class="link-more" href="/people/keith-kurson/">More</a></p>
+
+    <ul class="list-social list-social-horizontal">
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/keithkurson">LinkedIn</a></li>
+      <li class="social-twitter"><a href="https://twitter.com/keithkurson">@keithkurson</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endif %}
