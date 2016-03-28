@@ -3,7 +3,9 @@
 Code For America Dot Org
 ========================
 
-This repository holds the source code and static assets for [codeforamerica.org](https://www.codeforamerica.org). Learn more about what Code for America does [on our About page](https://www.codeforamerica.org/about/).
+This repository holds the source code and static assets for the last version of codeforamerica.org, which can be found at [archive.codeforamerica.org](https://www.codeforamerica.org). Learn more about what Code for America does [on our About page](https://www.codeforamerica.org/about/).
+
+Note: Code for America's site is no longer built using the files in this repository. We've moved to another system (more details on that soon). If you want to report a bug or issue with the current site, please send an email to [marketing@codeforamerica.org](mailto:marketing@codeforamerica.org) or visit the site and use the live chat support feature in the bottom right of the page.
 
 How It Works
 --------
@@ -31,14 +33,6 @@ Who’s Working On It
 
 How to contribute
 --------
-
-### Specific help we need
-
-We need your help to keep our content accurate and up to date. The easiest way for to help is to submit a pull request with one of the below:
-
-* For staff and members of the community, find yourself and your friends on one of the [team pages](https://www.codeforamerica.org/about/team) and let us know if your bio is correct and photo current. Note: Personal photos should be about 200 x 200px.
-* If you built an app or project as part of the fellowship or accelerator programs, find it on the [apps page](https://www.codeforamerica.org/apps) and verify that it's described accurately.
-* Check government information for brigades and fellowships on the [2015 government partners](https://www.codeforamerica.org/governments/#2015) and [alumni government partners](https://www.codeforamerica.org/governments/#alumni) pages and fill in any blanks you might find.
 
 ### <a name="pulls"></a>Submitting a Pull Request
 
