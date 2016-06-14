@@ -592,6 +592,10 @@ ul.list-logos.muted {
     li { 
         width: 15%;
 
+        img {
+            display: block;
+        }
+
         a:link, a:visited {
             border-bottom: 1px solid transparent;
         }
