@@ -34,6 +34,20 @@
 	}
 }
 
+// Media Queries - TODO: Add more sizes, switch to ems, switch to mobile-first
+
+$screen-sizes: (
+    desktop-sm: 900px
+);
+
+@mixin break-point($type, $target-width: min-width, $media-type: screen) {
+    $screen-size: map-get($screen-sizes, $type);
+
+    @media #{$media-type} and (#{$target-width}: #{$screen-size}) {
+        @content;
+    }
+}
+
 // Colors
 $color-red: #cf1b41;
 $color-red-medium: #aa1c3a;
@@ -567,3 +581,32 @@ ul.checkmark li:before {
 	float: left;
 	width: 2em;
 }
+
+// Supporters List in Footer
+
+ul.list-logos.muted {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    
+    li { 
+        width: 15%;
+
+        a:link, a:visited {
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover, a:active {
+            border-color: transparentize($color-red, .3);
+        }
+    }
+
+    @include break-point(desktop-sm, max-width) {
+        width: 100%;
+
+        li {
+            width: 140px; 
+        }
+    }
+}
+
