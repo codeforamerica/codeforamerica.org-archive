@@ -131,7 +131,6 @@
       "properties": {
         "id": "01",
         "steward_id": "1",
-        "name": "",
         "motor_vehicles": "no",
         "foot": "yes",
         "bicycle": "no",
@@ -286,10 +285,10 @@
 				            	<td></td>
 				            </tr>
 				            <tr>
-				                <th>trail_ids</th>
+				                <th>segment_ids</th>
 				                <td>string</td>
 				                <td>yes</td>
-				                <td>A collection of IDs for Named Trails (match to "id" in <a href="#namedtrails">named_trails.csv</a>), each representing a trail that can be accessed via this trailhead.</td>
+				                <td>A collection of IDs for trail segments (match to "id" in <a href="#trailsegments">trail_segments.geojson</a>), each representing a trail segment (and by extension, one or more named trail) that can be accessed via this trailhead.</td>
 				                <td></td>
 				            </tr>
 				            <tr>
@@ -351,7 +350,7 @@
       "properties": {
         "name": "Soutwest Trailhead",
         "id": "32"
-        "trail_ids": "1; 2"
+        "segment_ids": "1; 2"
         "steward_id": "2",
         "address": "",
         "parking": "yes",
@@ -373,7 +372,7 @@
       "properties": {
         "name": "West Side Trailhead",
         "id": "33"
-        "trail_ids": "2"
+        "segment_ids": "2"
         "steward_id": "2",
         "address": "",
         "parking": "yes",
